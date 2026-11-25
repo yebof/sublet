@@ -1,0 +1,99 @@
+Policy,Column,Median,Interval,n
+Sublet,"USD per week (k), overflow accounting",18.50,"[15.34, 23.16]",16
+Sublet,"USD per week (k), total accounting",284.62,"[197.18, 399.04]",16
+Sublet,"Saving over all-fallback (%), overflow",46.2,"[45.3, 46.9]",16
+Sublet,ALG/LB on the gap days,1.328,"[1.211, 1.392]",4
+Sublet,RC under the trace lender,0.0028,"[0.0020, 0.0043]",16
+Sublet,"W0, worst cost over the stress modes",0.770,"[0.733, 0.776]",16
+Sublet,"p*, first p with r0>1",none,"none, none, none, none",4
+"Sublet, one-way","USD per week (k), overflow accounting",25.26,"[17.25, 29.73]",16
+"Sublet, one-way","USD per week (k), total accounting",296.12,"[201.42, 418.85]",16
+"Sublet, one-way","Saving over all-fallback (%), overflow",44.5,"[0.0, 46.5]",16
+"Sublet, one-way",ALG/LB on the gap days,–,–,–
+"Sublet, one-way",RC under the trace lender,0.0013,"[0.0000, 0.0031]",16
+"Sublet, one-way","W0, worst cost over the stress modes",0.780,"[0.757, 1.000]",16
+"Sublet, one-way","p*, first p with r0>1",>0.2,">0.2, >0.2, >0.2, >0.2",4
+Greedy + guard,"USD per week (k), overflow accounting",22.59,"[18.10, 26.45]",16
+Greedy + guard,"USD per week (k), total accounting",288.72,"[200.26, 401.88]",16
+Greedy + guard,"Saving over all-fallback (%), overflow",37.1,"[31.3, 39.6]",16
+Greedy + guard,ALG/LB on the gap days,1.477,"[1.206, 1.597]",4
+Greedy + guard,RC under the trace lender,0.0194,"[0.0143, 0.0278]",16
+Greedy + guard,"W0, worst cost over the stress modes",1.009,"[1.007, 1.011]",16
+Greedy + guard,"p*, first p with r0>1",0.8,"0.5, 0.8, 0.8, 0.8",4
+Greedy + notice layer,"USD per week (k), overflow accounting",21.17,"[17.85, 25.88]",16
+Greedy + notice layer,"USD per week (k), total accounting",287.36,"[200.23, 400.76]",16
+Greedy + notice layer,"Saving over all-fallback (%), overflow",38.4,"[35.9, 42.2]",16
+Greedy + notice layer,ALG/LB on the gap days,1.488,"[1.197, 1.630]",4
+Greedy + notice layer,RC under the trace lender,0.0030,"[0.0016, 0.0068]",16
+Greedy + notice layer,"W0, worst cost over the stress modes",0.929,"[0.886, 0.971]",16
+Greedy + notice layer,"p*, first p with r0>1",1,"none, none, 1, 0.8",4
+RetroRenting + notice layer,"USD per week (k), overflow accounting",20.58,"[17.90, 27.37]",16
+RetroRenting + notice layer,"USD per week (k), total accounting",286.68,"[198.18, 403.35]",16
+RetroRenting + notice layer,"Saving over all-fallback (%), overflow",40.4,"[36.5, 43.2]",16
+RetroRenting + notice layer,ALG/LB on the gap days,1.409,"[1.353, 1.808]",4
+RetroRenting + notice layer,RC under the trace lender,0.0077,"[0.0041, 0.0136]",16
+RetroRenting + notice layer,"W0, worst cost over the stress modes",0.899,"[0.891, 0.911]",16
+RetroRenting + notice layer,"p*, first p with r0>1",none,"none, none, none, none",4
+Greedy renting,"USD per week (k), overflow accounting",21.94,"[18.11, 26.07]",16
+Greedy renting,"USD per week (k), total accounting",287.66,"[200.00, 401.74]",16
+Greedy renting,"Saving over all-fallback (%), overflow",38.3,"[33.1, 39.9]",16
+Greedy renting,ALG/LB on the gap days,1.470,"[1.202, 1.599]",4
+Greedy renting,RC under the trace lender,0.0220,"[0.0166, 0.0281]",16
+Greedy renting,"W0, worst cost over the stress modes",1.565,"[1.504, 1.912]",16
+Greedy renting,"p*, first p with r0>1",0.5,"0.5, 0.8, 0.5, 0.5",4
+"Greedy, back-off","USD per week (k), overflow accounting",20.96,"[17.69, 25.38]",16
+"Greedy, back-off","USD per week (k), total accounting",287.06,"[199.96, 400.82]",16
+"Greedy, back-off","Saving over all-fallback (%), overflow",39.4,"[36.0, 42.5]",16
+"Greedy, back-off",ALG/LB on the gap days,1.453,"[1.190, 1.594]",4
+"Greedy, back-off",RC under the trace lender,0.0066,"[0.0044, 0.0087]",16
+"Greedy, back-off","W0, worst cost over the stress modes",1.084,"[1.059, 1.107]",16
+"Greedy, back-off","p*, first p with r0>1",0.34,"0.34, 0.5, 0.34, 0.34",4
+RetroRenting-style,"USD per week (k), overflow accounting",21.48,"[17.68, 27.18]",16
+RetroRenting-style,"USD per week (k), total accounting",286.66,"[199.23, 403.16]",16
+RetroRenting-style,"Saving over all-fallback (%), overflow",37.1,"[34.7, 40.6]",16
+RetroRenting-style,ALG/LB on the gap days,1.369,"[1.262, 1.534]",4
+RetroRenting-style,RC under the trace lender,0.0192,"[0.0135, 0.0242]",16
+RetroRenting-style,"W0, worst cost over the stress modes",1.138,"[1.111, 1.295]",16
+RetroRenting-style,"p*, first p with r0>1",0.8,"0.5, 0.8, 0.8, 0.8",4
+"RetroRenting, τ≥1 h","USD per week (k), overflow accounting",26.22,"[21.88, 32.50]",16
+"RetroRenting, τ≥1 h","USD per week (k), total accounting",293.37,"[202.43, 407.04]",16
+"RetroRenting, τ≥1 h","Saving over all-fallback (%), overflow",24.5,"[21.4, 27.6]",16
+"RetroRenting, τ≥1 h",ALG/LB on the gap days,1.527,"[1.451, 1.994]",4
+"RetroRenting, τ≥1 h",RC under the trace lender,0.0019,"[0.0007, 0.0053]",16
+"RetroRenting, τ≥1 h","W0, worst cost over the stress modes",0.805,"[0.780, 0.853]",16
+"RetroRenting, τ≥1 h","p*, first p with r0>1",none,"none, none, none, none",4
+Per-borrower ski rental,"USD per week (k), overflow accounting",22.60,"[19.27, 27.73]",16
+Per-borrower ski rental,"USD per week (k), total accounting",288.17,"[200.30, 403.65]",16
+Per-borrower ski rental,"Saving over all-fallback (%), overflow",35.4,"[31.6, 37.3]",16
+Per-borrower ski rental,ALG/LB on the gap days,–,–,–
+Per-borrower ski rental,RC under the trace lender,0.0296,"[0.0206, 0.0423]",16
+Per-borrower ski rental,"W0, worst cost over the stress modes",1.518,"[1.491, 1.875]",16
+Per-borrower ski rental,"p*, first p with r0>1",>0.2,">0.2, >0.2, >0.2, >0.2",4
+"SpotHedge-style, NExtra=0","USD per week (k), overflow accounting",22.60,"[18.83, 27.43]",16
+"SpotHedge-style, NExtra=0","USD per week (k), total accounting",289.00,"[201.28, 403.09]",16
+"SpotHedge-style, NExtra=0","Saving over all-fallback (%), overflow",34.3,"[32.5, 36.8]",16
+"SpotHedge-style, NExtra=0",ALG/LB on the gap days,1.537,"[1.290, 1.691]",4
+"SpotHedge-style, NExtra=0",RC under the trace lender,0.0088,"[0.0057, 0.0122]",16
+"SpotHedge-style, NExtra=0","W0, worst cost over the stress modes",1.497,"[1.460, 1.900]",16
+"SpotHedge-style, NExtra=0","p*, first p with r0>1",0.5,"0.5, 0.8, 0.5, 0.5",4
+CoCaR-style,"USD per week (k), overflow accounting",29.19,"[25.54, 38.83]",16
+CoCaR-style,"USD per week (k), total accounting",296.67,"[207.37, 413.22]",16
+CoCaR-style,"Saving over all-fallback (%), overflow",11.2,"[9.4, 13.8]",16
+CoCaR-style,ALG/LB on the gap days,1.994,"[1.728, 2.240]",4
+CoCaR-style,RC under the trace lender,0.0001,"[-0.0045, 0.0035]",16
+CoCaR-style,"W0, worst cost over the stress modes",1.028,"[1.026, 1.053]",16
+CoCaR-style,"p*, first p with r0>1",0.5,"0.34, 0.8, 0.8, 0.5",4
+Two-timescale PD,"USD per week (k), overflow accounting",32.57,"[26.81, 37.49]",16
+Two-timescale PD,"USD per week (k), total accounting",299.18,"[210.11, 411.74]",16
+Two-timescale PD,"Saving over all-fallback (%), overflow",8.0,"[3.2, 15.8]",16
+Two-timescale PD,ALG/LB on the gap days,–,–,–
+Two-timescale PD,RC under the trace lender,0.0006,"[-0.0078, 0.0045]",16
+Two-timescale PD,"W0, worst cost over the stress modes",0.995,"[0.967, 1.018]",16
+Two-timescale PD,"p*, first p with r0>1",0,">0.2, >0.2, 0, 0",4
+All-fallback,"USD per week (k), overflow accounting",35.01,"[28.35, 44.33]",16
+All-fallback,"USD per week (k), total accounting",302.15,"[212.39, 418.85]",16
+All-fallback,"Saving over all-fallback (%), overflow",0.0,"[0.0, 0.0]",16
+All-fallback,ALG/LB on the gap days,2.191,"[2.147, 2.227]",4
+All-fallback,RC under the trace lender,–,–,–
+All-fallback,"W0, worst cost over the stress modes",1.000,"[1.000, 1.000]",16
+All-fallback,"p*, first p with r0>1",–,–,–

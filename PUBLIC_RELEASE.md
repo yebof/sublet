@@ -805,3 +805,5 @@ The frozen analysis scripts named in the registrations are unchanged; their SHA-
 - `design/ms7/registration.md`
 - `design/ms8/registration.md`
 - `design/sublet_v2_prereg.md`
+
+**Added on 2026-11-26.** `paper_data/`: the data files of the supplementary material (CSV versions of the 40 tables that it does not print, one record per line with named columns, their captions in `CAPTIONS.md`, and the 12 per-run data files it names, whose columns `CAPTIONS.md` also lists; 53 files in all); see `README.md`.

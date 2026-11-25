@@ -1,0 +1,5 @@
+Set,Metric,Weeks,Wins,Ties,Losses,Lost,Median,Min,Max,Least of the set (weeks)
+Primary baselines,r0,16,16,0,0,0,0.047,0.020,0.104,"Greedy, back-off, lagged (10); RetroRenting-style, lagged (6)"
+Primary baselines,W0,16,16,0,0,0,0.164,0.095,0.262,"CoCaR-style, lagged (16)"
+Notice-aware policies,r0,16,16,0,0,0,0.047,0.016,0.073,"Greedy + notice layer, lagged (8); RetroRenting + notice layer, lagged (8)"
+Notice-aware policies,W0,16,8,0,8,0,-0.002,-0.072,0.084,"RetroRenting, τ≥1 h, lagged (13); RetroRenting + notice layer, lagged (3)"

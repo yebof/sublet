@@ -1,0 +1,13 @@
+Policy,Source,Row,I1 r0,I1 W0,I2 r0,I2 W0,I3 r0,I3 W0,I4 r0,I4 W0,S,T
+Sublet,part grid,value,0.619,0.826,0.672,1.025,0.572,0.912,0.790,1.034,holds,–
+Sublet,part grid,lender of W0,,eager,,eager,,eager,,eager,,
+Critical-ratio renting,part grid,value,0.619,0.826,0.672,1.108,0.566,0.908,0.777,1.141,fails,–
+Critical-ratio renting,part grid,lender of W0,,eager,,eager,,eager,,eager,,
+Greedy + guard,part grid,value,0.666,0.998,0.885,1.032,0.746,1.034,1.041,1.041,holds,–
+Greedy + guard,part grid,lender of W0,,eager,,eager,,eager,,eager,,
+Greedy + one-way guard,guard study,value,0.678,1.005,1.005,1.006,1.000,1.000,1.022,1.024,holds,fails
+Greedy + one-way guard,guard study,lender of W0,,eager,,eager,,safe-site,,i.i.d. 0.2,,
+Lagged RetroRenting + one-way guard,guard study,value,0.718,0.999,0.936,1.011,0.880,1.007,0.926,1.018,holds,holds
+Lagged RetroRenting + one-way guard,guard study,lender of W0,,eager,,eager,,safe-site,,eager,,
+"RetroRenting-style, lagged",guard study,value,0.718,0.999,0.852,1.082,0.739,1.043,0.926,1.023,fails,holds
+"RetroRenting-style, lagged",guard study,lender of W0,,eager,,eager,,eager,,eager,,

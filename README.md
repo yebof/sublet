@@ -14,6 +14,7 @@ LLM inference providers can lend idle GPUs under lease contracts $(\tau, H, \tex
 | `code/analysis/` | Trace analysis (`a1`–`a14`) that derives the simulator's inputs and calibration (lender slack, demand profiles, notice buffers, load times, prices), with derived outputs in `out/`. `run_all.sh` runs every step. |
 | `code/data/` | `download_datasets.sh`, which fetches the public traces. |
 | `design/` | The registrations of the confirmation and of the further runs (see below). |
+| `paper_data/` | The data files of the paper's supplementary material and their captions (see below). |
 
 ## Requirements
 
@@ -53,6 +54,24 @@ bash ../theory_checks/c3/run_all.sh
 Each experiment has a driver `sublet/experiments/<exp>.py` and a run script `run_<exp>.sh`; most drivers take `--reduced` for a short smoke run. The run scripts launch every job in its own memory-capped scope and write `code/sim/out/<exp>/`. The per-run files (`runs/`), the job records and the logs are not included in this repository. The figure scripts in `code/sim/figs/` redraw every figure from its JSON extract in `code/sim/out/figs/` (`--from-extract`).
 
 Some tests and the frozen rebuild compare against the manuscript sources, which are not part of this repository; `code/sim/conftest.py` skips those tests here and lists them, with the reason, in `code/sim/tests/public_release_skips.json`.
+
+## Data of the supplementary material
+
+`paper_data/` holds the data files that the paper's supplementary material names by file name: its tables of per-week, per-cell, per-policy and per-run values, which the supplement does not print, as CSV files converted from its LaTeX tables, and the per-run data files of the experiments. A converted file has one header line and one line per data row of its table, with the numbers as printed (a dash: no value). Its first columns identify the row: the row's label; where the table had sections, the section (a column such as `Fold`, `Point` or `Reference`); and where the table gave two rows for one label, such as a median and its range, a column `Statistic` or `Row` that names each. A cell that the table printed on two lines is two columns, such as `L-tr median` and `L-tr min–max`. `CAPTIONS.md` gives each converted table's caption, adapted to the file's columns, and lists the columns of every per-run data file with their meaning and unit. Formats within a cell: `median (min–max)` is a median with the minimum and maximum in parentheses, and a range `[a, b]` or `a–b` is a minimum and a maximum; counts in parentheses after a value, as in `0.014 (4/0/12)`, are the sign counts that the caption names (W/T/L: won, tied and lost; or below, at and above zero); a cell that lists several items separates them by `; `. In `baseline_study_runs.csv`, `e7v2_rc_runs.csv`, `lag_v2_runs.csv`, `oos_runs.csv` and `s1v2_runs.csv` the policy labels (and in `s1v2_runs.csv` the assumptions and settings) are LaTeX source; in every per-run data file the column `tag` is the policy's plain identifier in the code. Their values come from the summary outputs in `code/sim/out/` and the figure extracts in `code/sim/out/figs/`.
+
+| Part of the supplement | Files |
+|---|---|
+| When protection pays | `e6a_cells.csv` (every cell of the protection heatmaps), `e6a_cells_summary.csv` (the cells above, at and below 1 per lender group, protected load time and stranding ratio) |
+| The confirmation in full | `e7v2_pareto.csv` (per-week Pareto front), `e7v2_seeds.csv` (policy seeds 1 and 2), `e7v2_table3_intervals.csv` (the medians behind the end-to-end table of the main text, with intervals), `e7v2_rc.csv` and `e7v2_rc_runs.csv` (revocation cost per policy and lender, and per run), `e7v2_crossings.csv` (first crossing of the all-fallback bill per week), `e7v2_boundary.csv`, `e7v2_lag.csv` and `e7v2_e5.csv` (boundary conditions, demand one slot late, redundancy menus), `fam_v2_instances.csv` (lower-bound family instances), `e7v2_grid.csv` and `e7v2_guard_study.csv` (development-exposed continuity runs) |
+| Demand one slot late | `lag_v2_policies.csv`, `lag_v2_modes.csv`, `lag_v2_margins.csv`, `lag_v2_runs.csv` |
+| Held-out calibration | `oos_margins.csv`, `oos_policies.csv`, `oos_sources.csv`, `oos_runs.csv` |
+| Sensitivity of Sublet | `s1v2_points.csv`, `s1v2_w0.csv`, `s1v2_runs.csv` |
+| Redundancy with spares | `e5v2_costs.csv`, `e5v2_margins.csv`, `e5v2_runs.csv` |
+| Request-level replay | `e8v2_tiers.csv`, `e8v2_mooncake.csv`, `e8v2_cells.csv` |
+| Scaling | `e9v2_overhead.csv`, `e9v2_split.csv`, `e9v2_runs.csv` |
+| Stronger baselines and stress regimes | `e7r_tags.csv`, `e7r_margins.csv`, `e7r_grid.csv`, `e7r_modes.csv`, `e7r_stress.csv`, `baseline_study_runs.csv` |
+| Request-level replay with a queue | `e8q_costs.csv`, `e8q_decomp.csv`, `e8q_cells.csv`, `e8q_latency.csv`, `e8q_latency_table.csv` |
+| Spend caps | `cap_costs.csv`, `cap_margins.csv`, `cap_binds.csv`, `cap_modes.csv`, `cap_mode_margins.csv`, `cap_sens.csv`, `cap_runs.csv` |
 
 ## Registered analyses
 
