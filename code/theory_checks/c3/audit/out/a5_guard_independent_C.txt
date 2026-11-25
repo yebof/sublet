@@ -1,0 +1,16 @@
+== (C) G4 stress: 1800 combinations, switches max 12, mean 2.18, >=4 switches 378
+G1(a): W(t) <= C(t-1)                                                                           n=    54000 viol=  0 maxex=0.00e+00 maxratio=0.998804  [stress#144 gp=1.05 X]
+G1(b): ALG(T)-ALG(ta-1) <= W_S(ta)+C_S(T)-C_S(ta-1)                                             n=    10800 viol=  0 maxex=-1.18e+03 maxratio=0.283469  [stress#10 gp=1.050 first=X L=none]
+G1(b): copy purchase at ta == sum_{L_S(ta)} C (|diff|)                                          n=    10800 viol=  0 maxex=0.00e+00 maxratio=-  [None]
+G1(b): cost(ta) <= sum_{L_S(ta)} C + sigma_S(ta)                                                n=    10800 viol=  0 maxex=-1.81e-04 maxratio=0.999982  [stress#25 gp=1.050 first=X L=none]
+G1(b): cost(u) <= c_S(u), u > ta                                                                n=   313200 viol=  0 maxex=-9.10e-05 maxratio=0.999996  [stress#3 gp=1.707 first=Y L=none]
+G1(b): rent at slots >= ta                                                                      n=    10800 viol=  0 maxex=0.00e+00 maxratio=-  [None]
+G1(b): uncovered p in L_S(u), u >= ta                                                           n=    10800 viol=  0 maxex=0.00e+00 maxratio=-  [None]
+G4(ii) stress: C(t) <= c(gp) min{C_X(t),C_Y(t)}                                                 n=    54000 viol=  0 maxex=-8.76e-04 maxratio=0.447459  [stress#45 gp=2.500 first=X t=7 sw=2]
+G4(iii) stress: executed from slot 0: ALG(T) <= C(T)                                            n=    10800 viol=  0 maxex=-1.18e+03 maxratio=0.283469  [stress#10 L=none]
+eager item 1: purchases are new leases (each id bought once)                                    n=    54000 viol=  0 maxex=0.00e+00 maxratio=-  [None]
+eager item 2: L(u) subset of L(u-1) + P(u)                                                      n=    54000 viol=  0 maxex=0.00e+00 maxratio=-  [None]
+eager item 2: P(u) subset of L(u)                                                               n=    54000 viol=  0 maxex=0.00e+00 maxratio=-  [None]
+eager item 2: s_p <= u < s_p + D for p in L(u)                                                  n=    54000 viol=  0 maxex=0.00e+00 maxratio=-  [None]
+eager item 3: routing bound over L(u) <= sigma(u)                                               n=    54000 viol=  0 maxex=-5.69e-05 maxratio=0.999998  [stress#84 gp=1.05 X]
+total time 4 s

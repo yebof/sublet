@@ -1,0 +1,69 @@
+# X15 2026-11-02T12:22:45 HEAD=47de971d; python 3.12.3; one 3G systemd scope per pytest run; marker selection: not needs_raw and not needs_ms2_checks and not needs_ms3_out and not needs_ms4_out and not needs_ms5_out and not needs_ms5b_out
+# copy in /tmp/x15_anuh762y (0 s): guard.py sha256 48fe8f3e189e78100f1786587d67e1f852729523b2e02f42984f265ed10458f7, tests/test_guard_projection.py sha256 3f4857f0e91606af1932b187a05f5bc5759971c40f92ea74d76cb127bc965780
+unmutated identity: pass (47 s)
+unmutated coverage: pass (31 s)
+unmutated file: pass (120 s)
+M1 identity: missed (46 s)
+M1 coverage: caught (test_remark_r_coverage) (3 s)
+M1 file: caught (test_remark_r_coverage) (58 s)
+M2 identity: missed (46 s)
+M2 coverage: caught (test_remark_r_coverage) (3 s)
+M2 file: caught (test_remark_r_coverage) (58 s)
+M3 identity: caught (test_remark_r_identity) (4 s)
+M3 coverage: caught (test_remark_r_coverage) (3 s)
+M3 file: caught (test_candidate_ladder_hand) (2 s)
+M4 identity: caught (test_remark_r_identity) (3 s)
+M4 coverage: caught (test_remark_r_coverage) (3 s)
+M4 file: caught (test_remark_r_identity) (14 s)
+M5 identity: caught (test_remark_r_identity) (4 s)
+M5 coverage: caught (test_remark_r_coverage) (4 s)
+M5 file: caught (test_remark_r_identity) (16 s)
+M6 identity: missed (46 s)
+M6 coverage: caught (test_remark_r_coverage) (23 s)
+M6 file: caught (test_remark_r_coverage) (78 s)
+M7 identity: missed (43 s)
+M7 coverage: caught (test_remark_r_coverage) (21 s)
+M7 file: caught (test_remark_r_coverage) (74 s)
+M8 identity: caught (test_remark_r_identity) (8 s)
+M8 coverage: caught (test_remark_r_coverage) (3 s)
+M8 file: caught (test_candidate_ladder_hand) (2 s)
+M10 identity: caught (test_remark_r_identity) (3 s)
+M10 coverage: caught (test_remark_r_coverage) (3 s)
+M10 file: caught (test_remark_r_identity) (14 s)
+M11 identity: missed (43 s)
+M11 coverage: caught (test_remark_r_coverage) (22 s)
+M11 file: caught (test_remark_r_coverage) (72 s)
+M12 identity: missed (43 s)
+M12 coverage: caught (test_remark_r_coverage) (3 s)
+M12 file: caught (test_candidate_ladder_hand) (2 s)
+M14 identity: missed (43 s)
+M14 coverage: caught (test_remark_r_coverage) (22 s)
+M14 file: caught (test_remark_r_coverage) (75 s)
+M15 identity: caught (test_remark_r_identity) (8 s)
+M15 coverage: caught (test_remark_r_coverage) (3 s)
+M15 file: caught (test_remark_r_identity) (18 s)
+M16 identity: caught (test_remark_r_identity) (36 s)
+M16 coverage: caught (test_remark_r_coverage) (4 s)
+M16 file: caught (test_remark_r_identity) (46 s)
+
+| mutation | what it changes | test_remark_r_identity | test_remark_r_coverage | Remark R(f) check | whole file | why test_remark_r_identity misses it |
+|---|---|---|---|---|---|---|
+| M1 | R2: a dropped action's result carries the reason 'guard_x', not 'guard' | missed | caught (test_remark_r_coverage) | caught | caught (test_remark_r_coverage) | no inner policy of its grid reads a result's reason |
+| M2 | R2: the remapped results are not sorted by index | missed | caught (test_remark_r_coverage) | caught | caught (test_remark_r_coverage) | no inner policy of its grid depends on the order of the results |
+| M3 | R1: the candidates in the order E, P0, P1..., K0 | caught (test_remark_r_identity) | caught (test_remark_r_coverage) | caught | caught (test_candidate_ladder_hand) |  |
+| M4 | R3 (iv): A_E(t)'s T0g evaluation committed, not the executed candidate's | caught (test_remark_r_identity) | caught (test_remark_r_coverage) | caught | caught (test_remark_r_identity) |  |
+| M5 | R3 (ii): the allowance read before SafeExpert.step | caught (test_remark_r_identity) | caught (test_remark_r_coverage) | caught | caught (test_remark_r_identity) |  |
+| M6 | R3, fast filter: replicas that the executed list unloads stay admissible | missed | caught (test_remark_r_coverage) | caught | caught (test_remark_r_coverage) | no inner policy of its grid names, in on_fast, a replica that its executed list unloaded |
+| M7 | R3, on_fast: FastObs.results reach the inner policy without the remap | missed | caught (test_remark_r_coverage) | caught | caught (test_remark_r_coverage) | its only inner policy with on_fast (_FastInner) ignores FastObs.results |
+| M8 | R1: K0 with new Release objects instead of E's own first Releases | caught (test_remark_r_identity) | caught (test_remark_r_coverage) | caught | caught (test_candidate_ladder_hand) |  |
+| M10 | R2: a dropped action's result carries ok True | caught (test_remark_r_identity) | caught (test_remark_r_coverage) | caught | caught (test_remark_r_identity) |  |
+| M11 | R3 (iv): the remap state kept after an abort | missed | caught (test_remark_r_coverage) | caught | caught (test_remark_r_coverage) | no inner policy with on_fast aborts right after a projected slot |
+| M12 | R1: P1's floor(n_b / 4) rung removed | missed | caught (test_remark_r_coverage) | caught | caught (test_candidate_ladder_hand) | its random inner policies (almost) never issue 8 Buys in one list |
+| M14 | report: dropped fast actions not counted (dropped_fast) | missed | caught (test_remark_r_coverage) | caught | caught (test_remark_r_coverage) | no fast action is dropped |
+| M15 | report: guard Releases not counted (projection['guard_releases']) | caught (test_remark_r_identity) | caught (test_remark_r_coverage) | caught | caught (test_remark_r_identity) |  |
+| M16 | allowance 'lb': B(t) one slot stale | caught (test_remark_r_identity) | caught (test_remark_r_coverage) | caught | caught (test_remark_r_identity) |  |
+
+caught: test_remark_r_identity 7 of 14, test_remark_r_coverage 14 of 14, either 14 of 14, whole file 14 of 14
+unmutated copy: identity 47 s, coverage 31 s, file 120 s
+wall time 1221 s
+OK: every mutation is caught by the Remark R(f) check and by the whole file

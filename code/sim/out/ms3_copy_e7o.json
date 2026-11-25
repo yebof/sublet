@@ -1,0 +1,110 @@
+{
+ "check": "copy",
+ "exp": "e7o",
+ "pass": true,
+ "checks": {
+  "same_file_list": true,
+  "same_sha256": true,
+  "no_symlinks": true,
+  "json_readable": true,
+  "revisions": true,
+  "revisions_recorded": true,
+  "manifest_revision": true,
+  "summary_ok": true,
+  "no_running_records": true,
+  "record_statuses_known": true,
+  "run_log_done": true
+ },
+ "copy": "/work/wt_x2copy/code/sim/out/e7o",
+ "clone": "/work/ms7_runs",
+ "clone_out": "/work/ms7_runs/code/sim/out/e7o",
+ "clone_commit": "44d1b4e42b5be44503039b1b5d6bfba8e32930ff",
+ "parts": [
+  "fwd",
+  "rev"
+ ],
+ "tree_sha256": "bb4299e5ab778d44e7e77b0519b271078174a366eb75d073c5233497cd3bfd78",
+ "tree_sha256_versioned": "a45314c192f7ca25baa35e5f057acce55f1dd7c34931a2e4fdb196551aec232f",
+ "n_files_copy": 3867,
+ "n_files_clone": 3867,
+ "n_files_compared": 3867,
+ "n_only_in_copy": 0,
+ "only_in_copy": [],
+ "n_only_in_clone": 0,
+ "only_in_clone": [],
+ "n_sha256_mismatch": 0,
+ "sha256_mismatch": [],
+ "n_symlinks": 0,
+ "symlinks": [],
+ "n_partial": 0,
+ "n_json": 1929,
+ "revisions_found": {
+  "44d1b4e42b5be44503039b1b5d6bfba8e32930ff": 1929
+ },
+ "n_revision_differs": 0,
+ "revision_differs": [],
+ "n_no_revision": 0,
+ "no_revision_by_kind": {},
+ "n_no_revision_unexpected": 0,
+ "no_revision_unexpected": [],
+ "no_revision_allowed_under": [],
+ "n_json_unreadable": 0,
+ "json_unreadable": [],
+ "manifest_git_revision": {
+  "fwd": "44d1b4e42b5be44503039b1b5d6bfba8e32930ff",
+  "rev": "44d1b4e42b5be44503039b1b5d6bfba8e32930ff"
+ },
+ "summaries": {
+  "fwd": {
+   "file": "fwd/summary.json",
+   "exists": true,
+   "object": true,
+   "summary_record": "ok",
+   "manifest_record": "ok",
+   "ok": true
+  },
+  "rev": {
+   "file": "rev/summary.json",
+   "exists": true,
+   "object": true,
+   "summary_record": "ok",
+   "manifest_record": "ok",
+   "ok": true
+  }
+ },
+ "records_by_status": {
+  "ok": 964
+ },
+ "records_by_part": {
+  "fwd": {
+   "ok": 482
+  },
+  "rev": {
+   "ok": 482
+  }
+ },
+ "n_running": 0,
+ "running_records": [],
+ "n_unknown_status": 0,
+ "unknown_status_records": [],
+ "run_logs": {
+  "fwd": {
+   "file": "fwd/run_e7o.log",
+   "exists": true,
+   "last_line": "[run_e7o] done 2026-11-09T11:33:45+08:00",
+   "done": true
+  },
+  "rev": {
+   "file": "rev/run_e7o.log",
+   "exists": true,
+   "last_line": "[run_e7o] done 2026-11-09T15:08:23+08:00",
+   "done": true
+  }
+ },
+ "lists_truncated_at": 200,
+ "checked_by": {
+  "module": "sublet.experiments.ms3_common",
+  "git_revision": "bba5f4c50e9664eccc7fc75da3764573c6212db1"
+ },
+ "time": "2026-11-09T15:09:47"
+}

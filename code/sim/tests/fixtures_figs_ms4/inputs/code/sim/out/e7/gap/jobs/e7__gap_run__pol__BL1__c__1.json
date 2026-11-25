@@ -1,0 +1,55 @@
+{
+ "job": "e7:gap_run:pol=BL1:c=1",
+ "exp": "e7",
+ "kind": "pool",
+ "params": {
+  "part": "gap",
+  "kind": "gap_run",
+  "tag": "BL1",
+  "c": 1,
+  "policy_seeds": [
+   0
+  ],
+  "horizon_min": 120
+ },
+ "status": "ok",
+ "started": "2026-10-26T14:31:43",
+ "pid": 961631,
+ "argv": [
+  "/work/ms4wt/u25/code/sim/sublet/experiments/e7.py",
+  "--job",
+  "e7:gap_run:pol=BL1:c=1",
+  "--out",
+  "/work/ms4u/u25scratch/fixture_roots/e7/out/e7/gap"
+ ],
+ "slots": [
+  "slot0"
+ ],
+ "milp_limit_s": null,
+ "git_revision": "939847ca5925ce069d6df9089fe3a3d1d3207bb7",
+ "versions": {
+  "python": "3.12.3",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "sublet": "0.1.0"
+ },
+ "runs": 1,
+ "errors": [],
+ "n_errors": 0,
+ "outputs": [
+  "runs/e7__gap_run__pol__BL1__c__1.json"
+ ],
+ "result": {
+  "instance_hash": "a0f86222ff0901fd82b63ed7a7e186153147b5fcc708d93369ccadc3e1790b07",
+  "totals": [
+   911.013216970428
+  ],
+  "schedule_hashes": [
+   "ff9a5316fc5801390393dafd58273884acde7763b60e1949ddfcda4bdefd762c"
+  ]
+ },
+ "wall_s": 1.4501527801621705,
+ "peak_rss_kb": 147780,
+ "peak_rss_mb": 144.31640625,
+ "finished": "2026-10-26T14:31:44"
+}

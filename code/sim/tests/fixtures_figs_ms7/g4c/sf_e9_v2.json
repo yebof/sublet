@@ -1,0 +1,1235 @@
+{
+ "figure": "sf_e9_v2",
+ "size_in": [
+  7.1399,
+  2.2
+ ],
+ "sources": [
+  "code/sim/out/e9v2/analysis.json",
+  "code/sim/out/e9v2/summary.json"
+ ],
+ "data": {
+  "panels": {
+   "a": {
+    "points": [
+     "e7f_V2_SML"
+    ],
+    "x": [
+     147.0
+    ],
+    "series": {
+     "Sublet": {
+      "median": [
+       0.07952335756272078
+      ],
+      "lo": [
+       0.07952335756272078
+      ],
+      "hi": [
+       0.07952335756272078
+      ]
+     },
+     "A9": {
+      "median": [
+       0.0008525270580624541
+      ],
+      "lo": [
+       0.0008525270580624541
+      ],
+      "hi": [
+       0.0008525270580624541
+      ]
+     }
+    }
+   },
+   "b": {
+    "points": [
+     "e7r_V1_SML",
+     "e7r_V16_SML"
+    ],
+    "x": [
+     84.0,
+     1005.0
+    ],
+    "series": {
+     "Sublet": {
+      "median": [
+       0.023218688069997977,
+       0.5866683884329783
+      ],
+      "lo": [
+       0.023218688069997977,
+       0.5866683884329783
+      ],
+      "hi": [
+       0.023218688069997977,
+       0.5866683884329783
+      ]
+     },
+     "A9": {
+      "median": [
+       0.00043150660349056125,
+       0.15157897882939628
+      ],
+      "lo": [
+       0.00043150660349056125,
+       0.15157897882939628
+      ],
+      "hi": [
+       0.00043150660349056125,
+       0.15157897882939628
+      ]
+     }
+    }
+   },
+   "c": {
+    "points": [
+     "e7f_V2_SML"
+    ],
+    "x": [
+     147.0
+    ],
+    "parts": {
+     "guard": [
+      0.07359274280800794
+     ],
+     "safe": [
+      0.07014021343396355
+     ],
+     "test": [
+      0.0020137978717684746
+     ],
+     "projection": [
+      0.0011933689238503575
+     ],
+     "lb": [
+      0.00018125149654224515
+     ],
+     "other": [
+      6.411108188331127e-05
+     ]
+    }
+   }
+  },
+  "slot_s": 300.0,
+  "alignments": [
+   1
+  ],
+  "tables": {
+   "overhead": [
+    {
+     "point": "e7f_V1_SML",
+     "menu": "full",
+     "V": 1,
+     "llms": "SML",
+     "n_sites": null,
+     "n_llms": null,
+     "n_contracts": null,
+     "sites_x_llms": null,
+     "n_units": null,
+     "n_alignments": 0,
+     "act": {
+      "Sublet": {
+       "median": null,
+       "lo": null,
+       "hi": null
+      },
+      "A9": {
+       "median": null,
+       "lo": null,
+       "hi": null
+      }
+     },
+     "overhead": {
+      "median": null,
+      "lo": null,
+      "hi": null
+     },
+     "ratio_median": null,
+     "loops_s_per_h": {
+      "Sublet": null,
+      "A9": null
+     },
+     "peak_rss_mb": {
+      "Sublet": null,
+      "A9": null
+     }
+    },
+    {
+     "point": "e7f_V2_SML",
+     "menu": "full",
+     "V": 2,
+     "llms": "SML",
+     "n_sites": 49,
+     "n_llms": 3,
+     "n_contracts": 21,
+     "sites_x_llms": 147,
+     "n_units": 646,
+     "n_alignments": 1,
+     "act": {
+      "Sublet": {
+       "median": 0.07952335756272078,
+       "lo": 0.07952335756272078,
+       "hi": 0.07952335756272078
+      },
+      "A9": {
+       "median": 0.0008525270580624541,
+       "lo": 0.0008525270580624541,
+       "hi": 0.0008525270580624541
+      }
+     },
+     "overhead": {
+      "median": 0.07867083050465833,
+      "lo": 0.07867083050465833,
+      "hi": 0.07867083050465833
+     },
+     "ratio_median": 93.2795702032663,
+     "loops_s_per_h": {
+      "Sublet": 1.0151252876967192,
+      "A9": 0.08190935850143433
+     },
+     "peak_rss_mb": {
+      "Sublet": 145.390625,
+      "A9": 144.03125
+     }
+    },
+    {
+     "point": "e7f_V4_SML",
+     "menu": "full",
+     "V": 4,
+     "llms": "SML",
+     "n_sites": null,
+     "n_llms": null,
+     "n_contracts": null,
+     "sites_x_llms": null,
+     "n_units": null,
+     "n_alignments": 0,
+     "act": {
+      "Sublet": {
+       "median": null,
+       "lo": null,
+       "hi": null
+      },
+      "A9": {
+       "median": null,
+       "lo": null,
+       "hi": null
+      }
+     },
+     "overhead": {
+      "median": null,
+      "lo": null,
+      "hi": null
+     },
+     "ratio_median": null,
+     "loops_s_per_h": {
+      "Sublet": null,
+      "A9": null
+     },
+     "peak_rss_mb": {
+      "Sublet": null,
+      "A9": null
+     }
+    },
+    {
+     "point": "e7f_V8_SML",
+     "menu": "full",
+     "V": 8,
+     "llms": "SML",
+     "n_sites": null,
+     "n_llms": null,
+     "n_contracts": null,
+     "sites_x_llms": null,
+     "n_units": null,
+     "n_alignments": 0,
+     "act": {
+      "Sublet": {
+       "median": null,
+       "lo": null,
+       "hi": null
+      },
+      "A9": {
+       "median": null,
+       "lo": null,
+       "hi": null
+      }
+     },
+     "overhead": {
+      "median": null,
+      "lo": null,
+      "hi": null
+     },
+     "ratio_median": null,
+     "loops_s_per_h": {
+      "Sublet": null,
+      "A9": null
+     },
+     "peak_rss_mb": {
+      "Sublet": null,
+      "A9": null
+     }
+    },
+    {
+     "point": "e7f_V8_ML",
+     "menu": "full",
+     "V": 8,
+     "llms": "ML",
+     "n_sites": null,
+     "n_llms": null,
+     "n_contracts": null,
+     "sites_x_llms": null,
+     "n_units": null,
+     "n_alignments": 0,
+     "act": {
+      "Sublet": {
+       "median": null,
+       "lo": null,
+       "hi": null
+      },
+      "A9": {
+       "median": null,
+       "lo": null,
+       "hi": null
+      }
+     },
+     "overhead": {
+      "median": null,
+      "lo": null,
+      "hi": null
+     },
+     "ratio_median": null,
+     "loops_s_per_h": {
+      "Sublet": null,
+      "A9": null
+     },
+     "peak_rss_mb": {
+      "Sublet": null,
+      "A9": null
+     }
+    },
+    {
+     "point": "e7f_V8_S",
+     "menu": "full",
+     "V": 8,
+     "llms": "S",
+     "n_sites": 169,
+     "n_llms": 1,
+     "n_contracts": 21,
+     "sites_x_llms": 169,
+     "n_units": 5415,
+     "n_alignments": 1,
+     "act": {
+      "Sublet": {
+       "median": 0.5761690907529555,
+       "lo": 0.5761690907529555,
+       "hi": 0.5761690907529555
+      },
+      "A9": {
+       "median": 0.13969324278878048,
+       "lo": 0.13969324278878048,
+       "hi": 0.13969324278878048
+      }
+     },
+     "overhead": {
+      "median": 0.43647584796417505,
+      "lo": 0.43647584796417505,
+      "hi": 0.43647584796417505
+     },
+     "ratio_median": 4.124530859550143,
+     "loops_s_per_h": {
+      "Sublet": 6.987943740328774,
+      "A9": 1.7488082137424499
+     },
+     "peak_rss_mb": {
+      "Sublet": 145.234375,
+      "A9": 145.30859375
+     }
+    },
+    {
+     "point": "e7f_V16_SML",
+     "menu": "full",
+     "V": 16,
+     "llms": "SML",
+     "n_sites": null,
+     "n_llms": null,
+     "n_contracts": null,
+     "sites_x_llms": null,
+     "n_units": null,
+     "n_alignments": 0,
+     "act": {
+      "Sublet": {
+       "median": null,
+       "lo": null,
+       "hi": null
+      },
+      "A9": {
+       "median": null,
+       "lo": null,
+       "hi": null
+      }
+     },
+     "overhead": {
+      "median": null,
+      "lo": null,
+      "hi": null
+     },
+     "ratio_median": null,
+     "loops_s_per_h": {
+      "Sublet": null,
+      "A9": null
+     },
+     "peak_rss_mb": {
+      "Sublet": null,
+      "A9": null
+     }
+    },
+    {
+     "point": "e7f_V32_SML",
+     "menu": "full",
+     "V": 32,
+     "llms": "SML",
+     "n_sites": null,
+     "n_llms": null,
+     "n_contracts": null,
+     "sites_x_llms": null,
+     "n_units": null,
+     "n_alignments": 0,
+     "act": {
+      "Sublet": {
+       "median": null,
+       "lo": null,
+       "hi": null
+      },
+      "A9": {
+       "median": null,
+       "lo": null,
+       "hi": null
+      }
+     },
+     "overhead": {
+      "median": null,
+      "lo": null,
+      "hi": null
+     },
+     "ratio_median": null,
+     "loops_s_per_h": {
+      "Sublet": null,
+      "A9": null
+     },
+     "peak_rss_mb": {
+      "Sublet": null,
+      "A9": null
+     }
+    },
+    {
+     "point": "e7f_V64_SML",
+     "menu": "full",
+     "V": 64,
+     "llms": "SML",
+     "n_sites": null,
+     "n_llms": null,
+     "n_contracts": null,
+     "sites_x_llms": null,
+     "n_units": null,
+     "n_alignments": 0,
+     "act": {
+      "Sublet": {
+       "median": null,
+       "lo": null,
+       "hi": null
+      },
+      "A9": {
+       "median": null,
+       "lo": null,
+       "hi": null
+      }
+     },
+     "overhead": {
+      "median": null,
+      "lo": null,
+      "hi": null
+     },
+     "ratio_median": null,
+     "loops_s_per_h": {
+      "Sublet": null,
+      "A9": null
+     },
+     "peak_rss_mb": {
+      "Sublet": null,
+      "A9": null
+     }
+    },
+    {
+     "point": "e7r_V1_SML",
+     "menu": "reduced",
+     "V": 1,
+     "llms": "SML",
+     "n_sites": 28,
+     "n_llms": 3,
+     "n_contracts": 4,
+     "sites_x_llms": 84,
+     "n_units": 342,
+     "n_alignments": 1,
+     "act": {
+      "Sublet": {
+       "median": 0.023218688069997977,
+       "lo": 0.023218688069997977,
+       "hi": 0.023218688069997977
+      },
+      "A9": {
+       "median": 0.00043150660349056125,
+       "lo": 0.00043150660349056125,
+       "hi": 0.00043150660349056125
+      }
+     },
+     "overhead": {
+      "median": 0.022787181466507416,
+      "lo": 0.022787181466507416,
+      "hi": 0.022787181466507416
+     },
+     "ratio_median": 53.80841887974922,
+     "loops_s_per_h": {
+      "Sublet": 0.34150279755704105,
+      "A9": 0.07334967679344118
+     },
+     "peak_rss_mb": {
+      "Sublet": 144.89453125,
+      "A9": 144.58203125
+     }
+    },
+    {
+     "point": "e7r_V2_SML",
+     "menu": "reduced",
+     "V": 2,
+     "llms": "SML",
+     "n_sites": null,
+     "n_llms": null,
+     "n_contracts": null,
+     "sites_x_llms": null,
+     "n_units": null,
+     "n_alignments": 0,
+     "act": {
+      "Sublet": {
+       "median": null,
+       "lo": null,
+       "hi": null
+      },
+      "A9": {
+       "median": null,
+       "lo": null,
+       "hi": null
+      }
+     },
+     "overhead": {
+      "median": null,
+      "lo": null,
+      "hi": null
+     },
+     "ratio_median": null,
+     "loops_s_per_h": {
+      "Sublet": null,
+      "A9": null
+     },
+     "peak_rss_mb": {
+      "Sublet": null,
+      "A9": null
+     }
+    },
+    {
+     "point": "e7r_V4_SML",
+     "menu": "reduced",
+     "V": 4,
+     "llms": "SML",
+     "n_sites": null,
+     "n_llms": null,
+     "n_contracts": null,
+     "sites_x_llms": null,
+     "n_units": null,
+     "n_alignments": 0,
+     "act": {
+      "Sublet": {
+       "median": null,
+       "lo": null,
+       "hi": null
+      },
+      "A9": {
+       "median": null,
+       "lo": null,
+       "hi": null
+      }
+     },
+     "overhead": {
+      "median": null,
+      "lo": null,
+      "hi": null
+     },
+     "ratio_median": null,
+     "loops_s_per_h": {
+      "Sublet": null,
+      "A9": null
+     },
+     "peak_rss_mb": {
+      "Sublet": null,
+      "A9": null
+     }
+    },
+    {
+     "point": "e7r_V8_SML",
+     "menu": "reduced",
+     "V": 8,
+     "llms": "SML",
+     "n_sites": null,
+     "n_llms": null,
+     "n_contracts": null,
+     "sites_x_llms": null,
+     "n_units": null,
+     "n_alignments": 0,
+     "act": {
+      "Sublet": {
+       "median": null,
+       "lo": null,
+       "hi": null
+      },
+      "A9": {
+       "median": null,
+       "lo": null,
+       "hi": null
+      }
+     },
+     "overhead": {
+      "median": null,
+      "lo": null,
+      "hi": null
+     },
+     "ratio_median": null,
+     "loops_s_per_h": {
+      "Sublet": null,
+      "A9": null
+     },
+     "peak_rss_mb": {
+      "Sublet": null,
+      "A9": null
+     }
+    },
+    {
+     "point": "e7r_V16_SML",
+     "menu": "reduced",
+     "V": 16,
+     "llms": "SML",
+     "n_sites": 335,
+     "n_llms": 3,
+     "n_contracts": 4,
+     "sites_x_llms": 1005,
+     "n_units": 4794,
+     "n_alignments": 1,
+     "act": {
+      "Sublet": {
+       "median": 0.5866683884329783,
+       "lo": 0.5866683884329783,
+       "hi": 0.5866683884329783
+      },
+      "A9": {
+       "median": 0.15157897882939628,
+       "lo": 0.15157897882939628,
+       "hi": 0.15157897882939628
+      }
+     },
+     "overhead": {
+      "median": 0.435089409603582,
+      "lo": 0.435089409603582,
+      "hi": 0.435089409603582
+     },
+     "ratio_median": 3.870380925928256,
+     "loops_s_per_h": {
+      "Sublet": 7.139361317502335,
+      "A9": 1.95066685997881
+     },
+     "peak_rss_mb": {
+      "Sublet": 144.234375,
+      "A9": 145.265625
+     }
+    },
+    {
+     "point": "e7r_V32_SML",
+     "menu": "reduced",
+     "V": 32,
+     "llms": "SML",
+     "n_sites": null,
+     "n_llms": null,
+     "n_contracts": null,
+     "sites_x_llms": null,
+     "n_units": null,
+     "n_alignments": 0,
+     "act": {
+      "Sublet": {
+       "median": null,
+       "lo": null,
+       "hi": null
+      },
+      "A9": {
+       "median": null,
+       "lo": null,
+       "hi": null
+      }
+     },
+     "overhead": {
+      "median": null,
+      "lo": null,
+      "hi": null
+     },
+     "ratio_median": null,
+     "loops_s_per_h": {
+      "Sublet": null,
+      "A9": null
+     },
+     "peak_rss_mb": {
+      "Sublet": null,
+      "A9": null
+     }
+    },
+    {
+     "point": "e7r_V64_SML",
+     "menu": "reduced",
+     "V": 64,
+     "llms": "SML",
+     "n_sites": null,
+     "n_llms": null,
+     "n_contracts": null,
+     "sites_x_llms": null,
+     "n_units": null,
+     "n_alignments": 0,
+     "act": {
+      "Sublet": {
+       "median": null,
+       "lo": null,
+       "hi": null
+      },
+      "A9": {
+       "median": null,
+       "lo": null,
+       "hi": null
+      }
+     },
+     "overhead": {
+      "median": null,
+      "lo": null,
+      "hi": null
+     },
+     "ratio_median": null,
+     "loops_s_per_h": {
+      "Sublet": null,
+      "A9": null
+     },
+     "peak_rss_mb": {
+      "Sublet": null,
+      "A9": null
+     }
+    }
+   ],
+   "split": [
+    {
+     "point": "e7f_V2_SML",
+     "menu": "full",
+     "V": 2,
+     "llms": "SML",
+     "sites_x_llms": 147,
+     "alignment": 1,
+     "identical": true,
+     "per_slot_mean_s": {
+      "act": 0.07491439937924345,
+      "inner_act": 0.0013216565712355077,
+      "guard": 0.07359274280800794,
+      "safe": 0.07014021343396355,
+      "lb": 0.00018125149654224515,
+      "test": 0.0020137978717684746,
+      "projection": 0.0011933689238503575,
+      "other": 6.411108188331127e-05
+     }
+    },
+    {
+     "point": "e7f_V8_S",
+     "menu": "full",
+     "V": 8,
+     "llms": "S",
+     "sites_x_llms": 169,
+     "alignment": 1,
+     "identical": true,
+     "per_slot_mean_s": {
+      "act": 0.5413045442740744,
+      "inner_act": 0.13962959412795803,
+      "guard": 0.4016749501461163,
+      "safe": 0.3979911956315239,
+      "lb": 9.560598603760202e-05,
+      "test": 0.0034025902471815548,
+      "projection": 0.00010625985062991579,
+      "other": 7.929843074331681e-05
+     }
+    },
+    {
+     "point": "e7r_V1_SML",
+     "menu": "reduced",
+     "V": 1,
+     "llms": "SML",
+     "sites_x_llms": 84,
+     "alignment": 1,
+     "identical": true,
+     "per_slot_mean_s": {
+      "act": 0.022956100370114047,
+      "inner_act": 0.00045933180566256243,
+      "guard": 0.022496768564451486,
+      "safe": 0.02010765524270634,
+      "lb": 0.00016838960194339356,
+      "test": 0.0017145411693491042,
+      "projection": 0.0004549948498606682,
+      "other": 5.118770059198141e-05
+     }
+    },
+    {
+     "point": "e7r_V16_SML",
+     "menu": "reduced",
+     "V": 16,
+     "llms": "SML",
+     "sites_x_llms": 1005,
+     "alignment": 1,
+     "identical": true,
+     "per_slot_mean_s": {
+      "act": 0.5793065059891281,
+      "inner_act": 0.2700187528001455,
+      "guard": 0.3092877531889826,
+      "safe": 0.3013728966858859,
+      "lb": 0.00019279263991241655,
+      "test": 0.004978281892059992,
+      "projection": 0.002619540706897775,
+      "other": 0.00012424126422653595
+     }
+    }
+   ],
+   "e9v2_runs": {
+    "file": "e9v2_runs.csv",
+    "columns": [
+     "point",
+     "menu",
+     "V",
+     "llm_set",
+     "sites_x_llms",
+     "policy",
+     "tag",
+     "alignment",
+     "act_s_per_slot",
+     "slow_step_s_per_slot",
+     "slow_loop_s_per_h",
+     "fast_loop_s_per_h",
+     "loops_s_per_h",
+     "peak_rss_mb",
+     "projected_slots",
+     "split_identical",
+     "split_act_s_per_slot",
+     "split_inner_act_s_per_slot",
+     "split_guard_s_per_slot",
+     "split_safe_s_per_slot",
+     "split_lb_s_per_slot",
+     "split_test_s_per_slot",
+     "split_projection_s_per_slot",
+     "split_other_s_per_slot"
+    ],
+    "rows": [
+     [
+      "e7f_V2_SML",
+      "full",
+      2,
+      "SML",
+      147,
+      "Sublet",
+      "Sublet",
+      1,
+      0.07952335756272078,
+      0.07976967133193587,
+      0.9572360559832305,
+      0.0578892317134887,
+      1.0151252876967192,
+      145.390625,
+      5,
+      true,
+      0.07491439937924345,
+      0.0013216565712355077,
+      0.07359274280800794,
+      0.07014021343396355,
+      0.00018125149654224515,
+      0.0020137978717684746,
+      0.0011933689238503575,
+      6.411108188331127e-05
+     ],
+     [
+      "e7f_V2_SML",
+      "full",
+      2,
+      "SML",
+      147,
+      "Critical-ratio renting",
+      "A9",
+      1,
+      0.0008525270580624541,
+      0.001066804436656336,
+      0.012801653239876032,
+      0.0691077052615583,
+      0.08190935850143433,
+      144.03125,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     [
+      "e7f_V8_S",
+      "full",
+      8,
+      "S",
+      169,
+      "Sublet",
+      "Sublet",
+      1,
+      0.5761690907529555,
+      0.5777845959140299,
+      6.933415150968358,
+      0.054528589360415936,
+      6.987943740328774,
+      145.234375,
+      0,
+      true,
+      0.5413045442740744,
+      0.13962959412795803,
+      0.4016749501461163,
+      0.3979911956315239,
+      9.560598603760202e-05,
+      0.0034025902471815548,
+      0.00010625985062991579,
+      7.929843074331681e-05
+     ],
+     [
+      "e7f_V8_S",
+      "full",
+      8,
+      "S",
+      169,
+      "Critical-ratio renting",
+      "A9",
+      1,
+      0.13969324278878048,
+      0.14119861059589311,
+      1.6943833271507174,
+      0.0544248865917325,
+      1.7488082137424499,
+      145.30859375,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     [
+      "e7r_V1_SML",
+      "reduced",
+      1,
+      "SML",
+      84,
+      "Sublet",
+      "Sublet",
+      1,
+      0.023218688069997977,
+      0.02336662741921221,
+      0.28039952903054655,
+      0.0611032685264945,
+      0.34150279755704105,
+      144.89453125,
+      3,
+      true,
+      0.022956100370114047,
+      0.00045933180566256243,
+      0.022496768564451486,
+      0.02010765524270634,
+      0.00016838960194339356,
+      0.0017145411693491042,
+      0.0004549948498606682,
+      5.118770059198141e-05
+     ],
+     [
+      "e7r_V1_SML",
+      "reduced",
+      1,
+      "SML",
+      84,
+      "Critical-ratio renting",
+      "A9",
+      1,
+      0.00043150660349056125,
+      0.0005777806315260628,
+      0.006933367578312755,
+      0.06641630921512842,
+      0.07334967679344118,
+      144.58203125,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     [
+      "e7r_V16_SML",
+      "reduced",
+      16,
+      "SML",
+      1005,
+      "Sublet",
+      "Sublet",
+      1,
+      0.5866683884329783,
+      0.5878733602585271,
+      7.054480323102325,
+      0.08488099440000951,
+      7.139361317502335,
+      144.234375,
+      4,
+      true,
+      0.5793065059891281,
+      0.2700187528001455,
+      0.3092877531889826,
+      0.3013728966858859,
+      0.00019279263991241655,
+      0.004978281892059992,
+      0.002619540706897775,
+      0.00012424126422653595
+     ],
+     [
+      "e7r_V16_SML",
+      "reduced",
+      16,
+      "SML",
+      1005,
+      "Critical-ratio renting",
+      "A9",
+      1,
+      0.15157897882939628,
+      0.1529989709573177,
+      1.8359876514878124,
+      0.11467920849099755,
+      1.95066685997881,
+      145.265625,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    ],
+    "n_rows": 8,
+    "sha256": "5d7cbebe744db7cd5361e3e8703cf3d12d80a46aa732430383757e21922d0930"
+   }
+  },
+  "headline": {
+   "largest_point_by_menu": {
+    "full": {
+     "point": "e7f_V64_SML",
+     "sites_x_llms": null,
+     "policies": {
+      "Sublet": {
+       "loops_s_per_h": null,
+       "real_time_over_loops": null,
+       "peak_rss_mb": null
+      },
+      "A9": {
+       "loops_s_per_h": null,
+       "real_time_over_loops": null,
+       "peak_rss_mb": null
+      }
+     },
+     "act_overhead_s_per_slot_median": null,
+     "act_ratio_median": null
+    },
+    "reduced": {
+     "point": "e7r_V64_SML",
+     "sites_x_llms": null,
+     "policies": {
+      "Sublet": {
+       "loops_s_per_h": null,
+       "real_time_over_loops": null,
+       "peak_rss_mb": null
+      },
+      "A9": {
+       "loops_s_per_h": null,
+       "real_time_over_loops": null,
+       "peak_rss_mb": null
+      }
+     },
+     "act_overhead_s_per_slot_median": null,
+     "act_ratio_median": null
+    }
+   },
+   "act_overhead_s_per_slot_max": 0.43647584796417505,
+   "act_overhead_s_per_slot_max_point": "e7f_V8_S",
+   "act_ratio_max": 93.2795702032663,
+   "act_ratio_max_point": "e7f_V2_SML",
+   "peak_rss_mb_max": 145.390625,
+   "peak_rss_mb_max_at": "e7f_V2_SML:Sublet",
+   "cap_mb": 3072.0,
+   "n_over_cap": 0,
+   "n_runs": 8,
+   "e9v2_1_status": "missing"
+  },
+  "meta": {
+   "reduced": true,
+   "git_revision": {
+    "analysis": "c1f4dc18be025cfeb540f8856b8e4a7782c9ea90",
+    "summary": "56b847bec39b437ed5074dff124ffb69416e7f2b"
+   },
+   "analysis": {
+    "exp": "e9v2",
+    "git_revision": "c1f4dc18be025cfeb540f8856b8e4a7782c9ea90",
+    "analysis_sha256": "6d9772304fe30b20d0d500c2c56b867ccecc97dc99e672c63bdfcd66912e4a2d",
+    "registration": {
+     "path": "design/ms7/registration.md",
+     "registered_sha256": "6d9772304fe30b20d0d500c2c56b867ccecc97dc99e672c63bdfcd66912e4a2d",
+     "matches": true
+    },
+    "registered_full_inputs": false,
+    "reduced": true,
+    "inputs": [
+     {
+      "file": "out/e9v2/summary.json",
+      "sha256": "ae261392d88562a348bfd19d78700d58a490497cb4438a942c1ae1fd081f0802",
+      "git_revision": "56b847bec39b437ed5074dff124ffb69416e7f2b",
+      "reduced": true,
+      "gate_ok": false,
+      "gate_enforced": false
+     }
+    ]
+   },
+   "inputs_sha256": {
+    "code/sim/out/e9v2/summary.json": "ae261392d88562a348bfd19d78700d58a490497cb4438a942c1ae1fd081f0802",
+    "code/sim/out/e9v2/analysis.json": "086ea84ab5a00e4ca10195a0e3c7bd03b16045aec85dde198c9a64b9caa20c68"
+   },
+   "horizon_min": 120
+  },
+  "labels": {
+   "x": "Sites \u00d7 LLMs",
+   "y": "Time per slot (ms)",
+   "c_y": "Time per slot (ms)",
+   "titles": {
+    "a": "Full menu",
+    "b": "Reduced menu",
+    "c": "Guard's parts, full menu"
+   },
+   "parts": {
+    "guard": "Guard, total",
+    "safe": "Safe expert",
+    "test": "Test",
+    "projection": "Projection",
+    "lb": "Lower bound",
+    "other": "Rest"
+   },
+   "series": {
+    "Sublet": "Sublet",
+    "A9": "Critical-ratio renting"
+   },
+   "values": {
+    "n_alignments": 1,
+    "slot_s": 300.0,
+    "overhead_max_s": 0.43647584796417505,
+    "overhead_max_point": "e7f_V8_S",
+    "overhead_max_point_text": "the full menu at $V=8$ with LLM tiers S",
+    "sublet_act_max_s": 0.5866683884329783,
+    "sublet_act_max_share_of_slot": 0.0019555612947765944,
+    "act_ratio_max": 93.2795702032663,
+    "act_ratio_max_point": "e7f_V2_SML",
+    "peak_rss_mb_max": 145.390625,
+    "cap_mb": 3072.0,
+    "n_over_cap": 0,
+    "n_runs": 8,
+    "n_split_identical": 4,
+    "n_split": 4,
+    "largest_point_by_menu": {
+     "full": {
+      "point": "e7f_V64_SML",
+      "sites_x_llms": null,
+      "policies": {
+       "Sublet": {
+        "loops_s_per_h": null,
+        "real_time_over_loops": null,
+        "peak_rss_mb": null
+       },
+       "A9": {
+        "loops_s_per_h": null,
+        "real_time_over_loops": null,
+        "peak_rss_mb": null
+       }
+      },
+      "act_overhead_s_per_slot_median": null,
+      "act_ratio_median": null
+     },
+     "reduced": {
+      "point": "e7r_V64_SML",
+      "sites_x_llms": null,
+      "policies": {
+       "Sublet": {
+        "loops_s_per_h": null,
+        "real_time_over_loops": null,
+        "peak_rss_mb": null
+       },
+       "A9": {
+        "loops_s_per_h": null,
+        "real_time_over_loops": null,
+        "peak_rss_mb": null
+       }
+      },
+      "act_overhead_s_per_slot_median": null,
+      "act_ratio_median": null
+     }
+    }
+   },
+   "caption": "Time per slow-loop slot of Sublet and critical-ratio renting (its inner policy) against sites $\\times$ LLMs, each job alone on the host: (a) the full and (b) the reduced menu, the median over 1 alignment of a day with min--max bars; (c) the guard's time per slot on the full menu in one alignment, in total and by part: the safe expert's step, the online lower bound, the guard's test, the projection and the rest. A slow-loop slot is 300 s. The guard's overhead, Sublet's time minus critical-ratio renting's, is at most 436 ms per slot (median over the alignments, at the full menu at $V=8$ with LLM tiers S)."
+  },
+  "layout": {
+   "x_range": [
+    50.0,
+    2000.0
+   ],
+   "y_ab": [
+    0.43150660349056125,
+    586.6683884329783
+   ],
+   "y_c": [
+    0.06411108188331127,
+    73.59274280800794
+   ],
+   "c_parts": [
+    "guard",
+    "safe",
+    "test",
+    "projection",
+    "lb",
+    "other"
+   ],
+   "keys": "direct"
+  }
+ }
+}

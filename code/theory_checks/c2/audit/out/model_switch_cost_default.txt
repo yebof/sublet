@@ -1,0 +1,100 @@
+C2-SW at the default calibration (a5b_exposure_thresholds.json): alpha=0.398601 alpha_p=0.834965 phi=1.0; 2-alpha=1.601399; s0=1.6628 beta~; R_wait=4.4277 beta~; chi=0.9385
+units: beta~ = 1 (q = 1); default lambda = 1/(alpha+phi) = 0.7150; default switch bw = alpha_p/(alpha+phi) = 0.5970; solver scale beta_s = 0.992308 (s0 = 1.65 on the dt = 0.05 grid); grid step in beta~ = 0.0504
+sanity: formula vs a5b `H_star_mu_over_lambda.switch_beta_tilde` (mu/beta~ in 0.2/0.5/1/2): max |diff| = 0.0e+00 (in lambda)
+sanity: formula vs a5b `H_star_mu_over_lambda.switch_full_model_C2SW_conjecture` (mu/beta~ in 0.2/0.5/1/2): max |diff| = 0.0e+00 (in lambda)
+sanity: bw=beta, mu=2.0 beta~, lambda=0.7150 beta~, H=1.0 beta_s: det_game 1.724542 variant 1.724542 diff +0.0e+00
+sanity: bw=beta, mu=1.0 beta~, lambda=0.7150 beta~, H=0.5 beta_s: det_game 1.673566 variant 1.673566 diff +0.0e+00
+
+Columns: mu, lambda, bw in beta~ | formula H*/beta~, H*/lambda, reaction, regime | exact: H* bracket (H*_exact - grid, H*_exact] in beta~ and in lambda | agree = H*_exact is the grid point at or above the formula | exact CR one grid step below and at H*_exact | plan at H*_exact
+mu=0.20 lam=0.7150 bw=1.0000 [switch beta~ (Thm 4)]| formula 0.1663 = 0.233 lam, cold, sit-out | exact (0.1512, 0.2016] = (0.211, 0.282] lam | agree | CR 1.61142 / 1.60140 (2-a 1.60140) | ('r', 1.65) | solves 2
+mu=0.20 lam=0.7150 bw=0.8000 | formula 0.1663 = 0.233 lam, cold, sit-out | exact (0.1512, 0.2016] = (0.211, 0.282] lam | agree | CR 1.61142 / 1.60140 (2-a 1.60140) | ('r', 1.65) | solves 2
+mu=0.20 lam=0.7150 bw=0.6000 | formula 0.1663 = 0.233 lam, cold, sit-out | exact (0.1512, 0.2016] = (0.211, 0.282] lam | agree | CR 1.61142 / 1.60140 (2-a 1.60140) | ('r', 1.65) | solves 2
+mu=0.20 lam=0.7150 bw=0.5970 [default switch]| formula 0.1663 = 0.233 lam, cold, sit-out | exact (0.1512, 0.2016] = (0.211, 0.282] lam | agree | CR 1.61142 / 1.60140 (2-a 1.60140) | ('r', 1.65) | solves 2
+mu=0.20 lam=0.7150 bw=0.2000 | formula 0.1663 = 0.233 lam, cold, sit-out | exact (0.1512, 0.2016] = (0.211, 0.282] lam | agree | CR 1.61142 / 1.60140 (2-a 1.60140) | ('r', 1.65) | solves 2
+mu=0.50 lam=0.7150 bw=1.0000 [switch beta~ (Thm 4)]| formula 0.4157 = 0.581 lam, cold, sit-out | exact (0.4031, 0.4535] = (0.564, 0.634] lam | agree | CR 1.60873 / 1.60140 (2-a 1.60140) | ('r', 1.65) | solves 2
+mu=0.50 lam=0.7150 bw=0.8000 | formula 0.4157 = 0.581 lam, cold, sit-out | exact (0.4031, 0.4535] = (0.564, 0.634] lam | agree | CR 1.60873 / 1.60140 (2-a 1.60140) | ('r', 1.65) | solves 2
+mu=0.50 lam=0.7150 bw=0.6000 | formula 0.4157 = 0.581 lam, cold, sit-out | exact (0.4031, 0.4535] = (0.564, 0.634] lam | agree | CR 1.60873 / 1.60140 (2-a 1.60140) | ('r', 1.65) | solves 2
+mu=0.50 lam=0.7150 bw=0.5970 [default switch]| formula 0.4157 = 0.581 lam, cold, sit-out | exact (0.4031, 0.4535] = (0.564, 0.634] lam | agree | CR 1.60873 / 1.60140 (2-a 1.60140) | ('r', 1.65) | solves 2
+mu=0.50 lam=0.7150 bw=0.2000 | formula 0.7497 = 1.049 lam, cold, sit-out | exact (0.7054, 0.7558] = (0.987, 1.057] lam | agree | CR 1.60635 / 1.60140 (2-a 1.60140) | ('r', 1.65) | solves 2
+mu=1.00 lam=0.7150 bw=1.0000 [switch beta~ (Thm 4)]| formula 0.8314 = 1.163 lam, cold, sit-out | exact (0.8062, 0.8566] = (1.128, 1.198] lam | agree | CR 1.61223 / 1.60140 (2-a 1.60140) | ('r', 1.65) | solves 2
+mu=1.00 lam=0.7150 bw=0.8000 | formula 0.8314 = 1.163 lam, cold, sit-out | exact (0.8062, 0.8566] = (1.128, 1.198] lam | agree | CR 1.61223 / 1.60140 (2-a 1.60140) | ('r', 1.65) | solves 2
+mu=1.00 lam=0.7150 bw=0.6000 | formula 0.8314 = 1.163 lam, cold, sit-out | exact (0.8062, 0.8566] = (1.128, 1.198] lam | agree | CR 1.61223 / 1.60140 (2-a 1.60140) | ('r', 1.65) | solves 2
+mu=1.00 lam=0.7150 bw=0.5970 [default switch]| formula 0.8314 = 1.163 lam, cold, sit-out | exact (0.8062, 0.8566] = (1.128, 1.198] lam | agree | CR 1.61223 / 1.60140 (2-a 1.60140) | ('r', 1.65) | solves 2
+mu=1.00 lam=0.7150 bw=0.2000 | formula 1.5493 = 2.167 lam, pre-warm, sit-out | exact (1.5116, 1.5620] = (2.114, 2.185] lam | agree | CR 1.60596 / 1.60140 (2-a 1.60140) | ('r', 1.65) | solves 2
+mu=2.00 lam=0.7150 bw=1.0000 [switch beta~ (Thm 4)]| formula 1.6628 = 2.326 lam, cold, sit-out | exact (1.6124, 1.6628] = (2.255, 2.326] lam | agree | CR 1.61223 / 1.60140 (2-a 1.60140) | ('r', 1.65) | solves 2
+mu=2.00 lam=0.7150 bw=0.8000 | formula 4.6616 = 6.520 lam, cold, known window | exact (4.6357, 4.6860] = (6.483, 6.554] lam | agree | CR 1.60311 / 1.60140 (2-a 1.60140) | ('r', 1.65) | solves 2
+mu=2.00 lam=0.7150 bw=0.6000 | formula 4.8807 = 6.826 lam, pre-warm, known window | exact (4.8372, 4.8876] = (6.765, 6.836] lam | agree | CR 1.60535 / 1.60140 (2-a 1.60140) | ('r', 1.65) | solves 2
+mu=2.00 lam=0.7150 bw=0.5970 [default switch]| formula 4.8682 = 6.809 lam, pre-warm, known window | exact (4.8372, 4.8876] = (6.765, 6.836] lam | agree | CR 1.60421 / 1.60140 (2-a 1.60140) | ('r', 1.65) | solves 2
+mu=2.00 lam=0.7150 bw=0.2000 | formula 1.5493 = 2.167 lam, pre-warm, sit-out | exact (1.5116, 1.5620] = (2.114, 2.185] lam | agree | CR 1.60596 / 1.60140 (2-a 1.60140) | ('r', 1.65) | solves 2
+mu=0.50 lam=0.2500 bw=1.0000 [switch beta~ (Thm 4)]| formula 0.4157 = 1.663 lam, cold, sit-out | exact (0.4031, 0.4535] = (1.612, 1.814] lam | agree | CR 1.60873 / 1.60140 (2-a 1.60140) | ('r', 1.65) | solves 2
+mu=0.50 lam=0.2500 bw=0.8000 | formula 0.4157 = 1.663 lam, cold, sit-out | exact (0.4031, 0.4535] = (1.612, 1.814] lam | agree | CR 1.60873 / 1.60140 (2-a 1.60140) | ('r', 1.65) | solves 2
+mu=0.50 lam=0.2500 bw=0.6000 | formula 0.4157 = 1.663 lam, cold, sit-out | exact (0.4031, 0.4535] = (1.612, 1.814] lam | agree | CR 1.60873 / 1.60140 (2-a 1.60140) | ('r', 1.65) | solves 2
+mu=0.50 lam=0.2500 bw=0.2000 | formula 0.7497 = 2.999 lam, cold, sit-out | exact (0.7054, 0.7558] = (2.822, 3.023] lam | agree | CR 1.60635 / 1.60140 (2-a 1.60140) | ('r', 1.65) | solves 2
+mu=0.50 lam=0.2500 bw=0.8591 [consistent with fees]| formula 0.4157 = 1.663 lam, cold, sit-out | exact (0.4031, 0.4535] = (1.612, 1.814] lam | agree | CR 1.60873 / 1.60140 (2-a 1.60140) | ('r', 1.65) | solves 2
+mu=1.00 lam=0.2500 bw=1.0000 [switch beta~ (Thm 4)]| formula 0.8314 = 3.326 lam, cold, sit-out | exact (0.8062, 0.8566] = (3.225, 3.426] lam | agree | CR 1.61223 / 1.60140 (2-a 1.60140) | ('r', 1.65) | solves 2
+mu=1.00 lam=0.2500 bw=0.8000 | formula 0.8314 = 3.326 lam, cold, sit-out | exact (0.8062, 0.8566] = (3.225, 3.426] lam | agree | CR 1.61223 / 1.60140 (2-a 1.60140) | ('r', 1.65) | solves 2
+mu=1.00 lam=0.2500 bw=0.6000 | formula 0.8314 = 3.326 lam, cold, sit-out | exact (0.8062, 0.8566] = (3.225, 3.426] lam | agree | CR 1.61223 / 1.60140 (2-a 1.60140) | ('r', 1.65) | solves 2
+mu=1.00 lam=0.2500 bw=0.2000 | formula 1.0843 = 4.337 lam, pre-warm, sit-out | exact (1.0581, 1.1085] = (4.233, 4.434] lam | agree | CR 1.60456 / 1.60140 (2-a 1.60140) | ('r', 1.65) | solves 2
+mu=1.00 lam=0.2500 bw=0.8591 [consistent with fees]| formula 0.8314 = 3.326 lam, cold, sit-out | exact (0.8062, 0.8566] = (3.225, 3.426] lam | agree | CR 1.61223 / 1.60140 (2-a 1.60140) | ('r', 1.65) | solves 2
+mu=2.00 lam=0.2500 bw=1.0000 [switch beta~ (Thm 4)]| formula 1.6628 = 6.651 lam, cold, sit-out | exact (1.6124, 1.6628] = (6.450, 6.651] lam | agree | CR 1.61223 / 1.60140 (2-a 1.60140) | ('r', 1.65) | solves 2
+mu=2.00 lam=0.2500 bw=0.8000 | formula 4.6616 = 18.647 lam, cold, known window | exact (4.6357, 4.6860] = (18.543, 18.744] lam | agree | CR 1.60311 / 1.60140 (2-a 1.60140) | ('r', 1.65) | solves 2
+mu=2.00 lam=0.2500 bw=0.6000 | formula 2.7529 = 11.012 lam, pre-warm, sit-out | exact (2.7209, 2.7713] = (10.884, 11.085] lam | agree | CR 1.60430 / 1.60140 (2-a 1.60140) | ('r', 1.65) | solves 2
+mu=2.00 lam=0.2500 bw=0.2000 | formula 1.0843 = 4.337 lam, pre-warm, sit-out | exact (1.0581, 1.1085] = (4.233, 4.434] lam | agree | CR 1.60456 / 1.60140 (2-a 1.60140) | ('r', 1.65) | solves 2
+mu=2.00 lam=0.2500 bw=0.8591 [consistent with fees]| formula 2.6041 = 10.416 lam, cold, sit-out | exact (2.5698, 2.6202] = (10.279, 10.481] lam | agree | CR 1.60372 / 1.60140 (2-a 1.60140) | ('r', 1.65) | solves 2
+mu=0.50 lam=0.5000 bw=1.0000 [switch beta~ (Thm 4)]| formula 0.4157 = 0.831 lam, cold, sit-out | exact (0.4031, 0.4535] = (0.806, 0.907] lam | agree | CR 1.60873 / 1.60140 (2-a 1.60140) | ('r', 1.65) | solves 2
+mu=0.50 lam=0.5000 bw=0.8000 | formula 0.4157 = 0.831 lam, cold, sit-out | exact (0.4031, 0.4535] = (0.806, 0.907] lam | agree | CR 1.60873 / 1.60140 (2-a 1.60140) | ('r', 1.65) | solves 2
+mu=0.50 lam=0.5000 bw=0.6000 | formula 0.4157 = 0.831 lam, cold, sit-out | exact (0.4031, 0.4535] = (0.806, 0.907] lam | agree | CR 1.60873 / 1.60140 (2-a 1.60140) | ('r', 1.65) | solves 2
+mu=0.50 lam=0.5000 bw=0.2000 | formula 0.7497 = 1.499 lam, cold, sit-out | exact (0.7054, 0.7558] = (1.411, 1.512] lam | agree | CR 1.60635 / 1.60140 (2-a 1.60140) | ('r', 1.65) | solves 2
+mu=0.50 lam=0.5000 bw=0.7182 [consistent with fees]| formula 0.4157 = 0.831 lam, cold, sit-out | exact (0.4031, 0.4535] = (0.806, 0.907] lam | agree | CR 1.60873 / 1.60140 (2-a 1.60140) | ('r', 1.65) | solves 2
+mu=1.00 lam=0.5000 bw=1.0000 [switch beta~ (Thm 4)]| formula 0.8314 = 1.663 lam, cold, sit-out | exact (0.8062, 0.8566] = (1.612, 1.713] lam | agree | CR 1.61223 / 1.60140 (2-a 1.60140) | ('r', 1.65) | solves 2
+mu=1.00 lam=0.5000 bw=0.8000 | formula 0.8314 = 1.663 lam, cold, sit-out | exact (0.8062, 0.8566] = (1.612, 1.713] lam | agree | CR 1.61223 / 1.60140 (2-a 1.60140) | ('r', 1.65) | solves 2
+mu=1.00 lam=0.5000 bw=0.6000 | formula 0.8314 = 1.663 lam, cold, sit-out | exact (0.8062, 0.8566] = (1.612, 1.713] lam | agree | CR 1.61223 / 1.60140 (2-a 1.60140) | ('r', 1.65) | solves 2
+mu=1.00 lam=0.5000 bw=0.2000 | formula 1.3343 = 2.669 lam, pre-warm, sit-out | exact (1.3101, 1.3605] = (2.620, 2.721] lam | agree | CR 1.60432 / 1.60140 (2-a 1.60140) | ('r', 1.65) | solves 2
+mu=1.00 lam=0.5000 bw=0.7182 [consistent with fees]| formula 0.8314 = 1.663 lam, cold, sit-out | exact (0.8062, 0.8566] = (1.612, 1.713] lam | agree | CR 1.61223 / 1.60140 (2-a 1.60140) | ('r', 1.65) | solves 2
+mu=2.00 lam=0.5000 bw=1.0000 [switch beta~ (Thm 4)]| formula 1.6628 = 3.326 lam, cold, sit-out | exact (1.6124, 1.6628] = (3.225, 3.326] lam | agree | CR 1.61223 / 1.60140 (2-a 1.60140) | ('r', 1.65) | solves 2
+mu=2.00 lam=0.5000 bw=0.8000 | formula 4.6616 = 9.323 lam, cold, known window | exact (4.6357, 4.6860] = (9.271, 9.372] lam | agree | CR 1.60311 / 1.60140 (2-a 1.60140) | ('r', 1.65) | solves 2
+mu=2.00 lam=0.5000 bw=0.6000 | formula 4.6657 = 9.331 lam, pre-warm, known window | exact (4.6357, 4.6860] = (9.271, 9.372] lam | agree | CR 1.60412 / 1.60140 (2-a 1.60140) | ('r', 1.65) | solves 2
+mu=2.00 lam=0.5000 bw=0.2000 | formula 1.3343 = 2.669 lam, pre-warm, sit-out | exact (1.3101, 1.3605] = (2.620, 2.721] lam | agree | CR 1.60432 / 1.60140 (2-a 1.60140) | ('r', 1.65) | solves 2
+mu=2.00 lam=0.5000 bw=0.7182 [consistent with fees]| formula 5.1587 = 10.317 lam, pre-warm, known window | exact (5.1395, 5.1899] = (10.279, 10.380] lam | agree | CR 1.60301 / 1.60140 (2-a 1.60140) | ('r', 1.65) | solves 2
+mu=0.20 lam=0.7150 bw=1.0000 [switch beta~ (Thm 4), s0 = 1.70 grid]| formula 0.1663 = 0.233 lam, cold, sit-out | exact (0.1467, 0.1956] = (0.205, 0.274] lam | agree | CR 1.61191 / 1.60140 (2-a 1.60140) | ('r', 1.7) | solves 2
+mu=0.20 lam=0.7150 bw=0.5970 [default switch, s0 = 1.70 grid]| formula 0.1663 = 0.233 lam, cold, sit-out | exact (0.1467, 0.1956] = (0.205, 0.274] lam | agree | CR 1.61191 / 1.60140 (2-a 1.60140) | ('r', 1.7) | solves 2
+mu=0.50 lam=0.7150 bw=1.0000 [switch beta~ (Thm 4), s0 = 1.70 grid]| formula 0.4157 = 0.581 lam, cold, sit-out | exact (0.3912, 0.4402] = (0.547, 0.616] lam | agree | CR 1.61191 / 1.60140 (2-a 1.60140) | ('r', 1.7) | solves 2
+mu=0.50 lam=0.7150 bw=0.5970 [default switch, s0 = 1.70 grid]| formula 0.4157 = 0.581 lam, cold, sit-out | exact (0.3912, 0.4402] = (0.547, 0.616] lam | agree | CR 1.61191 / 1.60140 (2-a 1.60140) | ('r', 1.7) | solves 2
+mu=1.00 lam=0.7150 bw=1.0000 [switch beta~ (Thm 4), s0 = 1.70 grid]| formula 0.8314 = 1.163 lam, cold, sit-out | exact (0.7825, 0.8314] = (1.094, 1.163] lam | agree | CR 1.61319 / 1.60140 (2-a 1.60140) | ('r', 1.7) | solves 2
+mu=1.00 lam=0.7150 bw=0.5970 [default switch, s0 = 1.70 grid]| formula 0.8314 = 1.163 lam, cold, sit-out | exact (0.7825, 0.8314] = (1.094, 1.163] lam | agree | CR 1.61319 / 1.60140 (2-a 1.60140) | ('r', 1.7) | solves 2
+mu=2.00 lam=0.7150 bw=1.0000 [switch beta~ (Thm 4), s0 = 1.70 grid]| formula 1.6628 = 2.326 lam, cold, sit-out | exact (1.6139, 1.6628] = (2.257, 2.326] lam | agree | CR 1.61191 / 1.60140 (2-a 1.60140) | ('r', 1.7) | solves 2
+mu=2.00 lam=0.7150 bw=0.5970 [default switch, s0 = 1.70 grid]| formula 4.8682 = 6.809 lam, pre-warm, known window | exact (4.8417, 4.8906] = (6.772, 6.840] lam | agree | CR 1.60381 / 1.60140 (2-a 1.60140) | ('r', 1.7) | solves 2
+
+summary: 58 of 58 exact thresholds equal the C2-SW formula rounded up to the grid (bw = 1: Theorem 4; bw < 1: substitution formula)
+
+default calibration (lambda = 0.7150 beta~): H*_mu/lambda, formula [exact bracket, intersection of the s0 = 1.65 and 1.70 grids]; H*_beta = 3.5088 lambda - tau (tau = 60 s); H*_mu < H*_beta iff lambda > tau/(3.5088 - H*_mu/lambda)
+bw=1.000 mu=0.2: formula 0.233 lam (a5b 0.233) exact (0.211, 0.274] lam; H*_mu < H*_beta: lambda > 18.3 s (exact bracket [18.2, 18.5] s)
+bw=1.000 mu=0.5: formula 0.581 lam (a5b 0.581) exact (0.564, 0.616] lam; H*_mu < H*_beta: lambda > 20.5 s (exact bracket [20.4, 20.7] s)
+bw=1.000 mu=1.0: formula 1.163 lam (a5b 1.163) exact (1.128, 1.163] lam; H*_mu < H*_beta: lambda > 25.6 s (exact bracket [25.2, 25.6] s)
+bw=1.000 mu=2.0: formula 2.326 lam (a5b 2.326) exact (2.257, 2.326] lam; H*_mu < H*_beta: lambda > 50.7 s (exact bracket [47.9, 50.7] s)
+bw=0.597 mu=0.2: formula 0.233 lam (a5b 0.233) exact (0.211, 0.274] lam; H*_mu < H*_beta: lambda > 18.3 s (exact bracket [18.2, 18.5] s)
+bw=0.597 mu=0.5: formula 0.581 lam (a5b 0.581) exact (0.564, 0.616] lam; H*_mu < H*_beta: lambda > 20.5 s (exact bracket [20.4, 20.7] s)
+bw=0.597 mu=1.0: formula 1.163 lam (a5b 1.163) exact (1.128, 1.163] lam; H*_mu < H*_beta: lambda > 25.6 s (exact bracket [25.2, 25.6] s)
+bw=0.597 mu=2.0: formula 6.809 lam (a5b 6.809) exact (6.772, 6.836] lam; H*_mu < H*_beta: never (H*_mu > H*_beta for every lambda) (exact bracket never)
+
+exact_full_precision: the brackets above with every digit (H*_mu/lambda; formula, then (lo, hi]); read by code/analysis/a11_calibration.py, check 3
+full bw=1.0 mu=0.2: formula 0.23255813953488375 exact (0.21141649048625794, 0.27359781121751026]
+full bw=1.0 mu=0.5: formula 0.5813953488372093 exact (0.5637773079633545, 0.615595075239398]
+full bw=1.0 mu=1.0: formula 1.162790697674418 exact (1.1275546159267087, 1.1627906976744184]
+full bw=1.0 mu=2.0: formula 2.3255813953488373 exact (2.257181942544459, 2.325581395348837]
+full bw=0.597 mu=0.2: formula 0.23255813953488375 exact (0.21141649048625794, 0.27359781121751026]
+full bw=0.597 mu=0.5: formula 0.5813953488372093 exact (0.5637773079633545, 0.615595075239398]
+full bw=0.597 mu=1.0: formula 1.162790697674418 exact (1.1275546159267087, 1.1627906976744184]
+full bw=0.597 mu=2.0: formula 6.808690330477354 exact (6.771545827633378, 6.835799859055672]
+
+with one-off fees f = 1 - lambda (alpha + phi) (bw = f + lambda alpha_p): H*_beta = beta~/(g a) - tau = 2.5088 beta~ - tau (beta~ read as beta~/q, a time); H*_mu < H*_beta iff beta~/q > tau/(1/alpha - H*_mu/beta~), never if H*_mu >= beta~/alpha
+lam=0.7150 beta~ (f = 0.000 beta~) bw=0.5970 mu=0.2: H*_mu = 0.166 beta~ (exact (0.151, 0.202]), cold, sit-out; H*_mu < H*_beta iff beta~/q > 25.6 s
+lam=0.7150 beta~ (f = 0.000 beta~) bw=0.5970 mu=0.5: H*_mu = 0.416 beta~ (exact (0.403, 0.453]), cold, sit-out; H*_mu < H*_beta iff beta~/q > 28.7 s
+lam=0.7150 beta~ (f = 0.000 beta~) bw=0.5970 mu=1.0: H*_mu = 0.831 beta~ (exact (0.806, 0.857]), cold, sit-out; H*_mu < H*_beta iff beta~/q > 35.8 s
+lam=0.7150 beta~ (f = 0.000 beta~) bw=0.5970 mu=2.0: H*_mu = 4.868 beta~ (exact (4.837, 4.888]), pre-warm, known window; H*_mu < H*_beta iff never
+lam=0.2500 beta~ (f = 0.650 beta~) bw=0.8591 mu=0.5: H*_mu = 0.416 beta~ (exact (0.403, 0.453]), cold, sit-out; H*_mu < H*_beta iff beta~/q > 28.7 s
+lam=0.2500 beta~ (f = 0.650 beta~) bw=0.8591 mu=1.0: H*_mu = 0.831 beta~ (exact (0.806, 0.857]), cold, sit-out; H*_mu < H*_beta iff beta~/q > 35.8 s
+lam=0.2500 beta~ (f = 0.650 beta~) bw=0.8591 mu=2.0: H*_mu = 2.604 beta~ (exact (2.570, 2.620]), cold, sit-out; H*_mu < H*_beta iff never
+lam=0.5000 beta~ (f = 0.301 beta~) bw=0.7182 mu=0.5: H*_mu = 0.416 beta~ (exact (0.403, 0.453]), cold, sit-out; H*_mu < H*_beta iff beta~/q > 28.7 s
+lam=0.5000 beta~ (f = 0.301 beta~) bw=0.7182 mu=1.0: H*_mu = 0.831 beta~ (exact (0.806, 0.857]), cold, sit-out; H*_mu < H*_beta iff beta~/q > 35.8 s
+lam=0.5000 beta~ (f = 0.301 beta~) bw=0.7182 mu=2.0: H*_mu = 5.159 beta~ (exact (5.140, 5.190]), pre-warm, known window; H*_mu < H*_beta iff never

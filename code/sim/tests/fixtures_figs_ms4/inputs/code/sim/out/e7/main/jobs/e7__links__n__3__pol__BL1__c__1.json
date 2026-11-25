@@ -1,0 +1,62 @@
+{
+ "job": "e7:links:n=3:pol=BL1:c=1",
+ "exp": "e7",
+ "kind": "pool",
+ "params": {
+  "part": "main",
+  "kind": "links",
+  "tag": "BL1",
+  "n": 3,
+  "mu": 1.0,
+  "c": 1,
+  "mode": "L-tr",
+  "policy_seeds": [
+   0
+  ],
+  "horizon_min": 120
+ },
+ "status": "ok",
+ "started": "2026-10-26T14:40:14",
+ "pid": 970066,
+ "argv": [
+  "/work/ms4wt/u25/code/sim/sublet/experiments/e7.py",
+  "--job",
+  "e7:links:n=3:pol=BL1:c=1",
+  "--out",
+  "/work/ms4u/u25scratch/fixture_roots/e7/out/e7/main"
+ ],
+ "slots": [
+  "slot0"
+ ],
+ "milp_limit_s": null,
+ "git_revision": "939847ca5925ce069d6df9089fe3a3d1d3207bb7",
+ "versions": {
+  "python": "3.12.3",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "sublet": "0.1.0"
+ },
+ "runs": 1,
+ "errors": [],
+ "n_errors": 0,
+ "outputs": [
+  "runs/e7__links__n__3__pol__BL1__c__1.json"
+ ],
+ "result": {
+  "instance_hash": "0ee85a9f3b07e70066cca0b81d9436745765c72f288764e6558fae71a49524fc",
+  "bl0a_usd": 1527.7154508483445,
+  "totals": [
+   981.5726461162986
+  ],
+  "t_a": [
+   null
+  ],
+  "wall_s_runs": [
+   0.7391960641834885
+  ]
+ },
+ "wall_s": 1.8899641749449074,
+ "peak_rss_kb": 143356,
+ "peak_rss_mb": 139.99609375,
+ "finished": "2026-10-26T14:40:16"
+}

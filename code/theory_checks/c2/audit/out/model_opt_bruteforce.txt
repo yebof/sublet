@@ -1,0 +1,10 @@
+(1) model.opt_cost vs brute force (one revocable lease), dt=0.05: 400 instances, mismatches 0 (of which with tau=0 and lam<=s0: 0)
+(2) R < lam (OPT cannot pre-warm): 'cold then protected' vs the options in model.opt_cost
+   {'alpha': 0.0, 'ap': 0.6, 'mu': 0.25, 'lam': 3.0, 'R': 2.5, 'x': 10.0}: opt_prefix=7.0000 opt_cost=6.7500 bf=6.7500 prefix-bf=+0.2500 opt_cost-bf=+0.0000; s0=1.000, (beta+mu)/(ap-alpha)=2.083, condition (C) lam<=s0: False
+   {'alpha': 0.3, 'ap': 0.9, 'mu': 0.1, 'lam': 1.4, 'R': 1.35, 'x': 8.0}: opt_prefix=8.0000 opt_cost=8.0000 bf=8.0000 prefix-bf=+0.0000 opt_cost-bf=+0.0000; s0=1.429, (beta+mu)/(ap-alpha)=1.833, condition (C) lam<=s0: True
+   {'alpha': 0.5, 'ap': 0.95, 'mu': 0.05, 'lam': 2.0, 'R': 1.9, 'x': 8.0}: opt_prefix=8.0000 opt_cost=8.0000 bf=8.0000 prefix-bf=+0.0000 opt_cost-bf=+0.0000; s0=2.000, (beta+mu)/(ap-alpha)=2.333, condition (C) lam<=s0: True
+(3) tau>0: OPT with a second revocable lease (warm switch) vs one lease; brute force, dt=0.05
+   864 (params, R, x) points with x > R; OPT strictly lower with two leases at 73; largest relative reduction 20.000% at {'alpha': 0.0, 'ap': 0.5, 'mu': 0.5, 'lam': 0.0, 'tau': 2.0, 'R': 3.0, 'x': 4.0, 'one': 2.5, 'two': 2.0}
+   tau=0.5: 6/288 points lower; largest reduction 5.88% at {'alpha': 0.0, 'ap': 0.5, 'mu': 2.0, 'lam': 0.0, 'R': 2.0, 'x': 2.25, 'one': 2.125, 'two': 2.0}
+   tau=1.0: 28/288 points lower; largest reduction 11.11% at {'alpha': 0.0, 'ap': 0.5, 'mu': 2.0, 'lam': 0.0, 'R': 2.0, 'x': 2.5, 'one': 2.25, 'two': 2.0}
+   tau=2.0: 39/288 points lower; largest reduction 20.00% at {'alpha': 0.0, 'ap': 0.5, 'mu': 0.5, 'lam': 0.0, 'R': 3.0, 'x': 4.0, 'one': 2.5, 'two': 2.0}

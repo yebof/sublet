@@ -1,0 +1,3893 @@
+{
+ "meta": {
+  "exp": "e7",
+  "part": "stress",
+  "spec": "design/sim_spec_ms4.md \u00a73",
+  "git_revision": "939847ca5925ce069d6df9089fe3a3d1d3207bb7",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "scipy": "1.17.1",
+   "sublet": "0.1.0"
+  },
+  "written": "2026-10-26T14:49:23",
+  "reduced": true,
+  "grids": {
+   "alignments": [
+    1
+   ],
+   "alignments_design": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "policy_seeds": [
+    0
+   ],
+   "policy_seeds_design": [
+    0,
+    1,
+    2
+   ],
+   "horizon_min": 120,
+   "gap_horizon_min": 120
+  },
+  "tags": {
+   "Sublet": {
+    "policy_id": "A8",
+    "params": "ms4_common.sublet_params(inst, 'BL5')",
+    "style_key": "sublet",
+    "a8": true,
+    "q44_tag": "BL5-G"
+   },
+   "A7G": {
+    "policy_id": "A8",
+    "params": "ms4_common.sublet_params(inst, 'A7')",
+    "style_key": "a7_guard",
+    "a8": true,
+    "q44_tag": "PS-G"
+   },
+   "A7": {
+    "policy_id": "A7",
+    "params": {},
+    "style_key": "a7",
+    "a8": false,
+    "q44_tag": "PS"
+   },
+   "A6": {
+    "policy_id": "A6",
+    "params": {},
+    "style_key": "a6",
+    "a8": false,
+    "q44_tag": "A6"
+   },
+   "BL5": {
+    "policy_id": "BL5",
+    "params": {},
+    "style_key": "bl5",
+    "a8": false,
+    "q44_tag": "BL5"
+   },
+   "BL1": {
+    "policy_id": "BL1",
+    "params": {},
+    "style_key": "bl1",
+    "a8": false,
+    "q44_tag": "BL1"
+   },
+   "BL2": {
+    "policy_id": "BL2",
+    "params": {},
+    "style_key": "bl2",
+    "a8": false,
+    "q44_tag": "BL2"
+   },
+   "BL4": {
+    "policy_id": "BL4",
+    "params": {},
+    "style_key": "bl4",
+    "a8": false,
+    "q44_tag": null
+   }
+  },
+  "B0_rule": "0.1*BL0a",
+  "info_class_reported_a8": "online-I1 + a-priori N + a-priori BL0a",
+  "jobs_ok": 40,
+  "jobs_missing": [],
+  "ignored_outputs": [],
+  "reduced_note": "reduced job list (MS3_E7_REDUCED=1): alignment 1, policy seed 0, a 120-min horizon; not a result",
+  "alignment": 1,
+  "mu": 1.0,
+  "modes": {
+   "L-eg": {
+    "lender_model": {
+     "schedule": "eager",
+     "information": "I1",
+     "on_unavailable": "sell",
+     "violations": "absorb",
+     "params": {}
+    },
+    "lender_params_resolved": {}
+   },
+   "L-ss": {
+    "lender_model": {
+     "schedule": "safe_site",
+     "information": "I1",
+     "on_unavailable": "sell",
+     "violations": "absorb",
+     "params": {
+      "D_slots": 12,
+      "k": 2,
+      "Phi": null
+     }
+    },
+    "lender_params_resolved": {
+     "D_slots": 12,
+     "k": 2,
+     "Phi": 1
+    }
+   },
+   "L-iid-0.05": {
+    "lender_model": {
+     "schedule": "iid_step",
+     "information": "I1",
+     "on_unavailable": "sell",
+     "violations": "absorb",
+     "params": {
+      "D_slots": 1,
+      "p": 0.05,
+      "U": null
+     }
+    },
+    "lender_params_resolved": {
+     "D_slots": 1,
+     "p": 0.05,
+     "U": 24
+    }
+   },
+   "L-iid-0.2": {
+    "lender_model": {
+     "schedule": "iid_step",
+     "information": "I1",
+     "on_unavailable": "sell",
+     "violations": "absorb",
+     "params": {
+      "D_slots": 1,
+      "p": 0.2,
+      "U": null
+     }
+    },
+    "lender_params_resolved": {
+     "D_slots": 1,
+     "p": 0.2,
+     "U": 24
+    }
+   },
+   "L-co": {
+    "lender_model": {
+     "schedule": "correlated",
+     "information": "I1",
+     "on_unavailable": "sell",
+     "violations": "absorb",
+     "params": {
+      "p_sh": 1.0,
+      "groups": "all",
+      "delay_slots_max": null
+     }
+    },
+    "lender_params_resolved": {
+     "p_sh": 1.0,
+     "groups": "all",
+     "delay_slots_max": 1
+    }
+   }
+  },
+  "modes_expected": [
+   "L-eg",
+   "L-ss",
+   "L-iid-0.05",
+   "L-iid-0.2",
+   "L-co"
+  ],
+  "references": {
+   "bl0a_usd": 1527.7154508483445,
+   "own_capacity_usd": 23870.52067533807,
+   "bl0b_overflow_usd": 8510.268227089482,
+   "bl0b_total_usd": 32380.788902427554,
+   "committed_price_usd_per_gpu_h": 5.97,
+   "bl0a_total_usd": 25398.236126186413
+  },
+  "criterion_S": 1.05
+ },
+ "modes": {
+  "L-eg": {
+   "Sublet": {
+    "n_runs": 1,
+    "seeds": [
+     0
+    ],
+    "r0": {
+     "0": 1.0497827555457724
+    },
+    "r0_mean": 1.0497827555457724,
+    "total_over_bl0a": {
+     "0": 1.0029944553808865
+    },
+    "total_over_bl0a_mean": 1.0029944553808865,
+    "overflow_usd": {
+     "0": 1603.769335681427
+    },
+    "total_usd": {
+     "0": 25474.290011019497
+    },
+    "accountings": {
+     "0": {
+      "overflow_usd": 1603.769335681427,
+      "total_usd": 25474.290011019497,
+      "overflow_over_bl0a": 1.0497827555457724,
+      "total_over_bl0a": 1.0029944553808865,
+      "own_share_of_total": 0.9370436100481042,
+      "overflow_over_bl0b": 0.18845109142111227,
+      "total_over_bl0b": 0.7867099868314115
+     }
+    },
+    "intensity": 288.0,
+    "intensity_by_seed": {
+     "0": 288.0
+    },
+    "fallback_share_after_reclaims": {
+     "n": 1,
+     "median": 0.94832252551034,
+     "p95": 0.94832252551034,
+     "max": 0.94832252551034,
+     "median_ci95": [
+      0.94832252551034,
+      0.94832252551034
+     ],
+     "mean": 0.94832252551034,
+     "n_null": 0
+    },
+    "gpu_hour_share": {
+     "spot-like": 1.0
+    },
+    "aborted": {
+     "0": true
+    },
+    "t_a": {
+     "0": 12
+    },
+    "certificate_case": {
+     "0": "W(b)"
+    },
+    "abort_share": 1.0,
+    "t_a_median": 12.0,
+    "certificates": {
+     "n": 1,
+     "held": 1,
+     "by_case": {
+      "W(a)": {
+       "runs": 0,
+       "held": 0
+      },
+      "W(b)": {
+       "runs": 1,
+       "held": 1
+      },
+      "W(c)": {
+       "runs": 0,
+       "held": 0
+      },
+      "unavailable": {
+       "runs": 0,
+       "held": 0
+      }
+     },
+     "failures": 0
+    }
+   },
+   "A7G": {
+    "n_runs": 1,
+    "seeds": [
+     0
+    ],
+    "r0": {
+     "0": 1.0448322139510107
+    },
+    "r0_mean": 1.0448322139510107,
+    "total_over_bl0a": {
+     "0": 1.0026966780530906
+    },
+    "total_over_bl0a_mean": 1.0026966780530906,
+    "overflow_usd": {
+     "0": 1596.2063167970423
+    },
+    "total_usd": {
+     "0": 25466.72699213511
+    },
+    "accountings": {
+     "0": {
+      "overflow_usd": 1596.2063167970423,
+      "total_usd": 25466.72699213511,
+      "overflow_over_bl0a": 1.0448322139510107,
+      "total_over_bl0a": 1.0026966780530906,
+      "own_share_of_total": 0.9373218899590042,
+      "overflow_over_bl0b": 0.18756239805886188,
+      "total_over_bl0b": 0.7864764218337466
+     }
+    },
+    "intensity": 288.0,
+    "intensity_by_seed": {
+     "0": 288.0
+    },
+    "fallback_share_after_reclaims": {
+     "n": 1,
+     "median": 0.9451562259399349,
+     "p95": 0.9451562259399349,
+     "max": 0.9451562259399349,
+     "median_ci95": [
+      0.9451562259399349,
+      0.9451562259399349
+     ],
+     "mean": 0.9451562259399349,
+     "n_null": 0
+    },
+    "gpu_hour_share": {
+     "spot-like": 1.0
+    },
+    "aborted": {
+     "0": true
+    },
+    "t_a": {
+     "0": 11
+    },
+    "certificate_case": {
+     "0": "W(b)"
+    },
+    "abort_share": 1.0,
+    "t_a_median": 11.0,
+    "certificates": {
+     "n": 1,
+     "held": 1,
+     "by_case": {
+      "W(a)": {
+       "runs": 0,
+       "held": 0
+      },
+      "W(b)": {
+       "runs": 1,
+       "held": 1
+      },
+      "W(c)": {
+       "runs": 0,
+       "held": 0
+      },
+      "unavailable": {
+       "runs": 0,
+       "held": 0
+      }
+     },
+     "failures": 0
+    }
+   },
+   "A7": {
+    "n_runs": 1,
+    "seeds": [
+     0
+    ],
+    "r0": {
+     "0": 1.2740578251648198
+    },
+    "r0_mean": 1.2740578251648198,
+    "total_over_bl0a": {
+     "0": 1.0164847027899908
+    },
+    "total_over_bl0a_mean": 1.0164847027899908,
+    "overflow_usd": {
+     "0": 1946.397824778534
+    },
+    "total_usd": {
+     "0": 25816.918500116604
+    },
+    "accountings": {
+     "0": {
+      "overflow_usd": 1946.397824778534,
+      "total_usd": 25816.918500116604,
+      "overflow_over_bl0a": 1.2740578251648198,
+      "total_over_bl0a": 1.0164847027899908,
+      "own_share_of_total": 0.9246076628095742,
+      "overflow_over_bl0b": 0.22871168955437302,
+      "total_over_bl0b": 0.7972912141798107
+     }
+    },
+    "intensity": 288.0,
+    "intensity_by_seed": {
+     "0": 288.0
+    },
+    "fallback_share_after_reclaims": {
+     "n": 1,
+     "median": 0.5942305730542162,
+     "p95": 0.5942305730542162,
+     "max": 0.5942305730542162,
+     "median_ci95": [
+      0.5942305730542162,
+      0.5942305730542162
+     ],
+     "mean": 0.5942305730542162,
+     "n_null": 0
+    },
+    "gpu_hour_share": {
+     "spot-like": 1.0
+    },
+    "aborted": null,
+    "aborted_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a": null,
+    "t_a_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificate_case": null,
+    "certificate_case_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "abort_share": null,
+    "abort_share_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_median": null,
+    "t_a_median_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificates": null,
+    "certificates_note": "unguarded policy (not an A8 tag): no abort, no certificate"
+   },
+   "A6": {
+    "n_runs": 1,
+    "seeds": [
+     0
+    ],
+    "r0": {
+     "0": 1.0356982486959818
+    },
+    "r0_mean": 1.0356982486959818,
+    "total_over_bl0a": {
+     "0": 1.0021472658900454
+    },
+    "total_over_bl0a_mean": 1.0021472658900454,
+    "overflow_usd": {
+     "0": 1582.2522169494227
+    },
+    "total_usd": {
+     "0": 25452.772892287492
+    },
+    "accountings": {
+     "0": {
+      "overflow_usd": 1582.2522169494227,
+      "total_usd": 25452.772892287492,
+      "overflow_over_bl0a": 1.0356982486959818,
+      "total_over_bl0a": 1.0021472658900454,
+      "own_share_of_total": 0.9378357625848748,
+      "overflow_over_bl0b": 0.18592272002812704,
+      "total_over_bl0b": 0.7860454842216437
+     }
+    },
+    "intensity": 288.0,
+    "intensity_by_seed": {
+     "0": 288.0
+    },
+    "fallback_share_after_reclaims": {
+     "n": 1,
+     "median": 0.9302707682230422,
+     "p95": 0.9302707682230422,
+     "max": 0.9302707682230422,
+     "median_ci95": [
+      0.9302707682230422,
+      0.9302707682230422
+     ],
+     "mean": 0.9302707682230422,
+     "n_null": 0
+    },
+    "gpu_hour_share": {
+     "general": 0.9404356705241661,
+     "spot-like": 0.05956432947583391
+    },
+    "aborted": null,
+    "aborted_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a": null,
+    "t_a_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificate_case": null,
+    "certificate_case_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "abort_share": null,
+    "abort_share_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_median": null,
+    "t_a_median_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificates": null,
+    "certificates_note": "unguarded policy (not an A8 tag): no abort, no certificate"
+   },
+   "BL5": {
+    "n_runs": 1,
+    "seeds": [
+     0
+    ],
+    "r0": {
+     "0": 1.2372049887235295
+    },
+    "r0_mean": 1.2372049887235295,
+    "total_over_bl0a": {
+     "0": 1.0142679879221068
+    },
+    "total_over_bl0a_mean": 1.0142679879221068,
+    "overflow_usd": {
+     "0": 1890.0971771395878
+    },
+    "total_usd": {
+     "0": 25760.61785247766
+    },
+    "accountings": {
+     "0": {
+      "overflow_usd": 1890.0971771395878,
+      "total_usd": 25760.61785247766,
+      "overflow_over_bl0a": 1.2372049887235295,
+      "total_over_bl0a": 1.0142679879221068,
+      "own_share_of_total": 0.9266284221922185,
+      "overflow_over_bl0b": 0.22209607578796636,
+      "total_over_bl0b": 0.795552508930578
+     }
+    },
+    "intensity": 288.0,
+    "intensity_by_seed": {
+     "0": 288.0
+    },
+    "fallback_share_after_reclaims": {
+     "n": 1,
+     "median": 0.8031602219394286,
+     "p95": 0.8031602219394286,
+     "max": 0.8031602219394286,
+     "median_ci95": [
+      0.8031602219394286,
+      0.8031602219394286
+     ],
+     "mean": 0.8031602219394286,
+     "n_null": 0
+    },
+    "gpu_hour_share": {
+     "spot-like": 1.0
+    },
+    "aborted": null,
+    "aborted_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a": null,
+    "t_a_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificate_case": null,
+    "certificate_case_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "abort_share": null,
+    "abort_share_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_median": null,
+    "t_a_median_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificates": null,
+    "certificates_note": "unguarded policy (not an A8 tag): no abort, no certificate"
+   },
+   "BL1": {
+    "n_runs": 1,
+    "seeds": [
+     0
+    ],
+    "r0": {
+     "0": 1.9536347877814584
+    },
+    "r0_mean": 1.9536347877814584,
+    "total_over_bl0a": {
+     "0": 1.0573615660757687
+    },
+    "total_over_bl0a_mean": 1.0573615660757687,
+    "overflow_usd": {
+     "0": 2984.5980506085607
+    },
+    "total_usd": {
+     "0": 26855.11872594663
+    },
+    "accountings": {
+     "0": {
+      "overflow_usd": 2984.5980506085607,
+      "total_usd": 26855.11872594663,
+      "overflow_over_bl0a": 1.9536347877814584,
+      "total_over_bl0a": 1.0573615660757687,
+      "own_share_of_total": 0.8888629731610559,
+      "overflow_over_bl0b": 0.3507055207858349,
+      "total_over_bl0b": 0.8293534418469135
+     }
+    },
+    "intensity": 288.0,
+    "intensity_by_seed": {
+     "0": 288.0
+    },
+    "fallback_share_after_reclaims": {
+     "n": 1,
+     "median": 0.46584453537808024,
+     "p95": 0.46584453537808024,
+     "max": 0.46584453537808024,
+     "median_ci95": [
+      0.46584453537808024,
+      0.46584453537808024
+     ],
+     "mean": 0.46584453537808024,
+     "n_null": 0
+    },
+    "gpu_hour_share": {
+     "spot-like": 1.0
+    },
+    "aborted": null,
+    "aborted_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a": null,
+    "t_a_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificate_case": null,
+    "certificate_case_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "abort_share": null,
+    "abort_share_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_median": null,
+    "t_a_median_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificates": null,
+    "certificates_note": "unguarded policy (not an A8 tag): no abort, no certificate"
+   },
+   "BL2": {
+    "n_runs": 1,
+    "seeds": [
+     0
+    ],
+    "r0": {
+     "0": 1.7387395989020662
+    },
+    "r0_mean": 1.7387395989020662,
+    "total_over_bl0a": {
+     "0": 1.0444355227579205
+    },
+    "total_over_bl0a_mean": 1.0444355227579205,
+    "overflow_usd": {
+     "0": 2656.2993502445397
+    },
+    "total_usd": {
+     "0": 26526.82002558261
+    },
+    "accountings": {
+     "0": {
+      "overflow_usd": 2656.2993502445397,
+      "total_usd": 26526.82002558261,
+      "overflow_over_bl0a": 1.7387395989020662,
+      "total_over_bl0a": 1.0444355227579205,
+      "own_share_of_total": 0.8998636343262106,
+      "overflow_over_bl0b": 0.3121287460469382,
+      "total_over_bl0b": 0.8192147543259491
+     }
+    },
+    "intensity": 288.0,
+    "intensity_by_seed": {
+     "0": 288.0
+    },
+    "fallback_share_after_reclaims": {
+     "n": 1,
+     "median": 0.43991521397856775,
+     "p95": 0.43991521397856775,
+     "max": 0.43991521397856775,
+     "median_ci95": [
+      0.43991521397856775,
+      0.43991521397856775
+     ],
+     "mean": 0.43991521397856775,
+     "n_null": 0
+    },
+    "gpu_hour_share": {
+     "spot-like": 1.0
+    },
+    "aborted": null,
+    "aborted_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a": null,
+    "t_a_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificate_case": null,
+    "certificate_case_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "abort_share": null,
+    "abort_share_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_median": null,
+    "t_a_median_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificates": null,
+    "certificates_note": "unguarded policy (not an A8 tag): no abort, no certificate"
+   },
+   "BL4": {
+    "n_runs": 1,
+    "seeds": [
+     0
+    ],
+    "r0": {
+     "0": 1.0035132911850801
+    },
+    "r0_mean": 1.0035132911850801,
+    "total_over_bl0a": {
+     "0": 1.0002113260621766
+    },
+    "total_over_bl0a_mean": 1.0002113260621766,
+    "overflow_usd": {
+     "0": 1533.0827600751209
+    },
+    "total_usd": {
+     "0": 25403.60343541319
+    },
+    "accountings": {
+     "0": {
+      "overflow_usd": 1533.0827600751209,
+      "total_usd": 25403.60343541319,
+      "overflow_over_bl0a": 1.0035132911850801,
+      "total_over_bl0a": 1.0002113260621766,
+      "own_share_of_total": 0.9396509725884805,
+      "overflow_over_bl0b": 0.18014505761347036,
+      "total_over_bl0b": 0.7845270080343444
+     }
+    },
+    "intensity": 288.0,
+    "intensity_by_seed": {
+     "0": 288.0
+    },
+    "fallback_share_after_reclaims": {
+     "n": 1,
+     "median": 1.0,
+     "p95": 1.0,
+     "max": 1.0,
+     "median_ci95": [
+      1.0,
+      1.0
+     ],
+     "mean": 1.0,
+     "n_null": 0
+    },
+    "gpu_hour_share": {
+     "spot-like": 1.0
+    },
+    "aborted": null,
+    "aborted_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a": null,
+    "t_a_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificate_case": null,
+    "certificate_case_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "abort_share": null,
+    "abort_share_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_median": null,
+    "t_a_median_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificates": null,
+    "certificates_note": "unguarded policy (not an A8 tag): no abort, no certificate"
+   }
+  },
+  "L-ss": {
+   "Sublet": {
+    "n_runs": 1,
+    "seeds": [
+     0
+    ],
+    "r0": {
+     "0": 1.0497827555457724
+    },
+    "r0_mean": 1.0497827555457724,
+    "total_over_bl0a": {
+     "0": 1.0029944553808865
+    },
+    "total_over_bl0a_mean": 1.0029944553808865,
+    "overflow_usd": {
+     "0": 1603.769335681427
+    },
+    "total_usd": {
+     "0": 25474.290011019497
+    },
+    "accountings": {
+     "0": {
+      "overflow_usd": 1603.769335681427,
+      "total_usd": 25474.290011019497,
+      "overflow_over_bl0a": 1.0497827555457724,
+      "total_over_bl0a": 1.0029944553808865,
+      "own_share_of_total": 0.9370436100481042,
+      "overflow_over_bl0b": 0.18845109142111227,
+      "total_over_bl0b": 0.7867099868314115
+     }
+    },
+    "intensity": 286.2439024390244,
+    "intensity_by_seed": {
+     "0": 286.2439024390244
+    },
+    "fallback_share_after_reclaims": {
+     "n": 1,
+     "median": 0.94832252551034,
+     "p95": 0.94832252551034,
+     "max": 0.94832252551034,
+     "median_ci95": [
+      0.94832252551034,
+      0.94832252551034
+     ],
+     "mean": 0.94832252551034,
+     "n_null": 0
+    },
+    "gpu_hour_share": {
+     "spot-like": 1.0
+    },
+    "aborted": {
+     "0": true
+    },
+    "t_a": {
+     "0": 12
+    },
+    "certificate_case": {
+     "0": "W(b)"
+    },
+    "abort_share": 1.0,
+    "t_a_median": 12.0,
+    "certificates": {
+     "n": 1,
+     "held": 1,
+     "by_case": {
+      "W(a)": {
+       "runs": 0,
+       "held": 0
+      },
+      "W(b)": {
+       "runs": 1,
+       "held": 1
+      },
+      "W(c)": {
+       "runs": 0,
+       "held": 0
+      },
+      "unavailable": {
+       "runs": 0,
+       "held": 0
+      }
+     },
+     "failures": 0
+    }
+   },
+   "A7G": {
+    "n_runs": 1,
+    "seeds": [
+     0
+    ],
+    "r0": {
+     "0": 1.0448322139510107
+    },
+    "r0_mean": 1.0448322139510107,
+    "total_over_bl0a": {
+     "0": 1.0026966780530906
+    },
+    "total_over_bl0a_mean": 1.0026966780530906,
+    "overflow_usd": {
+     "0": 1596.2063167970423
+    },
+    "total_usd": {
+     "0": 25466.72699213511
+    },
+    "accountings": {
+     "0": {
+      "overflow_usd": 1596.2063167970423,
+      "total_usd": 25466.72699213511,
+      "overflow_over_bl0a": 1.0448322139510107,
+      "total_over_bl0a": 1.0026966780530906,
+      "own_share_of_total": 0.9373218899590042,
+      "overflow_over_bl0b": 0.18756239805886188,
+      "total_over_bl0b": 0.7864764218337466
+     }
+    },
+    "intensity": 286.2439024390244,
+    "intensity_by_seed": {
+     "0": 286.2439024390244
+    },
+    "fallback_share_after_reclaims": {
+     "n": 1,
+     "median": 0.9451562259399349,
+     "p95": 0.9451562259399349,
+     "max": 0.9451562259399349,
+     "median_ci95": [
+      0.9451562259399349,
+      0.9451562259399349
+     ],
+     "mean": 0.9451562259399349,
+     "n_null": 0
+    },
+    "gpu_hour_share": {
+     "spot-like": 1.0
+    },
+    "aborted": {
+     "0": true
+    },
+    "t_a": {
+     "0": 11
+    },
+    "certificate_case": {
+     "0": "W(b)"
+    },
+    "abort_share": 1.0,
+    "t_a_median": 11.0,
+    "certificates": {
+     "n": 1,
+     "held": 1,
+     "by_case": {
+      "W(a)": {
+       "runs": 0,
+       "held": 0
+      },
+      "W(b)": {
+       "runs": 1,
+       "held": 1
+      },
+      "W(c)": {
+       "runs": 0,
+       "held": 0
+      },
+      "unavailable": {
+       "runs": 0,
+       "held": 0
+      }
+     },
+     "failures": 0
+    }
+   },
+   "A7": {
+    "n_runs": 1,
+    "seeds": [
+     0
+    ],
+    "r0": {
+     "0": 1.2708232452878536
+    },
+    "r0_mean": 1.2708232452878536,
+    "total_over_bl0a": {
+     "0": 1.0162901413397194
+    },
+    "total_over_bl0a_mean": 1.0162901413397194,
+    "overflow_usd": {
+     "0": 1941.4563071234898
+    },
+    "total_usd": {
+     "0": 25811.976982461558
+    },
+    "accountings": {
+     "0": {
+      "overflow_usd": 1941.4563071234898,
+      "total_usd": 25811.976982461558,
+      "overflow_over_bl0a": 1.2708232452878536,
+      "total_over_bl0a": 1.0162901413397194,
+      "own_share_of_total": 0.9247846723076405,
+      "overflow_over_bl0b": 0.22813103598116194,
+      "total_over_bl0b": 0.7971386077170732
+     }
+    },
+    "intensity": 286.2439024390244,
+    "intensity_by_seed": {
+     "0": 286.2439024390244
+    },
+    "fallback_share_after_reclaims": {
+     "n": 1,
+     "median": 0.5884346483766495,
+     "p95": 0.5884346483766495,
+     "max": 0.5884346483766495,
+     "median_ci95": [
+      0.5884346483766495,
+      0.5884346483766495
+     ],
+     "mean": 0.5884346483766495,
+     "n_null": 0
+    },
+    "gpu_hour_share": {
+     "spot-like": 1.0
+    },
+    "aborted": null,
+    "aborted_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a": null,
+    "t_a_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificate_case": null,
+    "certificate_case_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "abort_share": null,
+    "abort_share_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_median": null,
+    "t_a_median_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificates": null,
+    "certificates_note": "unguarded policy (not an A8 tag): no abort, no certificate"
+   },
+   "A6": {
+    "n_runs": 1,
+    "seeds": [
+     0
+    ],
+    "r0": {
+     "0": 1.0356982486959818
+    },
+    "r0_mean": 1.0356982486959818,
+    "total_over_bl0a": {
+     "0": 1.0021472658900454
+    },
+    "total_over_bl0a_mean": 1.0021472658900454,
+    "overflow_usd": {
+     "0": 1582.2522169494227
+    },
+    "total_usd": {
+     "0": 25452.772892287492
+    },
+    "accountings": {
+     "0": {
+      "overflow_usd": 1582.2522169494227,
+      "total_usd": 25452.772892287492,
+      "overflow_over_bl0a": 1.0356982486959818,
+      "total_over_bl0a": 1.0021472658900454,
+      "own_share_of_total": 0.9378357625848748,
+      "overflow_over_bl0b": 0.18592272002812704,
+      "total_over_bl0b": 0.7860454842216437
+     }
+    },
+    "intensity": 286.2439024390244,
+    "intensity_by_seed": {
+     "0": 286.2439024390244
+    },
+    "fallback_share_after_reclaims": {
+     "n": 1,
+     "median": 0.9302707682230422,
+     "p95": 0.9302707682230422,
+     "max": 0.9302707682230422,
+     "median_ci95": [
+      0.9302707682230422,
+      0.9302707682230422
+     ],
+     "mean": 0.9302707682230422,
+     "n_null": 0
+    },
+    "gpu_hour_share": {
+     "general": 0.9404356705241661,
+     "spot-like": 0.05956432947583391
+    },
+    "aborted": null,
+    "aborted_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a": null,
+    "t_a_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificate_case": null,
+    "certificate_case_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "abort_share": null,
+    "abort_share_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_median": null,
+    "t_a_median_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificates": null,
+    "certificates_note": "unguarded policy (not an A8 tag): no abort, no certificate"
+   },
+   "BL5": {
+    "n_runs": 1,
+    "seeds": [
+     0
+    ],
+    "r0": {
+     "0": 1.230839280232249
+    },
+    "r0_mean": 1.230839280232249,
+    "total_over_bl0a": {
+     "0": 1.0138850876620489
+    },
+    "total_over_bl0a_mean": 1.0138850876620489,
+    "overflow_usd": {
+     "0": 1880.372185921862
+    },
+    "total_usd": {
+     "0": 25750.89286125993
+    },
+    "accountings": {
+     "0": {
+      "overflow_usd": 1880.372185921862,
+      "total_usd": 25750.89286125993,
+      "overflow_over_bl0a": 1.230839280232249,
+      "total_over_bl0a": 1.0138850876620489,
+      "own_share_of_total": 0.9269783694082808,
+      "overflow_over_bl0b": 0.220953339629925,
+      "total_over_bl0b": 0.795252176803185
+     }
+    },
+    "intensity": 286.2439024390244,
+    "intensity_by_seed": {
+     "0": 286.2439024390244
+    },
+    "fallback_share_after_reclaims": {
+     "n": 1,
+     "median": 0.7825641270341293,
+     "p95": 0.7825641270341293,
+     "max": 0.7825641270341293,
+     "median_ci95": [
+      0.7825641270341293,
+      0.7825641270341293
+     ],
+     "mean": 0.7825641270341293,
+     "n_null": 0
+    },
+    "gpu_hour_share": {
+     "spot-like": 1.0
+    },
+    "aborted": null,
+    "aborted_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a": null,
+    "t_a_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificate_case": null,
+    "certificate_case_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "abort_share": null,
+    "abort_share_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_median": null,
+    "t_a_median_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificates": null,
+    "certificates_note": "unguarded policy (not an A8 tag): no abort, no certificate"
+   },
+   "BL1": {
+    "n_runs": 1,
+    "seeds": [
+     0
+    ],
+    "r0": {
+     "0": 1.9408488116217708
+    },
+    "r0_mean": 1.9408488116217708,
+    "total_over_bl0a": {
+     "0": 1.0565924837963425
+    },
+    "total_over_bl0a_mean": 1.0565924837963425,
+    "overflow_usd": {
+     "0": 2965.0647172752274
+    },
+    "total_usd": {
+     "0": 26835.5853926133
+    },
+    "accountings": {
+     "0": {
+      "overflow_usd": 2965.0647172752274,
+      "total_usd": 26835.5853926133,
+      "overflow_over_bl0a": 1.9408488116217708,
+      "total_over_bl0a": 1.0565924837963425,
+      "own_share_of_total": 0.8895099669377294,
+      "overflow_over_bl0b": 0.34841025431336864,
+      "total_over_bl0b": 0.8287502035072859
+     }
+    },
+    "intensity": 286.2439024390244,
+    "intensity_by_seed": {
+     "0": 286.2439024390244
+    },
+    "fallback_share_after_reclaims": {
+     "n": 1,
+     "median": 0.45088731040371455,
+     "p95": 0.45088731040371455,
+     "max": 0.45088731040371455,
+     "median_ci95": [
+      0.45088731040371455,
+      0.45088731040371455
+     ],
+     "mean": 0.45088731040371455,
+     "n_null": 0
+    },
+    "gpu_hour_share": {
+     "spot-like": 1.0
+    },
+    "aborted": null,
+    "aborted_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a": null,
+    "t_a_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificate_case": null,
+    "certificate_case_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "abort_share": null,
+    "abort_share_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_median": null,
+    "t_a_median_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificates": null,
+    "certificates_note": "unguarded policy (not an A8 tag): no abort, no certificate"
+   },
+   "BL2": {
+    "n_runs": 1,
+    "seeds": [
+     0
+    ],
+    "r0": {
+     "0": 1.7048516709621069
+    },
+    "r0_mean": 1.7048516709621069,
+    "total_over_bl0a": {
+     "0": 1.0423971484844514
+    },
+    "total_over_bl0a_mean": 1.0423971484844514,
+    "overflow_usd": {
+     "0": 2604.5282391334285
+    },
+    "total_usd": {
+     "0": 26475.0489144715
+    },
+    "accountings": {
+     "0": {
+      "overflow_usd": 2604.5282391334285,
+      "total_usd": 26475.0489144715,
+      "overflow_over_bl0a": 1.7048516709621069,
+      "total_over_bl0a": 1.0423971484844514,
+      "own_share_of_total": 0.901623288872952,
+      "overflow_over_bl0b": 0.30604537596627307,
+      "total_over_bl0b": 0.8176159325286448
+     }
+    },
+    "intensity": 286.2439024390244,
+    "intensity_by_seed": {
+     "0": 286.2439024390244
+    },
+    "fallback_share_after_reclaims": {
+     "n": 1,
+     "median": 0.42596598202811575,
+     "p95": 0.42596598202811575,
+     "max": 0.42596598202811575,
+     "median_ci95": [
+      0.42596598202811575,
+      0.42596598202811575
+     ],
+     "mean": 0.42596598202811575,
+     "n_null": 0
+    },
+    "gpu_hour_share": {
+     "spot-like": 1.0
+    },
+    "aborted": null,
+    "aborted_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a": null,
+    "t_a_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificate_case": null,
+    "certificate_case_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "abort_share": null,
+    "abort_share_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_median": null,
+    "t_a_median_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificates": null,
+    "certificates_note": "unguarded policy (not an A8 tag): no abort, no certificate"
+   },
+   "BL4": {
+    "n_runs": 1,
+    "seeds": [
+     0
+    ],
+    "r0": {
+     "0": 1.0035132911850801
+    },
+    "r0_mean": 1.0035132911850801,
+    "total_over_bl0a": {
+     "0": 1.0002113260621766
+    },
+    "total_over_bl0a_mean": 1.0002113260621766,
+    "overflow_usd": {
+     "0": 1533.0827600751209
+    },
+    "total_usd": {
+     "0": 25403.60343541319
+    },
+    "accountings": {
+     "0": {
+      "overflow_usd": 1533.0827600751209,
+      "total_usd": 25403.60343541319,
+      "overflow_over_bl0a": 1.0035132911850801,
+      "total_over_bl0a": 1.0002113260621766,
+      "own_share_of_total": 0.9396509725884805,
+      "overflow_over_bl0b": 0.18014505761347036,
+      "total_over_bl0b": 0.7845270080343444
+     }
+    },
+    "intensity": 286.2439024390244,
+    "intensity_by_seed": {
+     "0": 286.2439024390244
+    },
+    "fallback_share_after_reclaims": {
+     "n": 1,
+     "median": 1.0,
+     "p95": 1.0,
+     "max": 1.0,
+     "median_ci95": [
+      1.0,
+      1.0
+     ],
+     "mean": 1.0,
+     "n_null": 0
+    },
+    "gpu_hour_share": {
+     "spot-like": 1.0
+    },
+    "aborted": null,
+    "aborted_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a": null,
+    "t_a_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificate_case": null,
+    "certificate_case_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "abort_share": null,
+    "abort_share_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_median": null,
+    "t_a_median_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificates": null,
+    "certificates_note": "unguarded policy (not an A8 tag): no abort, no certificate"
+   }
+  },
+  "L-iid-0.05": {
+   "Sublet": {
+    "n_runs": 1,
+    "seeds": [
+     0
+    ],
+    "r0": {
+     "0": 1.052738147606321
+    },
+    "r0_mean": 1.052738147606321,
+    "total_over_bl0a": {
+     "0": 1.0031722235570615
+    },
+    "total_over_bl0a_mean": 1.0031722235570615,
+    "overflow_usd": {
+     "0": 1608.2843337956415
+    },
+    "total_usd": {
+     "0": 25478.80500913371
+    },
+    "accountings": {
+     "0": {
+      "overflow_usd": 1608.2843337956415,
+      "total_usd": 25478.80500913371,
+      "overflow_over_bl0a": 1.052738147606321,
+      "total_over_bl0a": 1.0031722235570615,
+      "own_share_of_total": 0.936877560261594,
+      "overflow_over_bl0b": 0.18898162676896918,
+      "total_over_bl0b": 0.7868494213006525
+     }
+    },
+    "intensity": 13.02439024390244,
+    "intensity_by_seed": {
+     "0": 13.02439024390244
+    },
+    "fallback_share_after_reclaims": {
+     "n": 1,
+     "median": 0.9882669569306024,
+     "p95": 0.9882669569306024,
+     "max": 0.9882669569306024,
+     "median_ci95": [
+      0.9882669569306024,
+      0.9882669569306024
+     ],
+     "mean": 0.9882669569306024,
+     "n_null": 0
+    },
+    "gpu_hour_share": {
+     "spot-like": 1.0
+    },
+    "aborted": {
+     "0": true
+    },
+    "t_a": {
+     "0": 12
+    },
+    "certificate_case": {
+     "0": "W(b)"
+    },
+    "abort_share": 1.0,
+    "t_a_median": 12.0,
+    "certificates": {
+     "n": 1,
+     "held": 1,
+     "by_case": {
+      "W(a)": {
+       "runs": 0,
+       "held": 0
+      },
+      "W(b)": {
+       "runs": 1,
+       "held": 1
+      },
+      "W(c)": {
+       "runs": 0,
+       "held": 0
+      },
+      "unavailable": {
+       "runs": 0,
+       "held": 0
+      }
+     },
+     "failures": 0
+    }
+   },
+   "A7G": {
+    "n_runs": 1,
+    "seeds": [
+     0
+    ],
+    "r0": {
+     "0": 1.042178560200732
+    },
+    "r0_mean": 1.042178560200732,
+    "total_over_bl0a": {
+     "0": 1.0025370595734702
+    },
+    "total_over_bl0a_mean": 1.0025370595734702,
+    "overflow_usd": {
+     "0": 1592.1522889615399
+    },
+    "total_usd": {
+     "0": 25462.67296429961
+    },
+    "accountings": {
+     "0": {
+      "overflow_usd": 1592.1522889615399,
+      "total_usd": 25462.67296429961,
+      "overflow_over_bl0a": 1.042178560200732,
+      "total_over_bl0a": 1.0025370595734702,
+      "own_share_of_total": 0.9374711252352081,
+      "overflow_over_bl0b": 0.18708602907408678,
+      "total_over_bl0b": 0.7863512232832197
+     }
+    },
+    "intensity": 13.02439024390244,
+    "intensity_by_seed": {
+     "0": 13.02439024390244
+    },
+    "fallback_share_after_reclaims": {
+     "n": 1,
+     "median": 0.949844960939674,
+     "p95": 0.949844960939674,
+     "max": 0.949844960939674,
+     "median_ci95": [
+      0.949844960939674,
+      0.949844960939674
+     ],
+     "mean": 0.949844960939674,
+     "n_null": 0
+    },
+    "gpu_hour_share": {
+     "spot-like": 1.0
+    },
+    "aborted": {
+     "0": true
+    },
+    "t_a": {
+     "0": 11
+    },
+    "certificate_case": {
+     "0": "W(b)"
+    },
+    "abort_share": 1.0,
+    "t_a_median": 11.0,
+    "certificates": {
+     "n": 1,
+     "held": 1,
+     "by_case": {
+      "W(a)": {
+       "runs": 0,
+       "held": 0
+      },
+      "W(b)": {
+       "runs": 1,
+       "held": 1
+      },
+      "W(c)": {
+       "runs": 0,
+       "held": 0
+      },
+      "unavailable": {
+       "runs": 0,
+       "held": 0
+      }
+     },
+     "failures": 0
+    }
+   },
+   "A7": {
+    "n_runs": 1,
+    "seeds": [
+     0
+    ],
+    "r0": {
+     "0": 0.8647642539774287
+    },
+    "r0_mean": 0.8647642539774287,
+    "total_over_bl0a": {
+     "0": 0.9918655083888809
+    },
+    "total_over_bl0a_mean": 0.9918655083888809,
+    "overflow_usd": {
+     "0": 1321.1137121426598
+    },
+    "total_usd": {
+     "0": 25191.634387480728
+    },
+    "accountings": {
+     "0": {
+      "overflow_usd": 1321.1137121426598,
+      "total_usd": 25191.634387480728,
+      "overflow_over_bl0a": 0.8647642539774287,
+      "total_over_bl0a": 0.9918655083888809,
+      "own_share_of_total": 0.9475574434027512,
+      "overflow_over_bl0b": 0.15523761142302817,
+      "total_over_bl0b": 0.7779808720346568
+     }
+    },
+    "intensity": 13.02439024390244,
+    "intensity_by_seed": {
+     "0": 13.02439024390244
+    },
+    "fallback_share_after_reclaims": {
+     "n": 1,
+     "median": 0.22851333424020834,
+     "p95": 0.22851333424020834,
+     "max": 0.22851333424020834,
+     "median_ci95": [
+      0.22851333424020834,
+      0.22851333424020834
+     ],
+     "mean": 0.22851333424020834,
+     "n_null": 0
+    },
+    "gpu_hour_share": {
+     "spot-like": 1.0
+    },
+    "aborted": null,
+    "aborted_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a": null,
+    "t_a_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificate_case": null,
+    "certificate_case_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "abort_share": null,
+    "abort_share_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_median": null,
+    "t_a_median_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificates": null,
+    "certificates_note": "unguarded policy (not an A8 tag): no abort, no certificate"
+   },
+   "A6": {
+    "n_runs": 1,
+    "seeds": [
+     0
+    ],
+    "r0": {
+     "0": 1.0445039379695384
+    },
+    "r0_mean": 1.0445039379695384,
+    "total_over_bl0a": {
+     "0": 1.0026769321035471
+    },
+    "total_over_bl0a_mean": 1.0026769321035471,
+    "overflow_usd": {
+     "0": 1595.7048045080046
+    },
+    "total_usd": {
+     "0": 25466.225479846074
+    },
+    "accountings": {
+     "0": {
+      "overflow_usd": 1595.7048045080046,
+      "total_usd": 25466.225479846074,
+      "overflow_over_bl0a": 1.0445039379695384,
+      "total_over_bl0a": 1.0026769321035471,
+      "own_share_of_total": 0.9373403488565338,
+      "overflow_over_bl0b": 0.18750346780241695,
+      "total_over_bl0b": 0.7864609338760397
+     }
+    },
+    "intensity": 13.02439024390244,
+    "intensity_by_seed": {
+     "0": 13.02439024390244
+    },
+    "fallback_share_after_reclaims": {
+     "n": 1,
+     "median": 0.8881362221673091,
+     "p95": 0.8881362221673091,
+     "max": 0.8881362221673091,
+     "median_ci95": [
+      0.8881362221673091,
+      0.8881362221673091
+     ],
+     "mean": 0.8881362221673091,
+     "n_null": 0
+    },
+    "gpu_hour_share": {
+     "general": 0.8735461519425884,
+     "spot-like": 0.12645384805741153
+    },
+    "aborted": null,
+    "aborted_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a": null,
+    "t_a_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificate_case": null,
+    "certificate_case_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "abort_share": null,
+    "abort_share_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_median": null,
+    "t_a_median_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificates": null,
+    "certificates_note": "unguarded policy (not an A8 tag): no abort, no certificate"
+   },
+   "BL5": {
+    "n_runs": 1,
+    "seeds": [
+     0
+    ],
+    "r0": {
+     "0": 0.9610924938264246
+    },
+    "r0_mean": 0.9610924938264246,
+    "total_over_bl0a": {
+     "0": 0.997659695813519
+    },
+    "total_over_bl0a_mean": 0.997659695813519,
+    "overflow_usd": {
+     "0": 1468.275852512996
+    },
+    "total_usd": {
+     "0": 25338.796527851067
+    },
+    "accountings": {
+     "0": {
+      "overflow_usd": 1468.275852512996,
+      "total_usd": 25338.796527851067,
+      "overflow_over_bl0a": 0.9610924938264246,
+      "total_over_bl0a": 0.997659695813519,
+      "own_share_of_total": 0.9420542388073109,
+      "overflow_over_bl0b": 0.1725299148432537,
+      "total_over_bl0b": 0.7825256081377142
+     }
+    },
+    "intensity": 13.02439024390244,
+    "intensity_by_seed": {
+     "0": 13.02439024390244
+    },
+    "fallback_share_after_reclaims": {
+     "n": 1,
+     "median": 0.335133666980071,
+     "p95": 0.335133666980071,
+     "max": 0.335133666980071,
+     "median_ci95": [
+      0.335133666980071,
+      0.335133666980071
+     ],
+     "mean": 0.335133666980071,
+     "n_null": 0
+    },
+    "gpu_hour_share": {
+     "spot-like": 1.0
+    },
+    "aborted": null,
+    "aborted_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a": null,
+    "t_a_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificate_case": null,
+    "certificate_case_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "abort_share": null,
+    "abort_share_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_median": null,
+    "t_a_median_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificates": null,
+    "certificates_note": "unguarded policy (not an A8 tag): no abort, no certificate"
+   },
+   "BL1": {
+    "n_runs": 1,
+    "seeds": [
+     0
+    ],
+    "r0": {
+     "0": 0.6188800375744196
+    },
+    "r0_mean": 0.6188800375744196,
+    "total_over_bl0a": {
+     "0": 0.9770754609756546
+    },
+    "total_over_bl0a_mean": 0.9770754609756546,
+    "overflow_usd": {
+     "0": 945.4725956240447
+    },
+    "total_usd": {
+     "0": 24815.993270962113
+    },
+    "accountings": {
+     "0": {
+      "overflow_usd": 945.4725956240447,
+      "total_usd": 24815.993270962113,
+      "overflow_over_bl0a": 0.6188800375744196,
+      "total_over_bl0a": 0.9770754609756546,
+      "own_share_of_total": 0.961900674887337,
+      "overflow_over_bl0b": 0.11109786088932676,
+      "total_over_bl0b": 0.7663801319275975
+     }
+    },
+    "intensity": 13.02439024390244,
+    "intensity_by_seed": {
+     "0": 13.02439024390244
+    },
+    "fallback_share_after_reclaims": {
+     "n": 1,
+     "median": 0.04507883635770144,
+     "p95": 0.04507883635770144,
+     "max": 0.04507883635770144,
+     "median_ci95": [
+      0.04507883635770144,
+      0.04507883635770144
+     ],
+     "mean": 0.04507883635770144,
+     "n_null": 0
+    },
+    "gpu_hour_share": {
+     "spot-like": 1.0
+    },
+    "aborted": null,
+    "aborted_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a": null,
+    "t_a_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificate_case": null,
+    "certificate_case_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "abort_share": null,
+    "abort_share_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_median": null,
+    "t_a_median_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificates": null,
+    "certificates_note": "unguarded policy (not an A8 tag): no abort, no certificate"
+   },
+   "BL2": {
+    "n_runs": 1,
+    "seeds": [
+     0
+    ],
+    "r0": {
+     "0": 0.6857091757539852
+    },
+    "r0_mean": 0.6857091757539852,
+    "total_over_bl0a": {
+     "0": 0.9810952640224708
+    },
+    "total_over_bl0a_mean": 0.9810952640224708,
+    "overflow_usd": {
+     "0": 1047.568502587846
+    },
+    "total_usd": {
+     "0": 24918.089177925915
+    },
+    "accountings": {
+     "0": {
+      "overflow_usd": 1047.568502587846,
+      "total_usd": 24918.089177925915,
+      "overflow_over_bl0a": 0.6857091757539852,
+      "total_over_bl0a": 0.9810952640224708,
+      "own_share_of_total": 0.9579595170758177,
+      "overflow_over_bl0b": 0.12309465161782747,
+      "total_over_bl0b": 0.7695331096784314
+     }
+    },
+    "intensity": 13.02439024390244,
+    "intensity_by_seed": {
+     "0": 13.02439024390244
+    },
+    "fallback_share_after_reclaims": {
+     "n": 1,
+     "median": 0.07257054717397105,
+     "p95": 0.07257054717397105,
+     "max": 0.07257054717397105,
+     "median_ci95": [
+      0.07257054717397105,
+      0.07257054717397105
+     ],
+     "mean": 0.07257054717397105,
+     "n_null": 0
+    },
+    "gpu_hour_share": {
+     "spot-like": 1.0
+    },
+    "aborted": null,
+    "aborted_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a": null,
+    "t_a_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificate_case": null,
+    "certificate_case_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "abort_share": null,
+    "abort_share_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_median": null,
+    "t_a_median_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificates": null,
+    "certificates_note": "unguarded policy (not an A8 tag): no abort, no certificate"
+   },
+   "BL4": {
+    "n_runs": 1,
+    "seeds": [
+     0
+    ],
+    "r0": {
+     "0": 1.0179821222462417
+    },
+    "r0_mean": 1.0179821222462417,
+    "total_over_bl0a": {
+     "0": 1.0010816328290728
+    },
+    "total_over_bl0a_mean": 1.0010816328290728,
+    "overflow_usd": {
+     "0": 1555.1870168429716
+    },
+    "total_usd": {
+     "0": 25425.70769218104
+    },
+    "accountings": {
+     "0": {
+      "overflow_usd": 1555.1870168429716,
+      "total_usd": 25425.70769218104,
+      "overflow_over_bl0a": 1.0179821222462417,
+      "total_over_bl0a": 1.0010816328290728,
+      "own_share_of_total": 0.9388340715754698,
+      "overflow_over_bl0b": 0.18274242072565633,
+      "total_over_bl0b": 0.7852096429397031
+     }
+    },
+    "intensity": 13.02439024390244,
+    "intensity_by_seed": {
+     "0": 13.02439024390244
+    },
+    "fallback_share_after_reclaims": {
+     "n": 1,
+     "median": 0.9753282299449634,
+     "p95": 0.9753282299449634,
+     "max": 0.9753282299449634,
+     "median_ci95": [
+      0.9753282299449634,
+      0.9753282299449634
+     ],
+     "mean": 0.9753282299449634,
+     "n_null": 0
+    },
+    "gpu_hour_share": {
+     "spot-like": 1.0
+    },
+    "aborted": null,
+    "aborted_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a": null,
+    "t_a_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificate_case": null,
+    "certificate_case_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "abort_share": null,
+    "abort_share_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_median": null,
+    "t_a_median_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificates": null,
+    "certificates_note": "unguarded policy (not an A8 tag): no abort, no certificate"
+   }
+  },
+  "L-iid-0.2": {
+   "Sublet": {
+    "n_runs": 1,
+    "seeds": [
+     0
+    ],
+    "r0": {
+     "0": 1.0514880235868205
+    },
+    "r0_mean": 1.0514880235868205,
+    "total_over_bl0a": {
+     "0": 1.0030970280288927
+    },
+    "total_over_bl0a_mean": 1.0030970280288927,
+    "overflow_usd": {
+     "0": 1606.3745000155743
+    },
+    "total_usd": {
+     "0": 25476.895175353646
+    },
+    "accountings": {
+     "0": {
+      "overflow_usd": 1606.3745000155743,
+      "total_usd": 25476.895175353646,
+      "overflow_over_bl0a": 1.0514880235868205,
+      "total_over_bl0a": 1.0030970280288927,
+      "own_share_of_total": 0.9369477917556617,
+      "overflow_over_bl0b": 0.1887572115414928,
+      "total_over_bl0b": 0.7867904408420286
+     }
+    },
+    "intensity": 52.02439024390244,
+    "intensity_by_seed": {
+     "0": 52.02439024390244
+    },
+    "fallback_share_after_reclaims": {
+     "n": 1,
+     "median": 0.9882324582674654,
+     "p95": 0.9882324582674654,
+     "max": 0.9882324582674654,
+     "median_ci95": [
+      0.9882324582674654,
+      0.9882324582674654
+     ],
+     "mean": 0.9882324582674654,
+     "n_null": 0
+    },
+    "gpu_hour_share": {
+     "spot-like": 1.0
+    },
+    "aborted": {
+     "0": true
+    },
+    "t_a": {
+     "0": 12
+    },
+    "certificate_case": {
+     "0": "W(b)"
+    },
+    "abort_share": 1.0,
+    "t_a_median": 12.0,
+    "certificates": {
+     "n": 1,
+     "held": 1,
+     "by_case": {
+      "W(a)": {
+       "runs": 0,
+       "held": 0
+      },
+      "W(b)": {
+       "runs": 1,
+       "held": 1
+      },
+      "W(c)": {
+       "runs": 0,
+       "held": 0
+      },
+      "unavailable": {
+       "runs": 0,
+       "held": 0
+      }
+     },
+     "failures": 0
+    }
+   },
+   "A7G": {
+    "n_runs": 1,
+    "seeds": [
+     0
+    ],
+    "r0": {
+     "0": 1.042178560200732
+    },
+    "r0_mean": 1.042178560200732,
+    "total_over_bl0a": {
+     "0": 1.0025370595734702
+    },
+    "total_over_bl0a_mean": 1.0025370595734702,
+    "overflow_usd": {
+     "0": 1592.1522889615399
+    },
+    "total_usd": {
+     "0": 25462.67296429961
+    },
+    "accountings": {
+     "0": {
+      "overflow_usd": 1592.1522889615399,
+      "total_usd": 25462.67296429961,
+      "overflow_over_bl0a": 1.042178560200732,
+      "total_over_bl0a": 1.0025370595734702,
+      "own_share_of_total": 0.9374711252352081,
+      "overflow_over_bl0b": 0.18708602907408678,
+      "total_over_bl0b": 0.7863512232832197
+     }
+    },
+    "intensity": 52.02439024390244,
+    "intensity_by_seed": {
+     "0": 52.02439024390244
+    },
+    "fallback_share_after_reclaims": {
+     "n": 1,
+     "median": 0.9551982474212004,
+     "p95": 0.9551982474212004,
+     "max": 0.9551982474212004,
+     "median_ci95": [
+      0.9551982474212004,
+      0.9551982474212004
+     ],
+     "mean": 0.9551982474212004,
+     "n_null": 0
+    },
+    "gpu_hour_share": {
+     "spot-like": 1.0
+    },
+    "aborted": {
+     "0": true
+    },
+    "t_a": {
+     "0": 11
+    },
+    "certificate_case": {
+     "0": "W(b)"
+    },
+    "abort_share": 1.0,
+    "t_a_median": 11.0,
+    "certificates": {
+     "n": 1,
+     "held": 1,
+     "by_case": {
+      "W(a)": {
+       "runs": 0,
+       "held": 0
+      },
+      "W(b)": {
+       "runs": 1,
+       "held": 1
+      },
+      "W(c)": {
+       "runs": 0,
+       "held": 0
+      },
+      "unavailable": {
+       "runs": 0,
+       "held": 0
+      }
+     },
+     "failures": 0
+    }
+   },
+   "A7": {
+    "n_runs": 1,
+    "seeds": [
+     0
+    ],
+    "r0": {
+     "0": 0.9142851514306652
+    },
+    "r0_mean": 0.9142851514306652,
+    "total_over_bl0a": {
+     "0": 0.9948442128864419
+    },
+    "total_over_bl0a_mean": 0.9948442128864419,
+    "overflow_usd": {
+     "0": 1396.7675523218456
+    },
+    "total_usd": {
+     "0": 25267.288227659916
+    },
+    "accountings": {
+     "0": {
+      "overflow_usd": 1396.7675523218456,
+      "total_usd": 25267.288227659916,
+      "overflow_over_bl0a": 0.9142851514306652,
+      "total_over_bl0a": 0.9948442128864419,
+      "own_share_of_total": 0.9447203221914089,
+      "overflow_over_bl0b": 0.16412732419828102,
+      "total_over_bl0b": 0.7803172524238794
+     }
+    },
+    "intensity": 52.02439024390244,
+    "intensity_by_seed": {
+     "0": 52.02439024390244
+    },
+    "fallback_share_after_reclaims": {
+     "n": 1,
+     "median": 0.2665835543531786,
+     "p95": 0.2665835543531786,
+     "max": 0.2665835543531786,
+     "median_ci95": [
+      0.2665835543531786,
+      0.2665835543531786
+     ],
+     "mean": 0.2665835543531786,
+     "n_null": 0
+    },
+    "gpu_hour_share": {
+     "spot-like": 1.0
+    },
+    "aborted": null,
+    "aborted_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a": null,
+    "t_a_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificate_case": null,
+    "certificate_case_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "abort_share": null,
+    "abort_share_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_median": null,
+    "t_a_median_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificates": null,
+    "certificates_note": "unguarded policy (not an A8 tag): no abort, no certificate"
+   },
+   "A6": {
+    "n_runs": 1,
+    "seeds": [
+     0
+    ],
+    "r0": {
+     "0": 1.0340669734228367
+    },
+    "r0_mean": 1.0340669734228367,
+    "total_over_bl0a": {
+     "0": 1.0020491439406711
+    },
+    "total_over_bl0a_mean": 1.0020491439406711,
+    "overflow_usd": {
+     "0": 1579.7600925100521
+    },
+    "total_usd": {
+     "0": 25450.280767848122
+    },
+    "accountings": {
+     "0": {
+      "overflow_usd": 1579.7600925100521,
+      "total_usd": 25450.280767848122,
+      "overflow_over_bl0a": 1.0340669734228367,
+      "total_over_bl0a": 1.0020491439406711,
+      "own_share_of_total": 0.9379275966768195,
+      "overflow_over_bl0b": 0.18562988267296143,
+      "total_over_bl0b": 0.7859685211665779
+     }
+    },
+    "intensity": 52.02439024390244,
+    "intensity_by_seed": {
+     "0": 52.02439024390244
+    },
+    "fallback_share_after_reclaims": {
+     "n": 1,
+     "median": 0.9089604187144643,
+     "p95": 0.9089604187144643,
+     "max": 0.9089604187144643,
+     "median_ci95": [
+      0.9089604187144643,
+      0.9089604187144643
+     ],
+     "mean": 0.9089604187144643,
+     "n_null": 0
+    },
+    "gpu_hour_share": {
+     "general": 0.8957332579824809,
+     "spot-like": 0.10426674201751909
+    },
+    "aborted": null,
+    "aborted_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a": null,
+    "t_a_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificate_case": null,
+    "certificate_case_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "abort_share": null,
+    "abort_share_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_median": null,
+    "t_a_median_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificates": null,
+    "certificates_note": "unguarded policy (not an A8 tag): no abort, no certificate"
+   },
+   "BL5": {
+    "n_runs": 1,
+    "seeds": [
+     0
+    ],
+    "r0": {
+     "0": 0.9593336949081802
+    },
+    "r0_mean": 0.9593336949081802,
+    "total_over_bl0a": {
+     "0": 0.9975539032589106
+    },
+    "total_over_bl0a_mean": 0.9975539032589106,
+    "overflow_usd": {
+     "0": 1465.5889082306587
+    },
+    "total_usd": {
+     "0": 25336.10958356873
+    },
+    "accountings": {
+     "0": {
+      "overflow_usd": 1465.5889082306587,
+      "total_usd": 25336.10958356873,
+      "overflow_over_bl0a": 0.9593336949081802,
+      "total_over_bl0a": 0.9975539032589106,
+      "own_share_of_total": 0.9421541455132819,
+      "overflow_over_bl0b": 0.17221418516110523,
+      "total_over_bl0b": 0.7824426285571229
+     }
+    },
+    "intensity": 52.02439024390244,
+    "intensity_by_seed": {
+     "0": 52.02439024390244
+    },
+    "fallback_share_after_reclaims": {
+     "n": 1,
+     "median": 0.4005105116410599,
+     "p95": 0.4005105116410599,
+     "max": 0.4005105116410599,
+     "median_ci95": [
+      0.4005105116410599,
+      0.4005105116410599
+     ],
+     "mean": 0.4005105116410599,
+     "n_null": 0
+    },
+    "gpu_hour_share": {
+     "spot-like": 1.0
+    },
+    "aborted": null,
+    "aborted_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a": null,
+    "t_a_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificate_case": null,
+    "certificate_case_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "abort_share": null,
+    "abort_share_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_median": null,
+    "t_a_median_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificates": null,
+    "certificates_note": "unguarded policy (not an A8 tag): no abort, no certificate"
+   },
+   "BL1": {
+    "n_runs": 1,
+    "seeds": [
+     0
+    ],
+    "r0": {
+     "0": 0.7408506770537969
+    },
+    "r0_mean": 0.7408506770537969,
+    "total_over_bl0a": {
+     "0": 0.9844120503969326
+    },
+    "total_over_bl0a_mean": 0.9844120503969326,
+    "overflow_usd": {
+     "0": 1131.8090261065427
+    },
+    "total_usd": {
+     "0": 25002.329701444614
+    },
+    "accountings": {
+     "0": {
+      "overflow_usd": 1131.8090261065427,
+      "total_usd": 25002.329701444614,
+      "overflow_over_bl0a": 0.7408506770537969,
+      "total_over_bl0a": 0.9844120503969326,
+      "own_share_of_total": 0.9547318574060261,
+      "overflow_over_bl0b": 0.13299334355923376,
+      "total_over_bl0b": 0.7721346683919185
+     }
+    },
+    "intensity": 52.02439024390244,
+    "intensity_by_seed": {
+     "0": 52.02439024390244
+    },
+    "fallback_share_after_reclaims": {
+     "n": 1,
+     "median": 0.09001379794029625,
+     "p95": 0.09001379794029625,
+     "max": 0.09001379794029625,
+     "median_ci95": [
+      0.09001379794029625,
+      0.09001379794029625
+     ],
+     "mean": 0.09001379794029625,
+     "n_null": 0
+    },
+    "gpu_hour_share": {
+     "spot-like": 1.0
+    },
+    "aborted": null,
+    "aborted_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a": null,
+    "t_a_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificate_case": null,
+    "certificate_case_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "abort_share": null,
+    "abort_share_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_median": null,
+    "t_a_median_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificates": null,
+    "certificates_note": "unguarded policy (not an A8 tag): no abort, no certificate"
+   },
+   "BL2": {
+    "n_runs": 1,
+    "seeds": [
+     0
+    ],
+    "r0": {
+     "0": 0.78486813974536
+    },
+    "r0_mean": 0.78486813974536,
+    "total_over_bl0a": {
+     "0": 0.987059720791323
+    },
+    "total_over_bl0a_mean": 0.987059720791323,
+    "overflow_usd": {
+     "0": 1199.055183967584
+    },
+    "total_usd": {
+     "0": 25069.575859305653
+    },
+    "accountings": {
+     "0": {
+      "overflow_usd": 1199.055183967584,
+      "total_usd": 25069.575859305653,
+      "overflow_over_bl0a": 0.78486813974536,
+      "total_over_bl0a": 0.987059720791323,
+      "own_share_of_total": 0.9521709026631776,
+      "overflow_over_bl0b": 0.14089511070295158,
+      "total_over_bl0b": 0.7742113984575036
+     }
+    },
+    "intensity": 52.02439024390244,
+    "intensity_by_seed": {
+     "0": 52.02439024390244
+    },
+    "fallback_share_after_reclaims": {
+     "n": 1,
+     "median": 0.1202948263048371,
+     "p95": 0.1202948263048371,
+     "max": 0.1202948263048371,
+     "median_ci95": [
+      0.1202948263048371,
+      0.1202948263048371
+     ],
+     "mean": 0.1202948263048371,
+     "n_null": 0
+    },
+    "gpu_hour_share": {
+     "spot-like": 1.0
+    },
+    "aborted": null,
+    "aborted_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a": null,
+    "t_a_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificate_case": null,
+    "certificate_case_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "abort_share": null,
+    "abort_share_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_median": null,
+    "t_a_median_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificates": null,
+    "certificates_note": "unguarded policy (not an A8 tag): no abort, no certificate"
+   },
+   "BL4": {
+    "n_runs": 1,
+    "seeds": [
+     0
+    ],
+    "r0": {
+     "0": 1.0232143576317867
+    },
+    "r0_mean": 1.0232143576317867,
+    "total_over_bl0a": {
+     "0": 1.0013963541664626
+    },
+    "total_over_bl0a_mean": 1.0013963541664626,
+    "overflow_usd": {
+     "0": 1563.1803836839442
+    },
+    "total_usd": {
+     "0": 25433.701059022012
+    },
+    "accountings": {
+     "0": {
+      "overflow_usd": 1563.1803836839442,
+      "total_usd": 25433.701059022012,
+      "overflow_over_bl0a": 1.0232143576317867,
+      "total_over_bl0a": 1.0013963541664626,
+      "own_share_of_total": 0.9385390124678908,
+      "overflow_over_bl0b": 0.18368168217167383,
+      "total_over_bl0b": 0.785456498161948
+     }
+    },
+    "intensity": 52.02439024390244,
+    "intensity_by_seed": {
+     "0": 52.02439024390244
+    },
+    "fallback_share_after_reclaims": {
+     "n": 1,
+     "median": 0.9968539333546441,
+     "p95": 0.9968539333546441,
+     "max": 0.9968539333546441,
+     "median_ci95": [
+      0.9968539333546441,
+      0.9968539333546441
+     ],
+     "mean": 0.9968539333546441,
+     "n_null": 0
+    },
+    "gpu_hour_share": {
+     "spot-like": 1.0
+    },
+    "aborted": null,
+    "aborted_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a": null,
+    "t_a_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificate_case": null,
+    "certificate_case_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "abort_share": null,
+    "abort_share_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_median": null,
+    "t_a_median_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificates": null,
+    "certificates_note": "unguarded policy (not an A8 tag): no abort, no certificate"
+   }
+  },
+  "L-co": {
+   "Sublet": {
+    "n_runs": 1,
+    "seeds": [
+     0
+    ],
+    "r0": {
+     "0": 1.0497827555457724
+    },
+    "r0_mean": 1.0497827555457724,
+    "total_over_bl0a": {
+     "0": 1.0029944553808865
+    },
+    "total_over_bl0a_mean": 1.0029944553808865,
+    "overflow_usd": {
+     "0": 1603.769335681427
+    },
+    "total_usd": {
+     "0": 25474.290011019497
+    },
+    "accountings": {
+     "0": {
+      "overflow_usd": 1603.769335681427,
+      "total_usd": 25474.290011019497,
+      "overflow_over_bl0a": 1.0497827555457724,
+      "total_over_bl0a": 1.0029944553808865,
+      "own_share_of_total": 0.9370436100481042,
+      "overflow_over_bl0b": 0.18845109142111227,
+      "total_over_bl0b": 0.7867099868314115
+     }
+    },
+    "intensity": 221.1219512195122,
+    "intensity_by_seed": {
+     "0": 221.1219512195122
+    },
+    "fallback_share_after_reclaims": {
+     "n": 1,
+     "median": 0.94832252551034,
+     "p95": 0.94832252551034,
+     "max": 0.94832252551034,
+     "median_ci95": [
+      0.94832252551034,
+      0.94832252551034
+     ],
+     "mean": 0.94832252551034,
+     "n_null": 0
+    },
+    "gpu_hour_share": {
+     "spot-like": 1.0
+    },
+    "aborted": {
+     "0": true
+    },
+    "t_a": {
+     "0": 12
+    },
+    "certificate_case": {
+     "0": "W(b)"
+    },
+    "abort_share": 1.0,
+    "t_a_median": 12.0,
+    "certificates": {
+     "n": 1,
+     "held": 1,
+     "by_case": {
+      "W(a)": {
+       "runs": 0,
+       "held": 0
+      },
+      "W(b)": {
+       "runs": 1,
+       "held": 1
+      },
+      "W(c)": {
+       "runs": 0,
+       "held": 0
+      },
+      "unavailable": {
+       "runs": 0,
+       "held": 0
+      }
+     },
+     "failures": 0
+    }
+   },
+   "A7G": {
+    "n_runs": 1,
+    "seeds": [
+     0
+    ],
+    "r0": {
+     "0": 1.0448322139510107
+    },
+    "r0_mean": 1.0448322139510107,
+    "total_over_bl0a": {
+     "0": 1.0026966780530906
+    },
+    "total_over_bl0a_mean": 1.0026966780530906,
+    "overflow_usd": {
+     "0": 1596.2063167970423
+    },
+    "total_usd": {
+     "0": 25466.72699213511
+    },
+    "accountings": {
+     "0": {
+      "overflow_usd": 1596.2063167970423,
+      "total_usd": 25466.72699213511,
+      "overflow_over_bl0a": 1.0448322139510107,
+      "total_over_bl0a": 1.0026966780530906,
+      "own_share_of_total": 0.9373218899590042,
+      "overflow_over_bl0b": 0.18756239805886188,
+      "total_over_bl0b": 0.7864764218337466
+     }
+    },
+    "intensity": 221.1219512195122,
+    "intensity_by_seed": {
+     "0": 221.1219512195122
+    },
+    "fallback_share_after_reclaims": {
+     "n": 1,
+     "median": 0.9451562259399349,
+     "p95": 0.9451562259399349,
+     "max": 0.9451562259399349,
+     "median_ci95": [
+      0.9451562259399349,
+      0.9451562259399349
+     ],
+     "mean": 0.9451562259399349,
+     "n_null": 0
+    },
+    "gpu_hour_share": {
+     "spot-like": 1.0
+    },
+    "aborted": {
+     "0": true
+    },
+    "t_a": {
+     "0": 11
+    },
+    "certificate_case": {
+     "0": "W(b)"
+    },
+    "abort_share": 1.0,
+    "t_a_median": 11.0,
+    "certificates": {
+     "n": 1,
+     "held": 1,
+     "by_case": {
+      "W(a)": {
+       "runs": 0,
+       "held": 0
+      },
+      "W(b)": {
+       "runs": 1,
+       "held": 1
+      },
+      "W(c)": {
+       "runs": 0,
+       "held": 0
+      },
+      "unavailable": {
+       "runs": 0,
+       "held": 0
+      }
+     },
+     "failures": 0
+    }
+   },
+   "A7": {
+    "n_runs": 1,
+    "seeds": [
+     0
+    ],
+    "r0": {
+     "0": 1.2414399919021
+    },
+    "r0_mean": 1.2414399919021,
+    "total_over_bl0a": {
+     "0": 1.0145227252888338
+    },
+    "total_over_bl0a_mean": 1.0145227252888338,
+    "overflow_usd": {
+     "0": 1896.5670569298818
+    },
+    "total_usd": {
+     "0": 25767.08773226795
+    },
+    "accountings": {
+     "0": {
+      "overflow_usd": 1896.5670569298818,
+      "total_usd": 25767.08773226795,
+      "overflow_over_bl0a": 1.2414399919021,
+      "total_over_bl0a": 1.0145227252888338,
+      "own_share_of_total": 0.926395754280185,
+      "overflow_over_bl0b": 0.22285631972125386,
+      "total_over_bl0b": 0.7957523150504904
+     }
+    },
+    "intensity": 221.1219512195122,
+    "intensity_by_seed": {
+     "0": 221.1219512195122
+    },
+    "fallback_share_after_reclaims": {
+     "n": 1,
+     "median": 0.5871899153993869,
+     "p95": 0.5871899153993869,
+     "max": 0.5871899153993869,
+     "median_ci95": [
+      0.5871899153993869,
+      0.5871899153993869
+     ],
+     "mean": 0.5871899153993869,
+     "n_null": 0
+    },
+    "gpu_hour_share": {
+     "spot-like": 1.0
+    },
+    "aborted": null,
+    "aborted_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a": null,
+    "t_a_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificate_case": null,
+    "certificate_case_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "abort_share": null,
+    "abort_share_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_median": null,
+    "t_a_median_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificates": null,
+    "certificates_note": "unguarded policy (not an A8 tag): no abort, no certificate"
+   },
+   "A6": {
+    "n_runs": 1,
+    "seeds": [
+     0
+    ],
+    "r0": {
+     "0": 1.0368771885825168
+    },
+    "r0_mean": 1.0368771885825168,
+    "total_over_bl0a": {
+     "0": 1.0022181796602512
+    },
+    "total_over_bl0a_mean": 1.0022181796602512,
+    "overflow_usd": {
+     "0": 1584.0533016297036
+    },
+    "total_usd": {
+     "0": 25454.573976967775
+    },
+    "accountings": {
+     "0": {
+      "overflow_usd": 1584.0533016297036,
+      "total_usd": 25454.573976967775,
+      "overflow_over_bl0a": 1.0368771885825168,
+      "total_over_bl0a": 1.0022181796602512,
+      "own_share_of_total": 0.9377694043096925,
+      "overflow_over_bl0b": 0.18613435668072367,
+      "total_over_bl0b": 0.7861011062352304
+     }
+    },
+    "intensity": 221.1219512195122,
+    "intensity_by_seed": {
+     "0": 221.1219512195122
+    },
+    "fallback_share_after_reclaims": {
+     "n": 1,
+     "median": 0.9283969397875946,
+     "p95": 0.9283969397875946,
+     "max": 0.9283969397875946,
+     "median_ci95": [
+      0.9283969397875946,
+      0.9283969397875946
+     ],
+     "mean": 0.9283969397875946,
+     "n_null": 0
+    },
+    "gpu_hour_share": {
+     "general": 0.9429304264187239,
+     "spot-like": 0.05706957358127605
+    },
+    "aborted": null,
+    "aborted_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a": null,
+    "t_a_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificate_case": null,
+    "certificate_case_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "abort_share": null,
+    "abort_share_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_median": null,
+    "t_a_median_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificates": null,
+    "certificates_note": "unguarded policy (not an A8 tag): no abort, no certificate"
+   },
+   "BL5": {
+    "n_runs": 1,
+    "seeds": [
+     0
+    ],
+    "r0": {
+     "0": 1.2372049887235295
+    },
+    "r0_mean": 1.2372049887235295,
+    "total_over_bl0a": {
+     "0": 1.0142679879221068
+    },
+    "total_over_bl0a_mean": 1.0142679879221068,
+    "overflow_usd": {
+     "0": 1890.0971771395878
+    },
+    "total_usd": {
+     "0": 25760.61785247766
+    },
+    "accountings": {
+     "0": {
+      "overflow_usd": 1890.0971771395878,
+      "total_usd": 25760.61785247766,
+      "overflow_over_bl0a": 1.2372049887235295,
+      "total_over_bl0a": 1.0142679879221068,
+      "own_share_of_total": 0.9266284221922185,
+      "overflow_over_bl0b": 0.22209607578796636,
+      "total_over_bl0b": 0.795552508930578
+     }
+    },
+    "intensity": 221.1219512195122,
+    "intensity_by_seed": {
+     "0": 221.1219512195122
+    },
+    "fallback_share_after_reclaims": {
+     "n": 1,
+     "median": 0.8031602219394286,
+     "p95": 0.8031602219394286,
+     "max": 0.8031602219394286,
+     "median_ci95": [
+      0.8031602219394286,
+      0.8031602219394286
+     ],
+     "mean": 0.8031602219394286,
+     "n_null": 0
+    },
+    "gpu_hour_share": {
+     "spot-like": 1.0
+    },
+    "aborted": null,
+    "aborted_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a": null,
+    "t_a_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificate_case": null,
+    "certificate_case_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "abort_share": null,
+    "abort_share_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_median": null,
+    "t_a_median_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificates": null,
+    "certificates_note": "unguarded policy (not an A8 tag): no abort, no certificate"
+   },
+   "BL1": {
+    "n_runs": 1,
+    "seeds": [
+     0
+    ],
+    "r0": {
+     "0": 1.9206140733689496
+    },
+    "r0_mean": 1.9206140733689496,
+    "total_over_bl0a": {
+     "0": 1.0553753550902731
+    },
+    "total_over_bl0a_mean": 1.0553753550902731,
+    "overflow_usd": {
+     "0": 2934.1517950025204
+    },
+    "total_usd": {
+     "0": 26804.67247034059
+    },
+    "accountings": {
+     "0": {
+      "overflow_usd": 2934.1517950025204,
+      "total_usd": 26804.67247034059,
+      "overflow_over_bl0a": 1.9206140733689496,
+      "total_over_bl0a": 1.0553753550902731,
+      "own_share_of_total": 0.890535808700921,
+      "overflow_over_bl0b": 0.3447778279963806,
+      "total_over_bl0b": 0.8277955349114756
+     }
+    },
+    "intensity": 221.1219512195122,
+    "intensity_by_seed": {
+     "0": 221.1219512195122
+    },
+    "fallback_share_after_reclaims": {
+     "n": 1,
+     "median": 0.4609839698341574,
+     "p95": 0.4609839698341574,
+     "max": 0.4609839698341574,
+     "median_ci95": [
+      0.4609839698341574,
+      0.4609839698341574
+     ],
+     "mean": 0.4609839698341574,
+     "n_null": 0
+    },
+    "gpu_hour_share": {
+     "spot-like": 1.0
+    },
+    "aborted": null,
+    "aborted_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a": null,
+    "t_a_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificate_case": null,
+    "certificate_case_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "abort_share": null,
+    "abort_share_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_median": null,
+    "t_a_median_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificates": null,
+    "certificates_note": "unguarded policy (not an A8 tag): no abort, no certificate"
+   },
+   "BL2": {
+    "n_runs": 1,
+    "seeds": [
+     0
+    ],
+    "r0": {
+     "0": 1.7383596112708655
+    },
+    "r0_mean": 1.7383596112708655,
+    "total_over_bl0a": {
+     "0": 1.0444126663291342
+    },
+    "total_over_bl0a_mean": 1.0444126663291342,
+    "overflow_usd": {
+     "0": 2655.718837269223
+    },
+    "total_usd": {
+     "0": 26526.23951260729
+    },
+    "accountings": {
+     "0": {
+      "overflow_usd": 2655.718837269223,
+      "total_usd": 26526.23951260729,
+      "overflow_over_bl0a": 1.7383596112708655,
+      "total_over_bl0a": 1.0444126663291342,
+      "own_share_of_total": 0.8998833273745032,
+      "overflow_over_bl0b": 0.3120605328062005,
+      "total_over_bl0b": 0.8191968266288486
+     }
+    },
+    "intensity": 221.1219512195122,
+    "intensity_by_seed": {
+     "0": 221.1219512195122
+    },
+    "fallback_share_after_reclaims": {
+     "n": 1,
+     "median": 0.44020257021259646,
+     "p95": 0.44020257021259646,
+     "max": 0.44020257021259646,
+     "median_ci95": [
+      0.44020257021259646,
+      0.44020257021259646
+     ],
+     "mean": 0.44020257021259646,
+     "n_null": 0
+    },
+    "gpu_hour_share": {
+     "spot-like": 1.0
+    },
+    "aborted": null,
+    "aborted_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a": null,
+    "t_a_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificate_case": null,
+    "certificate_case_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "abort_share": null,
+    "abort_share_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_median": null,
+    "t_a_median_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificates": null,
+    "certificates_note": "unguarded policy (not an A8 tag): no abort, no certificate"
+   },
+   "BL4": {
+    "n_runs": 1,
+    "seeds": [
+     0
+    ],
+    "r0": {
+     "0": 1.0035132911850801
+    },
+    "r0_mean": 1.0035132911850801,
+    "total_over_bl0a": {
+     "0": 1.0002113260621766
+    },
+    "total_over_bl0a_mean": 1.0002113260621766,
+    "overflow_usd": {
+     "0": 1533.0827600751209
+    },
+    "total_usd": {
+     "0": 25403.60343541319
+    },
+    "accountings": {
+     "0": {
+      "overflow_usd": 1533.0827600751209,
+      "total_usd": 25403.60343541319,
+      "overflow_over_bl0a": 1.0035132911850801,
+      "total_over_bl0a": 1.0002113260621766,
+      "own_share_of_total": 0.9396509725884805,
+      "overflow_over_bl0b": 0.18014505761347036,
+      "total_over_bl0b": 0.7845270080343444
+     }
+    },
+    "intensity": 221.1219512195122,
+    "intensity_by_seed": {
+     "0": 221.1219512195122
+    },
+    "fallback_share_after_reclaims": {
+     "n": 1,
+     "median": 1.0,
+     "p95": 1.0,
+     "max": 1.0,
+     "median_ci95": [
+      1.0,
+      1.0
+     ],
+     "mean": 1.0,
+     "n_null": 0
+    },
+    "gpu_hour_share": {
+     "spot-like": 1.0
+    },
+    "aborted": null,
+    "aborted_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a": null,
+    "t_a_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificate_case": null,
+    "certificate_case_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "abort_share": null,
+    "abort_share_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_median": null,
+    "t_a_median_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificates": null,
+    "certificates_note": "unguarded policy (not an A8 tag): no abort, no certificate"
+   }
+  }
+ },
+ "W0": {
+  "Sublet": {
+   "per_mode": {
+    "L-eg": {
+     "n_cells": 1,
+     "cell_means": {
+      "c1": 1.0497827555457724
+     },
+     "n_runs": 1,
+     "n_missing": 0,
+     "value": 1.0497827555457724,
+     "seed_range": [
+      1.0497827555457724,
+      1.0497827555457724
+     ]
+    },
+    "L-ss": {
+     "n_cells": 1,
+     "cell_means": {
+      "c1": 1.0497827555457724
+     },
+     "n_runs": 1,
+     "n_missing": 0,
+     "value": 1.0497827555457724,
+     "seed_range": [
+      1.0497827555457724,
+      1.0497827555457724
+     ]
+    },
+    "L-iid-0.05": {
+     "n_cells": 1,
+     "cell_means": {
+      "c1": 1.052738147606321
+     },
+     "n_runs": 1,
+     "n_missing": 0,
+     "value": 1.052738147606321,
+     "seed_range": [
+      1.052738147606321,
+      1.052738147606321
+     ]
+    },
+    "L-iid-0.2": {
+     "n_cells": 1,
+     "cell_means": {
+      "c1": 1.0514880235868205
+     },
+     "n_runs": 1,
+     "n_missing": 0,
+     "value": 1.0514880235868205,
+     "seed_range": [
+      1.0514880235868205,
+      1.0514880235868205
+     ]
+    },
+    "L-co": {
+     "n_cells": 1,
+     "cell_means": {
+      "c1": 1.0497827555457724
+     },
+     "n_runs": 1,
+     "n_missing": 0,
+     "value": 1.0497827555457724,
+     "seed_range": [
+      1.0497827555457724,
+      1.0497827555457724
+     ]
+    }
+   },
+   "expected": [
+    "L-eg",
+    "L-ss",
+    "L-iid-0.05",
+    "L-iid-0.2",
+    "L-co"
+   ],
+   "modes_missing": [],
+   "value": 1.052738147606321,
+   "mode": "L-iid-0.05",
+   "seed_range": [
+    1.052738147606321,
+    1.052738147606321
+   ],
+   "criterion_S": false,
+   "criterion_S_threshold": 1.05
+  },
+  "A7G": {
+   "per_mode": {
+    "L-eg": {
+     "n_cells": 1,
+     "cell_means": {
+      "c1": 1.0448322139510107
+     },
+     "n_runs": 1,
+     "n_missing": 0,
+     "value": 1.0448322139510107,
+     "seed_range": [
+      1.0448322139510107,
+      1.0448322139510107
+     ]
+    },
+    "L-ss": {
+     "n_cells": 1,
+     "cell_means": {
+      "c1": 1.0448322139510107
+     },
+     "n_runs": 1,
+     "n_missing": 0,
+     "value": 1.0448322139510107,
+     "seed_range": [
+      1.0448322139510107,
+      1.0448322139510107
+     ]
+    },
+    "L-iid-0.05": {
+     "n_cells": 1,
+     "cell_means": {
+      "c1": 1.042178560200732
+     },
+     "n_runs": 1,
+     "n_missing": 0,
+     "value": 1.042178560200732,
+     "seed_range": [
+      1.042178560200732,
+      1.042178560200732
+     ]
+    },
+    "L-iid-0.2": {
+     "n_cells": 1,
+     "cell_means": {
+      "c1": 1.042178560200732
+     },
+     "n_runs": 1,
+     "n_missing": 0,
+     "value": 1.042178560200732,
+     "seed_range": [
+      1.042178560200732,
+      1.042178560200732
+     ]
+    },
+    "L-co": {
+     "n_cells": 1,
+     "cell_means": {
+      "c1": 1.0448322139510107
+     },
+     "n_runs": 1,
+     "n_missing": 0,
+     "value": 1.0448322139510107,
+     "seed_range": [
+      1.0448322139510107,
+      1.0448322139510107
+     ]
+    }
+   },
+   "expected": [
+    "L-eg",
+    "L-ss",
+    "L-iid-0.05",
+    "L-iid-0.2",
+    "L-co"
+   ],
+   "modes_missing": [],
+   "value": 1.0448322139510107,
+   "mode": "L-eg",
+   "seed_range": [
+    1.0448322139510107,
+    1.0448322139510107
+   ],
+   "criterion_S": true,
+   "criterion_S_threshold": 1.05
+  },
+  "A7": {
+   "per_mode": {
+    "L-eg": {
+     "n_cells": 1,
+     "cell_means": {
+      "c1": 1.2740578251648198
+     },
+     "n_runs": 1,
+     "n_missing": 0,
+     "value": 1.2740578251648198,
+     "seed_range": [
+      1.2740578251648198,
+      1.2740578251648198
+     ]
+    },
+    "L-ss": {
+     "n_cells": 1,
+     "cell_means": {
+      "c1": 1.2708232452878536
+     },
+     "n_runs": 1,
+     "n_missing": 0,
+     "value": 1.2708232452878536,
+     "seed_range": [
+      1.2708232452878536,
+      1.2708232452878536
+     ]
+    },
+    "L-iid-0.05": {
+     "n_cells": 1,
+     "cell_means": {
+      "c1": 0.8647642539774287
+     },
+     "n_runs": 1,
+     "n_missing": 0,
+     "value": 0.8647642539774287,
+     "seed_range": [
+      0.8647642539774287,
+      0.8647642539774287
+     ]
+    },
+    "L-iid-0.2": {
+     "n_cells": 1,
+     "cell_means": {
+      "c1": 0.9142851514306652
+     },
+     "n_runs": 1,
+     "n_missing": 0,
+     "value": 0.9142851514306652,
+     "seed_range": [
+      0.9142851514306652,
+      0.9142851514306652
+     ]
+    },
+    "L-co": {
+     "n_cells": 1,
+     "cell_means": {
+      "c1": 1.2414399919021
+     },
+     "n_runs": 1,
+     "n_missing": 0,
+     "value": 1.2414399919021,
+     "seed_range": [
+      1.2414399919021,
+      1.2414399919021
+     ]
+    }
+   },
+   "expected": [
+    "L-eg",
+    "L-ss",
+    "L-iid-0.05",
+    "L-iid-0.2",
+    "L-co"
+   ],
+   "modes_missing": [],
+   "value": 1.2740578251648198,
+   "mode": "L-eg",
+   "seed_range": [
+    1.2740578251648198,
+    1.2740578251648198
+   ],
+   "criterion_S": false,
+   "criterion_S_threshold": 1.05
+  },
+  "A6": {
+   "per_mode": {
+    "L-eg": {
+     "n_cells": 1,
+     "cell_means": {
+      "c1": 1.0356982486959818
+     },
+     "n_runs": 1,
+     "n_missing": 0,
+     "value": 1.0356982486959818,
+     "seed_range": [
+      1.0356982486959818,
+      1.0356982486959818
+     ]
+    },
+    "L-ss": {
+     "n_cells": 1,
+     "cell_means": {
+      "c1": 1.0356982486959818
+     },
+     "n_runs": 1,
+     "n_missing": 0,
+     "value": 1.0356982486959818,
+     "seed_range": [
+      1.0356982486959818,
+      1.0356982486959818
+     ]
+    },
+    "L-iid-0.05": {
+     "n_cells": 1,
+     "cell_means": {
+      "c1": 1.0445039379695384
+     },
+     "n_runs": 1,
+     "n_missing": 0,
+     "value": 1.0445039379695384,
+     "seed_range": [
+      1.0445039379695384,
+      1.0445039379695384
+     ]
+    },
+    "L-iid-0.2": {
+     "n_cells": 1,
+     "cell_means": {
+      "c1": 1.0340669734228367
+     },
+     "n_runs": 1,
+     "n_missing": 0,
+     "value": 1.0340669734228367,
+     "seed_range": [
+      1.0340669734228367,
+      1.0340669734228367
+     ]
+    },
+    "L-co": {
+     "n_cells": 1,
+     "cell_means": {
+      "c1": 1.0368771885825168
+     },
+     "n_runs": 1,
+     "n_missing": 0,
+     "value": 1.0368771885825168,
+     "seed_range": [
+      1.0368771885825168,
+      1.0368771885825168
+     ]
+    }
+   },
+   "expected": [
+    "L-eg",
+    "L-ss",
+    "L-iid-0.05",
+    "L-iid-0.2",
+    "L-co"
+   ],
+   "modes_missing": [],
+   "value": 1.0445039379695384,
+   "mode": "L-iid-0.05",
+   "seed_range": [
+    1.0445039379695384,
+    1.0445039379695384
+   ],
+   "criterion_S": true,
+   "criterion_S_threshold": 1.05
+  },
+  "BL5": {
+   "per_mode": {
+    "L-eg": {
+     "n_cells": 1,
+     "cell_means": {
+      "c1": 1.2372049887235295
+     },
+     "n_runs": 1,
+     "n_missing": 0,
+     "value": 1.2372049887235295,
+     "seed_range": [
+      1.2372049887235295,
+      1.2372049887235295
+     ]
+    },
+    "L-ss": {
+     "n_cells": 1,
+     "cell_means": {
+      "c1": 1.230839280232249
+     },
+     "n_runs": 1,
+     "n_missing": 0,
+     "value": 1.230839280232249,
+     "seed_range": [
+      1.230839280232249,
+      1.230839280232249
+     ]
+    },
+    "L-iid-0.05": {
+     "n_cells": 1,
+     "cell_means": {
+      "c1": 0.9610924938264246
+     },
+     "n_runs": 1,
+     "n_missing": 0,
+     "value": 0.9610924938264246,
+     "seed_range": [
+      0.9610924938264246,
+      0.9610924938264246
+     ]
+    },
+    "L-iid-0.2": {
+     "n_cells": 1,
+     "cell_means": {
+      "c1": 0.9593336949081802
+     },
+     "n_runs": 1,
+     "n_missing": 0,
+     "value": 0.9593336949081802,
+     "seed_range": [
+      0.9593336949081802,
+      0.9593336949081802
+     ]
+    },
+    "L-co": {
+     "n_cells": 1,
+     "cell_means": {
+      "c1": 1.2372049887235295
+     },
+     "n_runs": 1,
+     "n_missing": 0,
+     "value": 1.2372049887235295,
+     "seed_range": [
+      1.2372049887235295,
+      1.2372049887235295
+     ]
+    }
+   },
+   "expected": [
+    "L-eg",
+    "L-ss",
+    "L-iid-0.05",
+    "L-iid-0.2",
+    "L-co"
+   ],
+   "modes_missing": [],
+   "value": 1.2372049887235295,
+   "mode": "L-eg",
+   "seed_range": [
+    1.2372049887235295,
+    1.2372049887235295
+   ],
+   "criterion_S": false,
+   "criterion_S_threshold": 1.05
+  },
+  "BL1": {
+   "per_mode": {
+    "L-eg": {
+     "n_cells": 1,
+     "cell_means": {
+      "c1": 1.9536347877814584
+     },
+     "n_runs": 1,
+     "n_missing": 0,
+     "value": 1.9536347877814584,
+     "seed_range": [
+      1.9536347877814584,
+      1.9536347877814584
+     ]
+    },
+    "L-ss": {
+     "n_cells": 1,
+     "cell_means": {
+      "c1": 1.9408488116217708
+     },
+     "n_runs": 1,
+     "n_missing": 0,
+     "value": 1.9408488116217708,
+     "seed_range": [
+      1.9408488116217708,
+      1.9408488116217708
+     ]
+    },
+    "L-iid-0.05": {
+     "n_cells": 1,
+     "cell_means": {
+      "c1": 0.6188800375744196
+     },
+     "n_runs": 1,
+     "n_missing": 0,
+     "value": 0.6188800375744196,
+     "seed_range": [
+      0.6188800375744196,
+      0.6188800375744196
+     ]
+    },
+    "L-iid-0.2": {
+     "n_cells": 1,
+     "cell_means": {
+      "c1": 0.7408506770537969
+     },
+     "n_runs": 1,
+     "n_missing": 0,
+     "value": 0.7408506770537969,
+     "seed_range": [
+      0.7408506770537969,
+      0.7408506770537969
+     ]
+    },
+    "L-co": {
+     "n_cells": 1,
+     "cell_means": {
+      "c1": 1.9206140733689496
+     },
+     "n_runs": 1,
+     "n_missing": 0,
+     "value": 1.9206140733689496,
+     "seed_range": [
+      1.9206140733689496,
+      1.9206140733689496
+     ]
+    }
+   },
+   "expected": [
+    "L-eg",
+    "L-ss",
+    "L-iid-0.05",
+    "L-iid-0.2",
+    "L-co"
+   ],
+   "modes_missing": [],
+   "value": 1.9536347877814584,
+   "mode": "L-eg",
+   "seed_range": [
+    1.9536347877814584,
+    1.9536347877814584
+   ],
+   "criterion_S": false,
+   "criterion_S_threshold": 1.05
+  },
+  "BL2": {
+   "per_mode": {
+    "L-eg": {
+     "n_cells": 1,
+     "cell_means": {
+      "c1": 1.7387395989020662
+     },
+     "n_runs": 1,
+     "n_missing": 0,
+     "value": 1.7387395989020662,
+     "seed_range": [
+      1.7387395989020662,
+      1.7387395989020662
+     ]
+    },
+    "L-ss": {
+     "n_cells": 1,
+     "cell_means": {
+      "c1": 1.7048516709621069
+     },
+     "n_runs": 1,
+     "n_missing": 0,
+     "value": 1.7048516709621069,
+     "seed_range": [
+      1.7048516709621069,
+      1.7048516709621069
+     ]
+    },
+    "L-iid-0.05": {
+     "n_cells": 1,
+     "cell_means": {
+      "c1": 0.6857091757539852
+     },
+     "n_runs": 1,
+     "n_missing": 0,
+     "value": 0.6857091757539852,
+     "seed_range": [
+      0.6857091757539852,
+      0.6857091757539852
+     ]
+    },
+    "L-iid-0.2": {
+     "n_cells": 1,
+     "cell_means": {
+      "c1": 0.78486813974536
+     },
+     "n_runs": 1,
+     "n_missing": 0,
+     "value": 0.78486813974536,
+     "seed_range": [
+      0.78486813974536,
+      0.78486813974536
+     ]
+    },
+    "L-co": {
+     "n_cells": 1,
+     "cell_means": {
+      "c1": 1.7383596112708655
+     },
+     "n_runs": 1,
+     "n_missing": 0,
+     "value": 1.7383596112708655,
+     "seed_range": [
+      1.7383596112708655,
+      1.7383596112708655
+     ]
+    }
+   },
+   "expected": [
+    "L-eg",
+    "L-ss",
+    "L-iid-0.05",
+    "L-iid-0.2",
+    "L-co"
+   ],
+   "modes_missing": [],
+   "value": 1.7387395989020662,
+   "mode": "L-eg",
+   "seed_range": [
+    1.7387395989020662,
+    1.7387395989020662
+   ],
+   "criterion_S": false,
+   "criterion_S_threshold": 1.05
+  },
+  "BL4": {
+   "per_mode": {
+    "L-eg": {
+     "n_cells": 1,
+     "cell_means": {
+      "c1": 1.0035132911850801
+     },
+     "n_runs": 1,
+     "n_missing": 0,
+     "value": 1.0035132911850801,
+     "seed_range": [
+      1.0035132911850801,
+      1.0035132911850801
+     ]
+    },
+    "L-ss": {
+     "n_cells": 1,
+     "cell_means": {
+      "c1": 1.0035132911850801
+     },
+     "n_runs": 1,
+     "n_missing": 0,
+     "value": 1.0035132911850801,
+     "seed_range": [
+      1.0035132911850801,
+      1.0035132911850801
+     ]
+    },
+    "L-iid-0.05": {
+     "n_cells": 1,
+     "cell_means": {
+      "c1": 1.0179821222462417
+     },
+     "n_runs": 1,
+     "n_missing": 0,
+     "value": 1.0179821222462417,
+     "seed_range": [
+      1.0179821222462417,
+      1.0179821222462417
+     ]
+    },
+    "L-iid-0.2": {
+     "n_cells": 1,
+     "cell_means": {
+      "c1": 1.0232143576317867
+     },
+     "n_runs": 1,
+     "n_missing": 0,
+     "value": 1.0232143576317867,
+     "seed_range": [
+      1.0232143576317867,
+      1.0232143576317867
+     ]
+    },
+    "L-co": {
+     "n_cells": 1,
+     "cell_means": {
+      "c1": 1.0035132911850801
+     },
+     "n_runs": 1,
+     "n_missing": 0,
+     "value": 1.0035132911850801,
+     "seed_range": [
+      1.0035132911850801,
+      1.0035132911850801
+     ]
+    }
+   },
+   "expected": [
+    "L-eg",
+    "L-ss",
+    "L-iid-0.05",
+    "L-iid-0.2",
+    "L-co"
+   ],
+   "modes_missing": [],
+   "value": 1.0232143576317867,
+   "mode": "L-iid-0.2",
+   "seed_range": [
+    1.0232143576317867,
+    1.0232143576317867
+   ],
+   "criterion_S": true,
+   "criterion_S_threshold": 1.05
+  }
+ },
+ "certificates": {
+  "n": 10,
+  "held": 10,
+  "by_case": {
+   "W(a)": {
+    "runs": 0,
+    "held": 0
+   },
+   "W(b)": {
+    "runs": 10,
+    "held": 10
+   },
+   "W(c)": {
+    "runs": 0,
+    "held": 0
+   },
+   "unavailable": {
+    "runs": 0,
+    "held": 0
+   }
+  },
+  "failures": 0,
+  "w_c_runs": []
+ },
+ "checks": {
+  "E7-1": {
+   "status": "pass",
+   "claim": "every A8 run of E7 (all six grids) has a certificate with available true; in every run of Theorem W's proven cases (W(a), W(b); PROVEN for the engine as implemented under C1-C3, audited) held is true; W(c) runs (CONJECTURE) are counted and listed with their t_a",
+   "n_runs": 10,
+   "certificates": {
+    "n": 10,
+    "held": 10,
+    "by_case": {
+     "W(a)": {
+      "runs": 0,
+      "held": 0
+     },
+     "W(b)": {
+      "runs": 10,
+      "held": 10
+     },
+     "W(c)": {
+      "runs": 0,
+      "held": 0
+     },
+     "unavailable": {
+      "runs": 0,
+      "held": 0
+     }
+    },
+    "failures": 0
+   },
+   "unavailable": [],
+   "n_unavailable": 0,
+   "failures": [],
+   "n_failures": 0,
+   "w_c_runs": [],
+   "n_w_c": 0,
+   "part": "stress"
+  },
+  "E7-2": {
+   "status": "pass",
+   "claim": "every run, BL2's sub-runs included: invariant_failures empty and gpu_only_lease_slots 0",
+   "n_runs": 40,
+   "n_sub_runs": 75,
+   "invariant_failures": [],
+   "n_invariant_failures": 0,
+   "gpu_only_lease_slots": [],
+   "n_gpu_only": 0,
+   "part": "stress"
+  },
+  "E7-4": {
+   "status": "pass",
+   "claim": "accounting identity: total - overflow = own_capacity_usd(inst) for every run, and BL0a's total-accounting cost = BL0a + own capacity (1e-9 relative)",
+   "n_runs": 40,
+   "n_alignments_checked": 1,
+   "max_rel_diff": 0.0,
+   "tolerance": 1e-09,
+   "failures": [],
+   "n_failures": 0,
+   "reference_failures": [],
+   "part": "stress"
+  },
+  "E7-6": {
+   "status": "pass",
+   "claim": "the allowance rule (M36): every A8 run outside the allowance sweep records B0_rule '0.1*BL0a', B0 = 0.1 x e6.bl0a_all of its own instance (1e-12 relative), resolved gamma 1 and kappa null; the sweep's runs record their own rule ('auto, kappa 10' with kappa 10, or the share of BL0a with kappa null)",
+   "n_runs": 10,
+   "sweep": false,
+   "rules_found": [
+    "0.1*BL0a"
+   ],
+   "failures": [],
+   "n_failures": 0,
+   "tolerance": 1e-12,
+   "part": "stress"
+  },
+  "E7-8": {
+   "status": "informative",
+   "claim": "W0 per policy (stress block) against Q44's criterion S (W0 <= 1.05, note \u00a75.6) (informative)",
+   "W0": {
+    "Sublet": {
+     "value": 1.052738147606321,
+     "mode": "L-iid-0.05",
+     "criterion_S": false,
+     "modes_missing": []
+    },
+    "A7G": {
+     "value": 1.0448322139510107,
+     "mode": "L-eg",
+     "criterion_S": true,
+     "modes_missing": []
+    },
+    "A7": {
+     "value": 1.2740578251648198,
+     "mode": "L-eg",
+     "criterion_S": false,
+     "modes_missing": []
+    },
+    "A6": {
+     "value": 1.0445039379695384,
+     "mode": "L-iid-0.05",
+     "criterion_S": true,
+     "modes_missing": []
+    },
+    "BL5": {
+     "value": 1.2372049887235295,
+     "mode": "L-eg",
+     "criterion_S": false,
+     "modes_missing": []
+    },
+    "BL1": {
+     "value": 1.9536347877814584,
+     "mode": "L-eg",
+     "criterion_S": false,
+     "modes_missing": []
+    },
+    "BL2": {
+     "value": 1.7387395989020662,
+     "mode": "L-eg",
+     "criterion_S": false,
+     "modes_missing": []
+    },
+    "BL4": {
+     "value": 1.0232143576317867,
+     "mode": "L-iid-0.2",
+     "criterion_S": true,
+     "modes_missing": []
+    }
+   },
+   "meets_criterion_S": [
+    "A6",
+    "A7G",
+    "BL4"
+   ],
+   "misses_criterion_S": [
+    "A7",
+    "BL1",
+    "BL2",
+    "BL5",
+    "Sublet"
+   ],
+   "part": "stress"
+  },
+  "E7-11": {
+   "status": "informative",
+   "claim": "abort shares and first-abort slots of the A8 rows in every grid; under the sweep's theory default, the share of runs that abort at slot 1 or earlier (informative)",
+   "by_grid": {
+    "mode=L-eg:Sublet": {
+     "n_runs": 1,
+     "abort_share": 1.0,
+     "t_a_first": 12,
+     "t_a_median": 12.0,
+     "by_case": {
+      "W(a)": 0,
+      "W(b)": 1,
+      "W(c)": 0,
+      "unavailable": 0
+     }
+    },
+    "mode=L-eg:A7G": {
+     "n_runs": 1,
+     "abort_share": 1.0,
+     "t_a_first": 11,
+     "t_a_median": 11.0,
+     "by_case": {
+      "W(a)": 0,
+      "W(b)": 1,
+      "W(c)": 0,
+      "unavailable": 0
+     }
+    },
+    "mode=L-ss:Sublet": {
+     "n_runs": 1,
+     "abort_share": 1.0,
+     "t_a_first": 12,
+     "t_a_median": 12.0,
+     "by_case": {
+      "W(a)": 0,
+      "W(b)": 1,
+      "W(c)": 0,
+      "unavailable": 0
+     }
+    },
+    "mode=L-ss:A7G": {
+     "n_runs": 1,
+     "abort_share": 1.0,
+     "t_a_first": 11,
+     "t_a_median": 11.0,
+     "by_case": {
+      "W(a)": 0,
+      "W(b)": 1,
+      "W(c)": 0,
+      "unavailable": 0
+     }
+    },
+    "mode=L-iid-0.05:Sublet": {
+     "n_runs": 1,
+     "abort_share": 1.0,
+     "t_a_first": 12,
+     "t_a_median": 12.0,
+     "by_case": {
+      "W(a)": 0,
+      "W(b)": 1,
+      "W(c)": 0,
+      "unavailable": 0
+     }
+    },
+    "mode=L-iid-0.05:A7G": {
+     "n_runs": 1,
+     "abort_share": 1.0,
+     "t_a_first": 11,
+     "t_a_median": 11.0,
+     "by_case": {
+      "W(a)": 0,
+      "W(b)": 1,
+      "W(c)": 0,
+      "unavailable": 0
+     }
+    },
+    "mode=L-iid-0.2:Sublet": {
+     "n_runs": 1,
+     "abort_share": 1.0,
+     "t_a_first": 12,
+     "t_a_median": 12.0,
+     "by_case": {
+      "W(a)": 0,
+      "W(b)": 1,
+      "W(c)": 0,
+      "unavailable": 0
+     }
+    },
+    "mode=L-iid-0.2:A7G": {
+     "n_runs": 1,
+     "abort_share": 1.0,
+     "t_a_first": 11,
+     "t_a_median": 11.0,
+     "by_case": {
+      "W(a)": 0,
+      "W(b)": 1,
+      "W(c)": 0,
+      "unavailable": 0
+     }
+    },
+    "mode=L-co:Sublet": {
+     "n_runs": 1,
+     "abort_share": 1.0,
+     "t_a_first": 12,
+     "t_a_median": 12.0,
+     "by_case": {
+      "W(a)": 0,
+      "W(b)": 1,
+      "W(c)": 0,
+      "unavailable": 0
+     }
+    },
+    "mode=L-co:A7G": {
+     "n_runs": 1,
+     "abort_share": 1.0,
+     "t_a_first": 11,
+     "t_a_median": 11.0,
+     "by_case": {
+      "W(a)": 0,
+      "W(b)": 1,
+      "W(c)": 0,
+      "unavailable": 0
+     }
+    }
+   },
+   "part": "stress"
+  }
+ }
+}

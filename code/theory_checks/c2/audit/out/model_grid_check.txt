@@ -1,0 +1,43 @@
+(1) scan rows with exact-LB > 0.035 that fit none of the three kinds named in the write-up (kind D of analyze_scan.py, all 5 rows)
+   {'alpha': 0.0, 'ap': 0.5, 'mu': 2.0, 'lam': 0.5, 'H': 0.5} dt=0.1: exact 2.3889  family LB 2.3508  RRL closed form nan  exact-LB +0.0381
+   {'alpha': 0.0, 'ap': 0.5, 'mu': 2.0, 'lam': 0.5, 'H': 0.5} dt=0.05: exact 2.3514  family LB 2.3508  RRL closed form nan  exact-LB +0.0005
+   {'alpha': 0.0, 'ap': 0.5, 'mu': 2.0, 'lam': 0.5, 'H': 0.5} dt=0.025: exact 2.3514  family LB 2.3508  RRL closed form nan  exact-LB +0.0005
+   {'alpha': 0.0, 'ap': 0.5, 'mu': 2.0, 'lam': 1.0, 'H': 0.5} dt=0.1: exact 2.3889  family LB 2.3508  RRL closed form nan  exact-LB +0.0381
+   {'alpha': 0.0, 'ap': 0.5, 'mu': 2.0, 'lam': 1.0, 'H': 0.5} dt=0.05: exact 2.3514  family LB 2.3508  RRL closed form nan  exact-LB +0.0005
+   {'alpha': 0.0, 'ap': 0.5, 'mu': 2.0, 'lam': 1.0, 'H': 0.5} dt=0.025: exact 2.3514  family LB 2.3508  RRL closed form nan  exact-LB +0.0005
+   {'alpha': 0.0, 'ap': 1.0, 'mu': 2.0, 'H': 0.5, 'allow_p': False} dt=0.1: exact 2.3889  family LB 2.3508  RRL closed form 2.3508  exact-LB +0.0381
+   {'alpha': 0.0, 'ap': 1.0, 'mu': 2.0, 'H': 0.5, 'allow_p': False} dt=0.05: exact 2.3514  family LB 2.3508  RRL closed form 2.3508  exact-LB +0.0005
+   {'alpha': 0.0, 'ap': 1.0, 'mu': 2.0, 'H': 0.5, 'allow_p': False} dt=0.025: exact 2.3514  family LB 2.3508  RRL closed form 2.3508  exact-LB +0.0005
+   {'alpha': 0.0, 'ap': 1.0, 'mu': 4.0, 'H': 1.0, 'allow_p': False} dt=0.1: exact 2.6000  family LB 2.5616  RRL closed form nan  exact-LB +0.0384
+   {'alpha': 0.0, 'ap': 1.0, 'mu': 4.0, 'H': 1.0, 'allow_p': False} dt=0.05: exact 2.5686  family LB 2.5616  RRL closed form nan  exact-LB +0.0070
+   {'alpha': 0.0, 'ap': 1.0, 'mu': 4.0, 'H': 1.0, 'allow_p': False} dt=0.025: exact 2.5686  family LB 2.5616  RRL closed form nan  exact-LB +0.0070
+   {'alpha': 0.0, 'ap': 1.0, 'mu': 4.0, 'H': 0.0, 'allow_p': False} dt=0.1: exact 3.2727  family LB 3.2361  RRL closed form 3.2361  exact-LB +0.0366
+   {'alpha': 0.0, 'ap': 1.0, 'mu': 4.0, 'H': 0.0, 'allow_p': False} dt=0.05: exact 3.2500  family LB 3.2361  RRL closed form 3.2361  exact-LB +0.0139
+   {'alpha': 0.0, 'ap': 1.0, 'mu': 4.0, 'H': 0.0, 'allow_p': False} dt=0.025: exact 3.2472  family LB 3.2361  RRL closed form 3.2361  exact-LB +0.0111
+(2) Table PoR cells at dt=0.025 (write-up: bound / exact dt=0.05)
+   {'alpha': 0.3, 'ap': 0.7, 'mu': 0.5, 'lam': 0.0, 'H': 0.0}: exact(dt=0.025) 1.8255  family bound 1.8241  diff +0.0014  plan ('r', 1.825, inf)
+   {'alpha': 0.3, 'ap': 0.7, 'mu': 1.0, 'lam': 0.0, 'H': 0.5}: exact(dt=0.025) 1.7726  family bound 1.7702  diff +0.0024  plan ('r', 1.65, inf)
+   {'alpha': 0.3, 'ap': 0.7, 'mu': 2.0, 'lam': 0.5, 'H': 0.0}: exact(dt=0.025) 2.0704  family bound 2.0674  diff +0.0030  plan ('r', 2.825, inf)
+   {'alpha': 0.3, 'ap': 0.7, 'mu': 2.0, 'lam': 0.5, 'H': 1.0}: exact(dt=0.025) 1.8214  family bound 1.8198  diff +0.0016  plan ('r', 1.8, inf)
+(3) re-solve of sampled scan rows (dt=0.1, T=14, Rmax=7, full plans) vs out/scan_compare.csv
+   ok (3) row 27 csv=2.000000 rerun=2.000000 {'alpha': 0.0, 'ap': 0.5, 'mu': 0.5, 'lam': 1.0, 'H': 2.0, 'tau': 1.0, 'allow_p': True}
+   ok (3) row 66 csv=2.000000 rerun=2.000000 {'alpha': 0.0, 'ap': 0.5, 'mu': 2.0, 'lam': 0.0, 'H': 2.0, 'tau': 0.0, 'allow_p': True}
+   ok (3) row 195 csv=1.999983 rerun=1.999983 {'alpha': 0.2, 'ap': 0.4, 'mu': 2.0, 'lam': 0.5, 'H': 1.0, 'tau': 1.0, 'allow_p': True}
+   ok (3) row 210 csv=1.999983 rerun=1.999983 {'alpha': 0.2, 'ap': 0.4, 'mu': 4.0, 'lam': 0.0, 'H': 0.0, 'tau': 0.0, 'allow_p': True}
+   ok (3) row 260 csv=1.969697 rerun=1.969697 {'alpha': 0.2, 'ap': 0.6, 'mu': 0.5, 'lam': 1.0, 'H': 0.0, 'tau': 0.0, 'allow_p': True}
+   ok (3) row 292 csv=1.875000 rerun=1.875000 {'alpha': 0.2, 'ap': 0.6, 'mu': 1.0, 'lam': 1.0, 'H': 0.5, 'tau': 0.0, 'allow_p': True}
+   ok (3) row 312 csv=2.101449 rerun=2.101449 {'alpha': 0.2, 'ap': 0.6, 'mu': 2.0, 'lam': 0.5, 'H': 0.5, 'tau': 0.0, 'allow_p': True}
+   ok (3) row 319 csv=1.825397 rerun=1.825397 {'alpha': 0.2, 'ap': 0.6, 'mu': 2.0, 'lam': 0.5, 'H': 3.0, 'tau': 1.0, 'allow_p': True}
+   ok (3) row 482 csv=1.714286 rerun=1.714286 {'alpha': 0.3, 'ap': 0.4, 'mu': 0.5, 'lam': 0.0, 'H': 0.5, 'tau': 0.0, 'allow_p': True}
+   ok (3) row 519 csv=1.714286 rerun=1.714286 {'alpha': 0.3, 'ap': 0.4, 'mu': 1.0, 'lam': 0.0, 'H': 3.0, 'tau': 1.0, 'allow_p': True}
+   ok (3) row 576 csv=1.714286 rerun=1.714286 {'alpha': 0.3, 'ap': 0.4, 'mu': 4.0, 'lam': 0.0, 'H': 2.0, 'tau': 0.0, 'allow_p': True}
+   ok (3) row 706 csv=1.994382 rerun=1.994382 {'alpha': 0.3, 'ap': 0.6, 'mu': 4.0, 'lam': 0.5, 'H': 2.0, 'tau': 0.0, 'allow_p': True}
+   ok (3) row 721 csv=1.714286 rerun=1.714286 {'alpha': 0.3, 'ap': 0.8, 'mu': 0.5, 'lam': 0.0, 'H': 0.0, 'tau': 1.0, 'allow_p': True}
+   ok (3) row 738 csv=1.714286 rerun=1.714286 {'alpha': 0.3, 'ap': 0.8, 'mu': 0.5, 'lam': 0.5, 'H': 3.0, 'tau': 0.0, 'allow_p': True}
+   ok (3) row 831 csv=2.508711 rerun=2.508711 {'alpha': 0.3, 'ap': 0.8, 'mu': 4.0, 'lam': 1.0, 'H': 0.0, 'tau': 1.0, 'allow_p': True}
+   ok (3) row 888 csv=1.500000 rerun=1.500000 {'alpha': 0.5, 'ap': 0.6, 'mu': 1.0, 'lam': 0.5, 'H': 3.0, 'tau': 0.0, 'allow_p': True}
+   ok (3) row 897 csv=1.500000 rerun=1.500000 {'alpha': 0.5, 'ap': 0.6, 'mu': 1.0, 'lam': 1.0, 'H': 2.0, 'tau': 1.0, 'allow_p': True}
+   ok (3) row 1087 csv=2.000000 rerun=2.000000 {'alpha': 0.0, 'ap': 1.0, 'mu': 1.0, 'lam': 0.0, 'H': 1.0, 'tau': 0.0, 'allow_p': False}
+   ok (3) row 1094 csv=2.000000 rerun=2.000000 {'alpha': 0.0, 'ap': 1.0, 'mu': 2.0, 'lam': 0.0, 'H': 3.0, 'tau': 0.0, 'allow_p': False}
+   ok (3) row 1102 csv=1.714286 rerun=1.714286 {'alpha': 0.3, 'ap': 1.0, 'mu': 0.5, 'lam': 0.0, 'H': 1.0, 'tau': 0.0, 'allow_p': False}
+   mismatches: 0

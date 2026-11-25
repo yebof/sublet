@@ -1,0 +1,53 @@
+# Raw traces live in /mnt/data/datasets and are not redistributed (several have no redistribution license)
+data/
+*.parquet
+*.zip
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+.ruff_cache/
+.pytest_cache/
+
+# Q44 study: per-run files are large (about 400 MB) and regenerable; summaries, tables, manifests, LB files and job records are versioned
+code/sim/out/q44_study/runs/
+
+# E11 (the Q44 study rerun on frozen code): per-run files, about 480 MB, regenerable with run_q44_study.sh
+code/sim/out/e11/runs/
+
+# MS3 experiments (design/sim_spec_ms3.md §2.3, M45): per-run data and the slot semaphore's lock files are not versioned
+code/sim/out/e1/runs/
+code/sim/out/e2/runs/
+code/sim/out/e6/a/runs/
+code/sim/out/e6/b/runs/
+code/sim/out/e10/runs/
+code/sim/out/.ms3_slots/
+
+# MS4 experiments (design/sim_spec_ms4.md §2.3, C23): per-run data are not versioned; job records and logs are
+code/sim/out/e3/runs/
+code/sim/out/e4/runs/
+code/sim/out/e5/runs/
+code/sim/out/e7/main/runs/
+code/sim/out/e7/stress/runs/
+code/sim/out/e7/gap/runs/
+code/sim/out/e7/allow/runs/
+code/sim/out/e8/runs/
+
+# MS5 experiments (design/sim_spec_ms5.md §2.3, C32): per-run data are not versioned; job records and logs are
+code/sim/out/s1/sweep/runs/
+code/sim/out/s1/q28/runs/
+code/sim/out/e9/runs/
+
+# MS5b, Sublet v2 (design/sublet_v2.md §8.2, C40): per-run data are not versioned; job records and logs are
+code/sim/out/sublet_v2_pilot/**/runs/
+code/sim/out/sublet_v2/**/runs/
+code/sim/out/e7c/*/runs/
+code/sim/out/e7r/*/runs/
+code/sim/out/e7o/*/runs/
+code/sim/out/s1v2/*/runs/
+code/sim/out/e5v2/runs/
+code/sim/out/e8v2/*/runs/
+code/sim/out/e9v2/runs/
+code/sim/out/e8q/runs/
+code/sim/out/e7b/*/runs/
+

@@ -1,0 +1,82 @@
+{
+ "meta": {
+  "exp": "s1v2",
+  "spec": "design/ms7/feasibility/sens.md \u00a72 A-D (C56)",
+  "change": "C56",
+  "git_revision": "6a96bce82ce4e4c692d1962cdbf979a9ee8c7fac",
+  "analysis_sha256": "6d9772304fe30b20d0d500c2c56b867ccecc97dc99e672c63bdfcd66912e4a2d",
+  "registration": {
+   "path": "design/ms7/registration.md",
+   "exists": true,
+   "registered_sha256": "6d9772304fe30b20d0d500c2c56b867ccecc97dc99e672c63bdfcd66912e4a2d",
+   "analysis_sha256": "6d9772304fe30b20d0d500c2c56b867ccecc97dc99e672c63bdfcd66912e4a2d",
+   "matches": true
+  },
+  "inputs": {
+   "out/s1v2/sweep/summary.json": "c73cc90db315fddb9a83f0705e1ccce0fb0250b33f7967b6d599cde820e842bf",
+   "out/s1v2/w0/summary.json": "8d9c1fc68ff3311ccc57bedc4620378426ab6878ce4606b898320493ca9fc2bc"
+  },
+  "input_records": [
+   {
+    "file": "out/s1v2/sweep/summary.json",
+    "exists": true,
+    "sha256": "c73cc90db315fddb9a83f0705e1ccce0fb0250b33f7967b6d599cde820e842bf",
+    "git_revision": "56b847bec39b437ed5074dff124ffb69416e7f2b",
+    "reduced": true,
+    "gate_kind": "ms7_registration",
+    "gate_ok": false,
+    "gate_enforced": false
+   },
+   {
+    "file": "out/s1v2/w0/summary.json",
+    "exists": true,
+    "sha256": "8d9c1fc68ff3311ccc57bedc4620378426ab6878ce4606b898320493ca9fc2bc",
+    "git_revision": "56b847bec39b437ed5074dff124ffb69416e7f2b",
+    "reduced": true,
+    "gate_kind": "ms7_registration",
+    "gate_ok": false,
+    "gate_enforced": false
+   }
+  ],
+  "confirmation_inputs": {
+   "out/sublet_v2/main/summary.json": "25e556eeee1df3687e1d9fc72390099c5305ce71e90c18e8b27be30a0dbd0c9d",
+   "out/sublet_v2/seeds/summary.json": "f94e9c71a3934a1e39a6c7aa1c26db1eab2695e547bc8233e65fb81c5dc445c4"
+  },
+  "reduced": true,
+  "registered_full_inputs": false,
+  "label": "exploratory: post-freeze runs on the confirmation weeks (design/ms7/plan.md D6)"
+ },
+ "seed_spread": {
+  "by_tag": {
+   "Sublet": {
+    "max_abs_diff": 0.0,
+    "at": "L-tr:101:1",
+    "n_pairs": 7,
+    "n_missing": 0
+   },
+   "BL1": {
+    "max_abs_diff": 0.008067985206480222,
+    "at": "L-iid-0.05:101:1",
+    "n_pairs": 7,
+    "n_missing": 0
+   },
+   "BL5-cur": {
+    "max_abs_diff": 0.006507656295648645,
+    "at": "L-iid-0.2:101:1",
+    "n_pairs": 7,
+    "n_missing": 0
+   }
+  },
+  "weeks": [
+   "101"
+  ],
+  "seeds": [
+   "1"
+  ],
+  "reference_seed": "0",
+  "sources": [
+   "out/sublet_v2/main/summary.json",
+   "out/sublet_v2/seeds/summary.json"
+  ]
+ }
+}

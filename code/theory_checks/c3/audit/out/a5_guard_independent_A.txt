@@ -1,0 +1,34 @@
+== (A)(B)(G) guard grid + forced aborts: 32 instances, 331776 guard runs, 183 s
+Eeag: rent under omega_all == 0                                                                 n=       32 viol=  0 maxex=0.00e+00 maxratio=-  [None]
+G1(a): W(t) <= C(t-1)                                                                           n=     8448 viol=  0 maxex=0.00e+00 maxratio=0.999736  [slo#1 Eeag]
+G1(b)/G4(iii): tracking from slot 0: ALG(T) <= C_S(T)                                           n=     6144 viol=  0 maxex=4.55e-13 maxratio=1.000000  [hq#3 S=R_rth L=none]
+G1(b): ALG(T)-ALG(ta-1) <= W_S(ta)+C_S(T)-C_S(ta-1)                                             n=   328703 viol=  0 maxex=1.36e-12 maxratio=1.000000  [hq#7 forced t0=23 S=T11(FB,R_r1,cheaper) L=snipe E=adv]
+G1(b): copy purchase at ta == sum_{L_S(ta)} C (|diff|)                                          n=   328703 viol=  0 maxex=0.00e+00 maxratio=-  [None]
+G1(b): cost(ta) <= sum_{L_S(ta)} C + sigma_S(ta)                                                n=   328703 viol=  0 maxex=5.68e-14 maxratio=1.000000  [rand#0 S=R_rth g=0.250 T1 B=B0 L=snipe E=aborter]
+G1(b): cost(u) <= c_S(u), u > ta                                                                n=  5128614 viol=  0 maxex=5.68e-14 maxratio=1.000000  [hq#3 S=R_rth g=0.250 T0 B=zero L=none E=fb]
+G1(b): rent at slots >= ta                                                                      n=   328703 viol=  0 maxex=0.00e+00 maxratio=-  [None]
+G1(b): uncovered p in L_S(u), u >= ta                                                           n=   328703 viol=  0 maxex=0.00e+00 maxratio=-  [None]
+G2(a): ALG <= gamma C_S(T) + B(T) + m(T-1)                                                      n=   150529 viol=  0 maxex=0.00e+00 maxratio=1.000000  [rand#0 S=FB g=1.000 T0 B=zero L=none E=fb]
+G2(a): no abort => run identical to E alone (max |ALG(t) diff| + log diff)                      n=    90222 viol=  0 maxex=0.00e+00 maxratio=-  [None]
+G2(b) first, gamma<1 (negative term exercised)                                                  n=    77157 viol=  0 maxex=4.55e-13 maxratio=1.000000  [hq#3 S=R_rth g=0.250 T0 B=zero L=none E=renter]
+G2(b) first: ALG <= C_S(T)+(g-1)C_S(ta-1)+W_S(ta)+B(ta-1)+m(ta-1)                               n=   181247 viol=  0 maxex=4.55e-13 maxratio=1.000000  [hq#3 S=R_rth g=0.250 T0 B=zero L=none E=renter]
+G2(b) second: ALG <= (1+g)C_S(T)+B(T)+m(ta-1)                                                   n=   181247 viol=  0 maxex=-2.42e+01 maxratio=0.891072  [hq#7 S=T11(Eeag,R_r1,X) g=0.250 T1 B=cap L=hunt E=adv]
+G2(c): ALG <= (1+g)C_S(T)+B(T)+M                                                                n=   331776 viol=  0 maxex=-2.42e+01 maxratio=0.891072  [hq#7 S=T11(Eeag,R_r1,X) g=0.250 T1 B=cap L=hunt E=adv]
+G3 envelope: ALG <= (1+g) C_S(T) + kappa B_on(T)                                                n=   147456 viol=  0 maxex=-3.07e+01 maxratio=0.831589  [hq#5 S=R_rth g=0.250 T0 B=zero L=none E=fb]
+G4(ii): C_T11(t) <= c(gp) min{C_X(t),C_Y(t)}                                                    n=     3840 viol=  0 maxex=0.00e+00 maxratio=0.451709  [slo#1 T11(Eeag,R_r1,X) t=12]
+G5 variant: running-max allowance (clients online) <= OPT_eager                                 n=       32 viol=  0 maxex=-6.58e+01 maxratio=0.191895  [rand#2]
+G5: B_on(T) <= OPT_eager (MILP lb)                                                              n=       32 viol=  0 maxex=-6.58e+01 maxratio=0.191895  [rand#2]
+G5: B_on(T) <= q|sigma|                                                                         n=       32 viol=  0 maxex=-1.46e+02 maxratio=0.128142  [rand#2]
+T0: m(t) == 0 (ALG(t) <= ahat(t)) at executed slots                                             n=  1302816 viol=  0 maxex=2.27e-13 maxratio=1.000000  [rand#0 S=FB g=0.250 T0 B=B0 L=hunt E=adv]
+T0g: m(t) == 0 (ALG(t) <= ahat(t)) at executed slots                                            n=  1531598 viol=  0 maxex=1.82e-12 maxratio=1.000000  [rand#3 S=R_rth g=3.000 T0g B=B0 L=hunt E=adv]
+eager item 1: purchases are new leases (each id bought once)                                    n=     8448 viol=  0 maxex=0.00e+00 maxratio=-  [None]
+eager item 2: L(u) subset of L(u-1) + P(u)                                                      n=     8448 viol=  0 maxex=0.00e+00 maxratio=-  [None]
+eager item 2: P(u) subset of L(u)                                                               n=     8448 viol=  0 maxex=0.00e+00 maxratio=-  [None]
+eager item 2: s_p <= u < s_p + D for p in L(u)                                                  n=     8448 viol=  0 maxex=0.00e+00 maxratio=-  [None]
+eager item 3: routing bound over L(u) <= sigma(u)                                               n=     8448 viol=  0 maxex=6.51e-14 maxratio=1.000000  [tau0#7 R_rth]
+non-anticipation: max_{t<=T/2} |C_S(t) - C_S^cut(t)|                                            n=      288 viol=  0 maxex=0.00e+00 maxratio=-  [None]
+abort rates (test|allow|E): T0g|B0|aborter 99.9%; T0g|B0|adv 35.7%; T0g|B0|fb 39.9%; T0g|B0|hoard 42.9%; T0g|B0|renter 21.9%; T0g|B0|twin 26.0%; T0g|cap|aborter 99.8%; T0g|cap|adv 35.2%; T0g|cap|fb 39.9%; T0g|cap|hoard 45.3%; T0g|cap|renter 23.1%; T0g|cap|twin 26.0%; T0g|zero|aborter 99.8%; T0g|zero|adv 41.7%; T0g|zero|fb 44.7%; T0g|zero|hoard 82.2%; T0g|zero|renter 68.9%; T0g|zero|twin 40.7%; T0|B0|aborter 99.8%; T0|B0|adv 51.2%; T0|B0|fb 39.9%; T0|B0|hoard 57.5%; T0|B0|renter 36.9%; T0|B0|twin 34.0%; T0|cap|aborter 99.8%; T0|cap|adv 51.0%; T0|cap|fb 39.9%; T0|cap|hoard 59.4%; T0|cap|renter 37.7%; T0|cap|twin 34.0%; T0|zero|aborter 99.9%; T0|zero|adv 53.1%; T0|zero|fb 44.7%; T0|zero|hoard 88.5%; T0|zero|renter 76.8%; T0|zero|twin 58.4%; T1|B0|aborter 99.8%; T1|B0|adv 61.3%; T1|B0|fb 38.0%; T1|B0|hoard 41.9%; T1|B0|renter 21.3%; T1|B0|twin 25.8%; T1|cap|aborter 99.8%; T1|cap|adv 61.7%; T1|cap|fb 38.0%; T1|cap|hoard 44.4%; T1|cap|renter 22.5%; T1|cap|twin 25.8%; T1|zero|aborter 99.9%; T1|zero|adv 62.6%; T1|zero|fb 41.4%; T1|zero|hoard 82.1%; T1|zero|renter 68.1%; T1|zero|twin 39.5%
+T11 experts: 160, switches distribution: {0: 35, 1: 58, 2: 53, 3: 12, 4: 2}
+aborts 181247, with W_S(ta)>0 51766, with a switch of S after ta 48858
+running-max allowance / B_on(T): max 1.146
+total time 183 s

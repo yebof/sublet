@@ -1,0 +1,22 @@
+claim: violations / instances checked
+C5.1: 0 / 75008
+C5.2: 0 / 100182
+C5.3: 0 / 73134
+warm_only_if_mu_gt_beta: 0 / 200000
+proviso_auto: 0 / 56199
+C6_alpha0: 0 / 61
+warm_kappa_never_binds: 0 / 200000
+Rwarm_lam_gt_Rwait: 0 / 66757
+C5.3 proviso failures (lam>0, mu<=2beta): examples of H* vs mu/(2(1-a))
+alpha=0.200 ap=0.5556 kappa=0.8000 mu=1.5: H*=0.9375 mu/(2(1-a))=0.9375 R_cold=2.1875 R_wait=2.8125
+alpha=0.200 ap=0.5556 kappa=0.8000 mu=1.8: H*=1.2500 mu/(2(1-a))=1.1250 R_cold=2.5000 R_wait=2.8125
+alpha=0.200 ap=0.5556 kappa=0.8000 mu=2.0: H*=1.5000 mu/(2(1-a))=1.2500 R_cold=2.7500 R_wait=2.8125
+alpha=0.333 ap=0.6000 kappa=0.6667 mu=1.5: H*=1.2500 mu/(2(1-a))=1.1250 R_cold=2.7500 R_wait=3.7500
+alpha=0.333 ap=0.6000 kappa=0.6667 mu=1.8: H*=1.7000 mu/(2(1-a))=1.3500 R_cold=3.2000 R_wait=3.7500
+alpha=0.333 ap=0.6000 kappa=0.6667 mu=2.0: H*=2.0000 mu/(2(1-a))=1.5000 R_cold=3.5000 R_wait=3.7500
+alpha=0.400 ap=0.6400 kappa=0.6240 mu=1.5: H*=1.3782 mu/(2(1-a))=1.2500 R_cold=3.0449 R_wait=4.4444
+alpha=0.400 ap=0.6400 kappa=0.6240 mu=1.8: H*=1.8590 mu/(2(1-a))=1.5000 R_cold=3.5256 R_wait=4.4444
+alpha=0.400 ap=0.6400 kappa=0.6240 mu=2.0: H*=2.1795 mu/(2(1-a))=1.6667 R_cold=3.8461 R_wait=4.4444
+alpha=0.500 ap=0.7500 kappa=0.6250 mu=1.5: H*=1.5000 mu/(2(1-a))=1.5000 R_cold=3.5000 R_wait=6.0000
+alpha=0.500 ap=0.7500 kappa=0.6250 mu=1.8: H*=1.8000 mu/(2(1-a))=1.8000 R_cold=3.8000 R_wait=6.0000
+alpha=0.500 ap=0.7500 kappa=0.6250 mu=2.0: H*=2.0000 mu/(2(1-a))=2.0000 R_cold=4.0000 R_wait=6.0000

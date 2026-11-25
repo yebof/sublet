@@ -1,0 +1,9 @@
+b4: O1-C ALG-side bound E[N+F] >= pU under tau = 0 vs tau = 1 (policy "dodge", full feedback)
+m  rho tau H  p    U    E[N]/U (see t first)  E[N]/U (decide first)  p     E[ALG]/E[OPT] (see first)  LB_C(p) asym  finite (beta p U + aT)/E[OPT]
+8  32  0   1  0.5  150  0.339                 0.501                   0.50  1.432                      2.059         2.050
+8  32  0   2  0.5  150  0.338                 0.504                   0.50  1.415                      2.059         2.036
+16 32  0   1  0.5  150  0.334                 0.496                   0.50  1.665                      2.439         2.417
+8  32  1   0  0.5  150  0.507                 0.500                   0.50  2.062                      2.059         2.034
+8  32  1   1  0.5  150  0.507                 0.504                   0.50  2.049                      2.059         2.024
+Reading: with tau = 0 and observe-then-decide, E[N]/U ~ p/(1+p) < p, and the ratio falls below the finite-U and asymptotic
+value of LB_C(p) claimed for "any feedback". With tau >= 1 seeing slot t does not help (E[N]/U ~ p).

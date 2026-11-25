@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "name": "toy",
+  "seed": 7,
+  "time": {"slow_slot_min": 5, "fast_slot_min": 5, "horizon_min": 120, "start_minute_of_week": 0},
+  "billing": "prepaid_D",
+  "prices": {"a0_usd_per_gpu_h": 2.85, "q_gpu_usd_per_gpu_h": 7.15, "a_protected_usd_per_gpu_h": 5.97,
+             "revocable_price": "explicit"},
+  "contracts": [
+    {"id": "short", "tau_min": 5, "H_min": 5},
+    {"id": "long", "tau_min": 10, "H_min": 10},
+    {"id": "prot", "tau_min": null, "H_min": 0, "prepaid_min": 5}
+  ],
+  "llms": [{"id": "M", "catalog": "explicit", "tier": "M", "g": 1, "w_GB": 60.0,
+            "kappa_wtok_per_min": 219428.5714, "w_in": 0.3048, "T_dr_s": 28.49}],
+  "lenders": [
+    {"id": "L0", "kind": "synthetic", "region": "r0", "group": "g0", "menu": ["short", "long"],
+     "prices": {"short": 2.85, "long": 3.0}, "capacity_gpus": 4, "R": [6, 7, 8, 15, 16],
+     "load_scenario": "explicit", "lam_s": 300.0},
+    {"id": "L1", "kind": "synthetic", "region": "r0", "group": "g1", "menu": ["short", "long"],
+     "prices": {"short": 2.9, "long": 3.1}, "capacity_gpus": 4, "R": [10, 11],
+     "load_scenario": "explicit", "lam_s": 300.0},
+    {"id": "P", "kind": "protected", "region": "r0", "group": "gp", "menu": ["prot"],
+     "capacity_gpus": null, "load_scenario": "explicit", "lam_s": 600.0}
+  ],
+  "lender_model": {"schedule": "trace", "information": "I1", "on_unavailable": "sell", "violations": "absorb"},
+  "regions": {"list": ["r0"], "adjacency": [], "default_slo_class": "strict", "relaxed_routing_cost_over_q": 0.05},
+  "borrowers": {"model": "explicit", "clients": [
+    {"llm": "M", "region": "r0", "slo_class": "strict", "borrowers": ["b0"],
+     "demand": {"kind": "array",
+                "values": [0,0,1,1,1,1,1,1,0,0,1,1,1,1,1,1,0,0,1,1,1,1,0,0]}}]},
+  "costs": {"phi": 1.0, "beta_jl_usd": 0.0},
+  "stranding": {"mu_over_beta_tilde": 1.0, "kv_share": 0.0,
+                "beta_tilde_ref": {"price": "a0", "load_time": "median_site"}},
+  "units": {"per_replica": 4},
+  "bench": {"grid": "slow", "time_limit_s": 60, "mip_rel_gap": 1e-9}
+}

@@ -1,0 +1,108 @@
+{
+ "job": "e3:cell:b=8:u=8:mu=1:c=101",
+ "exp": "e7h",
+ "kind": "pool",
+ "params": {
+  "part": "e3",
+  "kind": "e3cell",
+  "b": 8,
+  "u": 8,
+  "mu": 1.0,
+  "c": 101,
+  "entries": [
+   [
+    "Sublet",
+    "shared"
+   ],
+   [
+    "Sublet",
+    "siloed"
+   ],
+   [
+    "A9",
+    "shared"
+   ],
+   [
+    "A9",
+    "siloed"
+   ],
+   [
+    "BL1",
+    "shared"
+   ],
+   [
+    "BL1",
+    "siloed"
+   ],
+   [
+    "BL5-cur",
+    "shared"
+   ],
+   [
+    "BL5-cur",
+    "siloed"
+   ],
+   [
+    "Sublet-MS4",
+    "shared"
+   ],
+   [
+    "Sublet-MS4",
+    "siloed"
+   ]
+  ],
+  "policy_seeds": [
+   0
+  ],
+  "lp": "all",
+  "horizon": [
+   156,
+   24
+  ],
+  "siloed": true
+ },
+ "status": "ok",
+ "started": "2026-11-03T14:23:45",
+ "pid": 1729793,
+ "argv": [
+  "/work/sublet/code/sim/sublet/experiments/e7h.py",
+  "--job",
+  "e3:cell:b=8:u=8:mu=1:c=101",
+  "--out",
+  "/work/u36_fix/e3/out/sublet_v2/e3"
+ ],
+ "slots": [
+  "slot1"
+ ],
+ "milp_limit_s": null,
+ "git_revision": "5c7d33285b9a4f4e4df2b76e80b3e5f56d58bd37",
+ "versions": {
+  "python": "3.12.3",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "sublet": "0.1.0"
+ },
+ "runs": 10,
+ "errors": [],
+ "n_errors": 0,
+ "outputs": [
+  "lb/e3__lp__b__8__u__8__mu__1__c__101__part__shared.json",
+  "lb/e3__lp__b__8__u__8__mu__1__c__101__part__b00.json",
+  "lb/e3__lp__b__8__u__8__mu__1__c__101__part__b01.json",
+  "lb/e3__lp__b__8__u__8__mu__1__c__101__part__b02.json",
+  "lb/e3__lp__b__8__u__8__mu__1__c__101__part__b04.json",
+  "lb/e3__lp__b__8__u__8__mu__1__c__101__part__b05.json",
+  "lb/e3__lp__b__8__u__8__mu__1__c__101__part__b06.json",
+  "lb/e3__lp__b__8__u__8__mu__1__c__101__part__b07.json",
+  "runs/cells/e3__cell__b__8__u__8__mu__1__c__101.json"
+ ],
+ "result": {
+  "lps": 8,
+  "instance_hash": "517aedc2ee092137d279ad468d263a87fd930e0164c362eadaebcc5427a68d10",
+  "schedule_mismatch": 0
+ },
+ "wall_s": 6.141613224986941,
+ "peak_rss_kb": 149532,
+ "peak_rss_mb": 146.02734375,
+ "finished": "2026-11-03T14:23:51"
+}

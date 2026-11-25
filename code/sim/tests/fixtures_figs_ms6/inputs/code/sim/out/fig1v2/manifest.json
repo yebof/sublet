@@ -1,0 +1,91 @@
+{
+ "what": "Fig. 1 v2's illustrative run of Sublet (A8P around A9), per-slot logging",
+ "spec": "design/ms6_spec.md \u00a71.1 M1, \u00a72 U44",
+ "command": "python -m sublet.experiments.fig1_illustrative --reduced",
+ "git_revision": "0cb4f4afb3f4fb05d428acb640da535986df6070",
+ "tracked_files_dirty": true,
+ "cell": {
+  "block": "Q1",
+  "inst": "I2",
+  "c": 1,
+  "cell": "I2:c1",
+  "config": "example_1day.json",
+  "development_cell": true
+ },
+ "mode": "L-eg",
+ "policy_seed": 0,
+ "lender_seed": 1,
+ "tag": "Sublet",
+ "tag_params": {
+  "inner": "A9",
+  "project": true,
+  "allowance": "lb",
+  "kappa": null
+ },
+ "policy": {
+  "id": "A8P",
+  "params": {
+   "safe": "fb+pd",
+   "S_rbar": "theory",
+   "gamma": 1.0,
+   "gamma_T11": 1.7071067811865475,
+   "test": "T0g",
+   "wind_down": "auto",
+   "reserve": true,
+   "B0": "auto",
+   "kappa": null,
+   "abort_at": null,
+   "project": true,
+   "allowance": "lb",
+   "inner": "A9",
+   "inner_params": {
+    "defer_release": true,
+    "demand_stat": "max",
+    "site_order": "auto",
+    "backoff_cap": null,
+    "demand_lag": 0,
+    "target": "ratio",
+    "release": "ski",
+    "contract_rule": "c2",
+    "commit": true,
+    "mbb": true,
+    "site_rule": "ski",
+    "insure": true,
+    "theta": "be",
+    "tie": "lru"
+   }
+  }
+ },
+ "window": [
+  0,
+  36
+ ],
+ "reduced": true,
+ "started": "2026-11-04T07:27:12",
+ "wall_s": 10.380413614679128,
+ "peak_rss_mb": 140.71484375,
+ "versions": {
+  "python": "3.12.3",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "sublet": "0.1.0"
+ },
+ "run_file": "run.json",
+ "run_sha256": "f14e5cf6f3f8fdd2d7d6f42c3c96b578c695cbbb8af55b46f3aca5c307692ef1",
+ "checks": {
+  "identical": {
+   "report": true,
+   "per_slot": true,
+   "components": true,
+   "ok": true
+  },
+  "log": {
+   "ok": true,
+   "n_evaluations": 41,
+   "problems": []
+  },
+  "pilot": null,
+  "pilot_note": "reduced run (a window of the cell): no pilot record",
+  "pass": true
+ }
+}

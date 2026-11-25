@@ -1,0 +1,89 @@
+{
+ "check": "copy",
+ "exp": "e8q",
+ "pass": true,
+ "checks": {
+  "same_file_list": true,
+  "same_sha256": true,
+  "no_symlinks": true,
+  "json_readable": true,
+  "revisions": true,
+  "revisions_recorded": true,
+  "manifest_revision": true,
+  "summary_ok": true,
+  "no_running_records": true,
+  "record_statuses_known": true,
+  "run_log_done": true
+ },
+ "copy": "/work/sublet/code/sim/out/e8q",
+ "clone": "/work/ms8_runs",
+ "clone_out": "/work/ms8_runs/code/sim/out/e8q",
+ "clone_commit": "467b21817c8f506f152248c731f072a406c33d3a",
+ "parts": [],
+ "tree_sha256": "65a679e6745a4e54de8cd1bc96a466f47ea4922a5e9b81974acbc7d1ad2f0f07",
+ "tree_sha256_versioned": "bd2018f747e41975ba39a50d08cd35b43f5d781ab409f694bb3f71526ae9bf90",
+ "n_files_copy": 167,
+ "n_files_clone": 167,
+ "n_files_compared": 167,
+ "n_only_in_copy": 0,
+ "only_in_copy": [],
+ "n_only_in_clone": 0,
+ "only_in_clone": [],
+ "n_sha256_mismatch": 0,
+ "sha256_mismatch": [],
+ "n_symlinks": 0,
+ "symlinks": [],
+ "n_partial": 0,
+ "n_json": 80,
+ "revisions_found": {
+  "467b21817c8f506f152248c731f072a406c33d3a": 80
+ },
+ "n_revision_differs": 0,
+ "revision_differs": [],
+ "n_no_revision": 0,
+ "no_revision_by_kind": {},
+ "n_no_revision_unexpected": 0,
+ "no_revision_unexpected": [],
+ "no_revision_allowed_under": [],
+ "n_json_unreadable": 0,
+ "json_unreadable": [],
+ "manifest_git_revision": {
+  "e8q": "467b21817c8f506f152248c731f072a406c33d3a"
+ },
+ "summaries": {
+  "e8q": {
+   "file": "summary.json",
+   "exists": true,
+   "object": true,
+   "summary_record": "ok",
+   "manifest_record": "ok",
+   "ok": true
+  }
+ },
+ "records_by_status": {
+  "ok": 39
+ },
+ "records_by_part": {
+  "e8q": {
+   "ok": 39
+  }
+ },
+ "n_running": 0,
+ "running_records": [],
+ "n_unknown_status": 0,
+ "unknown_status_records": [],
+ "run_logs": {
+  "e8q": {
+   "file": "run_e8q.log",
+   "exists": true,
+   "last_line": "[run_e8q] done 2026-11-25T04:36:12+08:00",
+   "done": true
+  }
+ },
+ "lists_truncated_at": 200,
+ "checked_by": {
+  "module": "sublet.experiments.ms3_common",
+  "git_revision": "c6770e0ea824b335a6bb2627dfce2551cc485c1c"
+ },
+ "time": "2026-11-25T05:43:18"
+}

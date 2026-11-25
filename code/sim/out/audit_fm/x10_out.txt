@@ -1,0 +1,54 @@
+X10: Lemma G5'(c) pathwise, ALG(t) >= LB'(t) at every slow slot of every engine run (design/theory/c3_c4_c5_general.md §9, Lemma G5'(c); audit addendum, design/sublet_v2.md §5 step P6)
+oracle: LB' from the text's full-model definition, computed independently in this script (not online_lb.py, not the prototype lb.py); proof steps 1-6 checked from the run's records; script code/sim/audit/x10_g5p_pathwise.py
+runs: 20700 of 20700 (default), slow slots checked: 510300, run errors: 0, wall time 536 s on one worker
+tolerance: violation iff LB'(t) - ALG(t) > 1e-09 max(1, ALG(t))
+
+runs by family, style, lender mode:
+  family: ms2 4800, probe 1500, rich 2400, spot 1200, toy 10800
+  style: exact 3912, hog 598, mixed 4288, random 4008, swap 4089, track 3805
+  mode: adaptive 1442, corr 1479, corr_reclaim 1731, eager 1436, iid 1512, reclaim 1775, reclaimI2 1899, refuse 1514, refuseI2 1514, refuse_reclaim 1818, safe 1410, trace 1680, traceI2 1490
+  mode skipped: safe 135
+features (runs, unless the line counts objects):
+  mutated: 10414
+  auto_drain: 10428
+  kappa_infinite: 9017
+  capacitated: 11683
+  several groups: 10435
+  an LLM with several groups (split): 763
+  several LLMs: 12040
+  Delta_f not dividing an offered P_k: 4714
+  leases with zeta_k < 1: 64814
+  load-time corner in instance: 9076
+  replicas loaded in the load-time corner: 120988
+  runs with an accepted Load: 10988
+  Loads accepted (replica loaded after its lease's purchase): 83198
+  leases bought with several replicas: 206820
+  leases with several LLMs over their life: 16673
+  leases with several LLMs at once: 12291
+  releases inside the prepaid region: 63525
+  events unload: 101613
+  events release: 212235
+  events drain: 316865
+  events admission: 245833
+  on_fast actions: 424357
+  events refuse: 106887
+  events announce: 117700
+  violation victims: 9327
+  routing LP calls: 18805
+negative controls (the prototype's three differences; LB' variant above ALG(t) + tolerance at some slot):
+  nozeta: runs 82, slots 1199
+  shortcut: runs 385, slots 3821
+  lam: runs 53, slots 128
+checks (evaluations):
+  ledger 510300, step1 9864646, step2 767515, step3 767515, step4 2673394, step5 787200, step5 n° 12230770, step6 510300
+tight slots (|ALG(t) - LB'(t)| <= tolerance with LB'(t) > 0): 17678 in 2929 runs
+minimum slack ALG(t) - LB'(t): -5.684342e-14 (run 1434 probe_v2 style=exact mut=1 mode=refuse auto_drain=1)
+minimum relative slack (ALG(t) - LB'(t)) / max(1, ALG(t)): -8.275270e-16 (run 6990 toy_v21 style=exact mut=1 mode=corr_reclaim auto_drain=1)
+  family ms2: minimum relative slack -2.211265e-16 (run 4388 ms2_v5 style=swap mut=1 mode=adaptive auto_drain=0)
+  family probe: minimum relative slack -6.966105e-16 (run 14545 probe_v3 style=exact mut=1 mode=corr_reclaim auto_drain=1)
+  family rich: minimum relative slack -1.311264e-16 (run 5301 rich_v0 style=random mut=1 mode=iid auto_drain=0)
+  family spot: minimum relative slack -3.211865e-16 (run 3035 spot_v3 style=swap mut=0 mode=refuse_reclaim auto_drain=1)
+  family toy: minimum relative slack -8.275270e-16 (run 6990 toy_v21 style=exact mut=1 mode=corr_reclaim auto_drain=1)
+failures by kind: none
+step and invariant failures: 0
+violations: 0

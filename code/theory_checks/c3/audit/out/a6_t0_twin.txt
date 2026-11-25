@@ -1,0 +1,20 @@
+E = exact twin of S = R (same coins): abort rate by (test, allowance, gamma)
+   ('T0', 'cap', 1.0) 40.6% of 384
+   ('T0', 'cap', 1.707) 4.7% of 384
+   ('T0', 'zero', 1.0) 100.0% of 384
+   ('T0', 'zero', 1.707) 23.4% of 384
+   ('T0g', 'cap', 1.0) 0.0% of 384
+   ('T0g', 'cap', 1.707) 0.0% of 384
+   ('T0g', 'zero', 1.0) 0.0% of 384
+   ('T0g', 'zero', 1.707) 0.0% of 384
+   ('T1', 'cap', 1.0) 0.0% of 384
+   ('T1', 'cap', 1.707) 0.0% of 384
+   ('T1', 'zero', 1.0) 0.0% of 384
+   ('T1', 'zero', 1.707) 0.0% of 384
+P5 family, E = renter (BL1-like), capped allowance, gamma = 1: abort rate and abort slots
+   ('T0',) 100.0% of 288; abort slots: min 0, share at slot 0 1.00
+   ('T0g',) 91.7% of 288; abort slots: min 0, share at slot 0 1.00
+   ('T1',) 91.7% of 288; abort slots: min 0, share at slot 0 1.00
+violations of the guard inequalities in these runs: 0
+T0: m(t) == 0 (ALG(t) <= ahat(t)) at executed slots                                             n=    22602 viol=  0 maxex=0.00e+00 maxratio=1.000000  [rand#0 twin0 r=1 T0 cap none]
+T0g: m(t) == 0 (ALG(t) <= ahat(t)) at executed slots                                            n=    38016 viol=  0 maxex=4.55e-13 maxratio=1.000000  [rand#0 twin0 r=1 T0g zero none]

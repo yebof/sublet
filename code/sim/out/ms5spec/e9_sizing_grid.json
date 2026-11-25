@@ -1,0 +1,5577 @@
+{
+ "status": "ok",
+ "meta": {
+  "script": "code/sim/out/ms5spec/e9_sizing.py",
+  "argv": [
+   "out/ms5spec/e9_sizing.py",
+   "--build-only",
+   "--unmerged"
+  ],
+  "measurement": "e9_sizing",
+  "case": "grid",
+  "smoke": false,
+  "git": {
+   "commit": "f1be6c15ce2e124adea10fed3ce6581d4fc01d36",
+   "tracked_files_dirty": false
+  },
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "scipy": "1.17.1",
+   "sublet": "0.1.0"
+  },
+  "host": "host",
+  "loadavg_start": [
+   1.3466796875,
+   1.92919921875,
+   2.0830078125
+  ],
+  "omp_num_threads": "1",
+  "started": "2026-10-29T14:02:17",
+  "finished": "2026-10-29T14:03:40",
+  "cgroup_start": {
+   "path": "/user.slice/user-1001.slice/user@1001.service/app.slice/run-ra920a168a6de4040a5f723941552c7d8.scope",
+   "memory_max": "3221225472",
+   "memory_peak": "26939392"
+  },
+  "note": "MS5-spec measurement (sizing of E9, design/Sublet_design.md \u00a75.5), not a project result",
+  "wall_s": 83.15289848996326,
+  "ru_maxrss_mb": 990.78515625,
+  "cgroup_end": {
+   "path": "/user.slice/user-1001.slice/user@1001.service/app.slice/run-ra920a168a6de4040a5f723941552c7d8.scope",
+   "memory_max": "3221225472",
+   "memory_peak": "1004486656"
+  }
+ },
+ "stage": "point e7r_V64_S",
+ "wall_s_so_far": 83.15308702504262,
+ "ru_maxrss_mb_so_far": 990.78515625,
+ "llm_subsets": [
+  {
+   "llms": [
+    "S"
+   ],
+   "s_S": 0.25,
+   "builds": false,
+   "error": "ConfigError: llms: tier 'L' must appear exactly once among llms[].tier (found [])",
+   "s": 0.044786361046135426
+  },
+  {
+   "llms": [
+    "S"
+   ],
+   "s_S": 0.0,
+   "builds": false,
+   "error": "ConfigError: llms: tier 'L' must appear exactly once among llms[].tier (found [])",
+   "s": 0.0011471058242022991
+  },
+  {
+   "llms": [
+    "S"
+   ],
+   "s_S": 1.0,
+   "builds": true,
+   "n_llms": 1,
+   "n_clients": 5,
+   "llms_with_clients": [
+    "S"
+   ],
+   "every_llm_has_clients": true,
+   "s": 0.5802724100649357
+  },
+  {
+   "llms": [
+    "M"
+   ],
+   "s_S": 0.25,
+   "builds": false,
+   "error": "ConfigError: llms: tier 'L' must appear exactly once among llms[].tier (found [])",
+   "s": 0.0013368260115385056
+  },
+  {
+   "llms": [
+    "M"
+   ],
+   "s_S": 0.0,
+   "builds": false,
+   "error": "ConfigError: llms: tier 'L' must appear exactly once among llms[].tier (found [])",
+   "s": 0.0010849409736692905
+  },
+  {
+   "llms": [
+    "M"
+   ],
+   "s_S": 1.0,
+   "builds": false,
+   "error": "ConfigError: llms: tier 'S' must appear exactly once among llms[].tier (found [])",
+   "s": 0.0010239009279757738
+  },
+  {
+   "llms": [
+    "L"
+   ],
+   "s_S": 0.25,
+   "builds": false,
+   "error": "ConfigError: llms: tier 'M' must appear exactly once among llms[].tier (found [])",
+   "s": 0.0010184550192207098
+  },
+  {
+   "llms": [
+    "L"
+   ],
+   "s_S": 0.0,
+   "builds": false,
+   "error": "ConfigError: llms: tier 'M' must appear exactly once among llms[].tier (found [])",
+   "s": 0.0010151539463549852
+  },
+  {
+   "llms": [
+    "L"
+   ],
+   "s_S": 1.0,
+   "builds": false,
+   "error": "ConfigError: llms: tier 'S' must appear exactly once among llms[].tier (found [])",
+   "s": 0.0010141460224986076
+  },
+  {
+   "llms": [
+    "S",
+    "M"
+   ],
+   "s_S": 0.25,
+   "builds": false,
+   "error": "ConfigError: llms: tier 'L' must appear exactly once among llms[].tier (found [])",
+   "s": 0.001044505974277854
+  },
+  {
+   "llms": [
+    "S",
+    "M"
+   ],
+   "s_S": 0.0,
+   "builds": false,
+   "error": "ConfigError: llms: tier 'L' must appear exactly once among llms[].tier (found [])",
+   "s": 0.0010961790103465319
+  },
+  {
+   "llms": [
+    "S",
+    "M"
+   ],
+   "s_S": 1.0,
+   "builds": true,
+   "n_llms": 2,
+   "n_clients": 5,
+   "llms_with_clients": [
+    "S"
+   ],
+   "every_llm_has_clients": false,
+   "s": 0.4882934018969536
+  },
+  {
+   "llms": [
+    "S",
+    "L"
+   ],
+   "s_S": 0.25,
+   "builds": false,
+   "error": "ConfigError: llms: tier 'M' must appear exactly once among llms[].tier (found [])",
+   "s": 0.001262499950826168
+  },
+  {
+   "llms": [
+    "S",
+    "L"
+   ],
+   "s_S": 0.0,
+   "builds": false,
+   "error": "ConfigError: llms: tier 'M' must appear exactly once among llms[].tier (found [])",
+   "s": 0.0010821570176631212
+  },
+  {
+   "llms": [
+    "S",
+    "L"
+   ],
+   "s_S": 1.0,
+   "builds": true,
+   "n_llms": 2,
+   "n_clients": 5,
+   "llms_with_clients": [
+    "S"
+   ],
+   "every_llm_has_clients": false,
+   "s": 0.49110675090923905
+  },
+  {
+   "llms": [
+    "M",
+    "L"
+   ],
+   "s_S": 0.25,
+   "builds": false,
+   "error": "ConfigError: llms: tier 'S' must appear exactly once among llms[].tier (found [])",
+   "s": 0.0012623181100934744
+  },
+  {
+   "llms": [
+    "M",
+    "L"
+   ],
+   "s_S": 0.0,
+   "builds": true,
+   "n_llms": 2,
+   "n_clients": 10,
+   "llms_with_clients": [
+    "L",
+    "M"
+   ],
+   "every_llm_has_clients": true,
+   "s": 0.5004823699127883
+  },
+  {
+   "llms": [
+    "M",
+    "L"
+   ],
+   "s_S": 1.0,
+   "builds": false,
+   "error": "ConfigError: llms: tier 'S' must appear exactly once among llms[].tier (found [])",
+   "s": 0.0012575900182127953
+  },
+  {
+   "llms": [
+    "S",
+    "M",
+    "L"
+   ],
+   "s_S": 0.25,
+   "builds": true,
+   "n_llms": 3,
+   "n_clients": 15,
+   "llms_with_clients": [
+    "L",
+    "M",
+    "S"
+   ],
+   "every_llm_has_clients": true,
+   "s": 0.5104999979957938
+  },
+  {
+   "llms": [
+    "S",
+    "M",
+    "L"
+   ],
+   "s_S": 0.0,
+   "builds": true,
+   "n_llms": 3,
+   "n_clients": 10,
+   "llms_with_clients": [
+    "L",
+    "M"
+   ],
+   "every_llm_has_clients": false,
+   "s": 0.49933679099194705
+  },
+  {
+   "llms": [
+    "S",
+    "M",
+    "L"
+   ],
+   "s_S": 1.0,
+   "builds": true,
+   "n_llms": 3,
+   "n_clients": 5,
+   "llms_with_clients": [
+    "S"
+   ],
+   "every_llm_has_clients": false,
+   "s": 0.4898332271259278
+  }
+ ],
+ "grid_definition": {
+  "bases": {
+   "e7f": "bench_e7f.json",
+   "e7r": "bench_e7r.json"
+  },
+  "V": [
+   1,
+   2,
+   4,
+   8,
+   16,
+   32,
+   64
+  ],
+  "llm_sets": {
+   "SML": {
+    "llms": [
+     "S",
+     "M",
+     "L"
+    ],
+    "s_S": null
+   },
+   "ML": {
+    "llms": [
+     "M",
+     "L"
+    ],
+    "s_S": 0.0
+   },
+   "S": {
+    "llms": [
+     "S"
+    ],
+    "s_S": 1.0
+   }
+  },
+  "horizon_min": 1440,
+  "gate_mb": 2000.0,
+  "slow_point_s": 60.0,
+  "budget_s": 270.0,
+  "unmerged": true
+ },
+ "points": {
+  "e7f_V1_SML": {
+   "base": "e7f",
+   "config": "bench_e7f.json",
+   "V": 1,
+   "llm_set": "SML",
+   "overrides": {
+    "time.horizon_min": 1440,
+    "stranding.mu_over_beta_tilde": 1.0,
+    "lender_defaults.n_layers": 1
+   },
+   "build_s": 0.506144437007606,
+   "instance": {
+    "n_sites": 28,
+    "n_sites_by_kind": {
+     "layer": 23,
+     "protected": 5
+    },
+    "n_contracts": 21,
+    "n_revocable_contracts": 20,
+    "menu_size_per_site": {
+     "min": 1,
+     "max": 20,
+     "mean": 15.214285714285714,
+     "sum": 426
+    },
+    "n_llms": 3,
+    "llms": [
+     "S",
+     "M",
+     "L"
+    ],
+    "llms_with_clients": [
+     "L",
+     "M",
+     "S"
+    ],
+    "n_clients": 15,
+    "n_units": 347,
+    "units_per_replica": 8,
+    "sites_x_llms": 84,
+    "grid": {
+     "slow_min": 5,
+     "fast_min": 1,
+     "T_slow": 288,
+     "T_fast": 1440,
+     "horizon_min": 1440,
+     "start_mow": 154
+    },
+    "n_trace_lenders": 23,
+    "n_trace_lenders_with_sites": 23,
+    "layer_capacity_gpus": 184.0,
+    "v_top": {
+     "a2:c00": 1386,
+     "a2:c01": 448,
+     "a2:c02": 822,
+     "a2:c03": 519,
+     "a2:c04": 1029,
+     "a2:c05": 231,
+     "a2:c06": 499,
+     "a2:c07": 170,
+     "a2:c08": 237,
+     "a2:c09": 434,
+     "a2:c10": 142,
+     "a2:c11": 351,
+     "a2:c12": 235,
+     "a2:c13": 231,
+     "a2:c14": 60,
+     "a2:c15": 288,
+     "a2:c16": 395,
+     "a2:c17": 397,
+     "a2:c18": 207,
+     "a2:c19": 239,
+     "a1:A100-SXM4-80GB": 2,
+     "a1:A800-SXM4-80GB": 1,
+     "a1:GPU-series-2": 1
+    },
+    "sites_reachable_by_V": 8329,
+    "demand_load_h": 50.363328465826,
+    "bl0a_usd": 909.5483635331481,
+    "gamma_note": [
+     "regional demand: Gamma = 1.20374e+06 (tightness 0.5, supply 184 GPUs)"
+    ]
+   },
+   "schedule_s": 0.006119207013398409,
+   "announcements": 1242,
+   "lp_estimate": {
+    "sites_unmerged": 28,
+    "sites_merged": 28,
+    "merge_s": 0.000672545051202178,
+    "estimate_s": 0.2101363360416144,
+    "merged": {
+     "n_vars": 1730755,
+     "n_int": 1443711,
+     "n_rows": 1377244,
+     "nnz": 8844987,
+     "est_mb": 24281.464900000003,
+     "est_mb_lp": 4906.29298,
+     "n_triples": 1278,
+     "n_cohorts": 52533,
+     "T_b": 288
+    },
+    "rule": "est_mb_lp = 130 + 5.4e-4 nnz MB (LP rule, opt/milp.py estimate_size; est_mb is the MILP rule)",
+    "unmerged": {
+     "n_vars": 1730755,
+     "n_int": 1443711,
+     "n_rows": 1377244,
+     "nnz": 8844987,
+     "est_mb": 24281.464900000003,
+     "est_mb_lp": 4906.29298,
+     "estimate_s": 0.21214696881361306
+    }
+   },
+   "lp_fits_gate": false,
+   "status": "ok",
+   "point_s": 0.9523276761174202,
+   "rss_mb_after": 146.80078125
+  },
+  "e7f_V1_ML": {
+   "base": "e7f",
+   "config": "bench_e7f.json",
+   "V": 1,
+   "llm_set": "ML",
+   "overrides": {
+    "time.horizon_min": 1440,
+    "stranding.mu_over_beta_tilde": 1.0,
+    "lender_defaults.n_layers": 1,
+    "llms": [
+     {
+      "id": "M",
+      "catalog": "maas_a10",
+      "entry": "M",
+      "kappa_mult": 1.0
+     },
+     {
+      "id": "L",
+      "catalog": "maas_a10",
+      "entry": "L",
+      "kappa_mult": 1.0
+     }
+    ],
+    "borrowers.s_S": 0.0
+   },
+   "build_s": 0.496648132102564,
+   "instance": {
+    "n_sites": 28,
+    "n_sites_by_kind": {
+     "layer": 23,
+     "protected": 5
+    },
+    "n_contracts": 21,
+    "n_revocable_contracts": 20,
+    "menu_size_per_site": {
+     "min": 1,
+     "max": 20,
+     "mean": 15.214285714285714,
+     "sum": 426
+    },
+    "n_llms": 2,
+    "llms": [
+     "M",
+     "L"
+    ],
+    "llms_with_clients": [
+     "L",
+     "M"
+    ],
+    "n_clients": 10,
+    "n_units": 320,
+    "units_per_replica": 8,
+    "sites_x_llms": 56,
+    "grid": {
+     "slow_min": 5,
+     "fast_min": 1,
+     "T_slow": 288,
+     "T_fast": 1440,
+     "horizon_min": 1440,
+     "start_mow": 154
+    },
+    "n_trace_lenders": 23,
+    "n_trace_lenders_with_sites": 23,
+    "layer_capacity_gpus": 184.0,
+    "v_top": {
+     "a2:c00": 1386,
+     "a2:c01": 448,
+     "a2:c02": 822,
+     "a2:c03": 519,
+     "a2:c04": 1029,
+     "a2:c05": 231,
+     "a2:c06": 499,
+     "a2:c07": 170,
+     "a2:c08": 237,
+     "a2:c09": 434,
+     "a2:c10": 142,
+     "a2:c11": 351,
+     "a2:c12": 235,
+     "a2:c13": 231,
+     "a2:c14": 60,
+     "a2:c15": 288,
+     "a2:c16": 395,
+     "a2:c17": 397,
+     "a2:c18": 207,
+     "a2:c19": 239,
+     "a1:A100-SXM4-80GB": 2,
+     "a1:A800-SXM4-80GB": 1,
+     "a1:GPU-series-2": 1
+    },
+    "sites_reachable_by_V": 8329,
+    "demand_load_h": 47.069322120997256,
+    "bl0a_usd": 916.2516255080659,
+    "gamma_note": [
+     "regional demand: Gamma = 952519 (tightness 0.5, supply 184 GPUs)"
+    ]
+   },
+   "schedule_s": 0.0019184860866516829,
+   "announcements": 1242,
+   "lp_estimate": {
+    "sites_unmerged": 28,
+    "sites_merged": 28,
+    "merge_s": 0.0005842659156769514,
+    "estimate_s": 0.15272754803299904,
+    "merged": {
+     "n_vars": 1153857,
+     "n_int": 962474,
+     "n_rows": 920333,
+     "nnz": 5896333,
+     "est_mb": 16320.099100000001,
+     "est_mb_lp": 3314.01982,
+     "n_triples": 852,
+     "n_cohorts": 35022,
+     "T_b": 288
+    },
+    "rule": "est_mb_lp = 130 + 5.4e-4 nnz MB (LP rule, opt/milp.py estimate_size; est_mb is the MILP rule)",
+    "unmerged": {
+     "n_vars": 1153857,
+     "n_int": 962474,
+     "n_rows": 920333,
+     "nnz": 5896333,
+     "est_mb": 16320.099100000001,
+     "est_mb_lp": 3314.01982,
+     "estimate_s": 0.15265456004999578
+    }
+   },
+   "lp_fits_gate": false,
+   "status": "ok",
+   "point_s": 0.8054505730979145,
+   "rss_mb_after": 154.42578125
+  },
+  "e7f_V1_S": {
+   "base": "e7f",
+   "config": "bench_e7f.json",
+   "V": 1,
+   "llm_set": "S",
+   "overrides": {
+    "time.horizon_min": 1440,
+    "stranding.mu_over_beta_tilde": 1.0,
+    "lender_defaults.n_layers": 1,
+    "llms": [
+     {
+      "id": "S",
+      "catalog": "maas_a10",
+      "entry": "S",
+      "kappa_mult": 1.0
+     }
+    ],
+    "borrowers.s_S": 1.0
+   },
+   "build_s": 0.48564236517995596,
+   "instance": {
+    "n_sites": 28,
+    "n_sites_by_kind": {
+     "layer": 23,
+     "protected": 5
+    },
+    "n_contracts": 21,
+    "n_revocable_contracts": 20,
+    "menu_size_per_site": {
+     "min": 1,
+     "max": 20,
+     "mean": 15.214285714285714,
+     "sum": 426
+    },
+    "n_llms": 1,
+    "llms": [
+     "S"
+    ],
+    "llms_with_clients": [
+     "S"
+    ],
+    "n_clients": 5,
+    "n_units": 770,
+    "units_per_replica": 8,
+    "sites_x_llms": 28,
+    "grid": {
+     "slow_min": 5,
+     "fast_min": 1,
+     "T_slow": 288,
+     "T_fast": 1440,
+     "horizon_min": 1440,
+     "start_mow": 154
+    },
+    "n_trace_lenders": 23,
+    "n_trace_lenders_with_sites": 23,
+    "layer_capacity_gpus": 184.0,
+    "v_top": {
+     "a2:c00": 1386,
+     "a2:c01": 448,
+     "a2:c02": 822,
+     "a2:c03": 519,
+     "a2:c04": 1029,
+     "a2:c05": 231,
+     "a2:c06": 499,
+     "a2:c07": 170,
+     "a2:c08": 237,
+     "a2:c09": 434,
+     "a2:c10": 142,
+     "a2:c11": 351,
+     "a2:c12": 235,
+     "a2:c13": 231,
+     "a2:c14": 60,
+     "a2:c15": 288,
+     "a2:c16": 395,
+     "a2:c17": 397,
+     "a2:c18": 207,
+     "a2:c19": 239,
+     "a1:A100-SXM4-80GB": 2,
+     "a1:A800-SXM4-80GB": 1,
+     "a1:GPU-series-2": 1
+    },
+    "sites_reachable_by_V": 8329,
+    "demand_load_h": 110.18383020035832,
+    "bl0a_usd": 787.8143859325621,
+    "gamma_note": [
+     "regional demand: Gamma = 5.76604e+06 (tightness 0.5, supply 184 GPUs)"
+    ]
+   },
+   "schedule_s": 0.0019234898500144482,
+   "announcements": 1242,
+   "lp_estimate": {
+    "sites_unmerged": 28,
+    "sites_merged": 28,
+    "merge_s": 0.0005834589246660471,
+    "estimate_s": 0.10011539701372385,
+    "merged": {
+     "n_vars": 576898,
+     "n_int": 481237,
+     "n_rows": 463428,
+     "nnz": 2948654,
+     "est_mb": 8361.3658,
+     "est_mb_lp": 1722.27316,
+     "n_triples": 426,
+     "n_cohorts": 17511,
+     "T_b": 288
+    },
+    "rule": "est_mb_lp = 130 + 5.4e-4 nnz MB (LP rule, opt/milp.py estimate_size; est_mb is the MILP rule)",
+    "unmerged": {
+     "n_vars": 576898,
+     "n_int": 481237,
+     "n_rows": 463428,
+     "nnz": 2948654,
+     "est_mb": 8361.3658,
+     "est_mb_lp": 1722.27316,
+     "estimate_s": 0.10010470799170434
+    }
+   },
+   "lp_fits_gate": true,
+   "status": "ok",
+   "point_s": 0.6892058160156012,
+   "rss_mb_after": 154.42578125
+  },
+  "e7r_V1_SML": {
+   "base": "e7r",
+   "config": "bench_e7r.json",
+   "V": 1,
+   "llm_set": "SML",
+   "overrides": {
+    "time.horizon_min": 1440,
+    "stranding.mu_over_beta_tilde": 1.0,
+    "lender_defaults.n_layers": 1
+   },
+   "build_s": 0.1551928110420704,
+   "instance": {
+    "n_sites": 28,
+    "n_sites_by_kind": {
+     "layer": 23,
+     "protected": 5
+    },
+    "n_contracts": 4,
+    "n_revocable_contracts": 3,
+    "menu_size_per_site": {
+     "min": 1,
+     "max": 3,
+     "mean": 2.5,
+     "sum": 70
+    },
+    "n_llms": 3,
+    "llms": [
+     "S",
+     "M",
+     "L"
+    ],
+    "llms_with_clients": [
+     "L",
+     "M",
+     "S"
+    ],
+    "n_clients": 15,
+    "n_units": 347,
+    "units_per_replica": 8,
+    "sites_x_llms": 84,
+    "grid": {
+     "slow_min": 5,
+     "fast_min": 1,
+     "T_slow": 288,
+     "T_fast": 1440,
+     "horizon_min": 1440,
+     "start_mow": 154
+    },
+    "n_trace_lenders": 23,
+    "n_trace_lenders_with_sites": 23,
+    "layer_capacity_gpus": 184.0,
+    "v_top": {
+     "a2:c00": 1399,
+     "a2:c01": 459,
+     "a2:c02": 835,
+     "a2:c03": 526,
+     "a2:c04": 1033,
+     "a2:c05": 283,
+     "a2:c06": 502,
+     "a2:c07": 172,
+     "a2:c08": 238,
+     "a2:c09": 436,
+     "a2:c10": 146,
+     "a2:c11": 351,
+     "a2:c12": 240,
+     "a2:c13": 232,
+     "a2:c14": 71,
+     "a2:c15": 293,
+     "a2:c16": 396,
+     "a2:c17": 406,
+     "a2:c18": 223,
+     "a2:c19": 239,
+     "a1:A100-SXM4-80GB": 7,
+     "a1:A800-SXM4-80GB": 2,
+     "a1:GPU-series-2": 1
+    },
+    "sites_reachable_by_V": 8495,
+    "demand_load_h": 50.363328465826,
+    "bl0a_usd": 909.5483635331481,
+    "gamma_note": [
+     "regional demand: Gamma = 1.20374e+06 (tightness 0.5, supply 184 GPUs)"
+    ]
+   },
+   "schedule_s": 0.002050871029496193,
+   "announcements": 1216,
+   "lp_estimate": {
+    "sites_unmerged": 28,
+    "sites_merged": 28,
+    "merge_s": 0.0005630671512335539,
+    "estimate_s": 0.03498053294606507,
+    "merged": {
+     "n_vars": 246160,
+     "n_int": 180138,
+     "n_rows": 191641,
+     "nnz": 1031868,
+     "est_mb": 3186.0436,
+     "est_mb_lp": 687.20872,
+     "n_triples": 210,
+     "n_cohorts": 6912,
+     "T_b": 288
+    },
+    "rule": "est_mb_lp = 130 + 5.4e-4 nnz MB (LP rule, opt/milp.py estimate_size; est_mb is the MILP rule)",
+    "unmerged": {
+     "n_vars": 246160,
+     "n_int": 180138,
+     "n_rows": 191641,
+     "nnz": 1031868,
+     "est_mb": 3186.0436,
+     "est_mb_lp": 687.20872,
+     "estimate_s": 0.034413070883601904
+    }
+   },
+   "lp_fits_gate": true,
+   "status": "ok",
+   "point_s": 0.22816984984092414,
+   "rss_mb_after": 154.42578125
+  },
+  "e7r_V1_ML": {
+   "base": "e7r",
+   "config": "bench_e7r.json",
+   "V": 1,
+   "llm_set": "ML",
+   "overrides": {
+    "time.horizon_min": 1440,
+    "stranding.mu_over_beta_tilde": 1.0,
+    "lender_defaults.n_layers": 1,
+    "llms": [
+     {
+      "id": "M",
+      "catalog": "maas_a10",
+      "entry": "M",
+      "kappa_mult": 1.0
+     },
+     {
+      "id": "L",
+      "catalog": "maas_a10",
+      "entry": "L",
+      "kappa_mult": 1.0
+     }
+    ],
+    "borrowers.s_S": 0.0
+   },
+   "build_s": 0.14459051308222115,
+   "instance": {
+    "n_sites": 28,
+    "n_sites_by_kind": {
+     "layer": 23,
+     "protected": 5
+    },
+    "n_contracts": 4,
+    "n_revocable_contracts": 3,
+    "menu_size_per_site": {
+     "min": 1,
+     "max": 3,
+     "mean": 2.5,
+     "sum": 70
+    },
+    "n_llms": 2,
+    "llms": [
+     "M",
+     "L"
+    ],
+    "llms_with_clients": [
+     "L",
+     "M"
+    ],
+    "n_clients": 10,
+    "n_units": 320,
+    "units_per_replica": 8,
+    "sites_x_llms": 56,
+    "grid": {
+     "slow_min": 5,
+     "fast_min": 1,
+     "T_slow": 288,
+     "T_fast": 1440,
+     "horizon_min": 1440,
+     "start_mow": 154
+    },
+    "n_trace_lenders": 23,
+    "n_trace_lenders_with_sites": 23,
+    "layer_capacity_gpus": 184.0,
+    "v_top": {
+     "a2:c00": 1399,
+     "a2:c01": 459,
+     "a2:c02": 835,
+     "a2:c03": 526,
+     "a2:c04": 1033,
+     "a2:c05": 283,
+     "a2:c06": 502,
+     "a2:c07": 172,
+     "a2:c08": 238,
+     "a2:c09": 436,
+     "a2:c10": 146,
+     "a2:c11": 351,
+     "a2:c12": 240,
+     "a2:c13": 232,
+     "a2:c14": 71,
+     "a2:c15": 293,
+     "a2:c16": 396,
+     "a2:c17": 406,
+     "a2:c18": 223,
+     "a2:c19": 239,
+     "a1:A100-SXM4-80GB": 7,
+     "a1:A800-SXM4-80GB": 2,
+     "a1:GPU-series-2": 1
+    },
+    "sites_reachable_by_V": 8495,
+    "demand_load_h": 47.069322120997256,
+    "bl0a_usd": 916.2516255080659,
+    "gamma_note": [
+     "regional demand: Gamma = 952519 (tightness 0.5, supply 184 GPUs)"
+    ]
+   },
+   "schedule_s": 0.0020592480432242155,
+   "announcements": 1216,
+   "lp_estimate": {
+    "sites_unmerged": 28,
+    "sites_merged": 28,
+    "merge_s": 0.0005531369242817163,
+    "estimate_s": 0.02633748995140195,
+    "merged": {
+     "n_vars": 164127,
+     "n_int": 120092,
+     "n_rows": 129931,
+     "nnz": 687968,
+     "est_mb": 2257.5136,
+     "est_mb_lp": 501.50272,
+     "n_triples": 140,
+     "n_cohorts": 4608,
+     "T_b": 288
+    },
+    "rule": "est_mb_lp = 130 + 5.4e-4 nnz MB (LP rule, opt/milp.py estimate_size; est_mb is the MILP rule)",
+    "unmerged": {
+     "n_vars": 164127,
+     "n_int": 120092,
+     "n_rows": 129931,
+     "nnz": 687968,
+     "est_mb": 2257.5136,
+     "est_mb_lp": 501.50272,
+     "estimate_s": 0.025903568137437105
+    }
+   },
+   "lp_fits_gate": true,
+   "status": "ok",
+   "point_s": 0.20029548392631114,
+   "rss_mb_after": 154.42578125
+  },
+  "e7r_V1_S": {
+   "base": "e7r",
+   "config": "bench_e7r.json",
+   "V": 1,
+   "llm_set": "S",
+   "overrides": {
+    "time.horizon_min": 1440,
+    "stranding.mu_over_beta_tilde": 1.0,
+    "lender_defaults.n_layers": 1,
+    "llms": [
+     {
+      "id": "S",
+      "catalog": "maas_a10",
+      "entry": "S",
+      "kappa_mult": 1.0
+     }
+    ],
+    "borrowers.s_S": 1.0
+   },
+   "build_s": 0.1340726090129465,
+   "instance": {
+    "n_sites": 28,
+    "n_sites_by_kind": {
+     "layer": 23,
+     "protected": 5
+    },
+    "n_contracts": 4,
+    "n_revocable_contracts": 3,
+    "menu_size_per_site": {
+     "min": 1,
+     "max": 3,
+     "mean": 2.5,
+     "sum": 70
+    },
+    "n_llms": 1,
+    "llms": [
+     "S"
+    ],
+    "llms_with_clients": [
+     "S"
+    ],
+    "n_clients": 5,
+    "n_units": 770,
+    "units_per_replica": 8,
+    "sites_x_llms": 28,
+    "grid": {
+     "slow_min": 5,
+     "fast_min": 1,
+     "T_slow": 288,
+     "T_fast": 1440,
+     "horizon_min": 1440,
+     "start_mow": 154
+    },
+    "n_trace_lenders": 23,
+    "n_trace_lenders_with_sites": 23,
+    "layer_capacity_gpus": 184.0,
+    "v_top": {
+     "a2:c00": 1399,
+     "a2:c01": 459,
+     "a2:c02": 835,
+     "a2:c03": 526,
+     "a2:c04": 1033,
+     "a2:c05": 283,
+     "a2:c06": 502,
+     "a2:c07": 172,
+     "a2:c08": 238,
+     "a2:c09": 436,
+     "a2:c10": 146,
+     "a2:c11": 351,
+     "a2:c12": 240,
+     "a2:c13": 232,
+     "a2:c14": 71,
+     "a2:c15": 293,
+     "a2:c16": 396,
+     "a2:c17": 406,
+     "a2:c18": 223,
+     "a2:c19": 239,
+     "a1:A100-SXM4-80GB": 7,
+     "a1:A800-SXM4-80GB": 2,
+     "a1:GPU-series-2": 1
+    },
+    "sites_reachable_by_V": 8495,
+    "demand_load_h": 110.18383020035832,
+    "bl0a_usd": 787.8143859325621,
+    "gamma_note": [
+     "regional demand: Gamma = 5.76604e+06 (tightness 0.5, supply 184 GPUs)"
+    ]
+   },
+   "schedule_s": 0.0020429808646440506,
+   "announcements": 1216,
+   "lp_estimate": {
+    "sites_unmerged": 28,
+    "sites_merged": 28,
+    "merge_s": 0.0005864109843969345,
+    "estimate_s": 0.017438804963603616,
+    "merged": {
+     "n_vars": 82033,
+     "n_int": 60046,
+     "n_rows": 68227,
+     "nnz": 343900,
+     "est_mb": 1328.5300000000002,
+     "est_mb_lp": 315.706,
+     "n_triples": 70,
+     "n_cohorts": 2304,
+     "T_b": 288
+    },
+    "rule": "est_mb_lp = 130 + 5.4e-4 nnz MB (LP rule, opt/milp.py estimate_size; est_mb is the MILP rule)",
+    "unmerged": {
+     "n_vars": 82033,
+     "n_int": 60046,
+     "n_rows": 68227,
+     "nnz": 343900,
+     "est_mb": 1328.5300000000002,
+     "est_mb_lp": 315.706,
+     "estimate_s": 0.01706513692624867
+    }
+   },
+   "lp_fits_gate": true,
+   "status": "ok",
+   "point_s": 0.1720249899663031,
+   "rss_mb_after": 154.42578125
+  },
+  "e7f_V2_SML": {
+   "base": "e7f",
+   "config": "bench_e7f.json",
+   "V": 2,
+   "llm_set": "SML",
+   "overrides": {
+    "time.horizon_min": 1440,
+    "stranding.mu_over_beta_tilde": 1.0,
+    "lender_defaults.n_layers": 2
+   },
+   "build_s": 0.5071730429772288,
+   "instance": {
+    "n_sites": 49,
+    "n_sites_by_kind": {
+     "layer": 44,
+     "protected": 5
+    },
+    "n_contracts": 21,
+    "n_revocable_contracts": 20,
+    "menu_size_per_site": {
+     "min": 1,
+     "max": 20,
+     "mean": 17.142857142857142,
+     "sum": 840
+    },
+    "n_llms": 3,
+    "llms": [
+     "S",
+     "M",
+     "L"
+    ],
+    "llms_with_clients": [
+     "L",
+     "M",
+     "S"
+    ],
+    "n_clients": 15,
+    "n_units": 655,
+    "units_per_replica": 8,
+    "sites_x_llms": 147,
+    "grid": {
+     "slow_min": 5,
+     "fast_min": 1,
+     "T_slow": 288,
+     "T_fast": 1440,
+     "horizon_min": 1440,
+     "start_mow": 154
+    },
+    "n_trace_lenders": 23,
+    "n_trace_lenders_with_sites": 23,
+    "layer_capacity_gpus": 352.0,
+    "v_top": {
+     "a2:c00": 1386,
+     "a2:c01": 448,
+     "a2:c02": 822,
+     "a2:c03": 519,
+     "a2:c04": 1029,
+     "a2:c05": 231,
+     "a2:c06": 499,
+     "a2:c07": 170,
+     "a2:c08": 237,
+     "a2:c09": 434,
+     "a2:c10": 142,
+     "a2:c11": 351,
+     "a2:c12": 235,
+     "a2:c13": 231,
+     "a2:c14": 60,
+     "a2:c15": 288,
+     "a2:c16": 395,
+     "a2:c17": 397,
+     "a2:c18": 207,
+     "a2:c19": 239,
+     "a1:A100-SXM4-80GB": 2,
+     "a1:A800-SXM4-80GB": 1,
+     "a1:GPU-series-2": 1
+    },
+    "sites_reachable_by_V": 8329,
+    "demand_load_h": 96.34723706505844,
+    "bl0a_usd": 1740.0055650199358,
+    "gamma_note": [
+     "regional demand: Gamma = 2.30281e+06 (tightness 0.5, supply 352 GPUs)"
+    ]
+   },
+   "schedule_s": 0.0018609638791531324,
+   "announcements": 1990,
+   "lp_estimate": {
+    "sites_unmerged": 49,
+    "sites_merged": 41,
+    "merge_s": 0.0009379440452903509,
+    "estimate_s": 0.33240173012018204,
+    "merged": {
+     "n_vars": 2770620,
+     "n_int": 2314899,
+     "n_rows": 2206310,
+     "nnz": 14239509,
+     "est_mb": 38846.6743,
+     "est_mb_lp": 7819.33486,
+     "n_triples": 2040,
+     "n_cohorts": 85821,
+     "T_b": 288
+    },
+    "rule": "est_mb_lp = 130 + 5.4e-4 nnz MB (LP rule, opt/milp.py estimate_size; est_mb is the MILP rule)",
+    "unmerged": {
+     "n_vars": 3176020,
+     "n_int": 2590419,
+     "n_rows": 2474449,
+     "nnz": 17168381,
+     "est_mb": 46754.6287,
+     "est_mb_lp": 9400.92574,
+     "estimate_s": 0.39498254004865885
+    }
+   },
+   "lp_fits_gate": false,
+   "status": "ok",
+   "point_s": 1.238383584888652,
+   "rss_mb_after": 161.796875
+  },
+  "e7f_V2_ML": {
+   "base": "e7f",
+   "config": "bench_e7f.json",
+   "V": 2,
+   "llm_set": "ML",
+   "overrides": {
+    "time.horizon_min": 1440,
+    "stranding.mu_over_beta_tilde": 1.0,
+    "lender_defaults.n_layers": 2,
+    "llms": [
+     {
+      "id": "M",
+      "catalog": "maas_a10",
+      "entry": "M",
+      "kappa_mult": 1.0
+     },
+     {
+      "id": "L",
+      "catalog": "maas_a10",
+      "entry": "L",
+      "kappa_mult": 1.0
+     }
+    ],
+    "borrowers.s_S": 0.0
+   },
+   "build_s": 0.4998765899799764,
+   "instance": {
+    "n_sites": 49,
+    "n_sites_by_kind": {
+     "layer": 44,
+     "protected": 5
+    },
+    "n_contracts": 21,
+    "n_revocable_contracts": 20,
+    "menu_size_per_site": {
+     "min": 1,
+     "max": 20,
+     "mean": 17.142857142857142,
+     "sum": 840
+    },
+    "n_llms": 2,
+    "llms": [
+     "M",
+     "L"
+    ],
+    "llms_with_clients": [
+     "L",
+     "M"
+    ],
+    "n_clients": 10,
+    "n_units": 607,
+    "units_per_replica": 8,
+    "sites_x_llms": 98,
+    "grid": {
+     "slow_min": 5,
+     "fast_min": 1,
+     "T_slow": 288,
+     "T_fast": 1440,
+     "horizon_min": 1440,
+     "start_mow": 154
+    },
+    "n_trace_lenders": 23,
+    "n_trace_lenders_with_sites": 23,
+    "layer_capacity_gpus": 352.0,
+    "v_top": {
+     "a2:c00": 1386,
+     "a2:c01": 448,
+     "a2:c02": 822,
+     "a2:c03": 519,
+     "a2:c04": 1029,
+     "a2:c05": 231,
+     "a2:c06": 499,
+     "a2:c07": 170,
+     "a2:c08": 237,
+     "a2:c09": 434,
+     "a2:c10": 142,
+     "a2:c11": 351,
+     "a2:c12": 235,
+     "a2:c13": 231,
+     "a2:c14": 60,
+     "a2:c15": 288,
+     "a2:c16": 395,
+     "a2:c17": 397,
+     "a2:c18": 207,
+     "a2:c19": 239,
+     "a1:A100-SXM4-80GB": 2,
+     "a1:A800-SXM4-80GB": 1,
+     "a1:GPU-series-2": 1
+    },
+    "sites_reachable_by_V": 8329,
+    "demand_load_h": 90.04565970973387,
+    "bl0a_usd": 1752.829196624126,
+    "gamma_note": [
+     "regional demand: Gamma = 1.82221e+06 (tightness 0.5, supply 352 GPUs)"
+    ]
+   },
+   "schedule_s": 0.0018640379421412945,
+   "announcements": 1990,
+   "lp_estimate": {
+    "sites_unmerged": 49,
+    "sites_merged": 41,
+    "merge_s": 0.0009229229763150215,
+    "estimate_s": 0.24556601094081998,
+    "merged": {
+     "n_vars": 1847107,
+     "n_int": 1543266,
+     "n_rows": 1474289,
+     "nnz": 9492514,
+     "est_mb": 26029.787800000002,
+     "est_mb_lp": 5255.95756,
+     "n_triples": 1360,
+     "n_cohorts": 57214,
+     "T_b": 288
+    },
+    "rule": "est_mb_lp = 130 + 5.4e-4 nnz MB (LP rule, opt/milp.py estimate_size; est_mb is the MILP rule)",
+    "unmerged": {
+     "n_vars": 2117381,
+     "n_int": 1726946,
+     "n_rows": 1653815,
+     "nnz": 11445102,
+     "est_mb": 31301.775400000002,
+     "est_mb_lp": 6310.35508,
+     "estimate_s": 0.289544542087242
+    }
+   },
+   "lp_fits_gate": false,
+   "status": "ok",
+   "point_s": 1.0387698078993708,
+   "rss_mb_after": 168.421875
+  },
+  "e7f_V2_S": {
+   "base": "e7f",
+   "config": "bench_e7f.json",
+   "V": 2,
+   "llm_set": "S",
+   "overrides": {
+    "time.horizon_min": 1440,
+    "stranding.mu_over_beta_tilde": 1.0,
+    "lender_defaults.n_layers": 2,
+    "llms": [
+     {
+      "id": "S",
+      "catalog": "maas_a10",
+      "entry": "S",
+      "kappa_mult": 1.0
+     }
+    ],
+    "borrowers.s_S": 1.0
+   },
+   "build_s": 0.4875300389248878,
+   "instance": {
+    "n_sites": 49,
+    "n_sites_by_kind": {
+     "layer": 44,
+     "protected": 5
+    },
+    "n_contracts": 21,
+    "n_revocable_contracts": 20,
+    "menu_size_per_site": {
+     "min": 1,
+     "max": 20,
+     "mean": 17.142857142857142,
+     "sum": 840
+    },
+    "n_llms": 1,
+    "llms": [
+     "S"
+    ],
+    "llms_with_clients": [
+     "S"
+    ],
+    "n_clients": 5,
+    "n_units": 1471,
+    "units_per_replica": 8,
+    "sites_x_llms": 49,
+    "grid": {
+     "slow_min": 5,
+     "fast_min": 1,
+     "T_slow": 288,
+     "T_fast": 1440,
+     "horizon_min": 1440,
+     "start_mow": 154
+    },
+    "n_trace_lenders": 23,
+    "n_trace_lenders_with_sites": 23,
+    "layer_capacity_gpus": 352.0,
+    "v_top": {
+     "a2:c00": 1386,
+     "a2:c01": 448,
+     "a2:c02": 822,
+     "a2:c03": 519,
+     "a2:c04": 1029,
+     "a2:c05": 231,
+     "a2:c06": 499,
+     "a2:c07": 170,
+     "a2:c08": 237,
+     "a2:c09": 434,
+     "a2:c10": 142,
+     "a2:c11": 351,
+     "a2:c12": 235,
+     "a2:c13": 231,
+     "a2:c14": 60,
+     "a2:c15": 288,
+     "a2:c16": 395,
+     "a2:c17": 397,
+     "a2:c18": 207,
+     "a2:c19": 239,
+     "a1:A100-SXM4-80GB": 2,
+     "a1:A800-SXM4-80GB": 1,
+     "a1:GPU-series-2": 1
+    },
+    "sites_reachable_by_V": 8329,
+    "demand_load_h": 210.78645777459855,
+    "bl0a_usd": 1507.1231730883799,
+    "gamma_note": [
+     "regional demand: Gamma = 1.10307e+07 (tightness 0.5, supply 352 GPUs)"
+    ]
+   },
+   "schedule_s": 0.0018836448434740305,
+   "announcements": 1990,
+   "lp_estimate": {
+    "sites_unmerged": 49,
+    "sites_merged": 41,
+    "merge_s": 0.0009045540355145931,
+    "estimate_s": 0.16094034002162516,
+    "merged": {
+     "n_vars": 923513,
+     "n_int": 771633,
+     "n_rows": 742282,
+     "nnz": 4746995,
+     "est_mb": 13216.8865,
+     "est_mb_lp": 2693.3773,
+     "n_triples": 680,
+     "n_cohorts": 28607,
+     "T_b": 288
+    },
+    "rule": "est_mb_lp = 130 + 5.4e-4 nnz MB (LP rule, opt/milp.py estimate_size; est_mb is the MILP rule)",
+    "unmerged": {
+     "n_vars": 1058639,
+     "n_int": 863473,
+     "n_rows": 833199,
+     "nnz": 5723279,
+     "est_mb": 15852.8533,
+     "est_mb_lp": 3220.57066,
+     "estimate_s": 0.18669011583551764
+    }
+   },
+   "lp_fits_gate": false,
+   "status": "ok",
+   "point_s": 0.8390012360177934,
+   "rss_mb_after": 168.421875
+  },
+  "e7r_V2_SML": {
+   "base": "e7r",
+   "config": "bench_e7r.json",
+   "V": 2,
+   "llm_set": "SML",
+   "overrides": {
+    "time.horizon_min": 1440,
+    "stranding.mu_over_beta_tilde": 1.0,
+    "lender_defaults.n_layers": 2
+   },
+   "build_s": 0.1566814030520618,
+   "instance": {
+    "n_sites": 50,
+    "n_sites_by_kind": {
+     "layer": 45,
+     "protected": 5
+    },
+    "n_contracts": 4,
+    "n_revocable_contracts": 3,
+    "menu_size_per_site": {
+     "min": 1,
+     "max": 3,
+     "mean": 2.68,
+     "sum": 134
+    },
+    "n_llms": 3,
+    "llms": [
+     "S",
+     "M",
+     "L"
+    ],
+    "llms_with_clients": [
+     "L",
+     "M",
+     "S"
+    ],
+    "n_clients": 15,
+    "n_units": 670,
+    "units_per_replica": 8,
+    "sites_x_llms": 150,
+    "grid": {
+     "slow_min": 5,
+     "fast_min": 1,
+     "T_slow": 288,
+     "T_fast": 1440,
+     "horizon_min": 1440,
+     "start_mow": 154
+    },
+    "n_trace_lenders": 23,
+    "n_trace_lenders_with_sites": 23,
+    "layer_capacity_gpus": 360.0,
+    "v_top": {
+     "a2:c00": 1399,
+     "a2:c01": 459,
+     "a2:c02": 835,
+     "a2:c03": 526,
+     "a2:c04": 1033,
+     "a2:c05": 283,
+     "a2:c06": 502,
+     "a2:c07": 172,
+     "a2:c08": 238,
+     "a2:c09": 436,
+     "a2:c10": 146,
+     "a2:c11": 351,
+     "a2:c12": 240,
+     "a2:c13": 232,
+     "a2:c14": 71,
+     "a2:c15": 293,
+     "a2:c16": 396,
+     "a2:c17": 406,
+     "a2:c18": 223,
+     "a2:c19": 239,
+     "a1:A100-SXM4-80GB": 7,
+     "a1:A800-SXM4-80GB": 2,
+     "a1:GPU-series-2": 1
+    },
+    "sites_reachable_by_V": 8495,
+    "demand_load_h": 98.53694699835523,
+    "bl0a_usd": 1779.5511460431162,
+    "gamma_note": [
+     "regional demand: Gamma = 2.35515e+06 (tightness 0.5, supply 360 GPUs)"
+    ]
+   },
+   "schedule_s": 0.0020108078606426716,
+   "announcements": 2010,
+   "lp_estimate": {
+    "sites_unmerged": 50,
+    "sites_merged": 40,
+    "merge_s": 0.0009161510970443487,
+    "estimate_s": 0.05279740085825324,
+    "merged": {
+     "n_vars": 371308,
+     "n_int": 271317,
+     "n_rows": 288527,
+     "nnz": 1587103,
+     "est_mb": 4685.1781,
+     "est_mb_lp": 987.03562,
+     "n_triples": 318,
+     "n_cohorts": 10185,
+     "T_b": 288
+    },
+    "rule": "est_mb_lp = 130 + 5.4e-4 nnz MB (LP rule, opt/milp.py estimate_size; est_mb is the MILP rule)",
+    "unmerged": {
+     "n_vars": 463028,
+     "n_int": 333798,
+     "n_rows": 357569,
+     "nnz": 2009567,
+     "est_mb": 5825.8309,
+     "est_mb_lp": 1215.16618,
+     "estimate_s": 0.06510982103645802
+    }
+   },
+   "lp_fits_gate": true,
+   "status": "ok",
+   "point_s": 0.27857279195450246,
+   "rss_mb_after": 168.421875
+  },
+  "e7r_V2_ML": {
+   "base": "e7r",
+   "config": "bench_e7r.json",
+   "V": 2,
+   "llm_set": "ML",
+   "overrides": {
+    "time.horizon_min": 1440,
+    "stranding.mu_over_beta_tilde": 1.0,
+    "lender_defaults.n_layers": 2,
+    "llms": [
+     {
+      "id": "M",
+      "catalog": "maas_a10",
+      "entry": "M",
+      "kappa_mult": 1.0
+     },
+     {
+      "id": "L",
+      "catalog": "maas_a10",
+      "entry": "L",
+      "kappa_mult": 1.0
+     }
+    ],
+    "borrowers.s_S": 0.0
+   },
+   "build_s": 0.14420743379741907,
+   "instance": {
+    "n_sites": 50,
+    "n_sites_by_kind": {
+     "layer": 45,
+     "protected": 5
+    },
+    "n_contracts": 4,
+    "n_revocable_contracts": 3,
+    "menu_size_per_site": {
+     "min": 1,
+     "max": 3,
+     "mean": 2.68,
+     "sum": 134
+    },
+    "n_llms": 2,
+    "llms": [
+     "M",
+     "L"
+    ],
+    "llms_with_clients": [
+     "L",
+     "M"
+    ],
+    "n_clients": 10,
+    "n_units": 620,
+    "units_per_replica": 8,
+    "sites_x_llms": 100,
+    "grid": {
+     "slow_min": 5,
+     "fast_min": 1,
+     "T_slow": 288,
+     "T_fast": 1440,
+     "horizon_min": 1440,
+     "start_mow": 154
+    },
+    "n_trace_lenders": 23,
+    "n_trace_lenders_with_sites": 23,
+    "layer_capacity_gpus": 360.0,
+    "v_top": {
+     "a2:c00": 1399,
+     "a2:c01": 459,
+     "a2:c02": 835,
+     "a2:c03": 526,
+     "a2:c04": 1033,
+     "a2:c05": 283,
+     "a2:c06": 502,
+     "a2:c07": 172,
+     "a2:c08": 238,
+     "a2:c09": 436,
+     "a2:c10": 146,
+     "a2:c11": 351,
+     "a2:c12": 240,
+     "a2:c13": 232,
+     "a2:c14": 71,
+     "a2:c15": 293,
+     "a2:c16": 396,
+     "a2:c17": 406,
+     "a2:c18": 223,
+     "a2:c19": 239,
+     "a1:A100-SXM4-80GB": 7,
+     "a1:A800-SXM4-80GB": 2,
+     "a1:GPU-series-2": 1
+    },
+    "sites_reachable_by_V": 8495,
+    "demand_load_h": 92.09215197586418,
+    "bl0a_usd": 1792.6662238201286,
+    "gamma_note": [
+     "regional demand: Gamma = 1.86362e+06 (tightness 0.5, supply 360 GPUs)"
+    ]
+   },
+   "schedule_s": 0.0019963709637522697,
+   "announcements": 2010,
+   "lp_estimate": {
+    "sites_unmerged": 50,
+    "sites_merged": 40,
+    "merge_s": 0.0008871210739016533,
+    "estimate_s": 0.03928971593268216,
+    "merged": {
+     "n_vars": 247565,
+     "n_int": 180878,
+     "n_rows": 195672,
+     "nnz": 1058141,
+     "est_mb": 3256.9807,
+     "est_mb_lp": 701.3961400000001,
+     "n_triples": 212,
+     "n_cohorts": 6790,
+     "T_b": 288
+    },
+    "rule": "est_mb_lp = 130 + 5.4e-4 nnz MB (LP rule, opt/milp.py estimate_size; est_mb is the MILP rule)",
+    "unmerged": {
+     "n_vars": 308719,
+     "n_int": 222532,
+     "n_rows": 242657,
+     "nnz": 1339800,
+     "est_mb": 4017.46,
+     "est_mb_lp": 853.492,
+     "estimate_s": 0.048213417176157236
+    }
+   },
+   "lp_fits_gate": true,
+   "status": "ok",
+   "point_s": 0.23559942399151623,
+   "rss_mb_after": 168.421875
+  },
+  "e7r_V2_S": {
+   "base": "e7r",
+   "config": "bench_e7r.json",
+   "V": 2,
+   "llm_set": "S",
+   "overrides": {
+    "time.horizon_min": 1440,
+    "stranding.mu_over_beta_tilde": 1.0,
+    "lender_defaults.n_layers": 2,
+    "llms": [
+     {
+      "id": "S",
+      "catalog": "maas_a10",
+      "entry": "S",
+      "kappa_mult": 1.0
+     }
+    ],
+    "borrowers.s_S": 1.0
+   },
+   "build_s": 0.13403645996004343,
+   "instance": {
+    "n_sites": 50,
+    "n_sites_by_kind": {
+     "layer": 45,
+     "protected": 5
+    },
+    "n_contracts": 4,
+    "n_revocable_contracts": 3,
+    "menu_size_per_site": {
+     "min": 1,
+     "max": 3,
+     "mean": 2.68,
+     "sum": 134
+    },
+    "n_llms": 1,
+    "llms": [
+     "S"
+    ],
+    "llms_with_clients": [
+     "S"
+    ],
+    "n_clients": 5,
+    "n_units": 1504,
+    "units_per_replica": 8,
+    "sites_x_llms": 50,
+    "grid": {
+     "slow_min": 5,
+     "fast_min": 1,
+     "T_slow": 288,
+     "T_fast": 1440,
+     "horizon_min": 1440,
+     "start_mow": 154
+    },
+    "n_trace_lenders": 23,
+    "n_trace_lenders_with_sites": 23,
+    "layer_capacity_gpus": 360.0,
+    "v_top": {
+     "a2:c00": 1399,
+     "a2:c01": 459,
+     "a2:c02": 835,
+     "a2:c03": 526,
+     "a2:c04": 1033,
+     "a2:c05": 283,
+     "a2:c06": 502,
+     "a2:c07": 172,
+     "a2:c08": 238,
+     "a2:c09": 436,
+     "a2:c10": 146,
+     "a2:c11": 351,
+     "a2:c12": 240,
+     "a2:c13": 232,
+     "a2:c14": 71,
+     "a2:c15": 293,
+     "a2:c16": 396,
+     "a2:c17": 406,
+     "a2:c18": 223,
+     "a2:c19": 239,
+     "a1:A100-SXM4-80GB": 7,
+     "a1:A800-SXM4-80GB": 2,
+     "a1:GPU-series-2": 1
+    },
+    "sites_reachable_by_V": 8495,
+    "demand_load_h": 215.5770590876576,
+    "bl0a_usd": 1541.3759724767517,
+    "gamma_note": [
+     "regional demand: Gamma = 1.12814e+07 (tightness 0.5, supply 360 GPUs)"
+    ]
+   },
+   "schedule_s": 0.001997566083446145,
+   "announcements": 2010,
+   "lp_estimate": {
+    "sites_unmerged": 50,
+    "sites_merged": 40,
+    "merge_s": 0.0008784260135143995,
+    "estimate_s": 0.025682499166578054,
+    "merged": {
+     "n_vars": 123743,
+     "n_int": 90439,
+     "n_rows": 102828,
+     "nnz": 528962,
+     "est_mb": 1828.1974,
+     "est_mb_lp": 415.63948,
+     "n_triples": 106,
+     "n_cohorts": 3395,
+     "T_b": 288
+    },
+    "rule": "est_mb_lp = 130 + 5.4e-4 nnz MB (LP rule, opt/milp.py estimate_size; est_mb is the MILP rule)",
+    "unmerged": {
+     "n_vars": 154309,
+     "n_int": 111266,
+     "n_rows": 127765,
+     "nnz": 669767,
+     "est_mb": 2208.3709,
+     "est_mb_lp": 491.67418,
+     "estimate_s": 0.03151848213747144
+    }
+   },
+   "lp_fits_gate": true,
+   "status": "ok",
+   "point_s": 0.19514309102669358,
+   "rss_mb_after": 168.421875
+  },
+  "e7f_V4_SML": {
+   "base": "e7f",
+   "config": "bench_e7f.json",
+   "V": 4,
+   "llm_set": "SML",
+   "overrides": {
+    "time.horizon_min": 1440,
+    "stranding.mu_over_beta_tilde": 1.0,
+    "lender_defaults.n_layers": 4
+   },
+   "build_s": 0.5112673989497125,
+   "instance": {
+    "n_sites": 89,
+    "n_sites_by_kind": {
+     "layer": 84,
+     "protected": 5
+    },
+    "n_contracts": 21,
+    "n_revocable_contracts": 20,
+    "menu_size_per_site": {
+     "min": 1,
+     "max": 20,
+     "mean": 18.426966292134832,
+     "sum": 1640
+    },
+    "n_llms": 3,
+    "llms": [
+     "S",
+     "M",
+     "L"
+    ],
+    "llms_with_clients": [
+     "L",
+     "M",
+     "S"
+    ],
+    "n_clients": 15,
+    "n_units": 1244,
+    "units_per_replica": 8,
+    "sites_x_llms": 267,
+    "grid": {
+     "slow_min": 5,
+     "fast_min": 1,
+     "T_slow": 288,
+     "T_fast": 1440,
+     "horizon_min": 1440,
+     "start_mow": 154
+    },
+    "n_trace_lenders": 23,
+    "n_trace_lenders_with_sites": 23,
+    "layer_capacity_gpus": 672.0,
+    "v_top": {
+     "a2:c00": 1386,
+     "a2:c01": 448,
+     "a2:c02": 822,
+     "a2:c03": 519,
+     "a2:c04": 1029,
+     "a2:c05": 231,
+     "a2:c06": 499,
+     "a2:c07": 170,
+     "a2:c08": 237,
+     "a2:c09": 434,
+     "a2:c10": 142,
+     "a2:c11": 351,
+     "a2:c12": 235,
+     "a2:c13": 231,
+     "a2:c14": 60,
+     "a2:c15": 288,
+     "a2:c16": 395,
+     "a2:c17": 397,
+     "a2:c18": 207,
+     "a2:c19": 239,
+     "a1:A100-SXM4-80GB": 2,
+     "a1:A800-SXM4-80GB": 1,
+     "a1:GPU-series-2": 1
+    },
+    "sites_reachable_by_V": 8329,
+    "demand_load_h": 183.93563439692977,
+    "bl0a_usd": 3321.828805947151,
+    "gamma_note": [
+     "regional demand: Gamma = 4.39627e+06 (tightness 0.5, supply 672 GPUs)"
+    ]
+   },
+   "schedule_s": 0.0021874839439988136,
+   "announcements": 2863,
+   "lp_estimate": {
+    "sites_unmerged": 89,
+    "sites_merged": 56,
+    "merge_s": 0.0014208080247044563,
+    "estimate_s": 0.47970627597533166,
+    "merged": {
+     "n_vars": 4130043,
+     "n_int": 3478875,
+     "n_rows": 3316495,
+     "nnz": 21011789,
+     "est_mb": 57131.8303,
+     "est_mb_lp": 11476.36606,
+     "n_triples": 2940,
+     "n_cohorts": 128748,
+     "T_b": 288
+    },
+    "rule": "est_mb_lp = 130 + 5.4e-4 nnz MB (LP rule, opt/milp.py estimate_size; est_mb is the MILP rule)",
+    "unmerged": {
+     "n_vars": 5816088,
+     "n_int": 4631298,
+     "n_rows": 4436934,
+     "nnz": 33096897,
+     "est_mb": 89761.6219,
+     "est_mb_lp": 18002.324380000002,
+     "estimate_s": 0.7538043160457164
+    }
+   },
+   "lp_fits_gate": false,
+   "status": "ok",
+   "point_s": 1.7496620528399944,
+   "rss_mb_after": 189.68359375
+  },
+  "e7f_V4_ML": {
+   "base": "e7f",
+   "config": "bench_e7f.json",
+   "V": 4,
+   "llm_set": "ML",
+   "overrides": {
+    "time.horizon_min": 1440,
+    "stranding.mu_over_beta_tilde": 1.0,
+    "lender_defaults.n_layers": 4,
+    "llms": [
+     {
+      "id": "M",
+      "catalog": "maas_a10",
+      "entry": "M",
+      "kappa_mult": 1.0
+     },
+     {
+      "id": "L",
+      "catalog": "maas_a10",
+      "entry": "L",
+      "kappa_mult": 1.0
+     }
+    ],
+    "borrowers.s_S": 0.0
+   },
+   "build_s": 0.49923838791437447,
+   "instance": {
+    "n_sites": 89,
+    "n_sites_by_kind": {
+     "layer": 84,
+     "protected": 5
+    },
+    "n_contracts": 21,
+    "n_revocable_contracts": 20,
+    "menu_size_per_site": {
+     "min": 1,
+     "max": 20,
+     "mean": 18.426966292134832,
+     "sum": 1640
+    },
+    "n_llms": 2,
+    "llms": [
+     "M",
+     "L"
+    ],
+    "llms_with_clients": [
+     "L",
+     "M"
+    ],
+    "n_clients": 10,
+    "n_units": 1152,
+    "units_per_replica": 8,
+    "sites_x_llms": 178,
+    "grid": {
+     "slow_min": 5,
+     "fast_min": 1,
+     "T_slow": 288,
+     "T_fast": 1440,
+     "horizon_min": 1440,
+     "start_mow": 154
+    },
+    "n_trace_lenders": 23,
+    "n_trace_lenders_with_sites": 23,
+    "layer_capacity_gpus": 672.0,
+    "v_top": {
+     "a2:c00": 1386,
+     "a2:c01": 448,
+     "a2:c02": 822,
+     "a2:c03": 519,
+     "a2:c04": 1029,
+     "a2:c05": 231,
+     "a2:c06": 499,
+     "a2:c07": 170,
+     "a2:c08": 237,
+     "a2:c09": 434,
+     "a2:c10": 142,
+     "a2:c11": 351,
+     "a2:c12": 235,
+     "a2:c13": 231,
+     "a2:c14": 60,
+     "a2:c15": 288,
+     "a2:c16": 395,
+     "a2:c17": 397,
+     "a2:c18": 207,
+     "a2:c19": 239,
+     "a1:A100-SXM4-80GB": 2,
+     "a1:A800-SXM4-80GB": 1,
+     "a1:GPU-series-2": 1
+    },
+    "sites_reachable_by_V": 8329,
+    "demand_load_h": 171.9053503549465,
+    "bl0a_usd": 3346.310284464241,
+    "gamma_note": [
+     "regional demand: Gamma = 3.47876e+06 (tightness 0.5, supply 672 GPUs)"
+    ]
+   },
+   "schedule_s": 0.0021729329600930214,
+   "announcements": 2863,
+   "lp_estimate": {
+    "sites_unmerged": 89,
+    "sites_merged": 56,
+    "merge_s": 0.0014281119219958782,
+    "estimate_s": 0.35458756191655993,
+    "merged": {
+     "n_vars": 2753395,
+     "n_int": 2319250,
+     "n_rows": 2215849,
+     "nnz": 14007116,
+     "est_mb": 38219.213200000006,
+     "est_mb_lp": 7693.84264,
+     "n_triples": 1960,
+     "n_cohorts": 85832,
+     "T_b": 288
+    },
+    "rule": "est_mb_lp = 130 + 5.4e-4 nnz MB (LP rule, opt/milp.py estimate_size; est_mb is the MILP rule)",
+    "unmerged": {
+     "n_vars": 3877451,
+     "n_int": 3087532,
+     "n_rows": 2965971,
+     "nnz": 22063848,
+     "est_mb": 59972.3896,
+     "est_mb_lp": 12044.47792,
+     "estimate_s": 0.5439494028687477
+    }
+   },
+   "lp_fits_gate": false,
+   "status": "ok",
+   "point_s": 1.4025764539837837,
+   "rss_mb_after": 189.93359375
+  },
+  "e7f_V4_S": {
+   "base": "e7f",
+   "config": "bench_e7f.json",
+   "V": 4,
+   "llm_set": "S",
+   "overrides": {
+    "time.horizon_min": 1440,
+    "stranding.mu_over_beta_tilde": 1.0,
+    "lender_defaults.n_layers": 4,
+    "llms": [
+     {
+      "id": "S",
+      "catalog": "maas_a10",
+      "entry": "S",
+      "kappa_mult": 1.0
+     }
+    ],
+    "borrowers.s_S": 1.0
+   },
+   "build_s": 0.49074672581627965,
+   "instance": {
+    "n_sites": 89,
+    "n_sites_by_kind": {
+     "layer": 84,
+     "protected": 5
+    },
+    "n_contracts": 21,
+    "n_revocable_contracts": 20,
+    "menu_size_per_site": {
+     "min": 1,
+     "max": 20,
+     "mean": 18.426966292134832,
+     "sum": 1640
+    },
+    "n_llms": 1,
+    "llms": [
+     "S"
+    ],
+    "llms_with_clients": [
+     "S"
+    ],
+    "n_clients": 5,
+    "n_units": 2807,
+    "units_per_replica": 8,
+    "sites_x_llms": 89,
+    "grid": {
+     "slow_min": 5,
+     "fast_min": 1,
+     "T_slow": 288,
+     "T_fast": 1440,
+     "horizon_min": 1440,
+     "start_mow": 154
+    },
+    "n_trace_lenders": 23,
+    "n_trace_lenders_with_sites": 23,
+    "layer_capacity_gpus": 672.0,
+    "v_top": {
+     "a2:c00": 1386,
+     "a2:c01": 448,
+     "a2:c02": 822,
+     "a2:c03": 519,
+     "a2:c04": 1029,
+     "a2:c05": 231,
+     "a2:c06": 499,
+     "a2:c07": 170,
+     "a2:c08": 237,
+     "a2:c09": 434,
+     "a2:c10": 142,
+     "a2:c11": 351,
+     "a2:c12": 235,
+     "a2:c13": 231,
+     "a2:c14": 60,
+     "a2:c15": 288,
+     "a2:c16": 395,
+     "a2:c17": 397,
+     "a2:c18": 207,
+     "a2:c19": 239,
+     "a1:A100-SXM4-80GB": 2,
+     "a1:A800-SXM4-80GB": 1,
+     "a1:GPU-series-2": 1
+    },
+    "sites_reachable_by_V": 8329,
+    "demand_load_h": 402.41051029696075,
+    "bl0a_usd": 2877.2351486232697,
+    "gamma_note": [
+     "regional demand: Gamma = 2.10586e+07 (tightness 0.5, supply 672 GPUs)"
+    ]
+   },
+   "schedule_s": 0.002219271147623658,
+   "announcements": 2863,
+   "lp_estimate": {
+    "sites_unmerged": 89,
+    "sites_merged": 56,
+    "merge_s": 0.0014483511913567781,
+    "estimate_s": 0.23375478107482195,
+    "merged": {
+     "n_vars": 1376648,
+     "n_int": 1159625,
+     "n_rows": 1115227,
+     "nnz": 7004673,
+     "est_mb": 19312.6171,
+     "est_mb_lp": 3912.52342,
+     "n_triples": 980,
+     "n_cohorts": 42916,
+     "T_b": 288
+    },
+    "rule": "est_mb_lp = 130 + 5.4e-4 nnz MB (LP rule, opt/milp.py estimate_size; est_mb is the MILP rule)",
+    "unmerged": {
+     "n_vars": 1938637,
+     "n_int": 1543766,
+     "n_rows": 1495048,
+     "nnz": 11033049,
+     "est_mb": 30189.232300000003,
+     "est_mb_lp": 6087.84646,
+     "estimate_s": 0.343817489920184
+    }
+   },
+   "lp_fits_gate": false,
+   "status": "ok",
+   "point_s": 1.0733151121530682,
+   "rss_mb_after": 189.93359375
+  },
+  "e7r_V4_SML": {
+   "base": "e7r",
+   "config": "bench_e7r.json",
+   "V": 4,
+   "llm_set": "SML",
+   "overrides": {
+    "time.horizon_min": 1440,
+    "stranding.mu_over_beta_tilde": 1.0,
+    "lender_defaults.n_layers": 4
+   },
+   "build_s": 0.15543302008882165,
+   "instance": {
+    "n_sites": 92,
+    "n_sites_by_kind": {
+     "layer": 87,
+     "protected": 5
+    },
+    "n_contracts": 4,
+    "n_revocable_contracts": 3,
+    "menu_size_per_site": {
+     "min": 1,
+     "max": 3,
+     "mean": 2.8260869565217392,
+     "sum": 260
+    },
+    "n_llms": 3,
+    "llms": [
+     "S",
+     "M",
+     "L"
+    ],
+    "llms_with_clients": [
+     "L",
+     "M",
+     "S"
+    ],
+    "n_clients": 15,
+    "n_units": 1287,
+    "units_per_replica": 8,
+    "sites_x_llms": 276,
+    "grid": {
+     "slow_min": 5,
+     "fast_min": 1,
+     "T_slow": 288,
+     "T_fast": 1440,
+     "horizon_min": 1440,
+     "start_mow": 154
+    },
+    "n_trace_lenders": 23,
+    "n_trace_lenders_with_sites": 23,
+    "layer_capacity_gpus": 696.0,
+    "v_top": {
+     "a2:c00": 1399,
+     "a2:c01": 459,
+     "a2:c02": 835,
+     "a2:c03": 526,
+     "a2:c04": 1033,
+     "a2:c05": 283,
+     "a2:c06": 502,
+     "a2:c07": 172,
+     "a2:c08": 238,
+     "a2:c09": 436,
+     "a2:c10": 146,
+     "a2:c11": 351,
+     "a2:c12": 240,
+     "a2:c13": 232,
+     "a2:c14": 71,
+     "a2:c15": 293,
+     "a2:c16": 396,
+     "a2:c17": 406,
+     "a2:c18": 223,
+     "a2:c19": 239,
+     "a1:A100-SXM4-80GB": 7,
+     "a1:A800-SXM4-80GB": 2,
+     "a1:GPU-series-2": 1
+    },
+    "sites_reachable_by_V": 8495,
+    "demand_load_h": 190.50476419682005,
+    "bl0a_usd": 3440.465549016691,
+    "gamma_note": [
+     "regional demand: Gamma = 4.55328e+06 (tightness 0.5, supply 696 GPUs)"
+    ]
+   },
+   "schedule_s": 0.00234209094196558,
+   "announcements": 3347,
+   "lp_estimate": {
+    "sites_unmerged": 92,
+    "sites_merged": 58,
+    "merge_s": 0.001411080826073885,
+    "estimate_s": 0.08085027593187988,
+    "merged": {
+     "n_vars": 580434,
+     "n_int": 432531,
+     "n_rows": 456302,
+     "nnz": 2478578,
+     "est_mb": 7092.1606,
+     "est_mb_lp": 1468.43212,
+     "n_triples": 480,
+     "n_cohorts": 17688,
+     "T_b": 288
+    },
+    "rule": "est_mb_lp = 130 + 5.4e-4 nnz MB (LP rule, opt/milp.py estimate_size; est_mb is the MILP rule)",
+    "unmerged": {
+     "n_vars": 879302,
+     "n_int": 624696,
+     "n_rows": 672707,
+     "nnz": 3927259,
+     "est_mb": 11003.5993,
+     "est_mb_lp": 2250.71986,
+     "estimate_s": 0.12445652903988957
+    }
+   },
+   "lp_fits_gate": true,
+   "status": "ok",
+   "point_s": 0.36579180508852005,
+   "rss_mb_after": 189.93359375
+  },
+  "e7r_V4_ML": {
+   "base": "e7r",
+   "config": "bench_e7r.json",
+   "V": 4,
+   "llm_set": "ML",
+   "overrides": {
+    "time.horizon_min": 1440,
+    "stranding.mu_over_beta_tilde": 1.0,
+    "lender_defaults.n_layers": 4,
+    "llms": [
+     {
+      "id": "M",
+      "catalog": "maas_a10",
+      "entry": "M",
+      "kappa_mult": 1.0
+     },
+     {
+      "id": "L",
+      "catalog": "maas_a10",
+      "entry": "L",
+      "kappa_mult": 1.0
+     }
+    ],
+    "borrowers.s_S": 0.0
+   },
+   "build_s": 0.14493078598752618,
+   "instance": {
+    "n_sites": 92,
+    "n_sites_by_kind": {
+     "layer": 87,
+     "protected": 5
+    },
+    "n_contracts": 4,
+    "n_revocable_contracts": 3,
+    "menu_size_per_site": {
+     "min": 1,
+     "max": 3,
+     "mean": 2.8260869565217392,
+     "sum": 260
+    },
+    "n_llms": 2,
+    "llms": [
+     "M",
+     "L"
+    ],
+    "llms_with_clients": [
+     "L",
+     "M"
+    ],
+    "n_clients": 10,
+    "n_units": 1194,
+    "units_per_replica": 8,
+    "sites_x_llms": 184,
+    "grid": {
+     "slow_min": 5,
+     "fast_min": 1,
+     "T_slow": 288,
+     "T_fast": 1440,
+     "horizon_min": 1440,
+     "start_mow": 154
+    },
+    "n_trace_lenders": 23,
+    "n_trace_lenders_with_sites": 23,
+    "layer_capacity_gpus": 696.0,
+    "v_top": {
+     "a2:c00": 1399,
+     "a2:c01": 459,
+     "a2:c02": 835,
+     "a2:c03": 526,
+     "a2:c04": 1033,
+     "a2:c05": 283,
+     "a2:c06": 502,
+     "a2:c07": 172,
+     "a2:c08": 238,
+     "a2:c09": 436,
+     "a2:c10": 146,
+     "a2:c11": 351,
+     "a2:c12": 240,
+     "a2:c13": 232,
+     "a2:c14": 71,
+     "a2:c15": 293,
+     "a2:c16": 396,
+     "a2:c17": 406,
+     "a2:c18": 223,
+     "a2:c19": 239,
+     "a1:A100-SXM4-80GB": 7,
+     "a1:A800-SXM4-80GB": 2,
+     "a1:GPU-series-2": 1
+    },
+    "sites_reachable_by_V": 8495,
+    "demand_load_h": 178.04482715333737,
+    "bl0a_usd": 3465.8213660522492,
+    "gamma_note": [
+     "regional demand: Gamma = 3.60301e+06 (tightness 0.5, supply 696 GPUs)"
+    ]
+   },
+   "schedule_s": 0.0023675430566072464,
+   "announcements": 3347,
+   "lp_estimate": {
+    "sites_unmerged": 92,
+    "sites_merged": 58,
+    "merge_s": 0.0014118780381977558,
+    "estimate_s": 0.060708674835041165,
+    "merged": {
+     "n_vars": 386992,
+     "n_int": 288354,
+     "n_rows": 309246,
+     "nnz": 1652461,
+     "est_mb": 4861.6447,
+     "est_mb_lp": 1022.32894,
+     "n_triples": 320,
+     "n_cohorts": 11792,
+     "T_b": 288
+    },
+    "rule": "est_mb_lp = 130 + 5.4e-4 nnz MB (LP rule, opt/milp.py estimate_size; est_mb is the MILP rule)",
+    "unmerged": {
+     "n_vars": 586263,
+     "n_int": 416464,
+     "n_rows": 456773,
+     "nnz": 2618336,
+     "est_mb": 7469.5072,
+     "est_mb_lp": 1543.90144,
+     "estimate_s": 0.09219875512644649
+    }
+   },
+   "lp_fits_gate": true,
+   "status": "ok",
+   "point_s": 0.3027894929982722,
+   "rss_mb_after": 189.93359375
+  },
+  "e7r_V4_S": {
+   "base": "e7r",
+   "config": "bench_e7r.json",
+   "V": 4,
+   "llm_set": "S",
+   "overrides": {
+    "time.horizon_min": 1440,
+    "stranding.mu_over_beta_tilde": 1.0,
+    "lender_defaults.n_layers": 4,
+    "llms": [
+     {
+      "id": "S",
+      "catalog": "maas_a10",
+      "entry": "S",
+      "kappa_mult": 1.0
+     }
+    ],
+    "borrowers.s_S": 1.0
+   },
+   "build_s": 0.13331684097647667,
+   "instance": {
+    "n_sites": 92,
+    "n_sites_by_kind": {
+     "layer": 87,
+     "protected": 5
+    },
+    "n_contracts": 4,
+    "n_revocable_contracts": 3,
+    "menu_size_per_site": {
+     "min": 1,
+     "max": 3,
+     "mean": 2.8260869565217392,
+     "sum": 260
+    },
+    "n_llms": 1,
+    "llms": [
+     "S"
+    ],
+    "llms_with_clients": [
+     "S"
+    ],
+    "n_clients": 5,
+    "n_units": 2908,
+    "units_per_replica": 8,
+    "sites_x_llms": 92,
+    "grid": {
+     "slow_min": 5,
+     "fast_min": 1,
+     "T_slow": 288,
+     "T_fast": 1440,
+     "horizon_min": 1440,
+     "start_mow": 154
+    },
+    "n_trace_lenders": 23,
+    "n_trace_lenders_with_sites": 23,
+    "layer_capacity_gpus": 696.0,
+    "v_top": {
+     "a2:c00": 1399,
+     "a2:c01": 459,
+     "a2:c02": 835,
+     "a2:c03": 526,
+     "a2:c04": 1033,
+     "a2:c05": 283,
+     "a2:c06": 502,
+     "a2:c07": 172,
+     "a2:c08": 238,
+     "a2:c09": 436,
+     "a2:c10": 146,
+     "a2:c11": 351,
+     "a2:c12": 240,
+     "a2:c13": 232,
+     "a2:c14": 71,
+     "a2:c15": 293,
+     "a2:c16": 396,
+     "a2:c17": 406,
+     "a2:c18": 223,
+     "a2:c19": 239,
+     "a1:A100-SXM4-80GB": 7,
+     "a1:A800-SXM4-80GB": 2,
+     "a1:GPU-series-2": 1
+    },
+    "sites_reachable_by_V": 8495,
+    "demand_load_h": 416.782314236138,
+    "bl0a_usd": 2979.9935467883865,
+    "gamma_note": [
+     "regional demand: Gamma = 2.18107e+07 (tightness 0.5, supply 696 GPUs)"
+    ]
+   },
+   "schedule_s": 0.002363814041018486,
+   "announcements": 3347,
+   "lp_estimate": {
+    "sites_unmerged": 92,
+    "sites_merged": 58,
+    "merge_s": 0.0014086889568716288,
+    "estimate_s": 0.040463310200721025,
+    "merged": {
+     "n_vars": 193442,
+     "n_int": 144177,
+     "n_rows": 162213,
+     "nnz": 826117,
+     "est_mb": 2630.5159000000003,
+     "est_mb_lp": 576.1031800000001,
+     "n_triples": 160,
+     "n_cohorts": 5896,
+     "T_b": 288
+    },
+    "rule": "est_mb_lp = 130 + 5.4e-4 nnz MB (LP rule, opt/milp.py estimate_size; est_mb is the MILP rule)",
+    "unmerged": {
+     "n_vars": 293039,
+     "n_int": 208232,
+     "n_rows": 240883,
+     "nnz": 1308923,
+     "est_mb": 3934.0921000000003,
+     "est_mb_lp": 836.8184200000001,
+     "estimate_s": 0.05883541703224182
+    }
+   },
+   "lp_fits_gate": true,
+   "status": "ok",
+   "point_s": 0.23775412794202566,
+   "rss_mb_after": 189.93359375
+  },
+  "e7f_V8_SML": {
+   "base": "e7f",
+   "config": "bench_e7f.json",
+   "V": 8,
+   "llm_set": "SML",
+   "overrides": {
+    "time.horizon_min": 1440,
+    "stranding.mu_over_beta_tilde": 1.0,
+    "lender_defaults.n_layers": 8
+   },
+   "build_s": 0.5131513830274343,
+   "instance": {
+    "n_sites": 169,
+    "n_sites_by_kind": {
+     "layer": 164,
+     "protected": 5
+    },
+    "n_contracts": 21,
+    "n_revocable_contracts": 20,
+    "menu_size_per_site": {
+     "min": 1,
+     "max": 20,
+     "mean": 19.171597633136095,
+     "sum": 3240
+    },
+    "n_llms": 3,
+    "llms": [
+     "S",
+     "M",
+     "L"
+    ],
+    "llms_with_clients": [
+     "L",
+     "M",
+     "S"
+    ],
+    "n_clients": 15,
+    "n_units": 2417,
+    "units_per_replica": 8,
+    "sites_x_llms": 507,
+    "grid": {
+     "slow_min": 5,
+     "fast_min": 1,
+     "T_slow": 288,
+     "T_fast": 1440,
+     "horizon_min": 1440,
+     "start_mow": 154
+    },
+    "n_trace_lenders": 23,
+    "n_trace_lenders_with_sites": 23,
+    "layer_capacity_gpus": 1312.0,
+    "v_top": {
+     "a2:c00": 1386,
+     "a2:c01": 448,
+     "a2:c02": 822,
+     "a2:c03": 519,
+     "a2:c04": 1029,
+     "a2:c05": 231,
+     "a2:c06": 499,
+     "a2:c07": 170,
+     "a2:c08": 237,
+     "a2:c09": 434,
+     "a2:c10": 142,
+     "a2:c11": 351,
+     "a2:c12": 235,
+     "a2:c13": 231,
+     "a2:c14": 60,
+     "a2:c15": 288,
+     "a2:c16": 395,
+     "a2:c17": 397,
+     "a2:c18": 207,
+     "a2:c19": 239,
+     "a1:A100-SXM4-80GB": 2,
+     "a1:A800-SXM4-80GB": 1,
+     "a1:GPU-series-2": 1
+    },
+    "sites_reachable_by_V": 8329,
+    "demand_load_h": 359.11242906067235,
+    "bl0a_usd": 6485.47528780158,
+    "gamma_note": [
+     "regional demand: Gamma = 8.5832e+06 (tightness 0.5, supply 1312 GPUs)"
+    ]
+   },
+   "schedule_s": 0.002734905108809471,
+   "announcements": 3872,
+   "lp_estimate": {
+    "sites_unmerged": 169,
+    "sites_merged": 76,
+    "merge_s": 0.0024643871001899242,
+    "estimate_s": 0.6646889529656619,
+    "merged": {
+     "n_vars": 5759579,
+     "n_int": 4830819,
+     "n_rows": 4610616,
+     "nnz": 29650567,
+     "est_mb": 80456.5309,
+     "est_mb_lp": 16141.30618,
+     "n_triples": 4140,
+     "n_cohorts": 171636,
+     "T_b": 288
+    },
+    "rule": "est_mb_lp = 130 + 5.4e-4 nnz MB (LP rule, opt/milp.py estimate_size; est_mb is the MILP rule)",
+    "unmerged": {
+     "n_vars": 10622608,
+     "n_int": 8199951,
+     "n_rows": 7881655,
+     "nnz": 64008760,
+     "est_mb": 173223.652,
+     "est_mb_lp": 34694.7304,
+     "estimate_s": 1.4355665910989046
+    }
+   },
+   "lp_fits_gate": false,
+   "status": "ok",
+   "point_s": 2.62019976391457,
+   "rss_mb_after": 244.68359375
+  },
+  "e7f_V8_ML": {
+   "base": "e7f",
+   "config": "bench_e7f.json",
+   "V": 8,
+   "llm_set": "ML",
+   "overrides": {
+    "time.horizon_min": 1440,
+    "stranding.mu_over_beta_tilde": 1.0,
+    "lender_defaults.n_layers": 8,
+    "llms": [
+     {
+      "id": "M",
+      "catalog": "maas_a10",
+      "entry": "M",
+      "kappa_mult": 1.0
+     },
+     {
+      "id": "L",
+      "catalog": "maas_a10",
+      "entry": "L",
+      "kappa_mult": 1.0
+     }
+    ],
+    "borrowers.s_S": 0.0
+   },
+   "build_s": 0.5028955431189388,
+   "instance": {
+    "n_sites": 169,
+    "n_sites_by_kind": {
+     "layer": 164,
+     "protected": 5
+    },
+    "n_contracts": 21,
+    "n_revocable_contracts": 20,
+    "menu_size_per_site": {
+     "min": 1,
+     "max": 20,
+     "mean": 19.171597633136095,
+     "sum": 3240
+    },
+    "n_llms": 2,
+    "llms": [
+     "M",
+     "L"
+    ],
+    "llms_with_clients": [
+     "L",
+     "M"
+    ],
+    "n_clients": 10,
+    "n_units": 2246,
+    "units_per_replica": 8,
+    "sites_x_llms": 338,
+    "grid": {
+     "slow_min": 5,
+     "fast_min": 1,
+     "T_slow": 288,
+     "T_fast": 1440,
+     "horizon_min": 1440,
+     "start_mow": 154
+    },
+    "n_trace_lenders": 23,
+    "n_trace_lenders_with_sites": 23,
+    "layer_capacity_gpus": 1312.0,
+    "v_top": {
+     "a2:c00": 1386,
+     "a2:c01": 448,
+     "a2:c02": 822,
+     "a2:c03": 519,
+     "a2:c04": 1029,
+     "a2:c05": 231,
+     "a2:c06": 499,
+     "a2:c07": 170,
+     "a2:c08": 237,
+     "a2:c09": 434,
+     "a2:c10": 142,
+     "a2:c11": 351,
+     "a2:c12": 235,
+     "a2:c13": 231,
+     "a2:c14": 60,
+     "a2:c15": 288,
+     "a2:c16": 395,
+     "a2:c17": 397,
+     "a2:c18": 207,
+     "a2:c19": 239,
+     "a1:A100-SXM4-80GB": 2,
+     "a1:A800-SXM4-80GB": 1,
+     "a1:GPU-series-2": 1
+    },
+    "sites_reachable_by_V": 8329,
+    "demand_load_h": 335.6247316453717,
+    "bl0a_usd": 6533.272460144469,
+    "gamma_note": [
+     "regional demand: Gamma = 6.79187e+06 (tightness 0.5, supply 1312 GPUs)"
+    ]
+   },
+   "schedule_s": 0.002776724984869361,
+   "announcements": 3872,
+   "lp_estimate": {
+    "sites_unmerged": 169,
+    "sites_merged": 76,
+    "merge_s": 0.0023805489763617516,
+    "estimate_s": 0.49784806999377906,
+    "merged": {
+     "n_vars": 3839755,
+     "n_int": 3220546,
+     "n_rows": 3080510,
+     "nnz": 19765966,
+     "est_mb": 53768.1082,
+     "est_mb_lp": 10803.62164,
+     "n_triples": 2760,
+     "n_cohorts": 114424,
+     "T_b": 288
+    },
+    "rule": "est_mb_lp = 130 + 5.4e-4 nnz MB (LP rule, opt/milp.py estimate_size; est_mb is the MILP rule)",
+    "unmerged": {
+     "n_vars": 7081847,
+     "n_int": 5466634,
+     "n_rows": 5270117,
+     "nnz": 42671369,
+     "est_mb": 115612.69630000001,
+     "est_mb_lp": 23172.53926,
+     "estimate_s": 1.0367828940507025
+    }
+   },
+   "lp_fits_gate": false,
+   "status": "ok",
+   "point_s": 2.0442317181732506,
+   "rss_mb_after": 244.68359375
+  },
+  "e7f_V8_S": {
+   "base": "e7f",
+   "config": "bench_e7f.json",
+   "V": 8,
+   "llm_set": "S",
+   "overrides": {
+    "time.horizon_min": 1440,
+    "stranding.mu_over_beta_tilde": 1.0,
+    "lender_defaults.n_layers": 8,
+    "llms": [
+     {
+      "id": "S",
+      "catalog": "maas_a10",
+      "entry": "S",
+      "kappa_mult": 1.0
+     }
+    ],
+    "borrowers.s_S": 1.0
+   },
+   "build_s": 0.49223232502117753,
+   "instance": {
+    "n_sites": 169,
+    "n_sites_by_kind": {
+     "layer": 164,
+     "protected": 5
+    },
+    "n_contracts": 21,
+    "n_revocable_contracts": 20,
+    "menu_size_per_site": {
+     "min": 1,
+     "max": 20,
+     "mean": 19.171597633136095,
+     "sum": 3240
+    },
+    "n_llms": 1,
+    "llms": [
+     "S"
+    ],
+    "llms_with_clients": [
+     "S"
+    ],
+    "n_clients": 5,
+    "n_units": 5481,
+    "units_per_replica": 8,
+    "sites_x_llms": 169,
+    "grid": {
+     "slow_min": 5,
+     "fast_min": 1,
+     "T_slow": 288,
+     "T_fast": 1440,
+     "horizon_min": 1440,
+     "start_mow": 154
+    },
+    "n_trace_lenders": 23,
+    "n_trace_lenders_with_sites": 23,
+    "layer_capacity_gpus": 1312.0,
+    "v_top": {
+     "a2:c00": 1386,
+     "a2:c01": 448,
+     "a2:c02": 822,
+     "a2:c03": 519,
+     "a2:c04": 1029,
+     "a2:c05": 231,
+     "a2:c06": 499,
+     "a2:c07": 170,
+     "a2:c08": 237,
+     "a2:c09": 434,
+     "a2:c10": 142,
+     "a2:c11": 351,
+     "a2:c12": 235,
+     "a2:c13": 231,
+     "a2:c14": 60,
+     "a2:c15": 288,
+     "a2:c16": 395,
+     "a2:c17": 397,
+     "a2:c18": 207,
+     "a2:c19": 239,
+     "a1:A100-SXM4-80GB": 2,
+     "a1:A800-SXM4-80GB": 1,
+     "a1:GPU-series-2": 1
+    },
+    "sites_reachable_by_V": 8329,
+    "demand_load_h": 785.6586153416853,
+    "bl0a_usd": 5617.459099693052,
+    "gamma_note": [
+     "regional demand: Gamma = 4.11144e+07 (tightness 0.5, supply 1312 GPUs)"
+    ]
+   },
+   "schedule_s": 0.0027812281623482704,
+   "announcements": 3872,
+   "lp_estimate": {
+    "sites_unmerged": 169,
+    "sites_merged": 76,
+    "merge_s": 0.002611480886116624,
+    "estimate_s": 0.32498800195753574,
+    "merged": {
+     "n_vars": 1919824,
+     "n_int": 1610273,
+     "n_rows": 1550447,
+     "nnz": 9884601,
+     "est_mb": 27088.422700000003,
+     "est_mb_lp": 5467.68454,
+     "n_triples": 1380,
+     "n_cohorts": 57212,
+     "T_b": 288
+    },
+    "rule": "est_mb_lp = 130 + 5.4e-4 nnz MB (LP rule, opt/milp.py estimate_size; est_mb is the MILP rule)",
+    "unmerged": {
+     "n_vars": 3540761,
+     "n_int": 2733317,
+     "n_rows": 2658663,
+     "nnz": 21337391,
+     "est_mb": 58010.955700000006,
+     "est_mb_lp": 11652.19114,
+     "estimate_s": 0.6377355840522796
+    }
+   },
+   "lp_fits_gate": false,
+   "status": "ok",
+   "point_s": 1.4622308311518282,
+   "rss_mb_after": 244.68359375
+  },
+  "e7r_V8_SML": {
+   "base": "e7r",
+   "config": "bench_e7r.json",
+   "V": 8,
+   "llm_set": "SML",
+   "overrides": {
+    "time.horizon_min": 1440,
+    "stranding.mu_over_beta_tilde": 1.0,
+    "lender_defaults.n_layers": 8
+   },
+   "build_s": 0.15781541913747787,
+   "instance": {
+    "n_sites": 175,
+    "n_sites_by_kind": {
+     "layer": 170,
+     "protected": 5
+    },
+    "n_contracts": 4,
+    "n_revocable_contracts": 3,
+    "menu_size_per_site": {
+     "min": 1,
+     "max": 3,
+     "mean": 2.9085714285714284,
+     "sum": 509
+    },
+    "n_llms": 3,
+    "llms": [
+     "S",
+     "M",
+     "L"
+    ],
+    "llms_with_clients": [
+     "L",
+     "M",
+     "S"
+    ],
+    "n_clients": 15,
+    "n_units": 2506,
+    "units_per_replica": 8,
+    "sites_x_llms": 525,
+    "grid": {
+     "slow_min": 5,
+     "fast_min": 1,
+     "T_slow": 288,
+     "T_fast": 1440,
+     "horizon_min": 1440,
+     "start_mow": 154
+    },
+    "n_trace_lenders": 23,
+    "n_trace_lenders_with_sites": 23,
+    "layer_capacity_gpus": 1360.0,
+    "v_top": {
+     "a2:c00": 1399,
+     "a2:c01": 459,
+     "a2:c02": 835,
+     "a2:c03": 526,
+     "a2:c04": 1033,
+     "a2:c05": 283,
+     "a2:c06": 502,
+     "a2:c07": 172,
+     "a2:c08": 238,
+     "a2:c09": 436,
+     "a2:c10": 146,
+     "a2:c11": 351,
+     "a2:c12": 240,
+     "a2:c13": 232,
+     "a2:c14": 71,
+     "a2:c15": 293,
+     "a2:c16": 396,
+     "a2:c17": 406,
+     "a2:c18": 223,
+     "a2:c19": 239,
+     "a1:A100-SXM4-80GB": 7,
+     "a1:A800-SXM4-80GB": 2,
+     "a1:GPU-series-2": 1
+    },
+    "sites_reachable_by_V": 8495,
+    "demand_load_h": 372.2506886604531,
+    "bl0a_usd": 6722.7487739406615,
+    "gamma_note": [
+     "regional demand: Gamma = 8.89722e+06 (tightness 0.5, supply 1360 GPUs)"
+    ]
+   },
+   "schedule_s": 0.00272965501062572,
+   "announcements": 4977,
+   "lp_estimate": {
+    "sites_unmerged": 175,
+    "sites_merged": 81,
+    "merge_s": 0.0023961500264704227,
+    "estimate_s": 0.11678396491333842,
+    "merged": {
+     "n_vars": 843080,
+     "n_int": 632031,
+     "n_rows": 665425,
+     "nnz": 3613941,
+     "est_mb": 10157.6407,
+     "est_mb_lp": 2081.5281400000003,
+     "n_triples": 687,
+     "n_cohorts": 26604,
+     "T_b": 288
+    },
+    "rule": "est_mb_lp = 130 + 5.4e-4 nnz MB (LP rule, opt/milp.py estimate_size; est_mb is the MILP rule)",
+    "unmerged": {
+     "n_vars": 1655772,
+     "n_int": 1144701,
+     "n_rows": 1246371,
+     "nnz": 7614169,
+     "est_mb": 20958.2563,
+     "est_mb_lp": 4241.65126,
+     "estimate_s": 0.23570984392426908
+    }
+   },
+   "lp_fits_gate": false,
+   "status": "ok",
+   "point_s": 0.5170864369720221,
+   "rss_mb_after": 244.68359375
+  },
+  "e7r_V8_ML": {
+   "base": "e7r",
+   "config": "bench_e7r.json",
+   "V": 8,
+   "llm_set": "ML",
+   "overrides": {
+    "time.horizon_min": 1440,
+    "stranding.mu_over_beta_tilde": 1.0,
+    "lender_defaults.n_layers": 8,
+    "llms": [
+     {
+      "id": "M",
+      "catalog": "maas_a10",
+      "entry": "M",
+      "kappa_mult": 1.0
+     },
+     {
+      "id": "L",
+      "catalog": "maas_a10",
+      "entry": "L",
+      "kappa_mult": 1.0
+     }
+    ],
+    "borrowers.s_S": 0.0
+   },
+   "build_s": 0.1470622420310974,
+   "instance": {
+    "n_sites": 175,
+    "n_sites_by_kind": {
+     "layer": 170,
+     "protected": 5
+    },
+    "n_contracts": 4,
+    "n_revocable_contracts": 3,
+    "menu_size_per_site": {
+     "min": 1,
+     "max": 3,
+     "mean": 2.9085714285714284,
+     "sum": 509
+    },
+    "n_llms": 2,
+    "llms": [
+     "M",
+     "L"
+    ],
+    "llms_with_clients": [
+     "L",
+     "M"
+    ],
+    "n_clients": 10,
+    "n_units": 2328,
+    "units_per_replica": 8,
+    "sites_x_llms": 350,
+    "grid": {
+     "slow_min": 5,
+     "fast_min": 1,
+     "T_slow": 288,
+     "T_fast": 1440,
+     "horizon_min": 1440,
+     "start_mow": 154
+    },
+    "n_trace_lenders": 23,
+    "n_trace_lenders_with_sites": 23,
+    "layer_capacity_gpus": 1360.0,
+    "v_top": {
+     "a2:c00": 1399,
+     "a2:c01": 459,
+     "a2:c02": 835,
+     "a2:c03": 526,
+     "a2:c04": 1033,
+     "a2:c05": 283,
+     "a2:c06": 502,
+     "a2:c07": 172,
+     "a2:c08": 238,
+     "a2:c09": 436,
+     "a2:c10": 146,
+     "a2:c11": 351,
+     "a2:c12": 240,
+     "a2:c13": 232,
+     "a2:c14": 71,
+     "a2:c15": 293,
+     "a2:c16": 396,
+     "a2:c17": 406,
+     "a2:c18": 223,
+     "a2:c19": 239,
+     "a1:A100-SXM4-80GB": 7,
+     "a1:A800-SXM4-80GB": 2,
+     "a1:GPU-series-2": 1
+    },
+    "sites_reachable_by_V": 8495,
+    "demand_load_h": 347.90368524215353,
+    "bl0a_usd": 6772.294623320486,
+    "gamma_note": [
+     "regional demand: Gamma = 7.04036e+06 (tightness 0.5, supply 1360 GPUs)"
+    ]
+   },
+   "schedule_s": 0.002735497197136283,
+   "announcements": 4977,
+   "lp_estimate": {
+    "sites_unmerged": 175,
+    "sites_merged": 81,
+    "merge_s": 0.0023945500142872334,
+    "estimate_s": 0.08774654194712639,
+    "merged": {
+     "n_vars": 562097,
+     "n_int": 421354,
+     "n_rows": 450862,
+     "nnz": 2409343,
+     "est_mb": 6905.226100000001,
+     "est_mb_lp": 1431.04522,
+     "n_triples": 458,
+     "n_cohorts": 17736,
+     "T_b": 288
+    },
+    "rule": "est_mb_lp = 130 + 5.4e-4 nnz MB (LP rule, opt/milp.py estimate_size; est_mb is the MILP rule)",
+    "unmerged": {
+     "n_vars": 1103964,
+     "n_int": 763134,
+     "n_rows": 847168,
+     "nnz": 5076431,
+     "est_mb": 14106.3637,
+     "est_mb_lp": 2871.27274,
+     "estimate_s": 0.1735622570849955
+    }
+   },
+   "lp_fits_gate": true,
+   "status": "ok",
+   "point_s": 0.41501676198095083,
+   "rss_mb_after": 244.68359375
+  },
+  "e7r_V8_S": {
+   "base": "e7r",
+   "config": "bench_e7r.json",
+   "V": 8,
+   "llm_set": "S",
+   "overrides": {
+    "time.horizon_min": 1440,
+    "stranding.mu_over_beta_tilde": 1.0,
+    "lender_defaults.n_layers": 8,
+    "llms": [
+     {
+      "id": "S",
+      "catalog": "maas_a10",
+      "entry": "S",
+      "kappa_mult": 1.0
+     }
+    ],
+    "borrowers.s_S": 1.0
+   },
+   "build_s": 0.13656930113211274,
+   "instance": {
+    "n_sites": 175,
+    "n_sites_by_kind": {
+     "layer": 170,
+     "protected": 5
+    },
+    "n_contracts": 4,
+    "n_revocable_contracts": 3,
+    "menu_size_per_site": {
+     "min": 1,
+     "max": 3,
+     "mean": 2.9085714285714284,
+     "sum": 509
+    },
+    "n_llms": 1,
+    "llms": [
+     "S"
+    ],
+    "llms_with_clients": [
+     "S"
+    ],
+    "n_clients": 5,
+    "n_units": 5681,
+    "units_per_replica": 8,
+    "sites_x_llms": 175,
+    "grid": {
+     "slow_min": 5,
+     "fast_min": 1,
+     "T_slow": 288,
+     "T_fast": 1440,
+     "horizon_min": 1440,
+     "start_mow": 154
+    },
+    "n_trace_lenders": 23,
+    "n_trace_lenders_with_sites": 23,
+    "layer_capacity_gpus": 1360.0,
+    "v_top": {
+     "a2:c00": 1399,
+     "a2:c01": 459,
+     "a2:c02": 835,
+     "a2:c03": 526,
+     "a2:c04": 1033,
+     "a2:c05": 283,
+     "a2:c06": 502,
+     "a2:c07": 172,
+     "a2:c08": 238,
+     "a2:c09": 436,
+     "a2:c10": 146,
+     "a2:c11": 351,
+     "a2:c12": 240,
+     "a2:c13": 232,
+     "a2:c14": 71,
+     "a2:c15": 293,
+     "a2:c16": 396,
+     "a2:c17": 406,
+     "a2:c18": 223,
+     "a2:c19": 239,
+     "a1:A100-SXM4-80GB": 7,
+     "a1:A800-SXM4-80GB": 2,
+     "a1:GPU-series-2": 1
+    },
+    "sites_reachable_by_V": 8495,
+    "demand_load_h": 814.4022232200398,
+    "bl0a_usd": 5822.975896023286,
+    "gamma_note": [
+     "regional demand: Gamma = 4.26186e+07 (tightness 0.5, supply 1360 GPUs)"
+    ]
+   },
+   "schedule_s": 0.0027366168797016144,
+   "announcements": 4977,
+   "lp_estimate": {
+    "sites_unmerged": 175,
+    "sites_merged": 81,
+    "merge_s": 0.002386425854638219,
+    "estimate_s": 0.058145186863839626,
+    "merged": {
+     "n_vars": 280983,
+     "n_int": 210677,
+     "n_rows": 236344,
+     "nnz": 1204598,
+     "est_mb": 3652.4146,
+     "est_mb_lp": 780.48292,
+     "n_triples": 229,
+     "n_cohorts": 8868,
+     "T_b": 288
+    },
+    "rule": "est_mb_lp = 130 + 5.4e-4 nnz MB (LP rule, opt/milp.py estimate_size; est_mb is the MILP rule)",
+    "unmerged": {
+     "n_vars": 551808,
+     "n_int": 381567,
+     "n_rows": 448056,
+     "nnz": 2537738,
+     "est_mb": 7251.8926,
+     "est_mb_lp": 1500.37852,
+     "estimate_s": 0.11609538295306265
+    }
+   },
+   "lp_fits_gate": true,
+   "status": "ok",
+   "point_s": 0.31787210004404187,
+   "rss_mb_after": 244.68359375
+  },
+  "e7f_V16_SML": {
+   "base": "e7f",
+   "config": "bench_e7f.json",
+   "V": 16,
+   "llm_set": "SML",
+   "overrides": {
+    "time.horizon_min": 1440,
+    "stranding.mu_over_beta_tilde": 1.0,
+    "lender_defaults.n_layers": 16
+   },
+   "build_s": 0.5190251369494945,
+   "instance": {
+    "n_sites": 329,
+    "n_sites_by_kind": {
+     "layer": 324,
+     "protected": 5
+    },
+    "n_contracts": 21,
+    "n_revocable_contracts": 20,
+    "menu_size_per_site": {
+     "min": 1,
+     "max": 20,
+     "mean": 19.574468085106382,
+     "sum": 6440
+    },
+    "n_llms": 3,
+    "llms": [
+     "S",
+     "M",
+     "L"
+    ],
+    "llms_with_clients": [
+     "L",
+     "M",
+     "S"
+    ],
+    "n_clients": 15,
+    "n_units": 4771,
+    "units_per_replica": 8,
+    "sites_x_llms": 987,
+    "grid": {
+     "slow_min": 5,
+     "fast_min": 1,
+     "T_slow": 288,
+     "T_fast": 1440,
+     "horizon_min": 1440,
+     "start_mow": 154
+    },
+    "n_trace_lenders": 23,
+    "n_trace_lenders_with_sites": 23,
+    "layer_capacity_gpus": 2592.0,
+    "v_top": {
+     "a2:c00": 1386,
+     "a2:c01": 448,
+     "a2:c02": 822,
+     "a2:c03": 519,
+     "a2:c04": 1029,
+     "a2:c05": 231,
+     "a2:c06": 499,
+     "a2:c07": 170,
+     "a2:c08": 237,
+     "a2:c09": 434,
+     "a2:c10": 142,
+     "a2:c11": 351,
+     "a2:c12": 235,
+     "a2:c13": 231,
+     "a2:c14": 60,
+     "a2:c15": 288,
+     "a2:c16": 395,
+     "a2:c17": 397,
+     "a2:c18": 207,
+     "a2:c19": 239,
+     "a1:A100-SXM4-80GB": 2,
+     "a1:A800-SXM4-80GB": 1,
+     "a1:GPU-series-2": 1
+    },
+    "sites_reachable_by_V": 8329,
+    "demand_load_h": 709.4660183881576,
+    "bl0a_usd": 12812.768251510437,
+    "gamma_note": [
+     "regional demand: Gamma = 1.69571e+07 (tightness 0.5, supply 2592 GPUs)"
+    ]
+   },
+   "schedule_s": 0.0038982490077614784,
+   "announcements": 4474,
+   "lp_estimate": {
+    "sites_unmerged": 329,
+    "sites_merged": 91,
+    "merge_s": 0.0041564940474927425,
+    "estimate_s": 0.8058862169273198,
+    "merged": {
+     "n_vars": 6916082,
+     "n_int": 5773551,
+     "n_rows": 5514500,
+     "nnz": 35926832,
+     "est_mb": 97402.4464,
+     "est_mb_lp": 19530.48928,
+     "n_triples": 5040,
+     "n_cohorts": 198981,
+     "T_b": 288
+    },
+    "rule": "est_mb_lp = 130 + 5.4e-4 nnz MB (LP rule, opt/milp.py estimate_size; est_mb is the MILP rule)",
+    "unmerged": {
+     "n_vars": 19189941,
+     "n_int": 14212020,
+     "n_rows": 13712646,
+     "nnz": 123349708,
+     "est_mb": 333444.21160000004,
+     "est_mb_lp": 66738.84232,
+     "estimate_s": 2.8040417570155114
+    }
+   },
+   "lp_fits_gate": false,
+   "status": "ok",
+   "point_s": 4.139288099948317,
+   "rss_mb_after": 352.203125
+  },
+  "e7f_V16_ML": {
+   "base": "e7f",
+   "config": "bench_e7f.json",
+   "V": 16,
+   "llm_set": "ML",
+   "overrides": {
+    "time.horizon_min": 1440,
+    "stranding.mu_over_beta_tilde": 1.0,
+    "lender_defaults.n_layers": 16,
+    "llms": [
+     {
+      "id": "M",
+      "catalog": "maas_a10",
+      "entry": "M",
+      "kappa_mult": 1.0
+     },
+     {
+      "id": "L",
+      "catalog": "maas_a10",
+      "entry": "L",
+      "kappa_mult": 1.0
+     }
+    ],
+    "borrowers.s_S": 0.0
+   },
+   "build_s": 0.5063600239809602,
+   "instance": {
+    "n_sites": 329,
+    "n_sites_by_kind": {
+     "layer": 324,
+     "protected": 5
+    },
+    "n_contracts": 21,
+    "n_revocable_contracts": 20,
+    "menu_size_per_site": {
+     "min": 1,
+     "max": 20,
+     "mean": 19.574468085106382,
+     "sum": 6440
+    },
+    "n_llms": 2,
+    "llms": [
+     "M",
+     "L"
+    ],
+    "llms_with_clients": [
+     "L",
+     "M"
+    ],
+    "n_clients": 10,
+    "n_units": 4432,
+    "units_per_replica": 8,
+    "sites_x_llms": 658,
+    "grid": {
+     "slow_min": 5,
+     "fast_min": 1,
+     "T_slow": 288,
+     "T_fast": 1440,
+     "horizon_min": 1440,
+     "start_mow": 154
+    },
+    "n_trace_lenders": 23,
+    "n_trace_lenders_with_sites": 23,
+    "layer_capacity_gpus": 2592.0,
+    "v_top": {
+     "a2:c00": 1386,
+     "a2:c01": 448,
+     "a2:c02": 822,
+     "a2:c03": 519,
+     "a2:c04": 1029,
+     "a2:c05": 231,
+     "a2:c06": 499,
+     "a2:c07": 170,
+     "a2:c08": 237,
+     "a2:c09": 434,
+     "a2:c10": 142,
+     "a2:c11": 351,
+     "a2:c12": 235,
+     "a2:c13": 231,
+     "a2:c14": 60,
+     "a2:c15": 288,
+     "a2:c16": 395,
+     "a2:c17": 397,
+     "a2:c18": 207,
+     "a2:c19": 239,
+     "a1:A100-SXM4-80GB": 2,
+     "a1:A800-SXM4-80GB": 1,
+     "a1:GPU-series-2": 1
+    },
+    "sites_reachable_by_V": 8329,
+    "demand_load_h": 663.0634942262221,
+    "bl0a_usd": 12907.196811504926,
+    "gamma_note": [
+     "regional demand: Gamma = 1.34181e+07 (tightness 0.5, supply 2592 GPUs)"
+    ]
+   },
+   "schedule_s": 0.0038994138594716787,
+   "announcements": 4474,
+   "lp_estimate": {
+    "sites_unmerged": 329,
+    "sites_merged": 91,
+    "merge_s": 0.004449755884706974,
+    "estimate_s": 0.601313604041934,
+    "merged": {
+     "n_vars": 4610761,
+     "n_int": 3849034,
+     "n_rows": 3684535,
+     "nnz": 23950072,
+     "est_mb": 65065.1944,
+     "est_mb_lp": 13063.03888,
+     "n_triples": 3360,
+     "n_cohorts": 132654,
+     "T_b": 288
+    },
+    "rule": "est_mb_lp = 130 + 5.4e-4 nnz MB (LP rule, opt/milp.py estimate_size; est_mb is the MILP rule)",
+    "unmerged": {
+     "n_vars": 12793501,
+     "n_int": 9474680,
+     "n_rows": 9172775,
+     "nnz": 82231857,
+     "est_mb": 222426.01390000002,
+     "est_mb_lp": 44535.20278,
+     "estimate_s": 1.9618277789559215
+    }
+   },
+   "lp_fits_gate": false,
+   "status": "ok",
+   "point_s": 3.0799710901919752,
+   "rss_mb_after": 352.203125
+  },
+  "e7f_V16_S": {
+   "base": "e7f",
+   "config": "bench_e7f.json",
+   "V": 16,
+   "llm_set": "S",
+   "overrides": {
+    "time.horizon_min": 1440,
+    "stranding.mu_over_beta_tilde": 1.0,
+    "lender_defaults.n_layers": 16,
+    "llms": [
+     {
+      "id": "S",
+      "catalog": "maas_a10",
+      "entry": "S",
+      "kappa_mult": 1.0
+     }
+    ],
+    "borrowers.s_S": 1.0
+   },
+   "build_s": 0.4969965850468725,
+   "instance": {
+    "n_sites": 329,
+    "n_sites_by_kind": {
+     "layer": 324,
+     "protected": 5
+    },
+    "n_contracts": 21,
+    "n_revocable_contracts": 20,
+    "menu_size_per_site": {
+     "min": 1,
+     "max": 20,
+     "mean": 19.574468085106382,
+     "sum": 6440
+    },
+    "n_llms": 1,
+    "llms": [
+     "S"
+    ],
+    "llms_with_clients": [
+     "S"
+    ],
+    "n_clients": 5,
+    "n_units": 10825,
+    "units_per_replica": 8,
+    "sites_x_llms": 329,
+    "grid": {
+     "slow_min": 5,
+     "fast_min": 1,
+     "T_slow": 288,
+     "T_fast": 1440,
+     "horizon_min": 1440,
+     "start_mow": 154
+    },
+    "n_trace_lenders": 23,
+    "n_trace_lenders_with_sites": 23,
+    "layer_capacity_gpus": 2592.0,
+    "v_top": {
+     "a2:c00": 1386,
+     "a2:c01": 448,
+     "a2:c02": 822,
+     "a2:c03": 519,
+     "a2:c04": 1029,
+     "a2:c05": 231,
+     "a2:c06": 499,
+     "a2:c07": 170,
+     "a2:c08": 237,
+     "a2:c09": 434,
+     "a2:c10": 142,
+     "a2:c11": 351,
+     "a2:c12": 235,
+     "a2:c13": 231,
+     "a2:c14": 60,
+     "a2:c15": 288,
+     "a2:c16": 395,
+     "a2:c17": 397,
+     "a2:c18": 207,
+     "a2:c19": 239,
+     "a1:A100-SXM4-80GB": 2,
+     "a1:A800-SXM4-80GB": 1,
+     "a1:GPU-series-2": 1
+    },
+    "sites_reachable_by_V": 8329,
+    "demand_load_h": 1552.1548254311347,
+    "bl0a_usd": 11097.907001832615,
+    "gamma_note": [
+     "regional demand: Gamma = 8.1226e+07 (tightness 0.5, supply 2592 GPUs)"
+    ]
+   },
+   "schedule_s": 0.003944350173696876,
+   "announcements": 4474,
+   "lp_estimate": {
+    "sites_unmerged": 329,
+    "sites_merged": 91,
+    "merge_s": 0.004189986968412995,
+    "estimate_s": 0.3903017279226333,
+    "merged": {
+     "n_vars": 2305321,
+     "n_int": 1924517,
+     "n_rows": 1854626,
+     "nnz": 11976760,
+     "est_mb": 32737.252,
+     "est_mb_lp": 6597.4504,
+     "n_triples": 1680,
+     "n_cohorts": 66327,
+     "T_b": 288
+    },
+    "rule": "est_mb_lp = 130 + 5.4e-4 nnz MB (LP rule, opt/milp.py estimate_size; est_mb is the MILP rule)",
+    "unmerged": {
+     "n_vars": 6396440,
+     "n_int": 4737340,
+     "n_rows": 4633076,
+     "nnz": 41117851,
+     "est_mb": 111418.1977,
+     "est_mb_lp": 22333.63954,
+     "estimate_s": 1.184719080105424
+    }
+   },
+   "lp_fits_gate": false,
+   "status": "ok",
+   "point_s": 2.083437808090821,
+   "rss_mb_after": 352.203125
+  },
+  "e7r_V16_SML": {
+   "base": "e7r",
+   "config": "bench_e7r.json",
+   "V": 16,
+   "llm_set": "SML",
+   "overrides": {
+    "time.horizon_min": 1440,
+    "stranding.mu_over_beta_tilde": 1.0,
+    "lender_defaults.n_layers": 16
+   },
+   "build_s": 0.16317883017472923,
+   "instance": {
+    "n_sites": 335,
+    "n_sites_by_kind": {
+     "layer": 330,
+     "protected": 5
+    },
+    "n_contracts": 4,
+    "n_revocable_contracts": 3,
+    "menu_size_per_site": {
+     "min": 1,
+     "max": 3,
+     "mean": 2.952238805970149,
+     "sum": 989
+    },
+    "n_llms": 3,
+    "llms": [
+     "S",
+     "M",
+     "L"
+    ],
+    "llms_with_clients": [
+     "L",
+     "M",
+     "S"
+    ],
+    "n_clients": 15,
+    "n_units": 4858,
+    "units_per_replica": 8,
+    "sites_x_llms": 1005,
+    "grid": {
+     "slow_min": 5,
+     "fast_min": 1,
+     "T_slow": 288,
+     "T_fast": 1440,
+     "horizon_min": 1440,
+     "start_mow": 154
+    },
+    "n_trace_lenders": 23,
+    "n_trace_lenders_with_sites": 23,
+    "layer_capacity_gpus": 2640.0,
+    "v_top": {
+     "a2:c00": 1399,
+     "a2:c01": 459,
+     "a2:c02": 835,
+     "a2:c03": 526,
+     "a2:c04": 1033,
+     "a2:c05": 283,
+     "a2:c06": 502,
+     "a2:c07": 172,
+     "a2:c08": 238,
+     "a2:c09": 436,
+     "a2:c10": 146,
+     "a2:c11": 351,
+     "a2:c12": 240,
+     "a2:c13": 232,
+     "a2:c14": 71,
+     "a2:c15": 293,
+     "a2:c16": 396,
+     "a2:c17": 406,
+     "a2:c18": 223,
+     "a2:c19": 239,
+     "a1:A100-SXM4-80GB": 7,
+     "a1:A800-SXM4-80GB": 2,
+     "a1:GPU-series-2": 1
+    },
+    "sites_reachable_by_V": 8495,
+    "demand_load_h": 722.6042779879383,
+    "bl0a_usd": 13050.04173764952,
+    "gamma_note": [
+     "regional demand: Gamma = 1.72711e+07 (tightness 0.5, supply 2640 GPUs)"
+    ]
+   },
+   "schedule_s": 0.0038668999914079905,
+   "announcements": 5586,
+   "lp_estimate": {
+    "sites_unmerged": 335,
+    "sites_merged": 94,
+    "merge_s": 0.004134436836466193,
+    "estimate_s": 0.1366209879051894,
+    "merged": {
+     "n_vars": 977766,
+     "n_int": 728544,
+     "n_rows": 768931,
+     "nnz": 4220913,
+     "est_mb": 11796.465100000001,
+     "est_mb_lp": 2409.29302,
+     "n_triples": 804,
+     "n_cohorts": 29943,
+     "T_b": 288
+    },
+    "rule": "est_mb_lp = 130 + 5.4e-4 nnz MB (LP rule, opt/milp.py estimate_size; est_mb is the MILP rule)",
+    "unmerged": {
+     "n_vars": 3032858,
+     "n_int": 2005974,
+     "n_rows": 2225444,
+     "nnz": 14429964,
+     "est_mb": 39360.9028,
+     "est_mb_lp": 7922.18056,
+     "estimate_s": 0.4406687091104686
+    }
+   },
+   "lp_fits_gate": false,
+   "status": "ok",
+   "point_s": 0.7507622328121215,
+   "rss_mb_after": 352.203125
+  },
+  "e7r_V16_ML": {
+   "base": "e7r",
+   "config": "bench_e7r.json",
+   "V": 16,
+   "llm_set": "ML",
+   "overrides": {
+    "time.horizon_min": 1440,
+    "stranding.mu_over_beta_tilde": 1.0,
+    "lender_defaults.n_layers": 16,
+    "llms": [
+     {
+      "id": "M",
+      "catalog": "maas_a10",
+      "entry": "M",
+      "kappa_mult": 1.0
+     },
+     {
+      "id": "L",
+      "catalog": "maas_a10",
+      "entry": "L",
+      "kappa_mult": 1.0
+     }
+    ],
+    "borrowers.s_S": 0.0
+   },
+   "build_s": 0.15068722004070878,
+   "instance": {
+    "n_sites": 335,
+    "n_sites_by_kind": {
+     "layer": 330,
+     "protected": 5
+    },
+    "n_contracts": 4,
+    "n_revocable_contracts": 3,
+    "menu_size_per_site": {
+     "min": 1,
+     "max": 3,
+     "mean": 2.952238805970149,
+     "sum": 989
+    },
+    "n_llms": 2,
+    "llms": [
+     "M",
+     "L"
+    ],
+    "llms_with_clients": [
+     "L",
+     "M"
+    ],
+    "n_clients": 10,
+    "n_units": 4514,
+    "units_per_replica": 8,
+    "sites_x_llms": 670,
+    "grid": {
+     "slow_min": 5,
+     "fast_min": 1,
+     "T_slow": 288,
+     "T_fast": 1440,
+     "horizon_min": 1440,
+     "start_mow": 154
+    },
+    "n_trace_lenders": 23,
+    "n_trace_lenders_with_sites": 23,
+    "layer_capacity_gpus": 2640.0,
+    "v_top": {
+     "a2:c00": 1399,
+     "a2:c01": 459,
+     "a2:c02": 835,
+     "a2:c03": 526,
+     "a2:c04": 1033,
+     "a2:c05": 283,
+     "a2:c06": 502,
+     "a2:c07": 172,
+     "a2:c08": 238,
+     "a2:c09": 436,
+     "a2:c10": 146,
+     "a2:c11": 351,
+     "a2:c12": 240,
+     "a2:c13": 232,
+     "a2:c14": 71,
+     "a2:c15": 293,
+     "a2:c16": 396,
+     "a2:c17": 406,
+     "a2:c18": 223,
+     "a2:c19": 239,
+     "a1:A100-SXM4-80GB": 7,
+     "a1:A800-SXM4-80GB": 2,
+     "a1:GPU-series-2": 1
+    },
+    "sites_reachable_by_V": 8495,
+    "demand_load_h": 675.3424478230039,
+    "bl0a_usd": 13146.218974680944,
+    "gamma_note": [
+     "regional demand: Gamma = 1.36666e+07 (tightness 0.5, supply 2640 GPUs)"
+    ]
+   },
+   "schedule_s": 0.0038966338615864515,
+   "announcements": 5586,
+   "lp_estimate": {
+    "sites_unmerged": 335,
+    "sites_merged": 94,
+    "merge_s": 0.00420739408582449,
+    "estimate_s": 0.10159054980613291,
+    "merged": {
+     "n_vars": 651893,
+     "n_int": 485696,
+     "n_rows": 521111,
+     "nnz": 2814006,
+     "est_mb": 7997.8162,
+     "est_mb_lp": 1649.56324,
+     "n_triples": 536,
+     "n_cohorts": 19962,
+     "T_b": 288
+    },
+    "rule": "est_mb_lp = 130 + 5.4e-4 nnz MB (LP rule, opt/milp.py estimate_size; est_mb is the MILP rule)",
+    "unmerged": {
+     "n_vars": 2022120,
+     "n_int": 1337316,
+     "n_rows": 1515214,
+     "nnz": 9620649,
+     "est_mb": 26375.7523,
+     "est_mb_lp": 5325.15046,
+     "estimate_s": 0.31817988702096045
+    }
+   },
+   "lp_fits_gate": true,
+   "status": "ok",
+   "point_s": 0.5806424671318382,
+   "rss_mb_after": 352.203125
+  },
+  "e7r_V16_S": {
+   "base": "e7r",
+   "config": "bench_e7r.json",
+   "V": 16,
+   "llm_set": "S",
+   "overrides": {
+    "time.horizon_min": 1440,
+    "stranding.mu_over_beta_tilde": 1.0,
+    "lender_defaults.n_layers": 16,
+    "llms": [
+     {
+      "id": "S",
+      "catalog": "maas_a10",
+      "entry": "S",
+      "kappa_mult": 1.0
+     }
+    ],
+    "borrowers.s_S": 1.0
+   },
+   "build_s": 0.14014662592671812,
+   "instance": {
+    "n_sites": 335,
+    "n_sites_by_kind": {
+     "layer": 330,
+     "protected": 5
+    },
+    "n_contracts": 4,
+    "n_revocable_contracts": 3,
+    "menu_size_per_site": {
+     "min": 1,
+     "max": 3,
+     "mean": 2.952238805970149,
+     "sum": 989
+    },
+    "n_llms": 1,
+    "llms": [
+     "S"
+    ],
+    "llms_with_clients": [
+     "S"
+    ],
+    "n_clients": 5,
+    "n_units": 11026,
+    "units_per_replica": 8,
+    "sites_x_llms": 335,
+    "grid": {
+     "slow_min": 5,
+     "fast_min": 1,
+     "T_slow": 288,
+     "T_fast": 1440,
+     "horizon_min": 1440,
+     "start_mow": 154
+    },
+    "n_trace_lenders": 23,
+    "n_trace_lenders_with_sites": 23,
+    "layer_capacity_gpus": 2640.0,
+    "v_top": {
+     "a2:c00": 1399,
+     "a2:c01": 459,
+     "a2:c02": 835,
+     "a2:c03": 526,
+     "a2:c04": 1033,
+     "a2:c05": 283,
+     "a2:c06": 502,
+     "a2:c07": 172,
+     "a2:c08": 238,
+     "a2:c09": 436,
+     "a2:c10": 146,
+     "a2:c11": 351,
+     "a2:c12": 240,
+     "a2:c13": 232,
+     "a2:c14": 71,
+     "a2:c15": 293,
+     "a2:c16": 396,
+     "a2:c17": 406,
+     "a2:c18": 223,
+     "a2:c19": 239,
+     "a1:A100-SXM4-80GB": 7,
+     "a1:A800-SXM4-80GB": 2,
+     "a1:GPU-series-2": 1
+    },
+    "sites_reachable_by_V": 8495,
+    "demand_load_h": 1580.8984333094888,
+    "bl0a_usd": 11303.423798162847,
+    "gamma_note": [
+     "regional demand: Gamma = 8.27302e+07 (tightness 0.5, supply 2640 GPUs)"
+    ]
+   },
+   "schedule_s": 0.003921611933037639,
+   "announcements": 5586,
+   "lp_estimate": {
+    "sites_unmerged": 335,
+    "sites_merged": 94,
+    "merge_s": 0.004118167096748948,
+    "estimate_s": 0.06691859499551356,
+    "merged": {
+     "n_vars": 325873,
+     "n_int": 242848,
+     "n_rows": 273345,
+     "nnz": 1406907,
+     "est_mb": 4198.6489,
+     "est_mb_lp": 889.72978,
+     "n_triples": 268,
+     "n_cohorts": 9981,
+     "T_b": 288
+    },
+    "rule": "est_mb_lp = 130 + 5.4e-4 nnz MB (LP rule, opt/milp.py estimate_size; est_mb is the MILP rule)",
+    "unmerged": {
+     "n_vars": 1010738,
+     "n_int": 668658,
+     "n_rows": 805163,
+     "nnz": 4809315,
+     "est_mb": 13385.150500000002,
+     "est_mb_lp": 2727.0301,
+     "estimate_s": 0.19489274406805634
+    }
+   },
+   "lp_fits_gate": true,
+   "status": "ok",
+   "point_s": 0.413084426894784,
+   "rss_mb_after": 352.203125
+  },
+  "e7f_V32_SML": {
+   "base": "e7f",
+   "config": "bench_e7f.json",
+   "V": 32,
+   "llm_set": "SML",
+   "overrides": {
+    "time.horizon_min": 1440,
+    "stranding.mu_over_beta_tilde": 1.0,
+    "lender_defaults.n_layers": 32
+   },
+   "build_s": 0.5263158299494535,
+   "instance": {
+    "n_sites": 649,
+    "n_sites_by_kind": {
+     "layer": 644,
+     "protected": 5
+    },
+    "n_contracts": 21,
+    "n_revocable_contracts": 20,
+    "menu_size_per_site": {
+     "min": 1,
+     "max": 20,
+     "mean": 19.784283513097073,
+     "sum": 12840
+    },
+    "n_llms": 3,
+    "llms": [
+     "S",
+     "M",
+     "L"
+    ],
+    "llms_with_clients": [
+     "L",
+     "M",
+     "S"
+    ],
+    "n_clients": 15,
+    "n_units": 9470,
+    "units_per_replica": 8,
+    "sites_x_llms": 1947,
+    "grid": {
+     "slow_min": 5,
+     "fast_min": 1,
+     "T_slow": 288,
+     "T_fast": 1440,
+     "horizon_min": 1440,
+     "start_mow": 154
+    },
+    "n_trace_lenders": 23,
+    "n_trace_lenders_with_sites": 23,
+    "layer_capacity_gpus": 5152.0,
+    "v_top": {
+     "a2:c00": 1386,
+     "a2:c01": 448,
+     "a2:c02": 822,
+     "a2:c03": 519,
+     "a2:c04": 1029,
+     "a2:c05": 231,
+     "a2:c06": 499,
+     "a2:c07": 170,
+     "a2:c08": 237,
+     "a2:c09": 434,
+     "a2:c10": 142,
+     "a2:c11": 351,
+     "a2:c12": 235,
+     "a2:c13": 231,
+     "a2:c14": 60,
+     "a2:c15": 288,
+     "a2:c16": 395,
+     "a2:c17": 397,
+     "a2:c18": 207,
+     "a2:c19": 239,
+     "a1:A100-SXM4-80GB": 2,
+     "a1:A800-SXM4-80GB": 1,
+     "a1:GPU-series-2": 1
+    },
+    "sites_reachable_by_V": 8329,
+    "demand_load_h": 1410.1731970431283,
+    "bl0a_usd": 25467.35417892815,
+    "gamma_note": [
+     "regional demand: Gamma = 3.37048e+07 (tightness 0.5, supply 5152 GPUs)"
+    ]
+   },
+   "schedule_s": 0.006126993102952838,
+   "announcements": 4799,
+   "lp_estimate": {
+    "sites_unmerged": 649,
+    "sites_merged": 105,
+    "merge_s": 0.007563588907942176,
+    "estimate_s": 0.9422340209130198,
+    "merged": {
+     "n_vars": 7876822,
+     "n_int": 6526899,
+     "n_rows": 6238154,
+     "nnz": 41332238,
+     "est_mb": 111997.0426,
+     "est_mb_lp": 22449.40852,
+     "n_triples": 5880,
+     "n_cohorts": 216777,
+     "T_b": 288
+    },
+    "rule": "est_mb_lp = 130 + 5.4e-4 nnz MB (LP rule, opt/milp.py estimate_size; est_mb is the MILP rule)",
+    "unmerged": {
+     "n_vars": 35644213,
+     "n_int": 25504845,
+     "n_rows": 24686323,
+     "nnz": 240577948,
+     "est_mb": 649960.4596000001,
+     "est_mb_lp": 130042.09192,
+     "estimate_s": 5.434777915943414
+    }
+   },
+   "lp_fits_gate": false,
+   "status": "ok",
+   "point_s": 6.920520298182964,
+   "rss_mb_after": 566.66796875
+  },
+  "e7f_V32_ML": {
+   "base": "e7f",
+   "config": "bench_e7f.json",
+   "V": 32,
+   "llm_set": "ML",
+   "overrides": {
+    "time.horizon_min": 1440,
+    "stranding.mu_over_beta_tilde": 1.0,
+    "lender_defaults.n_layers": 32,
+    "llms": [
+     {
+      "id": "M",
+      "catalog": "maas_a10",
+      "entry": "M",
+      "kappa_mult": 1.0
+     },
+     {
+      "id": "L",
+      "catalog": "maas_a10",
+      "entry": "L",
+      "kappa_mult": 1.0
+     }
+    ],
+    "borrowers.s_S": 0.0
+   },
+   "build_s": 0.5175444988999516,
+   "instance": {
+    "n_sites": 649,
+    "n_sites_by_kind": {
+     "layer": 644,
+     "protected": 5
+    },
+    "n_contracts": 21,
+    "n_revocable_contracts": 20,
+    "menu_size_per_site": {
+     "min": 1,
+     "max": 20,
+     "mean": 19.784283513097073,
+     "sum": 12840
+    },
+    "n_llms": 2,
+    "llms": [
+     "M",
+     "L"
+    ],
+    "llms_with_clients": [
+     "L",
+     "M"
+    ],
+    "n_clients": 10,
+    "n_units": 8805,
+    "units_per_replica": 8,
+    "sites_x_llms": 1298,
+    "grid": {
+     "slow_min": 5,
+     "fast_min": 1,
+     "T_slow": 288,
+     "T_fast": 1440,
+     "horizon_min": 1440,
+     "start_mow": 154
+    },
+    "n_trace_lenders": 23,
+    "n_trace_lenders_with_sites": 23,
+    "layer_capacity_gpus": 5152.0,
+    "v_top": {
+     "a2:c00": 1386,
+     "a2:c01": 448,
+     "a2:c02": 822,
+     "a2:c03": 519,
+     "a2:c04": 1029,
+     "a2:c05": 231,
+     "a2:c06": 499,
+     "a2:c07": 170,
+     "a2:c08": 237,
+     "a2:c09": 434,
+     "a2:c10": 142,
+     "a2:c11": 351,
+     "a2:c12": 235,
+     "a2:c13": 231,
+     "a2:c14": 60,
+     "a2:c15": 288,
+     "a2:c16": 395,
+     "a2:c17": 397,
+     "a2:c18": 207,
+     "a2:c19": 239,
+     "a1:A100-SXM4-80GB": 2,
+     "a1:A800-SXM4-80GB": 1,
+     "a1:GPU-series-2": 1
+    },
+    "sites_reachable_by_V": 8329,
+    "demand_load_h": 1317.9410193879228,
+    "bl0a_usd": 25655.045514225847,
+    "gamma_note": [
+     "regional demand: Gamma = 2.66705e+07 (tightness 0.5, supply 5152 GPUs)"
+    ]
+   },
+   "schedule_s": 0.006206223042681813,
+   "announcements": 4799,
+   "lp_estimate": {
+    "sites_unmerged": 649,
+    "sites_merged": 105,
+    "merge_s": 0.007943514036014676,
+    "estimate_s": 0.6888819329906255,
+    "merged": {
+     "n_vars": 5251259,
+     "n_int": 4351266,
+     "n_rows": 4168315,
+     "nnz": 27553704,
+     "est_mb": 74795.00080000001,
+     "est_mb_lp": 15009.00016,
+     "n_triples": 3920,
+     "n_cohorts": 144518,
+     "T_b": 288
+    },
+    "rule": "est_mb_lp = 130 + 5.4e-4 nnz MB (LP rule, opt/milp.py estimate_size; est_mb is the MILP rule)",
+    "unmerged": {
+     "n_vars": 23763213,
+     "n_int": 17003230,
+     "n_rows": 16519221,
+     "nnz": 160383729,
+     "est_mb": 433436.06830000004,
+     "est_mb_lp": 86737.21366,
+     "estimate_s": 3.7955709090456367
+    }
+   },
+   "lp_fits_gate": false,
+   "status": "ok",
+   "point_s": 5.019408457912505,
+   "rss_mb_after": 566.66796875
+  },
+  "e7f_V32_S": {
+   "base": "e7f",
+   "config": "bench_e7f.json",
+   "V": 32,
+   "llm_set": "S",
+   "overrides": {
+    "time.horizon_min": 1440,
+    "stranding.mu_over_beta_tilde": 1.0,
+    "lender_defaults.n_layers": 32,
+    "llms": [
+     {
+      "id": "S",
+      "catalog": "maas_a10",
+      "entry": "S",
+      "kappa_mult": 1.0
+     }
+    ],
+    "borrowers.s_S": 1.0
+   },
+   "build_s": 0.5073223570361733,
+   "instance": {
+    "n_sites": 649,
+    "n_sites_by_kind": {
+     "layer": 644,
+     "protected": 5
+    },
+    "n_contracts": 21,
+    "n_revocable_contracts": 20,
+    "menu_size_per_site": {
+     "min": 1,
+     "max": 20,
+     "mean": 19.784283513097073,
+     "sum": 12840
+    },
+    "n_llms": 1,
+    "llms": [
+     "S"
+    ],
+    "llms_with_clients": [
+     "S"
+    ],
+    "n_clients": 5,
+    "n_units": 21515,
+    "units_per_replica": 8,
+    "sites_x_llms": 649,
+    "grid": {
+     "slow_min": 5,
+     "fast_min": 1,
+     "T_slow": 288,
+     "T_fast": 1440,
+     "horizon_min": 1440,
+     "start_mow": 154
+    },
+    "n_trace_lenders": 23,
+    "n_trace_lenders_with_sites": 23,
+    "layer_capacity_gpus": 5152.0,
+    "v_top": {
+     "a2:c00": 1386,
+     "a2:c01": 448,
+     "a2:c02": 822,
+     "a2:c03": 519,
+     "a2:c04": 1029,
+     "a2:c05": 231,
+     "a2:c06": 499,
+     "a2:c07": 170,
+     "a2:c08": 237,
+     "a2:c09": 434,
+     "a2:c10": 142,
+     "a2:c11": 351,
+     "a2:c12": 235,
+     "a2:c13": 231,
+     "a2:c14": 60,
+     "a2:c15": 288,
+     "a2:c16": 395,
+     "a2:c17": 397,
+     "a2:c18": 207,
+     "a2:c19": 239,
+     "a1:A100-SXM4-80GB": 2,
+     "a1:A800-SXM4-80GB": 1,
+     "a1:GPU-series-2": 1
+    },
+    "sites_reachable_by_V": 8329,
+    "demand_load_h": 3085.1472456100328,
+    "bl0a_usd": 22058.802806111733,
+    "gamma_note": [
+     "regional demand: Gamma = 1.61449e+08 (tightness 0.5, supply 5152 GPUs)"
+    ]
+   },
+   "schedule_s": 0.006149949971586466,
+   "announcements": 4799,
+   "lp_estimate": {
+    "sites_unmerged": 649,
+    "sites_merged": 105,
+    "merge_s": 0.007521223044022918,
+    "estimate_s": 0.44668286805972457,
+    "merged": {
+     "n_vars": 2625563,
+     "n_int": 2175633,
+     "n_rows": 2098532,
+     "nnz": 13778534,
+     "est_mb": 37602.0418,
+     "est_mb_lp": 7570.40836,
+     "n_triples": 1960,
+     "n_cohorts": 72259,
+     "T_b": 288
+    },
+    "rule": "est_mb_lp = 130 + 5.4e-4 nnz MB (LP rule, opt/milp.py estimate_size; est_mb is the MILP rule)",
+    "unmerged": {
+     "n_vars": 11881000,
+     "n_int": 8501615,
+     "n_rows": 8352467,
+     "nnz": 80194219,
+     "est_mb": 216924.39130000002,
+     "est_mb_lp": 43434.87826,
+     "estimate_s": 2.2494288759771734
+    }
+   },
+   "lp_fits_gate": false,
+   "status": "ok",
+   "point_s": 3.2241247871425003,
+   "rss_mb_after": 566.66796875
+  },
+  "e7r_V32_SML": {
+   "base": "e7r",
+   "config": "bench_e7r.json",
+   "V": 32,
+   "llm_set": "SML",
+   "overrides": {
+    "time.horizon_min": 1440,
+    "stranding.mu_over_beta_tilde": 1.0,
+    "lender_defaults.n_layers": 32
+   },
+   "build_s": 0.16934967995621264,
+   "instance": {
+    "n_sites": 655,
+    "n_sites_by_kind": {
+     "layer": 650,
+     "protected": 5
+    },
+    "n_contracts": 4,
+    "n_revocable_contracts": 3,
+    "menu_size_per_site": {
+     "min": 1,
+     "max": 3,
+     "mean": 2.9755725190839692,
+     "sum": 1949
+    },
+    "n_llms": 3,
+    "llms": [
+     "S",
+     "M",
+     "L"
+    ],
+    "llms_with_clients": [
+     "L",
+     "M",
+     "S"
+    ],
+    "n_clients": 15,
+    "n_units": 9560,
+    "units_per_replica": 8,
+    "sites_x_llms": 1965,
+    "grid": {
+     "slow_min": 5,
+     "fast_min": 1,
+     "T_slow": 288,
+     "T_fast": 1440,
+     "horizon_min": 1440,
+     "start_mow": 154
+    },
+    "n_trace_lenders": 23,
+    "n_trace_lenders_with_sites": 23,
+    "layer_capacity_gpus": 5200.0,
+    "v_top": {
+     "a2:c00": 1399,
+     "a2:c01": 459,
+     "a2:c02": 835,
+     "a2:c03": 526,
+     "a2:c04": 1033,
+     "a2:c05": 283,
+     "a2:c06": 502,
+     "a2:c07": 172,
+     "a2:c08": 238,
+     "a2:c09": 436,
+     "a2:c10": 146,
+     "a2:c11": 351,
+     "a2:c12": 240,
+     "a2:c13": 232,
+     "a2:c14": 71,
+     "a2:c15": 293,
+     "a2:c16": 396,
+     "a2:c17": 406,
+     "a2:c18": 223,
+     "a2:c19": 239,
+     "a1:A100-SXM4-80GB": 7,
+     "a1:A800-SXM4-80GB": 2,
+     "a1:GPU-series-2": 1
+    },
+    "sites_reachable_by_V": 8495,
+    "demand_load_h": 1423.3114566429088,
+    "bl0a_usd": 25704.627665067233,
+    "gamma_note": [
+     "regional demand: Gamma = 3.40188e+07 (tightness 0.5, supply 5200 GPUs)"
+    ]
+   },
+   "schedule_s": 0.0060854400508105755,
+   "announcements": 5929,
+   "lp_estimate": {
+    "sites_unmerged": 655,
+    "sites_merged": 108,
+    "merge_s": 0.007354913977906108,
+    "estimate_s": 0.15611274214461446,
+    "merged": {
+     "n_vars": 1111790,
+     "n_int": 820362,
+     "n_rows": 868897,
+     "nnz": 4841391,
+     "est_mb": 13471.755700000002,
+     "est_mb_lp": 2744.35114,
+     "n_triples": 930,
+     "n_cohorts": 32253,
+     "T_b": 288
+    },
+    "rule": "est_mb_lp = 130 + 5.4e-4 nnz MB (LP rule, opt/milp.py estimate_size; est_mb is the MILP rule)",
+    "unmerged": {
+     "n_vars": 5745267,
+     "n_int": 3678645,
+     "n_rows": 4139202,
+     "nnz": 27967711,
+     "est_mb": 75912.81970000001,
+     "est_mb_lp": 15232.56394,
+     "estimate_s": 0.8411323630716652
+    }
+   },
+   "lp_fits_gate": false,
+   "status": "ok",
+   "point_s": 1.1834386971313506,
+   "rss_mb_after": 566.66796875
+  },
+  "e7r_V32_ML": {
+   "base": "e7r",
+   "config": "bench_e7r.json",
+   "V": 32,
+   "llm_set": "ML",
+   "overrides": {
+    "time.horizon_min": 1440,
+    "stranding.mu_over_beta_tilde": 1.0,
+    "lender_defaults.n_layers": 32,
+    "llms": [
+     {
+      "id": "M",
+      "catalog": "maas_a10",
+      "entry": "M",
+      "kappa_mult": 1.0
+     },
+     {
+      "id": "L",
+      "catalog": "maas_a10",
+      "entry": "L",
+      "kappa_mult": 1.0
+     }
+    ],
+    "borrowers.s_S": 0.0
+   },
+   "build_s": 0.15895429300144315,
+   "instance": {
+    "n_sites": 655,
+    "n_sites_by_kind": {
+     "layer": 650,
+     "protected": 5
+    },
+    "n_contracts": 4,
+    "n_revocable_contracts": 3,
+    "menu_size_per_site": {
+     "min": 1,
+     "max": 3,
+     "mean": 2.9755725190839692,
+     "sum": 1949
+    },
+    "n_llms": 2,
+    "llms": [
+     "M",
+     "L"
+    ],
+    "llms_with_clients": [
+     "L",
+     "M"
+    ],
+    "n_clients": 10,
+    "n_units": 8887,
+    "units_per_replica": 8,
+    "sites_x_llms": 1310,
+    "grid": {
+     "slow_min": 5,
+     "fast_min": 1,
+     "T_slow": 288,
+     "T_fast": 1440,
+     "horizon_min": 1440,
+     "start_mow": 154
+    },
+    "n_trace_lenders": 23,
+    "n_trace_lenders_with_sites": 23,
+    "layer_capacity_gpus": 5200.0,
+    "v_top": {
+     "a2:c00": 1399,
+     "a2:c01": 459,
+     "a2:c02": 835,
+     "a2:c03": 526,
+     "a2:c04": 1033,
+     "a2:c05": 283,
+     "a2:c06": 502,
+     "a2:c07": 172,
+     "a2:c08": 238,
+     "a2:c09": 436,
+     "a2:c10": 146,
+     "a2:c11": 351,
+     "a2:c12": 240,
+     "a2:c13": 232,
+     "a2:c14": 71,
+     "a2:c15": 293,
+     "a2:c16": 396,
+     "a2:c17": 406,
+     "a2:c18": 223,
+     "a2:c19": 239,
+     "a1:A100-SXM4-80GB": 7,
+     "a1:A800-SXM4-80GB": 2,
+     "a1:GPU-series-2": 1
+    },
+    "sites_reachable_by_V": 8495,
+    "demand_load_h": 1330.2199729847048,
+    "bl0a_usd": 25894.06767740186,
+    "gamma_note": [
+     "regional demand: Gamma = 2.6919e+07 (tightness 0.5, supply 5200 GPUs)"
+    ]
+   },
+   "schedule_s": 0.006383502157405019,
+   "announcements": 5929,
+   "lp_estimate": {
+    "sites_unmerged": 655,
+    "sites_merged": 108,
+    "merge_s": 0.00738944299519062,
+    "estimate_s": 0.1162241988349706,
+    "merged": {
+     "n_vars": 741247,
+     "n_int": 546908,
+     "n_rows": 589099,
+     "nnz": 3227686,
+     "est_mb": 9114.7522,
+     "est_mb_lp": 1872.95044,
+     "n_triples": 620,
+     "n_cohorts": 21502,
+     "T_b": 288
+    },
+    "rule": "est_mb_lp = 130 + 5.4e-4 nnz MB (LP rule, opt/milp.py estimate_size; est_mb is the MILP rule)",
+    "unmerged": {
+     "n_vars": 3830590,
+     "n_int": 2452430,
+     "n_rows": 2821714,
+     "nnz": 18646523,
+     "est_mb": 50745.612100000006,
+     "est_mb_lp": 10199.12242,
+     "estimate_s": 0.607985395938158
+    }
+   },
+   "lp_fits_gate": true,
+   "status": "ok",
+   "point_s": 0.9000805490650237,
+   "rss_mb_after": 566.66796875
+  },
+  "e7r_V32_S": {
+   "base": "e7r",
+   "config": "bench_e7r.json",
+   "V": 32,
+   "llm_set": "S",
+   "overrides": {
+    "time.horizon_min": 1440,
+    "stranding.mu_over_beta_tilde": 1.0,
+    "lender_defaults.n_layers": 32,
+    "llms": [
+     {
+      "id": "S",
+      "catalog": "maas_a10",
+      "entry": "S",
+      "kappa_mult": 1.0
+     }
+    ],
+    "borrowers.s_S": 1.0
+   },
+   "build_s": 0.14608931285329163,
+   "instance": {
+    "n_sites": 655,
+    "n_sites_by_kind": {
+     "layer": 650,
+     "protected": 5
+    },
+    "n_contracts": 4,
+    "n_revocable_contracts": 3,
+    "menu_size_per_site": {
+     "min": 1,
+     "max": 3,
+     "mean": 2.9755725190839692,
+     "sum": 1949
+    },
+    "n_llms": 1,
+    "llms": [
+     "S"
+    ],
+    "llms_with_clients": [
+     "S"
+    ],
+    "n_clients": 5,
+    "n_units": 21716,
+    "units_per_replica": 8,
+    "sites_x_llms": 655,
+    "grid": {
+     "slow_min": 5,
+     "fast_min": 1,
+     "T_slow": 288,
+     "T_fast": 1440,
+     "horizon_min": 1440,
+     "start_mow": 154
+    },
+    "n_trace_lenders": 23,
+    "n_trace_lenders_with_sites": 23,
+    "layer_capacity_gpus": 5200.0,
+    "v_top": {
+     "a2:c00": 1399,
+     "a2:c01": 459,
+     "a2:c02": 835,
+     "a2:c03": 526,
+     "a2:c04": 1033,
+     "a2:c05": 283,
+     "a2:c06": 502,
+     "a2:c07": 172,
+     "a2:c08": 238,
+     "a2:c09": 436,
+     "a2:c10": 146,
+     "a2:c11": 351,
+     "a2:c12": 240,
+     "a2:c13": 232,
+     "a2:c14": 71,
+     "a2:c15": 293,
+     "a2:c16": 396,
+     "a2:c17": 406,
+     "a2:c18": 223,
+     "a2:c19": 239,
+     "a1:A100-SXM4-80GB": 7,
+     "a1:A800-SXM4-80GB": 2,
+     "a1:GPU-series-2": 1
+    },
+    "sites_reachable_by_V": 8495,
+    "demand_load_h": 3113.890853488387,
+    "bl0a_usd": 22264.31960244197,
+    "gamma_note": [
+     "regional demand: Gamma = 1.62953e+08 (tightness 0.5, supply 5200 GPUs)"
+    ]
+   },
+   "schedule_s": 0.006069384980946779,
+   "announcements": 5929,
+   "lp_estimate": {
+    "sites_unmerged": 655,
+    "sites_merged": 108,
+    "merge_s": 0.00730856298469007,
+    "estimate_s": 0.07648481684736907,
+    "merged": {
+     "n_vars": 370543,
+     "n_int": 273454,
+     "n_rows": 309355,
+     "nnz": 1613705,
+     "est_mb": 4757.0035,
+     "est_mb_lp": 1001.4007,
+     "n_triples": 310,
+     "n_cohorts": 10751,
+     "T_b": 288
+    },
+    "rule": "est_mb_lp = 130 + 5.4e-4 nnz MB (LP rule, opt/milp.py estimate_size; est_mb is the MILP rule)",
+    "unmerged": {
+     "n_vars": 1914677,
+     "n_int": 1226215,
+     "n_rows": 1504581,
+     "nnz": 9321188,
+     "est_mb": 25567.2076,
+     "est_mb_lp": 5163.44152,
+     "estimate_s": 0.36802764516323805
+    }
+   },
+   "lp_fits_gate": true,
+   "status": "ok",
+   "point_s": 0.6095950840972364,
+   "rss_mb_after": 566.66796875
+  },
+  "e7f_V64_SML": {
+   "base": "e7f",
+   "config": "bench_e7f.json",
+   "V": 64,
+   "llm_set": "SML",
+   "overrides": {
+    "time.horizon_min": 1440,
+    "stranding.mu_over_beta_tilde": 1.0,
+    "lender_defaults.n_layers": 64
+   },
+   "build_s": 0.5726103300694376,
+   "instance": {
+    "n_sites": 1285,
+    "n_sites_by_kind": {
+     "layer": 1280,
+     "protected": 5
+    },
+    "n_contracts": 21,
+    "n_revocable_contracts": 20,
+    "menu_size_per_site": {
+     "min": 1,
+     "max": 20,
+     "mean": 19.891050583657588,
+     "sum": 25560
+    },
+    "n_llms": 3,
+    "llms": [
+     "S",
+     "M",
+     "L"
+    ],
+    "llms_with_clients": [
+     "L",
+     "M",
+     "S"
+    ],
+    "n_clients": 15,
+    "n_units": 18817,
+    "units_per_replica": 8,
+    "sites_x_llms": 3855,
+    "grid": {
+     "slow_min": 5,
+     "fast_min": 1,
+     "T_slow": 288,
+     "T_fast": 1440,
+     "horizon_min": 1440,
+     "start_mow": 154
+    },
+    "n_trace_lenders": 23,
+    "n_trace_lenders_with_sites": 23,
+    "layer_capacity_gpus": 10240.0,
+    "v_top": {
+     "a2:c00": 1386,
+     "a2:c01": 448,
+     "a2:c02": 822,
+     "a2:c03": 519,
+     "a2:c04": 1029,
+     "a2:c05": 231,
+     "a2:c06": 499,
+     "a2:c07": 170,
+     "a2:c08": 237,
+     "a2:c09": 434,
+     "a2:c10": 142,
+     "a2:c11": 351,
+     "a2:c12": 235,
+     "a2:c13": 231,
+     "a2:c14": 60,
+     "a2:c15": 288,
+     "a2:c16": 395,
+     "a2:c17": 397,
+     "a2:c18": 207,
+     "a2:c19": 239,
+     "a1:A100-SXM4-80GB": 2,
+     "a1:A800-SXM4-80GB": 1,
+     "a1:GPU-series-2": 1
+    },
+    "sites_reachable_by_V": 8329,
+    "demand_load_h": 2802.8287146198822,
+    "bl0a_usd": 50618.34370967086,
+    "gamma_note": [
+     "regional demand: Gamma = 6.69908e+07 (tightness 0.5, supply 10240 GPUs)"
+    ]
+   },
+   "schedule_s": 0.010322791058570147,
+   "announcements": 4799,
+   "lp_estimate": {
+    "sites_unmerged": 1285,
+    "sites_merged": 105,
+    "merge_s": 0.014745068037882447,
+    "estimate_s": 0.9461863848846406,
+    "merged": {
+     "n_vars": 7876822,
+     "n_int": 6526899,
+     "n_rows": 6238154,
+     "nnz": 41332238,
+     "est_mb": 111997.0426,
+     "est_mb_lp": 22449.40852,
+     "n_triples": 5880,
+     "n_cohorts": 216777,
+     "T_b": 288
+    },
+    "rule": "est_mb_lp = 130 + 5.4e-4 nnz MB (LP rule, opt/milp.py estimate_size; est_mb is the MILP rule)",
+    "unmerged": {
+     "n_vars": 67844477,
+     "n_int": 47408685,
+     "n_rows": 45988119,
+     "nnz": 473005852,
+     "est_mb": 1277515.8004,
+     "est_mb_lp": 255553.16008,
+     "estimate_s": 10.656615637009963
+    }
+   },
+   "lp_fits_gate": false,
+   "status": "ok",
+   "point_s": 12.206244172994047,
+   "rss_mb_after": 990.78515625
+  },
+  "e7f_V64_ML": {
+   "base": "e7f",
+   "config": "bench_e7f.json",
+   "V": 64,
+   "llm_set": "ML",
+   "overrides": {
+    "time.horizon_min": 1440,
+    "stranding.mu_over_beta_tilde": 1.0,
+    "lender_defaults.n_layers": 64,
+    "llms": [
+     {
+      "id": "M",
+      "catalog": "maas_a10",
+      "entry": "M",
+      "kappa_mult": 1.0
+     },
+     {
+      "id": "L",
+      "catalog": "maas_a10",
+      "entry": "L",
+      "kappa_mult": 1.0
+     }
+    ],
+    "borrowers.s_S": 0.0
+   },
+   "build_s": 0.5310058500617743,
+   "instance": {
+    "n_sites": 1285,
+    "n_sites_by_kind": {
+     "layer": 1280,
+     "protected": 5
+    },
+    "n_contracts": 21,
+    "n_revocable_contracts": 20,
+    "menu_size_per_site": {
+     "min": 1,
+     "max": 20,
+     "mean": 19.891050583657588,
+     "sum": 25560
+    },
+    "n_llms": 2,
+    "llms": [
+     "M",
+     "L"
+    ],
+    "llms_with_clients": [
+     "L",
+     "M"
+    ],
+    "n_clients": 10,
+    "n_units": 17495,
+    "units_per_replica": 8,
+    "sites_x_llms": 2570,
+    "grid": {
+     "slow_min": 5,
+     "fast_min": 1,
+     "T_slow": 288,
+     "T_fast": 1440,
+     "horizon_min": 1440,
+     "start_mow": 154
+    },
+    "n_trace_lenders": 23,
+    "n_trace_lenders_with_sites": 23,
+    "layer_capacity_gpus": 10240.0,
+    "v_top": {
+     "a2:c00": 1386,
+     "a2:c01": 448,
+     "a2:c02": 822,
+     "a2:c03": 519,
+     "a2:c04": 1029,
+     "a2:c05": 231,
+     "a2:c06": 499,
+     "a2:c07": 170,
+     "a2:c08": 237,
+     "a2:c09": 434,
+     "a2:c10": 142,
+     "a2:c11": 351,
+     "a2:c12": 235,
+     "a2:c13": 231,
+     "a2:c14": 60,
+     "a2:c15": 288,
+     "a2:c16": 395,
+     "a2:c17": 397,
+     "a2:c18": 207,
+     "a2:c19": 239,
+     "a1:A100-SXM4-80GB": 2,
+     "a1:A800-SXM4-80GB": 1,
+     "a1:GPU-series-2": 1
+    },
+    "sites_reachable_by_V": 8329,
+    "demand_load_h": 2619.510100646803,
+    "bl0a_usd": 50991.39481088366,
+    "gamma_note": [
+     "regional demand: Gamma = 5.30097e+07 (tightness 0.5, supply 10240 GPUs)"
+    ]
+   },
+   "schedule_s": 0.010152132948860526,
+   "announcements": 4799,
+   "lp_estimate": {
+    "sites_unmerged": 1285,
+    "sites_merged": 105,
+    "merge_s": 0.014004855882376432,
+    "estimate_s": 0.687655194895342,
+    "merged": {
+     "n_vars": 5251259,
+     "n_int": 4351266,
+     "n_rows": 4168315,
+     "nnz": 27553704,
+     "est_mb": 74795.00080000001,
+     "est_mb_lp": 15009.00016,
+     "n_triples": 3920,
+     "n_cohorts": 144518,
+     "T_b": 288
+    },
+    "rule": "est_mb_lp = 130 + 5.4e-4 nnz MB (LP rule, opt/milp.py estimate_size; est_mb is the MILP rule)",
+    "unmerged": {
+     "n_vars": 45230449,
+     "n_int": 31605790,
+     "n_rows": 30781357,
+     "nnz": 315335081,
+     "est_mb": 851804.7187000001,
+     "est_mb_lp": 170410.94374,
+     "estimate_s": 7.42124567902647
+    }
+   },
+   "lp_fits_gate": false,
+   "status": "ok",
+   "point_s": 8.66925430786796,
+   "rss_mb_after": 990.78515625
+  },
+  "e7f_V64_S": {
+   "base": "e7f",
+   "config": "bench_e7f.json",
+   "V": 64,
+   "llm_set": "S",
+   "overrides": {
+    "time.horizon_min": 1440,
+    "stranding.mu_over_beta_tilde": 1.0,
+    "lender_defaults.n_layers": 64,
+    "llms": [
+     {
+      "id": "S",
+      "catalog": "maas_a10",
+      "entry": "S",
+      "kappa_mult": 1.0
+     }
+    ],
+    "borrowers.s_S": 1.0
+   },
+   "build_s": 0.5186680709011853,
+   "instance": {
+    "n_sites": 1285,
+    "n_sites_by_kind": {
+     "layer": 1280,
+     "protected": 5
+    },
+    "n_contracts": 21,
+    "n_revocable_contracts": 20,
+    "menu_size_per_site": {
+     "min": 1,
+     "max": 20,
+     "mean": 19.891050583657588,
+     "sum": 25560
+    },
+    "n_llms": 1,
+    "llms": [
+     "S"
+    ],
+    "llms_with_clients": [
+     "S"
+    ],
+    "n_clients": 5,
+    "n_units": 42761,
+    "units_per_replica": 8,
+    "sites_x_llms": 1285,
+    "grid": {
+     "slow_min": 5,
+     "fast_min": 1,
+     "T_slow": 288,
+     "T_fast": 1440,
+     "horizon_min": 1440,
+     "start_mow": 154
+    },
+    "n_trace_lenders": 23,
+    "n_trace_lenders_with_sites": 23,
+    "layer_capacity_gpus": 10240.0,
+    "v_top": {
+     "a2:c00": 1386,
+     "a2:c01": 448,
+     "a2:c02": 822,
+     "a2:c03": 519,
+     "a2:c04": 1029,
+     "a2:c05": 231,
+     "a2:c06": 499,
+     "a2:c07": 170,
+     "a2:c08": 237,
+     "a2:c09": 434,
+     "a2:c10": 142,
+     "a2:c11": 351,
+     "a2:c12": 235,
+     "a2:c13": 231,
+     "a2:c14": 60,
+     "a2:c15": 288,
+     "a2:c16": 395,
+     "a2:c17": 397,
+     "a2:c18": 207,
+     "a2:c19": 239,
+     "a1:A100-SXM4-80GB": 2,
+     "a1:A800-SXM4-80GB": 1,
+     "a1:GPU-series-2": 1
+    },
+    "sites_reachable_by_V": 8329,
+    "demand_load_h": 6131.969680715595,
+    "bl0a_usd": 43843.583217116495,
+    "gamma_note": [
+     "regional demand: Gamma = 3.20893e+08 (tightness 0.5, supply 10240 GPUs)"
+    ]
+   },
+   "schedule_s": 0.010189217049628496,
+   "announcements": 4799,
+   "lp_estimate": {
+    "sites_unmerged": 1285,
+    "sites_merged": 105,
+    "merge_s": 0.014276650035753846,
+    "estimate_s": 0.44565858296118677,
+    "merged": {
+     "n_vars": 2625563,
+     "n_int": 2175633,
+     "n_rows": 2098532,
+     "nnz": 13778534,
+     "est_mb": 37602.0418,
+     "est_mb_lp": 7570.40836,
+     "n_triples": 1960,
+     "n_cohorts": 72259,
+     "T_b": 288
+    },
+    "rule": "est_mb_lp = 130 + 5.4e-4 nnz MB (LP rule, opt/milp.py estimate_size; est_mb is the MILP rule)",
+    "unmerged": {
+     "n_vars": 22614028,
+     "n_int": 15802895,
+     "n_rows": 15575295,
+     "nnz": 157670771,
+     "est_mb": 426111.08170000004,
+     "est_mb_lp": 85272.21634,
+     "estimate_s": 4.378010529791936
+    }
+   },
+   "lp_fits_gate": false,
+   "status": "ok",
+   "point_s": 5.3764965971931815,
+   "rss_mb_after": 990.78515625
+  },
+  "e7r_V64_SML": {
+   "base": "e7r",
+   "config": "bench_e7r.json",
+   "V": 64,
+   "llm_set": "SML",
+   "overrides": {
+    "time.horizon_min": 1440,
+    "stranding.mu_over_beta_tilde": 1.0,
+    "lender_defaults.n_layers": 64
+   },
+   "build_s": 0.18303442792966962,
+   "instance": {
+    "n_sites": 1295,
+    "n_sites_by_kind": {
+     "layer": 1290,
+     "protected": 5
+    },
+    "n_contracts": 4,
+    "n_revocable_contracts": 3,
+    "menu_size_per_site": {
+     "min": 1,
+     "max": 3,
+     "mean": 2.9876447876447876,
+     "sum": 3869
+    },
+    "n_llms": 3,
+    "llms": [
+     "S",
+     "M",
+     "L"
+    ],
+    "llms_with_clients": [
+     "L",
+     "M",
+     "S"
+    ],
+    "n_clients": 15,
+    "n_units": 18964,
+    "units_per_replica": 8,
+    "sites_x_llms": 3885,
+    "grid": {
+     "slow_min": 5,
+     "fast_min": 1,
+     "T_slow": 288,
+     "T_fast": 1440,
+     "horizon_min": 1440,
+     "start_mow": 154
+    },
+    "n_trace_lenders": 23,
+    "n_trace_lenders_with_sites": 23,
+    "layer_capacity_gpus": 10320.0,
+    "v_top": {
+     "a2:c00": 1399,
+     "a2:c01": 459,
+     "a2:c02": 835,
+     "a2:c03": 526,
+     "a2:c04": 1033,
+     "a2:c05": 283,
+     "a2:c06": 502,
+     "a2:c07": 172,
+     "a2:c08": 238,
+     "a2:c09": 436,
+     "a2:c10": 146,
+     "a2:c11": 351,
+     "a2:c12": 240,
+     "a2:c13": 232,
+     "a2:c14": 71,
+     "a2:c15": 293,
+     "a2:c16": 396,
+     "a2:c17": 406,
+     "a2:c18": 223,
+     "a2:c19": 239,
+     "a1:A100-SXM4-80GB": 7,
+     "a1:A800-SXM4-80GB": 2,
+     "a1:GPU-series-2": 1
+    },
+    "sites_reachable_by_V": 8495,
+    "demand_load_h": 2824.72581395285,
+    "bl0a_usd": 51013.79951990266,
+    "gamma_note": [
+     "regional demand: Gamma = 6.75142e+07 (tightness 0.5, supply 10320 GPUs)"
+    ]
+   },
+   "schedule_s": 0.010365440975874662,
+   "announcements": 5929,
+   "lp_estimate": {
+    "sites_unmerged": 1295,
+    "sites_merged": 108,
+    "merge_s": 0.014217389980331063,
+    "estimate_s": 0.1553460170980543,
+    "merged": {
+     "n_vars": 1111790,
+     "n_int": 820362,
+     "n_rows": 868897,
+     "nnz": 4841391,
+     "est_mb": 13471.755700000002,
+     "est_mb_lp": 2744.35114,
+     "n_triples": 930,
+     "n_cohorts": 32253,
+     "T_b": 288
+    },
+    "rule": "est_mb_lp = 130 + 5.4e-4 nnz MB (LP rule, opt/milp.py estimate_size; est_mb is the MILP rule)",
+    "unmerged": {
+     "n_vars": 11137427,
+     "n_int": 6984885,
+     "n_rows": 7932002,
+     "nnz": 54980991,
+     "est_mb": 148848.67570000002,
+     "est_mb_lp": 29819.73514,
+     "estimate_s": 1.642172183841467
+    }
+   },
+   "lp_fits_gate": false,
+   "status": "ok",
+   "point_s": 2.010677927173674,
+   "rss_mb_after": 990.78515625
+  },
+  "e7r_V64_ML": {
+   "base": "e7r",
+   "config": "bench_e7r.json",
+   "V": 64,
+   "llm_set": "ML",
+   "overrides": {
+    "time.horizon_min": 1440,
+    "stranding.mu_over_beta_tilde": 1.0,
+    "lender_defaults.n_layers": 64,
+    "llms": [
+     {
+      "id": "M",
+      "catalog": "maas_a10",
+      "entry": "M",
+      "kappa_mult": 1.0
+     },
+     {
+      "id": "L",
+      "catalog": "maas_a10",
+      "entry": "L",
+      "kappa_mult": 1.0
+     }
+    ],
+    "borrowers.s_S": 0.0
+   },
+   "build_s": 0.17094023898243904,
+   "instance": {
+    "n_sites": 1295,
+    "n_sites_by_kind": {
+     "layer": 1290,
+     "protected": 5
+    },
+    "n_contracts": 4,
+    "n_revocable_contracts": 3,
+    "menu_size_per_site": {
+     "min": 1,
+     "max": 3,
+     "mean": 2.9876447876447876,
+     "sum": 3869
+    },
+    "n_llms": 2,
+    "llms": [
+     "M",
+     "L"
+    ],
+    "llms_with_clients": [
+     "L",
+     "M"
+    ],
+    "n_clients": 10,
+    "n_units": 17631,
+    "units_per_replica": 8,
+    "sites_x_llms": 2590,
+    "grid": {
+     "slow_min": 5,
+     "fast_min": 1,
+     "T_slow": 288,
+     "T_fast": 1440,
+     "horizon_min": 1440,
+     "start_mow": 154
+    },
+    "n_trace_lenders": 23,
+    "n_trace_lenders_with_sites": 23,
+    "layer_capacity_gpus": 10320.0,
+    "v_top": {
+     "a2:c00": 1399,
+     "a2:c01": 459,
+     "a2:c02": 835,
+     "a2:c03": 526,
+     "a2:c04": 1033,
+     "a2:c05": 283,
+     "a2:c06": 502,
+     "a2:c07": 172,
+     "a2:c08": 238,
+     "a2:c09": 436,
+     "a2:c10": 146,
+     "a2:c11": 351,
+     "a2:c12": 240,
+     "a2:c13": 232,
+     "a2:c14": 71,
+     "a2:c15": 293,
+     "a2:c16": 396,
+     "a2:c17": 406,
+     "a2:c18": 223,
+     "a2:c19": 239,
+     "a1:A100-SXM4-80GB": 7,
+     "a1:A800-SXM4-80GB": 2,
+     "a1:GPU-series-2": 1
+    },
+    "sites_reachable_by_V": 8495,
+    "demand_load_h": 2639.9750233081063,
+    "bl0a_usd": 51389.765082843696,
+    "gamma_note": [
+     "regional demand: Gamma = 5.34239e+07 (tightness 0.5, supply 10320 GPUs)"
+    ]
+   },
+   "schedule_s": 0.01049037091434002,
+   "announcements": 5929,
+   "lp_estimate": {
+    "sites_unmerged": 1295,
+    "sites_merged": 108,
+    "merge_s": 0.014637639047577977,
+    "estimate_s": 0.11580363498069346,
+    "merged": {
+     "n_vars": 741247,
+     "n_int": 546908,
+     "n_rows": 589099,
+     "nnz": 3227686,
+     "est_mb": 9114.7522,
+     "est_mb_lp": 1872.95044,
+     "n_triples": 620,
+     "n_cohorts": 21502,
+     "T_b": 288
+    },
+    "rule": "est_mb_lp = 130 + 5.4e-4 nnz MB (LP rule, opt/milp.py estimate_size; est_mb is the MILP rule)",
+    "unmerged": {
+     "n_vars": 7425758,
+     "n_int": 4656590,
+     "n_rows": 5411570,
+     "nnz": 36656795,
+     "est_mb": 99373.3465,
+     "est_mb_lp": 19924.6693,
+     "estimate_s": 1.1716029411181808
+    }
+   },
+   "lp_fits_gate": true,
+   "status": "ok",
+   "point_s": 1.4888628209009767,
+   "rss_mb_after": 990.78515625
+  },
+  "e7r_V64_S": {
+   "base": "e7r",
+   "config": "bench_e7r.json",
+   "V": 64,
+   "llm_set": "S",
+   "overrides": {
+    "time.horizon_min": 1440,
+    "stranding.mu_over_beta_tilde": 1.0,
+    "lender_defaults.n_layers": 64,
+    "llms": [
+     {
+      "id": "S",
+      "catalog": "maas_a10",
+      "entry": "S",
+      "kappa_mult": 1.0
+     }
+    ],
+    "borrowers.s_S": 1.0
+   },
+   "build_s": 0.1576153920032084,
+   "instance": {
+    "n_sites": 1295,
+    "n_sites_by_kind": {
+     "layer": 1290,
+     "protected": 5
+    },
+    "n_contracts": 4,
+    "n_revocable_contracts": 3,
+    "menu_size_per_site": {
+     "min": 1,
+     "max": 3,
+     "mean": 2.9876447876447876,
+     "sum": 3869
+    },
+    "n_llms": 1,
+    "llms": [
+     "S"
+    ],
+    "llms_with_clients": [
+     "S"
+    ],
+    "n_clients": 5,
+    "n_units": 43094,
+    "units_per_replica": 8,
+    "sites_x_llms": 1295,
+    "grid": {
+     "slow_min": 5,
+     "fast_min": 1,
+     "T_slow": 288,
+     "T_fast": 1440,
+     "horizon_min": 1440,
+     "start_mow": 154
+    },
+    "n_trace_lenders": 23,
+    "n_trace_lenders_with_sites": 23,
+    "layer_capacity_gpus": 10320.0,
+    "v_top": {
+     "a2:c00": 1399,
+     "a2:c01": 459,
+     "a2:c02": 835,
+     "a2:c03": 526,
+     "a2:c04": 1033,
+     "a2:c05": 283,
+     "a2:c06": 502,
+     "a2:c07": 172,
+     "a2:c08": 238,
+     "a2:c09": 436,
+     "a2:c10": 146,
+     "a2:c11": 351,
+     "a2:c12": 240,
+     "a2:c13": 232,
+     "a2:c14": 71,
+     "a2:c15": 293,
+     "a2:c16": 396,
+     "a2:c17": 406,
+     "a2:c18": 223,
+     "a2:c19": 239,
+     "a1:A100-SXM4-80GB": 7,
+     "a1:A800-SXM4-80GB": 2,
+     "a1:GPU-series-2": 1
+    },
+    "sites_reachable_by_V": 8495,
+    "demand_load_h": 6179.875693846184,
+    "bl0a_usd": 44186.111211000214,
+    "gamma_note": [
+     "regional demand: Gamma = 3.234e+08 (tightness 0.5, supply 10320 GPUs)"
+    ]
+   },
+   "schedule_s": 0.010230893967673182,
+   "announcements": 5929,
+   "lp_estimate": {
+    "sites_unmerged": 1295,
+    "sites_merged": 108,
+    "merge_s": 0.014252949971705675,
+    "estimate_s": 0.07589179603382945,
+    "merged": {
+     "n_vars": 370543,
+     "n_int": 273454,
+     "n_rows": 309355,
+     "nnz": 1613705,
+     "est_mb": 4757.0035,
+     "est_mb_lp": 1001.4007,
+     "n_triples": 310,
+     "n_cohorts": 10751,
+     "T_b": 288
+    },
+    "rule": "est_mb_lp = 130 + 5.4e-4 nnz MB (LP rule, opt/milp.py estimate_size; est_mb is the MILP rule)",
+    "unmerged": {
+     "n_vars": 3711669,
+     "n_int": 2328295,
+     "n_rows": 2891845,
+     "nnz": 18324196,
+     "est_mb": 49875.3292,
+     "est_mb_lp": 10025.06584,
+     "estimate_s": 0.6908907848410308
+    }
+   },
+   "lp_fits_gate": true,
+   "status": "ok",
+   "point_s": 0.9589898658450693,
+   "rss_mb_after": 990.78515625
+  }
+ },
+ "summary": {
+  "n_points": 42,
+  "n_ok": 42,
+  "n_skipped": 0,
+  "n_error": 0,
+  "lp_under_gate": [
+   "e7r_V1_S",
+   "e7r_V2_S",
+   "e7r_V1_ML",
+   "e7r_V4_S",
+   "e7r_V1_SML",
+   "e7r_V2_ML",
+   "e7r_V8_S",
+   "e7r_V16_S",
+   "e7r_V2_SML",
+   "e7r_V32_S",
+   "e7r_V64_S",
+   "e7r_V4_ML",
+   "e7r_V8_ML",
+   "e7r_V4_SML",
+   "e7r_V16_ML",
+   "e7f_V1_S",
+   "e7r_V32_ML",
+   "e7r_V64_ML"
+  ],
+  "sites_x_llms": {
+   "e7f_V1_SML": 84,
+   "e7f_V1_ML": 56,
+   "e7f_V1_S": 28,
+   "e7r_V1_SML": 84,
+   "e7r_V1_ML": 56,
+   "e7r_V1_S": 28,
+   "e7f_V2_SML": 147,
+   "e7f_V2_ML": 98,
+   "e7f_V2_S": 49,
+   "e7r_V2_SML": 150,
+   "e7r_V2_ML": 100,
+   "e7r_V2_S": 50,
+   "e7f_V4_SML": 267,
+   "e7f_V4_ML": 178,
+   "e7f_V4_S": 89,
+   "e7r_V4_SML": 276,
+   "e7r_V4_ML": 184,
+   "e7r_V4_S": 92,
+   "e7f_V8_SML": 507,
+   "e7f_V8_ML": 338,
+   "e7f_V8_S": 169,
+   "e7r_V8_SML": 525,
+   "e7r_V8_ML": 350,
+   "e7r_V8_S": 175,
+   "e7f_V16_SML": 987,
+   "e7f_V16_ML": 658,
+   "e7f_V16_S": 329,
+   "e7r_V16_SML": 1005,
+   "e7r_V16_ML": 670,
+   "e7r_V16_S": 335,
+   "e7f_V32_SML": 1947,
+   "e7f_V32_ML": 1298,
+   "e7f_V32_S": 649,
+   "e7r_V32_SML": 1965,
+   "e7r_V32_ML": 1310,
+   "e7r_V32_S": 655,
+   "e7f_V64_SML": 3855,
+   "e7f_V64_ML": 2570,
+   "e7f_V64_S": 1285,
+   "e7r_V64_SML": 3885,
+   "e7r_V64_ML": 2590,
+   "e7r_V64_S": 1295
+  },
+  "max_build_s": 0.5726103300694376,
+  "max_point_s": 12.206244172994047
+ }
+}

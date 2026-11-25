@@ -1,0 +1,7645 @@
+{
+ "meta": {
+  "exp": "s1v2",
+  "spec": "design/ms7/feasibility/sens.md \u00a72 A-D (C56)",
+  "change": "C56",
+  "git_revision": "c1f4dc18be025cfeb540f8856b8e4a7782c9ea90",
+  "analysis_sha256": "6d9772304fe30b20d0d500c2c56b867ccecc97dc99e672c63bdfcd66912e4a2d",
+  "registration": {
+   "path": "design/ms7/registration.md",
+   "exists": true,
+   "registered_sha256": "6d9772304fe30b20d0d500c2c56b867ccecc97dc99e672c63bdfcd66912e4a2d",
+   "analysis_sha256": "6d9772304fe30b20d0d500c2c56b867ccecc97dc99e672c63bdfcd66912e4a2d",
+   "matches": true
+  },
+  "inputs": {
+   "out/s1v2/sweep/summary.json": "b4eec012f31980462d88dabc261470d464937833f59021a70501e676d557e589",
+   "out/s1v2/w0/summary.json": "beb9f3f354264443132bdff7901a859dc12d26fb5416981b16b67f9b3afc752f"
+  },
+  "input_records": [
+   {
+    "file": "out/s1v2/sweep/summary.json",
+    "exists": true,
+    "sha256": "b4eec012f31980462d88dabc261470d464937833f59021a70501e676d557e589",
+    "git_revision": "56b847bec39b437ed5074dff124ffb69416e7f2b",
+    "reduced": true,
+    "gate_kind": "ms7_registration",
+    "gate_ok": false,
+    "gate_enforced": false
+   },
+   {
+    "file": "out/s1v2/w0/summary.json",
+    "exists": true,
+    "sha256": "beb9f3f354264443132bdff7901a859dc12d26fb5416981b16b67f9b3afc752f",
+    "git_revision": "56b847bec39b437ed5074dff124ffb69416e7f2b",
+    "reduced": true,
+    "gate_kind": "ms7_registration",
+    "gate_ok": false,
+    "gate_enforced": false
+   }
+  ],
+  "confirmation_inputs": {
+   "out/sublet_v2/main/summary.json": "25e556eeee1df3687e1d9fc72390099c5305ce71e90c18e8b27be30a0dbd0c9d",
+   "out/sublet_v2/seeds/summary.json": "f94e9c71a3934a1e39a6c7aa1c26db1eab2695e547bc8233e65fb81c5dc445c4"
+  },
+  "reduced": true,
+  "registered_full_inputs": false,
+  "label": "exploratory: post-freeze runs on the confirmation weeks (design/ms7/plan.md D6)"
+ },
+ "points": {
+  "default": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": 0.9628922431831444
+     },
+     "saving_pct": {
+      "101": 3.710775681685563
+     },
+     "median_r0": 0.9628922431831444,
+     "median_saving_pct": 3.710775681685563,
+     "n": 1
+    },
+    "A9": {
+     "r0": {
+      "101": 0.6851858680161168
+     },
+     "saving_pct": {
+      "101": 31.48141319838832
+     },
+     "median_r0": 0.6851858680161168,
+     "median_saving_pct": 31.48141319838832,
+     "n": 1
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": 0.6511795022043789
+     },
+     "saving_pct": {
+      "101": 34.88204977956211
+     },
+     "median_r0": 0.6511795022043789,
+     "median_saving_pct": 34.88204977956211,
+     "n": 1
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": 0.8322013113669223
+     },
+     "saving_pct": {
+      "101": 16.77986886330777
+     },
+     "median_r0": 0.8322013113669223,
+     "median_saving_pct": 16.77986886330777,
+     "n": 1
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": -0.31171274097876545,
+      "best": "BL1-BO",
+      "best_r0": 0.6511795022043789,
+      "sublet_r0": 0.9628922431831444,
+      "missing": []
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [],
+    "delta_median": -0.31171274097876545,
+    "delta_min": -0.31171274097876545,
+    "delta_max": -0.31171274097876545
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": -0.03400636581173788,
+      "best": "BL1-BO",
+      "best_r0": 0.6511795022043789,
+      "sublet_r0": 0.6851858680161168,
+      "missing": []
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [],
+    "delta_median": -0.03400636581173788,
+    "delta_min": -0.03400636581173788,
+    "delta_max": -0.03400636581173788
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": 0.27770637516702756
+    },
+    "median": 0.27770637516702756
+   },
+   "row": null,
+   "value": null,
+   "label": "default",
+   "source": "s1v2"
+  },
+  "alpha02": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "A9": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": null
+    },
+    "median": null
+   },
+   "row": "alpha",
+   "value": 0.2,
+   "label": "0.2",
+   "source": "s1v2"
+  },
+  "alpha03": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "A9": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": null
+    },
+    "median": null
+   },
+   "row": "alpha",
+   "value": 0.3,
+   "label": "0.3",
+   "source": "s1v2"
+  },
+  "alpha05": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "A9": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": null
+    },
+    "median": null
+   },
+   "row": "alpha",
+   "value": 0.5,
+   "label": "0.5",
+   "source": "s1v2"
+  },
+  "alpha06": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "A9": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": null
+    },
+    "median": null
+   },
+   "row": "alpha",
+   "value": 0.6,
+   "label": "0.6",
+   "source": "s1v2"
+  },
+  "alphap06": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "A9": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": null
+    },
+    "median": null
+   },
+   "row": "alpha_p",
+   "value": 0.6,
+   "label": "0.6",
+   "source": "s1v2"
+  },
+  "alphap10": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "A9": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": null
+    },
+    "median": null
+   },
+   "row": "alpha_p",
+   "value": 1.0,
+   "label": "1.0",
+   "source": "s1v2"
+  },
+  "kv05": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "A9": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": null
+    },
+    "median": null
+   },
+   "row": "mu_split",
+   "value": 0.5,
+   "label": "0.5",
+   "source": "s1v2"
+  },
+  "kv10": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "A9": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": null
+    },
+    "median": null
+   },
+   "row": "mu_split",
+   "value": 1.0,
+   "label": "1",
+   "source": "s1v2"
+  },
+  "scen_warm_peer_rdma": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "A9": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": null
+    },
+    "median": null
+   },
+   "row": "load_scenario",
+   "value": "warm_peer_rdma",
+   "label": "warm peer",
+   "source": "s1v2"
+  },
+  "scen_ssd_optimized": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "A9": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": null
+    },
+    "median": null
+   },
+   "row": "load_scenario",
+   "value": "ssd_optimized",
+   "label": "SSD optimized",
+   "source": "s1v2"
+  },
+  "scen_ssd_stock_safetensors": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "A9": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": null
+    },
+    "median": null
+   },
+   "row": "load_scenario",
+   "value": "ssd_stock_safetensors",
+   "label": "SSD safetensors",
+   "source": "s1v2"
+  },
+  "scen_ssd_stock_pytorch": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "A9": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": null
+    },
+    "median": null
+   },
+   "row": "load_scenario",
+   "value": "ssd_stock_pytorch",
+   "label": "SSD PyTorch",
+   "source": "s1v2"
+  },
+  "scen_a5_10GBps": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "A9": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": null
+    },
+    "median": null
+   },
+   "row": "load_scenario",
+   "value": "a5_10GBps",
+   "label": "10 GB/s",
+   "source": "s1v2"
+  },
+  "scen_a5_2GBps": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "A9": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": null
+    },
+    "median": null
+   },
+   "row": "load_scenario",
+   "value": "a5_2GBps",
+   "label": "2 GB/s",
+   "source": "s1v2"
+  },
+  "scen_cold_wan_10gbps": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "A9": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": null
+    },
+    "median": null
+   },
+   "row": "load_scenario",
+   "value": "cold_wan_10gbps",
+   "label": "WAN 10 Gb/s",
+   "source": "s1v2"
+  },
+  "scen_cold_wan_1gbps": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": 1.3463573829637963
+     },
+     "saving_pct": {
+      "101": -34.63573829637963
+     },
+     "median_r0": 1.3463573829637963,
+     "median_saving_pct": -34.63573829637963,
+     "n": 1
+    },
+    "A9": {
+     "r0": {
+      "101": 1.3484843161430558
+     },
+     "saving_pct": {
+      "101": -34.848431614305575
+     },
+     "median_r0": 1.3484843161430558,
+     "median_saving_pct": -34.848431614305575,
+     "n": 1
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": 1.3803261842537073
+     },
+     "saving_pct": {
+      "101": -38.032618425370735
+     },
+     "median_r0": 1.3803261842537073,
+     "median_saving_pct": -38.032618425370735,
+     "n": 1
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": 1.015925763170451
+     },
+     "saving_pct": {
+      "101": -1.5925763170451024
+     },
+     "median_r0": 1.015925763170451,
+     "median_saving_pct": -1.5925763170451024,
+     "n": 1
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": -0.33043161979334523,
+      "best": "BL5-cur",
+      "best_r0": 1.015925763170451,
+      "sublet_r0": 1.3463573829637963,
+      "missing": []
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [],
+    "delta_median": -0.33043161979334523,
+    "delta_min": -0.33043161979334523,
+    "delta_max": -0.33043161979334523
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": -0.3325585529726047,
+      "best": "BL5-cur",
+      "best_r0": 1.015925763170451,
+      "sublet_r0": 1.3484843161430558,
+      "missing": []
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [],
+    "delta_median": -0.3325585529726047,
+    "delta_min": -0.3325585529726047,
+    "delta_max": -0.3325585529726047
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": -0.0021269331792594937
+    },
+    "median": -0.0021269331792594937
+   },
+   "row": "load_scenario",
+   "value": "cold_wan_1gbps",
+   "label": "WAN 1 Gb/s",
+   "source": "s1v2"
+  },
+  "phi05": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "A9": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": null
+    },
+    "median": null
+   },
+   "row": "phi",
+   "value": 0.5,
+   "label": "0.5",
+   "source": "s1v2"
+  },
+  "kappaL05": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "A9": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": null
+    },
+    "median": null
+   },
+   "row": "kappa_L",
+   "value": 0.5,
+   "label": "x0.5",
+   "source": "s1v2"
+  },
+  "kappaL2": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "A9": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": null
+    },
+    "median": null
+   },
+   "row": "kappa_L",
+   "value": 2.0,
+   "label": "x2",
+   "source": "s1v2"
+  },
+  "a5": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "A9": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": null
+    },
+    "median": null
+   },
+   "row": "catalog",
+   "value": "a5 tiers",
+   "label": "a5 tiers",
+   "source": "s1v2"
+  },
+  "catM2": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "A9": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": null
+    },
+    "median": null
+   },
+   "row": "catalog",
+   "value": "M on 2 GPUs",
+   "label": "M on 2 GPUs",
+   "source": "s1v2"
+  },
+  "catLg4": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "A9": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": null
+    },
+    "median": null
+   },
+   "row": "catalog",
+   "value": "L as 235B on 4 GPUs",
+   "label": "L 235B",
+   "source": "s1v2"
+  },
+  "L16": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "A9": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": null
+    },
+    "median": null
+   },
+   "row": "precision",
+   "value": "L at 16 bits on 16 GPUs",
+   "label": "16 bit",
+   "source": "s1v2"
+  },
+  "tiermap": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "A9": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": null
+    },
+    "median": null
+   },
+   "row": "gpt4o_mini",
+   "value": "L",
+   "label": "L",
+   "source": "s1v2"
+  },
+  "sS0": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "A9": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": null
+    },
+    "median": null
+   },
+   "row": "s_S",
+   "value": 0.0,
+   "label": "0",
+   "source": "s1v2"
+  },
+  "sS05": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "A9": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": null
+    },
+    "median": null
+   },
+   "row": "s_S",
+   "value": 0.5,
+   "label": "0.5",
+   "source": "s1v2"
+  },
+  "xi1": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "A9": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": null
+    },
+    "median": null
+   },
+   "row": "xi",
+   "value": "Azure 2024 conversation for every region",
+   "label": "one series",
+   "source": "s1v2"
+  },
+  "wcfull": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "A9": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": null
+    },
+    "median": null
+   },
+   "row": "wildchat",
+   "value": "the whole trace",
+   "label": "full",
+   "source": "s1v2"
+  },
+  "c0p50": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "A9": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": null
+    },
+    "median": null
+   },
+   "row": "own_capacity",
+   "value": 50.0,
+   "label": "P50",
+   "source": "s1v2"
+  },
+  "c0p90": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "A9": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": null
+    },
+    "median": null
+   },
+   "row": "own_capacity",
+   "value": 90.0,
+   "label": "P90",
+   "source": "s1v2"
+  },
+  "smooth5": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "A9": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": null
+    },
+    "median": null
+   },
+   "row": "smoothing",
+   "value": 5,
+   "label": "5 min",
+   "source": "s1v2"
+  },
+  "smooth60": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "A9": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": null
+    },
+    "median": null
+   },
+   "row": "smoothing",
+   "value": 60,
+   "label": "60 min",
+   "source": "s1v2"
+  },
+  "lease10": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "A9": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": null
+    },
+    "median": null
+   },
+   "row": "lease_quantile",
+   "value": 10,
+   "label": "P10",
+   "source": "s1v2"
+  },
+  "lease50": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "A9": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": null
+    },
+    "median": null
+   },
+   "row": "lease_quantile",
+   "value": 50,
+   "label": "P50",
+   "source": "s1v2"
+  },
+  "layer16": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "A9": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": null
+    },
+    "median": null
+   },
+   "row": "layer_width",
+   "value": 16,
+   "label": "16 GPUs",
+   "source": "s1v2"
+  },
+  "nlayers4": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "A9": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": null
+    },
+    "median": null
+   },
+   "row": "n_layers",
+   "value": 4,
+   "label": "4",
+   "source": "s1v2"
+  },
+  "nlayers16": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "A9": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": null
+    },
+    "median": null
+   },
+   "row": "n_layers",
+   "value": 16,
+   "label": "16",
+   "source": "s1v2"
+  },
+  "prot1h": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "A9": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": null
+    },
+    "median": null
+   },
+   "row": "protected_term",
+   "value": 60,
+   "label": "1 h",
+   "source": "s1v2"
+  },
+  "prot1d": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "A9": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": null
+    },
+    "median": null
+   },
+   "row": "protected_term",
+   "value": 1440,
+   "label": "1 day",
+   "source": "s1v2"
+  },
+  "prothorizon": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "A9": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": null
+    },
+    "median": null
+   },
+   "row": "protected_term",
+   "value": "the horizon",
+   "label": "horizon",
+   "source": "s1v2"
+  },
+  "tight025": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "A9": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": null
+    },
+    "median": null
+   },
+   "row": "tightness",
+   "value": 0.25,
+   "label": "0.25",
+   "source": "s1v2"
+  },
+  "tight1": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "A9": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": null
+    },
+    "median": null
+   },
+   "row": "tightness",
+   "value": 1.0,
+   "label": "1",
+   "source": "s1v2"
+  },
+  "tight2": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": 0.8880565955713076
+     },
+     "saving_pct": {
+      "101": 11.194340442869244
+     },
+     "median_r0": 0.8880565955713076,
+     "median_saving_pct": 11.194340442869244,
+     "n": 1
+    },
+    "A9": {
+     "r0": {
+      "101": 0.8680011219243738
+     },
+     "saving_pct": {
+      "101": 13.199887807562616
+     },
+     "median_r0": 0.8680011219243738,
+     "median_saving_pct": 13.199887807562616,
+     "n": 1
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": 0.8169292097514156
+     },
+     "saving_pct": {
+      "101": 18.307079024858442
+     },
+     "median_r0": 0.8169292097514156,
+     "median_saving_pct": 18.307079024858442,
+     "n": 1
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": 0.8973130400707521
+     },
+     "saving_pct": {
+      "101": 10.268695992924792
+     },
+     "median_r0": 0.8973130400707521,
+     "median_saving_pct": 10.268695992924792,
+     "n": 1
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": -0.07112738581989198,
+      "best": "BL1-BO",
+      "best_r0": 0.8169292097514156,
+      "sublet_r0": 0.8880565955713076,
+      "missing": []
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [],
+    "delta_median": -0.07112738581989198,
+    "delta_min": -0.07112738581989198,
+    "delta_max": -0.07112738581989198
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": -0.051071912172958256,
+      "best": "BL1-BO",
+      "best_r0": 0.8169292097514156,
+      "sublet_r0": 0.8680011219243738,
+      "missing": []
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [],
+    "delta_median": -0.051071912172958256,
+    "delta_min": -0.051071912172958256,
+    "delta_max": -0.051071912172958256
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": 0.02005547364693372
+    },
+    "median": 0.02005547364693372
+   },
+   "row": "tightness",
+   "value": 2.0,
+   "label": "2",
+   "source": "s1v2"
+  },
+  "delta0": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "A9": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": null
+    },
+    "median": null
+   },
+   "row": "delta1",
+   "value": 0.0,
+   "label": "0",
+   "source": "s1v2"
+  },
+  "delta02": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "A9": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": null
+    },
+    "median": null
+   },
+   "row": "delta1",
+   "value": 0.2,
+   "label": "0.2",
+   "source": "s1v2"
+  },
+  "strict": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "A9": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": null
+    },
+    "median": null
+   },
+   "row": "slo_class",
+   "value": "every client strict",
+   "label": "all strict",
+   "source": "s1v2"
+  },
+  "slotier": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "A9": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": null
+    },
+    "median": null
+   },
+   "row": "slo_class",
+   "value": "S strict, M and L relaxed",
+   "label": "S strict",
+   "source": "s1v2"
+  },
+  "fee4": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "A9": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": null
+    },
+    "median": null
+   },
+   "row": "transfer_fee",
+   "value": 4.0,
+   "label": "rho = 4",
+   "source": "s1v2"
+  },
+  "slow1": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": 1.1072713401934058
+     },
+     "saving_pct": {
+      "101": -10.727134019340578
+     },
+     "median_r0": 1.1072713401934058,
+     "median_saving_pct": -10.727134019340578,
+     "n": 1
+    },
+    "A9": {
+     "r0": {
+      "101": 0.6503043465428614
+     },
+     "saving_pct": {
+      "101": 34.96956534571386
+     },
+     "median_r0": 0.6503043465428614,
+     "median_saving_pct": 34.96956534571386,
+     "n": 1
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": 0.6367406356634955
+     },
+     "saving_pct": {
+      "101": 36.325936433650455
+     },
+     "median_r0": 0.6367406356634955,
+     "median_saving_pct": 36.325936433650455,
+     "n": 1
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": 0.9090777929910042
+     },
+     "saving_pct": {
+      "101": 9.092220700899578
+     },
+     "median_r0": 0.9090777929910042,
+     "median_saving_pct": 9.092220700899578,
+     "n": 1
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": -0.4705307045299103,
+      "best": "BL1-BO",
+      "best_r0": 0.6367406356634955,
+      "sublet_r0": 1.1072713401934058,
+      "missing": []
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [],
+    "delta_median": -0.4705307045299103,
+    "delta_min": -0.4705307045299103,
+    "delta_max": -0.4705307045299103
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": -0.01356371087936592,
+      "best": "BL1-BO",
+      "best_r0": 0.6367406356634955,
+      "sublet_r0": 0.6503043465428614,
+      "missing": []
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [],
+    "delta_median": -0.01356371087936592,
+    "delta_min": -0.01356371087936592,
+    "delta_max": -0.01356371087936592
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": 0.4569669936505444
+    },
+    "median": 0.4569669936505444
+   },
+   "row": "slow_slot",
+   "value": 1,
+   "label": "1 min",
+   "source": "s1v2"
+  },
+  "mu0.2": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "A9": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": null
+    },
+    "median": null
+   },
+   "row": "mu",
+   "value": 0.2,
+   "label": "0.2",
+   "source": "s1v2"
+  },
+  "mu0.5": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": 0.6606350929172222
+     },
+     "saving_pct": {
+      "101": 33.93649070827778
+     },
+     "median_r0": 0.6606350929172222,
+     "median_saving_pct": 33.93649070827778,
+     "n": 1
+    },
+    "A9": {
+     "r0": {
+      "101": 0.6611958448133577
+     },
+     "saving_pct": {
+      "101": 33.88041551866423
+     },
+     "median_r0": 0.6611958448133577,
+     "median_saving_pct": 33.88041551866423,
+     "n": 1
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": 0.6377930753759372
+     },
+     "saving_pct": {
+      "101": 36.22069246240628
+     },
+     "median_r0": 0.6377930753759372,
+     "median_saving_pct": 36.22069246240628,
+     "n": 1
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": 0.8158039829797176
+     },
+     "saving_pct": {
+      "101": 18.419601702028242
+     },
+     "median_r0": 0.8158039829797176,
+     "median_saving_pct": 18.419601702028242,
+     "n": 1
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": -0.02284201754128501,
+      "best": "BL1-BO",
+      "best_r0": 0.6377930753759372,
+      "sublet_r0": 0.6606350929172222,
+      "missing": []
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [],
+    "delta_median": -0.02284201754128501,
+    "delta_min": -0.02284201754128501,
+    "delta_max": -0.02284201754128501
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": -0.02340276943742048,
+      "best": "BL1-BO",
+      "best_r0": 0.6377930753759372,
+      "sublet_r0": 0.6611958448133577,
+      "missing": []
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [],
+    "delta_median": -0.02340276943742048,
+    "delta_min": -0.02340276943742048,
+    "delta_max": -0.02340276943742048
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": -0.0005607518961354696
+    },
+    "median": -0.0005607518961354696
+   },
+   "row": "mu",
+   "value": 0.5,
+   "label": "0.5",
+   "source": "s1v2"
+  },
+  "mu2": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "A9": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": null
+    },
+    "median": null
+   },
+   "row": "mu",
+   "value": 2.0,
+   "label": "2",
+   "source": "s1v2"
+  },
+  "kappaM05": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "A9": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": null
+    },
+    "median": null
+   },
+   "row": "kappa_M",
+   "value": 0.5,
+   "label": "x0.5",
+   "source": "s1v2"
+  },
+  "kappaM2": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": 0.9538323011807333
+     },
+     "saving_pct": {
+      "101": 4.6167698819266745
+     },
+     "median_r0": 0.9538323011807333,
+     "median_saving_pct": 4.6167698819266745,
+     "n": 1
+    },
+    "A9": {
+     "r0": {
+      "101": 0.684409050673034
+     },
+     "saving_pct": {
+      "101": 31.559094932696595
+     },
+     "median_r0": 0.684409050673034,
+     "median_saving_pct": 31.559094932696595,
+     "n": 1
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": 0.6620100371976244
+     },
+     "saving_pct": {
+      "101": 33.79899628023756
+     },
+     "median_r0": 0.6620100371976244,
+     "median_saving_pct": 33.79899628023756,
+     "n": 1
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": 0.8476830533885277
+     },
+     "saving_pct": {
+      "101": 15.231694661147232
+     },
+     "median_r0": 0.8476830533885277,
+     "median_saving_pct": 15.231694661147232,
+     "n": 1
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": -0.29182226398310884,
+      "best": "BL1-BO",
+      "best_r0": 0.6620100371976244,
+      "sublet_r0": 0.9538323011807333,
+      "missing": []
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [],
+    "delta_median": -0.29182226398310884,
+    "delta_min": -0.29182226398310884,
+    "delta_max": -0.29182226398310884
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": -0.022399013475409624,
+      "best": "BL1-BO",
+      "best_r0": 0.6620100371976244,
+      "sublet_r0": 0.684409050673034,
+      "missing": []
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [],
+    "delta_median": -0.022399013475409624,
+    "delta_min": -0.022399013475409624,
+    "delta_max": -0.022399013475409624
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": 0.2694232505076992
+    },
+    "median": 0.2694232505076992
+   },
+   "row": "kappa_M",
+   "value": 2.0,
+   "label": "x2",
+   "source": "s1v2"
+  },
+  "fee8": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "A9": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": null
+    },
+    "median": null
+   },
+   "row": "transfer_fee",
+   "value": 8.0,
+   "label": "rho = 8",
+   "source": "s1v2"
+  },
+  "fee16": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": 1.6720616499405219
+     },
+     "saving_pct": {
+      "101": -67.20616499405219
+     },
+     "median_r0": 1.6720616499405219,
+     "median_saving_pct": -67.20616499405219,
+     "n": 1
+    },
+    "A9": {
+     "r0": {
+      "101": 2.406155043568416
+     },
+     "saving_pct": {
+      "101": -140.6155043568416
+     },
+     "median_r0": 2.406155043568416,
+     "median_saving_pct": -140.6155043568416,
+     "n": 1
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": 2.746164893207766
+     },
+     "saving_pct": {
+      "101": -174.61648932077657
+     },
+     "median_r0": 2.746164893207766,
+     "median_saving_pct": -174.61648932077657,
+     "n": 1
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": 0.9999999999999999
+     },
+     "saving_pct": {
+      "101": 1.1102230246251565e-14
+     },
+     "median_r0": 0.9999999999999999,
+     "median_saving_pct": 1.1102230246251565e-14,
+     "n": 1
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": -0.672061649940522,
+      "best": "BL5-cur",
+      "best_r0": 0.9999999999999999,
+      "sublet_r0": 1.6720616499405219,
+      "missing": []
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [],
+    "delta_median": -0.672061649940522,
+    "delta_min": -0.672061649940522,
+    "delta_max": -0.672061649940522
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": -1.406155043568416,
+      "best": "BL5-cur",
+      "best_r0": 0.9999999999999999,
+      "sublet_r0": 2.406155043568416,
+      "missing": []
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [],
+    "delta_median": -1.406155043568416,
+    "delta_min": -1.406155043568416,
+    "delta_max": -1.406155043568416
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": -0.7340933936278942
+    },
+    "median": -0.7340933936278942
+   },
+   "row": "transfer_fee",
+   "value": 16.0,
+   "label": "rho = 16",
+   "source": "s1v2"
+  },
+  "buf999": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "A9": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": null
+    },
+    "median": null
+   },
+   "row": "buffer_quantile",
+   "value": 0.999,
+   "label": "0.999",
+   "source": "second"
+  },
+  "q28_rf": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "A9": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": null
+    },
+    "median": null
+   },
+   "row": "q28_rf",
+   "value": "L-rf",
+   "label": "L-rf",
+   "source": "second"
+  },
+  "q28_vr": {
+   "by_tag": {
+    "Sublet": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "A9": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL1-BO": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    },
+    "BL5-cur": {
+     "r0": {
+      "101": null
+     },
+     "saving_pct": {
+      "101": null
+     },
+     "median_r0": null,
+     "median_saving_pct": null,
+     "n": 0
+    }
+   },
+   "vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "a9_vs_pair": {
+    "by_week": {
+     "101": {
+      "delta": null,
+      "best": null,
+      "missing": [
+       "Sublet",
+       "BL1-BO",
+       "BL5-cur"
+      ]
+     }
+    },
+    "n_weeks": 1,
+    "weeks_hold": 0,
+    "loss_weeks": [
+     "101"
+    ],
+    "delta_median": null,
+    "delta_min": null,
+    "delta_max": null
+   },
+   "sublet_minus_a9_r0": {
+    "by_week": {
+     "101": null
+    },
+    "median": null
+   },
+   "row": "q28_vr",
+   "value": "L-vr",
+   "label": "L-vr",
+   "source": "second"
+  }
+ },
+ "rows": {
+  "alpha": {
+   "points": [
+    "alpha02",
+    "alpha03",
+    "alpha05",
+    "alpha06"
+   ],
+   "default_saving_pct": 3.710775681685563,
+   "min_weeks_hold": 0,
+   "points_with_flips": [
+    "alpha02",
+    "alpha03",
+    "alpha05",
+    "alpha06"
+   ],
+   "lo": 3.710775681685563,
+   "lo_point": "default",
+   "hi": 3.710775681685563,
+   "hi_point": "default",
+   "span": 0.0
+  },
+  "alpha_p": {
+   "points": [
+    "alphap06",
+    "alphap10"
+   ],
+   "default_saving_pct": 3.710775681685563,
+   "min_weeks_hold": 0,
+   "points_with_flips": [
+    "alphap06",
+    "alphap10"
+   ],
+   "lo": 3.710775681685563,
+   "lo_point": "default",
+   "hi": 3.710775681685563,
+   "hi_point": "default",
+   "span": 0.0
+  },
+  "mu": {
+   "points": [
+    "mu0.2",
+    "mu0.5",
+    "mu2"
+   ],
+   "default_saving_pct": 3.710775681685563,
+   "min_weeks_hold": 0,
+   "points_with_flips": [
+    "mu0.2",
+    "mu0.5",
+    "mu2"
+   ],
+   "lo": 3.710775681685563,
+   "lo_point": "default",
+   "hi": 33.93649070827778,
+   "hi_point": "mu0.5",
+   "span": 30.22571502659222
+  },
+  "mu_split": {
+   "points": [
+    "kv05",
+    "kv10"
+   ],
+   "default_saving_pct": 3.710775681685563,
+   "min_weeks_hold": 0,
+   "points_with_flips": [
+    "kv05",
+    "kv10"
+   ],
+   "lo": 3.710775681685563,
+   "lo_point": "default",
+   "hi": 3.710775681685563,
+   "hi_point": "default",
+   "span": 0.0
+  },
+  "load_scenario": {
+   "points": [
+    "scen_warm_peer_rdma",
+    "scen_ssd_optimized",
+    "scen_ssd_stock_safetensors",
+    "scen_ssd_stock_pytorch",
+    "scen_a5_10GBps",
+    "scen_a5_2GBps",
+    "scen_cold_wan_10gbps",
+    "scen_cold_wan_1gbps"
+   ],
+   "default_saving_pct": 3.710775681685563,
+   "min_weeks_hold": 0,
+   "points_with_flips": [
+    "scen_warm_peer_rdma",
+    "scen_ssd_optimized",
+    "scen_ssd_stock_safetensors",
+    "scen_ssd_stock_pytorch",
+    "scen_a5_10GBps",
+    "scen_a5_2GBps",
+    "scen_cold_wan_10gbps",
+    "scen_cold_wan_1gbps"
+   ],
+   "lo": -34.63573829637963,
+   "lo_point": "scen_cold_wan_1gbps",
+   "hi": 3.710775681685563,
+   "hi_point": "default",
+   "span": 38.34651397806519
+  },
+  "phi": {
+   "points": [
+    "phi05"
+   ],
+   "default_saving_pct": 3.710775681685563,
+   "min_weeks_hold": 0,
+   "points_with_flips": [
+    "phi05"
+   ],
+   "lo": 3.710775681685563,
+   "lo_point": "default",
+   "hi": 3.710775681685563,
+   "hi_point": "default",
+   "span": 0.0
+  },
+  "kappa_L": {
+   "points": [
+    "kappaL05",
+    "kappaL2"
+   ],
+   "default_saving_pct": 3.710775681685563,
+   "min_weeks_hold": 0,
+   "points_with_flips": [
+    "kappaL05",
+    "kappaL2"
+   ],
+   "lo": 3.710775681685563,
+   "lo_point": "default",
+   "hi": 3.710775681685563,
+   "hi_point": "default",
+   "span": 0.0
+  },
+  "kappa_M": {
+   "points": [
+    "kappaM05",
+    "kappaM2"
+   ],
+   "default_saving_pct": 3.710775681685563,
+   "min_weeks_hold": 0,
+   "points_with_flips": [
+    "kappaM05",
+    "kappaM2"
+   ],
+   "lo": 3.710775681685563,
+   "lo_point": "default",
+   "hi": 4.6167698819266745,
+   "hi_point": "kappaM2",
+   "span": 0.9059942002411114
+  },
+  "catalog": {
+   "points": [
+    "a5",
+    "catM2",
+    "catLg4"
+   ],
+   "default_saving_pct": 3.710775681685563,
+   "min_weeks_hold": 0,
+   "points_with_flips": [
+    "a5",
+    "catM2",
+    "catLg4"
+   ],
+   "lo": 3.710775681685563,
+   "lo_point": "default",
+   "hi": 3.710775681685563,
+   "hi_point": "default",
+   "span": 0.0
+  },
+  "precision": {
+   "points": [
+    "L16"
+   ],
+   "default_saving_pct": 3.710775681685563,
+   "min_weeks_hold": 0,
+   "points_with_flips": [
+    "L16"
+   ],
+   "lo": 3.710775681685563,
+   "lo_point": "default",
+   "hi": 3.710775681685563,
+   "hi_point": "default",
+   "span": 0.0
+  },
+  "gpt4o_mini": {
+   "points": [
+    "tiermap"
+   ],
+   "default_saving_pct": 3.710775681685563,
+   "min_weeks_hold": 0,
+   "points_with_flips": [
+    "tiermap"
+   ],
+   "lo": 3.710775681685563,
+   "lo_point": "default",
+   "hi": 3.710775681685563,
+   "hi_point": "default",
+   "span": 0.0
+  },
+  "s_S": {
+   "points": [
+    "sS0",
+    "sS05"
+   ],
+   "default_saving_pct": 3.710775681685563,
+   "min_weeks_hold": 0,
+   "points_with_flips": [
+    "sS0",
+    "sS05"
+   ],
+   "lo": 3.710775681685563,
+   "lo_point": "default",
+   "hi": 3.710775681685563,
+   "hi_point": "default",
+   "span": 0.0
+  },
+  "xi": {
+   "points": [
+    "xi1"
+   ],
+   "default_saving_pct": 3.710775681685563,
+   "min_weeks_hold": 0,
+   "points_with_flips": [
+    "xi1"
+   ],
+   "lo": 3.710775681685563,
+   "lo_point": "default",
+   "hi": 3.710775681685563,
+   "hi_point": "default",
+   "span": 0.0
+  },
+  "wildchat": {
+   "points": [
+    "wcfull"
+   ],
+   "default_saving_pct": 3.710775681685563,
+   "min_weeks_hold": 0,
+   "points_with_flips": [
+    "wcfull"
+   ],
+   "lo": 3.710775681685563,
+   "lo_point": "default",
+   "hi": 3.710775681685563,
+   "hi_point": "default",
+   "span": 0.0
+  },
+  "own_capacity": {
+   "points": [
+    "c0p50",
+    "c0p90"
+   ],
+   "default_saving_pct": 3.710775681685563,
+   "min_weeks_hold": 0,
+   "points_with_flips": [
+    "c0p50",
+    "c0p90"
+   ],
+   "lo": 3.710775681685563,
+   "lo_point": "default",
+   "hi": 3.710775681685563,
+   "hi_point": "default",
+   "span": 0.0
+  },
+  "smoothing": {
+   "points": [
+    "smooth5",
+    "smooth60"
+   ],
+   "default_saving_pct": 3.710775681685563,
+   "min_weeks_hold": 0,
+   "points_with_flips": [
+    "smooth5",
+    "smooth60"
+   ],
+   "lo": 3.710775681685563,
+   "lo_point": "default",
+   "hi": 3.710775681685563,
+   "hi_point": "default",
+   "span": 0.0
+  },
+  "lease_quantile": {
+   "points": [
+    "lease10",
+    "lease50"
+   ],
+   "default_saving_pct": 3.710775681685563,
+   "min_weeks_hold": 0,
+   "points_with_flips": [
+    "lease10",
+    "lease50"
+   ],
+   "lo": 3.710775681685563,
+   "lo_point": "default",
+   "hi": 3.710775681685563,
+   "hi_point": "default",
+   "span": 0.0
+  },
+  "layer_width": {
+   "points": [
+    "layer16"
+   ],
+   "default_saving_pct": 3.710775681685563,
+   "min_weeks_hold": 0,
+   "points_with_flips": [
+    "layer16"
+   ],
+   "lo": 3.710775681685563,
+   "lo_point": "default",
+   "hi": 3.710775681685563,
+   "hi_point": "default",
+   "span": 0.0
+  },
+  "n_layers": {
+   "points": [
+    "nlayers4",
+    "nlayers16"
+   ],
+   "default_saving_pct": 3.710775681685563,
+   "min_weeks_hold": 0,
+   "points_with_flips": [
+    "nlayers4",
+    "nlayers16"
+   ],
+   "lo": 3.710775681685563,
+   "lo_point": "default",
+   "hi": 3.710775681685563,
+   "hi_point": "default",
+   "span": 0.0
+  },
+  "protected_term": {
+   "points": [
+    "prot1h",
+    "prot1d",
+    "prothorizon"
+   ],
+   "default_saving_pct": 3.710775681685563,
+   "min_weeks_hold": 0,
+   "points_with_flips": [
+    "prot1h",
+    "prot1d",
+    "prothorizon"
+   ],
+   "lo": 3.710775681685563,
+   "lo_point": "default",
+   "hi": 3.710775681685563,
+   "hi_point": "default",
+   "span": 0.0
+  },
+  "buffer_quantile": {
+   "points": [
+    "buf999"
+   ],
+   "default_saving_pct": 3.710775681685563,
+   "min_weeks_hold": 0,
+   "points_with_flips": [
+    "buf999"
+   ],
+   "lo": 3.710775681685563,
+   "lo_point": "default",
+   "hi": 3.710775681685563,
+   "hi_point": "default",
+   "span": 0.0
+  },
+  "tightness": {
+   "points": [
+    "tight025",
+    "tight1",
+    "tight2"
+   ],
+   "default_saving_pct": 3.710775681685563,
+   "min_weeks_hold": 0,
+   "points_with_flips": [
+    "tight025",
+    "tight1",
+    "tight2"
+   ],
+   "lo": 3.710775681685563,
+   "lo_point": "default",
+   "hi": 11.194340442869244,
+   "hi_point": "tight2",
+   "span": 7.483564761183681
+  },
+  "delta1": {
+   "points": [
+    "delta0",
+    "delta02"
+   ],
+   "default_saving_pct": 3.710775681685563,
+   "min_weeks_hold": 0,
+   "points_with_flips": [
+    "delta0",
+    "delta02"
+   ],
+   "lo": 3.710775681685563,
+   "lo_point": "default",
+   "hi": 3.710775681685563,
+   "hi_point": "default",
+   "span": 0.0
+  },
+  "slo_class": {
+   "points": [
+    "strict",
+    "slotier"
+   ],
+   "default_saving_pct": 3.710775681685563,
+   "min_weeks_hold": 0,
+   "points_with_flips": [
+    "strict",
+    "slotier"
+   ],
+   "lo": 3.710775681685563,
+   "lo_point": "default",
+   "hi": 3.710775681685563,
+   "hi_point": "default",
+   "span": 0.0
+  },
+  "transfer_fee": {
+   "points": [
+    "fee4",
+    "fee8",
+    "fee16"
+   ],
+   "default_saving_pct": 3.710775681685563,
+   "min_weeks_hold": 0,
+   "points_with_flips": [
+    "fee4",
+    "fee8",
+    "fee16"
+   ],
+   "lo": -67.20616499405219,
+   "lo_point": "fee16",
+   "hi": 3.710775681685563,
+   "hi_point": "default",
+   "span": 70.91694067573775
+  },
+  "slow_slot": {
+   "points": [
+    "slow1"
+   ],
+   "default_saving_pct": 3.710775681685563,
+   "min_weeks_hold": 0,
+   "points_with_flips": [
+    "slow1"
+   ],
+   "lo": -10.727134019340578,
+   "lo_point": "slow1",
+   "hi": 3.710775681685563,
+   "hi_point": "default",
+   "span": 14.437909701026141
+  },
+  "q28_rf": {
+   "points": [
+    "q28_rf"
+   ],
+   "default_saving_pct": 3.710775681685563,
+   "min_weeks_hold": 0,
+   "points_with_flips": [
+    "q28_rf"
+   ],
+   "lo": 3.710775681685563,
+   "lo_point": "default",
+   "hi": 3.710775681685563,
+   "hi_point": "default",
+   "span": 0.0
+  },
+  "q28_vr": {
+   "points": [
+    "q28_vr"
+   ],
+   "default_saving_pct": 3.710775681685563,
+   "min_weeks_hold": 0,
+   "points_with_flips": [
+    "q28_vr"
+   ],
+   "lo": 3.710775681685563,
+   "lo_point": "default",
+   "hi": 3.710775681685563,
+   "hi_point": "default",
+   "span": 0.0
+  }
+ },
+ "flips": [
+  {
+   "point": "default",
+   "row": null,
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [],
+   "delta_median": -0.31171274097876545
+  },
+  {
+   "point": "alpha02",
+   "row": "alpha",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [
+    "101"
+   ],
+   "delta_median": null
+  },
+  {
+   "point": "alpha03",
+   "row": "alpha",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [
+    "101"
+   ],
+   "delta_median": null
+  },
+  {
+   "point": "alpha05",
+   "row": "alpha",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [
+    "101"
+   ],
+   "delta_median": null
+  },
+  {
+   "point": "alpha06",
+   "row": "alpha",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [
+    "101"
+   ],
+   "delta_median": null
+  },
+  {
+   "point": "alphap06",
+   "row": "alpha_p",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [
+    "101"
+   ],
+   "delta_median": null
+  },
+  {
+   "point": "alphap10",
+   "row": "alpha_p",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [
+    "101"
+   ],
+   "delta_median": null
+  },
+  {
+   "point": "kv05",
+   "row": "mu_split",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [
+    "101"
+   ],
+   "delta_median": null
+  },
+  {
+   "point": "kv10",
+   "row": "mu_split",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [
+    "101"
+   ],
+   "delta_median": null
+  },
+  {
+   "point": "scen_warm_peer_rdma",
+   "row": "load_scenario",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [
+    "101"
+   ],
+   "delta_median": null
+  },
+  {
+   "point": "scen_ssd_optimized",
+   "row": "load_scenario",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [
+    "101"
+   ],
+   "delta_median": null
+  },
+  {
+   "point": "scen_ssd_stock_safetensors",
+   "row": "load_scenario",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [
+    "101"
+   ],
+   "delta_median": null
+  },
+  {
+   "point": "scen_ssd_stock_pytorch",
+   "row": "load_scenario",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [
+    "101"
+   ],
+   "delta_median": null
+  },
+  {
+   "point": "scen_a5_10GBps",
+   "row": "load_scenario",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [
+    "101"
+   ],
+   "delta_median": null
+  },
+  {
+   "point": "scen_a5_2GBps",
+   "row": "load_scenario",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [
+    "101"
+   ],
+   "delta_median": null
+  },
+  {
+   "point": "scen_cold_wan_10gbps",
+   "row": "load_scenario",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [
+    "101"
+   ],
+   "delta_median": null
+  },
+  {
+   "point": "scen_cold_wan_1gbps",
+   "row": "load_scenario",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [],
+   "delta_median": -0.33043161979334523
+  },
+  {
+   "point": "phi05",
+   "row": "phi",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [
+    "101"
+   ],
+   "delta_median": null
+  },
+  {
+   "point": "kappaL05",
+   "row": "kappa_L",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [
+    "101"
+   ],
+   "delta_median": null
+  },
+  {
+   "point": "kappaL2",
+   "row": "kappa_L",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [
+    "101"
+   ],
+   "delta_median": null
+  },
+  {
+   "point": "a5",
+   "row": "catalog",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [
+    "101"
+   ],
+   "delta_median": null
+  },
+  {
+   "point": "catM2",
+   "row": "catalog",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [
+    "101"
+   ],
+   "delta_median": null
+  },
+  {
+   "point": "catLg4",
+   "row": "catalog",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [
+    "101"
+   ],
+   "delta_median": null
+  },
+  {
+   "point": "L16",
+   "row": "precision",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [
+    "101"
+   ],
+   "delta_median": null
+  },
+  {
+   "point": "tiermap",
+   "row": "gpt4o_mini",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [
+    "101"
+   ],
+   "delta_median": null
+  },
+  {
+   "point": "sS0",
+   "row": "s_S",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [
+    "101"
+   ],
+   "delta_median": null
+  },
+  {
+   "point": "sS05",
+   "row": "s_S",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [
+    "101"
+   ],
+   "delta_median": null
+  },
+  {
+   "point": "xi1",
+   "row": "xi",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [
+    "101"
+   ],
+   "delta_median": null
+  },
+  {
+   "point": "wcfull",
+   "row": "wildchat",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [
+    "101"
+   ],
+   "delta_median": null
+  },
+  {
+   "point": "c0p50",
+   "row": "own_capacity",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [
+    "101"
+   ],
+   "delta_median": null
+  },
+  {
+   "point": "c0p90",
+   "row": "own_capacity",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [
+    "101"
+   ],
+   "delta_median": null
+  },
+  {
+   "point": "smooth5",
+   "row": "smoothing",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [
+    "101"
+   ],
+   "delta_median": null
+  },
+  {
+   "point": "smooth60",
+   "row": "smoothing",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [
+    "101"
+   ],
+   "delta_median": null
+  },
+  {
+   "point": "lease10",
+   "row": "lease_quantile",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [
+    "101"
+   ],
+   "delta_median": null
+  },
+  {
+   "point": "lease50",
+   "row": "lease_quantile",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [
+    "101"
+   ],
+   "delta_median": null
+  },
+  {
+   "point": "layer16",
+   "row": "layer_width",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [
+    "101"
+   ],
+   "delta_median": null
+  },
+  {
+   "point": "nlayers4",
+   "row": "n_layers",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [
+    "101"
+   ],
+   "delta_median": null
+  },
+  {
+   "point": "nlayers16",
+   "row": "n_layers",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [
+    "101"
+   ],
+   "delta_median": null
+  },
+  {
+   "point": "prot1h",
+   "row": "protected_term",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [
+    "101"
+   ],
+   "delta_median": null
+  },
+  {
+   "point": "prot1d",
+   "row": "protected_term",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [
+    "101"
+   ],
+   "delta_median": null
+  },
+  {
+   "point": "prothorizon",
+   "row": "protected_term",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [
+    "101"
+   ],
+   "delta_median": null
+  },
+  {
+   "point": "tight025",
+   "row": "tightness",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [
+    "101"
+   ],
+   "delta_median": null
+  },
+  {
+   "point": "tight1",
+   "row": "tightness",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [
+    "101"
+   ],
+   "delta_median": null
+  },
+  {
+   "point": "tight2",
+   "row": "tightness",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [],
+   "delta_median": -0.07112738581989198
+  },
+  {
+   "point": "delta0",
+   "row": "delta1",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [
+    "101"
+   ],
+   "delta_median": null
+  },
+  {
+   "point": "delta02",
+   "row": "delta1",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [
+    "101"
+   ],
+   "delta_median": null
+  },
+  {
+   "point": "strict",
+   "row": "slo_class",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [
+    "101"
+   ],
+   "delta_median": null
+  },
+  {
+   "point": "slotier",
+   "row": "slo_class",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [
+    "101"
+   ],
+   "delta_median": null
+  },
+  {
+   "point": "fee4",
+   "row": "transfer_fee",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [
+    "101"
+   ],
+   "delta_median": null
+  },
+  {
+   "point": "slow1",
+   "row": "slow_slot",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [],
+   "delta_median": -0.4705307045299103
+  },
+  {
+   "point": "mu0.2",
+   "row": "mu",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [
+    "101"
+   ],
+   "delta_median": null
+  },
+  {
+   "point": "mu0.5",
+   "row": "mu",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [],
+   "delta_median": -0.02284201754128501
+  },
+  {
+   "point": "mu2",
+   "row": "mu",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [
+    "101"
+   ],
+   "delta_median": null
+  },
+  {
+   "point": "kappaM05",
+   "row": "kappa_M",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [
+    "101"
+   ],
+   "delta_median": null
+  },
+  {
+   "point": "kappaM2",
+   "row": "kappa_M",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [],
+   "delta_median": -0.29182226398310884
+  },
+  {
+   "point": "fee8",
+   "row": "transfer_fee",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [
+    "101"
+   ],
+   "delta_median": null
+  },
+  {
+   "point": "fee16",
+   "row": "transfer_fee",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [],
+   "delta_median": -0.672061649940522
+  },
+  {
+   "point": "buf999",
+   "row": "buffer_quantile",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [
+    "101"
+   ],
+   "delta_median": null
+  },
+  {
+   "point": "q28_rf",
+   "row": "q28_rf",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [
+    "101"
+   ],
+   "delta_median": null
+  },
+  {
+   "point": "q28_vr",
+   "row": "q28_vr",
+   "weeks_hold": 0,
+   "n_weeks": 1,
+   "loss_weeks": [
+    "101"
+   ],
+   "delta_median": null
+  }
+ ],
+ "w0": {
+  "points": {
+   "scen_warm_peer_rdma": {
+    "W0": {
+     "Sublet": {
+      "101": null
+     },
+     "A9": {
+      "101": null
+     },
+     "BL1-BO": {
+      "101": null
+     },
+     "BL5-cur": {
+      "101": null
+     },
+     "BL4": {
+      "101": null
+     }
+    },
+    "holds": {
+     "101": null
+    },
+    "weeks_hold": 0,
+    "n_weeks": 1,
+    "sublet_W0_median": null,
+    "source": "s1v2"
+   },
+   "scen_ssd_optimized": {
+    "W0": {
+     "Sublet": {
+      "101": null
+     },
+     "A9": {
+      "101": null
+     },
+     "BL1-BO": {
+      "101": null
+     },
+     "BL5-cur": {
+      "101": null
+     },
+     "BL4": {
+      "101": null
+     }
+    },
+    "holds": {
+     "101": null
+    },
+    "weeks_hold": 0,
+    "n_weeks": 1,
+    "sublet_W0_median": null,
+    "source": "s1v2"
+   },
+   "scen_ssd_stock_safetensors": {
+    "W0": {
+     "Sublet": {
+      "101": null
+     },
+     "A9": {
+      "101": null
+     },
+     "BL1-BO": {
+      "101": null
+     },
+     "BL5-cur": {
+      "101": null
+     },
+     "BL4": {
+      "101": null
+     }
+    },
+    "holds": {
+     "101": null
+    },
+    "weeks_hold": 0,
+    "n_weeks": 1,
+    "sublet_W0_median": null,
+    "source": "s1v2"
+   },
+   "scen_ssd_stock_pytorch": {
+    "W0": {
+     "Sublet": {
+      "101": null
+     },
+     "A9": {
+      "101": null
+     },
+     "BL1-BO": {
+      "101": null
+     },
+     "BL5-cur": {
+      "101": null
+     },
+     "BL4": {
+      "101": null
+     }
+    },
+    "holds": {
+     "101": null
+    },
+    "weeks_hold": 0,
+    "n_weeks": 1,
+    "sublet_W0_median": null,
+    "source": "s1v2"
+   },
+   "scen_a5_10GBps": {
+    "W0": {
+     "Sublet": {
+      "101": null
+     },
+     "A9": {
+      "101": null
+     },
+     "BL1-BO": {
+      "101": null
+     },
+     "BL5-cur": {
+      "101": null
+     },
+     "BL4": {
+      "101": null
+     }
+    },
+    "holds": {
+     "101": null
+    },
+    "weeks_hold": 0,
+    "n_weeks": 1,
+    "sublet_W0_median": null,
+    "source": "s1v2"
+   },
+   "scen_a5_2GBps": {
+    "W0": {
+     "Sublet": {
+      "101": null
+     },
+     "A9": {
+      "101": null
+     },
+     "BL1-BO": {
+      "101": null
+     },
+     "BL5-cur": {
+      "101": null
+     },
+     "BL4": {
+      "101": null
+     }
+    },
+    "holds": {
+     "101": null
+    },
+    "weeks_hold": 0,
+    "n_weeks": 1,
+    "sublet_W0_median": null,
+    "source": "s1v2"
+   },
+   "scen_cold_wan_10gbps": {
+    "W0": {
+     "Sublet": {
+      "101": null
+     },
+     "A9": {
+      "101": null
+     },
+     "BL1-BO": {
+      "101": null
+     },
+     "BL5-cur": {
+      "101": null
+     },
+     "BL4": {
+      "101": null
+     }
+    },
+    "holds": {
+     "101": null
+    },
+    "weeks_hold": 0,
+    "n_weeks": 1,
+    "sublet_W0_median": null,
+    "source": "s1v2"
+   },
+   "scen_cold_wan_1gbps": {
+    "W0": {
+     "Sublet": {
+      "101": 1.6697542027318355
+     },
+     "A9": {
+      "101": 1.9419774892455988
+     },
+     "BL1-BO": {
+      "101": 1.4252993725819627
+     },
+     "BL5-cur": {
+      "101": 1.0156273440670753
+     },
+     "BL4": {
+      "101": 1.004243229220195
+     }
+    },
+    "holds": {
+     "101": false
+    },
+    "weeks_hold": 0,
+    "n_weeks": 1,
+    "sublet_W0_median": 1.6697542027318355,
+    "source": "s1v2"
+   },
+   "fee4": {
+    "W0": {
+     "Sublet": {
+      "101": null
+     },
+     "A9": {
+      "101": null
+     },
+     "BL1-BO": {
+      "101": null
+     },
+     "BL5-cur": {
+      "101": null
+     },
+     "BL4": {
+      "101": null
+     }
+    },
+    "holds": {
+     "101": null
+    },
+    "weeks_hold": 0,
+    "n_weeks": 1,
+    "sublet_W0_median": null,
+    "source": "s1v2"
+   },
+   "fee8": {
+    "W0": {
+     "Sublet": {
+      "101": null
+     },
+     "A9": {
+      "101": null
+     },
+     "BL1-BO": {
+      "101": null
+     },
+     "BL5-cur": {
+      "101": null
+     },
+     "BL4": {
+      "101": null
+     }
+    },
+    "holds": {
+     "101": null
+    },
+    "weeks_hold": 0,
+    "n_weeks": 1,
+    "sublet_W0_median": null,
+    "source": "s1v2"
+   },
+   "fee16": {
+    "W0": {
+     "Sublet": {
+      "101": 1.7812032734260632
+     },
+     "A9": {
+      "101": 4.7163603964236955
+     },
+     "BL1-BO": {
+      "101": 8.896744341587137
+     },
+     "BL5-cur": {
+      "101": 0.9999999999999999
+     },
+     "BL4": {
+      "101": 1.0458618877819823
+     }
+    },
+    "holds": {
+     "101": false
+    },
+    "weeks_hold": 0,
+    "n_weeks": 1,
+    "sublet_W0_median": 1.7812032734260632,
+    "source": "s1v2"
+   },
+   "default": {
+    "W0": {
+     "Sublet": {
+      "101": null
+     },
+     "A9": {
+      "101": null
+     },
+     "BL1-BO": {
+      "101": null
+     },
+     "BL5-cur": {
+      "101": null
+     },
+     "BL4": {
+      "101": null
+     }
+    },
+    "holds": {
+     "101": null
+    },
+    "weeks_hold": 0,
+    "n_weeks": 1,
+    "sublet_W0_median": null,
+    "source": "main"
+   }
+  },
+  "weeks": [
+   "101"
+  ],
+  "set": [
+   "BL1-BO",
+   "BL5-cur",
+   "BL4"
+  ],
+  "headline": {
+   "n_points": 12,
+   "points_all_weeks_hold": 0,
+   "points_with_failures": [
+    "default",
+    "fee16",
+    "fee4",
+    "fee8",
+    "scen_a5_10GBps",
+    "scen_a5_2GBps",
+    "scen_cold_wan_10gbps",
+    "scen_cold_wan_1gbps",
+    "scen_ssd_optimized",
+    "scen_ssd_stock_pytorch",
+    "scen_ssd_stock_safetensors",
+    "scen_warm_peer_rdma"
+   ],
+   "point_weeks_hold": 0,
+   "point_weeks": 12,
+   "sublet_W0_max": 1.7812032734260632,
+   "sublet_W0_max_at": "fee16:101",
+   "sublet_W0_below_1": 0,
+   "n_sublet_W0": 2
+  },
+  "rule": "Sublet's W0 < 1 and below the W0 of every tag of the set, per week (a missing W0 fails)"
+ },
+ "seed_spread": {
+  "by_tag": {
+   "Sublet": {
+    "max_abs_diff": 0.0,
+    "at": "L-tr:101:1",
+    "n_pairs": 7,
+    "n_missing": 0
+   },
+   "BL1": {
+    "max_abs_diff": 0.008067985206480222,
+    "at": "L-iid-0.05:101:1",
+    "n_pairs": 7,
+    "n_missing": 0
+   },
+   "BL5-cur": {
+    "max_abs_diff": 0.006507656295648645,
+    "at": "L-iid-0.2:101:1",
+    "n_pairs": 7,
+    "n_missing": 0
+   }
+  },
+  "weeks": [
+   "101"
+  ],
+  "seeds": [
+   "1"
+  ],
+  "reference_seed": "0",
+  "sources": [
+   "out/sublet_v2/main/summary.json",
+   "out/sublet_v2/seeds/summary.json"
+  ]
+ },
+ "n_points": 60,
+ "n_points_all_weeks_hold": 0,
+ "weeks": [
+  "101"
+ ],
+ "headline": {
+  "register_points": [
+   "L16",
+   "a5",
+   "alpha02",
+   "alpha03",
+   "alpha05",
+   "alpha06",
+   "alphap06",
+   "alphap10",
+   "buf999",
+   "c0p50",
+   "c0p90",
+   "catLg4",
+   "catM2",
+   "default",
+   "delta0",
+   "delta02",
+   "fee16",
+   "fee4",
+   "fee8",
+   "kappaL05",
+   "kappaL2",
+   "kappaM05",
+   "kappaM2",
+   "kv05",
+   "kv10",
+   "layer16",
+   "lease10",
+   "lease50",
+   "mu0.2",
+   "mu0.5",
+   "mu2",
+   "nlayers16",
+   "nlayers4",
+   "phi05",
+   "prot1d",
+   "prot1h",
+   "prothorizon",
+   "sS0",
+   "sS05",
+   "scen_a5_10GBps",
+   "scen_a5_2GBps",
+   "scen_cold_wan_10gbps",
+   "scen_cold_wan_1gbps",
+   "scen_ssd_optimized",
+   "scen_ssd_stock_pytorch",
+   "scen_ssd_stock_safetensors",
+   "scen_warm_peer_rdma",
+   "slotier",
+   "slow1",
+   "smooth5",
+   "smooth60",
+   "strict",
+   "tiermap",
+   "tight025",
+   "tight1",
+   "tight2",
+   "wcfull",
+   "xi1"
+  ],
+  "n_points": 7,
+  "Sublet": {
+   "lo": -67.20616499405219,
+   "lo_point": "fee16",
+   "hi": 33.93649070827778,
+   "hi_point": "mu0.5",
+   "default": 3.710775681685563
+  },
+  "A9": {
+   "lo": -140.6155043568416,
+   "lo_point": "fee16",
+   "hi": 34.96956534571386,
+   "hi_point": "slow1",
+   "default": 31.48141319838832
+  },
+  "BL1-BO": {
+   "lo": -174.61648932077657,
+   "lo_point": "fee16",
+   "hi": 36.325936433650455,
+   "hi_point": "slow1",
+   "default": 34.88204977956211
+  },
+  "BL5-cur": {
+   "lo": -1.5925763170451024,
+   "lo_point": "scen_cold_wan_1gbps",
+   "hi": 18.419601702028242,
+   "hi_point": "mu0.5",
+   "default": 16.77986886330777
+  },
+  "max_span": 70.91694067573775,
+  "max_span_row": "transfer_fee",
+  "rows_span_above": [
+   "load_scenario",
+   "mu",
+   "slow_slot",
+   "transfer_fee"
+  ],
+  "span_threshold_pp": 10.0,
+  "points_all_weeks_hold": 0,
+  "point_weeks_hold": 0,
+  "point_weeks": 58,
+  "points_with_flips": [
+   "L16",
+   "a5",
+   "alpha02",
+   "alpha03",
+   "alpha05",
+   "alpha06",
+   "alphap06",
+   "alphap10",
+   "buf999",
+   "c0p50",
+   "c0p90",
+   "catLg4",
+   "catM2",
+   "default",
+   "delta0",
+   "delta02",
+   "fee16",
+   "fee4",
+   "fee8",
+   "kappaL05",
+   "kappaL2",
+   "kappaM05",
+   "kappaM2",
+   "kv05",
+   "kv10",
+   "layer16",
+   "lease10",
+   "lease50",
+   "mu0.2",
+   "mu0.5",
+   "mu2",
+   "nlayers16",
+   "nlayers4",
+   "phi05",
+   "prot1d",
+   "prot1h",
+   "prothorizon",
+   "sS0",
+   "sS05",
+   "scen_a5_10GBps",
+   "scen_a5_2GBps",
+   "scen_cold_wan_10gbps",
+   "scen_cold_wan_1gbps",
+   "scen_ssd_optimized",
+   "scen_ssd_stock_pytorch",
+   "scen_ssd_stock_safetensors",
+   "scen_warm_peer_rdma",
+   "slotier",
+   "slow1",
+   "smooth5",
+   "smooth60",
+   "strict",
+   "tiermap",
+   "tight025",
+   "tight1",
+   "tight2",
+   "wcfull",
+   "xi1"
+  ],
+  "sublet_minus_a9_r0_median": 0.02005547364693372,
+  "q28": {
+   "q28_rf": {
+    "by_tag": {
+     "Sublet": null,
+     "A9": null,
+     "BL1-BO": null,
+     "BL5-cur": null
+    },
+    "weeks_hold": 0,
+    "n_weeks": 1
+   },
+   "q28_vr": {
+    "by_tag": {
+     "Sublet": null,
+     "A9": null,
+     "BL1-BO": null,
+     "BL5-cur": null
+    },
+    "weeks_hold": 0,
+    "n_weeks": 1
+   }
+  },
+  "seed_spread_max": {
+   "Sublet": 0.0,
+   "BL1": 0.008067985206480222,
+   "BL5-cur": 0.006507656295648645
+  }
+ }
+}

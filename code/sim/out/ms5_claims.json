@@ -1,0 +1,910 @@
+{
+ "meta": {
+  "module": "sublet.experiments.ms5_claims",
+  "spec": "design/sim_spec_ms5.md \u00a71.4, \u00a79",
+  "git_revision": "992823b93d06ab079b469b16d32b1b9309e79b35",
+  "written": "2026-11-25T06:41:09",
+  "input_root": "/work/sublet",
+  "input_root_is_repository": true,
+  "inputs": {
+   "code/sim/out/e9/manifest.json": "ok",
+   "code/sim/out/e9/summary.json": "ok",
+   "code/sim/out/figs/rebuild.json": "ok",
+   "code/sim/out/figs/sf_e9.json": "ok",
+   "code/sim/out/figs/sf_s1.json": "ok",
+   "code/sim/out/figs/sf_slack.json": "ok",
+   "code/sim/out/ms3_copy_e9.json": "ok",
+   "code/sim/out/ms3_copy_s1.json": "ok",
+   "code/sim/out/s1/q28/manifest.json": "ok",
+   "code/sim/out/s1/q28/summary.json": "ok",
+   "code/sim/out/s1/sweep/manifest.json": "ok",
+   "code/sim/out/s1/sweep/summary.json": "ok"
+  },
+  "out_dir": "/work/sublet/code/sim/out"
+ },
+ "criterion": {
+  "holds": true,
+  "text": "holds: no row is a bug, and every row is reproduced, holds, informative or explained (0 explained)",
+  "reasons": "No row is a bug, and every row is reproduced, holds, informative or explained (0 explained)",
+  "n_rows": 16,
+  "counts": {
+   "reproduced": 1,
+   "holds": 12,
+   "informative": 3,
+   "explained": 0,
+   "bug": 0,
+   "missing": 0,
+   "pending": 0
+  },
+  "bug": [],
+  "missing": [],
+  "pending": [],
+  "explained": [],
+  "unexplained": []
+ },
+ "rows": [
+  {
+   "id": "S1-0",
+   "experiment": "S1",
+   "section": "\u00a73.10",
+   "kind": "reproduction",
+   "claim": {
+    "spec": "the default point's twelve runs equal E7's (out/e7/main/summary.json runs.1.Sublet: median, p95, max and mean of overflow_usd within 1e-9 relative, and the instance hashes of meta.instances equal)",
+    "summary": "the default point's twelve runs equal E7's (code/sim/out/e7/main/summary.json runs.1.Sublet: median, p95, max and mean of overflow_usd within 1e-9 relative, and the instance hashes of meta.instances equal)"
+   },
+   "status_label": null,
+   "status_label_note": "the identity of S1's default point with E7's runs (M1)",
+   "reference": {
+    "value": "E7's runs.1.Sublet overflow_usd (median, p95, max, mean) within 1e-9 relative; the instance hashes of meta.instances",
+    "values": {
+     "tolerance": 1e-09,
+     "overflow_usd.median.e7": 23785.450748527925
+    },
+    "file": "code/sim/out/e7/main/summary.json"
+   },
+   "regenerated": {
+    "value": {
+     "n_runs": {
+      "s1": 12,
+      "e7": 12
+     },
+     "n_runs_equal": true,
+     "max(overflow_usd.*.rel_diff)": 0.0,
+     "stats_differ": [],
+     "hashes_differ": [],
+     "hashes_missing": []
+    },
+    "file": "code/sim/out/s1/sweep/summary.json checks.S1-0"
+   },
+   "summary_status": "pass",
+   "verdict": "reproduced",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "S1-1",
+   "experiment": "S1",
+   "section": "\u00a73.10",
+   "kind": "property",
+   "claim": {
+    "spec": "every point is built as \u00a73.4 states: its instance hash differs from the default's, the demand, compared client by client, and BL0a equal the default's exactly on the rows without Gamma, the points with g^lay 16 have every LLM on a fitting site, and every LLM but S at sS0 has clients",
+    "summary": "every point is built as \u00a73.4 states: its instance hash differs from the default's; on the rows without Gamma the demand, compared client by client, and BL0a equal the default's exactly; the points with g^lay 16 (every point, checked) have every LLM on a fitting layer site; every LLM but S at sS0 has clients"
+   },
+   "status_label": null,
+   "status_label_note": "the build of the points (\u00a73.4, M3)",
+   "reference": {
+    "value": "the default build of the same alignment",
+    "values": {},
+    "file": "design/sim_spec_ms5.md \u00a73.4"
+   },
+   "regenerated": {
+    "value": {
+     "n_instances": 200,
+     "n_failures": 0,
+     "len(g16_fits)": 12,
+     "len(rows_without_gamma)": 10
+    },
+    "file": "code/sim/out/s1/sweep/summary.json checks.S1-1"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "S1-2",
+   "experiment": "S1",
+   "section": "\u00a73.10",
+   "kind": "property",
+   "claim": {
+    "spec": "every A8 run has its certificate, and it holds (Theorem W(a)(b))",
+    "summary": "every A8 run has its certificate (available true), and in Theorem W's proven cases (W(a), W(b); PROVEN for the engine as implemented under C1-C3, audited) it holds; W(c) runs (CONJECTURE) are counted and listed"
+   },
+   "status_label": "Theorem W(a)(b) (PROVEN for the engine as implemented under C1-C3, audited); W(c) (CONJECTURE)",
+   "status_label_note": null,
+   "reference": {
+    "value": "held in every proven-case run; W(c) runs counted",
+    "values": {},
+    "file": "code/sim/sublet/algos/guard.py (Theorem W, module docstring); design/Sublet_design.md \u00a72.9"
+   },
+   "regenerated": {
+    "value": {
+     "n_runs": 612,
+     "certificates.n": 612,
+     "certificates.held": 612,
+     "n_unavailable": 0,
+     "n_failures": 0,
+     "n_w_c": 0,
+     "n_run_errors": 0
+    },
+    "file": "code/sim/out/s1/sweep/summary.json checks.S1-2"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "S1-3",
+   "experiment": "S1",
+   "section": "\u00a73.10",
+   "kind": "property",
+   "claim": {
+    "spec": "no run has an invariant failure",
+    "summary": "no run has an invariant failure"
+   },
+   "status_label": null,
+   "status_label_note": "the engine's invariants",
+   "reference": {
+    "value": "no invariant failure",
+    "values": {},
+    "file": "design/Sublet_design.md \u00a75.2"
+   },
+   "regenerated": {
+    "value": {
+     "n_runs": 612,
+     "n_invariant_failures": 0,
+     "n_runs_with_gpu_only_lease_slots": 0
+    },
+    "file": "code/sim/out/s1/sweep/summary.json checks.S1-3"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "S1-4",
+   "experiment": "S1",
+   "section": "\u00a73.10",
+   "kind": "informative",
+   "claim": {
+    "spec": "the saving per point and the span per row (informative); with the rows whose span exceeds 10 percentage points named",
+    "summary": "the saving per point and the span per row (informative), with the rows whose span exceeds 10 percentage points named"
+   },
+   "status_label": null,
+   "status_label_note": "a sensitivity study with no theory claim (design \u00a75.5, S1)",
+   "reference": {
+    "value": "the default point's median saving over BL0a",
+    "values": {
+     "threshold_pp": 10.0,
+     "saving_pct_median.default": 28.4149301310922
+    },
+    "file": "code/sim/out/s1/sweep/summary.json rows.<row>.default"
+   },
+   "regenerated": {
+    "value": {
+     "len(saving_pct_median)": 51,
+     "min(saving_pct_median)": -1.3939128674892332,
+     "max(saving_pct_median)": 51.747789923413634,
+     "max(span)": 42.11752692940337,
+     "rows_span_above_threshold": [
+      "load_scenario",
+      "alpha",
+      "smoothing",
+      "own_capacity",
+      "mu_split",
+      "xi"
+     ],
+     "rows_incomplete": []
+    },
+    "file": "code/sim/out/s1/sweep/summary.json checks.S1-4"
+   },
+   "summary_status": "informative",
+   "verdict": "informative",
+   "explanation": null,
+   "note": "reported as measured; S1 is a sensitivity study in the supplement with no claim (\u00a73.1)"
+  },
+  {
+   "id": "Q28-1",
+   "experiment": "Q28",
+   "section": "\u00a74.7",
+   "kind": "property",
+   "claim": {
+    "spec": "every run of every policy under both variants finishes with no invariant failure and handles every refusal and every violation death (no error record)",
+    "summary": "every run of every policy under both variants (and BL3's reference runs under the default lender) finishes with no invariant failure and handles every refusal and every violation death (no error record)"
+   },
+   "status_label": null,
+   "status_label_note": "the policies' handling of refused purchases and violation deaths (MS2 spec \u00a720 item 23)",
+   "reference": {
+    "value": "no invariant failure, no error record",
+    "values": {},
+    "file": "design/Sublet_design.md \u00a75.2.2, \u00a77.5"
+   },
+   "regenerated": {
+    "value": {
+     "n_runs": 228,
+     "n_sub_runs": 360,
+     "n_invariant_failures": 0,
+     "n_run_errors": 0,
+     "n_job_failures": 0,
+     "refusals_unavailable_total": 76217,
+     "violation_deaths_total": 3
+    },
+    "file": "code/sim/out/s1/q28/summary.json checks.Q28-1"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "Q28-2",
+   "experiment": "Q28",
+   "section": "\u00a74.7",
+   "kind": "property",
+   "claim": {
+    "spec": "every L-vr run reports no ratio (ratio_validity non-null) and every L-rf run on the trace schedule keeps its ratio validity as under the default lender; every stress run file records its variant's lender model",
+    "summary": "every L-vr run reports no ratio (ratio_validity non-null for every grid) and every L-rf run on the trace schedule keeps its ratio validity as under the default lender (the same reason for every grid); every stress run file records its variant's lender model (the L-rf half holds by construction once the lender model is L-rf's)"
+   },
+   "status_label": null,
+   "status_label_note": "the ratio rule of design \u00a75.2.4 under the stress variants",
+   "reference": {
+    "value": "ratio_validity non-null under L-vr; under L-rf as under the default lender",
+    "values": {},
+    "file": "code/sim/sublet/drivers/run.py (ratio_validity); design/Sublet_design.md \u00a75.2.4"
+   },
+   "regenerated": {
+    "value": {
+     "grids": [
+      "fast",
+      "slow_lb",
+      "slow"
+     ],
+     "n_vr": 108,
+     "n_vr_with_a_ratio": 0,
+     "n_rf": 108,
+     "n_rf_changed": 0,
+     "n_files_checked": 72,
+     "n_wrong_lender_model": 0
+    },
+    "file": "code/sim/out/s1/q28/summary.json checks.Q28-2"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "Q28-3",
+   "experiment": "Q28",
+   "section": "\u00a74.7",
+   "kind": "property",
+   "claim": {
+    "spec": "every A8 run under both variants has its certificate, and it holds",
+    "summary": "every A8 run under both variants has its certificate (available true), and in Theorem W's proven cases (W(a), W(b); PROVEN for the engine as implemented under C1-C3, audited) it holds; W(c) runs (CONJECTURE) are counted and listed"
+   },
+   "status_label": "Theorem W(a)(b) (PROVEN for the engine as implemented under C1-C3, audited); W(c) (CONJECTURE)",
+   "status_label_note": null,
+   "reference": {
+    "value": "held in every proven-case run; W(c) runs counted",
+    "values": {},
+    "file": "code/sim/sublet/algos/guard.py (Theorem W, module docstring); design/Sublet_design.md \u00a72.9"
+   },
+   "regenerated": {
+    "value": {
+     "n_runs": 48,
+     "certificates.n": 48,
+     "certificates.held": 48,
+     "n_unavailable": 0,
+     "n_failures": 0,
+     "n_w_c": 0,
+     "n_run_errors": 0
+    },
+    "file": "code/sim/out/s1/q28/summary.json checks.Q28-3"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "Q28-4",
+   "experiment": "Q28",
+   "section": "\u00a74.7",
+   "kind": "informative",
+   "claim": {
+    "spec": "the change of each policy's median cost over BL0a against its reference, the refusals and the violation victims (informative)",
+    "summary": "the change of each policy's median cost over BL0a against its reference, the refusals and the violation victims (informative)"
+   },
+   "status_label": null,
+   "status_label_note": "Q28's stress variants (design \u00a77.5), a measurement",
+   "reference": {
+    "value": "E7's runs.1.<tag> (BL3: part q28's default jobs; Sublet also S1's default point)",
+    "values": {},
+    "file": "code/sim/out/e7/main/summary.json; code/sim/out/s1/sweep/summary.json"
+   },
+   "regenerated": {
+    "value": {
+     "delta_overflow_over_bl0a.rf": {
+      "Sublet": -0.00809213032434164,
+      "A7G": -0.026838937111476002,
+      "A7": -0.026838937111476002,
+      "A6": -0.008140537238961243,
+      "BL5": -0.00809213032434164,
+      "BL1": -0.03154235154896168,
+      "BL2": -0.027066253778801452,
+      "BL4": -0.0027123431981741497,
+      "BL3": -0.010297562060901377
+     },
+     "delta_overflow_over_bl0a.vr": {
+      "Sublet": 0.0,
+      "A7G": 0.0,
+      "A7": 0.0,
+      "A6": 0.0,
+      "BL5": 0.0,
+      "BL1": 0.0,
+      "BL2": 0.0,
+      "BL4": 0.0,
+      "BL3": 0.0
+     },
+     "delta_overflow_over_bl0a_s1_default": {
+      "rf": -0.00809213032434164,
+      "vr": 0.0
+     },
+     "refusals_unavailable_median.rf": {
+      "Sublet": 368.0,
+      "A7G": 610.5,
+      "A7": 610.5,
+      "A6": 201.0,
+      "BL5": 368.0,
+      "BL1": 639.0,
+      "BL2": 474.5,
+      "BL4": 36.5,
+      "BL3": 404.5
+     },
+     "violation_victims_median.vr": {
+      "Sublet": 0.0,
+      "A7G": 0.0,
+      "A7": 0.0,
+      "A6": 0.0,
+      "BL5": 0.0,
+      "BL1": 0.0,
+      "BL2": 0.0,
+      "BL4": 0.0,
+      "BL3": 0.0
+     },
+     "saving_rises": {
+      "rf": [
+       "A6",
+       "A7",
+       "A7G",
+       "BL1",
+       "BL2",
+       "BL3",
+       "BL4",
+       "BL5",
+       "Sublet"
+      ],
+      "vr": []
+     }
+    },
+    "file": "code/sim/out/s1/q28/summary.json checks.Q28-4"
+   },
+   "summary_status": "informative",
+   "verdict": "informative",
+   "explanation": null,
+   "note": "reported as measured against each policy's reference under the default lender (\u00a74.4)"
+  },
+  {
+   "id": "E9-1",
+   "experiment": "E9",
+   "section": "\u00a75.9",
+   "kind": "property",
+   "claim": {
+    "spec": "every run job finished with status ok inside the 3 GB cap, with no invariant failure",
+    "summary": "every run job finished with status ok inside the 3 GB cap, with no invariant failure"
+   },
+   "status_label": null,
+   "status_label_note": "the job records and the engine's invariants",
+   "reference": {
+    "value": "status ok, no failure",
+    "values": {
+     "cap_mb": 3072.0
+    },
+    "file": "design/sim_spec_ms5.md \u00a70 item 2"
+   },
+   "regenerated": {
+    "value": {
+     "n_jobs": 128,
+     "jobs_by_status": {
+      "ok": 128
+     },
+     "n_failed": 0,
+     "n_missing": 0,
+     "n_runs": 128,
+     "n_runs_with_invariant_failures": 0,
+     "n_over_cap": 0
+    },
+    "file": "code/sim/out/e9/summary.json checks.E9-1"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "E9-2",
+   "experiment": "E9",
+   "section": "\u00a75.9",
+   "kind": "property",
+   "claim": {
+    "spec": "per run, C27's counts equal the grid (n_slow_steps = 288, n_fast_steps = 1,440), and slow_step_s_sum + fast_step_s_sum + reset_s + finish_s does not exceed wall_s by more than 1e-6 s",
+    "summary": "per run, C27's counts equal the grid (n_slow_steps = T_slow, n_fast_steps = T_fast: 288 and 1,440 for one day) and slow_step_s_sum + fast_step_s_sum + reset_s + finish_s does not exceed wall_s by more than 1e-6 s"
+   },
+   "status_label": null,
+   "status_label_note": "the engine's loop times (C27)",
+   "reference": {
+    "value": "the grid's step counts; the sums at most wall_s + 1e-6 s",
+    "values": {
+     "tolerance_s": 1e-06
+    },
+    "file": "code/sim/sublet/engine.py (RunResult.runtime, C27)"
+   },
+   "regenerated": {
+    "value": {
+     "n_runs": 128,
+     "grids": [
+      [
+       288,
+       1440
+      ]
+     ],
+     "n_failures": 0,
+     "max_excess_s": -0.00528489938005805
+    },
+    "file": "code/sim/out/e9/summary.json checks.E9-2"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "E9-3",
+   "experiment": "E9",
+   "section": "\u00a75.9",
+   "kind": "property",
+   "claim": {
+    "spec": "every A8 run has its certificate, and it holds (Theorem W(a)(b))",
+    "summary": "every A8 run has its certificate, and it holds in every run of Theorem W's proven cases (W(a), W(b); PROVEN for the engine as implemented under C1-C3, audited); W(c) runs (CONJECTURE) are counted and listed with their t_a"
+   },
+   "status_label": "Theorem W(a)(b) (PROVEN for the engine as implemented under C1-C3, audited); W(c) (CONJECTURE)",
+   "status_label_note": null,
+   "reference": {
+    "value": "held in every proven-case run; W(c) runs counted",
+    "values": {},
+    "file": "code/sim/sublet/algos/guard.py (Theorem W, module docstring); design/Sublet_design.md \u00a72.9"
+   },
+   "regenerated": {
+    "value": {
+     "n_runs": 64,
+     "certificates.n": 64,
+     "certificates.held": 64,
+     "n_unavailable": 0,
+     "n_failures": 0,
+     "n_w_c": 0
+    },
+    "file": "code/sim/out/e9/summary.json checks.E9-3"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "E9-4",
+   "experiment": "E9",
+   "section": "\u00a75.9",
+   "kind": "property",
+   "claim": {
+    "spec": "every LP job ended ok, and every LP under M18's gate was solved to optimality (linprog status 0, HiGHS's model status 7, 'Optimal') inside the 3 GB cap; an LP whose estimate is not under the gate is not solved and is listed as gated (amended on 2026-10-30)",
+    "summary": "every LP job was solved to optimality (linprog status 0, HiGHS's model status 7, 'Optimal') inside the 3 GB cap"
+   },
+   "status_label": null,
+   "status_label_note": "the LP bound's solves (M17, M18)",
+   "reference": {
+    "value": "linprog status 0, HiGHS model status 7; gated LPs listed",
+    "values": {
+     "gate_mb": 2800.0,
+     "time_limit_s": 1500.0
+    },
+    "file": "code/sim/sublet/opt/milp.py (solve_lp); design/sim_spec_ms5.md \u00a75.9"
+   },
+   "regenerated": {
+    "value": {
+     "n_jobs": 28,
+     "jobs_by_status": {
+      "ok": 28
+     },
+     "n_lps": 28,
+     "n_not_optimal": 2,
+     "n_gated": 2,
+     "gated": [
+      "e9:lp:pt=e7r_V32_SML:c=2",
+      "e9:lp:pt=e7r_V64_SML:c=2"
+     ],
+     "n_failed": 0,
+     "n_missing": 0,
+     "summary_status": "fail"
+    },
+    "file": "code/sim/out/e9/summary.json checks.E9-4 (recomputed by this report, \u00a75.9 as amended)"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": "2 LP(s) above M18's gate not solved (gated, \u00a75.9 as amended): e9:lp:pt=e7r_V32_SML:c=2, e9:lp:pt=e7r_V64_SML:c=2"
+  },
+  {
+   "id": "E9-5",
+   "experiment": "E9",
+   "section": "\u00a75.9",
+   "kind": "informative",
+   "claim": {
+    "spec": "per point and policy, the loops per simulated hour against real time, the slow-step P99 and maximum against the 300-s slot, the fast-step P99 against the 60-s slot, the setup, the peak memory and the LP's time (informative); the ratio to real time of the largest point of each menu named",
+    "summary": "per point and policy, the loops per simulated hour against real time, the slow-step P99 and maximum against the 300-s slot, the fast-step P99 against the 60-s slot, the setup, the peak memory and the LP's time; the ratio to real time of the largest point of each menu named (informative)"
+   },
+   "status_label": null,
+   "status_label_note": "a system measurement with no claim (design \u00a75.5, E9)",
+   "reference": {
+    "value": "real time 3,600 s per simulated hour; slots of 300 s and 60 s",
+    "values": {
+     "real_time_s_per_h": 3600.0,
+     "slow_slot_s": 300.0,
+     "fast_slot_s": 60.0
+    },
+    "file": "design/sim_spec_ms5.md \u00a75.6"
+   },
+   "regenerated": {
+    "value": {
+     "largest_point_by_menu.*.point": {
+      "full": "e7f_V64_SML",
+      "reduced": "e7r_V64_SML"
+     },
+     "largest_point_by_menu.*.sites_x_llms": {
+      "full": 3855,
+      "reduced": 3885
+     },
+     "largest_point_by_menu.*.policies.Sublet.real_time_over_loops": {
+      "full": 34.095461066088326,
+      "reduced": 135.55940649492192
+     },
+     "largest_point_by_menu.*.policies.A6.real_time_over_loops": {
+      "full": 590.9269865965692,
+      "reduced": 438.27452936847646
+     },
+     "flags.slow_step_max_over_slot": [],
+     "flags.fast_step_p99_over_slot": [],
+     "flags.loops_over_real_time": []
+    },
+    "file": "code/sim/out/e9/summary.json checks.E9-5"
+   },
+   "summary_status": "informative",
+   "verdict": "informative",
+   "explanation": null,
+   "note": "reported as measured; E9 has no claim (\u00a75.1)"
+  },
+  {
+   "id": "SL-1",
+   "experiment": "SL",
+   "section": "\u00a76.3",
+   "kind": "property",
+   "claim": {
+    "spec": "the extract's daily series equal a recomputation from the npz without the trace's end (minimum, mean and maximum per day within 1e-9), and its source digests equal the versioned files'",
+    "summary": null
+   },
+   "status_label": null,
+   "status_label_note": "the slack extract against its analysis outputs (\u00a76)",
+   "reference": {
+    "value": "the npz's daily minimum, mean and maximum without the trace's end (within 1e-9); the sha256 of the npz and the two JSON files",
+    "values": {
+     "tolerance": 1e-09,
+     "slots_per_day": 288,
+     "tail_rise": 0.5
+    },
+    "file": "code/analysis/out/a1_slack_series.npz; code/analysis/out/a1_lender_spotgpu.json; code/analysis/out/a9b_notice_buffer_24h.json"
+   },
+   "regenerated": {
+    "value": {
+     "n_pools": 6,
+     "n_days": 177,
+     "n_slots": 50993,
+     "n_kept": 50975,
+     "tail_start_slot": 50975,
+     "max_abs_diff": 0.0,
+     "digests_equal": true,
+     "len(failures)": 0
+    },
+    "file": "code/sim/out/figs/sf_slack.json (recomputed by this report)"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "RB-1",
+   "experiment": "RB",
+   "section": "\u00a78.4",
+   "kind": "property",
+   "claim": {
+    "spec": "the exit run of run_all.sh with CHECK=1 in a clean clone: every output identical, no file without its entry, the float heights equal",
+    "summary": null
+   },
+   "status_label": null,
+   "status_label_note": "the frozen rebuild (design \u00a75.2.6, M30)",
+   "reference": {
+    "value": "every output byte-identical with its versioned file; the float heights equal on every key but 'written'; no file without its entry",
+    "values": {},
+    "file": "code/sim/figs/rebuild.py"
+   },
+   "regenerated": {
+    "value": {
+     "mode": "check",
+     "only": null,
+     "git_revision": "992823b93d06ab079b469b16d32b1b9309e79b35",
+     "tracked_files_dirty": false,
+     "n_outputs": 235,
+     "n_identical": 235,
+     "len(different)": 0,
+     "len(unlisted)": 0,
+     "len(missing)": 0,
+     "heights_equal": {
+      "plain": true,
+      "ms4": true
+     },
+     "hand_set_ok": true,
+     "len(stale)": 0,
+     "len(problems)": 0
+    },
+    "file": "code/sim/out/figs/rebuild.json (read by this report)"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  }
+ ],
+ "figures": {
+  "run": true,
+  "extracts": "/work/sublet/code/sim/out/figs",
+  "rows": [
+   {
+    "figure": "sf_e9",
+    "script": "figs/supp/sf_e9.py",
+    "extract": "/work/sublet/code/sim/out/figs/sf_e9.json",
+    "status": "ok",
+    "small_glyphs": [],
+    "n_small_glyphs": 0,
+    "n_glyph_warnings": 0,
+    "min_glyph_pt": 4.9,
+    "text_pt": [
+     7.0,
+     7.970112079701122
+    ],
+    "error": null
+   },
+   {
+    "figure": "sf_s1",
+    "script": "figs/supp/sf_s1.py",
+    "extract": "/work/sublet/code/sim/out/figs/sf_s1.json",
+    "status": "ok",
+    "small_glyphs": [],
+    "n_small_glyphs": 0,
+    "n_glyph_warnings": 0,
+    "min_glyph_pt": 4.9,
+    "text_pt": [
+     7.0,
+     7.970112079701122
+    ],
+    "error": null
+   },
+   {
+    "figure": "sf_slack",
+    "script": "figs/supp/sf_slack.py",
+    "extract": "/work/sublet/code/sim/out/figs/sf_slack.json",
+    "status": "ok",
+    "small_glyphs": [],
+    "n_small_glyphs": 0,
+    "n_glyph_warnings": 0,
+    "min_glyph_pt": 7.0,
+    "text_pt": [
+     7.0,
+     7.970112079701122
+    ],
+    "error": null
+   }
+  ],
+  "counts": {
+   "ok": 3,
+   "missing": 0,
+   "error": 0
+  },
+  "note": "3 figure script(s) rerun with --from-extract into a temporary folder (removed)"
+ },
+ "copy_checks": {
+  "records": {
+   "s1": {
+    "file": "code/sim/out/ms3_copy_s1.json",
+    "present": true,
+    "pass": true,
+    "exp_matches": true,
+    "commit": "622cf450266ed08609c0958193131e62070450e2",
+    "time": "2026-10-30T18:42:11",
+    "failed": [],
+    "parts": [
+     "sweep",
+     "q28"
+    ],
+    "records_by_status": {
+     "ok": 284
+    }
+   },
+   "e9": {
+    "file": "code/sim/out/ms3_copy_e9.json",
+    "present": true,
+    "pass": true,
+    "exp_matches": true,
+    "commit": "622cf450266ed08609c0958193131e62070450e2",
+    "time": "2026-10-30T18:42:12",
+    "failed": [],
+    "parts": [],
+    "records_by_status": {
+     "ok": 158
+    }
+   }
+  },
+  "commits": [
+   "622cf450266ed08609c0958193131e62070450e2"
+  ],
+  "one_commit": true,
+  "note": "2 of 2 records present; every present record passes; one clone commit"
+ },
+ "jobs": {
+  "rows": {
+   "s1/sweep": {
+    "manifest": "code/sim/out/s1/sweep/manifest.json",
+    "present": true,
+    "n_listed": 204,
+    "by_status": {
+     "ok": 206
+    },
+    "n_blocking": 0,
+    "blocking": [],
+    "n_unlisted_records": 0,
+    "n_unreadable_records": 0,
+    "summary_jobs_missing": 0,
+    "summary_ignored_outputs": 0
+   },
+   "s1/q28": {
+    "manifest": "code/sim/out/s1/q28/manifest.json",
+    "present": true,
+    "n_listed": 76,
+    "by_status": {
+     "ok": 78
+    },
+    "n_blocking": 0,
+    "blocking": [],
+    "n_unlisted_records": 0,
+    "n_unreadable_records": 0,
+    "summary_jobs_missing": 0,
+    "summary_ignored_outputs": 0
+   },
+   "e9": {
+    "manifest": "code/sim/out/e9/manifest.json",
+    "present": true,
+    "n_listed": 156,
+    "by_status": {
+     "ok": 158
+    },
+    "n_blocking": 0,
+    "blocking": [],
+    "n_unlisted_records": 0,
+    "n_unreadable_records": 0,
+    "summary_jobs_missing": 0,
+    "summary_ignored_outputs": 0
+   }
+  },
+  "n_blocking": 0,
+  "note": "every listed job has an 'ok' record"
+ },
+ "rebuild": {
+  "file": "code/sim/out/figs/rebuild.json",
+  "present": true,
+  "status": "pass",
+  "pass": true,
+  "mode": "check",
+  "only": null,
+  "git_revision": "992823b93d06ab079b469b16d32b1b9309e79b35",
+  "tracked_files_dirty": false,
+  "root_is_repository": true,
+  "written": "2026-11-25T06:39:59",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "scipy": "1.17.1",
+   "matplotlib": "3.10.8",
+   "pymupdf": "1.27.2.3",
+   "pillow": "12.2.0",
+   "poppler": "pdffonts version 24.02.0",
+   "ghostscript": "10.02.1",
+   "pdflatex": "pdfTeX 3.141592653-2.6-1.40.29 (TeX Live 2026)"
+  },
+  "fonts": {
+   "Liberation Sans regular": {
+    "path": "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf",
+    "sha256": "4659bc0c58c5028dd488ec928d41d9265db43d9b669fc14ca8b0832daca7b144"
+   },
+   "Liberation Sans bold": {
+    "path": "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf",
+    "sha256": "3973aa5054fb467dd5627245d3dc82e37bf16fe075756156a570455871351582"
+   },
+   "Liberation Sans italic": {
+    "path": "/usr/share/fonts/truetype/liberation/LiberationSans-Italic.ttf",
+    "sha256": "830c5fa600505fb4c1a271b4271c53c44bae43f492b2a240d0e98a3a7a380121"
+   },
+   "STIXGeneral": {
+    "path": "/opt/venv/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneral.ttf",
+    "sha256": "167378031e2dddc6216d67819c9260e9a06ffc4c478e4e23cb98a6fd44b183c2"
+   }
+  },
+  "n_scripts": 62,
+  "n_outputs": 235,
+  "n_identical": 235,
+  "different": [],
+  "not_written": [],
+  "unlisted": [],
+  "missing": [],
+  "heights_equal": {
+   "plain": true,
+   "ms4": true,
+   "ms5b": true,
+   "ms7": true
+  },
+  "hand_set_ok": true,
+  "note": "235 of 235 outputs identical in mode 'check' at 992823b93d06ab079b469b16d32b1b9309e79b35"
+ },
+ "captions": {
+  "sf_e9": {
+   "text": "Wall time per simulated hour against sites \u00d7 LLMs (one day per run; medians over 4 alignments at policy seed 0, with the range over the alignments as bars and, for the LP, as a grey band; invariant checks on; the host's 1-min load average at a job's start: median 1.42, at most 4.00). The points are, from left to right, $V$ = 1, 2, 4, 8, 16, 32 and 64 layers per trace lender. (a) The full menu of E7 (20 revocable contracts) and (b) the reduced menu (3): the slow loop (lines with markers) and the fast loop (lines with small markers) of each policy; the setup per run (build, inputs, construction and reset) is left out and given in Table~\\ref{tab:e9-steps}. (b) also gives the time to build and solve the LP bound over the day, divided by its simulated hours (black dashed; the merged relaxation on the slow grid). (a) has no LP bound: on the full menu the LP's estimated memory, at least 4.8 GB, exceeds the 3 GB cap of a job. (c) The slow-step P99 on the full menu. Grey: real time (3,600 s per simulated hour) and the 5-min slow slot. The two fast loops cross between $V$ = 16 and 32 and differ by at most 31% from $V$ = 16 on; where they meet, the line of Lagged RetroRenting + one-way guard ($B_0=10\\%$ of the all-fallback bill), drawn last, covers the other. At $V$ = 32 and 64 the LP of alignment 2 was not solved in E9's run, since its estimated memory exceeded the LP runs' gate of 2,800 MB; it was solved separately on the same instance and is included in the median and range.",
+   "n_chars": 1491,
+   "reduced": false,
+   "source": "/work/sublet/code/sim/out/figs/sf_e9.json",
+   "notes": []
+  },
+  "sf_s1": {
+   "text": "The saving over all-fallback of Lagged RetroRenting + one-way guard ($B_0=10\\%$ of the all-fallback bill) in overflow accounting per assumption on E7's main week (one week; medians over 4 alignments \u00d7 3 policy seeds; each setting's saving over its own all-fallback cost). A bar runs from the lowest to the highest median over the row's settings (markers) and the default (grey line, 28.4%), labeled with the settings at its ends; rows sorted by span. $\\Gamma$ is re-solved to keep the market tightness at its default 0.5 (in its own row, at the row's values) in every row of (b) and in the lease quantile, offered layers $V_\\ell$, layer GPUs and buffer quantile rows of (c). Its allowance $B_0$ is 10\\% of each run's all-fallback cost. The $\\alpha_p$ and protected term rows change nothing: the policy leases no protected capacity at their settings. L-rf refuses purchases on unavailable layers, L-vr turns buffer violations into reclaims without notice (off: the default lender; on: the variant); no buffer violation occurred in its L-vr runs, so they equal the default lender's. The $\\mu/\\tilde{\\beta}$ row reuses E7's runs. Bar ends not labeled: Load scenario from WAN 1 Gb/s to warm peer (Table~\\ref{tab:s1-points}). Not run: the warm-peer and SSD load-rate scaling, the client unit $1/u$ and the pool width $\\zeta$ (no sweep in the register); the tier map (its sweep is the default); a per-tier tokens-per-conversation factor and a clock alignment at local midnight (no source); a non-causal smoothing window and a load scenario per region pair (not built); $V_\\ell$ as the whole block below the lease quantile (beyond the evaluation's memory budget); $V_\\ell$ as a share of the mean lendable capacity (not defined); a uniform $\\kappa$ multiplier (identical to the default).",
+   "n_chars": 1779,
+   "reduced": false,
+   "source": "/work/sublet/code/sim/out/figs/sf_s1.json",
+   "notes": []
+  },
+  "sf_slack": {
+   "text": "Lendable slack (capacity minus the high-priority jobs' occupancy, at least 0) of the six GPU pools of Alibaba's cluster-trace-v2026-spot-gpu [duan2026gfs] at 5-min slots: daily minimum to maximum (band) and daily mean (line) over 177 days from the end of the trace's first week, which the analysis drops; each y axis runs from 0 to the pool's capacity (title). The trace's last 18 slots (90 min), in which every pool's slack jumps at once to at least 82% of its capacity, are left out. Thin light line: P25, the 25th percentile of the pool's slack over the whole series (the slack reaches it in at least 75% of the slots). At its default lease-size quantile (P25) the simulator takes this quantile of the slack left after the lender's notice buffer and rounds it down to whole layers, so the top of the block a spot lender offers lies at or below this line. (a) A10: P25 = 0; its slack is zero in 94.0% of the slots, in every slot until day 166, and its daily mean is 92\u2013126 GPUs from day 167 on.",
+   "n_chars": 996,
+   "reduced": false,
+   "source": "/work/sublet/code/sim/out/figs/sf_slack.json",
+   "notes": []
+  }
+ }
+}

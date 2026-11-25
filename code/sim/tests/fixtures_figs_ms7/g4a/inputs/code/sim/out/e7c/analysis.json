@@ -1,0 +1,1787 @@
+{
+ "meta": {
+  "exp": "e7c",
+  "spec": "design/ms7/plan.md X1, D4, D6 (C53)",
+  "git_revision": "c1f4dc18be025cfeb540f8856b8e4a7782c9ea90",
+  "written": "2026-11-09T04:33:35",
+  "analysis_sha256": "47637395ca47519982603a180c4b54f9fe5ad036b58917de69ae9630216c9f04",
+  "registration": {
+   "path": "design/ms7/registration.md",
+   "exists": true,
+   "registered_sha256": "47637395ca47519982603a180c4b54f9fe5ad036b58917de69ae9630216c9f04",
+   "matches": true
+  },
+  "inputs": {
+   "lag": {
+    "path": "/work/w4/A/refresh/e7c/out/e7c/lag/summary.json",
+    "sha256": "4a71b476d311c11b5f430568a7424dc35a0b98091e30bc4f5b6a0ad46b196d9c"
+   },
+   "gate": {
+    "path": "/work/w4/A/refresh/e7c/out/e7c/gate/summary.json",
+    "sha256": "b531faf0211f006b08ca51728fa16e76980b8fc53de6028a22922a754138e8b0"
+   },
+   "main": {
+    "path": "/work/w4/A/refresh/e7c/out/sublet_v2/main/summary.json",
+    "sha256": "25e556eeee1df3687e1d9fc72390099c5305ce71e90c18e8b27be30a0dbd0c9d"
+   }
+  },
+  "weeks": [
+   "101"
+  ],
+  "n_weeks": 1,
+  "weeks_are_confirmation_weeks": false,
+  "reduced": true,
+  "note": "descriptive: per week, median, min, max and sign counts; no p-values (D4)"
+ },
+ "policies": [
+  "Sublet-lag",
+  "A9-lag",
+  "BL1-lag",
+  "BL1-BO-lag",
+  "BL2-lag",
+  "BL3-0-lag",
+  "BL4-lag",
+  "BL5-tau60-lag",
+  "BL5N-lag",
+  "BL1N-lag",
+  "BL1-GP-lag",
+  "BL5"
+ ],
+ "h1_set": [
+  "BL1-lag",
+  "BL1-BO-lag",
+  "BL2-lag",
+  "BL3-0-lag",
+  "BL4-lag",
+  "BL5"
+ ],
+ "notice_set": [
+  "BL5-tau60-lag",
+  "BL1-GP-lag",
+  "BL1N-lag",
+  "BL5N-lag"
+ ],
+ "per_policy": {
+  "Sublet-lag": {
+   "r0": {
+    "weeks": {
+     "101": 1.100909506809022
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": 1.100909506809022,
+    "min": 1.100909506809022,
+    "max": 1.100909506809022,
+    "n_below_1": 0
+   },
+   "W0": {
+    "weeks": {
+     "101": 1.0946143060009856
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": 1.0946143060009856,
+    "min": 1.0946143060009856,
+    "max": 1.0946143060009856,
+    "n_below_1": 0
+   },
+   "RC": {
+    "weeks": {
+     "101": 0.09912331884563597
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": 0.09912331884563597,
+    "min": 0.09912331884563597,
+    "max": 0.09912331884563597
+   }
+  },
+  "A9-lag": {
+   "r0": {
+    "weeks": {
+     "101": 0.8696781823091136
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": 0.8696781823091136,
+    "min": 0.8696781823091136,
+    "max": 0.8696781823091136,
+    "n_below_1": 1
+   },
+   "W0": {
+    "weeks": {
+     "101": 1.161408066065808
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": 1.161408066065808,
+    "min": 1.161408066065808,
+    "max": 1.161408066065808,
+    "n_below_1": 0
+   },
+   "RC": {
+    "weeks": {
+     "101": 0.029743210351884652
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": 0.029743210351884652,
+    "min": 0.029743210351884652,
+    "max": 0.029743210351884652
+   }
+  },
+  "BL1-lag": {
+   "r0": {
+    "weeks": {
+     "101": 0.858386293256374
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": 0.858386293256374,
+    "min": 0.858386293256374,
+    "max": 0.858386293256374,
+    "n_below_1": 1
+   },
+   "W0": {
+    "weeks": {
+     "101": 1.7398912881549795
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": 1.7398912881549795,
+    "min": 1.7398912881549795,
+    "max": 1.7398912881549795,
+    "n_below_1": 0
+   },
+   "RC": {
+    "weeks": {
+     "101": 0.020307791596020253
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": 0.020307791596020253,
+    "min": 0.020307791596020253,
+    "max": 0.020307791596020253
+   }
+  },
+  "BL1-BO-lag": {
+   "r0": {
+    "weeks": {
+     "101": 0.8550181356869478
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": 0.8550181356869478,
+    "min": 0.8550181356869478,
+    "max": 0.8550181356869478,
+    "n_below_1": 1
+   },
+   "W0": {
+    "weeks": {
+     "101": 1.5069127703042402
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": 1.5069127703042402,
+    "min": 1.5069127703042402,
+    "max": 1.5069127703042402,
+    "n_below_1": 0
+   },
+   "RC": {
+    "weeks": {
+     "101": 0.016939634026594153
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": 0.016939634026594153,
+    "min": 0.016939634026594153,
+    "max": 0.016939634026594153
+   }
+  },
+  "BL2-lag": {
+   "r0": {
+    "weeks": {
+     "101": 0.9204488737793691
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": 0.9204488737793691,
+    "min": 0.9204488737793691,
+    "max": 0.9204488737793691,
+    "n_below_1": 1
+   },
+   "W0": {
+    "weeks": {
+     "101": 1.540776043563183
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": 1.540776043563183,
+    "min": 1.540776043563183,
+    "max": 1.540776043563183,
+    "n_below_1": 0
+   },
+   "RC": {
+    "weeks": {
+     "101": 0.010752776353908367
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": 0.010752776353908367,
+    "min": 0.010752776353908367,
+    "max": 0.010752776353908367
+   }
+  },
+  "BL3-0-lag": {
+   "r0": {
+    "weeks": {
+     "101": 0.9440354407550766
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": 0.9440354407550766,
+    "min": 0.9440354407550766,
+    "max": 0.9440354407550766,
+    "n_below_1": 1
+   },
+   "W0": {
+    "weeks": {
+     "101": 1.5829725345015162
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": 1.5829725345015162,
+    "min": 1.5829725345015162,
+    "max": 1.5829725345015162,
+    "n_below_1": 0
+   },
+   "RC": {
+    "weeks": {
+     "101": 0.03551314479131373
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": 0.03551314479131373,
+    "min": 0.03551314479131373,
+    "max": 0.03551314479131373
+   }
+  },
+  "BL4-lag": {
+   "r0": {
+    "weeks": {
+     "101": 1.0017866401000728
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": 1.0017866401000728,
+    "min": 1.0017866401000728,
+    "max": 1.0017866401000728,
+    "n_below_1": 0
+   },
+   "W0": {
+    "weeks": {
+     "101": 1.0149250929200309
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": 1.0149250929200309,
+    "min": 1.0149250929200309,
+    "max": 1.0149250929200309,
+    "n_below_1": 0
+   },
+   "RC": {
+    "weeks": {
+     "101": -0.004970263671155273
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": -0.004970263671155273,
+    "min": -0.004970263671155273,
+    "max": -0.004970263671155273
+   }
+  },
+  "BL5-tau60-lag": {
+   "r0": {
+    "weeks": {
+     "101": 1.8765967178726275
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": 1.8765967178726275,
+    "min": 1.8765967178726275,
+    "max": 1.8765967178726275,
+    "n_below_1": 0
+   },
+   "W0": {
+    "weeks": {
+     "101": 1.8765967178726275
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": 1.8765967178726275,
+    "min": 1.8765967178726275,
+    "max": 1.8765967178726275,
+    "n_below_1": 0
+   },
+   "RC": {
+    "weeks": {
+     "101": 0.0
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   }
+  },
+  "BL5N-lag": {
+   "r0": {
+    "weeks": {
+     "101": 1.0394651759986113
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": 1.0394651759986113,
+    "min": 1.0394651759986113,
+    "max": 1.0394651759986113,
+    "n_below_1": 0
+   },
+   "W0": {
+    "weeks": {
+     "101": 1.1721012504368888
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": 1.1721012504368888,
+    "min": 1.1721012504368888,
+    "max": 1.1721012504368888,
+    "n_below_1": 0
+   },
+   "RC": {
+    "weeks": {
+     "101": 0.011206104623979973
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": 0.011206104623979973,
+    "min": 0.011206104623979973,
+    "max": 0.011206104623979973
+   }
+  },
+  "BL1N-lag": {
+   "r0": {
+    "weeks": {
+     "101": 0.8729217672284462
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": 0.8729217672284462,
+    "min": 0.8729217672284462,
+    "max": 0.8729217672284462,
+    "n_below_1": 1
+   },
+   "W0": {
+    "weeks": {
+     "101": 1.218618689247927
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": 1.218618689247927,
+    "min": 1.218618689247927,
+    "max": 1.218618689247927,
+    "n_below_1": 0
+   },
+   "RC": {
+    "weeks": {
+     "101": 0.03101688521859558
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": 0.03101688521859558,
+    "min": 0.03101688521859558,
+    "max": 0.03101688521859558
+   }
+  },
+  "BL1-GP-lag": {
+   "r0": {
+    "weeks": {
+     "101": 0.9970045747344712
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": 0.9970045747344712,
+    "min": 0.9970045747344712,
+    "max": 0.9970045747344712,
+    "n_below_1": 1
+   },
+   "W0": {
+    "weeks": {
+     "101": 1.1637755785512849
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": 1.1637755785512849,
+    "min": 1.1637755785512849,
+    "max": 1.1637755785512849,
+    "n_below_1": 0
+   },
+   "RC": {
+    "weeks": {
+     "101": 0.008091459643510213
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": 0.008091459643510213,
+    "min": 0.008091459643510213,
+    "max": 0.008091459643510213
+   }
+  },
+  "BL5": {
+   "r0": {
+    "weeks": {
+     "101": 0.9731856438139714
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": 0.9731856438139714,
+    "min": 0.9731856438139714,
+    "max": 0.9731856438139714,
+    "n_below_1": 1
+   },
+   "W0": {
+    "weeks": {
+     "101": 1.2167648160978062
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": 1.2167648160978062,
+    "min": 1.2167648160978062,
+    "max": 1.2167648160978062,
+    "n_below_1": 0
+   },
+   "RC": {
+    "weeks": {
+     "101": -0.005236875343191394
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": -0.005236875343191394,
+    "min": -0.005236875343191394,
+    "max": -0.005236875343191394
+   }
+  }
+ },
+ "margins": {
+  "h1": {
+   "r0": {
+    "metric": "r0",
+    "set": [
+     "BL1-lag",
+     "BL1-BO-lag",
+     "BL2-lag",
+     "BL3-0-lag",
+     "BL4-lag",
+     "BL5"
+    ],
+    "weeks": {
+     "101": {
+      "delta": -0.24589137112207415,
+      "best": "BL1-BO-lag",
+      "best_value": 0.8550181356869478,
+      "sublet": 1.100909506809022,
+      "missing": []
+     }
+    },
+    "n_weeks": 1,
+    "n_wins": 0,
+    "n_ties": 0,
+    "n_losses": 1,
+    "n_lost_missing": 0,
+    "n": 1,
+    "n_missing": 0,
+    "median": -0.24589137112207415,
+    "min": -0.24589137112207415,
+    "max": -0.24589137112207415,
+    "sign": "delta = min over the set minus Sublet-lag (H1's convention): delta > 0, Sublet-lag is cheaper than every policy of the set in that week"
+   },
+   "W0": {
+    "metric": "W0",
+    "set": [
+     "BL1-lag",
+     "BL1-BO-lag",
+     "BL2-lag",
+     "BL3-0-lag",
+     "BL4-lag",
+     "BL5"
+    ],
+    "weeks": {
+     "101": {
+      "delta": -0.07968921308095478,
+      "best": "BL4-lag",
+      "best_value": 1.0149250929200309,
+      "sublet": 1.0946143060009856,
+      "missing": []
+     }
+    },
+    "n_weeks": 1,
+    "n_wins": 0,
+    "n_ties": 0,
+    "n_losses": 1,
+    "n_lost_missing": 0,
+    "n": 1,
+    "n_missing": 0,
+    "median": -0.07968921308095478,
+    "min": -0.07968921308095478,
+    "max": -0.07968921308095478,
+    "sign": "delta = min over the set minus Sublet-lag (H1's convention): delta > 0, Sublet-lag is cheaper than every policy of the set in that week"
+   }
+  },
+  "notice": {
+   "r0": {
+    "metric": "r0",
+    "set": [
+     "BL5-tau60-lag",
+     "BL1-GP-lag",
+     "BL1N-lag",
+     "BL5N-lag"
+    ],
+    "weeks": {
+     "101": {
+      "delta": -0.22798773958057583,
+      "best": "BL1N-lag",
+      "best_value": 0.8729217672284462,
+      "sublet": 1.100909506809022,
+      "missing": []
+     }
+    },
+    "n_weeks": 1,
+    "n_wins": 0,
+    "n_ties": 0,
+    "n_losses": 1,
+    "n_lost_missing": 0,
+    "n": 1,
+    "n_missing": 0,
+    "median": -0.22798773958057583,
+    "min": -0.22798773958057583,
+    "max": -0.22798773958057583,
+    "sign": "delta = min over the set minus Sublet-lag (H1's convention): delta > 0, Sublet-lag is cheaper than every policy of the set in that week"
+   },
+   "W0": {
+    "metric": "W0",
+    "set": [
+     "BL5-tau60-lag",
+     "BL1-GP-lag",
+     "BL1N-lag",
+     "BL5N-lag"
+    ],
+    "weeks": {
+     "101": {
+      "delta": 0.06916127255029925,
+      "best": "BL1-GP-lag",
+      "best_value": 1.1637755785512849,
+      "sublet": 1.0946143060009856,
+      "missing": []
+     }
+    },
+    "n_weeks": 1,
+    "n_wins": 1,
+    "n_ties": 0,
+    "n_losses": 0,
+    "n_lost_missing": 0,
+    "n": 1,
+    "n_missing": 0,
+    "median": 0.06916127255029925,
+    "min": 0.06916127255029925,
+    "max": 0.06916127255029925,
+    "sign": "delta = min over the set minus Sublet-lag (H1's convention): delta > 0, Sublet-lag is cheaper than every policy of the set in that week"
+   }
+  }
+ },
+ "lag_minus_revealed": {
+  "Sublet-lag": {
+   "revealed": "Sublet",
+   "lagged_from": "lag",
+   "r0": {
+    "weeks": {
+     "101": 0.13801726362587763
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": 0.13801726362587763,
+    "min": 0.13801726362587763,
+    "max": 0.13801726362587763,
+    "revealed": {
+     "weeks": {
+      "101": 0.9628922431831444
+     },
+     "n": 1,
+     "n_missing": 0,
+     "median": 0.9628922431831444,
+     "min": 0.9628922431831444,
+     "max": 0.9628922431831444
+    }
+   },
+   "W0": {
+    "weeks": {
+     "101": 0.06995085731579986
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": 0.06995085731579986,
+    "min": 0.06995085731579986,
+    "max": 0.06995085731579986,
+    "revealed": {
+     "weeks": {
+      "101": 1.0246634486851858
+     },
+     "n": 1,
+     "n_missing": 0,
+     "median": 1.0246634486851858,
+     "min": 1.0246634486851858,
+     "max": 1.0246634486851858
+    }
+   },
+   "RC": {
+    "weeks": {
+     "101": 0.037452730057829564
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": 0.037452730057829564,
+    "min": 0.037452730057829564,
+    "max": 0.037452730057829564,
+    "revealed": {
+     "weeks": {
+      "101": 0.0616705887878064
+     },
+     "n": 1,
+     "n_missing": 0,
+     "median": 0.0616705887878064,
+     "min": 0.0616705887878064,
+     "max": 0.0616705887878064
+    }
+   }
+  },
+  "A9-lag": {
+   "revealed": "A9",
+   "lagged_from": "lag",
+   "r0": {
+    "weeks": {
+     "101": 0.18449231429299684
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": 0.18449231429299684,
+    "min": 0.18449231429299684,
+    "max": 0.18449231429299684,
+    "revealed": {
+     "weeks": {
+      "101": 0.6851858680161168
+     },
+     "n": 1,
+     "n_missing": 0,
+     "median": 0.6851858680161168,
+     "min": 0.6851858680161168,
+     "max": 0.6851858680161168
+    }
+   },
+   "W0": {
+    "weeks": {
+     "101": 0.13107339245214455
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": 0.13107339245214455,
+    "min": 0.13107339245214455,
+    "max": 0.13107339245214455,
+    "revealed": {
+     "weeks": {
+      "101": 1.0303346736136634
+     },
+     "n": 1,
+     "n_missing": 0,
+     "median": 1.0303346736136634,
+     "min": 1.0303346736136634,
+     "max": 1.0303346736136634
+    }
+   },
+   "RC": {
+    "weeks": {
+     "101": -0.009352263594522126
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": -0.009352263594522126,
+    "min": -0.009352263594522126,
+    "max": -0.009352263594522126,
+    "revealed": {
+     "weeks": {
+      "101": 0.03909547394640678
+     },
+     "n": 1,
+     "n_missing": 0,
+     "median": 0.03909547394640678,
+     "min": 0.03909547394640678,
+     "max": 0.03909547394640678
+    }
+   }
+  },
+  "BL1-lag": {
+   "revealed": "BL1",
+   "lagged_from": "lag",
+   "r0": {
+    "weeks": {
+     "101": 0.1945511798386006
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": 0.1945511798386006,
+    "min": 0.1945511798386006,
+    "max": 0.1945511798386006,
+    "revealed": {
+     "weeks": {
+      "101": 0.6638351134177733
+     },
+     "n": 1,
+     "n_missing": 0,
+     "median": 0.6638351134177733,
+     "min": 0.6638351134177733,
+     "max": 0.6638351134177733
+    }
+   },
+   "W0": {
+    "weeks": {
+     "101": -0.20571682136018477
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": -0.20571682136018477,
+    "min": -0.20571682136018477,
+    "max": -0.20571682136018477,
+    "revealed": {
+     "weeks": {
+      "101": 1.9456081095151643
+     },
+     "n": 1,
+     "n_missing": 0,
+     "median": 1.9456081095151643,
+     "min": 1.9456081095151643,
+     "max": 1.9456081095151643
+    }
+   },
+   "RC": {
+    "weeks": {
+     "101": -0.025595717518572814
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": -0.025595717518572814,
+    "min": -0.025595717518572814,
+    "max": -0.025595717518572814,
+    "revealed": {
+     "weeks": {
+      "101": 0.045903509114593066
+     },
+     "n": 1,
+     "n_missing": 0,
+     "median": 0.045903509114593066,
+     "min": 0.045903509114593066,
+     "max": 0.045903509114593066
+    }
+   }
+  },
+  "BL1-BO-lag": {
+   "revealed": "BL1-BO",
+   "lagged_from": "lag",
+   "r0": {
+    "weeks": {
+     "101": 0.20383863348256892
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": 0.20383863348256892,
+    "min": 0.20383863348256892,
+    "max": 0.20383863348256892,
+    "revealed": {
+     "weeks": {
+      "101": 0.6511795022043789
+     },
+     "n": 1,
+     "n_missing": 0,
+     "median": 0.6511795022043789,
+     "min": 0.6511795022043789,
+     "max": 0.6511795022043789
+    }
+   },
+   "W0": {
+    "weeks": {
+     "101": -0.12831793780195566
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": -0.12831793780195566,
+    "min": -0.12831793780195566,
+    "max": -0.12831793780195566,
+    "revealed": {
+     "weeks": {
+      "101": 1.6352307081061959
+     },
+     "n": 1,
+     "n_missing": 0,
+     "median": 1.6352307081061959,
+     "min": 1.6352307081061959,
+     "max": 1.6352307081061959
+    }
+   },
+   "RC": {
+    "weeks": {
+     "101": -0.01630826387460449
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": -0.01630826387460449,
+    "min": -0.01630826387460449,
+    "max": -0.01630826387460449,
+    "revealed": {
+     "weeks": {
+      "101": 0.03324789790119864
+     },
+     "n": 1,
+     "n_missing": 0,
+     "median": 0.03324789790119864,
+     "min": 0.03324789790119864,
+     "max": 0.03324789790119864
+    }
+   }
+  },
+  "BL2-lag": {
+   "revealed": "BL2",
+   "lagged_from": "lag",
+   "r0": {
+    "weeks": {
+     "101": 0.1716586391515832
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": 0.1716586391515832,
+    "min": 0.1716586391515832,
+    "max": 0.1716586391515832,
+    "revealed": {
+     "weeks": {
+      "101": 0.7487902346277859
+     },
+     "n": 1,
+     "n_missing": 0,
+     "median": 0.7487902346277859,
+     "min": 0.7487902346277859,
+     "max": 0.7487902346277859
+    }
+   },
+   "W0": {
+    "weeks": {
+     "101": -0.19779824784647704
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": -0.19779824784647704,
+    "min": -0.19779824784647704,
+    "max": -0.19779824784647704,
+    "revealed": {
+     "weeks": {
+      "101": 1.73857429140966
+     },
+     "n": 1,
+     "n_missing": 0,
+     "median": 1.73857429140966,
+     "min": 1.73857429140966,
+     "max": 1.73857429140966
+    }
+   },
+   "RC": {
+    "weeks": {
+     "101": -0.04819858191536164
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": -0.04819858191536164,
+    "min": -0.04819858191536164,
+    "max": -0.04819858191536164,
+    "revealed": {
+     "weeks": {
+      "101": 0.058951358269270004
+     },
+     "n": 1,
+     "n_missing": 0,
+     "median": 0.058951358269270004,
+     "min": 0.058951358269270004,
+     "max": 0.058951358269270004
+    }
+   }
+  },
+  "BL3-0-lag": {
+   "revealed": "BL3-0",
+   "lagged_from": "lag",
+   "r0": {
+    "weeks": {
+     "101": 0.1630007468438388
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": 0.1630007468438388,
+    "min": 0.1630007468438388,
+    "max": 0.1630007468438388,
+    "revealed": {
+     "weeks": {
+      "101": 0.7810346939112378
+     },
+     "n": 1,
+     "n_missing": 0,
+     "median": 0.7810346939112378,
+     "min": 0.7810346939112378,
+     "max": 0.7810346939112378
+    }
+   },
+   "W0": {
+    "weeks": {
+     "101": -0.1687092348631729
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": -0.1687092348631729,
+    "min": -0.1687092348631729,
+    "max": -0.1687092348631729,
+    "revealed": {
+     "weeks": {
+      "101": 1.7516817693646891
+     },
+     "n": 1,
+     "n_missing": 0,
+     "median": 1.7516817693646891,
+     "min": 1.7516817693646891,
+     "max": 1.7516817693646891
+    }
+   },
+   "RC": {
+    "weeks": {
+     "101": 0.0011726822255385683
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": 0.0011726822255385683,
+    "min": 0.0011726822255385683,
+    "max": 0.0011726822255385683,
+    "revealed": {
+     "weeks": {
+      "101": 0.034340462565775165
+     },
+     "n": 1,
+     "n_missing": 0,
+     "median": 0.034340462565775165,
+     "min": 0.034340462565775165,
+     "max": 0.034340462565775165
+    }
+   }
+  },
+  "BL4-lag": {
+   "revealed": "BL4",
+   "lagged_from": "lag",
+   "r0": {
+    "weeks": {
+     "101": 0.007658862649755238
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": 0.007658862649755238,
+    "min": 0.007658862649755238,
+    "max": 0.007658862649755238,
+    "revealed": {
+     "weeks": {
+      "101": 0.9941277774503176
+     },
+     "n": 1,
+     "n_missing": 0,
+     "median": 0.9941277774503176,
+     "min": 0.9941277774503176,
+     "max": 0.9941277774503176
+    }
+   },
+   "W0": {
+    "weeks": {
+     "101": -0.001968433215015608
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": -0.001968433215015608,
+    "min": -0.001968433215015608,
+    "max": -0.001968433215015608,
+    "revealed": {
+     "weeks": {
+      "101": 1.0168935261350465
+     },
+     "n": 1,
+     "n_missing": 0,
+     "median": 1.0168935261350465,
+     "min": 1.0168935261350465,
+     "max": 1.0168935261350465
+    }
+   },
+   "RC": {
+    "weeks": {
+     "101": -0.007026379379893366
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": -0.007026379379893366,
+    "min": -0.007026379379893366,
+    "max": -0.007026379379893366,
+    "revealed": {
+     "weeks": {
+      "101": 0.0020561157087380932
+     },
+     "n": 1,
+     "n_missing": 0,
+     "median": 0.0020561157087380932,
+     "min": 0.0020561157087380932,
+     "max": 0.0020561157087380932
+    }
+   }
+  },
+  "BL5-tau60-lag": {
+   "revealed": "BL5-tau60",
+   "lagged_from": "lag",
+   "r0": {
+    "weeks": {
+     "101": 0.159135687696778
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": 0.159135687696778,
+    "min": 0.159135687696778,
+    "max": 0.159135687696778,
+    "revealed": {
+     "weeks": {
+      "101": 1.7174610301758495
+     },
+     "n": 1,
+     "n_missing": 0,
+     "median": 1.7174610301758495,
+     "min": 1.7174610301758495,
+     "max": 1.7174610301758495
+    }
+   },
+   "W0": {
+    "weeks": {
+     "101": 0.15868345536234774
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": 0.15868345536234774,
+    "min": 0.15868345536234774,
+    "max": 0.15868345536234774,
+    "revealed": {
+     "weeks": {
+      "101": 1.7179132625102798
+     },
+     "n": 1,
+     "n_missing": 0,
+     "median": 1.7179132625102798,
+     "min": 1.7179132625102798,
+     "max": 1.7179132625102798
+    }
+   },
+   "RC": {
+    "weeks": {
+     "101": 0.0004522323344302581
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": 0.0004522323344302581,
+    "min": 0.0004522323344302581,
+    "max": 0.0004522323344302581,
+    "revealed": {
+     "weeks": {
+      "101": -0.0004522323344302581
+     },
+     "n": 1,
+     "n_missing": 0,
+     "median": -0.0004522323344302581,
+     "min": -0.0004522323344302581,
+     "max": -0.0004522323344302581
+    }
+   }
+  },
+  "BL5N-lag": {
+   "revealed": "BL5N",
+   "lagged_from": "lag",
+   "r0": {
+    "weeks": {
+     "101": 0.1855006779807279
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": 0.1855006779807279,
+    "min": 0.1855006779807279,
+    "max": 0.1855006779807279,
+    "revealed": {
+     "weeks": {
+      "101": 0.8539644980178834
+     },
+     "n": 1,
+     "n_missing": 0,
+     "median": 0.8539644980178834,
+     "min": 0.8539644980178834,
+     "max": 0.8539644980178834
+    }
+   },
+   "W0": {
+    "weeks": {
+     "101": 0.03256065962519927
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": 0.03256065962519927,
+    "min": 0.03256065962519927,
+    "max": 0.03256065962519927,
+    "revealed": {
+     "weeks": {
+      "101": 1.1395405908116896
+     },
+     "n": 1,
+     "n_missing": 0,
+     "median": 1.1395405908116896,
+     "min": 1.1395405908116896,
+     "max": 1.1395405908116896
+    }
+   },
+   "RC": {
+    "weeks": {
+     "101": -0.01183630974616734
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": -0.01183630974616734,
+    "min": -0.01183630974616734,
+    "max": -0.01183630974616734,
+    "revealed": {
+     "weeks": {
+      "101": 0.023042414370147313
+     },
+     "n": 1,
+     "n_missing": 0,
+     "median": 0.023042414370147313,
+     "min": 0.023042414370147313,
+     "max": 0.023042414370147313
+    }
+   }
+  },
+  "BL1N-lag": {
+   "revealed": "BL1N",
+   "lagged_from": "lag",
+   "r0": {
+    "weeks": {
+     "101": 0.21179741194724355
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": 0.21179741194724355,
+    "min": 0.21179741194724355,
+    "max": 0.21179741194724355,
+    "revealed": {
+     "weeks": {
+      "101": 0.6611243552812026
+     },
+     "n": 1,
+     "n_missing": 0,
+     "median": 0.6611243552812026,
+     "min": 0.6611243552812026,
+     "max": 0.6611243552812026
+    }
+   },
+   "W0": {
+    "weeks": {
+     "101": 0.1376521184271604
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": 0.1376521184271604,
+    "min": 0.1376521184271604,
+    "max": 0.1376521184271604,
+    "revealed": {
+     "weeks": {
+      "101": 1.0809665708207665
+     },
+     "n": 1,
+     "n_missing": 0,
+     "median": 1.0809665708207665,
+     "min": 1.0809665708207665,
+     "max": 1.0809665708207665
+    }
+   },
+   "RC": {
+    "weeks": {
+     "101": 0.001166519953944789
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": 0.001166519953944789,
+    "min": 0.001166519953944789,
+    "max": 0.001166519953944789,
+    "revealed": {
+     "weeks": {
+      "101": 0.02985036526465079
+     },
+     "n": 1,
+     "n_missing": 0,
+     "median": 0.02985036526465079,
+     "min": 0.02985036526465079,
+     "max": 0.02985036526465079
+    }
+   }
+  },
+  "BL1-GP-lag": {
+   "revealed": "BL1-GP",
+   "lagged_from": "lag",
+   "r0": {
+    "weeks": {
+     "101": -0.0423263745134731
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": -0.0423263745134731,
+    "min": -0.0423263745134731,
+    "max": -0.0423263745134731,
+    "revealed": {
+     "weeks": {
+      "101": 1.0393309492479443
+     },
+     "n": 1,
+     "n_missing": 0,
+     "median": 1.0393309492479443,
+     "min": 1.0393309492479443,
+     "max": 1.0393309492479443
+    }
+   },
+   "W0": {
+    "weeks": {
+     "101": 0.020954718955536356
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": 0.020954718955536356,
+    "min": 0.020954718955536356,
+    "max": 0.020954718955536356,
+    "revealed": {
+     "weeks": {
+      "101": 1.1428208595957485
+     },
+     "n": 1,
+     "n_missing": 0,
+     "median": 1.1428208595957485,
+     "min": 1.1428208595957485,
+     "max": 1.1428208595957485
+    }
+   },
+   "RC": {
+    "weeks": {
+     "101": -0.007969967257486443
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": -0.007969967257486443,
+    "min": -0.007969967257486443,
+    "max": -0.007969967257486443,
+    "revealed": {
+     "weeks": {
+      "101": 0.016061426900996656
+     },
+     "n": 1,
+     "n_missing": 0,
+     "median": 0.016061426900996656,
+     "min": 0.016061426900996656,
+     "max": 0.016061426900996656
+    }
+   }
+  },
+  "BL5": {
+   "revealed": "BL5-cur",
+   "lagged_from": "main",
+   "r0": {
+    "weeks": {
+     "101": 0.1409843324470491
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": 0.1409843324470491,
+    "min": 0.1409843324470491,
+    "max": 0.1409843324470491,
+    "revealed": {
+     "weeks": {
+      "101": 0.8322013113669223
+     },
+     "n": 1,
+     "n_missing": 0,
+     "median": 0.8322013113669223,
+     "min": 0.8322013113669223,
+     "max": 0.8322013113669223
+    }
+   },
+   "W0": {
+    "weeks": {
+     "101": -0.04847616319304593
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": -0.04847616319304593,
+    "min": -0.04847616319304593,
+    "max": -0.04847616319304593,
+    "revealed": {
+     "weeks": {
+      "101": 1.265240979290852
+     },
+     "n": 1,
+     "n_missing": 0,
+     "median": 1.265240979290852,
+     "min": 1.265240979290852,
+     "max": 1.265240979290852
+    }
+   },
+   "RC": {
+    "weeks": {
+     "101": -0.02429242351310046
+    },
+    "n": 1,
+    "n_missing": 0,
+    "median": -0.02429242351310046,
+    "min": -0.02429242351310046,
+    "max": -0.02429242351310046,
+    "revealed": {
+     "weeks": {
+      "101": 0.019055548169909065
+     },
+     "n": 1,
+     "n_missing": 0,
+     "median": 0.019055548169909065,
+     "min": 0.019055548169909065,
+     "max": 0.019055548169909065
+    }
+   }
+  }
+ },
+ "guard": {
+  "runs": [
+   {
+    "tag": "Sublet-lag",
+    "mode": "L-tr",
+    "cell": "101",
+    "seed": 0,
+    "status": "ok",
+    "projected_slots": 5,
+    "aborted": false,
+    "t_a": null,
+    "held": true,
+    "env_ok": true,
+    "K0": 0
+   },
+   {
+    "tag": "Sublet-lag",
+    "mode": "L-eg",
+    "cell": "101",
+    "seed": 0,
+    "status": "ok",
+    "projected_slots": 8,
+    "aborted": false,
+    "t_a": null,
+    "held": true,
+    "env_ok": true,
+    "K0": 1
+   },
+   {
+    "tag": "Sublet-lag",
+    "mode": "L-ss",
+    "cell": "101",
+    "seed": 0,
+    "status": "ok",
+    "projected_slots": 8,
+    "aborted": false,
+    "t_a": null,
+    "held": true,
+    "env_ok": true,
+    "K0": 1
+   },
+   {
+    "tag": "Sublet-lag",
+    "mode": "L-iid-0.05",
+    "cell": "101",
+    "seed": 0,
+    "status": "ok",
+    "projected_slots": 4,
+    "aborted": false,
+    "t_a": null,
+    "held": true,
+    "env_ok": true,
+    "K0": 0
+   },
+   {
+    "tag": "Sublet-lag",
+    "mode": "L-iid-0.2",
+    "cell": "101",
+    "seed": 0,
+    "status": "ok",
+    "projected_slots": 6,
+    "aborted": false,
+    "t_a": null,
+    "held": true,
+    "env_ok": true,
+    "K0": 0
+   },
+   {
+    "tag": "Sublet-lag",
+    "mode": "L-co",
+    "cell": "101",
+    "seed": 0,
+    "status": "ok",
+    "projected_slots": 8,
+    "aborted": false,
+    "t_a": null,
+    "held": true,
+    "env_ok": true,
+    "K0": 1
+   },
+   {
+    "tag": "Sublet-lag",
+    "mode": "L-hon",
+    "cell": "101",
+    "seed": 0,
+    "status": "ok",
+    "projected_slots": 4,
+    "aborted": false,
+    "t_a": null,
+    "held": true,
+    "env_ok": true,
+    "K0": 0
+   },
+   {
+    "tag": "BL1-GP-lag",
+    "mode": "L-tr",
+    "cell": "101",
+    "seed": 0,
+    "status": "ok",
+    "projected_slots": 11,
+    "aborted": false,
+    "t_a": null,
+    "held": true,
+    "env_ok": true,
+    "K0": 2
+   },
+   {
+    "tag": "BL1-GP-lag",
+    "mode": "L-eg",
+    "cell": "101",
+    "seed": 0,
+    "status": "ok",
+    "projected_slots": 10,
+    "aborted": false,
+    "t_a": null,
+    "held": true,
+    "env_ok": true,
+    "K0": 0
+   },
+   {
+    "tag": "BL1-GP-lag",
+    "mode": "L-ss",
+    "cell": "101",
+    "seed": 0,
+    "status": "ok",
+    "projected_slots": 10,
+    "aborted": false,
+    "t_a": null,
+    "held": true,
+    "env_ok": true,
+    "K0": 0
+   },
+   {
+    "tag": "BL1-GP-lag",
+    "mode": "L-iid-0.05",
+    "cell": "101",
+    "seed": 0,
+    "status": "ok",
+    "projected_slots": 11,
+    "aborted": false,
+    "t_a": null,
+    "held": true,
+    "env_ok": true,
+    "K0": 2
+   },
+   {
+    "tag": "BL1-GP-lag",
+    "mode": "L-iid-0.2",
+    "cell": "101",
+    "seed": 0,
+    "status": "ok",
+    "projected_slots": 5,
+    "aborted": false,
+    "t_a": null,
+    "held": true,
+    "env_ok": true,
+    "K0": 0
+   },
+   {
+    "tag": "BL1-GP-lag",
+    "mode": "L-co",
+    "cell": "101",
+    "seed": 0,
+    "status": "ok",
+    "projected_slots": 10,
+    "aborted": false,
+    "t_a": null,
+    "held": true,
+    "env_ok": true,
+    "K0": 0
+   },
+   {
+    "tag": "BL1-GP-lag",
+    "mode": "L-hon",
+    "cell": "101",
+    "seed": 0,
+    "status": "ok",
+    "projected_slots": 11,
+    "aborted": false,
+    "t_a": null,
+    "held": true,
+    "env_ok": true,
+    "K0": 2
+   }
+  ],
+  "by_tag": {
+   "Sublet-lag": {
+    "runs": 7,
+    "runs_projected": 7,
+    "projected_slots": 43,
+    "aborts": 0,
+    "held": 7,
+    "envelope_violations": 0,
+    "K0": 3
+   },
+   "BL1-GP-lag": {
+    "runs": 7,
+    "runs_projected": 7,
+    "projected_slots": 68,
+    "aborts": 0,
+    "held": 7,
+    "envelope_violations": 0,
+    "K0": 6
+   }
+  },
+  "by_tag_mode": {
+   "Sublet-lag": {
+    "L-tr": {
+     "runs": 1,
+     "runs_projected": 1,
+     "projected_slots": 5,
+     "aborts": 0,
+     "held": 1,
+     "envelope_violations": 0,
+     "K0": 0
+    },
+    "L-eg": {
+     "runs": 1,
+     "runs_projected": 1,
+     "projected_slots": 8,
+     "aborts": 0,
+     "held": 1,
+     "envelope_violations": 0,
+     "K0": 1
+    },
+    "L-ss": {
+     "runs": 1,
+     "runs_projected": 1,
+     "projected_slots": 8,
+     "aborts": 0,
+     "held": 1,
+     "envelope_violations": 0,
+     "K0": 1
+    },
+    "L-iid-0.05": {
+     "runs": 1,
+     "runs_projected": 1,
+     "projected_slots": 4,
+     "aborts": 0,
+     "held": 1,
+     "envelope_violations": 0,
+     "K0": 0
+    },
+    "L-iid-0.2": {
+     "runs": 1,
+     "runs_projected": 1,
+     "projected_slots": 6,
+     "aborts": 0,
+     "held": 1,
+     "envelope_violations": 0,
+     "K0": 0
+    },
+    "L-co": {
+     "runs": 1,
+     "runs_projected": 1,
+     "projected_slots": 8,
+     "aborts": 0,
+     "held": 1,
+     "envelope_violations": 0,
+     "K0": 1
+    },
+    "L-hon": {
+     "runs": 1,
+     "runs_projected": 1,
+     "projected_slots": 4,
+     "aborts": 0,
+     "held": 1,
+     "envelope_violations": 0,
+     "K0": 0
+    }
+   },
+   "BL1-GP-lag": {
+    "L-tr": {
+     "runs": 1,
+     "runs_projected": 1,
+     "projected_slots": 11,
+     "aborts": 0,
+     "held": 1,
+     "envelope_violations": 0,
+     "K0": 2
+    },
+    "L-eg": {
+     "runs": 1,
+     "runs_projected": 1,
+     "projected_slots": 10,
+     "aborts": 0,
+     "held": 1,
+     "envelope_violations": 0,
+     "K0": 0
+    },
+    "L-ss": {
+     "runs": 1,
+     "runs_projected": 1,
+     "projected_slots": 10,
+     "aborts": 0,
+     "held": 1,
+     "envelope_violations": 0,
+     "K0": 0
+    },
+    "L-iid-0.05": {
+     "runs": 1,
+     "runs_projected": 1,
+     "projected_slots": 11,
+     "aborts": 0,
+     "held": 1,
+     "envelope_violations": 0,
+     "K0": 2
+    },
+    "L-iid-0.2": {
+     "runs": 1,
+     "runs_projected": 1,
+     "projected_slots": 5,
+     "aborts": 0,
+     "held": 1,
+     "envelope_violations": 0,
+     "K0": 0
+    },
+    "L-co": {
+     "runs": 1,
+     "runs_projected": 1,
+     "projected_slots": 10,
+     "aborts": 0,
+     "held": 1,
+     "envelope_violations": 0,
+     "K0": 0
+    },
+    "L-hon": {
+     "runs": 1,
+     "runs_projected": 1,
+     "projected_slots": 11,
+     "aborts": 0,
+     "held": 1,
+     "envelope_violations": 0,
+     "K0": 2
+    }
+   }
+  },
+  "label": {
+   "Sublet-lag": "inner A9 lagged; the guard's test on the realized slot",
+   "BL1-GP-lag": "inner lagged; the guard reads the realized slot"
+  }
+ },
+ "identity": {
+  "n_pairs": 0,
+  "n_exact": 0,
+  "max_abs_diff": null,
+  "holds": false,
+  "n_left_out": 7,
+  "left_out": [
+   {
+    "mode": "L-tr",
+    "cell": "101",
+    "seed": 0,
+    "projected_slots": 5,
+    "aborted": false
+   },
+   {
+    "mode": "L-eg",
+    "cell": "101",
+    "seed": 0,
+    "projected_slots": 8,
+    "aborted": false
+   },
+   {
+    "mode": "L-ss",
+    "cell": "101",
+    "seed": 0,
+    "projected_slots": 8,
+    "aborted": false
+   },
+   {
+    "mode": "L-iid-0.05",
+    "cell": "101",
+    "seed": 0,
+    "projected_slots": 4,
+    "aborted": false
+   },
+   {
+    "mode": "L-iid-0.2",
+    "cell": "101",
+    "seed": 0,
+    "projected_slots": 6,
+    "aborted": false
+   },
+   {
+    "mode": "L-co",
+    "cell": "101",
+    "seed": 0,
+    "projected_slots": 8,
+    "aborted": false
+   },
+   {
+    "mode": "L-hon",
+    "cell": "101",
+    "seed": 0,
+    "projected_slots": 4,
+    "aborted": false
+   }
+  ],
+  "n_missing": 0,
+  "missing": [],
+  "pairs": [],
+  "rule": "exact float equality on runs without projection and without abort"
+ },
+ "gate": {
+  "found": true,
+  "pass": false,
+  "n_checks": 45,
+  "n_equal": 0,
+  "n_no_reference": 45,
+  "max_abs_diff": null,
+  "gate_revision": "6a96bce82ce4e4c692d1962cdbf979a9ee8c7fac",
+  "lag_revision": "6a96bce82ce4e4c692d1962cdbf979a9ee8c7fac",
+  "same_commit": true,
+  "gate_reduced": true,
+  "lag_reduced": true
+ }
+}

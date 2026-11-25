@@ -1,0 +1,5317 @@
+{
+ "meta": {
+  "exp": "e7b",
+  "git_revision": "467b21817c8f506f152248c731f072a406c33d3a",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "scipy": "1.17.1",
+   "sublet": "0.1.0"
+  },
+  "written": "2026-11-24T22:34:05",
+  "script": "code/sim/sublet/experiments/e7b.py",
+  "script_sha256": "d91b9cf973690c5e4d779d3fb275d518b81a8cb12742db23f843fbd5048dbf2a"
+ },
+ "jobs": [
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-B:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-B",
+    "policy_id": "CAP",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1326.5863112127408,
+   "peak_rss_mb": 208.70703125,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-0:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-0",
+    "policy_id": "CAP",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 966.7439844496548,
+   "peak_rss_mb": 180.24609375,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-5:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-5",
+    "policy_id": "CAP",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1332.2347661443055,
+   "peak_rss_mb": 208.99609375,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-B-latch:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-B-latch",
+    "policy_id": "CAP",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1332.798558389768,
+   "peak_rss_mb": 208.81640625,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-B-slot:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-B-slot",
+    "policy_id": "CAP",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1314.52680393029,
+   "peak_rss_mb": 208.73046875,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-B:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-B",
+    "policy_id": "CAP",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1204.786597470753,
+   "peak_rss_mb": 197.86328125,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-0:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-0",
+    "policy_id": "CAP",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1323.8197286119685,
+   "peak_rss_mb": 196.6796875,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-5:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-5",
+    "policy_id": "CAP",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1293.3764749877155,
+   "peak_rss_mb": 198.3984375,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-B-latch:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-B-latch",
+    "policy_id": "CAP",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1326.4016388896853,
+   "peak_rss_mb": 198.4296875,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-B-slot:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-B-slot",
+    "policy_id": "CAP",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1355.0581185230985,
+   "peak_rss_mb": 198.16015625,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-B:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-B",
+    "policy_id": "CAP",
+    "c": 303,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 850.4577582692727,
+   "peak_rss_mb": 182.546875,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-0:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-0",
+    "policy_id": "CAP",
+    "c": 303,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 851.2234533214942,
+   "peak_rss_mb": 183.73046875,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-5:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-5",
+    "policy_id": "CAP",
+    "c": 303,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1005.7825410552323,
+   "peak_rss_mb": 181.859375,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-B-latch:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-B-latch",
+    "policy_id": "CAP",
+    "c": 303,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1015.6485634800047,
+   "peak_rss_mb": 181.61328125,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-B-slot:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-B-slot",
+    "policy_id": "CAP",
+    "c": 303,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1090.888444528915,
+   "peak_rss_mb": 181.82421875,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-B:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-B",
+    "policy_id": "CAP",
+    "c": 304,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1188.4109308077022,
+   "peak_rss_mb": 178.03125,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-0:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-0",
+    "policy_id": "CAP",
+    "c": 304,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1046.910669545643,
+   "peak_rss_mb": 172.20703125,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-5:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-5",
+    "policy_id": "CAP",
+    "c": 304,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1207.3229381535202,
+   "peak_rss_mb": 177.890625,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-B-latch:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-B-latch",
+    "policy_id": "CAP",
+    "c": 304,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1166.3881310410798,
+   "peak_rss_mb": 177.23828125,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-B-slot:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-B-slot",
+    "policy_id": "CAP",
+    "c": 304,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1146.5270900493488,
+   "peak_rss_mb": 177.52734375,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-B:c=305",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-B",
+    "policy_id": "CAP",
+    "c": 305,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1603.0544036980718,
+   "peak_rss_mb": 190.640625,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-0:c=305",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-0",
+    "policy_id": "CAP",
+    "c": 305,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1512.35115894489,
+   "peak_rss_mb": 188.0078125,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-5:c=305",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-5",
+    "policy_id": "CAP",
+    "c": 305,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1542.8602434201166,
+   "peak_rss_mb": 187.87890625,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-B-latch:c=305",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-B-latch",
+    "policy_id": "CAP",
+    "c": 305,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1497.885787914507,
+   "peak_rss_mb": 187.65625,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-B-slot:c=305",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-B-slot",
+    "policy_id": "CAP",
+    "c": 305,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1624.1162815392017,
+   "peak_rss_mb": 186.5078125,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-B:c=306",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-B",
+    "policy_id": "CAP",
+    "c": 306,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1227.2470989031717,
+   "peak_rss_mb": 181.73046875,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-0:c=306",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-0",
+    "policy_id": "CAP",
+    "c": 306,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 821.1611937303096,
+   "peak_rss_mb": 143.765625,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-5:c=306",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-5",
+    "policy_id": "CAP",
+    "c": 306,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1432.6193913184106,
+   "peak_rss_mb": 181.61328125,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-B-latch:c=306",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-B-latch",
+    "policy_id": "CAP",
+    "c": 306,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1384.0663056978956,
+   "peak_rss_mb": 181.9609375,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-B-slot:c=306",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-B-slot",
+    "policy_id": "CAP",
+    "c": 306,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1452.3241438595578,
+   "peak_rss_mb": 181.828125,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-B:c=307",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-B",
+    "policy_id": "CAP",
+    "c": 307,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1722.2495660660788,
+   "peak_rss_mb": 188.9296875,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-0:c=307",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-0",
+    "policy_id": "CAP",
+    "c": 307,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1768.8071227604523,
+   "peak_rss_mb": 188.859375,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-5:c=307",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-5",
+    "policy_id": "CAP",
+    "c": 307,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1756.453241516836,
+   "peak_rss_mb": 188.796875,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-B-latch:c=307",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-B-latch",
+    "policy_id": "CAP",
+    "c": 307,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1727.5844185734168,
+   "peak_rss_mb": 189.5078125,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-B-slot:c=307",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-B-slot",
+    "policy_id": "CAP",
+    "c": 307,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1646.1647421121597,
+   "peak_rss_mb": 189.31640625,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-B:c=308",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-B",
+    "policy_id": "CAP",
+    "c": 308,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1795.6987814595923,
+   "peak_rss_mb": 188.53515625,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-0:c=308",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-0",
+    "policy_id": "CAP",
+    "c": 308,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1370.822899277322,
+   "peak_rss_mb": 166.8046875,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-5:c=308",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-5",
+    "policy_id": "CAP",
+    "c": 308,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1839.642429843545,
+   "peak_rss_mb": 189.9921875,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-B-latch:c=308",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-B-latch",
+    "policy_id": "CAP",
+    "c": 308,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1787.452093056403,
+   "peak_rss_mb": 188.01953125,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-B-slot:c=308",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-B-slot",
+    "policy_id": "CAP",
+    "c": 308,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1655.658632866107,
+   "peak_rss_mb": 188.85546875,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-B:c=309",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-B",
+    "policy_id": "CAP",
+    "c": 309,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1896.1835805838928,
+   "peak_rss_mb": 209.8203125,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-0:c=309",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-0",
+    "policy_id": "CAP",
+    "c": 309,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1830.1036130506545,
+   "peak_rss_mb": 209.671875,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-5:c=309",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-5",
+    "policy_id": "CAP",
+    "c": 309,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1821.4632602594793,
+   "peak_rss_mb": 209.21484375,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-B-latch:c=309",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-B-latch",
+    "policy_id": "CAP",
+    "c": 309,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1604.7727385470644,
+   "peak_rss_mb": 209.62109375,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-B-slot:c=309",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-B-slot",
+    "policy_id": "CAP",
+    "c": 309,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1577.1664553266019,
+   "peak_rss_mb": 209.6640625,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-B:c=310",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-B",
+    "policy_id": "CAP",
+    "c": 310,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1620.7550320252776,
+   "peak_rss_mb": 216.1015625,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-0:c=310",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-0",
+    "policy_id": "CAP",
+    "c": 310,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1163.0860744528472,
+   "peak_rss_mb": 167.11328125,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-5:c=310",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-5",
+    "policy_id": "CAP",
+    "c": 310,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1361.0077614085749,
+   "peak_rss_mb": 216.125,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-B-latch:c=310",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-B-latch",
+    "policy_id": "CAP",
+    "c": 310,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1351.5623880587518,
+   "peak_rss_mb": 215.96875,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-B-slot:c=310",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-B-slot",
+    "policy_id": "CAP",
+    "c": 310,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1302.5620050365105,
+   "peak_rss_mb": 216.359375,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-B:c=311",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-B",
+    "policy_id": "CAP",
+    "c": 311,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 866.0903324289247,
+   "peak_rss_mb": 180.87109375,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-0:c=311",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-0",
+    "policy_id": "CAP",
+    "c": 311,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 816.1235399590805,
+   "peak_rss_mb": 180.7890625,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-5:c=311",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-5",
+    "policy_id": "CAP",
+    "c": 311,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 805.5687443623319,
+   "peak_rss_mb": 182.37109375,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-B-latch:c=311",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-B-latch",
+    "policy_id": "CAP",
+    "c": 311,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 992.4696827596053,
+   "peak_rss_mb": 182.0,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-B-slot:c=311",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-B-slot",
+    "policy_id": "CAP",
+    "c": 311,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 938.6389699652791,
+   "peak_rss_mb": 181.2421875,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-B:c=312",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-B",
+    "policy_id": "CAP",
+    "c": 312,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1494.096129012294,
+   "peak_rss_mb": 212.20703125,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-0:c=312",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-0",
+    "policy_id": "CAP",
+    "c": 312,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1390.625326961279,
+   "peak_rss_mb": 212.26171875,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-5:c=312",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-5",
+    "policy_id": "CAP",
+    "c": 312,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1394.3596764290705,
+   "peak_rss_mb": 212.55859375,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-B-latch:c=312",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-B-latch",
+    "policy_id": "CAP",
+    "c": 312,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1379.337596476078,
+   "peak_rss_mb": 212.2578125,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-B-slot:c=312",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-B-slot",
+    "policy_id": "CAP",
+    "c": 312,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1180.7630470329896,
+   "peak_rss_mb": 211.9296875,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-B:c=313",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-B",
+    "policy_id": "CAP",
+    "c": 313,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 869.9769529756159,
+   "peak_rss_mb": 181.9921875,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-0:c=313",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-0",
+    "policy_id": "CAP",
+    "c": 313,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 454.46620781719685,
+   "peak_rss_mb": 163.01953125,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-5:c=313",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-5",
+    "policy_id": "CAP",
+    "c": 313,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 540.9443035786971,
+   "peak_rss_mb": 184.359375,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-B-latch:c=313",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-B-latch",
+    "policy_id": "CAP",
+    "c": 313,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 515.074998143129,
+   "peak_rss_mb": 185.69921875,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-B-slot:c=313",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-B-slot",
+    "policy_id": "CAP",
+    "c": 313,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 520.2792230788618,
+   "peak_rss_mb": 183.65625,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-B:c=314",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-B",
+    "policy_id": "CAP",
+    "c": 314,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1002.5664211548865,
+   "peak_rss_mb": 222.85546875,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-0:c=314",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-0",
+    "policy_id": "CAP",
+    "c": 314,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 598.3516979124397,
+   "peak_rss_mb": 175.5234375,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-5:c=314",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-5",
+    "policy_id": "CAP",
+    "c": 314,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1104.3088757246733,
+   "peak_rss_mb": 222.765625,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-B-latch:c=314",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-B-latch",
+    "policy_id": "CAP",
+    "c": 314,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1196.5357410004362,
+   "peak_rss_mb": 223.40625,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-B-slot:c=314",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-B-slot",
+    "policy_id": "CAP",
+    "c": 314,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1223.9659147681668,
+   "peak_rss_mb": 223.09375,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-B:c=315",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-B",
+    "policy_id": "CAP",
+    "c": 315,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1049.3591266088188,
+   "peak_rss_mb": 211.7578125,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-0:c=315",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-0",
+    "policy_id": "CAP",
+    "c": 315,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 779.2628885293379,
+   "peak_rss_mb": 169.5859375,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-5:c=315",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-5",
+    "policy_id": "CAP",
+    "c": 315,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1179.2126090573147,
+   "peak_rss_mb": 212.03125,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-B-latch:c=315",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-B-latch",
+    "policy_id": "CAP",
+    "c": 315,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1097.0286537129432,
+   "peak_rss_mb": 211.70703125,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-B-slot:c=315",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-B-slot",
+    "policy_id": "CAP",
+    "c": 315,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 1016.8431393243372,
+   "peak_rss_mb": 211.7109375,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-B:c=316",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-B",
+    "policy_id": "CAP",
+    "c": 316,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 840.0996508849785,
+   "peak_rss_mb": 194.7421875,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-0:c=316",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-0",
+    "policy_id": "CAP",
+    "c": 316,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 828.0299335196614,
+   "peak_rss_mb": 194.26171875,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-5:c=316",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-5",
+    "policy_id": "CAP",
+    "c": 316,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 802.2552632084116,
+   "peak_rss_mb": 195.28515625,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-B-latch:c=316",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-B-latch",
+    "policy_id": "CAP",
+    "c": 316,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 642.8543782280758,
+   "peak_rss_mb": 193.99609375,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=CR-cap-B-slot:c=316",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "CR-cap-B-slot",
+    "policy_id": "CAP",
+    "c": 316,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 470.0,
+   "status": "ok",
+   "wall_s": 593.5270723197609,
+   "peak_rss_mb": 194.7109375,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=GR-cap-B:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "GR-cap-B",
+    "policy_id": "CAP",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 465.0,
+   "status": "ok",
+   "wall_s": 448.21617786213756,
+   "peak_rss_mb": 183.703125,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=GR-cap-0:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "GR-cap-0",
+    "policy_id": "CAP",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 465.0,
+   "status": "ok",
+   "wall_s": 466.62388887349516,
+   "peak_rss_mb": 150.8203125,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=GR-cap-B:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "GR-cap-B",
+    "policy_id": "CAP",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 465.0,
+   "status": "ok",
+   "wall_s": 397.47386514861137,
+   "peak_rss_mb": 174.1171875,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=GR-cap-0:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "GR-cap-0",
+    "policy_id": "CAP",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 465.0,
+   "status": "ok",
+   "wall_s": 394.40891434066,
+   "peak_rss_mb": 173.33203125,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=GR-cap-B:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "GR-cap-B",
+    "policy_id": "CAP",
+    "c": 303,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 465.0,
+   "status": "ok",
+   "wall_s": 261.4942979812622,
+   "peak_rss_mb": 166.80078125,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=GR-cap-0:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "GR-cap-0",
+    "policy_id": "CAP",
+    "c": 303,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 465.0,
+   "status": "ok",
+   "wall_s": 250.09283877443522,
+   "peak_rss_mb": 162.00390625,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=GR-cap-B:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "GR-cap-B",
+    "policy_id": "CAP",
+    "c": 304,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 465.0,
+   "status": "ok",
+   "wall_s": 247.67092739231884,
+   "peak_rss_mb": 170.2421875,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=GR-cap-0:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "GR-cap-0",
+    "policy_id": "CAP",
+    "c": 304,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 465.0,
+   "status": "ok",
+   "wall_s": 222.4420161275193,
+   "peak_rss_mb": 165.390625,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=GR-cap-B:c=305",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "GR-cap-B",
+    "policy_id": "CAP",
+    "c": 305,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 465.0,
+   "status": "ok",
+   "wall_s": 303.2163635129109,
+   "peak_rss_mb": 177.16796875,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=GR-cap-0:c=305",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "GR-cap-0",
+    "policy_id": "CAP",
+    "c": 305,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 465.0,
+   "status": "ok",
+   "wall_s": 351.6979364566505,
+   "peak_rss_mb": 152.734375,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=GR-cap-B:c=306",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "GR-cap-B",
+    "policy_id": "CAP",
+    "c": 306,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 465.0,
+   "status": "ok",
+   "wall_s": 253.2665636697784,
+   "peak_rss_mb": 167.5234375,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=GR-cap-0:c=306",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "GR-cap-0",
+    "policy_id": "CAP",
+    "c": 306,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 465.0,
+   "status": "ok",
+   "wall_s": 202.90218411106616,
+   "peak_rss_mb": 149.1875,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=GR-cap-B:c=307",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "GR-cap-B",
+    "policy_id": "CAP",
+    "c": 307,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 465.0,
+   "status": "ok",
+   "wall_s": 337.27929375786334,
+   "peak_rss_mb": 171.58984375,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=GR-cap-0:c=307",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "GR-cap-0",
+    "policy_id": "CAP",
+    "c": 307,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 465.0,
+   "status": "ok",
+   "wall_s": 330.90765000414103,
+   "peak_rss_mb": 171.29296875,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=GR-cap-B:c=308",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "GR-cap-B",
+    "policy_id": "CAP",
+    "c": 308,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 465.0,
+   "status": "ok",
+   "wall_s": 340.435532476753,
+   "peak_rss_mb": 172.21875,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=GR-cap-0:c=308",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "GR-cap-0",
+    "policy_id": "CAP",
+    "c": 308,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 465.0,
+   "status": "ok",
+   "wall_s": 302.5965634873137,
+   "peak_rss_mb": 173.5234375,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=GR-cap-B:c=309",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "GR-cap-B",
+    "policy_id": "CAP",
+    "c": 309,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 465.0,
+   "status": "ok",
+   "wall_s": 342.57995342463255,
+   "peak_rss_mb": 170.703125,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=GR-cap-0:c=309",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "GR-cap-0",
+    "policy_id": "CAP",
+    "c": 309,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 465.0,
+   "status": "ok",
+   "wall_s": 488.1168722147122,
+   "peak_rss_mb": 149.20703125,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=GR-cap-B:c=310",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "GR-cap-B",
+    "policy_id": "CAP",
+    "c": 310,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 465.0,
+   "status": "ok",
+   "wall_s": 311.8949125595391,
+   "peak_rss_mb": 177.47265625,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=GR-cap-0:c=310",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "GR-cap-0",
+    "policy_id": "CAP",
+    "c": 310,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 465.0,
+   "status": "ok",
+   "wall_s": 312.29767597001046,
+   "peak_rss_mb": 173.46875,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=GR-cap-B:c=311",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "GR-cap-B",
+    "policy_id": "CAP",
+    "c": 311,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 465.0,
+   "status": "ok",
+   "wall_s": 176.9362575551495,
+   "peak_rss_mb": 167.78515625,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=GR-cap-0:c=311",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "GR-cap-0",
+    "policy_id": "CAP",
+    "c": 311,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 465.0,
+   "status": "ok",
+   "wall_s": 164.33662070613354,
+   "peak_rss_mb": 167.66015625,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=GR-cap-B:c=312",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "GR-cap-B",
+    "policy_id": "CAP",
+    "c": 312,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 465.0,
+   "status": "ok",
+   "wall_s": 276.5455726645887,
+   "peak_rss_mb": 174.0,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=GR-cap-0:c=312",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "GR-cap-0",
+    "policy_id": "CAP",
+    "c": 312,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 465.0,
+   "status": "ok",
+   "wall_s": 289.30405955016613,
+   "peak_rss_mb": 172.046875,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=GR-cap-B:c=313",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "GR-cap-B",
+    "policy_id": "CAP",
+    "c": 313,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 465.0,
+   "status": "ok",
+   "wall_s": 186.06471357587725,
+   "peak_rss_mb": 175.25390625,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=GR-cap-0:c=313",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "GR-cap-0",
+    "policy_id": "CAP",
+    "c": 313,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 465.0,
+   "status": "ok",
+   "wall_s": 139.38133252318949,
+   "peak_rss_mb": 154.265625,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=GR-cap-B:c=314",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "GR-cap-B",
+    "policy_id": "CAP",
+    "c": 314,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 465.0,
+   "status": "ok",
+   "wall_s": 316.29727233946323,
+   "peak_rss_mb": 193.03515625,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=GR-cap-0:c=314",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "GR-cap-0",
+    "policy_id": "CAP",
+    "c": 314,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 465.0,
+   "status": "ok",
+   "wall_s": 301.0949744200334,
+   "peak_rss_mb": 183.4453125,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=GR-cap-B:c=315",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "GR-cap-B",
+    "policy_id": "CAP",
+    "c": 315,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 465.0,
+   "status": "ok",
+   "wall_s": 329.0617618281394,
+   "peak_rss_mb": 190.234375,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=GR-cap-0:c=315",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "GR-cap-0",
+    "policy_id": "CAP",
+    "c": 315,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 465.0,
+   "status": "ok",
+   "wall_s": 342.2091035237536,
+   "peak_rss_mb": 189.5,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=GR-cap-B:c=316",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "GR-cap-B",
+    "policy_id": "CAP",
+    "c": 316,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 465.0,
+   "status": "ok",
+   "wall_s": 248.53594850655645,
+   "peak_rss_mb": 176.62109375,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=GR-cap-0:c=316",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "GR-cap-0",
+    "policy_id": "CAP",
+    "c": 316,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon",
+     "L-iid-0.0005",
+     "L-iid-0.002",
+     "L-iid-0.0124",
+     "L-co-reg-0.5",
+     "L-co-reg-1",
+     "L-pk"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 465.0,
+   "status": "ok",
+   "wall_s": 296.0589544894174,
+   "peak_rss_mb": 168.26953125,
+   "runs": 13
+  },
+  {
+   "id": "e7b:week:k=week:tag=Sublet:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "Sublet",
+    "policy_id": "A8P",
+    "c": 301,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 276.0,
+   "status": "ok",
+   "wall_s": 406.15887956973165,
+   "peak_rss_mb": 393.203125,
+   "runs": 1
+  },
+  {
+   "id": "e7b:week:k=week:tag=Sublet:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "Sublet",
+    "policy_id": "A8P",
+    "c": 302,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 276.0,
+   "status": "ok",
+   "wall_s": 324.49347252584994,
+   "peak_rss_mb": 389.92578125,
+   "runs": 1
+  },
+  {
+   "id": "e7b:week:k=week:tag=Sublet:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "Sublet",
+    "policy_id": "A8P",
+    "c": 303,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 276.0,
+   "status": "ok",
+   "wall_s": 262.1669778143987,
+   "peak_rss_mb": 387.51171875,
+   "runs": 1
+  },
+  {
+   "id": "e7b:week:k=week:tag=Sublet:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "Sublet",
+    "policy_id": "A8P",
+    "c": 304,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 276.0,
+   "status": "ok",
+   "wall_s": 298.37074206676334,
+   "peak_rss_mb": 389.21875,
+   "runs": 1
+  },
+  {
+   "id": "e7b:week:k=week:tag=Sublet:c=305",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "Sublet",
+    "policy_id": "A8P",
+    "c": 305,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 276.0,
+   "status": "ok",
+   "wall_s": 370.2394828116521,
+   "peak_rss_mb": 390.92578125,
+   "runs": 1
+  },
+  {
+   "id": "e7b:week:k=week:tag=Sublet:c=306",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "Sublet",
+    "policy_id": "A8P",
+    "c": 306,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 276.0,
+   "status": "ok",
+   "wall_s": 277.1148272063583,
+   "peak_rss_mb": 387.328125,
+   "runs": 1
+  },
+  {
+   "id": "e7b:week:k=week:tag=Sublet:c=307",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "Sublet",
+    "policy_id": "A8P",
+    "c": 307,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 276.0,
+   "status": "ok",
+   "wall_s": 276.08587102685124,
+   "peak_rss_mb": 384.96484375,
+   "runs": 1
+  },
+  {
+   "id": "e7b:week:k=week:tag=Sublet:c=308",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "Sublet",
+    "policy_id": "A8P",
+    "c": 308,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 276.0,
+   "status": "ok",
+   "wall_s": 295.7221052981913,
+   "peak_rss_mb": 389.4609375,
+   "runs": 1
+  },
+  {
+   "id": "e7b:week:k=week:tag=Sublet:c=309",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "Sublet",
+    "policy_id": "A8P",
+    "c": 309,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 276.0,
+   "status": "ok",
+   "wall_s": 386.92097717057914,
+   "peak_rss_mb": 389.70703125,
+   "runs": 1
+  },
+  {
+   "id": "e7b:week:k=week:tag=Sublet:c=310",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "Sublet",
+    "policy_id": "A8P",
+    "c": 310,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 276.0,
+   "status": "ok",
+   "wall_s": 525.2909659463912,
+   "peak_rss_mb": 391.359375,
+   "runs": 1
+  },
+  {
+   "id": "e7b:week:k=week:tag=Sublet:c=311",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "Sublet",
+    "policy_id": "A8P",
+    "c": 311,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 276.0,
+   "status": "ok",
+   "wall_s": 283.71389152668417,
+   "peak_rss_mb": 385.11328125,
+   "runs": 1
+  },
+  {
+   "id": "e7b:week:k=week:tag=Sublet:c=312",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "Sublet",
+    "policy_id": "A8P",
+    "c": 312,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 276.0,
+   "status": "ok",
+   "wall_s": 507.10125213861465,
+   "peak_rss_mb": 390.27734375,
+   "runs": 1
+  },
+  {
+   "id": "e7b:week:k=week:tag=Sublet:c=313",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "Sublet",
+    "policy_id": "A8P",
+    "c": 313,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 276.0,
+   "status": "ok",
+   "wall_s": 301.1039700815454,
+   "peak_rss_mb": 388.95703125,
+   "runs": 1
+  },
+  {
+   "id": "e7b:week:k=week:tag=Sublet:c=314",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "Sublet",
+    "policy_id": "A8P",
+    "c": 314,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 276.0,
+   "status": "ok",
+   "wall_s": 489.6341140437871,
+   "peak_rss_mb": 391.9296875,
+   "runs": 1
+  },
+  {
+   "id": "e7b:week:k=week:tag=Sublet:c=315",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "Sublet",
+    "policy_id": "A8P",
+    "c": 315,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 276.0,
+   "status": "ok",
+   "wall_s": 608.927827976644,
+   "peak_rss_mb": 390.6171875,
+   "runs": 1
+  },
+  {
+   "id": "e7b:week:k=week:tag=Sublet:c=316",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "Sublet",
+    "policy_id": "A8P",
+    "c": 316,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 276.0,
+   "status": "ok",
+   "wall_s": 537.2401381554082,
+   "peak_rss_mb": 387.93359375,
+   "runs": 1
+  },
+  {
+   "id": "e7b:week:k=week:tag=A9:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "A9",
+    "policy_id": "A9",
+    "c": 301,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 82.0,
+   "status": "ok",
+   "wall_s": 120.1739997509867,
+   "peak_rss_mb": 148.5546875,
+   "runs": 1
+  },
+  {
+   "id": "e7b:week:k=week:tag=A9:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "A9",
+    "policy_id": "A9",
+    "c": 302,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 82.0,
+   "status": "ok",
+   "wall_s": 109.04745237994939,
+   "peak_rss_mb": 145.05078125,
+   "runs": 1
+  },
+  {
+   "id": "e7b:week:k=week:tag=A9:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "A9",
+    "policy_id": "A9",
+    "c": 303,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 82.0,
+   "status": "ok",
+   "wall_s": 109.15010168030858,
+   "peak_rss_mb": 145.18359375,
+   "runs": 1
+  },
+  {
+   "id": "e7b:week:k=week:tag=A9:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "A9",
+    "policy_id": "A9",
+    "c": 304,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 82.0,
+   "status": "ok",
+   "wall_s": 97.6032652547583,
+   "peak_rss_mb": 145.6015625,
+   "runs": 1
+  },
+  {
+   "id": "e7b:week:k=week:tag=A9:c=305",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "A9",
+    "policy_id": "A9",
+    "c": 305,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 82.0,
+   "status": "ok",
+   "wall_s": 99.7129537742585,
+   "peak_rss_mb": 145.453125,
+   "runs": 1
+  },
+  {
+   "id": "e7b:week:k=week:tag=A9:c=306",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "A9",
+    "policy_id": "A9",
+    "c": 306,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 82.0,
+   "status": "ok",
+   "wall_s": 89.6132534109056,
+   "peak_rss_mb": 144.625,
+   "runs": 1
+  },
+  {
+   "id": "e7b:week:k=week:tag=A9:c=307",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "A9",
+    "policy_id": "A9",
+    "c": 307,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 82.0,
+   "status": "ok",
+   "wall_s": 80.601438973099,
+   "peak_rss_mb": 145.3203125,
+   "runs": 1
+  },
+  {
+   "id": "e7b:week:k=week:tag=A9:c=308",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "A9",
+    "policy_id": "A9",
+    "c": 308,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 82.0,
+   "status": "ok",
+   "wall_s": 95.8398043019697,
+   "peak_rss_mb": 148.2734375,
+   "runs": 1
+  },
+  {
+   "id": "e7b:week:k=week:tag=A9:c=309",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "A9",
+    "policy_id": "A9",
+    "c": 309,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 82.0,
+   "status": "ok",
+   "wall_s": 93.20099581032991,
+   "peak_rss_mb": 144.80859375,
+   "runs": 1
+  },
+  {
+   "id": "e7b:week:k=week:tag=A9:c=310",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "A9",
+    "policy_id": "A9",
+    "c": 310,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 82.0,
+   "status": "ok",
+   "wall_s": 100.136564636603,
+   "peak_rss_mb": 148.12109375,
+   "runs": 1
+  },
+  {
+   "id": "e7b:week:k=week:tag=A9:c=311",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "A9",
+    "policy_id": "A9",
+    "c": 311,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 82.0,
+   "status": "ok",
+   "wall_s": 95.42814888898283,
+   "peak_rss_mb": 144.92578125,
+   "runs": 1
+  },
+  {
+   "id": "e7b:week:k=week:tag=A9:c=312",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "A9",
+    "policy_id": "A9",
+    "c": 312,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 82.0,
+   "status": "ok",
+   "wall_s": 100.75546407978982,
+   "peak_rss_mb": 149.046875,
+   "runs": 1
+  },
+  {
+   "id": "e7b:week:k=week:tag=A9:c=313",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "A9",
+    "policy_id": "A9",
+    "c": 313,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 82.0,
+   "status": "ok",
+   "wall_s": 89.38786357734352,
+   "peak_rss_mb": 145.0,
+   "runs": 1
+  },
+  {
+   "id": "e7b:week:k=week:tag=A9:c=314",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "A9",
+    "policy_id": "A9",
+    "c": 314,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 82.0,
+   "status": "ok",
+   "wall_s": 94.23322968464345,
+   "peak_rss_mb": 149.82421875,
+   "runs": 1
+  },
+  {
+   "id": "e7b:week:k=week:tag=A9:c=315",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "A9",
+    "policy_id": "A9",
+    "c": 315,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 82.0,
+   "status": "ok",
+   "wall_s": 92.80529989022762,
+   "peak_rss_mb": 149.1953125,
+   "runs": 1
+  },
+  {
+   "id": "e7b:week:k=week:tag=A9:c=316",
+   "kind": "pool",
+   "params": {
+    "part": "week",
+    "kind": "week",
+    "tag": "A9",
+    "policy_id": "A9",
+    "c": 316,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 82.0,
+   "status": "ok",
+   "wall_s": 83.9306421391666,
+   "peak_rss_mb": 146.66015625,
+   "runs": 1
+  }
+ ],
+ "instance_hashes": {},
+ "part": "week",
+ "design": {
+  "reduced": false,
+  "horizon_min": 10080,
+  "weeks": [
+   301,
+   302,
+   303,
+   304,
+   305,
+   306,
+   307,
+   308,
+   309,
+   310,
+   311,
+   312,
+   313,
+   314,
+   315,
+   316
+  ],
+  "week_modes": [
+   "L-tr",
+   "L-eg",
+   "L-ss",
+   "L-iid-0.05",
+   "L-iid-0.2",
+   "L-co",
+   "L-hon",
+   "L-iid-0.0005",
+   "L-iid-0.002",
+   "L-iid-0.0124",
+   "L-co-reg-0.5",
+   "L-co-reg-1",
+   "L-pk"
+  ],
+  "sens_points": [
+   "fee4",
+   "fee8",
+   "fee16",
+   "slow1",
+   "scen_cold_wan_1gbps"
+  ],
+  "sens_weeks": [
+   301,
+   302,
+   303,
+   304
+  ],
+  "sens_stress_weeks": [
+   301,
+   302
+  ],
+  "policy_seeds": [
+   0
+  ]
+ },
+ "instance_hashes_from_outputs": {
+  "e7b:week:k=week:tag=CR-cap-B:c=301": {
+   "base": "2b619e9c729caa92598f444d715a469866c5a5875f57eec7cb8b948f77d4bba6",
+   "pk": "1348aeaa65a13ed89b19f5de9e08bd1b07d0deebda5de8074080424f2beb4965"
+  },
+  "e7b:week:k=week:tag=CR-cap-0:c=301": {
+   "base": "2b619e9c729caa92598f444d715a469866c5a5875f57eec7cb8b948f77d4bba6",
+   "pk": "1348aeaa65a13ed89b19f5de9e08bd1b07d0deebda5de8074080424f2beb4965"
+  },
+  "e7b:week:k=week:tag=CR-cap-5:c=301": {
+   "base": "2b619e9c729caa92598f444d715a469866c5a5875f57eec7cb8b948f77d4bba6",
+   "pk": "1348aeaa65a13ed89b19f5de9e08bd1b07d0deebda5de8074080424f2beb4965"
+  },
+  "e7b:week:k=week:tag=CR-cap-B-latch:c=301": {
+   "base": "2b619e9c729caa92598f444d715a469866c5a5875f57eec7cb8b948f77d4bba6",
+   "pk": "1348aeaa65a13ed89b19f5de9e08bd1b07d0deebda5de8074080424f2beb4965"
+  },
+  "e7b:week:k=week:tag=CR-cap-B-slot:c=301": {
+   "base": "2b619e9c729caa92598f444d715a469866c5a5875f57eec7cb8b948f77d4bba6",
+   "pk": "1348aeaa65a13ed89b19f5de9e08bd1b07d0deebda5de8074080424f2beb4965"
+  },
+  "e7b:week:k=week:tag=CR-cap-B:c=302": {
+   "base": "92901ac5e0531e3bd3f400764b3a6d74be057ce1061914706db9ef2f8ef35ef9",
+   "pk": "a5393c66bc0cccf60b436ae189ec69a9768d810773a4685506c9d58ef8c6f46d"
+  },
+  "e7b:week:k=week:tag=CR-cap-0:c=302": {
+   "base": "92901ac5e0531e3bd3f400764b3a6d74be057ce1061914706db9ef2f8ef35ef9",
+   "pk": "a5393c66bc0cccf60b436ae189ec69a9768d810773a4685506c9d58ef8c6f46d"
+  },
+  "e7b:week:k=week:tag=CR-cap-5:c=302": {
+   "base": "92901ac5e0531e3bd3f400764b3a6d74be057ce1061914706db9ef2f8ef35ef9",
+   "pk": "a5393c66bc0cccf60b436ae189ec69a9768d810773a4685506c9d58ef8c6f46d"
+  },
+  "e7b:week:k=week:tag=CR-cap-B-latch:c=302": {
+   "base": "92901ac5e0531e3bd3f400764b3a6d74be057ce1061914706db9ef2f8ef35ef9",
+   "pk": "a5393c66bc0cccf60b436ae189ec69a9768d810773a4685506c9d58ef8c6f46d"
+  },
+  "e7b:week:k=week:tag=CR-cap-B-slot:c=302": {
+   "base": "92901ac5e0531e3bd3f400764b3a6d74be057ce1061914706db9ef2f8ef35ef9",
+   "pk": "a5393c66bc0cccf60b436ae189ec69a9768d810773a4685506c9d58ef8c6f46d"
+  },
+  "e7b:week:k=week:tag=CR-cap-B:c=303": {
+   "base": "7c3c40d0b00a781b8c6b80401d6deb54d8d7fd6653ea0c7dfc9fd93b6c3470c2",
+   "pk": "81602894c7013e38892e2ff384a36ead398c698558f4f62c2c10f1fb13f5d5bf"
+  },
+  "e7b:week:k=week:tag=CR-cap-0:c=303": {
+   "base": "7c3c40d0b00a781b8c6b80401d6deb54d8d7fd6653ea0c7dfc9fd93b6c3470c2",
+   "pk": "81602894c7013e38892e2ff384a36ead398c698558f4f62c2c10f1fb13f5d5bf"
+  },
+  "e7b:week:k=week:tag=CR-cap-5:c=303": {
+   "base": "7c3c40d0b00a781b8c6b80401d6deb54d8d7fd6653ea0c7dfc9fd93b6c3470c2",
+   "pk": "81602894c7013e38892e2ff384a36ead398c698558f4f62c2c10f1fb13f5d5bf"
+  },
+  "e7b:week:k=week:tag=CR-cap-B-latch:c=303": {
+   "base": "7c3c40d0b00a781b8c6b80401d6deb54d8d7fd6653ea0c7dfc9fd93b6c3470c2",
+   "pk": "81602894c7013e38892e2ff384a36ead398c698558f4f62c2c10f1fb13f5d5bf"
+  },
+  "e7b:week:k=week:tag=CR-cap-B-slot:c=303": {
+   "base": "7c3c40d0b00a781b8c6b80401d6deb54d8d7fd6653ea0c7dfc9fd93b6c3470c2",
+   "pk": "81602894c7013e38892e2ff384a36ead398c698558f4f62c2c10f1fb13f5d5bf"
+  },
+  "e7b:week:k=week:tag=CR-cap-B:c=304": {
+   "base": "5064e702339390148b4ffd45439bf54a5de20266d177ab4a1fd0e7c3499f58d2",
+   "pk": "42857f3c0c0d48c66c1b68e9c97cefdd30afc6a564a6aab34ca4392c7763d09f"
+  },
+  "e7b:week:k=week:tag=CR-cap-0:c=304": {
+   "base": "5064e702339390148b4ffd45439bf54a5de20266d177ab4a1fd0e7c3499f58d2",
+   "pk": "42857f3c0c0d48c66c1b68e9c97cefdd30afc6a564a6aab34ca4392c7763d09f"
+  },
+  "e7b:week:k=week:tag=CR-cap-5:c=304": {
+   "base": "5064e702339390148b4ffd45439bf54a5de20266d177ab4a1fd0e7c3499f58d2",
+   "pk": "42857f3c0c0d48c66c1b68e9c97cefdd30afc6a564a6aab34ca4392c7763d09f"
+  },
+  "e7b:week:k=week:tag=CR-cap-B-latch:c=304": {
+   "base": "5064e702339390148b4ffd45439bf54a5de20266d177ab4a1fd0e7c3499f58d2",
+   "pk": "42857f3c0c0d48c66c1b68e9c97cefdd30afc6a564a6aab34ca4392c7763d09f"
+  },
+  "e7b:week:k=week:tag=CR-cap-B-slot:c=304": {
+   "base": "5064e702339390148b4ffd45439bf54a5de20266d177ab4a1fd0e7c3499f58d2",
+   "pk": "42857f3c0c0d48c66c1b68e9c97cefdd30afc6a564a6aab34ca4392c7763d09f"
+  },
+  "e7b:week:k=week:tag=CR-cap-B:c=305": {
+   "base": "9b3a7ca1fa658ada6ad7d92724277b4b2f6404d796de5c05a3bb85d965b40176",
+   "pk": "5ce72275177e9c0f5a0ad322060213c4f772db04dd510e9fb07be6e1a8ee9149"
+  },
+  "e7b:week:k=week:tag=CR-cap-0:c=305": {
+   "base": "9b3a7ca1fa658ada6ad7d92724277b4b2f6404d796de5c05a3bb85d965b40176",
+   "pk": "5ce72275177e9c0f5a0ad322060213c4f772db04dd510e9fb07be6e1a8ee9149"
+  },
+  "e7b:week:k=week:tag=CR-cap-5:c=305": {
+   "base": "9b3a7ca1fa658ada6ad7d92724277b4b2f6404d796de5c05a3bb85d965b40176",
+   "pk": "5ce72275177e9c0f5a0ad322060213c4f772db04dd510e9fb07be6e1a8ee9149"
+  },
+  "e7b:week:k=week:tag=CR-cap-B-latch:c=305": {
+   "base": "9b3a7ca1fa658ada6ad7d92724277b4b2f6404d796de5c05a3bb85d965b40176",
+   "pk": "5ce72275177e9c0f5a0ad322060213c4f772db04dd510e9fb07be6e1a8ee9149"
+  },
+  "e7b:week:k=week:tag=CR-cap-B-slot:c=305": {
+   "base": "9b3a7ca1fa658ada6ad7d92724277b4b2f6404d796de5c05a3bb85d965b40176",
+   "pk": "5ce72275177e9c0f5a0ad322060213c4f772db04dd510e9fb07be6e1a8ee9149"
+  },
+  "e7b:week:k=week:tag=CR-cap-B:c=306": {
+   "base": "f8d015225ba1782ee23aa348229476b75ee7f39c2202db36d2747a96ab972434",
+   "pk": "3fdbdbe097a331fbe027f45f61de447071de6c51802e3c77a5623dc9fe5d8633"
+  },
+  "e7b:week:k=week:tag=CR-cap-0:c=306": {
+   "base": "f8d015225ba1782ee23aa348229476b75ee7f39c2202db36d2747a96ab972434",
+   "pk": "3fdbdbe097a331fbe027f45f61de447071de6c51802e3c77a5623dc9fe5d8633"
+  },
+  "e7b:week:k=week:tag=CR-cap-5:c=306": {
+   "base": "f8d015225ba1782ee23aa348229476b75ee7f39c2202db36d2747a96ab972434",
+   "pk": "3fdbdbe097a331fbe027f45f61de447071de6c51802e3c77a5623dc9fe5d8633"
+  },
+  "e7b:week:k=week:tag=CR-cap-B-latch:c=306": {
+   "base": "f8d015225ba1782ee23aa348229476b75ee7f39c2202db36d2747a96ab972434",
+   "pk": "3fdbdbe097a331fbe027f45f61de447071de6c51802e3c77a5623dc9fe5d8633"
+  },
+  "e7b:week:k=week:tag=CR-cap-B-slot:c=306": {
+   "base": "f8d015225ba1782ee23aa348229476b75ee7f39c2202db36d2747a96ab972434",
+   "pk": "3fdbdbe097a331fbe027f45f61de447071de6c51802e3c77a5623dc9fe5d8633"
+  },
+  "e7b:week:k=week:tag=CR-cap-B:c=307": {
+   "base": "1380e05125ef3a5a2acdcde33386f138af1934e4dfc5e8f95e0c14c9ae8bd13c",
+   "pk": "10999171ca70ff6d914a084ac88d9a6d02e054a99bc61beaedbf70d82948b99e"
+  },
+  "e7b:week:k=week:tag=CR-cap-0:c=307": {
+   "base": "1380e05125ef3a5a2acdcde33386f138af1934e4dfc5e8f95e0c14c9ae8bd13c",
+   "pk": "10999171ca70ff6d914a084ac88d9a6d02e054a99bc61beaedbf70d82948b99e"
+  },
+  "e7b:week:k=week:tag=CR-cap-5:c=307": {
+   "base": "1380e05125ef3a5a2acdcde33386f138af1934e4dfc5e8f95e0c14c9ae8bd13c",
+   "pk": "10999171ca70ff6d914a084ac88d9a6d02e054a99bc61beaedbf70d82948b99e"
+  },
+  "e7b:week:k=week:tag=CR-cap-B-latch:c=307": {
+   "base": "1380e05125ef3a5a2acdcde33386f138af1934e4dfc5e8f95e0c14c9ae8bd13c",
+   "pk": "10999171ca70ff6d914a084ac88d9a6d02e054a99bc61beaedbf70d82948b99e"
+  },
+  "e7b:week:k=week:tag=CR-cap-B-slot:c=307": {
+   "base": "1380e05125ef3a5a2acdcde33386f138af1934e4dfc5e8f95e0c14c9ae8bd13c",
+   "pk": "10999171ca70ff6d914a084ac88d9a6d02e054a99bc61beaedbf70d82948b99e"
+  },
+  "e7b:week:k=week:tag=CR-cap-B:c=308": {
+   "base": "74689c5fb07756a34a7aaef68f16e7bd57b7505f1397a3753a70c6107354e3cf",
+   "pk": "1cfb426736ea6ad3c78fc1fb21f5a9478a9241c43ddb271dfa70a796ec77cafb"
+  },
+  "e7b:week:k=week:tag=CR-cap-0:c=308": {
+   "base": "74689c5fb07756a34a7aaef68f16e7bd57b7505f1397a3753a70c6107354e3cf",
+   "pk": "1cfb426736ea6ad3c78fc1fb21f5a9478a9241c43ddb271dfa70a796ec77cafb"
+  },
+  "e7b:week:k=week:tag=CR-cap-5:c=308": {
+   "base": "74689c5fb07756a34a7aaef68f16e7bd57b7505f1397a3753a70c6107354e3cf",
+   "pk": "1cfb426736ea6ad3c78fc1fb21f5a9478a9241c43ddb271dfa70a796ec77cafb"
+  },
+  "e7b:week:k=week:tag=CR-cap-B-latch:c=308": {
+   "base": "74689c5fb07756a34a7aaef68f16e7bd57b7505f1397a3753a70c6107354e3cf",
+   "pk": "1cfb426736ea6ad3c78fc1fb21f5a9478a9241c43ddb271dfa70a796ec77cafb"
+  },
+  "e7b:week:k=week:tag=CR-cap-B-slot:c=308": {
+   "base": "74689c5fb07756a34a7aaef68f16e7bd57b7505f1397a3753a70c6107354e3cf",
+   "pk": "1cfb426736ea6ad3c78fc1fb21f5a9478a9241c43ddb271dfa70a796ec77cafb"
+  },
+  "e7b:week:k=week:tag=CR-cap-B:c=309": {
+   "base": "5b2912ef0605c39896454e436b1ea57f64e83854dcec05e924175241ad3897f8",
+   "pk": "a1e07e7a859748ce7b492a8f2c20b5eedad12e9e60c3d612024b82f74d13a3dc"
+  },
+  "e7b:week:k=week:tag=CR-cap-0:c=309": {
+   "base": "5b2912ef0605c39896454e436b1ea57f64e83854dcec05e924175241ad3897f8",
+   "pk": "a1e07e7a859748ce7b492a8f2c20b5eedad12e9e60c3d612024b82f74d13a3dc"
+  },
+  "e7b:week:k=week:tag=CR-cap-5:c=309": {
+   "base": "5b2912ef0605c39896454e436b1ea57f64e83854dcec05e924175241ad3897f8",
+   "pk": "a1e07e7a859748ce7b492a8f2c20b5eedad12e9e60c3d612024b82f74d13a3dc"
+  },
+  "e7b:week:k=week:tag=CR-cap-B-latch:c=309": {
+   "base": "5b2912ef0605c39896454e436b1ea57f64e83854dcec05e924175241ad3897f8",
+   "pk": "a1e07e7a859748ce7b492a8f2c20b5eedad12e9e60c3d612024b82f74d13a3dc"
+  },
+  "e7b:week:k=week:tag=CR-cap-B-slot:c=309": {
+   "base": "5b2912ef0605c39896454e436b1ea57f64e83854dcec05e924175241ad3897f8",
+   "pk": "a1e07e7a859748ce7b492a8f2c20b5eedad12e9e60c3d612024b82f74d13a3dc"
+  },
+  "e7b:week:k=week:tag=CR-cap-B:c=310": {
+   "base": "8f8cdc92591d3ffcaebeba8a2e8166e5310e2c3017cd2a74dd707d6e45b51117",
+   "pk": "0ab53cd537e15c4331caad03814b74c18cf1ed24d44b45ccec5c93574d3e4e48"
+  },
+  "e7b:week:k=week:tag=CR-cap-0:c=310": {
+   "base": "8f8cdc92591d3ffcaebeba8a2e8166e5310e2c3017cd2a74dd707d6e45b51117",
+   "pk": "0ab53cd537e15c4331caad03814b74c18cf1ed24d44b45ccec5c93574d3e4e48"
+  },
+  "e7b:week:k=week:tag=CR-cap-5:c=310": {
+   "base": "8f8cdc92591d3ffcaebeba8a2e8166e5310e2c3017cd2a74dd707d6e45b51117",
+   "pk": "0ab53cd537e15c4331caad03814b74c18cf1ed24d44b45ccec5c93574d3e4e48"
+  },
+  "e7b:week:k=week:tag=CR-cap-B-latch:c=310": {
+   "base": "8f8cdc92591d3ffcaebeba8a2e8166e5310e2c3017cd2a74dd707d6e45b51117",
+   "pk": "0ab53cd537e15c4331caad03814b74c18cf1ed24d44b45ccec5c93574d3e4e48"
+  },
+  "e7b:week:k=week:tag=CR-cap-B-slot:c=310": {
+   "base": "8f8cdc92591d3ffcaebeba8a2e8166e5310e2c3017cd2a74dd707d6e45b51117",
+   "pk": "0ab53cd537e15c4331caad03814b74c18cf1ed24d44b45ccec5c93574d3e4e48"
+  },
+  "e7b:week:k=week:tag=CR-cap-B:c=311": {
+   "base": "076af1ec9f0b843609aab563192a882ed903a9b62b9fbe5807b78d39886fdf55",
+   "pk": "a463e2fded45be2dac5b36749901a5031b1e31cdfe1459a82a7e45df17a1c8ba"
+  },
+  "e7b:week:k=week:tag=CR-cap-0:c=311": {
+   "base": "076af1ec9f0b843609aab563192a882ed903a9b62b9fbe5807b78d39886fdf55",
+   "pk": "a463e2fded45be2dac5b36749901a5031b1e31cdfe1459a82a7e45df17a1c8ba"
+  },
+  "e7b:week:k=week:tag=CR-cap-5:c=311": {
+   "base": "076af1ec9f0b843609aab563192a882ed903a9b62b9fbe5807b78d39886fdf55",
+   "pk": "a463e2fded45be2dac5b36749901a5031b1e31cdfe1459a82a7e45df17a1c8ba"
+  },
+  "e7b:week:k=week:tag=CR-cap-B-latch:c=311": {
+   "base": "076af1ec9f0b843609aab563192a882ed903a9b62b9fbe5807b78d39886fdf55",
+   "pk": "a463e2fded45be2dac5b36749901a5031b1e31cdfe1459a82a7e45df17a1c8ba"
+  },
+  "e7b:week:k=week:tag=CR-cap-B-slot:c=311": {
+   "base": "076af1ec9f0b843609aab563192a882ed903a9b62b9fbe5807b78d39886fdf55",
+   "pk": "a463e2fded45be2dac5b36749901a5031b1e31cdfe1459a82a7e45df17a1c8ba"
+  },
+  "e7b:week:k=week:tag=CR-cap-B:c=312": {
+   "base": "278fabac36c91b8103bdca32d53251de6462e604ddccc64bc55665ddb3276c76",
+   "pk": "437bb43b15cb7b96e0ee9ffa22d9dcb022e8557e7c573202b63041e90422969f"
+  },
+  "e7b:week:k=week:tag=CR-cap-0:c=312": {
+   "base": "278fabac36c91b8103bdca32d53251de6462e604ddccc64bc55665ddb3276c76",
+   "pk": "437bb43b15cb7b96e0ee9ffa22d9dcb022e8557e7c573202b63041e90422969f"
+  },
+  "e7b:week:k=week:tag=CR-cap-5:c=312": {
+   "base": "278fabac36c91b8103bdca32d53251de6462e604ddccc64bc55665ddb3276c76",
+   "pk": "437bb43b15cb7b96e0ee9ffa22d9dcb022e8557e7c573202b63041e90422969f"
+  },
+  "e7b:week:k=week:tag=CR-cap-B-latch:c=312": {
+   "base": "278fabac36c91b8103bdca32d53251de6462e604ddccc64bc55665ddb3276c76",
+   "pk": "437bb43b15cb7b96e0ee9ffa22d9dcb022e8557e7c573202b63041e90422969f"
+  },
+  "e7b:week:k=week:tag=CR-cap-B-slot:c=312": {
+   "base": "278fabac36c91b8103bdca32d53251de6462e604ddccc64bc55665ddb3276c76",
+   "pk": "437bb43b15cb7b96e0ee9ffa22d9dcb022e8557e7c573202b63041e90422969f"
+  },
+  "e7b:week:k=week:tag=CR-cap-B:c=313": {
+   "base": "1aa22e9e538dce29262864b25fd0009e1fefe683a84e235aec2b3a4bfb739db0",
+   "pk": "339fc22b4656f7c069aec4744f025a0c685285f3e56a2674c4dc41f872638e4e"
+  },
+  "e7b:week:k=week:tag=CR-cap-0:c=313": {
+   "base": "1aa22e9e538dce29262864b25fd0009e1fefe683a84e235aec2b3a4bfb739db0",
+   "pk": "339fc22b4656f7c069aec4744f025a0c685285f3e56a2674c4dc41f872638e4e"
+  },
+  "e7b:week:k=week:tag=CR-cap-5:c=313": {
+   "base": "1aa22e9e538dce29262864b25fd0009e1fefe683a84e235aec2b3a4bfb739db0",
+   "pk": "339fc22b4656f7c069aec4744f025a0c685285f3e56a2674c4dc41f872638e4e"
+  },
+  "e7b:week:k=week:tag=CR-cap-B-latch:c=313": {
+   "base": "1aa22e9e538dce29262864b25fd0009e1fefe683a84e235aec2b3a4bfb739db0",
+   "pk": "339fc22b4656f7c069aec4744f025a0c685285f3e56a2674c4dc41f872638e4e"
+  },
+  "e7b:week:k=week:tag=CR-cap-B-slot:c=313": {
+   "base": "1aa22e9e538dce29262864b25fd0009e1fefe683a84e235aec2b3a4bfb739db0",
+   "pk": "339fc22b4656f7c069aec4744f025a0c685285f3e56a2674c4dc41f872638e4e"
+  },
+  "e7b:week:k=week:tag=CR-cap-B:c=314": {
+   "base": "3668d16691ad40042c58e492b61a0fb3276e9ac7cbbc8c7ecef9f31e7e85e60a",
+   "pk": "9d7f8aacebf34001abfd6c47482d80bc4e60850809b5ad0eb9bdca9d06a88ec3"
+  },
+  "e7b:week:k=week:tag=CR-cap-0:c=314": {
+   "base": "3668d16691ad40042c58e492b61a0fb3276e9ac7cbbc8c7ecef9f31e7e85e60a",
+   "pk": "9d7f8aacebf34001abfd6c47482d80bc4e60850809b5ad0eb9bdca9d06a88ec3"
+  },
+  "e7b:week:k=week:tag=CR-cap-5:c=314": {
+   "base": "3668d16691ad40042c58e492b61a0fb3276e9ac7cbbc8c7ecef9f31e7e85e60a",
+   "pk": "9d7f8aacebf34001abfd6c47482d80bc4e60850809b5ad0eb9bdca9d06a88ec3"
+  },
+  "e7b:week:k=week:tag=CR-cap-B-latch:c=314": {
+   "base": "3668d16691ad40042c58e492b61a0fb3276e9ac7cbbc8c7ecef9f31e7e85e60a",
+   "pk": "9d7f8aacebf34001abfd6c47482d80bc4e60850809b5ad0eb9bdca9d06a88ec3"
+  },
+  "e7b:week:k=week:tag=CR-cap-B-slot:c=314": {
+   "base": "3668d16691ad40042c58e492b61a0fb3276e9ac7cbbc8c7ecef9f31e7e85e60a",
+   "pk": "9d7f8aacebf34001abfd6c47482d80bc4e60850809b5ad0eb9bdca9d06a88ec3"
+  },
+  "e7b:week:k=week:tag=CR-cap-B:c=315": {
+   "base": "1b44f61860e551ec8823b15f199032c830775d2b8589da9b0cf499354b117df7",
+   "pk": "710e3ff5600262bc86962363f34d38a2f7d21c2a152c5e11fa0faf80432faa37"
+  },
+  "e7b:week:k=week:tag=CR-cap-0:c=315": {
+   "base": "1b44f61860e551ec8823b15f199032c830775d2b8589da9b0cf499354b117df7",
+   "pk": "710e3ff5600262bc86962363f34d38a2f7d21c2a152c5e11fa0faf80432faa37"
+  },
+  "e7b:week:k=week:tag=CR-cap-5:c=315": {
+   "base": "1b44f61860e551ec8823b15f199032c830775d2b8589da9b0cf499354b117df7",
+   "pk": "710e3ff5600262bc86962363f34d38a2f7d21c2a152c5e11fa0faf80432faa37"
+  },
+  "e7b:week:k=week:tag=CR-cap-B-latch:c=315": {
+   "base": "1b44f61860e551ec8823b15f199032c830775d2b8589da9b0cf499354b117df7",
+   "pk": "710e3ff5600262bc86962363f34d38a2f7d21c2a152c5e11fa0faf80432faa37"
+  },
+  "e7b:week:k=week:tag=CR-cap-B-slot:c=315": {
+   "base": "1b44f61860e551ec8823b15f199032c830775d2b8589da9b0cf499354b117df7",
+   "pk": "710e3ff5600262bc86962363f34d38a2f7d21c2a152c5e11fa0faf80432faa37"
+  },
+  "e7b:week:k=week:tag=CR-cap-B:c=316": {
+   "base": "5d2718e0921a6cf984a6e9bcae2d133adfe5da3b44dd95756667e9ffe4d6c96a",
+   "pk": "086ddb5a8c01e5e2a93d22eaf58d3fcb4b254822bd4688b79f96be7e629e341c"
+  },
+  "e7b:week:k=week:tag=CR-cap-0:c=316": {
+   "base": "5d2718e0921a6cf984a6e9bcae2d133adfe5da3b44dd95756667e9ffe4d6c96a",
+   "pk": "086ddb5a8c01e5e2a93d22eaf58d3fcb4b254822bd4688b79f96be7e629e341c"
+  },
+  "e7b:week:k=week:tag=CR-cap-5:c=316": {
+   "base": "5d2718e0921a6cf984a6e9bcae2d133adfe5da3b44dd95756667e9ffe4d6c96a",
+   "pk": "086ddb5a8c01e5e2a93d22eaf58d3fcb4b254822bd4688b79f96be7e629e341c"
+  },
+  "e7b:week:k=week:tag=CR-cap-B-latch:c=316": {
+   "base": "5d2718e0921a6cf984a6e9bcae2d133adfe5da3b44dd95756667e9ffe4d6c96a",
+   "pk": "086ddb5a8c01e5e2a93d22eaf58d3fcb4b254822bd4688b79f96be7e629e341c"
+  },
+  "e7b:week:k=week:tag=CR-cap-B-slot:c=316": {
+   "base": "5d2718e0921a6cf984a6e9bcae2d133adfe5da3b44dd95756667e9ffe4d6c96a",
+   "pk": "086ddb5a8c01e5e2a93d22eaf58d3fcb4b254822bd4688b79f96be7e629e341c"
+  },
+  "e7b:week:k=week:tag=GR-cap-B:c=301": {
+   "base": "2b619e9c729caa92598f444d715a469866c5a5875f57eec7cb8b948f77d4bba6",
+   "pk": "1348aeaa65a13ed89b19f5de9e08bd1b07d0deebda5de8074080424f2beb4965"
+  },
+  "e7b:week:k=week:tag=GR-cap-0:c=301": {
+   "base": "2b619e9c729caa92598f444d715a469866c5a5875f57eec7cb8b948f77d4bba6",
+   "pk": "1348aeaa65a13ed89b19f5de9e08bd1b07d0deebda5de8074080424f2beb4965"
+  },
+  "e7b:week:k=week:tag=GR-cap-B:c=302": {
+   "base": "92901ac5e0531e3bd3f400764b3a6d74be057ce1061914706db9ef2f8ef35ef9",
+   "pk": "a5393c66bc0cccf60b436ae189ec69a9768d810773a4685506c9d58ef8c6f46d"
+  },
+  "e7b:week:k=week:tag=GR-cap-0:c=302": {
+   "base": "92901ac5e0531e3bd3f400764b3a6d74be057ce1061914706db9ef2f8ef35ef9",
+   "pk": "a5393c66bc0cccf60b436ae189ec69a9768d810773a4685506c9d58ef8c6f46d"
+  },
+  "e7b:week:k=week:tag=GR-cap-B:c=303": {
+   "base": "7c3c40d0b00a781b8c6b80401d6deb54d8d7fd6653ea0c7dfc9fd93b6c3470c2",
+   "pk": "81602894c7013e38892e2ff384a36ead398c698558f4f62c2c10f1fb13f5d5bf"
+  },
+  "e7b:week:k=week:tag=GR-cap-0:c=303": {
+   "base": "7c3c40d0b00a781b8c6b80401d6deb54d8d7fd6653ea0c7dfc9fd93b6c3470c2",
+   "pk": "81602894c7013e38892e2ff384a36ead398c698558f4f62c2c10f1fb13f5d5bf"
+  },
+  "e7b:week:k=week:tag=GR-cap-B:c=304": {
+   "base": "5064e702339390148b4ffd45439bf54a5de20266d177ab4a1fd0e7c3499f58d2",
+   "pk": "42857f3c0c0d48c66c1b68e9c97cefdd30afc6a564a6aab34ca4392c7763d09f"
+  },
+  "e7b:week:k=week:tag=GR-cap-0:c=304": {
+   "base": "5064e702339390148b4ffd45439bf54a5de20266d177ab4a1fd0e7c3499f58d2",
+   "pk": "42857f3c0c0d48c66c1b68e9c97cefdd30afc6a564a6aab34ca4392c7763d09f"
+  },
+  "e7b:week:k=week:tag=GR-cap-B:c=305": {
+   "base": "9b3a7ca1fa658ada6ad7d92724277b4b2f6404d796de5c05a3bb85d965b40176",
+   "pk": "5ce72275177e9c0f5a0ad322060213c4f772db04dd510e9fb07be6e1a8ee9149"
+  },
+  "e7b:week:k=week:tag=GR-cap-0:c=305": {
+   "base": "9b3a7ca1fa658ada6ad7d92724277b4b2f6404d796de5c05a3bb85d965b40176",
+   "pk": "5ce72275177e9c0f5a0ad322060213c4f772db04dd510e9fb07be6e1a8ee9149"
+  },
+  "e7b:week:k=week:tag=GR-cap-B:c=306": {
+   "base": "f8d015225ba1782ee23aa348229476b75ee7f39c2202db36d2747a96ab972434",
+   "pk": "3fdbdbe097a331fbe027f45f61de447071de6c51802e3c77a5623dc9fe5d8633"
+  },
+  "e7b:week:k=week:tag=GR-cap-0:c=306": {
+   "base": "f8d015225ba1782ee23aa348229476b75ee7f39c2202db36d2747a96ab972434",
+   "pk": "3fdbdbe097a331fbe027f45f61de447071de6c51802e3c77a5623dc9fe5d8633"
+  },
+  "e7b:week:k=week:tag=GR-cap-B:c=307": {
+   "base": "1380e05125ef3a5a2acdcde33386f138af1934e4dfc5e8f95e0c14c9ae8bd13c",
+   "pk": "10999171ca70ff6d914a084ac88d9a6d02e054a99bc61beaedbf70d82948b99e"
+  },
+  "e7b:week:k=week:tag=GR-cap-0:c=307": {
+   "base": "1380e05125ef3a5a2acdcde33386f138af1934e4dfc5e8f95e0c14c9ae8bd13c",
+   "pk": "10999171ca70ff6d914a084ac88d9a6d02e054a99bc61beaedbf70d82948b99e"
+  },
+  "e7b:week:k=week:tag=GR-cap-B:c=308": {
+   "base": "74689c5fb07756a34a7aaef68f16e7bd57b7505f1397a3753a70c6107354e3cf",
+   "pk": "1cfb426736ea6ad3c78fc1fb21f5a9478a9241c43ddb271dfa70a796ec77cafb"
+  },
+  "e7b:week:k=week:tag=GR-cap-0:c=308": {
+   "base": "74689c5fb07756a34a7aaef68f16e7bd57b7505f1397a3753a70c6107354e3cf",
+   "pk": "1cfb426736ea6ad3c78fc1fb21f5a9478a9241c43ddb271dfa70a796ec77cafb"
+  },
+  "e7b:week:k=week:tag=GR-cap-B:c=309": {
+   "base": "5b2912ef0605c39896454e436b1ea57f64e83854dcec05e924175241ad3897f8",
+   "pk": "a1e07e7a859748ce7b492a8f2c20b5eedad12e9e60c3d612024b82f74d13a3dc"
+  },
+  "e7b:week:k=week:tag=GR-cap-0:c=309": {
+   "base": "5b2912ef0605c39896454e436b1ea57f64e83854dcec05e924175241ad3897f8",
+   "pk": "a1e07e7a859748ce7b492a8f2c20b5eedad12e9e60c3d612024b82f74d13a3dc"
+  },
+  "e7b:week:k=week:tag=GR-cap-B:c=310": {
+   "base": "8f8cdc92591d3ffcaebeba8a2e8166e5310e2c3017cd2a74dd707d6e45b51117",
+   "pk": "0ab53cd537e15c4331caad03814b74c18cf1ed24d44b45ccec5c93574d3e4e48"
+  },
+  "e7b:week:k=week:tag=GR-cap-0:c=310": {
+   "base": "8f8cdc92591d3ffcaebeba8a2e8166e5310e2c3017cd2a74dd707d6e45b51117",
+   "pk": "0ab53cd537e15c4331caad03814b74c18cf1ed24d44b45ccec5c93574d3e4e48"
+  },
+  "e7b:week:k=week:tag=GR-cap-B:c=311": {
+   "base": "076af1ec9f0b843609aab563192a882ed903a9b62b9fbe5807b78d39886fdf55",
+   "pk": "a463e2fded45be2dac5b36749901a5031b1e31cdfe1459a82a7e45df17a1c8ba"
+  },
+  "e7b:week:k=week:tag=GR-cap-0:c=311": {
+   "base": "076af1ec9f0b843609aab563192a882ed903a9b62b9fbe5807b78d39886fdf55",
+   "pk": "a463e2fded45be2dac5b36749901a5031b1e31cdfe1459a82a7e45df17a1c8ba"
+  },
+  "e7b:week:k=week:tag=GR-cap-B:c=312": {
+   "base": "278fabac36c91b8103bdca32d53251de6462e604ddccc64bc55665ddb3276c76",
+   "pk": "437bb43b15cb7b96e0ee9ffa22d9dcb022e8557e7c573202b63041e90422969f"
+  },
+  "e7b:week:k=week:tag=GR-cap-0:c=312": {
+   "base": "278fabac36c91b8103bdca32d53251de6462e604ddccc64bc55665ddb3276c76",
+   "pk": "437bb43b15cb7b96e0ee9ffa22d9dcb022e8557e7c573202b63041e90422969f"
+  },
+  "e7b:week:k=week:tag=GR-cap-B:c=313": {
+   "base": "1aa22e9e538dce29262864b25fd0009e1fefe683a84e235aec2b3a4bfb739db0",
+   "pk": "339fc22b4656f7c069aec4744f025a0c685285f3e56a2674c4dc41f872638e4e"
+  },
+  "e7b:week:k=week:tag=GR-cap-0:c=313": {
+   "base": "1aa22e9e538dce29262864b25fd0009e1fefe683a84e235aec2b3a4bfb739db0",
+   "pk": "339fc22b4656f7c069aec4744f025a0c685285f3e56a2674c4dc41f872638e4e"
+  },
+  "e7b:week:k=week:tag=GR-cap-B:c=314": {
+   "base": "3668d16691ad40042c58e492b61a0fb3276e9ac7cbbc8c7ecef9f31e7e85e60a",
+   "pk": "9d7f8aacebf34001abfd6c47482d80bc4e60850809b5ad0eb9bdca9d06a88ec3"
+  },
+  "e7b:week:k=week:tag=GR-cap-0:c=314": {
+   "base": "3668d16691ad40042c58e492b61a0fb3276e9ac7cbbc8c7ecef9f31e7e85e60a",
+   "pk": "9d7f8aacebf34001abfd6c47482d80bc4e60850809b5ad0eb9bdca9d06a88ec3"
+  },
+  "e7b:week:k=week:tag=GR-cap-B:c=315": {
+   "base": "1b44f61860e551ec8823b15f199032c830775d2b8589da9b0cf499354b117df7",
+   "pk": "710e3ff5600262bc86962363f34d38a2f7d21c2a152c5e11fa0faf80432faa37"
+  },
+  "e7b:week:k=week:tag=GR-cap-0:c=315": {
+   "base": "1b44f61860e551ec8823b15f199032c830775d2b8589da9b0cf499354b117df7",
+   "pk": "710e3ff5600262bc86962363f34d38a2f7d21c2a152c5e11fa0faf80432faa37"
+  },
+  "e7b:week:k=week:tag=GR-cap-B:c=316": {
+   "base": "5d2718e0921a6cf984a6e9bcae2d133adfe5da3b44dd95756667e9ffe4d6c96a",
+   "pk": "086ddb5a8c01e5e2a93d22eaf58d3fcb4b254822bd4688b79f96be7e629e341c"
+  },
+  "e7b:week:k=week:tag=GR-cap-0:c=316": {
+   "base": "5d2718e0921a6cf984a6e9bcae2d133adfe5da3b44dd95756667e9ffe4d6c96a",
+   "pk": "086ddb5a8c01e5e2a93d22eaf58d3fcb4b254822bd4688b79f96be7e629e341c"
+  },
+  "e7b:week:k=week:tag=Sublet:c=301": {
+   "base": "2b619e9c729caa92598f444d715a469866c5a5875f57eec7cb8b948f77d4bba6"
+  },
+  "e7b:week:k=week:tag=Sublet:c=302": {
+   "base": "92901ac5e0531e3bd3f400764b3a6d74be057ce1061914706db9ef2f8ef35ef9"
+  },
+  "e7b:week:k=week:tag=Sublet:c=303": {
+   "base": "7c3c40d0b00a781b8c6b80401d6deb54d8d7fd6653ea0c7dfc9fd93b6c3470c2"
+  },
+  "e7b:week:k=week:tag=Sublet:c=304": {
+   "base": "5064e702339390148b4ffd45439bf54a5de20266d177ab4a1fd0e7c3499f58d2"
+  },
+  "e7b:week:k=week:tag=Sublet:c=305": {
+   "base": "9b3a7ca1fa658ada6ad7d92724277b4b2f6404d796de5c05a3bb85d965b40176"
+  },
+  "e7b:week:k=week:tag=Sublet:c=306": {
+   "base": "f8d015225ba1782ee23aa348229476b75ee7f39c2202db36d2747a96ab972434"
+  },
+  "e7b:week:k=week:tag=Sublet:c=307": {
+   "base": "1380e05125ef3a5a2acdcde33386f138af1934e4dfc5e8f95e0c14c9ae8bd13c"
+  },
+  "e7b:week:k=week:tag=Sublet:c=308": {
+   "base": "74689c5fb07756a34a7aaef68f16e7bd57b7505f1397a3753a70c6107354e3cf"
+  },
+  "e7b:week:k=week:tag=Sublet:c=309": {
+   "base": "5b2912ef0605c39896454e436b1ea57f64e83854dcec05e924175241ad3897f8"
+  },
+  "e7b:week:k=week:tag=Sublet:c=310": {
+   "base": "8f8cdc92591d3ffcaebeba8a2e8166e5310e2c3017cd2a74dd707d6e45b51117"
+  },
+  "e7b:week:k=week:tag=Sublet:c=311": {
+   "base": "076af1ec9f0b843609aab563192a882ed903a9b62b9fbe5807b78d39886fdf55"
+  },
+  "e7b:week:k=week:tag=Sublet:c=312": {
+   "base": "278fabac36c91b8103bdca32d53251de6462e604ddccc64bc55665ddb3276c76"
+  },
+  "e7b:week:k=week:tag=Sublet:c=313": {
+   "base": "1aa22e9e538dce29262864b25fd0009e1fefe683a84e235aec2b3a4bfb739db0"
+  },
+  "e7b:week:k=week:tag=Sublet:c=314": {
+   "base": "3668d16691ad40042c58e492b61a0fb3276e9ac7cbbc8c7ecef9f31e7e85e60a"
+  },
+  "e7b:week:k=week:tag=Sublet:c=315": {
+   "base": "1b44f61860e551ec8823b15f199032c830775d2b8589da9b0cf499354b117df7"
+  },
+  "e7b:week:k=week:tag=Sublet:c=316": {
+   "base": "5d2718e0921a6cf984a6e9bcae2d133adfe5da3b44dd95756667e9ffe4d6c96a"
+  },
+  "e7b:week:k=week:tag=A9:c=301": {
+   "base": "2b619e9c729caa92598f444d715a469866c5a5875f57eec7cb8b948f77d4bba6"
+  },
+  "e7b:week:k=week:tag=A9:c=302": {
+   "base": "92901ac5e0531e3bd3f400764b3a6d74be057ce1061914706db9ef2f8ef35ef9"
+  },
+  "e7b:week:k=week:tag=A9:c=303": {
+   "base": "7c3c40d0b00a781b8c6b80401d6deb54d8d7fd6653ea0c7dfc9fd93b6c3470c2"
+  },
+  "e7b:week:k=week:tag=A9:c=304": {
+   "base": "5064e702339390148b4ffd45439bf54a5de20266d177ab4a1fd0e7c3499f58d2"
+  },
+  "e7b:week:k=week:tag=A9:c=305": {
+   "base": "9b3a7ca1fa658ada6ad7d92724277b4b2f6404d796de5c05a3bb85d965b40176"
+  },
+  "e7b:week:k=week:tag=A9:c=306": {
+   "base": "f8d015225ba1782ee23aa348229476b75ee7f39c2202db36d2747a96ab972434"
+  },
+  "e7b:week:k=week:tag=A9:c=307": {
+   "base": "1380e05125ef3a5a2acdcde33386f138af1934e4dfc5e8f95e0c14c9ae8bd13c"
+  },
+  "e7b:week:k=week:tag=A9:c=308": {
+   "base": "74689c5fb07756a34a7aaef68f16e7bd57b7505f1397a3753a70c6107354e3cf"
+  },
+  "e7b:week:k=week:tag=A9:c=309": {
+   "base": "5b2912ef0605c39896454e436b1ea57f64e83854dcec05e924175241ad3897f8"
+  },
+  "e7b:week:k=week:tag=A9:c=310": {
+   "base": "8f8cdc92591d3ffcaebeba8a2e8166e5310e2c3017cd2a74dd707d6e45b51117"
+  },
+  "e7b:week:k=week:tag=A9:c=311": {
+   "base": "076af1ec9f0b843609aab563192a882ed903a9b62b9fbe5807b78d39886fdf55"
+  },
+  "e7b:week:k=week:tag=A9:c=312": {
+   "base": "278fabac36c91b8103bdca32d53251de6462e604ddccc64bc55665ddb3276c76"
+  },
+  "e7b:week:k=week:tag=A9:c=313": {
+   "base": "1aa22e9e538dce29262864b25fd0009e1fefe683a84e235aec2b3a4bfb739db0"
+  },
+  "e7b:week:k=week:tag=A9:c=314": {
+   "base": "3668d16691ad40042c58e492b61a0fb3276e9ac7cbbc8c7ecef9f31e7e85e60a"
+  },
+  "e7b:week:k=week:tag=A9:c=315": {
+   "base": "1b44f61860e551ec8823b15f199032c830775d2b8589da9b0cf499354b117df7"
+  },
+  "e7b:week:k=week:tag=A9:c=316": {
+   "base": "5d2718e0921a6cf984a6e9bcae2d133adfe5da3b44dd95756667e9ffe4d6c96a"
+  }
+ },
+ "sources_sha256": {
+  "code/sim/sublet/experiments/e7b.py": "d91b9cf973690c5e4d779d3fb275d518b81a8cb12742db23f843fbd5048dbf2a",
+  "code/sim/sublet/experiments/e7b_tags.py": "42d5fb193dd818f2b99469b9f3967445aed6961d367639b89ce9f53ac97a4309",
+  "code/sim/sublet/experiments/e7b_analysis.py": "530151bfa0c506ceab5c5b9ec367424bab275edcc150fb78a2242f36aabe8704",
+  "code/sim/sublet/experiments/e7h.py": "e6ea63450ad36e45a32b35442c278bf72cb3bf879ae1033031fc76b52403a078",
+  "code/sim/sublet/experiments/e7r.py": "b04b446efc3cddc478b3343c039d22b517a456b9247f68b00a60b53d538e4f57",
+  "code/sim/sublet/experiments/s1v2.py": "37a88cd96d534f74e2f68e747dc30c21036614a7d787aa7e22a271ee7bdedc23",
+  "code/sim/sublet/experiments/s1.py": "8afb76a9aa6dd1fe57477c829fccfaad72079268ea825b1649c0a4389d7cd802",
+  "code/sim/sublet/experiments/ms5b_common.py": "6ae2f94e94f322f271addcdb3dfc16fffca696a376ad37fca499ba7c0d3ebe84",
+  "code/sim/sublet/experiments/ms7_baselines.py": "f74d8fd39b5984daf80d0a8f9148e8e4ab26de145cf9d2097584f3bfad1353c2",
+  "code/sim/sublet/algos/budget_cap.py": "5f408b5170eca7b2d15f31487c52e5569cbffdc828b56f97e437d291c75fc4e9",
+  "code/sim/sublet/algos/registry.py": "952a4e1b22d5a84b2491bcb5d37f17f06488a4ffcbbddc701a248df24e1c982a",
+  "code/sim/sublet/algos/a9.py": "60843cc690083e8a553af4c8e5c8570210fca9b24f1be00f62f0ea4dc3842582",
+  "code/sim/sublet/algos/guard.py": "72c92b01fe0f46ecca11c3ba1bd51bc66ee3605454f3666ea7ad4d612b6abe0f",
+  "code/sim/sublet/algos/online_lb.py": "a52b5800bc2a617783c127e8237a6d52d3950bb154735db19c4be8822f174e8b",
+  "code/sim/sublet/baselines/greedy.py": "e4383ddd6d8430b6bdddf6a621941090b4ebd0f17ae44dea2dd2f6b337ea67eb",
+  "code/sim/sublet/baselines/common.py": "87e198c0c104d1dac69af2798a4417aeafb3a79401371630c2e5cd92cab5d7da",
+  "code/sim/sublet/lender.py": "d5fec8f5530b000af525f80f3768587905be29d164e3704e5c2285f62a43bbf6",
+  "code/sim/sublet/engine.py": "2cd5b4bf9ceedbbbe31fffa77199bb3361082d3f236b2f16004a1ed0ca5e8286",
+  "code/sim/sublet/drivers/run.py": "efbd089a698c51d329d760ad0a436c8fbd397781e8e2a8e2eff2147f6da3cf3a",
+  "code/sim/sublet/experiments/ms3_common.py": "6bf1544cbbc5f6bf0c6fc2d90243156616f8e24a84992b261cf8d598f1315f79",
+  "code/sim/sublet/experiments/q44_study.py": "433913c083473b8c0355f1d67bec9ef0ee8ff5c33af3ce78276128043515add0"
+ },
+ "gate": {
+  "kind": "ms8_registration",
+  "ok": true,
+  "reason": "registration at HEAD, clean tree, analysis sha256 as registered",
+  "record": {
+   "head": "467b21817c8f506f152248c731f072a406c33d3a",
+   "registration": "design/ms8/registration.md",
+   "registration_at_head": true,
+   "registration_sha256": "4efe023be0d2f586ae1efd0a7977ca44e494cce30feb2aa890bbb23128172c72",
+   "analysis": "code/sim/sublet/experiments/e7b_analysis.py",
+   "analysis_sha256_registered": "530151bfa0c506ceab5c5b9ec367424bab275edcc150fb78a2242f36aabe8704",
+   "analysis_sha256_head": "530151bfa0c506ceab5c5b9ec367424bab275edcc150fb78a2242f36aabe8704",
+   "analysis_sha256_disk": "530151bfa0c506ceab5c5b9ec367424bab275edcc150fb78a2242f36aabe8704",
+   "dirty_paths": []
+  }
+ }
+}

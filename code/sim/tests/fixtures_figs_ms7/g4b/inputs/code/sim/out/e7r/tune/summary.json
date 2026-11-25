@@ -1,0 +1,2951 @@
+{
+ "meta": {
+  "exp": "e7r",
+  "part": "tune",
+  "spec": "design/ms7/plan.md X4, X5 (C54); design/ms7/feasibility/baselines.md",
+  "git_revision": "56b847bec39b437ed5074dff124ffb69416e7f2b",
+  "written": "2026-11-08T21:54:43",
+  "reduced": true,
+  "weeks": [
+   101
+  ],
+  "modes": [
+   "L-co",
+   "L-eg",
+   "L-iid-0.05",
+   "L-iid-0.2",
+   "L-ss",
+   "L-tr"
+  ],
+  "tags": {
+   "BL1-g00": {
+    "policy_id": "BL1",
+    "params": {},
+    "family": "BL1",
+    "kind": "grid",
+    "role": "tuning configuration BL1-g00 of BL1",
+    "information": "online-I1"
+   },
+   "BL1-g01": {
+    "policy_id": "BL1",
+    "params": {
+     "demand_stat": "mean"
+    },
+    "family": "BL1",
+    "kind": "grid",
+    "role": "tuning configuration BL1-g01 of BL1",
+    "information": "online-I1"
+   },
+   "BL1-g02": {
+    "policy_id": "BL1",
+    "params": {
+     "defer_release": false
+    },
+    "family": "BL1",
+    "kind": "grid",
+    "role": "tuning configuration BL1-g02 of BL1",
+    "information": "online-I1"
+   },
+   "BL1-g03": {
+    "policy_id": "BL1",
+    "params": {
+     "demand_stat": "mean",
+     "defer_release": false
+    },
+    "family": "BL1",
+    "kind": "grid",
+    "role": "tuning configuration BL1-g03 of BL1",
+    "information": "online-I1"
+   },
+   "BL1-g04": {
+    "policy_id": "BL1",
+    "params": {
+     "backoff_cap": 288
+    },
+    "family": "BL1",
+    "kind": "grid",
+    "role": "tuning configuration BL1-g04 of BL1",
+    "information": "online-I1"
+   },
+   "BL1-g05": {
+    "policy_id": "BL1",
+    "params": {
+     "demand_stat": "mean",
+     "backoff_cap": 288
+    },
+    "family": "BL1",
+    "kind": "grid",
+    "role": "tuning configuration BL1-g05 of BL1",
+    "information": "online-I1"
+   },
+   "BL1-g06": {
+    "policy_id": "BL1",
+    "params": {
+     "defer_release": false,
+     "backoff_cap": 288
+    },
+    "family": "BL1",
+    "kind": "grid",
+    "role": "tuning configuration BL1-g06 of BL1",
+    "information": "online-I1"
+   },
+   "BL1-g07": {
+    "policy_id": "BL1",
+    "params": {
+     "demand_stat": "mean",
+     "defer_release": false,
+     "backoff_cap": 288
+    },
+    "family": "BL1",
+    "kind": "grid",
+    "role": "tuning configuration BL1-g07 of BL1",
+    "information": "online-I1"
+   },
+   "BL1-g08": {
+    "policy_id": "A9",
+    "params": {
+     "target": "ceil",
+     "release": "now",
+     "site_rule": "static",
+     "mbb": false,
+     "commit": false,
+     "insure": false
+    },
+    "family": "BL1",
+    "kind": "grid",
+    "role": "tuning configuration BL1-g08 of BL1",
+    "information": "online-I1"
+   },
+   "BL1-g09": {
+    "policy_id": "A9",
+    "params": {
+     "target": "ceil",
+     "release": "now",
+     "site_rule": "static",
+     "mbb": false,
+     "commit": false,
+     "insure": false,
+     "demand_stat": "mean"
+    },
+    "family": "BL1",
+    "kind": "grid",
+    "role": "tuning configuration BL1-g09 of BL1",
+    "information": "online-I1"
+   },
+   "BL1-g10": {
+    "policy_id": "A9",
+    "params": {
+     "target": "ceil",
+     "release": "now",
+     "site_rule": "static",
+     "mbb": false,
+     "commit": false,
+     "insure": false,
+     "defer_release": false
+    },
+    "family": "BL1",
+    "kind": "grid",
+    "role": "tuning configuration BL1-g10 of BL1",
+    "information": "online-I1"
+   },
+   "BL1-g11": {
+    "policy_id": "A9",
+    "params": {
+     "target": "ceil",
+     "release": "now",
+     "site_rule": "static",
+     "mbb": false,
+     "commit": false,
+     "insure": false,
+     "demand_stat": "mean",
+     "defer_release": false
+    },
+    "family": "BL1",
+    "kind": "grid",
+    "role": "tuning configuration BL1-g11 of BL1",
+    "information": "online-I1"
+   },
+   "BL2-g00": {
+    "policy_id": "BL2",
+    "params": {},
+    "family": "BL2",
+    "kind": "grid",
+    "role": "tuning configuration BL2-g00 of BL2",
+    "information": "online-I1"
+   },
+   "BL2-g01": {
+    "policy_id": "BL2",
+    "params": {
+     "keep": "s0"
+    },
+    "family": "BL2",
+    "kind": "grid",
+    "role": "tuning configuration BL2-g01 of BL2",
+    "information": "online-I1"
+   },
+   "BL2-g02": {
+    "policy_id": "BL2",
+    "params": {
+     "defer_release": false
+    },
+    "family": "BL2",
+    "kind": "grid",
+    "role": "tuning configuration BL2-g02 of BL2",
+    "information": "online-I1"
+   },
+   "BL2-g03": {
+    "policy_id": "BL2",
+    "params": {
+     "keep": "s0",
+     "defer_release": false
+    },
+    "family": "BL2",
+    "kind": "grid",
+    "role": "tuning configuration BL2-g03 of BL2",
+    "information": "online-I1"
+   },
+   "BL2-g04": {
+    "policy_id": "BL2",
+    "params": {
+     "contract_rule": "c2"
+    },
+    "family": "BL2",
+    "kind": "grid",
+    "role": "tuning configuration BL2-g04 of BL2",
+    "information": "online-I1"
+   },
+   "BL2-g05": {
+    "policy_id": "BL2",
+    "params": {
+     "keep": "s0",
+     "contract_rule": "c2"
+    },
+    "family": "BL2",
+    "kind": "grid",
+    "role": "tuning configuration BL2-g05 of BL2",
+    "information": "online-I1"
+   },
+   "BL2-g06": {
+    "policy_id": "BL2",
+    "params": {
+     "contract_rule": "c2",
+     "defer_release": false
+    },
+    "family": "BL2",
+    "kind": "grid",
+    "role": "tuning configuration BL2-g06 of BL2",
+    "information": "online-I1"
+   },
+   "BL2-g07": {
+    "policy_id": "BL2",
+    "params": {
+     "keep": "s0",
+     "contract_rule": "c2",
+     "defer_release": false
+    },
+    "family": "BL2",
+    "kind": "grid",
+    "role": "tuning configuration BL2-g07 of BL2",
+    "information": "online-I1"
+   },
+   "BL3-g00": {
+    "policy_id": "BL3",
+    "params": {
+     "n_extra": 0
+    },
+    "family": "BL3",
+    "kind": "grid",
+    "role": "tuning configuration BL3-g00 of BL3",
+    "information": "online-I1"
+   },
+   "BL3-g01": {
+    "policy_id": "BL3",
+    "params": {
+     "n_extra": 0,
+     "react_at": "death"
+    },
+    "family": "BL3",
+    "kind": "grid",
+    "role": "tuning configuration BL3-g01 of BL3",
+    "information": "online-I1"
+   },
+   "BL3-g02": {
+    "policy_id": "BL3",
+    "params": {
+     "n_extra": 0,
+     "zone": "group"
+    },
+    "family": "BL3",
+    "kind": "grid",
+    "role": "tuning configuration BL3-g02 of BL3",
+    "information": "online-I1"
+   },
+   "BL3-g03": {
+    "policy_id": "BL3",
+    "params": {
+     "n_extra": 0,
+     "zone": "group",
+     "react_at": "death"
+    },
+    "family": "BL3",
+    "kind": "grid",
+    "role": "tuning configuration BL3-g03 of BL3",
+    "information": "online-I1"
+   },
+   "BL3-g04": {
+    "policy_id": "BL3",
+    "params": {
+     "n_extra": 0,
+     "contract_rule": "c2"
+    },
+    "family": "BL3",
+    "kind": "grid",
+    "role": "tuning configuration BL3-g04 of BL3",
+    "information": "online-I1"
+   },
+   "BL3-g05": {
+    "policy_id": "BL3",
+    "params": {
+     "n_extra": 0,
+     "contract_rule": "c2",
+     "react_at": "death"
+    },
+    "family": "BL3",
+    "kind": "grid",
+    "role": "tuning configuration BL3-g05 of BL3",
+    "information": "online-I1"
+   },
+   "BL3-g06": {
+    "policy_id": "BL3",
+    "params": {
+     "n_extra": 0,
+     "contract_rule": "c2",
+     "zone": "group"
+    },
+    "family": "BL3",
+    "kind": "grid",
+    "role": "tuning configuration BL3-g06 of BL3",
+    "information": "online-I1"
+   },
+   "BL3-g07": {
+    "policy_id": "BL3",
+    "params": {
+     "n_extra": 0,
+     "contract_rule": "c2",
+     "zone": "group",
+     "react_at": "death"
+    },
+    "family": "BL3",
+    "kind": "grid",
+    "role": "tuning configuration BL3-g07 of BL3",
+    "information": "online-I1"
+   },
+   "BL3-g08": {
+    "policy_id": "BL3",
+    "params": {
+     "n_extra": 1
+    },
+    "family": "BL3",
+    "kind": "grid",
+    "role": "tuning configuration BL3-g08 of BL3",
+    "information": "online-I1"
+   },
+   "BL3-g09": {
+    "policy_id": "BL3",
+    "params": {
+     "n_extra": 1,
+     "contract_rule": "c2"
+    },
+    "family": "BL3",
+    "kind": "grid",
+    "role": "tuning configuration BL3-g09 of BL3",
+    "information": "online-I1"
+   },
+   "BL3-g10": {
+    "policy_id": "BL3",
+    "params": {
+     "n_extra": 1,
+     "extra_scope": "llm",
+     "extra_when_idle": false
+    },
+    "family": "BL3",
+    "kind": "grid",
+    "role": "tuning configuration BL3-g10 of BL3",
+    "information": "online-I1"
+   },
+   "BL3-g11": {
+    "policy_id": "BL3",
+    "params": {
+     "n_extra": 1,
+     "extra_scope": "llm",
+     "extra_when_idle": false,
+     "contract_rule": "c2"
+    },
+    "family": "BL3",
+    "kind": "grid",
+    "role": "tuning configuration BL3-g11 of BL3",
+    "information": "online-I1"
+   },
+   "BL3-g12": {
+    "policy_id": "BL3",
+    "params": {},
+    "family": "BL3",
+    "kind": "grid",
+    "role": "tuning configuration BL3-g12 of BL3",
+    "information": "online-I1"
+   },
+   "BL3-g13": {
+    "policy_id": "BL3",
+    "params": {
+     "contract_rule": "c2"
+    },
+    "family": "BL3",
+    "kind": "grid",
+    "role": "tuning configuration BL3-g13 of BL3",
+    "information": "online-I1"
+   },
+   "BL3-g14": {
+    "policy_id": "BL3",
+    "params": {
+     "extra_scope": "llm",
+     "extra_when_idle": false
+    },
+    "family": "BL3",
+    "kind": "grid",
+    "role": "tuning configuration BL3-g14 of BL3",
+    "information": "online-I1"
+   },
+   "BL3-g15": {
+    "policy_id": "BL3",
+    "params": {
+     "extra_scope": "llm",
+     "extra_when_idle": false,
+     "contract_rule": "c2"
+    },
+    "family": "BL3",
+    "kind": "grid",
+    "role": "tuning configuration BL3-g15 of BL3",
+    "information": "online-I1"
+   },
+   "BL4-g00": {
+    "policy_id": "BL4",
+    "params": {},
+    "family": "BL4",
+    "kind": "grid",
+    "role": "tuning configuration BL4-g00 of BL4",
+    "information": "online-I1"
+   },
+   "BL4-g01": {
+    "policy_id": "BL4",
+    "params": {
+     "window_min": 30
+    },
+    "family": "BL4",
+    "kind": "grid",
+    "role": "tuning configuration BL4-g01 of BL4",
+    "information": "online-I1"
+   },
+   "BL4-g02": {
+    "policy_id": "BL4",
+    "params": {
+     "window_min": 120
+    },
+    "family": "BL4",
+    "kind": "grid",
+    "role": "tuning configuration BL4-g02 of BL4",
+    "information": "online-I1"
+   },
+   "BL4-g03": {
+    "policy_id": "BL4",
+    "params": {
+     "contract_rule": "c2"
+    },
+    "family": "BL4",
+    "kind": "grid",
+    "role": "tuning configuration BL4-g03 of BL4",
+    "information": "online-I1"
+   },
+   "BL4-g04": {
+    "policy_id": "BL4",
+    "params": {
+     "window_min": 30,
+     "contract_rule": "c2"
+    },
+    "family": "BL4",
+    "kind": "grid",
+    "role": "tuning configuration BL4-g04 of BL4",
+    "information": "online-I1"
+   },
+   "BL4-g05": {
+    "policy_id": "BL4",
+    "params": {
+     "window_min": 120,
+     "contract_rule": "c2"
+    },
+    "family": "BL4",
+    "kind": "grid",
+    "role": "tuning configuration BL4-g05 of BL4",
+    "information": "online-I1"
+   },
+   "BL5-g00": {
+    "policy_id": "BL5",
+    "params": {
+     "use_current_slot": true
+    },
+    "family": "BL5",
+    "kind": "grid",
+    "role": "tuning configuration BL5-g00 of BL5",
+    "information": "online-I1"
+   },
+   "BL5-g01": {
+    "policy_id": "BL5",
+    "params": {
+     "use_current_slot": true,
+     "refetch_after_reclaim": "immediate"
+    },
+    "family": "BL5",
+    "kind": "grid",
+    "role": "tuning configuration BL5-g01 of BL5",
+    "information": "online-I1"
+   },
+   "BL5-g02": {
+    "policy_id": "BL5",
+    "params": {
+     "use_current_slot": true,
+     "lookback": 288
+    },
+    "family": "BL5",
+    "kind": "grid",
+    "role": "tuning configuration BL5-g02 of BL5",
+    "information": "online-I1"
+   },
+   "BL5-g03": {
+    "policy_id": "BL5",
+    "params": {
+     "use_current_slot": true,
+     "lookback": 288,
+     "refetch_after_reclaim": "immediate"
+    },
+    "family": "BL5",
+    "kind": "grid",
+    "role": "tuning configuration BL5-g03 of BL5",
+    "information": "online-I1"
+   },
+   "BL5-g04": {
+    "policy_id": "BL5",
+    "params": {},
+    "family": "BL5",
+    "kind": "grid",
+    "role": "tuning configuration BL5-g04 of BL5",
+    "information": "online-I1"
+   },
+   "BL5-g05": {
+    "policy_id": "BL5",
+    "params": {
+     "refetch_after_reclaim": "immediate"
+    },
+    "family": "BL5",
+    "kind": "grid",
+    "role": "tuning configuration BL5-g05 of BL5",
+    "information": "online-I1"
+   },
+   "BL5-g06": {
+    "policy_id": "BL5",
+    "params": {
+     "lookback": 288
+    },
+    "family": "BL5",
+    "kind": "grid",
+    "role": "tuning configuration BL5-g06 of BL5",
+    "information": "online-I1"
+   },
+   "BL5-g07": {
+    "policy_id": "BL5",
+    "params": {
+     "lookback": 288,
+     "refetch_after_reclaim": "immediate"
+    },
+    "family": "BL5",
+    "kind": "grid",
+    "role": "tuning configuration BL5-g07 of BL5",
+    "information": "online-I1"
+   },
+   "BL5-g08": {
+    "policy_id": "BL5",
+    "params": {
+     "use_current_slot": true,
+     "contract_rule": "c2"
+    },
+    "family": "BL5",
+    "kind": "grid",
+    "role": "tuning configuration BL5-g08 of BL5",
+    "information": "online-I1"
+   },
+   "BL5-g09": {
+    "policy_id": "BL5",
+    "params": {
+     "use_current_slot": true,
+     "contract_rule": "c2",
+     "refetch_after_reclaim": "immediate"
+    },
+    "family": "BL5",
+    "kind": "grid",
+    "role": "tuning configuration BL5-g09 of BL5",
+    "information": "online-I1"
+   },
+   "BL5-g10": {
+    "policy_id": "BL5",
+    "params": {
+     "use_current_slot": true,
+     "contract_rule": "c2",
+     "lookback": 288
+    },
+    "family": "BL5",
+    "kind": "grid",
+    "role": "tuning configuration BL5-g10 of BL5",
+    "information": "online-I1"
+   },
+   "BL5-g11": {
+    "policy_id": "BL5",
+    "params": {
+     "use_current_slot": true,
+     "contract_rule": "c2",
+     "lookback": 288,
+     "refetch_after_reclaim": "immediate"
+    },
+    "family": "BL5",
+    "kind": "grid",
+    "role": "tuning configuration BL5-g11 of BL5",
+    "information": "online-I1"
+   },
+   "BL5-g12": {
+    "policy_id": "BL5",
+    "params": {
+     "contract_rule": "c2"
+    },
+    "family": "BL5",
+    "kind": "grid",
+    "role": "tuning configuration BL5-g12 of BL5",
+    "information": "online-I1"
+   },
+   "BL5-g13": {
+    "policy_id": "BL5",
+    "params": {
+     "contract_rule": "c2",
+     "refetch_after_reclaim": "immediate"
+    },
+    "family": "BL5",
+    "kind": "grid",
+    "role": "tuning configuration BL5-g13 of BL5",
+    "information": "online-I1"
+   },
+   "BL5-g14": {
+    "policy_id": "BL5",
+    "params": {
+     "contract_rule": "c2",
+     "lookback": 288
+    },
+    "family": "BL5",
+    "kind": "grid",
+    "role": "tuning configuration BL5-g14 of BL5",
+    "information": "online-I1"
+   },
+   "BL5-g15": {
+    "policy_id": "BL5",
+    "params": {
+     "contract_rule": "c2",
+     "lookback": 288,
+     "refetch_after_reclaim": "immediate"
+    },
+    "family": "BL5",
+    "kind": "grid",
+    "role": "tuning configuration BL5-g15 of BL5",
+    "information": "online-I1"
+   },
+   "BL5-g16": {
+    "policy_id": "BL5",
+    "params": {
+     "use_current_slot": true,
+     "tau_min": 60
+    },
+    "family": "BL5",
+    "kind": "grid",
+    "role": "tuning configuration BL5-g16 of BL5",
+    "information": "online-I1"
+   },
+   "BL5-g17": {
+    "policy_id": "BL5",
+    "params": {
+     "tau_min": 60
+    },
+    "family": "BL5",
+    "kind": "grid",
+    "role": "tuning configuration BL5-g17 of BL5",
+    "information": "online-I1"
+   },
+   "MPC-g00": {
+    "policy_id": "MPC",
+    "params": {},
+    "family": "MPC",
+    "kind": "grid",
+    "role": "tuning configuration MPC-g00 of MPC",
+    "information": "online-I1"
+   },
+   "MPC-g01": {
+    "policy_id": "MPC",
+    "params": {
+     "replan_slots": 3
+    },
+    "family": "MPC",
+    "kind": "grid",
+    "role": "tuning configuration MPC-g01 of MPC",
+    "information": "online-I1"
+   },
+   "MPC-g02": {
+    "policy_id": "MPC",
+    "params": {
+     "forecast": "ewma"
+    },
+    "family": "MPC",
+    "kind": "grid",
+    "role": "tuning configuration MPC-g02 of MPC",
+    "information": "online-I1"
+   },
+   "MPC-g03": {
+    "policy_id": "MPC",
+    "params": {
+     "forecast": "ewma",
+     "replan_slots": 3
+    },
+    "family": "MPC",
+    "kind": "grid",
+    "role": "tuning configuration MPC-g03 of MPC",
+    "information": "online-I1"
+   },
+   "MPC-g04": {
+    "policy_id": "MPC",
+    "params": {
+     "contract_rule": "c2"
+    },
+    "family": "MPC",
+    "kind": "grid",
+    "role": "tuning configuration MPC-g04 of MPC",
+    "information": "online-I1"
+   },
+   "MPC-g05": {
+    "policy_id": "MPC",
+    "params": {
+     "replan_slots": 3,
+     "contract_rule": "c2"
+    },
+    "family": "MPC",
+    "kind": "grid",
+    "role": "tuning configuration MPC-g05 of MPC",
+    "information": "online-I1"
+   },
+   "MPC-g06": {
+    "policy_id": "MPC",
+    "params": {
+     "forecast": "ewma",
+     "contract_rule": "c2"
+    },
+    "family": "MPC",
+    "kind": "grid",
+    "role": "tuning configuration MPC-g06 of MPC",
+    "information": "online-I1"
+   },
+   "MPC-g07": {
+    "policy_id": "MPC",
+    "params": {
+     "forecast": "ewma",
+     "replan_slots": 3,
+     "contract_rule": "c2"
+    },
+    "family": "MPC",
+    "kind": "grid",
+    "role": "tuning configuration MPC-g07 of MPC",
+    "information": "online-I1"
+   }
+  },
+  "selection": null,
+  "reduced_note": "reduced job list (MS7_E7R_REDUCED=1): development cell only; not a result"
+ },
+ "table": {
+  "BL1-g00": {
+   "L-tr": {
+    "101": {
+     "0": 0.6638351134177733
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.9456081095151643
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.9305706042679789
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.634951757650001
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 0.779781335017167
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.9456081095151643
+    }
+   }
+  },
+  "BL1-g01": {
+   "L-tr": {
+    "101": {
+     "0": 0.775472791860642
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.7923908515328224
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.7824050062457604
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.7578162711449116
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 0.8656938205363841
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.7923908515328224
+    }
+   }
+  },
+  "BL1-g02": {
+   "L-tr": {
+    "101": {
+     "0": 0.6638351134177733
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.9456081095151643
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.9305706042679789
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.634951757650001
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 0.779781335017167
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.9456081095151643
+    }
+   }
+  },
+  "BL1-g03": {
+   "L-tr": {
+    "101": {
+     "0": 0.775472791860642
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.7923908515328224
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.7824050062457604
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.7578162711449116
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 0.8656938205363841
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.7923908515328224
+    }
+   }
+  },
+  "BL1-g04": {
+   "L-tr": {
+    "101": {
+     "0": 0.6511795022043789
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.6352307081061959
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.622445316505455
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.6392558568074376
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 0.8112307212260144
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.6352307081061959
+    }
+   }
+  },
+  "BL1-g05": {
+   "L-tr": {
+    "101": {
+     "0": 0.7733047641197134
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.4814124624445755
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.475652027795073
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.7645175915531085
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 0.869578934830193
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.4814124624445755
+    }
+   }
+  },
+  "BL1-g06": {
+   "L-tr": {
+    "101": {
+     "0": 0.6511795022043789
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.6352307081061959
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.622445316505455
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.6392558568074376
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 0.8112307212260144
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.6352307081061959
+    }
+   }
+  },
+  "BL1-g07": {
+   "L-tr": {
+    "101": {
+     "0": 0.7733047641197134
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.4814124624445755
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.475652027795073
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.7645175915531085
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 0.869578934830193
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.4814124624445755
+    }
+   }
+  },
+  "BL1-g08": {
+   "L-tr": {
+    "101": {
+     "0": 0.6535536173239205
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 0.8378433175379533
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 0.8332991567285787
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.6569951877532385
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 0.6684796270618834
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 0.8378433175379533
+    }
+   }
+  },
+  "BL1-g09": {
+   "L-tr": {
+    "101": {
+     "0": 0.691742457247454
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 0.8902825456259199
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 0.88308503212423
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.7005738210467648
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 0.7101959657881615
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 0.8902825456259199
+    }
+   }
+  },
+  "BL1-g10": {
+   "L-tr": {
+    "101": {
+     "0": 0.6569824568163289
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 0.8678870199535712
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 0.8617853326052493
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.660612886771378
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 0.6750254153969659
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 0.8678870199535712
+    }
+   }
+  },
+  "BL1-g11": {
+   "L-tr": {
+    "101": {
+     "0": 0.7774883698134839
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.0026222016301605
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 0.9954246881284706
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.7912142999521546
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 0.7934916596218443
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.0026222016301605
+    }
+   }
+  },
+  "BL2-g00": {
+   "L-tr": {
+    "101": {
+     "0": 0.7487902346277859
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.73857429140966
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.73857429140966
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.7075600320313357
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 0.835714539047512
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.73857429140966
+    }
+   }
+  },
+  "BL2-g01": {
+   "L-tr": {
+    "101": {
+     "0": 0.7851127077878741
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.73857429140966
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.73857429140966
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.7385146154241722
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 0.8506118562900823
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.73857429140966
+    }
+   }
+  },
+  "BL2-g02": {
+   "L-tr": {
+    "101": {
+     "0": 0.7487902346277859
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.73857429140966
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.73857429140966
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.7075600320313357
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 0.835714539047512
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.73857429140966
+    }
+   }
+  },
+  "BL2-g03": {
+   "L-tr": {
+    "101": {
+     "0": 0.7851127077878741
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.73857429140966
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.73857429140966
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.7385146154241722
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 0.8506118562900823
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.73857429140966
+    }
+   }
+  },
+  "BL2-g04": {
+   "L-tr": {
+    "101": {
+     "0": 0.7729903324058476
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 0.907431201017556
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 0.907431201017556
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.7543074621569181
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 0.7757037577675059
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 0.907431201017556
+    }
+   }
+  },
+  "BL2-g05": {
+   "L-tr": {
+    "101": {
+     "0": 0.7976639889300747
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 0.907431201017556
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 0.907431201017556
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.7791216118479388
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 0.7960504630075497
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 0.907431201017556
+    }
+   }
+  },
+  "BL2-g06": {
+   "L-tr": {
+    "101": {
+     "0": 0.7938125950734489
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 0.9850297345545768
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 0.9850297345545768
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.7575976938679424
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 0.7991216313676855
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 0.9850297345545768
+    }
+   }
+  },
+  "BL2-g07": {
+   "L-tr": {
+    "101": {
+     "0": 0.7996736532634969
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 0.9716769175673907
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 0.9716769175673907
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.7781490761002858
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 0.8006557382735503
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 0.9716769175673907
+    }
+   }
+  },
+  "BL3-g00": {
+   "L-tr": {
+    "101": {
+     "0": 0.7810346939112378
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.7516817693646891
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.7376425576921168
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.765882415278924
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 0.8705771604661755
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.7516817693646891
+    }
+   }
+  },
+  "BL3-g01": {
+   "L-tr": {
+    "101": {
+     "0": 0.7810346939112378
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.7516817693646891
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.7376425576921168
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.765882415278924
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 0.8705771604661755
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.7516817693646891
+    }
+   }
+  },
+  "BL3-g02": {
+   "L-tr": {
+    "101": {
+     "0": 0.8078852243767712
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.7398722644050337
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.7331077931794114
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.7747472271050185
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 0.8762692809954821
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.7398722644050337
+    }
+   }
+  },
+  "BL3-g03": {
+   "L-tr": {
+    "101": {
+     "0": 0.8078852243767712
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.7398722644050337
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.7331077931794114
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.7747472271050185
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 0.8762692809954821
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.7398722644050337
+    }
+   }
+  },
+  "BL3-g04": {
+   "L-tr": {
+    "101": {
+     "0": 0.7717852260020339
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.1625163886273429
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.149433167046181
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.7948694519951752
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 0.906599405432541
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.1625163886273429
+    }
+   }
+  },
+  "BL3-g05": {
+   "L-tr": {
+    "101": {
+     "0": 0.7595487640151993
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 0.9225580771051294
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 0.9175085006630931
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.7560739226868965
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 0.7623695034873617
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 0.9225580771051294
+    }
+   }
+  },
+  "BL3-g06": {
+   "L-tr": {
+    "101": {
+     "0": 0.7888408713069431
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.1292286249622827
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.1201948701284383
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.8086454207282519
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 0.8739634697330843
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.1292286249622827
+    }
+   }
+  },
+  "BL3-g07": {
+   "L-tr": {
+    "101": {
+     "0": 0.7914762269908732
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 0.9506642064215483
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 0.9506198972851369
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.7819149620891334
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 0.7842425500309113
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 0.9506642064215483
+    }
+   }
+  },
+  "BL3-g08": {
+   "L-tr": {
+    "101": {
+     "0": 0.8653720009214625
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.960642951865069
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.9555854628574278
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.8250878220905123
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 0.9332066634935369
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.960642951865069
+    }
+   }
+  },
+  "BL3-g09": {
+   "L-tr": {
+    "101": {
+     "0": 0.8691050210621174
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.4080985506064407
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.425757921123005
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.875741885335706
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 0.9929210444544676
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.4080985506064407
+    }
+   }
+  },
+  "BL3-g10": {
+   "L-tr": {
+    "101": {
+     "0": 0.7912915711638967
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.7840904010541367
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.7689628129250798
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.770858931083463
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 0.8932811546134115
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.7840904010541367
+    }
+   }
+  },
+  "BL3-g11": {
+   "L-tr": {
+    "101": {
+     "0": 0.7925715905085579
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.1476699598919564
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.1384621190459814
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.8083619607748578
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 0.9194194427323994
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.1476699598919564
+    }
+   }
+  },
+  "BL3-g12": {
+   "L-tr": {
+    "101": {
+     "0": 0.9485308251319714
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 2.1228033648773716
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 2.123288174232272
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.9366565952901025
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 1.038201583365756
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 2.1228033648773716
+    }
+   }
+  },
+  "BL3-g13": {
+   "L-tr": {
+    "101": {
+     "0": 0.9887063935635654
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.8088171135770181
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.8002905016299218
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.9847427894049433
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 1.2092554403479199
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.8088171135770181
+    }
+   }
+  },
+  "BL3-g14": {
+   "L-tr": {
+    "101": {
+     "0": 0.8066719712825048
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.8165453517251915
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.8141319527285709
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.8025925188056593
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 0.914796526126161
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.8165453517251915
+    }
+   }
+  },
+  "BL3-g15": {
+   "L-tr": {
+    "101": {
+     "0": 0.809227093414452
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.137185497968821
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.128774187120563
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.829919285395715
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 0.9538333145838279
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.137185497968821
+    }
+   }
+  },
+  "BL4-g00": {
+   "L-tr": {
+    "101": {
+     "0": 0.9941277774503176
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.003622490659715
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.003622490659715
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 1.0025660823783855
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 1.0168935261350465
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.003622490659715
+    }
+   }
+  },
+  "BL4-g01": {
+   "L-tr": {
+    "101": {
+     "0": 1.0582428499064793
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.014788240495821
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.014788240495821
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 1.0807833717463282
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 1.061709932299584
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.014788240495821
+    }
+   }
+  },
+  "BL4-g02": {
+   "L-tr": {
+    "101": {
+     "0": 0.9835568716790482
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.0000131740935403
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.0000131740935403
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.987131942796635
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 0.9967188142265349
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.0000131740935403
+    }
+   }
+  },
+  "BL4-g03": {
+   "L-tr": {
+    "101": {
+     "0": 1.0026448785640578
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.0221882469846257
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.0221882469846257
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 1.0022783235889177
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 1.0134014332386003
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.0221882469846257
+    }
+   }
+  },
+  "BL4-g04": {
+   "L-tr": {
+    "101": {
+     "0": 1.06990784717452
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.053890607938618
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.053890607938618
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 1.0686769632814292
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 1.0646878823785688
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.053890607938618
+    }
+   }
+  },
+  "BL4-g05": {
+   "L-tr": {
+    "101": {
+     "0": 1.0025672911214427
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.0056892042875298
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.0056892042875298
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.9985203008323278
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 1.0040047434205575
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.0056892042875298
+    }
+   }
+  },
+  "BL5-g00": {
+   "L-tr": {
+    "101": {
+     "0": 0.8322013113669223
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.265240979290852
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.265240979290852
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.7971396526452718
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 0.8684850255893082
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.265240979290852
+    }
+   }
+  },
+  "BL5-g01": {
+   "L-tr": {
+    "101": {
+     "0": 0.8400923552813001
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 2.0418941655707847
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 2.033426857054266
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.8177290112231448
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 0.9475361216587438
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 2.0418941655707847
+    }
+   }
+  },
+  "BL5-g02": {
+   "L-tr": {
+    "101": {
+     "0": 0.8322013113669223
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.265240979290852
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.265240979290852
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.7971396526452718
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 0.8684850255893082
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.265240979290852
+    }
+   }
+  },
+  "BL5-g03": {
+   "L-tr": {
+    "101": {
+     "0": 0.8400923552813001
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 2.0418941655707847
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 2.033426857054266
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.8177290112231448
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 0.9475361216587438
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 2.0418941655707847
+    }
+   }
+  },
+  "BL5-g04": {
+   "L-tr": {
+    "101": {
+     "0": 0.9731856438139714
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.2167648160978062
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.2167648160978062
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.9676113124844423
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 0.9541288807338305
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.2167648160978062
+    }
+   }
+  },
+  "BL5-g05": {
+   "L-tr": {
+    "101": {
+     "0": 0.9925397879548127
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.8529793798459386
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.8489984334040102
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.988513252467688
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 1.0513899530239872
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.8529793798459386
+    }
+   }
+  },
+  "BL5-g06": {
+   "L-tr": {
+    "101": {
+     "0": 0.9731856438139714
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.2167648160978062
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.2167648160978062
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.9676113124844423
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 0.9541288807338305
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.2167648160978062
+    }
+   }
+  },
+  "BL5-g07": {
+   "L-tr": {
+    "101": {
+     "0": 0.9925397879548127
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.8529793798459386
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.8489984334040102
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.988513252467688
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 1.0513899530239872
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.8529793798459386
+    }
+   }
+  },
+  "BL5-g08": {
+   "L-tr": {
+    "101": {
+     "0": 0.8336154376532854
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 0.8725019389134122
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 0.8735705689135203
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.8293532801136482
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 0.8255573017065979
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 0.8725019389134122
+    }
+   }
+  },
+  "BL5-g09": {
+   "L-tr": {
+    "101": {
+     "0": 0.8411715878844319
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.1549878250837862
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.15285056508357
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.8329419538596106
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 0.8831943637358735
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.1549878250837862
+    }
+   }
+  },
+  "BL5-g10": {
+   "L-tr": {
+    "101": {
+     "0": 0.8336154376532854
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 0.8725019389134122
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 0.8735705689135203
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.8293532801136482
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 0.8255573017065979
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 0.8725019389134122
+    }
+   }
+  },
+  "BL5-g11": {
+   "L-tr": {
+    "101": {
+     "0": 0.8411715878844319
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.1549878250837862
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.15285056508357
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.8329419538596106
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 0.8831943637358735
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.1549878250837862
+    }
+   }
+  },
+  "BL5-g12": {
+   "L-tr": {
+    "101": {
+     "0": 1.027655972567669
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.0380037407947231
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.0380037407947231
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 1.0240172643514345
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 1.008837773163095
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.0380037407947231
+    }
+   }
+  },
+  "BL5-g13": {
+   "L-tr": {
+    "101": {
+     "0": 1.0297218865045976
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.2560097550059315
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.2560097550059315
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 1.0339155216980485
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 1.0631337479312835
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.2560097550059315
+    }
+   }
+  },
+  "BL5-g14": {
+   "L-tr": {
+    "101": {
+     "0": 1.027655972567669
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.0380037407947231
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.0380037407947231
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 1.0240172643514345
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 1.008837773163095
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.0380037407947231
+    }
+   }
+  },
+  "BL5-g15": {
+   "L-tr": {
+    "101": {
+     "0": 1.0297218865045976
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.2560097550059315
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.2560097550059315
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 1.0339155216980485
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 1.0631337479312835
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.2560097550059315
+    }
+   }
+  },
+  "BL5-g16": {
+   "L-tr": {
+    "101": {
+     "0": 1.7174610301758495
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.7154305435633588
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.7154305435633588
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 1.7179132625102798
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 1.7179132625102798
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.7154305435633588
+    }
+   }
+  },
+  "BL5-g17": {
+   "L-tr": {
+    "101": {
+     "0": 1.8765967178726275
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.8749120236088568
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.8749120236088568
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 1.8765967178726275
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 1.875969311354268
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.8749120236088568
+    }
+   }
+  },
+  "MPC-g00": {
+   "L-tr": {
+    "101": {
+     "0": 0.7551478017850011
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.7757847510555922
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.7674513360426178
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.6935766204662993
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 0.8107590309249431
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.7757847510555922
+    }
+   }
+  },
+  "MPC-g01": {
+   "L-tr": {
+    "101": {
+     "0": 0.9740889917043994
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.2411819983679488
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.2371416621088576
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.9888899333073228
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 0.9679692682773117
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.2411819983679488
+    }
+   }
+  },
+  "MPC-g02": {
+   "L-tr": {
+    "101": {
+     "0": 0.8020835334659034
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.6883628278942548
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.6883628278942548
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.7199240139509137
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 0.8385375424737844
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.6883628278942548
+    }
+   }
+  },
+  "MPC-g03": {
+   "L-tr": {
+    "101": {
+     "0": 0.9835518384424797
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.1994676779876936
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.1994676779876936
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.9810046680111092
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 0.9618905742715746
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.1994676779876936
+    }
+   }
+  },
+  "MPC-g04": {
+   "L-tr": {
+    "101": {
+     "0": 0.7015063214005736
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 0.7784506461659282
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 0.7748164528825726
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.6959545216901568
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 0.7164314604131101
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 0.7784506461659282
+    }
+   }
+  },
+  "MPC-g05": {
+   "L-tr": {
+    "101": {
+     "0": 1.0120238233708445
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.026512787564948
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.026512787564948
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 1.0172288967803353
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 1.0190393260626038
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.026512787564948
+    }
+   }
+  },
+  "MPC-g06": {
+   "L-tr": {
+    "101": {
+     "0": 0.754626402617592
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 0.7946863006899388
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 0.7946863006899388
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.7620131656961388
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 0.7745510076296459
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 0.7946863006899388
+    }
+   }
+  },
+  "MPC-g07": {
+   "L-tr": {
+    "101": {
+     "0": 0.991841793703658
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.0111804383170233
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.0111804383170233
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 1.0014532353046373
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 0.9979249203298295
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.0111804383170233
+    }
+   }
+  }
+ }
+}

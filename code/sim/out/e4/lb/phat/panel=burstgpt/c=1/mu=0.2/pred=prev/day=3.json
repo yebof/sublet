@@ -1,0 +1,49 @@
+{
+ "job": "e4:phat:panel=burstgpt:c=1:mu=0.2:pred=prev:day=3",
+ "exp": "e4",
+ "kind": "phat",
+ "panel": "burstgpt",
+ "c": 1,
+ "mu": 0.2,
+ "pred": "prev",
+ "label": "previous-day",
+ "day": 3,
+ "day_slots": 288,
+ "window": [
+  576,
+  576
+ ],
+ "method": "milp",
+ "status": 1,
+ "objective": 332.91141324026046,
+ "gap": 0.00345358428734218,
+ "n_cols": 93,
+ "wall_s": 300.83102855389006,
+ "incumbent": 332.91141324026046,
+ "LB": 331.761675614417,
+ "exact": false,
+ "plan_daily": {
+  "day": 1,
+  "t0": 288,
+  "T": 288,
+  "milp_size": {
+   "n_vars": 58173,
+   "est_mb": 916.5235
+  },
+  "method": "milp",
+  "status": 1,
+  "objective": 332.91141324026046,
+  "gap": 0.00345358428734218,
+  "n_cols": 93,
+  "wall_s": 300.83102855389006
+ },
+ "grid": "slow",
+ "time_limit_s": 300.0,
+ "mip_rel_gap": 0.0001,
+ "instance_hash": "038ba19a7581661ad0848ff92e1031c2222f3194fdf297363cfbea416bd9e56c",
+ "window_hash": "a1405d5eab4f96d39a6caa3b9773be711aab158bbce5d69df107aa7552ac2cb1",
+ "pred_sha256": "3ba3bdd3748ef39bb480df868c5994cdd89bd6763277c3d0a5bc5face97105cd",
+ "predicted_load_h": 83.83053112182097,
+ "job_wall_s": 301.0307550218422,
+ "git_revision": "939847ca5925ce069d6df9089fe3a3d1d3207bb7"
+}

@@ -1,0 +1,243 @@
+{
+ "case": "a1_single_7d",
+ "status": "ok",
+ "started": "2026-10-17T10:12:57",
+ "runs": [
+  {
+   "meta": {
+    "name": "ms2_single_site",
+    "policy": "A1",
+    "seed": 11,
+    "config_hash": "ec232a86c0270f99ebd55cd06737cf9ca83251e3d50f2224cead1827861af766",
+    "git_revision": "71a8af0c4ff711ef67eed8a0f89ede2a4d1c550c",
+    "versions": {
+     "python": "3.12.3",
+     "numpy": "2.4.4",
+     "scipy": "1.17.1",
+     "sublet": "0.1.0"
+    },
+    "argv": [
+     "/work/sublet/code/sim/sublet/experiments/e9_smoke.py",
+     "--case",
+     "a1_single_7d"
+    ],
+    "seeds": {
+     "config": 11,
+     "lender": 11,
+     "policy": 11
+    },
+    "run_spec_hash": "de8e38ee9844ab6ede14bdcab5a5a97dc2310f9b99d8aa4b27655eced6cad78d",
+    "run_spec_name": "a1_single_7d",
+    "policy_id": "A1",
+    "params": {
+     "contract_rev": "s5_tau5_H60",
+     "reaction": "c2sw",
+     "switch": "c2sw",
+     "insure": "lb_react",
+     "s0_round": "ceil",
+     "release": "after_prepaid",
+     "i2_wait": false,
+     "site_rev": null,
+     "site_prot": null
+    },
+    "info_class": "online-I1",
+    "driver_inputs": {},
+    "e9_case": "a1_single_7d"
+   },
+   "components": {
+    "lease_prepaid": 251.1705292529951,
+    "lease_rent": 169.91726004259522,
+    "loading": 0.0,
+    "routing": 0.0,
+    "fallback": 48.620000000000005,
+    "stranding_kv": 0.0,
+    "stranding_fl": 0.0,
+    "stranding_fb": 4.25,
+    "stranding_pi": 0.0,
+    "lease": 421.08778929559026,
+    "stranding": 4.25,
+    "total": 473.95778929559026
+   },
+   "metrics": {
+    "cost": {
+     "lease_prepaid": 251.1705292529951,
+     "lease_rent": 169.91726004259522,
+     "loading": 0.0,
+     "routing": 0.0,
+     "fallback": 48.620000000000005,
+     "stranding_kv": 0.0,
+     "stranding_fl": 0.0,
+     "stranding_fb": 4.25,
+     "stranding_pi": 0.0,
+     "lease": 421.08778929559026,
+     "stranding": 4.25,
+     "total": 473.95778929559026
+    },
+    "fallback_share": 0.05871348395452583,
+    "fallback_share_by_llm": {
+     "M": 0.05871348395452583
+    },
+    "stranded_load_fb": 17.0,
+    "stranded_load_any": 17.0,
+    "stranding_events_per_day": 3.2857142857142856,
+    "fallback_share_after_reclaims": 0.15666327568667346,
+    "fallback_share_after_reclaims_by_llm": {
+     "M": 0.15666327568667346
+    },
+    "loads_per_day": 10.428571428571429,
+    "replica_utilization": 0.8419358990861114,
+    "gpu_hours_by_class": {
+     "AEP-82-like": 131.9166666666666
+    },
+    "gpu_only_lease_slots": 0,
+    "buffer_violations": {
+     "count": 0,
+     "share": 0.0,
+     "deficit_gpu_slots": 0.0
+    },
+    "buffer_violations_attributable": {
+     "count": 0,
+     "share": 0.0,
+     "deficit_gpu_slots": 0.0
+    },
+    "runtime": {
+     "wall_s": 3.9643417049665004,
+     "slow_step_s_p50": 3.829656634479761e-05,
+     "slow_step_s_p99": 5.690632970072327e-05,
+     "fast_step_s_p50": 0.00016238196985796094,
+     "fast_step_s_p99": 0.00017918886616826054,
+     "routing_s": 0.30929498688783497,
+     "routing_lp_s": 0.0,
+     "routing_lp_calls": 0,
+     "policy_s": 2.363106057047844,
+     "peak_rss_mb": 96.78125,
+     "policy_act_s_mean": 8.208893834509783e-06,
+     "policy_act_s_p50": 7.834518328309059e-06,
+     "policy_act_s_p99": 1.607974991202354e-05,
+     "policy_act_s_max": 2.9018032364547253e-05,
+     "n_alive_leases_max": 1
+    },
+    "policy": {
+     "sites": {
+      "rev": [
+       0,
+       1
+      ],
+      "prot": [
+       1,
+       2
+      ]
+     },
+     "rrl": false,
+     "units": {
+      "alpha": 0.44419909820951625,
+      "ap": 0.8349650349650349,
+      "mu": 0.9684269989749691,
+      "lam": 0.6924253042671029,
+      "bw": 0.5781509183880565,
+      "H": 27.697012170684115,
+      "beta_tilde_usd": 0.25815058880495106,
+      "time_unit_h": 0.036104977455237906
+     },
+     "th": {
+      "s0": 1.7992054290997945,
+      "Rw": 5.036345605201971,
+      "Rc": 2.6704049862210875,
+      "Rh": 4.833401068776684,
+      "Hc": 0.8711995571212929,
+      "Hh": 3.0341956396768897,
+      "Hstar": 0.8711995571212929,
+      "react": "cold",
+      "Rrho": 2.6704049862210875,
+      "regime": "sit-out",
+      "rrl": false
+     },
+     "th_minutes": {
+      "s0_min": 3.8976162872993836,
+      "Rw_min": 10.91022867195622,
+      "Rc_min": 5.784894709432035,
+      "Rh_min": 10.470590197218298,
+      "Hc_min": 1.887278422132652,
+      "Hh_min": 6.5729739099189155,
+      "Hstar_min": 1.887278422132652,
+      "Rrho_min": 5.784894709432035
+     },
+     "reaction": "cold",
+     "status": "CONJECTURE",
+     "insured": false,
+     "s0_min": 3.8976162872993836,
+     "n_s0": 1,
+     "counts": {
+      "episodes": 60,
+      "buy_rev": 73,
+      "buy_insure": 0,
+      "buy_prewarm": 0,
+      "notices": 23,
+      "prewarm_decided": 0,
+      "prewarm_cancelled": 0,
+      "cold_notices": 23,
+      "revocations": 21,
+      "cold_deaths": 21,
+      "restarts": 21,
+      "refused": 0,
+      "releases": 51
+     },
+     "book": {
+      "buys": 73,
+      "precheck": 0,
+      "dead_release": 0,
+      "dead_other": 0
+     }
+    }
+   },
+   "runtime": {
+    "wall_s": 3.9643417049665004,
+    "slow_step_s_p50": 3.829656634479761e-05,
+    "slow_step_s_p99": 5.690632970072327e-05,
+    "fast_step_s_p50": 0.00016238196985796094,
+    "fast_step_s_p99": 0.00017918886616826054,
+    "routing_s": 0.30929498688783497,
+    "routing_lp_s": 0.0,
+    "routing_lp_calls": 0,
+    "policy_s": 2.363106057047844,
+    "peak_rss_mb": 96.78125,
+    "policy_act_s_mean": 8.208893834509783e-06,
+    "policy_act_s_p50": 7.834518328309059e-06,
+    "policy_act_s_p99": 1.607974991202354e-05,
+    "policy_act_s_max": 2.9018032364547253e-05,
+    "n_alive_leases_max": 1
+   },
+   "invariant_failures": [],
+   "smoke": {
+    "wall_s": 3.9947056799428537,
+    "wall_s_per_sim_hour": 0.023778009999659844,
+    "engine_wall_s": 3.9643417049665004,
+    "slow_step_s_p50": 3.829656634479761e-05,
+    "slow_step_s_p99": 5.690632970072327e-05,
+    "fast_step_s_p50": 0.00016238196985796094,
+    "fast_step_s_p99": 0.00017918886616826054,
+    "policy_act_s_mean": 8.208893834509783e-06,
+    "policy_act_s_p50": 7.834518328309059e-06,
+    "policy_act_s_p99": 1.607974991202354e-05,
+    "policy_act_s_max": 2.9018032364547253e-05,
+    "routing_s": 0.30929498688783497,
+    "routing_lp_calls": 0,
+    "routing_lp_s_per_call": null,
+    "n_alive_leases_max": 1,
+    "pd": null,
+    "peak_rss_mb": 96.78125,
+    "invariant_failures": [],
+    "gpu_only_lease_slots": 0,
+    "check_invariants": true,
+    "horizon_min": 10080,
+    "fast_min": 1,
+    "slow_min": 5,
+    "sites": 2,
+    "clients": 1,
+    "policy": "A1"
+   }
+  }
+ ],
+ "wall_s": 4.33023725298699,
+ "peak_rss_mb": 96.78125
+}

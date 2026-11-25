@@ -1,0 +1,2041 @@
+{
+ "meta": {
+  "module": "sublet.experiments.ms4_claims",
+  "spec": "design/sim_spec_ms4.md \u00a71.4",
+  "git_revision": "992823b93d06ab079b469b16d32b1b9309e79b35",
+  "written": "2026-11-25T06:41:05",
+  "input_root": "/work/sublet",
+  "input_root_is_repository": true,
+  "inputs": {
+   "code/sim/out/e3/gate.json": "ok",
+   "code/sim/out/e3/manifest.json": "ok",
+   "code/sim/out/e3/summary.json": "ok",
+   "code/sim/out/e4/manifest.json": "ok",
+   "code/sim/out/e4/summary.json": "ok",
+   "code/sim/out/e5/manifest.json": "ok",
+   "code/sim/out/e5/summary.json": "ok",
+   "code/sim/out/e7/allow/manifest.json": "ok",
+   "code/sim/out/e7/allow/summary.json": "ok",
+   "code/sim/out/e7/gap/manifest.json": "ok",
+   "code/sim/out/e7/gap/summary.json": "ok",
+   "code/sim/out/e7/main/manifest.json": "ok",
+   "code/sim/out/e7/main/summary.json": "ok",
+   "code/sim/out/e7/stress/manifest.json": "ok",
+   "code/sim/out/e7/stress/summary.json": "ok",
+   "code/sim/out/e7/table3.json": "ok",
+   "code/sim/out/e8/manifest.json": "ok",
+   "code/sim/out/e8/summary.json": "ok",
+   "code/sim/out/figs/floats_heights_ms4.json": "ok",
+   "code/sim/out/ms3_copy_e3.json": "ok",
+   "code/sim/out/ms3_copy_e4.json": "ok",
+   "code/sim/out/ms3_copy_e5.json": "ok",
+   "code/sim/out/ms3_copy_e7.json": "ok",
+   "code/sim/out/ms3_copy_e8.json": "ok"
+  },
+  "out_dir": "/work/sublet/code/sim/out"
+ },
+ "criterion": {
+  "holds": true,
+  "text": "holds: no row is a bug, and every row is reproduced, holds, informative or explained (0 explained)",
+  "reasons": "No row is a bug, and every row is reproduced, holds, informative or explained (0 explained)",
+  "n_rows": 36,
+  "counts": {
+   "reproduced": 2,
+   "holds": 20,
+   "informative": 14,
+   "explained": 0,
+   "bug": 0,
+   "missing": 0,
+   "pending": 0
+  },
+  "bug": [],
+  "missing": [],
+  "pending": [],
+  "explained": [],
+  "unexplained": []
+ },
+ "rows": [
+  {
+   "id": "E7-1",
+   "experiment": "E7",
+   "section": "\u00a73.11",
+   "kind": "property",
+   "claim": {
+    "spec": "every A8 run of E7 (all six grids) has a certificate with available true; in every run of Theorem W's proven cases (W(a), W(b)) held is true; W(c) runs are counted and listed with their t_a",
+    "summary": "every A8 run of E7 (all six grids) has a certificate with available true; in every run of Theorem W's proven cases (W(a), W(b); PROVEN for the engine as implemented under C1-C3, audited) held is true; W(c) runs (CONJECTURE) are counted and listed with their t_a"
+   },
+   "status_label": "Theorem W(a)(b) (PROVEN for the engine as implemented under C1-C3, audited); W(c) (CONJECTURE)",
+   "status_label_note": null,
+   "reference": {
+    "value": "held in every proven-case run; W(c) runs counted (Table III's caption)",
+    "values": {},
+    "file": "code/sim/sublet/algos/guard.py (Theorem W, module docstring); design/Sublet_design.md \u00a72.9"
+   },
+   "regenerated": {
+    "value": {
+     "part_status": {
+      "main": "pass",
+      "stress": "pass",
+      "gap": "pass",
+      "allow": "pass"
+     },
+     "sum(parts.*.n_runs)": 312,
+     "sum(parts.*.n_unavailable)": 0,
+     "sum(parts.*.n_failures)": 0,
+     "sum(parts.*.n_w_c)": 0,
+     "parts.*.certificates.held": {
+      "main": 132,
+      "stress": 30,
+      "gap": 24,
+      "allow": 126
+     }
+    },
+    "file": "code/sim/out/e7/main/summary.json checks.E7-1 (combined over the parts main, stress, gap, allow)"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null,
+   "parts": {
+    "main": "pass",
+    "stress": "pass",
+    "gap": "pass",
+    "allow": "pass"
+   }
+  },
+  {
+   "id": "E7-2",
+   "experiment": "E7",
+   "section": "\u00a73.11",
+   "kind": "property",
+   "claim": {
+    "spec": "every run, BL2's sub-runs included: invariant_failures empty and gpu_only_lease_slots 0",
+    "summary": "every run, BL2's sub-runs included: invariant_failures empty and gpu_only_lease_slots 0"
+   },
+   "status_label": null,
+   "status_label_note": "the engine's invariants",
+   "reference": {
+    "value": "no invariant failure, no GPU-only lease slot",
+    "values": {},
+    "file": "design/Sublet_design.md \u00a75.2"
+   },
+   "regenerated": {
+    "value": {
+     "part_status": {
+      "main": "pass",
+      "stress": "pass",
+      "gap": "pass",
+      "allow": "pass"
+     },
+     "sum(parts.*.n_runs)": 838,
+     "sum(parts.*.n_sub_runs)": 1125,
+     "sum(parts.*.n_invariant_failures)": 0,
+     "sum(parts.*.n_gpu_only)": 0
+    },
+    "file": "code/sim/out/e7/main/summary.json checks.E7-2 (combined over the parts main, stress, gap, allow)"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null,
+   "parts": {
+    "main": "pass",
+    "stress": "pass",
+    "gap": "pass",
+    "allow": "pass"
+   }
+  },
+  {
+   "id": "E7-3",
+   "experiment": "E7",
+   "section": "\u00a73.11",
+   "kind": "property",
+   "claim": {
+    "spec": "every gap rerun: ratio_validity('slow', ...) None; its alignment's LP record has status 0 (optimal) and the instance and schedule hashes of the run; all runs of one alignment have one schedule hash; every engine run in plan class P1 has ratio_LB >= 1 - 1e-6 (Proposition M4(b) with Proposition M6); BL2's summed runs are exempt from the P1 test",
+    "summary": "every gap rerun: ratio_validity('slow', ...) None; its alignment's LP record has status 0 (optimal) and the instance and schedule hashes of the run; all runs of one alignment have one schedule hash; every engine run in plan class P1 has ratio_LB >= 1 - 1e-6 (Proposition M4(b) with Proposition M6, PROVEN); BL2's summed runs are exempt from the P1 test"
+   },
+   "status_label": "Proposition M4 (PROVEN); Proposition M6 (PROVEN)",
+   "status_label_note": null,
+   "reference": {
+    "value": "ratio_LB >= 1 - 1e-6 for P1 runs; LP status 0 with the run's instance and schedule hashes",
+    "values": {
+     "parts.gap.tolerance": 1e-06
+    },
+    "file": "design/Sublet_design.md \u00a75.2.4 (Propositions M4, M6)"
+   },
+   "regenerated": {
+    "value": {
+     "parts.gap.n_runs": 100,
+     "parts.gap.lp_alignments": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "len(parts.gap.ratio_validity_not_none)": 0,
+     "parts.gap.n_runs_without_lp": 0,
+     "len(parts.gap.lp_not_optimal)": 0,
+     "len(parts.gap.hash_mismatch)": 0,
+     "len(parts.gap.alignments_with_several_schedules)": 0,
+     "parts.gap.n_p1": 88,
+     "len(parts.gap.p1_below)": 0,
+     "parts.gap.min_ratio_LB_p1": 1.2375837964399685,
+     "parts.gap.bl2_exempt": true
+    },
+    "file": "code/sim/out/e7/main/summary.json checks.E7-3 (combined over the parts gap)"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null,
+   "parts": {
+    "gap": "pass"
+   }
+  },
+  {
+   "id": "E7-4",
+   "experiment": "E7",
+   "section": "\u00a73.11",
+   "kind": "property",
+   "claim": {
+    "spec": "accounting identity: total - overflow = own_capacity_usd(inst) for every run, and BL0a's total-accounting cost = BL0a + own capacity (1e-9 relative)",
+    "summary": "accounting identity: total - overflow = own_capacity_usd(inst) for every run, and BL0a's total-accounting cost = BL0a + own capacity (1e-9 relative)"
+   },
+   "status_label": null,
+   "status_label_note": "both accountings (Q32, M2), a property of the build",
+   "reference": {
+    "value": "own_capacity_usd(inst) (drivers/provision.py), 1e-9 relative",
+    "values": {
+     "parts.main.tolerance": 1e-09
+    },
+    "file": "code/sim/sublet/drivers/provision.py (own_capacity_usd)"
+   },
+   "regenerated": {
+    "value": {
+     "part_status": {
+      "main": "pass",
+      "stress": "pass",
+      "gap": "pass",
+      "allow": "pass"
+     },
+     "sum(parts.*.n_runs)": 838,
+     "max(parts.*.max_rel_diff)": 2.0563874438948615e-16,
+     "sum(parts.*.n_failures)": 0
+    },
+    "file": "code/sim/out/e7/main/summary.json checks.E7-4 (combined over the parts main, stress, gap, allow)"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null,
+   "parts": {
+    "main": "pass",
+    "stress": "pass",
+    "gap": "pass",
+    "allow": "pass"
+   }
+  },
+  {
+   "id": "E7-5",
+   "experiment": "E7",
+   "section": "\u00a73.11",
+   "kind": "property",
+   "claim": {
+    "spec": "BL0a: e6.bl0a_all(inst) equals BL0a's engine run on every gap-rerun instance (1e-9 relative); BL0b is recorded in both accountings per alignment",
+    "summary": "BL0a: e6.bl0a_all(inst) equals BL0a's engine run on every gap-rerun instance (1e-9 relative); BL0b is recorded in both accountings per alignment"
+   },
+   "status_label": null,
+   "status_label_note": "the analytic BL0a against its engine run (M23)",
+   "reference": {
+    "value": "BL0a's engine run on the gap instance (1e-9 relative); BL0b in both accountings",
+    "values": {
+     "parts.gap.tolerance": 1e-09
+    },
+    "file": "code/sim/sublet/experiments/e6.py (bl0a_all); drivers/provision.py (bl0b_usd)"
+   },
+   "regenerated": {
+    "value": {
+     "part_status": {
+      "main": "pass",
+      "gap": "pass"
+     },
+     "parts.gap.bl0a_by_alignment.*.rel_diff": {
+      "1": 0.0,
+      "2": 4.318396258810792e-16,
+      "3": 0.0,
+      "4": 2.1714062516750613e-16
+     },
+     "parts.gap.alignments_missing": [],
+     "len(parts.gap.failures)": 0,
+     "len(parts.gap.runs_with_another_bl0a)": 0,
+     "parts.main.alignments_without_bl0b": []
+    },
+    "file": "code/sim/out/e7/main/summary.json checks.E7-5 (combined over the parts main, gap)"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null,
+   "parts": {
+    "main": "pass",
+    "gap": "pass"
+   }
+  },
+  {
+   "id": "E7-6",
+   "experiment": "E7",
+   "section": "\u00a73.11",
+   "kind": "property",
+   "claim": {
+    "spec": "the allowance rule (M36): every A8 run outside the allowance sweep records B0_rule '0.1*BL0a', B0 = 0.1 x e6.bl0a_all of its own instance, resolved gamma 1 and kappa null; the sweep's runs record their own rule",
+    "summary": "the allowance rule (M36): every A8 run outside the allowance sweep records B0_rule '0.1*BL0a', B0 = 0.1 x e6.bl0a_all of its own instance (1e-12 relative), resolved gamma 1 and kappa null; the sweep's runs record their own rule ('auto, kappa 10' with kappa 10, or the share of BL0a with kappa null)"
+   },
+   "status_label": null,
+   "status_label_note": "the allowance rule of M36 (\u00a73.3), a parameter setting of A8",
+   "reference": {
+    "value": "B0_rule '0.1*BL0a' (ms4_common.B0_RULE), B0 = 0.1 x BL0a to 1e-12 relative, gamma 1, kappa null; the sweep's own rules",
+    "values": {
+     "parts.main.tolerance": 1e-12
+    },
+    "file": "code/sim/sublet/experiments/ms4_common.py (B0_RULE, sublet_params, allowance_record)"
+   },
+   "regenerated": {
+    "value": {
+     "part_status": {
+      "main": "pass",
+      "stress": "pass",
+      "gap": "pass",
+      "allow": "pass"
+     },
+     "sum(parts.*.n_runs)": 312,
+     "sum(parts.*.n_failures)": 0,
+     "parts.*.rules_found": {
+      "main": [
+       "0.1*BL0a"
+      ],
+      "stress": [
+       "0.1*BL0a"
+      ],
+      "gap": [
+       "0.1*BL0a"
+      ],
+      "allow": [
+       "0.005*BL0a",
+       "0.01*BL0a",
+       "0.02*BL0a",
+       "0.05*BL0a",
+       "0.1*BL0a",
+       "0.2*BL0a",
+       "auto, kappa 10"
+      ]
+     }
+    },
+    "file": "code/sim/out/e7/main/summary.json checks.E7-6 (combined over the parts main, stress, gap, allow)"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null,
+   "parts": {
+    "main": "pass",
+    "stress": "pass",
+    "gap": "pass",
+    "allow": "pass"
+   }
+  },
+  {
+   "id": "E7-7",
+   "experiment": "E7",
+   "section": "\u00a73.11",
+   "kind": "reproduction",
+   "claim": {
+    "spec": "the allowance sweep's runs at B0 = 10% reproduce the main grid's Sublet runs at alignment 1 under L-tr and the stress block's Sublet runs, seed by seed (totals equal to 1e-9 USD)",
+    "summary": "the allowance sweep's runs at B0 = 10% of BL0a reproduce the main grid's Sublet runs at alignment 1 under L-tr and the stress block's Sublet runs, seed by seed (totals equal to 1e-9 USD)"
+   },
+   "status_label": null,
+   "status_label_note": "the identity of the sweep's 10% cells with the main grid and the stress block",
+   "reference": {
+    "value": "the main grid's (L-tr, alignment 1) and the stress block's Sublet runs, seed by seed",
+    "values": {
+     "parts.allow.tolerance_usd": 1e-09
+    },
+    "file": "code/sim/out/e7/main/runs/, code/sim/out/e7/stress/runs/ (run files, not versioned)"
+   },
+   "regenerated": {
+    "value": {
+     "parts.allow.b0": "0.1",
+     "parts.allow.n_pairs": 18,
+     "len(parts.allow.failures)": 0,
+     "len(parts.allow.missing)": 0,
+     "max(parts.allow.pairs[*].abs_diff)": 0.0
+    },
+    "file": "code/sim/out/e7/main/summary.json checks.E7-7 (combined over the parts allow)"
+   },
+   "summary_status": "pass",
+   "verdict": "reproduced",
+   "explanation": null,
+   "note": null,
+   "parts": {
+    "allow": "pass"
+   }
+  },
+  {
+   "id": "E7-8",
+   "experiment": "E7",
+   "section": "\u00a73.11",
+   "kind": "informative",
+   "claim": {
+    "spec": "W0 per policy (stress block), against Q44's criterion S (W0 <= 1.05, note \u00a75.6)",
+    "summary": "W0 per policy (stress block) against Q44's criterion S (W0 <= 1.05, note \u00a75.6) (informative)"
+   },
+   "status_label": null,
+   "status_label_note": "Q44's criterion S (design/q44_practical_sublet.md \u00a75.6), a design criterion",
+   "reference": {
+    "value": "criterion S: W0 <= 1.05",
+    "values": {},
+    "file": "design/q44_practical_sublet.md \u00a75.5, \u00a75.6"
+   },
+   "regenerated": {
+    "value": {
+     "parts.stress.W0.*.value": {
+      "Sublet": 1.099765955088116,
+      "A7G": 1.0981565379338956,
+      "A7": 1.5954756477503729,
+      "A6": 1.0995030701916542,
+      "BL5": 1.2125738429606188,
+      "BL1": 2.0282017865743884,
+      "BL2": 1.9737009775945797,
+      "BL4": 1.0472338596286077
+     },
+     "parts.stress.W0.*.mode": {
+      "Sublet": "L-ss",
+      "A7G": "L-eg",
+      "A7": "L-eg",
+      "A6": "L-iid-0.2",
+      "BL5": "L-eg",
+      "BL1": "L-eg",
+      "BL2": "L-eg",
+      "BL4": "L-eg"
+     },
+     "parts.stress.meets_criterion_S": [
+      "BL4"
+     ],
+     "parts.stress.misses_criterion_S": [
+      "A6",
+      "A7",
+      "A7G",
+      "BL1",
+      "BL2",
+      "BL5",
+      "Sublet"
+     ]
+    },
+    "file": "code/sim/out/e7/main/summary.json checks.E7-8 (combined over the parts stress)"
+   },
+   "summary_status": "informative",
+   "verdict": "informative",
+   "explanation": null,
+   "note": "W0 is reported against criterion S as measured; BL0a has W0 = 1 by definition (\u00a73.9)",
+   "parts": {
+    "stress": "informative"
+   }
+  },
+  {
+   "id": "E7-9",
+   "experiment": "E7",
+   "section": "\u00a73.11",
+   "kind": "informative",
+   "claim": {
+    "spec": "saving over BL0a against the cross-region links n (Fig. 4(b)), with one BL0a at every n",
+    "summary": "saving over BL0a against the cross-region links n (Fig. 4(b)), with one BL0a at every n (informative)"
+   },
+   "status_label": null,
+   "status_label_note": "pooling over the routing graphs of M1 (\u00a73.7(c)), a measurement",
+   "reference": {
+    "value": "one BL0a at every n (BL0a does not depend on routing)",
+    "values": {},
+    "file": "\u00a73.7(c)"
+   },
+   "regenerated": {
+    "value": {
+     "parts.main.saving_pct_median": {
+      "Sublet": {
+       "0": 25.080391173179894,
+       "2": 26.671728080520495,
+       "3": 26.994532456856813,
+       "5": 28.4149301310922
+      },
+      "BL5": {
+       "0": 25.080391173179894,
+       "2": 26.671728080520495,
+       "3": 26.994532456856813,
+       "5": 28.4149301310922
+      },
+      "BL1": {
+       "0": 31.794896132355827,
+       "2": 33.07382699217929,
+       "3": 33.230755281743214,
+       "5": 33.80782443382888
+      }
+     },
+     "parts.main.one_bl0a_per_alignment": true,
+     "parts.main.bl0a_max_rel_diff_over_mu_and_n": {
+      "1": 0.0,
+      "2": 0.0,
+      "3": 0.0,
+      "4": 0.0
+     },
+     "parts.main.cross_region_arcs_equal_links": {
+      "links=0:c=1": true,
+      "links=0:c=2": true,
+      "links=0:c=3": true,
+      "links=0:c=4": true,
+      "links=2:c=1": true,
+      "links=2:c=2": true,
+      "links=2:c=3": true,
+      "links=2:c=4": true,
+      "links=3:c=1": true,
+      "links=3:c=2": true,
+      "links=3:c=3": true,
+      "links=3:c=4": true
+     }
+    },
+    "file": "code/sim/out/e7/main/summary.json checks.E7-9 (combined over the parts main)"
+   },
+   "summary_status": "informative",
+   "verdict": "informative",
+   "explanation": null,
+   "note": "reported as measured; only the cross-region routing arcs differ between the points (\u00a73.7(c))",
+   "parts": {
+    "main": "informative"
+   }
+  },
+  {
+   "id": "E7-10",
+   "experiment": "E7",
+   "section": "\u00a73.11",
+   "kind": "informative",
+   "claim": {
+    "spec": "Sublet's slow-grid ratio to the LB against BL5's (decision B1; design \u00a72.7, the slow-grid item of the must-not-claim list)",
+    "summary": "Sublet's slow-grid ratio to the merged LP bound against BL5's (decision B1; the slow-grid item of the must-not-claim list) (informative)"
+   },
+   "status_label": null,
+   "status_label_note": "a measured comparison (decision B1); the column's bound is that of E7-3",
+   "reference": {
+    "value": "BL5's ratio to the merged LP bound",
+    "values": {},
+    "file": "code/sim/out/e7/gap/lb/lp_c<C>.json"
+   },
+   "regenerated": {
+    "value": {
+     "parts.gap.sublet_ratio_LB_median": 1.6174541113781868,
+     "parts.gap.bl5_ratio_LB_median": 1.6174541113781868,
+     "parts.gap.sublet_over_bl5": 1.0,
+     "parts.gap.ratio_LB_median_range": [
+      1.362503162453807,
+      2.216504863769294
+     ],
+     "parts.gap.label": "upper bound on ALG / OPT(sigma, omega) against a merged LP bound (Propositions M4, M6; M39)"
+    },
+    "file": "code/sim/out/e7/main/summary.json checks.E7-10 (combined over the parts gap)"
+   },
+   "summary_status": "informative",
+   "verdict": "informative",
+   "explanation": null,
+   "note": "reported as measured, labeled an upper bound on the ratio to OPT(sigma, omega) against a merged bound (\u00a73.8, M39); no trace-lender advantage of Sublet on the slow grid is claimed (\u00a73.1)",
+   "parts": {
+    "gap": "informative"
+   }
+  },
+  {
+   "id": "E7-11",
+   "experiment": "E7",
+   "section": "\u00a73.11",
+   "kind": "informative",
+   "claim": {
+    "spec": "abort shares and first-abort slots of the A8 rows in every grid; under the sweep's theory default, the share of runs that abort at slot 1 or earlier",
+    "summary": "abort shares and first-abort slots of the A8 rows in every grid; under the sweep's theory default, the share of runs that abort at slot 1 or earlier (informative)"
+   },
+   "status_label": null,
+   "status_label_note": "the guard's aborts under M36's allowance, a measurement",
+   "reference": {
+    "value": "Table III's abort-share column (M24)",
+    "values": {},
+    "file": "code/sim/out/e7/table3.json"
+   },
+   "regenerated": {
+    "value": {
+     "parts.main.by_grid.*.abort_share": {
+      "mu=1:Sublet": 0.0,
+      "mu=1:A7G": 0.0,
+      "mu=0.2:Sublet": 0.0,
+      "mu=0.2:A7G": 0.0,
+      "mu=0.5:Sublet": 0.0,
+      "mu=0.5:A7G": 0.0,
+      "mu=2:Sublet": 0.0,
+      "mu=2:A7G": 0.0,
+      "links=0:Sublet": 0.0,
+      "links=2:Sublet": 0.0,
+      "links=3:Sublet": 0.0
+     },
+     "parts.stress.by_grid.*.abort_share": {
+      "mode=L-eg:Sublet": 1.0,
+      "mode=L-eg:A7G": 1.0,
+      "mode=L-ss:Sublet": 1.0,
+      "mode=L-ss:A7G": 1.0,
+      "mode=L-iid-0.05:Sublet": 0.0,
+      "mode=L-iid-0.05:A7G": 0.0,
+      "mode=L-iid-0.2:Sublet": 0.0,
+      "mode=L-iid-0.2:A7G": 0.3333333333333333,
+      "mode=L-co:Sublet": 1.0,
+      "mode=L-co:A7G": 1.0
+     },
+     "parts.gap.by_grid.*.abort_share": {
+      "gap:Sublet": 0.0,
+      "gap:A7G": 0.0
+     },
+     "parts.allow.theory_default": {
+      "n_runs": 18,
+      "n_abort_at_slot_1_or_earlier": 18,
+      "share_abort_at_slot_1_or_earlier": 1.0
+     }
+    },
+    "file": "code/sim/out/e7/main/summary.json checks.E7-11 (combined over the parts main, stress, gap, allow)"
+   },
+   "summary_status": "informative",
+   "verdict": "informative",
+   "explanation": null,
+   "note": "the stress block's and the sweep's abort shares go to the supplement (M24)",
+   "parts": {
+    "main": "informative",
+    "stress": "informative",
+    "gap": "informative",
+    "allow": "informative"
+   }
+  },
+  {
+   "id": "E7-12",
+   "experiment": "E7",
+   "section": "\u00a73.11",
+   "kind": "informative",
+   "claim": {
+    "spec": "policies whose median cost exceeds BL0a (A6, M38)",
+    "summary": "policies whose median cost exceeds BL0a (A6, M38; reported as measured) (informative)"
+   },
+   "status_label": null,
+   "status_label_note": "a measurement (decision B1, M38)",
+   "reference": {
+    "value": "BL0a (week cost / BL0a = 1)",
+    "values": {},
+    "file": "code/sim/out/e7/main/summary.json meta.bl0a_usd"
+   },
+   "regenerated": {
+    "value": {
+     "parts.main.above_bl0a_headline": [],
+     "parts.main.median_overflow_over_bl0a_headline": {
+      "Sublet": 0.715850698689078,
+      "A7G": 0.7422282118118826,
+      "A7": 0.7422282118118826,
+      "A6": 0.9738222495245962,
+      "BL5": 0.715850698689078,
+      "BL1": 0.6619217556617112,
+      "BL2": 0.6835527103271365,
+      "BL4": 0.9080303676223338
+     }
+    },
+    "file": "code/sim/out/e7/main/summary.json checks.E7-12 (combined over the parts main)"
+   },
+   "summary_status": "informative",
+   "verdict": "informative",
+   "explanation": null,
+   "note": "reported as measured under decision B1 (M38); the must-not-claim list of \u00a73.1 applies",
+   "parts": {
+    "main": "informative"
+   }
+  },
+  {
+   "id": "E3-1",
+   "experiment": "E3",
+   "section": "\u00a74.9",
+   "kind": "property",
+   "claim": {
+    "spec": "every bracket of siloed/shared OPT has lo <= b (1 + 1e-9) (the siloed optimum is at most b times the shared one, the copy argument of design \u00a75.5 E3)",
+    "summary": "every bracket of siloed / shared OPT has lo <= b (1 + 1e-9): the siloed optimum is at most b times the shared one (the copy argument of design \u00a75.5 E3; C3-P7, PROVEN, elementary, gives the factor's attainment, not this bound)"
+   },
+   "status_label": null,
+   "status_label_note": "the copy argument of design \u00a75.5 E3 (each borrower may copy the shared plan); C3-P7 gives the factor's attainment, not this bound",
+   "reference": {
+    "value": "b (1 + 1e-9)",
+    "values": {},
+    "file": "design/Sublet_design.md \u00a75.5 E3"
+   },
+   "regenerated": {
+    "value": {
+     "n_brackets": 36,
+     "n_above_b": 0,
+     "len(refused)": 0,
+     "max_lo_over_b": 0.9999246291481312
+    },
+    "file": "code/sim/out/e3/summary.json checks.E3-1"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "E3-2",
+   "experiment": "E3",
+   "section": "\u00a74.9",
+   "kind": "property",
+   "claim": {
+    "spec": "at b = 1 the siloed sub-instance has the shared instance's instance_hash, and each siloed run's total equals its shared counterpart's (Sublet-siloed and Sublet, A6-siloed and A6)",
+    "summary": "at b = 1 the siloed sub-instance has the shared instance's q44_study.instance_hash and each siloed run's total equals its shared counterpart's (Sublet-siloed and Sublet, A6-siloed and A6) to 1e-9 USD"
+   },
+   "status_label": null,
+   "status_label_note": "the b = 1 identity of the siloed runner",
+   "reference": {
+    "value": "equal hashes; totals to 1e-9 USD",
+    "values": {},
+    "file": "code/sim/out/e3/summary.json (the shared runs at b = 1)"
+   },
+   "regenerated": {
+    "value": {
+     "n_cells": 4,
+     "len(hash_differs)": 0,
+     "n_pairs": 24,
+     "len(failures)": 0,
+     "max_abs_diff": 0.0
+    },
+    "file": "code/sim/out/e3/summary.json checks.E3-2"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "E3-3",
+   "experiment": "E3",
+   "section": "\u00a74.9",
+   "kind": "property",
+   "claim": {
+    "spec": "every siloed run's components and total equal the sums of its sub-runs', recomputed from the stored run rows, and run_siloed's summed per-slot series sum to its summed components",
+    "summary": "every siloed run's components and total equal the sums of its sub-runs' (recomputed from the stored rows), and run_siloed's per-slot series sum to its components (1e-9 USD)"
+   },
+   "status_label": null,
+   "status_label_note": "the siloed runner's sums (drivers/siloed.py)",
+   "reference": {
+    "value": "the sums of the sub-runs (1e-9 USD)",
+    "values": {},
+    "file": "code/sim/out/e3/runs/cells/ (run rows)"
+   },
+   "regenerated": {
+    "value": {
+     "n_runs": 324,
+     "len(failures)": 0,
+     "max_abs_diff": 6.821210263296962e-13,
+     "max_abs_diff_alg": 4.547473508864641e-13,
+     "max_abs_diff_per_slot": 4.547473508864641e-13,
+     "n_per_slot_missing": 0
+    },
+    "file": "code/sim/out/e3/summary.json checks.E3-3"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "E3-4",
+   "experiment": "E3",
+   "section": "\u00a74.9",
+   "kind": "property",
+   "claim": {
+    "spec": "every run and sub-run: invariant_failures empty, gpu_only_lease_slots 0, ratio_validity None and the cell's realized schedule; every shared run of plan class P1 has ratio_LB >= 1 - 1e-6",
+    "summary": "every run and sub-run: invariant_failures empty, gpu_only_lease_slots 0, ratio_validity None and the cell's realized schedule; every shared run of plan class P1 has ratio_LB >= 1 - 1e-6 (Proposition M4)"
+   },
+   "status_label": "Proposition M4 (PROVEN)",
+   "status_label_note": null,
+   "reference": {
+    "value": "no failure; ratio_LB >= 1 - 1e-6 for P1 runs",
+    "values": {},
+    "file": "design/Sublet_design.md \u00a75.2.4 (Propositions M4, M6)"
+   },
+   "regenerated": {
+    "value": {
+     "n_runs": 648,
+     "n_runs_and_sub_runs": 3204,
+     "len(invariant_failures)": 0,
+     "len(gpu_only_lease_slots)": 0,
+     "len(ratio_validity_not_none)": 0,
+     "len(schedule_mismatch)": 0,
+     "n_p1": 324,
+     "len(p1_below)": 0,
+     "min_ratio_LB_p1": 1.3514228259991803
+    },
+    "file": "code/sim/out/e3/summary.json checks.E3-4"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "E3-5",
+   "experiment": "E3",
+   "section": "\u00a74.9",
+   "kind": "property",
+   "claim": {
+    "spec": "every Sublet run and Sublet-siloed sub-run: certificate held in Theorem W's proven cases; W(c) runs counted and reported",
+    "summary": "Theorem W (PROVEN for the engine as implemented under C1-C3, audited): every Sublet run and Sublet-siloed sub-run has its certificate held in the proven cases W(a), W(b); W(c) runs (CONJECTURE) counted and reported"
+   },
+   "status_label": "Theorem W(a)(b) (PROVEN for the engine as implemented under C1-C3, audited); W(c) (CONJECTURE)",
+   "status_label_note": null,
+   "reference": {
+    "value": "held in every proven-case run",
+    "values": {},
+    "file": "code/sim/sublet/algos/guard.py (Theorem W, module docstring); design/Sublet_design.md \u00a72.9"
+   },
+   "regenerated": {
+    "value": {
+     "n": 1068,
+     "held": 1068,
+     "n_failures": 0,
+     "n_w_c": 0,
+     "by_case": {
+      "W(a)": {
+       "runs": 345,
+       "held": 345
+      },
+      "W(b)": {
+       "runs": 723,
+       "held": 723
+      },
+      "W(c)": {
+       "runs": 0,
+       "held": 0
+      },
+      "unavailable": {
+       "runs": 0,
+       "held": 0
+      }
+     }
+    },
+    "file": "code/sim/out/e3/summary.json checks.E3-5"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "E3-6",
+   "experiment": "E3",
+   "section": "\u00a74.9",
+   "kind": "informative",
+   "claim": {
+    "spec": "the share of the factor that survives, (siloed/shared OPT)/b per (b, u), and the count of borrowers without overflow per (b, day) (plan \u00a77)",
+    "summary": "the share of the factor that survives, (siloed / shared OPT) / b per (b, u) at mu = 1, and the count of borrowers without overflow per (b, day) (plan \u00a77)"
+   },
+   "status_label": "C3-P7 (PROVEN, elementary); trace instances leave the core, so the policies' ratios are diagnostics",
+   "status_label_note": null,
+   "reference": {
+    "value": "the factor b, attained on C3-P7's instance",
+    "values": {},
+    "file": "code/theory_checks/c3/out/c4_lower.txt (d)"
+   },
+   "regenerated": {
+    "value": {
+     "factor_share.*.8.point": {
+      "1": 1.0,
+      "2": 0.5200154245529044,
+      "4": 0.26951968112673763,
+      "8": 0.15159598149650594,
+      "16": 0.08207102805036412,
+      "32": 0.0468728196327582
+     },
+     "factor_share.*.8.lo": {
+      "1": 0.9984298083267632,
+      "2": 0.5190962950452613,
+      "4": 0.26879064747398435,
+      "8": 0.1508233467579336,
+      "16": 0.08159829599916409,
+      "32": 0.04670275135710982
+     },
+     "factor_share.*.8.hi": {
+      "1": 1.0015726610525262,
+      "2": 0.5230106767767118,
+      "4": 0.27015107435063396,
+      "8": 0.15275042366039213,
+      "16": 0.08291407708288727,
+      "32": 0.047402862549256713
+     },
+     "len(borrowers_without_overflow)": 6
+    },
+    "file": "code/sim/out/e3/summary.json checks.E3-6"
+   },
+   "summary_status": "informative",
+   "verdict": "informative",
+   "explanation": null,
+   "note": "if the gain is small it is reported against the proven factor anyway (plan \u00a77)"
+  },
+  {
+   "id": "E3-7",
+   "experiment": "E3",
+   "section": "\u00a74.9",
+   "kind": "informative",
+   "claim": {
+    "spec": "the gate record (\u00a74.4): its config hash equals the grid's, its MILPs ran under the grid's milp_limit_s(), and its bracket, borrower shares and allowance needs (shared and per sub-run) are those reported",
+    "summary": "the gate record (\u00a74.4): its config hash equals the grid's, its MILPs ran under the grid's MILP limit, and its bracket, borrower shares and allowance needs (shared and per sub-run) are those reported"
+   },
+   "status_label": null,
+   "status_label_note": "the gate of \u00a71.2 item 6 (M7), the provenance of the grid",
+   "reference": {
+    "value": "the grid's config hash (e3.grid_config_hash()) and MILP limit (ms3_common.milp_limit_s())",
+    "values": {
+     "grid_config_hash": "8074a0067e1077fd4b01c9c11dafd415474ce8b41877556fc5d8d0e3bf75e730",
+     "milp_limit_s": 300
+    },
+    "file": "code/sim/out/e3/gate.json"
+   },
+   "regenerated": {
+    "value": {
+     "config_hash": "8074a0067e1077fd4b01c9c11dafd415474ce8b41877556fc5d8d0e3bf75e730",
+     "config_hash_equal": true,
+     "gate_milp_limits_s": [
+      300
+     ],
+     "milp_limit_equal": true,
+     "bracket": {
+      "point": 1.2132606929208019,
+      "lo": 1.2081249915316319,
+      "hi": 1.2191610536953363,
+      "exact": false
+     },
+     "allowance.shared.need_over_bl0a": 0.03613524219520305,
+     "allowance.shared.margin_usd": 68.6718617236725,
+     "allowance.shared.t_a_at_B0": null
+    },
+    "file": "code/sim/out/e3/summary.json checks.E3-7 (from code/sim/out/e3/gate.json)"
+   },
+   "summary_status": "informative",
+   "verdict": "informative",
+   "explanation": null,
+   "note": "informative unless the gate's config hash or MILP limit is not the grid's (then fail); the answer to M7 on these numbers is recorded in \u00a712 (\u00a74.4)"
+  },
+  {
+   "id": "E5-1",
+   "experiment": "E5",
+   "section": "\u00a75.7",
+   "kind": "property",
+   "claim": {
+    "spec": "every run: invariant_failures empty, gpu_only_lease_slots 0; no run of an ok job lost to an error (meta.run_errors)",
+    "summary": "every run: invariant_failures empty and gpu_only_lease_slots 0; no run of an ok job lost to an error"
+   },
+   "status_label": null,
+   "status_label_note": "the engine's invariants and the job records",
+   "reference": {
+    "value": "no failure, no lost run",
+    "values": {},
+    "file": "code/sim/out/e5/summary.json meta.run_errors"
+   },
+   "regenerated": {
+    "value": {
+     "n_runs": 1092,
+     "n_runs_expected": 1092,
+     "n_runs_lost": 0,
+     "n_invariant_failures": 0,
+     "n_gpu_only_lease_slots": 0
+    },
+    "file": "code/sim/out/e5/summary.json checks.E5-1"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "E5-2",
+   "experiment": "E5",
+   "section": "\u00a75.7",
+   "kind": "property",
+   "claim": {
+    "spec": "long menu: A6-rule and A6-always2 have n_exp_total 0 and buys 0 in every run, provided max_l lam_s[j, l] <= 3,600 s for every LLM j of the instance",
+    "summary": "long menu: A6-rule and A6-always2 have n_exp_total 0 and buys 0 in every run whose instance has max_l lam_s[j, l] <= 3600 s for every LLM j (contracts with H_k >= lambda_min never create exposure, design \u00a73.2.6); runs of an instance above the limit are listed and not checked"
+   },
+   "status_label": null,
+   "status_label_note": "the exposure definition of the redundancy rule (design \u00a73.2.6), a heuristic",
+   "reference": {
+    "value": "n_exp_total 0 and buys 0 (contracts with H_k >= lambda_min never create exposure)",
+    "values": {
+     "limit_s": 3600.0
+    },
+    "file": "design/Sublet_design.md \u00a73.2.6; code/sim/sublet/algos/redundancy.py"
+   },
+   "regenerated": {
+    "value": {
+     "n_runs": 120,
+     "n_checked": 120,
+     "n_unchecked": 0,
+     "lam_s_max_by_llm": {
+      "S": 64.0,
+      "M": 90.0,
+      "L": 239.5
+     },
+     "n_failures": 0
+    },
+    "file": "code/sim/out/e5/summary.json checks.E5-2"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "E5-3",
+   "experiment": "E5",
+   "section": "\u00a75.7",
+   "kind": "property",
+   "claim": {
+    "spec": "A6-always2: every run with n_exp_total > 0 has buys + no_site > 0; the entry also gives the placed share buys / (buys + no_site)",
+    "summary": "A6-always2: every run with n_exp_total > 0 has buys + no_site > 0 (a spare whenever a group has an exposed replica, or no site for one; design \u00a73.2.6)"
+   },
+   "status_label": null,
+   "status_label_note": "the redundancy rule's 'always2' mode (design \u00a73.2.6), a heuristic",
+   "reference": {
+    "value": "buys + no_site > 0 wherever a group has an exposed replica",
+    "values": {},
+    "file": "design/Sublet_design.md \u00a73.2.6"
+   },
+   "regenerated": {
+    "value": {
+     "n_runs": 156,
+     "n_runs_exposed": 60,
+     "n_failures": 0,
+     "buys_total": 25792,
+     "no_site_total": 0,
+     "placed_share": 1.0
+    },
+    "file": "code/sim/out/e5/summary.json checks.E5-3"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "E5-4",
+   "experiment": "E5",
+   "section": "\u00a75.7",
+   "kind": "informative",
+   "claim": {
+    "spec": "per (level, menu): the BL3 variants whose median cost over BL0a and median fallback share after reclaims are both below those of every A6 mode (Pareto gains), the long menu reported separately, with the number of (level, menu) whose three A6 modes gave the same run",
+    "summary": "per (level, menu): the BL3 variants whose median cost over BL0a and median fallback share after reclaims are both below those of every A6 mode (Pareto gains; design \u00a75.5 E5, reading), the long menu reported separately (informative)"
+   },
+   "status_label": null,
+   "status_label_note": "the design's reading of E5 (design \u00a75.5 E5), a measurement",
+   "reference": {
+    "value": "every A6 mode (cost over BL0a, fallback share after reclaims)",
+    "values": {},
+    "file": "code/sim/out/e5/summary.json pareto"
+   },
+   "regenerated": {
+    "value": {
+     "n_cells_with_gain": 4,
+     "n_cells_undecided": 0,
+     "n_cells_a6_identical": 5,
+     "long_menu": {
+      "trace": [],
+      "sh0.25": [],
+      "sh0.5": [],
+      "sh1": [],
+      "all1": []
+     },
+     "short_menu": {
+      "trace": [
+       "BL3-0"
+      ],
+      "sh0.25": [
+       "BL3-0"
+      ],
+      "sh0.5": [
+       "BL3-0"
+      ],
+      "sh1": [
+       "BL3-0"
+      ],
+      "all1": []
+     }
+    },
+    "file": "code/sim/out/e5/summary.json checks.E5-4"
+   },
+   "summary_status": "informative",
+   "verdict": "informative",
+   "explanation": null,
+   "note": "clear Pareto gains of BL3 over A6 in the long-notice menu would argue against the rule (design \u00a75.5 E5)"
+  },
+  {
+   "id": "E5-5",
+   "experiment": "E5",
+   "section": "\u00a75.7",
+   "kind": "property",
+   "claim": {
+    "spec": "every Sublet run: certificate held in Theorem W's proven cases; W(c) runs counted; no Sublet run lost to an error",
+    "summary": "every Sublet run: certificate held in Theorem W's proven cases (W(a), W(b); PROVEN for the engine as implemented under C1-C3, audited); W(c) runs (CONJECTURE) counted; no Sublet run lost to an error"
+   },
+   "status_label": "Theorem W(a)(b) (PROVEN for the engine as implemented under C1-C3, audited); W(c) (CONJECTURE)",
+   "status_label_note": null,
+   "reference": {
+    "value": "held in every proven-case run; no lost run",
+    "values": {},
+    "file": "code/sim/sublet/algos/guard.py (Theorem W, module docstring); design/Sublet_design.md \u00a72.9"
+   },
+   "regenerated": {
+    "value": {
+     "runs": 156,
+     "held": 156,
+     "n_failures": 0,
+     "n_w_c": 0,
+     "n_runs_lost": 0,
+     "by_case": {
+      "W(a)": {
+       "runs": 147,
+       "held": 147
+      },
+      "W(b)": {
+       "runs": 9,
+       "held": 9
+      },
+      "W(c)": {
+       "runs": 0,
+       "held": 0
+      },
+      "unavailable": {
+       "runs": 0,
+       "held": 0
+      }
+     },
+     "B0_rules": {
+      "0.1*BL0a": 156
+     }
+    },
+    "file": "code/sim/out/e5/summary.json checks.E5-5"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "E5-6",
+   "experiment": "E5",
+   "section": "\u00a75.7",
+   "kind": "informative",
+   "claim": {
+    "spec": "the share of A6-rule runs that bought a spare, per (level, menu) over every mu of the point and per mu, against the rule's prediction (spares only for pools above about 32 exposed replicas at alpha = 0.40)",
+    "summary": "the share of A6-rule runs that bought a spare, per (level, menu) over every mu / beta~ of the point and per mu (by_mu), against the rule's prediction (spares only for pools above about 32 exposed replicas at alpha = 0.40; a5b_exposure_thresholds.json spare_threshold) (informative)"
+   },
+   "status_label": null,
+   "status_label_note": "the redundancy rule's prediction (design \u00a75.5 E5), a measurement",
+   "reference": {
+    "value": "spares only for pools above the spare threshold",
+    "values": {},
+    "file": "code/analysis/out/a5b_exposure_thresholds.json (spare_threshold)"
+   },
+   "regenerated": {
+    "value": {
+     "threshold": {
+      "n_exp_threshold": 32.143216783216786,
+      "alpha": 0.3986013986013986,
+      "nu_per_day": 3.571428571428571,
+      "lambda_s": 300.0,
+      "rule": "spare pays if n_exp > alpha / (nu lambda) (design \u00a73.2.6)",
+      "source": "code/analysis/out/a5b_exposure_thresholds.json spare_threshold, inputs.alpha"
+     },
+     "prediction": "spares only where a pool has more than n_exp_threshold exposed replicas (at alpha and lambda of a5b's spare_threshold); counts per run of buys > 0 against n_exp_max above or below that threshold, n_exp_max being the largest number of exposed replicas in one slot summed over the run's groups (RedundancyRule.n_exp), an upper bound on any one pool's count",
+     "by_level_menu.*.*.share_with_buys": {
+      "trace": {
+       "short": 0.0,
+       "long": 0.0
+      },
+      "sh0.25": {
+       "short": 0.0,
+       "long": 0.0
+      },
+      "sh0.5": {
+       "short": 0.0,
+       "long": 0.0
+      },
+      "sh1": {
+       "short": 0.0,
+       "long": 0.0
+      },
+      "all1": {
+       "short": 0.0,
+       "long": 0.0
+      }
+     }
+    },
+    "file": "code/sim/out/e5/summary.json checks.E5-6"
+   },
+   "summary_status": "informative",
+   "verdict": "informative",
+   "explanation": null,
+   "note": "reported against the rule's prediction, as measured"
+  },
+  {
+   "id": "E4-1",
+   "experiment": "E4",
+   "section": "\u00a76.9",
+   "kind": "reproduction",
+   "claim": {
+    "spec": "job e4:repro reruns repro_c5_la and compares with MS2 spec \u00a717.3 R7's values of c3/out/c5_la.txt (a) and (b): E4's bug test of C3-T9, C3-T11 and the combiner",
+    "summary": "job e4:repro reruns repro_c5_la and reproduces MS2 spec \u00a717.3 R7 (c3/out/c5_la.txt (a) and (b), c5_la_nearest.txt) to its printed digits: E4's bug test of C3-T9 and C3-T11 (PROVEN; numerically checked) and the combiner on exact core instances"
+   },
+   "status_label": "C3-T9 (PROVEN; numerically checked); C3-T11 (PROVEN; numerically checked)",
+   "status_label_note": null,
+   "reference": {
+    "value": "R7: c5_la.txt (a), (b) and c5_la_nearest.txt, exact to their printed digits",
+    "values": {},
+    "file": "code/theory_checks/c3/out/c5_la.txt, c5_la_nearest.txt"
+   },
+   "regenerated": {
+    "value": {
+     "files.*.lines_equal": {
+      "c5_la.txt": true,
+      "c5_la_nearest.txt": true
+     },
+     "json.*.n_mismatch": {
+      "c5_la.json": 0,
+      "c5_la_nearest.json": 0
+     },
+     "json.*.max_rel_diff": {
+      "c5_la.json": 2.2115642650533118e-13,
+      "c5_la_nearest.json": 2.2115642650533118e-13
+     },
+     "quick": false
+    },
+    "file": "code/sim/out/e4/repro_check.json; code/sim/out/e4/summary.json checks.E4-1"
+   },
+   "summary_status": "pass",
+   "verdict": "reproduced",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "E4-2",
+   "experiment": "E4",
+   "section": "\u00a76.9",
+   "kind": "property",
+   "claim": {
+    "spec": "C3-L10 on the core: every row of e4/repro/c5_la_repro.json has eta_chk true; on the trace ratio days the slack and the bracket of P-hat's MILP over OPT_eager (refuted, confirmed), reported",
+    "summary": "C3-L10 (PROVEN; numerically checked): c(P-hat(sigma)) <= OPT_eager(sigma) + q eta; on the core every row of repro/c5_la_repro.json has eta_chk true (else a bug); on the trace ratio days the slack incumbent_eager + q eta + (incumbent_P-hat - LB_P-hat) - C_FP per run (C_FP counts no capacity, so the slack is lenient), and the bracket of P-hat's MILP (OPT_eager(sigma-hat)) over OPT_eager(sigma), whose end lo is tested against 1 + x (the lemma's step OPT_eager(sigma-hat) <= OPT_eager(sigma) + q eta, in the full model), reported"
+   },
+   "status_label": "C3-L10 (PROVEN; numerically checked)",
+   "status_label_note": null,
+   "reference": {
+    "value": "eta_chk true in every core row; trace and bracket informative",
+    "values": {},
+    "file": "code/sim/out/e4/repro/c5_la_repro.json"
+   },
+   "regenerated": {
+    "value": {
+     "core.n_rows": 90,
+     "core.n_eta_chk_false": 0,
+     "trace.n_runs": 156,
+     "trace.n_negative": 0,
+     "trace.min_slack": 19.24980014947141,
+     "bracket.n": 52,
+     "bracket.n_refuted": 0,
+     "bracket.n_confirmed": 48
+    },
+    "file": "code/sim/out/e4/summary.json checks.E4-2"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "E4-3",
+   "experiment": "E4",
+   "section": "\u00a76.9",
+   "kind": "property",
+   "claim": {
+    "spec": "every run: invariant_failures empty, gpu_only_lease_slots 0; every ratio run: ratio_validity None",
+    "summary": "every run: no invariant failure, no GPU-only lease slot; every ratio-day run: ratio_validity None (slow grid, violations absorbed)"
+   },
+   "status_label": null,
+   "status_label_note": "the engine's invariants and the ratios' grid (design \u00a75.2.4)",
+   "reference": {
+    "value": "no failure; ratio_validity None",
+    "values": {},
+    "file": "design/Sublet_design.md \u00a75.2.4"
+   },
+   "regenerated": {
+    "value": {
+     "n_runs": 588,
+     "n_ratio_runs": 156,
+     "len(invariant_failures)": 0,
+     "len(gpu_only_lease_slots)": 0,
+     "len(ratio_validity_not_none)": 0
+    },
+    "file": "code/sim/out/e4/summary.json checks.E4-3"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "E4-4",
+   "experiment": "E4",
+   "section": "\u00a76.9",
+   "kind": "informative",
+   "claim": {
+    "spec": "the method of each P-hat day (milp, lp_round, none) and the MILPs' statuses and gaps",
+    "summary": "the method of each P-hat day (milp, lp_round, none) and the MILPs' statuses and gaps"
+   },
+   "status_label": null,
+   "status_label_note": "the P-hat MILPs (\u00a76.5), a measurement",
+   "reference": {
+    "value": "the MILP rule of M9 (time limit milp_limit_s())",
+    "values": {},
+    "file": "code/sim/out/e4/lb/phat/"
+   },
+   "regenerated": {
+    "value": {
+     "n_days": 384,
+     "n_ok": 384,
+     "methods": {
+      "milp": 270,
+      "lp_round": 0,
+      "none": 114
+     },
+     "milp_status": {
+      "0": 72,
+      "1": 198
+     },
+     "n_at_limit": 198,
+     "max_gap": 0.02448998467920081,
+     "len(lp_round_days)": 0,
+     "len(not_ok)": 0
+    },
+    "file": "code/sim/out/e4/summary.json checks.E4-4"
+   },
+   "summary_status": "informative",
+   "verdict": "informative",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "E4-5",
+   "experiment": "E4",
+   "section": "\u00a76.9",
+   "kind": "informative",
+   "claim": {
+    "spec": "every A5 and A6-pred run: real cost over min{C_FP, C_R}, against 5.83; every instance's core export recorded with its exact and notes, or 'not exportable'",
+    "summary": "every A5 and A6-pred run: real cost over min{C_FP, C_R} against C3-T11's 5.83 (proven for the accounted cost on the core with eager accounting); each instance's core export (to_core with not_offered 'big_m') with its exact and notes, or 'not exportable'; a bug only on an exact core export"
+   },
+   "status_label": "C3-T11 (PROVEN; numerically checked); trace instances are not exact core exports, so the ratio is a diagnostic",
+   "status_label_note": null,
+   "reference": {
+    "value": "5.83 (C3-T11, for the accounted cost on the core with eager accounting)",
+    "values": {
+     "bound": 5.83
+    },
+    "file": "design/theory/c3_c4_c5_general.md (C3-T11)"
+   },
+   "regenerated": {
+    "value": {
+     "n_runs": 540,
+     "n_above_bound": 0,
+     "len(bugs_on_exact_exports)": 0,
+     "core_export": {
+      "n_instances": 20,
+      "n_exact": 0,
+      "n_not_exportable": 0
+     },
+     "max_real_over_min": 2.563745392121878
+    },
+    "file": "code/sim/out/e4/summary.json checks.E4-5"
+   },
+   "summary_status": "informative",
+   "verdict": "informative",
+   "explanation": null,
+   "note": "a bug only on an exact core export, which E4's trace instances are not (\u00a76.9)"
+  },
+  {
+   "id": "E4-6",
+   "experiment": "E4",
+   "section": "\u00a76.9",
+   "kind": "informative",
+   "claim": {
+    "spec": "week cost of A5 and A6-pred over A6 without predictions, per (panel, prediction) (M37)",
+    "summary": "week cost of A5 and A6-pred over A6 without predictions of the same (panel, alignment, mu, seed), per (panel, prediction) (M37: reported as measured, no gain claimed)"
+   },
+   "status_label": null,
+   "status_label_note": "a measurement (M37)",
+   "reference": {
+    "value": "A6 without predictions of the same (panel, alignment, mu, seed)",
+    "values": {},
+    "file": "code/sim/out/e4/summary.json week.<panel>.<mu>.none.A6"
+   },
+   "regenerated": {
+    "value": {
+     "n_entries": 64,
+     "min(entries[*].median)": 0.5877306860149929,
+     "max(entries[*].median)": 1.4675936231507185
+    },
+    "file": "code/sim/out/e4/summary.json checks.E4-6"
+   },
+   "summary_status": "informative",
+   "verdict": "informative",
+   "explanation": null,
+   "note": "reported as measured; no gain from predictions is claimed (M37)"
+  },
+  {
+   "id": "E8-1",
+   "experiment": "E8",
+   "section": "\u00a77.9",
+   "kind": "property",
+   "claim": {
+    "spec": "conservation in every replay: every copy served by own capacity, a leased replica or fallback exactly once, and the served and fallback weighted tokens sum to the stream's total",
+    "summary": "conservation in every replay: every copy is served by own capacity, a leased replica or fallback exactly once (a stranded copy is served by its leased replica and its remaining work by fallback), and the served and fallback weighted tokens sum to the stream's total (counts exact, tokens to 1e-9 relative; the Mooncake hour's tokens with the input saved by prefix hits)"
+   },
+   "status_label": null,
+   "status_label_note": "the replay's conservation (model validity, design Table 5.9: no claim)",
+   "reference": {
+    "value": "counts exact, tokens to 1e-9 relative",
+    "values": {},
+    "file": "code/sim/out/e8/runs/pairs/ (replay records)"
+   },
+   "regenerated": {
+    "value": {
+     "n": 150,
+     "n_expected": 150,
+     "n_fail": 0,
+     "max_tokens_rel_diff": 3.785384633750054e-13
+    },
+    "file": "code/sim/out/e8/summary.json checks.E8-1"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "E8-2",
+   "experiment": "E8",
+   "section": "\u00a77.9",
+   "kind": "property",
+   "claim": {
+    "spec": "fluid mode: the replay fed the instance's per-fast-slot demand as rates, with capacity kappa_j W(f) and cheapest-first routing, reproduces the engine's routing and fallback components",
+    "summary": "fluid mode: the replay's accounting fed the instance's per-fast-slot demand as rates, with capacity kappa_j W(f) and cheapest-first routing (the min-cost routing of the one client), reproduces the engine's routing and fallback components (1e-6 relative, over max(|engine|, 1e-9 USD)); stranding compared and reported"
+   },
+   "status_label": null,
+   "status_label_note": "the replay's fluid mode against the engine (model validity)",
+   "reference": {
+    "value": "the engine's routing and fallback components (1e-6 relative)",
+    "values": {
+     "tol": 1e-06,
+     "floor_usd": 1e-09
+    },
+    "file": "code/sim/out/e8/runs/fluid/ (the fluid runs)"
+   },
+   "regenerated": {
+    "value": {
+     "n": 144,
+     "n_expected": 144,
+     "n_fail": 0,
+     "max_rel_diff_routing": 3.3011254091188987e-16,
+     "max_rel_diff_fallback": 3.6117415263463874e-16,
+     "stranding_max_rel_diff": 0.00015763612637442745
+    },
+    "file": "code/sim/out/e8/summary.json checks.E8-2"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "E8-3",
+   "experiment": "E8",
+   "section": "\u00a77.9",
+   "kind": "property",
+   "claim": {
+    "spec": "every fluid run: invariant_failures empty, gpu_only_lease_slots 0",
+    "summary": "every fluid run: invariant_failures empty, gpu_only_lease_slots 0"
+   },
+   "status_label": null,
+   "status_label_note": "the engine's invariants",
+   "reference": {
+    "value": "no failure",
+    "values": {},
+    "file": "code/sim/out/e8/runs/fluid/"
+   },
+   "regenerated": {
+    "value": {
+     "n_runs": 150,
+     "n_expected": 150,
+     "n_fail": 0,
+     "n_invariant_failures": 0,
+     "n_gpu_only_lease_slots": 0
+    },
+    "file": "code/sim/out/e8/summary.json checks.E8-3"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "E8-4",
+   "experiment": "E8",
+   "section": "\u00a77.9",
+   "kind": "informative",
+   "claim": {
+    "spec": "the error E per (tier, window, mu)",
+    "summary": "the relative cost error E = (C_replay - C_fluid) / C_replay per (tier, window, mu), median over the alignments with its range (informative; no claim: model validity)"
+   },
+   "status_label": null,
+   "status_label_note": "model validity (design Table 5.9: no claim)",
+   "reference": {
+    "value": "E = (C_replay - C_fluid) / C_replay",
+    "values": {},
+    "file": "\u00a77.6"
+   },
+   "regenerated": {
+    "value": {
+     "n_cells": 36,
+     "n_cells_with_value": 36,
+     "median_range": [
+      0.08752795235849495,
+      0.3108866420337717
+     ],
+     "at_mu_1": {
+      "S": {
+       "5": 0.20803828684805137,
+       "15": 0.24911440710970378,
+       "60": 0.3108866420337717
+      },
+      "M": {
+       "5": 0.16713966424589546,
+       "15": 0.20538488092215645,
+       "60": 0.27455282303646955
+      },
+      "L": {
+       "5": 0.08908017604520024,
+       "15": 0.14394371773274217,
+       "60": 0.2228917622224234
+      }
+     }
+    },
+    "file": "code/sim/out/e8/summary.json checks.E8-4"
+   },
+   "summary_status": "informative",
+   "verdict": "informative",
+   "explanation": null,
+   "note": "model validity, reported as measured (design \u00a75.5 E8)"
+  },
+  {
+   "id": "E8-5",
+   "experiment": "E8",
+   "section": "\u00a77.9",
+   "kind": "informative",
+   "claim": {
+    "spec": "the Mooncake hour's error with and without prefix hits",
+    "summary": "the Mooncake hour's E with and without prefix hits (informative; the 0.366 infinite-cache ratio bounds any replica-level hit ratio from above)"
+   },
+   "status_label": null,
+   "status_label_note": "model validity (design Table 5.9: no claim)",
+   "reference": {
+    "value": "the global infinite-cache hit ratio (an upper bound on any replica-level ratio)",
+    "values": {},
+    "file": "code/sim/out/e8/summary.json meta.mooncake_trace"
+   },
+   "regenerated": {
+    "value": {
+     "error": {
+      "5": {
+       "off": 0.032533254968370284,
+       "on": -4.676825497804015
+      },
+      "15": {
+       "off": 0.05580623845605037,
+       "on": -8.381190900235122
+      },
+      "60": {
+       "off": -0.2217674293369885,
+       "on": -8.332414286568678
+      }
+     },
+     "hit_ratio": {
+      "5": 0.36571005434628817,
+      "15": 0.36424137128110595,
+      "60": 0.36604763678529567
+     },
+     "global_hit_ratio": 0.3664124783362218,
+     "n": 6
+    },
+    "file": "code/sim/out/e8/summary.json checks.E8-5"
+   },
+   "summary_status": "informative",
+   "verdict": "informative",
+   "explanation": null,
+   "note": "a one-hour sensitivity, reported as measured (\u00a77.7)"
+  }
+ ],
+ "floats": {
+  "file": "code/sim/out/figs/floats_heights_ms4.json",
+  "present": true,
+  "rows": [
+   {
+    "float": "Table III",
+    "name": "table3_e7",
+    "measured_pages": 0.146,
+    "budget_pages": 0.125,
+    "within_budget": false,
+    "difference_pages": 0.021,
+    "source": "paper/floats/table3_e7.tex"
+   }
+  ],
+  "note": "Table III exceeds its budget by 0.021 page (M27: \u00a79's two steps are done in the build, the caption holds only the scope, the allowance and the certificate count, and merging the USD and saving columns saves no line; \u00a71.5 item 9: all six data columns stay, each carrying a different claim, and the excess comes out of the page reserve of plan \u00a73.2)"
+ },
+ "figures": {
+  "run": true,
+  "extracts": "/work/sublet/code/sim/out/figs",
+  "rows": [
+   {
+    "figure": "fig4",
+    "script": "figs/fig4_e7_e3.py",
+    "extract": "/work/sublet/code/sim/out/figs/fig4.json",
+    "status": "ok",
+    "small_glyphs": [],
+    "n_small_glyphs": 0,
+    "n_glyph_warnings": 0,
+    "min_glyph_pt": 7.0,
+    "text_pt": [
+     7.0,
+     7.970112079701122
+    ],
+    "error": null
+   },
+   {
+    "figure": "sf_e3_mu",
+    "script": "figs/supp/sf_e3_mu.py",
+    "extract": "/work/sublet/code/sim/out/figs/sf_e3_mu.json",
+    "status": "ok",
+    "small_glyphs": [],
+    "n_small_glyphs": 0,
+    "n_glyph_warnings": 0,
+    "min_glyph_pt": 4.9,
+    "text_pt": [
+     7.0,
+     7.970112079701122
+    ],
+    "error": null
+   },
+   {
+    "figure": "sf_e3_util",
+    "script": "figs/supp/sf_e3_util.py",
+    "extract": "/work/sublet/code/sim/out/figs/sf_e3_util.json",
+    "status": "ok",
+    "small_glyphs": [],
+    "n_small_glyphs": 0,
+    "n_glyph_warnings": 0,
+    "min_glyph_pt": 4.9,
+    "text_pt": [
+     7.0,
+     7.970112079701122
+    ],
+    "error": null
+   },
+   {
+    "figure": "sf_e4",
+    "script": "figs/supp/sf_e4.py",
+    "extract": "/work/sublet/code/sim/out/figs/sf_e4.json",
+    "status": "ok",
+    "small_glyphs": [],
+    "n_small_glyphs": 0,
+    "n_glyph_warnings": 0,
+    "min_glyph_pt": 7.0,
+    "text_pt": [
+     7.0,
+     7.970112079701122
+    ],
+    "error": null
+   },
+   {
+    "figure": "sf_e5",
+    "script": "figs/supp/sf_e5.py",
+    "extract": "/work/sublet/code/sim/out/figs/sf_e5.json",
+    "status": "ok",
+    "small_glyphs": [],
+    "n_small_glyphs": 0,
+    "n_glyph_warnings": 0,
+    "min_glyph_pt": 4.9,
+    "text_pt": [
+     7.0,
+     7.970112079701122
+    ],
+    "error": null
+   },
+   {
+    "figure": "sf_e7_allow",
+    "script": "figs/supp/sf_e7_allow.py",
+    "extract": "/work/sublet/code/sim/out/figs/sf_e7_allow.json",
+    "status": "ok",
+    "small_glyphs": [],
+    "n_small_glyphs": 0,
+    "n_glyph_warnings": 0,
+    "min_glyph_pt": 5.579,
+    "text_pt": [
+     7.0,
+     7.970112079701122
+    ],
+    "error": null
+   },
+   {
+    "figure": "sf_e7_mix",
+    "script": "figs/supp/sf_e7_mix.py",
+    "extract": "/work/sublet/code/sim/out/figs/sf_e7_mix.json",
+    "status": "ok",
+    "small_glyphs": [],
+    "n_small_glyphs": 0,
+    "n_glyph_warnings": 0,
+    "min_glyph_pt": 4.9,
+    "text_pt": [
+     7.0,
+     7.970112079701122
+    ],
+    "error": null
+   },
+   {
+    "figure": "sf_e7_mu",
+    "script": "figs/supp/sf_e7_mu.py",
+    "extract": "/work/sublet/code/sim/out/figs/sf_e7_mu.json",
+    "status": "ok",
+    "small_glyphs": [],
+    "n_small_glyphs": 0,
+    "n_glyph_warnings": 0,
+    "min_glyph_pt": 4.9,
+    "text_pt": [
+     7.0,
+     7.970112079701122
+    ],
+    "error": null
+   },
+   {
+    "figure": "sf_e8",
+    "script": "figs/supp/sf_e8.py",
+    "extract": "/work/sublet/code/sim/out/figs/sf_e8.json",
+    "status": "ok",
+    "small_glyphs": [],
+    "n_small_glyphs": 0,
+    "n_glyph_warnings": 0,
+    "min_glyph_pt": 7.0,
+    "text_pt": [
+     7.0,
+     7.970112079701122
+    ],
+    "error": null
+   }
+  ],
+  "counts": {
+   "ok": 9,
+   "missing": 0,
+   "error": 0
+  },
+  "note": "9 figure script(s) rerun with --from-extract into a temporary folder (removed)"
+ },
+ "copy_checks": {
+  "records": {
+   "e3": {
+    "file": "code/sim/out/ms3_copy_e3.json",
+    "present": true,
+    "pass": true,
+    "exp_matches": true,
+    "commit": "939847ca5925ce069d6df9089fe3a3d1d3207bb7",
+    "time": "2026-10-27T07:48:40",
+    "failed": [],
+    "parts": [],
+    "records_by_status": {
+     "ok": 423
+    }
+   },
+   "e4": {
+    "file": "code/sim/out/ms3_copy_e4.json",
+    "present": true,
+    "pass": true,
+    "exp_matches": true,
+    "commit": "939847ca5925ce069d6df9089fe3a3d1d3207bb7",
+    "time": "2026-10-27T08:49:24",
+    "failed": [],
+    "parts": [],
+    "records_by_status": {
+     "ok": 587
+    }
+   },
+   "e5": {
+    "file": "code/sim/out/ms3_copy_e5.json",
+    "present": true,
+    "pass": true,
+    "exp_matches": true,
+    "commit": "939847ca5925ce069d6df9089fe3a3d1d3207bb7",
+    "time": "2026-10-26T22:20:41",
+    "failed": [],
+    "parts": [],
+    "records_by_status": {
+     "ok": 366
+    }
+   },
+   "e7": {
+    "file": "code/sim/out/ms3_copy_e7.json",
+    "present": true,
+    "pass": true,
+    "exp_matches": true,
+    "commit": "939847ca5925ce069d6df9089fe3a3d1d3207bb7",
+    "time": "2026-10-27T07:45:16",
+    "failed": [],
+    "parts": [
+     "main",
+     "stress",
+     "gap",
+     "allow"
+    ],
+    "records_by_status": {
+     "ok": 290
+    }
+   },
+   "e8": {
+    "file": "code/sim/out/ms3_copy_e8.json",
+    "present": true,
+    "pass": true,
+    "exp_matches": true,
+    "commit": "939847ca5925ce069d6df9089fe3a3d1d3207bb7",
+    "time": "2026-10-27T05:10:47",
+    "failed": [],
+    "parts": [],
+    "records_by_status": {
+     "ok": 153
+    }
+   }
+  },
+  "commits": [
+   "939847ca5925ce069d6df9089fe3a3d1d3207bb7"
+  ],
+  "one_commit": true,
+  "note": "5 of 5 records present; every present record passes; one clone commit"
+ },
+ "jobs": {
+  "rows": {
+   "e7/main": {
+    "manifest": "code/sim/out/e7/main/manifest.json",
+    "present": true,
+    "n_listed": 164,
+    "by_status": {
+     "ok": 166
+    },
+    "n_blocking": 0,
+    "blocking": [],
+    "n_milp_lp_fallback": 0,
+    "milp_lp_fallback": [],
+    "n_unlisted_records": 0,
+    "n_unreadable_records": 0,
+    "summary_jobs_missing": 0,
+    "summary_ignored_outputs": 0,
+    "summary_outputs_missing": null
+   },
+   "e7/stress": {
+    "manifest": "code/sim/out/e7/stress/manifest.json",
+    "present": true,
+    "n_listed": 40,
+    "by_status": {
+     "ok": 42
+    },
+    "n_blocking": 0,
+    "blocking": [],
+    "n_milp_lp_fallback": 0,
+    "milp_lp_fallback": [],
+    "n_unlisted_records": 0,
+    "n_unreadable_records": 0,
+    "summary_jobs_missing": 0,
+    "summary_ignored_outputs": 0,
+    "summary_outputs_missing": null
+   },
+   "e7/gap": {
+    "manifest": "code/sim/out/e7/gap/manifest.json",
+    "present": true,
+    "n_listed": 36,
+    "by_status": {
+     "ok": 38
+    },
+    "n_blocking": 0,
+    "blocking": [],
+    "n_milp_lp_fallback": 0,
+    "milp_lp_fallback": [],
+    "n_unlisted_records": 0,
+    "n_unreadable_records": 0,
+    "summary_jobs_missing": 0,
+    "summary_ignored_outputs": 0,
+    "summary_outputs_missing": null
+   },
+   "e7/allow": {
+    "manifest": "code/sim/out/e7/allow/manifest.json",
+    "present": true,
+    "n_listed": 42,
+    "by_status": {
+     "ok": 44
+    },
+    "n_blocking": 0,
+    "blocking": [],
+    "n_milp_lp_fallback": 0,
+    "milp_lp_fallback": [],
+    "n_unlisted_records": 0,
+    "n_unreadable_records": 0,
+    "summary_jobs_missing": 0,
+    "summary_ignored_outputs": 0,
+    "summary_outputs_missing": null
+   },
+   "e3": {
+    "manifest": "code/sim/out/e3/manifest.json",
+    "present": true,
+    "n_listed": 421,
+    "by_status": {
+     "ok": 423
+    },
+    "n_blocking": 0,
+    "blocking": [],
+    "n_milp_lp_fallback": 0,
+    "milp_lp_fallback": [],
+    "n_unlisted_records": 0,
+    "n_unreadable_records": 0,
+    "summary_jobs_missing": null,
+    "summary_ignored_outputs": 0,
+    "summary_outputs_missing": null
+   },
+   "e5": {
+    "manifest": "code/sim/out/e5/manifest.json",
+    "present": true,
+    "n_listed": 364,
+    "by_status": {
+     "ok": 366
+    },
+    "n_blocking": 0,
+    "blocking": [],
+    "n_milp_lp_fallback": 0,
+    "milp_lp_fallback": [],
+    "n_unlisted_records": 0,
+    "n_unreadable_records": 0,
+    "summary_jobs_missing": 0,
+    "summary_ignored_outputs": 0,
+    "summary_outputs_missing": null
+   },
+   "e4": {
+    "manifest": "code/sim/out/e4/manifest.json",
+    "present": true,
+    "n_listed": 585,
+    "by_status": {
+     "ok": 587
+    },
+    "n_blocking": 0,
+    "blocking": [],
+    "n_milp_lp_fallback": 0,
+    "milp_lp_fallback": [],
+    "n_unlisted_records": 0,
+    "n_unreadable_records": 0,
+    "summary_jobs_missing": null,
+    "summary_ignored_outputs": 0,
+    "summary_outputs_missing": null
+   },
+   "e8": {
+    "manifest": "code/sim/out/e8/manifest.json",
+    "present": true,
+    "n_listed": 151,
+    "by_status": {
+     "ok": 153
+    },
+    "n_blocking": 0,
+    "blocking": [],
+    "n_milp_lp_fallback": 0,
+    "milp_lp_fallback": [],
+    "n_unlisted_records": 0,
+    "n_unreadable_records": 0,
+    "summary_jobs_missing": 0,
+    "summary_ignored_outputs": 0,
+    "summary_outputs_missing": 0
+   }
+  },
+  "n_blocking": 0,
+  "note": "every listed job has an 'ok' record, or is a MILP job whose LB is the LP under Q39's rule"
+ },
+ "captions": {
+  "fig4": {
+   "text": "Fig. 4. (a) Week cost over all-fallback by component, overflow accounting (not drawn: the borrowers' own capacity, 194,405 USD per week, the same for every policy); medians with 95% intervals over 4 alignments \u00d7 3 seeds. (b) Saving over all-fallback against cross-region links. (c) Cost over shared OPT against b (u = 8); dashed, open markers: siloed. Grey: b, the bound on siloed OPT (stars; tight by C3-P7, PROVEN).",
+   "n_chars": 417,
+   "max_chars": 420,
+   "within_limit": true,
+   "values": {
+    "own_capacity_usd": 194405.31332590606,
+    "n_alignments": 4,
+    "n_policy_seeds": 3,
+    "u": 8
+   },
+   "notes": [],
+   "sources": [
+    "code/sim/out/e7/main/summary.json",
+    "code/sim/out/e3/summary.json"
+   ]
+  },
+  "table3": {
+   "certificates": "certificate held in 312 of 312 A8 runs (W(a) 223, W(b) 89, W(c) 0)",
+   "held": 312,
+   "n": 312,
+   "by_case": {
+    "W(a)": {
+     "runs": 223,
+     "held": 223
+    },
+    "W(b)": {
+     "runs": 89,
+     "held": 89
+    },
+    "W(c)": {
+     "runs": 0,
+     "held": 0
+    },
+    "unavailable": {
+     "runs": 0,
+     "held": 0
+    }
+   },
+   "B0_rule": "0.1*BL0a",
+   "gamma": 1.0,
+   "kappa": null,
+   "info_class_reported": "online-I1 + a-priori N + a-priori BL0a",
+   "own_capacity_usd_median": 194405.31332590606,
+   "scope": {
+    "horizon_min": 10080,
+    "menu": "full (a11_default)",
+    "lender": "trace",
+    "mu_over_beta_tilde": 1.0,
+    "alignments": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ]
+   },
+   "source": "code/sim/out/e7/table3.json",
+   "notes": []
+  }
+ }
+}

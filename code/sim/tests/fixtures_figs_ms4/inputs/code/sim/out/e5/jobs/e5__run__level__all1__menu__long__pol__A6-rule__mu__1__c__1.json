@@ -1,0 +1,53 @@
+{
+ "job": "e5:run:level=all1:menu=long:pol=A6-rule:mu=1:c=1",
+ "exp": "e5",
+ "kind": "pool",
+ "params": {
+  "level": "all1",
+  "menu": "long",
+  "tag": "A6-rule",
+  "mu": 1.0,
+  "c": 1,
+  "policy_seeds": [
+   0
+  ],
+  "horizon_min": 1440
+ },
+ "status": "ok",
+ "started": "2026-10-26T14:25:54",
+ "pid": 954749,
+ "argv": [
+  "/work/ms4wt/u25/code/sim/sublet/experiments/e5.py",
+  "--job",
+  "e5:run:level=all1:menu=long:pol=A6-rule:mu=1:c=1",
+  "--out",
+  "/work/ms4u/u25scratch/fixture_roots/e5/out/e5"
+ ],
+ "slots": [
+  "slot0"
+ ],
+ "milp_limit_s": null,
+ "git_revision": "939847ca5925ce069d6df9089fe3a3d1d3207bb7",
+ "versions": {
+  "python": "3.12.3",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "sublet": "0.1.0"
+ },
+ "runs": 1,
+ "errors": [],
+ "n_errors": 0,
+ "outputs": [
+  "runs/e5__run__level__all1__menu__long__pol__A6-rule__mu__1__c__1.json"
+ ],
+ "result": {
+  "bl0a": 6762.294354963841,
+  "totals": [
+   6758.4171080685
+  ]
+ },
+ "wall_s": 10.561391338007525,
+ "peak_rss_kb": 144924,
+ "peak_rss_mb": 141.52734375,
+ "finished": "2026-10-26T14:26:05"
+}

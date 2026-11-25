@@ -1,0 +1,7357 @@
+{
+ "meta": {
+  "exp": "s1v2",
+  "git_revision": "44d1b4e42b5be44503039b1b5d6bfba8e32930ff",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "scipy": "1.17.1",
+   "sublet": "0.1.0"
+  },
+  "written": "2026-11-09T20:26:26",
+  "script": "code/sim/sublet/experiments/s1v2.py",
+  "script_sha256": "37a88cd96d534f74e2f68e747dc30c21036614a7d787aa7e22a271ee7bdedc23"
+ },
+ "jobs": [
+  {
+   "id": "s1v2:sweep:pt=slow1:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "slow1",
+    "row": "slow_slot",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 6000
+   },
+   "est_s": 2000.0,
+   "status": "ok",
+   "wall_s": 1447.4388433811255,
+   "peak_rss_mb": 716.96875,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=slow1:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "slow1",
+    "row": "slow_slot",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 6000
+   },
+   "est_s": 2000.0,
+   "status": "ok",
+   "wall_s": 1121.4414523560554,
+   "peak_rss_mb": 713.7578125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=slow1:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "slow1",
+    "row": "slow_slot",
+    "mu": 1.0,
+    "c": 303,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 6000
+   },
+   "est_s": 2000.0,
+   "status": "ok",
+   "wall_s": 851.9846220817417,
+   "peak_rss_mb": 718.2265625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=slow1:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "slow1",
+    "row": "slow_slot",
+    "mu": 1.0,
+    "c": 304,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 6000
+   },
+   "est_s": 2000.0,
+   "status": "ok",
+   "wall_s": 880.0647016228177,
+   "peak_rss_mb": 709.640625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=tight2:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "tight2",
+    "row": "tightness",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 2283
+   },
+   "est_s": 760.7847,
+   "status": "ok",
+   "wall_s": 1244.7558843861334,
+   "peak_rss_mb": 449.83203125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=tight2:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "tight2",
+    "row": "tightness",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 2283
+   },
+   "est_s": 760.7847,
+   "status": "ok",
+   "wall_s": 1088.6017930679955,
+   "peak_rss_mb": 428.33203125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=tight2:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "tight2",
+    "row": "tightness",
+    "mu": 1.0,
+    "c": 303,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 2283
+   },
+   "est_s": 760.7847,
+   "status": "ok",
+   "wall_s": 664.4093451821245,
+   "peak_rss_mb": 416.6171875,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=tight2:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "tight2",
+    "row": "tightness",
+    "mu": 1.0,
+    "c": 304,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 2283
+   },
+   "est_s": 760.7847,
+   "status": "ok",
+   "wall_s": 687.9036469920538,
+   "peak_rss_mb": 417.125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=nlayers16:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "nlayers16",
+    "row": "n_layers",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1888
+   },
+   "est_s": 629.0638,
+   "status": "ok",
+   "wall_s": 869.2869475441985,
+   "peak_rss_mb": 626.890625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=nlayers16:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "nlayers16",
+    "row": "n_layers",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1888
+   },
+   "est_s": 629.0638,
+   "status": "ok",
+   "wall_s": 738.0312848160975,
+   "peak_rss_mb": 621.85546875,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=nlayers16:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "nlayers16",
+    "row": "n_layers",
+    "mu": 1.0,
+    "c": 303,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1888
+   },
+   "est_s": 629.0638,
+   "status": "ok",
+   "wall_s": 537.4355261349119,
+   "peak_rss_mb": 625.34375,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=nlayers16:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "nlayers16",
+    "row": "n_layers",
+    "mu": 1.0,
+    "c": 304,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1888
+   },
+   "est_s": 629.0638,
+   "status": "ok",
+   "wall_s": 586.103129344061,
+   "peak_rss_mb": 626.6640625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=tight1:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "tight1",
+    "row": "tightness",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 484.0653868578256,
+   "status": "ok",
+   "wall_s": 592.2840647348203,
+   "peak_rss_mb": 411.71875,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=tight1:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "tight1",
+    "row": "tightness",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 484.0653868578256,
+   "status": "ok",
+   "wall_s": 499.3787713199854,
+   "peak_rss_mb": 402.6171875,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=tight1:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "tight1",
+    "row": "tightness",
+    "mu": 1.0,
+    "c": 303,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 484.0653868578256,
+   "status": "ok",
+   "wall_s": 351.80819705314934,
+   "peak_rss_mb": 396.05859375,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=tight1:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "tight1",
+    "row": "tightness",
+    "mu": 1.0,
+    "c": 304,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 484.0653868578256,
+   "status": "ok",
+   "wall_s": 383.37175358319655,
+   "peak_rss_mb": 397.55078125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=layer16:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "layer16",
+    "row": "layer_width",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 420.3392,
+   "status": "ok",
+   "wall_s": 550.5694125248119,
+   "peak_rss_mb": 408.9453125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=layer16:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "layer16",
+    "row": "layer_width",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 420.3392,
+   "status": "ok",
+   "wall_s": 458.89058666164055,
+   "peak_rss_mb": 399.43359375,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=layer16:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "layer16",
+    "row": "layer_width",
+    "mu": 1.0,
+    "c": 303,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 420.3392,
+   "status": "ok",
+   "wall_s": 349.4270763839595,
+   "peak_rss_mb": 392.73046875,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=layer16:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "layer16",
+    "row": "layer_width",
+    "mu": 1.0,
+    "c": 304,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 420.3392,
+   "status": "ok",
+   "wall_s": 366.23677593888715,
+   "peak_rss_mb": 393.39453125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=catLg4:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "catLg4",
+    "row": "catalog",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 369.4010245320589,
+   "status": "ok",
+   "wall_s": 465.5473046293482,
+   "peak_rss_mb": 408.63671875,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=catLg4:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "catLg4",
+    "row": "catalog",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 369.4010245320589,
+   "status": "ok",
+   "wall_s": 390.01979098282754,
+   "peak_rss_mb": 398.63671875,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=catLg4:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "catLg4",
+    "row": "catalog",
+    "mu": 1.0,
+    "c": 303,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 369.4010245320589,
+   "status": "ok",
+   "wall_s": 283.1421741056256,
+   "peak_rss_mb": 394.0390625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=catLg4:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "catLg4",
+    "row": "catalog",
+    "mu": 1.0,
+    "c": 304,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 369.4010245320589,
+   "status": "ok",
+   "wall_s": 307.828187296167,
+   "peak_rss_mb": 394.56640625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=xi1:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "xi1",
+    "row": "xi",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 343.2936318996416,
+   "status": "ok",
+   "wall_s": 934.6773159643635,
+   "peak_rss_mb": 428.8203125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=xi1:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "xi1",
+    "row": "xi",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 343.2936318996416,
+   "status": "ok",
+   "wall_s": 814.6741754431278,
+   "peak_rss_mb": 416.91015625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=xi1:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "xi1",
+    "row": "xi",
+    "mu": 1.0,
+    "c": 303,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 343.2936318996416,
+   "status": "ok",
+   "wall_s": 907.0083758500405,
+   "peak_rss_mb": 418.1796875,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=xi1:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "xi1",
+    "row": "xi",
+    "mu": 1.0,
+    "c": 304,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 343.2936318996416,
+   "status": "ok",
+   "wall_s": 887.5103017641231,
+   "peak_rss_mb": 413.58203125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=kappaL2:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "kappaL2",
+    "row": "kappa_L",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 335.4006992433293,
+   "status": "ok",
+   "wall_s": 406.13456759322435,
+   "peak_rss_mb": 403.28515625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=kappaL2:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "kappaL2",
+    "row": "kappa_L",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 335.4006992433293,
+   "status": "ok",
+   "wall_s": 327.5621534991078,
+   "peak_rss_mb": 391.67578125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=kappaL2:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "kappaL2",
+    "row": "kappa_L",
+    "mu": 1.0,
+    "c": 303,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 335.4006992433293,
+   "status": "ok",
+   "wall_s": 250.59196077194065,
+   "peak_rss_mb": 393.10546875,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=kappaL2:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "kappaL2",
+    "row": "kappa_L",
+    "mu": 1.0,
+    "c": 304,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 335.4006992433293,
+   "status": "ok",
+   "wall_s": 273.77574001206085,
+   "peak_rss_mb": 394.265625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=L16:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "L16",
+    "row": "precision",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 301.8365,
+   "status": "ok",
+   "wall_s": 379.7224497529678,
+   "peak_rss_mb": 396.44921875,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=L16:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "L16",
+    "row": "precision",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 301.8365,
+   "status": "ok",
+   "wall_s": 318.7308348957449,
+   "peak_rss_mb": 387.734375,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=L16:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "L16",
+    "row": "precision",
+    "mu": 1.0,
+    "c": 303,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 301.8365,
+   "status": "ok",
+   "wall_s": 236.0472298981622,
+   "peak_rss_mb": 390.1953125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=L16:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "L16",
+    "row": "precision",
+    "mu": 1.0,
+    "c": 304,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 301.8365,
+   "status": "ok",
+   "wall_s": 256.21015618694946,
+   "peak_rss_mb": 390.77734375,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=sS05:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "sS05",
+    "row": "s_S",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 292.72682158502585,
+   "status": "ok",
+   "wall_s": 382.8381452290341,
+   "peak_rss_mb": 399.08984375,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=sS05:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "sS05",
+    "row": "s_S",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 292.72682158502585,
+   "status": "ok",
+   "wall_s": 325.81322780810297,
+   "peak_rss_mb": 394.45703125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=sS05:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "sS05",
+    "row": "s_S",
+    "mu": 1.0,
+    "c": 303,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 292.72682158502585,
+   "status": "ok",
+   "wall_s": 231.84826539410278,
+   "peak_rss_mb": 393.21875,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=sS05:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "sS05",
+    "row": "s_S",
+    "mu": 1.0,
+    "c": 304,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 292.72682158502585,
+   "status": "ok",
+   "wall_s": 255.18569121323526,
+   "peak_rss_mb": 393.24609375,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=lease50:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "lease50",
+    "row": "lease_quantile",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 284.22674026284346,
+   "status": "ok",
+   "wall_s": 394.2861974569969,
+   "peak_rss_mb": 421.00390625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=lease50:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "lease50",
+    "row": "lease_quantile",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 284.22674026284346,
+   "status": "ok",
+   "wall_s": 327.2818954917602,
+   "peak_rss_mb": 412.765625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=lease50:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "lease50",
+    "row": "lease_quantile",
+    "mu": 1.0,
+    "c": 303,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 284.22674026284346,
+   "status": "ok",
+   "wall_s": 233.06778246397153,
+   "peak_rss_mb": 414.11328125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=lease50:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "lease50",
+    "row": "lease_quantile",
+    "mu": 1.0,
+    "c": 304,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 284.22674026284346,
+   "status": "ok",
+   "wall_s": 262.286303026136,
+   "peak_rss_mb": 413.5234375,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=alpha06:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "alpha06",
+    "row": "alpha",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 271.2502,
+   "status": "ok",
+   "wall_s": 310.15487663960084,
+   "peak_rss_mb": 393.1640625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=alpha06:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "alpha06",
+    "row": "alpha",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 271.2502,
+   "status": "ok",
+   "wall_s": 256.18556998390704,
+   "peak_rss_mb": 390.09375,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=alpha06:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "alpha06",
+    "row": "alpha",
+    "mu": 1.0,
+    "c": 303,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 271.2502,
+   "status": "ok",
+   "wall_s": 188.5697189499624,
+   "peak_rss_mb": 391.94921875,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=alpha06:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "alpha06",
+    "row": "alpha",
+    "mu": 1.0,
+    "c": 304,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 271.2502,
+   "status": "ok",
+   "wall_s": 208.48654449312016,
+   "peak_rss_mb": 392.6171875,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=smooth60:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "smooth60",
+    "row": "smoothing",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 271.12967618478694,
+   "status": "ok",
+   "wall_s": 443.9489050442353,
+   "peak_rss_mb": 395.4765625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=smooth60:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "smooth60",
+    "row": "smoothing",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 271.12967618478694,
+   "status": "ok",
+   "wall_s": 289.2342170062475,
+   "peak_rss_mb": 392.77734375,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=smooth60:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "smooth60",
+    "row": "smoothing",
+    "mu": 1.0,
+    "c": 303,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 271.12967618478694,
+   "status": "ok",
+   "wall_s": 275.69074651412666,
+   "peak_rss_mb": 393.42578125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=smooth60:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "smooth60",
+    "row": "smoothing",
+    "mu": 1.0,
+    "c": 304,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 271.12967618478694,
+   "status": "ok",
+   "wall_s": 406.1342693171464,
+   "peak_rss_mb": 392.0546875,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=scen_cold_wan_1gbps:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "scen_cold_wan_1gbps",
+    "row": "load_scenario",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 270.7891,
+   "status": "ok",
+   "wall_s": 347.4719117511995,
+   "peak_rss_mb": 392.25,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=scen_cold_wan_1gbps:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "scen_cold_wan_1gbps",
+    "row": "load_scenario",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 270.7891,
+   "status": "ok",
+   "wall_s": 286.37666525738314,
+   "peak_rss_mb": 391.38671875,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=scen_cold_wan_1gbps:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "scen_cold_wan_1gbps",
+    "row": "load_scenario",
+    "mu": 1.0,
+    "c": 303,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 270.7891,
+   "status": "ok",
+   "wall_s": 214.9882995132357,
+   "peak_rss_mb": 391.484375,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=scen_cold_wan_1gbps:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "scen_cold_wan_1gbps",
+    "row": "load_scenario",
+    "mu": 1.0,
+    "c": 304,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 270.7891,
+   "status": "ok",
+   "wall_s": 229.46639676531777,
+   "peak_rss_mb": 394.19140625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=c0p50:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "c0p50",
+    "row": "own_capacity",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 268.52761047391476,
+   "status": "ok",
+   "wall_s": 687.6815638639964,
+   "peak_rss_mb": 409.19921875,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=c0p50:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "c0p50",
+    "row": "own_capacity",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 268.52761047391476,
+   "status": "ok",
+   "wall_s": 478.8558210809715,
+   "peak_rss_mb": 398.99609375,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=c0p50:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "c0p50",
+    "row": "own_capacity",
+    "mu": 1.0,
+    "c": 303,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 268.52761047391476,
+   "status": "ok",
+   "wall_s": 350.2267129686661,
+   "peak_rss_mb": 391.71484375,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=c0p50:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "c0p50",
+    "row": "own_capacity",
+    "mu": 1.0,
+    "c": 304,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 268.52761047391476,
+   "status": "ok",
+   "wall_s": 361.2240147879347,
+   "peak_rss_mb": 392.58203125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=prothorizon:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "prothorizon",
+    "row": "protected_term",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 267.8688,
+   "status": "ok",
+   "wall_s": 337.44686578027904,
+   "peak_rss_mb": 393.91015625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=prothorizon:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "prothorizon",
+    "row": "protected_term",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 267.8688,
+   "status": "ok",
+   "wall_s": 295.39943385124207,
+   "peak_rss_mb": 392.1875,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=prothorizon:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "prothorizon",
+    "row": "protected_term",
+    "mu": 1.0,
+    "c": 303,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 267.8688,
+   "status": "ok",
+   "wall_s": 215.75300867995247,
+   "peak_rss_mb": 393.890625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=prothorizon:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "prothorizon",
+    "row": "protected_term",
+    "mu": 1.0,
+    "c": 304,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 267.8688,
+   "status": "ok",
+   "wall_s": 233.98237030487508,
+   "peak_rss_mb": 392.83984375,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=smooth5:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "smooth5",
+    "row": "smoothing",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 267.74699076065315,
+   "status": "ok",
+   "wall_s": 357.09944965783507,
+   "peak_rss_mb": 397.90234375,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=smooth5:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "smooth5",
+    "row": "smoothing",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 267.74699076065315,
+   "status": "ok",
+   "wall_s": 305.2324369000271,
+   "peak_rss_mb": 390.77734375,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=smooth5:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "smooth5",
+    "row": "smoothing",
+    "mu": 1.0,
+    "c": 303,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 267.74699076065315,
+   "status": "ok",
+   "wall_s": 213.03191151516512,
+   "peak_rss_mb": 393.6015625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=smooth5:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "smooth5",
+    "row": "smoothing",
+    "mu": 1.0,
+    "c": 304,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 267.74699076065315,
+   "status": "ok",
+   "wall_s": 210.89306385815144,
+   "peak_rss_mb": 393.53515625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=default:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "default",
+    "row": null,
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 345.5798695269041,
+   "peak_rss_mb": 393.83203125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=default:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "default",
+    "row": null,
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 290.98220861610025,
+   "peak_rss_mb": 387.40625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=default:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "default",
+    "row": null,
+    "mu": 1.0,
+    "c": 303,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 217.08347568381578,
+   "peak_rss_mb": 390.7265625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=default:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "default",
+    "row": null,
+    "mu": 1.0,
+    "c": 304,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 233.3820655872114,
+   "peak_rss_mb": 391.08984375,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=alpha03:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "alpha03",
+    "row": "alpha",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 339.1159727941267,
+   "peak_rss_mb": 393.58203125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=alpha03:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "alpha03",
+    "row": "alpha",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 285.3955409489572,
+   "peak_rss_mb": 390.32421875,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=alpha03:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "alpha03",
+    "row": "alpha",
+    "mu": 1.0,
+    "c": 303,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 217.05269165989012,
+   "peak_rss_mb": 393.625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=alpha03:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "alpha03",
+    "row": "alpha",
+    "mu": 1.0,
+    "c": 304,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 233.69972830591723,
+   "peak_rss_mb": 393.08203125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=alpha05:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "alpha05",
+    "row": "alpha",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 355.4572683959268,
+   "peak_rss_mb": 393.80078125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=alpha05:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "alpha05",
+    "row": "alpha",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 288.25901136919856,
+   "peak_rss_mb": 392.0546875,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=alpha05:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "alpha05",
+    "row": "alpha",
+    "mu": 1.0,
+    "c": 303,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 220.1824542293325,
+   "peak_rss_mb": 392.58984375,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=alpha05:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "alpha05",
+    "row": "alpha",
+    "mu": 1.0,
+    "c": 304,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 229.49362357519567,
+   "peak_rss_mb": 393.76953125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=alphap06:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "alphap06",
+    "row": "alpha_p",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 298.14661109400913,
+   "peak_rss_mb": 394.40625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=alphap06:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "alphap06",
+    "row": "alpha_p",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 251.48625356517732,
+   "peak_rss_mb": 391.97265625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=alphap06:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "alphap06",
+    "row": "alpha_p",
+    "mu": 1.0,
+    "c": 303,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 179.60061446484178,
+   "peak_rss_mb": 394.2890625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=alphap06:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "alphap06",
+    "row": "alpha_p",
+    "mu": 1.0,
+    "c": 304,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 199.08189731277525,
+   "peak_rss_mb": 393.921875,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=alphap10:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "alphap10",
+    "row": "alpha_p",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 319.55286107072607,
+   "peak_rss_mb": 393.37890625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=alphap10:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "alphap10",
+    "row": "alpha_p",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 262.2252646754496,
+   "peak_rss_mb": 391.90234375,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=alphap10:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "alphap10",
+    "row": "alpha_p",
+    "mu": 1.0,
+    "c": 303,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 197.2609425680712,
+   "peak_rss_mb": 393.24609375,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=alphap10:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "alphap10",
+    "row": "alpha_p",
+    "mu": 1.0,
+    "c": 304,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 211.28631258988753,
+   "peak_rss_mb": 392.5546875,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=kv05:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "kv05",
+    "row": "mu_split",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 344.73110898118466,
+   "peak_rss_mb": 393.41796875,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=kv05:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "kv05",
+    "row": "mu_split",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 292.920514611993,
+   "peak_rss_mb": 391.99609375,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=kv05:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "kv05",
+    "row": "mu_split",
+    "mu": 1.0,
+    "c": 303,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 219.87476145802066,
+   "peak_rss_mb": 393.640625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=kv05:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "kv05",
+    "row": "mu_split",
+    "mu": 1.0,
+    "c": 304,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 237.13771437015384,
+   "peak_rss_mb": 393.50390625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=kv10:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "kv10",
+    "row": "mu_split",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 359.8075971524231,
+   "peak_rss_mb": 393.3671875,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=kv10:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "kv10",
+    "row": "mu_split",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 288.74083427200094,
+   "peak_rss_mb": 389.00390625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=kv10:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "kv10",
+    "row": "mu_split",
+    "mu": 1.0,
+    "c": 303,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 214.0621667788364,
+   "peak_rss_mb": 393.53515625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=kv10:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "kv10",
+    "row": "mu_split",
+    "mu": 1.0,
+    "c": 304,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 233.4539979477413,
+   "peak_rss_mb": 392.03515625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=scen_warm_peer_rdma:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "scen_warm_peer_rdma",
+    "row": "load_scenario",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 332.72767512407154,
+   "peak_rss_mb": 398.97265625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=scen_warm_peer_rdma:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "scen_warm_peer_rdma",
+    "row": "load_scenario",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 282.4893288058229,
+   "peak_rss_mb": 395.203125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=scen_warm_peer_rdma:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "scen_warm_peer_rdma",
+    "row": "load_scenario",
+    "mu": 1.0,
+    "c": 303,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 210.11835484020412,
+   "peak_rss_mb": 392.94140625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=scen_warm_peer_rdma:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "scen_warm_peer_rdma",
+    "row": "load_scenario",
+    "mu": 1.0,
+    "c": 304,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 240.71279315836728,
+   "peak_rss_mb": 393.09375,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=scen_ssd_optimized:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "scen_ssd_optimized",
+    "row": "load_scenario",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 346.684669113718,
+   "peak_rss_mb": 401.109375,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=scen_ssd_optimized:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "scen_ssd_optimized",
+    "row": "load_scenario",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 294.40868308069184,
+   "peak_rss_mb": 397.85546875,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=scen_ssd_optimized:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "scen_ssd_optimized",
+    "row": "load_scenario",
+    "mu": 1.0,
+    "c": 303,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 227.27948536910117,
+   "peak_rss_mb": 392.96875,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=scen_ssd_optimized:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "scen_ssd_optimized",
+    "row": "load_scenario",
+    "mu": 1.0,
+    "c": 304,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 246.84510334581137,
+   "peak_rss_mb": 393.1640625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=scen_ssd_stock_safetensors:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "scen_ssd_stock_safetensors",
+    "row": "load_scenario",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 351.5441548801027,
+   "peak_rss_mb": 393.6171875,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=scen_ssd_stock_safetensors:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "scen_ssd_stock_safetensors",
+    "row": "load_scenario",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 289.47800828516483,
+   "peak_rss_mb": 389.625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=scen_ssd_stock_safetensors:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "scen_ssd_stock_safetensors",
+    "row": "load_scenario",
+    "mu": 1.0,
+    "c": 303,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 210.2639913316816,
+   "peak_rss_mb": 392.765625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=scen_ssd_stock_safetensors:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "scen_ssd_stock_safetensors",
+    "row": "load_scenario",
+    "mu": 1.0,
+    "c": 304,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 232.2907427661121,
+   "peak_rss_mb": 392.171875,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=scen_ssd_stock_pytorch:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "scen_ssd_stock_pytorch",
+    "row": "load_scenario",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 341.38825756218284,
+   "peak_rss_mb": 393.203125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=scen_ssd_stock_pytorch:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "scen_ssd_stock_pytorch",
+    "row": "load_scenario",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 285.5359048792161,
+   "peak_rss_mb": 389.15625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=scen_ssd_stock_pytorch:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "scen_ssd_stock_pytorch",
+    "row": "load_scenario",
+    "mu": 1.0,
+    "c": 303,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 213.93734483560547,
+   "peak_rss_mb": 392.9140625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=scen_ssd_stock_pytorch:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "scen_ssd_stock_pytorch",
+    "row": "load_scenario",
+    "mu": 1.0,
+    "c": 304,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 234.71597626199946,
+   "peak_rss_mb": 391.98046875,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=scen_a5_10GBps:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "scen_a5_10GBps",
+    "row": "load_scenario",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 342.22416404029354,
+   "peak_rss_mb": 393.15234375,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=scen_a5_10GBps:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "scen_a5_10GBps",
+    "row": "load_scenario",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 289.84460673015565,
+   "peak_rss_mb": 390.453125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=scen_a5_10GBps:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "scen_a5_10GBps",
+    "row": "load_scenario",
+    "mu": 1.0,
+    "c": 303,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 216.96381558803841,
+   "peak_rss_mb": 393.35546875,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=scen_a5_10GBps:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "scen_a5_10GBps",
+    "row": "load_scenario",
+    "mu": 1.0,
+    "c": 304,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 234.74406714597717,
+   "peak_rss_mb": 393.4375,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=scen_a5_2GBps:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "scen_a5_2GBps",
+    "row": "load_scenario",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 344.88047489291057,
+   "peak_rss_mb": 395.109375,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=scen_a5_2GBps:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "scen_a5_2GBps",
+    "row": "load_scenario",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 286.6088415510021,
+   "peak_rss_mb": 392.65234375,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=scen_a5_2GBps:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "scen_a5_2GBps",
+    "row": "load_scenario",
+    "mu": 1.0,
+    "c": 303,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 219.7972545097582,
+   "peak_rss_mb": 393.75390625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=scen_a5_2GBps:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "scen_a5_2GBps",
+    "row": "load_scenario",
+    "mu": 1.0,
+    "c": 304,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 238.53001810377464,
+   "peak_rss_mb": 391.68359375,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=scen_cold_wan_10gbps:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "scen_cold_wan_10gbps",
+    "row": "load_scenario",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 341.8399424762465,
+   "peak_rss_mb": 395.29296875,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=scen_cold_wan_10gbps:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "scen_cold_wan_10gbps",
+    "row": "load_scenario",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 283.41024030558765,
+   "peak_rss_mb": 388.95703125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=scen_cold_wan_10gbps:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "scen_cold_wan_10gbps",
+    "row": "load_scenario",
+    "mu": 1.0,
+    "c": 303,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 217.91160941822454,
+   "peak_rss_mb": 393.41796875,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=scen_cold_wan_10gbps:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "scen_cold_wan_10gbps",
+    "row": "load_scenario",
+    "mu": 1.0,
+    "c": 304,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 233.5715499832295,
+   "peak_rss_mb": 392.609375,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=phi05:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "phi05",
+    "row": "phi",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 341.8767961789854,
+   "peak_rss_mb": 394.8125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=phi05:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "phi05",
+    "row": "phi",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 282.8888785778545,
+   "peak_rss_mb": 391.58203125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=phi05:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "phi05",
+    "row": "phi",
+    "mu": 1.0,
+    "c": 303,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 216.82934446493164,
+   "peak_rss_mb": 392.46875,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=phi05:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "phi05",
+    "row": "phi",
+    "mu": 1.0,
+    "c": 304,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 240.8398341019638,
+   "peak_rss_mb": 393.0078125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=prot1h:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "prot1h",
+    "row": "protected_term",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 352.26226958818734,
+   "peak_rss_mb": 394.24609375,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=prot1h:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "prot1h",
+    "row": "protected_term",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 288.7062302152626,
+   "peak_rss_mb": 391.4453125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=prot1h:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "prot1h",
+    "row": "protected_term",
+    "mu": 1.0,
+    "c": 303,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 221.4299185848795,
+   "peak_rss_mb": 393.90234375,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=prot1h:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "prot1h",
+    "row": "protected_term",
+    "mu": 1.0,
+    "c": 304,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 238.1893603540957,
+   "peak_rss_mb": 392.6953125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=prot1d:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "prot1d",
+    "row": "protected_term",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 345.14034820813686,
+   "peak_rss_mb": 394.71875,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=prot1d:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "prot1d",
+    "row": "protected_term",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 285.62101289397106,
+   "peak_rss_mb": 389.53125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=prot1d:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "prot1d",
+    "row": "protected_term",
+    "mu": 1.0,
+    "c": 303,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 218.07312479894608,
+   "peak_rss_mb": 393.64453125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=prot1d:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "prot1d",
+    "row": "protected_term",
+    "mu": 1.0,
+    "c": 304,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 241.05813913373277,
+   "peak_rss_mb": 393.37890625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=delta0:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "delta0",
+    "row": "delta1",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 157.11060549411923,
+   "peak_rss_mb": 394.4453125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=delta0:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "delta0",
+    "row": "delta1",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 139.84186974493787,
+   "peak_rss_mb": 392.05078125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=delta0:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "delta0",
+    "row": "delta1",
+    "mu": 1.0,
+    "c": 303,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 111.60445379605517,
+   "peak_rss_mb": 393.95703125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=delta0:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "delta0",
+    "row": "delta1",
+    "mu": 1.0,
+    "c": 304,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 122.23368380591273,
+   "peak_rss_mb": 392.7578125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=delta02:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "delta02",
+    "row": "delta1",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 302.29611222306266,
+   "peak_rss_mb": 392.83203125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=delta02:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "delta02",
+    "row": "delta1",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 268.86126831220463,
+   "peak_rss_mb": 391.640625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=delta02:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "delta02",
+    "row": "delta1",
+    "mu": 1.0,
+    "c": 303,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 192.5844398108311,
+   "peak_rss_mb": 392.53125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=delta02:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "delta02",
+    "row": "delta1",
+    "mu": 1.0,
+    "c": 304,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 210.76510652666911,
+   "peak_rss_mb": 394.32421875,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=strict:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "strict",
+    "row": "slo_class",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 146.43061126722023,
+   "peak_rss_mb": 392.234375,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=strict:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "strict",
+    "row": "slo_class",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 122.48439850611612,
+   "peak_rss_mb": 389.515625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=strict:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "strict",
+    "row": "slo_class",
+    "mu": 1.0,
+    "c": 303,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 106.1549964346923,
+   "peak_rss_mb": 393.171875,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=strict:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "strict",
+    "row": "slo_class",
+    "mu": 1.0,
+    "c": 304,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 113.7566592041403,
+   "peak_rss_mb": 392.6484375,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=slotier:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "slotier",
+    "row": "slo_class",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 322.64673230424523,
+   "peak_rss_mb": 393.51953125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=slotier:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "slotier",
+    "row": "slo_class",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 272.437334286049,
+   "peak_rss_mb": 390.3125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=slotier:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "slotier",
+    "row": "slo_class",
+    "mu": 1.0,
+    "c": 303,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 201.82110086409375,
+   "peak_rss_mb": 393.3359375,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=slotier:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "slotier",
+    "row": "slo_class",
+    "mu": 1.0,
+    "c": 304,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 216.74953787680715,
+   "peak_rss_mb": 393.96875,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=fee4:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "fee4",
+    "row": "transfer_fee",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 373.86661357805133,
+   "peak_rss_mb": 393.01171875,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=fee4:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "fee4",
+    "row": "transfer_fee",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 292.24333188170567,
+   "peak_rss_mb": 391.53125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=fee4:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "fee4",
+    "row": "transfer_fee",
+    "mu": 1.0,
+    "c": 303,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 220.53413778916,
+   "peak_rss_mb": 393.140625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=fee4:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "fee4",
+    "row": "transfer_fee",
+    "mu": 1.0,
+    "c": 304,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 241.24577836878598,
+   "peak_rss_mb": 394.50390625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=mu0.2:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "mu0.2",
+    "row": "mu",
+    "mu": 0.2,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 347.2125295298174,
+   "peak_rss_mb": 394.47265625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=mu0.2:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "mu0.2",
+    "row": "mu",
+    "mu": 0.2,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 294.28445170726627,
+   "peak_rss_mb": 389.80859375,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=mu0.2:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "mu0.2",
+    "row": "mu",
+    "mu": 0.2,
+    "c": 303,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 216.01714336592704,
+   "peak_rss_mb": 391.84765625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=mu0.2:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "mu0.2",
+    "row": "mu",
+    "mu": 0.2,
+    "c": 304,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 235.2249000533484,
+   "peak_rss_mb": 394.3671875,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=mu0.5:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "mu0.5",
+    "row": "mu",
+    "mu": 0.5,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 348.8858768772334,
+   "peak_rss_mb": 393.8515625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=mu0.5:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "mu0.5",
+    "row": "mu",
+    "mu": 0.5,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 289.5283628930338,
+   "peak_rss_mb": 390.87890625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=mu0.5:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "mu0.5",
+    "row": "mu",
+    "mu": 0.5,
+    "c": 303,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 226.0487237246707,
+   "peak_rss_mb": 392.9296875,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=mu0.5:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "mu0.5",
+    "row": "mu",
+    "mu": 0.5,
+    "c": 304,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 243.74052774580196,
+   "peak_rss_mb": 394.1640625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=mu2:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "mu2",
+    "row": "mu",
+    "mu": 2.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 351.00627664197236,
+   "peak_rss_mb": 393.36328125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=mu2:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "mu2",
+    "row": "mu",
+    "mu": 2.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 293.32494525332004,
+   "peak_rss_mb": 390.6015625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=mu2:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "mu2",
+    "row": "mu",
+    "mu": 2.0,
+    "c": 303,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 225.06175239617005,
+   "peak_rss_mb": 391.765625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=mu2:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "mu2",
+    "row": "mu",
+    "mu": 2.0,
+    "c": 304,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 246.1013310099952,
+   "peak_rss_mb": 392.40625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=kappaM05:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "kappaM05",
+    "row": "kappa_M",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 397.13060617633164,
+   "peak_rss_mb": 402.8046875,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=kappaM05:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "kappaM05",
+    "row": "kappa_M",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 322.4009033800103,
+   "peak_rss_mb": 393.796875,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=kappaM05:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "kappaM05",
+    "row": "kappa_M",
+    "mu": 1.0,
+    "c": 303,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 246.0933323930949,
+   "peak_rss_mb": 392.60546875,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=kappaM05:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "kappaM05",
+    "row": "kappa_M",
+    "mu": 1.0,
+    "c": 304,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 264.918032289017,
+   "peak_rss_mb": 392.41796875,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=kappaM2:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "kappaM2",
+    "row": "kappa_M",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 306.22585131786764,
+   "peak_rss_mb": 394.11328125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=kappaM2:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "kappaM2",
+    "row": "kappa_M",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 261.76532616792247,
+   "peak_rss_mb": 391.87890625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=kappaM2:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "kappaM2",
+    "row": "kappa_M",
+    "mu": 1.0,
+    "c": 303,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 196.82663062680513,
+   "peak_rss_mb": 392.359375,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=kappaM2:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "kappaM2",
+    "row": "kappa_M",
+    "mu": 1.0,
+    "c": 304,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 215.71804240904748,
+   "peak_rss_mb": 394.125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=fee8:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "fee8",
+    "row": "transfer_fee",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 363.93269226606935,
+   "peak_rss_mb": 393.52734375,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=fee8:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "fee8",
+    "row": "transfer_fee",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 299.14235422201455,
+   "peak_rss_mb": 391.77734375,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=fee8:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "fee8",
+    "row": "transfer_fee",
+    "mu": 1.0,
+    "c": 303,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 222.80762244481593,
+   "peak_rss_mb": 392.05078125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=fee8:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "fee8",
+    "row": "transfer_fee",
+    "mu": 1.0,
+    "c": 304,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 238.23954343423247,
+   "peak_rss_mb": 393.87890625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=fee16:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "fee16",
+    "row": "transfer_fee",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 371.26360719511285,
+   "peak_rss_mb": 393.73046875,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=fee16:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "fee16",
+    "row": "transfer_fee",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 297.6341101191938,
+   "peak_rss_mb": 391.34765625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=fee16:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "fee16",
+    "row": "transfer_fee",
+    "mu": 1.0,
+    "c": 303,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 226.44495088187978,
+   "peak_rss_mb": 391.55078125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=fee16:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "fee16",
+    "row": "transfer_fee",
+    "mu": 1.0,
+    "c": 304,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 266.79290000000003,
+   "status": "ok",
+   "wall_s": 255.45062704291195,
+   "peak_rss_mb": 394.12890625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=c0p90:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "c0p90",
+    "row": "own_capacity",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 265.14492504978097,
+   "status": "ok",
+   "wall_s": 173.64248410100117,
+   "peak_rss_mb": 392.12890625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=c0p90:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "c0p90",
+    "row": "own_capacity",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 265.14492504978097,
+   "status": "ok",
+   "wall_s": 191.0353005649522,
+   "peak_rss_mb": 391.34375,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=c0p90:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "c0p90",
+    "row": "own_capacity",
+    "mu": 1.0,
+    "c": 303,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 265.14492504978097,
+   "status": "ok",
+   "wall_s": 145.4484879220836,
+   "peak_rss_mb": 390.54296875,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=c0p90:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "c0p90",
+    "row": "own_capacity",
+    "mu": 1.0,
+    "c": 304,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 265.14492504978097,
+   "status": "ok",
+   "wall_s": 147.28438903717324,
+   "peak_rss_mb": 393.0703125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=lease10:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "lease10",
+    "row": "lease_quantile",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 262.803065909996,
+   "status": "ok",
+   "wall_s": 350.8797049331479,
+   "peak_rss_mb": 388.49609375,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=lease10:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "lease10",
+    "row": "lease_quantile",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 262.803065909996,
+   "status": "ok",
+   "wall_s": 287.36761058308184,
+   "peak_rss_mb": 386.19140625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=lease10:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "lease10",
+    "row": "lease_quantile",
+    "mu": 1.0,
+    "c": 303,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 262.803065909996,
+   "status": "ok",
+   "wall_s": 215.908925967291,
+   "peak_rss_mb": 387.3515625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=lease10:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "lease10",
+    "row": "lease_quantile",
+    "mu": 1.0,
+    "c": 304,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 262.803065909996,
+   "status": "ok",
+   "wall_s": 229.8841077541001,
+   "peak_rss_mb": 388.625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=alpha02:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "alpha02",
+    "row": "alpha",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 255.72650000000002,
+   "status": "ok",
+   "wall_s": 320.5930619039573,
+   "peak_rss_mb": 393.57421875,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=alpha02:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "alpha02",
+    "row": "alpha",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 255.72650000000002,
+   "status": "ok",
+   "wall_s": 278.65637732390314,
+   "peak_rss_mb": 389.3671875,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=alpha02:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "alpha02",
+    "row": "alpha",
+    "mu": 1.0,
+    "c": 303,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 255.72650000000002,
+   "status": "ok",
+   "wall_s": 210.28588235704228,
+   "peak_rss_mb": 393.94921875,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=alpha02:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "alpha02",
+    "row": "alpha",
+    "mu": 1.0,
+    "c": 304,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 255.72650000000002,
+   "status": "ok",
+   "wall_s": 226.40458256704733,
+   "peak_rss_mb": 393.2421875,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=sS0:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "sS0",
+    "row": "s_S",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 251.52744782955,
+   "status": "ok",
+   "wall_s": 297.3063356108032,
+   "peak_rss_mb": 393.42578125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=sS0:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "sS0",
+    "row": "s_S",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 251.52744782955,
+   "status": "ok",
+   "wall_s": 253.00721043068916,
+   "peak_rss_mb": 388.3828125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=sS0:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "sS0",
+    "row": "s_S",
+    "mu": 1.0,
+    "c": 303,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 251.52744782955,
+   "status": "ok",
+   "wall_s": 182.88331093080342,
+   "peak_rss_mb": 392.48828125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=sS0:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "sS0",
+    "row": "s_S",
+    "mu": 1.0,
+    "c": 304,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 251.52744782955,
+   "status": "ok",
+   "wall_s": 207.76140148518607,
+   "peak_rss_mb": 392.2734375,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=tiermap:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "tiermap",
+    "row": "gpt4o_mini",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 224.55269996017523,
+   "status": "ok",
+   "wall_s": 304.73982623172924,
+   "peak_rss_mb": 393.5390625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=tiermap:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "tiermap",
+    "row": "gpt4o_mini",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 224.55269996017523,
+   "status": "ok",
+   "wall_s": 265.82424547336996,
+   "peak_rss_mb": 391.39453125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=tiermap:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "tiermap",
+    "row": "gpt4o_mini",
+    "mu": 1.0,
+    "c": 303,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 224.55269996017523,
+   "status": "ok",
+   "wall_s": 197.99452630989254,
+   "peak_rss_mb": 393.23828125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=tiermap:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "tiermap",
+    "row": "gpt4o_mini",
+    "mu": 1.0,
+    "c": 304,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 224.55269996017523,
+   "status": "ok",
+   "wall_s": 215.15144773805514,
+   "peak_rss_mb": 394.5703125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=catM2:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "catM2",
+    "row": "catalog",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 215.9658831142971,
+   "status": "ok",
+   "wall_s": 303.7009133179672,
+   "peak_rss_mb": 394.96875,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=catM2:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "catM2",
+    "row": "catalog",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 215.9658831142971,
+   "status": "ok",
+   "wall_s": 247.34007386723533,
+   "peak_rss_mb": 391.3203125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=catM2:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "catM2",
+    "row": "catalog",
+    "mu": 1.0,
+    "c": 303,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 215.9658831142971,
+   "status": "ok",
+   "wall_s": 193.1811098237522,
+   "peak_rss_mb": 392.15625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=catM2:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "catM2",
+    "row": "catalog",
+    "mu": 1.0,
+    "c": 304,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 215.9658831142971,
+   "status": "ok",
+   "wall_s": 204.30701885465533,
+   "peak_rss_mb": 395.01953125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=kappaL05:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "kappaL05",
+    "row": "kappa_L",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 210.24133855037834,
+   "status": "ok",
+   "wall_s": 301.8913610531017,
+   "peak_rss_mb": 393.0390625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=kappaL05:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "kappaL05",
+    "row": "kappa_L",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 210.24133855037834,
+   "status": "ok",
+   "wall_s": 252.521929172799,
+   "peak_rss_mb": 392.4140625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=kappaL05:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "kappaL05",
+    "row": "kappa_L",
+    "mu": 1.0,
+    "c": 303,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 210.24133855037834,
+   "status": "ok",
+   "wall_s": 188.9757176991552,
+   "peak_rss_mb": 394.08203125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=kappaL05:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "kappaL05",
+    "row": "kappa_L",
+    "mu": 1.0,
+    "c": 304,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 210.24133855037834,
+   "status": "ok",
+   "wall_s": 205.83306230884045,
+   "peak_rss_mb": 394.0390625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=wcfull:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "wcfull",
+    "row": "wildchat",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 207.81274388689766,
+   "status": "ok",
+   "wall_s": 314.38255787314847,
+   "peak_rss_mb": 394.19921875,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=wcfull:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "wcfull",
+    "row": "wildchat",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 207.81274388689766,
+   "status": "ok",
+   "wall_s": 281.10071341414005,
+   "peak_rss_mb": 391.6171875,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=wcfull:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "wcfull",
+    "row": "wildchat",
+    "mu": 1.0,
+    "c": 303,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 207.81274388689766,
+   "status": "ok",
+   "wall_s": 205.60951751377434,
+   "peak_rss_mb": 391.19140625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=wcfull:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "wcfull",
+    "row": "wildchat",
+    "mu": 1.0,
+    "c": 304,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 207.81274388689766,
+   "status": "ok",
+   "wall_s": 253.65665820473805,
+   "peak_rss_mb": 392.17578125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=a5:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "a5",
+    "row": "catalog",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 184.8708,
+   "status": "ok",
+   "wall_s": 241.76111053209752,
+   "peak_rss_mb": 390.3046875,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=a5:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "a5",
+    "row": "catalog",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 184.8708,
+   "status": "ok",
+   "wall_s": 202.64531748183072,
+   "peak_rss_mb": 389.30078125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=a5:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "a5",
+    "row": "catalog",
+    "mu": 1.0,
+    "c": 303,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 184.8708,
+   "status": "ok",
+   "wall_s": 161.68259161431342,
+   "peak_rss_mb": 389.11328125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=a5:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "a5",
+    "row": "catalog",
+    "mu": 1.0,
+    "c": 304,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 184.8708,
+   "status": "ok",
+   "wall_s": 170.3870944720693,
+   "peak_rss_mb": 391.36328125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=tight025:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "tight025",
+    "row": "tightness",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 179.645,
+   "status": "ok",
+   "wall_s": 235.26436053402722,
+   "peak_rss_mb": 394.6640625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=tight025:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "tight025",
+    "row": "tightness",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 179.645,
+   "status": "ok",
+   "wall_s": 187.10739583382383,
+   "peak_rss_mb": 390.93359375,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=tight025:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "tight025",
+    "row": "tightness",
+    "mu": 1.0,
+    "c": 303,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 179.645,
+   "status": "ok",
+   "wall_s": 148.79315686877817,
+   "peak_rss_mb": 393.81640625,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=tight025:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "tight025",
+    "row": "tightness",
+    "mu": 1.0,
+    "c": 304,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 179.645,
+   "status": "ok",
+   "wall_s": 155.16682915808633,
+   "peak_rss_mb": 394.91796875,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=nlayers4:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "nlayers4",
+    "row": "n_layers",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 160.88882556750298,
+   "status": "ok",
+   "wall_s": 171.14392495295033,
+   "peak_rss_mb": 282.9453125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=nlayers4:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "nlayers4",
+    "row": "n_layers",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 160.88882556750298,
+   "status": "ok",
+   "wall_s": 148.52244105702266,
+   "peak_rss_mb": 278.36328125,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=nlayers4:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "nlayers4",
+    "row": "n_layers",
+    "mu": 1.0,
+    "c": 303,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 160.88882556750298,
+   "status": "ok",
+   "wall_s": 111.88916314719245,
+   "peak_rss_mb": 278.6796875,
+   "runs": 4
+  },
+  {
+   "id": "s1v2:sweep:pt=nlayers4:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "nlayers4",
+    "row": "n_layers",
+    "mu": 1.0,
+    "c": 304,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 1800
+   },
+   "est_s": 160.88882556750298,
+   "status": "ok",
+   "wall_s": 113.42603064188734,
+   "peak_rss_mb": 276.6640625,
+   "runs": 4
+  }
+ ],
+ "instance_hashes": {},
+ "parts": [
+  "sweep"
+ ],
+ "design": {
+  "reduced": false,
+  "weeks": [
+   301,
+   302,
+   303,
+   304
+  ],
+  "w0_weeks": [
+   301,
+   302
+  ],
+  "policy_seeds": [
+   0
+  ],
+  "horizon_min": 10080
+ },
+ "instance_hashes_from_outputs": {
+  "s1v2:sweep:pt=slow1:c=301": "1fd2e6ec9ed226a07e8921360f5ba6070bb68709d74e4831f497c1d6475b0e39",
+  "s1v2:sweep:pt=slow1:c=302": "40c9cca8c0026aa465bf02f21fce4aed384a7ea0b98f40da4a4a8b40e8854b72",
+  "s1v2:sweep:pt=slow1:c=303": "80ec869b8cffbad71014c62c67f14d4f9ea080591a5e32cd10377bde461c2e84",
+  "s1v2:sweep:pt=slow1:c=304": "459ad911c8946468afb885c3562a81733b32ebea7e4b99b527a83729e7f21f42",
+  "s1v2:sweep:pt=tight2:c=301": "a95c463701e318004756021ee72dab0871b9e972854aa0c397bc8d587672c8ab",
+  "s1v2:sweep:pt=tight2:c=302": "fb3f16d3515bf6a0246ca2294c329ec9138f4e8aa57bbf17e2063173a60ca038",
+  "s1v2:sweep:pt=tight2:c=303": "0ef38395eeb439cbcb633148a2e340153157142aa510dc326a0ed03924c36441",
+  "s1v2:sweep:pt=tight2:c=304": "3fb62f9a04238798d143c961ee3313bccc40eeb1bcf582de239d313f9a9146a9",
+  "s1v2:sweep:pt=nlayers16:c=301": "a3d466f5a04a492cc1246fa6c8b772355672e9f5236401825987b12ddf2d1e39",
+  "s1v2:sweep:pt=nlayers16:c=302": "b4d2365c89ab5639eaba9c87e790b02d7160206b72d6a22e316b23528645d875",
+  "s1v2:sweep:pt=nlayers16:c=303": "1161846802567f8dac7ecd79bc034e268c950ef1142bcef86624f68ceb7a4cf6",
+  "s1v2:sweep:pt=nlayers16:c=304": "42a97c58abc4fda27b364678d2abd5c501aed5cca09ad325b4bfea93ac87035d",
+  "s1v2:sweep:pt=tight1:c=301": "e65edc0b97445f5bf18d77ca07529a5c9b74c58bbc71a167777a694d3419ba95",
+  "s1v2:sweep:pt=tight1:c=302": "ae4afcd25d7632b2f4d1093e9231fc2c661a189b89ba9f0e4871cd0cf133aedb",
+  "s1v2:sweep:pt=tight1:c=303": "ceb6b6ca6a0fddcb0f60c7b06cc45f4fddb5aaae7011d07cfc0528837512a1a1",
+  "s1v2:sweep:pt=tight1:c=304": "f86f47f0d86b9ceefc70e0d0e0ce323daea19bdab0eadf06f11e9f72b26665e9",
+  "s1v2:sweep:pt=layer16:c=301": "8ad15ea3cce0c181402b6351a3859d2fc120938dcea1a656fe0021bb86dfc904",
+  "s1v2:sweep:pt=layer16:c=302": "c2e5a49bc09b4121d55b0dd272e5a0f84c624136344c2fea1de961055289df4a",
+  "s1v2:sweep:pt=layer16:c=303": "3ccab13e0987dd9b484e76fb0f673071ae240d597db8c9ae3cf33c9a5f84a58a",
+  "s1v2:sweep:pt=layer16:c=304": "c83fff830451aceaa7e5ca0e1c5542cd3fb2211d41da8a2149dc0fa7559e6857",
+  "s1v2:sweep:pt=catLg4:c=301": "2e9859db2792eae206b993ae89853c444c166818bd45119e67ff89e42cb81a0b",
+  "s1v2:sweep:pt=catLg4:c=302": "0d6a0f9aa383d19e00841582aa8a4c86f6c642c81d99da288830232502fd74cc",
+  "s1v2:sweep:pt=catLg4:c=303": "c22ba3b9cc3701a1b9ed8f689998a485052d7507704acdd3747413dd8bb7e641",
+  "s1v2:sweep:pt=catLg4:c=304": "7a558a000c2903c7675265bde4b2e6cd4d2a6b560b34add57fc4d50c5e7c9de8",
+  "s1v2:sweep:pt=xi1:c=301": "3f2b402cc75867b05593e4c8d4511b7f7f43189bf68b0a5250356021f84c7ecb",
+  "s1v2:sweep:pt=xi1:c=302": "23bfedbe817b7b793dd7273a04ed0c191a1a6516b881367c9c95d3c652b9db8f",
+  "s1v2:sweep:pt=xi1:c=303": "0c37000ee011789d38c0369c6dca3cbd8ef45adf1fd787ae3bacf80a298119fb",
+  "s1v2:sweep:pt=xi1:c=304": "c0915b758a7b89a8b9fbedc6de42dca661769cf00d94a2d9305e5fc4597479ba",
+  "s1v2:sweep:pt=kappaL2:c=301": "d6507e730e09d4bf811bdaf31875d66b108cfbbfe5cf1fabd113288755db95ba",
+  "s1v2:sweep:pt=kappaL2:c=302": "046b12115d5c00839159ad7667ec858c49692a6e277c51a56dc5bd5b4b5cd837",
+  "s1v2:sweep:pt=kappaL2:c=303": "0a8ff9f09c33e943ed126c1e379224464bbba212784926b097fe0330e84e349b",
+  "s1v2:sweep:pt=kappaL2:c=304": "1e3c404e1da40f8902682917dc8f501616c8826a5affa5fc6ba45bd94ac59ab5",
+  "s1v2:sweep:pt=L16:c=301": "164fe4dbfbf2bc4cbd2ba8aa76be624e21f8e15dfd0cf6a136b20ef836055552",
+  "s1v2:sweep:pt=L16:c=302": "2f7717200e021868c12722e33f78c0a3df202e301c7ba8a673f1a9ba9fb72479",
+  "s1v2:sweep:pt=L16:c=303": "5e4103cab0acab93a680dcabf33247cb17f48fc8ce5e7ee6ac676278fe438203",
+  "s1v2:sweep:pt=L16:c=304": "37f4fbc6d95f498ae71bb54505709c9483ea25a1455f325dfeddbe35567195a3",
+  "s1v2:sweep:pt=sS05:c=301": "72f5ccdf58e53e9611aa21b1c5277377ac3581c3980dc224f310a4d725070808",
+  "s1v2:sweep:pt=sS05:c=302": "da61cf86233a23ab5b543813c4fd82c5fc4244e7346f847082448d9789d94c97",
+  "s1v2:sweep:pt=sS05:c=303": "432082b15ae83d0bf323a1650add570855687de65a7f543364869615923571c0",
+  "s1v2:sweep:pt=sS05:c=304": "8455391e307c679db9294ee3945f075eef06904af6587c2f8ea90e31b320ebbf",
+  "s1v2:sweep:pt=lease50:c=301": "7ad4df349c6c2dc5078ab36a39e14e87c5005d7d7fa039d467abc12c337417b0",
+  "s1v2:sweep:pt=lease50:c=302": "0b28267d979c412095a8f9d4bbfd7af7b2da0cbeeb2498dfb3b3496ade4f554c",
+  "s1v2:sweep:pt=lease50:c=303": "e4e88e6fc002ec64f8fb52f9bf54ff01681c99bd4dd16c5edb598698569e3030",
+  "s1v2:sweep:pt=lease50:c=304": "9715b8b5f4befa7267ee2670a5f2371cdda9b49d6e3d0557dca644f94ce52f08",
+  "s1v2:sweep:pt=alpha06:c=301": "822c157fa90357b3f68d9e6ab85282819d4fd5ee120dae68c828815e69213846",
+  "s1v2:sweep:pt=alpha06:c=302": "454b11108b3bf5268b0e5f08e8c35da0ca48d47cab3784f212148dc77e00b8da",
+  "s1v2:sweep:pt=alpha06:c=303": "5ed03ed94587a9ce4e82d6b1a49495adf1ea1ee8254e19850dbc488f9af51527",
+  "s1v2:sweep:pt=alpha06:c=304": "e5b2092bee7a5560a7a334b98113bfa86bdd9f5463935094e3a45b99fed0bfdb",
+  "s1v2:sweep:pt=smooth60:c=301": "0bd005b967995c5d320d4e3ab76ec846e44858f7ebf4ed9c1295b9bb68291d4b",
+  "s1v2:sweep:pt=smooth60:c=302": "1fb83d9f0f6fea26d21a9dd7bece912cf59f3463b5c4b904d06c15c8dc6c37fb",
+  "s1v2:sweep:pt=smooth60:c=303": "390755ed11e0f8d0b109b0dd3393e922e4106215363eb7631ba2bf3d62af5ece",
+  "s1v2:sweep:pt=smooth60:c=304": "d7e8f615b791d3a8cc2dd7a4fc69aaee223ece9d6020bf13bca0db441f156781",
+  "s1v2:sweep:pt=scen_cold_wan_1gbps:c=301": "c04c4e551529d4cad5ba44f18ec07df6a453296aee7a6c6b2b6e26785f6196fa",
+  "s1v2:sweep:pt=scen_cold_wan_1gbps:c=302": "e6ee0825bcc1a8e34ff7464afff1f2a5cfdda01b58710ceeb1633cf39b90334e",
+  "s1v2:sweep:pt=scen_cold_wan_1gbps:c=303": "af7ca58d374acbc1276145c9c48cae1ad631d9b5f9813a13ab719071bd2c0cfe",
+  "s1v2:sweep:pt=scen_cold_wan_1gbps:c=304": "e529aca63fe63af7caf41b05cba36176ea360cc80d358f11fe7fd9bfe2e22acf",
+  "s1v2:sweep:pt=c0p50:c=301": "229eea3b3e53931742d4503ace616b7731e6e9e59b619dfb6cda1560d90bf0ec",
+  "s1v2:sweep:pt=c0p50:c=302": "28011cb2f759fbba1c3136a0f900e32680380195211d18bf993b5d33ff70dfeb",
+  "s1v2:sweep:pt=c0p50:c=303": "048f4ff61922144f4ef988dcea9d2a14964bef3ac824dd3006eb4cfdefe71b45",
+  "s1v2:sweep:pt=c0p50:c=304": "d24957c90ffe75eee07d94c15a1ae962f84cbddcc8108e671db9895aff740622",
+  "s1v2:sweep:pt=prothorizon:c=301": "4ff427456b438a9f53134f496d74ed5cfa9b914f5d94be3e15636c96225060d1",
+  "s1v2:sweep:pt=prothorizon:c=302": "0406aba031d992e6e47b3f5a266b952dd6a13671279645e852e54c1a4e995e7f",
+  "s1v2:sweep:pt=prothorizon:c=303": "6c5d94732935eefab3b70580a6cf52317b203014acd7996e76f45a9d6507750f",
+  "s1v2:sweep:pt=prothorizon:c=304": "f66ec70daef8a77f77295116c08673d28ba2b75b4ab8f91bfe7e81eab2f95e41",
+  "s1v2:sweep:pt=smooth5:c=301": "36371e7f89a059a06ab454db4b0dc498714c763fcff1c2e9249068b91b3eb99b",
+  "s1v2:sweep:pt=smooth5:c=302": "4ce8a560f610cf70522ca7ea93d445a1f2bcfce23785fb0d3dd7cdf75677171e",
+  "s1v2:sweep:pt=smooth5:c=303": "69c0bfcae74ec18c6d8b541a7b5254629471748130e5727ff6e1c2bd7aa393b3",
+  "s1v2:sweep:pt=smooth5:c=304": "0605be80cdba07f30d39edc328941cc8231b11c4df05e51c884d10b359902c90",
+  "s1v2:sweep:pt=default:c=301": "2b619e9c729caa92598f444d715a469866c5a5875f57eec7cb8b948f77d4bba6",
+  "s1v2:sweep:pt=default:c=302": "92901ac5e0531e3bd3f400764b3a6d74be057ce1061914706db9ef2f8ef35ef9",
+  "s1v2:sweep:pt=default:c=303": "7c3c40d0b00a781b8c6b80401d6deb54d8d7fd6653ea0c7dfc9fd93b6c3470c2",
+  "s1v2:sweep:pt=default:c=304": "5064e702339390148b4ffd45439bf54a5de20266d177ab4a1fd0e7c3499f58d2",
+  "s1v2:sweep:pt=alpha03:c=301": "b4afd73af0cd215cf97d7c589cf742361d7f9282a507588ea0392a423721ae99",
+  "s1v2:sweep:pt=alpha03:c=302": "c6d7c2ddfbeec75e9ce079a060058a504020a09f2dc1bf296c0627357964363c",
+  "s1v2:sweep:pt=alpha03:c=303": "9292a0f8ec27bb73b2eeeb66477898e5ab684f0e448eb4806b8cb45e85238517",
+  "s1v2:sweep:pt=alpha03:c=304": "a271736a88182da28c5854d77f6a8aec24c9bf8dc64d9652942514c08ee07fbc",
+  "s1v2:sweep:pt=alpha05:c=301": "4c05b6ccc9edc5d06377fbc886fc0ce487d896c51074bf88894e55e62b5e9c0d",
+  "s1v2:sweep:pt=alpha05:c=302": "67a5a831276af36b1951fe53bcb0c3a1e67c5a7308158e83d1d31ee6b510890b",
+  "s1v2:sweep:pt=alpha05:c=303": "3c1b79c73c5a05f13e6ec28a6e3f4f6bed04a1ec2805fc46148b4c967b05a1f4",
+  "s1v2:sweep:pt=alpha05:c=304": "fba58da267ae32ff11927527d383960f6d268742be269129dd842e4d64c98258",
+  "s1v2:sweep:pt=alphap06:c=301": "ed02c10dbe7a8589a3837659763a99a52522ab0e242aa0ebf425078fb5b585ba",
+  "s1v2:sweep:pt=alphap06:c=302": "3d45eecb10bd1d6a55b875cad4df3254f8f11e4c6a30a4c35cb4814f13838873",
+  "s1v2:sweep:pt=alphap06:c=303": "7e7674fe7cdfd7b7461ce4c68086bbddeb6c92079d164b71f46c8a4713b782ba",
+  "s1v2:sweep:pt=alphap06:c=304": "3f0e65e492a5369ab6cfe5b4ae823cdd17ee96e4a3997398b37fbecd9b92b51d",
+  "s1v2:sweep:pt=alphap10:c=301": "dd931536e49e42b31e33bf953cb8c07620ec82cbe08277ea0c3f76d2b45a4978",
+  "s1v2:sweep:pt=alphap10:c=302": "6b51fdf2e991575ee0dbcdda1a076e215a7b436bfc9f7e21c604348f0317ca45",
+  "s1v2:sweep:pt=alphap10:c=303": "927a5bc7c55e1cf2e6941a60229e852c551ace400d63a1faca0ee575aab50adf",
+  "s1v2:sweep:pt=alphap10:c=304": "ec37e7e4b201fd6cf82f7f11b3789d1751bd836faf442f38ac2b361ba256210c",
+  "s1v2:sweep:pt=kv05:c=301": "ea6e4b871c3ef07146e0786d12c02477d1e54f424738749d9e246a8237829b2c",
+  "s1v2:sweep:pt=kv05:c=302": "ce88b95a7a1839f3d0e205879d1e7de352bdc0f87a23296816826bb093b8487a",
+  "s1v2:sweep:pt=kv05:c=303": "2c3e24ca6cd46443964a312af1726d163cdb33ae8c67d9e92ddbfd4535917309",
+  "s1v2:sweep:pt=kv05:c=304": "42e8350b4038f7904d4b5e3dd2a6a13d2f87dd09662fa8842178137c120ffd64",
+  "s1v2:sweep:pt=kv10:c=301": "d04da5c95bad44a16ff78dfcbdb213bd0ba293908c48de5066c4c171d18f1d8e",
+  "s1v2:sweep:pt=kv10:c=302": "ccbe2b1db5fe4461c387e0c466854ff2eba1f0c85138c99948270625458325f8",
+  "s1v2:sweep:pt=kv10:c=303": "7f8a501f33408b7ab228966add8198a046bb291412d693ceb0be9748b9bda313",
+  "s1v2:sweep:pt=kv10:c=304": "ff8803087a10fd6732ff928edfc6e198986f6cae2ff5de39ab66a7e2d40902e4",
+  "s1v2:sweep:pt=scen_warm_peer_rdma:c=301": "828ed6b62576086987ac7f2e428b5443d87fdc72831733757f996327f68e2971",
+  "s1v2:sweep:pt=scen_warm_peer_rdma:c=302": "f8aa528f140275872ab0d8adea9a9fb73eff6f28510029cecd5bed1204c408a2",
+  "s1v2:sweep:pt=scen_warm_peer_rdma:c=303": "0840836f42c97941ce9ea6f898e2f75eeab14662776b69da1da000478c199839",
+  "s1v2:sweep:pt=scen_warm_peer_rdma:c=304": "f7f6b245904e3a30940608c756da76d62d3d0274c3ce944db517f66b7a1f1cf9",
+  "s1v2:sweep:pt=scen_ssd_optimized:c=301": "e8f86d8060c56d87036e27f701a59c1707596e363cd12361dceb6fb346803443",
+  "s1v2:sweep:pt=scen_ssd_optimized:c=302": "a297f0d9c7b375ae070685206ad5999cc7c62c9162c85098f316882fd0e76600",
+  "s1v2:sweep:pt=scen_ssd_optimized:c=303": "769b1ec2769bce3f3357487117fc0c70bff4ebd7d342fac84ed1d977011638c0",
+  "s1v2:sweep:pt=scen_ssd_optimized:c=304": "c1d48223637e66d50c94a471db75876510fb998b63441ca750a223eb77d646ef",
+  "s1v2:sweep:pt=scen_ssd_stock_safetensors:c=301": "d7eabbce89da2706dbc7399880c991dbf913686af47bdd568638976d65d39102",
+  "s1v2:sweep:pt=scen_ssd_stock_safetensors:c=302": "35a457832fb8a1ce7fc908d1d651065bc6249248fb05656675276c63ddc24d1d",
+  "s1v2:sweep:pt=scen_ssd_stock_safetensors:c=303": "1417abc59c678498d8f07206dafac7ba273aa036f7aa59e300a7b06526bec27b",
+  "s1v2:sweep:pt=scen_ssd_stock_safetensors:c=304": "99001c5ecf3ee708fa53c02e63e7d58be8ea099d1a07610fdcd4f7b43bb19b3b",
+  "s1v2:sweep:pt=scen_ssd_stock_pytorch:c=301": "585978ae5be1103a5f5ac5de7d6c9721208bcbaee813996ff3a17f134879ddf3",
+  "s1v2:sweep:pt=scen_ssd_stock_pytorch:c=302": "358c5638861dd3c3a078e2a9af3ebe4d753d48ae139485b55c09e55387326620",
+  "s1v2:sweep:pt=scen_ssd_stock_pytorch:c=303": "087698901fdc13d6e0c1fa61eb6229b6ff851a1c50ef5747478699bae0fcf2fb",
+  "s1v2:sweep:pt=scen_ssd_stock_pytorch:c=304": "bf3f115d64162f54bbfe66bd51f43b1f5760b9c3cc65e15adcb5b3129f0090d4",
+  "s1v2:sweep:pt=scen_a5_10GBps:c=301": "b27fa5f9aa630f6332df05c7fb16cc4fe7b489d9b783496e0876668280526c95",
+  "s1v2:sweep:pt=scen_a5_10GBps:c=302": "b5b4b7c20f74fe69cbe1999c4f86b3a4ade2295f3a3ec7a965876a4a73e21284",
+  "s1v2:sweep:pt=scen_a5_10GBps:c=303": "552a2ca66122b534a6a750708c8ca0320b6257cc2bb8b3d9f09ed0dbf9e27459",
+  "s1v2:sweep:pt=scen_a5_10GBps:c=304": "49b7c82f060112e000474d70a033889d98efbd8cf48d22890af3019606f71d0a",
+  "s1v2:sweep:pt=scen_a5_2GBps:c=301": "b558174ed53974a3ce61f23dac521bc47f674ddb17252ec7287b2b930d9b74ff",
+  "s1v2:sweep:pt=scen_a5_2GBps:c=302": "255a809654c8f37c4d44d08f88c6bda57badfa6f26601535c93a64f5204688e9",
+  "s1v2:sweep:pt=scen_a5_2GBps:c=303": "4376c86509f75c60b282e88badacd1d790a7d2d864119bad43ab909cd25c1a3e",
+  "s1v2:sweep:pt=scen_a5_2GBps:c=304": "0d75589cb713dfda35a1ab080b76ddaac22ce80d3e2155a934831b613b0d01d7",
+  "s1v2:sweep:pt=scen_cold_wan_10gbps:c=301": "c2d669f754f7ad50c27ff6c254e76b4fef37ece8903e9141389bb3d710a5ccc6",
+  "s1v2:sweep:pt=scen_cold_wan_10gbps:c=302": "bba6ccc0da53ea2d73dd4b6e462cfe29f4fdac7b17bf6e0b42f44a0025324cf0",
+  "s1v2:sweep:pt=scen_cold_wan_10gbps:c=303": "64417b79892c213501c11b34256f45fd8061e6110852b6bd973095df0f2b8f6d",
+  "s1v2:sweep:pt=scen_cold_wan_10gbps:c=304": "b0b870fe4b1c7695266670da841abf3af2cf163f949c7a7c1c4b3eb191db8702",
+  "s1v2:sweep:pt=phi05:c=301": "2455149f144eae6e343cff6cf423725367e5858a3c80b8f92d35eb867678fdee",
+  "s1v2:sweep:pt=phi05:c=302": "951f0556882dc07da06180e4c5cc17d149f2a8d0bfefe39320911afb92e3c286",
+  "s1v2:sweep:pt=phi05:c=303": "e5904b323d70529d800d3230880b8d0e0a18d901bb4549e4d8e361c2c9c74e6e",
+  "s1v2:sweep:pt=phi05:c=304": "16c9145eec6b84d58cc5c6937d827269112f7e79e42664716f084c87944203ba",
+  "s1v2:sweep:pt=prot1h:c=301": "ca32cf33c684142d8fe752b74a98e18f240d7f9d2e44a25a5a6091d6eea4ef65",
+  "s1v2:sweep:pt=prot1h:c=302": "c662331df4fc2fef4a3cd38d662386be8c52bc568bc1fb459458c78b38a14f0c",
+  "s1v2:sweep:pt=prot1h:c=303": "b43af04d953fcbb694fea3a98bfd24d4334e122ff1c1436ecae49879042ce484",
+  "s1v2:sweep:pt=prot1h:c=304": "f04957bfd16dcc1fed43e45bf44b8ae7181a7883690dfc6a7fbdaaed32e32bb6",
+  "s1v2:sweep:pt=prot1d:c=301": "2f6e98c56e2c741e751a89ebe5413eae7358a15b694dcaba851051052fd2d1e4",
+  "s1v2:sweep:pt=prot1d:c=302": "b697fa4e1cf2dbdf9c861293a2bf6fce2e14cefe12d1ced81c00d10ae5229b5c",
+  "s1v2:sweep:pt=prot1d:c=303": "34a86fb581caa8a27ccb5b8829b4f50fa97db4a89c0b1f7f95bd11fbe3ae1943",
+  "s1v2:sweep:pt=prot1d:c=304": "3496369b0b288e6b3529419c3a73c7ffb3b9f8016aa1024eb274a8dd5a563858",
+  "s1v2:sweep:pt=delta0:c=301": "1bb4c15a74e139f2993c1cf31ab2b3240bfa0533e34fce211ac111aed4bdc439",
+  "s1v2:sweep:pt=delta0:c=302": "ad30446d521a70ebe5594d9f60d696dd9fadf0415589c4001214fbb413c7376e",
+  "s1v2:sweep:pt=delta0:c=303": "2fd7b1b1af99f658ec65b4140db6ddda21dd25388e4cbdb1eb28091284021c66",
+  "s1v2:sweep:pt=delta0:c=304": "b94bf419088545433c412cb7551bdb3c1a5a17eb94a58cdd8d0c0daaf596cb7e",
+  "s1v2:sweep:pt=delta02:c=301": "757256b0323f84e6f6d6f3084e028ebed9c9ee4e55f31517849a49955979e518",
+  "s1v2:sweep:pt=delta02:c=302": "983d5f807322fa9486b2e13aed322c674bb4e8b07be7cc4ca940fa16db00a51c",
+  "s1v2:sweep:pt=delta02:c=303": "18446a63a60b11d15e4ad1024941c6ea1cb935bd52073a49b7e7950b3facdc59",
+  "s1v2:sweep:pt=delta02:c=304": "5aa1341f521587060e19d1b950d4ecb1b32376410c6ff99ae760ea24f0c3806b",
+  "s1v2:sweep:pt=strict:c=301": "f13277e84d9036ae8f655669fe58ab841f3ef2babed6a96771a6563331901ced",
+  "s1v2:sweep:pt=strict:c=302": "0eb156c1db2f7fddd2ac385d147d2394f36f42ad824496302eb0aca32ad4e3c0",
+  "s1v2:sweep:pt=strict:c=303": "00bbb1191f5e32999bbfbc67558ff4217a6603eb6ce5cf8418feef8a6eebe1eb",
+  "s1v2:sweep:pt=strict:c=304": "b312788c06426d25401a4d052af139254262bfe72bd039fdfb014c4f50759e9f",
+  "s1v2:sweep:pt=slotier:c=301": "43b159b9932a24cf83f8bbca569b7fb2e1de8d9b0e22897a63f43a7350347239",
+  "s1v2:sweep:pt=slotier:c=302": "09dca05331ac07ab32add8a32d751753ab5691103a7b60fb041bff31c88d8615",
+  "s1v2:sweep:pt=slotier:c=303": "71e7f93ca1867a355cf0ae6eb44a13ac0f4aa8ae2d3b32afa018d36a9b8b52ff",
+  "s1v2:sweep:pt=slotier:c=304": "28422fd5f76077ca98260c14937ab8309b3d5c8e91fce5c19090fed4fe2134b5",
+  "s1v2:sweep:pt=fee4:c=301": "5625e52900235ac307ecab8ba2fe78696cde67a7febcf7cff43380b77f96ebc6",
+  "s1v2:sweep:pt=fee4:c=302": "785addd66ac0c3730275e1381473c270de4d64d656e72c652c2602e5d20172a6",
+  "s1v2:sweep:pt=fee4:c=303": "c9499a281d979bf0f3b102a0c74f985962c354241a98c222eb0916f46b0d3870",
+  "s1v2:sweep:pt=fee4:c=304": "4aa89b1b6ca9e05ccebf87752a0fdf4bfde73103d140894cf05587a0b69f289b",
+  "s1v2:sweep:pt=mu0.2:c=301": "d4de3654bb99ab4bf07438d90d6263332b560ac7fb59551c943d3be85e8b608f",
+  "s1v2:sweep:pt=mu0.2:c=302": "9065c12698bd75cef8e7b2ceb7030bd36616ac7b44149d05e84d1fbefdd332d5",
+  "s1v2:sweep:pt=mu0.2:c=303": "e4e2e5663d3e3271d894afdb5cb38c57dc8ec7f429195cfeae6b11c42892aa95",
+  "s1v2:sweep:pt=mu0.2:c=304": "cbc4674a32d27d7379d4337cef7a7b0a5f7e09376c95ad1db899d0d36a8128ed",
+  "s1v2:sweep:pt=mu0.5:c=301": "2addbfcd6cbecc75e026f4e6583f6a56825e004a3b747a54d5682ab79bf71d23",
+  "s1v2:sweep:pt=mu0.5:c=302": "5625c0ea10a7ad913167e94701df242dcbaf339ae16dc8500bfaf92f5107ae59",
+  "s1v2:sweep:pt=mu0.5:c=303": "0c3667c297eaea4fc9791197ae2d31797047856834f871225ad1ea8afe742bc0",
+  "s1v2:sweep:pt=mu0.5:c=304": "c9f5d52284078479e2ba5f3d38aafebb36f35d30f267e313fc3c179b28e0c7b3",
+  "s1v2:sweep:pt=mu2:c=301": "a29096f3eea36e2f948df20b25dc3bc34cbea06db6508e6178a83e0e7535ecaa",
+  "s1v2:sweep:pt=mu2:c=302": "00e3d9724866603e960ef95eade36d1f540d40e3b40971ea3f387423a4f9f160",
+  "s1v2:sweep:pt=mu2:c=303": "1f33fde20cb75c5b69c0385eb02c42a66de198452b0df0b145b1c9038c27780c",
+  "s1v2:sweep:pt=mu2:c=304": "e698931def537357512d3cb380984bdd0ba9de1dc182c5d7b93ce3b830516c77",
+  "s1v2:sweep:pt=kappaM05:c=301": "3a437100810e1aef40b45b487f74f7db80df5ca744aebebd6ff8e76dbd10b63c",
+  "s1v2:sweep:pt=kappaM05:c=302": "e5b615e18138feb42a06ad0d23d2f1aa1211d057183e9c2bbe9d84864a1d053a",
+  "s1v2:sweep:pt=kappaM05:c=303": "9668a4477451c009c1fe373c8f48a9887abb4d81979400a4ff9cda4801aceb5e",
+  "s1v2:sweep:pt=kappaM05:c=304": "ef236d3602a3c3c703bb07924a8894ae730f0960303a756c6ddb2aefc540fe42",
+  "s1v2:sweep:pt=kappaM2:c=301": "43ce6990c95d70dd511ee52f6040f0d159e55d40422d4b2d274c756683e35b4e",
+  "s1v2:sweep:pt=kappaM2:c=302": "f844e41a6e59f8b27e1c2d26ae424c3872dd033c79e75bda573b6893b6d6ffb0",
+  "s1v2:sweep:pt=kappaM2:c=303": "5445e8d68651160cdaee587c761763d46d7a969637da1d0939d1840451297651",
+  "s1v2:sweep:pt=kappaM2:c=304": "bf5ecf8705981ea791bd32611eef2adf430d6220a3c6b7cc8a78fc6515389ade",
+  "s1v2:sweep:pt=fee8:c=301": "2768586347c4d6513c37fbd0856d7bd3140b51231f1dae22882a0ce2c1c664fa",
+  "s1v2:sweep:pt=fee8:c=302": "40f4a019825e904a9caf1cb962b130ceaaeb9f31199327d65d347de6a8e43dbb",
+  "s1v2:sweep:pt=fee8:c=303": "50093a01bbdf0dca97c5ed3b41631a4e952e8ba77ba5e9c9af11e594f7b20bbc",
+  "s1v2:sweep:pt=fee8:c=304": "2cd59bce9b74baeb1fd04e9d2dac26f81fb5a886056607cc8d3deedbb09e4ecf",
+  "s1v2:sweep:pt=fee16:c=301": "dd6cfef53b7c2b774ba9c8a44d2fae12eda0363283896a931bbb361fe2601117",
+  "s1v2:sweep:pt=fee16:c=302": "fa789236c674cd1c25db694916f8a594a9c83e9021bdaa7f6bf3009a3c28b3d0",
+  "s1v2:sweep:pt=fee16:c=303": "c3402005595bfadc7ecacdcb1f42488e59d02563f39c3444697db0df45557126",
+  "s1v2:sweep:pt=fee16:c=304": "aba5ce5cf7c49731ceca9ce6d049699823211f06b7eea499fee0792ae44c7683",
+  "s1v2:sweep:pt=c0p90:c=301": "c50621328c059e277a0484b554bbdc50037a80b187705aa2afdb02ef96116bc5",
+  "s1v2:sweep:pt=c0p90:c=302": "dba687a483e491d545bfa8d45906ea739633a975913718a8cc25478ac75e2d1a",
+  "s1v2:sweep:pt=c0p90:c=303": "bcb0d7f889d5a8cfdde347e5ae8de6e00138b63ad4a123dc9cd3f38d624e4130",
+  "s1v2:sweep:pt=c0p90:c=304": "cf704f63ea7ad6f7912e7f085b77c841386e0ba6611bf47eef7c2398c191c721",
+  "s1v2:sweep:pt=lease10:c=301": "203751db431cd7b3391096c0fe7bd3184fc01555e684a813525b5b7d2bc5d410",
+  "s1v2:sweep:pt=lease10:c=302": "72f6631f74f4721a6b0c8f6de7c078b6a5ed0994a6b45491b21b3bca8674916e",
+  "s1v2:sweep:pt=lease10:c=303": "3c24b58447738891d1b4ddd1ec1ddf14e0482d0afe53235974ed71436223182e",
+  "s1v2:sweep:pt=lease10:c=304": "722fdc5efcc7101d4c98be028a5b2e15992695d39896967f7a5c5dfdbc1425ab",
+  "s1v2:sweep:pt=alpha02:c=301": "40ca5f3ae1334e34464ee684ff02f908a4f2b28fbd307ad41d4b22f0232cef9a",
+  "s1v2:sweep:pt=alpha02:c=302": "662950fbb3b3e6420d42a93fe15f6bfe91c2b93ceb15b4ac80e5f1001c0b7877",
+  "s1v2:sweep:pt=alpha02:c=303": "c204cc301189f5ef487b154cb03e36c1615df192a32c20a5edffa9feccc7d0d8",
+  "s1v2:sweep:pt=alpha02:c=304": "ceba7352f8551a54815f7cfa5f2308f9c849848a8ecfd67ca87a79780b9e46d6",
+  "s1v2:sweep:pt=sS0:c=301": "245afdb5aad2b7dda6515935a4c29d320bd5a7b5d7f8b6c95d02cb1dcd2d1488",
+  "s1v2:sweep:pt=sS0:c=302": "4300c25753a8b128dccd8acebdc2d6a5d3b99eb7ca4c29fd1938414ba0756ccf",
+  "s1v2:sweep:pt=sS0:c=303": "7790b9c62f5ed553f446a01112b0e5dacbdb6dc55f6c81e0802cffc7e694f25c",
+  "s1v2:sweep:pt=sS0:c=304": "aef1b4d889a404eeb24d5359586168b0f7215ccf3f8847fba8853b8ca6c395f5",
+  "s1v2:sweep:pt=tiermap:c=301": "2d3526fb8b451029fcdad0813a03989a7e82275adc867066b9f90bf3c501018e",
+  "s1v2:sweep:pt=tiermap:c=302": "9d80e4375bf444fb1a31bfbe444ec67bb51105a607a573ff2b5a0d1316656fce",
+  "s1v2:sweep:pt=tiermap:c=303": "beb0947fc5a55f0bbc02a108e4674729884ae159a6461e629352f8b077962b22",
+  "s1v2:sweep:pt=tiermap:c=304": "e9e04d918c9ae61b18449ca76acda8e3d938662820e40a3b3b2103379b8bcb4b",
+  "s1v2:sweep:pt=catM2:c=301": "ac632f406ad9e6e8102b72d384c2239e8008e562759967ec5163589494f291aa",
+  "s1v2:sweep:pt=catM2:c=302": "963cb6bc2263487afc7d30b55e1dff7fe43aec878c3e86f3b1cdff7c06eb5b62",
+  "s1v2:sweep:pt=catM2:c=303": "78e261ee8031f62c6ba47590f1487089a690b8eedbe18ba12be364fb4d2571e6",
+  "s1v2:sweep:pt=catM2:c=304": "25c10d8049621d5546f365bdd9125d273583f72e03e7524cb7fe2ae0ab616079",
+  "s1v2:sweep:pt=kappaL05:c=301": "ff4edb89d814039192ea284a9eed2ba731c450e3ce5a7b76230d1936120c3876",
+  "s1v2:sweep:pt=kappaL05:c=302": "f73981552149e2d230fb239c60f8d9145da0946c2238c0e4425af5d1389eae16",
+  "s1v2:sweep:pt=kappaL05:c=303": "61f5eb5cade29a85e4896b61aa106f4f82ad13fe41291f7151350b0da6d4c0b3",
+  "s1v2:sweep:pt=kappaL05:c=304": "450027d37a29e6ecbcedd94570eabec144a5881ff2c12032a58800b1b024e170",
+  "s1v2:sweep:pt=wcfull:c=301": "e3e3c64543e861d931b7dcf07fb8b5f06eb909c44346ae735bd5b2163d7148bc",
+  "s1v2:sweep:pt=wcfull:c=302": "654b966a6b0bdfbabfac50acf75e487d9f77cb7af40b4c5bf4f85ae590c28320",
+  "s1v2:sweep:pt=wcfull:c=303": "c0d0beab164379d07ababeb4253441e7cae9e5ad355d12bfa2a5c6f289d93dc0",
+  "s1v2:sweep:pt=wcfull:c=304": "93f74cacb9221a6c88f44c7122f9220beb868c0566c21a7a7bcb4002caffaaa1",
+  "s1v2:sweep:pt=a5:c=301": "0146d22d9d57737b2c80c69b095fa704df451be817f5406b2ce436e4f35d061c",
+  "s1v2:sweep:pt=a5:c=302": "e61c826ac3d7c8e8de3e4beb2fa9aeb77f21c6bcca9142434fe488a556bd0226",
+  "s1v2:sweep:pt=a5:c=303": "4a51ad626e125e55e04549bf3d656ce6c48b874ed6783cab703171bd8f6e26c4",
+  "s1v2:sweep:pt=a5:c=304": "64e972082bf52fff543943b20fe16dc986a1674dcd24da2fee4f84da699c67ed",
+  "s1v2:sweep:pt=tight025:c=301": "72e5d89e41d4ad262c8e519f43b206ef43ae48d8ce2344fbe8746d53b102c2ff",
+  "s1v2:sweep:pt=tight025:c=302": "37a0ee2f9f8b7635e2f877d0c5095d80964c685cdaffb8db5ac0c9f3e0b76e94",
+  "s1v2:sweep:pt=tight025:c=303": "008cf981fd480a24b3fa9eafa2145242347f7ab3cc59c87e67d8b1004b083f60",
+  "s1v2:sweep:pt=tight025:c=304": "82ecab39e61c09df84e1905c2d9709fb2d1a20a51c83360977a1193fbfd727e3",
+  "s1v2:sweep:pt=nlayers4:c=301": "5f420dd5aca319896caddefab54160c0d8dbd2bbafff6a8dbb7c4d3abeadc535",
+  "s1v2:sweep:pt=nlayers4:c=302": "325f9970f34e10f404acec6171acebaa1a57516a8aea7dffc925cb9e91594f45",
+  "s1v2:sweep:pt=nlayers4:c=303": "fdf14227e3a050a5d6c28da76f73e7569a607a40f8e0a952a81bbc167bfc5d5d",
+  "s1v2:sweep:pt=nlayers4:c=304": "035ae9d772d30e801a2c511c3e455e94aa931999d9f40b24ef1079271206b173"
+ },
+ "gate_record": {
+  "head": "44d1b4e42b5be44503039b1b5d6bfba8e32930ff",
+  "registration": "design/ms7/registration.md",
+  "registration_at_head": true,
+  "registration_sha256": "163ff03578ced770f5ded225c058281e32093b613cf2aed29b6e40b6ef094ec8",
+  "analysis": "code/sim/sublet/experiments/ms7_sens_analysis.py",
+  "analysis_sha256_registered": "6d9772304fe30b20d0d500c2c56b867ccecc97dc99e672c63bdfcd66912e4a2d",
+  "analysis_sha256_head": "6d9772304fe30b20d0d500c2c56b867ccecc97dc99e672c63bdfcd66912e4a2d",
+  "analysis_sha256_disk": "6d9772304fe30b20d0d500c2c56b867ccecc97dc99e672c63bdfcd66912e4a2d",
+  "dirty_paths": []
+ },
+ "sources_sha256": {
+  "code/sim/sublet/experiments/s1v2.py": "37a88cd96d534f74e2f68e747dc30c21036614a7d787aa7e22a271ee7bdedc23",
+  "code/sim/sublet/experiments/s1.py": "8afb76a9aa6dd1fe57477c829fccfaad72079268ea825b1649c0a4389d7cd802",
+  "code/sim/sublet/experiments/ms5b_common.py": "6ae2f94e94f322f271addcdb3dfc16fffca696a376ad37fca499ba7c0d3ebe84",
+  "code/sim/sublet/experiments/e7h.py": "e6ea63450ad36e45a32b35442c278bf72cb3bf879ae1033031fc76b52403a078",
+  "code/sim/sublet/experiments/ms7_sens_analysis.py": "6d9772304fe30b20d0d500c2c56b867ccecc97dc99e672c63bdfcd66912e4a2d",
+  "code/sim/out/sublet_v2/main/summary.json": "83389fc94372dd69b3b1402e87be93b7506da4ac398d100cbbeb535de219142c",
+  "code/sim/out/sublet_v2/main/manifest.json": "3940219d259f5a294b6ed81b614f3fd6bcf5bd02e4fab632f2c78c0765f2faef",
+  "code/sim/out/sublet_v2/second/summary.json": "8349e8803a8f43c8d1d5415615503df20bc0e6b291d37265821bf8ff43ff65de"
+ }
+}

@@ -1,0 +1,63 @@
+{
+ "job": "e9:run:pt=e7r_V4_SML:pol=Sublet:c=1",
+ "exp": "e9",
+ "kind": "alone",
+ "params": {
+  "kind": "run",
+  "point": "e7r_V4_SML",
+  "base": "e7r",
+  "V": 4,
+  "llm_set": "SML",
+  "tag": "Sublet",
+  "c": 1,
+  "policy_seed": 0,
+  "horizon_min": 120,
+  "limit_s": 900
+ },
+ "status": "ok",
+ "started": "2026-10-29T17:20:22",
+ "pid": 3048866,
+ "argv": [
+  "/work/sublet/code/sim/sublet/experiments/e9.py",
+  "--job",
+  "e9:run:pt=e7r_V4_SML:pol=Sublet:c=1",
+  "--out",
+  "/work/ms5build/u28/reduced/out/e9"
+ ],
+ "slots": [
+  "slot0",
+  "slot1",
+  "slot2",
+  "slot3"
+ ],
+ "milp_limit_s": null,
+ "git_revision": "c82fa05f835c1b4896ddf639d6edb81495a1abee",
+ "versions": {
+  "python": "3.12.3",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "sublet": "0.1.0"
+ },
+ "runs": 1,
+ "errors": [],
+ "n_errors": 0,
+ "outputs": [
+  "runs/e9__run__pt__e7r_V4_SML__pol__Sublet__c__1.json"
+ ],
+ "result": {
+  "point": "e7r_V4_SML",
+  "tag": "Sublet",
+  "c": 1,
+  "instance_hash": "0bbcfe21faefee37a5c6f48492c7ff2905ec69d11856377220ebb4a7520f854a",
+  "slow_loop_s_per_h": 1.0349431113572791,
+  "fast_loop_s_per_h": 0.0315771596506238,
+  "setup_s": 0.2834805513266474,
+  "cost_over_bl0a": 1.009238121615636,
+  "t_a": 12,
+  "steps_ok": true
+ },
+ "wall_s": 2.785106817027554,
+ "peak_rss_kb": 141268,
+ "peak_rss_mb": 137.95703125,
+ "finished": "2026-10-29T17:20:24"
+}

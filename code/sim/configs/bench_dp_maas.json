@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "name": "bench_dp_maas",
+  "seed": 11,
+  "time": {
+    "slow_slot_min": 5,
+    "fast_slot_min": 1,
+    "horizon_min": 1440,
+    "start_minute_of_week": "random",
+    "clock_alignment": "random_offset"
+  },
+  "billing": "prepaid_D",
+  "prices": {
+    "a0_usd_per_gpu_h": "a11",
+    "q_gpu_usd_per_gpu_h": "a11",
+    "a_protected_usd_per_gpu_h": "a11",
+    "revocable_price": "ir",
+    "buffer_quantile": "p99"
+  },
+  "contracts": [
+    {
+      "id": "s5_tau5_H2",
+      "tau_min": 5,
+      "H_min": 2
+    },
+    {
+      "id": "s5_tau5_H60",
+      "tau_min": 5,
+      "H_min": 60
+    },
+    {
+      "id": "protected",
+      "tau_min": null,
+      "H_min": 0,
+      "prepaid_min": 5
+    }
+  ],
+  "llms": [
+    {
+      "id": "M",
+      "catalog": "maas_a10",
+      "entry": "M",
+      "kappa_mult": 1.0
+    }
+  ],
+  "lenders": [
+    {
+      "id": "a2:c05",
+      "kind": "trace",
+      "region": "europe",
+      "group": "a2:c05",
+      "n_layers": 1,
+      "layer_gpus": 8,
+      "lease_size_quantile": 25,
+      "offset": "random",
+      "load_scenario": "auto",
+      "menu": [
+        "s5_tau5_H2",
+        "s5_tau5_H60"
+      ]
+    },
+    {
+      "id": "prot:europe",
+      "kind": "protected",
+      "region": "europe",
+      "group": "prot:europe",
+      "menu": [
+        "protected"
+      ],
+      "capacity_gpus": null,
+      "load_scenario": "a5_2GBps"
+    }
+  ],
+  "lender_model": {
+    "schedule": "trace",
+    "information": "I1",
+    "on_unavailable": "sell",
+    "violations": "absorb",
+    "merge_identical_layers": false,
+    "params": {}
+  },
+  "regions": {
+    "list": [
+      "europe"
+    ],
+    "adjacency": [],
+    "default_slo_class": "strict",
+    "relaxed_routing_cost_over_q": 0.05
+  },
+  "borrowers": {
+    "model": "explicit",
+    "clients": [
+      {
+        "llm": "M",
+        "region": "europe",
+        "slo_class": "strict",
+        "borrowers": [
+          "b0"
+        ],
+        "demand": {
+          "kind": "onoff",
+          "on_mean_min": 60,
+          "off_mean_min": 30,
+          "level": 1.0,
+          "seed": 11
+        }
+      }
+    ]
+  },
+  "costs": {
+    "phi": 1.0,
+    "beta_jl_usd": 0.0
+  },
+  "stranding": {
+    "mu_over_beta_tilde": 1.0,
+    "kv_share": 0.0,
+    "mu_fl_over_beta_tilde": 0.0,
+    "pi_over_q": 0.0,
+    "W_f_min": 0,
+    "beta_tilde_ref": {
+      "price": "a0",
+      "load_time": "median_site"
+    }
+  },
+  "units": {
+    "per_replica": 8
+  },
+  "engine": {
+    "auto_drain": false,
+    "record_routing": false,
+    "check_invariants": false
+  },
+  "bench": {
+    "grid": "fast",
+    "time_limit_s": 300,
+    "mip_rel_gap": 0.0001,
+    "max_vars": 200000
+  }
+}

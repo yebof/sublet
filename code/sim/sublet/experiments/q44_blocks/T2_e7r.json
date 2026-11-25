@@ -1,0 +1,42 @@
+{
+ "block": "T2_e7r",
+ "tier": 2,
+ "grid": "1min",
+ "lb": null,
+ "description": "I5 (bench_e7r.json, 175 sites) seeds 1-2 x L-tr, L-eg; costs only",
+ "policies": [
+  "BL0a",
+  "BL1",
+  "BL2",
+  "BL5",
+  "A6",
+  "A2",
+  "PS",
+  "PS-G",
+  "PS-G1",
+  "BL1-G",
+  "BL5-G"
+ ],
+ "policy_seeds": [
+  0,
+  1,
+  2
+ ],
+ "modes": [
+  "L-tr",
+  "L-eg"
+ ],
+ "instances": [
+  {
+   "id": "I5",
+   "family": "I5",
+   "config": "bench_e7r.json",
+   "overrides": {},
+   "config_seeds": [
+    1,
+    2
+   ],
+   "tuning_seeds": []
+  }
+ ]
+}

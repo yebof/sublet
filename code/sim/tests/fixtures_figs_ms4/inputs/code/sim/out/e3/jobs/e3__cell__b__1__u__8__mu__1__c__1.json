@@ -1,0 +1,57 @@
+{
+ "job": "e3:cell:b=1:u=8:mu=1:c=1",
+ "exp": "e3",
+ "kind": "pool",
+ "params": {
+  "b": 1,
+  "u": 8,
+  "mu": 1.0,
+  "c": 1,
+  "policy_seeds": [
+   0
+  ],
+  "horizon": [
+   156,
+   24
+  ]
+ },
+ "status": "ok",
+ "started": "2026-10-26T14:02:25",
+ "pid": 934448,
+ "argv": [
+  "/work/ms4wt/u25/code/sim/sublet/experiments/e3.py",
+  "--job",
+  "e3:cell:b=1:u=8:mu=1:c=1",
+  "--out",
+  "/work/ms4u/u25scratch/fixture_roots/e3/out/e3"
+ ],
+ "slots": [
+  "slot0"
+ ],
+ "milp_limit_s": null,
+ "git_revision": "939847ca5925ce069d6df9089fe3a3d1d3207bb7",
+ "versions": {
+  "python": "3.12.3",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "sublet": "0.1.0"
+ },
+ "runs": 6,
+ "errors": [],
+ "n_errors": 0,
+ "outputs": [
+  "lb/e3__lp__b__1__u__8__mu__1__c__1__part__shared.json",
+  "lb/e3__lp__b__1__u__8__mu__1__c__1__part__b00.json",
+  "runs/cells/e3__cell__b__1__u__8__mu__1__c__1.json"
+ ],
+ "result": {
+  "lps": 2,
+  "instance_hash": "2c688559ec00973e02e5bcd061fb520df0287f36b3c877c838a7407b4562c93b",
+  "n_sub_instances": 1,
+  "schedule_mismatch": 0
+ },
+ "wall_s": 1.5981135279871523,
+ "peak_rss_kb": 141188,
+ "peak_rss_mb": 137.87890625,
+ "finished": "2026-10-26T14:02:27"
+}

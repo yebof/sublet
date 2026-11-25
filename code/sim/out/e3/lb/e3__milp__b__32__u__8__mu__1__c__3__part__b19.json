@@ -1,0 +1,42 @@
+{
+ "job": "e3:milp:b=32:u=8:mu=1:c=3:part=b19",
+ "kind": "milp",
+ "part": "b19",
+ "borrower": "b19",
+ "b": 32,
+ "u": 8,
+ "mu": 1.0,
+ "c": 3,
+ "cell_job": "e3:cell:b=32:u=8:mu=1:c=3",
+ "instance_hash": "b970bda08cd410c297dad7ac3ad789af5c34c9a70fa3712a1ccf50b6e1343062",
+ "schedule_hash": "571a4463afa5911a70d5f1ed75a1c3ad001129e736ab8539692400d027b5bb01",
+ "method": "milp",
+ "benchmark": "omega",
+ "grid": "slow",
+ "status": 0,
+ "status_msg": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+ "objective": 28.342738275250863,
+ "dual_bound": 28.342738275250863,
+ "gap": 0.0,
+ "size": {
+  "n_vars": 16902,
+  "n_int": 12026,
+  "n_rows": 14396,
+  "nnz": 89115
+ },
+ "build_s": 0.034136290196329355,
+ "solve_s": 1.349688600981608,
+ "peak_rss_mb": 224.57421875,
+ "git_revision": "939847ca5925ce069d6df9089fe3a3d1d3207bb7",
+ "time_limit_s": 300.0,
+ "mip_rel_gap": 0.0001,
+ "estimate": {
+  "n_vars": 16902,
+  "n_int": 12026,
+  "n_rows": 14396,
+  "nnz": 89115,
+  "est_mb_milp": 640.6105,
+  "est_mb_lp": 178.1221
+ },
+ "wall_s": 1.9654117489699274
+}

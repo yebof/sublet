@@ -1,0 +1,965 @@
+{
+ "meta": {
+  "exp": "e7",
+  "git_revision": "939847ca5925ce069d6df9089fe3a3d1d3207bb7",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "scipy": "1.17.1",
+   "sublet": "0.1.0"
+  },
+  "written": "2026-10-26T14:49:24",
+  "script": "code/sim/sublet/experiments/e7.py",
+  "script_sha256": "8c51a9defa4a8bc821e1bf2dae79e759830ea9c857453c204d2ffd06bd96198d"
+ },
+ "jobs": [
+  {
+   "id": "e7:allow:b0=auto:mode=L-tr",
+   "kind": "pool",
+   "params": {
+    "part": "allow",
+    "kind": "allow",
+    "tag": "Sublet",
+    "b0": "auto",
+    "mode": "L-tr",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 6.669047619047619,
+   "status": "ok",
+   "wall_s": 10.271744702011347,
+   "peak_rss_mb": 140.2578125,
+   "runs": 1
+  },
+  {
+   "id": "e7:allow:b0=auto:mode=L-eg",
+   "kind": "pool",
+   "params": {
+    "part": "allow",
+    "kind": "allow",
+    "tag": "Sublet",
+    "b0": "auto",
+    "mode": "L-eg",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 6.669047619047619,
+   "status": "ok",
+   "wall_s": 10.39295812183991,
+   "peak_rss_mb": 140.37890625,
+   "runs": 1
+  },
+  {
+   "id": "e7:allow:b0=auto:mode=L-ss",
+   "kind": "pool",
+   "params": {
+    "part": "allow",
+    "kind": "allow",
+    "tag": "Sublet",
+    "b0": "auto",
+    "mode": "L-ss",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 6.669047619047619,
+   "status": "ok",
+   "wall_s": 10.87048266385682,
+   "peak_rss_mb": 140.23046875,
+   "runs": 1
+  },
+  {
+   "id": "e7:allow:b0=auto:mode=L-iid-0.05",
+   "kind": "pool",
+   "params": {
+    "part": "allow",
+    "kind": "allow",
+    "tag": "Sublet",
+    "b0": "auto",
+    "mode": "L-iid-0.05",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 6.669047619047619,
+   "status": "ok",
+   "wall_s": 10.334464946994558,
+   "peak_rss_mb": 140.76953125,
+   "runs": 1
+  },
+  {
+   "id": "e7:allow:b0=auto:mode=L-iid-0.2",
+   "kind": "pool",
+   "params": {
+    "part": "allow",
+    "kind": "allow",
+    "tag": "Sublet",
+    "b0": "auto",
+    "mode": "L-iid-0.2",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 6.669047619047619,
+   "status": "ok",
+   "wall_s": 10.177200807025656,
+   "peak_rss_mb": 140.2734375,
+   "runs": 1
+  },
+  {
+   "id": "e7:allow:b0=auto:mode=L-co",
+   "kind": "pool",
+   "params": {
+    "part": "allow",
+    "kind": "allow",
+    "tag": "Sublet",
+    "b0": "auto",
+    "mode": "L-co",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 6.669047619047619,
+   "status": "ok",
+   "wall_s": 10.25789689598605,
+   "peak_rss_mb": 140.1875,
+   "runs": 1
+  },
+  {
+   "id": "e7:allow:b0=0.005:mode=L-tr",
+   "kind": "pool",
+   "params": {
+    "part": "allow",
+    "kind": "allow",
+    "tag": "Sublet",
+    "b0": 0.005,
+    "mode": "L-tr",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 6.669047619047619,
+   "status": "ok",
+   "wall_s": 10.263513528974727,
+   "peak_rss_mb": 140.60546875,
+   "runs": 1
+  },
+  {
+   "id": "e7:allow:b0=0.005:mode=L-eg",
+   "kind": "pool",
+   "params": {
+    "part": "allow",
+    "kind": "allow",
+    "tag": "Sublet",
+    "b0": 0.005,
+    "mode": "L-eg",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 6.669047619047619,
+   "status": "ok",
+   "wall_s": 11.439549519913271,
+   "peak_rss_mb": 140.17578125,
+   "runs": 1
+  },
+  {
+   "id": "e7:allow:b0=0.005:mode=L-ss",
+   "kind": "pool",
+   "params": {
+    "part": "allow",
+    "kind": "allow",
+    "tag": "Sublet",
+    "b0": 0.005,
+    "mode": "L-ss",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 6.669047619047619,
+   "status": "ok",
+   "wall_s": 10.493270158069208,
+   "peak_rss_mb": 140.26953125,
+   "runs": 1
+  },
+  {
+   "id": "e7:allow:b0=0.005:mode=L-iid-0.05",
+   "kind": "pool",
+   "params": {
+    "part": "allow",
+    "kind": "allow",
+    "tag": "Sublet",
+    "b0": 0.005,
+    "mode": "L-iid-0.05",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 6.669047619047619,
+   "status": "ok",
+   "wall_s": 10.673867060104385,
+   "peak_rss_mb": 140.96875,
+   "runs": 1
+  },
+  {
+   "id": "e7:allow:b0=0.005:mode=L-iid-0.2",
+   "kind": "pool",
+   "params": {
+    "part": "allow",
+    "kind": "allow",
+    "tag": "Sublet",
+    "b0": 0.005,
+    "mode": "L-iid-0.2",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 6.669047619047619,
+   "status": "ok",
+   "wall_s": 10.089211034122854,
+   "peak_rss_mb": 140.3828125,
+   "runs": 1
+  },
+  {
+   "id": "e7:allow:b0=0.005:mode=L-co",
+   "kind": "pool",
+   "params": {
+    "part": "allow",
+    "kind": "allow",
+    "tag": "Sublet",
+    "b0": 0.005,
+    "mode": "L-co",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 6.669047619047619,
+   "status": "ok",
+   "wall_s": 10.30261744512245,
+   "peak_rss_mb": 140.734375,
+   "runs": 1
+  },
+  {
+   "id": "e7:allow:b0=0.01:mode=L-tr",
+   "kind": "pool",
+   "params": {
+    "part": "allow",
+    "kind": "allow",
+    "tag": "Sublet",
+    "b0": 0.01,
+    "mode": "L-tr",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 6.669047619047619,
+   "status": "ok",
+   "wall_s": 10.172984303208068,
+   "peak_rss_mb": 140.92578125,
+   "runs": 1
+  },
+  {
+   "id": "e7:allow:b0=0.01:mode=L-eg",
+   "kind": "pool",
+   "params": {
+    "part": "allow",
+    "kind": "allow",
+    "tag": "Sublet",
+    "b0": 0.01,
+    "mode": "L-eg",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 6.669047619047619,
+   "status": "ok",
+   "wall_s": 10.093682776903734,
+   "peak_rss_mb": 140.17578125,
+   "runs": 1
+  },
+  {
+   "id": "e7:allow:b0=0.01:mode=L-ss",
+   "kind": "pool",
+   "params": {
+    "part": "allow",
+    "kind": "allow",
+    "tag": "Sublet",
+    "b0": 0.01,
+    "mode": "L-ss",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 6.669047619047619,
+   "status": "ok",
+   "wall_s": 10.342970228055492,
+   "peak_rss_mb": 140.21484375,
+   "runs": 1
+  },
+  {
+   "id": "e7:allow:b0=0.01:mode=L-iid-0.05",
+   "kind": "pool",
+   "params": {
+    "part": "allow",
+    "kind": "allow",
+    "tag": "Sublet",
+    "b0": 0.01,
+    "mode": "L-iid-0.05",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 6.669047619047619,
+   "status": "ok",
+   "wall_s": 9.95650994591415,
+   "peak_rss_mb": 140.265625,
+   "runs": 1
+  },
+  {
+   "id": "e7:allow:b0=0.01:mode=L-iid-0.2",
+   "kind": "pool",
+   "params": {
+    "part": "allow",
+    "kind": "allow",
+    "tag": "Sublet",
+    "b0": 0.01,
+    "mode": "L-iid-0.2",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 6.669047619047619,
+   "status": "ok",
+   "wall_s": 10.178242471069098,
+   "peak_rss_mb": 140.26953125,
+   "runs": 1
+  },
+  {
+   "id": "e7:allow:b0=0.01:mode=L-co",
+   "kind": "pool",
+   "params": {
+    "part": "allow",
+    "kind": "allow",
+    "tag": "Sublet",
+    "b0": 0.01,
+    "mode": "L-co",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 6.669047619047619,
+   "status": "ok",
+   "wall_s": 9.985097296070307,
+   "peak_rss_mb": 140.6953125,
+   "runs": 1
+  },
+  {
+   "id": "e7:allow:b0=0.02:mode=L-tr",
+   "kind": "pool",
+   "params": {
+    "part": "allow",
+    "kind": "allow",
+    "tag": "Sublet",
+    "b0": 0.02,
+    "mode": "L-tr",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 6.669047619047619,
+   "status": "ok",
+   "wall_s": 10.03854677407071,
+   "peak_rss_mb": 140.18359375,
+   "runs": 1
+  },
+  {
+   "id": "e7:allow:b0=0.02:mode=L-eg",
+   "kind": "pool",
+   "params": {
+    "part": "allow",
+    "kind": "allow",
+    "tag": "Sublet",
+    "b0": 0.02,
+    "mode": "L-eg",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 6.669047619047619,
+   "status": "ok",
+   "wall_s": 10.050579797010869,
+   "peak_rss_mb": 140.41796875,
+   "runs": 1
+  },
+  {
+   "id": "e7:allow:b0=0.02:mode=L-ss",
+   "kind": "pool",
+   "params": {
+    "part": "allow",
+    "kind": "allow",
+    "tag": "Sublet",
+    "b0": 0.02,
+    "mode": "L-ss",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 6.669047619047619,
+   "status": "ok",
+   "wall_s": 10.179406616836786,
+   "peak_rss_mb": 140.19921875,
+   "runs": 1
+  },
+  {
+   "id": "e7:allow:b0=0.02:mode=L-iid-0.05",
+   "kind": "pool",
+   "params": {
+    "part": "allow",
+    "kind": "allow",
+    "tag": "Sublet",
+    "b0": 0.02,
+    "mode": "L-iid-0.05",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 6.669047619047619,
+   "status": "ok",
+   "wall_s": 10.269430057145655,
+   "peak_rss_mb": 140.27734375,
+   "runs": 1
+  },
+  {
+   "id": "e7:allow:b0=0.02:mode=L-iid-0.2",
+   "kind": "pool",
+   "params": {
+    "part": "allow",
+    "kind": "allow",
+    "tag": "Sublet",
+    "b0": 0.02,
+    "mode": "L-iid-0.2",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 6.669047619047619,
+   "status": "ok",
+   "wall_s": 10.123258215840906,
+   "peak_rss_mb": 140.26953125,
+   "runs": 1
+  },
+  {
+   "id": "e7:allow:b0=0.02:mode=L-co",
+   "kind": "pool",
+   "params": {
+    "part": "allow",
+    "kind": "allow",
+    "tag": "Sublet",
+    "b0": 0.02,
+    "mode": "L-co",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 6.669047619047619,
+   "status": "ok",
+   "wall_s": 10.073155060177669,
+   "peak_rss_mb": 140.359375,
+   "runs": 1
+  },
+  {
+   "id": "e7:allow:b0=0.05:mode=L-tr",
+   "kind": "pool",
+   "params": {
+    "part": "allow",
+    "kind": "allow",
+    "tag": "Sublet",
+    "b0": 0.05,
+    "mode": "L-tr",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 6.669047619047619,
+   "status": "ok",
+   "wall_s": 10.037096239859238,
+   "peak_rss_mb": 140.2421875,
+   "runs": 1
+  },
+  {
+   "id": "e7:allow:b0=0.05:mode=L-eg",
+   "kind": "pool",
+   "params": {
+    "part": "allow",
+    "kind": "allow",
+    "tag": "Sublet",
+    "b0": 0.05,
+    "mode": "L-eg",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 6.669047619047619,
+   "status": "ok",
+   "wall_s": 10.174291874049231,
+   "peak_rss_mb": 143.1015625,
+   "runs": 1
+  },
+  {
+   "id": "e7:allow:b0=0.05:mode=L-ss",
+   "kind": "pool",
+   "params": {
+    "part": "allow",
+    "kind": "allow",
+    "tag": "Sublet",
+    "b0": 0.05,
+    "mode": "L-ss",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 6.669047619047619,
+   "status": "ok",
+   "wall_s": 11.07931514782831,
+   "peak_rss_mb": 143.06640625,
+   "runs": 1
+  },
+  {
+   "id": "e7:allow:b0=0.05:mode=L-iid-0.05",
+   "kind": "pool",
+   "params": {
+    "part": "allow",
+    "kind": "allow",
+    "tag": "Sublet",
+    "b0": 0.05,
+    "mode": "L-iid-0.05",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 6.669047619047619,
+   "status": "ok",
+   "wall_s": 10.389349044999108,
+   "peak_rss_mb": 140.33203125,
+   "runs": 1
+  },
+  {
+   "id": "e7:allow:b0=0.05:mode=L-iid-0.2",
+   "kind": "pool",
+   "params": {
+    "part": "allow",
+    "kind": "allow",
+    "tag": "Sublet",
+    "b0": 0.05,
+    "mode": "L-iid-0.2",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 6.669047619047619,
+   "status": "ok",
+   "wall_s": 10.078448514919728,
+   "peak_rss_mb": 140.52734375,
+   "runs": 1
+  },
+  {
+   "id": "e7:allow:b0=0.05:mode=L-co",
+   "kind": "pool",
+   "params": {
+    "part": "allow",
+    "kind": "allow",
+    "tag": "Sublet",
+    "b0": 0.05,
+    "mode": "L-co",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 6.669047619047619,
+   "status": "ok",
+   "wall_s": 10.109238362172619,
+   "peak_rss_mb": 142.1953125,
+   "runs": 1
+  },
+  {
+   "id": "e7:allow:b0=0.1:mode=L-tr",
+   "kind": "pool",
+   "params": {
+    "part": "allow",
+    "kind": "allow",
+    "tag": "Sublet",
+    "b0": 0.1,
+    "mode": "L-tr",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 6.669047619047619,
+   "status": "ok",
+   "wall_s": 10.323822315083817,
+   "peak_rss_mb": 142.89453125,
+   "runs": 1
+  },
+  {
+   "id": "e7:allow:b0=0.1:mode=L-eg",
+   "kind": "pool",
+   "params": {
+    "part": "allow",
+    "kind": "allow",
+    "tag": "Sublet",
+    "b0": 0.1,
+    "mode": "L-eg",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 6.669047619047619,
+   "status": "ok",
+   "wall_s": 10.733440116979182,
+   "peak_rss_mb": 143.40234375,
+   "runs": 1
+  },
+  {
+   "id": "e7:allow:b0=0.1:mode=L-ss",
+   "kind": "pool",
+   "params": {
+    "part": "allow",
+    "kind": "allow",
+    "tag": "Sublet",
+    "b0": 0.1,
+    "mode": "L-ss",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 6.669047619047619,
+   "status": "ok",
+   "wall_s": 10.025378230027854,
+   "peak_rss_mb": 142.86328125,
+   "runs": 1
+  },
+  {
+   "id": "e7:allow:b0=0.1:mode=L-iid-0.05",
+   "kind": "pool",
+   "params": {
+    "part": "allow",
+    "kind": "allow",
+    "tag": "Sublet",
+    "b0": 0.1,
+    "mode": "L-iid-0.05",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 6.669047619047619,
+   "status": "ok",
+   "wall_s": 10.225447749951854,
+   "peak_rss_mb": 142.76171875,
+   "runs": 1
+  },
+  {
+   "id": "e7:allow:b0=0.1:mode=L-iid-0.2",
+   "kind": "pool",
+   "params": {
+    "part": "allow",
+    "kind": "allow",
+    "tag": "Sublet",
+    "b0": 0.1,
+    "mode": "L-iid-0.2",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 6.669047619047619,
+   "status": "ok",
+   "wall_s": 10.341915962984785,
+   "peak_rss_mb": 142.671875,
+   "runs": 1
+  },
+  {
+   "id": "e7:allow:b0=0.1:mode=L-co",
+   "kind": "pool",
+   "params": {
+    "part": "allow",
+    "kind": "allow",
+    "tag": "Sublet",
+    "b0": 0.1,
+    "mode": "L-co",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 6.669047619047619,
+   "status": "ok",
+   "wall_s": 10.072398872114718,
+   "peak_rss_mb": 143.85546875,
+   "runs": 1
+  },
+  {
+   "id": "e7:allow:b0=0.2:mode=L-tr",
+   "kind": "pool",
+   "params": {
+    "part": "allow",
+    "kind": "allow",
+    "tag": "Sublet",
+    "b0": 0.2,
+    "mode": "L-tr",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 6.669047619047619,
+   "status": "ok",
+   "wall_s": 10.334126108093187,
+   "peak_rss_mb": 143.06640625,
+   "runs": 1
+  },
+  {
+   "id": "e7:allow:b0=0.2:mode=L-eg",
+   "kind": "pool",
+   "params": {
+    "part": "allow",
+    "kind": "allow",
+    "tag": "Sublet",
+    "b0": 0.2,
+    "mode": "L-eg",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 6.669047619047619,
+   "status": "ok",
+   "wall_s": 10.221491015981883,
+   "peak_rss_mb": 143.265625,
+   "runs": 1
+  },
+  {
+   "id": "e7:allow:b0=0.2:mode=L-ss",
+   "kind": "pool",
+   "params": {
+    "part": "allow",
+    "kind": "allow",
+    "tag": "Sublet",
+    "b0": 0.2,
+    "mode": "L-ss",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 6.669047619047619,
+   "status": "ok",
+   "wall_s": 10.443209611112252,
+   "peak_rss_mb": 143.6640625,
+   "runs": 1
+  },
+  {
+   "id": "e7:allow:b0=0.2:mode=L-iid-0.05",
+   "kind": "pool",
+   "params": {
+    "part": "allow",
+    "kind": "allow",
+    "tag": "Sublet",
+    "b0": 0.2,
+    "mode": "L-iid-0.05",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 6.669047619047619,
+   "status": "ok",
+   "wall_s": 10.888229804113507,
+   "peak_rss_mb": 142.8203125,
+   "runs": 1
+  },
+  {
+   "id": "e7:allow:b0=0.2:mode=L-iid-0.2",
+   "kind": "pool",
+   "params": {
+    "part": "allow",
+    "kind": "allow",
+    "tag": "Sublet",
+    "b0": 0.2,
+    "mode": "L-iid-0.2",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 6.669047619047619,
+   "status": "ok",
+   "wall_s": 10.863370046950877,
+   "peak_rss_mb": 143.12109375,
+   "runs": 1
+  },
+  {
+   "id": "e7:allow:b0=0.2:mode=L-co",
+   "kind": "pool",
+   "params": {
+    "part": "allow",
+    "kind": "allow",
+    "tag": "Sublet",
+    "b0": 0.2,
+    "mode": "L-co",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 6.669047619047619,
+   "status": "ok",
+   "wall_s": 10.107260524993762,
+   "peak_rss_mb": 142.7109375,
+   "runs": 1
+  }
+ ],
+ "instance_hashes": {
+  "week:mu=1:c=1": "fddc5752788e170ecd364592b0f94ae2631bc2acfb1e71aa32462e0be77b1273"
+ },
+ "design": {
+  "reduced": true,
+  "alignments": [
+   1
+  ],
+  "policy_seeds": [
+   0
+  ],
+  "horizon_min": 120,
+  "gap_horizon_min": 120
+ },
+ "parts": [
+  "allow"
+ ],
+ "reduced": true,
+ "B0_rule": "0.1*BL0a",
+ "inputs_sha256": {
+  "code/sim/configs/bench_e7f.json": "c34eee8133082cfe148d314b9209ea3d703c1e110f74c1372e4945cf25f952f0",
+  "code/sim/configs/bench_e7r.json": "d23da7053411ceb465fa3d25c41883aa0ac0f557a503c71410faba63ae3b184e",
+  "code/sim/sublet/experiments/q44_blocks/Q4.json": "ad15dedba6b335a39d4316cc768bc6ecc387478cc46ef09f4a061318d155b58c"
+ }
+}

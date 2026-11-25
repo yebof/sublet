@@ -1,0 +1,457 @@
+{
+ "meta": {
+  "exp": "s1",
+  "git_revision": "c82fa05f835c1b4896ddf639d6edb81495a1abee",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "scipy": "1.17.1",
+   "sublet": "0.1.0"
+  },
+  "written": "2026-10-29T21:11:39",
+  "script": "code/sim/sublet/experiments/s1.py",
+  "script_sha256": "8afb76a9aa6dd1fe57477c829fccfaad72079268ea825b1649c0a4389d7cd802"
+ },
+ "jobs": [
+  {
+   "id": "s1:q28:var=rf:pol=A7G:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "q28",
+    "kind": "q28",
+    "variant": "rf",
+    "mode": "L-rf",
+    "tag": "A7G",
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 2.336904761904762,
+   "status": "ok",
+   "wall_s": 10.34965658094734,
+   "peak_rss_mb": 153.30859375,
+   "runs": 1
+  },
+  {
+   "id": "s1:q28:var=vr:pol=A7G:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "q28",
+    "kind": "q28",
+    "variant": "vr",
+    "mode": "L-vr",
+    "tag": "A7G",
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 2.3190476190476192,
+   "status": "ok",
+   "wall_s": 10.941799299092963,
+   "peak_rss_mb": 161.3125,
+   "runs": 1
+  },
+  {
+   "id": "s1:q28:var=rf:pol=Sublet:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "q28",
+    "kind": "q28",
+    "variant": "rf",
+    "mode": "L-rf",
+    "tag": "Sublet",
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 1.707142857142857,
+   "status": "ok",
+   "wall_s": 9.68037553387694,
+   "peak_rss_mb": 140.73046875,
+   "runs": 1
+  },
+  {
+   "id": "s1:q28:var=vr:pol=Sublet:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "q28",
+    "kind": "q28",
+    "variant": "vr",
+    "mode": "L-vr",
+    "tag": "Sublet",
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 1.6809523809523808,
+   "status": "ok",
+   "wall_s": 10.204632584005594,
+   "peak_rss_mb": 143.12109375,
+   "runs": 1
+  },
+  {
+   "id": "s1:q28:var=rf:pol=A7:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "q28",
+    "kind": "q28",
+    "variant": "rf",
+    "mode": "L-rf",
+    "tag": "A7",
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 0.7571428571428571,
+   "status": "ok",
+   "wall_s": 5.716492027044296,
+   "peak_rss_mb": 187.94140625,
+   "runs": 1
+  },
+  {
+   "id": "s1:q28:var=vr:pol=A7:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "q28",
+    "kind": "q28",
+    "variant": "vr",
+    "mode": "L-vr",
+    "tag": "A7",
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 0.7511904761904762,
+   "status": "ok",
+   "wall_s": 5.655740651069209,
+   "peak_rss_mb": 187.84375,
+   "runs": 1
+  },
+  {
+   "id": "s1:q28:var=rf:pol=A6:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "q28",
+    "kind": "q28",
+    "variant": "rf",
+    "mode": "L-rf",
+    "tag": "A6",
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 0.6047619047619047,
+   "status": "ok",
+   "wall_s": 8.81161840702407,
+   "peak_rss_mb": 137.515625,
+   "runs": 1
+  },
+  {
+   "id": "s1:q28:var=vr:pol=A6:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "q28",
+    "kind": "q28",
+    "variant": "vr",
+    "mode": "L-vr",
+    "tag": "A6",
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 0.5904761904761905,
+   "status": "ok",
+   "wall_s": 9.070947078056633,
+   "peak_rss_mb": 138.30859375,
+   "runs": 1
+  },
+  {
+   "id": "s1:q28:var=rf:pol=BL4:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "q28",
+    "kind": "q28",
+    "variant": "rf",
+    "mode": "L-rf",
+    "tag": "BL4",
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 0.35,
+   "status": "ok",
+   "wall_s": 1.3404707920271903,
+   "peak_rss_mb": 162.47265625,
+   "runs": 1
+  },
+  {
+   "id": "s1:q28:var=vr:pol=BL4:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "q28",
+    "kind": "q28",
+    "variant": "vr",
+    "mode": "L-vr",
+    "tag": "BL4",
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 0.34523809523809523,
+   "status": "ok",
+   "wall_s": 1.3468404710292816,
+   "peak_rss_mb": 162.921875,
+   "runs": 1
+  },
+  {
+   "id": "s1:q28:var=rf:pol=BL2:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "q28",
+    "kind": "q28",
+    "variant": "rf",
+    "mode": "L-rf",
+    "tag": "BL2",
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 0.30714285714285716,
+   "status": "ok",
+   "wall_s": 1.633712966926396,
+   "peak_rss_mb": 138.08984375,
+   "runs": 1
+  },
+  {
+   "id": "s1:q28:var=vr:pol=BL2:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "q28",
+    "kind": "q28",
+    "variant": "vr",
+    "mode": "L-vr",
+    "tag": "BL2",
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 0.3047619047619048,
+   "status": "ok",
+   "wall_s": 1.5878555290400982,
+   "peak_rss_mb": 137.92578125,
+   "runs": 1
+  },
+  {
+   "id": "s1:q28:var=default:pol=BL3:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "q28",
+    "kind": "q28",
+    "variant": "default",
+    "mode": "L-tr",
+    "tag": "BL3",
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 0.17857142857142855,
+   "status": "ok",
+   "wall_s": 1.374103165930137,
+   "peak_rss_mb": 137.125,
+   "runs": 1
+  },
+  {
+   "id": "s1:q28:var=rf:pol=BL3:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "q28",
+    "kind": "q28",
+    "variant": "rf",
+    "mode": "L-rf",
+    "tag": "BL3",
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 0.175,
+   "status": "ok",
+   "wall_s": 1.3697986658662558,
+   "peak_rss_mb": 137.7734375,
+   "runs": 1
+  },
+  {
+   "id": "s1:q28:var=vr:pol=BL3:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "q28",
+    "kind": "q28",
+    "variant": "vr",
+    "mode": "L-vr",
+    "tag": "BL3",
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 0.175,
+   "status": "ok",
+   "wall_s": 1.3782633400987834,
+   "peak_rss_mb": 137.06640625,
+   "runs": 1
+  },
+  {
+   "id": "s1:q28:var=rf:pol=BL1:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "q28",
+    "kind": "q28",
+    "variant": "rf",
+    "mode": "L-rf",
+    "tag": "BL1",
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 0.14166666666666666,
+   "status": "ok",
+   "wall_s": 1.7219283999875188,
+   "peak_rss_mb": 138.10546875,
+   "runs": 1
+  },
+  {
+   "id": "s1:q28:var=vr:pol=BL1:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "q28",
+    "kind": "q28",
+    "variant": "vr",
+    "mode": "L-vr",
+    "tag": "BL1",
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 0.14166666666666666,
+   "status": "ok",
+   "wall_s": 1.7386257289908826,
+   "peak_rss_mb": 137.83984375,
+   "runs": 1
+  },
+  {
+   "id": "s1:q28:var=rf:pol=BL5:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "q28",
+    "kind": "q28",
+    "variant": "rf",
+    "mode": "L-rf",
+    "tag": "BL5",
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 0.1357142857142857,
+   "status": "ok",
+   "wall_s": 1.5367398760281503,
+   "peak_rss_mb": 136.90625,
+   "runs": 1
+  },
+  {
+   "id": "s1:q28:var=vr:pol=BL5:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "q28",
+    "kind": "q28",
+    "variant": "vr",
+    "mode": "L-vr",
+    "tag": "BL5",
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 0.13214285714285712,
+   "status": "ok",
+   "wall_s": 1.5354932288173586,
+   "peak_rss_mb": 138.6484375,
+   "runs": 1
+  }
+ ],
+ "instance_hashes": {
+  "q28:c=1": "fddc5752788e170ecd364592b0f94ae2631bc2acfb1e71aa32462e0be77b1273"
+ },
+ "design": {
+  "reduced": true,
+  "alignments": [
+   1
+  ],
+  "policy_seeds": [
+   0
+  ],
+  "horizon_min": 120
+ },
+ "parts": [
+  "q28"
+ ],
+ "reduced": true,
+ "B0_rule": "0.1*BL0a",
+ "inputs_sha256": {
+  "code/sim/configs/bench_e7f.json": "c34eee8133082cfe148d314b9209ea3d703c1e110f74c1372e4945cf25f952f0",
+  "code/sim/out/e7/main/summary.json": "bbdcc02a25606ae81e5482f2a6adbcb1ba18ffd8a7a9e2ec733583b90ecf2abc"
+ }
+}

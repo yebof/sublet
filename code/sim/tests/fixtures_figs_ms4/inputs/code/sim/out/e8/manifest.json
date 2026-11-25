@@ -1,0 +1,342 @@
+{
+ "meta": {
+  "exp": "e8",
+  "git_revision": "939847ca5925ce069d6df9089fe3a3d1d3207bb7",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "scipy": "1.17.1",
+   "sublet": "0.1.0"
+  },
+  "written": "2026-10-26T14:50:59",
+  "script": "code/sim/sublet/experiments/e8.py",
+  "script_sha256": "b521ea9bdf7359247205275d1bc251924b757398d8427475ce869967812355bb"
+ },
+ "jobs": [
+  {
+   "id": "e8:requests",
+   "kind": "pool",
+   "params": {
+    "kind": "requests",
+    "horizon_min": 360
+   },
+   "est_s": 54.0,
+   "status": "ok",
+   "wall_s": 2.300765475956723,
+   "peak_rss_mb": 255.734375,
+   "runs": 0
+  },
+  {
+   "id": "e8:pair:tier=S:win=60:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "S",
+    "win": 60,
+    "mu": 1.0,
+    "c": 1
+   },
+   "est_s": 10.117857142857144,
+   "status": "ok",
+   "wall_s": 4.394570593023673,
+   "peak_rss_mb": 172.9453125,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=S:win=60:mu=2:c=1",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "S",
+    "win": 60,
+    "mu": 2.0,
+    "c": 1
+   },
+   "est_s": 10.117857142857144,
+   "status": "ok",
+   "wall_s": 4.16491142497398,
+   "peak_rss_mb": 173.1953125,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=S:win=5:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "S",
+    "win": 5,
+    "mu": 1.0,
+    "c": 1
+   },
+   "est_s": 9.346428571428572,
+   "status": "ok",
+   "wall_s": 3.130553300026804,
+   "peak_rss_mb": 159.79296875,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=S:win=5:mu=2:c=1",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "S",
+    "win": 5,
+    "mu": 2.0,
+    "c": 1
+   },
+   "est_s": 9.346428571428572,
+   "status": "ok",
+   "wall_s": 3.0419978180434555,
+   "peak_rss_mb": 159.703125,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=M:win=60:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "M",
+    "win": 60,
+    "mu": 1.0,
+    "c": 1
+   },
+   "est_s": 7.921428571428571,
+   "status": "ok",
+   "wall_s": 2.8534931750036776,
+   "peak_rss_mb": 148.7421875,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=M:win=60:mu=2:c=1",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "M",
+    "win": 60,
+    "mu": 2.0,
+    "c": 1
+   },
+   "est_s": 7.921428571428571,
+   "status": "ok",
+   "wall_s": 2.9882487589493394,
+   "peak_rss_mb": 149.3203125,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=M:win=5:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "M",
+    "win": 5,
+    "mu": 1.0,
+    "c": 1
+   },
+   "est_s": 7.621428571428572,
+   "status": "ok",
+   "wall_s": 2.4973278210964054,
+   "peak_rss_mb": 146.36328125,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=M:win=5:mu=2:c=1",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "M",
+    "win": 5,
+    "mu": 2.0,
+    "c": 1
+   },
+   "est_s": 7.621428571428572,
+   "status": "ok",
+   "wall_s": 2.4198619991075248,
+   "peak_rss_mb": 146.54296875,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=L:win=60:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "L",
+    "win": 60,
+    "mu": 1.0,
+    "c": 1
+   },
+   "est_s": 6.128571428571428,
+   "status": "ok",
+   "wall_s": 1.6404658029787242,
+   "peak_rss_mb": 143.6796875,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=L:win=60:mu=2:c=1",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "L",
+    "win": 60,
+    "mu": 2.0,
+    "c": 1
+   },
+   "est_s": 6.128571428571428,
+   "status": "ok",
+   "wall_s": 1.68595327809453,
+   "peak_rss_mb": 142.8203125,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=L:win=5:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "L",
+    "win": 5,
+    "mu": 1.0,
+    "c": 1
+   },
+   "est_s": 6.114285714285714,
+   "status": "ok",
+   "wall_s": 1.7901575430296361,
+   "peak_rss_mb": 143.01171875,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=L:win=5:mu=2:c=1",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "L",
+    "win": 5,
+    "mu": 2.0,
+    "c": 1
+   },
+   "est_s": 6.114285714285714,
+   "status": "ok",
+   "wall_s": 1.6492702509276569,
+   "peak_rss_mb": 143.94140625,
+   "runs": 1
+  },
+  {
+   "id": "e8:mooncake:win=5:prefix=off",
+   "kind": "pool",
+   "params": {
+    "kind": "mooncake",
+    "win": 5,
+    "prefix": "off",
+    "tier": "M",
+    "mu": 1.0,
+    "c": 1
+   },
+   "est_s": 3.42,
+   "status": "ok",
+   "wall_s": 1.5512203108519316,
+   "peak_rss_mb": 168.84765625,
+   "runs": 1
+  },
+  {
+   "id": "e8:mooncake:win=5:prefix=on",
+   "kind": "pool",
+   "params": {
+    "kind": "mooncake",
+    "win": 5,
+    "prefix": "on",
+    "tier": "M",
+    "mu": 1.0,
+    "c": 1
+   },
+   "est_s": 7.53,
+   "status": "ok",
+   "wall_s": 4.244552120100707,
+   "peak_rss_mb": 168.96875,
+   "runs": 1
+  },
+  {
+   "id": "e8:mooncake:win=60:prefix=off",
+   "kind": "pool",
+   "params": {
+    "kind": "mooncake",
+    "win": 60,
+    "prefix": "off",
+    "tier": "M",
+    "mu": 1.0,
+    "c": 1
+   },
+   "est_s": 3.42,
+   "status": "ok",
+   "wall_s": 2.2104157169815153,
+   "peak_rss_mb": 169.0703125,
+   "runs": 1
+  },
+  {
+   "id": "e8:mooncake:win=60:prefix=on",
+   "kind": "pool",
+   "params": {
+    "kind": "mooncake",
+    "win": 60,
+    "prefix": "on",
+    "tier": "M",
+    "mu": 1.0,
+    "c": 1
+   },
+   "est_s": 7.53,
+   "status": "ok",
+   "wall_s": 8.437996482942253,
+   "peak_rss_mb": 200.8671875,
+   "runs": 1
+  }
+ ],
+ "instance_hashes": {
+  "e8:pair:tier=S:win=60:mu=1:c=1": "eaf4a7d8805b1c4bdd3fa45e0cd4f4535f991eef8a5edfd6d9e27a5c422a2121",
+  "e8:pair:tier=S:win=60:mu=2:c=1": "c6dd3ab9dadf2b9ff23cdc1089d53ff9b91b6faef64e03443d9e3dcf9d871966",
+  "e8:pair:tier=S:win=5:mu=1:c=1": "6068b7b56a653ab63aa8dc2c570797c732fd2eb2deb3dc02d3df25b4b676b076",
+  "e8:pair:tier=S:win=5:mu=2:c=1": "06cf5d5ba366907c804c912a9f6a230b77dfd27912c28e7291aaae94031ab570",
+  "e8:pair:tier=M:win=60:mu=1:c=1": "a40730ce5902980b360b84d0bae8c35e6bc4480ba98d5b7b8f594a664cfef67b",
+  "e8:pair:tier=M:win=60:mu=2:c=1": "ff86b17686c4d387b933c8f6289d2b3a8d2adbe9ecb926af96f269e25791088a",
+  "e8:pair:tier=M:win=5:mu=1:c=1": "ac8ecffd2668e0671a2d24e11833f12da5abf1faed54017511e4fa2b2f3e16e8",
+  "e8:pair:tier=M:win=5:mu=2:c=1": "ff78bd21410441f28f8f13e99dd8c326720f1fddf57e7ca5484ce41261249ff7",
+  "e8:pair:tier=L:win=60:mu=1:c=1": "bfbfe504ae33055ae54e720f04a08daa4bbc643ebfdb3af325b3006fae054800",
+  "e8:pair:tier=L:win=60:mu=2:c=1": "650d2a49dcd8c6629ad25090da247fd4ec852198c904c2d1f69e792ecf491273",
+  "e8:pair:tier=L:win=5:mu=1:c=1": "f013f59a867336d25b2444d17e816541e04d41dd851dbc9653b8dcb89fb3fa45",
+  "e8:pair:tier=L:win=5:mu=2:c=1": "a6199054b559549f5bb521a851f18a863789cc64003a5cf4e964ce9871cda765",
+  "e8:mooncake:win=5:prefix=off": "ac8ecffd2668e0671a2d24e11833f12da5abf1faed54017511e4fa2b2f3e16e8",
+  "e8:mooncake:win=5:prefix=on": "ac8ecffd2668e0671a2d24e11833f12da5abf1faed54017511e4fa2b2f3e16e8",
+  "e8:mooncake:win=60:prefix=off": "a40730ce5902980b360b84d0bae8c35e6bc4480ba98d5b7b8f594a664cfef67b",
+  "e8:mooncake:win=60:prefix=on": "a40730ce5902980b360b84d0bae8c35e6bc4480ba98d5b7b8f594a664cfef67b"
+ },
+ "inputs_sha256": {
+  "code/sim/configs/bench_e1.json": "00c069e6c385245a363730711eb1f931cef9e718d7913e05e10cf98b9ce127b7",
+  "code/analysis/out/a12_minute_io.npz": "7a2d61df69c77080f2be11e12cdb3cce82243524d247f75a037042738240f208",
+  "code/analysis/out/a12_sim_inputs.json": "ab8ba5e607aa4a896d1daf23973fa9d6acc16362705973f5eeaf2b517e540377",
+  "code/analysis/out/a5_reclaim_cost_calibration.json": "3a600ad9336eef24be7afb696fac70ab3c0c66db537aa0f146442ba60c1137db",
+  "/mnt/data/datasets/mooncake/conversation_trace.jsonl": "b8cbb061a85206d729d91cdc2981f43c9e0d99209dce588d3af5f7934408b9df"
+ },
+ "raw_azure": {
+  "file": "/mnt/data/datasets/azure-llm-2024/AzureLLMInferenceTrace_conv_1week.csv",
+  "file_bytes": 1135195393,
+  "mtime": 1791678510
+ },
+ "reduced": true,
+ "settings": {
+  "reduced": true,
+  "horizon_min": 360,
+  "market_tightness": 0.05,
+  "tiers": [
+   "S",
+   "M",
+   "L"
+  ],
+  "windows": [
+   5,
+   60
+  ],
+  "mus": [
+   1.0,
+   2.0
+  ],
+  "alignments": [
+   1
+  ]
+ }
+}

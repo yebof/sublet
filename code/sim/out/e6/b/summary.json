@@ -1,0 +1,753 @@
+{
+ "meta": {
+  "exp": "e6",
+  "part": "b",
+  "spec": "design/sim_spec_ms3.md \u00a77.2",
+  "git_revision": "f10237bb39ab101b9831afcee79121d0fa4e1979",
+  "written": "2026-10-22T17:25:11",
+  "instances": {
+   "demand_menu": "R",
+   "by_menu": {
+    "R": {
+     "1": {
+      "bl0a": 21133.97745020308,
+      "bl0a_own_demand": 21133.97745020308,
+      "demand_load_h": 1096.1221243406897,
+      "demand_sha256": "4952f238b467914415325a3bc179e73d8b78fddd699617be1543ac8de3d988ac",
+      "n_sites": 170,
+      "n_contracts": 2
+     },
+     "2": {
+      "bl0a": 25623.751279144137,
+      "bl0a_own_demand": 25623.751279144137,
+      "demand_load_h": 1190.947363361192,
+      "demand_sha256": "9e6198de0ea98f64ba60e89035b311cacaafc8983d48955152ede806c870d2a4",
+      "n_sites": 170,
+      "n_contracts": 2
+     },
+     "3": {
+      "bl0a": 39184.13251995963,
+      "bl0a_own_demand": 39184.13251995963,
+      "demand_load_h": 1633.3138137820788,
+      "demand_sha256": "ce506885b0a7e4c79f0017daafd7b75d48b1461cad971393ff05a19f728aa434",
+      "n_sites": 170,
+      "n_contracts": 2
+     },
+     "4": {
+      "bl0a": 38550.92603869669,
+      "bl0a_own_demand": 38550.92603869669,
+      "demand_load_h": 1934.4727806555281,
+      "demand_sha256": "4f0e4d9ee86e1590ab117c245d54469b381df536e5a1b6699eafdbed2f293579",
+      "n_sites": 170,
+      "n_contracts": 2
+     }
+    },
+    "R+P": {
+     "1": {
+      "bl0a": 21133.97745020308,
+      "bl0a_own_demand": 21133.97745020308,
+      "demand_load_h": 1096.1221243406897,
+      "demand_sha256": "4952f238b467914415325a3bc179e73d8b78fddd699617be1543ac8de3d988ac",
+      "n_sites": 175,
+      "n_contracts": 3
+     },
+     "2": {
+      "bl0a": 25623.751279144137,
+      "bl0a_own_demand": 25623.751279144137,
+      "demand_load_h": 1190.947363361192,
+      "demand_sha256": "9e6198de0ea98f64ba60e89035b311cacaafc8983d48955152ede806c870d2a4",
+      "n_sites": 175,
+      "n_contracts": 3
+     },
+     "3": {
+      "bl0a": 39184.13251995963,
+      "bl0a_own_demand": 39184.13251995963,
+      "demand_load_h": 1633.3138137820788,
+      "demand_sha256": "ce506885b0a7e4c79f0017daafd7b75d48b1461cad971393ff05a19f728aa434",
+      "n_sites": 175,
+      "n_contracts": 3
+     },
+     "4": {
+      "bl0a": 38550.92603869669,
+      "bl0a_own_demand": 38550.92603869669,
+      "demand_load_h": 1934.4727806555281,
+      "demand_sha256": "4f0e4d9ee86e1590ab117c245d54469b381df536e5a1b6699eafdbed2f293579",
+      "n_sites": 175,
+      "n_contracts": 3
+     }
+    },
+    "R+P+1h": {
+     "1": {
+      "bl0a": 21133.97745020308,
+      "bl0a_own_demand": 21133.97745020308,
+      "demand_load_h": 1096.1221243406897,
+      "demand_sha256": "4952f238b467914415325a3bc179e73d8b78fddd699617be1543ac8de3d988ac",
+      "n_sites": 175,
+      "n_contracts": 5
+     },
+     "2": {
+      "bl0a": 25623.751279144137,
+      "bl0a_own_demand": 25623.751279144137,
+      "demand_load_h": 1190.947363361192,
+      "demand_sha256": "9e6198de0ea98f64ba60e89035b311cacaafc8983d48955152ede806c870d2a4",
+      "n_sites": 175,
+      "n_contracts": 5
+     },
+     "3": {
+      "bl0a": 39184.13251995963,
+      "bl0a_own_demand": 39184.13251995963,
+      "demand_load_h": 1633.3138137820788,
+      "demand_sha256": "ce506885b0a7e4c79f0017daafd7b75d48b1461cad971393ff05a19f728aa434",
+      "n_sites": 175,
+      "n_contracts": 5
+     },
+     "4": {
+      "bl0a": 38550.92603869669,
+      "bl0a_own_demand": 38550.92603869669,
+      "demand_load_h": 1934.4727806555281,
+      "demand_sha256": "4f0e4d9ee86e1590ab117c245d54469b381df536e5a1b6699eafdbed2f293579",
+      "n_sites": 175,
+      "n_contracts": 5
+     }
+    },
+    "R+P+1h+H": {
+     "1": {
+      "bl0a": 21133.97745020308,
+      "bl0a_own_demand": 21009.65993579012,
+      "demand_load_h": 1096.1221243406897,
+      "demand_sha256": "4952f238b467914415325a3bc179e73d8b78fddd699617be1543ac8de3d988ac",
+      "n_sites": 174,
+      "n_contracts": 10
+     },
+     "2": {
+      "bl0a": 25623.751279144137,
+      "bl0a_own_demand": 25473.02333044329,
+      "demand_load_h": 1190.947363361192,
+      "demand_sha256": "9e6198de0ea98f64ba60e89035b311cacaafc8983d48955152ede806c870d2a4",
+      "n_sites": 174,
+      "n_contracts": 10
+     },
+     "3": {
+      "bl0a": 39184.13251995963,
+      "bl0a_own_demand": 38953.637622783404,
+      "demand_load_h": 1633.3138137820788,
+      "demand_sha256": "ce506885b0a7e4c79f0017daafd7b75d48b1461cad971393ff05a19f728aa434",
+      "n_sites": 174,
+      "n_contracts": 10
+     },
+     "4": {
+      "bl0a": 38550.92603869669,
+      "bl0a_own_demand": 38324.15588552789,
+      "demand_load_h": 1934.4727806555281,
+      "demand_sha256": "4f0e4d9ee86e1590ab117c245d54469b381df536e5a1b6699eafdbed2f293579",
+      "n_sites": 174,
+      "n_contracts": 10
+     }
+    }
+   },
+   "max_rel_diff_bl0a": 0.0,
+   "note": "each menu's instance is built from its own contracts (a lender's lendable supply uses the longest window of its menu, D_max) and takes the demand of menu R's instance at the same alignment (the builder would scale the series demand to the menu's own supply, borrowers.market_tightness; bl0a_own_demand), so the menus differ only in contracts and lendable supply and have one BL0a per alignment"
+  },
+  "reduced": false,
+  "config": "configs/bench_e7r.json",
+  "horizon_min": 10080,
+  "policy": {
+   "id": "A6",
+   "params": {}
+  },
+  "menus": {
+   "R": {
+    "revocable": [
+     "s5_tau5_H2",
+     "s5_tau5_H60"
+    ],
+    "protected": false
+   },
+   "R+P": {
+    "revocable": [
+     "s5_tau5_H2",
+     "s5_tau5_H60"
+    ],
+    "protected": true
+   },
+   "R+P+1h": {
+    "revocable": [
+     "s5_tau5_H2",
+     "s5_tau5_H60",
+     "s5_tau60_H0",
+     "s5_tau60_H60"
+    ],
+    "protected": true
+   },
+   "R+P+1h+H": {
+    "revocable": [
+     "s5_tau5_H2",
+     "s5_tau5_H60",
+     "s5_tau60_H0",
+     "s5_tau60_H60",
+     "s5_tau5_H5",
+     "s5_tau5_H15",
+     "s5_tau5_H30",
+     "s5_tau5_H120",
+     "s5_tau5_H240"
+    ],
+    "protected": true
+   }
+  },
+  "policy_seeds": [
+   0,
+   1,
+   2
+  ],
+  "alignments": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "jobs_ok": 28,
+  "jobs_missing": []
+ },
+ "menus": {
+  "R": {
+   "1": {
+    "cost_over_bl0a": {
+     "n": 12,
+     "median": 0.9475865593748795,
+     "p95": 1.0579963984085519,
+     "max": 1.065154776762323,
+     "median_ci95": [
+      0.8989463256595542,
+      1.0087621263370514
+     ],
+     "mean": 0.9574691799535576,
+     "mean_ci95": [
+      0.9242346806800573,
+      0.9950114085265259
+     ]
+    },
+    "cost_R_over_cost": {
+     "n": 12,
+     "median": 1.0,
+     "p95": 1.0,
+     "max": 1.0,
+     "median_ci95": [
+      1.0,
+      1.0
+     ]
+    },
+    "cost_R_over_cost_bl0a": {
+     "n": 12,
+     "median": 1.0,
+     "p95": 1.0,
+     "max": 1.0,
+     "median_ci95": [
+      1.0,
+      1.0
+     ]
+    },
+    "gpu_hour_share": {
+     "AEP-82-like": 0.4845130667970457,
+     "spot-like": 0.5154869332029542
+    },
+    "components_over_bl0a": {
+     "lease_prepaid": 0.20761577217528768,
+     "lease_rent": 0.3102567542733486,
+     "lease": 0.5178725264486362,
+     "loading": 0.0,
+     "routing": 0.01313864215465857,
+     "fallback": 0.4209085372567631,
+     "stranding": 0.005549474093499845,
+     "total": 0.9574691799535576
+    },
+    "n_runs": 12,
+    "alignments": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "bl0a_by_alignment": {
+     "1": 21133.97745020308,
+     "2": 25623.751279144137,
+     "3": 39184.13251995963,
+     "4": 38550.92603869669
+    }
+   }
+  },
+  "R+P": {
+   "0.2": {
+    "cost_over_bl0a": {
+     "n": 12,
+     "median": 0.9701797830151715,
+     "p95": 1.0969668944958701,
+     "max": 1.0981030034076018,
+     "median_ci95": [
+      0.9021172509146598,
+      1.0758986607601422
+     ],
+     "mean": 0.9848532904962778,
+     "mean_ci95": [
+      0.9387741029683365,
+      1.0337523431953555
+     ]
+    },
+    "cost_R_over_cost": {
+     "n": 0,
+     "median": null,
+     "median_note": "menu R runs at mu = 1 only",
+     "median_ci95": [
+      null,
+      null
+     ],
+     "median_ci95_note": "menu R runs at mu = 1 only",
+     "p95": null,
+     "p95_note": "menu R runs at mu = 1 only",
+     "max": null,
+     "max_note": "menu R runs at mu = 1 only",
+     "note": "menu R runs at mu = 1 only"
+    },
+    "cost_R_over_cost_bl0a": {
+     "n": 0,
+     "median": null,
+     "median_note": "menu R runs at mu = 1 only",
+     "median_ci95": [
+      null,
+      null
+     ],
+     "median_ci95_note": "menu R runs at mu = 1 only",
+     "p95": null,
+     "p95_note": "menu R runs at mu = 1 only",
+     "max": null,
+     "max_note": "menu R runs at mu = 1 only",
+     "note": "menu R runs at mu = 1 only"
+    },
+    "gpu_hour_share": {
+     "AEP-82-like": 0.262003970505046,
+     "protected": 0.0038037072112794964,
+     "spot-like": 0.7341923222836745
+    },
+    "components_over_bl0a": {
+     "lease_prepaid": 0.22137620146117057,
+     "lease_rent": 0.46009567065905727,
+     "lease": 0.6814718721202278,
+     "loading": 0.0,
+     "routing": 0.014886751981572592,
+     "fallback": 0.28774720618138644,
+     "stranding": 0.0007474602130910678,
+     "total": 0.9848532904962778
+    },
+    "n_runs": 12,
+    "alignments": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "bl0a_by_alignment": {
+     "1": 21133.97745020308,
+     "2": 25623.751279144137,
+     "3": 39184.13251995963,
+     "4": 38550.92603869669
+    }
+   },
+   "0.5": {
+    "cost_over_bl0a": {
+     "n": 12,
+     "median": 0.9355550167181728,
+     "p95": 1.0449344804922123,
+     "max": 1.0576038412139732,
+     "median_ci95": [
+      0.8991017058209361,
+      1.0033343009403421
+     ],
+     "mean": 0.9530015599386735,
+     "mean_ci95": [
+      0.9214964164324428,
+      0.9877871496080489
+     ]
+    },
+    "cost_R_over_cost": {
+     "n": 0,
+     "median": null,
+     "median_note": "menu R runs at mu = 1 only",
+     "median_ci95": [
+      null,
+      null
+     ],
+     "median_ci95_note": "menu R runs at mu = 1 only",
+     "p95": null,
+     "p95_note": "menu R runs at mu = 1 only",
+     "max": null,
+     "max_note": "menu R runs at mu = 1 only",
+     "note": "menu R runs at mu = 1 only"
+    },
+    "cost_R_over_cost_bl0a": {
+     "n": 0,
+     "median": null,
+     "median_note": "menu R runs at mu = 1 only",
+     "median_ci95": [
+      null,
+      null
+     ],
+     "median_ci95_note": "menu R runs at mu = 1 only",
+     "p95": null,
+     "p95_note": "menu R runs at mu = 1 only",
+     "max": null,
+     "max_note": "menu R runs at mu = 1 only",
+     "note": "menu R runs at mu = 1 only"
+    },
+    "gpu_hour_share": {
+     "AEP-82-like": 0.4855062393473271,
+     "protected": 0.0066266242126732,
+     "spot-like": 0.5078671364399996
+    },
+    "components_over_bl0a": {
+     "lease_prepaid": 0.20810844864800168,
+     "lease_rent": 0.3193083474579374,
+     "lease": 0.5274167961059391,
+     "loading": 0.0,
+     "routing": 0.013294378386654185,
+     "fallback": 0.40945997052912086,
+     "stranding": 0.0028304149169594284,
+     "total": 0.9530015599386735
+    },
+    "n_runs": 12,
+    "alignments": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "bl0a_by_alignment": {
+     "1": 21133.97745020308,
+     "2": 25623.751279144137,
+     "3": 39184.13251995963,
+     "4": 38550.92603869669
+    }
+   },
+   "1": {
+    "cost_over_bl0a": {
+     "n": 12,
+     "median": 0.942727988396419,
+     "p95": 1.0546696241392708,
+     "max": 1.0645223086688878,
+     "median_ci95": [
+      0.9013783597491564,
+      1.0078166600903122
+     ],
+     "mean": 0.9571423352702396,
+     "mean_ci95": [
+      0.9251486588046796,
+      0.9936768808862205
+     ]
+    },
+    "cost_R_over_cost": {
+     "n": 12,
+     "median": 1.0008448799541374,
+     "p95": 1.0074990934086718,
+     "max": 1.008737890506459,
+     "median_ci95": [
+      0.9954321628980066,
+      1.005133952938038
+     ]
+    },
+    "cost_R_over_cost_bl0a": {
+     "n": 12,
+     "median": 1.0008448799541374,
+     "p95": 1.0074990934086718,
+     "max": 1.008737890506459,
+     "median_ci95": [
+      0.9954321628980066,
+      1.005133952938038
+     ]
+    },
+    "gpu_hour_share": {
+     "AEP-82-like": 0.5288422115326223,
+     "protected": 0.005955658168117255,
+     "spot-like": 0.46520213029926044
+    },
+    "components_over_bl0a": {
+     "lease_prepaid": 0.2092582632153648,
+     "lease_rent": 0.2935377056610123,
+     "lease": 0.502795968876377,
+     "loading": 0.0,
+     "routing": 0.013211013106920062,
+     "fallback": 0.43573837612614597,
+     "stranding": 0.005396977160796273,
+     "total": 0.9571423352702396
+    },
+    "n_runs": 12,
+    "alignments": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "bl0a_by_alignment": {
+     "1": 21133.97745020308,
+     "2": 25623.751279144137,
+     "3": 39184.13251995963,
+     "4": 38550.92603869669
+    }
+   },
+   "2": {
+    "cost_over_bl0a": {
+     "n": 12,
+     "median": 0.9322370164924559,
+     "p95": 1.0893406390268092,
+     "max": 1.1120884134152307,
+     "median_ci95": [
+      0.8864407936755494,
+      1.0154756697455616
+     ],
+     "mean": 0.9536142269077902,
+     "mean_ci95": [
+      0.9111322568765693,
+      1.002362981420727
+     ]
+    },
+    "cost_R_over_cost": {
+     "n": 0,
+     "median": null,
+     "median_note": "menu R runs at mu = 1 only",
+     "median_ci95": [
+      null,
+      null
+     ],
+     "median_ci95_note": "menu R runs at mu = 1 only",
+     "p95": null,
+     "p95_note": "menu R runs at mu = 1 only",
+     "max": null,
+     "max_note": "menu R runs at mu = 1 only",
+     "note": "menu R runs at mu = 1 only"
+    },
+    "cost_R_over_cost_bl0a": {
+     "n": 0,
+     "median": null,
+     "median_note": "menu R runs at mu = 1 only",
+     "median_ci95": [
+      null,
+      null
+     ],
+     "median_ci95_note": "menu R runs at mu = 1 only",
+     "p95": null,
+     "p95_note": "menu R runs at mu = 1 only",
+     "max": null,
+     "max_note": "menu R runs at mu = 1 only",
+     "note": "menu R runs at mu = 1 only"
+    },
+    "gpu_hour_share": {
+     "AEP-82-like": 0.9185147394651175,
+     "protected": 0.007546731080246266,
+     "spot-like": 0.07393852945463625
+    },
+    "components_over_bl0a": {
+     "lease_prepaid": 0.20971517635459466,
+     "lease_rent": 0.19940509984030874,
+     "lease": 0.4091202761949034,
+     "loading": 0.0,
+     "routing": 0.011360122595269048,
+     "fallback": 0.5210348597781941,
+     "stranding": 0.012098968339423677,
+     "total": 0.9536142269077902
+    },
+    "n_runs": 12,
+    "alignments": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "bl0a_by_alignment": {
+     "1": 21133.97745020308,
+     "2": 25623.751279144137,
+     "3": 39184.13251995963,
+     "4": 38550.92603869669
+    }
+   }
+  },
+  "R+P+1h": {
+   "1": {
+    "cost_over_bl0a": {
+     "n": 12,
+     "median": 0.9672549828253283,
+     "p95": 1.1290715134372413,
+     "max": 1.1536031240631095,
+     "median_ci95": [
+      0.9007320375701793,
+      1.0584203590168741
+     ],
+     "mean": 0.9856761247763363,
+     "mean_ci95": [
+      0.9374082069690741,
+      1.0395946092650463
+     ]
+    },
+    "cost_R_over_cost": {
+     "n": 12,
+     "median": 0.9686949747919761,
+     "p95": 1.0151403834423973,
+     "max": 1.0152165466273948,
+     "median_ci95": [
+      0.9506930893049397,
+      1.004906238165087
+     ]
+    },
+    "cost_R_over_cost_bl0a": {
+     "n": 12,
+     "median": 0.9686949747919761,
+     "p95": 1.0151403834423973,
+     "max": 1.0152165466273948,
+     "median_ci95": [
+      0.9506930893049397,
+      1.004906238165087
+     ]
+    },
+    "gpu_hour_share": {
+     "AEP-82-like": 0.3325871498495468,
+     "GFS-like": 0.006050063259266721,
+     "general": 0.3670619627086764,
+     "protected": 0.000897908360338199,
+     "spot-like": 0.29340291582217193
+    },
+    "components_over_bl0a": {
+     "lease_prepaid": 0.2786875493263637,
+     "lease_rent": 0.22904897139194672,
+     "lease": 0.5077365207183105,
+     "loading": 0.0,
+     "routing": 0.01253635755590337,
+     "fallback": 0.46010400321743444,
+     "stranding": 0.0052992432846880036,
+     "total": 0.9856761247763363
+    },
+    "n_runs": 12,
+    "alignments": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "bl0a_by_alignment": {
+     "1": 21133.97745020308,
+     "2": 25623.751279144137,
+     "3": 39184.13251995963,
+     "4": 38550.92603869669
+    }
+   }
+  },
+  "R+P+1h+H": {
+   "1": {
+    "cost_over_bl0a": {
+     "n": 12,
+     "median": 0.9520218257296458,
+     "p95": 1.087778004573524,
+     "max": 1.1070652529175573,
+     "median_ci95": [
+      0.8922873429676301,
+      1.0288621278409444
+     ],
+     "mean": 0.964075732270563,
+     "mean_ci95": [
+      0.9221054827169525,
+      1.011365087132134
+     ]
+    },
+    "cost_R_over_cost": {
+     "n": 12,
+     "median": 0.9909762049509225,
+     "p95": 1.0274862291535827,
+     "max": 1.0325141127814923,
+     "median_ci95": [
+      0.9760739742947211,
+      1.018419149741349
+     ]
+    },
+    "cost_R_over_cost_bl0a": {
+     "n": 12,
+     "median": 0.9909762049509225,
+     "p95": 1.0274862291535827,
+     "max": 1.0325141127814923,
+     "median_ci95": [
+      0.9760739742947211,
+      1.0184191497413488
+     ]
+    },
+    "gpu_hour_share": {
+     "GFS-like": 0.005664090322583789,
+     "general": 0.7575126246846108,
+     "protected": 0.000748659753434918,
+     "spot-like": 0.23607462523937042
+    },
+    "components_over_bl0a": {
+     "lease_prepaid": 0.24883324381386573,
+     "lease_rent": 0.3109141485323487,
+     "lease": 0.5597473923462145,
+     "loading": 0.0,
+     "routing": 0.013112361768907205,
+     "fallback": 0.3862298136018539,
+     "stranding": 0.004986164553587368,
+     "total": 0.964075732270563
+    },
+    "n_runs": 12,
+    "alignments": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "bl0a_by_alignment": {
+     "1": 21133.97745020308,
+     "2": 25623.751279144137,
+     "3": 39184.13251995963,
+     "4": 38550.92603869669
+    }
+   }
+  }
+ },
+ "checks": {
+  "E6-6": {
+   "status": "pass",
+   "claim": "E6(b) runs: no invariant failure, no GPU-only lease slot",
+   "n_runs": 84,
+   "n_invariant_failures": 0,
+   "n_gpu_only_lease_slots": 0,
+   "pass": true
+  }
+ }
+}

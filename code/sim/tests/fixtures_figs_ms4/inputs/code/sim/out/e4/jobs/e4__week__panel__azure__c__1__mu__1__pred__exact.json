@@ -1,0 +1,57 @@
+{
+ "job": "e4:week:panel=azure:c=1:mu=1:pred=exact",
+ "exp": "e4",
+ "kind": "pool",
+ "params": {
+  "panel": "azure",
+  "c": 1,
+  "mu": 1.0,
+  "pred": "exact",
+  "tags": [
+   "A5",
+   "A6-pred"
+  ],
+  "policy_seeds": [
+   0
+  ],
+  "window": [
+   444,
+   72
+  ],
+  "day_slots": 24
+ },
+ "status": "ok",
+ "started": "2026-10-26T14:09:11",
+ "pid": 938198,
+ "argv": [
+  "/work/ms4wt/u25/code/sim/sublet/experiments/e4.py",
+  "--job",
+  "e4:week:panel=azure:c=1:mu=1:pred=exact",
+  "--out",
+  "/work/ms4u/u25scratch/fixture_roots/e4/out/e4"
+ ],
+ "slots": [
+  "slot0"
+ ],
+ "milp_limit_s": null,
+ "git_revision": "939847ca5925ce069d6df9089fe3a3d1d3207bb7",
+ "versions": {
+  "python": "3.12.3",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "sublet": "0.1.0"
+ },
+ "runs": 2,
+ "errors": [],
+ "n_errors": 0,
+ "outputs": [
+  "runs/week/e4__week__panel__azure__c__1__mu__1__pred__exact.json"
+ ],
+ "result": {
+  "instance_hash": "520d279608a393a0b17342139403aa7b5cb4d290109fe78d7ff83c3c9109ea09"
+ },
+ "wall_s": 3.7320245990995318,
+ "peak_rss_kb": 135388,
+ "peak_rss_mb": 132.21484375,
+ "finished": "2026-10-26T14:09:15"
+}

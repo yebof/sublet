@@ -1,0 +1,296 @@
+{
+ "figure": "sf_e3_mu",
+ "size_in": [
+  3.4869,
+  2.4
+ ],
+ "sources": [
+  "code/sim/out/e3/summary.json"
+ ],
+ "data": {
+  "sublet_ms4": {
+   "mu": [
+    0.2,
+    0.5,
+    1.0,
+    2.0
+   ],
+   "median": [
+    null,
+    null,
+    1.9110941116343405,
+    1.921937570757633
+   ],
+   "ci_lo": [
+    null,
+    null,
+    1.9110941116343405,
+    1.921937570757633
+   ],
+   "ci_hi": [
+    null,
+    null,
+    1.9110941116343405,
+    1.921937570757633
+   ],
+   "n": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "note": [
+    "no run of this tag in the outputs",
+    "no run of this tag in the outputs",
+    null,
+    null
+   ]
+  },
+  "sublet_ms4:siloed": {
+   "mu": [
+    0.2,
+    0.5,
+    1.0,
+    2.0
+   ],
+   "median": [
+    null,
+    null,
+    2.0096921875159803,
+    2.015989225133134
+   ],
+   "ci_lo": [
+    null,
+    null,
+    2.0096921875159803,
+    2.015989225133134
+   ],
+   "ci_hi": [
+    null,
+    null,
+    2.0096921875159803,
+    2.015989225133134
+   ],
+   "n": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "note": [
+    "no run of this tag in the outputs",
+    "no run of this tag in the outputs",
+    null,
+    null
+   ]
+  },
+  "a6": {
+   "mu": [
+    0.2,
+    0.5,
+    1.0,
+    2.0
+   ],
+   "median": [
+    null,
+    null,
+    1.7771877445272954,
+    1.7773563237588912
+   ],
+   "ci_lo": [
+    null,
+    null,
+    1.7771877445272954,
+    1.7773563237588912
+   ],
+   "ci_hi": [
+    null,
+    null,
+    1.7771877445272954,
+    1.7773563237588912
+   ],
+   "n": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "note": [
+    "no run of this tag in the outputs",
+    "no run of this tag in the outputs",
+    null,
+    null
+   ]
+  },
+  "a6_siloed": {
+   "mu": [
+    0.2,
+    0.5,
+    1.0,
+    2.0
+   ],
+   "median": [
+    null,
+    null,
+    2.11453245397307,
+    2.1147330328130787
+   ],
+   "ci_lo": [
+    null,
+    null,
+    2.11453245397307,
+    2.1147330328130787
+   ],
+   "ci_hi": [
+    null,
+    null,
+    2.11453245397307,
+    2.1147330328130787
+   ],
+   "n": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "note": [
+    "no run of this tag in the outputs",
+    "no run of this tag in the outputs",
+    null,
+    null
+   ]
+  },
+  "bl2": {
+   "mu": [
+    0.2,
+    0.5,
+    1.0,
+    2.0
+   ],
+   "median": [
+    null,
+    null,
+    2.0642108477759913,
+    2.064406653244289
+   ],
+   "ci_lo": [
+    null,
+    null,
+    2.0642108477759913,
+    2.064406653244289
+   ],
+   "ci_hi": [
+    null,
+    null,
+    2.0642108477759913,
+    2.064406653244289
+   ],
+   "n": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "note": [
+    "no run of this tag in the outputs",
+    "no run of this tag in the outputs",
+    null,
+    null
+   ]
+  },
+  "opt": {
+   "mu": [
+    0.2,
+    0.5,
+    1.0,
+    2.0
+   ],
+   "point": [
+    null,
+    null,
+    1.233315601424277,
+    1.2334339732118909
+   ],
+   "lo": [
+    null,
+    null,
+    1.2313029139260616,
+    1.2333635908888092
+   ],
+   "hi": [
+    null,
+    null,
+    1.2335697829088093,
+    1.2342587377392826
+   ],
+   "exact": [
+    false,
+    false,
+    false,
+    false
+   ],
+   "open": [
+    true,
+    true,
+    false,
+    false
+   ],
+   "n_alignments": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "note": [
+    "no bracket with a value",
+    "no bracket with a value",
+    null,
+    null
+   ]
+  },
+  "b": 8.0,
+  "u": 8.0,
+  "mu_levels": [
+   0.2,
+   0.5,
+   1.0,
+   2.0
+  ],
+  "tags": {
+   "sublet_ms4": "Sublet",
+   "sublet_ms4:siloed": "Sublet-siloed",
+   "a6": "A6",
+   "a6_siloed": "A6-siloed",
+   "bl2": "BL2"
+  },
+  "sharing": {
+   "siloed": [
+    [
+     "sublet_ms4:siloed",
+     "sublet_ms4"
+    ],
+    [
+     "a6_siloed",
+     "a6"
+    ]
+   ],
+   "per_borrower": [
+    "bl2"
+   ]
+  },
+  "labels": {
+   "x": "Stranding price $\\mu/\\tilde{\\beta}$",
+   "y": "Cost / shared OPT",
+   "opt": "Siloed OPT",
+   "note": "b = 8, u = 8; medians over 1 alignment x 1 policy seed with 95% bootstrap intervals; y: cost over a lower bound on the shared OPT, so an upper bound on cost / shared OPT; Siloed OPT: siloed OPT / shared OPT, the median of the alignments' bracket points with [smallest lo, largest hi]; dashed lines: the siloed forms of Lagged RetroRenting + one-way guard ($B_0=10\\%$ of the all-fallback bill) (its own markers) and Two-timescale PD (open hexagons); Per-borrower ski rental is per-borrower by construction; intervals and brackets narrower than the markers are hidden",
+   "hidden": "intervals and brackets narrower than the markers are hidden"
+  },
+  "meta": {
+   "git_revision": "939847ca5925ce069d6df9089fe3a3d1d3207bb7",
+   "reduced": true
+  },
+  "sources": [
+   "code/sim/out/e3/summary.json"
+  ]
+ }
+}

@@ -1,0 +1,5461 @@
+{
+ "meta": {
+  "exp": "e7h",
+  "git_revision": "eb76b1602c96ac4f5fae6646085e7a37c04ab1b7",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "scipy": "1.17.1",
+   "sublet": "0.1.0"
+  },
+  "written": "2026-11-03T12:53:59",
+  "script": "code/sim/sublet/experiments/e7h.py",
+  "script_sha256": "e973cc90f7107bfae54f61162cb8accdcd15bc5f28dcf7e49f97b7ef7d0db95c"
+ },
+ "jobs": [
+  {
+   "id": "e7h:grid:k=week:tag=Sublet:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "Sublet",
+    "c": 1,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 3094.6,
+   "status": "ok",
+   "wall_s": 3761.1026694998145,
+   "peak_rss_mb": 437.3671875,
+   "runs": 18
+  },
+  {
+   "id": "e7h:grid:k=week:tag=A9:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "A9",
+    "c": 1,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 178.60000000000002,
+   "status": "ok",
+   "wall_s": 210.06261562975124,
+   "peak_rss_mb": 172.94140625,
+   "runs": 6
+  },
+  {
+   "id": "e7h:grid:k=week:tag=Sublet-1way:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "Sublet-1way",
+    "c": 1,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 3094.6,
+   "status": "ok",
+   "wall_s": 3078.2124824482016,
+   "peak_rss_mb": 410.24609375,
+   "runs": 18
+  },
+  {
+   "id": "e7h:grid:k=week:tag=BL1-GP:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "BL1-GP",
+    "c": 1,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 3050.6,
+   "status": "ok",
+   "wall_s": 3270.87069710996,
+   "peak_rss_mb": 413.9609375,
+   "runs": 18
+  },
+  {
+   "id": "e7h:grid:k=week:tag=Sublet-MS4:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "Sublet-MS4",
+    "c": 1,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 2528.6,
+   "status": "ok",
+   "wall_s": 3095.816900318954,
+   "peak_rss_mb": 413.66796875,
+   "runs": 18
+  },
+  {
+   "id": "e7h:grid:k=week:tag=BL1:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "BL1",
+    "c": 1,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 271.40000000000003,
+   "status": "ok",
+   "wall_s": 493.3496300820261,
+   "peak_rss_mb": 192.88671875,
+   "runs": 18
+  },
+  {
+   "id": "e7h:grid:k=week:tag=BL1-BO:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "BL1-BO",
+    "c": 1,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 271.40000000000003,
+   "status": "ok",
+   "wall_s": 247.16112036583945,
+   "peak_rss_mb": 157.2734375,
+   "runs": 18
+  },
+  {
+   "id": "e7h:grid:k=week:tag=BL2:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "BL2",
+    "c": 1,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 458.6,
+   "status": "ok",
+   "wall_s": 752.3114200029522,
+   "peak_rss_mb": 226.96875,
+   "runs": 18
+  },
+  {
+   "id": "e7h:grid:k=week:tag=BL3-0:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "BL3-0",
+    "c": 1,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 264.2,
+   "status": "ok",
+   "wall_s": 519.6309691886418,
+   "peak_rss_mb": 195.2734375,
+   "runs": 18
+  },
+  {
+   "id": "e7h:grid:k=week:tag=BL4:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "BL4",
+    "c": 1,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 507.2,
+   "status": "ok",
+   "wall_s": 634.2089333706535,
+   "peak_rss_mb": 173.98046875,
+   "runs": 18
+  },
+  {
+   "id": "e7h:grid:k=week:tag=BL5-cur:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "BL5-cur",
+    "c": 1,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 231.8,
+   "status": "ok",
+   "wall_s": 269.36483706114814,
+   "peak_rss_mb": 161.2734375,
+   "runs": 18
+  },
+  {
+   "id": "e7h:grid:k=week:tag=BL5:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "BL5",
+    "c": 1,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 231.8,
+   "status": "ok",
+   "wall_s": 211.11111015779898,
+   "peak_rss_mb": 157.20703125,
+   "runs": 18
+  },
+  {
+   "id": "e7h:grid:k=week:tag=BL5-tau60:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "BL5-tau60",
+    "c": 1,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 231.8,
+   "status": "ok",
+   "wall_s": 287.1078414437361,
+   "peak_rss_mb": 151.8671875,
+   "runs": 18
+  },
+  {
+   "id": "e7h:grid:k=week:tag=BL5N:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "BL5N",
+    "c": 1,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 231.8,
+   "status": "ok",
+   "wall_s": 446.09728287905455,
+   "peak_rss_mb": 155.91015625,
+   "runs": 18
+  },
+  {
+   "id": "e7h:grid:k=week:tag=BL1N:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "BL1N",
+    "c": 1,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 178.60000000000002,
+   "status": "ok",
+   "wall_s": 226.0650564348325,
+   "peak_rss_mb": 189.16796875,
+   "runs": 6
+  },
+  {
+   "id": "e7h:grid:k=week:tag=CR:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "CR",
+    "c": 1,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 437.8,
+   "status": "ok",
+   "wall_s": 387.0333382729441,
+   "peak_rss_mb": 175.640625,
+   "runs": 18
+  },
+  {
+   "id": "e7h:grid:k=week:tag=A9-noMBB:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "A9-noMBB",
+    "c": 1,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 178.60000000000002,
+   "status": "ok",
+   "wall_s": 144.0160242812708,
+   "peak_rss_mb": 152.0390625,
+   "runs": 6
+  },
+  {
+   "id": "e7h:grid:k=week:tag=A9-noCommit:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "A9-noCommit",
+    "c": 1,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 178.60000000000002,
+   "status": "ok",
+   "wall_s": 233.77823371393606,
+   "peak_rss_mb": 169.26171875,
+   "runs": 6
+  },
+  {
+   "id": "e7h:grid:k=week:tag=A9-noIns:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "A9-noIns",
+    "c": 1,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 178.60000000000002,
+   "status": "ok",
+   "wall_s": 149.90577080706134,
+   "peak_rss_mb": 172.43359375,
+   "runs": 6
+  },
+  {
+   "id": "e7h:grid:k=week:tag=A9-kstar:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "A9-kstar",
+    "c": 1,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 178.60000000000002,
+   "status": "ok",
+   "wall_s": 167.40201951703057,
+   "peak_rss_mb": 175.53125,
+   "runs": 6
+  },
+  {
+   "id": "e7h:grid:k=week:tag=A9-static:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "A9-static",
+    "c": 1,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 437.8,
+   "status": "ok",
+   "wall_s": 473.03438255609944,
+   "peak_rss_mb": 172.57421875,
+   "runs": 18
+  },
+  {
+   "id": "e7h:grid:k=week:tag=A6:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "A6",
+    "c": 1,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 894.2,
+   "status": "ok",
+   "wall_s": 1182.473688035272,
+   "peak_rss_mb": 415.23828125,
+   "runs": 18
+  },
+  {
+   "id": "e7h:grid:k=week:tag=Sublet:c=2",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "Sublet",
+    "c": 2,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 556.6,
+   "status": "ok",
+   "wall_s": 849.737400048878,
+   "peak_rss_mb": 418.7734375,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=week:tag=A9:c=2",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "A9",
+    "c": 2,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 70.6,
+   "status": "ok",
+   "wall_s": 88.10645458102226,
+   "peak_rss_mb": 145.40625,
+   "runs": 1
+  },
+  {
+   "id": "e7h:grid:k=week:tag=Sublet-1way:c=2",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "Sublet-1way",
+    "c": 2,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 556.6,
+   "status": "ok",
+   "wall_s": 786.8423304320313,
+   "peak_rss_mb": 398.19921875,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=week:tag=BL1-GP:c=2",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "BL1-GP",
+    "c": 2,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 512.6,
+   "status": "ok",
+   "wall_s": 796.3270212393254,
+   "peak_rss_mb": 417.22265625,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=week:tag=Sublet-MS4:c=2",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "Sublet-MS4",
+    "c": 2,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 425.6,
+   "status": "ok",
+   "wall_s": 857.6718708849512,
+   "peak_rss_mb": 412.9921875,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=week:tag=BL1:c=2",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "BL1",
+    "c": 2,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 49.400000000000006,
+   "status": "ok",
+   "wall_s": 61.30670334491879,
+   "peak_rss_mb": 156.7578125,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=week:tag=BL1-BO:c=2",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "BL1-BO",
+    "c": 2,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 49.400000000000006,
+   "status": "ok",
+   "wall_s": 68.66548979189247,
+   "peak_rss_mb": 149.6875,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=week:tag=BL2:c=2",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "BL2",
+    "c": 2,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 80.6,
+   "status": "ok",
+   "wall_s": 131.14884462114424,
+   "peak_rss_mb": 164.46875,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=week:tag=BL3-0:c=2",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "BL3-0",
+    "c": 2,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 48.2,
+   "status": "ok",
+   "wall_s": 56.205269095953554,
+   "peak_rss_mb": 147.140625,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=week:tag=BL4:c=2",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "BL4",
+    "c": 2,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 88.69999999999999,
+   "status": "ok",
+   "wall_s": 140.85910527594388,
+   "peak_rss_mb": 174.75,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=week:tag=BL5-cur:c=2",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "BL5-cur",
+    "c": 2,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 42.8,
+   "status": "ok",
+   "wall_s": 67.42460798006505,
+   "peak_rss_mb": 154.56640625,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=week:tag=BL5:c=2",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "BL5",
+    "c": 2,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 42.8,
+   "status": "ok",
+   "wall_s": 50.25231691496447,
+   "peak_rss_mb": 149.83984375,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=week:tag=BL5-tau60:c=2",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "BL5-tau60",
+    "c": 2,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 42.8,
+   "status": "ok",
+   "wall_s": 54.957988751120865,
+   "peak_rss_mb": 146.23828125,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=week:tag=BL5N:c=2",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "BL5N",
+    "c": 2,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 42.8,
+   "status": "ok",
+   "wall_s": 97.98641133541241,
+   "peak_rss_mb": 149.33984375,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=week:tag=BL1N:c=2",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "BL1N",
+    "c": 2,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 70.6,
+   "status": "ok",
+   "wall_s": 69.93569387076423,
+   "peak_rss_mb": 146.76171875,
+   "runs": 1
+  },
+  {
+   "id": "e7h:grid:k=week:tag=CR:c=2",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "CR",
+    "c": 2,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 113.80000000000001,
+   "status": "ok",
+   "wall_s": 85.73009325098246,
+   "peak_rss_mb": 155.34375,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=week:tag=A9-noMBB:c=2",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "A9-noMBB",
+    "c": 2,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 70.6,
+   "status": "ok",
+   "wall_s": 78.9360425202176,
+   "peak_rss_mb": 144.28515625,
+   "runs": 1
+  },
+  {
+   "id": "e7h:grid:k=week:tag=A9-noCommit:c=2",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "A9-noCommit",
+    "c": 2,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 70.6,
+   "status": "ok",
+   "wall_s": 88.00172862317413,
+   "peak_rss_mb": 144.5703125,
+   "runs": 1
+  },
+  {
+   "id": "e7h:grid:k=week:tag=A9-noIns:c=2",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "A9-noIns",
+    "c": 2,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 70.6,
+   "status": "ok",
+   "wall_s": 39.098601147998124,
+   "peak_rss_mb": 146.234375,
+   "runs": 1
+  },
+  {
+   "id": "e7h:grid:k=week:tag=A9-kstar:c=2",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "A9-kstar",
+    "c": 2,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 70.6,
+   "status": "ok",
+   "wall_s": 74.8352572270669,
+   "peak_rss_mb": 145.140625,
+   "runs": 1
+  },
+  {
+   "id": "e7h:grid:k=week:tag=A9-static:c=2",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "A9-static",
+    "c": 2,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 113.80000000000001,
+   "status": "ok",
+   "wall_s": 136.39294121507555,
+   "peak_rss_mb": 150.35546875,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=week:tag=A6:c=2",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "A6",
+    "c": 2,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 153.2,
+   "status": "ok",
+   "wall_s": 292.88454470504075,
+   "peak_rss_mb": 407.96875,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=week:tag=Sublet:c=3",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "Sublet",
+    "c": 3,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 556.6,
+   "status": "ok",
+   "wall_s": 1083.768178993836,
+   "peak_rss_mb": 414.51171875,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=week:tag=A9:c=3",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "A9",
+    "c": 3,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 70.6,
+   "status": "ok",
+   "wall_s": 91.83914793515578,
+   "peak_rss_mb": 144.5625,
+   "runs": 1
+  },
+  {
+   "id": "e7h:grid:k=week:tag=Sublet-1way:c=3",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "Sublet-1way",
+    "c": 3,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 556.6,
+   "status": "ok",
+   "wall_s": 934.8611764986999,
+   "peak_rss_mb": 404.8125,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=week:tag=BL1-GP:c=3",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "BL1-GP",
+    "c": 3,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 512.6,
+   "status": "ok",
+   "wall_s": 1104.4066465380602,
+   "peak_rss_mb": 421.22265625,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=week:tag=Sublet-MS4:c=3",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "Sublet-MS4",
+    "c": 3,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 425.6,
+   "status": "ok",
+   "wall_s": 998.6739832703024,
+   "peak_rss_mb": 417.7109375,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=week:tag=BL1:c=3",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "BL1",
+    "c": 3,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 49.400000000000006,
+   "status": "ok",
+   "wall_s": 79.99860465200618,
+   "peak_rss_mb": 150.578125,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=week:tag=BL1-BO:c=3",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "BL1-BO",
+    "c": 3,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 49.400000000000006,
+   "status": "ok",
+   "wall_s": 71.46981756901368,
+   "peak_rss_mb": 150.5625,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=week:tag=BL2:c=3",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "BL2",
+    "c": 3,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 80.6,
+   "status": "ok",
+   "wall_s": 139.14800320984796,
+   "peak_rss_mb": 154.73828125,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=week:tag=BL3-0:c=3",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "BL3-0",
+    "c": 3,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 48.2,
+   "status": "ok",
+   "wall_s": 58.186666022986174,
+   "peak_rss_mb": 149.75390625,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=week:tag=BL4:c=3",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "BL4",
+    "c": 3,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 88.69999999999999,
+   "status": "ok",
+   "wall_s": 153.61916582705453,
+   "peak_rss_mb": 174.77734375,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=week:tag=BL5-cur:c=3",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "BL5-cur",
+    "c": 3,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 42.8,
+   "status": "ok",
+   "wall_s": 62.838007607031614,
+   "peak_rss_mb": 150.16015625,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=week:tag=BL5:c=3",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "BL5",
+    "c": 3,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 42.8,
+   "status": "ok",
+   "wall_s": 51.60406829742715,
+   "peak_rss_mb": 149.35546875,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=week:tag=BL5-tau60:c=3",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "BL5-tau60",
+    "c": 3,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 42.8,
+   "status": "ok",
+   "wall_s": 68.70627379091457,
+   "peak_rss_mb": 147.546875,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=week:tag=BL5N:c=3",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "BL5N",
+    "c": 3,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 42.8,
+   "status": "ok",
+   "wall_s": 110.72220118390396,
+   "peak_rss_mb": 150.015625,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=week:tag=BL1N:c=3",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "BL1N",
+    "c": 3,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 70.6,
+   "status": "ok",
+   "wall_s": 83.7553766509518,
+   "peak_rss_mb": 146.14453125,
+   "runs": 1
+  },
+  {
+   "id": "e7h:grid:k=week:tag=CR:c=3",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "CR",
+    "c": 3,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 113.80000000000001,
+   "status": "ok",
+   "wall_s": 72.01397546008229,
+   "peak_rss_mb": 151.77734375,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=week:tag=A9-noMBB:c=3",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "A9-noMBB",
+    "c": 3,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 70.6,
+   "status": "ok",
+   "wall_s": 92.94869059091434,
+   "peak_rss_mb": 144.78125,
+   "runs": 1
+  },
+  {
+   "id": "e7h:grid:k=week:tag=A9-noCommit:c=3",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "A9-noCommit",
+    "c": 3,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 70.6,
+   "status": "ok",
+   "wall_s": 83.29026001086459,
+   "peak_rss_mb": 144.41796875,
+   "runs": 1
+  },
+  {
+   "id": "e7h:grid:k=week:tag=A9-noIns:c=3",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "A9-noIns",
+    "c": 3,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 70.6,
+   "status": "ok",
+   "wall_s": 35.99451729422435,
+   "peak_rss_mb": 145.359375,
+   "runs": 1
+  },
+  {
+   "id": "e7h:grid:k=week:tag=A9-kstar:c=3",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "A9-kstar",
+    "c": 3,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 70.6,
+   "status": "ok",
+   "wall_s": 72.73320933803916,
+   "peak_rss_mb": 144.46875,
+   "runs": 1
+  },
+  {
+   "id": "e7h:grid:k=week:tag=A9-static:c=3",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "A9-static",
+    "c": 3,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 113.80000000000001,
+   "status": "ok",
+   "wall_s": 116.4618926490657,
+   "peak_rss_mb": 149.9765625,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=week:tag=A6:c=3",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "A6",
+    "c": 3,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 153.2,
+   "status": "ok",
+   "wall_s": 352.7324706260115,
+   "peak_rss_mb": 411.16015625,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=week:tag=Sublet:c=4",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "Sublet",
+    "c": 4,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 556.6,
+   "status": "ok",
+   "wall_s": 1038.1631006528623,
+   "peak_rss_mb": 419.72265625,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=week:tag=A9:c=4",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "A9",
+    "c": 4,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 70.6,
+   "status": "ok",
+   "wall_s": 86.55807605665177,
+   "peak_rss_mb": 145.71484375,
+   "runs": 1
+  },
+  {
+   "id": "e7h:grid:k=week:tag=Sublet-1way:c=4",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "Sublet-1way",
+    "c": 4,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 556.6,
+   "status": "ok",
+   "wall_s": 1091.6372363627888,
+   "peak_rss_mb": 408.109375,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=week:tag=BL1-GP:c=4",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "BL1-GP",
+    "c": 4,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 512.6,
+   "status": "ok",
+   "wall_s": 1033.853863379918,
+   "peak_rss_mb": 422.5546875,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=week:tag=Sublet-MS4:c=4",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "Sublet-MS4",
+    "c": 4,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 425.6,
+   "status": "ok",
+   "wall_s": 1045.81637808308,
+   "peak_rss_mb": 417.81640625,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=week:tag=BL1:c=4",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "BL1",
+    "c": 4,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 49.400000000000006,
+   "status": "ok",
+   "wall_s": 51.90024780482054,
+   "peak_rss_mb": 154.35546875,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=week:tag=BL1-BO:c=4",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "BL1-BO",
+    "c": 4,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 49.400000000000006,
+   "status": "ok",
+   "wall_s": 58.628419674001634,
+   "peak_rss_mb": 151.09765625,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=week:tag=BL2:c=4",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "BL2",
+    "c": 4,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 80.6,
+   "status": "ok",
+   "wall_s": 82.86396483890712,
+   "peak_rss_mb": 156.33203125,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=week:tag=BL3-0:c=4",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "BL3-0",
+    "c": 4,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 48.2,
+   "status": "ok",
+   "wall_s": 57.91898376774043,
+   "peak_rss_mb": 149.9765625,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=week:tag=BL4:c=4",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "BL4",
+    "c": 4,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 88.69999999999999,
+   "status": "ok",
+   "wall_s": 131.75866641197354,
+   "peak_rss_mb": 173.25,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=week:tag=BL5-cur:c=4",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "BL5-cur",
+    "c": 4,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 42.8,
+   "status": "ok",
+   "wall_s": 60.32714474899694,
+   "peak_rss_mb": 149.875,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=week:tag=BL5:c=4",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "BL5",
+    "c": 4,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 42.8,
+   "status": "ok",
+   "wall_s": 53.1634737290442,
+   "peak_rss_mb": 150.31640625,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=week:tag=BL5-tau60:c=4",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "BL5-tau60",
+    "c": 4,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 42.8,
+   "status": "ok",
+   "wall_s": 72.00272470479831,
+   "peak_rss_mb": 147.81640625,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=week:tag=BL5N:c=4",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "BL5N",
+    "c": 4,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 42.8,
+   "status": "ok",
+   "wall_s": 76.34256190806627,
+   "peak_rss_mb": 149.765625,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=week:tag=BL1N:c=4",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "BL1N",
+    "c": 4,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 70.6,
+   "status": "ok",
+   "wall_s": 74.7080781836994,
+   "peak_rss_mb": 147.9296875,
+   "runs": 1
+  },
+  {
+   "id": "e7h:grid:k=week:tag=CR:c=4",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "CR",
+    "c": 4,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 113.80000000000001,
+   "status": "ok",
+   "wall_s": 86.06337487092242,
+   "peak_rss_mb": 150.03515625,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=week:tag=A9-noMBB:c=4",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "A9-noMBB",
+    "c": 4,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 70.6,
+   "status": "ok",
+   "wall_s": 82.23831007210538,
+   "peak_rss_mb": 145.54296875,
+   "runs": 1
+  },
+  {
+   "id": "e7h:grid:k=week:tag=A9-noCommit:c=4",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "A9-noCommit",
+    "c": 4,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 70.6,
+   "status": "ok",
+   "wall_s": 70.11827804287896,
+   "peak_rss_mb": 146.05859375,
+   "runs": 1
+  },
+  {
+   "id": "e7h:grid:k=week:tag=A9-noIns:c=4",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "A9-noIns",
+    "c": 4,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 70.6,
+   "status": "ok",
+   "wall_s": 34.96900957496837,
+   "peak_rss_mb": 146.546875,
+   "runs": 1
+  },
+  {
+   "id": "e7h:grid:k=week:tag=A9-kstar:c=4",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "A9-kstar",
+    "c": 4,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 70.6,
+   "status": "ok",
+   "wall_s": 91.25597233232111,
+   "peak_rss_mb": 146.30078125,
+   "runs": 1
+  },
+  {
+   "id": "e7h:grid:k=week:tag=A9-static:c=4",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "A9-static",
+    "c": 4,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 113.80000000000001,
+   "status": "ok",
+   "wall_s": 130.55264185275882,
+   "peak_rss_mb": 149.0390625,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=week:tag=A6:c=4",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "week",
+    "tag": "A6",
+    "c": 4,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 153.2,
+   "status": "ok",
+   "wall_s": 285.31434239493683,
+   "peak_rss_mb": 410.2421875,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap_lp:c=1",
+   "kind": "alone",
+   "params": {
+    "part": "grid",
+    "kind": "gap_lp",
+    "c": 1,
+    "horizon_min": 1440
+   },
+   "est_s": 212.1,
+   "status": "ok",
+   "wall_s": 239.7679472323507,
+   "peak_rss_mb": 1891.46875,
+   "runs": 1
+  },
+  {
+   "id": "e7h:grid:k=gap_lp:c=2",
+   "kind": "alone",
+   "params": {
+    "part": "grid",
+    "kind": "gap_lp",
+    "c": 2,
+    "horizon_min": 1440
+   },
+   "est_s": 212.1,
+   "status": "ok",
+   "wall_s": 332.15836262423545,
+   "peak_rss_mb": 1999.05078125,
+   "runs": 1
+  },
+  {
+   "id": "e7h:grid:k=gap_lp:c=3",
+   "kind": "alone",
+   "params": {
+    "part": "grid",
+    "kind": "gap_lp",
+    "c": 3,
+    "horizon_min": 1440
+   },
+   "est_s": 212.1,
+   "status": "ok",
+   "wall_s": 160.23509238101542,
+   "peak_rss_mb": 1839.21484375,
+   "runs": 1
+  },
+  {
+   "id": "e7h:grid:k=gap_lp:c=4",
+   "kind": "alone",
+   "params": {
+    "part": "grid",
+    "kind": "gap_lp",
+    "c": 4,
+    "horizon_min": 1440
+   },
+   "est_s": 212.1,
+   "status": "ok",
+   "wall_s": 115.95407863892615,
+   "peak_rss_mb": 1436.7578125,
+   "runs": 1
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=Sublet:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "Sublet",
+    "c": 1,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 121.51428571428572,
+   "status": "ok",
+   "wall_s": 147.00928106391802,
+   "peak_rss_mb": 147.40234375,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=A9:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "A9",
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 52.08571428571429,
+   "status": "ok",
+   "wall_s": 38.87694681016728,
+   "peak_rss_mb": 143.19140625,
+   "runs": 1
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=Sublet-1way:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "Sublet-1way",
+    "c": 1,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 121.51428571428572,
+   "status": "ok",
+   "wall_s": 134.2746028471738,
+   "peak_rss_mb": 146.1328125,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=BL1-GP:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "BL1-GP",
+    "c": 1,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 77.51428571428572,
+   "status": "ok",
+   "wall_s": 86.40832717064768,
+   "peak_rss_mb": 147.9453125,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=Sublet-MS4:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "Sublet-MS4",
+    "c": 1,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 65.08571428571429,
+   "status": "ok",
+   "wall_s": 88.3454444729723,
+   "peak_rss_mb": 149.89453125,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=BL1:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "BL1",
+    "c": 1,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 11.342857142857143,
+   "status": "ok",
+   "wall_s": 5.861402893904597,
+   "peak_rss_mb": 143.31640625,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=BL1-BO:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "BL1-BO",
+    "c": 1,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 11.342857142857143,
+   "status": "ok",
+   "wall_s": 5.744642618112266,
+   "peak_rss_mb": 143.47265625,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=BL2:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "BL2",
+    "c": 1,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 15.799999999999999,
+   "status": "ok",
+   "wall_s": 8.646668069064617,
+   "peak_rss_mb": 144.22265625,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=BL3-0:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "BL3-0",
+    "c": 1,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 11.17142857142857,
+   "status": "ok",
+   "wall_s": 6.352324761915952,
+   "peak_rss_mb": 143.015625,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=BL4:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "BL4",
+    "c": 1,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 16.957142857142856,
+   "status": "ok",
+   "wall_s": 13.043519344180822,
+   "peak_rss_mb": 168.0625,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=BL5-cur:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "BL5-cur",
+    "c": 1,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 10.399999999999999,
+   "status": "ok",
+   "wall_s": 6.072287852875888,
+   "peak_rss_mb": 143.0390625,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=BL5:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "BL5",
+    "c": 1,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 10.399999999999999,
+   "status": "ok",
+   "wall_s": 5.575500246137381,
+   "peak_rss_mb": 144.1875,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=BL5-tau60:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "BL5-tau60",
+    "c": 1,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 10.399999999999999,
+   "status": "ok",
+   "wall_s": 6.7517213160172105,
+   "peak_rss_mb": 141.34765625,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=BL5N:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "BL5N",
+    "c": 1,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 10.399999999999999,
+   "status": "ok",
+   "wall_s": 11.493117460981011,
+   "peak_rss_mb": 142.15625,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=BL1N:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "BL1N",
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 52.08571428571429,
+   "status": "ok",
+   "wall_s": 62.02059677010402,
+   "peak_rss_mb": 143.72265625,
+   "runs": 1
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=CR:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "CR",
+    "c": 1,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 58.25714285714286,
+   "status": "ok",
+   "wall_s": 6.437684947159141,
+   "peak_rss_mb": 143.7890625,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=A9-noMBB:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "A9-noMBB",
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 52.08571428571429,
+   "status": "ok",
+   "wall_s": 51.217170340009034,
+   "peak_rss_mb": 144.39453125,
+   "runs": 1
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=A9-noCommit:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "A9-noCommit",
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 52.08571428571429,
+   "status": "ok",
+   "wall_s": 50.272429811768234,
+   "peak_rss_mb": 144.36328125,
+   "runs": 1
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=A9-noIns:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "A9-noIns",
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 52.08571428571429,
+   "status": "ok",
+   "wall_s": 5.341346718836576,
+   "peak_rss_mb": 144.39453125,
+   "runs": 1
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=A9-kstar:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "A9-kstar",
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 52.08571428571429,
+   "status": "ok",
+   "wall_s": 48.52152870269492,
+   "peak_rss_mb": 143.55859375,
+   "runs": 1
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=A9-static:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "A9-static",
+    "c": 1,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 58.25714285714286,
+   "status": "ok",
+   "wall_s": 52.45455530611798,
+   "peak_rss_mb": 142.76953125,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=A6:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "A6",
+    "c": 1,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 26.171428571428567,
+   "status": "ok",
+   "wall_s": 68.56176728429273,
+   "peak_rss_mb": 143.23046875,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=Sublet:c=2",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "Sublet",
+    "c": 2,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 121.51428571428572,
+   "status": "ok",
+   "wall_s": 93.63915579905733,
+   "peak_rss_mb": 147.28515625,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=A9:c=2",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "A9",
+    "c": 2,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 52.08571428571429,
+   "status": "ok",
+   "wall_s": 44.019135363865644,
+   "peak_rss_mb": 143.76171875,
+   "runs": 1
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=Sublet-1way:c=2",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "Sublet-1way",
+    "c": 2,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 121.51428571428572,
+   "status": "ok",
+   "wall_s": 77.10454847477376,
+   "peak_rss_mb": 145.0703125,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=BL1-GP:c=2",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "BL1-GP",
+    "c": 2,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 77.51428571428572,
+   "status": "ok",
+   "wall_s": 43.487182747107,
+   "peak_rss_mb": 144.453125,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=Sublet-MS4:c=2",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "Sublet-MS4",
+    "c": 2,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 65.08571428571429,
+   "status": "ok",
+   "wall_s": 31.068635117728263,
+   "peak_rss_mb": 146.12890625,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=BL1:c=2",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "BL1",
+    "c": 2,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 11.342857142857143,
+   "status": "ok",
+   "wall_s": 5.021051294635981,
+   "peak_rss_mb": 142.96875,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=BL1-BO:c=2",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "BL1-BO",
+    "c": 2,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 11.342857142857143,
+   "status": "ok",
+   "wall_s": 4.823643775191158,
+   "peak_rss_mb": 141.73046875,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=BL2:c=2",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "BL2",
+    "c": 2,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 15.799999999999999,
+   "status": "ok",
+   "wall_s": 7.6443298468366265,
+   "peak_rss_mb": 142.69921875,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=BL3-0:c=2",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "BL3-0",
+    "c": 2,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 11.17142857142857,
+   "status": "ok",
+   "wall_s": 5.571835297159851,
+   "peak_rss_mb": 142.91015625,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=BL4:c=2",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "BL4",
+    "c": 2,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 16.957142857142856,
+   "status": "ok",
+   "wall_s": 21.902026692871004,
+   "peak_rss_mb": 170.6328125,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=BL5-cur:c=2",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "BL5-cur",
+    "c": 2,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 10.399999999999999,
+   "status": "ok",
+   "wall_s": 5.099014739971608,
+   "peak_rss_mb": 143.7109375,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=BL5:c=2",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "BL5",
+    "c": 2,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 10.399999999999999,
+   "status": "ok",
+   "wall_s": 4.413988376967609,
+   "peak_rss_mb": 142.1953125,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=BL5-tau60:c=2",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "BL5-tau60",
+    "c": 2,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 10.399999999999999,
+   "status": "ok",
+   "wall_s": 4.956237494945526,
+   "peak_rss_mb": 144.3828125,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=BL5N:c=2",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "BL5N",
+    "c": 2,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 10.399999999999999,
+   "status": "ok",
+   "wall_s": 5.19055245583877,
+   "peak_rss_mb": 144.2421875,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=BL1N:c=2",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "BL1N",
+    "c": 2,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 52.08571428571429,
+   "status": "ok",
+   "wall_s": 56.92297296784818,
+   "peak_rss_mb": 141.4140625,
+   "runs": 1
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=CR:c=2",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "CR",
+    "c": 2,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 58.25714285714286,
+   "status": "ok",
+   "wall_s": 5.423853767104447,
+   "peak_rss_mb": 143.0078125,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=A9-noMBB:c=2",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "A9-noMBB",
+    "c": 2,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 52.08571428571429,
+   "status": "ok",
+   "wall_s": 61.59160868730396,
+   "peak_rss_mb": 142.72265625,
+   "runs": 1
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=A9-noCommit:c=2",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "A9-noCommit",
+    "c": 2,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 52.08571428571429,
+   "status": "ok",
+   "wall_s": 52.33719243388623,
+   "peak_rss_mb": 144.12890625,
+   "runs": 1
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=A9-noIns:c=2",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "A9-noIns",
+    "c": 2,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 52.08571428571429,
+   "status": "ok",
+   "wall_s": 2.672786785289645,
+   "peak_rss_mb": 144.3671875,
+   "runs": 1
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=A9-kstar:c=2",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "A9-kstar",
+    "c": 2,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 52.08571428571429,
+   "status": "ok",
+   "wall_s": 65.74223073525354,
+   "peak_rss_mb": 143.11328125,
+   "runs": 1
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=A9-static:c=2",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "A9-static",
+    "c": 2,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 58.25714285714286,
+   "status": "ok",
+   "wall_s": 53.48722563777119,
+   "peak_rss_mb": 141.4140625,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=A6:c=2",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "A6",
+    "c": 2,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 26.171428571428567,
+   "status": "ok",
+   "wall_s": 36.18928959406912,
+   "peak_rss_mb": 144.37109375,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=Sublet:c=3",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "Sublet",
+    "c": 3,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 121.51428571428572,
+   "status": "ok",
+   "wall_s": 97.41404707776383,
+   "peak_rss_mb": 147.7734375,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=A9:c=3",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "A9",
+    "c": 3,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 52.08571428571429,
+   "status": "ok",
+   "wall_s": 60.33377852709964,
+   "peak_rss_mb": 142.515625,
+   "runs": 1
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=Sublet-1way:c=3",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "Sublet-1way",
+    "c": 3,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 121.51428571428572,
+   "status": "ok",
+   "wall_s": 85.03280054964125,
+   "peak_rss_mb": 142.8515625,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=BL1-GP:c=3",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "BL1-GP",
+    "c": 3,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 77.51428571428572,
+   "status": "ok",
+   "wall_s": 30.31396283209324,
+   "peak_rss_mb": 144.23046875,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=Sublet-MS4:c=3",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "Sublet-MS4",
+    "c": 3,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 65.08571428571429,
+   "status": "ok",
+   "wall_s": 33.3007677658461,
+   "peak_rss_mb": 145.1953125,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=BL1:c=3",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "BL1",
+    "c": 3,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 11.342857142857143,
+   "status": "ok",
+   "wall_s": 4.141867463942617,
+   "peak_rss_mb": 143.69140625,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=BL1-BO:c=3",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "BL1-BO",
+    "c": 3,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 11.342857142857143,
+   "status": "ok",
+   "wall_s": 3.569191333837807,
+   "peak_rss_mb": 142.88671875,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=BL2:c=3",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "BL2",
+    "c": 3,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 15.799999999999999,
+   "status": "ok",
+   "wall_s": 7.336397159378976,
+   "peak_rss_mb": 144.25,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=BL3-0:c=3",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "BL3-0",
+    "c": 3,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 11.17142857142857,
+   "status": "ok",
+   "wall_s": 4.142193533014506,
+   "peak_rss_mb": 142.1171875,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=BL4:c=3",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "BL4",
+    "c": 3,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 16.957142857142856,
+   "status": "ok",
+   "wall_s": 15.691705391742289,
+   "peak_rss_mb": 167.90625,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=BL5-cur:c=3",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "BL5-cur",
+    "c": 3,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 10.399999999999999,
+   "status": "ok",
+   "wall_s": 3.156950759701431,
+   "peak_rss_mb": 143.96484375,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=BL5:c=3",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "BL5",
+    "c": 3,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 10.399999999999999,
+   "status": "ok",
+   "wall_s": 2.673680084757507,
+   "peak_rss_mb": 144.27734375,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=BL5-tau60:c=3",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "BL5-tau60",
+    "c": 3,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 10.399999999999999,
+   "status": "ok",
+   "wall_s": 3.471014472655952,
+   "peak_rss_mb": 143.7734375,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=BL5N:c=3",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "BL5N",
+    "c": 3,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 10.399999999999999,
+   "status": "ok",
+   "wall_s": 5.482258417643607,
+   "peak_rss_mb": 144.57421875,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=BL1N:c=3",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "BL1N",
+    "c": 3,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 52.08571428571429,
+   "status": "ok",
+   "wall_s": 56.52466552704573,
+   "peak_rss_mb": 141.9765625,
+   "runs": 1
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=CR:c=3",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "CR",
+    "c": 3,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 58.25714285714286,
+   "status": "ok",
+   "wall_s": 4.709771541878581,
+   "peak_rss_mb": 143.44921875,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=A9-noMBB:c=3",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "A9-noMBB",
+    "c": 3,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 52.08571428571429,
+   "status": "ok",
+   "wall_s": 69.390868361108,
+   "peak_rss_mb": 143.359375,
+   "runs": 1
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=A9-noCommit:c=3",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "A9-noCommit",
+    "c": 3,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 52.08571428571429,
+   "status": "ok",
+   "wall_s": 56.68675136100501,
+   "peak_rss_mb": 141.83203125,
+   "runs": 1
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=A9-noIns:c=3",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "A9-noIns",
+    "c": 3,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 52.08571428571429,
+   "status": "ok",
+   "wall_s": 3.735859036911279,
+   "peak_rss_mb": 143.9140625,
+   "runs": 1
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=A9-kstar:c=3",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "A9-kstar",
+    "c": 3,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 52.08571428571429,
+   "status": "ok",
+   "wall_s": 57.46681045694277,
+   "peak_rss_mb": 144.171875,
+   "runs": 1
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=A9-static:c=3",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "A9-static",
+    "c": 3,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 58.25714285714286,
+   "status": "ok",
+   "wall_s": 55.55702815903351,
+   "peak_rss_mb": 142.99609375,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=A6:c=3",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "A6",
+    "c": 3,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 26.171428571428567,
+   "status": "ok",
+   "wall_s": 23.181859123054892,
+   "peak_rss_mb": 144.046875,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=Sublet:c=4",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "Sublet",
+    "c": 4,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 121.51428571428572,
+   "status": "ok",
+   "wall_s": 84.39035890484229,
+   "peak_rss_mb": 147.171875,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=A9:c=4",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "A9",
+    "c": 4,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 52.08571428571429,
+   "status": "ok",
+   "wall_s": 49.760730472858995,
+   "peak_rss_mb": 143.55078125,
+   "runs": 1
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=Sublet-1way:c=4",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "Sublet-1way",
+    "c": 4,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 121.51428571428572,
+   "status": "ok",
+   "wall_s": 89.56653071800247,
+   "peak_rss_mb": 144.14453125,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=BL1-GP:c=4",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "BL1-GP",
+    "c": 4,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 77.51428571428572,
+   "status": "ok",
+   "wall_s": 45.42368572205305,
+   "peak_rss_mb": 144.97265625,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=Sublet-MS4:c=4",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "Sublet-MS4",
+    "c": 4,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 65.08571428571429,
+   "status": "ok",
+   "wall_s": 28.705974695272744,
+   "peak_rss_mb": 145.953125,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=BL1:c=4",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "BL1",
+    "c": 4,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 11.342857142857143,
+   "status": "ok",
+   "wall_s": 2.993646999821067,
+   "peak_rss_mb": 143.26953125,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=BL1-BO:c=4",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "BL1-BO",
+    "c": 4,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 11.342857142857143,
+   "status": "ok",
+   "wall_s": 3.05675835814327,
+   "peak_rss_mb": 144.203125,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=BL2:c=4",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "BL2",
+    "c": 4,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 15.799999999999999,
+   "status": "ok",
+   "wall_s": 7.132190398871899,
+   "peak_rss_mb": 143.45703125,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=BL3-0:c=4",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "BL3-0",
+    "c": 4,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 11.17142857142857,
+   "status": "ok",
+   "wall_s": 3.40788392489776,
+   "peak_rss_mb": 143.1328125,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=BL4:c=4",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "BL4",
+    "c": 4,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 16.957142857142856,
+   "status": "ok",
+   "wall_s": 13.732807263266295,
+   "peak_rss_mb": 167.6484375,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=BL5-cur:c=4",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "BL5-cur",
+    "c": 4,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 10.399999999999999,
+   "status": "ok",
+   "wall_s": 4.00068795401603,
+   "peak_rss_mb": 143.13671875,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=BL5:c=4",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "BL5",
+    "c": 4,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 10.399999999999999,
+   "status": "ok",
+   "wall_s": 4.018670265097171,
+   "peak_rss_mb": 142.55078125,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=BL5-tau60:c=4",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "BL5-tau60",
+    "c": 4,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 10.399999999999999,
+   "status": "ok",
+   "wall_s": 4.913673183415085,
+   "peak_rss_mb": 144.15234375,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=BL5N:c=4",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "BL5N",
+    "c": 4,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 10.399999999999999,
+   "status": "ok",
+   "wall_s": 5.559669107198715,
+   "peak_rss_mb": 143.2421875,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=BL1N:c=4",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "BL1N",
+    "c": 4,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 52.08571428571429,
+   "status": "ok",
+   "wall_s": 66.62026223214343,
+   "peak_rss_mb": 143.9375,
+   "runs": 1
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=CR:c=4",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "CR",
+    "c": 4,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 58.25714285714286,
+   "status": "ok",
+   "wall_s": 3.9916360047645867,
+   "peak_rss_mb": 143.890625,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=A9-noMBB:c=4",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "A9-noMBB",
+    "c": 4,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 52.08571428571429,
+   "status": "ok",
+   "wall_s": 52.96733092376962,
+   "peak_rss_mb": 142.28125,
+   "runs": 1
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=A9-noCommit:c=4",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "A9-noCommit",
+    "c": 4,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 52.08571428571429,
+   "status": "ok",
+   "wall_s": 53.30038660392165,
+   "peak_rss_mb": 143.078125,
+   "runs": 1
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=A9-noIns:c=4",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "A9-noIns",
+    "c": 4,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 52.08571428571429,
+   "status": "ok",
+   "wall_s": 2.59491320932284,
+   "peak_rss_mb": 142.74609375,
+   "runs": 1
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=A9-kstar:c=4",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "A9-kstar",
+    "c": 4,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 52.08571428571429,
+   "status": "ok",
+   "wall_s": 54.969741029664874,
+   "peak_rss_mb": 143.6640625,
+   "runs": 1
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=A9-static:c=4",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "A9-static",
+    "c": 4,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 58.25714285714286,
+   "status": "ok",
+   "wall_s": 44.21067108074203,
+   "peak_rss_mb": 144.0859375,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=gap:tag=A6:c=4",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "A6",
+    "c": 4,
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 26.171428571428567,
+   "status": "ok",
+   "wall_s": 27.078003140632063,
+   "peak_rss_mb": 144.20703125,
+   "runs": 3
+  },
+  {
+   "id": "e7h:grid:k=q44:inst=I1:c=4",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "q44",
+    "block": "Q1",
+    "inst": "I1",
+    "c": 4,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.0124",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "entries": [
+     [
+      "Sublet",
+      [
+       0,
+       1,
+       2
+      ]
+     ],
+     [
+      "A9",
+      [
+       0
+      ]
+     ],
+     [
+      "BL1-GP",
+      [
+       0,
+       1,
+       2
+      ]
+     ]
+    ],
+    "window": null
+   },
+   "est_s": 294.0,
+   "status": "ok",
+   "wall_s": 89.74141724128276,
+   "peak_rss_mb": 101.96875,
+   "runs": 49
+  },
+  {
+   "id": "e7h:grid:k=q44:inst=I1:c=7",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "q44",
+    "block": "Q1",
+    "inst": "I1",
+    "c": 7,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.0124",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "entries": [
+     [
+      "Sublet",
+      [
+       0,
+       1,
+       2
+      ]
+     ],
+     [
+      "A9",
+      [
+       0
+      ]
+     ],
+     [
+      "BL1-GP",
+      [
+       0,
+       1,
+       2
+      ]
+     ]
+    ],
+    "window": null
+   },
+   "est_s": 294.0,
+   "status": "ok",
+   "wall_s": 78.94351059664041,
+   "peak_rss_mb": 101.7421875,
+   "runs": 49
+  },
+  {
+   "id": "e7h:grid:k=q44:inst=I2:c=2",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "q44",
+    "block": "Q1",
+    "inst": "I2",
+    "c": 2,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.0124",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "entries": [
+     [
+      "Sublet",
+      [
+       0,
+       1,
+       2
+      ]
+     ],
+     [
+      "A9",
+      [
+       0
+      ]
+     ],
+     [
+      "BL1-GP",
+      [
+       0,
+       1,
+       2
+      ]
+     ]
+    ],
+    "window": null
+   },
+   "est_s": 294.0,
+   "status": "ok",
+   "wall_s": 97.99159951275215,
+   "peak_rss_mb": 140.44140625,
+   "runs": 49
+  },
+  {
+   "id": "e7h:grid:k=q44:inst=I2:c=3",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "q44",
+    "block": "Q1",
+    "inst": "I2",
+    "c": 3,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.0124",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "entries": [
+     [
+      "Sublet",
+      [
+       0,
+       1,
+       2
+      ]
+     ],
+     [
+      "A9",
+      [
+       0
+      ]
+     ],
+     [
+      "BL1-GP",
+      [
+       0,
+       1,
+       2
+      ]
+     ]
+    ],
+    "window": null
+   },
+   "est_s": 294.0,
+   "status": "ok",
+   "wall_s": 101.22954447194934,
+   "peak_rss_mb": 140.58203125,
+   "runs": 49
+  },
+  {
+   "id": "e7h:grid:k=q44:inst=I2:c=4",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "q44",
+    "block": "Q1",
+    "inst": "I2",
+    "c": 4,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.0124",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "entries": [
+     [
+      "Sublet",
+      [
+       0,
+       1,
+       2
+      ]
+     ],
+     [
+      "A9",
+      [
+       0
+      ]
+     ],
+     [
+      "BL1-GP",
+      [
+       0,
+       1,
+       2
+      ]
+     ]
+    ],
+    "window": null
+   },
+   "est_s": 294.0,
+   "status": "ok",
+   "wall_s": 79.31784830475226,
+   "peak_rss_mb": 141.015625,
+   "runs": 49
+  },
+  {
+   "id": "e7h:grid:k=q44:inst=I2:c=5",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "q44",
+    "block": "Q1",
+    "inst": "I2",
+    "c": 5,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.0124",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "entries": [
+     [
+      "Sublet",
+      [
+       0,
+       1,
+       2
+      ]
+     ],
+     [
+      "A9",
+      [
+       0
+      ]
+     ],
+     [
+      "BL1-GP",
+      [
+       0,
+       1,
+       2
+      ]
+     ]
+    ],
+    "window": null
+   },
+   "est_s": 294.0,
+   "status": "ok",
+   "wall_s": 101.84085767855868,
+   "peak_rss_mb": 140.9140625,
+   "runs": 49
+  },
+  {
+   "id": "e7h:grid:k=q44:inst=I2:c=6",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "q44",
+    "block": "Q1",
+    "inst": "I2",
+    "c": 6,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.0124",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "entries": [
+     [
+      "Sublet",
+      [
+       0,
+       1,
+       2
+      ]
+     ],
+     [
+      "A9",
+      [
+       0
+      ]
+     ],
+     [
+      "BL1-GP",
+      [
+       0,
+       1,
+       2
+      ]
+     ]
+    ],
+    "window": null
+   },
+   "est_s": 294.0,
+   "status": "ok",
+   "wall_s": 93.32057588454336,
+   "peak_rss_mb": 140.73046875,
+   "runs": 49
+  },
+  {
+   "id": "e7h:grid:k=q44:inst=I2:c=7",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "q44",
+    "block": "Q1",
+    "inst": "I2",
+    "c": 7,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.0124",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "entries": [
+     [
+      "Sublet",
+      [
+       0,
+       1,
+       2
+      ]
+     ],
+     [
+      "A9",
+      [
+       0
+      ]
+     ],
+     [
+      "BL1-GP",
+      [
+       0,
+       1,
+       2
+      ]
+     ]
+    ],
+    "window": null
+   },
+   "est_s": 294.0,
+   "status": "ok",
+   "wall_s": 111.6847526198253,
+   "peak_rss_mb": 140.74609375,
+   "runs": 49
+  },
+  {
+   "id": "e7h:grid:k=q44:inst=I2:c=8",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "q44",
+    "block": "Q1",
+    "inst": "I2",
+    "c": 8,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.0124",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "entries": [
+     [
+      "Sublet",
+      [
+       0,
+       1,
+       2
+      ]
+     ],
+     [
+      "A9",
+      [
+       0
+      ]
+     ],
+     [
+      "BL1-GP",
+      [
+       0,
+       1,
+       2
+      ]
+     ]
+    ],
+    "window": null
+   },
+   "est_s": 294.0,
+   "status": "ok",
+   "wall_s": 81.33784894831479,
+   "peak_rss_mb": 140.74609375,
+   "runs": 49
+  },
+  {
+   "id": "e7h:grid:k=q44:inst=I3:c=2",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "q44",
+    "block": "Q2",
+    "inst": "I3",
+    "c": 2,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05"
+    ],
+    "entries": [
+     [
+      "Sublet",
+      [
+       0,
+       1,
+       2
+      ]
+     ],
+     [
+      "A9",
+      [
+       0
+      ]
+     ],
+     [
+      "BL1-GP",
+      [
+       0,
+       1,
+       2
+      ]
+     ]
+    ],
+    "window": null
+   },
+   "est_s": 189.0,
+   "status": "ok",
+   "wall_s": 195.76965851616114,
+   "peak_rss_mb": 144.72265625,
+   "runs": 28
+  },
+  {
+   "id": "e7h:grid:k=q44:inst=I3:c=3",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "q44",
+    "block": "Q2",
+    "inst": "I3",
+    "c": 3,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05"
+    ],
+    "entries": [
+     [
+      "Sublet",
+      [
+       0,
+       1,
+       2
+      ]
+     ],
+     [
+      "A9",
+      [
+       0
+      ]
+     ],
+     [
+      "BL1-GP",
+      [
+       0,
+       1,
+       2
+      ]
+     ]
+    ],
+    "window": null
+   },
+   "est_s": 189.0,
+   "status": "ok",
+   "wall_s": 301.96173738408834,
+   "peak_rss_mb": 145.75,
+   "runs": 28
+  },
+  {
+   "id": "e7h:grid:k=q44:inst=I3:c=4",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "q44",
+    "block": "Q2",
+    "inst": "I3",
+    "c": 4,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05"
+    ],
+    "entries": [
+     [
+      "Sublet",
+      [
+       0,
+       1,
+       2
+      ]
+     ],
+     [
+      "A9",
+      [
+       0
+      ]
+     ],
+     [
+      "BL1-GP",
+      [
+       0,
+       1,
+       2
+      ]
+     ]
+    ],
+    "window": null
+   },
+   "est_s": 189.0,
+   "status": "ok",
+   "wall_s": 336.82047799788415,
+   "peak_rss_mb": 145.59765625,
+   "runs": 28
+  },
+  {
+   "id": "e7h:grid:k=q44:inst=I4:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "q44",
+    "block": "Q1",
+    "inst": "I4",
+    "c": 1,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.0124",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "entries": [
+     [
+      "Sublet",
+      [
+       0,
+       1,
+       2
+      ]
+     ],
+     [
+      "A9",
+      [
+       0
+      ]
+     ],
+     [
+      "BL1-GP",
+      [
+       0,
+       1,
+       2
+      ]
+     ]
+    ],
+    "window": null
+   },
+   "est_s": 294.0,
+   "status": "ok",
+   "wall_s": 61.66464118193835,
+   "peak_rss_mb": 141.83203125,
+   "runs": 49
+  },
+  {
+   "id": "e7h:grid:k=q44:inst=I4:c=2",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "q44",
+    "block": "Q1",
+    "inst": "I4",
+    "c": 2,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.0124",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "entries": [
+     [
+      "Sublet",
+      [
+       0,
+       1,
+       2
+      ]
+     ],
+     [
+      "A9",
+      [
+       0
+      ]
+     ],
+     [
+      "BL1-GP",
+      [
+       0,
+       1,
+       2
+      ]
+     ]
+    ],
+    "window": null
+   },
+   "est_s": 294.0,
+   "status": "ok",
+   "wall_s": 57.027887165080756,
+   "peak_rss_mb": 141.81640625,
+   "runs": 49
+  },
+  {
+   "id": "e7h:grid:k=q44:inst=I4:c=3",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "q44",
+    "block": "Q1",
+    "inst": "I4",
+    "c": 3,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.0124",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "entries": [
+     [
+      "Sublet",
+      [
+       0,
+       1,
+       2
+      ]
+     ],
+     [
+      "A9",
+      [
+       0
+      ]
+     ],
+     [
+      "BL1-GP",
+      [
+       0,
+       1,
+       2
+      ]
+     ]
+    ],
+    "window": null
+   },
+   "est_s": 294.0,
+   "status": "ok",
+   "wall_s": 56.61590367881581,
+   "peak_rss_mb": 141.25,
+   "runs": 49
+  },
+  {
+   "id": "e7h:grid:k=q44:inst=I4:c=4",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "q44",
+    "block": "Q1",
+    "inst": "I4",
+    "c": 4,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.0124",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "entries": [
+     [
+      "Sublet",
+      [
+       0,
+       1,
+       2
+      ]
+     ],
+     [
+      "A9",
+      [
+       0
+      ]
+     ],
+     [
+      "BL1-GP",
+      [
+       0,
+       1,
+       2
+      ]
+     ]
+    ],
+    "window": null
+   },
+   "est_s": 294.0,
+   "status": "ok",
+   "wall_s": 70.05021870788187,
+   "peak_rss_mb": 141.59375,
+   "runs": 49
+  },
+  {
+   "id": "e7h:grid:k=q44:inst=I4:c=5",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "q44",
+    "block": "Q1",
+    "inst": "I4",
+    "c": 5,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.0124",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "entries": [
+     [
+      "Sublet",
+      [
+       0,
+       1,
+       2
+      ]
+     ],
+     [
+      "A9",
+      [
+       0
+      ]
+     ],
+     [
+      "BL1-GP",
+      [
+       0,
+       1,
+       2
+      ]
+     ]
+    ],
+    "window": null
+   },
+   "est_s": 294.0,
+   "status": "ok",
+   "wall_s": 68.19729417888448,
+   "peak_rss_mb": 141.03125,
+   "runs": 49
+  },
+  {
+   "id": "e7h:grid:k=q44:inst=I4:c=6",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "q44",
+    "block": "Q1",
+    "inst": "I4",
+    "c": 6,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.0124",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "entries": [
+     [
+      "Sublet",
+      [
+       0,
+       1,
+       2
+      ]
+     ],
+     [
+      "A9",
+      [
+       0
+      ]
+     ],
+     [
+      "BL1-GP",
+      [
+       0,
+       1,
+       2
+      ]
+     ]
+    ],
+    "window": null
+   },
+   "est_s": 294.0,
+   "status": "ok",
+   "wall_s": 77.16314024291933,
+   "peak_rss_mb": 141.23046875,
+   "runs": 49
+  },
+  {
+   "id": "e7h:grid:k=q44:inst=I4:c=7",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "q44",
+    "block": "Q1",
+    "inst": "I4",
+    "c": 7,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.0124",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "entries": [
+     [
+      "Sublet",
+      [
+       0,
+       1,
+       2
+      ]
+     ],
+     [
+      "A9",
+      [
+       0
+      ]
+     ],
+     [
+      "BL1-GP",
+      [
+       0,
+       1,
+       2
+      ]
+     ]
+    ],
+    "window": null
+   },
+   "est_s": 294.0,
+   "status": "ok",
+   "wall_s": 89.49201820418239,
+   "peak_rss_mb": 141.01171875,
+   "runs": 49
+  },
+  {
+   "id": "e7h:grid:k=q44:inst=I4:c=8",
+   "kind": "pool",
+   "params": {
+    "part": "grid",
+    "kind": "q44",
+    "block": "Q1",
+    "inst": "I4",
+    "c": 8,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.0124",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "entries": [
+     [
+      "Sublet",
+      [
+       0,
+       1,
+       2
+      ]
+     ],
+     [
+      "A9",
+      [
+       0
+      ]
+     ],
+     [
+      "BL1-GP",
+      [
+       0,
+       1,
+       2
+      ]
+     ]
+    ],
+    "window": null
+   },
+   "est_s": 294.0,
+   "status": "ok",
+   "wall_s": 83.42040176084265,
+   "peak_rss_mb": 141.0546875,
+   "runs": 49
+  }
+ ],
+ "instance_hashes": {},
+ "part": "grid",
+ "design": {
+  "reduced": false,
+  "horizon_min": 10080,
+  "window": null,
+  "e5_horizon_min": null,
+  "gap_horizon_min": 1440
+ },
+ "instance_hashes_from_outputs": {
+  "e7h:grid:k=week:tag=Sublet:c=1": {
+   "base": "f1b5be0fcf6e2cd7e084036bad5796ace7168ee277a2d908072f0152cbb49d5e"
+  },
+  "e7h:grid:k=week:tag=A9:c=1": {
+   "base": "f1b5be0fcf6e2cd7e084036bad5796ace7168ee277a2d908072f0152cbb49d5e"
+  },
+  "e7h:grid:k=week:tag=Sublet-1way:c=1": {
+   "base": "f1b5be0fcf6e2cd7e084036bad5796ace7168ee277a2d908072f0152cbb49d5e"
+  },
+  "e7h:grid:k=week:tag=BL1-GP:c=1": {
+   "base": "f1b5be0fcf6e2cd7e084036bad5796ace7168ee277a2d908072f0152cbb49d5e"
+  },
+  "e7h:grid:k=week:tag=Sublet-MS4:c=1": {
+   "base": "f1b5be0fcf6e2cd7e084036bad5796ace7168ee277a2d908072f0152cbb49d5e"
+  },
+  "e7h:grid:k=week:tag=BL1:c=1": {
+   "base": "f1b5be0fcf6e2cd7e084036bad5796ace7168ee277a2d908072f0152cbb49d5e"
+  },
+  "e7h:grid:k=week:tag=BL1-BO:c=1": {
+   "base": "f1b5be0fcf6e2cd7e084036bad5796ace7168ee277a2d908072f0152cbb49d5e"
+  },
+  "e7h:grid:k=week:tag=BL2:c=1": {
+   "base": "f1b5be0fcf6e2cd7e084036bad5796ace7168ee277a2d908072f0152cbb49d5e"
+  },
+  "e7h:grid:k=week:tag=BL3-0:c=1": {
+   "base": "f1b5be0fcf6e2cd7e084036bad5796ace7168ee277a2d908072f0152cbb49d5e"
+  },
+  "e7h:grid:k=week:tag=BL4:c=1": {
+   "base": "f1b5be0fcf6e2cd7e084036bad5796ace7168ee277a2d908072f0152cbb49d5e"
+  },
+  "e7h:grid:k=week:tag=BL5-cur:c=1": {
+   "base": "f1b5be0fcf6e2cd7e084036bad5796ace7168ee277a2d908072f0152cbb49d5e"
+  },
+  "e7h:grid:k=week:tag=BL5:c=1": {
+   "base": "f1b5be0fcf6e2cd7e084036bad5796ace7168ee277a2d908072f0152cbb49d5e"
+  },
+  "e7h:grid:k=week:tag=BL5-tau60:c=1": {
+   "base": "f1b5be0fcf6e2cd7e084036bad5796ace7168ee277a2d908072f0152cbb49d5e"
+  },
+  "e7h:grid:k=week:tag=BL5N:c=1": {
+   "base": "f1b5be0fcf6e2cd7e084036bad5796ace7168ee277a2d908072f0152cbb49d5e"
+  },
+  "e7h:grid:k=week:tag=BL1N:c=1": {
+   "base": "f1b5be0fcf6e2cd7e084036bad5796ace7168ee277a2d908072f0152cbb49d5e"
+  },
+  "e7h:grid:k=week:tag=CR:c=1": {
+   "base": "f1b5be0fcf6e2cd7e084036bad5796ace7168ee277a2d908072f0152cbb49d5e"
+  },
+  "e7h:grid:k=week:tag=A9-noMBB:c=1": {
+   "base": "f1b5be0fcf6e2cd7e084036bad5796ace7168ee277a2d908072f0152cbb49d5e"
+  },
+  "e7h:grid:k=week:tag=A9-noCommit:c=1": {
+   "base": "f1b5be0fcf6e2cd7e084036bad5796ace7168ee277a2d908072f0152cbb49d5e"
+  },
+  "e7h:grid:k=week:tag=A9-noIns:c=1": {
+   "base": "f1b5be0fcf6e2cd7e084036bad5796ace7168ee277a2d908072f0152cbb49d5e"
+  },
+  "e7h:grid:k=week:tag=A9-kstar:c=1": {
+   "base": "f1b5be0fcf6e2cd7e084036bad5796ace7168ee277a2d908072f0152cbb49d5e"
+  },
+  "e7h:grid:k=week:tag=A9-static:c=1": {
+   "base": "f1b5be0fcf6e2cd7e084036bad5796ace7168ee277a2d908072f0152cbb49d5e"
+  },
+  "e7h:grid:k=week:tag=A6:c=1": {
+   "base": "f1b5be0fcf6e2cd7e084036bad5796ace7168ee277a2d908072f0152cbb49d5e"
+  },
+  "e7h:grid:k=week:tag=Sublet:c=2": {
+   "base": "d6726e6ee0731a287e003c2d7a5774fc4ff30332b4bca3f215998bed28e42441"
+  },
+  "e7h:grid:k=week:tag=A9:c=2": {
+   "base": "d6726e6ee0731a287e003c2d7a5774fc4ff30332b4bca3f215998bed28e42441"
+  },
+  "e7h:grid:k=week:tag=Sublet-1way:c=2": {
+   "base": "d6726e6ee0731a287e003c2d7a5774fc4ff30332b4bca3f215998bed28e42441"
+  },
+  "e7h:grid:k=week:tag=BL1-GP:c=2": {
+   "base": "d6726e6ee0731a287e003c2d7a5774fc4ff30332b4bca3f215998bed28e42441"
+  },
+  "e7h:grid:k=week:tag=Sublet-MS4:c=2": {
+   "base": "d6726e6ee0731a287e003c2d7a5774fc4ff30332b4bca3f215998bed28e42441"
+  },
+  "e7h:grid:k=week:tag=BL1:c=2": {
+   "base": "d6726e6ee0731a287e003c2d7a5774fc4ff30332b4bca3f215998bed28e42441"
+  },
+  "e7h:grid:k=week:tag=BL1-BO:c=2": {
+   "base": "d6726e6ee0731a287e003c2d7a5774fc4ff30332b4bca3f215998bed28e42441"
+  },
+  "e7h:grid:k=week:tag=BL2:c=2": {
+   "base": "d6726e6ee0731a287e003c2d7a5774fc4ff30332b4bca3f215998bed28e42441"
+  },
+  "e7h:grid:k=week:tag=BL3-0:c=2": {
+   "base": "d6726e6ee0731a287e003c2d7a5774fc4ff30332b4bca3f215998bed28e42441"
+  },
+  "e7h:grid:k=week:tag=BL4:c=2": {
+   "base": "d6726e6ee0731a287e003c2d7a5774fc4ff30332b4bca3f215998bed28e42441"
+  },
+  "e7h:grid:k=week:tag=BL5-cur:c=2": {
+   "base": "d6726e6ee0731a287e003c2d7a5774fc4ff30332b4bca3f215998bed28e42441"
+  },
+  "e7h:grid:k=week:tag=BL5:c=2": {
+   "base": "d6726e6ee0731a287e003c2d7a5774fc4ff30332b4bca3f215998bed28e42441"
+  },
+  "e7h:grid:k=week:tag=BL5-tau60:c=2": {
+   "base": "d6726e6ee0731a287e003c2d7a5774fc4ff30332b4bca3f215998bed28e42441"
+  },
+  "e7h:grid:k=week:tag=BL5N:c=2": {
+   "base": "d6726e6ee0731a287e003c2d7a5774fc4ff30332b4bca3f215998bed28e42441"
+  },
+  "e7h:grid:k=week:tag=BL1N:c=2": {
+   "base": "d6726e6ee0731a287e003c2d7a5774fc4ff30332b4bca3f215998bed28e42441"
+  },
+  "e7h:grid:k=week:tag=CR:c=2": {
+   "base": "d6726e6ee0731a287e003c2d7a5774fc4ff30332b4bca3f215998bed28e42441"
+  },
+  "e7h:grid:k=week:tag=A9-noMBB:c=2": {
+   "base": "d6726e6ee0731a287e003c2d7a5774fc4ff30332b4bca3f215998bed28e42441"
+  },
+  "e7h:grid:k=week:tag=A9-noCommit:c=2": {
+   "base": "d6726e6ee0731a287e003c2d7a5774fc4ff30332b4bca3f215998bed28e42441"
+  },
+  "e7h:grid:k=week:tag=A9-noIns:c=2": {
+   "base": "d6726e6ee0731a287e003c2d7a5774fc4ff30332b4bca3f215998bed28e42441"
+  },
+  "e7h:grid:k=week:tag=A9-kstar:c=2": {
+   "base": "d6726e6ee0731a287e003c2d7a5774fc4ff30332b4bca3f215998bed28e42441"
+  },
+  "e7h:grid:k=week:tag=A9-static:c=2": {
+   "base": "d6726e6ee0731a287e003c2d7a5774fc4ff30332b4bca3f215998bed28e42441"
+  },
+  "e7h:grid:k=week:tag=A6:c=2": {
+   "base": "d6726e6ee0731a287e003c2d7a5774fc4ff30332b4bca3f215998bed28e42441"
+  },
+  "e7h:grid:k=week:tag=Sublet:c=3": {
+   "base": "08bc4609685f60283186b7b2316a964373ad698b974a1ffdc2669df46388f555"
+  },
+  "e7h:grid:k=week:tag=A9:c=3": {
+   "base": "08bc4609685f60283186b7b2316a964373ad698b974a1ffdc2669df46388f555"
+  },
+  "e7h:grid:k=week:tag=Sublet-1way:c=3": {
+   "base": "08bc4609685f60283186b7b2316a964373ad698b974a1ffdc2669df46388f555"
+  },
+  "e7h:grid:k=week:tag=BL1-GP:c=3": {
+   "base": "08bc4609685f60283186b7b2316a964373ad698b974a1ffdc2669df46388f555"
+  },
+  "e7h:grid:k=week:tag=Sublet-MS4:c=3": {
+   "base": "08bc4609685f60283186b7b2316a964373ad698b974a1ffdc2669df46388f555"
+  },
+  "e7h:grid:k=week:tag=BL1:c=3": {
+   "base": "08bc4609685f60283186b7b2316a964373ad698b974a1ffdc2669df46388f555"
+  },
+  "e7h:grid:k=week:tag=BL1-BO:c=3": {
+   "base": "08bc4609685f60283186b7b2316a964373ad698b974a1ffdc2669df46388f555"
+  },
+  "e7h:grid:k=week:tag=BL2:c=3": {
+   "base": "08bc4609685f60283186b7b2316a964373ad698b974a1ffdc2669df46388f555"
+  },
+  "e7h:grid:k=week:tag=BL3-0:c=3": {
+   "base": "08bc4609685f60283186b7b2316a964373ad698b974a1ffdc2669df46388f555"
+  },
+  "e7h:grid:k=week:tag=BL4:c=3": {
+   "base": "08bc4609685f60283186b7b2316a964373ad698b974a1ffdc2669df46388f555"
+  },
+  "e7h:grid:k=week:tag=BL5-cur:c=3": {
+   "base": "08bc4609685f60283186b7b2316a964373ad698b974a1ffdc2669df46388f555"
+  },
+  "e7h:grid:k=week:tag=BL5:c=3": {
+   "base": "08bc4609685f60283186b7b2316a964373ad698b974a1ffdc2669df46388f555"
+  },
+  "e7h:grid:k=week:tag=BL5-tau60:c=3": {
+   "base": "08bc4609685f60283186b7b2316a964373ad698b974a1ffdc2669df46388f555"
+  },
+  "e7h:grid:k=week:tag=BL5N:c=3": {
+   "base": "08bc4609685f60283186b7b2316a964373ad698b974a1ffdc2669df46388f555"
+  },
+  "e7h:grid:k=week:tag=BL1N:c=3": {
+   "base": "08bc4609685f60283186b7b2316a964373ad698b974a1ffdc2669df46388f555"
+  },
+  "e7h:grid:k=week:tag=CR:c=3": {
+   "base": "08bc4609685f60283186b7b2316a964373ad698b974a1ffdc2669df46388f555"
+  },
+  "e7h:grid:k=week:tag=A9-noMBB:c=3": {
+   "base": "08bc4609685f60283186b7b2316a964373ad698b974a1ffdc2669df46388f555"
+  },
+  "e7h:grid:k=week:tag=A9-noCommit:c=3": {
+   "base": "08bc4609685f60283186b7b2316a964373ad698b974a1ffdc2669df46388f555"
+  },
+  "e7h:grid:k=week:tag=A9-noIns:c=3": {
+   "base": "08bc4609685f60283186b7b2316a964373ad698b974a1ffdc2669df46388f555"
+  },
+  "e7h:grid:k=week:tag=A9-kstar:c=3": {
+   "base": "08bc4609685f60283186b7b2316a964373ad698b974a1ffdc2669df46388f555"
+  },
+  "e7h:grid:k=week:tag=A9-static:c=3": {
+   "base": "08bc4609685f60283186b7b2316a964373ad698b974a1ffdc2669df46388f555"
+  },
+  "e7h:grid:k=week:tag=A6:c=3": {
+   "base": "08bc4609685f60283186b7b2316a964373ad698b974a1ffdc2669df46388f555"
+  },
+  "e7h:grid:k=week:tag=Sublet:c=4": {
+   "base": "33d52e8c5d798f9eb159b7246a8be11443dd64174688bd3e7996478cc421b527"
+  },
+  "e7h:grid:k=week:tag=A9:c=4": {
+   "base": "33d52e8c5d798f9eb159b7246a8be11443dd64174688bd3e7996478cc421b527"
+  },
+  "e7h:grid:k=week:tag=Sublet-1way:c=4": {
+   "base": "33d52e8c5d798f9eb159b7246a8be11443dd64174688bd3e7996478cc421b527"
+  },
+  "e7h:grid:k=week:tag=BL1-GP:c=4": {
+   "base": "33d52e8c5d798f9eb159b7246a8be11443dd64174688bd3e7996478cc421b527"
+  },
+  "e7h:grid:k=week:tag=Sublet-MS4:c=4": {
+   "base": "33d52e8c5d798f9eb159b7246a8be11443dd64174688bd3e7996478cc421b527"
+  },
+  "e7h:grid:k=week:tag=BL1:c=4": {
+   "base": "33d52e8c5d798f9eb159b7246a8be11443dd64174688bd3e7996478cc421b527"
+  },
+  "e7h:grid:k=week:tag=BL1-BO:c=4": {
+   "base": "33d52e8c5d798f9eb159b7246a8be11443dd64174688bd3e7996478cc421b527"
+  },
+  "e7h:grid:k=week:tag=BL2:c=4": {
+   "base": "33d52e8c5d798f9eb159b7246a8be11443dd64174688bd3e7996478cc421b527"
+  },
+  "e7h:grid:k=week:tag=BL3-0:c=4": {
+   "base": "33d52e8c5d798f9eb159b7246a8be11443dd64174688bd3e7996478cc421b527"
+  },
+  "e7h:grid:k=week:tag=BL4:c=4": {
+   "base": "33d52e8c5d798f9eb159b7246a8be11443dd64174688bd3e7996478cc421b527"
+  },
+  "e7h:grid:k=week:tag=BL5-cur:c=4": {
+   "base": "33d52e8c5d798f9eb159b7246a8be11443dd64174688bd3e7996478cc421b527"
+  },
+  "e7h:grid:k=week:tag=BL5:c=4": {
+   "base": "33d52e8c5d798f9eb159b7246a8be11443dd64174688bd3e7996478cc421b527"
+  },
+  "e7h:grid:k=week:tag=BL5-tau60:c=4": {
+   "base": "33d52e8c5d798f9eb159b7246a8be11443dd64174688bd3e7996478cc421b527"
+  },
+  "e7h:grid:k=week:tag=BL5N:c=4": {
+   "base": "33d52e8c5d798f9eb159b7246a8be11443dd64174688bd3e7996478cc421b527"
+  },
+  "e7h:grid:k=week:tag=BL1N:c=4": {
+   "base": "33d52e8c5d798f9eb159b7246a8be11443dd64174688bd3e7996478cc421b527"
+  },
+  "e7h:grid:k=week:tag=CR:c=4": {
+   "base": "33d52e8c5d798f9eb159b7246a8be11443dd64174688bd3e7996478cc421b527"
+  },
+  "e7h:grid:k=week:tag=A9-noMBB:c=4": {
+   "base": "33d52e8c5d798f9eb159b7246a8be11443dd64174688bd3e7996478cc421b527"
+  },
+  "e7h:grid:k=week:tag=A9-noCommit:c=4": {
+   "base": "33d52e8c5d798f9eb159b7246a8be11443dd64174688bd3e7996478cc421b527"
+  },
+  "e7h:grid:k=week:tag=A9-noIns:c=4": {
+   "base": "33d52e8c5d798f9eb159b7246a8be11443dd64174688bd3e7996478cc421b527"
+  },
+  "e7h:grid:k=week:tag=A9-kstar:c=4": {
+   "base": "33d52e8c5d798f9eb159b7246a8be11443dd64174688bd3e7996478cc421b527"
+  },
+  "e7h:grid:k=week:tag=A9-static:c=4": {
+   "base": "33d52e8c5d798f9eb159b7246a8be11443dd64174688bd3e7996478cc421b527"
+  },
+  "e7h:grid:k=week:tag=A6:c=4": {
+   "base": "33d52e8c5d798f9eb159b7246a8be11443dd64174688bd3e7996478cc421b527"
+  },
+  "e7h:grid:k=gap_lp:c=1": "31ba1d657bad68d0c6f069a9f6c495689fe482109770e32a635dd718fa15aef6",
+  "e7h:grid:k=gap_lp:c=2": "64c0393ddd6a53727a0560280192205d861826e00c8591d12659dd4c325534b2",
+  "e7h:grid:k=gap_lp:c=3": "585782a105fc67d7bcbefd7467b9c5f2785a103d498c8b7fcab33aa79d8fab32",
+  "e7h:grid:k=gap_lp:c=4": "be03550fb2319f7921de5f4f9ce8c3c37ab5d666883cc04259071a9505468de6",
+  "e7h:grid:k=gap:tag=Sublet:c=1": "31ba1d657bad68d0c6f069a9f6c495689fe482109770e32a635dd718fa15aef6",
+  "e7h:grid:k=gap:tag=A9:c=1": "31ba1d657bad68d0c6f069a9f6c495689fe482109770e32a635dd718fa15aef6",
+  "e7h:grid:k=gap:tag=Sublet-1way:c=1": "31ba1d657bad68d0c6f069a9f6c495689fe482109770e32a635dd718fa15aef6",
+  "e7h:grid:k=gap:tag=BL1-GP:c=1": "31ba1d657bad68d0c6f069a9f6c495689fe482109770e32a635dd718fa15aef6",
+  "e7h:grid:k=gap:tag=Sublet-MS4:c=1": "31ba1d657bad68d0c6f069a9f6c495689fe482109770e32a635dd718fa15aef6",
+  "e7h:grid:k=gap:tag=BL1:c=1": "31ba1d657bad68d0c6f069a9f6c495689fe482109770e32a635dd718fa15aef6",
+  "e7h:grid:k=gap:tag=BL1-BO:c=1": "31ba1d657bad68d0c6f069a9f6c495689fe482109770e32a635dd718fa15aef6",
+  "e7h:grid:k=gap:tag=BL2:c=1": "31ba1d657bad68d0c6f069a9f6c495689fe482109770e32a635dd718fa15aef6",
+  "e7h:grid:k=gap:tag=BL3-0:c=1": "31ba1d657bad68d0c6f069a9f6c495689fe482109770e32a635dd718fa15aef6",
+  "e7h:grid:k=gap:tag=BL4:c=1": "31ba1d657bad68d0c6f069a9f6c495689fe482109770e32a635dd718fa15aef6",
+  "e7h:grid:k=gap:tag=BL5-cur:c=1": "31ba1d657bad68d0c6f069a9f6c495689fe482109770e32a635dd718fa15aef6",
+  "e7h:grid:k=gap:tag=BL5:c=1": "31ba1d657bad68d0c6f069a9f6c495689fe482109770e32a635dd718fa15aef6",
+  "e7h:grid:k=gap:tag=BL5-tau60:c=1": "31ba1d657bad68d0c6f069a9f6c495689fe482109770e32a635dd718fa15aef6",
+  "e7h:grid:k=gap:tag=BL5N:c=1": "31ba1d657bad68d0c6f069a9f6c495689fe482109770e32a635dd718fa15aef6",
+  "e7h:grid:k=gap:tag=BL1N:c=1": "31ba1d657bad68d0c6f069a9f6c495689fe482109770e32a635dd718fa15aef6",
+  "e7h:grid:k=gap:tag=CR:c=1": "31ba1d657bad68d0c6f069a9f6c495689fe482109770e32a635dd718fa15aef6",
+  "e7h:grid:k=gap:tag=A9-noMBB:c=1": "31ba1d657bad68d0c6f069a9f6c495689fe482109770e32a635dd718fa15aef6",
+  "e7h:grid:k=gap:tag=A9-noCommit:c=1": "31ba1d657bad68d0c6f069a9f6c495689fe482109770e32a635dd718fa15aef6",
+  "e7h:grid:k=gap:tag=A9-noIns:c=1": "31ba1d657bad68d0c6f069a9f6c495689fe482109770e32a635dd718fa15aef6",
+  "e7h:grid:k=gap:tag=A9-kstar:c=1": "31ba1d657bad68d0c6f069a9f6c495689fe482109770e32a635dd718fa15aef6",
+  "e7h:grid:k=gap:tag=A9-static:c=1": "31ba1d657bad68d0c6f069a9f6c495689fe482109770e32a635dd718fa15aef6",
+  "e7h:grid:k=gap:tag=A6:c=1": "31ba1d657bad68d0c6f069a9f6c495689fe482109770e32a635dd718fa15aef6",
+  "e7h:grid:k=gap:tag=Sublet:c=2": "64c0393ddd6a53727a0560280192205d861826e00c8591d12659dd4c325534b2",
+  "e7h:grid:k=gap:tag=A9:c=2": "64c0393ddd6a53727a0560280192205d861826e00c8591d12659dd4c325534b2",
+  "e7h:grid:k=gap:tag=Sublet-1way:c=2": "64c0393ddd6a53727a0560280192205d861826e00c8591d12659dd4c325534b2",
+  "e7h:grid:k=gap:tag=BL1-GP:c=2": "64c0393ddd6a53727a0560280192205d861826e00c8591d12659dd4c325534b2",
+  "e7h:grid:k=gap:tag=Sublet-MS4:c=2": "64c0393ddd6a53727a0560280192205d861826e00c8591d12659dd4c325534b2",
+  "e7h:grid:k=gap:tag=BL1:c=2": "64c0393ddd6a53727a0560280192205d861826e00c8591d12659dd4c325534b2",
+  "e7h:grid:k=gap:tag=BL1-BO:c=2": "64c0393ddd6a53727a0560280192205d861826e00c8591d12659dd4c325534b2",
+  "e7h:grid:k=gap:tag=BL2:c=2": "64c0393ddd6a53727a0560280192205d861826e00c8591d12659dd4c325534b2",
+  "e7h:grid:k=gap:tag=BL3-0:c=2": "64c0393ddd6a53727a0560280192205d861826e00c8591d12659dd4c325534b2",
+  "e7h:grid:k=gap:tag=BL4:c=2": "64c0393ddd6a53727a0560280192205d861826e00c8591d12659dd4c325534b2",
+  "e7h:grid:k=gap:tag=BL5-cur:c=2": "64c0393ddd6a53727a0560280192205d861826e00c8591d12659dd4c325534b2",
+  "e7h:grid:k=gap:tag=BL5:c=2": "64c0393ddd6a53727a0560280192205d861826e00c8591d12659dd4c325534b2",
+  "e7h:grid:k=gap:tag=BL5-tau60:c=2": "64c0393ddd6a53727a0560280192205d861826e00c8591d12659dd4c325534b2",
+  "e7h:grid:k=gap:tag=BL5N:c=2": "64c0393ddd6a53727a0560280192205d861826e00c8591d12659dd4c325534b2",
+  "e7h:grid:k=gap:tag=BL1N:c=2": "64c0393ddd6a53727a0560280192205d861826e00c8591d12659dd4c325534b2",
+  "e7h:grid:k=gap:tag=CR:c=2": "64c0393ddd6a53727a0560280192205d861826e00c8591d12659dd4c325534b2",
+  "e7h:grid:k=gap:tag=A9-noMBB:c=2": "64c0393ddd6a53727a0560280192205d861826e00c8591d12659dd4c325534b2",
+  "e7h:grid:k=gap:tag=A9-noCommit:c=2": "64c0393ddd6a53727a0560280192205d861826e00c8591d12659dd4c325534b2",
+  "e7h:grid:k=gap:tag=A9-noIns:c=2": "64c0393ddd6a53727a0560280192205d861826e00c8591d12659dd4c325534b2",
+  "e7h:grid:k=gap:tag=A9-kstar:c=2": "64c0393ddd6a53727a0560280192205d861826e00c8591d12659dd4c325534b2",
+  "e7h:grid:k=gap:tag=A9-static:c=2": "64c0393ddd6a53727a0560280192205d861826e00c8591d12659dd4c325534b2",
+  "e7h:grid:k=gap:tag=A6:c=2": "64c0393ddd6a53727a0560280192205d861826e00c8591d12659dd4c325534b2",
+  "e7h:grid:k=gap:tag=Sublet:c=3": "585782a105fc67d7bcbefd7467b9c5f2785a103d498c8b7fcab33aa79d8fab32",
+  "e7h:grid:k=gap:tag=A9:c=3": "585782a105fc67d7bcbefd7467b9c5f2785a103d498c8b7fcab33aa79d8fab32",
+  "e7h:grid:k=gap:tag=Sublet-1way:c=3": "585782a105fc67d7bcbefd7467b9c5f2785a103d498c8b7fcab33aa79d8fab32",
+  "e7h:grid:k=gap:tag=BL1-GP:c=3": "585782a105fc67d7bcbefd7467b9c5f2785a103d498c8b7fcab33aa79d8fab32",
+  "e7h:grid:k=gap:tag=Sublet-MS4:c=3": "585782a105fc67d7bcbefd7467b9c5f2785a103d498c8b7fcab33aa79d8fab32",
+  "e7h:grid:k=gap:tag=BL1:c=3": "585782a105fc67d7bcbefd7467b9c5f2785a103d498c8b7fcab33aa79d8fab32",
+  "e7h:grid:k=gap:tag=BL1-BO:c=3": "585782a105fc67d7bcbefd7467b9c5f2785a103d498c8b7fcab33aa79d8fab32",
+  "e7h:grid:k=gap:tag=BL2:c=3": "585782a105fc67d7bcbefd7467b9c5f2785a103d498c8b7fcab33aa79d8fab32",
+  "e7h:grid:k=gap:tag=BL3-0:c=3": "585782a105fc67d7bcbefd7467b9c5f2785a103d498c8b7fcab33aa79d8fab32",
+  "e7h:grid:k=gap:tag=BL4:c=3": "585782a105fc67d7bcbefd7467b9c5f2785a103d498c8b7fcab33aa79d8fab32",
+  "e7h:grid:k=gap:tag=BL5-cur:c=3": "585782a105fc67d7bcbefd7467b9c5f2785a103d498c8b7fcab33aa79d8fab32",
+  "e7h:grid:k=gap:tag=BL5:c=3": "585782a105fc67d7bcbefd7467b9c5f2785a103d498c8b7fcab33aa79d8fab32",
+  "e7h:grid:k=gap:tag=BL5-tau60:c=3": "585782a105fc67d7bcbefd7467b9c5f2785a103d498c8b7fcab33aa79d8fab32",
+  "e7h:grid:k=gap:tag=BL5N:c=3": "585782a105fc67d7bcbefd7467b9c5f2785a103d498c8b7fcab33aa79d8fab32",
+  "e7h:grid:k=gap:tag=BL1N:c=3": "585782a105fc67d7bcbefd7467b9c5f2785a103d498c8b7fcab33aa79d8fab32",
+  "e7h:grid:k=gap:tag=CR:c=3": "585782a105fc67d7bcbefd7467b9c5f2785a103d498c8b7fcab33aa79d8fab32",
+  "e7h:grid:k=gap:tag=A9-noMBB:c=3": "585782a105fc67d7bcbefd7467b9c5f2785a103d498c8b7fcab33aa79d8fab32",
+  "e7h:grid:k=gap:tag=A9-noCommit:c=3": "585782a105fc67d7bcbefd7467b9c5f2785a103d498c8b7fcab33aa79d8fab32",
+  "e7h:grid:k=gap:tag=A9-noIns:c=3": "585782a105fc67d7bcbefd7467b9c5f2785a103d498c8b7fcab33aa79d8fab32",
+  "e7h:grid:k=gap:tag=A9-kstar:c=3": "585782a105fc67d7bcbefd7467b9c5f2785a103d498c8b7fcab33aa79d8fab32",
+  "e7h:grid:k=gap:tag=A9-static:c=3": "585782a105fc67d7bcbefd7467b9c5f2785a103d498c8b7fcab33aa79d8fab32",
+  "e7h:grid:k=gap:tag=A6:c=3": "585782a105fc67d7bcbefd7467b9c5f2785a103d498c8b7fcab33aa79d8fab32",
+  "e7h:grid:k=gap:tag=Sublet:c=4": "be03550fb2319f7921de5f4f9ce8c3c37ab5d666883cc04259071a9505468de6",
+  "e7h:grid:k=gap:tag=A9:c=4": "be03550fb2319f7921de5f4f9ce8c3c37ab5d666883cc04259071a9505468de6",
+  "e7h:grid:k=gap:tag=Sublet-1way:c=4": "be03550fb2319f7921de5f4f9ce8c3c37ab5d666883cc04259071a9505468de6",
+  "e7h:grid:k=gap:tag=BL1-GP:c=4": "be03550fb2319f7921de5f4f9ce8c3c37ab5d666883cc04259071a9505468de6",
+  "e7h:grid:k=gap:tag=Sublet-MS4:c=4": "be03550fb2319f7921de5f4f9ce8c3c37ab5d666883cc04259071a9505468de6",
+  "e7h:grid:k=gap:tag=BL1:c=4": "be03550fb2319f7921de5f4f9ce8c3c37ab5d666883cc04259071a9505468de6",
+  "e7h:grid:k=gap:tag=BL1-BO:c=4": "be03550fb2319f7921de5f4f9ce8c3c37ab5d666883cc04259071a9505468de6",
+  "e7h:grid:k=gap:tag=BL2:c=4": "be03550fb2319f7921de5f4f9ce8c3c37ab5d666883cc04259071a9505468de6",
+  "e7h:grid:k=gap:tag=BL3-0:c=4": "be03550fb2319f7921de5f4f9ce8c3c37ab5d666883cc04259071a9505468de6",
+  "e7h:grid:k=gap:tag=BL4:c=4": "be03550fb2319f7921de5f4f9ce8c3c37ab5d666883cc04259071a9505468de6",
+  "e7h:grid:k=gap:tag=BL5-cur:c=4": "be03550fb2319f7921de5f4f9ce8c3c37ab5d666883cc04259071a9505468de6",
+  "e7h:grid:k=gap:tag=BL5:c=4": "be03550fb2319f7921de5f4f9ce8c3c37ab5d666883cc04259071a9505468de6",
+  "e7h:grid:k=gap:tag=BL5-tau60:c=4": "be03550fb2319f7921de5f4f9ce8c3c37ab5d666883cc04259071a9505468de6",
+  "e7h:grid:k=gap:tag=BL5N:c=4": "be03550fb2319f7921de5f4f9ce8c3c37ab5d666883cc04259071a9505468de6",
+  "e7h:grid:k=gap:tag=BL1N:c=4": "be03550fb2319f7921de5f4f9ce8c3c37ab5d666883cc04259071a9505468de6",
+  "e7h:grid:k=gap:tag=CR:c=4": "be03550fb2319f7921de5f4f9ce8c3c37ab5d666883cc04259071a9505468de6",
+  "e7h:grid:k=gap:tag=A9-noMBB:c=4": "be03550fb2319f7921de5f4f9ce8c3c37ab5d666883cc04259071a9505468de6",
+  "e7h:grid:k=gap:tag=A9-noCommit:c=4": "be03550fb2319f7921de5f4f9ce8c3c37ab5d666883cc04259071a9505468de6",
+  "e7h:grid:k=gap:tag=A9-noIns:c=4": "be03550fb2319f7921de5f4f9ce8c3c37ab5d666883cc04259071a9505468de6",
+  "e7h:grid:k=gap:tag=A9-kstar:c=4": "be03550fb2319f7921de5f4f9ce8c3c37ab5d666883cc04259071a9505468de6",
+  "e7h:grid:k=gap:tag=A9-static:c=4": "be03550fb2319f7921de5f4f9ce8c3c37ab5d666883cc04259071a9505468de6",
+  "e7h:grid:k=gap:tag=A6:c=4": "be03550fb2319f7921de5f4f9ce8c3c37ab5d666883cc04259071a9505468de6",
+  "e7h:grid:k=q44:inst=I1:c=4": "98618bb6aa801bb0015c0b3bc64c937e4430b7b30dd8c60d5b52313a01ad71ec",
+  "e7h:grid:k=q44:inst=I1:c=7": "7f753836370b7777c30706982c789b3fa30e1a8c8ce1e9e7b3d848d5feee942a",
+  "e7h:grid:k=q44:inst=I2:c=2": "d81c05a2edb49625e380921299cf49ece6ca3dd06b5814edb33c2170978f1bd8",
+  "e7h:grid:k=q44:inst=I2:c=3": "35514253e5e315e7ba6dad9b7974b1b13d7893cb571127a47ae0c10aecdf29cc",
+  "e7h:grid:k=q44:inst=I2:c=4": "39ccf13c0b9e981b964a07ada35b8a19b6864a9c5e7d3d9a2eff09c80e1cc590",
+  "e7h:grid:k=q44:inst=I2:c=5": "228022d57cf4008e28178ed81f01d4621d94071a5d745a04dc910352589b085e",
+  "e7h:grid:k=q44:inst=I2:c=6": "e972549bea5625a9954b93502e366888a0dcbb285d70705fe29bb4a2fc59cacf",
+  "e7h:grid:k=q44:inst=I2:c=7": "241abcd15a344fe52bb09f2c4eeaac02fe0b25c1e9b12bcede0088767d7bcd45",
+  "e7h:grid:k=q44:inst=I2:c=8": "83d5a79c08d586b01f7fc77957932343bd557291eeed550a0c1ba31b17481518",
+  "e7h:grid:k=q44:inst=I3:c=2": "2311a3e94cf74b6457b3f16af5665b8c968e7f6356717eea1be2707fb0fa4518",
+  "e7h:grid:k=q44:inst=I3:c=3": "59b48a0132c13c5b073cfdde23ac78c21fa704865b8230c0df22de01fba491e1",
+  "e7h:grid:k=q44:inst=I3:c=4": "4345bc52428166f233412a586cfcd05cb4c71663bc6c01921a281b2aa5e28b05",
+  "e7h:grid:k=q44:inst=I4:c=1": "fcdfd26c622a4f70fff9e9c57b9e9617db263292bea54ba90d8c19dfe1a7a98f",
+  "e7h:grid:k=q44:inst=I4:c=2": "db5a59b1a573d4840394aee0d22bbdb9986b20791c7746cd1b7f74a6207bdfa2",
+  "e7h:grid:k=q44:inst=I4:c=3": "f8b0a93028f9b9f38587f433c9ce3463863de30a1a12fac9644c472f72310357",
+  "e7h:grid:k=q44:inst=I4:c=4": "110bfcd8020e0df1e524329cfe67031d597fabd99d152b9a3f645ca6f0f8950e",
+  "e7h:grid:k=q44:inst=I4:c=5": "b0b90ef9e4f818a83ca5ad228224bbd647cc68379e140652c60e094160253ce2",
+  "e7h:grid:k=q44:inst=I4:c=6": "4594fd02777a6d7f91167d938fb4193a008ea3976ddb949493b489b0dd2007d0",
+  "e7h:grid:k=q44:inst=I4:c=7": "8886401df516e665af5b642a6a9feab929d96ee6c9fbb894ad2c161ec4298956",
+  "e7h:grid:k=q44:inst=I4:c=8": "693261e24c249ebf34938d6f2e39190ce6ea48351ef0f191234e08d5b375f0d2"
+ },
+ "sources_sha256": {
+  "code/sim/sublet/experiments/e7h.py": "e973cc90f7107bfae54f61162cb8accdcd15bc5f28dcf7e49f97b7ef7d0db95c",
+  "code/sim/sublet/experiments/ms5b_common.py": "6ae2f94e94f322f271addcdb3dfc16fffca696a376ad37fca499ba7c0d3ebe84",
+  "code/sim/sublet/experiments/ms5b_analysis.py": "dde0835e12643e95d17f103843f0e8418acf2042ed921dbd9720ddcb7b46992e",
+  "code/sim/sublet/experiments/ms5b_proto/lb.py": "75cb0789abf02822024dc2cb56c3a7d3a8f7f4c20c7ae10eb01291e62357b61c",
+  "code/sim/sublet/experiments/ms5b_proto/projected.py": "9b32441244d49a89a37736787478f44226f597045106332e43aec8cf5e414470",
+  "code/sim/sublet/experiments/ms5b_proto/run_proj.py": "84b2021806b816b871cccdeb2b38d0f1e9457015b8389e7fd3395298fed624b7"
+ },
+ "gate": {
+  "kind": "confirmation",
+  "ok": true,
+  "reason": "pre-registration at HEAD, clean tree, analysis sha256 as recorded",
+  "confirmation": {
+   "head": "eb76b1602c96ac4f5fae6646085e7a37c04ab1b7",
+   "prereg": "design/sublet_v2_prereg.md",
+   "prereg_at_head": true,
+   "prereg_sha256": "a42316b071e00a7292792cc8d00573fa84c29c36f3dc75e3423c074095aa9923",
+   "analysis_sha256_prereg": "dde0835e12643e95d17f103843f0e8418acf2042ed921dbd9720ddcb7b46992e",
+   "analysis_sha256_head": "dde0835e12643e95d17f103843f0e8418acf2042ed921dbd9720ddcb7b46992e",
+   "analysis_sha256_disk": "dde0835e12643e95d17f103843f0e8418acf2042ed921dbd9720ddcb7b46992e",
+   "dirty_paths": [],
+   "pilot": {
+    "anchor": "a6b242f7a6e9cb5629e49c2d1b10b8b781e5c655",
+    "head": "eb76b1602c96ac4f5fae6646085e7a37c04ab1b7",
+    "anchor_is_ancestor": true,
+    "spec": "design/sublet_v2.md",
+    "spec_sha256_head": "55c08bbb1f624567f5a03da51b023f3d5f0b053d441a023d744386c696b31d9a",
+    "spec_sha256_anchor": "05f7b97ecbcf92840c5c2475fb349d7a89874f64954cad6be538d067ae2b4cda",
+    "sections_changed_since_anchor": []
+   }
+  }
+ }
+}

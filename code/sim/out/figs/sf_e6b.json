@@ -1,0 +1,305 @@
+{
+ "figure": "sf_e6b",
+ "size_in": [
+  7.1399,
+  1.9
+ ],
+ "sources": [
+  "code/sim/out/e6/b/summary.json"
+ ],
+ "data": {
+  "menus": [
+   "R",
+   "R+P",
+   "R+P+1h",
+   "R+P+1h+H"
+  ],
+  "a": {
+   "R": {
+    "menu": "R",
+    "mu": 1.0,
+    "total": 0.9475865593748795,
+    "ci_lo": 0.8989463256595542,
+    "ci_hi": 1.0087621263370514,
+    "components": {
+     "lease": 0.5178725264486362,
+     "loading": 0.0,
+     "routing": 0.01313864215465857,
+     "fallback": 0.4209085372567631,
+     "stranding": 0.005549474093499845
+    },
+    "components_note": null,
+    "cost_R_over_cost": {
+     "n": 12,
+     "median": 1.0,
+     "p95": 1.0,
+     "max": 1.0,
+     "median_ci95": [
+      1.0,
+      1.0
+     ]
+    },
+    "shares": {
+     "AEP-82-like": 0.4845130667970457,
+     "spot-like": 0.5154869332029542
+    }
+   },
+   "R+P": {
+    "menu": "R+P",
+    "mu": 1.0,
+    "total": 0.942727988396419,
+    "ci_lo": 0.9013783597491564,
+    "ci_hi": 1.0078166600903122,
+    "components": {
+     "lease": 0.502795968876377,
+     "loading": 0.0,
+     "routing": 0.013211013106920062,
+     "fallback": 0.43573837612614597,
+     "stranding": 0.005396977160796273
+    },
+    "components_note": null,
+    "cost_R_over_cost": {
+     "n": 12,
+     "median": 1.0008448799541374,
+     "p95": 1.0074990934086718,
+     "max": 1.008737890506459,
+     "median_ci95": [
+      0.9954321628980066,
+      1.005133952938038
+     ]
+    },
+    "shares": {
+     "AEP-82-like": 0.5288422115326223,
+     "protected": 0.005955658168117255,
+     "spot-like": 0.46520213029926044
+    }
+   },
+   "R+P+1h": {
+    "menu": "R+P+1h",
+    "mu": 1.0,
+    "total": 0.9672549828253283,
+    "ci_lo": 0.9007320375701793,
+    "ci_hi": 1.0584203590168741,
+    "components": {
+     "lease": 0.5077365207183105,
+     "loading": 0.0,
+     "routing": 0.01253635755590337,
+     "fallback": 0.46010400321743444,
+     "stranding": 0.0052992432846880036
+    },
+    "components_note": null,
+    "cost_R_over_cost": {
+     "n": 12,
+     "median": 0.9686949747919761,
+     "p95": 1.0151403834423973,
+     "max": 1.0152165466273948,
+     "median_ci95": [
+      0.9506930893049397,
+      1.004906238165087
+     ]
+    },
+    "shares": {
+     "AEP-82-like": 0.3325871498495468,
+     "GFS-like": 0.006050063259266721,
+     "general": 0.3670619627086764,
+     "protected": 0.000897908360338199,
+     "spot-like": 0.29340291582217193
+    }
+   },
+   "R+P+1h+H": {
+    "menu": "R+P+1h+H",
+    "mu": 1.0,
+    "total": 0.9520218257296458,
+    "ci_lo": 0.8922873429676301,
+    "ci_hi": 1.0288621278409444,
+    "components": {
+     "lease": 0.5597473923462145,
+     "loading": 0.0,
+     "routing": 0.013112361768907205,
+     "fallback": 0.3862298136018539,
+     "stranding": 0.004986164553587368
+    },
+    "components_note": null,
+    "cost_R_over_cost": {
+     "n": 12,
+     "median": 0.9909762049509225,
+     "p95": 1.0274862291535827,
+     "max": 1.0325141127814923,
+     "median_ci95": [
+      0.9760739742947211,
+      1.018419149741349
+     ]
+    },
+    "shares": {
+     "GFS-like": 0.005664090322583789,
+     "general": 0.7575126246846108,
+     "protected": 0.000748659753434918,
+     "spot-like": 0.23607462523937042
+    }
+   }
+  },
+  "b": {
+   "R": {
+    "AEP-82-like": 0.4845130667970457,
+    "spot-like": 0.5154869332029542
+   },
+   "R+P": {
+    "AEP-82-like": 0.5288422115326223,
+    "protected": 0.005955658168117255,
+    "spot-like": 0.46520213029926044
+   },
+   "R+P+1h": {
+    "AEP-82-like": 0.3325871498495468,
+    "GFS-like": 0.006050063259266721,
+    "general": 0.3670619627086764,
+    "protected": 0.000897908360338199,
+    "spot-like": 0.29340291582217193
+   },
+   "R+P+1h+H": {
+    "GFS-like": 0.005664090322583789,
+    "general": 0.7575126246846108,
+    "protected": 0.000748659753434918,
+    "spot-like": 0.23607462523937042
+   }
+  },
+  "mu_side_points": {
+   "R": {},
+   "R+P": {
+    "0.2": {
+     "menu": "R+P",
+     "mu": 0.2,
+     "total": 0.9701797830151715,
+     "ci_lo": 0.9021172509146598,
+     "ci_hi": 1.0758986607601422,
+     "components": {
+      "lease": 0.6814718721202278,
+      "loading": 0.0,
+      "routing": 0.014886751981572592,
+      "fallback": 0.28774720618138644,
+      "stranding": 0.0007474602130910678
+     },
+     "components_note": null,
+     "cost_R_over_cost": {
+      "n": 0,
+      "median": null,
+      "median_note": "menu R runs at mu = 1 only",
+      "median_ci95": [
+       null,
+       null
+      ],
+      "median_ci95_note": "menu R runs at mu = 1 only",
+      "p95": null,
+      "p95_note": "menu R runs at mu = 1 only",
+      "max": null,
+      "max_note": "menu R runs at mu = 1 only",
+      "note": "menu R runs at mu = 1 only"
+     },
+     "shares": {
+      "AEP-82-like": 0.262003970505046,
+      "protected": 0.0038037072112794964,
+      "spot-like": 0.7341923222836745
+     }
+    },
+    "0.5": {
+     "menu": "R+P",
+     "mu": 0.5,
+     "total": 0.9355550167181728,
+     "ci_lo": 0.8991017058209361,
+     "ci_hi": 1.0033343009403421,
+     "components": {
+      "lease": 0.5274167961059391,
+      "loading": 0.0,
+      "routing": 0.013294378386654185,
+      "fallback": 0.40945997052912086,
+      "stranding": 0.0028304149169594284
+     },
+     "components_note": null,
+     "cost_R_over_cost": {
+      "n": 0,
+      "median": null,
+      "median_note": "menu R runs at mu = 1 only",
+      "median_ci95": [
+       null,
+       null
+      ],
+      "median_ci95_note": "menu R runs at mu = 1 only",
+      "p95": null,
+      "p95_note": "menu R runs at mu = 1 only",
+      "max": null,
+      "max_note": "menu R runs at mu = 1 only",
+      "note": "menu R runs at mu = 1 only"
+     },
+     "shares": {
+      "AEP-82-like": 0.4855062393473271,
+      "protected": 0.0066266242126732,
+      "spot-like": 0.5078671364399996
+     }
+    },
+    "2": {
+     "menu": "R+P",
+     "mu": 2.0,
+     "total": 0.9322370164924559,
+     "ci_lo": 0.8864407936755494,
+     "ci_hi": 1.0154756697455616,
+     "components": {
+      "lease": 0.4091202761949034,
+      "loading": 0.0,
+      "routing": 0.011360122595269048,
+      "fallback": 0.5210348597781941,
+      "stranding": 0.012098968339423677
+     },
+     "components_note": null,
+     "cost_R_over_cost": {
+      "n": 0,
+      "median": null,
+      "median_note": "menu R runs at mu = 1 only",
+      "median_ci95": [
+       null,
+       null
+      ],
+      "median_ci95_note": "menu R runs at mu = 1 only",
+      "p95": null,
+      "p95_note": "menu R runs at mu = 1 only",
+      "max": null,
+      "max_note": "menu R runs at mu = 1 only",
+      "note": "menu R runs at mu = 1 only"
+     },
+     "shares": {
+      "AEP-82-like": 0.9185147394651175,
+      "protected": 0.007546731080246266,
+      "spot-like": 0.07393852945463625
+     }
+    }
+   },
+   "R+P+1h": {},
+   "R+P+1h+H": {}
+  },
+  "labels": {
+   "a_x": "Total cost / all-fallback",
+   "b_x": "GPU-hour share",
+   "y": "Menu",
+   "components": {
+    "lease": "Lease",
+    "loading": "Loading",
+    "routing": "Routing",
+    "fallback": "Fallback",
+    "stranding": "Stranding"
+   },
+   "classes": {
+    "spot-like": "Spot-like",
+    "AEP-82-like": "AEP-82-like",
+    "general": "General",
+    "GFS-like": "GFS-like",
+    "protected": "Protected"
+   },
+   "no_data": "no runs",
+   "a6": "Two-timescale PD",
+   "small": "{} {}%",
+   "note": "A6 on bench_e7r, one week, mu/beta~ = 1; whiskers: 95% bootstrap of the median over 4 alignments x 3 seeds; segments split the median total in proportion to the components' mean ratios to BL0a",
+   "components_note": []
+  },
+  "sources": [
+   "code/sim/out/e6/b/summary.json"
+  ]
+ }
+}

@@ -1,0 +1,424 @@
+{
+ "figure": "sf_slack",
+ "size_in": [
+  7.1399,
+  2.5
+ ],
+ "sources": [
+  "code/analysis/out/a1_lender_spotgpu.json",
+  "code/analysis/out/a9b_notice_buffer_24h.json",
+  "code/analysis/out/a1_slack_series.npz"
+ ],
+ "data": {
+  "pools": [
+   "A10",
+   "A100-SXM4-80GB",
+   "A800-SXM4-80GB",
+   "GPU-series-1",
+   "GPU-series-2",
+   "H800"
+  ],
+  "series": {
+   "A10": {
+    "capacity_gpus": 2494,
+    "slack_mean_gpus": 7.13097758516145,
+    "zero_share": 1.0,
+    "levels": {
+     "p10": null,
+     "p10_note": "code/analysis/out/a1_lender_spotgpu.json A10.leases has no p10 (no lease level above 0)",
+     "p25": null,
+     "p25_note": "code/analysis/out/a1_lender_spotgpu.json A10.leases has no p25 (no lease level above 0)",
+     "p50": null,
+     "p50_note": "code/analysis/out/a1_lender_spotgpu.json A10.leases has no p50 (no lease level above 0)"
+    },
+    "level_reach_share": null,
+    "min": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "mean": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "max": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "zero_run": {
+     "first_day_above_0": null,
+     "mean_after": null
+    }
+   },
+   "A100-SXM4-80GB": {
+    "capacity_gpus": 3456,
+    "slack_mean_gpus": 966.9290686957033,
+    "zero_share": 0.0,
+    "levels": {
+     "p10": 354.0,
+     "p25": 551.0,
+     "p50": 994.5
+    },
+    "level_reach_share": 1.0,
+    "min": [
+     1119.5,
+     1258.5,
+     1233.5,
+     1150.5,
+     1180.5,
+     920.5,
+     1113.5,
+     1056.5,
+     1065.5,
+     1299.5,
+     910.5,
+     937.5,
+     961.5,
+     1081.5
+    ],
+    "mean": [
+     1446.6979166666667,
+     1482.65625,
+     1414.4375,
+     1576.7256944444443,
+     1481.1753472222222,
+     1438.6996527777778,
+     1550.6006944444443,
+     1482.0833333333333,
+     1341.986111111111,
+     1507.1354166666667,
+     1435.3194444444443,
+     1420.6631944444443,
+     1373.3715277777778,
+     1534.295138888889
+    ],
+    "max": [
+     1684.5,
+     1624.5,
+     1742.5,
+     1900.5,
+     1750.5,
+     1831.0,
+     1942.0,
+     1812.5,
+     1689.5,
+     1801.5,
+     1861.5,
+     1809.5,
+     1788.5,
+     1910.5
+    ]
+   },
+   "A800-SXM4-80GB": {
+    "capacity_gpus": 176,
+    "slack_mean_gpus": 61.51758084442963,
+    "zero_share": 0.000744047619047619,
+    "levels": {
+     "p10": 22.0,
+     "p25": 35.0,
+     "p50": 55.0
+    },
+    "level_reach_share": 0.9940476190476191,
+    "min": [
+     55.0,
+     86.0,
+     46.0,
+     66.0,
+     39.0,
+     62.0,
+     57.0,
+     43.0,
+     43.0,
+     107.0,
+     0.0,
+     34.0,
+     0.0,
+     54.0
+    ],
+    "mean": [
+     95.19791666666667,
+     101.53125,
+     117.46875,
+     111.34722222222223,
+     91.54166666666667,
+     103.96180555555556,
+     81.61111111111111,
+     71.23611111111111,
+     75.64236111111111,
+     125.0,
+     81.95833333333333,
+     82.42013888888889,
+     70.29166666666667,
+     93.47916666666667
+    ],
+    "max": [
+     111.0,
+     126.0,
+     131.0,
+     131.0,
+     137.0,
+     137.0,
+     104.0,
+     99.0,
+     123.0,
+     139.0,
+     123.0,
+     115.0,
+     115.0,
+     118.0
+    ]
+   },
+   "GPU-series-1": {
+    "capacity_gpus": 1558,
+    "slack_mean_gpus": 391.10438687663014,
+    "zero_share": 0.0,
+    "levels": {
+     "p10": 159.0,
+     "p25": 177.0,
+     "p50": 216.0
+    },
+    "level_reach_share": 1.0,
+    "min": [
+     811.0,
+     817.0,
+     802.0,
+     748.0,
+     760.0,
+     789.0,
+     811.0,
+     818.0,
+     820.0,
+     819.0,
+     820.0,
+     803.0,
+     797.0,
+     798.0
+    ],
+    "mean": [
+     817.125,
+     817.0659722222222,
+     818.3125,
+     823.6111111111111,
+     827.0173611111111,
+     823.3055555555555,
+     819.0451388888889,
+     820.0798611111111,
+     821.6111111111111,
+     820.4548611111111,
+     823.9444444444445,
+     818.2361111111111,
+     800.2152777777778,
+     807.9270833333334
+    ],
+    "max": [
+     819.0,
+     819.0,
+     827.0,
+     835.0,
+     835.0,
+     829.0,
+     823.0,
+     823.0,
+     823.0,
+     826.0,
+     836.0,
+     836.0,
+     819.0,
+     819.0
+    ]
+   },
+   "GPU-series-2": {
+    "capacity_gpus": 976,
+    "slack_mean_gpus": 377.47353558331537,
+    "zero_share": 0.000744047619047619,
+    "levels": {
+     "p10": 136.0,
+     "p25": 215.0,
+     "p50": 384.0
+    },
+    "level_reach_share": 0.8913690476190477,
+    "min": [
+     194.0,
+     134.0,
+     324.0,
+     255.0,
+     310.0,
+     391.0,
+     356.0,
+     167.0,
+     182.0,
+     0.0,
+     165.0,
+     270.0,
+     306.0,
+     368.0
+    ],
+    "mean": [
+     546.6944444444445,
+     472.74305555555554,
+     338.3958333333333,
+     553.1388888888889,
+     575.3854166666666,
+     744.78125,
+     626.7638888888889,
+     299.40277777777777,
+     570.8506944444445,
+     176.69791666666666,
+     599.0868055555555,
+     435.88194444444446,
+     500.5,
+     638.1631944444445
+    ],
+    "max": [
+     724.0,
+     550.0,
+     662.0,
+     670.0,
+     901.0,
+     912.0,
+     760.0,
+     647.0,
+     647.0,
+     712.0,
+     713.0,
+     668.0,
+     768.0,
+     784.0
+    ]
+   },
+   "H800": {
+    "capacity_gpus": 1752,
+    "slack_mean_gpus": 637.0390249642107,
+    "zero_share": 0.0,
+    "levels": {
+     "p10": 120.0,
+     "p25": 224.0,
+     "p50": 536.0
+    },
+    "level_reach_share": 0.9662698412698413,
+    "min": [
+     232.0,
+     280.0,
+     264.0,
+     216.0,
+     208.0,
+     432.0,
+     440.0,
+     256.0,
+     224.0,
+     232.0,
+     200.0,
+     192.0,
+     248.0,
+     176.0
+    ],
+    "mean": [
+     305.44444444444446,
+     330.69444444444446,
+     327.5416666666667,
+     1436.5555555555557,
+     944.6388888888889,
+     653.1111111111111,
+     510.3541666666667,
+     906.6944444444445,
+     417.0,
+     293.4375,
+     266.59722222222223,
+     299.5173611111111,
+     459.5,
+     565.8888888888889
+    ],
+    "max": [
+     344.0,
+     344.0,
+     1744.0,
+     1752.0,
+     1728.0,
+     1368.0,
+     1240.0,
+     1240.0,
+     536.0,
+     304.0,
+     608.0,
+     632.0,
+     792.0,
+     792.0
+    ]
+   }
+  },
+  "slot_min": 5,
+  "slots_per_day": 288,
+  "n_slots": 4032,
+  "n_kept": 4032,
+  "tail": {
+   "start_slot": null,
+   "n_slots": 0,
+   "rule": "no slot at which every pool rises by 0.5 of its capacity at once"
+  },
+  "n_days": 14,
+  "last_day_slots": 288,
+  "days": 14.0,
+  "level_drawn": "p25",
+  "level_quantile": 25,
+  "no_level": [
+   "A10"
+  ],
+  "source_sha256": {
+   "code/analysis/out/a1_slack_series.npz": "c59127788cbf2acbe742d15ab1a0a21994fcc4811c41a348bfaa736894c563b7",
+   "code/analysis/out/a1_lender_spotgpu.json": "07415bcdf915494060d88652e2d7b0746c130948a68d8c1378ecfccaa1e1c527",
+   "code/analysis/out/a9b_notice_buffer_24h.json": "3d4ef1647151d2d4e6fa091e63e3b157b194a62fa7fb84944f9a563de0bfc238"
+  },
+  "sources": [
+   "code/analysis/out/a1_lender_spotgpu.json",
+   "code/analysis/out/a9b_notice_buffer_24h.json",
+   "code/analysis/out/a1_slack_series.npz"
+  ],
+  "labels": {
+   "x": "Time (days)",
+   "y": "Slack (GPUs)",
+   "level": "P25",
+   "no_level": "P25 = 0",
+   "title": "{pool}, {capacity} GPUs",
+   "caption": "Lendable slack (capacity minus the high-priority jobs' occupancy, at least 0) of the six GPU pools of Alibaba's cluster-trace-v2026-spot-gpu [duan2026gfs] at 5-min slots: daily minimum to maximum (band) and daily mean (line) over 14 days from the end of the trace's first week, which the analysis drops; each y axis runs from 0 to the pool's capacity (title). Thin light line: P25, the 25th percentile of the pool's slack over the whole series (the slack reaches it in at least 89% of the slots). At its default lease-size quantile (P25) the simulator takes this quantile of the slack left after the lender's notice buffer and rounds it down to whole layers, so the top of the block a spot lender offers lies at or below this line. (a) A10: P25 = 0; its slack is zero in 100.0% of the slots.",
+   "caption_tail": " The trace's last {n_tail} slots ({tail_min} min), in which every pool's slack jumps at once to at least {share}% of its capacity, are left out.",
+   "caption_no_level": " ({letter}) {pool}: {level}; its slack is zero in {share} of the slots{run}.",
+   "caption_no_level_run": ", in every slot until day {d0}",
+   "caption_no_level_after": ", and its daily mean is {lo}\u2013{hi} GPUs from day {d1} on"
+  }
+ }
+}

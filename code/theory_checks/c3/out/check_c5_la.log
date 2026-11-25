@@ -1,0 +1,32 @@
+10 random instances T=36 m=4 J=2 n=8; P_hat = OPT_eager on predicted demand
+(a) fractional lambda-PD: mean P/OPT_eager per lambda; max consistency check P/(2c(P)/(1-lam)) and max dual-feasibility ratio (both must be <= 1)
+  exact     0     c(P)/OPT mean  1.000 | lam=0.1: 1.129 lam=0.3: 1.309 lam=0.5: 1.491 lam=0.8: 1.772 lam=1.0: 1.958 | cons_chk 0.514 dualfeas 0.996 rob_chk 0.410 | c(P)<=OPT+q*eta: True
+  flip      0.05  c(P)/OPT mean  1.002 | lam=0.1: 1.131 lam=0.3: 1.308 lam=0.5: 1.487 lam=0.8: 1.761 lam=1.0: 1.958 | cons_chk 0.514 dualfeas 0.996 rob_chk 0.410 | c(P)<=OPT+q*eta: True
+  flip      0.15  c(P)/OPT mean  1.010 | lam=0.1: 1.142 lam=0.3: 1.319 lam=0.5: 1.496 lam=0.8: 1.762 lam=1.0: 1.958 | cons_chk 0.514 dualfeas 0.996 rob_chk 0.410 | c(P)<=OPT+q*eta: True
+  flip      0.3   c(P)/OPT mean  1.024 | lam=0.1: 1.158 lam=0.3: 1.335 lam=0.5: 1.510 lam=0.8: 1.768 lam=1.0: 1.958 | cons_chk 0.515 dualfeas 0.996 rob_chk 0.410 | c(P)<=OPT+q*eta: True
+  shift     2     c(P)/OPT mean  1.107 | lam=0.1: 1.246 lam=0.3: 1.436 lam=0.5: 1.621 lam=0.8: 1.869 lam=1.0: 1.958 | cons_chk 0.513 dualfeas 0.996 rob_chk 0.410 | c(P)<=OPT+q*eta: True
+  shift     6     c(P)/OPT mean  1.371 | lam=0.1: 1.508 lam=0.3: 1.645 lam=0.5: 1.763 lam=0.8: 1.904 lam=1.0: 1.958 | cons_chk 0.501 dualfeas 0.996 rob_chk 0.410 | c(P)<=OPT+q*eta: True
+  complement0     c(P)/OPT mean  1.646 | lam=0.1: 1.770 lam=0.3: 1.831 lam=0.5: 1.876 lam=0.8: 1.928 lam=1.0: 1.958 | cons_chk 0.495 dualfeas 0.988 rob_chk 0.410 | c(P)<=OPT+q*eta: True
+  empty     0     c(P)/OPT mean  3.138 | lam=0.1: 1.958 lam=0.3: 1.958 lam=0.5: 1.958 lam=0.8: 1.958 lam=1.0: 1.958 | cons_chk 0.367 dualfeas 0.988 rob_chk 0.410 | c(P)<=OPT+q*eta: True
+  flood     0     c(P)/OPT mean  1.018 | lam=0.1: 1.156 lam=0.3: 1.335 lam=0.5: 1.507 lam=0.8: 1.758 lam=1.0: 1.958 | cons_chk 0.519 dualfeas 0.988 rob_chk 0.410 | c(P)<=OPT+q*eta: True
+(b) integral (mean ratio to OPT_eager): FP, R, combiner gamma=2 (pathwise bound 6), gamma=1+1/sqrt2 (bound 5.83); max comb/min(FP,R) pathwise
+  robust R = rounded PD with r=1 (heuristic)
+   exact     0     FP  1.000  R  2.631  comb2  1.610  combg  1.471  max comb2/min 2.262  max combg/min 1.714  switches 0.97
+   flip      0.05  FP  1.002  R  2.631  comb2  1.587  combg  1.462  max comb2/min 2.262  max combg/min 1.806  switches 0.90
+   flip      0.15  FP  1.010  R  2.631  comb2  1.660  combg  1.503  max comb2/min 2.196  max combg/min 1.735  switches 0.96
+   flip      0.3   FP  1.024  R  2.631  comb2  1.722  combg  1.558  max comb2/min 2.284  max combg/min 1.720  switches 0.96
+   shift     2     FP  1.107  R  2.631  comb2  1.332  combg  1.377  max comb2/min 2.237  max combg/min 2.109  switches 0.51
+   shift     6     FP  1.371  R  2.631  comb2  1.416  combg  1.504  max comb2/min 2.010  max combg/min 2.061  switches 0.04
+   complement0     FP  1.646  R  2.631  comb2  2.275  combg  2.118  max comb2/min 1.890  max combg/min 1.629  switches 0.55
+   empty     0     FP  3.138  R  2.631  comb2  3.095  combg  3.076  max comb2/min 1.630  max combg/min 1.630  switches 0.04
+   flood     0     FP  1.018  R  2.631  comb2  1.740  combg  1.569  max comb2/min 2.346  max combg/min 1.707  switches 0.97
+  robust R = rounded PD with r=ceil(2 ln N) (theory)
+   exact     0     FP  1.000  R  8.589  comb2  1.054  combg  1.047  max comb2/min 1.634  max combg/min 1.493  switches 0.20
+   flip      0.05  FP  1.002  R  8.589  comb2  1.066  combg  1.052  max comb2/min 1.634  max combg/min 1.493  switches 0.23
+   flip      0.15  FP  1.010  R  8.589  comb2  1.091  combg  1.059  max comb2/min 1.700  max combg/min 1.604  switches 0.40
+   flip      0.3   FP  1.024  R  8.589  comb2  1.182  combg  1.132  max comb2/min 1.728  max combg/min 1.582  switches 0.51
+   shift     2     FP  1.107  R  8.589  comb2  1.107  combg  1.107  max comb2/min 1.000  max combg/min 1.000  switches 0.00
+   shift     6     FP  1.371  R  8.589  comb2  1.371  combg  1.371  max comb2/min 1.000  max combg/min 1.000  switches 0.00
+   complement0     FP  1.646  R  8.589  comb2  1.697  combg  1.690  max comb2/min 1.288  max combg/min 1.218  switches 0.41
+   empty     0     FP  3.138  R  8.589  comb2  3.138  combg  3.138  max comb2/min 1.000  max combg/min 1.000  switches 0.00
+   flood     0     FP  1.018  R  8.589  comb2  1.264  combg  1.191  max comb2/min 1.766  max combg/min 1.634  switches 0.66

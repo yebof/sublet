@@ -1,0 +1,124 @@
+{
+ "what": "Fig. 1 v2's illustrative run of Sublet (A8P around A9), per-slot logging",
+ "spec": "design/ms6_spec.md \u00a71.1 M1, \u00a72 U44",
+ "command": "python -m sublet.experiments.fig1_illustrative",
+ "git_revision": "3c37e20f63dcfcb0abe255d7306376018013dc89",
+ "tracked_files_dirty": false,
+ "cell": {
+  "block": "Q1",
+  "inst": "I2",
+  "c": 1,
+  "cell": "I2:c1",
+  "config": "example_1day.json",
+  "development_cell": true
+ },
+ "mode": "L-eg",
+ "policy_seed": 0,
+ "lender_seed": 1,
+ "tag": "Sublet",
+ "tag_params": {
+  "inner": "A9",
+  "project": true,
+  "allowance": "lb",
+  "kappa": null
+ },
+ "policy": {
+  "id": "A8P",
+  "params": {
+   "safe": "fb+pd",
+   "S_rbar": "theory",
+   "gamma": 1.0,
+   "gamma_T11": 1.7071067811865475,
+   "test": "T0g",
+   "wind_down": "auto",
+   "reserve": true,
+   "B0": "auto",
+   "kappa": null,
+   "abort_at": null,
+   "project": true,
+   "allowance": "lb",
+   "inner": "A9",
+   "inner_params": {
+    "defer_release": true,
+    "demand_stat": "max",
+    "site_order": "auto",
+    "backoff_cap": null,
+    "demand_lag": 0,
+    "target": "ratio",
+    "release": "ski",
+    "contract_rule": "c2",
+    "commit": true,
+    "mbb": true,
+    "site_rule": "ski",
+    "insure": true,
+    "theta": "be",
+    "tie": "lru"
+   }
+  }
+ },
+ "window": null,
+ "reduced": false,
+ "started": "2026-11-04T09:03:07",
+ "wall_s": 12.406846405006945,
+ "peak_rss_mb": 142.3203125,
+ "versions": {
+  "python": "3.12.3",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "sublet": "0.1.0"
+ },
+ "run_file": "run.json",
+ "run_sha256": "513bbbea98225d96f672e6de0ca39109b10e2b5629c3e4bb5e2164886bca9575",
+ "checks": {
+  "identical": {
+   "report": true,
+   "per_slot": true,
+   "components": true,
+   "ok": true
+  },
+  "log": {
+   "ok": true,
+   "n_evaluations": 340,
+   "problems": []
+  },
+  "pilot": {
+   "ok": true,
+   "file": "code/sim/out/sublet_v2_pilot/p4/summary.json",
+   "key": {
+    "kind": "q44",
+    "cell": "I2:c1",
+    "tag": "Sublet",
+    "mode": "L-eg",
+    "seed": 0
+   },
+   "tol_usd": 1e-09,
+   "pilot": {
+    "ALG": 589.0211708550141,
+    "B_T": 20.82741133749909,
+    "env_max_excess_usd": -0.09228342841498716,
+    "projected_slots": 38,
+    "projection": {
+     "slots": 38,
+     "P1": 37,
+     "P0": 1,
+     "K0": 0,
+     "dropped_buys": 61,
+     "dropped_other": 0,
+     "guard_releases": 0
+    },
+    "aborted": false
+   },
+   "abs_diff": {
+    "ALG": 0.0,
+    "B_T": 0.0,
+    "env_max_excess_usd": 0.0
+   },
+   "equal": {
+    "projected_slots": true,
+    "projection": true,
+    "aborted": true
+   }
+  },
+  "pass": true
+ }
+}

@@ -1,0 +1,108 @@
+{
+ "job": "e7h:fam:k=fam:src=F3:inst=F3_b2_T48:mode=F-eg",
+ "exp": "e7h",
+ "kind": "pool",
+ "params": {
+  "part": "fam",
+  "kind": "fam",
+  "family": {
+   "id": "F3",
+   "kind": "c3p5",
+   "beta": [
+    2,
+    6,
+    14,
+    30
+   ],
+   "T": [
+    48,
+    192
+   ],
+   "modes": [
+    "F-eg"
+   ],
+   "exclude_policies": [
+    "RR_RENEW",
+    "MARKING"
+   ],
+   "note": "C3-P5 single site, check_c4_lower.single(T, [(1, 1), (T, 0)], beta, [1.0, 1.3]); eager",
+   "fam": "F3"
+  },
+  "values": {
+   "beta": 2.0,
+   "T": 48
+  },
+  "inst": "F3_b2_T48",
+  "mode": "F-eg",
+  "entries": [
+   [
+    "A9",
+    [
+     0
+    ]
+   ],
+   [
+    "A9-noIns",
+    [
+     0
+    ]
+   ],
+   [
+    "Sublet",
+    [
+     0
+    ]
+   ],
+   [
+    "BL1-G",
+    [
+     0
+    ]
+   ],
+   [
+    "BL5-G",
+    [
+     0
+    ]
+   ],
+   [
+    "BL1-GP",
+    [
+     0
+    ]
+   ]
+  ]
+ },
+ "status": "ok",
+ "started": "2026-11-03T14:23:45",
+ "pid": 1729783,
+ "argv": [
+  "/work/sublet/code/sim/sublet/experiments/e7h.py",
+  "--job",
+  "e7h:fam:k=fam:src=F3:inst=F3_b2_T48:mode=F-eg",
+  "--out",
+  "/work/u36_fix/fam/out/sublet_v2/fam"
+ ],
+ "slots": [
+  "slot1"
+ ],
+ "milp_limit_s": null,
+ "git_revision": "5c7d33285b9a4f4e4df2b76e80b3e5f56d58bd37",
+ "versions": {
+  "python": "3.12.3",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "sublet": "0.1.0"
+ },
+ "runs": 6,
+ "errors": [],
+ "n_errors": 0,
+ "outputs": [
+  "runs/e7h__fam__k__fam__src__F3__inst__F3_b2_T48__mode__F-eg.json"
+ ],
+ "result": {},
+ "wall_s": 1.0807582722045481,
+ "peak_rss_kb": 98172,
+ "peak_rss_mb": 95.87109375,
+ "finished": "2026-11-03T14:23:46"
+}

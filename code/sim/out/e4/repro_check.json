@@ -1,0 +1,61 @@
+{
+ "files": {
+  "c5_la.txt": {
+   "got": "c5_la_repro.txt",
+   "lines_equal": true,
+   "n_lines_got": 32,
+   "n_lines_ref": 32,
+   "first_diffs": []
+  },
+  "c5_la_nearest.txt": {
+   "got": "c5_la_nearest_repro.txt",
+   "lines_equal": true,
+   "n_lines_got": 10,
+   "n_lines_ref": 10,
+   "first_diffs": []
+  }
+ },
+ "json": {
+  "c5_la.json": {
+   "max_rel_diff": 2.2115642650533118e-13,
+   "n_compared": 4530,
+   "n_mismatch": 0,
+   "mismatches": []
+  },
+  "c5_la_nearest.json": {
+   "max_rel_diff": 2.2115642650533118e-13,
+   "n_compared": 3610,
+   "n_mismatch": 0,
+   "mismatches": []
+  }
+ },
+ "core_eta": {
+  "n_rows": 90,
+  "n_eta_chk_false": 0,
+  "rows_false": []
+ },
+ "quick": false,
+ "pass": true,
+ "reference_dir": "/work/ms4runs/code/theory_checks/c3/out",
+ "meta": {
+  "exp": "e4",
+  "job": "e4:repro",
+  "script": "sublet.experiments.repro_c5_la",
+  "argv": [
+   "--workers",
+   "1",
+   "--out",
+   "/work/ms4runs/code/sim/out/e4/repro"
+  ],
+  "out": "/work/ms4runs/code/sim/out/e4/repro",
+  "seconds": 265.5211417740211,
+  "git_revision": "939847ca5925ce069d6df9089fe3a3d1d3207bb7",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "scipy": "1.17.1",
+   "sublet": "0.1.0"
+  },
+  "written": "2026-10-27T08:48:18"
+ }
+}

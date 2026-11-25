@@ -1,0 +1,96 @@
+{
+ "id": "dp_spot_dp_1d_fast",
+ "family": "dp_spot",
+ "method": "dp",
+ "days": 1,
+ "grid": "fast",
+ "config_file": "bench_dp_spot.json",
+ "started_unix": 1792156180.3010812,
+ "env": {
+  "python": "3.12.3",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "host": "host",
+  "platform": "Linux-6.8.0-146-generic-x86_64-with-glibc2.39",
+  "cpu_affinity": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "omp_num_threads": "1",
+  "cgroup": {
+   "path": "/user.slice/user-1001.slice/user@1001.service/app.slice/run-rcda453b84fa042f8aa53e079eb4d4585.scope",
+   "memory_max": "3221225472",
+   "memory_peak": "18571264"
+  },
+  "git": {
+   "head": "61d98b843024a74f50008d4a12a0b6093345e613",
+   "dirty": true
+  },
+  "cgroup_end": {
+   "path": "/user.slice/user-1001.slice/user@1001.service/app.slice/run-rcda453b84fa042f8aa53e079eb4d4585.scope",
+   "memory_max": "3221225472",
+   "memory_peak": "58429440"
+  }
+ },
+ "config": "bench_dp_spot",
+ "config_hash": "ca1cef9f25736314c8fab94b598251392d625caa50f5600b72d718bca46df49e",
+ "horizon_min": 1440,
+ "instance_build_s": 0.04564547538757324,
+ "rss_after_instance_mb": 88.69140625,
+ "notes": [
+  "lender a1:A100-SXM4-80GB: D_max 65 min, buffer 494.210 GPUs (b = 0.511113), v_top 7, v0 6, 1 offered layers in 1 site(s)",
+  "1 of 1 trace lenders have at least one site",
+  "2 sites: a1:A100-SXM4-80GB/L7-7, prot:europe",
+  "1 clients; beta_tilde_ref = [0.183333] USD"
+ ],
+ "merged": false,
+ "instance": {
+  "n_sites": 2,
+  "n_sites_by_kind": {
+   "layer": 1,
+   "protected": 1,
+   "synthetic": 0
+  },
+  "n_clients": 1,
+  "n_llms": 1,
+  "n_contracts": 3,
+  "n_usable_triples": 3,
+  "n_starts": 864,
+  "n_cohorts": 37,
+  "T_slow": 288,
+  "T_bench": 1440
+ },
+ "dp_states": {
+  "n_states_formula": 900,
+  "N_Q": 1,
+  "Y": 74,
+  "T_bench": 1440,
+  "choices_mb": 4.94384765625
+ },
+ "predicted_peak_mb": 154.94384765625,
+ "prediction_basis": "formula choices + 150 MB",
+ "status": "ok",
+ "built": {
+  "n_states": 900,
+  "n_p": 75,
+  "n_q": 6,
+  "T_b": 1440,
+  "n_options": 3,
+  "N_Q": 1,
+  "choice_bytes": 2073600,
+  "rss_after_build_mb": 89.56640625
+ },
+ "build_s": 0.006660333019681275,
+ "solve_s": 0.21834949497133493,
+ "rss_after_build_mb": 89.56640625,
+ "solve_status": 0,
+ "status_msg": "optimal",
+ "objective": 56.692996327334214,
+ "dual_bound": 56.692996327334214,
+ "gap": 0.0,
+ "solver_peak_rss_mb": 90.44140625,
+ "peak_rss_mb": 90.44140625,
+ "wall_s": 0.7109191417694092
+}

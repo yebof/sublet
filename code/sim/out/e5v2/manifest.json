@@ -1,0 +1,2598 @@
+{
+ "meta": {
+  "exp": "e5v2",
+  "git_revision": "44d1b4e42b5be44503039b1b5d6bfba8e32930ff",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "scipy": "1.17.1",
+   "sublet": "0.1.0"
+  },
+  "written": "2026-11-09T20:52:56",
+  "script": "code/sim/sublet/experiments/e5v2.py",
+  "script_sha256": "4aac5263c4ffa80a26f8bad2c885ccbce253c7e56ff83738de0cefdac76dfa60"
+ },
+ "jobs": [
+  {
+   "id": "e5v2:cell:menu=short:tag=Sublet:c=301",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "menu": "short",
+    "mu": 1.0,
+    "tag": "Sublet",
+    "c": 301,
+    "levels": [
+     "trace",
+     "sh0.25",
+     "sh0.5",
+     "sh1"
+    ],
+    "identity_levels": [
+     "trace"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 657.0,
+   "status": "ok",
+   "wall_s": 499.1373418509029,
+   "peak_rss_mb": 404.87890625,
+   "runs": 4
+  },
+  {
+   "id": "e5v2:cell:menu=short:tag=Sublet:c=302",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "menu": "short",
+    "mu": 1.0,
+    "tag": "Sublet",
+    "c": 302,
+    "levels": [
+     "sh0.25",
+     "sh0.5",
+     "sh1"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 505.0,
+   "status": "ok",
+   "wall_s": 355.99740640167147,
+   "peak_rss_mb": 398.4765625,
+   "runs": 3
+  },
+  {
+   "id": "e5v2:cell:menu=short:tag=Sublet:c=303",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "menu": "short",
+    "mu": 1.0,
+    "tag": "Sublet",
+    "c": 303,
+    "levels": [
+     "sh0.25",
+     "sh0.5",
+     "sh1"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 505.0,
+   "status": "ok",
+   "wall_s": 263.3211834100075,
+   "peak_rss_mb": 394.74609375,
+   "runs": 3
+  },
+  {
+   "id": "e5v2:cell:menu=short:tag=Sublet:c=304",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "menu": "short",
+    "mu": 1.0,
+    "tag": "Sublet",
+    "c": 304,
+    "levels": [
+     "sh0.25",
+     "sh0.5",
+     "sh1"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 505.0,
+   "status": "ok",
+   "wall_s": 263.8302535461262,
+   "peak_rss_mb": 397.4609375,
+   "runs": 3
+  },
+  {
+   "id": "e5v2:cell:menu=short:tag=A9:c=301",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "menu": "short",
+    "mu": 1.0,
+    "tag": "A9",
+    "c": 301,
+    "levels": [
+     "trace",
+     "sh0.25",
+     "sh0.5",
+     "sh1"
+    ],
+    "identity_levels": [
+     "trace"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 309.0,
+   "status": "ok",
+   "wall_s": 146.1438082959503,
+   "peak_rss_mb": 157.578125,
+   "runs": 4
+  },
+  {
+   "id": "e5v2:cell:menu=short:tag=A9:c=302",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "menu": "short",
+    "mu": 1.0,
+    "tag": "A9",
+    "c": 302,
+    "levels": [
+     "sh0.25",
+     "sh0.5",
+     "sh1"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 244.0,
+   "status": "ok",
+   "wall_s": 120.15492396382615,
+   "peak_rss_mb": 151.921875,
+   "runs": 3
+  },
+  {
+   "id": "e5v2:cell:menu=short:tag=A9:c=303",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "menu": "short",
+    "mu": 1.0,
+    "tag": "A9",
+    "c": 303,
+    "levels": [
+     "sh0.25",
+     "sh0.5",
+     "sh1"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 244.0,
+   "status": "ok",
+   "wall_s": 75.1320094037801,
+   "peak_rss_mb": 150.03125,
+   "runs": 3
+  },
+  {
+   "id": "e5v2:cell:menu=short:tag=A9:c=304",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "menu": "short",
+    "mu": 1.0,
+    "tag": "A9",
+    "c": 304,
+    "levels": [
+     "sh0.25",
+     "sh0.5",
+     "sh1"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 244.0,
+   "status": "ok",
+   "wall_s": 78.26612609205768,
+   "peak_rss_mb": 149.76171875,
+   "runs": 3
+  },
+  {
+   "id": "e5v2:cell:menu=short:tag=BL1-BO:c=301",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "menu": "short",
+    "mu": 1.0,
+    "tag": "BL1-BO",
+    "c": 301,
+    "levels": [
+     "trace",
+     "sh0.25",
+     "sh0.5",
+     "sh1",
+     "all1"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 80.0,
+   "status": "ok",
+   "wall_s": 77.43757148599252,
+   "peak_rss_mb": 163.46484375,
+   "runs": 5
+  },
+  {
+   "id": "e5v2:cell:menu=short:tag=BL1-BO:c=302",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "menu": "short",
+    "mu": 1.0,
+    "tag": "BL1-BO",
+    "c": 302,
+    "levels": [
+     "trace",
+     "sh0.25",
+     "sh0.5",
+     "sh1",
+     "all1"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 80.0,
+   "status": "ok",
+   "wall_s": 65.14247708115727,
+   "peak_rss_mb": 158.109375,
+   "runs": 5
+  },
+  {
+   "id": "e5v2:cell:menu=short:tag=BL1-BO:c=303",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "menu": "short",
+    "mu": 1.0,
+    "tag": "BL1-BO",
+    "c": 303,
+    "levels": [
+     "trace",
+     "sh0.25",
+     "sh0.5",
+     "sh1",
+     "all1"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 80.0,
+   "status": "ok",
+   "wall_s": 52.59841960296035,
+   "peak_rss_mb": 158.82421875,
+   "runs": 5
+  },
+  {
+   "id": "e5v2:cell:menu=short:tag=BL1-BO:c=304",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "menu": "short",
+    "mu": 1.0,
+    "tag": "BL1-BO",
+    "c": 304,
+    "levels": [
+     "trace",
+     "sh0.25",
+     "sh0.5",
+     "sh1",
+     "all1"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 80.0,
+   "status": "ok",
+   "wall_s": 57.838675756938756,
+   "peak_rss_mb": 159.59375,
+   "runs": 5
+  },
+  {
+   "id": "e5v2:cell:menu=short:tag=BL5-cur:c=301",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "menu": "short",
+    "mu": 1.0,
+    "tag": "BL5-cur",
+    "c": 301,
+    "levels": [
+     "trace",
+     "sh0.25",
+     "sh0.5",
+     "sh1"
+    ],
+    "identity_levels": [
+     "trace"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 85.0,
+   "status": "ok",
+   "wall_s": 69.56842786120251,
+   "peak_rss_mb": 158.59375,
+   "runs": 4
+  },
+  {
+   "id": "e5v2:cell:menu=short:tag=BL5-cur:c=302",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "menu": "short",
+    "mu": 1.0,
+    "tag": "BL5-cur",
+    "c": 302,
+    "levels": [
+     "sh0.25",
+     "sh0.5",
+     "sh1"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 65.0,
+   "status": "ok",
+   "wall_s": 50.74014860019088,
+   "peak_rss_mb": 153.12109375,
+   "runs": 3
+  },
+  {
+   "id": "e5v2:cell:menu=short:tag=BL5-cur:c=303",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "menu": "short",
+    "mu": 1.0,
+    "tag": "BL5-cur",
+    "c": 303,
+    "levels": [
+     "sh0.25",
+     "sh0.5",
+     "sh1"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 65.0,
+   "status": "ok",
+   "wall_s": 34.73440564982593,
+   "peak_rss_mb": 151.87109375,
+   "runs": 3
+  },
+  {
+   "id": "e5v2:cell:menu=short:tag=BL5-cur:c=304",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "menu": "short",
+    "mu": 1.0,
+    "tag": "BL5-cur",
+    "c": 304,
+    "levels": [
+     "sh0.25",
+     "sh0.5",
+     "sh1"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 65.0,
+   "status": "ok",
+   "wall_s": 37.73115954408422,
+   "peak_rss_mb": 150.21875,
+   "runs": 3
+  },
+  {
+   "id": "e5v2:cell:menu=short:tag=BL3-0:c=301",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "menu": "short",
+    "mu": 1.0,
+    "tag": "BL3-0",
+    "c": 301,
+    "levels": [
+     "trace",
+     "sh0.25",
+     "sh0.5",
+     "sh1"
+    ],
+    "identity_levels": [
+     "trace"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 119.4,
+   "status": "ok",
+   "wall_s": 71.1706338939257,
+   "peak_rss_mb": 153.8671875,
+   "runs": 4
+  },
+  {
+   "id": "e5v2:cell:menu=short:tag=BL3-0:c=302",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "menu": "short",
+    "mu": 1.0,
+    "tag": "BL3-0",
+    "c": 302,
+    "levels": [
+     "sh0.25",
+     "sh0.5",
+     "sh1"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 90.80000000000001,
+   "status": "ok",
+   "wall_s": 50.998014711309224,
+   "peak_rss_mb": 149.92578125,
+   "runs": 3
+  },
+  {
+   "id": "e5v2:cell:menu=short:tag=BL3-0:c=303",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "menu": "short",
+    "mu": 1.0,
+    "tag": "BL3-0",
+    "c": 303,
+    "levels": [
+     "sh0.25",
+     "sh0.5",
+     "sh1"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 90.80000000000001,
+   "status": "ok",
+   "wall_s": 37.60439886525273,
+   "peak_rss_mb": 149.96484375,
+   "runs": 3
+  },
+  {
+   "id": "e5v2:cell:menu=short:tag=BL3-0:c=304",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "menu": "short",
+    "mu": 1.0,
+    "tag": "BL3-0",
+    "c": 304,
+    "levels": [
+     "sh0.25",
+     "sh0.5",
+     "sh1"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 90.80000000000001,
+   "status": "ok",
+   "wall_s": 45.280099669937044,
+   "peak_rss_mb": 151.40234375,
+   "runs": 3
+  },
+  {
+   "id": "e5v2:cell:menu=short:tag=BL3-2:c=301",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "menu": "short",
+    "mu": 1.0,
+    "tag": "BL3-2",
+    "c": 301,
+    "levels": [
+     "trace",
+     "sh0.25",
+     "sh0.5",
+     "sh1",
+     "all1"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 148.0,
+   "status": "ok",
+   "wall_s": 329.6155650620349,
+   "peak_rss_mb": 352.71875,
+   "runs": 5
+  },
+  {
+   "id": "e5v2:cell:menu=short:tag=BL3-2:c=302",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "menu": "short",
+    "mu": 1.0,
+    "tag": "BL3-2",
+    "c": 302,
+    "levels": [
+     "trace",
+     "sh0.25",
+     "sh0.5",
+     "sh1",
+     "all1"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 148.0,
+   "status": "ok",
+   "wall_s": 273.42968495283276,
+   "peak_rss_mb": 339.86328125,
+   "runs": 5
+  },
+  {
+   "id": "e5v2:cell:menu=short:tag=BL3-2:c=303",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "menu": "short",
+    "mu": 1.0,
+    "tag": "BL3-2",
+    "c": 303,
+    "levels": [
+     "trace",
+     "sh0.25",
+     "sh0.5",
+     "sh1",
+     "all1"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 148.0,
+   "status": "ok",
+   "wall_s": 336.1502925660461,
+   "peak_rss_mb": 371.43359375,
+   "runs": 5
+  },
+  {
+   "id": "e5v2:cell:menu=short:tag=BL3-2:c=304",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "menu": "short",
+    "mu": 1.0,
+    "tag": "BL3-2",
+    "c": 304,
+    "levels": [
+     "trace",
+     "sh0.25",
+     "sh0.5",
+     "sh1",
+     "all1"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 148.0,
+   "status": "ok",
+   "wall_s": 255.31982450000942,
+   "peak_rss_mb": 327.3046875,
+   "runs": 5
+  },
+  {
+   "id": "e5v2:cell:menu=long:tag=Sublet:c=301",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "menu": "long",
+    "mu": 1.0,
+    "tag": "Sublet",
+    "c": 301,
+    "levels": [
+     "sh0.25",
+     "sh0.5",
+     "sh1"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 505.0,
+   "status": "ok",
+   "wall_s": 365.2625220208429,
+   "peak_rss_mb": 173.640625,
+   "runs": 3
+  },
+  {
+   "id": "e5v2:cell:menu=long:tag=Sublet:c=302",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "menu": "long",
+    "mu": 1.0,
+    "tag": "Sublet",
+    "c": 302,
+    "levels": [
+     "sh0.25",
+     "sh0.5",
+     "sh1"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 505.0,
+   "status": "ok",
+   "wall_s": 322.5862651229836,
+   "peak_rss_mb": 171.6875,
+   "runs": 3
+  },
+  {
+   "id": "e5v2:cell:menu=long:tag=Sublet:c=303",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "menu": "long",
+    "mu": 1.0,
+    "tag": "Sublet",
+    "c": 303,
+    "levels": [
+     "sh0.25",
+     "sh0.5",
+     "sh1"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 505.0,
+   "status": "ok",
+   "wall_s": 227.9892527400516,
+   "peak_rss_mb": 170.5546875,
+   "runs": 3
+  },
+  {
+   "id": "e5v2:cell:menu=long:tag=Sublet:c=304",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "menu": "long",
+    "mu": 1.0,
+    "tag": "Sublet",
+    "c": 304,
+    "levels": [
+     "sh0.25",
+     "sh0.5",
+     "sh1"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 505.0,
+   "status": "ok",
+   "wall_s": 235.68395282700658,
+   "peak_rss_mb": 170.30859375,
+   "runs": 3
+  },
+  {
+   "id": "e5v2:cell:menu=long:tag=A9:c=301",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "menu": "long",
+    "mu": 1.0,
+    "tag": "A9",
+    "c": 301,
+    "levels": [
+     "sh0.25",
+     "sh0.5",
+     "sh1"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 244.0,
+   "status": "ok",
+   "wall_s": 95.32653449010104,
+   "peak_rss_mb": 149.3359375,
+   "runs": 3
+  },
+  {
+   "id": "e5v2:cell:menu=long:tag=A9:c=302",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "menu": "long",
+    "mu": 1.0,
+    "tag": "A9",
+    "c": 302,
+    "levels": [
+     "sh0.25",
+     "sh0.5",
+     "sh1"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 244.0,
+   "status": "ok",
+   "wall_s": 92.59677897486836,
+   "peak_rss_mb": 147.7265625,
+   "runs": 3
+  },
+  {
+   "id": "e5v2:cell:menu=long:tag=A9:c=303",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "menu": "long",
+    "mu": 1.0,
+    "tag": "A9",
+    "c": 303,
+    "levels": [
+     "sh0.25",
+     "sh0.5",
+     "sh1"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 244.0,
+   "status": "ok",
+   "wall_s": 72.33949142415076,
+   "peak_rss_mb": 147.2578125,
+   "runs": 3
+  },
+  {
+   "id": "e5v2:cell:menu=long:tag=A9:c=304",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "menu": "long",
+    "mu": 1.0,
+    "tag": "A9",
+    "c": 304,
+    "levels": [
+     "sh0.25",
+     "sh0.5",
+     "sh1"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 244.0,
+   "status": "ok",
+   "wall_s": 83.3511528680101,
+   "peak_rss_mb": 148.046875,
+   "runs": 3
+  },
+  {
+   "id": "e5v2:cell:menu=long:tag=BL1-BO:c=301",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "menu": "long",
+    "mu": 1.0,
+    "tag": "BL1-BO",
+    "c": 301,
+    "levels": [
+     "trace",
+     "sh0.25",
+     "sh0.5",
+     "sh1",
+     "all1"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 80.0,
+   "status": "ok",
+   "wall_s": 86.94184383517131,
+   "peak_rss_mb": 156.21875,
+   "runs": 5
+  },
+  {
+   "id": "e5v2:cell:menu=long:tag=BL1-BO:c=302",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "menu": "long",
+    "mu": 1.0,
+    "tag": "BL1-BO",
+    "c": 302,
+    "levels": [
+     "trace",
+     "sh0.25",
+     "sh0.5",
+     "sh1",
+     "all1"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 80.0,
+   "status": "ok",
+   "wall_s": 70.69383114390075,
+   "peak_rss_mb": 155.97265625,
+   "runs": 5
+  },
+  {
+   "id": "e5v2:cell:menu=long:tag=BL1-BO:c=303",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "menu": "long",
+    "mu": 1.0,
+    "tag": "BL1-BO",
+    "c": 303,
+    "levels": [
+     "trace",
+     "sh0.25",
+     "sh0.5",
+     "sh1",
+     "all1"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 80.0,
+   "status": "ok",
+   "wall_s": 60.38335264986381,
+   "peak_rss_mb": 154.05078125,
+   "runs": 5
+  },
+  {
+   "id": "e5v2:cell:menu=long:tag=BL1-BO:c=304",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "menu": "long",
+    "mu": 1.0,
+    "tag": "BL1-BO",
+    "c": 304,
+    "levels": [
+     "trace",
+     "sh0.25",
+     "sh0.5",
+     "sh1",
+     "all1"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 80.0,
+   "status": "ok",
+   "wall_s": 67.40188606781885,
+   "peak_rss_mb": 154.26171875,
+   "runs": 5
+  },
+  {
+   "id": "e5v2:cell:menu=long:tag=BL5-cur:c=301",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "menu": "long",
+    "mu": 1.0,
+    "tag": "BL5-cur",
+    "c": 301,
+    "levels": [
+     "sh0.25",
+     "sh0.5",
+     "sh1"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 65.0,
+   "status": "ok",
+   "wall_s": 53.722468614112586,
+   "peak_rss_mb": 149.2734375,
+   "runs": 3
+  },
+  {
+   "id": "e5v2:cell:menu=long:tag=BL5-cur:c=302",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "menu": "long",
+    "mu": 1.0,
+    "tag": "BL5-cur",
+    "c": 302,
+    "levels": [
+     "sh0.25",
+     "sh0.5",
+     "sh1"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 65.0,
+   "status": "ok",
+   "wall_s": 50.85641311714426,
+   "peak_rss_mb": 148.35546875,
+   "runs": 3
+  },
+  {
+   "id": "e5v2:cell:menu=long:tag=BL5-cur:c=303",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "menu": "long",
+    "mu": 1.0,
+    "tag": "BL5-cur",
+    "c": 303,
+    "levels": [
+     "sh0.25",
+     "sh0.5",
+     "sh1"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 65.0,
+   "status": "ok",
+   "wall_s": 37.56721016066149,
+   "peak_rss_mb": 147.92578125,
+   "runs": 3
+  },
+  {
+   "id": "e5v2:cell:menu=long:tag=BL5-cur:c=304",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "menu": "long",
+    "mu": 1.0,
+    "tag": "BL5-cur",
+    "c": 304,
+    "levels": [
+     "sh0.25",
+     "sh0.5",
+     "sh1"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 65.0,
+   "status": "ok",
+   "wall_s": 42.29776339698583,
+   "peak_rss_mb": 146.6796875,
+   "runs": 3
+  },
+  {
+   "id": "e5v2:cell:menu=long:tag=BL3-0:c=301",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "menu": "long",
+    "mu": 1.0,
+    "tag": "BL3-0",
+    "c": 301,
+    "levels": [
+     "sh0.25",
+     "sh0.5",
+     "sh1"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 90.80000000000001,
+   "status": "ok",
+   "wall_s": 56.05614573508501,
+   "peak_rss_mb": 151.30859375,
+   "runs": 3
+  },
+  {
+   "id": "e5v2:cell:menu=long:tag=BL3-0:c=302",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "menu": "long",
+    "mu": 1.0,
+    "tag": "BL3-0",
+    "c": 302,
+    "levels": [
+     "sh0.25",
+     "sh0.5",
+     "sh1"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 90.80000000000001,
+   "status": "ok",
+   "wall_s": 51.348567753098905,
+   "peak_rss_mb": 148.48828125,
+   "runs": 3
+  },
+  {
+   "id": "e5v2:cell:menu=long:tag=BL3-0:c=303",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "menu": "long",
+    "mu": 1.0,
+    "tag": "BL3-0",
+    "c": 303,
+    "levels": [
+     "sh0.25",
+     "sh0.5",
+     "sh1"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 90.80000000000001,
+   "status": "ok",
+   "wall_s": 38.97157429670915,
+   "peak_rss_mb": 148.03515625,
+   "runs": 3
+  },
+  {
+   "id": "e5v2:cell:menu=long:tag=BL3-0:c=304",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "menu": "long",
+    "mu": 1.0,
+    "tag": "BL3-0",
+    "c": 304,
+    "levels": [
+     "sh0.25",
+     "sh0.5",
+     "sh1"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 90.80000000000001,
+   "status": "ok",
+   "wall_s": 47.13850513519719,
+   "peak_rss_mb": 148.89453125,
+   "runs": 3
+  },
+  {
+   "id": "e5v2:cell:menu=long:tag=BL3-2:c=301",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "menu": "long",
+    "mu": 1.0,
+    "tag": "BL3-2",
+    "c": 301,
+    "levels": [
+     "trace",
+     "sh0.25",
+     "sh0.5",
+     "sh1",
+     "all1"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 148.0,
+   "status": "ok",
+   "wall_s": 287.27007135981694,
+   "peak_rss_mb": 296.61328125,
+   "runs": 5
+  },
+  {
+   "id": "e5v2:cell:menu=long:tag=BL3-2:c=302",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "menu": "long",
+    "mu": 1.0,
+    "tag": "BL3-2",
+    "c": 302,
+    "levels": [
+     "trace",
+     "sh0.25",
+     "sh0.5",
+     "sh1",
+     "all1"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 148.0,
+   "status": "ok",
+   "wall_s": 254.0808808337897,
+   "peak_rss_mb": 270.53125,
+   "runs": 5
+  },
+  {
+   "id": "e5v2:cell:menu=long:tag=BL3-2:c=303",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "menu": "long",
+    "mu": 1.0,
+    "tag": "BL3-2",
+    "c": 303,
+    "levels": [
+     "trace",
+     "sh0.25",
+     "sh0.5",
+     "sh1",
+     "all1"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 148.0,
+   "status": "ok",
+   "wall_s": 162.58454973902553,
+   "peak_rss_mb": 242.3984375,
+   "runs": 5
+  },
+  {
+   "id": "e5v2:cell:menu=long:tag=BL3-2:c=304",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "menu": "long",
+    "mu": 1.0,
+    "tag": "BL3-2",
+    "c": 304,
+    "levels": [
+     "trace",
+     "sh0.25",
+     "sh0.5",
+     "sh1",
+     "all1"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 148.0,
+   "status": "ok",
+   "wall_s": 212.01040263473988,
+   "peak_rss_mb": 261.9765625,
+   "runs": 5
+  },
+  {
+   "id": "e5v2:mu:mu=0.2:tag=Sublet:c=301",
+   "kind": "pool",
+   "params": {
+    "kind": "mu",
+    "menu": "short",
+    "mu": 0.2,
+    "tag": "Sublet",
+    "c": 301,
+    "levels": [
+     "trace"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 201.0,
+   "status": "ok",
+   "wall_s": 135.94043305981904,
+   "peak_rss_mb": 380.54296875,
+   "runs": 1
+  },
+  {
+   "id": "e5v2:mu:mu=0.2:tag=Sublet:c=302",
+   "kind": "pool",
+   "params": {
+    "kind": "mu",
+    "menu": "short",
+    "mu": 0.2,
+    "tag": "Sublet",
+    "c": 302,
+    "levels": [
+     "trace"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 201.0,
+   "status": "ok",
+   "wall_s": 124.2879647668451,
+   "peak_rss_mb": 375.23828125,
+   "runs": 1
+  },
+  {
+   "id": "e5v2:mu:mu=0.2:tag=Sublet:c=303",
+   "kind": "pool",
+   "params": {
+    "kind": "mu",
+    "menu": "short",
+    "mu": 0.2,
+    "tag": "Sublet",
+    "c": 303,
+    "levels": [
+     "trace"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 201.0,
+   "status": "ok",
+   "wall_s": 97.90151608269662,
+   "peak_rss_mb": 365.7421875,
+   "runs": 1
+  },
+  {
+   "id": "e5v2:mu:mu=0.2:tag=Sublet:c=304",
+   "kind": "pool",
+   "params": {
+    "kind": "mu",
+    "menu": "short",
+    "mu": 0.2,
+    "tag": "Sublet",
+    "c": 304,
+    "levels": [
+     "trace"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 201.0,
+   "status": "ok",
+   "wall_s": 103.6803657761775,
+   "peak_rss_mb": 354.78125,
+   "runs": 1
+  },
+  {
+   "id": "e5v2:mu:mu=0.2:tag=A9:c=301",
+   "kind": "pool",
+   "params": {
+    "kind": "mu",
+    "menu": "short",
+    "mu": 0.2,
+    "tag": "A9",
+    "c": 301,
+    "levels": [
+     "trace"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 114.0,
+   "status": "ok",
+   "wall_s": 63.80629510991275,
+   "peak_rss_mb": 153.109375,
+   "runs": 1
+  },
+  {
+   "id": "e5v2:mu:mu=0.2:tag=A9:c=302",
+   "kind": "pool",
+   "params": {
+    "kind": "mu",
+    "menu": "short",
+    "mu": 0.2,
+    "tag": "A9",
+    "c": 302,
+    "levels": [
+     "trace"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 114.0,
+   "status": "ok",
+   "wall_s": 63.496120508760214,
+   "peak_rss_mb": 148.5625,
+   "runs": 1
+  },
+  {
+   "id": "e5v2:mu:mu=0.2:tag=A9:c=303",
+   "kind": "pool",
+   "params": {
+    "kind": "mu",
+    "menu": "short",
+    "mu": 0.2,
+    "tag": "A9",
+    "c": 303,
+    "levels": [
+     "trace"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 114.0,
+   "status": "ok",
+   "wall_s": 57.632879320997745,
+   "peak_rss_mb": 145.84765625,
+   "runs": 1
+  },
+  {
+   "id": "e5v2:mu:mu=0.2:tag=A9:c=304",
+   "kind": "pool",
+   "params": {
+    "kind": "mu",
+    "menu": "short",
+    "mu": 0.2,
+    "tag": "A9",
+    "c": 304,
+    "levels": [
+     "trace"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 114.0,
+   "status": "ok",
+   "wall_s": 59.66187198320404,
+   "peak_rss_mb": 146.16015625,
+   "runs": 1
+  },
+  {
+   "id": "e5v2:mu:mu=0.2:tag=BL1-BO:c=301",
+   "kind": "pool",
+   "params": {
+    "kind": "mu",
+    "menu": "short",
+    "mu": 0.2,
+    "tag": "BL1-BO",
+    "c": 301,
+    "levels": [
+     "trace"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 20.0,
+   "status": "ok",
+   "wall_s": 24.167220701929182,
+   "peak_rss_mb": 152.359375,
+   "runs": 1
+  },
+  {
+   "id": "e5v2:mu:mu=0.2:tag=BL1-BO:c=302",
+   "kind": "pool",
+   "params": {
+    "kind": "mu",
+    "menu": "short",
+    "mu": 0.2,
+    "tag": "BL1-BO",
+    "c": 302,
+    "levels": [
+     "trace"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 20.0,
+   "status": "ok",
+   "wall_s": 18.01865044888109,
+   "peak_rss_mb": 148.9453125,
+   "runs": 1
+  },
+  {
+   "id": "e5v2:mu:mu=0.2:tag=BL1-BO:c=303",
+   "kind": "pool",
+   "params": {
+    "kind": "mu",
+    "menu": "short",
+    "mu": 0.2,
+    "tag": "BL1-BO",
+    "c": 303,
+    "levels": [
+     "trace"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 20.0,
+   "status": "ok",
+   "wall_s": 14.5881237401627,
+   "peak_rss_mb": 146.9375,
+   "runs": 1
+  },
+  {
+   "id": "e5v2:mu:mu=0.2:tag=BL1-BO:c=304",
+   "kind": "pool",
+   "params": {
+    "kind": "mu",
+    "menu": "short",
+    "mu": 0.2,
+    "tag": "BL1-BO",
+    "c": 304,
+    "levels": [
+     "trace"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 20.0,
+   "status": "ok",
+   "wall_s": 15.021543479058892,
+   "peak_rss_mb": 147.96484375,
+   "runs": 1
+  },
+  {
+   "id": "e5v2:mu:mu=0.2:tag=BL5-cur:c=301",
+   "kind": "pool",
+   "params": {
+    "kind": "mu",
+    "menu": "short",
+    "mu": 0.2,
+    "tag": "BL5-cur",
+    "c": 301,
+    "levels": [
+     "trace"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 25.0,
+   "status": "ok",
+   "wall_s": 19.48830797895789,
+   "peak_rss_mb": 150.56640625,
+   "runs": 1
+  },
+  {
+   "id": "e5v2:mu:mu=0.2:tag=BL5-cur:c=302",
+   "kind": "pool",
+   "params": {
+    "kind": "mu",
+    "menu": "short",
+    "mu": 0.2,
+    "tag": "BL5-cur",
+    "c": 302,
+    "levels": [
+     "trace"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 25.0,
+   "status": "ok",
+   "wall_s": 19.65782102337107,
+   "peak_rss_mb": 149.59375,
+   "runs": 1
+  },
+  {
+   "id": "e5v2:mu:mu=0.2:tag=BL5-cur:c=303",
+   "kind": "pool",
+   "params": {
+    "kind": "mu",
+    "menu": "short",
+    "mu": 0.2,
+    "tag": "BL5-cur",
+    "c": 303,
+    "levels": [
+     "trace"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 25.0,
+   "status": "ok",
+   "wall_s": 13.205995257012546,
+   "peak_rss_mb": 146.0078125,
+   "runs": 1
+  },
+  {
+   "id": "e5v2:mu:mu=0.2:tag=BL5-cur:c=304",
+   "kind": "pool",
+   "params": {
+    "kind": "mu",
+    "menu": "short",
+    "mu": 0.2,
+    "tag": "BL5-cur",
+    "c": 304,
+    "levels": [
+     "trace"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 25.0,
+   "status": "ok",
+   "wall_s": 15.090092421974987,
+   "peak_rss_mb": 145.484375,
+   "runs": 1
+  },
+  {
+   "id": "e5v2:mu:mu=0.5:tag=Sublet:c=301",
+   "kind": "pool",
+   "params": {
+    "kind": "mu",
+    "menu": "short",
+    "mu": 0.5,
+    "tag": "Sublet",
+    "c": 301,
+    "levels": [
+     "trace"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 201.0,
+   "status": "ok",
+   "wall_s": 155.55696847708896,
+   "peak_rss_mb": 380.171875,
+   "runs": 1
+  },
+  {
+   "id": "e5v2:mu:mu=0.5:tag=Sublet:c=302",
+   "kind": "pool",
+   "params": {
+    "kind": "mu",
+    "menu": "short",
+    "mu": 0.5,
+    "tag": "Sublet",
+    "c": 302,
+    "levels": [
+     "trace"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 201.0,
+   "status": "ok",
+   "wall_s": 148.25164988590404,
+   "peak_rss_mb": 375.09765625,
+   "runs": 1
+  },
+  {
+   "id": "e5v2:mu:mu=0.5:tag=Sublet:c=303",
+   "kind": "pool",
+   "params": {
+    "kind": "mu",
+    "menu": "short",
+    "mu": 0.5,
+    "tag": "Sublet",
+    "c": 303,
+    "levels": [
+     "trace"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 201.0,
+   "status": "ok",
+   "wall_s": 116.08006840990856,
+   "peak_rss_mb": 364.19921875,
+   "runs": 1
+  },
+  {
+   "id": "e5v2:mu:mu=0.5:tag=Sublet:c=304",
+   "kind": "pool",
+   "params": {
+    "kind": "mu",
+    "menu": "short",
+    "mu": 0.5,
+    "tag": "Sublet",
+    "c": 304,
+    "levels": [
+     "trace"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 201.0,
+   "status": "ok",
+   "wall_s": 118.65471684886143,
+   "peak_rss_mb": 352.3828125,
+   "runs": 1
+  },
+  {
+   "id": "e5v2:mu:mu=0.5:tag=A9:c=301",
+   "kind": "pool",
+   "params": {
+    "kind": "mu",
+    "menu": "short",
+    "mu": 0.5,
+    "tag": "A9",
+    "c": 301,
+    "levels": [
+     "trace"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 114.0,
+   "status": "ok",
+   "wall_s": 79.88901716191322,
+   "peak_rss_mb": 152.06640625,
+   "runs": 1
+  },
+  {
+   "id": "e5v2:mu:mu=0.5:tag=A9:c=302",
+   "kind": "pool",
+   "params": {
+    "kind": "mu",
+    "menu": "short",
+    "mu": 0.5,
+    "tag": "A9",
+    "c": 302,
+    "levels": [
+     "trace"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 114.0,
+   "status": "ok",
+   "wall_s": 77.8123031440191,
+   "peak_rss_mb": 148.07421875,
+   "runs": 1
+  },
+  {
+   "id": "e5v2:mu:mu=0.5:tag=A9:c=303",
+   "kind": "pool",
+   "params": {
+    "kind": "mu",
+    "menu": "short",
+    "mu": 0.5,
+    "tag": "A9",
+    "c": 303,
+    "levels": [
+     "trace"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 114.0,
+   "status": "ok",
+   "wall_s": 53.241547245997936,
+   "peak_rss_mb": 146.1953125,
+   "runs": 1
+  },
+  {
+   "id": "e5v2:mu:mu=0.5:tag=A9:c=304",
+   "kind": "pool",
+   "params": {
+    "kind": "mu",
+    "menu": "short",
+    "mu": 0.5,
+    "tag": "A9",
+    "c": 304,
+    "levels": [
+     "trace"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 114.0,
+   "status": "ok",
+   "wall_s": 54.825444628018886,
+   "peak_rss_mb": 146.2265625,
+   "runs": 1
+  },
+  {
+   "id": "e5v2:mu:mu=0.5:tag=BL1-BO:c=301",
+   "kind": "pool",
+   "params": {
+    "kind": "mu",
+    "menu": "short",
+    "mu": 0.5,
+    "tag": "BL1-BO",
+    "c": 301,
+    "levels": [
+     "trace"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 20.0,
+   "status": "ok",
+   "wall_s": 20.139219905715436,
+   "peak_rss_mb": 152.95703125,
+   "runs": 1
+  },
+  {
+   "id": "e5v2:mu:mu=0.5:tag=BL1-BO:c=302",
+   "kind": "pool",
+   "params": {
+    "kind": "mu",
+    "menu": "short",
+    "mu": 0.5,
+    "tag": "BL1-BO",
+    "c": 302,
+    "levels": [
+     "trace"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 20.0,
+   "status": "ok",
+   "wall_s": 15.607229835819453,
+   "peak_rss_mb": 149.7421875,
+   "runs": 1
+  },
+  {
+   "id": "e5v2:mu:mu=0.5:tag=BL1-BO:c=303",
+   "kind": "pool",
+   "params": {
+    "kind": "mu",
+    "menu": "short",
+    "mu": 0.5,
+    "tag": "BL1-BO",
+    "c": 303,
+    "levels": [
+     "trace"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 20.0,
+   "status": "ok",
+   "wall_s": 12.292429238092154,
+   "peak_rss_mb": 147.21484375,
+   "runs": 1
+  },
+  {
+   "id": "e5v2:mu:mu=0.5:tag=BL1-BO:c=304",
+   "kind": "pool",
+   "params": {
+    "kind": "mu",
+    "menu": "short",
+    "mu": 0.5,
+    "tag": "BL1-BO",
+    "c": 304,
+    "levels": [
+     "trace"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 20.0,
+   "status": "ok",
+   "wall_s": 13.38689249008894,
+   "peak_rss_mb": 147.40234375,
+   "runs": 1
+  },
+  {
+   "id": "e5v2:mu:mu=0.5:tag=BL5-cur:c=301",
+   "kind": "pool",
+   "params": {
+    "kind": "mu",
+    "menu": "short",
+    "mu": 0.5,
+    "tag": "BL5-cur",
+    "c": 301,
+    "levels": [
+     "trace"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 25.0,
+   "status": "ok",
+   "wall_s": 18.993081946857274,
+   "peak_rss_mb": 150.6171875,
+   "runs": 1
+  },
+  {
+   "id": "e5v2:mu:mu=0.5:tag=BL5-cur:c=302",
+   "kind": "pool",
+   "params": {
+    "kind": "mu",
+    "menu": "short",
+    "mu": 0.5,
+    "tag": "BL5-cur",
+    "c": 302,
+    "levels": [
+     "trace"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 25.0,
+   "status": "ok",
+   "wall_s": 19.143986989278346,
+   "peak_rss_mb": 148.140625,
+   "runs": 1
+  },
+  {
+   "id": "e5v2:mu:mu=0.5:tag=BL5-cur:c=303",
+   "kind": "pool",
+   "params": {
+    "kind": "mu",
+    "menu": "short",
+    "mu": 0.5,
+    "tag": "BL5-cur",
+    "c": 303,
+    "levels": [
+     "trace"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 25.0,
+   "status": "ok",
+   "wall_s": 13.859992425888777,
+   "peak_rss_mb": 145.66796875,
+   "runs": 1
+  },
+  {
+   "id": "e5v2:mu:mu=0.5:tag=BL5-cur:c=304",
+   "kind": "pool",
+   "params": {
+    "kind": "mu",
+    "menu": "short",
+    "mu": 0.5,
+    "tag": "BL5-cur",
+    "c": 304,
+    "levels": [
+     "trace"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 25.0,
+   "status": "ok",
+   "wall_s": 19.700855071190745,
+   "peak_rss_mb": 145.484375,
+   "runs": 1
+  },
+  {
+   "id": "e5v2:mu:mu=2:tag=Sublet:c=301",
+   "kind": "pool",
+   "params": {
+    "kind": "mu",
+    "menu": "short",
+    "mu": 2.0,
+    "tag": "Sublet",
+    "c": 301,
+    "levels": [
+     "trace"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 201.0,
+   "status": "ok",
+   "wall_s": 157.25412591081113,
+   "peak_rss_mb": 381.234375,
+   "runs": 1
+  },
+  {
+   "id": "e5v2:mu:mu=2:tag=Sublet:c=302",
+   "kind": "pool",
+   "params": {
+    "kind": "mu",
+    "menu": "short",
+    "mu": 2.0,
+    "tag": "Sublet",
+    "c": 302,
+    "levels": [
+     "trace"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 201.0,
+   "status": "ok",
+   "wall_s": 150.7549685901031,
+   "peak_rss_mb": 373.515625,
+   "runs": 1
+  },
+  {
+   "id": "e5v2:mu:mu=2:tag=Sublet:c=303",
+   "kind": "pool",
+   "params": {
+    "kind": "mu",
+    "menu": "short",
+    "mu": 2.0,
+    "tag": "Sublet",
+    "c": 303,
+    "levels": [
+     "trace"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 201.0,
+   "status": "ok",
+   "wall_s": 115.63888393901289,
+   "peak_rss_mb": 364.1484375,
+   "runs": 1
+  },
+  {
+   "id": "e5v2:mu:mu=2:tag=Sublet:c=304",
+   "kind": "pool",
+   "params": {
+    "kind": "mu",
+    "menu": "short",
+    "mu": 2.0,
+    "tag": "Sublet",
+    "c": 304,
+    "levels": [
+     "trace"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 201.0,
+   "status": "ok",
+   "wall_s": 116.42489712312818,
+   "peak_rss_mb": 353.31640625,
+   "runs": 1
+  },
+  {
+   "id": "e5v2:mu:mu=2:tag=A9:c=301",
+   "kind": "pool",
+   "params": {
+    "kind": "mu",
+    "menu": "short",
+    "mu": 2.0,
+    "tag": "A9",
+    "c": 301,
+    "levels": [
+     "trace"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 114.0,
+   "status": "ok",
+   "wall_s": 79.2286019991152,
+   "peak_rss_mb": 151.5625,
+   "runs": 1
+  },
+  {
+   "id": "e5v2:mu:mu=2:tag=A9:c=302",
+   "kind": "pool",
+   "params": {
+    "kind": "mu",
+    "menu": "short",
+    "mu": 2.0,
+    "tag": "A9",
+    "c": 302,
+    "levels": [
+     "trace"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 114.0,
+   "status": "ok",
+   "wall_s": 72.06935414625332,
+   "peak_rss_mb": 148.203125,
+   "runs": 1
+  },
+  {
+   "id": "e5v2:mu:mu=2:tag=A9:c=303",
+   "kind": "pool",
+   "params": {
+    "kind": "mu",
+    "menu": "short",
+    "mu": 2.0,
+    "tag": "A9",
+    "c": 303,
+    "levels": [
+     "trace"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 114.0,
+   "status": "ok",
+   "wall_s": 55.096882781013846,
+   "peak_rss_mb": 145.66796875,
+   "runs": 1
+  },
+  {
+   "id": "e5v2:mu:mu=2:tag=A9:c=304",
+   "kind": "pool",
+   "params": {
+    "kind": "mu",
+    "menu": "short",
+    "mu": 2.0,
+    "tag": "A9",
+    "c": 304,
+    "levels": [
+     "trace"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 114.0,
+   "status": "ok",
+   "wall_s": 55.04116590088233,
+   "peak_rss_mb": 145.7734375,
+   "runs": 1
+  },
+  {
+   "id": "e5v2:mu:mu=2:tag=BL1-BO:c=301",
+   "kind": "pool",
+   "params": {
+    "kind": "mu",
+    "menu": "short",
+    "mu": 2.0,
+    "tag": "BL1-BO",
+    "c": 301,
+    "levels": [
+     "trace"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 20.0,
+   "status": "ok",
+   "wall_s": 19.80673773912713,
+   "peak_rss_mb": 152.2890625,
+   "runs": 1
+  },
+  {
+   "id": "e5v2:mu:mu=2:tag=BL1-BO:c=302",
+   "kind": "pool",
+   "params": {
+    "kind": "mu",
+    "menu": "short",
+    "mu": 2.0,
+    "tag": "BL1-BO",
+    "c": 302,
+    "levels": [
+     "trace"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 20.0,
+   "status": "ok",
+   "wall_s": 15.848128398880363,
+   "peak_rss_mb": 149.77734375,
+   "runs": 1
+  },
+  {
+   "id": "e5v2:mu:mu=2:tag=BL1-BO:c=303",
+   "kind": "pool",
+   "params": {
+    "kind": "mu",
+    "menu": "short",
+    "mu": 2.0,
+    "tag": "BL1-BO",
+    "c": 303,
+    "levels": [
+     "trace"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 20.0,
+   "status": "ok",
+   "wall_s": 12.24007429368794,
+   "peak_rss_mb": 147.04296875,
+   "runs": 1
+  },
+  {
+   "id": "e5v2:mu:mu=2:tag=BL1-BO:c=304",
+   "kind": "pool",
+   "params": {
+    "kind": "mu",
+    "menu": "short",
+    "mu": 2.0,
+    "tag": "BL1-BO",
+    "c": 304,
+    "levels": [
+     "trace"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 20.0,
+   "status": "ok",
+   "wall_s": 13.33846790716052,
+   "peak_rss_mb": 147.05078125,
+   "runs": 1
+  },
+  {
+   "id": "e5v2:mu:mu=2:tag=BL5-cur:c=301",
+   "kind": "pool",
+   "params": {
+    "kind": "mu",
+    "menu": "short",
+    "mu": 2.0,
+    "tag": "BL5-cur",
+    "c": 301,
+    "levels": [
+     "trace"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 25.0,
+   "status": "ok",
+   "wall_s": 17.608168214093894,
+   "peak_rss_mb": 150.80859375,
+   "runs": 1
+  },
+  {
+   "id": "e5v2:mu:mu=2:tag=BL5-cur:c=302",
+   "kind": "pool",
+   "params": {
+    "kind": "mu",
+    "menu": "short",
+    "mu": 2.0,
+    "tag": "BL5-cur",
+    "c": 302,
+    "levels": [
+     "trace"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 25.0,
+   "status": "ok",
+   "wall_s": 16.57696612784639,
+   "peak_rss_mb": 149.328125,
+   "runs": 1
+  },
+  {
+   "id": "e5v2:mu:mu=2:tag=BL5-cur:c=303",
+   "kind": "pool",
+   "params": {
+    "kind": "mu",
+    "menu": "short",
+    "mu": 2.0,
+    "tag": "BL5-cur",
+    "c": 303,
+    "levels": [
+     "trace"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 25.0,
+   "status": "ok",
+   "wall_s": 11.740489238873124,
+   "peak_rss_mb": 145.46484375,
+   "runs": 1
+  },
+  {
+   "id": "e5v2:mu:mu=2:tag=BL5-cur:c=304",
+   "kind": "pool",
+   "params": {
+    "kind": "mu",
+    "menu": "short",
+    "mu": 2.0,
+    "tag": "BL5-cur",
+    "c": 304,
+    "levels": [
+     "trace"
+    ],
+    "identity_levels": [],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 25.0,
+   "status": "ok",
+   "wall_s": 12.61506668291986,
+   "peak_rss_mb": 145.68359375,
+   "runs": 1
+  }
+ ],
+ "instance_hashes": {},
+ "design": {
+  "reduced": false,
+  "weeks": [
+   301,
+   302,
+   303,
+   304
+  ],
+  "policy_seeds": [
+   0
+  ],
+  "horizon_min": 10080
+ },
+ "instance_hashes_from_outputs": {
+  "e5v2:cell:menu=short:tag=Sublet:c=301": "dd81dc2a079abaf3c846964bc7e33a5422d0a8fa911d78730a0ff0743e28fdc1",
+  "e5v2:cell:menu=short:tag=Sublet:c=302": "50edaa3755c87cd835c0b4e96a91ca8ec9acc475f9dd22440666d564d3c8facf",
+  "e5v2:cell:menu=short:tag=Sublet:c=303": "0fdd3726fe004a19b1d48af6ef326221daf10680174722bafa5ddeff3caaddd8",
+  "e5v2:cell:menu=short:tag=Sublet:c=304": "fc06d079e02a6b103ced67dfecde897b5b4f7e5172b70e9c303ca97b7adf6604",
+  "e5v2:cell:menu=short:tag=A9:c=301": "dd81dc2a079abaf3c846964bc7e33a5422d0a8fa911d78730a0ff0743e28fdc1",
+  "e5v2:cell:menu=short:tag=A9:c=302": "50edaa3755c87cd835c0b4e96a91ca8ec9acc475f9dd22440666d564d3c8facf",
+  "e5v2:cell:menu=short:tag=A9:c=303": "0fdd3726fe004a19b1d48af6ef326221daf10680174722bafa5ddeff3caaddd8",
+  "e5v2:cell:menu=short:tag=A9:c=304": "fc06d079e02a6b103ced67dfecde897b5b4f7e5172b70e9c303ca97b7adf6604",
+  "e5v2:cell:menu=short:tag=BL1-BO:c=301": "dd81dc2a079abaf3c846964bc7e33a5422d0a8fa911d78730a0ff0743e28fdc1",
+  "e5v2:cell:menu=short:tag=BL1-BO:c=302": "50edaa3755c87cd835c0b4e96a91ca8ec9acc475f9dd22440666d564d3c8facf",
+  "e5v2:cell:menu=short:tag=BL1-BO:c=303": "0fdd3726fe004a19b1d48af6ef326221daf10680174722bafa5ddeff3caaddd8",
+  "e5v2:cell:menu=short:tag=BL1-BO:c=304": "fc06d079e02a6b103ced67dfecde897b5b4f7e5172b70e9c303ca97b7adf6604",
+  "e5v2:cell:menu=short:tag=BL5-cur:c=301": "dd81dc2a079abaf3c846964bc7e33a5422d0a8fa911d78730a0ff0743e28fdc1",
+  "e5v2:cell:menu=short:tag=BL5-cur:c=302": "50edaa3755c87cd835c0b4e96a91ca8ec9acc475f9dd22440666d564d3c8facf",
+  "e5v2:cell:menu=short:tag=BL5-cur:c=303": "0fdd3726fe004a19b1d48af6ef326221daf10680174722bafa5ddeff3caaddd8",
+  "e5v2:cell:menu=short:tag=BL5-cur:c=304": "fc06d079e02a6b103ced67dfecde897b5b4f7e5172b70e9c303ca97b7adf6604",
+  "e5v2:cell:menu=short:tag=BL3-0:c=301": "dd81dc2a079abaf3c846964bc7e33a5422d0a8fa911d78730a0ff0743e28fdc1",
+  "e5v2:cell:menu=short:tag=BL3-0:c=302": "50edaa3755c87cd835c0b4e96a91ca8ec9acc475f9dd22440666d564d3c8facf",
+  "e5v2:cell:menu=short:tag=BL3-0:c=303": "0fdd3726fe004a19b1d48af6ef326221daf10680174722bafa5ddeff3caaddd8",
+  "e5v2:cell:menu=short:tag=BL3-0:c=304": "fc06d079e02a6b103ced67dfecde897b5b4f7e5172b70e9c303ca97b7adf6604",
+  "e5v2:cell:menu=short:tag=BL3-2:c=301": "dd81dc2a079abaf3c846964bc7e33a5422d0a8fa911d78730a0ff0743e28fdc1",
+  "e5v2:cell:menu=short:tag=BL3-2:c=302": "50edaa3755c87cd835c0b4e96a91ca8ec9acc475f9dd22440666d564d3c8facf",
+  "e5v2:cell:menu=short:tag=BL3-2:c=303": "0fdd3726fe004a19b1d48af6ef326221daf10680174722bafa5ddeff3caaddd8",
+  "e5v2:cell:menu=short:tag=BL3-2:c=304": "fc06d079e02a6b103ced67dfecde897b5b4f7e5172b70e9c303ca97b7adf6604",
+  "e5v2:cell:menu=long:tag=Sublet:c=301": "072346043fdcebb6095466d33af2323aa856fab725db6b91f9064452a10f95b5",
+  "e5v2:cell:menu=long:tag=Sublet:c=302": "da5127732613fd1cf63d5013a45a04823bb27ee13d9483b55c49ee9986b31006",
+  "e5v2:cell:menu=long:tag=Sublet:c=303": "aefc25154cd269a84be6c402de401c8ee805aad12170f55610f1efa5b3d8685d",
+  "e5v2:cell:menu=long:tag=Sublet:c=304": "2dad187e48771e50cff8883d640e2085a68c493e6f67058bb7bb5c707af4a5ba",
+  "e5v2:cell:menu=long:tag=A9:c=301": "072346043fdcebb6095466d33af2323aa856fab725db6b91f9064452a10f95b5",
+  "e5v2:cell:menu=long:tag=A9:c=302": "da5127732613fd1cf63d5013a45a04823bb27ee13d9483b55c49ee9986b31006",
+  "e5v2:cell:menu=long:tag=A9:c=303": "aefc25154cd269a84be6c402de401c8ee805aad12170f55610f1efa5b3d8685d",
+  "e5v2:cell:menu=long:tag=A9:c=304": "2dad187e48771e50cff8883d640e2085a68c493e6f67058bb7bb5c707af4a5ba",
+  "e5v2:cell:menu=long:tag=BL1-BO:c=301": "072346043fdcebb6095466d33af2323aa856fab725db6b91f9064452a10f95b5",
+  "e5v2:cell:menu=long:tag=BL1-BO:c=302": "da5127732613fd1cf63d5013a45a04823bb27ee13d9483b55c49ee9986b31006",
+  "e5v2:cell:menu=long:tag=BL1-BO:c=303": "aefc25154cd269a84be6c402de401c8ee805aad12170f55610f1efa5b3d8685d",
+  "e5v2:cell:menu=long:tag=BL1-BO:c=304": "2dad187e48771e50cff8883d640e2085a68c493e6f67058bb7bb5c707af4a5ba",
+  "e5v2:cell:menu=long:tag=BL5-cur:c=301": "072346043fdcebb6095466d33af2323aa856fab725db6b91f9064452a10f95b5",
+  "e5v2:cell:menu=long:tag=BL5-cur:c=302": "da5127732613fd1cf63d5013a45a04823bb27ee13d9483b55c49ee9986b31006",
+  "e5v2:cell:menu=long:tag=BL5-cur:c=303": "aefc25154cd269a84be6c402de401c8ee805aad12170f55610f1efa5b3d8685d",
+  "e5v2:cell:menu=long:tag=BL5-cur:c=304": "2dad187e48771e50cff8883d640e2085a68c493e6f67058bb7bb5c707af4a5ba",
+  "e5v2:cell:menu=long:tag=BL3-0:c=301": "072346043fdcebb6095466d33af2323aa856fab725db6b91f9064452a10f95b5",
+  "e5v2:cell:menu=long:tag=BL3-0:c=302": "da5127732613fd1cf63d5013a45a04823bb27ee13d9483b55c49ee9986b31006",
+  "e5v2:cell:menu=long:tag=BL3-0:c=303": "aefc25154cd269a84be6c402de401c8ee805aad12170f55610f1efa5b3d8685d",
+  "e5v2:cell:menu=long:tag=BL3-0:c=304": "2dad187e48771e50cff8883d640e2085a68c493e6f67058bb7bb5c707af4a5ba",
+  "e5v2:cell:menu=long:tag=BL3-2:c=301": "072346043fdcebb6095466d33af2323aa856fab725db6b91f9064452a10f95b5",
+  "e5v2:cell:menu=long:tag=BL3-2:c=302": "da5127732613fd1cf63d5013a45a04823bb27ee13d9483b55c49ee9986b31006",
+  "e5v2:cell:menu=long:tag=BL3-2:c=303": "aefc25154cd269a84be6c402de401c8ee805aad12170f55610f1efa5b3d8685d",
+  "e5v2:cell:menu=long:tag=BL3-2:c=304": "2dad187e48771e50cff8883d640e2085a68c493e6f67058bb7bb5c707af4a5ba",
+  "e5v2:mu:mu=0.2:tag=Sublet:c=301": "1a30077c512e92a4f524f904bd1d99e0c43a308a5878762cbc68b3e1844336b3",
+  "e5v2:mu:mu=0.2:tag=Sublet:c=302": "d1867b7fea834e43e7e7fffd179b4b553e09fcafcd90b5317285ca9e9e1d9ecc",
+  "e5v2:mu:mu=0.2:tag=Sublet:c=303": "5300eea30834cc0e5e0b3b1d6e40c651e8fff6a792f97709324d5ec06296f1a6",
+  "e5v2:mu:mu=0.2:tag=Sublet:c=304": "4054eed622d6552a1cba944bb63ed8cf7a1d768d2e4bf9e12e5c1bc4dfb8f5cc",
+  "e5v2:mu:mu=0.2:tag=A9:c=301": "1a30077c512e92a4f524f904bd1d99e0c43a308a5878762cbc68b3e1844336b3",
+  "e5v2:mu:mu=0.2:tag=A9:c=302": "d1867b7fea834e43e7e7fffd179b4b553e09fcafcd90b5317285ca9e9e1d9ecc",
+  "e5v2:mu:mu=0.2:tag=A9:c=303": "5300eea30834cc0e5e0b3b1d6e40c651e8fff6a792f97709324d5ec06296f1a6",
+  "e5v2:mu:mu=0.2:tag=A9:c=304": "4054eed622d6552a1cba944bb63ed8cf7a1d768d2e4bf9e12e5c1bc4dfb8f5cc",
+  "e5v2:mu:mu=0.2:tag=BL1-BO:c=301": "1a30077c512e92a4f524f904bd1d99e0c43a308a5878762cbc68b3e1844336b3",
+  "e5v2:mu:mu=0.2:tag=BL1-BO:c=302": "d1867b7fea834e43e7e7fffd179b4b553e09fcafcd90b5317285ca9e9e1d9ecc",
+  "e5v2:mu:mu=0.2:tag=BL1-BO:c=303": "5300eea30834cc0e5e0b3b1d6e40c651e8fff6a792f97709324d5ec06296f1a6",
+  "e5v2:mu:mu=0.2:tag=BL1-BO:c=304": "4054eed622d6552a1cba944bb63ed8cf7a1d768d2e4bf9e12e5c1bc4dfb8f5cc",
+  "e5v2:mu:mu=0.2:tag=BL5-cur:c=301": "1a30077c512e92a4f524f904bd1d99e0c43a308a5878762cbc68b3e1844336b3",
+  "e5v2:mu:mu=0.2:tag=BL5-cur:c=302": "d1867b7fea834e43e7e7fffd179b4b553e09fcafcd90b5317285ca9e9e1d9ecc",
+  "e5v2:mu:mu=0.2:tag=BL5-cur:c=303": "5300eea30834cc0e5e0b3b1d6e40c651e8fff6a792f97709324d5ec06296f1a6",
+  "e5v2:mu:mu=0.2:tag=BL5-cur:c=304": "4054eed622d6552a1cba944bb63ed8cf7a1d768d2e4bf9e12e5c1bc4dfb8f5cc",
+  "e5v2:mu:mu=0.5:tag=Sublet:c=301": "39a0f29d788c648a88ca2a1246dc2317997111d5b98044a6d35784032bd73979",
+  "e5v2:mu:mu=0.5:tag=Sublet:c=302": "2eb19141ae215e6f5061c1e6555810525993b620675a52284288fdbb48892a41",
+  "e5v2:mu:mu=0.5:tag=Sublet:c=303": "640cacd034665b4b7dad2d7a1104f29888615a6bb34f3e3df28d2b0ea3ac91f6",
+  "e5v2:mu:mu=0.5:tag=Sublet:c=304": "ca501a9e5375de3399ec3ff36258703179f7a77ae2f02843d48c3729244f11de",
+  "e5v2:mu:mu=0.5:tag=A9:c=301": "39a0f29d788c648a88ca2a1246dc2317997111d5b98044a6d35784032bd73979",
+  "e5v2:mu:mu=0.5:tag=A9:c=302": "2eb19141ae215e6f5061c1e6555810525993b620675a52284288fdbb48892a41",
+  "e5v2:mu:mu=0.5:tag=A9:c=303": "640cacd034665b4b7dad2d7a1104f29888615a6bb34f3e3df28d2b0ea3ac91f6",
+  "e5v2:mu:mu=0.5:tag=A9:c=304": "ca501a9e5375de3399ec3ff36258703179f7a77ae2f02843d48c3729244f11de",
+  "e5v2:mu:mu=0.5:tag=BL1-BO:c=301": "39a0f29d788c648a88ca2a1246dc2317997111d5b98044a6d35784032bd73979",
+  "e5v2:mu:mu=0.5:tag=BL1-BO:c=302": "2eb19141ae215e6f5061c1e6555810525993b620675a52284288fdbb48892a41",
+  "e5v2:mu:mu=0.5:tag=BL1-BO:c=303": "640cacd034665b4b7dad2d7a1104f29888615a6bb34f3e3df28d2b0ea3ac91f6",
+  "e5v2:mu:mu=0.5:tag=BL1-BO:c=304": "ca501a9e5375de3399ec3ff36258703179f7a77ae2f02843d48c3729244f11de",
+  "e5v2:mu:mu=0.5:tag=BL5-cur:c=301": "39a0f29d788c648a88ca2a1246dc2317997111d5b98044a6d35784032bd73979",
+  "e5v2:mu:mu=0.5:tag=BL5-cur:c=302": "2eb19141ae215e6f5061c1e6555810525993b620675a52284288fdbb48892a41",
+  "e5v2:mu:mu=0.5:tag=BL5-cur:c=303": "640cacd034665b4b7dad2d7a1104f29888615a6bb34f3e3df28d2b0ea3ac91f6",
+  "e5v2:mu:mu=0.5:tag=BL5-cur:c=304": "ca501a9e5375de3399ec3ff36258703179f7a77ae2f02843d48c3729244f11de",
+  "e5v2:mu:mu=2:tag=Sublet:c=301": "b91aa6dec4531ae2267e45c210315111f868f5f6bbc9391f50cd87b645dc56e9",
+  "e5v2:mu:mu=2:tag=Sublet:c=302": "7116b621d80e2c1098531a1ede1b7958188fbbbade8b63fbfab1ef85123b78c5",
+  "e5v2:mu:mu=2:tag=Sublet:c=303": "aa09f76d2cad35d7dac1aa5cea6fee79a7fdf004e36fce654d02b7f124b84eda",
+  "e5v2:mu:mu=2:tag=Sublet:c=304": "a97e2a6cd4ed0be9f39bd5069bf3414b76f74e7bbf908ad5cdf889f7e414f379",
+  "e5v2:mu:mu=2:tag=A9:c=301": "b91aa6dec4531ae2267e45c210315111f868f5f6bbc9391f50cd87b645dc56e9",
+  "e5v2:mu:mu=2:tag=A9:c=302": "7116b621d80e2c1098531a1ede1b7958188fbbbade8b63fbfab1ef85123b78c5",
+  "e5v2:mu:mu=2:tag=A9:c=303": "aa09f76d2cad35d7dac1aa5cea6fee79a7fdf004e36fce654d02b7f124b84eda",
+  "e5v2:mu:mu=2:tag=A9:c=304": "a97e2a6cd4ed0be9f39bd5069bf3414b76f74e7bbf908ad5cdf889f7e414f379",
+  "e5v2:mu:mu=2:tag=BL1-BO:c=301": "b91aa6dec4531ae2267e45c210315111f868f5f6bbc9391f50cd87b645dc56e9",
+  "e5v2:mu:mu=2:tag=BL1-BO:c=302": "7116b621d80e2c1098531a1ede1b7958188fbbbade8b63fbfab1ef85123b78c5",
+  "e5v2:mu:mu=2:tag=BL1-BO:c=303": "aa09f76d2cad35d7dac1aa5cea6fee79a7fdf004e36fce654d02b7f124b84eda",
+  "e5v2:mu:mu=2:tag=BL1-BO:c=304": "a97e2a6cd4ed0be9f39bd5069bf3414b76f74e7bbf908ad5cdf889f7e414f379",
+  "e5v2:mu:mu=2:tag=BL5-cur:c=301": "b91aa6dec4531ae2267e45c210315111f868f5f6bbc9391f50cd87b645dc56e9",
+  "e5v2:mu:mu=2:tag=BL5-cur:c=302": "7116b621d80e2c1098531a1ede1b7958188fbbbade8b63fbfab1ef85123b78c5",
+  "e5v2:mu:mu=2:tag=BL5-cur:c=303": "aa09f76d2cad35d7dac1aa5cea6fee79a7fdf004e36fce654d02b7f124b84eda",
+  "e5v2:mu:mu=2:tag=BL5-cur:c=304": "a97e2a6cd4ed0be9f39bd5069bf3414b76f74e7bbf908ad5cdf889f7e414f379"
+ },
+ "gate_record": {
+  "head": "44d1b4e42b5be44503039b1b5d6bfba8e32930ff",
+  "registration": "design/ms7/registration.md",
+  "registration_at_head": true,
+  "registration_sha256": "163ff03578ced770f5ded225c058281e32093b613cf2aed29b6e40b6ef094ec8",
+  "analysis": "code/sim/sublet/experiments/ms7_sens_analysis.py",
+  "analysis_sha256_registered": "6d9772304fe30b20d0d500c2c56b867ccecc97dc99e672c63bdfcd66912e4a2d",
+  "analysis_sha256_head": "6d9772304fe30b20d0d500c2c56b867ccecc97dc99e672c63bdfcd66912e4a2d",
+  "analysis_sha256_disk": "6d9772304fe30b20d0d500c2c56b867ccecc97dc99e672c63bdfcd66912e4a2d",
+  "dirty_paths": []
+ },
+ "sources_sha256": {
+  "code/sim/sublet/experiments/e5v2.py": "4aac5263c4ffa80a26f8bad2c885ccbce253c7e56ff83738de0cefdac76dfa60",
+  "code/sim/sublet/experiments/e5.py": "048947569465fe072bb973d1c0125a8536fa841517699dcfad6b2e07404209ba",
+  "code/sim/sublet/experiments/s1v2.py": "37a88cd96d534f74e2f68e747dc30c21036614a7d787aa7e22a271ee7bdedc23",
+  "code/sim/sublet/experiments/ms5b_common.py": "6ae2f94e94f322f271addcdb3dfc16fffca696a376ad37fca499ba7c0d3ebe84",
+  "code/sim/sublet/experiments/ms7_sens_analysis.py": "6d9772304fe30b20d0d500c2c56b867ccecc97dc99e672c63bdfcd66912e4a2d",
+  "code/sim/out/sublet_v2/second/summary.json": "8349e8803a8f43c8d1d5415615503df20bc0e6b291d37265821bf8ff43ff65de",
+  "code/sim/out/sublet_v2/second/manifest.json": "6d08e91d6864c158f6f848618bf5d250d465f89b012c3d6b512ba802b66ebc2c",
+  "code/sim/configs/bench_e7r.json": "d23da7053411ceb465fa3d25c41883aa0ac0f557a503c71410faba63ae3b184e",
+  "code/analysis/out/a11_calibration.json": "2575d4ce7e15244a1a75641e8fe55a7249c8703e1fa166cb9f6af87041544a58",
+  "code/analysis/out/a12_sim_inputs.json": "ab8ba5e607aa4a896d1daf23973fa9d6acc16362705973f5eeaf2b517e540377",
+  "code/analysis/out/a12_minute_io.npz": "7a2d61df69c77080f2be11e12cdb3cce82243524d247f75a037042738240f208",
+  "code/analysis/out/a5b_exposure_thresholds.json": "02d7cf87d656d79568a692c83963d3eb97c07811df2c9aeeb223ba0376f39eb3"
+ }
+}

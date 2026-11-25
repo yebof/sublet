@@ -1,0 +1,343 @@
+{
+ "meta": {
+  "exp": "e7h",
+  "git_revision": "5c7d33285b9a4f4e4df2b76e80b3e5f56d58bd37",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "scipy": "1.17.1",
+   "sublet": "0.1.0"
+  },
+  "written": "2026-11-03T14:23:57",
+  "script": "code/sim/sublet/experiments/e7h.py",
+  "script_sha256": "e973cc90f7107bfae54f61162cb8accdcd15bc5f28dcf7e49f97b7ef7d0db95c"
+ },
+ "jobs": [
+  {
+   "id": "e7h:fam:k=fam:src=F1:inst=F1_m2_r4:mode=F-ad",
+   "kind": "pool",
+   "params": {
+    "part": "fam",
+    "kind": "fam",
+    "family": {
+     "id": "F1",
+     "kind": "fam",
+     "m": [
+      2,
+      4,
+      8
+     ],
+     "rho": [
+      4,
+      8,
+      16
+     ],
+     "tau": 2,
+     "H": 1,
+     "T": 48,
+     "modes": [
+      "F-ad"
+     ],
+     "note": "cat-and-mouse Fam(m, rho, 2, 1, 48) = check_c4_lower.cm_instance, C3-T4's adaptive lender; one lender seed, policy seeds 0-9",
+     "fam": "F1"
+    },
+    "values": {
+     "m": 2,
+     "rho": 4.0
+    },
+    "inst": "F1_m2_r4",
+    "mode": "F-ad",
+    "entries": [
+     [
+      "A9",
+      [
+       0
+      ]
+     ],
+     [
+      "A9-noIns",
+      [
+       0
+      ]
+     ],
+     [
+      "Sublet",
+      [
+       0
+      ]
+     ],
+     [
+      "BL1-G",
+      [
+       0
+      ]
+     ],
+     [
+      "BL5-G",
+      [
+       0
+      ]
+     ],
+     [
+      "BL1-GP",
+      [
+       0
+      ]
+     ],
+     [
+      "RR_RENEW",
+      [
+       0
+      ]
+     ],
+     [
+      "MARKING",
+      [
+       0
+      ]
+     ]
+    ]
+   },
+   "est_s": 9.0,
+   "status": "ok",
+   "wall_s": 1.131884142756462,
+   "peak_rss_mb": 91.87890625,
+   "runs": 8
+  },
+  {
+   "id": "e7h:fam:k=fam:src=F2:inst=F2_m2_r4:mode=F-ss",
+   "kind": "pool",
+   "params": {
+    "part": "fam",
+    "kind": "fam",
+    "family": {
+     "id": "F2",
+     "kind": "fam",
+     "m": [
+      2,
+      4,
+      8,
+      16
+     ],
+     "rho": [
+      4,
+      16,
+      64
+     ],
+     "tau": 2,
+     "H": 1,
+     "T": 96,
+     "modes": [
+      "F-ss",
+      "F-iid",
+      "F-eg"
+     ],
+     "note": "T4/O1 family Fam(m, rho, 2, 1, 96) (E10(a) setup; T = 96 as o1_ub and E9's fam_m8, so that safe_site has at least two phases at m = 16); safe_site (default k = m, D = 3) and iid_step p = 0.5 with lender seed = policy seed 0-9; eager with one lender seed",
+     "fam": "F2"
+    },
+    "values": {
+     "m": 2,
+     "rho": 4.0
+    },
+    "inst": "F2_m2_r4",
+    "mode": "F-ss",
+    "entries": [
+     [
+      "A9",
+      [
+       0
+      ]
+     ],
+     [
+      "A9-noIns",
+      [
+       0
+      ]
+     ],
+     [
+      "Sublet",
+      [
+       0
+      ]
+     ],
+     [
+      "BL1-G",
+      [
+       0
+      ]
+     ],
+     [
+      "BL5-G",
+      [
+       0
+      ]
+     ],
+     [
+      "BL1-GP",
+      [
+       0
+      ]
+     ],
+     [
+      "RR_RENEW",
+      [
+       0
+      ]
+     ],
+     [
+      "MARKING",
+      [
+       0
+      ]
+     ]
+    ]
+   },
+   "est_s": 9.0,
+   "status": "ok",
+   "wall_s": 1.3058090759441257,
+   "peak_rss_mb": 92.01171875,
+   "runs": 8
+  },
+  {
+   "id": "e7h:fam:k=fam:src=F3:inst=F3_b2_T48:mode=F-eg",
+   "kind": "pool",
+   "params": {
+    "part": "fam",
+    "kind": "fam",
+    "family": {
+     "id": "F3",
+     "kind": "c3p5",
+     "beta": [
+      2,
+      6,
+      14,
+      30
+     ],
+     "T": [
+      48,
+      192
+     ],
+     "modes": [
+      "F-eg"
+     ],
+     "exclude_policies": [
+      "RR_RENEW",
+      "MARKING"
+     ],
+     "note": "C3-P5 single site, check_c4_lower.single(T, [(1, 1), (T, 0)], beta, [1.0, 1.3]); eager",
+     "fam": "F3"
+    },
+    "values": {
+     "beta": 2.0,
+     "T": 48
+    },
+    "inst": "F3_b2_T48",
+    "mode": "F-eg",
+    "entries": [
+     [
+      "A9",
+      [
+       0
+      ]
+     ],
+     [
+      "A9-noIns",
+      [
+       0
+      ]
+     ],
+     [
+      "Sublet",
+      [
+       0
+      ]
+     ],
+     [
+      "BL1-G",
+      [
+       0
+      ]
+     ],
+     [
+      "BL5-G",
+      [
+       0
+      ]
+     ],
+     [
+      "BL1-GP",
+      [
+       0
+      ]
+     ]
+    ]
+   },
+   "est_s": 8.0,
+   "status": "ok",
+   "wall_s": 1.0807582722045481,
+   "peak_rss_mb": 95.87109375,
+   "runs": 6
+  }
+ ],
+ "instance_hashes": {},
+ "part": "fam",
+ "design": {
+  "reduced": true,
+  "horizon_min": 120,
+  "window": [
+   156,
+   24
+  ],
+  "e5_horizon_min": 120,
+  "gap_horizon_min": 120
+ },
+ "instance_hashes_from_outputs": {
+  "e7h:fam:k=fam:src=F1:inst=F1_m2_r4:mode=F-ad": "ac26d36de68755e02f37146831ee46712f12aeda0fb88ef6c8022c26162de30e",
+  "e7h:fam:k=fam:src=F2:inst=F2_m2_r4:mode=F-ss": "2fe07cd138a0697f9a92affadc0218c2484ffc1407bfae7a042002d7730b0772",
+  "e7h:fam:k=fam:src=F3:inst=F3_b2_T48:mode=F-eg": "1dde643389eac4f4cc30af884215adde45d45059930fa46ff1b76823bef12e0f"
+ },
+ "sources_sha256": {
+  "code/sim/sublet/experiments/e7h.py": "e973cc90f7107bfae54f61162cb8accdcd15bc5f28dcf7e49f97b7ef7d0db95c",
+  "code/sim/sublet/experiments/ms5b_common.py": "6ae2f94e94f322f271addcdb3dfc16fffca696a376ad37fca499ba7c0d3ebe84",
+  "code/sim/sublet/experiments/ms5b_analysis.py": "dde0835e12643e95d17f103843f0e8418acf2042ed921dbd9720ddcb7b46992e",
+  "code/sim/sublet/experiments/ms5b_proto/lb.py": "75cb0789abf02822024dc2cb56c3a7d3a8f7f4c20c7ae10eb01291e62357b61c",
+  "code/sim/sublet/experiments/ms5b_proto/projected.py": "9b32441244d49a89a37736787478f44226f597045106332e43aec8cf5e414470",
+  "code/sim/sublet/experiments/ms5b_proto/run_proj.py": "84b2021806b816b871cccdeb2b38d0f1e9457015b8389e7fd3395298fed624b7"
+ },
+ "gate": {
+  "kind": "confirmation",
+  "ok": false,
+  "reason": "the confirmation does not start (\u00a74.3): the working tree is dirty (11 paths, e.g. [' M code/sim/figs/print_sheet.py', ' M code/sim/figs/rebuild.py', ' M code/sim/figs/style.py'])",
+  "confirmation": {
+   "head": "5c7d33285b9a4f4e4df2b76e80b3e5f56d58bd37",
+   "prereg": "design/sublet_v2_prereg.md",
+   "prereg_at_head": true,
+   "prereg_sha256": "a42316b071e00a7292792cc8d00573fa84c29c36f3dc75e3423c074095aa9923",
+   "analysis_sha256_prereg": "dde0835e12643e95d17f103843f0e8418acf2042ed921dbd9720ddcb7b46992e",
+   "analysis_sha256_head": "dde0835e12643e95d17f103843f0e8418acf2042ed921dbd9720ddcb7b46992e",
+   "analysis_sha256_disk": "dde0835e12643e95d17f103843f0e8418acf2042ed921dbd9720ddcb7b46992e",
+   "dirty_paths": [
+    " M code/sim/figs/print_sheet.py",
+    " M code/sim/figs/rebuild.py",
+    " M code/sim/figs/style.py",
+    " M code/sim/tests/test_figs_ms3.py",
+    " M code/sim/tests/test_figs_style.py",
+    " M code/sim/tests/test_ms4_additions.py",
+    " M code/sim/tests/test_ms5_additions.py",
+    " M code/sim/tests/test_rebuild.py",
+    " M paper/layout_check/pageplan/floats_heights.py",
+    "?? code/sim/tests/fixtures_figs_ms5b/",
+    "?? code/sim/tests/test_ms5b_additions_figs.py"
+   ],
+   "pilot": {
+    "anchor": "a6b242f7a6e9cb5629e49c2d1b10b8b781e5c655",
+    "head": "5c7d33285b9a4f4e4df2b76e80b3e5f56d58bd37",
+    "anchor_is_ancestor": true,
+    "spec": "design/sublet_v2.md",
+    "spec_sha256_head": "f5f462743377dbf9e352ef8b59b5fb7a09e8eb6d5b5072228c212589c9421b72",
+    "spec_sha256_anchor": "05f7b97ecbcf92840c5c2475fb349d7a89874f64954cad6be538d067ae2b4cda",
+    "sections_changed_since_anchor": []
+   }
+  }
+ }
+}

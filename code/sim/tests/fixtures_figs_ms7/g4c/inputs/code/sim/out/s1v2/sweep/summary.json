@@ -1,0 +1,2423 @@
+{
+ "meta": {
+  "exp": "s1v2",
+  "part": "sweep",
+  "spec": "design/ms7/feasibility/sens.md \u00a72 A, \u00a73 item 1 (C56)",
+  "change": "C56",
+  "label": "exploratory: post-freeze runs on the confirmation weeks (design/ms7/plan.md D6), not a confirmation result",
+  "git_revision": "56b847bec39b437ed5074dff124ffb69416e7f2b",
+  "written": "2026-11-08T19:47:41",
+  "reduced": true,
+  "gate": {
+   "kind": "ms7_registration",
+   "ok": false,
+   "reason": "the run does not start (design/ms7/plan.md D6): design/ms7/registration.md does not exist at HEAD; the working tree is dirty (14 paths, e.g. [' M code/sim/sublet/experiments/ms3_common.py', '?? code/sim/sublet/experiments/e5v2.py', '?? code/sim/sublet/experiments/e8v2.py'])",
+   "enforced": false,
+   "registration": {
+    "head": "56b847bec39b437ed5074dff124ffb69416e7f2b",
+    "registration": "design/ms7/registration.md",
+    "registration_at_head": false,
+    "registration_sha256": null,
+    "analysis": "code/sim/sublet/experiments/ms7_sens_analysis.py",
+    "analysis_sha256_registered": null,
+    "analysis_sha256_head": null,
+    "analysis_sha256_disk": "6d9772304fe30b20d0d500c2c56b867ccecc97dc99e672c63bdfcd66912e4a2d",
+    "dirty_paths": [
+     " M code/sim/sublet/experiments/ms3_common.py",
+     "?? code/sim/sublet/experiments/e5v2.py",
+     "?? code/sim/sublet/experiments/e8v2.py",
+     "?? code/sim/sublet/experiments/e9v2.py",
+     "?? code/sim/sublet/experiments/ms7_sens_analysis.py",
+     "?? code/sim/sublet/experiments/run_e5v2.sh",
+     "?? code/sim/sublet/experiments/run_e8v2.sh",
+     "?? code/sim/sublet/experiments/run_e9v2.sh",
+     "?? code/sim/sublet/experiments/run_s1v2.sh",
+     "?? code/sim/sublet/experiments/s1v2.py",
+     "?? code/sim/tests/test_e5v2.py",
+     "?? code/sim/tests/test_e8v2.py",
+     "?? code/sim/tests/test_e9v2.py",
+     "?? code/sim/tests/test_s1v2.py"
+    ]
+   },
+   "note": "reduced run on a development week: the gate is recorded, not enforced"
+  },
+  "grids": {
+   "weeks": [
+    101
+   ],
+   "weeks_design": [
+    301,
+    302,
+    303,
+    304
+   ],
+   "policy_seeds": [
+    0
+   ],
+   "horizon_min": 120,
+   "horizon_min_design": 10080,
+   "mode": "L-tr"
+  },
+  "points": {
+   "default": {
+    "row": null,
+    "value": null,
+    "label": "default",
+    "mu": 1.0
+   },
+   "alpha02": {
+    "row": "alpha",
+    "value": 0.2,
+    "label": "0.2",
+    "mu": 1.0
+   },
+   "alpha03": {
+    "row": "alpha",
+    "value": 0.3,
+    "label": "0.3",
+    "mu": 1.0
+   },
+   "alpha05": {
+    "row": "alpha",
+    "value": 0.5,
+    "label": "0.5",
+    "mu": 1.0
+   },
+   "alpha06": {
+    "row": "alpha",
+    "value": 0.6,
+    "label": "0.6",
+    "mu": 1.0
+   },
+   "alphap06": {
+    "row": "alpha_p",
+    "value": 0.6,
+    "label": "0.6",
+    "mu": 1.0
+   },
+   "alphap10": {
+    "row": "alpha_p",
+    "value": 1.0,
+    "label": "1.0",
+    "mu": 1.0
+   },
+   "kv05": {
+    "row": "mu_split",
+    "value": 0.5,
+    "label": "0.5",
+    "mu": 1.0
+   },
+   "kv10": {
+    "row": "mu_split",
+    "value": 1.0,
+    "label": "1",
+    "mu": 1.0
+   },
+   "scen_warm_peer_rdma": {
+    "row": "load_scenario",
+    "value": "warm_peer_rdma",
+    "label": "warm peer",
+    "mu": 1.0
+   },
+   "scen_ssd_optimized": {
+    "row": "load_scenario",
+    "value": "ssd_optimized",
+    "label": "SSD optimized",
+    "mu": 1.0
+   },
+   "scen_ssd_stock_safetensors": {
+    "row": "load_scenario",
+    "value": "ssd_stock_safetensors",
+    "label": "SSD safetensors",
+    "mu": 1.0
+   },
+   "scen_ssd_stock_pytorch": {
+    "row": "load_scenario",
+    "value": "ssd_stock_pytorch",
+    "label": "SSD PyTorch",
+    "mu": 1.0
+   },
+   "scen_a5_10GBps": {
+    "row": "load_scenario",
+    "value": "a5_10GBps",
+    "label": "10 GB/s",
+    "mu": 1.0
+   },
+   "scen_a5_2GBps": {
+    "row": "load_scenario",
+    "value": "a5_2GBps",
+    "label": "2 GB/s",
+    "mu": 1.0
+   },
+   "scen_cold_wan_10gbps": {
+    "row": "load_scenario",
+    "value": "cold_wan_10gbps",
+    "label": "WAN 10 Gb/s",
+    "mu": 1.0
+   },
+   "scen_cold_wan_1gbps": {
+    "row": "load_scenario",
+    "value": "cold_wan_1gbps",
+    "label": "WAN 1 Gb/s",
+    "mu": 1.0
+   },
+   "phi05": {
+    "row": "phi",
+    "value": 0.5,
+    "label": "0.5",
+    "mu": 1.0
+   },
+   "kappaL05": {
+    "row": "kappa_L",
+    "value": 0.5,
+    "label": "x0.5",
+    "mu": 1.0
+   },
+   "kappaL2": {
+    "row": "kappa_L",
+    "value": 2.0,
+    "label": "x2",
+    "mu": 1.0
+   },
+   "a5": {
+    "row": "catalog",
+    "value": "a5 tiers",
+    "label": "a5 tiers",
+    "mu": 1.0
+   },
+   "catM2": {
+    "row": "catalog",
+    "value": "M on 2 GPUs",
+    "label": "M on 2 GPUs",
+    "mu": 1.0
+   },
+   "catLg4": {
+    "row": "catalog",
+    "value": "L as 235B on 4 GPUs",
+    "label": "L 235B",
+    "mu": 1.0
+   },
+   "L16": {
+    "row": "precision",
+    "value": "L at 16 bits on 16 GPUs",
+    "label": "16 bit",
+    "mu": 1.0
+   },
+   "tiermap": {
+    "row": "gpt4o_mini",
+    "value": "L",
+    "label": "L",
+    "mu": 1.0
+   },
+   "sS0": {
+    "row": "s_S",
+    "value": 0.0,
+    "label": "0",
+    "mu": 1.0
+   },
+   "sS05": {
+    "row": "s_S",
+    "value": 0.5,
+    "label": "0.5",
+    "mu": 1.0
+   },
+   "xi1": {
+    "row": "xi",
+    "value": "Azure 2024 conversation for every region",
+    "label": "one series",
+    "mu": 1.0
+   },
+   "wcfull": {
+    "row": "wildchat",
+    "value": "the whole trace",
+    "label": "full",
+    "mu": 1.0
+   },
+   "c0p50": {
+    "row": "own_capacity",
+    "value": 50.0,
+    "label": "P50",
+    "mu": 1.0
+   },
+   "c0p90": {
+    "row": "own_capacity",
+    "value": 90.0,
+    "label": "P90",
+    "mu": 1.0
+   },
+   "smooth5": {
+    "row": "smoothing",
+    "value": 5,
+    "label": "5 min",
+    "mu": 1.0
+   },
+   "smooth60": {
+    "row": "smoothing",
+    "value": 60,
+    "label": "60 min",
+    "mu": 1.0
+   },
+   "lease10": {
+    "row": "lease_quantile",
+    "value": 10,
+    "label": "P10",
+    "mu": 1.0
+   },
+   "lease50": {
+    "row": "lease_quantile",
+    "value": 50,
+    "label": "P50",
+    "mu": 1.0
+   },
+   "layer16": {
+    "row": "layer_width",
+    "value": 16,
+    "label": "16 GPUs",
+    "mu": 1.0
+   },
+   "nlayers4": {
+    "row": "n_layers",
+    "value": 4,
+    "label": "4",
+    "mu": 1.0
+   },
+   "nlayers16": {
+    "row": "n_layers",
+    "value": 16,
+    "label": "16",
+    "mu": 1.0
+   },
+   "prot1h": {
+    "row": "protected_term",
+    "value": 60,
+    "label": "1 h",
+    "mu": 1.0
+   },
+   "prot1d": {
+    "row": "protected_term",
+    "value": 1440,
+    "label": "1 day",
+    "mu": 1.0
+   },
+   "prothorizon": {
+    "row": "protected_term",
+    "value": "the horizon",
+    "label": "horizon",
+    "mu": 1.0
+   },
+   "tight025": {
+    "row": "tightness",
+    "value": 0.25,
+    "label": "0.25",
+    "mu": 1.0
+   },
+   "tight1": {
+    "row": "tightness",
+    "value": 1.0,
+    "label": "1",
+    "mu": 1.0
+   },
+   "tight2": {
+    "row": "tightness",
+    "value": 2.0,
+    "label": "2",
+    "mu": 1.0
+   },
+   "delta0": {
+    "row": "delta1",
+    "value": 0.0,
+    "label": "0",
+    "mu": 1.0
+   },
+   "delta02": {
+    "row": "delta1",
+    "value": 0.2,
+    "label": "0.2",
+    "mu": 1.0
+   },
+   "strict": {
+    "row": "slo_class",
+    "value": "every client strict",
+    "label": "all strict",
+    "mu": 1.0
+   },
+   "slotier": {
+    "row": "slo_class",
+    "value": "S strict, M and L relaxed",
+    "label": "S strict",
+    "mu": 1.0
+   },
+   "fee4": {
+    "row": "transfer_fee",
+    "value": 4.0,
+    "label": "rho = 4",
+    "mu": 1.0
+   },
+   "slow1": {
+    "row": "slow_slot",
+    "value": 1,
+    "label": "1 min",
+    "mu": 1.0
+   },
+   "mu0.2": {
+    "row": "mu",
+    "value": 0.2,
+    "label": "0.2",
+    "mu": 0.2
+   },
+   "mu0.5": {
+    "row": "mu",
+    "value": 0.5,
+    "label": "0.5",
+    "mu": 0.5
+   },
+   "mu2": {
+    "row": "mu",
+    "value": 2.0,
+    "label": "2",
+    "mu": 2.0
+   },
+   "kappaM05": {
+    "row": "kappa_M",
+    "value": 0.5,
+    "label": "x0.5",
+    "mu": 1.0
+   },
+   "kappaM2": {
+    "row": "kappa_M",
+    "value": 2.0,
+    "label": "x2",
+    "mu": 1.0
+   },
+   "fee8": {
+    "row": "transfer_fee",
+    "value": 8.0,
+    "label": "rho = 8",
+    "mu": 1.0
+   },
+   "fee16": {
+    "row": "transfer_fee",
+    "value": 16.0,
+    "label": "rho = 16",
+    "mu": 1.0
+   }
+  },
+  "reused_points": {
+   "buf999": {
+    "row": "buffer_quantile",
+    "value": 0.999,
+    "label": "0.999",
+    "part": "second",
+    "mode": "L-b999",
+    "note": "prices.buffer_quantile 'p99.9' under L-tr (the override of S1's buf999, ms5b_common.B999_OVERRIDES)"
+   },
+   "q28_rf": {
+    "row": "q28_rf",
+    "value": "L-rf",
+    "label": "L-rf",
+    "part": "second",
+    "mode": "L-rf",
+    "note": "Q28's refusals: lender_model.on_unavailable 'refuse' on the trace schedule"
+   },
+   "q28_vr": {
+    "row": "q28_vr",
+    "value": "L-vr",
+    "label": "L-vr",
+    "part": "second",
+    "mode": "L-vr",
+    "note": "Q28's violations as reclaims: lender_model.violations 'reclaim'"
+   }
+  },
+  "rows": {
+   "alpha": {
+    "label": "alpha = a0 / q^GPU",
+    "panel": "a",
+    "gamma": false,
+    "default_label": "0.40"
+   },
+   "alpha_p": {
+    "label": "alpha_p",
+    "panel": "a",
+    "gamma": false,
+    "default_label": "0.83"
+   },
+   "mu": {
+    "label": "mu / beta~",
+    "panel": "a",
+    "gamma": false,
+    "default_label": "1"
+   },
+   "mu_split": {
+    "label": "split of mu",
+    "panel": "a",
+    "gamma": false,
+    "default_label": "0"
+   },
+   "load_scenario": {
+    "label": "load-time scenario",
+    "panel": "a",
+    "gamma": false,
+    "default_label": "a5 pair"
+   },
+   "phi": {
+    "label": "phi",
+    "panel": "a",
+    "gamma": false,
+    "default_label": "1"
+   },
+   "kappa_L": {
+    "label": "kappa of L",
+    "panel": "b",
+    "gamma": true,
+    "default_label": "x1"
+   },
+   "kappa_M": {
+    "label": "kappa of M",
+    "panel": "b",
+    "gamma": true,
+    "default_label": "x1"
+   },
+   "catalog": {
+    "label": "LLM catalog",
+    "panel": "b",
+    "gamma": true,
+    "default_label": "MaaS"
+   },
+   "precision": {
+    "label": "weight precision",
+    "panel": "b",
+    "gamma": true,
+    "default_label": "8 bit"
+   },
+   "gpt4o_mini": {
+    "label": "gpt-4o-mini tier",
+    "panel": "b",
+    "gamma": true,
+    "default_label": "M"
+   },
+   "s_S": {
+    "label": "s_S",
+    "panel": "b",
+    "gamma": true,
+    "default_label": "0.25"
+   },
+   "xi": {
+    "label": "fluctuation sources xi",
+    "panel": "b",
+    "gamma": true,
+    "default_label": "per region"
+   },
+   "wildchat": {
+    "label": "WildChat window",
+    "panel": "b",
+    "gamma": true,
+    "default_label": "early"
+   },
+   "own_capacity": {
+    "label": "own capacity C0",
+    "panel": "b",
+    "gamma": true,
+    "default_label": "P75"
+   },
+   "smoothing": {
+    "label": "smoothing window",
+    "panel": "b",
+    "gamma": true,
+    "default_label": "15 min"
+   },
+   "lease_quantile": {
+    "label": "lease-size quantile",
+    "panel": "c",
+    "gamma": true,
+    "default_label": "P25"
+   },
+   "layer_width": {
+    "label": "layer width",
+    "panel": "c",
+    "gamma": true,
+    "default_label": "8 GPUs"
+   },
+   "n_layers": {
+    "label": "offered layers V_l",
+    "panel": "c",
+    "gamma": true,
+    "default_label": "8"
+   },
+   "protected_term": {
+    "label": "protected minimum billed term",
+    "panel": "c",
+    "gamma": false,
+    "default_label": "5 min"
+   },
+   "buffer_quantile": {
+    "label": "buffer quantile",
+    "panel": "c",
+    "gamma": true,
+    "default_label": "0.99"
+   },
+   "tightness": {
+    "label": "market tightness",
+    "panel": "b",
+    "gamma": true,
+    "default_label": "0.5"
+   },
+   "delta1": {
+    "label": "delta_1 / q",
+    "panel": "a",
+    "gamma": false,
+    "default_label": "0.05"
+   },
+   "slo_class": {
+    "label": "adjacency and SLO class",
+    "panel": "c",
+    "gamma": false,
+    "default_label": "relaxed"
+   },
+   "transfer_fee": {
+    "label": "transfer fee",
+    "panel": "a",
+    "gamma": false,
+    "default_label": "0"
+   },
+   "slow_slot": {
+    "label": "slow-loop slot",
+    "panel": "a",
+    "gamma": false,
+    "default_label": "5 min"
+   }
+  },
+  "rows_order": [
+   "alpha",
+   "alpha_p",
+   "mu",
+   "mu_split",
+   "load_scenario",
+   "phi",
+   "kappa_L",
+   "kappa_M",
+   "catalog",
+   "precision",
+   "gpt4o_mini",
+   "s_S",
+   "xi",
+   "wildchat",
+   "own_capacity",
+   "smoothing",
+   "lease_quantile",
+   "layer_width",
+   "n_layers",
+   "protected_term",
+   "buffer_quantile",
+   "tightness",
+   "delta1",
+   "slo_class",
+   "transfer_fee",
+   "slow_slot",
+   "q28_rf",
+   "q28_vr"
+  ],
+  "tags": {
+   "Sublet": {
+    "policy_id": "A8P",
+    "params": "ms5b_common.sublet_v2_params(inst)",
+    "kind": "headline",
+    "a9_family": true,
+    "role": "headline (D1, D2, D3): A8P around A9 at P2's allowance min{W_k, LB'} (kappa None)",
+    "information": "I1"
+   },
+   "A9": {
+    "policy_id": "A9",
+    "params": {},
+    "kind": "inner",
+    "a9_family": true,
+    "role": "the inner policy alone; with Sublet, the price of the guard",
+    "information": "I1"
+   },
+   "BL1-BO": {
+    "policy_id": "BL1",
+    "params": {
+     "backoff_cap": 288
+    },
+    "kind": "baseline",
+    "a9_family": false,
+    "role": "generic site back-off",
+    "information": "I1"
+   },
+   "BL5-cur": {
+    "policy_id": "BL5",
+    "params": {
+     "use_current_slot": true
+    },
+    "kind": "baseline",
+    "a9_family": false,
+    "role": "main RetroRenting-style row (D7)",
+    "information": "I1"
+   }
+  },
+  "h1_pair": [
+   "BL1-BO",
+   "BL5-cur"
+  ],
+  "jobs": 57,
+  "jobs_ok": 7,
+  "n_runs": 28,
+  "n_missing": 200,
+  "reduced_note": "reduced job list (MS3_S1V2_REDUCED=1): week 101, policy seed 0, a 120-min horizon; not a result"
+ },
+ "table": {
+  "Sublet": {
+   "L-tr": {
+    "slow1": {
+     "101": {
+      "0": 1.1072713401934058
+     }
+    },
+    "tight2": {
+     "101": {
+      "0": 0.8880565955713076
+     }
+    },
+    "nlayers16": {
+     "101": {
+      "0": null
+     }
+    },
+    "tight1": {
+     "101": {
+      "0": null
+     }
+    },
+    "layer16": {
+     "101": {
+      "0": null
+     }
+    },
+    "catLg4": {
+     "101": {
+      "0": null
+     }
+    },
+    "xi1": {
+     "101": {
+      "0": null
+     }
+    },
+    "kappaL2": {
+     "101": {
+      "0": null
+     }
+    },
+    "L16": {
+     "101": {
+      "0": null
+     }
+    },
+    "sS05": {
+     "101": {
+      "0": null
+     }
+    },
+    "lease50": {
+     "101": {
+      "0": null
+     }
+    },
+    "alpha06": {
+     "101": {
+      "0": null
+     }
+    },
+    "smooth60": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_cold_wan_1gbps": {
+     "101": {
+      "0": 1.3463573829637963
+     }
+    },
+    "c0p50": {
+     "101": {
+      "0": null
+     }
+    },
+    "prothorizon": {
+     "101": {
+      "0": null
+     }
+    },
+    "smooth5": {
+     "101": {
+      "0": null
+     }
+    },
+    "default": {
+     "101": {
+      "0": 0.9628922431831444
+     }
+    },
+    "alpha03": {
+     "101": {
+      "0": null
+     }
+    },
+    "alpha05": {
+     "101": {
+      "0": null
+     }
+    },
+    "alphap06": {
+     "101": {
+      "0": null
+     }
+    },
+    "alphap10": {
+     "101": {
+      "0": null
+     }
+    },
+    "kv05": {
+     "101": {
+      "0": null
+     }
+    },
+    "kv10": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_warm_peer_rdma": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_optimized": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_safetensors": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_pytorch": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_10GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_2GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_cold_wan_10gbps": {
+     "101": {
+      "0": null
+     }
+    },
+    "phi05": {
+     "101": {
+      "0": null
+     }
+    },
+    "prot1h": {
+     "101": {
+      "0": null
+     }
+    },
+    "prot1d": {
+     "101": {
+      "0": null
+     }
+    },
+    "delta0": {
+     "101": {
+      "0": null
+     }
+    },
+    "delta02": {
+     "101": {
+      "0": null
+     }
+    },
+    "strict": {
+     "101": {
+      "0": null
+     }
+    },
+    "slotier": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee4": {
+     "101": {
+      "0": null
+     }
+    },
+    "mu0.2": {
+     "101": {
+      "0": null
+     }
+    },
+    "mu0.5": {
+     "101": {
+      "0": 0.6606350929172222
+     }
+    },
+    "mu2": {
+     "101": {
+      "0": null
+     }
+    },
+    "kappaM05": {
+     "101": {
+      "0": null
+     }
+    },
+    "kappaM2": {
+     "101": {
+      "0": 0.9538323011807333
+     }
+    },
+    "fee8": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee16": {
+     "101": {
+      "0": 1.6720616499405219
+     }
+    },
+    "c0p90": {
+     "101": {
+      "0": null
+     }
+    },
+    "lease10": {
+     "101": {
+      "0": null
+     }
+    },
+    "alpha02": {
+     "101": {
+      "0": null
+     }
+    },
+    "sS0": {
+     "101": {
+      "0": null
+     }
+    },
+    "tiermap": {
+     "101": {
+      "0": null
+     }
+    },
+    "catM2": {
+     "101": {
+      "0": null
+     }
+    },
+    "kappaL05": {
+     "101": {
+      "0": null
+     }
+    },
+    "wcfull": {
+     "101": {
+      "0": null
+     }
+    },
+    "a5": {
+     "101": {
+      "0": null
+     }
+    },
+    "tight025": {
+     "101": {
+      "0": null
+     }
+    },
+    "nlayers4": {
+     "101": {
+      "0": null
+     }
+    }
+   }
+  },
+  "A9": {
+   "L-tr": {
+    "slow1": {
+     "101": {
+      "0": 0.6503043465428614
+     }
+    },
+    "tight2": {
+     "101": {
+      "0": 0.8680011219243738
+     }
+    },
+    "nlayers16": {
+     "101": {
+      "0": null
+     }
+    },
+    "tight1": {
+     "101": {
+      "0": null
+     }
+    },
+    "layer16": {
+     "101": {
+      "0": null
+     }
+    },
+    "catLg4": {
+     "101": {
+      "0": null
+     }
+    },
+    "xi1": {
+     "101": {
+      "0": null
+     }
+    },
+    "kappaL2": {
+     "101": {
+      "0": null
+     }
+    },
+    "L16": {
+     "101": {
+      "0": null
+     }
+    },
+    "sS05": {
+     "101": {
+      "0": null
+     }
+    },
+    "lease50": {
+     "101": {
+      "0": null
+     }
+    },
+    "alpha06": {
+     "101": {
+      "0": null
+     }
+    },
+    "smooth60": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_cold_wan_1gbps": {
+     "101": {
+      "0": 1.3484843161430558
+     }
+    },
+    "c0p50": {
+     "101": {
+      "0": null
+     }
+    },
+    "prothorizon": {
+     "101": {
+      "0": null
+     }
+    },
+    "smooth5": {
+     "101": {
+      "0": null
+     }
+    },
+    "default": {
+     "101": {
+      "0": 0.6851858680161168
+     }
+    },
+    "alpha03": {
+     "101": {
+      "0": null
+     }
+    },
+    "alpha05": {
+     "101": {
+      "0": null
+     }
+    },
+    "alphap06": {
+     "101": {
+      "0": null
+     }
+    },
+    "alphap10": {
+     "101": {
+      "0": null
+     }
+    },
+    "kv05": {
+     "101": {
+      "0": null
+     }
+    },
+    "kv10": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_warm_peer_rdma": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_optimized": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_safetensors": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_pytorch": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_10GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_2GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_cold_wan_10gbps": {
+     "101": {
+      "0": null
+     }
+    },
+    "phi05": {
+     "101": {
+      "0": null
+     }
+    },
+    "prot1h": {
+     "101": {
+      "0": null
+     }
+    },
+    "prot1d": {
+     "101": {
+      "0": null
+     }
+    },
+    "delta0": {
+     "101": {
+      "0": null
+     }
+    },
+    "delta02": {
+     "101": {
+      "0": null
+     }
+    },
+    "strict": {
+     "101": {
+      "0": null
+     }
+    },
+    "slotier": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee4": {
+     "101": {
+      "0": null
+     }
+    },
+    "mu0.2": {
+     "101": {
+      "0": null
+     }
+    },
+    "mu0.5": {
+     "101": {
+      "0": 0.6611958448133577
+     }
+    },
+    "mu2": {
+     "101": {
+      "0": null
+     }
+    },
+    "kappaM05": {
+     "101": {
+      "0": null
+     }
+    },
+    "kappaM2": {
+     "101": {
+      "0": 0.684409050673034
+     }
+    },
+    "fee8": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee16": {
+     "101": {
+      "0": 2.406155043568416
+     }
+    },
+    "c0p90": {
+     "101": {
+      "0": null
+     }
+    },
+    "lease10": {
+     "101": {
+      "0": null
+     }
+    },
+    "alpha02": {
+     "101": {
+      "0": null
+     }
+    },
+    "sS0": {
+     "101": {
+      "0": null
+     }
+    },
+    "tiermap": {
+     "101": {
+      "0": null
+     }
+    },
+    "catM2": {
+     "101": {
+      "0": null
+     }
+    },
+    "kappaL05": {
+     "101": {
+      "0": null
+     }
+    },
+    "wcfull": {
+     "101": {
+      "0": null
+     }
+    },
+    "a5": {
+     "101": {
+      "0": null
+     }
+    },
+    "tight025": {
+     "101": {
+      "0": null
+     }
+    },
+    "nlayers4": {
+     "101": {
+      "0": null
+     }
+    }
+   }
+  },
+  "BL1-BO": {
+   "L-tr": {
+    "slow1": {
+     "101": {
+      "0": 0.6367406356634955
+     }
+    },
+    "tight2": {
+     "101": {
+      "0": 0.8169292097514156
+     }
+    },
+    "nlayers16": {
+     "101": {
+      "0": null
+     }
+    },
+    "tight1": {
+     "101": {
+      "0": null
+     }
+    },
+    "layer16": {
+     "101": {
+      "0": null
+     }
+    },
+    "catLg4": {
+     "101": {
+      "0": null
+     }
+    },
+    "xi1": {
+     "101": {
+      "0": null
+     }
+    },
+    "kappaL2": {
+     "101": {
+      "0": null
+     }
+    },
+    "L16": {
+     "101": {
+      "0": null
+     }
+    },
+    "sS05": {
+     "101": {
+      "0": null
+     }
+    },
+    "lease50": {
+     "101": {
+      "0": null
+     }
+    },
+    "alpha06": {
+     "101": {
+      "0": null
+     }
+    },
+    "smooth60": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_cold_wan_1gbps": {
+     "101": {
+      "0": 1.3803261842537073
+     }
+    },
+    "c0p50": {
+     "101": {
+      "0": null
+     }
+    },
+    "prothorizon": {
+     "101": {
+      "0": null
+     }
+    },
+    "smooth5": {
+     "101": {
+      "0": null
+     }
+    },
+    "default": {
+     "101": {
+      "0": 0.6511795022043789
+     }
+    },
+    "alpha03": {
+     "101": {
+      "0": null
+     }
+    },
+    "alpha05": {
+     "101": {
+      "0": null
+     }
+    },
+    "alphap06": {
+     "101": {
+      "0": null
+     }
+    },
+    "alphap10": {
+     "101": {
+      "0": null
+     }
+    },
+    "kv05": {
+     "101": {
+      "0": null
+     }
+    },
+    "kv10": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_warm_peer_rdma": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_optimized": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_safetensors": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_pytorch": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_10GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_2GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_cold_wan_10gbps": {
+     "101": {
+      "0": null
+     }
+    },
+    "phi05": {
+     "101": {
+      "0": null
+     }
+    },
+    "prot1h": {
+     "101": {
+      "0": null
+     }
+    },
+    "prot1d": {
+     "101": {
+      "0": null
+     }
+    },
+    "delta0": {
+     "101": {
+      "0": null
+     }
+    },
+    "delta02": {
+     "101": {
+      "0": null
+     }
+    },
+    "strict": {
+     "101": {
+      "0": null
+     }
+    },
+    "slotier": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee4": {
+     "101": {
+      "0": null
+     }
+    },
+    "mu0.2": {
+     "101": {
+      "0": null
+     }
+    },
+    "mu0.5": {
+     "101": {
+      "0": 0.6377930753759372
+     }
+    },
+    "mu2": {
+     "101": {
+      "0": null
+     }
+    },
+    "kappaM05": {
+     "101": {
+      "0": null
+     }
+    },
+    "kappaM2": {
+     "101": {
+      "0": 0.6620100371976244
+     }
+    },
+    "fee8": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee16": {
+     "101": {
+      "0": 2.746164893207766
+     }
+    },
+    "c0p90": {
+     "101": {
+      "0": null
+     }
+    },
+    "lease10": {
+     "101": {
+      "0": null
+     }
+    },
+    "alpha02": {
+     "101": {
+      "0": null
+     }
+    },
+    "sS0": {
+     "101": {
+      "0": null
+     }
+    },
+    "tiermap": {
+     "101": {
+      "0": null
+     }
+    },
+    "catM2": {
+     "101": {
+      "0": null
+     }
+    },
+    "kappaL05": {
+     "101": {
+      "0": null
+     }
+    },
+    "wcfull": {
+     "101": {
+      "0": null
+     }
+    },
+    "a5": {
+     "101": {
+      "0": null
+     }
+    },
+    "tight025": {
+     "101": {
+      "0": null
+     }
+    },
+    "nlayers4": {
+     "101": {
+      "0": null
+     }
+    }
+   }
+  },
+  "BL5-cur": {
+   "L-tr": {
+    "slow1": {
+     "101": {
+      "0": 0.9090777929910042
+     }
+    },
+    "tight2": {
+     "101": {
+      "0": 0.8973130400707521
+     }
+    },
+    "nlayers16": {
+     "101": {
+      "0": null
+     }
+    },
+    "tight1": {
+     "101": {
+      "0": null
+     }
+    },
+    "layer16": {
+     "101": {
+      "0": null
+     }
+    },
+    "catLg4": {
+     "101": {
+      "0": null
+     }
+    },
+    "xi1": {
+     "101": {
+      "0": null
+     }
+    },
+    "kappaL2": {
+     "101": {
+      "0": null
+     }
+    },
+    "L16": {
+     "101": {
+      "0": null
+     }
+    },
+    "sS05": {
+     "101": {
+      "0": null
+     }
+    },
+    "lease50": {
+     "101": {
+      "0": null
+     }
+    },
+    "alpha06": {
+     "101": {
+      "0": null
+     }
+    },
+    "smooth60": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_cold_wan_1gbps": {
+     "101": {
+      "0": 1.015925763170451
+     }
+    },
+    "c0p50": {
+     "101": {
+      "0": null
+     }
+    },
+    "prothorizon": {
+     "101": {
+      "0": null
+     }
+    },
+    "smooth5": {
+     "101": {
+      "0": null
+     }
+    },
+    "default": {
+     "101": {
+      "0": 0.8322013113669223
+     }
+    },
+    "alpha03": {
+     "101": {
+      "0": null
+     }
+    },
+    "alpha05": {
+     "101": {
+      "0": null
+     }
+    },
+    "alphap06": {
+     "101": {
+      "0": null
+     }
+    },
+    "alphap10": {
+     "101": {
+      "0": null
+     }
+    },
+    "kv05": {
+     "101": {
+      "0": null
+     }
+    },
+    "kv10": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_warm_peer_rdma": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_optimized": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_safetensors": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_pytorch": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_10GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_2GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_cold_wan_10gbps": {
+     "101": {
+      "0": null
+     }
+    },
+    "phi05": {
+     "101": {
+      "0": null
+     }
+    },
+    "prot1h": {
+     "101": {
+      "0": null
+     }
+    },
+    "prot1d": {
+     "101": {
+      "0": null
+     }
+    },
+    "delta0": {
+     "101": {
+      "0": null
+     }
+    },
+    "delta02": {
+     "101": {
+      "0": null
+     }
+    },
+    "strict": {
+     "101": {
+      "0": null
+     }
+    },
+    "slotier": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee4": {
+     "101": {
+      "0": null
+     }
+    },
+    "mu0.2": {
+     "101": {
+      "0": null
+     }
+    },
+    "mu0.5": {
+     "101": {
+      "0": 0.8158039829797176
+     }
+    },
+    "mu2": {
+     "101": {
+      "0": null
+     }
+    },
+    "kappaM05": {
+     "101": {
+      "0": null
+     }
+    },
+    "kappaM2": {
+     "101": {
+      "0": 0.8476830533885277
+     }
+    },
+    "fee8": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee16": {
+     "101": {
+      "0": 0.9999999999999999
+     }
+    },
+    "c0p90": {
+     "101": {
+      "0": null
+     }
+    },
+    "lease10": {
+     "101": {
+      "0": null
+     }
+    },
+    "alpha02": {
+     "101": {
+      "0": null
+     }
+    },
+    "sS0": {
+     "101": {
+      "0": null
+     }
+    },
+    "tiermap": {
+     "101": {
+      "0": null
+     }
+    },
+    "catM2": {
+     "101": {
+      "0": null
+     }
+    },
+    "kappaL05": {
+     "101": {
+      "0": null
+     }
+    },
+    "wcfull": {
+     "101": {
+      "0": null
+     }
+    },
+    "a5": {
+     "101": {
+      "0": null
+     }
+    },
+    "tight025": {
+     "101": {
+      "0": null
+     }
+    },
+    "nlayers4": {
+     "101": {
+      "0": null
+     }
+    }
+   }
+  }
+ },
+ "points": {
+  "default": {
+   "row": null,
+   "value": null,
+   "label": "default",
+   "mu": 1.0,
+   "gamma_row": null
+  },
+  "alpha02": {
+   "row": "alpha",
+   "value": 0.2,
+   "label": "0.2",
+   "mu": 1.0,
+   "gamma_row": false
+  },
+  "alpha03": {
+   "row": "alpha",
+   "value": 0.3,
+   "label": "0.3",
+   "mu": 1.0,
+   "gamma_row": false
+  },
+  "alpha05": {
+   "row": "alpha",
+   "value": 0.5,
+   "label": "0.5",
+   "mu": 1.0,
+   "gamma_row": false
+  },
+  "alpha06": {
+   "row": "alpha",
+   "value": 0.6,
+   "label": "0.6",
+   "mu": 1.0,
+   "gamma_row": false
+  },
+  "alphap06": {
+   "row": "alpha_p",
+   "value": 0.6,
+   "label": "0.6",
+   "mu": 1.0,
+   "gamma_row": false
+  },
+  "alphap10": {
+   "row": "alpha_p",
+   "value": 1.0,
+   "label": "1.0",
+   "mu": 1.0,
+   "gamma_row": false
+  },
+  "kv05": {
+   "row": "mu_split",
+   "value": 0.5,
+   "label": "0.5",
+   "mu": 1.0,
+   "gamma_row": false
+  },
+  "kv10": {
+   "row": "mu_split",
+   "value": 1.0,
+   "label": "1",
+   "mu": 1.0,
+   "gamma_row": false
+  },
+  "scen_warm_peer_rdma": {
+   "row": "load_scenario",
+   "value": "warm_peer_rdma",
+   "label": "warm peer",
+   "mu": 1.0,
+   "gamma_row": false
+  },
+  "scen_ssd_optimized": {
+   "row": "load_scenario",
+   "value": "ssd_optimized",
+   "label": "SSD optimized",
+   "mu": 1.0,
+   "gamma_row": false
+  },
+  "scen_ssd_stock_safetensors": {
+   "row": "load_scenario",
+   "value": "ssd_stock_safetensors",
+   "label": "SSD safetensors",
+   "mu": 1.0,
+   "gamma_row": false
+  },
+  "scen_ssd_stock_pytorch": {
+   "row": "load_scenario",
+   "value": "ssd_stock_pytorch",
+   "label": "SSD PyTorch",
+   "mu": 1.0,
+   "gamma_row": false
+  },
+  "scen_a5_10GBps": {
+   "row": "load_scenario",
+   "value": "a5_10GBps",
+   "label": "10 GB/s",
+   "mu": 1.0,
+   "gamma_row": false
+  },
+  "scen_a5_2GBps": {
+   "row": "load_scenario",
+   "value": "a5_2GBps",
+   "label": "2 GB/s",
+   "mu": 1.0,
+   "gamma_row": false
+  },
+  "scen_cold_wan_10gbps": {
+   "row": "load_scenario",
+   "value": "cold_wan_10gbps",
+   "label": "WAN 10 Gb/s",
+   "mu": 1.0,
+   "gamma_row": false
+  },
+  "scen_cold_wan_1gbps": {
+   "row": "load_scenario",
+   "value": "cold_wan_1gbps",
+   "label": "WAN 1 Gb/s",
+   "mu": 1.0,
+   "gamma_row": false
+  },
+  "phi05": {
+   "row": "phi",
+   "value": 0.5,
+   "label": "0.5",
+   "mu": 1.0,
+   "gamma_row": false
+  },
+  "kappaL05": {
+   "row": "kappa_L",
+   "value": 0.5,
+   "label": "x0.5",
+   "mu": 1.0,
+   "gamma_row": true
+  },
+  "kappaL2": {
+   "row": "kappa_L",
+   "value": 2.0,
+   "label": "x2",
+   "mu": 1.0,
+   "gamma_row": true
+  },
+  "a5": {
+   "row": "catalog",
+   "value": "a5 tiers",
+   "label": "a5 tiers",
+   "mu": 1.0,
+   "gamma_row": true
+  },
+  "catM2": {
+   "row": "catalog",
+   "value": "M on 2 GPUs",
+   "label": "M on 2 GPUs",
+   "mu": 1.0,
+   "gamma_row": true
+  },
+  "catLg4": {
+   "row": "catalog",
+   "value": "L as 235B on 4 GPUs",
+   "label": "L 235B",
+   "mu": 1.0,
+   "gamma_row": true
+  },
+  "L16": {
+   "row": "precision",
+   "value": "L at 16 bits on 16 GPUs",
+   "label": "16 bit",
+   "mu": 1.0,
+   "gamma_row": true
+  },
+  "tiermap": {
+   "row": "gpt4o_mini",
+   "value": "L",
+   "label": "L",
+   "mu": 1.0,
+   "gamma_row": true
+  },
+  "sS0": {
+   "row": "s_S",
+   "value": 0.0,
+   "label": "0",
+   "mu": 1.0,
+   "gamma_row": true
+  },
+  "sS05": {
+   "row": "s_S",
+   "value": 0.5,
+   "label": "0.5",
+   "mu": 1.0,
+   "gamma_row": true
+  },
+  "xi1": {
+   "row": "xi",
+   "value": "Azure 2024 conversation for every region",
+   "label": "one series",
+   "mu": 1.0,
+   "gamma_row": true
+  },
+  "wcfull": {
+   "row": "wildchat",
+   "value": "the whole trace",
+   "label": "full",
+   "mu": 1.0,
+   "gamma_row": true
+  },
+  "c0p50": {
+   "row": "own_capacity",
+   "value": 50.0,
+   "label": "P50",
+   "mu": 1.0,
+   "gamma_row": true
+  },
+  "c0p90": {
+   "row": "own_capacity",
+   "value": 90.0,
+   "label": "P90",
+   "mu": 1.0,
+   "gamma_row": true
+  },
+  "smooth5": {
+   "row": "smoothing",
+   "value": 5,
+   "label": "5 min",
+   "mu": 1.0,
+   "gamma_row": true
+  },
+  "smooth60": {
+   "row": "smoothing",
+   "value": 60,
+   "label": "60 min",
+   "mu": 1.0,
+   "gamma_row": true
+  },
+  "lease10": {
+   "row": "lease_quantile",
+   "value": 10,
+   "label": "P10",
+   "mu": 1.0,
+   "gamma_row": true
+  },
+  "lease50": {
+   "row": "lease_quantile",
+   "value": 50,
+   "label": "P50",
+   "mu": 1.0,
+   "gamma_row": true
+  },
+  "layer16": {
+   "row": "layer_width",
+   "value": 16,
+   "label": "16 GPUs",
+   "mu": 1.0,
+   "gamma_row": true
+  },
+  "nlayers4": {
+   "row": "n_layers",
+   "value": 4,
+   "label": "4",
+   "mu": 1.0,
+   "gamma_row": true
+  },
+  "nlayers16": {
+   "row": "n_layers",
+   "value": 16,
+   "label": "16",
+   "mu": 1.0,
+   "gamma_row": true
+  },
+  "prot1h": {
+   "row": "protected_term",
+   "value": 60,
+   "label": "1 h",
+   "mu": 1.0,
+   "gamma_row": false
+  },
+  "prot1d": {
+   "row": "protected_term",
+   "value": 1440,
+   "label": "1 day",
+   "mu": 1.0,
+   "gamma_row": false
+  },
+  "prothorizon": {
+   "row": "protected_term",
+   "value": "the horizon",
+   "label": "horizon",
+   "mu": 1.0,
+   "gamma_row": false
+  },
+  "tight025": {
+   "row": "tightness",
+   "value": 0.25,
+   "label": "0.25",
+   "mu": 1.0,
+   "gamma_row": true
+  },
+  "tight1": {
+   "row": "tightness",
+   "value": 1.0,
+   "label": "1",
+   "mu": 1.0,
+   "gamma_row": true
+  },
+  "tight2": {
+   "row": "tightness",
+   "value": 2.0,
+   "label": "2",
+   "mu": 1.0,
+   "gamma_row": true
+  },
+  "delta0": {
+   "row": "delta1",
+   "value": 0.0,
+   "label": "0",
+   "mu": 1.0,
+   "gamma_row": false
+  },
+  "delta02": {
+   "row": "delta1",
+   "value": 0.2,
+   "label": "0.2",
+   "mu": 1.0,
+   "gamma_row": false
+  },
+  "strict": {
+   "row": "slo_class",
+   "value": "every client strict",
+   "label": "all strict",
+   "mu": 1.0,
+   "gamma_row": false
+  },
+  "slotier": {
+   "row": "slo_class",
+   "value": "S strict, M and L relaxed",
+   "label": "S strict",
+   "mu": 1.0,
+   "gamma_row": false
+  },
+  "fee4": {
+   "row": "transfer_fee",
+   "value": 4.0,
+   "label": "rho = 4",
+   "mu": 1.0,
+   "gamma_row": false
+  },
+  "slow1": {
+   "row": "slow_slot",
+   "value": 1,
+   "label": "1 min",
+   "mu": 1.0,
+   "gamma_row": false
+  },
+  "mu0.2": {
+   "row": "mu",
+   "value": 0.2,
+   "label": "0.2",
+   "mu": 0.2,
+   "gamma_row": false
+  },
+  "mu0.5": {
+   "row": "mu",
+   "value": 0.5,
+   "label": "0.5",
+   "mu": 0.5,
+   "gamma_row": false
+  },
+  "mu2": {
+   "row": "mu",
+   "value": 2.0,
+   "label": "2",
+   "mu": 2.0,
+   "gamma_row": false
+  },
+  "kappaM05": {
+   "row": "kappa_M",
+   "value": 0.5,
+   "label": "x0.5",
+   "mu": 1.0,
+   "gamma_row": true
+  },
+  "kappaM2": {
+   "row": "kappa_M",
+   "value": 2.0,
+   "label": "x2",
+   "mu": 1.0,
+   "gamma_row": true
+  },
+  "fee8": {
+   "row": "transfer_fee",
+   "value": 8.0,
+   "label": "rho = 8",
+   "mu": 1.0,
+   "gamma_row": false
+  },
+  "fee16": {
+   "row": "transfer_fee",
+   "value": 16.0,
+   "label": "rho = 16",
+   "mu": 1.0,
+   "gamma_row": false
+  }
+ },
+ "reused": {
+  "buf999": {
+   "row": "buffer_quantile",
+   "value": 0.999,
+   "label": "0.999",
+   "mode": "L-b999",
+   "note": "prices.buffer_quantile 'p99.9' under L-tr (the override of S1's buf999, ms5b_common.B999_OVERRIDES)",
+   "part": "second",
+   "by_tag": {
+    "Sublet": {
+     "101": null
+    },
+    "A9": {
+     "101": null
+    },
+    "BL1-BO": {
+     "101": null
+    },
+    "BL5-cur": {
+     "101": null
+    },
+    "BL4": {
+     "101": null
+    }
+   }
+  },
+  "q28_rf": {
+   "row": "q28_rf",
+   "value": "L-rf",
+   "label": "L-rf",
+   "mode": "L-rf",
+   "note": "Q28's refusals: lender_model.on_unavailable 'refuse' on the trace schedule",
+   "part": "second",
+   "by_tag": {
+    "Sublet": {
+     "101": null
+    },
+    "A9": {
+     "101": null
+    },
+    "BL1-BO": {
+     "101": null
+    },
+    "BL5-cur": {
+     "101": null
+    },
+    "BL4": {
+     "101": null
+    }
+   }
+  },
+  "q28_vr": {
+   "row": "q28_vr",
+   "value": "L-vr",
+   "label": "L-vr",
+   "mode": "L-vr",
+   "note": "Q28's violations as reclaims: lender_model.violations 'reclaim'",
+   "part": "second",
+   "by_tag": {
+    "Sublet": {
+     "101": null
+    },
+    "A9": {
+     "101": null
+    },
+    "BL1-BO": {
+     "101": null
+    },
+    "BL5-cur": {
+     "101": null
+    },
+    "BL4": {
+     "101": null
+    }
+   }
+  }
+ },
+ "not_run": [
+  {
+   "row": "warm-peer and SSD load models",
+   "reason": "no sweep in the register",
+   "sources": [
+    "design/Sublet_design.md Table 5.6"
+   ]
+  },
+  {
+   "row": "client unit 1/u",
+   "reason": "no sweep in the register",
+   "sources": [
+    "design/Sublet_design.md Table 5.6"
+   ]
+  },
+  {
+   "row": "pool width zeta",
+   "reason": "no sweep in the register",
+   "sources": [
+    "design/Sublet_design.md Table 5.6"
+   ]
+  },
+  {
+   "row": "tier map",
+   "reason": "its sweep is its default",
+   "sources": [
+    "design/Sublet_design.md Table 5.6"
+   ]
+  },
+  {
+   "row": "per-tier tokens-per-conversation factor",
+   "reason": "no traced source",
+   "sources": [
+    "design/Sublet_design.md Table 5.6"
+   ]
+  },
+  {
+   "row": "clock alignment at local midnight",
+   "reason": "not built: no source for the regions' UTC offsets (MS1 spec \u00a710 S12)",
+   "sources": [
+    "design/sim_spec.md \u00a710 S12"
+   ]
+  },
+  {
+   "row": "non-causal smoothing window",
+   "reason": "not built: the builder has a trailing mean only (instance._trailing_mean)",
+   "sources": [
+    "code/sim/out/ms5spec/s1_rows_build.json"
+   ]
+  },
+  {
+   "row": "scenario assignment per region pair",
+   "reason": "not built",
+   "sources": [
+    "design/sim_spec_ms5.md \u00a73.5"
+   ]
+  },
+  {
+   "row": "offered layers V_l as the whole block below the lease-size quantile",
+   "reason": "the dense arrays of A8's safe expert exceed the 3 GB cap at the week, and a one-day probe completed one slow slot in its window; the row sweeps 4 and 16 layers in its place (M37)",
+   "sources": [
+    "code/sim/out/ms5spec/s1_sizing_wholeblock_build.json",
+    "code/sim/out/ms5spec/smoke/s1_sizing_wholeblock_week_h10080.json",
+    "code/sim/out/ms5spec/smoke/s1_sizing_wholeblock_h1440.json"
+   ]
+  },
+  {
+   "row": "offered layers V_l as a share of the mean lendable capacity",
+   "reason": "not defined",
+   "sources": [
+    "design/sim_spec_ms5.md \u00a73.5"
+   ]
+  },
+  {
+   "row": "a uniform kappa multiplier",
+   "reason": "identical to the default: a uniform multiplier cancels exactly through Gamma; the row varies L's kappa alone (M8)",
+   "sources": [
+    "code/sim/out/ms5spec/s1_sizing_kappa2.json"
+   ]
+  },
+  {
+   "row": "buf999",
+   "reason": "read, not rerun: part second's mode L-b999 (prices.buffer_quantile 'p99.9' under L-tr (the override of S1's buf999, ms5b_common.B999_OVERRIDES))",
+   "sources": [
+    "code/sim/out/sublet_v2/second/summary.json"
+   ]
+  },
+  {
+   "row": "q28_rf",
+   "reason": "read, not rerun: part second's mode L-rf (Q28's refusals: lender_model.on_unavailable 'refuse' on the trace schedule)",
+   "sources": [
+    "code/sim/out/sublet_v2/second/summary.json"
+   ]
+  },
+  {
+   "row": "q28_vr",
+   "reason": "read, not rerun: part second's mode L-vr (Q28's violations as reclaims: lender_model.violations 'reclaim')",
+   "sources": [
+    "code/sim/out/sublet_v2/second/summary.json"
+   ]
+  }
+ ],
+ "checks": {
+  "S1v2-0": {
+   "status": "missing",
+   "claim": "at the default point every tag's L-tr run equals part main's (r0 within 1e-9 relative, the instance hash equal to main's manifest) on every week"
+  },
+  "S1v2-1": {
+   "status": "missing",
+   "claim": "every point is built as S1 builds it (s1.vs_default's facts): its instance hash differs from the default's; on the rows without Gamma the demand and BL0a equal the default's; every LLM fits a layer site; every LLM but S at sS0 has clients"
+  },
+  "S1v2-2": {
+   "status": "missing",
+   "claim": "every Sublet run: certificate available and held in Theorem W's proven cases, the envelope holds, no projecting run aborts while S follows FB and T0g stays in bound form (Proposition P)"
+  },
+  "S1v2-3": {
+   "status": "missing",
+   "claim": "every run finishes with status ok (no invariant failure), no run raised, every run of the grid exists"
+  }
+ }
+}

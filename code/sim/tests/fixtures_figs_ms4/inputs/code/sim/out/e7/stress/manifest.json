@@ -1,0 +1,881 @@
+{
+ "meta": {
+  "exp": "e7",
+  "git_revision": "939847ca5925ce069d6df9089fe3a3d1d3207bb7",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "scipy": "1.17.1",
+   "sublet": "0.1.0"
+  },
+  "written": "2026-10-26T14:49:22",
+  "script": "code/sim/sublet/experiments/e7.py",
+  "script_sha256": "8c51a9defa4a8bc821e1bf2dae79e759830ea9c857453c204d2ffd06bd96198d"
+ },
+ "jobs": [
+  {
+   "id": "e7:stress:mode=L-eg:pol=Sublet",
+   "kind": "pool",
+   "params": {
+    "part": "stress",
+    "kind": "stress",
+    "tag": "Sublet",
+    "mode": "L-eg",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 6.669047619047619,
+   "status": "ok",
+   "wall_s": 10.30359648913145,
+   "peak_rss_mb": 142.6953125,
+   "runs": 1
+  },
+  {
+   "id": "e7:stress:mode=L-eg:pol=A7G",
+   "kind": "pool",
+   "params": {
+    "part": "stress",
+    "kind": "stress",
+    "tag": "A7G",
+    "mode": "L-eg",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 7.261904761904762,
+   "status": "ok",
+   "wall_s": 11.80836948286742,
+   "peak_rss_mb": 161.046875,
+   "runs": 1
+  },
+  {
+   "id": "e7:stress:mode=L-eg:pol=A7",
+   "kind": "pool",
+   "params": {
+    "part": "stress",
+    "kind": "stress",
+    "tag": "A7",
+    "mode": "L-eg",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 5.733333333333333,
+   "status": "ok",
+   "wall_s": 6.240877934033051,
+   "peak_rss_mb": 191.5078125,
+   "runs": 1
+  },
+  {
+   "id": "e7:stress:mode=L-eg:pol=A6",
+   "kind": "pool",
+   "params": {
+    "part": "stress",
+    "kind": "stress",
+    "tag": "A6",
+    "mode": "L-eg",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 5.588095238095238,
+   "status": "ok",
+   "wall_s": 9.594829222885892,
+   "peak_rss_mb": 139.1640625,
+   "runs": 1
+  },
+  {
+   "id": "e7:stress:mode=L-eg:pol=BL5",
+   "kind": "pool",
+   "params": {
+    "part": "stress",
+    "kind": "stress",
+    "tag": "BL5",
+    "mode": "L-eg",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 5.129761904761905,
+   "status": "ok",
+   "wall_s": 1.590493158902973,
+   "peak_rss_mb": 138.37890625,
+   "runs": 1
+  },
+  {
+   "id": "e7:stress:mode=L-eg:pol=BL1",
+   "kind": "pool",
+   "params": {
+    "part": "stress",
+    "kind": "stress",
+    "tag": "BL1",
+    "mode": "L-eg",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 5.139285714285714,
+   "status": "ok",
+   "wall_s": 5.85552995512262,
+   "peak_rss_mb": 140.05078125,
+   "runs": 1
+  },
+  {
+   "id": "e7:stress:mode=L-eg:pol=BL2",
+   "kind": "pool",
+   "params": {
+    "part": "stress",
+    "kind": "stress",
+    "tag": "BL2",
+    "mode": "L-eg",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 5.3,
+   "status": "ok",
+   "wall_s": 3.008283087052405,
+   "peak_rss_mb": 141.60546875,
+   "runs": 1
+  },
+  {
+   "id": "e7:stress:mode=L-eg:pol=BL4",
+   "kind": "pool",
+   "params": {
+    "part": "stress",
+    "kind": "stress",
+    "tag": "BL4",
+    "mode": "L-eg",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 5.34047619047619,
+   "status": "ok",
+   "wall_s": 1.588777587050572,
+   "peak_rss_mb": 163.5703125,
+   "runs": 1
+  },
+  {
+   "id": "e7:stress:mode=L-ss:pol=Sublet",
+   "kind": "pool",
+   "params": {
+    "part": "stress",
+    "kind": "stress",
+    "tag": "Sublet",
+    "mode": "L-ss",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 6.669047619047619,
+   "status": "ok",
+   "wall_s": 10.504645325941965,
+   "peak_rss_mb": 143.515625,
+   "runs": 1
+  },
+  {
+   "id": "e7:stress:mode=L-ss:pol=A7G",
+   "kind": "pool",
+   "params": {
+    "part": "stress",
+    "kind": "stress",
+    "tag": "A7G",
+    "mode": "L-ss",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 7.261904761904762,
+   "status": "ok",
+   "wall_s": 12.142980464966968,
+   "peak_rss_mb": 161.51171875,
+   "runs": 1
+  },
+  {
+   "id": "e7:stress:mode=L-ss:pol=A7",
+   "kind": "pool",
+   "params": {
+    "part": "stress",
+    "kind": "stress",
+    "tag": "A7",
+    "mode": "L-ss",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 5.733333333333333,
+   "status": "ok",
+   "wall_s": 6.227440801914781,
+   "peak_rss_mb": 191.45703125,
+   "runs": 1
+  },
+  {
+   "id": "e7:stress:mode=L-ss:pol=A6",
+   "kind": "pool",
+   "params": {
+    "part": "stress",
+    "kind": "stress",
+    "tag": "A6",
+    "mode": "L-ss",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 5.588095238095238,
+   "status": "ok",
+   "wall_s": 9.360168410930783,
+   "peak_rss_mb": 140.6171875,
+   "runs": 1
+  },
+  {
+   "id": "e7:stress:mode=L-ss:pol=BL5",
+   "kind": "pool",
+   "params": {
+    "part": "stress",
+    "kind": "stress",
+    "tag": "BL5",
+    "mode": "L-ss",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 5.129761904761905,
+   "status": "ok",
+   "wall_s": 1.5395822401624173,
+   "peak_rss_mb": 140.296875,
+   "runs": 1
+  },
+  {
+   "id": "e7:stress:mode=L-ss:pol=BL1",
+   "kind": "pool",
+   "params": {
+    "part": "stress",
+    "kind": "stress",
+    "tag": "BL1",
+    "mode": "L-ss",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 5.139285714285714,
+   "status": "ok",
+   "wall_s": 6.116424486041069,
+   "peak_rss_mb": 139.93359375,
+   "runs": 1
+  },
+  {
+   "id": "e7:stress:mode=L-ss:pol=BL2",
+   "kind": "pool",
+   "params": {
+    "part": "stress",
+    "kind": "stress",
+    "tag": "BL2",
+    "mode": "L-ss",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 5.3,
+   "status": "ok",
+   "wall_s": 2.8469812490511686,
+   "peak_rss_mb": 139.99609375,
+   "runs": 1
+  },
+  {
+   "id": "e7:stress:mode=L-ss:pol=BL4",
+   "kind": "pool",
+   "params": {
+    "part": "stress",
+    "kind": "stress",
+    "tag": "BL4",
+    "mode": "L-ss",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 5.34047619047619,
+   "status": "ok",
+   "wall_s": 1.618565963814035,
+   "peak_rss_mb": 163.36328125,
+   "runs": 1
+  },
+  {
+   "id": "e7:stress:mode=L-iid-0.05:pol=Sublet",
+   "kind": "pool",
+   "params": {
+    "part": "stress",
+    "kind": "stress",
+    "tag": "Sublet",
+    "mode": "L-iid-0.05",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 6.669047619047619,
+   "status": "ok",
+   "wall_s": 10.35739734582603,
+   "peak_rss_mb": 142.79296875,
+   "runs": 1
+  },
+  {
+   "id": "e7:stress:mode=L-iid-0.05:pol=A7G",
+   "kind": "pool",
+   "params": {
+    "part": "stress",
+    "kind": "stress",
+    "tag": "A7G",
+    "mode": "L-iid-0.05",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 7.261904761904762,
+   "status": "ok",
+   "wall_s": 11.654893785947934,
+   "peak_rss_mb": 161.1640625,
+   "runs": 1
+  },
+  {
+   "id": "e7:stress:mode=L-iid-0.05:pol=A7",
+   "kind": "pool",
+   "params": {
+    "part": "stress",
+    "kind": "stress",
+    "tag": "A7",
+    "mode": "L-iid-0.05",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 5.733333333333333,
+   "status": "ok",
+   "wall_s": 6.115930991014466,
+   "peak_rss_mb": 189.0625,
+   "runs": 1
+  },
+  {
+   "id": "e7:stress:mode=L-iid-0.05:pol=A6",
+   "kind": "pool",
+   "params": {
+    "part": "stress",
+    "kind": "stress",
+    "tag": "A6",
+    "mode": "L-iid-0.05",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 5.588095238095238,
+   "status": "ok",
+   "wall_s": 9.463530476903543,
+   "peak_rss_mb": 140.82421875,
+   "runs": 1
+  },
+  {
+   "id": "e7:stress:mode=L-iid-0.05:pol=BL5",
+   "kind": "pool",
+   "params": {
+    "part": "stress",
+    "kind": "stress",
+    "tag": "BL5",
+    "mode": "L-iid-0.05",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 5.129761904761905,
+   "status": "ok",
+   "wall_s": 1.8932952398899943,
+   "peak_rss_mb": 139.10546875,
+   "runs": 1
+  },
+  {
+   "id": "e7:stress:mode=L-iid-0.05:pol=BL1",
+   "kind": "pool",
+   "params": {
+    "part": "stress",
+    "kind": "stress",
+    "tag": "BL1",
+    "mode": "L-iid-0.05",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 5.139285714285714,
+   "status": "ok",
+   "wall_s": 1.9949058638885617,
+   "peak_rss_mb": 139.90234375,
+   "runs": 1
+  },
+  {
+   "id": "e7:stress:mode=L-iid-0.05:pol=BL2",
+   "kind": "pool",
+   "params": {
+    "part": "stress",
+    "kind": "stress",
+    "tag": "BL2",
+    "mode": "L-iid-0.05",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 5.3,
+   "status": "ok",
+   "wall_s": 1.8320227721706033,
+   "peak_rss_mb": 139.92578125,
+   "runs": 1
+  },
+  {
+   "id": "e7:stress:mode=L-iid-0.05:pol=BL4",
+   "kind": "pool",
+   "params": {
+    "part": "stress",
+    "kind": "stress",
+    "tag": "BL4",
+    "mode": "L-iid-0.05",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 5.34047619047619,
+   "status": "ok",
+   "wall_s": 1.5561442580074072,
+   "peak_rss_mb": 164.1484375,
+   "runs": 1
+  },
+  {
+   "id": "e7:stress:mode=L-iid-0.2:pol=Sublet",
+   "kind": "pool",
+   "params": {
+    "part": "stress",
+    "kind": "stress",
+    "tag": "Sublet",
+    "mode": "L-iid-0.2",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 6.669047619047619,
+   "status": "ok",
+   "wall_s": 10.662394467042759,
+   "peak_rss_mb": 142.34765625,
+   "runs": 1
+  },
+  {
+   "id": "e7:stress:mode=L-iid-0.2:pol=A7G",
+   "kind": "pool",
+   "params": {
+    "part": "stress",
+    "kind": "stress",
+    "tag": "A7G",
+    "mode": "L-iid-0.2",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 7.261904761904762,
+   "status": "ok",
+   "wall_s": 11.61579670291394,
+   "peak_rss_mb": 160.94921875,
+   "runs": 1
+  },
+  {
+   "id": "e7:stress:mode=L-iid-0.2:pol=A7",
+   "kind": "pool",
+   "params": {
+    "part": "stress",
+    "kind": "stress",
+    "tag": "A7",
+    "mode": "L-iid-0.2",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 5.733333333333333,
+   "status": "ok",
+   "wall_s": 6.194444966968149,
+   "peak_rss_mb": 190.15234375,
+   "runs": 1
+  },
+  {
+   "id": "e7:stress:mode=L-iid-0.2:pol=A6",
+   "kind": "pool",
+   "params": {
+    "part": "stress",
+    "kind": "stress",
+    "tag": "A6",
+    "mode": "L-iid-0.2",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 5.588095238095238,
+   "status": "ok",
+   "wall_s": 9.497012761887163,
+   "peak_rss_mb": 140.08203125,
+   "runs": 1
+  },
+  {
+   "id": "e7:stress:mode=L-iid-0.2:pol=BL5",
+   "kind": "pool",
+   "params": {
+    "part": "stress",
+    "kind": "stress",
+    "tag": "BL5",
+    "mode": "L-iid-0.2",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 5.129761904761905,
+   "status": "ok",
+   "wall_s": 1.64117974601686,
+   "peak_rss_mb": 140.07421875,
+   "runs": 1
+  },
+  {
+   "id": "e7:stress:mode=L-iid-0.2:pol=BL1",
+   "kind": "pool",
+   "params": {
+    "part": "stress",
+    "kind": "stress",
+    "tag": "BL1",
+    "mode": "L-iid-0.2",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 5.139285714285714,
+   "status": "ok",
+   "wall_s": 2.193532690871507,
+   "peak_rss_mb": 139.421875,
+   "runs": 1
+  },
+  {
+   "id": "e7:stress:mode=L-iid-0.2:pol=BL2",
+   "kind": "pool",
+   "params": {
+    "part": "stress",
+    "kind": "stress",
+    "tag": "BL2",
+    "mode": "L-iid-0.2",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 5.3,
+   "status": "ok",
+   "wall_s": 1.8942679350730032,
+   "peak_rss_mb": 140.4765625,
+   "runs": 1
+  },
+  {
+   "id": "e7:stress:mode=L-iid-0.2:pol=BL4",
+   "kind": "pool",
+   "params": {
+    "part": "stress",
+    "kind": "stress",
+    "tag": "BL4",
+    "mode": "L-iid-0.2",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 5.34047619047619,
+   "status": "ok",
+   "wall_s": 1.6001594550907612,
+   "peak_rss_mb": 163.875,
+   "runs": 1
+  },
+  {
+   "id": "e7:stress:mode=L-co:pol=Sublet",
+   "kind": "pool",
+   "params": {
+    "part": "stress",
+    "kind": "stress",
+    "tag": "Sublet",
+    "mode": "L-co",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 6.669047619047619,
+   "status": "ok",
+   "wall_s": 10.439230990828946,
+   "peak_rss_mb": 142.30859375,
+   "runs": 1
+  },
+  {
+   "id": "e7:stress:mode=L-co:pol=A7G",
+   "kind": "pool",
+   "params": {
+    "part": "stress",
+    "kind": "stress",
+    "tag": "A7G",
+    "mode": "L-co",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 7.261904761904762,
+   "status": "ok",
+   "wall_s": 11.51698607695289,
+   "peak_rss_mb": 161.3984375,
+   "runs": 1
+  },
+  {
+   "id": "e7:stress:mode=L-co:pol=A7",
+   "kind": "pool",
+   "params": {
+    "part": "stress",
+    "kind": "stress",
+    "tag": "A7",
+    "mode": "L-co",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 5.733333333333333,
+   "status": "ok",
+   "wall_s": 6.16801328281872,
+   "peak_rss_mb": 191.33984375,
+   "runs": 1
+  },
+  {
+   "id": "e7:stress:mode=L-co:pol=A6",
+   "kind": "pool",
+   "params": {
+    "part": "stress",
+    "kind": "stress",
+    "tag": "A6",
+    "mode": "L-co",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 5.588095238095238,
+   "status": "ok",
+   "wall_s": 9.475620593875647,
+   "peak_rss_mb": 140.24609375,
+   "runs": 1
+  },
+  {
+   "id": "e7:stress:mode=L-co:pol=BL5",
+   "kind": "pool",
+   "params": {
+    "part": "stress",
+    "kind": "stress",
+    "tag": "BL5",
+    "mode": "L-co",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 5.129761904761905,
+   "status": "ok",
+   "wall_s": 1.5586961130611598,
+   "peak_rss_mb": 140.46875,
+   "runs": 1
+  },
+  {
+   "id": "e7:stress:mode=L-co:pol=BL1",
+   "kind": "pool",
+   "params": {
+    "part": "stress",
+    "kind": "stress",
+    "tag": "BL1",
+    "mode": "L-co",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 5.139285714285714,
+   "status": "ok",
+   "wall_s": 5.795672381063923,
+   "peak_rss_mb": 140.44140625,
+   "runs": 1
+  },
+  {
+   "id": "e7:stress:mode=L-co:pol=BL2",
+   "kind": "pool",
+   "params": {
+    "part": "stress",
+    "kind": "stress",
+    "tag": "BL2",
+    "mode": "L-co",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 5.3,
+   "status": "ok",
+   "wall_s": 2.976198472082615,
+   "peak_rss_mb": 140.9375,
+   "runs": 1
+  },
+  {
+   "id": "e7:stress:mode=L-co:pol=BL4",
+   "kind": "pool",
+   "params": {
+    "part": "stress",
+    "kind": "stress",
+    "tag": "BL4",
+    "mode": "L-co",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 5.34047619047619,
+   "status": "ok",
+   "wall_s": 1.5362009888049215,
+   "peak_rss_mb": 163.9375,
+   "runs": 1
+  }
+ ],
+ "instance_hashes": {
+  "week:mu=1:c=1": "fddc5752788e170ecd364592b0f94ae2631bc2acfb1e71aa32462e0be77b1273"
+ },
+ "design": {
+  "reduced": true,
+  "alignments": [
+   1
+  ],
+  "policy_seeds": [
+   0
+  ],
+  "horizon_min": 120,
+  "gap_horizon_min": 120
+ },
+ "parts": [
+  "stress"
+ ],
+ "reduced": true,
+ "B0_rule": "0.1*BL0a",
+ "inputs_sha256": {
+  "code/sim/configs/bench_e7f.json": "c34eee8133082cfe148d314b9209ea3d703c1e110f74c1372e4945cf25f952f0",
+  "code/sim/configs/bench_e7r.json": "d23da7053411ceb465fa3d25c41883aa0ac0f557a503c71410faba63ae3b184e",
+  "code/sim/sublet/experiments/q44_blocks/Q4.json": "ad15dedba6b335a39d4316cc768bc6ecc387478cc46ef09f4a061318d155b58c"
+ }
+}

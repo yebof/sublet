@@ -1,0 +1,66 @@
+{
+ "job": "s1:sweep:pt=wcfull:c=1",
+ "exp": "s1",
+ "kind": "pool",
+ "params": {
+  "part": "sweep",
+  "kind": "sweep",
+  "point": "wcfull",
+  "row": "wildchat",
+  "c": 1,
+  "tag": "Sublet",
+  "mode": "L-tr",
+  "policy_seeds": [
+   0
+  ],
+  "horizon_min": 120,
+  "limit_s": 1800
+ },
+ "status": "ok",
+ "started": "2026-10-29T21:07:42",
+ "pid": 3188675,
+ "argv": [
+  "/work/sublet/code/sim/sublet/experiments/s1.py",
+  "--job",
+  "s1:sweep:pt=wcfull:c=1",
+  "--out",
+  "/work/fix/refresh_s1/s1/out/s1/sweep"
+ ],
+ "slots": [
+  "slot0"
+ ],
+ "milp_limit_s": null,
+ "git_revision": "c82fa05f835c1b4896ddf639d6edb81495a1abee",
+ "versions": {
+  "python": "3.12.3",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "sublet": "0.1.0"
+ },
+ "runs": 1,
+ "errors": [],
+ "n_errors": 0,
+ "outputs": [
+  "runs/s1__sweep__pt__wcfull__c__1.json"
+ ],
+ "result": {
+  "instance_hash": "1c6e6f2e7fb11857b753c8db9b7028f68ac6c6c0486b13dbb891c3dfbbb9bd2a",
+  "bl0a_usd": 1471.1520913418672,
+  "totals": [
+   1511.2585101840227
+  ],
+  "saving_pct": [
+   -2.7261911992779497
+  ],
+  "t_a": [
+   12
+  ],
+  "wall_s_runs": [
+   7.270379628054798
+  ]
+ },
+ "wall_s": 8.828698203898966,
+ "peak_rss_kb": 146904,
+ "peak_rss_mb": 143.4609375,
+ "finished": "2026-10-29T21:07:51"
+}

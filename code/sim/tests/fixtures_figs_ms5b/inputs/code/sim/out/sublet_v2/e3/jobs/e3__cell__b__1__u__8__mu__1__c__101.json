@@ -1,0 +1,102 @@
+{
+ "job": "e3:cell:b=1:u=8:mu=1:c=101",
+ "exp": "e7h",
+ "kind": "pool",
+ "params": {
+  "part": "e3",
+  "kind": "e3cell",
+  "b": 1,
+  "u": 8,
+  "mu": 1.0,
+  "c": 101,
+  "entries": [
+   [
+    "Sublet",
+    "shared"
+   ],
+   [
+    "Sublet",
+    "siloed"
+   ],
+   [
+    "A9",
+    "shared"
+   ],
+   [
+    "A9",
+    "siloed"
+   ],
+   [
+    "BL1",
+    "shared"
+   ],
+   [
+    "BL1",
+    "siloed"
+   ],
+   [
+    "BL5-cur",
+    "shared"
+   ],
+   [
+    "BL5-cur",
+    "siloed"
+   ],
+   [
+    "Sublet-MS4",
+    "shared"
+   ],
+   [
+    "Sublet-MS4",
+    "siloed"
+   ]
+  ],
+  "policy_seeds": [
+   0
+  ],
+  "lp": "all",
+  "horizon": [
+   156,
+   24
+  ],
+  "siloed": true
+ },
+ "status": "ok",
+ "started": "2026-11-03T14:23:45",
+ "pid": 1729777,
+ "argv": [
+  "/work/sublet/code/sim/sublet/experiments/e7h.py",
+  "--job",
+  "e3:cell:b=1:u=8:mu=1:c=101",
+  "--out",
+  "/work/u36_fix/e3/out/sublet_v2/e3"
+ ],
+ "slots": [
+  "slot0"
+ ],
+ "milp_limit_s": null,
+ "git_revision": "5c7d33285b9a4f4e4df2b76e80b3e5f56d58bd37",
+ "versions": {
+  "python": "3.12.3",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "sublet": "0.1.0"
+ },
+ "runs": 10,
+ "errors": [],
+ "n_errors": 0,
+ "outputs": [
+  "lb/e3__lp__b__1__u__8__mu__1__c__101__part__shared.json",
+  "lb/e3__lp__b__1__u__8__mu__1__c__101__part__b00.json",
+  "runs/cells/e3__cell__b__1__u__8__mu__1__c__101.json"
+ ],
+ "result": {
+  "lps": 2,
+  "instance_hash": "5a8f8104db62a8e187cccbd4628d457bd5ae5f547d30572c7e8c72fb638d8254",
+  "schedule_mismatch": 0
+ },
+ "wall_s": 5.238074237015098,
+ "peak_rss_kb": 148172,
+ "peak_rss_mb": 144.69921875,
+ "finished": "2026-11-03T14:23:50"
+}

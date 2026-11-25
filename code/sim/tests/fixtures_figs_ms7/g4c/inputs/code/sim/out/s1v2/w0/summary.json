@@ -1,0 +1,2264 @@
+{
+ "meta": {
+  "exp": "s1v2",
+  "part": "w0",
+  "spec": "design/ms7/feasibility/sens.md \u00a72 A, \u00a73 item 1 (C56)",
+  "change": "C56",
+  "label": "exploratory: post-freeze runs on the confirmation weeks (design/ms7/plan.md D6), not a confirmation result",
+  "git_revision": "56b847bec39b437ed5074dff124ffb69416e7f2b",
+  "written": "2026-11-08T19:47:42",
+  "reduced": true,
+  "gate": {
+   "kind": "ms7_registration",
+   "ok": false,
+   "reason": "the run does not start (design/ms7/plan.md D6): design/ms7/registration.md does not exist at HEAD; the working tree is dirty (14 paths, e.g. [' M code/sim/sublet/experiments/ms3_common.py', '?? code/sim/sublet/experiments/e5v2.py', '?? code/sim/sublet/experiments/e8v2.py'])",
+   "enforced": false,
+   "registration": {
+    "head": "56b847bec39b437ed5074dff124ffb69416e7f2b",
+    "registration": "design/ms7/registration.md",
+    "registration_at_head": false,
+    "registration_sha256": null,
+    "analysis": "code/sim/sublet/experiments/ms7_sens_analysis.py",
+    "analysis_sha256_registered": null,
+    "analysis_sha256_head": null,
+    "analysis_sha256_disk": "6d9772304fe30b20d0d500c2c56b867ccecc97dc99e672c63bdfcd66912e4a2d",
+    "dirty_paths": [
+     " M code/sim/sublet/experiments/ms3_common.py",
+     "?? code/sim/sublet/experiments/e5v2.py",
+     "?? code/sim/sublet/experiments/e8v2.py",
+     "?? code/sim/sublet/experiments/e9v2.py",
+     "?? code/sim/sublet/experiments/ms7_sens_analysis.py",
+     "?? code/sim/sublet/experiments/run_e5v2.sh",
+     "?? code/sim/sublet/experiments/run_e8v2.sh",
+     "?? code/sim/sublet/experiments/run_e9v2.sh",
+     "?? code/sim/sublet/experiments/run_s1v2.sh",
+     "?? code/sim/sublet/experiments/s1v2.py",
+     "?? code/sim/tests/test_e5v2.py",
+     "?? code/sim/tests/test_e8v2.py",
+     "?? code/sim/tests/test_e9v2.py",
+     "?? code/sim/tests/test_s1v2.py"
+    ]
+   },
+   "note": "reduced run on a development week: the gate is recorded, not enforced"
+  },
+  "grids": {
+   "weeks": [
+    101
+   ],
+   "weeks_design": [
+    301,
+    302
+   ],
+   "policy_seeds": [
+    0
+   ],
+   "horizon_min": 120,
+   "modes": [
+    "L-eg",
+    "L-ss",
+    "L-iid-0.05",
+    "L-iid-0.2",
+    "L-co"
+   ],
+   "points": [
+    "scen_warm_peer_rdma",
+    "scen_ssd_optimized",
+    "scen_ssd_stock_safetensors",
+    "scen_ssd_stock_pytorch",
+    "scen_a5_10GBps",
+    "scen_a5_2GBps",
+    "scen_cold_wan_10gbps",
+    "scen_cold_wan_1gbps",
+    "fee4",
+    "fee8",
+    "fee16"
+   ],
+   "rows": [
+    "load_scenario",
+    "transfer_fee"
+   ]
+  },
+  "tags": {
+   "Sublet": {
+    "policy_id": "A8P",
+    "params": "ms5b_common.sublet_v2_params(inst)",
+    "kind": "headline",
+    "a9_family": true,
+    "role": "headline (D1, D2, D3): A8P around A9 at P2's allowance min{W_k, LB'} (kappa None)",
+    "information": "I1"
+   },
+   "A9": {
+    "policy_id": "A9",
+    "params": {},
+    "kind": "inner",
+    "a9_family": true,
+    "role": "the inner policy alone; with Sublet, the price of the guard",
+    "information": "I1"
+   },
+   "BL1-BO": {
+    "policy_id": "BL1",
+    "params": {
+     "backoff_cap": 288
+    },
+    "kind": "baseline",
+    "a9_family": false,
+    "role": "generic site back-off",
+    "information": "I1"
+   },
+   "BL5-cur": {
+    "policy_id": "BL5",
+    "params": {
+     "use_current_slot": true
+    },
+    "kind": "baseline",
+    "a9_family": false,
+    "role": "main RetroRenting-style row (D7)",
+    "information": "I1"
+   },
+   "BL4": {
+    "policy_id": "BL4",
+    "params": {},
+    "kind": "baseline",
+    "a9_family": false,
+    "role": "CoCaR-style",
+    "information": "I1"
+   }
+  },
+  "jobs": 11,
+  "jobs_ok": 2,
+  "n_runs": 50,
+  "n_missing": 225,
+  "reduced_note": "reduced job list (MS3_S1V2_REDUCED=1): week 101; not a result"
+ },
+ "table": {
+  "Sublet": {
+   "L-eg": {
+    "scen_cold_wan_1gbps": {
+     "101": {
+      "0": 1.6697542027318355
+     }
+    },
+    "scen_warm_peer_rdma": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_optimized": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_safetensors": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_pytorch": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_10GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_2GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_cold_wan_10gbps": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee4": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee8": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee16": {
+     "101": {
+      "0": 1.7812032734260632
+     }
+    }
+   },
+   "L-ss": {
+    "scen_cold_wan_1gbps": {
+     "101": {
+      "0": 1.6681615743952154
+     }
+    },
+    "scen_warm_peer_rdma": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_optimized": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_safetensors": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_pytorch": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_10GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_2GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_cold_wan_10gbps": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee4": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee8": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee16": {
+     "101": {
+      "0": 1.7812032734260632
+     }
+    }
+   },
+   "L-iid-0.05": {
+    "scen_cold_wan_1gbps": {
+     "101": {
+      "0": 1.3443686737398124
+     }
+    },
+    "scen_warm_peer_rdma": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_optimized": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_safetensors": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_pytorch": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_10GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_2GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_cold_wan_10gbps": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee4": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee8": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee16": {
+     "101": {
+      "0": 1.6720616499405219
+     }
+    }
+   },
+   "L-iid-0.2": {
+    "scen_cold_wan_1gbps": {
+     "101": {
+      "0": 1.4087527635408785
+     }
+    },
+    "scen_warm_peer_rdma": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_optimized": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_safetensors": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_pytorch": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_10GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_2GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_cold_wan_10gbps": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee4": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee8": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee16": {
+     "101": {
+      "0": 1.6488207592635136
+     }
+    }
+   },
+   "L-co": {
+    "scen_cold_wan_1gbps": {
+     "101": {
+      "0": 1.6697542027318355
+     }
+    },
+    "scen_warm_peer_rdma": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_optimized": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_safetensors": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_pytorch": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_10GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_2GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_cold_wan_10gbps": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee4": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee8": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee16": {
+     "101": {
+      "0": 1.7812032734260632
+     }
+    }
+   }
+  },
+  "A9": {
+   "L-eg": {
+    "scen_cold_wan_1gbps": {
+     "101": {
+      "0": 1.9419774892455988
+     }
+    },
+    "scen_warm_peer_rdma": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_optimized": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_safetensors": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_pytorch": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_10GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_2GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_cold_wan_10gbps": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee4": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee8": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee16": {
+     "101": {
+      "0": 4.7163603964236955
+     }
+    }
+   },
+   "L-ss": {
+    "scen_cold_wan_1gbps": {
+     "101": {
+      "0": 1.9329645222540055
+     }
+    },
+    "scen_warm_peer_rdma": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_optimized": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_safetensors": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_pytorch": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_10GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_2GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_cold_wan_10gbps": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee4": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee8": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee16": {
+     "101": {
+      "0": 4.684389884146672
+     }
+    }
+   },
+   "L-iid-0.05": {
+    "scen_cold_wan_1gbps": {
+     "101": {
+      "0": 1.3464956069190719
+     }
+    },
+    "scen_warm_peer_rdma": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_optimized": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_safetensors": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_pytorch": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_10GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_2GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_cold_wan_10gbps": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee4": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee8": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee16": {
+     "101": {
+      "0": 2.3261984787031507
+     }
+    }
+   },
+   "L-iid-0.2": {
+    "scen_cold_wan_1gbps": {
+     "101": {
+      "0": 1.4099687979032822
+     }
+    },
+    "scen_warm_peer_rdma": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_optimized": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_safetensors": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_pytorch": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_10GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_2GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_cold_wan_10gbps": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee4": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee8": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee16": {
+     "101": {
+      "0": 2.747758881936701
+     }
+    }
+   },
+   "L-co": {
+    "scen_cold_wan_1gbps": {
+     "101": {
+      "0": 1.9419774892455988
+     }
+    },
+    "scen_warm_peer_rdma": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_optimized": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_safetensors": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_pytorch": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_10GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_2GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_cold_wan_10gbps": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee4": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee8": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee16": {
+     "101": {
+      "0": 4.7163603964236955
+     }
+    }
+   }
+  },
+  "BL1-BO": {
+   "L-eg": {
+    "scen_cold_wan_1gbps": {
+     "101": {
+      "0": 1.332267627745006
+     }
+    },
+    "scen_warm_peer_rdma": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_optimized": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_safetensors": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_pytorch": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_10GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_2GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_cold_wan_10gbps": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee4": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee8": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee16": {
+     "101": {
+      "0": 8.896744341587137
+     }
+    }
+   },
+   "L-ss": {
+    "scen_cold_wan_1gbps": {
+     "101": {
+      "0": 1.3354625355032568
+     }
+    },
+    "scen_warm_peer_rdma": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_optimized": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_safetensors": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_pytorch": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_10GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_2GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_cold_wan_10gbps": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee4": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee8": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee16": {
+     "101": {
+      "0": 8.844025372133274
+     }
+    }
+   },
+   "L-iid-0.05": {
+    "scen_cold_wan_1gbps": {
+     "101": {
+      "0": 1.3664541901550302
+     }
+    },
+    "scen_warm_peer_rdma": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_optimized": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_safetensors": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_pytorch": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_10GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_2GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_cold_wan_10gbps": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee4": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee8": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee16": {
+     "101": {
+      "0": 2.606894292301267
+     }
+    }
+   },
+   "L-iid-0.2": {
+    "scen_cold_wan_1gbps": {
+     "101": {
+      "0": 1.4252993725819627
+     }
+    },
+    "scen_warm_peer_rdma": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_optimized": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_safetensors": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_pytorch": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_10GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_2GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_cold_wan_10gbps": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee4": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee8": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee16": {
+     "101": {
+      "0": 3.9926366211541744
+     }
+    }
+   },
+   "L-co": {
+    "scen_cold_wan_1gbps": {
+     "101": {
+      "0": 1.332267627745006
+     }
+    },
+    "scen_warm_peer_rdma": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_optimized": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_safetensors": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_pytorch": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_10GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_2GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_cold_wan_10gbps": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee4": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee8": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee16": {
+     "101": {
+      "0": 8.896744341587137
+     }
+    }
+   }
+  },
+  "BL5-cur": {
+   "L-eg": {
+    "scen_cold_wan_1gbps": {
+     "101": {
+      "0": 1.0156273440670753
+     }
+    },
+    "scen_warm_peer_rdma": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_optimized": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_safetensors": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_pytorch": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_10GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_2GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_cold_wan_10gbps": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee4": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee8": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee16": {
+     "101": {
+      "0": 0.9999999999999999
+     }
+    }
+   },
+   "L-ss": {
+    "scen_cold_wan_1gbps": {
+     "101": {
+      "0": 1.0156273440670753
+     }
+    },
+    "scen_warm_peer_rdma": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_optimized": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_safetensors": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_pytorch": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_10GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_2GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_cold_wan_10gbps": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee4": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee8": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee16": {
+     "101": {
+      "0": 0.9999999999999999
+     }
+    }
+   },
+   "L-iid-0.05": {
+    "scen_cold_wan_1gbps": {
+     "101": {
+      "0": 1.0149755740868183
+     }
+    },
+    "scen_warm_peer_rdma": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_optimized": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_safetensors": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_pytorch": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_10GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_2GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_cold_wan_10gbps": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee4": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee8": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee16": {
+     "101": {
+      "0": 0.9999999999999999
+     }
+    }
+   },
+   "L-iid-0.2": {
+    "scen_cold_wan_1gbps": {
+     "101": {
+      "0": 1.0154578412116813
+     }
+    },
+    "scen_warm_peer_rdma": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_optimized": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_safetensors": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_pytorch": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_10GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_2GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_cold_wan_10gbps": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee4": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee8": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee16": {
+     "101": {
+      "0": 0.9999999999999999
+     }
+    }
+   },
+   "L-co": {
+    "scen_cold_wan_1gbps": {
+     "101": {
+      "0": 1.0156273440670753
+     }
+    },
+    "scen_warm_peer_rdma": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_optimized": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_safetensors": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_pytorch": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_10GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_2GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_cold_wan_10gbps": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee4": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee8": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee16": {
+     "101": {
+      "0": 0.9999999999999999
+     }
+    }
+   }
+  },
+  "BL4": {
+   "L-eg": {
+    "scen_cold_wan_1gbps": {
+     "101": {
+      "0": 1.001329879808043
+     }
+    },
+    "scen_warm_peer_rdma": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_optimized": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_safetensors": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_pytorch": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_10GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_2GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_cold_wan_10gbps": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee4": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee8": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee16": {
+     "101": {
+      "0": 1.0370971094762231
+     }
+    }
+   },
+   "L-ss": {
+    "scen_cold_wan_1gbps": {
+     "101": {
+      "0": 1.001329879808043
+     }
+    },
+    "scen_warm_peer_rdma": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_optimized": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_safetensors": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_pytorch": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_10GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_2GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_cold_wan_10gbps": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee4": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee8": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee16": {
+     "101": {
+      "0": 1.0370971094762231
+     }
+    }
+   },
+   "L-iid-0.05": {
+    "scen_cold_wan_1gbps": {
+     "101": {
+      "0": 0.9979214001372839
+     }
+    },
+    "scen_warm_peer_rdma": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_optimized": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_safetensors": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_pytorch": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_10GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_2GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_cold_wan_10gbps": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee4": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee8": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee16": {
+     "101": {
+      "0": 1.035570013206966
+     }
+    }
+   },
+   "L-iid-0.2": {
+    "scen_cold_wan_1gbps": {
+     "101": {
+      "0": 1.004243229220195
+     }
+    },
+    "scen_warm_peer_rdma": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_optimized": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_safetensors": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_pytorch": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_10GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_2GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_cold_wan_10gbps": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee4": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee8": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee16": {
+     "101": {
+      "0": 1.0458618877819823
+     }
+    }
+   },
+   "L-co": {
+    "scen_cold_wan_1gbps": {
+     "101": {
+      "0": 1.001329879808043
+     }
+    },
+    "scen_warm_peer_rdma": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_optimized": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_safetensors": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_ssd_stock_pytorch": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_10GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_a5_2GBps": {
+     "101": {
+      "0": null
+     }
+    },
+    "scen_cold_wan_10gbps": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee4": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee8": {
+     "101": {
+      "0": null
+     }
+    },
+    "fee16": {
+     "101": {
+      "0": 1.0370971094762231
+     }
+    }
+   }
+  }
+ },
+ "W0": {
+  "Sublet": {
+   "scen_warm_peer_rdma": {
+    "101": {
+     "W0": null,
+     "mode": null,
+     "missing": [
+      "L-eg",
+      "L-ss",
+      "L-iid-0.05",
+      "L-iid-0.2",
+      "L-co"
+     ]
+    }
+   },
+   "scen_ssd_optimized": {
+    "101": {
+     "W0": null,
+     "mode": null,
+     "missing": [
+      "L-eg",
+      "L-ss",
+      "L-iid-0.05",
+      "L-iid-0.2",
+      "L-co"
+     ]
+    }
+   },
+   "scen_ssd_stock_safetensors": {
+    "101": {
+     "W0": null,
+     "mode": null,
+     "missing": [
+      "L-eg",
+      "L-ss",
+      "L-iid-0.05",
+      "L-iid-0.2",
+      "L-co"
+     ]
+    }
+   },
+   "scen_ssd_stock_pytorch": {
+    "101": {
+     "W0": null,
+     "mode": null,
+     "missing": [
+      "L-eg",
+      "L-ss",
+      "L-iid-0.05",
+      "L-iid-0.2",
+      "L-co"
+     ]
+    }
+   },
+   "scen_a5_10GBps": {
+    "101": {
+     "W0": null,
+     "mode": null,
+     "missing": [
+      "L-eg",
+      "L-ss",
+      "L-iid-0.05",
+      "L-iid-0.2",
+      "L-co"
+     ]
+    }
+   },
+   "scen_a5_2GBps": {
+    "101": {
+     "W0": null,
+     "mode": null,
+     "missing": [
+      "L-eg",
+      "L-ss",
+      "L-iid-0.05",
+      "L-iid-0.2",
+      "L-co"
+     ]
+    }
+   },
+   "scen_cold_wan_10gbps": {
+    "101": {
+     "W0": null,
+     "mode": null,
+     "missing": [
+      "L-eg",
+      "L-ss",
+      "L-iid-0.05",
+      "L-iid-0.2",
+      "L-co"
+     ]
+    }
+   },
+   "scen_cold_wan_1gbps": {
+    "101": {
+     "W0": 1.6697542027318355,
+     "mode": "L-eg",
+     "missing": []
+    }
+   },
+   "fee4": {
+    "101": {
+     "W0": null,
+     "mode": null,
+     "missing": [
+      "L-eg",
+      "L-ss",
+      "L-iid-0.05",
+      "L-iid-0.2",
+      "L-co"
+     ]
+    }
+   },
+   "fee8": {
+    "101": {
+     "W0": null,
+     "mode": null,
+     "missing": [
+      "L-eg",
+      "L-ss",
+      "L-iid-0.05",
+      "L-iid-0.2",
+      "L-co"
+     ]
+    }
+   },
+   "fee16": {
+    "101": {
+     "W0": 1.7812032734260632,
+     "mode": "L-eg",
+     "missing": []
+    }
+   }
+  },
+  "A9": {
+   "scen_warm_peer_rdma": {
+    "101": {
+     "W0": null,
+     "mode": null,
+     "missing": [
+      "L-eg",
+      "L-ss",
+      "L-iid-0.05",
+      "L-iid-0.2",
+      "L-co"
+     ]
+    }
+   },
+   "scen_ssd_optimized": {
+    "101": {
+     "W0": null,
+     "mode": null,
+     "missing": [
+      "L-eg",
+      "L-ss",
+      "L-iid-0.05",
+      "L-iid-0.2",
+      "L-co"
+     ]
+    }
+   },
+   "scen_ssd_stock_safetensors": {
+    "101": {
+     "W0": null,
+     "mode": null,
+     "missing": [
+      "L-eg",
+      "L-ss",
+      "L-iid-0.05",
+      "L-iid-0.2",
+      "L-co"
+     ]
+    }
+   },
+   "scen_ssd_stock_pytorch": {
+    "101": {
+     "W0": null,
+     "mode": null,
+     "missing": [
+      "L-eg",
+      "L-ss",
+      "L-iid-0.05",
+      "L-iid-0.2",
+      "L-co"
+     ]
+    }
+   },
+   "scen_a5_10GBps": {
+    "101": {
+     "W0": null,
+     "mode": null,
+     "missing": [
+      "L-eg",
+      "L-ss",
+      "L-iid-0.05",
+      "L-iid-0.2",
+      "L-co"
+     ]
+    }
+   },
+   "scen_a5_2GBps": {
+    "101": {
+     "W0": null,
+     "mode": null,
+     "missing": [
+      "L-eg",
+      "L-ss",
+      "L-iid-0.05",
+      "L-iid-0.2",
+      "L-co"
+     ]
+    }
+   },
+   "scen_cold_wan_10gbps": {
+    "101": {
+     "W0": null,
+     "mode": null,
+     "missing": [
+      "L-eg",
+      "L-ss",
+      "L-iid-0.05",
+      "L-iid-0.2",
+      "L-co"
+     ]
+    }
+   },
+   "scen_cold_wan_1gbps": {
+    "101": {
+     "W0": 1.9419774892455988,
+     "mode": "L-eg",
+     "missing": []
+    }
+   },
+   "fee4": {
+    "101": {
+     "W0": null,
+     "mode": null,
+     "missing": [
+      "L-eg",
+      "L-ss",
+      "L-iid-0.05",
+      "L-iid-0.2",
+      "L-co"
+     ]
+    }
+   },
+   "fee8": {
+    "101": {
+     "W0": null,
+     "mode": null,
+     "missing": [
+      "L-eg",
+      "L-ss",
+      "L-iid-0.05",
+      "L-iid-0.2",
+      "L-co"
+     ]
+    }
+   },
+   "fee16": {
+    "101": {
+     "W0": 4.7163603964236955,
+     "mode": "L-eg",
+     "missing": []
+    }
+   }
+  },
+  "BL1-BO": {
+   "scen_warm_peer_rdma": {
+    "101": {
+     "W0": null,
+     "mode": null,
+     "missing": [
+      "L-eg",
+      "L-ss",
+      "L-iid-0.05",
+      "L-iid-0.2",
+      "L-co"
+     ]
+    }
+   },
+   "scen_ssd_optimized": {
+    "101": {
+     "W0": null,
+     "mode": null,
+     "missing": [
+      "L-eg",
+      "L-ss",
+      "L-iid-0.05",
+      "L-iid-0.2",
+      "L-co"
+     ]
+    }
+   },
+   "scen_ssd_stock_safetensors": {
+    "101": {
+     "W0": null,
+     "mode": null,
+     "missing": [
+      "L-eg",
+      "L-ss",
+      "L-iid-0.05",
+      "L-iid-0.2",
+      "L-co"
+     ]
+    }
+   },
+   "scen_ssd_stock_pytorch": {
+    "101": {
+     "W0": null,
+     "mode": null,
+     "missing": [
+      "L-eg",
+      "L-ss",
+      "L-iid-0.05",
+      "L-iid-0.2",
+      "L-co"
+     ]
+    }
+   },
+   "scen_a5_10GBps": {
+    "101": {
+     "W0": null,
+     "mode": null,
+     "missing": [
+      "L-eg",
+      "L-ss",
+      "L-iid-0.05",
+      "L-iid-0.2",
+      "L-co"
+     ]
+    }
+   },
+   "scen_a5_2GBps": {
+    "101": {
+     "W0": null,
+     "mode": null,
+     "missing": [
+      "L-eg",
+      "L-ss",
+      "L-iid-0.05",
+      "L-iid-0.2",
+      "L-co"
+     ]
+    }
+   },
+   "scen_cold_wan_10gbps": {
+    "101": {
+     "W0": null,
+     "mode": null,
+     "missing": [
+      "L-eg",
+      "L-ss",
+      "L-iid-0.05",
+      "L-iid-0.2",
+      "L-co"
+     ]
+    }
+   },
+   "scen_cold_wan_1gbps": {
+    "101": {
+     "W0": 1.4252993725819627,
+     "mode": "L-iid-0.2",
+     "missing": []
+    }
+   },
+   "fee4": {
+    "101": {
+     "W0": null,
+     "mode": null,
+     "missing": [
+      "L-eg",
+      "L-ss",
+      "L-iid-0.05",
+      "L-iid-0.2",
+      "L-co"
+     ]
+    }
+   },
+   "fee8": {
+    "101": {
+     "W0": null,
+     "mode": null,
+     "missing": [
+      "L-eg",
+      "L-ss",
+      "L-iid-0.05",
+      "L-iid-0.2",
+      "L-co"
+     ]
+    }
+   },
+   "fee16": {
+    "101": {
+     "W0": 8.896744341587137,
+     "mode": "L-eg",
+     "missing": []
+    }
+   }
+  },
+  "BL5-cur": {
+   "scen_warm_peer_rdma": {
+    "101": {
+     "W0": null,
+     "mode": null,
+     "missing": [
+      "L-eg",
+      "L-ss",
+      "L-iid-0.05",
+      "L-iid-0.2",
+      "L-co"
+     ]
+    }
+   },
+   "scen_ssd_optimized": {
+    "101": {
+     "W0": null,
+     "mode": null,
+     "missing": [
+      "L-eg",
+      "L-ss",
+      "L-iid-0.05",
+      "L-iid-0.2",
+      "L-co"
+     ]
+    }
+   },
+   "scen_ssd_stock_safetensors": {
+    "101": {
+     "W0": null,
+     "mode": null,
+     "missing": [
+      "L-eg",
+      "L-ss",
+      "L-iid-0.05",
+      "L-iid-0.2",
+      "L-co"
+     ]
+    }
+   },
+   "scen_ssd_stock_pytorch": {
+    "101": {
+     "W0": null,
+     "mode": null,
+     "missing": [
+      "L-eg",
+      "L-ss",
+      "L-iid-0.05",
+      "L-iid-0.2",
+      "L-co"
+     ]
+    }
+   },
+   "scen_a5_10GBps": {
+    "101": {
+     "W0": null,
+     "mode": null,
+     "missing": [
+      "L-eg",
+      "L-ss",
+      "L-iid-0.05",
+      "L-iid-0.2",
+      "L-co"
+     ]
+    }
+   },
+   "scen_a5_2GBps": {
+    "101": {
+     "W0": null,
+     "mode": null,
+     "missing": [
+      "L-eg",
+      "L-ss",
+      "L-iid-0.05",
+      "L-iid-0.2",
+      "L-co"
+     ]
+    }
+   },
+   "scen_cold_wan_10gbps": {
+    "101": {
+     "W0": null,
+     "mode": null,
+     "missing": [
+      "L-eg",
+      "L-ss",
+      "L-iid-0.05",
+      "L-iid-0.2",
+      "L-co"
+     ]
+    }
+   },
+   "scen_cold_wan_1gbps": {
+    "101": {
+     "W0": 1.0156273440670753,
+     "mode": "L-eg",
+     "missing": []
+    }
+   },
+   "fee4": {
+    "101": {
+     "W0": null,
+     "mode": null,
+     "missing": [
+      "L-eg",
+      "L-ss",
+      "L-iid-0.05",
+      "L-iid-0.2",
+      "L-co"
+     ]
+    }
+   },
+   "fee8": {
+    "101": {
+     "W0": null,
+     "mode": null,
+     "missing": [
+      "L-eg",
+      "L-ss",
+      "L-iid-0.05",
+      "L-iid-0.2",
+      "L-co"
+     ]
+    }
+   },
+   "fee16": {
+    "101": {
+     "W0": 0.9999999999999999,
+     "mode": "L-eg",
+     "missing": []
+    }
+   }
+  },
+  "BL4": {
+   "scen_warm_peer_rdma": {
+    "101": {
+     "W0": null,
+     "mode": null,
+     "missing": [
+      "L-eg",
+      "L-ss",
+      "L-iid-0.05",
+      "L-iid-0.2",
+      "L-co"
+     ]
+    }
+   },
+   "scen_ssd_optimized": {
+    "101": {
+     "W0": null,
+     "mode": null,
+     "missing": [
+      "L-eg",
+      "L-ss",
+      "L-iid-0.05",
+      "L-iid-0.2",
+      "L-co"
+     ]
+    }
+   },
+   "scen_ssd_stock_safetensors": {
+    "101": {
+     "W0": null,
+     "mode": null,
+     "missing": [
+      "L-eg",
+      "L-ss",
+      "L-iid-0.05",
+      "L-iid-0.2",
+      "L-co"
+     ]
+    }
+   },
+   "scen_ssd_stock_pytorch": {
+    "101": {
+     "W0": null,
+     "mode": null,
+     "missing": [
+      "L-eg",
+      "L-ss",
+      "L-iid-0.05",
+      "L-iid-0.2",
+      "L-co"
+     ]
+    }
+   },
+   "scen_a5_10GBps": {
+    "101": {
+     "W0": null,
+     "mode": null,
+     "missing": [
+      "L-eg",
+      "L-ss",
+      "L-iid-0.05",
+      "L-iid-0.2",
+      "L-co"
+     ]
+    }
+   },
+   "scen_a5_2GBps": {
+    "101": {
+     "W0": null,
+     "mode": null,
+     "missing": [
+      "L-eg",
+      "L-ss",
+      "L-iid-0.05",
+      "L-iid-0.2",
+      "L-co"
+     ]
+    }
+   },
+   "scen_cold_wan_10gbps": {
+    "101": {
+     "W0": null,
+     "mode": null,
+     "missing": [
+      "L-eg",
+      "L-ss",
+      "L-iid-0.05",
+      "L-iid-0.2",
+      "L-co"
+     ]
+    }
+   },
+   "scen_cold_wan_1gbps": {
+    "101": {
+     "W0": 1.004243229220195,
+     "mode": "L-iid-0.2",
+     "missing": []
+    }
+   },
+   "fee4": {
+    "101": {
+     "W0": null,
+     "mode": null,
+     "missing": [
+      "L-eg",
+      "L-ss",
+      "L-iid-0.05",
+      "L-iid-0.2",
+      "L-co"
+     ]
+    }
+   },
+   "fee8": {
+    "101": {
+     "W0": null,
+     "mode": null,
+     "missing": [
+      "L-eg",
+      "L-ss",
+      "L-iid-0.05",
+      "L-iid-0.2",
+      "L-co"
+     ]
+    }
+   },
+   "fee16": {
+    "101": {
+     "W0": 1.0458618877819823,
+     "mode": "L-iid-0.2",
+     "missing": []
+    }
+   }
+  }
+ },
+ "reused_default_W0": {
+  "Sublet": {
+   "101": null
+  },
+  "A9": {
+   "101": null
+  },
+  "BL1-BO": {
+   "101": null
+  },
+  "BL5-cur": {
+   "101": null
+  },
+  "BL4": {
+   "101": null
+  }
+ },
+ "checks": {
+  "S1v2-W1": {
+   "status": "missing",
+   "claim": "every W0 run finishes with status ok, no run raised, every run of the grid exists"
+  },
+  "S1v2-W2": {
+   "status": "missing",
+   "claim": "the guard facts of S1v2-2 on part w0's Sublet runs"
+  }
+ }
+}

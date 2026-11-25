@@ -1,0 +1,79 @@
+A. OPT when R < lam: cold reclaim, then protected at R (tau = 0, beta = 1)
+   alpha=0.0 ap=0.6 mu=0.25 lam=3.0 R=2.5 x=10.0: pre-fix OPT 7.0000, with cold-then-protected 6.7500
+   cold-then-protected beats protected-from-0 iff R > (beta+mu)/(ap-alpha); it needs R < lam (else pre-warm is cheaper).
+   scan: min over 168 parameter sets of (beta+mu)/(ap-alpha) - lam = +0.875 (> 0: the corner never occurs)
+   hstar table: min over 30 parameter sets of (beta+mu)/(ap-alpha) - lam = +2.214 (> 0: the corner never occurs)
+   Table PoR: min over 9 parameter sets of (beta+mu)/(ap-alpha) - lam = +2.750 (> 0: the corner never occurs)
+   Table R: min over 18 parameter sets of (beta+mu)/(ap-alpha) - lam = +3.250 (> 0: the corner never occurs)
+   P7: min over 12 parameter sets of (beta+mu)/(ap-alpha) - lam = +2.000 (> 0: the corner never occurs)
+   P10: min over 2 parameter sets of (beta+mu)/(ap-alpha) - lam = +5.500 (> 0: the corner never occurs)
+   t4_exact / model_hstar_fine: min over 10 parameter sets of (beta+mu)/(ap-alpha) - lam = +3.833 (> 0: the corner never occurs)
+
+B. tau > 0: second revocable lease (beta = 1)
+   alpha=0.0 ap=0.8 mu=2.0 lam=0.5 tau=1.0 R=3.0 x=3.5: one-lease OPT 2.4000; two leases (second committed at 2.50, ends 3.50) 2.0000; one-lease OPT is 20.0% higher
+   alpha=0.0 ap=0.8 mu=2.0 lam=0.0 tau=1.0 R=3.0 x=3.9: one-lease OPT 2.7200; two leases (second committed at 2.95, ends 3.95) 2.0000; one-lease OPT is 36.0% higher
+   alpha=0.3 ap=0.8 mu=2.0 lam=0.0 tau=1.0 R=3.0 x=3.9: one-lease OPT 3.6200; two leases (second committed at 2.95, ends 3.95) 3.1700; one-lease OPT is 14.2% higher
+   alpha=0.3 ap=0.7 mu=2.0 lam=0.5 tau=1.0 R=3.0 x=3.5: one-lease OPT 3.2500; two leases (second committed at 2.50, ends 3.50) 3.0500; one-lease OPT is 6.6% higher
+
+C. F2 for tau > H (beta = 1): literal instance R = s + H vs the families.py instance R = E = s + tau
+   alpha=0.3 ap=0.7 mu=1.0 lam=0.0 tau=1.0 H=0.0 s=2.0 x=3.25: cold cost 4.5500; OPT(R=s+H) 3.2500 -> ratio 1.4000; OPT(R=E) 3.0750 -> ratio 1.4797
+   alpha=0.3 ap=0.7 mu=1.0 lam=0.0 tau=1.0 H=0.0 s=2.0 x=3.5: cold cost 4.8000; OPT(R=s+H) 3.4500 -> ratio 1.3913; OPT(R=E) 3.2500 -> ratio 1.4769
+   alpha=0.0 ap=0.6 mu=2.0 lam=0.5 tau=1.0 H=0.25 s=1.0 x=2.25: cold cost 4.2500; OPT(R=s+H) 2.2500 -> ratio 1.8889; OPT(R=E) 2.1500 -> ratio 1.9767
+   alpha=0.0 ap=0.6 mu=2.0 lam=0.5 tau=1.0 H=0.25 s=1.0 x=2.5: cold cost 4.5000; OPT(R=s+H) 2.5000 -> ratio 1.8000; OPT(R=E) 2.3000 -> ratio 1.9565
+
+D. Two-family closed form with m = mu at H >= lam > 0 (beta = 1)
+   alpha=0.1 ap=0.5363 mu=4.0 lam=0.1 H=0.1: quad(m=mu)=2.8396 (s*=2.569); algorithm buying at s0=1.111 and pre-warming: max(F1, F2_warm) = 2.8000; quad(m=min(mu,beta))=2.1834; rigorous F1/F2 bound (interval) 2.7999
+   alpha=0.3 ap=0.7000 mu=2.0 lam=0.5 H=0.5: quad(m=mu)=1.9500 (s*=2.289); algorithm buying at s0=1.429 and pre-warming: max(F1, F2_warm) = 2.4000; quad(m=min(mu,beta))=1.7702; rigorous F1/F2 bound (interval) 1.9500
+   alpha=0.3 ap=0.7000 mu=2.0 lam=0.5 H=1.0: quad(m=mu)=1.8198 (s*=1.806); algorithm buying at s0=1.429 and pre-warming: max(F1, F2_warm) = 2.2670; quad(m=min(mu,beta))=1.7000; rigorous F1/F2 bound (interval) 1.8197
+   (first row: an algorithm exists in the F1/F2 game with value below quad(m=mu), so m = mu is not implied; quad(m=min(mu,beta)) <= rigorous bound in every row)
+
+E. Section 9 rule H = mu/(2(1-alpha)) (lam > 0, mu <= 2 beta) vs Theorem 4; rigorous F1/F2 bound on CR*(H)
+   alpha=0.3333 ap=0.6000 mu=2.0 lam=0.5: rule 1.5000, Theorem 4 H*=2.0000, Cor 5.3 proviso holds: False; H=1.5000: LB-(2-a)=+0.10952; H=1.7500: LB-(2-a)=+0.05431; H=2.0000: LB-(2-a)=-0.00006
+   alpha=0.2000 ap=0.5556 mu=2.0 lam=0.5: rule 1.2500, Theorem 4 H*=1.5000, Cor 5.3 proviso holds: False; H=1.2500: LB-(2-a)=+0.08060; H=1.3750: LB-(2-a)=+0.03988; H=1.5000: LB-(2-a)=-0.00008
+   alpha=0.4000 ap=0.6500 mu=2.0 lam=0.5: rule 1.6667, Theorem 4 H*=2.0833, Cor 5.3 proviso holds: False; H=1.6667: LB-(2-a)=+0.02500; H=1.8750: LB-(2-a)=+0.02500; H=2.0833: LB-(2-a)=-0.00006
+   alpha=0.3333 ap=0.8000 mu=2.0 lam=0.5: rule 1.5000, Theorem 4 H*=1.5000, Cor 5.3 proviso holds: True; H=1.5000: LB-(2-a)=-0.00007; H=1.5000: LB-(2-a)=-0.00007; H=1.5000: LB-(2-a)=-0.00007
+   proviso at mu = 2 beta reads ap >= (2+a-a^2)/(2(2-a)):
+     alpha=0.2000: proviso bound 0.6000, (C) floor 0.5556; H* at the bound 1.2500 (rule 1.2500); H* at bound-0.001 1.2551
+     alpha=0.3000: proviso bound 0.6500, (C) floor 0.5882; H* at the bound 1.4286 (rule 1.4286); H* at bound-0.001 1.4346
+     alpha=0.3333: proviso bound 0.6667, (C) floor 0.6000; H* at the bound 1.5000 (rule 1.5000); H* at bound-0.001 1.5064
+     alpha=0.4000: proviso bound 0.7000, (C) floor 0.6400; H* at the bound 1.6667 (rule 1.6667); H* at bound-0.001 1.6741
+     alpha=0.5000: proviso bound 0.7500, (C) floor 0.7500; H* at the bound 2.0000 (rule 2.0000); H* at bound-0.001 2.0096
+
+F. Theorem 4 without alpha <= 1/2: random check of the two inequalities that could need it
+   (i) mu <= beta  =>  H(R_cold) <= max(lam, H(R_warm)): violations 0 / 200000 (alpha up to 0.97)
+   (ii) mu < beta/(2-a), R_cold < R_wait  =>  R_cold <= ((1-a)beta + (2-a)mu)/(1-a)^2: violations 0 / 200000
+
+G. Switch cost bw: substitution formula vs exact thresholds (out/model_switch_cost.txt; grid 0.05, alpha = 1/3, ap = 0.8)
+   mu=2.0 lam=0.25 bw=1.0: formula 1.5000 (grid 1.50) exact 1.50 ok
+   mu=2.0 lam=0.5 bw=1.0: formula 1.5000 (grid 1.50) exact 1.50 ok
+   mu=2.0 lam=1.0 bw=1.0: formula 1.5000 (grid 1.50) exact 1.50 ok
+   mu=2.0 lam=0.25 bw=0.6: formula 4.4500 (grid 4.45) exact 4.45 ok
+   mu=2.0 lam=0.5 bw=0.6: formula 4.7000 (grid 4.70) exact 4.70 ok
+   mu=2.0 lam=1.0 bw=0.6: formula 5.2000 (grid 5.20) exact 5.20 ok
+   mu=2.0 lam=0.25 bw=0.2: formula 1.1500 (grid 1.15) exact 1.15 ok
+   mu=2.0 lam=0.5 bw=0.2: formula 1.4000 (grid 1.40) exact 1.40 ok
+   mu=2.0 lam=1.0 bw=0.2: formula 1.9000 (grid 1.90) exact 1.90 ok
+   mu=1.0 lam=0.25 bw=1.0: formula 0.7500 (grid 0.75) exact 0.75 ok
+   mu=1.0 lam=0.5 bw=1.0: formula 0.7500 (grid 0.75) exact 0.75 ok
+   mu=1.0 lam=0.25 bw=0.2: formula 1.1500 (grid 1.15) exact 1.15 ok
+   mu=1.0 lam=0.5 bw=0.2: formula 1.4000 (grid 1.40) exact 1.40 ok
+   mu=1.5 lam=0.5 bw=0.8: formula 1.1250 (grid 1.15) exact 1.15 ok
+   mu=1.6 lam=0.5 bw=0.8: formula 1.2000 (grid 1.20) exact 1.20 ok
+   mu=2.0 lam=0.5 bw=0.8: formula 4.5000 (grid 4.50) exact 4.50 ok
+   agree: 16 / 16
+   proof check, bw=0.2, lam=0.25: rho = warm, R_warm=2.6500 <= R_wait=3.7500; ALG* wait branch needs R <= 2.2500; at R=2.4500, x=R^+: (R+beta)/(beta+bw+alpha R) = 1.7107 > 2-alpha = 1.6667 (the substituted formula matches the exact game, but the ALG* of the Theorem 4 proof does not carry over)
+
+H. a5 calibration: startup = weights / load bandwidth + engine_init (assumed); drain = p99 remaining tokens x TPOT (assumed)
+   llama3-8b: startup {'2': 68.0, '10': 61.6} = recomputed {'2': 68.0, '10': 61.6}; drain p99 12.2 s (TPOT 0.015 s); mu_noNotice_over_Bsetup 0.134
+   llama3-70b: startup {'2': 130.0, '10': 74.0} = recomputed {'2': 130.0, '10': 74.0}; drain p99 28.5 s (TPOT 0.035 s); mu_noNotice_over_Bsetup 0.233
+   llama3.1-405b: startup {'2': 465.0, '10': 141.0} = recomputed {'2': 465.0, '10': 141.0}; drain p99 48.8 s (TPOT 0.06 s); mu_noNotice_over_Bsetup 0.196
+   in-flight source: AzureLLMInferenceTrace_conv_1week.csv; engine_init_s = 60 (assumption)
+
+I. P7: RRL, alpha = 0, H = 0: 1 + sqrt(1 + mu) = 2.2247 (mu=0.5), 2.4142 (mu=1), 2.7321 (mu=2), 3.2361 (mu=4)
+
+J. Scan rows of kind A (mu = 4 beta, long notice, tau = 0): does the known-window family F3 close the gap?
+   (uses audit/necessity_lb.lb_all, the interval F1/F2/F3 bound of audit A; exact values from out/scan_compare.csv)
+   alpha=0.0 ap=1.0 mu=4.0 lam=0.0 H=2.0 RRL=True: exact (dt=0.1) 2.4000; F1/F2 bound 1.9999; F1/F2/F3 bound 2.3900 (binding F3)
+   alpha=0.3 ap=1.0 mu=4.0 lam=0.0 H=3.0 RRL=True: exact (dt=0.1) 1.7972; F1/F2 bound 1.6999; F1/F2/F3 bound 1.7994 (binding F3)
+   alpha=0.2 ap=0.8 mu=4.0 lam=0.5 H=3.0 RRL=False: exact (dt=0.1) 2.0976; F1/F2 bound 2.0440; F1/F2/F3 bound 2.0794 (binding F3)
+   alpha=0.2 ap=0.6 mu=4.0 lam=0.5 H=3.0 RRL=False: exact (dt=0.1) 2.0843; F1/F2 bound 2.0440; F1/F2/F3 bound 2.0660 (binding F3)

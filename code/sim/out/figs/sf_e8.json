@@ -1,0 +1,396 @@
+{
+ "figure": "sf_e8",
+ "size_in": [
+  3.4869,
+  2.2
+ ],
+ "sources": [
+  "code/sim/out/e8/summary.json"
+ ],
+ "data": {
+  "a": {
+   "S": {
+    "win": [
+     5.0,
+     15.0,
+     60.0
+    ],
+    "median": [
+     0.20803828684805137,
+     0.24911440710970378,
+     0.3108866420337717
+    ],
+    "min": [
+     0.19819584443668758,
+     0.2433700077575355,
+     0.3053924715947072
+    ],
+    "max": [
+     0.21758437149096574,
+     0.2581718356747321,
+     0.31984723091572365
+    ],
+    "n": [
+     4,
+     4,
+     4
+    ],
+    "note": [
+     null,
+     null,
+     null
+    ]
+   },
+   "M": {
+    "win": [
+     5.0,
+     15.0,
+     60.0
+    ],
+    "median": [
+     0.16713966424589546,
+     0.20538488092215645,
+     0.27455282303646955
+    ],
+    "min": [
+     0.15929497968351375,
+     0.20462624136092714,
+     0.26824449223846436
+    ],
+    "max": [
+     0.1731173000824287,
+     0.21297653838381678,
+     0.2786253731331351
+    ],
+    "n": [
+     4,
+     4,
+     4
+    ],
+    "note": [
+     null,
+     null,
+     null
+    ]
+   },
+   "L": {
+    "win": [
+     5.0,
+     15.0,
+     60.0
+    ],
+    "median": [
+     0.08908017604520024,
+     0.14394371773274217,
+     0.2228917622224234
+    ],
+    "min": [
+     0.07666167270919773,
+     0.13497445644075293,
+     0.2189001019976763
+    ],
+    "max": [
+     0.10326213446475864,
+     0.1523623852765105,
+     0.23563717067268797
+    ],
+    "n": [
+     4,
+     4,
+     4
+    ],
+    "note": [
+     null,
+     null,
+     null
+    ]
+   }
+  },
+  "b": {
+   "off": {
+    "win": [
+     5.0,
+     15.0,
+     60.0
+    ],
+    "error": [
+     0.032533254968370284,
+     0.05580623845605037,
+     -0.2217674293369885
+    ],
+    "hit_ratio": [
+     null,
+     null,
+     null
+    ],
+    "C_fluid": [
+     168.01066162905155,
+     171.32384712232255,
+     195.41613862519412
+    ],
+    "C_replay": [
+     173.66039969007795,
+     181.44988253488677,
+     159.9454478265473
+    ],
+    "lease": [
+     29.595882715444326,
+     18.262483830067758,
+     20.939505322480123
+    ],
+    "replay": [
+     {
+      "routing": 0.6806712412917779,
+      "fallback": 142.95220510834181,
+      "stranding": 0.431640625
+     },
+     {
+      "routing": 0.14576222674466197,
+      "fallback": 162.62523022807437,
+      "stranding": 0.41640625000000003
+     },
+     {
+      "routing": 0.4522638574802869,
+      "fallback": 138.34039739658692,
+      "stranding": 0.21328125
+     }
+    ],
+    "hour": [
+     {
+      "index": 62,
+      "start_s": 223200
+     },
+     {
+      "index": 62,
+      "start_s": 223200
+     },
+     {
+      "index": 63,
+      "start_s": 226800
+     }
+    ],
+    "note": [
+     null,
+     null,
+     null
+    ]
+   },
+   "on": {
+    "win": [
+     5.0,
+     15.0,
+     60.0
+    ],
+    "error": [
+     -4.676825497804015,
+     -8.381190900235122,
+     -8.332414286568678
+    ],
+    "hit_ratio": [
+     0.36571005434628817,
+     0.36424137128110595,
+     0.36604763678529567
+    ],
+    "C_fluid": [
+     168.01066162905155,
+     171.32384712232255,
+     195.41613862519412
+    ],
+    "C_replay": [
+     29.595882715444343,
+     18.26248383006774,
+     20.939505322480095
+    ],
+    "lease": [
+     29.595882715444326,
+     18.262483830067758,
+     20.939505322480123
+    ],
+    "replay": [
+     {
+      "routing": 0.0,
+      "fallback": 0.0,
+      "stranding": 0.0
+     },
+     {
+      "routing": 0.0,
+      "fallback": 0.0,
+      "stranding": 0.0
+     },
+     {
+      "routing": 0.0,
+      "fallback": 0.0,
+      "stranding": 0.0
+     }
+    ],
+    "hour": [
+     {
+      "index": 62,
+      "start_s": 223200
+     },
+     {
+      "index": 62,
+      "start_s": 223200
+     },
+     {
+      "index": 63,
+      "start_s": 226800
+     }
+    ],
+    "note": [
+     null,
+     null,
+     null
+    ]
+   }
+  },
+  "mu_all": {
+   "S": {
+    "5": {
+     "0.2": 0.20741096422190497,
+     "0.5": 0.20764637507162817,
+     "1": 0.20803828684805137,
+     "2": 0.20793968775293264
+    },
+    "15": {
+     "0.2": 0.24884437444567437,
+     "0.5": 0.24894569160043686,
+     "1": 0.24911440710970378,
+     "2": 0.24799058670516455
+    },
+    "60": {
+     "0.2": 0.31088449276805474,
+     "0.5": 0.31088529780151963,
+     "1": 0.3108866420337717,
+     "2": 0.3098551558841969
+    }
+   },
+   "M": {
+    "5": {
+     "0.2": 0.1662682298836448,
+     "0.5": 0.1665953353999805,
+     "1": 0.16713966424589546,
+     "2": 0.16729905716999355
+    },
+    "15": {
+     "0.2": 0.20485089998612682,
+     "0.5": 0.2050512882957552,
+     "1": 0.20538488092215645,
+     "2": 0.20539093730677477
+    },
+    "60": {
+     "0.2": 0.2746085231161553,
+     "0.5": 0.2745876213959594,
+     "1": 0.27455282303646955,
+     "2": 0.274751331888873
+    }
+   },
+   "L": {
+    "5": {
+     "0.2": 0.08752795235849495,
+     "0.5": 0.08825919338521188,
+     "1": 0.08908017604520024,
+     "2": 0.09148474553834932
+    },
+    "15": {
+     "0.2": 0.14139318894069564,
+     "0.5": 0.14256639894197265,
+     "1": 0.14394371773274217,
+     "2": 0.14777837861546653
+    },
+    "60": {
+     "0.2": 0.22196829404611176,
+     "0.5": 0.22258525322380296,
+     "1": 0.2228917622224234,
+     "2": 0.22515922118172216
+    }
+   }
+  },
+  "off_scale": [
+   {
+    "panel": "b",
+    "prefix": "on",
+    "win": 5.0,
+    "error": -4.676825497804015
+   },
+   {
+    "panel": "b",
+    "prefix": "on",
+    "win": 15.0,
+    "error": -8.381190900235122
+   },
+   {
+    "panel": "b",
+    "prefix": "on",
+    "win": 60.0,
+    "error": -8.332414286568678
+   }
+  ],
+  "floor": -1.0,
+  "global_hit_ratio": 0.3664124783362218,
+  "windows": [
+   5.0,
+   15.0,
+   60.0
+  ],
+  "labels": {
+   "x": "Smoothing window (min)",
+   "y": "Relative cost error $E$",
+   "titles": {
+    "a": "Azure 2024 week, per LLM tier",
+    "b": "Mooncake hour, tier M"
+   },
+   "tier": "Tier {}",
+   "tier_end": "{}",
+   "prefix": {
+    "off": "No prefix hits",
+    "on": "Prefix hits"
+   },
+   "all_off_scale": "{} (off scale)",
+   "off_scale": "values below -1 are drawn as an arrow to the axis floor at -1 with the value printed above it; a min-max bar whose minimum lies below -1 ends there in an arrowhead (its value in off_scale)",
+   "hour": "replayed through the placements of each window's fluid run in its hour of largest fluid overflow: {hours}",
+   "note": "E = (C_replay - C_fluid) / C_replay, overflow accounting; (a) Two-timescale PD's fluid runs replayed with the Azure 2024 conversation week at mu/beta~ = 1, median over the alignments with min-max bars, the tiers S, M, L labeled at the line ends; (b) the Mooncake conversation hour, tier M, mu/beta~ = 1, alignment 1, replayed through the placements of each window's fluid run in its hour of largest fluid overflow: hour 62 of the week (counted from 0) at 5 and 15 min, hour 63 at 60 min; (b) with prefix hits the replayed hour has no routing, fallback or stranding cost at any window, so C_replay is the lease cost alone (29.6, 18.3, 20.9 at 5, 15, 60 min, against C_fluid 168, 171, 195); each replica keeps an infinite prefix cache, and the replayed block-hit ratio is 0.364-0.366, against the trace's infinite-cache ratio 0.366, an upper bound on any replica-level ratio (E8-5)"
+  },
+  "meta": {
+   "git_revision": "939847ca5925ce069d6df9089fe3a3d1d3207bb7",
+   "reduced": false,
+   "grid": {
+    "tiers": [
+     "S",
+     "M",
+     "L"
+    ],
+    "windows": [
+     5,
+     15,
+     60
+    ],
+    "mus": [
+     1.0,
+     0.2,
+     0.5,
+     2.0
+    ],
+    "alignments": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "alignments_design": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "policy_seed": 0,
+    "horizon_min": 10080,
+    "market_tightness": 0.5,
+    "fast_min": 1
+   }
+  },
+  "sources": [
+   "code/sim/out/e8/summary.json"
+  ]
+ }
+}

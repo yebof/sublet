@@ -1,0 +1,5512 @@
+{
+ "meta": {
+  "exp": "e7c",
+  "git_revision": "44d1b4e42b5be44503039b1b5d6bfba8e32930ff",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "scipy": "1.17.1",
+   "sublet": "0.1.0"
+  },
+  "written": "2026-11-09T08:38:10",
+  "script": "code/sim/sublet/experiments/e7c.py",
+  "script_sha256": "66503b498552f444c3a9864c762c7835eca38a6de38d9edbbea0b24e2043ff0e"
+ },
+ "jobs": [
+  {
+   "id": "e7c:lag:k=week:tag=Sublet-lag:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "Sublet-lag",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 1233.3999999999999,
+   "status": "ok",
+   "wall_s": 2115.853885333985,
+   "peak_rss_mb": 463.58203125,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=A9-lag:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "A9-lag",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 200.20000000000002,
+   "status": "ok",
+   "wall_s": 297.0210848241113,
+   "peak_rss_mb": 208.59765625,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1-lag:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1-lag",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 108.60000000000001,
+   "status": "ok",
+   "wall_s": 327.56175109092146,
+   "peak_rss_mb": 237.9609375,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1-BO-lag:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1-BO-lag",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 108.60000000000001,
+   "status": "ok",
+   "wall_s": 94.88304069498554,
+   "peak_rss_mb": 161.83984375,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL2-lag:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL2-lag",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 181.4,
+   "status": "ok",
+   "wall_s": 292.97694024816155,
+   "peak_rss_mb": 264.27734375,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL3-0-lag:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL3-0-lag",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 105.8,
+   "status": "ok",
+   "wall_s": 264.46133608929813,
+   "peak_rss_mb": 233.11328125,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL4-lag:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL4-lag",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 200.29999999999998,
+   "status": "ok",
+   "wall_s": 236.33967848913744,
+   "peak_rss_mb": 178.4375,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL5-tau60-lag:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL5-tau60-lag",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 93.2,
+   "status": "ok",
+   "wall_s": 136.5784123488702,
+   "peak_rss_mb": 157.62109375,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL5N-lag:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL5N-lag",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 93.2,
+   "status": "ok",
+   "wall_s": 171.09772304212674,
+   "peak_rss_mb": 171.5078125,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1N-lag:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1N-lag",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 200.20000000000002,
+   "status": "ok",
+   "wall_s": 405.61473042704165,
+   "peak_rss_mb": 228.25,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1-GP-lag:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1-GP-lag",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 1189.3999999999999,
+   "status": "ok",
+   "wall_s": 2089.6955334418453,
+   "peak_rss_mb": 430.828125,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=Sublet-lag:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "Sublet-lag",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 1233.3999999999999,
+   "status": "ok",
+   "wall_s": 1767.1249463381246,
+   "peak_rss_mb": 459.37109375,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=A9-lag:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "A9-lag",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 200.20000000000002,
+   "status": "ok",
+   "wall_s": 341.1128485770896,
+   "peak_rss_mb": 198.16015625,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1-lag:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1-lag",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 108.60000000000001,
+   "status": "ok",
+   "wall_s": 309.3257369478233,
+   "peak_rss_mb": 221.2265625,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1-BO-lag:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1-BO-lag",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 108.60000000000001,
+   "status": "ok",
+   "wall_s": 83.33456557616591,
+   "peak_rss_mb": 160.6640625,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL2-lag:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL2-lag",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 181.4,
+   "status": "ok",
+   "wall_s": 238.34421301912516,
+   "peak_rss_mb": 248.48828125,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL3-0-lag:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL3-0-lag",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 105.8,
+   "status": "ok",
+   "wall_s": 212.42896637599915,
+   "peak_rss_mb": 217.8203125,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL4-lag:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL4-lag",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 200.29999999999998,
+   "status": "ok",
+   "wall_s": 232.38551359530538,
+   "peak_rss_mb": 176.31640625,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL5-tau60-lag:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL5-tau60-lag",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 93.2,
+   "status": "ok",
+   "wall_s": 124.53377787116915,
+   "peak_rss_mb": 154.3828125,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL5N-lag:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL5N-lag",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 93.2,
+   "status": "ok",
+   "wall_s": 162.70287657575682,
+   "peak_rss_mb": 163.64453125,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1N-lag:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1N-lag",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 200.20000000000002,
+   "status": "ok",
+   "wall_s": 411.3497881521471,
+   "peak_rss_mb": 216.6875,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1-GP-lag:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1-GP-lag",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 1189.3999999999999,
+   "status": "ok",
+   "wall_s": 1726.1585522498935,
+   "peak_rss_mb": 430.0390625,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=Sublet-lag:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "Sublet-lag",
+    "c": 303,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 1233.3999999999999,
+   "status": "ok",
+   "wall_s": 1278.1766083906405,
+   "peak_rss_mb": 445.34375,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=A9-lag:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "A9-lag",
+    "c": 303,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 200.20000000000002,
+   "status": "ok",
+   "wall_s": 192.48706357600167,
+   "peak_rss_mb": 180.1171875,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1-lag:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1-lag",
+    "c": 303,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 108.60000000000001,
+   "status": "ok",
+   "wall_s": 174.91886371793225,
+   "peak_rss_mb": 201.78125,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1-BO-lag:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1-BO-lag",
+    "c": 303,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 108.60000000000001,
+   "status": "ok",
+   "wall_s": 63.85308731626719,
+   "peak_rss_mb": 158.82421875,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL2-lag:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL2-lag",
+    "c": 303,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 181.4,
+   "status": "ok",
+   "wall_s": 218.06704529374838,
+   "peak_rss_mb": 233.859375,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL3-0-lag:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL3-0-lag",
+    "c": 303,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 105.8,
+   "status": "ok",
+   "wall_s": 149.14731396827847,
+   "peak_rss_mb": 201.48828125,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL4-lag:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL4-lag",
+    "c": 303,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 200.29999999999998,
+   "status": "ok",
+   "wall_s": 209.71438756817952,
+   "peak_rss_mb": 175.55078125,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL5-tau60-lag:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL5-tau60-lag",
+    "c": 303,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 93.2,
+   "status": "ok",
+   "wall_s": 85.29548611305654,
+   "peak_rss_mb": 152.73046875,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL5N-lag:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL5N-lag",
+    "c": 303,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 93.2,
+   "status": "ok",
+   "wall_s": 118.19639115408063,
+   "peak_rss_mb": 157.8203125,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1N-lag:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1N-lag",
+    "c": 303,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 200.20000000000002,
+   "status": "ok",
+   "wall_s": 274.23968500923365,
+   "peak_rss_mb": 200.26953125,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1-GP-lag:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1-GP-lag",
+    "c": 303,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 1189.3999999999999,
+   "status": "ok",
+   "wall_s": 1192.3550556912087,
+   "peak_rss_mb": 424.734375,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=Sublet-lag:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "Sublet-lag",
+    "c": 304,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 1233.3999999999999,
+   "status": "ok",
+   "wall_s": 1348.5146698271856,
+   "peak_rss_mb": 436.53125,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=A9-lag:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "A9-lag",
+    "c": 304,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 200.20000000000002,
+   "status": "ok",
+   "wall_s": 190.35627453308553,
+   "peak_rss_mb": 175.765625,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1-lag:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1-lag",
+    "c": 304,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 108.60000000000001,
+   "status": "ok",
+   "wall_s": 153.12240925291553,
+   "peak_rss_mb": 194.6953125,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1-BO-lag:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1-BO-lag",
+    "c": 304,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 108.60000000000001,
+   "status": "ok",
+   "wall_s": 76.35989213408902,
+   "peak_rss_mb": 158.58203125,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL2-lag:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL2-lag",
+    "c": 304,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 181.4,
+   "status": "ok",
+   "wall_s": 209.92794290790334,
+   "peak_rss_mb": 225.2734375,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL3-0-lag:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL3-0-lag",
+    "c": 304,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 105.8,
+   "status": "ok",
+   "wall_s": 141.01563389692456,
+   "peak_rss_mb": 194.140625,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL4-lag:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL4-lag",
+    "c": 304,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 200.29999999999998,
+   "status": "ok",
+   "wall_s": 229.84030574792996,
+   "peak_rss_mb": 173.5390625,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL5-tau60-lag:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL5-tau60-lag",
+    "c": 304,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 93.2,
+   "status": "ok",
+   "wall_s": 104.39442300610244,
+   "peak_rss_mb": 153.20703125,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL5N-lag:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL5N-lag",
+    "c": 304,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 93.2,
+   "status": "ok",
+   "wall_s": 129.23696648003533,
+   "peak_rss_mb": 156.57421875,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1N-lag:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1N-lag",
+    "c": 304,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 200.20000000000002,
+   "status": "ok",
+   "wall_s": 256.59494074620306,
+   "peak_rss_mb": 193.9921875,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1-GP-lag:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1-GP-lag",
+    "c": 304,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 1189.3999999999999,
+   "status": "ok",
+   "wall_s": 1274.1883646151982,
+   "peak_rss_mb": 420.51953125,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=Sublet-lag:c=305",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "Sublet-lag",
+    "c": 305,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 1233.3999999999999,
+   "status": "ok",
+   "wall_s": 1811.2338841538876,
+   "peak_rss_mb": 446.7890625,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=A9-lag:c=305",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "A9-lag",
+    "c": 305,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 200.20000000000002,
+   "status": "ok",
+   "wall_s": 250.3273947527632,
+   "peak_rss_mb": 187.65625,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1-lag:c=305",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1-lag",
+    "c": 305,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 108.60000000000001,
+   "status": "ok",
+   "wall_s": 213.55280442303047,
+   "peak_rss_mb": 207.4453125,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1-BO-lag:c=305",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1-BO-lag",
+    "c": 305,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 108.60000000000001,
+   "status": "ok",
+   "wall_s": 87.51213086443022,
+   "peak_rss_mb": 161.0078125,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL2-lag:c=305",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL2-lag",
+    "c": 305,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 181.4,
+   "status": "ok",
+   "wall_s": 246.71884142095223,
+   "peak_rss_mb": 238.5234375,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL3-0-lag:c=305",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL3-0-lag",
+    "c": 305,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 105.8,
+   "status": "ok",
+   "wall_s": 188.63847821298987,
+   "peak_rss_mb": 205.8984375,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL4-lag:c=305",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL4-lag",
+    "c": 305,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 200.29999999999998,
+   "status": "ok",
+   "wall_s": 238.6767555871047,
+   "peak_rss_mb": 176.68359375,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL5-tau60-lag:c=305",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL5-tau60-lag",
+    "c": 305,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 93.2,
+   "status": "ok",
+   "wall_s": 114.07409816794097,
+   "peak_rss_mb": 153.6875,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL5N-lag:c=305",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL5N-lag",
+    "c": 305,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 93.2,
+   "status": "ok",
+   "wall_s": 145.7667888388969,
+   "peak_rss_mb": 159.5625,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1N-lag:c=305",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1N-lag",
+    "c": 305,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 200.20000000000002,
+   "status": "ok",
+   "wall_s": 336.96256107091904,
+   "peak_rss_mb": 207.89453125,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1-GP-lag:c=305",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1-GP-lag",
+    "c": 305,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 1189.3999999999999,
+   "status": "ok",
+   "wall_s": 1662.1834702990018,
+   "peak_rss_mb": 423.40234375,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=Sublet-lag:c=306",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "Sublet-lag",
+    "c": 306,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 1233.3999999999999,
+   "status": "ok",
+   "wall_s": 1153.108316404745,
+   "peak_rss_mb": 443.63671875,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=A9-lag:c=306",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "A9-lag",
+    "c": 306,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 200.20000000000002,
+   "status": "ok",
+   "wall_s": 197.999072374776,
+   "peak_rss_mb": 180.92578125,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1-lag:c=306",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1-lag",
+    "c": 306,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 108.60000000000001,
+   "status": "ok",
+   "wall_s": 168.9348805625923,
+   "peak_rss_mb": 199.9765625,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1-BO-lag:c=306",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1-BO-lag",
+    "c": 306,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 108.60000000000001,
+   "status": "ok",
+   "wall_s": 77.79071392817423,
+   "peak_rss_mb": 160.890625,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL2-lag:c=306",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL2-lag",
+    "c": 306,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 181.4,
+   "status": "ok",
+   "wall_s": 218.71284516900778,
+   "peak_rss_mb": 229.90625,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL3-0-lag:c=306",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL3-0-lag",
+    "c": 306,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 105.8,
+   "status": "ok",
+   "wall_s": 165.40820352220908,
+   "peak_rss_mb": 200.08984375,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL4-lag:c=306",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL4-lag",
+    "c": 306,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 200.29999999999998,
+   "status": "ok",
+   "wall_s": 227.34455108037218,
+   "peak_rss_mb": 176.0703125,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL5-tau60-lag:c=306",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL5-tau60-lag",
+    "c": 306,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 93.2,
+   "status": "ok",
+   "wall_s": 102.99756496073678,
+   "peak_rss_mb": 153.46875,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL5N-lag:c=306",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL5N-lag",
+    "c": 306,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 93.2,
+   "status": "ok",
+   "wall_s": 154.8081595939584,
+   "peak_rss_mb": 158.015625,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1N-lag:c=306",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1N-lag",
+    "c": 306,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 200.20000000000002,
+   "status": "ok",
+   "wall_s": 317.6733387829736,
+   "peak_rss_mb": 199.22265625,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1-GP-lag:c=306",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1-GP-lag",
+    "c": 306,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 1189.3999999999999,
+   "status": "ok",
+   "wall_s": 1297.1435213438235,
+   "peak_rss_mb": 421.796875,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=Sublet-lag:c=307",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "Sublet-lag",
+    "c": 307,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 1233.3999999999999,
+   "status": "ok",
+   "wall_s": 1680.313245472964,
+   "peak_rss_mb": 450.78125,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=A9-lag:c=307",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "A9-lag",
+    "c": 307,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 200.20000000000002,
+   "status": "ok",
+   "wall_s": 247.51502185873687,
+   "peak_rss_mb": 190.10546875,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1-lag:c=307",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1-lag",
+    "c": 307,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 108.60000000000001,
+   "status": "ok",
+   "wall_s": 274.0755698699504,
+   "peak_rss_mb": 214.47265625,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1-BO-lag:c=307",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1-BO-lag",
+    "c": 307,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 108.60000000000001,
+   "status": "ok",
+   "wall_s": 97.53702321229503,
+   "peak_rss_mb": 160.5390625,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL2-lag:c=307",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL2-lag",
+    "c": 307,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 181.4,
+   "status": "ok",
+   "wall_s": 315.4321894678287,
+   "peak_rss_mb": 242.421875,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL3-0-lag:c=307",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL3-0-lag",
+    "c": 307,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 105.8,
+   "status": "ok",
+   "wall_s": 251.4432044592686,
+   "peak_rss_mb": 212.1171875,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL4-lag:c=307",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL4-lag",
+    "c": 307,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 200.29999999999998,
+   "status": "ok",
+   "wall_s": 270.75847393879667,
+   "peak_rss_mb": 173.58203125,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL5-tau60-lag:c=307",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL5-tau60-lag",
+    "c": 307,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 93.2,
+   "status": "ok",
+   "wall_s": 145.8682159781456,
+   "peak_rss_mb": 153.0703125,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL5N-lag:c=307",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL5N-lag",
+    "c": 307,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 93.2,
+   "status": "ok",
+   "wall_s": 196.02837606007233,
+   "peak_rss_mb": 163.34375,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1N-lag:c=307",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1N-lag",
+    "c": 307,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 200.20000000000002,
+   "status": "ok",
+   "wall_s": 370.16387602174655,
+   "peak_rss_mb": 210.76953125,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1-GP-lag:c=307",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1-GP-lag",
+    "c": 307,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 1189.3999999999999,
+   "status": "ok",
+   "wall_s": 1533.2353644273244,
+   "peak_rss_mb": 426.62109375,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=Sublet-lag:c=308",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "Sublet-lag",
+    "c": 308,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 1233.3999999999999,
+   "status": "ok",
+   "wall_s": 1577.904838909395,
+   "peak_rss_mb": 452.03515625,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=A9-lag:c=308",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "A9-lag",
+    "c": 308,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 200.20000000000002,
+   "status": "ok",
+   "wall_s": 262.23503158194944,
+   "peak_rss_mb": 188.8046875,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1-lag:c=308",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1-lag",
+    "c": 308,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 108.60000000000001,
+   "status": "ok",
+   "wall_s": 254.9594222791493,
+   "peak_rss_mb": 212.53125,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1-BO-lag:c=308",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1-BO-lag",
+    "c": 308,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 108.60000000000001,
+   "status": "ok",
+   "wall_s": 98.3658914049156,
+   "peak_rss_mb": 161.7421875,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL2-lag:c=308",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL2-lag",
+    "c": 308,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 181.4,
+   "status": "ok",
+   "wall_s": 261.79261123901233,
+   "peak_rss_mb": 237.3125,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL3-0-lag:c=308",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL3-0-lag",
+    "c": 308,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 105.8,
+   "status": "ok",
+   "wall_s": 196.86162485880777,
+   "peak_rss_mb": 206.5703125,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL4-lag:c=308",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL4-lag",
+    "c": 308,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 200.29999999999998,
+   "status": "ok",
+   "wall_s": 233.7792072831653,
+   "peak_rss_mb": 176.0703125,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL5-tau60-lag:c=308",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL5-tau60-lag",
+    "c": 308,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 93.2,
+   "status": "ok",
+   "wall_s": 116.60608007572591,
+   "peak_rss_mb": 155.1875,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL5N-lag:c=308",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL5N-lag",
+    "c": 308,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 93.2,
+   "status": "ok",
+   "wall_s": 160.3294514119625,
+   "peak_rss_mb": 162.40234375,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1N-lag:c=308",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1N-lag",
+    "c": 308,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 200.20000000000002,
+   "status": "ok",
+   "wall_s": 352.69758714782074,
+   "peak_rss_mb": 211.25,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1-GP-lag:c=308",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1-GP-lag",
+    "c": 308,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 1189.3999999999999,
+   "status": "ok",
+   "wall_s": 1411.4637564318255,
+   "peak_rss_mb": 431.26953125,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=Sublet-lag:c=309",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "Sublet-lag",
+    "c": 309,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 1233.3999999999999,
+   "status": "ok",
+   "wall_s": 2069.3193434351124,
+   "peak_rss_mb": 471.21484375,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=A9-lag:c=309",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "A9-lag",
+    "c": 309,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 200.20000000000002,
+   "status": "ok",
+   "wall_s": 361.3921760870144,
+   "peak_rss_mb": 210.4375,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1-lag:c=309",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1-lag",
+    "c": 309,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 108.60000000000001,
+   "status": "ok",
+   "wall_s": 352.2892843890004,
+   "peak_rss_mb": 236.91015625,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1-BO-lag:c=309",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1-BO-lag",
+    "c": 309,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 108.60000000000001,
+   "status": "ok",
+   "wall_s": 84.56189398095012,
+   "peak_rss_mb": 160.04296875,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL2-lag:c=309",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL2-lag",
+    "c": 309,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 181.4,
+   "status": "ok",
+   "wall_s": 269.17758746724576,
+   "peak_rss_mb": 263.3125,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL3-0-lag:c=309",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL3-0-lag",
+    "c": 309,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 105.8,
+   "status": "ok",
+   "wall_s": 275.33982818434015,
+   "peak_rss_mb": 236.76171875,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL4-lag:c=309",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL4-lag",
+    "c": 309,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 200.29999999999998,
+   "status": "ok",
+   "wall_s": 230.32666626712307,
+   "peak_rss_mb": 179.96484375,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL5-tau60-lag:c=309",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL5-tau60-lag",
+    "c": 309,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 93.2,
+   "status": "ok",
+   "wall_s": 113.437218117062,
+   "peak_rss_mb": 154.15625,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL5N-lag:c=309",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL5N-lag",
+    "c": 309,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 93.2,
+   "status": "ok",
+   "wall_s": 163.96725378092378,
+   "peak_rss_mb": 171.6328125,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1N-lag:c=309",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1N-lag",
+    "c": 309,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 200.20000000000002,
+   "status": "ok",
+   "wall_s": 385.80192553810775,
+   "peak_rss_mb": 224.48046875,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1-GP-lag:c=309",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1-GP-lag",
+    "c": 309,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 1189.3999999999999,
+   "status": "ok",
+   "wall_s": 1928.2719497019425,
+   "peak_rss_mb": 432.3828125,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=Sublet-lag:c=310",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "Sublet-lag",
+    "c": 310,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 1233.3999999999999,
+   "status": "ok",
+   "wall_s": 2707.575692524668,
+   "peak_rss_mb": 488.65234375,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=A9-lag:c=310",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "A9-lag",
+    "c": 310,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 200.20000000000002,
+   "status": "ok",
+   "wall_s": 318.5301189678721,
+   "peak_rss_mb": 216.5,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1-lag:c=310",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1-lag",
+    "c": 310,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 108.60000000000001,
+   "status": "ok",
+   "wall_s": 298.8005876587704,
+   "peak_rss_mb": 238.703125,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1-BO-lag:c=310",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1-BO-lag",
+    "c": 310,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 108.60000000000001,
+   "status": "ok",
+   "wall_s": 100.0251025208272,
+   "peak_rss_mb": 162.03515625,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL2-lag:c=310",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL2-lag",
+    "c": 310,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 181.4,
+   "status": "ok",
+   "wall_s": 227.80177173763514,
+   "peak_rss_mb": 264.08984375,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL3-0-lag:c=310",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL3-0-lag",
+    "c": 310,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 105.8,
+   "status": "ok",
+   "wall_s": 243.5610709907487,
+   "peak_rss_mb": 233.8515625,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL4-lag:c=310",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL4-lag",
+    "c": 310,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 200.29999999999998,
+   "status": "ok",
+   "wall_s": 239.8059827098623,
+   "peak_rss_mb": 177.4375,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL5-tau60-lag:c=310",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL5-tau60-lag",
+    "c": 310,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 93.2,
+   "status": "ok",
+   "wall_s": 137.66563405375928,
+   "peak_rss_mb": 157.02734375,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL5N-lag:c=310",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL5N-lag",
+    "c": 310,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 93.2,
+   "status": "ok",
+   "wall_s": 181.8878744682297,
+   "peak_rss_mb": 170.6171875,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1N-lag:c=310",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1N-lag",
+    "c": 310,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 200.20000000000002,
+   "status": "ok",
+   "wall_s": 402.43201443506405,
+   "peak_rss_mb": 235.0390625,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1-GP-lag:c=310",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1-GP-lag",
+    "c": 310,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 1189.3999999999999,
+   "status": "ok",
+   "wall_s": 2617.284406335093,
+   "peak_rss_mb": 442.8203125,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=Sublet-lag:c=311",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "Sublet-lag",
+    "c": 311,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 1233.3999999999999,
+   "status": "ok",
+   "wall_s": 1522.5009146933444,
+   "peak_rss_mb": 445.41015625,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=A9-lag:c=311",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "A9-lag",
+    "c": 311,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 200.20000000000002,
+   "status": "ok",
+   "wall_s": 201.79145654896274,
+   "peak_rss_mb": 181.5625,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1-lag:c=311",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1-lag",
+    "c": 311,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 108.60000000000001,
+   "status": "ok",
+   "wall_s": 183.0344615257345,
+   "peak_rss_mb": 207.1796875,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1-BO-lag:c=311",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1-BO-lag",
+    "c": 311,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 108.60000000000001,
+   "status": "ok",
+   "wall_s": 78.23321504937485,
+   "peak_rss_mb": 161.71484375,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL2-lag:c=311",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL2-lag",
+    "c": 311,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 181.4,
+   "status": "ok",
+   "wall_s": 202.39345362130553,
+   "peak_rss_mb": 237.19140625,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL3-0-lag:c=311",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL3-0-lag",
+    "c": 311,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 105.8,
+   "status": "ok",
+   "wall_s": 174.48998094024137,
+   "peak_rss_mb": 204.02734375,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL4-lag:c=311",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL4-lag",
+    "c": 311,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 200.29999999999998,
+   "status": "ok",
+   "wall_s": 239.28461158880964,
+   "peak_rss_mb": 179.30078125,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL5-tau60-lag:c=311",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL5-tau60-lag",
+    "c": 311,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 93.2,
+   "status": "ok",
+   "wall_s": 118.26079424517229,
+   "peak_rss_mb": 154.5625,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL5N-lag:c=311",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL5N-lag",
+    "c": 311,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 93.2,
+   "status": "ok",
+   "wall_s": 163.28418367169797,
+   "peak_rss_mb": 163.86328125,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1N-lag:c=311",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1N-lag",
+    "c": 311,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 200.20000000000002,
+   "status": "ok",
+   "wall_s": 254.78065307764336,
+   "peak_rss_mb": 196.34765625,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1-GP-lag:c=311",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1-GP-lag",
+    "c": 311,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 1189.3999999999999,
+   "status": "ok",
+   "wall_s": 1487.810382831376,
+   "peak_rss_mb": 426.953125,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=Sublet-lag:c=312",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "Sublet-lag",
+    "c": 312,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 1233.3999999999999,
+   "status": "ok",
+   "wall_s": 2474.071276143659,
+   "peak_rss_mb": 475.23046875,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=A9-lag:c=312",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "A9-lag",
+    "c": 312,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 200.20000000000002,
+   "status": "ok",
+   "wall_s": 323.374301196076,
+   "peak_rss_mb": 212.56640625,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1-lag:c=312",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1-lag",
+    "c": 312,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 108.60000000000001,
+   "status": "ok",
+   "wall_s": 308.6714983913116,
+   "peak_rss_mb": 234.89453125,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1-BO-lag:c=312",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1-BO-lag",
+    "c": 312,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 108.60000000000001,
+   "status": "ok",
+   "wall_s": 101.85400924412534,
+   "peak_rss_mb": 162.73828125,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL2-lag:c=312",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL2-lag",
+    "c": 312,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 181.4,
+   "status": "ok",
+   "wall_s": 241.2766889682971,
+   "peak_rss_mb": 258.5234375,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL3-0-lag:c=312",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL3-0-lag",
+    "c": 312,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 105.8,
+   "status": "ok",
+   "wall_s": 229.2194418720901,
+   "peak_rss_mb": 228.88671875,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL4-lag:c=312",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL4-lag",
+    "c": 312,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 200.29999999999998,
+   "status": "ok",
+   "wall_s": 228.3203618233092,
+   "peak_rss_mb": 176.8359375,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL5-tau60-lag:c=312",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL5-tau60-lag",
+    "c": 312,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 93.2,
+   "status": "ok",
+   "wall_s": 132.59826862299815,
+   "peak_rss_mb": 156.01171875,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL5N-lag:c=312",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL5N-lag",
+    "c": 312,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 93.2,
+   "status": "ok",
+   "wall_s": 174.8696011849679,
+   "peak_rss_mb": 169.28125,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1N-lag:c=312",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1N-lag",
+    "c": 312,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 200.20000000000002,
+   "status": "ok",
+   "wall_s": 407.48605066910386,
+   "peak_rss_mb": 233.48828125,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1-GP-lag:c=312",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1-GP-lag",
+    "c": 312,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 1189.3999999999999,
+   "status": "ok",
+   "wall_s": 2387.113357043825,
+   "peak_rss_mb": 439.42578125,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=Sublet-lag:c=313",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "Sublet-lag",
+    "c": 313,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 1233.3999999999999,
+   "status": "ok",
+   "wall_s": 1268.8511408618651,
+   "peak_rss_mb": 441.99609375,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=A9-lag:c=313",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "A9-lag",
+    "c": 313,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 200.20000000000002,
+   "status": "ok",
+   "wall_s": 193.22455039294437,
+   "peak_rss_mb": 183.51171875,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1-lag:c=313",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1-lag",
+    "c": 313,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 108.60000000000001,
+   "status": "ok",
+   "wall_s": 183.47333351522684,
+   "peak_rss_mb": 209.29296875,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1-BO-lag:c=313",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1-BO-lag",
+    "c": 313,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 108.60000000000001,
+   "status": "ok",
+   "wall_s": 77.20244599785656,
+   "peak_rss_mb": 161.68359375,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL2-lag:c=313",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL2-lag",
+    "c": 313,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 181.4,
+   "status": "ok",
+   "wall_s": 204.91437814291567,
+   "peak_rss_mb": 239.64453125,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL3-0-lag:c=313",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL3-0-lag",
+    "c": 313,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 105.8,
+   "status": "ok",
+   "wall_s": 169.845474507194,
+   "peak_rss_mb": 205.51171875,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL4-lag:c=313",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL4-lag",
+    "c": 313,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 200.29999999999998,
+   "status": "ok",
+   "wall_s": 202.70721947960556,
+   "peak_rss_mb": 178.19921875,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL5-tau60-lag:c=313",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL5-tau60-lag",
+    "c": 313,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 93.2,
+   "status": "ok",
+   "wall_s": 104.14698255388066,
+   "peak_rss_mb": 155.59375,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL5N-lag:c=313",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL5N-lag",
+    "c": 313,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 93.2,
+   "status": "ok",
+   "wall_s": 147.19923596503213,
+   "peak_rss_mb": 164.1015625,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1N-lag:c=313",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1N-lag",
+    "c": 313,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 200.20000000000002,
+   "status": "ok",
+   "wall_s": 244.27129753120244,
+   "peak_rss_mb": 198.65234375,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1-GP-lag:c=313",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1-GP-lag",
+    "c": 313,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 1189.3999999999999,
+   "status": "ok",
+   "wall_s": 1208.5673286491074,
+   "peak_rss_mb": 427.99609375,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=Sublet-lag:c=314",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "Sublet-lag",
+    "c": 314,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 1233.3999999999999,
+   "status": "ok",
+   "wall_s": 2257.96342864912,
+   "peak_rss_mb": 485.32421875,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=A9-lag:c=314",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "A9-lag",
+    "c": 314,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 200.20000000000002,
+   "status": "ok",
+   "wall_s": 389.6121407626197,
+   "peak_rss_mb": 221.8203125,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1-lag:c=314",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1-lag",
+    "c": 314,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 108.60000000000001,
+   "status": "ok",
+   "wall_s": 376.09998500393704,
+   "peak_rss_mb": 246.10546875,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1-BO-lag:c=314",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1-BO-lag",
+    "c": 314,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 108.60000000000001,
+   "status": "ok",
+   "wall_s": 95.62261660397053,
+   "peak_rss_mb": 165.25,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL2-lag:c=314",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL2-lag",
+    "c": 314,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 181.4,
+   "status": "ok",
+   "wall_s": 242.83059824630618,
+   "peak_rss_mb": 269.16015625,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL3-0-lag:c=314",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL3-0-lag",
+    "c": 314,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 105.8,
+   "status": "ok",
+   "wall_s": 309.5359339620918,
+   "peak_rss_mb": 241.54296875,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL4-lag:c=314",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL4-lag",
+    "c": 314,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 200.29999999999998,
+   "status": "ok",
+   "wall_s": 220.84219883708283,
+   "peak_rss_mb": 179.23046875,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL5-tau60-lag:c=314",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL5-tau60-lag",
+    "c": 314,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 93.2,
+   "status": "ok",
+   "wall_s": 151.5218258909881,
+   "peak_rss_mb": 158.46484375,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL5N-lag:c=314",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL5N-lag",
+    "c": 314,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 93.2,
+   "status": "ok",
+   "wall_s": 184.05422025499865,
+   "peak_rss_mb": 170.89453125,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1N-lag:c=314",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1N-lag",
+    "c": 314,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 200.20000000000002,
+   "status": "ok",
+   "wall_s": 471.18839428620413,
+   "peak_rss_mb": 243.75,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1-GP-lag:c=314",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1-GP-lag",
+    "c": 314,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 1189.3999999999999,
+   "status": "ok",
+   "wall_s": 2061.088967109099,
+   "peak_rss_mb": 436.94921875,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=Sublet-lag:c=315",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "Sublet-lag",
+    "c": 315,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 1233.3999999999999,
+   "status": "ok",
+   "wall_s": 2691.828779359348,
+   "peak_rss_mb": 477.83984375,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=A9-lag:c=315",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "A9-lag",
+    "c": 315,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 200.20000000000002,
+   "status": "ok",
+   "wall_s": 321.6919319452718,
+   "peak_rss_mb": 212.94921875,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1-lag:c=315",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1-lag",
+    "c": 315,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 108.60000000000001,
+   "status": "ok",
+   "wall_s": 320.8770839278586,
+   "peak_rss_mb": 236.8984375,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1-BO-lag:c=315",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1-BO-lag",
+    "c": 315,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 108.60000000000001,
+   "status": "ok",
+   "wall_s": 95.6444599898532,
+   "peak_rss_mb": 162.78125,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL2-lag:c=315",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL2-lag",
+    "c": 315,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 181.4,
+   "status": "ok",
+   "wall_s": 229.22579355398193,
+   "peak_rss_mb": 257.6640625,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL3-0-lag:c=315",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL3-0-lag",
+    "c": 315,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 105.8,
+   "status": "ok",
+   "wall_s": 268.0179455950856,
+   "peak_rss_mb": 231.92578125,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL4-lag:c=315",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL4-lag",
+    "c": 315,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 200.29999999999998,
+   "status": "ok",
+   "wall_s": 259.86780820181593,
+   "peak_rss_mb": 181.16796875,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL5-tau60-lag:c=315",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL5-tau60-lag",
+    "c": 315,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 93.2,
+   "status": "ok",
+   "wall_s": 153.19441920379177,
+   "peak_rss_mb": 157.6484375,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL5N-lag:c=315",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL5N-lag",
+    "c": 315,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 93.2,
+   "status": "ok",
+   "wall_s": 184.10652345838025,
+   "peak_rss_mb": 169.44921875,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1N-lag:c=315",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1N-lag",
+    "c": 315,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 200.20000000000002,
+   "status": "ok",
+   "wall_s": 426.16393971582875,
+   "peak_rss_mb": 231.94140625,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1-GP-lag:c=315",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1-GP-lag",
+    "c": 315,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 1189.3999999999999,
+   "status": "ok",
+   "wall_s": 2520.92041808879,
+   "peak_rss_mb": 437.85546875,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=Sublet-lag:c=316",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "Sublet-lag",
+    "c": 316,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 1233.3999999999999,
+   "status": "ok",
+   "wall_s": 2274.2689450178295,
+   "peak_rss_mb": 461.640625,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=A9-lag:c=316",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "A9-lag",
+    "c": 316,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 200.20000000000002,
+   "status": "ok",
+   "wall_s": 247.07364350091666,
+   "peak_rss_mb": 197.28515625,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1-lag:c=316",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1-lag",
+    "c": 316,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 108.60000000000001,
+   "status": "ok",
+   "wall_s": 246.23967570764944,
+   "peak_rss_mb": 225.4609375,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1-BO-lag:c=316",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1-BO-lag",
+    "c": 316,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 108.60000000000001,
+   "status": "ok",
+   "wall_s": 86.01857035188004,
+   "peak_rss_mb": 163.40234375,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL2-lag:c=316",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL2-lag",
+    "c": 316,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 181.4,
+   "status": "ok",
+   "wall_s": 219.5755863119848,
+   "peak_rss_mb": 250.5390625,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL3-0-lag:c=316",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL3-0-lag",
+    "c": 316,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 105.8,
+   "status": "ok",
+   "wall_s": 219.84965659677982,
+   "peak_rss_mb": 222.44921875,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL4-lag:c=316",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL4-lag",
+    "c": 316,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 200.29999999999998,
+   "status": "ok",
+   "wall_s": 230.94171280181035,
+   "peak_rss_mb": 176.81640625,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL5-tau60-lag:c=316",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL5-tau60-lag",
+    "c": 316,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 93.2,
+   "status": "ok",
+   "wall_s": 128.42987401410937,
+   "peak_rss_mb": 154.9453125,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL5N-lag:c=316",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL5N-lag",
+    "c": 316,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 93.2,
+   "status": "ok",
+   "wall_s": 172.82407042896375,
+   "peak_rss_mb": 169.25,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1N-lag:c=316",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1N-lag",
+    "c": 316,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 200.20000000000002,
+   "status": "ok",
+   "wall_s": 297.60337263997644,
+   "peak_rss_mb": 214.54296875,
+   "runs": 7
+  },
+  {
+   "id": "e7c:lag:k=week:tag=BL1-GP-lag:c=316",
+   "kind": "pool",
+   "params": {
+    "part": "lag",
+    "kind": "week",
+    "tag": "BL1-GP-lag",
+    "c": 316,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 1189.3999999999999,
+   "status": "ok",
+   "wall_s": 2117.049965403974,
+   "peak_rss_mb": 426.07421875,
+   "runs": 7
+  }
+ ],
+ "instance_hashes": {},
+ "part": "lag",
+ "design": {
+  "reduced": false,
+  "horizon_min": 10080
+ },
+ "instance_hashes_from_outputs": {
+  "e7c:lag:k=week:tag=Sublet-lag:c=301": {
+   "base": "2b619e9c729caa92598f444d715a469866c5a5875f57eec7cb8b948f77d4bba6"
+  },
+  "e7c:lag:k=week:tag=A9-lag:c=301": {
+   "base": "2b619e9c729caa92598f444d715a469866c5a5875f57eec7cb8b948f77d4bba6"
+  },
+  "e7c:lag:k=week:tag=BL1-lag:c=301": {
+   "base": "2b619e9c729caa92598f444d715a469866c5a5875f57eec7cb8b948f77d4bba6"
+  },
+  "e7c:lag:k=week:tag=BL1-BO-lag:c=301": {
+   "base": "2b619e9c729caa92598f444d715a469866c5a5875f57eec7cb8b948f77d4bba6"
+  },
+  "e7c:lag:k=week:tag=BL2-lag:c=301": {
+   "base": "2b619e9c729caa92598f444d715a469866c5a5875f57eec7cb8b948f77d4bba6"
+  },
+  "e7c:lag:k=week:tag=BL3-0-lag:c=301": {
+   "base": "2b619e9c729caa92598f444d715a469866c5a5875f57eec7cb8b948f77d4bba6"
+  },
+  "e7c:lag:k=week:tag=BL4-lag:c=301": {
+   "base": "2b619e9c729caa92598f444d715a469866c5a5875f57eec7cb8b948f77d4bba6"
+  },
+  "e7c:lag:k=week:tag=BL5-tau60-lag:c=301": {
+   "base": "2b619e9c729caa92598f444d715a469866c5a5875f57eec7cb8b948f77d4bba6"
+  },
+  "e7c:lag:k=week:tag=BL5N-lag:c=301": {
+   "base": "2b619e9c729caa92598f444d715a469866c5a5875f57eec7cb8b948f77d4bba6"
+  },
+  "e7c:lag:k=week:tag=BL1N-lag:c=301": {
+   "base": "2b619e9c729caa92598f444d715a469866c5a5875f57eec7cb8b948f77d4bba6"
+  },
+  "e7c:lag:k=week:tag=BL1-GP-lag:c=301": {
+   "base": "2b619e9c729caa92598f444d715a469866c5a5875f57eec7cb8b948f77d4bba6"
+  },
+  "e7c:lag:k=week:tag=Sublet-lag:c=302": {
+   "base": "92901ac5e0531e3bd3f400764b3a6d74be057ce1061914706db9ef2f8ef35ef9"
+  },
+  "e7c:lag:k=week:tag=A9-lag:c=302": {
+   "base": "92901ac5e0531e3bd3f400764b3a6d74be057ce1061914706db9ef2f8ef35ef9"
+  },
+  "e7c:lag:k=week:tag=BL1-lag:c=302": {
+   "base": "92901ac5e0531e3bd3f400764b3a6d74be057ce1061914706db9ef2f8ef35ef9"
+  },
+  "e7c:lag:k=week:tag=BL1-BO-lag:c=302": {
+   "base": "92901ac5e0531e3bd3f400764b3a6d74be057ce1061914706db9ef2f8ef35ef9"
+  },
+  "e7c:lag:k=week:tag=BL2-lag:c=302": {
+   "base": "92901ac5e0531e3bd3f400764b3a6d74be057ce1061914706db9ef2f8ef35ef9"
+  },
+  "e7c:lag:k=week:tag=BL3-0-lag:c=302": {
+   "base": "92901ac5e0531e3bd3f400764b3a6d74be057ce1061914706db9ef2f8ef35ef9"
+  },
+  "e7c:lag:k=week:tag=BL4-lag:c=302": {
+   "base": "92901ac5e0531e3bd3f400764b3a6d74be057ce1061914706db9ef2f8ef35ef9"
+  },
+  "e7c:lag:k=week:tag=BL5-tau60-lag:c=302": {
+   "base": "92901ac5e0531e3bd3f400764b3a6d74be057ce1061914706db9ef2f8ef35ef9"
+  },
+  "e7c:lag:k=week:tag=BL5N-lag:c=302": {
+   "base": "92901ac5e0531e3bd3f400764b3a6d74be057ce1061914706db9ef2f8ef35ef9"
+  },
+  "e7c:lag:k=week:tag=BL1N-lag:c=302": {
+   "base": "92901ac5e0531e3bd3f400764b3a6d74be057ce1061914706db9ef2f8ef35ef9"
+  },
+  "e7c:lag:k=week:tag=BL1-GP-lag:c=302": {
+   "base": "92901ac5e0531e3bd3f400764b3a6d74be057ce1061914706db9ef2f8ef35ef9"
+  },
+  "e7c:lag:k=week:tag=Sublet-lag:c=303": {
+   "base": "7c3c40d0b00a781b8c6b80401d6deb54d8d7fd6653ea0c7dfc9fd93b6c3470c2"
+  },
+  "e7c:lag:k=week:tag=A9-lag:c=303": {
+   "base": "7c3c40d0b00a781b8c6b80401d6deb54d8d7fd6653ea0c7dfc9fd93b6c3470c2"
+  },
+  "e7c:lag:k=week:tag=BL1-lag:c=303": {
+   "base": "7c3c40d0b00a781b8c6b80401d6deb54d8d7fd6653ea0c7dfc9fd93b6c3470c2"
+  },
+  "e7c:lag:k=week:tag=BL1-BO-lag:c=303": {
+   "base": "7c3c40d0b00a781b8c6b80401d6deb54d8d7fd6653ea0c7dfc9fd93b6c3470c2"
+  },
+  "e7c:lag:k=week:tag=BL2-lag:c=303": {
+   "base": "7c3c40d0b00a781b8c6b80401d6deb54d8d7fd6653ea0c7dfc9fd93b6c3470c2"
+  },
+  "e7c:lag:k=week:tag=BL3-0-lag:c=303": {
+   "base": "7c3c40d0b00a781b8c6b80401d6deb54d8d7fd6653ea0c7dfc9fd93b6c3470c2"
+  },
+  "e7c:lag:k=week:tag=BL4-lag:c=303": {
+   "base": "7c3c40d0b00a781b8c6b80401d6deb54d8d7fd6653ea0c7dfc9fd93b6c3470c2"
+  },
+  "e7c:lag:k=week:tag=BL5-tau60-lag:c=303": {
+   "base": "7c3c40d0b00a781b8c6b80401d6deb54d8d7fd6653ea0c7dfc9fd93b6c3470c2"
+  },
+  "e7c:lag:k=week:tag=BL5N-lag:c=303": {
+   "base": "7c3c40d0b00a781b8c6b80401d6deb54d8d7fd6653ea0c7dfc9fd93b6c3470c2"
+  },
+  "e7c:lag:k=week:tag=BL1N-lag:c=303": {
+   "base": "7c3c40d0b00a781b8c6b80401d6deb54d8d7fd6653ea0c7dfc9fd93b6c3470c2"
+  },
+  "e7c:lag:k=week:tag=BL1-GP-lag:c=303": {
+   "base": "7c3c40d0b00a781b8c6b80401d6deb54d8d7fd6653ea0c7dfc9fd93b6c3470c2"
+  },
+  "e7c:lag:k=week:tag=Sublet-lag:c=304": {
+   "base": "5064e702339390148b4ffd45439bf54a5de20266d177ab4a1fd0e7c3499f58d2"
+  },
+  "e7c:lag:k=week:tag=A9-lag:c=304": {
+   "base": "5064e702339390148b4ffd45439bf54a5de20266d177ab4a1fd0e7c3499f58d2"
+  },
+  "e7c:lag:k=week:tag=BL1-lag:c=304": {
+   "base": "5064e702339390148b4ffd45439bf54a5de20266d177ab4a1fd0e7c3499f58d2"
+  },
+  "e7c:lag:k=week:tag=BL1-BO-lag:c=304": {
+   "base": "5064e702339390148b4ffd45439bf54a5de20266d177ab4a1fd0e7c3499f58d2"
+  },
+  "e7c:lag:k=week:tag=BL2-lag:c=304": {
+   "base": "5064e702339390148b4ffd45439bf54a5de20266d177ab4a1fd0e7c3499f58d2"
+  },
+  "e7c:lag:k=week:tag=BL3-0-lag:c=304": {
+   "base": "5064e702339390148b4ffd45439bf54a5de20266d177ab4a1fd0e7c3499f58d2"
+  },
+  "e7c:lag:k=week:tag=BL4-lag:c=304": {
+   "base": "5064e702339390148b4ffd45439bf54a5de20266d177ab4a1fd0e7c3499f58d2"
+  },
+  "e7c:lag:k=week:tag=BL5-tau60-lag:c=304": {
+   "base": "5064e702339390148b4ffd45439bf54a5de20266d177ab4a1fd0e7c3499f58d2"
+  },
+  "e7c:lag:k=week:tag=BL5N-lag:c=304": {
+   "base": "5064e702339390148b4ffd45439bf54a5de20266d177ab4a1fd0e7c3499f58d2"
+  },
+  "e7c:lag:k=week:tag=BL1N-lag:c=304": {
+   "base": "5064e702339390148b4ffd45439bf54a5de20266d177ab4a1fd0e7c3499f58d2"
+  },
+  "e7c:lag:k=week:tag=BL1-GP-lag:c=304": {
+   "base": "5064e702339390148b4ffd45439bf54a5de20266d177ab4a1fd0e7c3499f58d2"
+  },
+  "e7c:lag:k=week:tag=Sublet-lag:c=305": {
+   "base": "9b3a7ca1fa658ada6ad7d92724277b4b2f6404d796de5c05a3bb85d965b40176"
+  },
+  "e7c:lag:k=week:tag=A9-lag:c=305": {
+   "base": "9b3a7ca1fa658ada6ad7d92724277b4b2f6404d796de5c05a3bb85d965b40176"
+  },
+  "e7c:lag:k=week:tag=BL1-lag:c=305": {
+   "base": "9b3a7ca1fa658ada6ad7d92724277b4b2f6404d796de5c05a3bb85d965b40176"
+  },
+  "e7c:lag:k=week:tag=BL1-BO-lag:c=305": {
+   "base": "9b3a7ca1fa658ada6ad7d92724277b4b2f6404d796de5c05a3bb85d965b40176"
+  },
+  "e7c:lag:k=week:tag=BL2-lag:c=305": {
+   "base": "9b3a7ca1fa658ada6ad7d92724277b4b2f6404d796de5c05a3bb85d965b40176"
+  },
+  "e7c:lag:k=week:tag=BL3-0-lag:c=305": {
+   "base": "9b3a7ca1fa658ada6ad7d92724277b4b2f6404d796de5c05a3bb85d965b40176"
+  },
+  "e7c:lag:k=week:tag=BL4-lag:c=305": {
+   "base": "9b3a7ca1fa658ada6ad7d92724277b4b2f6404d796de5c05a3bb85d965b40176"
+  },
+  "e7c:lag:k=week:tag=BL5-tau60-lag:c=305": {
+   "base": "9b3a7ca1fa658ada6ad7d92724277b4b2f6404d796de5c05a3bb85d965b40176"
+  },
+  "e7c:lag:k=week:tag=BL5N-lag:c=305": {
+   "base": "9b3a7ca1fa658ada6ad7d92724277b4b2f6404d796de5c05a3bb85d965b40176"
+  },
+  "e7c:lag:k=week:tag=BL1N-lag:c=305": {
+   "base": "9b3a7ca1fa658ada6ad7d92724277b4b2f6404d796de5c05a3bb85d965b40176"
+  },
+  "e7c:lag:k=week:tag=BL1-GP-lag:c=305": {
+   "base": "9b3a7ca1fa658ada6ad7d92724277b4b2f6404d796de5c05a3bb85d965b40176"
+  },
+  "e7c:lag:k=week:tag=Sublet-lag:c=306": {
+   "base": "f8d015225ba1782ee23aa348229476b75ee7f39c2202db36d2747a96ab972434"
+  },
+  "e7c:lag:k=week:tag=A9-lag:c=306": {
+   "base": "f8d015225ba1782ee23aa348229476b75ee7f39c2202db36d2747a96ab972434"
+  },
+  "e7c:lag:k=week:tag=BL1-lag:c=306": {
+   "base": "f8d015225ba1782ee23aa348229476b75ee7f39c2202db36d2747a96ab972434"
+  },
+  "e7c:lag:k=week:tag=BL1-BO-lag:c=306": {
+   "base": "f8d015225ba1782ee23aa348229476b75ee7f39c2202db36d2747a96ab972434"
+  },
+  "e7c:lag:k=week:tag=BL2-lag:c=306": {
+   "base": "f8d015225ba1782ee23aa348229476b75ee7f39c2202db36d2747a96ab972434"
+  },
+  "e7c:lag:k=week:tag=BL3-0-lag:c=306": {
+   "base": "f8d015225ba1782ee23aa348229476b75ee7f39c2202db36d2747a96ab972434"
+  },
+  "e7c:lag:k=week:tag=BL4-lag:c=306": {
+   "base": "f8d015225ba1782ee23aa348229476b75ee7f39c2202db36d2747a96ab972434"
+  },
+  "e7c:lag:k=week:tag=BL5-tau60-lag:c=306": {
+   "base": "f8d015225ba1782ee23aa348229476b75ee7f39c2202db36d2747a96ab972434"
+  },
+  "e7c:lag:k=week:tag=BL5N-lag:c=306": {
+   "base": "f8d015225ba1782ee23aa348229476b75ee7f39c2202db36d2747a96ab972434"
+  },
+  "e7c:lag:k=week:tag=BL1N-lag:c=306": {
+   "base": "f8d015225ba1782ee23aa348229476b75ee7f39c2202db36d2747a96ab972434"
+  },
+  "e7c:lag:k=week:tag=BL1-GP-lag:c=306": {
+   "base": "f8d015225ba1782ee23aa348229476b75ee7f39c2202db36d2747a96ab972434"
+  },
+  "e7c:lag:k=week:tag=Sublet-lag:c=307": {
+   "base": "1380e05125ef3a5a2acdcde33386f138af1934e4dfc5e8f95e0c14c9ae8bd13c"
+  },
+  "e7c:lag:k=week:tag=A9-lag:c=307": {
+   "base": "1380e05125ef3a5a2acdcde33386f138af1934e4dfc5e8f95e0c14c9ae8bd13c"
+  },
+  "e7c:lag:k=week:tag=BL1-lag:c=307": {
+   "base": "1380e05125ef3a5a2acdcde33386f138af1934e4dfc5e8f95e0c14c9ae8bd13c"
+  },
+  "e7c:lag:k=week:tag=BL1-BO-lag:c=307": {
+   "base": "1380e05125ef3a5a2acdcde33386f138af1934e4dfc5e8f95e0c14c9ae8bd13c"
+  },
+  "e7c:lag:k=week:tag=BL2-lag:c=307": {
+   "base": "1380e05125ef3a5a2acdcde33386f138af1934e4dfc5e8f95e0c14c9ae8bd13c"
+  },
+  "e7c:lag:k=week:tag=BL3-0-lag:c=307": {
+   "base": "1380e05125ef3a5a2acdcde33386f138af1934e4dfc5e8f95e0c14c9ae8bd13c"
+  },
+  "e7c:lag:k=week:tag=BL4-lag:c=307": {
+   "base": "1380e05125ef3a5a2acdcde33386f138af1934e4dfc5e8f95e0c14c9ae8bd13c"
+  },
+  "e7c:lag:k=week:tag=BL5-tau60-lag:c=307": {
+   "base": "1380e05125ef3a5a2acdcde33386f138af1934e4dfc5e8f95e0c14c9ae8bd13c"
+  },
+  "e7c:lag:k=week:tag=BL5N-lag:c=307": {
+   "base": "1380e05125ef3a5a2acdcde33386f138af1934e4dfc5e8f95e0c14c9ae8bd13c"
+  },
+  "e7c:lag:k=week:tag=BL1N-lag:c=307": {
+   "base": "1380e05125ef3a5a2acdcde33386f138af1934e4dfc5e8f95e0c14c9ae8bd13c"
+  },
+  "e7c:lag:k=week:tag=BL1-GP-lag:c=307": {
+   "base": "1380e05125ef3a5a2acdcde33386f138af1934e4dfc5e8f95e0c14c9ae8bd13c"
+  },
+  "e7c:lag:k=week:tag=Sublet-lag:c=308": {
+   "base": "74689c5fb07756a34a7aaef68f16e7bd57b7505f1397a3753a70c6107354e3cf"
+  },
+  "e7c:lag:k=week:tag=A9-lag:c=308": {
+   "base": "74689c5fb07756a34a7aaef68f16e7bd57b7505f1397a3753a70c6107354e3cf"
+  },
+  "e7c:lag:k=week:tag=BL1-lag:c=308": {
+   "base": "74689c5fb07756a34a7aaef68f16e7bd57b7505f1397a3753a70c6107354e3cf"
+  },
+  "e7c:lag:k=week:tag=BL1-BO-lag:c=308": {
+   "base": "74689c5fb07756a34a7aaef68f16e7bd57b7505f1397a3753a70c6107354e3cf"
+  },
+  "e7c:lag:k=week:tag=BL2-lag:c=308": {
+   "base": "74689c5fb07756a34a7aaef68f16e7bd57b7505f1397a3753a70c6107354e3cf"
+  },
+  "e7c:lag:k=week:tag=BL3-0-lag:c=308": {
+   "base": "74689c5fb07756a34a7aaef68f16e7bd57b7505f1397a3753a70c6107354e3cf"
+  },
+  "e7c:lag:k=week:tag=BL4-lag:c=308": {
+   "base": "74689c5fb07756a34a7aaef68f16e7bd57b7505f1397a3753a70c6107354e3cf"
+  },
+  "e7c:lag:k=week:tag=BL5-tau60-lag:c=308": {
+   "base": "74689c5fb07756a34a7aaef68f16e7bd57b7505f1397a3753a70c6107354e3cf"
+  },
+  "e7c:lag:k=week:tag=BL5N-lag:c=308": {
+   "base": "74689c5fb07756a34a7aaef68f16e7bd57b7505f1397a3753a70c6107354e3cf"
+  },
+  "e7c:lag:k=week:tag=BL1N-lag:c=308": {
+   "base": "74689c5fb07756a34a7aaef68f16e7bd57b7505f1397a3753a70c6107354e3cf"
+  },
+  "e7c:lag:k=week:tag=BL1-GP-lag:c=308": {
+   "base": "74689c5fb07756a34a7aaef68f16e7bd57b7505f1397a3753a70c6107354e3cf"
+  },
+  "e7c:lag:k=week:tag=Sublet-lag:c=309": {
+   "base": "5b2912ef0605c39896454e436b1ea57f64e83854dcec05e924175241ad3897f8"
+  },
+  "e7c:lag:k=week:tag=A9-lag:c=309": {
+   "base": "5b2912ef0605c39896454e436b1ea57f64e83854dcec05e924175241ad3897f8"
+  },
+  "e7c:lag:k=week:tag=BL1-lag:c=309": {
+   "base": "5b2912ef0605c39896454e436b1ea57f64e83854dcec05e924175241ad3897f8"
+  },
+  "e7c:lag:k=week:tag=BL1-BO-lag:c=309": {
+   "base": "5b2912ef0605c39896454e436b1ea57f64e83854dcec05e924175241ad3897f8"
+  },
+  "e7c:lag:k=week:tag=BL2-lag:c=309": {
+   "base": "5b2912ef0605c39896454e436b1ea57f64e83854dcec05e924175241ad3897f8"
+  },
+  "e7c:lag:k=week:tag=BL3-0-lag:c=309": {
+   "base": "5b2912ef0605c39896454e436b1ea57f64e83854dcec05e924175241ad3897f8"
+  },
+  "e7c:lag:k=week:tag=BL4-lag:c=309": {
+   "base": "5b2912ef0605c39896454e436b1ea57f64e83854dcec05e924175241ad3897f8"
+  },
+  "e7c:lag:k=week:tag=BL5-tau60-lag:c=309": {
+   "base": "5b2912ef0605c39896454e436b1ea57f64e83854dcec05e924175241ad3897f8"
+  },
+  "e7c:lag:k=week:tag=BL5N-lag:c=309": {
+   "base": "5b2912ef0605c39896454e436b1ea57f64e83854dcec05e924175241ad3897f8"
+  },
+  "e7c:lag:k=week:tag=BL1N-lag:c=309": {
+   "base": "5b2912ef0605c39896454e436b1ea57f64e83854dcec05e924175241ad3897f8"
+  },
+  "e7c:lag:k=week:tag=BL1-GP-lag:c=309": {
+   "base": "5b2912ef0605c39896454e436b1ea57f64e83854dcec05e924175241ad3897f8"
+  },
+  "e7c:lag:k=week:tag=Sublet-lag:c=310": {
+   "base": "8f8cdc92591d3ffcaebeba8a2e8166e5310e2c3017cd2a74dd707d6e45b51117"
+  },
+  "e7c:lag:k=week:tag=A9-lag:c=310": {
+   "base": "8f8cdc92591d3ffcaebeba8a2e8166e5310e2c3017cd2a74dd707d6e45b51117"
+  },
+  "e7c:lag:k=week:tag=BL1-lag:c=310": {
+   "base": "8f8cdc92591d3ffcaebeba8a2e8166e5310e2c3017cd2a74dd707d6e45b51117"
+  },
+  "e7c:lag:k=week:tag=BL1-BO-lag:c=310": {
+   "base": "8f8cdc92591d3ffcaebeba8a2e8166e5310e2c3017cd2a74dd707d6e45b51117"
+  },
+  "e7c:lag:k=week:tag=BL2-lag:c=310": {
+   "base": "8f8cdc92591d3ffcaebeba8a2e8166e5310e2c3017cd2a74dd707d6e45b51117"
+  },
+  "e7c:lag:k=week:tag=BL3-0-lag:c=310": {
+   "base": "8f8cdc92591d3ffcaebeba8a2e8166e5310e2c3017cd2a74dd707d6e45b51117"
+  },
+  "e7c:lag:k=week:tag=BL4-lag:c=310": {
+   "base": "8f8cdc92591d3ffcaebeba8a2e8166e5310e2c3017cd2a74dd707d6e45b51117"
+  },
+  "e7c:lag:k=week:tag=BL5-tau60-lag:c=310": {
+   "base": "8f8cdc92591d3ffcaebeba8a2e8166e5310e2c3017cd2a74dd707d6e45b51117"
+  },
+  "e7c:lag:k=week:tag=BL5N-lag:c=310": {
+   "base": "8f8cdc92591d3ffcaebeba8a2e8166e5310e2c3017cd2a74dd707d6e45b51117"
+  },
+  "e7c:lag:k=week:tag=BL1N-lag:c=310": {
+   "base": "8f8cdc92591d3ffcaebeba8a2e8166e5310e2c3017cd2a74dd707d6e45b51117"
+  },
+  "e7c:lag:k=week:tag=BL1-GP-lag:c=310": {
+   "base": "8f8cdc92591d3ffcaebeba8a2e8166e5310e2c3017cd2a74dd707d6e45b51117"
+  },
+  "e7c:lag:k=week:tag=Sublet-lag:c=311": {
+   "base": "076af1ec9f0b843609aab563192a882ed903a9b62b9fbe5807b78d39886fdf55"
+  },
+  "e7c:lag:k=week:tag=A9-lag:c=311": {
+   "base": "076af1ec9f0b843609aab563192a882ed903a9b62b9fbe5807b78d39886fdf55"
+  },
+  "e7c:lag:k=week:tag=BL1-lag:c=311": {
+   "base": "076af1ec9f0b843609aab563192a882ed903a9b62b9fbe5807b78d39886fdf55"
+  },
+  "e7c:lag:k=week:tag=BL1-BO-lag:c=311": {
+   "base": "076af1ec9f0b843609aab563192a882ed903a9b62b9fbe5807b78d39886fdf55"
+  },
+  "e7c:lag:k=week:tag=BL2-lag:c=311": {
+   "base": "076af1ec9f0b843609aab563192a882ed903a9b62b9fbe5807b78d39886fdf55"
+  },
+  "e7c:lag:k=week:tag=BL3-0-lag:c=311": {
+   "base": "076af1ec9f0b843609aab563192a882ed903a9b62b9fbe5807b78d39886fdf55"
+  },
+  "e7c:lag:k=week:tag=BL4-lag:c=311": {
+   "base": "076af1ec9f0b843609aab563192a882ed903a9b62b9fbe5807b78d39886fdf55"
+  },
+  "e7c:lag:k=week:tag=BL5-tau60-lag:c=311": {
+   "base": "076af1ec9f0b843609aab563192a882ed903a9b62b9fbe5807b78d39886fdf55"
+  },
+  "e7c:lag:k=week:tag=BL5N-lag:c=311": {
+   "base": "076af1ec9f0b843609aab563192a882ed903a9b62b9fbe5807b78d39886fdf55"
+  },
+  "e7c:lag:k=week:tag=BL1N-lag:c=311": {
+   "base": "076af1ec9f0b843609aab563192a882ed903a9b62b9fbe5807b78d39886fdf55"
+  },
+  "e7c:lag:k=week:tag=BL1-GP-lag:c=311": {
+   "base": "076af1ec9f0b843609aab563192a882ed903a9b62b9fbe5807b78d39886fdf55"
+  },
+  "e7c:lag:k=week:tag=Sublet-lag:c=312": {
+   "base": "278fabac36c91b8103bdca32d53251de6462e604ddccc64bc55665ddb3276c76"
+  },
+  "e7c:lag:k=week:tag=A9-lag:c=312": {
+   "base": "278fabac36c91b8103bdca32d53251de6462e604ddccc64bc55665ddb3276c76"
+  },
+  "e7c:lag:k=week:tag=BL1-lag:c=312": {
+   "base": "278fabac36c91b8103bdca32d53251de6462e604ddccc64bc55665ddb3276c76"
+  },
+  "e7c:lag:k=week:tag=BL1-BO-lag:c=312": {
+   "base": "278fabac36c91b8103bdca32d53251de6462e604ddccc64bc55665ddb3276c76"
+  },
+  "e7c:lag:k=week:tag=BL2-lag:c=312": {
+   "base": "278fabac36c91b8103bdca32d53251de6462e604ddccc64bc55665ddb3276c76"
+  },
+  "e7c:lag:k=week:tag=BL3-0-lag:c=312": {
+   "base": "278fabac36c91b8103bdca32d53251de6462e604ddccc64bc55665ddb3276c76"
+  },
+  "e7c:lag:k=week:tag=BL4-lag:c=312": {
+   "base": "278fabac36c91b8103bdca32d53251de6462e604ddccc64bc55665ddb3276c76"
+  },
+  "e7c:lag:k=week:tag=BL5-tau60-lag:c=312": {
+   "base": "278fabac36c91b8103bdca32d53251de6462e604ddccc64bc55665ddb3276c76"
+  },
+  "e7c:lag:k=week:tag=BL5N-lag:c=312": {
+   "base": "278fabac36c91b8103bdca32d53251de6462e604ddccc64bc55665ddb3276c76"
+  },
+  "e7c:lag:k=week:tag=BL1N-lag:c=312": {
+   "base": "278fabac36c91b8103bdca32d53251de6462e604ddccc64bc55665ddb3276c76"
+  },
+  "e7c:lag:k=week:tag=BL1-GP-lag:c=312": {
+   "base": "278fabac36c91b8103bdca32d53251de6462e604ddccc64bc55665ddb3276c76"
+  },
+  "e7c:lag:k=week:tag=Sublet-lag:c=313": {
+   "base": "1aa22e9e538dce29262864b25fd0009e1fefe683a84e235aec2b3a4bfb739db0"
+  },
+  "e7c:lag:k=week:tag=A9-lag:c=313": {
+   "base": "1aa22e9e538dce29262864b25fd0009e1fefe683a84e235aec2b3a4bfb739db0"
+  },
+  "e7c:lag:k=week:tag=BL1-lag:c=313": {
+   "base": "1aa22e9e538dce29262864b25fd0009e1fefe683a84e235aec2b3a4bfb739db0"
+  },
+  "e7c:lag:k=week:tag=BL1-BO-lag:c=313": {
+   "base": "1aa22e9e538dce29262864b25fd0009e1fefe683a84e235aec2b3a4bfb739db0"
+  },
+  "e7c:lag:k=week:tag=BL2-lag:c=313": {
+   "base": "1aa22e9e538dce29262864b25fd0009e1fefe683a84e235aec2b3a4bfb739db0"
+  },
+  "e7c:lag:k=week:tag=BL3-0-lag:c=313": {
+   "base": "1aa22e9e538dce29262864b25fd0009e1fefe683a84e235aec2b3a4bfb739db0"
+  },
+  "e7c:lag:k=week:tag=BL4-lag:c=313": {
+   "base": "1aa22e9e538dce29262864b25fd0009e1fefe683a84e235aec2b3a4bfb739db0"
+  },
+  "e7c:lag:k=week:tag=BL5-tau60-lag:c=313": {
+   "base": "1aa22e9e538dce29262864b25fd0009e1fefe683a84e235aec2b3a4bfb739db0"
+  },
+  "e7c:lag:k=week:tag=BL5N-lag:c=313": {
+   "base": "1aa22e9e538dce29262864b25fd0009e1fefe683a84e235aec2b3a4bfb739db0"
+  },
+  "e7c:lag:k=week:tag=BL1N-lag:c=313": {
+   "base": "1aa22e9e538dce29262864b25fd0009e1fefe683a84e235aec2b3a4bfb739db0"
+  },
+  "e7c:lag:k=week:tag=BL1-GP-lag:c=313": {
+   "base": "1aa22e9e538dce29262864b25fd0009e1fefe683a84e235aec2b3a4bfb739db0"
+  },
+  "e7c:lag:k=week:tag=Sublet-lag:c=314": {
+   "base": "3668d16691ad40042c58e492b61a0fb3276e9ac7cbbc8c7ecef9f31e7e85e60a"
+  },
+  "e7c:lag:k=week:tag=A9-lag:c=314": {
+   "base": "3668d16691ad40042c58e492b61a0fb3276e9ac7cbbc8c7ecef9f31e7e85e60a"
+  },
+  "e7c:lag:k=week:tag=BL1-lag:c=314": {
+   "base": "3668d16691ad40042c58e492b61a0fb3276e9ac7cbbc8c7ecef9f31e7e85e60a"
+  },
+  "e7c:lag:k=week:tag=BL1-BO-lag:c=314": {
+   "base": "3668d16691ad40042c58e492b61a0fb3276e9ac7cbbc8c7ecef9f31e7e85e60a"
+  },
+  "e7c:lag:k=week:tag=BL2-lag:c=314": {
+   "base": "3668d16691ad40042c58e492b61a0fb3276e9ac7cbbc8c7ecef9f31e7e85e60a"
+  },
+  "e7c:lag:k=week:tag=BL3-0-lag:c=314": {
+   "base": "3668d16691ad40042c58e492b61a0fb3276e9ac7cbbc8c7ecef9f31e7e85e60a"
+  },
+  "e7c:lag:k=week:tag=BL4-lag:c=314": {
+   "base": "3668d16691ad40042c58e492b61a0fb3276e9ac7cbbc8c7ecef9f31e7e85e60a"
+  },
+  "e7c:lag:k=week:tag=BL5-tau60-lag:c=314": {
+   "base": "3668d16691ad40042c58e492b61a0fb3276e9ac7cbbc8c7ecef9f31e7e85e60a"
+  },
+  "e7c:lag:k=week:tag=BL5N-lag:c=314": {
+   "base": "3668d16691ad40042c58e492b61a0fb3276e9ac7cbbc8c7ecef9f31e7e85e60a"
+  },
+  "e7c:lag:k=week:tag=BL1N-lag:c=314": {
+   "base": "3668d16691ad40042c58e492b61a0fb3276e9ac7cbbc8c7ecef9f31e7e85e60a"
+  },
+  "e7c:lag:k=week:tag=BL1-GP-lag:c=314": {
+   "base": "3668d16691ad40042c58e492b61a0fb3276e9ac7cbbc8c7ecef9f31e7e85e60a"
+  },
+  "e7c:lag:k=week:tag=Sublet-lag:c=315": {
+   "base": "1b44f61860e551ec8823b15f199032c830775d2b8589da9b0cf499354b117df7"
+  },
+  "e7c:lag:k=week:tag=A9-lag:c=315": {
+   "base": "1b44f61860e551ec8823b15f199032c830775d2b8589da9b0cf499354b117df7"
+  },
+  "e7c:lag:k=week:tag=BL1-lag:c=315": {
+   "base": "1b44f61860e551ec8823b15f199032c830775d2b8589da9b0cf499354b117df7"
+  },
+  "e7c:lag:k=week:tag=BL1-BO-lag:c=315": {
+   "base": "1b44f61860e551ec8823b15f199032c830775d2b8589da9b0cf499354b117df7"
+  },
+  "e7c:lag:k=week:tag=BL2-lag:c=315": {
+   "base": "1b44f61860e551ec8823b15f199032c830775d2b8589da9b0cf499354b117df7"
+  },
+  "e7c:lag:k=week:tag=BL3-0-lag:c=315": {
+   "base": "1b44f61860e551ec8823b15f199032c830775d2b8589da9b0cf499354b117df7"
+  },
+  "e7c:lag:k=week:tag=BL4-lag:c=315": {
+   "base": "1b44f61860e551ec8823b15f199032c830775d2b8589da9b0cf499354b117df7"
+  },
+  "e7c:lag:k=week:tag=BL5-tau60-lag:c=315": {
+   "base": "1b44f61860e551ec8823b15f199032c830775d2b8589da9b0cf499354b117df7"
+  },
+  "e7c:lag:k=week:tag=BL5N-lag:c=315": {
+   "base": "1b44f61860e551ec8823b15f199032c830775d2b8589da9b0cf499354b117df7"
+  },
+  "e7c:lag:k=week:tag=BL1N-lag:c=315": {
+   "base": "1b44f61860e551ec8823b15f199032c830775d2b8589da9b0cf499354b117df7"
+  },
+  "e7c:lag:k=week:tag=BL1-GP-lag:c=315": {
+   "base": "1b44f61860e551ec8823b15f199032c830775d2b8589da9b0cf499354b117df7"
+  },
+  "e7c:lag:k=week:tag=Sublet-lag:c=316": {
+   "base": "5d2718e0921a6cf984a6e9bcae2d133adfe5da3b44dd95756667e9ffe4d6c96a"
+  },
+  "e7c:lag:k=week:tag=A9-lag:c=316": {
+   "base": "5d2718e0921a6cf984a6e9bcae2d133adfe5da3b44dd95756667e9ffe4d6c96a"
+  },
+  "e7c:lag:k=week:tag=BL1-lag:c=316": {
+   "base": "5d2718e0921a6cf984a6e9bcae2d133adfe5da3b44dd95756667e9ffe4d6c96a"
+  },
+  "e7c:lag:k=week:tag=BL1-BO-lag:c=316": {
+   "base": "5d2718e0921a6cf984a6e9bcae2d133adfe5da3b44dd95756667e9ffe4d6c96a"
+  },
+  "e7c:lag:k=week:tag=BL2-lag:c=316": {
+   "base": "5d2718e0921a6cf984a6e9bcae2d133adfe5da3b44dd95756667e9ffe4d6c96a"
+  },
+  "e7c:lag:k=week:tag=BL3-0-lag:c=316": {
+   "base": "5d2718e0921a6cf984a6e9bcae2d133adfe5da3b44dd95756667e9ffe4d6c96a"
+  },
+  "e7c:lag:k=week:tag=BL4-lag:c=316": {
+   "base": "5d2718e0921a6cf984a6e9bcae2d133adfe5da3b44dd95756667e9ffe4d6c96a"
+  },
+  "e7c:lag:k=week:tag=BL5-tau60-lag:c=316": {
+   "base": "5d2718e0921a6cf984a6e9bcae2d133adfe5da3b44dd95756667e9ffe4d6c96a"
+  },
+  "e7c:lag:k=week:tag=BL5N-lag:c=316": {
+   "base": "5d2718e0921a6cf984a6e9bcae2d133adfe5da3b44dd95756667e9ffe4d6c96a"
+  },
+  "e7c:lag:k=week:tag=BL1N-lag:c=316": {
+   "base": "5d2718e0921a6cf984a6e9bcae2d133adfe5da3b44dd95756667e9ffe4d6c96a"
+  },
+  "e7c:lag:k=week:tag=BL1-GP-lag:c=316": {
+   "base": "5d2718e0921a6cf984a6e9bcae2d133adfe5da3b44dd95756667e9ffe4d6c96a"
+  }
+ },
+ "sources_sha256": {
+  "code/sim/sublet/experiments/e7c.py": "66503b498552f444c3a9864c762c7835eca38a6de38d9edbbea0b24e2043ff0e",
+  "code/sim/sublet/experiments/e7c_tags.py": "231c42bbabec9a61b5b6fabd9ebdbc945191d5446c664a1713ad6cc8879c5a65",
+  "code/sim/sublet/experiments/e7c_analysis.py": "47637395ca47519982603a180c4b54f9fe5ad036b58917de69ae9630216c9f04",
+  "code/sim/sublet/experiments/e7h.py": "e6ea63450ad36e45a32b35442c278bf72cb3bf879ae1033031fc76b52403a078",
+  "code/sim/sublet/experiments/ms5b_common.py": "6ae2f94e94f322f271addcdb3dfc16fffca696a376ad37fca499ba7c0d3ebe84",
+  "code/sim/sublet/baselines/common.py": "87e198c0c104d1dac69af2798a4417aeafb3a79401371630c2e5cd92cab5d7da",
+  "code/sim/sublet/baselines/greedy.py": "e4383ddd6d8430b6bdddf6a621941090b4ebd0f17ae44dea2dd2f6b337ea67eb",
+  "code/sim/sublet/baselines/ski.py": "cac53754d5ee105ecb2c4b89f2986dafd1eef1539dcd31802ab6ad1c6a5fd2d0",
+  "code/sim/sublet/baselines/spothedge.py": "71dac8f94604166c80ad6f7e9e809a1f9a083471b37b3fa70068665d37e59456",
+  "code/sim/sublet/baselines/cocar.py": "ac3aa5951f90af2e989e3869d0c47255494de240695b04efb7a23ff0137c07a7",
+  "code/sim/sublet/baselines/retrorenting.py": "74253f86406b05bbc31ac086b533501b1e115f1579ec0f7f6c0c36006446cd27",
+  "code/sim/sublet/algos/a9.py": "60843cc690083e8a553af4c8e5c8570210fca9b24f1be00f62f0ea4dc3842582",
+  "code/sim/sublet/algos/guard.py": "72c92b01fe0f46ecca11c3ba1bd51bc66ee3605454f3666ea7ad4d612b6abe0f",
+  "code/sim/sublet/algos/online_lb.py": "a52b5800bc2a617783c127e8237a6d52d3950bb154735db19c4be8822f174e8b"
+ },
+ "gate": {
+  "kind": "ms7_registration",
+  "ok": true,
+  "reason": "registration at HEAD, clean tree, analysis sha256 as registered",
+  "record": {
+   "head": "44d1b4e42b5be44503039b1b5d6bfba8e32930ff",
+   "registration": "design/ms7/registration.md",
+   "registration_at_head": true,
+   "registration_sha256": "163ff03578ced770f5ded225c058281e32093b613cf2aed29b6e40b6ef094ec8",
+   "analysis_sha256_registered": "47637395ca47519982603a180c4b54f9fe5ad036b58917de69ae9630216c9f04",
+   "analysis_sha256_head": "47637395ca47519982603a180c4b54f9fe5ad036b58917de69ae9630216c9f04",
+   "analysis_sha256_disk": "47637395ca47519982603a180c4b54f9fe5ad036b58917de69ae9630216c9f04",
+   "dirty_paths": []
+  }
+ }
+}

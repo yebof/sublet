@@ -1,0 +1,1591 @@
+{
+ "meta": {
+  "exp": "e9v2",
+  "spec": "design/ms7/feasibility/sens.md \u00a72 A-D (C56)",
+  "change": "C56",
+  "git_revision": "44d1b4e42b5be44503039b1b5d6bfba8e32930ff",
+  "analysis_sha256": "6d9772304fe30b20d0d500c2c56b867ccecc97dc99e672c63bdfcd66912e4a2d",
+  "registration": {
+   "path": "design/ms7/registration.md",
+   "exists": true,
+   "registered_sha256": "6d9772304fe30b20d0d500c2c56b867ccecc97dc99e672c63bdfcd66912e4a2d",
+   "analysis_sha256": "6d9772304fe30b20d0d500c2c56b867ccecc97dc99e672c63bdfcd66912e4a2d",
+   "matches": true
+  },
+  "inputs": {
+   "out/e9v2/summary.json": "5d7fd4e44706b11df61d3fe71646c27a09e2c071df6f466b86fd125cd03caf10"
+  },
+  "input_records": [
+   {
+    "file": "out/e9v2/summary.json",
+    "exists": true,
+    "sha256": "5d7fd4e44706b11df61d3fe71646c27a09e2c071df6f466b86fd125cd03caf10",
+    "git_revision": "44d1b4e42b5be44503039b1b5d6bfba8e32930ff",
+    "reduced": false,
+    "gate_kind": "ms7_registration",
+    "gate_ok": true,
+    "gate_enforced": true
+   }
+  ],
+  "confirmation_inputs": {},
+  "reduced": false,
+  "registered_full_inputs": true,
+  "label": "exploratory: post-freeze runs on the confirmation weeks (design/ms7/plan.md D6)"
+ },
+ "points": {
+  "e7f_V1_SML": {
+   "sites_x_llms": 84,
+   "by_alignment": {
+    "1": {
+     "act_s_per_slot": {
+      "Sublet": 0.014161428551435366,
+      "A9": 0.0002472973396329002
+     },
+     "act_overhead_s_per_slot": 0.013914131211802466,
+     "act_ratio": 57.26478324618153,
+     "slow_step_s_per_slot": {
+      "Sublet": 0.014236059162714,
+      "A9": 0.00031050743160044984
+     },
+     "slow_step_overhead_s_per_slot": 0.013925551731113551,
+     "slow_loop_s_per_h": {
+      "Sublet": 0.17083270995256802,
+      "A9": 0.0037260891792053976
+     },
+     "projected_slots": 0
+    },
+    "2": {
+     "act_s_per_slot": {
+      "Sublet": 0.017710261268398933,
+      "A9": 0.0002716758269040535
+     },
+     "act_overhead_s_per_slot": 0.01743858544149488,
+     "act_ratio": 65.18894768894394,
+     "slow_step_s_per_slot": {
+      "Sublet": 0.01780128748214338,
+      "A9": 0.00034648144598274183
+     },
+     "slow_step_overhead_s_per_slot": 0.017454806036160637,
+     "slow_loop_s_per_h": {
+      "Sublet": 0.21361544978572056,
+      "A9": 0.004157777351792902
+     },
+     "projected_slots": 4
+    },
+    "3": {
+     "act_s_per_slot": {
+      "Sublet": 0.024274026944314957,
+      "A9": 0.0002723319000021244
+     },
+     "act_overhead_s_per_slot": 0.02400169504431283,
+     "act_ratio": 89.13398299694452,
+     "slow_step_s_per_slot": {
+      "Sublet": 0.024380419940118574,
+      "A9": 0.0003593969223503437
+     },
+     "slow_step_overhead_s_per_slot": 0.02402102301776823,
+     "slow_loop_s_per_h": {
+      "Sublet": 0.2925650392814229,
+      "A9": 0.0043127630682041245
+     },
+     "projected_slots": 0
+    },
+    "4": {
+     "act_s_per_slot": {
+      "Sublet": 0.020651477342148103,
+      "A9": 0.00026942513876646344
+     },
+     "act_overhead_s_per_slot": 0.02038205220338164,
+     "act_ratio": 76.65015015561973,
+     "slow_step_s_per_slot": {
+      "Sublet": 0.020746470073289756,
+      "A9": 0.00035380096879736
+     },
+     "slow_step_overhead_s_per_slot": 0.020392669104492396,
+     "slow_loop_s_per_h": {
+      "Sublet": 0.24895764087947705,
+      "A9": 0.00424561162556832
+     },
+     "projected_slots": 5
+    }
+   },
+   "act_overhead_s_per_slot_median": 0.01891031882243826,
+   "slow_step_overhead_s_per_slot_median": 0.018923737570326518,
+   "act_ratio_median": 70.91954892228183,
+   "split": {
+    "c": 1,
+    "identical": true,
+    "per_slot_mean_s": {
+     "act": 0.01401357706668528,
+     "inner_act": 0.000251604721092412,
+     "guard": 0.013761972345592868,
+     "lb": 0.00016075877162317434,
+     "safe": 0.011887156191126754,
+     "test": 0.0016685770582019661,
+     "projection": 7.895125438355737e-06,
+     "other": 3.7585199202617834e-05
+    }
+   }
+  },
+  "e7f_V2_SML": {
+   "sites_x_llms": 147,
+   "by_alignment": {
+    "1": {
+     "act_s_per_slot": {
+      "Sublet": 0.02713117619633623,
+      "A9": 0.00033085689291409735
+     },
+     "act_overhead_s_per_slot": 0.02680031930342213,
+     "act_ratio": 82.00275338794432,
+     "slow_step_s_per_slot": {
+      "Sublet": 0.027234545682505187,
+      "A9": 0.0004258489870052371
+     },
+     "slow_step_overhead_s_per_slot": 0.02680869669549995,
+     "slow_loop_s_per_h": {
+      "Sublet": 0.3268145481900622,
+      "A9": 0.005110187844062845
+     },
+     "projected_slots": 1
+    },
+    "2": {
+     "act_s_per_slot": {
+      "Sublet": 0.03786739371975677,
+      "A9": 0.0003927940528632866
+     },
+     "act_overhead_s_per_slot": 0.03747459966689348,
+     "act_ratio": 96.40521144279303,
+     "slow_step_s_per_slot": {
+      "Sublet": 0.0380004331091186,
+      "A9": 0.0005061221454525366
+     },
+     "slow_step_overhead_s_per_slot": 0.037494310963666067,
+     "slow_loop_s_per_h": {
+      "Sublet": 0.45600519730942324,
+      "A9": 0.00607346574543044
+     },
+     "projected_slots": 5
+    },
+    "3": {
+     "act_s_per_slot": {
+      "Sublet": 0.05020677998092853,
+      "A9": 0.00036854095459501777
+     },
+     "act_overhead_s_per_slot": 0.04983823902633352,
+     "act_ratio": 136.2312094624592,
+     "slow_step_s_per_slot": {
+      "Sublet": 0.05035453698170992,
+      "A9": 0.0005028743342134274
+     },
+     "slow_step_overhead_s_per_slot": 0.04985166264749649,
+     "slow_loop_s_per_h": {
+      "Sublet": 0.6042544437805191,
+      "A9": 0.006034492010561128
+     },
+     "projected_slots": 1
+    },
+    "4": {
+     "act_s_per_slot": {
+      "Sublet": 0.04408532959577213,
+      "A9": 0.000375114030450479
+     },
+     "act_overhead_s_per_slot": 0.043710215565321654,
+     "act_ratio": 117.52514173577971,
+     "slow_step_s_per_slot": {
+      "Sublet": 0.04422170433907821,
+      "A9": 0.0005030303275109165
+     },
+     "slow_step_overhead_s_per_slot": 0.043718674011567295,
+     "slow_loop_s_per_h": {
+      "Sublet": 0.5306604520689385,
+      "A9": 0.006036363930130999
+     },
+     "projected_slots": 15
+    }
+   },
+   "act_overhead_s_per_slot_median": 0.040592407616107565,
+   "slow_step_overhead_s_per_slot_median": 0.04060649248761668,
+   "act_ratio_median": 106.96517658928637,
+   "split": {
+    "c": 1,
+    "identical": true,
+    "per_slot_mean_s": {
+     "act": 0.02690361096109781,
+     "inner_act": 0.00032975314469594095,
+     "guard": 0.02657385781640187,
+     "lb": 0.00016015087183202722,
+     "safe": 0.02459239584277384,
+     "test": 0.001754598399404333,
+     "projection": 2.5337476270376807e-05,
+     "other": 4.137522612129235e-05
+    }
+   }
+  },
+  "e7f_V4_SML": {
+   "sites_x_llms": 267,
+   "by_alignment": {
+    "1": {
+     "act_s_per_slot": {
+      "Sublet": 0.05620531603603417,
+      "A9": 0.0006724443665007129
+     },
+     "act_overhead_s_per_slot": 0.055532871669533454,
+     "act_ratio": 83.58359268963342,
+     "slow_step_s_per_slot": {
+      "Sublet": 0.056366801837510944,
+      "A9": 0.000816729430678404
+     },
+     "slow_step_overhead_s_per_slot": 0.05555007240683254,
+     "slow_loop_s_per_h": {
+      "Sublet": 0.6764016220501313,
+      "A9": 0.009800753168140849
+     },
+     "projected_slots": 3
+    },
+    "2": {
+     "act_s_per_slot": {
+      "Sublet": 0.08997231998202754,
+      "A9": 0.0008893107458586908
+     },
+     "act_overhead_s_per_slot": 0.08908300923616885,
+     "act_ratio": 101.17084540022404,
+     "slow_step_s_per_slot": {
+      "Sublet": 0.09017811891034297,
+      "A9": 0.0010608037911070925
+     },
+     "slow_step_overhead_s_per_slot": 0.08911731511923587,
+     "slow_loop_s_per_h": {
+      "Sublet": 1.0821374269241157,
+      "A9": 0.01272964549328511
+     },
+     "projected_slots": 8
+    },
+    "3": {
+     "act_s_per_slot": {
+      "Sublet": 0.11397951133646227,
+      "A9": 0.000721512857126072
+     },
+     "act_overhead_s_per_slot": 0.1132579984793362,
+     "act_ratio": 157.97294561106662,
+     "slow_step_s_per_slot": {
+      "Sublet": 0.11420950664938169,
+      "A9": 0.0009209150432272711
+     },
+     "slow_step_overhead_s_per_slot": 0.11328859160615441,
+     "slow_loop_s_per_h": {
+      "Sublet": 1.3705140797925803,
+      "A9": 0.011050980518727252
+     },
+     "projected_slots": 0
+    },
+    "4": {
+     "act_s_per_slot": {
+      "Sublet": 0.09863580346023405,
+      "A9": 0.0008125690300302166
+     },
+     "act_overhead_s_per_slot": 0.09782323443020384,
+     "act_ratio": 121.38759885614412,
+     "slow_step_s_per_slot": {
+      "Sublet": 0.09885350481231904,
+      "A9": 0.000999321200652048
+     },
+     "slow_step_overhead_s_per_slot": 0.09785418361166699,
+     "slow_loop_s_per_h": {
+      "Sublet": 1.1862420577478285,
+      "A9": 0.011991854407824576
+     },
+     "projected_slots": 17
+    }
+   },
+   "act_overhead_s_per_slot_median": 0.09345312183318635,
+   "slow_step_overhead_s_per_slot_median": 0.09348574936545143,
+   "act_ratio_median": 111.27922212818407,
+   "split": {
+    "c": 1,
+    "identical": true,
+    "per_slot_mean_s": {
+     "act": 0.05557029445319333,
+     "inner_act": 0.0006613043838620393,
+     "guard": 0.05490899006933129,
+     "lb": 0.0001642241889688497,
+     "safe": 0.052718985303524986,
+     "test": 0.0019208014467343066,
+     "projection": 6.025975259641806e-05,
+     "other": 4.471937750673128e-05
+    }
+   }
+  },
+  "e7f_V8_SML": {
+   "sites_x_llms": 507,
+   "by_alignment": {
+    "1": {
+     "act_s_per_slot": {
+      "Sublet": 0.13700958824968743,
+      "A9": 0.0028268720699189645
+     },
+     "act_overhead_s_per_slot": 0.13418271617976846,
+     "act_ratio": 48.466851297453644,
+     "slow_step_s_per_slot": {
+      "Sublet": 0.1372689668884656,
+      "A9": 0.0030704284807951706
+     },
+     "slow_step_overhead_s_per_slot": 0.13419853840767043,
+     "slow_loop_s_per_h": {
+      "Sublet": 1.6472276026615873,
+      "A9": 0.036845141769542046
+     },
+     "projected_slots": 1
+    },
+    "2": {
+     "act_s_per_slot": {
+      "Sublet": 0.23241198170904276,
+      "A9": 0.0042301245395922
+     },
+     "act_overhead_s_per_slot": 0.22818185716945055,
+     "act_ratio": 54.9421132956639,
+     "slow_step_s_per_slot": {
+      "Sublet": 0.23273399595442848,
+      "A9": 0.004521685316123896
+     },
+     "slow_step_overhead_s_per_slot": 0.22821231063830458,
+     "slow_loop_s_per_h": {
+      "Sublet": 2.792807951453142,
+      "A9": 0.05426022379348675
+     },
+     "projected_slots": 7
+    },
+    "3": {
+     "act_s_per_slot": {
+      "Sublet": 0.29154776298512136,
+      "A9": 0.0024681850805387106
+     },
+     "act_overhead_s_per_slot": 0.28907957790458266,
+     "act_ratio": 118.12232611076622,
+     "slow_step_s_per_slot": {
+      "Sublet": 0.29192433958814945,
+      "A9": 0.002805008886045673
+     },
+     "slow_step_overhead_s_per_slot": 0.28911933070210377,
+     "slow_loop_s_per_h": {
+      "Sublet": 3.5030920750577934,
+      "A9": 0.03366010663254807
+     },
+     "projected_slots": 0
+    },
+    "4": {
+     "act_s_per_slot": {
+      "Sublet": 0.25398488379950224,
+      "A9": 0.0037552498381248573
+     },
+     "act_overhead_s_per_slot": 0.2502296339613774,
+     "act_ratio": 67.63461680257386,
+     "slow_step_s_per_slot": {
+      "Sublet": 0.2543387640810882,
+      "A9": 0.004078820414078008
+     },
+     "slow_step_overhead_s_per_slot": 0.25025994366701015,
+     "slow_loop_s_per_h": {
+      "Sublet": 3.0520651689730585,
+      "A9": 0.04894584496893609
+     },
+     "projected_slots": 17
+    }
+   },
+   "act_overhead_s_per_slot_median": 0.23920574556541396,
+   "slow_step_overhead_s_per_slot_median": 0.23923612715265735,
+   "act_ratio_median": 61.28836504911888,
+   "split": {
+    "c": 1,
+    "identical": true,
+    "per_slot_mean_s": {
+     "act": 0.1340396800126958,
+     "inner_act": 0.002749200402629665,
+     "guard": 0.13129047961006612,
+     "lb": 0.00017670726649359695,
+     "safe": 0.12862070216861968,
+     "test": 0.0023844993023279435,
+     "projection": 5.58987214592182e-05,
+     "other": 5.267215116570393e-05
+    }
+   }
+  },
+  "e7f_V16_SML": {
+   "sites_x_llms": 987,
+   "by_alignment": {
+    "1": {
+     "act_s_per_slot": {
+      "Sublet": 0.3756131448802383,
+      "A9": 0.01797380311149431
+     },
+     "act_overhead_s_per_slot": 0.35763934176874396,
+     "act_ratio": 20.897811250643574,
+     "slow_step_s_per_slot": {
+      "Sublet": 0.3760687926551327,
+      "A9": 0.018383030462751374
+     },
+     "slow_step_overhead_s_per_slot": 0.35768576219238135,
+     "slow_loop_s_per_h": {
+      "Sublet": 4.5128255118615925,
+      "A9": 0.22059636555301645
+     },
+     "projected_slots": 7
+    },
+    "2": {
+     "act_s_per_slot": {
+      "Sublet": 0.7097248801534685,
+      "A9": 0.02771964577388846
+     },
+     "act_overhead_s_per_slot": 0.68200523437958,
+     "act_ratio": 25.603677837110745,
+     "slow_step_s_per_slot": {
+      "Sublet": 0.7102913038801894,
+      "A9": 0.028254601903932378
+     },
+     "slow_step_overhead_s_per_slot": 0.682036701976257,
+     "slow_loop_s_per_h": {
+      "Sublet": 8.523495646562273,
+      "A9": 0.33905522284718853
+     },
+     "projected_slots": 7
+    },
+    "3": {
+     "act_s_per_slot": {
+      "Sublet": 0.8135335498065817,
+      "A9": 0.014852673450756507
+     },
+     "act_overhead_s_per_slot": 0.7986808763558252,
+     "act_ratio": 54.773543127021696,
+     "slow_step_s_per_slot": {
+      "Sublet": 0.8143074549330372,
+      "A9": 0.015496058345888741
+     },
+     "slow_step_overhead_s_per_slot": 0.7988113965871485,
+     "slow_loop_s_per_h": {
+      "Sublet": 9.771689459196446,
+      "A9": 0.1859527001506649
+     },
+     "projected_slots": 0
+    },
+    "4": {
+     "act_s_per_slot": {
+      "Sublet": 0.7063333646963454,
+      "A9": 0.023399221906503145
+     },
+     "act_overhead_s_per_slot": 0.6829341427898423,
+     "act_ratio": 30.186190272422703,
+     "slow_step_s_per_slot": {
+      "Sublet": 0.7070813553485399,
+      "A9": 0.02398908103027174
+     },
+     "slow_step_overhead_s_per_slot": 0.6830922743182681,
+     "slow_loop_s_per_h": {
+      "Sublet": 8.484976264182478,
+      "A9": 0.28786897236326087
+     },
+     "projected_slots": 15
+    }
+   },
+   "act_overhead_s_per_slot_median": 0.6824696885847112,
+   "slow_step_overhead_s_per_slot_median": 0.6825644881472626,
+   "act_ratio_median": 27.894934054766722,
+   "split": {
+    "c": 1,
+    "identical": true,
+    "per_slot_mean_s": {
+     "act": 0.37224421579513645,
+     "inner_act": 0.018092943990874726,
+     "guard": 0.35415127180426176,
+     "lb": 0.0001872422629579281,
+     "safe": 0.3502225623168569,
+     "test": 0.0032956858032978037,
+     "projection": 0.0003828222074338959,
+     "other": 6.29592137152536e-05
+    }
+   }
+  },
+  "e7f_V32_SML": {
+   "sites_x_llms": 1947,
+   "by_alignment": {
+    "1": {
+     "act_s_per_slot": {
+      "Sublet": 1.2084900549331603,
+      "A9": 0.13188495732093644
+     },
+     "act_overhead_s_per_slot": 1.076605097612224,
+     "act_ratio": 9.163213754487186,
+     "slow_step_s_per_slot": {
+      "Sublet": 1.2094682683236897,
+      "A9": 0.13274833348017032
+     },
+     "slow_step_overhead_s_per_slot": 1.0767199348435195,
+     "slow_loop_s_per_h": {
+      "Sublet": 14.513619219884276,
+      "A9": 1.5929800017620437
+     },
+     "projected_slots": 7
+    },
+    "2": {
+     "act_s_per_slot": {
+      "Sublet": 2.49006005546188,
+      "A9": 0.19674259897308527
+     },
+     "act_overhead_s_per_slot": 2.293317456488795,
+     "act_ratio": 12.65643571071522,
+     "slow_step_s_per_slot": {
+      "Sublet": 2.4910490601178026,
+      "A9": 0.19778833631587783
+     },
+     "slow_step_overhead_s_per_slot": 2.2932607238019247,
+     "slow_loop_s_per_h": {
+      "Sublet": 29.89258872141363,
+      "A9": 2.373460035790534
+     },
+     "projected_slots": 7
+    },
+    "3": {
+     "act_s_per_slot": {
+      "Sublet": 2.635470990967911,
+      "A9": 0.10320808288007458
+     },
+     "act_overhead_s_per_slot": 2.5322629080878363,
+     "act_ratio": 25.535509597928176,
+     "slow_step_s_per_slot": {
+      "Sublet": 2.636865908760228,
+      "A9": 0.10437338621219776
+     },
+     "slow_step_overhead_s_per_slot": 2.5324925225480306,
+     "slow_loop_s_per_h": {
+      "Sublet": 31.64239090512274,
+      "A9": 1.252480634546373
+     },
+     "projected_slots": 0
+    },
+    "4": {
+     "act_s_per_slot": {
+      "Sublet": 2.35056992143897,
+      "A9": 0.17101145592945008
+     },
+     "act_overhead_s_per_slot": 2.17955846550952,
+     "act_ratio": 13.745102096602732,
+     "slow_step_s_per_slot": {
+      "Sublet": 2.351817243839226,
+      "A9": 0.17213584050639635
+     },
+     "slow_step_overhead_s_per_slot": 2.17968140333283,
+     "slow_loop_s_per_h": {
+      "Sublet": 28.221806926070713,
+      "A9": 2.0656300860767565
+     },
+     "projected_slots": 11
+    }
+   },
+   "act_overhead_s_per_slot_median": 2.236437960999157,
+   "slow_step_overhead_s_per_slot_median": 2.236471063567377,
+   "act_ratio_median": 13.200768903658975,
+   "split": {
+    "c": 1,
+    "identical": true,
+    "per_slot_mean_s": {
+     "act": 1.172752775887299,
+     "inner_act": 0.13249207563866447,
+     "guard": 1.0402607002486346,
+     "lb": 0.00022140980258377062,
+     "safe": 1.0343713411841438,
+     "test": 0.005032333173504513,
+     "projection": 0.0005609143020895621,
+     "other": 7.470178631289552e-05
+    }
+   }
+  },
+  "e7f_V64_SML": {
+   "sites_x_llms": 3855,
+   "by_alignment": {
+    "1": {
+     "act_s_per_slot": {
+      "Sublet": 4.6959611330676125,
+      "A9": 1.0088921815978311
+     },
+     "act_overhead_s_per_slot": 3.687068951469781,
+     "act_ratio": 4.654571835050196,
+     "slow_step_s_per_slot": {
+      "Sublet": 4.697795892457685,
+      "A9": 1.0105936283685475
+     },
+     "slow_step_overhead_s_per_slot": 3.6872022640891373,
+     "slow_loop_s_per_h": {
+      "Sublet": 56.373550709492214,
+      "A9": 12.127123540422568
+     },
+     "projected_slots": 7
+    },
+    "2": {
+     "act_s_per_slot": {
+      "Sublet": 10.025710799393387,
+      "A9": 1.4315331884119789
+     },
+     "act_overhead_s_per_slot": 8.594177610981408,
+     "act_ratio": 7.003477726223768,
+     "slow_step_s_per_slot": {
+      "Sublet": 10.02790396332825,
+      "A9": 1.4337237078418386
+     },
+     "slow_step_overhead_s_per_slot": 8.59418025548641,
+     "slow_loop_s_per_h": {
+      "Sublet": 120.33484755993898,
+      "A9": 17.204684494102064
+     },
+     "projected_slots": 7
+    },
+    "3": {
+     "act_s_per_slot": {
+      "Sublet": 9.538646018570741,
+      "A9": 0.7822934120389012
+     },
+     "act_overhead_s_per_slot": 8.75635260653184,
+     "act_ratio": 12.193182087153268,
+     "slow_step_s_per_slot": {
+      "Sublet": 9.541337169622743,
+      "A9": 0.7849620552442502
+     },
+     "slow_step_overhead_s_per_slot": 8.756375114378493,
+     "slow_loop_s_per_h": {
+      "Sublet": 114.49604603547293,
+      "A9": 9.419544662931003
+     },
+     "projected_slots": 0
+    },
+    "4": {
+     "act_s_per_slot": {
+      "Sublet": 8.618751570365728,
+      "A9": 1.318030941316263
+     },
+     "act_overhead_s_per_slot": 7.300720629049465,
+     "act_ratio": 6.539111715965133,
+     "slow_step_s_per_slot": {
+      "Sublet": 8.621575918619378,
+      "A9": 1.3206370534915348
+     },
+     "slow_step_overhead_s_per_slot": 7.3009388651278435,
+     "slow_loop_s_per_h": {
+      "Sublet": 103.45891102343255,
+      "A9": 15.847644641898418
+     },
+     "projected_slots": 13
+    }
+   },
+   "act_overhead_s_per_slot_median": 7.9474491200154365,
+   "slow_step_overhead_s_per_slot_median": 7.947559560307127,
+   "act_ratio_median": 6.771294721094451,
+   "split": {
+    "c": 1,
+    "identical": true,
+    "per_slot_mean_s": {
+     "act": 4.581172260994208,
+     "inner_act": 1.014241415179438,
+     "guard": 3.56693084581477,
+     "lb": 0.00024996604608734034,
+     "safe": 3.5567105331946447,
+     "test": 0.008863442113377258,
+     "projection": 0.0010162824085758377,
+     "other": 9.062205208465457e-05
+    }
+   }
+  },
+  "e7f_V8_S": {
+   "sites_x_llms": 169,
+   "by_alignment": {
+    "1": {
+     "act_s_per_slot": {
+      "Sublet": 0.20232715251849084,
+      "A9": 0.016387302333088074
+     },
+     "act_overhead_s_per_slot": 0.18593985018540277,
+     "act_ratio": 12.346580810312279,
+     "slow_step_s_per_slot": {
+      "Sublet": 0.20280488683137163,
+      "A9": 0.016815589302698046
+     },
+     "slow_step_overhead_s_per_slot": 0.18598929752867358,
+     "slow_loop_s_per_h": {
+      "Sublet": 2.4336586419764594,
+      "A9": 0.20178707163237655
+     },
+     "projected_slots": 0
+    },
+    "2": {
+     "act_s_per_slot": {
+      "Sublet": 0.42361197465733214,
+      "A9": 0.025765348533039086
+     },
+     "act_overhead_s_per_slot": 0.39784662612429306,
+     "act_ratio": 16.441150567559045,
+     "slow_step_s_per_slot": {
+      "Sublet": 0.4241965145871897,
+      "A9": 0.026288303881301545
+     },
+     "slow_step_overhead_s_per_slot": 0.39790821070588817,
+     "slow_loop_s_per_h": {
+      "Sublet": 5.090358175046276,
+      "A9": 0.31545964657561854
+     },
+     "projected_slots": 0
+    },
+    "3": {
+     "act_s_per_slot": {
+      "Sublet": 0.5495995468485894,
+      "A9": 0.019324750571589295
+     },
+     "act_overhead_s_per_slot": 0.530274796277,
+     "act_ratio": 28.440188390146425,
+     "slow_step_s_per_slot": {
+      "Sublet": 0.5504941197480852,
+      "A9": 0.020215197212463763
+     },
+     "slow_step_overhead_s_per_slot": 0.5302789225356214,
+     "slow_loop_s_per_h": {
+      "Sublet": 6.605929436977021,
+      "A9": 0.24258236654956514
+     },
+     "projected_slots": 0
+    },
+    "4": {
+     "act_s_per_slot": {
+      "Sublet": 0.40291696711695596,
+      "A9": 0.020400919435713958
+     },
+     "act_overhead_s_per_slot": 0.382516047681242,
+     "act_ratio": 19.749941584084066,
+     "slow_step_s_per_slot": {
+      "Sublet": 0.40362802752901594,
+      "A9": 0.02105855721715165
+     },
+     "slow_step_overhead_s_per_slot": 0.3825694703118643,
+     "slow_loop_s_per_h": {
+      "Sublet": 4.843536330348191,
+      "A9": 0.2527026866058198
+     },
+     "projected_slots": 0
+    }
+   },
+   "act_overhead_s_per_slot_median": 0.3901813369027675,
+   "slow_step_overhead_s_per_slot_median": 0.39023884050887625,
+   "act_ratio_median": 18.095546075821556,
+   "split": {
+    "c": 1,
+    "identical": true,
+    "per_slot_mean_s": {
+     "act": 0.19977394009604016,
+     "inner_act": 0.015828195196162496,
+     "guard": 0.18394574489987767,
+     "lb": 9.339927702159103e-05,
+     "safe": 0.18208158272318542,
+     "test": 0.0016631517517251065,
+     "projection": 4.930779040377173e-05,
+     "other": 5.8303357541768084e-05
+    }
+   }
+  },
+  "e7f_V8_ML": {
+   "sites_x_llms": 338,
+   "by_alignment": {
+    "1": {
+     "act_s_per_slot": {
+      "Sublet": 0.11971684770509859,
+      "A9": 0.0023897227979937773
+     },
+     "act_overhead_s_per_slot": 0.11732712490710481,
+     "act_ratio": 50.096541659812345,
+     "slow_step_s_per_slot": {
+      "Sublet": 0.11996247569267224,
+      "A9": 0.002600003033876419
+     },
+     "slow_step_overhead_s_per_slot": 0.11736247265879582,
+     "slow_loop_s_per_h": {
+      "Sublet": 1.439549708312067,
+      "A9": 0.03120003640651703
+     },
+     "projected_slots": 1
+    },
+    "2": {
+     "act_s_per_slot": {
+      "Sublet": 0.21170940265356977,
+      "A9": 0.003749828446113194
+     },
+     "act_overhead_s_per_slot": 0.2079595742074566,
+     "act_ratio": 56.45842355081943,
+     "slow_step_s_per_slot": {
+      "Sublet": 0.21201089290358746,
+      "A9": 0.004025043272930715
+     },
+     "slow_step_overhead_s_per_slot": 0.20798584963065675,
+     "slow_loop_s_per_h": {
+      "Sublet": 2.5441307148430496,
+      "A9": 0.048300519275168576
+     },
+     "projected_slots": 6
+    },
+    "3": {
+     "act_s_per_slot": {
+      "Sublet": 0.2588115259713959,
+      "A9": 0.0021943931836479655
+     },
+     "act_overhead_s_per_slot": 0.25661713278774795,
+     "act_ratio": 117.94218460939022,
+     "slow_step_s_per_slot": {
+      "Sublet": 0.2591620030450738,
+      "A9": 0.0025002210362193487
+     },
+     "slow_step_overhead_s_per_slot": 0.2566617820088545,
+     "slow_loop_s_per_h": {
+      "Sublet": 3.109944036540886,
+      "A9": 0.030002652434632182
+     },
+     "projected_slots": 0
+    },
+    "4": {
+     "act_s_per_slot": {
+      "Sublet": 0.2216086558958826,
+      "A9": 0.0033781061857654196
+     },
+     "act_overhead_s_per_slot": 0.21823054971011718,
+     "act_ratio": 65.60144758909347,
+     "slow_step_s_per_slot": {
+      "Sublet": 0.221936016974117,
+      "A9": 0.0036724221895888653
+     },
+     "slow_step_overhead_s_per_slot": 0.21826359478452814,
+     "slow_loop_s_per_h": {
+      "Sublet": 2.663232203689404,
+      "A9": 0.04406906627506638
+     },
+     "projected_slots": 19
+    }
+   },
+   "act_overhead_s_per_slot_median": 0.21309506195878689,
+   "slow_step_overhead_s_per_slot_median": 0.21312472220759243,
+   "act_ratio_median": 61.02993556995645,
+   "split": {
+    "c": 1,
+    "identical": true,
+    "per_slot_mean_s": {
+     "act": 0.11856608788851493,
+     "inner_act": 0.0024360287223114735,
+     "guard": 0.11613005916620346,
+     "lb": 0.00013162798778567876,
+     "safe": 0.11408576119154329,
+     "test": 0.0018138649336631512,
+     "projection": 4.6180032465296485e-05,
+     "other": 5.262502074603819e-05
+    }
+   }
+  },
+  "e7r_V1_SML": {
+   "sites_x_llms": 84,
+   "by_alignment": {
+    "1": {
+     "act_s_per_slot": {
+      "Sublet": 0.008917728632998964,
+      "A9": 0.0002462727829374166
+     },
+     "act_overhead_s_per_slot": 0.008671455850061547,
+     "act_ratio": 36.21077622396121,
+     "slow_step_s_per_slot": {
+      "Sublet": 0.00898479303092851,
+      "A9": 0.00030884856985519745
+     },
+     "slow_step_overhead_s_per_slot": 0.008675944461073311,
+     "slow_loop_s_per_h": {
+      "Sublet": 0.10781751637114212,
+      "A9": 0.0037061828382623694
+     },
+     "projected_slots": 0
+    },
+    "2": {
+     "act_s_per_slot": {
+      "Sublet": 0.01090698337874427,
+      "A9": 0.00025245082603457075
+     },
+     "act_overhead_s_per_slot": 0.0106545325527097,
+     "act_ratio": 43.2043877616414,
+     "slow_step_s_per_slot": {
+      "Sublet": 0.01098378442434801,
+      "A9": 0.0003246576072544687
+     },
+     "slow_step_overhead_s_per_slot": 0.010659126817093542,
+     "slow_loop_s_per_h": {
+      "Sublet": 0.1318054130921761,
+      "A9": 0.0038958912870536246
+     },
+     "projected_slots": 7
+    },
+    "3": {
+     "act_s_per_slot": {
+      "Sublet": 0.014675845579606377,
+      "A9": 0.0002679085058237736
+     },
+     "act_overhead_s_per_slot": 0.014407937073782602,
+     "act_ratio": 54.779319284696165,
+     "slow_step_s_per_slot": {
+      "Sublet": 0.014770243153583983,
+      "A9": 0.00035411539041281986
+     },
+     "slow_step_overhead_s_per_slot": 0.014416127763171162,
+     "slow_loop_s_per_h": {
+      "Sublet": 0.1772429178430078,
+      "A9": 0.004249384684953839
+     },
+     "projected_slots": 0
+    },
+    "4": {
+     "act_s_per_slot": {
+      "Sublet": 0.013128095827091278,
+      "A9": 0.00026072712110665935
+     },
+     "act_overhead_s_per_slot": 0.012867368705984619,
+     "act_ratio": 50.35186125389994,
+     "slow_step_s_per_slot": {
+      "Sublet": 0.013215273169205628,
+      "A9": 0.0003407509179346056
+     },
+     "slow_step_overhead_s_per_slot": 0.012874522251271022,
+     "slow_loop_s_per_h": {
+      "Sublet": 0.15858327803046754,
+      "A9": 0.0040890110152152674
+     },
+     "projected_slots": 6
+    }
+   },
+   "act_overhead_s_per_slot_median": 0.01176095062934716,
+   "slow_step_overhead_s_per_slot_median": 0.011766824534182282,
+   "act_ratio_median": 46.77812450777067,
+   "split": {
+    "c": 1,
+    "identical": true,
+    "per_slot_mean_s": {
+     "act": 0.009014276166756948,
+     "inner_act": 0.00025222618811919045,
+     "guard": 0.008762049978637757,
+     "lb": 0.00015570354137000523,
+     "safe": 0.006943574999847139,
+     "test": 0.0016181995177046498,
+     "projection": 8.082466795005732e-06,
+     "other": 3.648945292095757e-05
+    }
+   }
+  },
+  "e7r_V2_SML": {
+   "sites_x_llms": 150,
+   "by_alignment": {
+    "1": {
+     "act_s_per_slot": {
+      "Sublet": 0.015872213242497917,
+      "A9": 0.00035676110807495814
+     },
+     "act_overhead_s_per_slot": 0.01551545213442296,
+     "act_ratio": 44.489752058856844,
+     "slow_step_s_per_slot": {
+      "Sublet": 0.015983296996435255,
+      "A9": 0.0004456349027653535
+     },
+     "slow_step_overhead_s_per_slot": 0.0155376620936699,
+     "slow_loop_s_per_h": {
+      "Sublet": 0.19179956395722306,
+      "A9": 0.005347618833184242
+     },
+     "projected_slots": 1
+    },
+    "2": {
+     "act_s_per_slot": {
+      "Sublet": 0.020024982741839874,
+      "A9": 0.00032921925594564527
+     },
+     "act_overhead_s_per_slot": 0.01969576348589423,
+     "act_ratio": 60.825672800700445,
+     "slow_step_s_per_slot": {
+      "Sublet": 0.020149904277382627,
+      "A9": 0.00043204154159563285
+     },
+     "slow_step_overhead_s_per_slot": 0.019717862735786993,
+     "slow_loop_s_per_h": {
+      "Sublet": 0.2417988513285915,
+      "A9": 0.005184498499147594
+     },
+     "projected_slots": 6
+    },
+    "3": {
+     "act_s_per_slot": {
+      "Sublet": 0.028557969357482053,
+      "A9": 0.0003496352631676321
+     },
+     "act_overhead_s_per_slot": 0.028208334094314422,
+     "act_ratio": 81.67931660769005,
+     "slow_step_s_per_slot": {
+      "Sublet": 0.028698838857558764,
+      "A9": 0.0004772365630035185
+     },
+     "slow_step_overhead_s_per_slot": 0.028221602294555247,
+     "slow_loop_s_per_h": {
+      "Sublet": 0.3443860662907052,
+      "A9": 0.0057268387560422225
+     },
+     "projected_slots": 2
+    },
+    "4": {
+     "act_s_per_slot": {
+      "Sublet": 0.0239832872693013,
+      "A9": 0.00036151471754742996
+     },
+     "act_overhead_s_per_slot": 0.023621772551753868,
+     "act_ratio": 66.34110896509972,
+     "slow_step_s_per_slot": {
+      "Sublet": 0.02411144011906193,
+      "A9": 0.00048110307802239224
+     },
+     "slow_step_overhead_s_per_slot": 0.023630337041039538,
+     "slow_loop_s_per_h": {
+      "Sublet": 0.28933728142874315,
+      "A9": 0.005773236936268707
+     },
+     "projected_slots": 16
+    }
+   },
+   "act_overhead_s_per_slot_median": 0.02165876801882405,
+   "slow_step_overhead_s_per_slot_median": 0.021674099888413265,
+   "act_ratio_median": 63.58339088290008,
+   "split": {
+    "c": 1,
+    "identical": true,
+    "per_slot_mean_s": {
+     "act": 0.015166675817454234,
+     "inner_act": 0.00036109191811798763,
+     "guard": 0.014805583899336247,
+     "lb": 0.0001590727640885032,
+     "safe": 0.012859372562767627,
+     "test": 0.0017215278688430165,
+     "projection": 2.6457689172174367e-05,
+     "other": 3.915301446492473e-05
+    }
+   }
+  },
+  "e7r_V4_SML": {
+   "sites_x_llms": 276,
+   "by_alignment": {
+    "1": {
+     "act_s_per_slot": {
+      "Sublet": 0.029375982469193533,
+      "A9": 0.0007387807434295408
+     },
+     "act_overhead_s_per_slot": 0.02863720172576399,
+     "act_ratio": 39.76278852752094,
+     "slow_step_s_per_slot": {
+      "Sublet": 0.029530957827874873,
+      "A9": 0.0008764250071382978
+     },
+     "slow_step_overhead_s_per_slot": 0.028654532820736576,
+     "slow_loop_s_per_h": {
+      "Sublet": 0.35437149393449846,
+      "A9": 0.010517100085659573
+     },
+     "projected_slots": 1
+    },
+    "2": {
+     "act_s_per_slot": {
+      "Sublet": 0.04144634320659356,
+      "A9": 0.0005976582211183591
+     },
+     "act_overhead_s_per_slot": 0.0408486849854752,
+     "act_ratio": 69.34790109477235,
+     "slow_step_s_per_slot": {
+      "Sublet": 0.04161998839602651,
+      "A9": 0.000758746858789689
+     },
+     "slow_step_overhead_s_per_slot": 0.04086124153723682,
+     "slow_loop_s_per_h": {
+      "Sublet": 0.49943986075231805,
+      "A9": 0.009104962305476269
+     },
+     "projected_slots": 8
+    },
+    "3": {
+     "act_s_per_slot": {
+      "Sublet": 0.058431216051556274,
+      "A9": 0.0005865987138046572
+     },
+     "act_overhead_s_per_slot": 0.05784461733775162,
+     "act_ratio": 99.61020144857393,
+     "slow_step_s_per_slot": {
+      "Sublet": 0.058654493990211956,
+      "A9": 0.0007846415537642315
+     },
+     "slow_step_overhead_s_per_slot": 0.057869852436447725,
+     "slow_loop_s_per_h": {
+      "Sublet": 0.7038539278825434,
+      "A9": 0.009415698645170778
+     },
+     "projected_slots": 2
+    },
+    "4": {
+     "act_s_per_slot": {
+      "Sublet": 0.05016172291491077,
+      "A9": 0.0008577195128762267
+     },
+     "act_overhead_s_per_slot": 0.049304003402034544,
+     "act_ratio": 58.48266497599124,
+     "slow_step_s_per_slot": {
+      "Sublet": 0.050367290818636924,
+      "A9": 0.0010478854480121906
+     },
+     "slow_step_overhead_s_per_slot": 0.049319405370624736,
+     "slow_loop_s_per_h": {
+      "Sublet": 0.6044074898236431,
+      "A9": 0.012574625376146287
+     },
+     "projected_slots": 12
+    }
+   },
+   "act_overhead_s_per_slot_median": 0.04507634419375487,
+   "slow_step_overhead_s_per_slot_median": 0.045090323453930777,
+   "act_ratio_median": 63.9152830353818,
+   "split": {
+    "c": 1,
+    "identical": true,
+    "per_slot_mean_s": {
+     "act": 0.030074561638886936,
+     "inner_act": 0.0007603224447747278,
+     "guard": 0.029314239194112208,
+     "lb": 0.00016966214429380166,
+     "safe": 0.027054816600866616,
+     "test": 0.0020072440044411146,
+     "projection": 3.9718159112251466e-05,
+     "other": 4.279828539842533e-05
+    }
+   }
+  },
+  "e7r_V8_SML": {
+   "sites_x_llms": 525,
+   "by_alignment": {
+    "1": {
+     "act_s_per_slot": {
+      "Sublet": 0.060206668590480045,
+      "A9": 0.003161715505282498
+     },
+     "act_overhead_s_per_slot": 0.057044953085197546,
+     "act_ratio": 19.042405456749215,
+     "slow_step_s_per_slot": {
+      "Sublet": 0.060465454552387304,
+      "A9": 0.0033946948307048944
+     },
+     "slow_step_overhead_s_per_slot": 0.05707075972168241,
+     "slow_loop_s_per_h": {
+      "Sublet": 0.7255854546286477,
+      "A9": 0.040736337968458734
+     },
+     "projected_slots": 1
+    },
+    "2": {
+     "act_s_per_slot": {
+      "Sublet": 0.08906835485443783,
+      "A9": 0.002084088211025422
+     },
+     "act_overhead_s_per_slot": 0.08698426664341241,
+     "act_ratio": 42.73732483262503,
+     "slow_step_s_per_slot": {
+      "Sublet": 0.08937258468520465,
+      "A9": 0.0023599187762657595
+     },
+     "slow_step_overhead_s_per_slot": 0.08701266590893889,
+     "slow_loop_s_per_h": {
+      "Sublet": 1.0724710162224558,
+      "A9": 0.028319025315189112
+     },
+     "projected_slots": 4
+    },
+    "3": {
+     "act_s_per_slot": {
+      "Sublet": 0.12571806629906254,
+      "A9": 0.0018103040606042163
+     },
+     "act_overhead_s_per_slot": 0.12390776223845833,
+     "act_ratio": 69.44582903774864,
+     "slow_step_s_per_slot": {
+      "Sublet": 0.12609131510220728,
+      "A9": 0.0021434442104590642
+     },
+     "slow_step_overhead_s_per_slot": 0.12394787089174822,
+     "slow_loop_s_per_h": {
+      "Sublet": 1.5130957812264871,
+      "A9": 0.025721330525508772
+     },
+     "projected_slots": 2
+    },
+    "4": {
+     "act_s_per_slot": {
+      "Sublet": 0.10244473298047928,
+      "A9": 0.003924697202617406
+     },
+     "act_overhead_s_per_slot": 0.09852003577786188,
+     "act_ratio": 26.10258261762416,
+     "slow_step_s_per_slot": {
+      "Sublet": 0.10279755105794822,
+      "A9": 0.0042476388787488556
+     },
+     "slow_step_overhead_s_per_slot": 0.09854991217919937,
+     "slow_loop_s_per_h": {
+      "Sublet": 1.2335706126953785,
+      "A9": 0.05097166654498627
+     },
+     "projected_slots": 13
+    }
+   },
+   "act_overhead_s_per_slot_median": 0.09275215121063715,
+   "slow_step_overhead_s_per_slot_median": 0.09278128904406913,
+   "act_ratio_median": 34.41995372512459,
+   "split": {
+    "c": 1,
+    "identical": true,
+    "per_slot_mean_s": {
+     "act": 0.059938997547659606,
+     "inner_act": 0.003185500811216318,
+     "guard": 0.05675349673644329,
+     "lb": 0.0001733979701788889,
+     "safe": 0.05413351360766683,
+     "test": 0.0023414924669648623,
+     "projection": 5.7428813306614757e-05,
+     "other": 4.76638783260973e-05
+    }
+   }
+  },
+  "e7r_V16_SML": {
+   "sites_x_llms": 1005,
+   "by_alignment": {
+    "1": {
+     "act_s_per_slot": {
+      "Sublet": 0.1370456543631412,
+      "A9": 0.018457151380264096
+     },
+     "act_overhead_s_per_slot": 0.1185885029828771,
+     "act_ratio": 7.4250707240599265,
+     "slow_step_s_per_slot": {
+      "Sublet": 0.13749292839363786,
+      "A9": 0.018872636942736182
+     },
+     "slow_step_overhead_s_per_slot": 0.11862029145090168,
+     "slow_loop_s_per_h": {
+      "Sublet": 1.6499151407236543,
+      "A9": 0.2264716433128342
+     },
+     "projected_slots": 1
+    },
+    "2": {
+     "act_s_per_slot": {
+      "Sublet": 0.22574823616014328,
+      "A9": 0.011139054515903505
+     },
+     "act_overhead_s_per_slot": 0.21460918164423978,
+     "act_ratio": 20.266373222057304,
+     "slow_step_s_per_slot": {
+      "Sublet": 0.2262849756370997,
+      "A9": 0.011636360873429416
+     },
+     "slow_step_overhead_s_per_slot": 0.21464861476367028,
+     "slow_loop_s_per_h": {
+      "Sublet": 2.7154197076451965,
+      "A9": 0.13963633048115298
+     },
+     "projected_slots": 5
+    },
+    "3": {
+     "act_s_per_slot": {
+      "Sublet": 0.2896347248380253,
+      "A9": 0.009201594300167117
+     },
+     "act_overhead_s_per_slot": 0.28043313053785823,
+     "act_ratio": 31.47658062176954,
+     "slow_step_s_per_slot": {
+      "Sublet": 0.2903968889634901,
+      "A9": 0.00981064946811077
+     },
+     "slow_step_overhead_s_per_slot": 0.2805862394953793,
+     "slow_loop_s_per_h": {
+      "Sublet": 3.4847626675618812,
+      "A9": 0.11772779361732925
+     },
+     "projected_slots": 2
+    },
+    "4": {
+     "act_s_per_slot": {
+      "Sublet": 0.2540154291798697,
+      "A9": 0.02414681206412044
+     },
+     "act_overhead_s_per_slot": 0.22986861711574924,
+     "act_ratio": 10.519625882925938,
+     "slow_step_s_per_slot": {
+      "Sublet": 0.2546295670245955,
+      "A9": 0.024724148521070473
+     },
+     "slow_step_overhead_s_per_slot": 0.22990541850352503,
+     "slow_loop_s_per_h": {
+      "Sublet": 3.0555548042951464,
+      "A9": 0.29668978225284565
+     },
+     "projected_slots": 18
+    }
+   },
+   "act_overhead_s_per_slot_median": 0.22223889937999453,
+   "slow_step_overhead_s_per_slot_median": 0.22227701663359767,
+   "act_ratio_median": 15.39299955249162,
+   "split": {
+    "c": 1,
+    "identical": true,
+    "per_slot_mean_s": {
+     "act": 0.13561846012210785,
+     "inner_act": 0.018425108999104448,
+     "guard": 0.11719335112300339,
+     "lb": 0.00018413814703106054,
+     "safe": 0.11373909488773076,
+     "test": 0.0031369259959319606,
+     "projection": 7.99958684688641e-05,
+     "other": 5.3196223840738334e-05
+    }
+   }
+  },
+  "e7r_V32_SML": {
+   "sites_x_llms": 1965,
+   "by_alignment": {
+    "1": {
+     "act_s_per_slot": {
+      "Sublet": 0.3898737612536125,
+      "A9": 0.13205400289896513
+     },
+     "act_overhead_s_per_slot": 0.2578197583546474,
+     "act_ratio": 2.952381243239601,
+     "slow_step_s_per_slot": {
+      "Sublet": 0.39073166674804977,
+      "A9": 0.13293332399755148
+     },
+     "slow_step_overhead_s_per_slot": 0.2577983427504983,
+     "slow_loop_s_per_h": {
+      "Sublet": 4.688780000976597,
+      "A9": 1.5951998879706177
+     },
+     "projected_slots": 1
+    },
+    "2": {
+     "act_s_per_slot": {
+      "Sublet": 0.6263823349048229,
+      "A9": 0.07378939901536796
+     },
+     "act_overhead_s_per_slot": 0.5525929358894549,
+     "act_ratio": 8.488784883237328,
+     "slow_step_s_per_slot": {
+      "Sublet": 0.6273474932402476,
+      "A9": 0.07474061281957095
+     },
+     "slow_step_overhead_s_per_slot": 0.5526068804206767,
+     "slow_loop_s_per_h": {
+      "Sublet": 7.528169918882971,
+      "A9": 0.8968873538348513
+     },
+     "projected_slots": 5
+    },
+    "3": {
+     "act_s_per_slot": {
+      "Sublet": 0.6777898350523578,
+      "A9": 0.061423772436683066
+     },
+     "act_overhead_s_per_slot": 0.6163660626156747,
+     "act_ratio": 11.034650073813653,
+     "slow_step_s_per_slot": {
+      "Sublet": 0.6791706045381337,
+      "A9": 0.06261090276368325
+     },
+     "slow_step_overhead_s_per_slot": 0.6165597017744504,
+     "slow_loop_s_per_h": {
+      "Sublet": 8.150047254457604,
+      "A9": 0.7513308331641989
+     },
+     "projected_slots": 2
+    },
+    "4": {
+     "act_s_per_slot": {
+      "Sublet": 0.6766173511649767,
+      "A9": 0.16488740964753865
+     },
+     "act_overhead_s_per_slot": 0.511729941517438,
+     "act_ratio": 4.1035113148499684,
+     "slow_step_s_per_slot": {
+      "Sublet": 0.6778109754846405,
+      "A9": 0.16608578505434302
+     },
+     "slow_step_overhead_s_per_slot": 0.5117251904302975,
+     "slow_loop_s_per_h": {
+      "Sublet": 8.133731705815686,
+      "A9": 1.9930294206521164
+     },
+     "projected_slots": 14
+    }
+   },
+   "act_overhead_s_per_slot_median": 0.5321614387034465,
+   "slow_step_overhead_s_per_slot_median": 0.5321660354254871,
+   "act_ratio_median": 6.2961480990436485,
+   "split": {
+    "c": 1,
+    "identical": true,
+    "per_slot_mean_s": {
+     "act": 0.39521378352138625,
+     "inner_act": 0.13071281164755216,
+     "guard": 0.2645009718738341,
+     "lb": 0.00022659203386865556,
+     "safe": 0.25903441134303445,
+     "test": 0.005037135947431024,
+     "projection": 0.00013584368086109558,
+     "other": 6.69888686388731e-05
+    }
+   }
+  },
+  "e7r_V64_SML": {
+   "sites_x_llms": 3885,
+   "by_alignment": {
+    "1": {
+     "act_s_per_slot": {
+      "Sublet": 1.6076184213743545,
+      "A9": 0.9967624825399576
+     },
+     "act_overhead_s_per_slot": 0.6108559388343969,
+     "act_ratio": 1.6128400190964343,
+     "slow_step_s_per_slot": {
+      "Sublet": 1.6094520149603744,
+      "A9": 0.9985288753782192
+     },
+     "slow_step_overhead_s_per_slot": 0.6109231395821552,
+     "slow_loop_s_per_h": {
+      "Sublet": 19.313424179524493,
+      "A9": 11.982346504538631
+     },
+     "projected_slots": 1
+    },
+    "2": {
+     "act_s_per_slot": {
+      "Sublet": 2.084285450004649,
+      "A9": 0.5230715400959727
+     },
+     "act_overhead_s_per_slot": 1.5612139099086764,
+     "act_ratio": 3.9847043668677258,
+     "slow_step_s_per_slot": {
+      "Sublet": 2.0863235401355067,
+      "A9": 0.5250713817092927
+     },
+     "slow_step_overhead_s_per_slot": 1.561252158426214,
+     "slow_loop_s_per_h": {
+      "Sublet": 25.03588248162608,
+      "A9": 6.300856580511511
+     },
+     "projected_slots": 5
+    },
+    "3": {
+     "act_s_per_slot": {
+      "Sublet": 1.8973321671445673,
+      "A9": 0.44643958023193087
+     },
+     "act_overhead_s_per_slot": 1.4508925869126363,
+     "act_ratio": 4.249919252587057,
+     "slow_step_s_per_slot": {
+      "Sublet": 1.8999178574368771,
+      "A9": 0.44902425846602356
+     },
+     "slow_step_overhead_s_per_slot": 1.4508935989708536,
+     "slow_loop_s_per_h": {
+      "Sublet": 22.799014289242525,
+      "A9": 5.388291101592283
+     },
+     "projected_slots": 2
+    },
+    "4": {
+     "act_s_per_slot": {
+      "Sublet": 2.5094372934189675,
+      "A9": 1.2674573059355478
+     },
+     "act_overhead_s_per_slot": 1.2419799874834196,
+     "act_ratio": 1.9798988744371766,
+     "slow_step_s_per_slot": {
+      "Sublet": 2.512300657446354,
+      "A9": 1.2700869141392306
+     },
+     "slow_step_overhead_s_per_slot": 1.2422137433071234,
+     "slow_loop_s_per_h": {
+      "Sublet": 30.147607889356248,
+      "A9": 15.241042969670767
+     },
+     "projected_slots": 9
+    }
+   },
+   "act_overhead_s_per_slot_median": 1.346436287198028,
+   "slow_step_overhead_s_per_slot_median": 1.3465536711389885,
+   "act_ratio_median": 2.9823016206524513,
+   "split": {
+    "c": 1,
+    "identical": true,
+    "per_slot_mean_s": {
+     "act": 1.616136168802364,
+     "inner_act": 1.000293956076752,
+     "guard": 0.6158422127256118,
+     "lb": 0.0002515001558802194,
+     "safe": 0.606767923388462,
+     "test": 0.008521274223716723,
+     "projection": 0.00021878096029265888,
+     "other": 8.273399726022035e-05
+    }
+   }
+  }
+ },
+ "headline": {
+  "largest_point_by_menu": {
+   "full": {
+    "point": "e7f_V64_SML",
+    "sites_x_llms": 3855,
+    "policies": {
+     "Sublet": {
+      "loops_s_per_h": 109.16396525356686,
+      "real_time_over_loops": 32.97791530051051,
+      "peak_rss_mb": 445.73046875
+     },
+     "A9": {
+      "loops_s_per_h": 14.135130229250839,
+      "real_time_over_loops": 254.68460082173576,
+      "peak_rss_mb": 174.5859375
+     }
+    },
+    "act_overhead_s_per_slot_median": 7.9474491200154365,
+    "act_ratio_median": 6.771294721094451
+   },
+   "reduced": {
+    "point": "e7r_V64_SML",
+    "sites_x_llms": 3885,
+    "policies": {
+     "Sublet": {
+      "loops_s_per_h": 24.100810553092742,
+      "real_time_over_loops": 149.3725695270456,
+      "peak_rss_mb": 249.84375
+     },
+     "A9": {
+      "loops_s_per_h": 9.288059410134641,
+      "real_time_over_loops": 387.5944200003576,
+      "peak_rss_mb": 168.708984375
+     }
+    },
+    "act_overhead_s_per_slot_median": 1.346436287198028,
+    "act_ratio_median": 2.9823016206524513
+   }
+  },
+  "act_overhead_s_per_slot_max": 7.9474491200154365,
+  "act_overhead_s_per_slot_max_point": "e7f_V64_SML",
+  "act_ratio_max": 111.27922212818407,
+  "act_ratio_max_point": "e7f_V4_SML",
+  "peak_rss_mb_max": 452.5546875,
+  "peak_rss_mb_max_at": "e7f_V64_SML:Sublet",
+  "cap_mb": 3072.0,
+  "n_over_cap": 0,
+  "n_runs": 128,
+  "e9v2_1_status": "pass"
+ }
+}

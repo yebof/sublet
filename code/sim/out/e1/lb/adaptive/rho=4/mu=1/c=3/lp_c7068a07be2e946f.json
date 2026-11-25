@@ -1,0 +1,29 @@
+{
+ "job": "e1:cell:sched=adaptive:rho=4:mu=1:c=3",
+ "kind": "lp",
+ "sched": "adaptive",
+ "rho_star": 4.0,
+ "mu": 1.0,
+ "c": 3,
+ "instance_hash": "76eb69a90b01c650ff5eeacc5f1d1c1b19c7deddd75620ad816b5bb4d5e771ce",
+ "schedule_hash": "c7068a07be2e946f717e5ca0f655a213d1eb3199431f3d8a626f51c6cd7616b3",
+ "wall_s": 0.7279432450886816,
+ "method": "lp",
+ "benchmark": "omega",
+ "grid": "slow",
+ "status": 0,
+ "status_msg": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+ "objective": 601.258524480274,
+ "dual_bound": 601.258524480274,
+ "gap": 0.0,
+ "size": {
+  "n_vars": 33033,
+  "n_int": 20748,
+  "n_rows": 24544,
+  "nnz": 184781
+ },
+ "build_s": 0.04125823499634862,
+ "solve_s": 0.6862854671198875,
+ "peak_rss_mb": 216.05859375,
+ "git_revision": "f10237bb39ab101b9831afcee79121d0fa4e1979"
+}

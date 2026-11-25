@@ -1,0 +1,110 @@
+{
+ "block": "Q3",
+ "tier": 1,
+ "grid": "1min",
+ "lb": null,
+ "description": "alpha in {0.2, 0.3} (prices.a0_usd_per_gpu_h 1.43, 2.145): I2 seeds 1-4 x L-tr, L-eg, L-iid 0.05; I3 seeds 1-2 x L-tr, L-eg; 32 cell-modes",
+ "policies": [
+  "BL0a",
+  "BL1",
+  "BL2",
+  "BL5",
+  "A6",
+  "A2",
+  "PS",
+  "PS-G",
+  "PS-G1",
+  "BL1-G",
+  "BL5-G"
+ ],
+ "policy_seeds": [
+  0,
+  1,
+  2
+ ],
+ "modes": [
+  "L-tr",
+  "L-eg",
+  "L-iid-0.05"
+ ],
+ "instances": [
+  {
+   "id": "I2-a0.2",
+   "family": "I2",
+   "config": "example_1day.json",
+   "overrides": {
+    "prices.a0_usd_per_gpu_h": 1.43
+   },
+   "config_seeds": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "tuning_seeds": [
+    1
+   ],
+   "extra_policies": [
+    "PS-GR"
+   ]
+  },
+  {
+   "id": "I2-a0.3",
+   "family": "I2",
+   "config": "example_1day.json",
+   "overrides": {
+    "prices.a0_usd_per_gpu_h": 2.145
+   },
+   "config_seeds": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "tuning_seeds": [
+    1
+   ],
+   "extra_policies": [
+    "PS-GR"
+   ]
+  },
+  {
+   "id": "I3-a0.2",
+   "family": "I3",
+   "config": "bench_e7s.json",
+   "overrides": {
+    "prices.a0_usd_per_gpu_h": 1.43
+   },
+   "config_seeds": [
+    1,
+    2
+   ],
+   "tuning_seeds": [
+    1
+   ],
+   "modes": [
+    "L-tr",
+    "L-eg"
+   ]
+  },
+  {
+   "id": "I3-a0.3",
+   "family": "I3",
+   "config": "bench_e7s.json",
+   "overrides": {
+    "prices.a0_usd_per_gpu_h": 2.145
+   },
+   "config_seeds": [
+    1,
+    2
+   ],
+   "tuning_seeds": [
+    1
+   ],
+   "modes": [
+    "L-tr",
+    "L-eg"
+   ]
+  }
+ ]
+}

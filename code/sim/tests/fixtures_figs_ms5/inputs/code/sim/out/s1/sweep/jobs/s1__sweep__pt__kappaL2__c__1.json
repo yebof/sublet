@@ -1,0 +1,66 @@
+{
+ "job": "s1:sweep:pt=kappaL2:c=1",
+ "exp": "s1",
+ "kind": "pool",
+ "params": {
+  "part": "sweep",
+  "kind": "sweep",
+  "point": "kappaL2",
+  "row": "kappa_L",
+  "c": 1,
+  "tag": "Sublet",
+  "mode": "L-tr",
+  "policy_seeds": [
+   0
+  ],
+  "horizon_min": 120,
+  "limit_s": 1800
+ },
+ "status": "ok",
+ "started": "2026-10-29T21:00:04",
+ "pid": 3183598,
+ "argv": [
+  "/work/sublet/code/sim/sublet/experiments/s1.py",
+  "--job",
+  "s1:sweep:pt=kappaL2:c=1",
+  "--out",
+  "/work/fix/refresh_s1/s1/out/s1/sweep"
+ ],
+ "slots": [
+  "slot0"
+ ],
+ "milp_limit_s": null,
+ "git_revision": "c82fa05f835c1b4896ddf639d6edb81495a1abee",
+ "versions": {
+  "python": "3.12.3",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "sublet": "0.1.0"
+ },
+ "runs": 1,
+ "errors": [],
+ "n_errors": 0,
+ "outputs": [
+  "runs/s1__sweep__pt__kappaL2__c__1.json"
+ ],
+ "result": {
+  "instance_hash": "37245128a45dfc7e73a2f139218f72a61fea9327576c9c1cb88438c09f178ca5",
+  "bl0a_usd": 1508.232848639786,
+  "totals": [
+   1575.4902425426526
+  ],
+  "saving_pct": [
+   -4.459350819969443
+  ],
+  "t_a": [
+   12
+  ],
+  "wall_s_runs": [
+   10.833247898845002
+  ]
+ },
+ "wall_s": 12.459180663106963,
+ "peak_rss_kb": 146988,
+ "peak_rss_mb": 143.54296875,
+ "finished": "2026-10-29T21:00:17"
+}

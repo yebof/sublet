@@ -1,0 +1,37 @@
+{
+ "job": "e1:milp:bench=eager:rho=2:mu=1:c=2",
+ "kind": "milp",
+ "bench": "eager",
+ "sched": null,
+ "rho_star": 2.0,
+ "mu": 1.0,
+ "c": 2,
+ "instance_hash": "5f1641d70b0e5ade145d7d86818b1c75c5afbd79fe020f7fdf6f7315b6002e59",
+ "schedule_hash": null,
+ "time_limit_s": 300,
+ "mip_rel_gap": 0.0001,
+ "wall_s": 304.78308886289597,
+ "cells_checked": [
+  "adaptive",
+  "trace",
+  "eager"
+ ],
+ "method": "milp",
+ "benchmark": "eager",
+ "grid": "slow",
+ "status": 1,
+ "status_msg": "Time limit reached. (HiGHS Status 13: Time limit reached)",
+ "objective": 694.7721276471146,
+ "dual_bound": 687.514809057533,
+ "gap": 0.010445609863710311,
+ "size": {
+  "n_vars": 116771,
+  "n_int": 113224,
+  "n_rows": 108769,
+  "nnz": 383267
+ },
+ "build_s": 0.05442387005314231,
+ "solve_s": 304.455597900087,
+ "peak_rss_mb": 1737.65625,
+ "git_revision": "f10237bb39ab101b9831afcee79121d0fa4e1979"
+}

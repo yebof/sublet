@@ -1,0 +1,3221 @@
+{
+ "figure": "sf_s1",
+ "size_in": [
+  7.1399,
+  2.5
+ ],
+ "sources": [
+  "code/sim/out/s1/sweep/summary.json",
+  "code/sim/out/s1/q28/summary.json",
+  "code/sim/out/e7/main/summary.json"
+ ],
+ "data": {
+  "rows": {
+   "alpha": {
+    "id": "alpha",
+    "order": 0,
+    "panel": "a",
+    "label": "$\\alpha$",
+    "driver_label": "alpha = a0 / q^GPU",
+    "gamma_row": false,
+    "lo": -6.202450884208299,
+    "hi": -1.402198778674979,
+    "span": 4.80025210553332,
+    "zero_span": false,
+    "lo_points": [
+     "alpha05"
+    ],
+    "hi_points": [
+     "alpha06"
+    ],
+    "lo_text": "0.5",
+    "hi_text": "0.6",
+    "points": [
+     {
+      "name": "alpha02",
+      "label": "0.2",
+      "end_text": "0.2",
+      "median": -2.5355145414877267,
+      "n_runs": 1,
+      "protected_share": 0.0
+     },
+     {
+      "name": "alpha03",
+      "label": "0.3",
+      "end_text": "0.3",
+      "median": -3.955427321433014,
+      "n_runs": 1,
+      "protected_share": 0.0
+     },
+     {
+      "name": "alpha05",
+      "label": "0.5",
+      "end_text": "0.5",
+      "median": -6.202450884208299,
+      "n_runs": 1,
+      "protected_share": 0.0
+     },
+     {
+      "name": "alpha06",
+      "label": "0.6",
+      "end_text": "0.6",
+      "median": -1.402198778674979,
+      "n_runs": 1,
+      "protected_share": 0.0
+     }
+    ],
+    "default": {
+     "label": "0.40",
+     "driver_label": "0.40",
+     "median": -5.376281290124263,
+     "protected_share": 0.0
+    },
+    "complete": true,
+    "points_missing": [],
+    "source": "s1"
+   },
+   "alpha_p": {
+    "id": "alpha_p",
+    "order": 1,
+    "panel": "a",
+    "label": "$\\alpha_p$",
+    "driver_label": "alpha_p",
+    "gamma_row": false,
+    "lo": -5.376281290124263,
+    "hi": -5.376281290124263,
+    "span": 0.0,
+    "zero_span": true,
+    "lo_points": [
+     "default",
+     "alphap06",
+     "alphap10"
+    ],
+    "hi_points": [
+     "default",
+     "alphap06",
+     "alphap10"
+    ],
+    "lo_text": null,
+    "hi_text": "no change",
+    "points": [
+     {
+      "name": "alphap06",
+      "label": "0.6",
+      "end_text": "0.6",
+      "median": -5.376281290124263,
+      "n_runs": 1,
+      "protected_share": 0.0
+     },
+     {
+      "name": "alphap10",
+      "label": "1.0",
+      "end_text": "1.0",
+      "median": -5.376281290124263,
+      "n_runs": 1,
+      "protected_share": 0.0
+     }
+    ],
+    "default": {
+     "label": "0.83",
+     "driver_label": "0.83",
+     "median": -5.376281290124263,
+     "protected_share": 0.0
+    },
+    "complete": true,
+    "points_missing": [],
+    "source": "s1"
+   },
+   "mu": {
+    "id": "mu",
+    "order": 2,
+    "panel": "a",
+    "label": "$\\mu/\\tilde{\\beta}$",
+    "driver_label": "mu / beta~",
+    "gamma_row": false,
+    "lo": -5.376281290124263,
+    "hi": 29.616590973538642,
+    "span": 34.9928722636629,
+    "zero_span": false,
+    "lo_points": [
+     "default"
+    ],
+    "hi_points": [
+     "mu0.2"
+    ],
+    "lo_text": "1",
+    "hi_text": "0.2",
+    "points": [
+     {
+      "name": "mu0.2",
+      "label": "0.2",
+      "end_text": "0.2",
+      "median": 29.616590973538642,
+      "n_runs": 12,
+      "protected_share": null
+     },
+     {
+      "name": "mu0.5",
+      "label": "0.5",
+      "end_text": "0.5",
+      "median": 29.165968157621226,
+      "n_runs": 12,
+      "protected_share": null
+     },
+     {
+      "name": "mu2",
+      "label": "2",
+      "end_text": "2",
+      "median": 26.912854078034137,
+      "n_runs": 12,
+      "protected_share": null
+     }
+    ],
+    "default": {
+     "label": "1",
+     "driver_label": "1",
+     "median": -5.376281290124263,
+     "protected_share": 0.0
+    },
+    "complete": true,
+    "points_missing": [],
+    "source": "e7"
+   },
+   "mu_split": {
+    "id": "mu_split",
+    "order": 3,
+    "panel": "a",
+    "label": "Split of $\\mu$",
+    "driver_label": "split of mu",
+    "gamma_row": false,
+    "lo": -5.376281290124263,
+    "hi": -0.9213676844069152,
+    "span": 4.454913605717348,
+    "zero_span": false,
+    "lo_points": [
+     "default"
+    ],
+    "hi_points": [
+     "kv05",
+     "kv10"
+    ],
+    "lo_text": "0",
+    "hi_text": "0.5, 1",
+    "points": [
+     {
+      "name": "kv05",
+      "label": "0.5",
+      "end_text": "0.5",
+      "median": -0.9213676844069152,
+      "n_runs": 1,
+      "protected_share": 0.0
+     },
+     {
+      "name": "kv10",
+      "label": "1",
+      "end_text": "1",
+      "median": -0.9213676844069152,
+      "n_runs": 1,
+      "protected_share": 0.0
+     }
+    ],
+    "default": {
+     "label": "0",
+     "driver_label": "0",
+     "median": -5.376281290124263,
+     "protected_share": 0.0
+    },
+    "complete": true,
+    "points_missing": [],
+    "source": "s1"
+   },
+   "load_scenario": {
+    "id": "load_scenario",
+    "order": 4,
+    "panel": "a",
+    "label": "Load scenario",
+    "driver_label": "load-time scenario",
+    "gamma_row": false,
+    "lo": -8.093268743768633,
+    "hi": 26.067780436707345,
+    "span": 34.16104918047598,
+    "zero_span": false,
+    "lo_points": [
+     "scen_cold_wan_1gbps"
+    ],
+    "hi_points": [
+     "scen_warm_peer_rdma"
+    ],
+    "lo_text": "WAN 1 Gb/s",
+    "hi_text": "warm peer",
+    "points": [
+     {
+      "name": "scen_warm_peer_rdma",
+      "label": "warm peer",
+      "end_text": "warm peer",
+      "median": 26.067780436707345,
+      "n_runs": 1,
+      "protected_share": 0.0
+     },
+     {
+      "name": "scen_ssd_optimized",
+      "label": "SSD optimized",
+      "end_text": "SSD optimized",
+      "median": 25.736214687630387,
+      "n_runs": 1,
+      "protected_share": 0.0
+     },
+     {
+      "name": "scen_ssd_stock_safetensors",
+      "label": "SSD safetensors",
+      "end_text": "SSD safetensors",
+      "median": 5.656487210615202,
+      "n_runs": 1,
+      "protected_share": 0.0
+     },
+     {
+      "name": "scen_ssd_stock_pytorch",
+      "label": "SSD PyTorch",
+      "end_text": "SSD PyTorch",
+      "median": -2.228022294751275,
+      "n_runs": 1,
+      "protected_share": 0.0
+     },
+     {
+      "name": "scen_a5_10GBps",
+      "label": "10 GB/s",
+      "end_text": "10 GB/s",
+      "median": 0.4335777227390203,
+      "n_runs": 1,
+      "protected_share": 0.0
+     },
+     {
+      "name": "scen_a5_2GBps",
+      "label": "2 GB/s",
+      "end_text": "2 GB/s",
+      "median": -5.17298485974742,
+      "n_runs": 1,
+      "protected_share": 0.0
+     },
+     {
+      "name": "scen_cold_wan_10gbps",
+      "label": "WAN 10 Gb/s",
+      "end_text": "WAN 10 Gb/s",
+      "median": -6.697917127232245,
+      "n_runs": 1,
+      "protected_share": 0.0
+     },
+     {
+      "name": "scen_cold_wan_1gbps",
+      "label": "WAN 1 Gb/s",
+      "end_text": "WAN 1 Gb/s",
+      "median": -8.093268743768633,
+      "n_runs": 1,
+      "protected_share": 0.0
+     }
+    ],
+    "default": {
+     "label": "10 and 2 GB/s",
+     "driver_label": "a5 pair",
+     "median": -5.376281290124263,
+     "protected_share": 0.0
+    },
+    "complete": true,
+    "points_missing": [],
+    "source": "s1"
+   },
+   "phi": {
+    "id": "phi",
+    "order": 5,
+    "panel": "a",
+    "label": "$\\varphi$",
+    "driver_label": "phi",
+    "gamma_row": false,
+    "lo": -5.376281290124263,
+    "hi": -2.8232218762440198,
+    "span": 2.553059413880243,
+    "zero_span": false,
+    "lo_points": [
+     "default"
+    ],
+    "hi_points": [
+     "phi05"
+    ],
+    "lo_text": "1",
+    "hi_text": "0.5",
+    "points": [
+     {
+      "name": "phi05",
+      "label": "0.5",
+      "end_text": "0.5",
+      "median": -2.8232218762440198,
+      "n_runs": 1,
+      "protected_share": 0.0
+     }
+    ],
+    "default": {
+     "label": "1",
+     "driver_label": "1",
+     "median": -5.376281290124263,
+     "protected_share": 0.0
+    },
+    "complete": true,
+    "points_missing": [],
+    "source": "s1"
+   },
+   "kappa_L": {
+    "id": "kappa_L",
+    "order": 6,
+    "panel": "b",
+    "label": "$\\kappa$ of L",
+    "driver_label": "kappa of L",
+    "gamma_row": true,
+    "lo": -5.969042003620828,
+    "hi": -4.459350819969443,
+    "span": 1.5096911836513849,
+    "zero_span": false,
+    "lo_points": [
+     "kappaL05"
+    ],
+    "hi_points": [
+     "kappaL2"
+    ],
+    "lo_text": "$\\times$0.5",
+    "hi_text": "$\\times$2",
+    "points": [
+     {
+      "name": "kappaL05",
+      "label": "x0.5",
+      "end_text": "$\\times$0.5",
+      "median": -5.969042003620828,
+      "n_runs": 1,
+      "protected_share": 0.0
+     },
+     {
+      "name": "kappaL2",
+      "label": "x2",
+      "end_text": "$\\times$2",
+      "median": -4.459350819969443,
+      "n_runs": 1,
+      "protected_share": 0.0
+     }
+    ],
+    "default": {
+     "label": "$\\times$1",
+     "driver_label": "x1",
+     "median": -5.376281290124263,
+     "protected_share": 0.0
+    },
+    "complete": true,
+    "points_missing": [],
+    "source": "s1"
+   },
+   "catalog": {
+    "id": "catalog",
+    "order": 7,
+    "panel": "b",
+    "label": "LLM catalog",
+    "driver_label": "LLM catalog",
+    "gamma_row": true,
+    "lo": -5.376281290124263,
+    "hi": -2.8426698715847465,
+    "span": 2.5336114185395164,
+    "zero_span": false,
+    "lo_points": [
+     "default"
+    ],
+    "hi_points": [
+     "a5"
+    ],
+    "lo_text": "MaaS",
+    "hi_text": "Llama",
+    "points": [
+     {
+      "name": "a5",
+      "label": "a5 tiers",
+      "end_text": "Llama",
+      "median": -2.8426698715847465,
+      "n_runs": 1,
+      "protected_share": 0.0
+     },
+     {
+      "name": "catM2",
+      "label": "M on 2 GPUs",
+      "end_text": "M on 2 GPUs",
+      "median": -4.6942881017486116,
+      "n_runs": 1,
+      "protected_share": 0.0
+     },
+     {
+      "name": "catLg4",
+      "label": "L 235B",
+      "end_text": "L 235B",
+      "median": -3.3284271045258995,
+      "n_runs": 1,
+      "protected_share": 0.0
+     }
+    ],
+    "default": {
+     "label": "MaaS",
+     "driver_label": "MaaS",
+     "median": -5.376281290124263,
+     "protected_share": 0.0
+    },
+    "complete": true,
+    "points_missing": [],
+    "source": "s1"
+   },
+   "precision": {
+    "id": "precision",
+    "order": 8,
+    "panel": "b",
+    "label": "Weight precision",
+    "driver_label": "weight precision",
+    "gamma_row": true,
+    "lo": -7.670883516229132,
+    "hi": -5.376281290124263,
+    "span": 2.2946022261048693,
+    "zero_span": false,
+    "lo_points": [
+     "L16"
+    ],
+    "hi_points": [
+     "default"
+    ],
+    "lo_text": "16 bit",
+    "hi_text": "8 bit",
+    "points": [
+     {
+      "name": "L16",
+      "label": "16 bit",
+      "end_text": "16 bit",
+      "median": -7.670883516229132,
+      "n_runs": 1,
+      "protected_share": 0.0
+     }
+    ],
+    "default": {
+     "label": "8 bit",
+     "driver_label": "8 bit",
+     "median": -5.376281290124263,
+     "protected_share": 0.0
+    },
+    "complete": true,
+    "points_missing": [],
+    "source": "s1"
+   },
+   "gpt4o_mini": {
+    "id": "gpt4o_mini",
+    "order": 9,
+    "panel": "b",
+    "label": "gpt-4o-mini tier",
+    "driver_label": "gpt-4o-mini tier",
+    "gamma_row": true,
+    "lo": -5.598695228549055,
+    "hi": -5.376281290124263,
+    "span": 0.2224139384247925,
+    "zero_span": false,
+    "lo_points": [
+     "tiermap"
+    ],
+    "hi_points": [
+     "default"
+    ],
+    "lo_text": "L",
+    "hi_text": "M",
+    "points": [
+     {
+      "name": "tiermap",
+      "label": "L",
+      "end_text": "L",
+      "median": -5.598695228549055,
+      "n_runs": 1,
+      "protected_share": 0.0
+     }
+    ],
+    "default": {
+     "label": "M",
+     "driver_label": "M",
+     "median": -5.376281290124263,
+     "protected_share": 0.0
+    },
+    "complete": true,
+    "points_missing": [],
+    "source": "s1"
+   },
+   "s_S": {
+    "id": "s_S",
+    "order": 10,
+    "panel": "b",
+    "label": "$s_S$",
+    "driver_label": "s_S",
+    "gamma_row": true,
+    "lo": -5.616988525852307,
+    "hi": -4.591963273612865,
+    "span": 1.025025252239442,
+    "zero_span": false,
+    "lo_points": [
+     "sS0"
+    ],
+    "hi_points": [
+     "sS05"
+    ],
+    "lo_text": "0",
+    "hi_text": "0.5",
+    "points": [
+     {
+      "name": "sS0",
+      "label": "0",
+      "end_text": "0",
+      "median": -5.616988525852307,
+      "n_runs": 1,
+      "protected_share": 0.0
+     },
+     {
+      "name": "sS05",
+      "label": "0.5",
+      "end_text": "0.5",
+      "median": -4.591963273612865,
+      "n_runs": 1,
+      "protected_share": 0.0
+     }
+    ],
+    "default": {
+     "label": "0.25",
+     "driver_label": "0.25",
+     "median": -5.376281290124263,
+     "protected_share": 0.0
+    },
+    "complete": true,
+    "points_missing": [],
+    "source": "s1"
+   },
+   "xi": {
+    "id": "xi",
+    "order": 11,
+    "panel": "b",
+    "label": "Sources $\\xi$",
+    "driver_label": "fluctuation sources xi",
+    "gamma_row": true,
+    "lo": -5.376281290124263,
+    "hi": -4.693568056590203,
+    "span": 0.6827132335340602,
+    "zero_span": false,
+    "lo_points": [
+     "default"
+    ],
+    "hi_points": [
+     "xi1"
+    ],
+    "lo_text": "regional",
+    "hi_text": "shared",
+    "points": [
+     {
+      "name": "xi1",
+      "label": "one series",
+      "end_text": "shared",
+      "median": -4.693568056590203,
+      "n_runs": 1,
+      "protected_share": 0.0
+     }
+    ],
+    "default": {
+     "label": "regional",
+     "driver_label": "per region",
+     "median": -5.376281290124263,
+     "protected_share": 0.0
+    },
+    "complete": true,
+    "points_missing": [],
+    "source": "s1"
+   },
+   "wildchat": {
+    "id": "wildchat",
+    "order": 12,
+    "panel": "b",
+    "label": "WildChat window",
+    "driver_label": "WildChat window",
+    "gamma_row": true,
+    "lo": -5.376281290124263,
+    "hi": -2.7261911992779497,
+    "span": 2.650090090846313,
+    "zero_span": false,
+    "lo_points": [
+     "default"
+    ],
+    "hi_points": [
+     "wcfull"
+    ],
+    "lo_text": "early",
+    "hi_text": "full",
+    "points": [
+     {
+      "name": "wcfull",
+      "label": "full",
+      "end_text": "full",
+      "median": -2.7261911992779497,
+      "n_runs": 1,
+      "protected_share": 0.0
+     }
+    ],
+    "default": {
+     "label": "early",
+     "driver_label": "early",
+     "median": -5.376281290124263,
+     "protected_share": 0.0
+    },
+    "complete": true,
+    "points_missing": [],
+    "source": "s1"
+   },
+   "own_capacity": {
+    "id": "own_capacity",
+    "order": 13,
+    "panel": "b",
+    "label": "Own capacity $C^0$",
+    "driver_label": "own capacity C0",
+    "gamma_row": true,
+    "lo": -5.376281290124263,
+    "hi": -2.8552835600246684,
+    "span": 2.5209977300995945,
+    "zero_span": false,
+    "lo_points": [
+     "default"
+    ],
+    "hi_points": [
+     "c0p90"
+    ],
+    "lo_text": "P75",
+    "hi_text": "P90",
+    "points": [
+     {
+      "name": "c0p50",
+      "label": "P50",
+      "end_text": "P50",
+      "median": -4.860905166294449,
+      "n_runs": 1,
+      "protected_share": 0.0
+     },
+     {
+      "name": "c0p90",
+      "label": "P90",
+      "end_text": "P90",
+      "median": -2.8552835600246684,
+      "n_runs": 1,
+      "protected_share": 0.0
+     }
+    ],
+    "default": {
+     "label": "P75",
+     "driver_label": "P75",
+     "median": -5.376281290124263,
+     "protected_share": 0.0
+    },
+    "complete": true,
+    "points_missing": [],
+    "source": "s1"
+   },
+   "smoothing": {
+    "id": "smoothing",
+    "order": 14,
+    "panel": "b",
+    "label": "Smoothing (min)",
+    "driver_label": "smoothing window",
+    "gamma_row": true,
+    "lo": -5.376281290124263,
+    "hi": -4.275934318552577,
+    "span": 1.1003469715716863,
+    "zero_span": false,
+    "lo_points": [
+     "default"
+    ],
+    "hi_points": [
+     "smooth60"
+    ],
+    "lo_text": "15",
+    "hi_text": "60",
+    "points": [
+     {
+      "name": "smooth5",
+      "label": "5 min",
+      "end_text": "5",
+      "median": -4.577420610520977,
+      "n_runs": 1,
+      "protected_share": 0.0
+     },
+     {
+      "name": "smooth60",
+      "label": "60 min",
+      "end_text": "60",
+      "median": -4.275934318552577,
+      "n_runs": 1,
+      "protected_share": 0.0
+     }
+    ],
+    "default": {
+     "label": "15",
+     "driver_label": "15 min",
+     "median": -5.376281290124263,
+     "protected_share": 0.0
+    },
+    "complete": true,
+    "points_missing": [],
+    "source": "s1"
+   },
+   "lease_quantile": {
+    "id": "lease_quantile",
+    "order": 15,
+    "panel": "c",
+    "label": "Lease quantile",
+    "driver_label": "lease-size quantile",
+    "gamma_row": true,
+    "lo": -5.376281290124263,
+    "hi": -3.915859286518053,
+    "span": 1.4604220036062099,
+    "zero_span": false,
+    "lo_points": [
+     "default"
+    ],
+    "hi_points": [
+     "lease50"
+    ],
+    "lo_text": "P25",
+    "hi_text": "P50",
+    "points": [
+     {
+      "name": "lease10",
+      "label": "P10",
+      "end_text": "P10",
+      "median": -5.176246243859706,
+      "n_runs": 1,
+      "protected_share": 0.0
+     },
+     {
+      "name": "lease50",
+      "label": "P50",
+      "end_text": "P50",
+      "median": -3.915859286518053,
+      "n_runs": 1,
+      "protected_share": 0.0
+     }
+    ],
+    "default": {
+     "label": "P25",
+     "driver_label": "P25",
+     "median": -5.376281290124263,
+     "protected_share": 0.0
+    },
+    "complete": true,
+    "points_missing": [],
+    "source": "s1"
+   },
+   "layer_width": {
+    "id": "layer_width",
+    "order": 16,
+    "panel": "c",
+    "label": "Layer GPUs",
+    "driver_label": "layer width",
+    "gamma_row": true,
+    "lo": -5.376281290124263,
+    "hi": -5.241279562959034,
+    "span": 0.1350017271652293,
+    "zero_span": false,
+    "lo_points": [
+     "default"
+    ],
+    "hi_points": [
+     "layer16"
+    ],
+    "lo_text": "8",
+    "hi_text": "16",
+    "points": [
+     {
+      "name": "layer16",
+      "label": "16 GPUs",
+      "end_text": "16",
+      "median": -5.241279562959034,
+      "n_runs": 1,
+      "protected_share": 0.0
+     }
+    ],
+    "default": {
+     "label": "8",
+     "driver_label": "8 GPUs",
+     "median": -5.376281290124263,
+     "protected_share": 0.0
+    },
+    "complete": true,
+    "points_missing": [],
+    "source": "s1"
+   },
+   "n_layers": {
+    "id": "n_layers",
+    "order": 17,
+    "panel": "c",
+    "label": "Offered layers $V_\\ell$",
+    "driver_label": "offered layers V_l",
+    "gamma_row": true,
+    "lo": -5.376281290124263,
+    "hi": -4.89715533591546,
+    "span": 0.47912595420880333,
+    "zero_span": false,
+    "lo_points": [
+     "default"
+    ],
+    "hi_points": [
+     "nlayers4"
+    ],
+    "lo_text": "8",
+    "hi_text": "4",
+    "points": [
+     {
+      "name": "nlayers4",
+      "label": "4",
+      "end_text": "4",
+      "median": -4.89715533591546,
+      "n_runs": 1,
+      "protected_share": 0.0
+     },
+     {
+      "name": "nlayers16",
+      "label": "16",
+      "end_text": "16",
+      "median": -5.241279562959034,
+      "n_runs": 1,
+      "protected_share": 0.0
+     }
+    ],
+    "default": {
+     "label": "8",
+     "driver_label": "8",
+     "median": -5.376281290124263,
+     "protected_share": 0.0
+    },
+    "complete": true,
+    "points_missing": [],
+    "source": "s1"
+   },
+   "protected_term": {
+    "id": "protected_term",
+    "order": 18,
+    "panel": "c",
+    "label": "Protected term",
+    "driver_label": "protected minimum billed term",
+    "gamma_row": false,
+    "lo": -5.376281290124263,
+    "hi": -5.376281290124263,
+    "span": 0.0,
+    "zero_span": true,
+    "lo_points": [
+     "default",
+     "prot1h",
+     "prot1d",
+     "prothorizon"
+    ],
+    "hi_points": [
+     "default",
+     "prot1h",
+     "prot1d",
+     "prothorizon"
+    ],
+    "lo_text": null,
+    "hi_text": "no change",
+    "points": [
+     {
+      "name": "prot1h",
+      "label": "1 h",
+      "end_text": "1 h",
+      "median": -5.376281290124263,
+      "n_runs": 1,
+      "protected_share": 0.0
+     },
+     {
+      "name": "prot1d",
+      "label": "1 day",
+      "end_text": "1 day",
+      "median": -5.376281290124263,
+      "n_runs": 1,
+      "protected_share": 0.0
+     },
+     {
+      "name": "prothorizon",
+      "label": "horizon",
+      "end_text": "horizon",
+      "median": -5.376281290124263,
+      "n_runs": 1,
+      "protected_share": 0.0
+     }
+    ],
+    "default": {
+     "label": "5 min",
+     "driver_label": "5 min",
+     "median": -5.376281290124263,
+     "protected_share": 0.0
+    },
+    "complete": true,
+    "points_missing": [],
+    "source": "s1"
+   },
+   "buffer_quantile": {
+    "id": "buffer_quantile",
+    "order": 19,
+    "panel": "c",
+    "label": "Buffer quantile",
+    "driver_label": "buffer quantile",
+    "gamma_row": true,
+    "lo": -5.376281290124263,
+    "hi": -4.952988821977633,
+    "span": 0.4232924681466299,
+    "zero_span": false,
+    "lo_points": [
+     "default"
+    ],
+    "hi_points": [
+     "buf999"
+    ],
+    "lo_text": "0.99",
+    "hi_text": "0.999",
+    "points": [
+     {
+      "name": "buf999",
+      "label": "0.999",
+      "end_text": "0.999",
+      "median": -4.952988821977633,
+      "n_runs": 1,
+      "protected_share": 0.0
+     }
+    ],
+    "default": {
+     "label": "0.99",
+     "driver_label": "0.99",
+     "median": -5.376281290124263,
+     "protected_share": 0.0
+    },
+    "complete": true,
+    "points_missing": [],
+    "source": "s1"
+   },
+   "tightness": {
+    "id": "tightness",
+    "order": 20,
+    "panel": "b",
+    "label": "Market tightness",
+    "driver_label": "market tightness",
+    "gamma_row": true,
+    "lo": -6.681207274084877,
+    "hi": -5.01631962802862,
+    "span": 1.6648876460562567,
+    "zero_span": false,
+    "lo_points": [
+     "tight1"
+    ],
+    "hi_points": [
+     "tight025"
+    ],
+    "lo_text": "1",
+    "hi_text": "0.25",
+    "points": [
+     {
+      "name": "tight025",
+      "label": "0.25",
+      "end_text": "0.25",
+      "median": -5.01631962802862,
+      "n_runs": 1,
+      "protected_share": 0.0
+     },
+     {
+      "name": "tight1",
+      "label": "1",
+      "end_text": "1",
+      "median": -6.681207274084877,
+      "n_runs": 1,
+      "protected_share": 0.0
+     },
+     {
+      "name": "tight2",
+      "label": "2",
+      "end_text": "2",
+      "median": -6.2858564435817055,
+      "n_runs": 1,
+      "protected_share": 0.0
+     }
+    ],
+    "default": {
+     "label": "0.5",
+     "driver_label": "0.5",
+     "median": -5.376281290124263,
+     "protected_share": 0.0
+    },
+    "complete": true,
+    "points_missing": [],
+    "source": "s1"
+   },
+   "delta1": {
+    "id": "delta1",
+    "order": 21,
+    "panel": "a",
+    "label": "$\\delta_1/q$",
+    "driver_label": "delta_1 / q",
+    "gamma_row": false,
+    "lo": -6.370425446941774,
+    "hi": -5.376281290124263,
+    "span": 0.9941441568175113,
+    "zero_span": false,
+    "lo_points": [
+     "delta0"
+    ],
+    "hi_points": [
+     "default"
+    ],
+    "lo_text": "0",
+    "hi_text": "0.05",
+    "points": [
+     {
+      "name": "delta0",
+      "label": "0",
+      "end_text": "0",
+      "median": -6.370425446941774,
+      "n_runs": 1,
+      "protected_share": 0.0
+     },
+     {
+      "name": "delta02",
+      "label": "0.2",
+      "end_text": "0.2",
+      "median": -5.37856824804086,
+      "n_runs": 1,
+      "protected_share": 0.0
+     }
+    ],
+    "default": {
+     "label": "0.05",
+     "driver_label": "0.05",
+     "median": -5.376281290124263,
+     "protected_share": 0.0
+    },
+    "complete": true,
+    "points_missing": [],
+    "source": "s1"
+   },
+   "slo_class": {
+    "id": "slo_class",
+    "order": 22,
+    "panel": "c",
+    "label": "SLO classes",
+    "driver_label": "adjacency and SLO class",
+    "gamma_row": false,
+    "lo": -5.389480386425927,
+    "hi": -5.376281290124263,
+    "span": 0.013199096301663715,
+    "zero_span": false,
+    "lo_points": [
+     "strict"
+    ],
+    "hi_points": [
+     "default"
+    ],
+    "lo_text": "strict",
+    "hi_text": "relaxed",
+    "points": [
+     {
+      "name": "strict",
+      "label": "all strict",
+      "end_text": "strict",
+      "median": -5.389480386425927,
+      "n_runs": 1,
+      "protected_share": 0.0
+     },
+     {
+      "name": "slotier",
+      "label": "S strict",
+      "end_text": "S strict",
+      "median": -5.376508882523878,
+      "n_runs": 1,
+      "protected_share": 0.0
+     }
+    ],
+    "default": {
+     "label": "relaxed",
+     "driver_label": "relaxed",
+     "median": -5.376281290124263,
+     "protected_share": 0.0
+    },
+    "complete": true,
+    "points_missing": [],
+    "source": "s1"
+   },
+   "transfer_fee": {
+    "id": "transfer_fee",
+    "order": 23,
+    "panel": "a",
+    "label": "Transfer fee",
+    "driver_label": "transfer fee",
+    "gamma_row": false,
+    "lo": -5.589890367146189,
+    "hi": -5.376281290124263,
+    "span": 0.21360907702192566,
+    "zero_span": false,
+    "lo_points": [
+     "fee4"
+    ],
+    "hi_points": [
+     "default"
+    ],
+    "lo_text": "$\\rho$ = 4",
+    "hi_text": "no fee",
+    "points": [
+     {
+      "name": "fee4",
+      "label": "rho = 4",
+      "end_text": "$\\rho$ = 4",
+      "median": -5.589890367146189,
+      "n_runs": 1,
+      "protected_share": 0.0
+     }
+    ],
+    "default": {
+     "label": "no fee",
+     "driver_label": "0",
+     "median": -5.376281290124263,
+     "protected_share": 0.0
+    },
+    "complete": true,
+    "points_missing": [],
+    "source": "s1"
+   },
+   "slow_slot": {
+    "id": "slow_slot",
+    "order": 24,
+    "panel": "a",
+    "label": "Slow-loop slot",
+    "driver_label": "slow-loop slot",
+    "gamma_row": false,
+    "lo": -6.458539560035348,
+    "hi": -5.376281290124263,
+    "span": 1.082258269911085,
+    "zero_span": false,
+    "lo_points": [
+     "slow1"
+    ],
+    "hi_points": [
+     "default"
+    ],
+    "lo_text": "1 min",
+    "hi_text": "5 min",
+    "points": [
+     {
+      "name": "slow1",
+      "label": "1 min",
+      "end_text": "1 min",
+      "median": -6.458539560035348,
+      "n_runs": 1,
+      "protected_share": 0.0
+     }
+    ],
+    "default": {
+     "label": "5 min",
+     "driver_label": "5 min",
+     "median": -5.376281290124263,
+     "protected_share": 0.0
+    },
+    "complete": true,
+    "points_missing": [],
+    "source": "s1"
+   },
+   "q28_rf": {
+    "id": "q28_rf",
+    "order": 25,
+    "panel": "c",
+    "label": "Refusals (L-rf)",
+    "driver_label": "Q28: refusals (L-rf)",
+    "gamma_row": false,
+    "lo": -5.376281290124263,
+    "hi": -0.9213676844069152,
+    "span": 4.454913605717348,
+    "zero_span": false,
+    "lo_points": [
+     "default"
+    ],
+    "hi_points": [
+     "q28_rf"
+    ],
+    "lo_text": "off",
+    "hi_text": "on",
+    "points": [
+     {
+      "name": "q28_rf",
+      "label": "L-rf",
+      "end_text": "on",
+      "median": -0.9213676844069152,
+      "n_runs": 1,
+      "protected_share": null
+     }
+    ],
+    "default": {
+     "label": "off",
+     "driver_label": "L-tr",
+     "median": -5.376281290124263,
+     "protected_share": 0.0
+    },
+    "complete": true,
+    "points_missing": [],
+    "source": "q28"
+   },
+   "q28_vr": {
+    "id": "q28_vr",
+    "order": 26,
+    "panel": "c",
+    "label": "Violations (L-vr)",
+    "driver_label": "Q28: violations as reclaims (L-vr)",
+    "gamma_row": false,
+    "lo": -5.376281290124263,
+    "hi": -5.376281290124263,
+    "span": 0.0,
+    "zero_span": true,
+    "lo_points": [
+     "default",
+     "q28_vr"
+    ],
+    "hi_points": [
+     "default",
+     "q28_vr"
+    ],
+    "lo_text": null,
+    "hi_text": "none",
+    "points": [
+     {
+      "name": "q28_vr",
+      "label": "L-vr",
+      "end_text": "on",
+      "median": -5.376281290124263,
+      "n_runs": 1,
+      "protected_share": null
+     }
+    ],
+    "default": {
+     "label": "off",
+     "driver_label": "L-tr",
+     "median": -5.376281290124263,
+     "protected_share": 0.0
+    },
+    "complete": true,
+    "points_missing": [],
+    "source": "q28",
+    "violation_events_max": 0.0,
+    "no_violation": true
+   }
+  },
+  "panels": {
+   "a": [
+    "mu",
+    "load_scenario",
+    "alpha",
+    "mu_split",
+    "phi",
+    "slow_slot",
+    "delta1",
+    "transfer_fee",
+    "alpha_p"
+   ],
+   "b": [
+    "wildchat",
+    "catalog",
+    "own_capacity",
+    "precision",
+    "tightness",
+    "kappa_L",
+    "smoothing",
+    "s_S",
+    "xi",
+    "gpt4o_mini"
+   ],
+   "c": [
+    "q28_rf",
+    "lease_quantile",
+    "n_layers",
+    "buffer_quantile",
+    "layer_width",
+    "slo_class",
+    "protected_term",
+    "q28_vr"
+   ]
+  },
+  "default_saving_pct": -5.376281290124263,
+  "not_run": [
+   {
+    "row": "warm-peer and SSD load models",
+    "reason": "no sweep in the register"
+   },
+   {
+    "row": "client unit 1/u",
+    "reason": "no sweep in the register"
+   },
+   {
+    "row": "pool width zeta",
+    "reason": "no sweep in the register"
+   },
+   {
+    "row": "tier map",
+    "reason": "its sweep is its default"
+   },
+   {
+    "row": "per-tier tokens-per-conversation factor",
+    "reason": "no traced source"
+   },
+   {
+    "row": "clock alignment at local midnight",
+    "reason": "not built: no source for the regions' UTC offsets (MS1 spec \u00a710 S12)"
+   },
+   {
+    "row": "non-causal smoothing window",
+    "reason": "not built: the builder has a trailing mean only (instance._trailing_mean)"
+   },
+   {
+    "row": "scenario assignment per region pair",
+    "reason": "not built"
+   },
+   {
+    "row": "offered layers V_l as the whole block below the lease-size quantile",
+    "reason": "the dense arrays of A8's safe expert exceed the 3 GB cap at the week, and a one-day probe completed one slow slot in its window; the row sweeps 4 and 16 layers in its place (M37)"
+   },
+   {
+    "row": "offered layers V_l as a share of the mean lendable capacity",
+    "reason": "not defined"
+   },
+   {
+    "row": "a uniform kappa multiplier",
+    "reason": "identical to the default: a uniform multiplier cancels exactly through Gamma; the row varies L's kappa alone (M8)"
+   }
+  ],
+  "tables": {
+   "points": [
+    {
+     "row": "default",
+     "row_label": "Default point",
+     "point": "default",
+     "value": null,
+     "alignment": "1",
+     "bl0a_usd": 1527.7154508483445,
+     "saving": {
+      "median": -5.376281290124263,
+      "lo": -5.376281290124263,
+      "hi": -5.376281290124263,
+      "n": 1
+     },
+     "saving_total": {
+      "median": -0.32338576404371544,
+      "lo": -0.32338576404371544,
+      "hi": -0.32338576404371544,
+      "n": 1
+     },
+     "source": "s1_sweep",
+     "ends": [],
+     "default_setting": null,
+     "default_ends": []
+    },
+    {
+     "row": "mu",
+     "row_label": "$\\mu/\\tilde{\\beta}$",
+     "point": "mu0.2",
+     "value": "0.2",
+     "alignment": "1",
+     "bl0a_usd": 20388.072363725325,
+     "saving": {
+      "median": 29.616590973538642,
+      "lo": 24.75954552772069,
+      "hi": 32.07743962128613,
+      "n": 12
+     },
+     "saving_total": {
+      "median": 3.9791080618763406,
+      "lo": 3.3983168832677046,
+      "hi": 4.091655057143322,
+      "n": 12
+     },
+     "source": "e7",
+     "ends": [
+      "high"
+     ],
+     "default_setting": "1",
+     "default_ends": [
+      "low"
+     ]
+    },
+    {
+     "row": "mu",
+     "row_label": "$\\mu/\\tilde{\\beta}$",
+     "point": "mu0.5",
+     "value": "0.5",
+     "alignment": "1",
+     "bl0a_usd": 20388.072363725325,
+     "saving": {
+      "median": 29.165968157621226,
+      "lo": 23.488264178909972,
+      "hi": 31.662442950970508,
+      "n": 12
+     },
+     "saving_total": {
+      "median": 3.9194464455279854,
+      "lo": 3.225859196200487,
+      "hi": 4.0377857694549935,
+      "n": 12
+     },
+     "source": "e7",
+     "ends": [],
+     "default_setting": "1",
+     "default_ends": [
+      "low"
+     ]
+    },
+    {
+     "row": "mu",
+     "row_label": "$\\mu/\\tilde{\\beta}$",
+     "point": "mu2",
+     "value": "2",
+     "alignment": "1",
+     "bl0a_usd": 20388.072363725325,
+     "saving": {
+      "median": 26.912854078034137,
+      "lo": 17.13185743485639,
+      "hi": 29.573266636517396,
+      "n": 12
+     },
+     "saving_total": {
+      "median": 3.6193962771326413,
+      "lo": 2.3635707608644143,
+      "hi": 3.768439331013335,
+      "n": 12
+     },
+     "source": "e7",
+     "ends": [],
+     "default_setting": "1",
+     "default_ends": [
+      "low"
+     ]
+    },
+    {
+     "row": "load_scenario",
+     "row_label": "Load scenario",
+     "point": "scen_warm_peer_rdma",
+     "value": "warm peer",
+     "alignment": "1",
+     "bl0a_usd": 1527.7154508483445,
+     "saving": {
+      "median": 26.067780436707345,
+      "lo": 26.067780436707345,
+      "hi": 26.067780436707345,
+      "n": 1
+     },
+     "saving_total": {
+      "median": 1.5679888455489954,
+      "lo": 1.5679888455489954,
+      "hi": 1.5679888455489954,
+      "n": 1
+     },
+     "source": "s1_sweep",
+     "ends": [
+      "high"
+     ],
+     "default_setting": "10 and 2 GB/s",
+     "default_ends": []
+    },
+    {
+     "row": "load_scenario",
+     "row_label": "Load scenario",
+     "point": "scen_ssd_optimized",
+     "value": "SSD optimized",
+     "alignment": "1",
+     "bl0a_usd": 1527.7154508483445,
+     "saving": {
+      "median": 25.736214687630387,
+      "lo": 25.736214687630387,
+      "hi": 25.736214687630387,
+      "n": 1
+     },
+     "saving_total": {
+      "median": 1.548045014988464,
+      "lo": 1.548045014988464,
+      "hi": 1.548045014988464,
+      "n": 1
+     },
+     "source": "s1_sweep",
+     "ends": [],
+     "default_setting": "10 and 2 GB/s",
+     "default_ends": []
+    },
+    {
+     "row": "load_scenario",
+     "row_label": "Load scenario",
+     "point": "scen_ssd_stock_safetensors",
+     "value": "SSD safetensors",
+     "alignment": "1",
+     "bl0a_usd": 1527.7154508483445,
+     "saving": {
+      "median": 5.656487210615202,
+      "lo": 5.656487210615202,
+      "hi": 5.656487210615202,
+      "n": 1
+     },
+     "saving_total": {
+      "median": 0.34024027756295316,
+      "lo": 0.34024027756295316,
+      "hi": 0.34024027756295316,
+      "n": 1
+     },
+     "source": "s1_sweep",
+     "ends": [],
+     "default_setting": "10 and 2 GB/s",
+     "default_ends": []
+    },
+    {
+     "row": "load_scenario",
+     "row_label": "Load scenario",
+     "point": "scen_ssd_stock_pytorch",
+     "value": "SSD PyTorch",
+     "alignment": "1",
+     "bl0a_usd": 1527.7154508483445,
+     "saving": {
+      "median": -2.228022294751275,
+      "lo": -2.228022294751275,
+      "hi": -2.228022294751275,
+      "n": 1
+     },
+     "saving_total": {
+      "median": -0.13401655404789992,
+      "lo": -0.13401655404789992,
+      "hi": -0.13401655404789992,
+      "n": 1
+     },
+     "source": "s1_sweep",
+     "ends": [],
+     "default_setting": "10 and 2 GB/s",
+     "default_ends": []
+    },
+    {
+     "row": "load_scenario",
+     "row_label": "Load scenario",
+     "point": "scen_a5_10GBps",
+     "value": "10 GB/s",
+     "alignment": "1",
+     "bl0a_usd": 1527.7154508483445,
+     "saving": {
+      "median": 0.4335777227390203,
+      "lo": 0.4335777227390203,
+      "hi": 0.4335777227390203,
+      "n": 1
+     },
+     "saving_total": {
+      "median": 0.026079897158248766,
+      "lo": 0.026079897158248766,
+      "hi": 0.026079897158248766,
+      "n": 1
+     },
+     "source": "s1_sweep",
+     "ends": [],
+     "default_setting": "10 and 2 GB/s",
+     "default_ends": []
+    },
+    {
+     "row": "load_scenario",
+     "row_label": "Load scenario",
+     "point": "scen_a5_2GBps",
+     "value": "2 GB/s",
+     "alignment": "1",
+     "bl0a_usd": 1527.7154508483445,
+     "saving": {
+      "median": -5.17298485974742,
+      "lo": -5.17298485974742,
+      "hi": -5.17298485974742,
+      "n": 1
+     },
+     "saving_total": {
+      "median": -0.31115739132343556,
+      "lo": -0.31115739132343556,
+      "hi": -0.31115739132343556,
+      "n": 1
+     },
+     "source": "s1_sweep",
+     "ends": [],
+     "default_setting": "10 and 2 GB/s",
+     "default_ends": []
+    },
+    {
+     "row": "load_scenario",
+     "row_label": "Load scenario",
+     "point": "scen_cold_wan_10gbps",
+     "value": "WAN 10 Gb/s",
+     "alignment": "1",
+     "bl0a_usd": 1527.7154508483445,
+     "saving": {
+      "median": -6.697917127232245,
+      "lo": -6.697917127232245,
+      "hi": -6.697917127232245,
+      "n": 1
+     },
+     "saving_total": {
+      "median": -0.4028827605561336,
+      "lo": -0.4028827605561336,
+      "hi": -0.4028827605561336,
+      "n": 1
+     },
+     "source": "s1_sweep",
+     "ends": [],
+     "default_setting": "10 and 2 GB/s",
+     "default_ends": []
+    },
+    {
+     "row": "load_scenario",
+     "row_label": "Load scenario",
+     "point": "scen_cold_wan_1gbps",
+     "value": "WAN 1 Gb/s",
+     "alignment": "1",
+     "bl0a_usd": 1527.7154508483445,
+     "saving": {
+      "median": -8.093268743768633,
+      "lo": -8.093268743768633,
+      "hi": -8.093268743768633,
+      "n": 1
+     },
+     "saving_total": {
+      "median": -0.4868137947176443,
+      "lo": -0.4868137947176443,
+      "hi": -0.4868137947176443,
+      "n": 1
+     },
+     "source": "s1_sweep",
+     "ends": [
+      "low"
+     ],
+     "default_setting": "10 and 2 GB/s",
+     "default_ends": []
+    },
+    {
+     "row": "alpha",
+     "row_label": "$\\alpha$",
+     "point": "alpha02",
+     "value": "0.2",
+     "alignment": "1",
+     "bl0a_usd": 1527.7154508483445,
+     "saving": {
+      "median": -2.5355145414877267,
+      "lo": -2.5355145414877267,
+      "hi": -2.5355145414877267,
+      "n": 1
+     },
+     "saving_total": {
+      "median": -0.15251235249711392,
+      "lo": -0.15251235249711392,
+      "hi": -0.15251235249711392,
+      "n": 1
+     },
+     "source": "s1_sweep",
+     "ends": [],
+     "default_setting": "0.40",
+     "default_ends": []
+    },
+    {
+     "row": "alpha",
+     "row_label": "$\\alpha$",
+     "point": "alpha03",
+     "value": "0.3",
+     "alignment": "1",
+     "bl0a_usd": 1527.7154508483445,
+     "saving": {
+      "median": -3.955427321433014,
+      "lo": -3.955427321433014,
+      "hi": -3.955427321433014,
+      "n": 1
+     },
+     "saving_total": {
+      "median": -0.2379207518049098,
+      "lo": -0.2379207518049098,
+      "hi": -0.2379207518049098,
+      "n": 1
+     },
+     "source": "s1_sweep",
+     "ends": [],
+     "default_setting": "0.40",
+     "default_ends": []
+    },
+    {
+     "row": "alpha",
+     "row_label": "$\\alpha$",
+     "point": "alpha05",
+     "value": "0.5",
+     "alignment": "1",
+     "bl0a_usd": 1527.7154508483445,
+     "saving": {
+      "median": -6.202450884208299,
+      "lo": -6.202450884208299,
+      "hi": -6.202450884208299,
+      "n": 1
+     },
+     "saving_total": {
+      "median": -0.3730802407637679,
+      "lo": -0.3730802407637679,
+      "hi": -0.3730802407637679,
+      "n": 1
+     },
+     "source": "s1_sweep",
+     "ends": [
+      "low"
+     ],
+     "default_setting": "0.40",
+     "default_ends": []
+    },
+    {
+     "row": "alpha",
+     "row_label": "$\\alpha$",
+     "point": "alpha06",
+     "value": "0.6",
+     "alignment": "1",
+     "bl0a_usd": 1527.7154508483445,
+     "saving": {
+      "median": -1.402198778674979,
+      "lo": -1.402198778674979,
+      "hi": -1.402198778674979,
+      "n": 1
+     },
+     "saving_total": {
+      "median": -0.0843428940773494,
+      "lo": -0.0843428940773494,
+      "hi": -0.0843428940773494,
+      "n": 1
+     },
+     "source": "s1_sweep",
+     "ends": [
+      "high"
+     ],
+     "default_setting": "0.40",
+     "default_ends": []
+    },
+    {
+     "row": "mu_split",
+     "row_label": "Split of $\\mu$",
+     "point": "kv05",
+     "value": "0.5",
+     "alignment": "1",
+     "bl0a_usd": 1527.7154508483445,
+     "saving": {
+      "median": -0.9213676844069152,
+      "lo": -0.9213676844069152,
+      "hi": -0.9213676844069152,
+      "n": 1
+     },
+     "saving_total": {
+      "median": -0.05542068513686438,
+      "lo": -0.05542068513686438,
+      "hi": -0.05542068513686438,
+      "n": 1
+     },
+     "source": "s1_sweep",
+     "ends": [
+      "high"
+     ],
+     "default_setting": "0",
+     "default_ends": [
+      "low"
+     ]
+    },
+    {
+     "row": "mu_split",
+     "row_label": "Split of $\\mu$",
+     "point": "kv10",
+     "value": "1",
+     "alignment": "1",
+     "bl0a_usd": 1527.7154508483445,
+     "saving": {
+      "median": -0.9213676844069152,
+      "lo": -0.9213676844069152,
+      "hi": -0.9213676844069152,
+      "n": 1
+     },
+     "saving_total": {
+      "median": -0.05542068513686438,
+      "lo": -0.05542068513686438,
+      "hi": -0.05542068513686438,
+      "n": 1
+     },
+     "source": "s1_sweep",
+     "ends": [
+      "high"
+     ],
+     "default_setting": "0",
+     "default_ends": [
+      "low"
+     ]
+    },
+    {
+     "row": "phi",
+     "row_label": "$\\varphi$",
+     "point": "phi05",
+     "value": "0.5",
+     "alignment": "1",
+     "bl0a_usd": 1527.7154508483445,
+     "saving": {
+      "median": -2.8232218762440198,
+      "lo": -2.8232218762440198,
+      "hi": -2.8232218762440198,
+      "n": 1
+     },
+     "saving_total": {
+      "median": -0.16981807949507655,
+      "lo": -0.16981807949507655,
+      "hi": -0.16981807949507655,
+      "n": 1
+     },
+     "source": "s1_sweep",
+     "ends": [
+      "high"
+     ],
+     "default_setting": "1",
+     "default_ends": [
+      "low"
+     ]
+    },
+    {
+     "row": "slow_slot",
+     "row_label": "Slow-loop slot",
+     "point": "slow1",
+     "value": "1 min",
+     "alignment": "1",
+     "bl0a_usd": 1527.7154508483445,
+     "saving": {
+      "median": -6.458539560035348,
+      "lo": -6.458539560035348,
+      "hi": -6.458539560035348,
+      "n": 1
+     },
+     "saving_total": {
+      "median": -0.38848409105105564,
+      "lo": -0.38848409105105564,
+      "hi": -0.38848409105105564,
+      "n": 1
+     },
+     "source": "s1_sweep",
+     "ends": [
+      "low"
+     ],
+     "default_setting": "5 min",
+     "default_ends": [
+      "high"
+     ]
+    },
+    {
+     "row": "delta1",
+     "row_label": "$\\delta_1/q$",
+     "point": "delta0",
+     "value": "0",
+     "alignment": "1",
+     "bl0a_usd": 1527.7154508483445,
+     "saving": {
+      "median": -6.370425446941774,
+      "lo": -6.370425446941774,
+      "hi": -6.370425446941774,
+      "n": 1
+     },
+     "saving_total": {
+      "median": -0.3831839870854781,
+      "lo": -0.3831839870854781,
+      "hi": -0.3831839870854781,
+      "n": 1
+     },
+     "source": "s1_sweep",
+     "ends": [
+      "low"
+     ],
+     "default_setting": "0.05",
+     "default_ends": [
+      "high"
+     ]
+    },
+    {
+     "row": "delta1",
+     "row_label": "$\\delta_1/q$",
+     "point": "delta02",
+     "value": "0.2",
+     "alignment": "1",
+     "bl0a_usd": 1527.7154508483445,
+     "saving": {
+      "median": -5.37856824804086,
+      "lo": -5.37856824804086,
+      "hi": -5.37856824804086,
+      "n": 1
+     },
+     "saving_total": {
+      "median": -0.3235233256022152,
+      "lo": -0.3235233256022152,
+      "hi": -0.3235233256022152,
+      "n": 1
+     },
+     "source": "s1_sweep",
+     "ends": [],
+     "default_setting": "0.05",
+     "default_ends": [
+      "high"
+     ]
+    },
+    {
+     "row": "transfer_fee",
+     "row_label": "Transfer fee",
+     "point": "fee4",
+     "value": "$\\rho$ = 4",
+     "alignment": "1",
+     "bl0a_usd": 1527.7154508483445,
+     "saving": {
+      "median": -5.589890367146189,
+      "lo": -5.589890367146189,
+      "hi": -5.589890367146189,
+      "n": 1
+     },
+     "saving_total": {
+      "median": -0.33623444714858675,
+      "lo": -0.33623444714858675,
+      "hi": -0.33623444714858675,
+      "n": 1
+     },
+     "source": "s1_sweep",
+     "ends": [
+      "low"
+     ],
+     "default_setting": "no fee",
+     "default_ends": [
+      "high"
+     ]
+    },
+    {
+     "row": "alpha_p",
+     "row_label": "$\\alpha_p$",
+     "point": "alphap06",
+     "value": "0.6",
+     "alignment": "1",
+     "bl0a_usd": 1527.7154508483445,
+     "saving": {
+      "median": -5.376281290124263,
+      "lo": -5.376281290124263,
+      "hi": -5.376281290124263,
+      "n": 1
+     },
+     "saving_total": {
+      "median": -0.4396697364321689,
+      "lo": -0.4396697364321689,
+      "hi": -0.4396697364321689,
+      "n": 1
+     },
+     "source": "s1_sweep",
+     "ends": [
+      "low",
+      "high"
+     ],
+     "default_setting": "0.83",
+     "default_ends": [
+      "low",
+      "high"
+     ]
+    },
+    {
+     "row": "alpha_p",
+     "row_label": "$\\alpha_p$",
+     "point": "alphap10",
+     "value": "1.0",
+     "alignment": "1",
+     "bl0a_usd": 1527.7154508483445,
+     "saving": {
+      "median": -5.376281290124263,
+      "lo": -5.376281290124263,
+      "hi": -5.376281290124263,
+      "n": 1
+     },
+     "saving_total": {
+      "median": -0.2727231084939774,
+      "lo": -0.2727231084939774,
+      "hi": -0.2727231084939774,
+      "n": 1
+     },
+     "source": "s1_sweep",
+     "ends": [
+      "low",
+      "high"
+     ],
+     "default_setting": "0.83",
+     "default_ends": [
+      "low",
+      "high"
+     ]
+    },
+    {
+     "row": "wildchat",
+     "row_label": "WildChat window",
+     "point": "wcfull",
+     "value": "full",
+     "alignment": "1",
+     "bl0a_usd": 1471.1520913418672,
+     "saving": {
+      "median": -2.7261911992779497,
+      "lo": -2.7261911992779497,
+      "hi": -2.7261911992779497,
+      "n": 1
+     },
+     "saving_total": {
+      "median": -0.09032037294325335,
+      "lo": -0.09032037294325335,
+      "hi": -0.09032037294325335,
+      "n": 1
+     },
+     "source": "s1_sweep",
+     "ends": [
+      "high"
+     ],
+     "default_setting": "early",
+     "default_ends": [
+      "low"
+     ]
+    },
+    {
+     "row": "catalog",
+     "row_label": "LLM catalog",
+     "point": "a5",
+     "value": "Llama",
+     "alignment": "1",
+     "bl0a_usd": 2948.7284459171287,
+     "saving": {
+      "median": -2.8426698715847465,
+      "lo": -2.8426698715847465,
+      "hi": -2.8426698715847465,
+      "n": 1
+     },
+     "saving_total": {
+      "median": -0.18533046376985052,
+      "lo": -0.18533046376985052,
+      "hi": -0.18533046376985052,
+      "n": 1
+     },
+     "source": "s1_sweep",
+     "ends": [
+      "high"
+     ],
+     "default_setting": "MaaS",
+     "default_ends": [
+      "low"
+     ]
+    },
+    {
+     "row": "catalog",
+     "row_label": "LLM catalog",
+     "point": "catM2",
+     "value": "M on 2 GPUs",
+     "alignment": "1",
+     "bl0a_usd": 1510.328530979566,
+     "saving": {
+      "median": -4.6942881017486116,
+      "lo": -4.6942881017486116,
+      "hi": -4.6942881017486116,
+      "n": 1
+     },
+     "saving_total": {
+      "median": -0.29335130240322194,
+      "lo": -0.29335130240322194,
+      "hi": -0.29335130240322194,
+      "n": 1
+     },
+     "source": "s1_sweep",
+     "ends": [],
+     "default_setting": "MaaS",
+     "default_ends": [
+      "low"
+     ]
+    },
+    {
+     "row": "catalog",
+     "row_label": "LLM catalog",
+     "point": "catLg4",
+     "value": "L 235B",
+     "alignment": "1",
+     "bl0a_usd": 1508.232848639786,
+     "saving": {
+      "median": -3.3284271045258995,
+      "lo": -3.3284271045258995,
+      "hi": -3.3284271045258995,
+      "n": 1
+     },
+     "saving_total": {
+      "median": -0.20853142940548963,
+      "lo": -0.20853142940548963,
+      "hi": -0.20853142940548963,
+      "n": 1
+     },
+     "source": "s1_sweep",
+     "ends": [],
+     "default_setting": "MaaS",
+     "default_ends": [
+      "low"
+     ]
+    },
+    {
+     "row": "own_capacity",
+     "row_label": "Own capacity $C^0$",
+     "point": "c0p50",
+     "value": "P50",
+     "alignment": "1",
+     "bl0a_usd": 2046.1103961258975,
+     "saving": {
+      "median": -4.860905166294449,
+      "lo": -4.860905166294449,
+      "hi": -4.860905166294449,
+      "n": 1
+     },
+     "saving_total": {
+      "median": -0.559388880695022,
+      "lo": -0.559388880695022,
+      "hi": -0.559388880695022,
+      "n": 1
+     },
+     "source": "s1_sweep",
+     "ends": [],
+     "default_setting": "P75",
+     "default_ends": [
+      "low"
+     ]
+    },
+    {
+     "row": "own_capacity",
+     "row_label": "Own capacity $C^0$",
+     "point": "c0p90",
+     "value": "P90",
+     "alignment": "1",
+     "bl0a_usd": 602.9650261291176,
+     "saving": {
+      "median": -2.8552835600246684,
+      "lo": -2.8552835600246684,
+      "hi": -2.8552835600246684,
+      "n": 1
+     },
+     "saving_total": {
+      "median": -0.011886672238659024,
+      "lo": -0.011886672238659024,
+      "hi": -0.011886672238659024,
+      "n": 1
+     },
+     "source": "s1_sweep",
+     "ends": [
+      "high"
+     ],
+     "default_setting": "P75",
+     "default_ends": [
+      "low"
+     ]
+    },
+    {
+     "row": "precision",
+     "row_label": "Weight precision",
+     "point": "L16",
+     "value": "16 bit",
+     "alignment": "1",
+     "bl0a_usd": 3036.62874965509,
+     "saving": {
+      "median": -7.670883516229132,
+      "lo": -7.670883516229132,
+      "hi": -7.670883516229132,
+      "n": 1
+     },
+     "saving_total": {
+      "median": -0.44705724556524107,
+      "lo": -0.44705724556524107,
+      "hi": -0.44705724556524107,
+      "n": 1
+     },
+     "source": "s1_sweep",
+     "ends": [
+      "low"
+     ],
+     "default_setting": "8 bit",
+     "default_ends": [
+      "high"
+     ]
+    },
+    {
+     "row": "tightness",
+     "row_label": "Market tightness",
+     "point": "tight025",
+     "value": "0.25",
+     "alignment": "1",
+     "bl0a_usd": 763.8577254241723,
+     "saving": {
+      "median": -5.01631962802862,
+      "lo": -5.01631962802862,
+      "hi": -5.01631962802862,
+      "n": 1
+     },
+     "saving_total": {
+      "median": -0.3017339064043112,
+      "lo": -0.3017339064043112,
+      "hi": -0.3017339064043112,
+      "n": 1
+     },
+     "source": "s1_sweep",
+     "ends": [
+      "high"
+     ],
+     "default_setting": "0.5",
+     "default_ends": []
+    },
+    {
+     "row": "tightness",
+     "row_label": "Market tightness",
+     "point": "tight1",
+     "value": "1",
+     "alignment": "1",
+     "bl0a_usd": 3055.430901696689,
+     "saving": {
+      "median": -6.681207274084877,
+      "lo": -6.681207274084877,
+      "hi": -6.681207274084877,
+      "n": 1
+     },
+     "saving_total": {
+      "median": -0.40187765529182684,
+      "lo": -0.40187765529182684,
+      "hi": -0.40187765529182684,
+      "n": 1
+     },
+     "source": "s1_sweep",
+     "ends": [
+      "low"
+     ],
+     "default_setting": "0.5",
+     "default_ends": []
+    },
+    {
+     "row": "tightness",
+     "row_label": "Market tightness",
+     "point": "tight2",
+     "value": "2",
+     "alignment": "1",
+     "bl0a_usd": 6110.861803393378,
+     "saving": {
+      "median": -6.2858564435817055,
+      "lo": -6.2858564435817055,
+      "hi": -6.2858564435817055,
+      "n": 1
+     },
+     "saving_total": {
+      "median": -0.37809712308223276,
+      "lo": -0.37809712308223276,
+      "hi": -0.37809712308223276,
+      "n": 1
+     },
+     "source": "s1_sweep",
+     "ends": [],
+     "default_setting": "0.5",
+     "default_ends": []
+    },
+    {
+     "row": "kappa_L",
+     "row_label": "$\\kappa$ of L",
+     "point": "kappaL05",
+     "value": "$\\times$0.5",
+     "alignment": "1",
+     "bl0a_usd": 1537.058996738996,
+     "saving": {
+      "median": -5.969042003620828,
+      "lo": -5.969042003620828,
+      "hi": -5.969042003620828,
+      "n": 1
+     },
+     "saving_total": {
+      "median": -0.34787433170588855,
+      "lo": -0.34787433170588855,
+      "hi": -0.34787433170588855,
+      "n": 1
+     },
+     "source": "s1_sweep",
+     "ends": [
+      "low"
+     ],
+     "default_setting": "$\\times$1",
+     "default_ends": []
+    },
+    {
+     "row": "kappa_L",
+     "row_label": "$\\kappa$ of L",
+     "point": "kappaL2",
+     "value": "$\\times$2",
+     "alignment": "1",
+     "bl0a_usd": 1508.232848639786,
+     "saving": {
+      "median": -4.459350819969443,
+      "lo": -4.459350819969443,
+      "hi": -4.459350819969443,
+      "n": 1
+     },
+     "saving_total": {
+      "median": -0.27938565920351266,
+      "lo": -0.27938565920351266,
+      "hi": -0.27938565920351266,
+      "n": 1
+     },
+     "source": "s1_sweep",
+     "ends": [
+      "high"
+     ],
+     "default_setting": "$\\times$1",
+     "default_ends": []
+    },
+    {
+     "row": "smoothing",
+     "row_label": "Smoothing (min)",
+     "point": "smooth5",
+     "value": "5",
+     "alignment": "1",
+     "bl0a_usd": 1618.99584936807,
+     "saving": {
+      "median": -4.577420610520977,
+      "lo": -4.577420610520977,
+      "hi": -4.577420610520977,
+      "n": 1
+     },
+     "saving_total": {
+      "median": -0.18726487337044073,
+      "lo": -0.18726487337044073,
+      "hi": -0.18726487337044073,
+      "n": 1
+     },
+     "source": "s1_sweep",
+     "ends": [],
+     "default_setting": "15",
+     "default_ends": [
+      "low"
+     ]
+    },
+    {
+     "row": "smoothing",
+     "row_label": "Smoothing (min)",
+     "point": "smooth60",
+     "value": "60",
+     "alignment": "1",
+     "bl0a_usd": 1698.5460898597644,
+     "saving": {
+      "median": -4.275934318552577,
+      "lo": -4.275934318552577,
+      "hi": -4.275934318552577,
+      "n": 1
+     },
+     "saving_total": {
+      "median": -0.028575071179237632,
+      "lo": -0.028575071179237632,
+      "hi": -0.028575071179237632,
+      "n": 1
+     },
+     "source": "s1_sweep",
+     "ends": [
+      "high"
+     ],
+     "default_setting": "15",
+     "default_ends": [
+      "low"
+     ]
+    },
+    {
+     "row": "s_S",
+     "row_label": "$s_S$",
+     "point": "sS0",
+     "value": "0",
+     "alignment": "1",
+     "bl0a_usd": 1531.6832843234176,
+     "saving": {
+      "median": -5.616988525852307,
+      "lo": -5.616988525852307,
+      "hi": -5.616988525852307,
+      "n": 1
+     },
+     "saving_total": {
+      "median": -0.33602896500897206,
+      "lo": -0.33602896500897206,
+      "hi": -0.33602896500897206,
+      "n": 1
+     },
+     "source": "s1_sweep",
+     "ends": [
+      "low"
+     ],
+     "default_setting": "0.25",
+     "default_ends": []
+    },
+    {
+     "row": "s_S",
+     "row_label": "$s_S$",
+     "point": "sS05",
+     "value": "0.5",
+     "alignment": "1",
+     "bl0a_usd": 1520.9186149572267,
+     "saving": {
+      "median": -4.591963273612865,
+      "lo": -4.591963273612865,
+      "hi": -4.591963273612865,
+      "n": 1
+     },
+     "saving_total": {
+      "median": -0.2788361071634826,
+      "lo": -0.2788361071634826,
+      "hi": -0.2788361071634826,
+      "n": 1
+     },
+     "source": "s1_sweep",
+     "ends": [
+      "high"
+     ],
+     "default_setting": "0.25",
+     "default_ends": []
+    },
+    {
+     "row": "xi",
+     "row_label": "Sources $\\xi$",
+     "point": "xi1",
+     "value": "shared",
+     "alignment": "1",
+     "bl0a_usd": 2798.1640194319916,
+     "saving": {
+      "median": -4.693568056590203,
+      "lo": -4.693568056590203,
+      "hi": -4.693568056590203,
+      "n": 1
+     },
+     "saving_total": {
+      "median": -0.07458962879511866,
+      "lo": -0.07458962879511866,
+      "hi": -0.07458962879511866,
+      "n": 1
+     },
+     "source": "s1_sweep",
+     "ends": [
+      "high"
+     ],
+     "default_setting": "regional",
+     "default_ends": [
+      "low"
+     ]
+    },
+    {
+     "row": "gpt4o_mini",
+     "row_label": "gpt-4o-mini tier",
+     "point": "tiermap",
+     "value": "L",
+     "alignment": "1",
+     "bl0a_usd": 1507.908550548385,
+     "saving": {
+      "median": -5.598695228549055,
+      "lo": -5.598695228549055,
+      "hi": -5.598695228549055,
+      "n": 1
+     },
+     "saving_total": {
+      "median": -0.3503622011692409,
+      "lo": -0.3503622011692409,
+      "hi": -0.3503622011692409,
+      "n": 1
+     },
+     "source": "s1_sweep",
+     "ends": [
+      "low"
+     ],
+     "default_setting": "M",
+     "default_ends": [
+      "high"
+     ]
+    },
+    {
+     "row": "q28_rf",
+     "row_label": "Refusals (L-rf)",
+     "point": "q28_rf",
+     "value": "on",
+     "alignment": "1",
+     "bl0a_usd": 1527.7154508483445,
+     "saving": {
+      "median": -0.9213676844069152,
+      "lo": -0.9213676844069152,
+      "hi": -0.9213676844069152,
+      "n": 1
+     },
+     "saving_total": {
+      "median": -0.05542068513686438,
+      "lo": -0.05542068513686438,
+      "hi": -0.05542068513686438,
+      "n": 1
+     },
+     "source": "s1_q28",
+     "ends": [
+      "high"
+     ],
+     "default_setting": "off",
+     "default_ends": [
+      "low"
+     ]
+    },
+    {
+     "row": "lease_quantile",
+     "row_label": "Lease quantile",
+     "point": "lease10",
+     "value": "P10",
+     "alignment": "1",
+     "bl0a_usd": 1499.769436503558,
+     "saving": {
+      "median": -5.176246243859706,
+      "lo": -5.176246243859706,
+      "hi": -5.176246243859706,
+      "n": 1
+     },
+     "saving_total": {
+      "median": -0.3113535650606458,
+      "lo": -0.3113535650606458,
+      "hi": -0.3113535650606458,
+      "n": 1
+     },
+     "source": "s1_sweep",
+     "ends": [],
+     "default_setting": "P25",
+     "default_ends": [
+      "low"
+     ]
+    },
+    {
+     "row": "lease_quantile",
+     "row_label": "Lease quantile",
+     "point": "lease50",
+     "value": "P50",
+     "alignment": "1",
+     "bl0a_usd": 1648.814846342421,
+     "saving": {
+      "median": -3.915859286518053,
+      "lo": -3.915859286518053,
+      "hi": -3.915859286518053,
+      "n": 1
+     },
+     "saving_total": {
+      "median": -0.2355407165143042,
+      "lo": -0.2355407165143042,
+      "hi": -0.2355407165143042,
+      "n": 1
+     },
+     "source": "s1_sweep",
+     "ends": [
+      "high"
+     ],
+     "default_setting": "P25",
+     "default_ends": [
+      "low"
+     ]
+    },
+    {
+     "row": "n_layers",
+     "row_label": "Offered layers $V_\\ell$",
+     "point": "nlayers4",
+     "value": "4",
+     "alignment": "1",
+     "bl0a_usd": 782.4884016540304,
+     "saving": {
+      "median": -4.89715533591546,
+      "lo": -4.89715533591546,
+      "hi": -4.89715533591546,
+      "n": 1
+     },
+     "saving_total": {
+      "median": -0.2945661200530525,
+      "lo": -0.2945661200530525,
+      "hi": -0.2945661200530525,
+      "n": 1
+     },
+     "source": "s1_sweep",
+     "ends": [
+      "high"
+     ],
+     "default_setting": "8",
+     "default_ends": [
+      "low"
+     ]
+    },
+    {
+     "row": "n_layers",
+     "row_label": "Offered layers $V_\\ell$",
+     "point": "nlayers16",
+     "value": "16",
+     "alignment": "1",
+     "bl0a_usd": 3018.169549236974,
+     "saving": {
+      "median": -5.241279562959034,
+      "lo": -5.241279562959034,
+      "hi": -5.241279562959034,
+      "n": 1
+     },
+     "saving_total": {
+      "median": -0.31526534877328594,
+      "lo": -0.31526534877328594,
+      "hi": -0.31526534877328594,
+      "n": 1
+     },
+     "source": "s1_sweep",
+     "ends": [],
+     "default_setting": "8",
+     "default_ends": [
+      "low"
+     ]
+    },
+    {
+     "row": "buffer_quantile",
+     "row_label": "Buffer quantile",
+     "point": "buf999",
+     "value": "0.999",
+     "alignment": "1",
+     "bl0a_usd": 1490.454098388629,
+     "saving": {
+      "median": -4.952988821977633,
+      "lo": -4.952988821977633,
+      "hi": -4.952988821977633,
+      "n": 1
+     },
+     "saving_total": {
+      "median": -0.2979245296256261,
+      "lo": -0.2979245296256261,
+      "hi": -0.2979245296256261,
+      "n": 1
+     },
+     "source": "s1_sweep",
+     "ends": [
+      "high"
+     ],
+     "default_setting": "0.99",
+     "default_ends": [
+      "low"
+     ]
+    },
+    {
+     "row": "layer_width",
+     "row_label": "Layer GPUs",
+     "point": "layer16",
+     "value": "16",
+     "alignment": "1",
+     "bl0a_usd": 3018.169549236974,
+     "saving": {
+      "median": -5.241279562959034,
+      "lo": -5.241279562959034,
+      "hi": -5.241279562959034,
+      "n": 1
+     },
+     "saving_total": {
+      "median": -0.31526534877328594,
+      "lo": -0.31526534877328594,
+      "hi": -0.31526534877328594,
+      "n": 1
+     },
+     "source": "s1_sweep",
+     "ends": [
+      "high"
+     ],
+     "default_setting": "8",
+     "default_ends": [
+      "low"
+     ]
+    },
+    {
+     "row": "slo_class",
+     "row_label": "SLO classes",
+     "point": "strict",
+     "value": "strict",
+     "alignment": "1",
+     "bl0a_usd": 1527.7154508483445,
+     "saving": {
+      "median": -5.389480386425927,
+      "lo": -5.389480386425927,
+      "hi": -5.389480386425927,
+      "n": 1
+     },
+     "saving_total": {
+      "median": -0.3241796956875431,
+      "lo": -0.3241796956875431,
+      "hi": -0.3241796956875431,
+      "n": 1
+     },
+     "source": "s1_sweep",
+     "ends": [
+      "low"
+     ],
+     "default_setting": "relaxed",
+     "default_ends": [
+      "high"
+     ]
+    },
+    {
+     "row": "slo_class",
+     "row_label": "SLO classes",
+     "point": "slotier",
+     "value": "S strict",
+     "alignment": "1",
+     "bl0a_usd": 1527.7154508483445,
+     "saving": {
+      "median": -5.376508882523878,
+      "lo": -5.376508882523878,
+      "hi": -5.376508882523878,
+      "n": 1
+     },
+     "saving_total": {
+      "median": -0.3233994538300422,
+      "lo": -0.3233994538300422,
+      "hi": -0.3233994538300422,
+      "n": 1
+     },
+     "source": "s1_sweep",
+     "ends": [],
+     "default_setting": "relaxed",
+     "default_ends": [
+      "high"
+     ]
+    },
+    {
+     "row": "protected_term",
+     "row_label": "Protected term",
+     "point": "prot1h",
+     "value": "1 h",
+     "alignment": "1",
+     "bl0a_usd": 1527.7154508483445,
+     "saving": {
+      "median": -5.376281290124263,
+      "lo": -5.376281290124263,
+      "hi": -5.376281290124263,
+      "n": 1
+     },
+     "saving_total": {
+      "median": -0.32338576404371544,
+      "lo": -0.32338576404371544,
+      "hi": -0.32338576404371544,
+      "n": 1
+     },
+     "source": "s1_sweep",
+     "ends": [
+      "low",
+      "high"
+     ],
+     "default_setting": "5 min",
+     "default_ends": [
+      "low",
+      "high"
+     ]
+    },
+    {
+     "row": "protected_term",
+     "row_label": "Protected term",
+     "point": "prot1d",
+     "value": "1 day",
+     "alignment": "1",
+     "bl0a_usd": 1527.7154508483445,
+     "saving": {
+      "median": -5.376281290124263,
+      "lo": -5.376281290124263,
+      "hi": -5.376281290124263,
+      "n": 1
+     },
+     "saving_total": {
+      "median": -0.32338576404371544,
+      "lo": -0.32338576404371544,
+      "hi": -0.32338576404371544,
+      "n": 1
+     },
+     "source": "s1_sweep",
+     "ends": [
+      "low",
+      "high"
+     ],
+     "default_setting": "5 min",
+     "default_ends": [
+      "low",
+      "high"
+     ]
+    },
+    {
+     "row": "protected_term",
+     "row_label": "Protected term",
+     "point": "prothorizon",
+     "value": "horizon",
+     "alignment": "1",
+     "bl0a_usd": 1527.7154508483445,
+     "saving": {
+      "median": -5.376281290124263,
+      "lo": -5.376281290124263,
+      "hi": -5.376281290124263,
+      "n": 1
+     },
+     "saving_total": {
+      "median": -0.32338576404371544,
+      "lo": -0.32338576404371544,
+      "hi": -0.32338576404371544,
+      "n": 1
+     },
+     "source": "s1_sweep",
+     "ends": [
+      "low",
+      "high"
+     ],
+     "default_setting": "5 min",
+     "default_ends": [
+      "low",
+      "high"
+     ]
+    },
+    {
+     "row": "q28_vr",
+     "row_label": "Violations (L-vr)",
+     "point": "q28_vr",
+     "value": "on",
+     "alignment": "1",
+     "bl0a_usd": 1527.7154508483445,
+     "saving": {
+      "median": -5.376281290124263,
+      "lo": -5.376281290124263,
+      "hi": -5.376281290124263,
+      "n": 1
+     },
+     "saving_total": {
+      "median": -0.32338576404371544,
+      "lo": -0.32338576404371544,
+      "hi": -0.32338576404371544,
+      "n": 1
+     },
+     "source": "s1_q28",
+     "ends": [
+      "low",
+      "high"
+     ],
+     "default_setting": "off",
+     "default_ends": [
+      "low",
+      "high"
+     ]
+    }
+   ],
+   "q28": {
+    "rows": [
+     {
+      "tag": "Sublet",
+      "key": "sublet_ms4",
+      "label": "Lagged RetroRenting + one-way guard ($B_0=10\\%$ of the all-fallback bill)",
+      "default": 0.715850698689078,
+      "default_source": "code/sim/out/e7/main/summary.json runs.1.Sublet",
+      "rf": 1.0092136768440692,
+      "vr": 1.0537628129012426,
+      "refused_unavailable": 0.0,
+      "refused_capacity": 0.0,
+      "refused_capacity_max": 0.0,
+      "victims": 0.0,
+      "violation_events_max": 0.0,
+      "guarded": true,
+      "abort_share": {
+       "rf": 1.0,
+       "vr": 1.0
+      },
+      "n_runs": {
+       "rf": 1,
+       "vr": 1
+      }
+     },
+     {
+      "tag": "A7G",
+      "key": "a7_ms4",
+      "label": "PD heuristic + one-way guard ($B_0=10\\%$ of the all-fallback bill)",
+      "default": 0.7422282118118826,
+      "default_source": "code/sim/out/e7/main/summary.json runs.1.A7G",
+      "rf": 1.0142868209987774,
+      "vr": 1.042178560200732,
+      "refused_unavailable": 0.0,
+      "refused_capacity": 0.0,
+      "refused_capacity_max": 0.0,
+      "victims": 0.0,
+      "violation_events_max": 0.0,
+      "guarded": true,
+      "abort_share": {
+       "rf": 1.0,
+       "vr": 1.0
+      },
+      "n_runs": {
+       "rf": 1,
+       "vr": 1
+      }
+     },
+     {
+      "tag": "A7",
+      "key": "a7",
+      "label": "PD heuristic",
+      "default": 0.7422282118118826,
+      "default_source": "code/sim/out/e7/main/summary.json runs.1.A7",
+      "rf": 0.8556036072106752,
+      "vr": 0.8573207546131695,
+      "refused_unavailable": 11.0,
+      "refused_capacity": 0.0,
+      "refused_capacity_max": 0.0,
+      "victims": 0.0,
+      "violation_events_max": 0.0,
+      "guarded": false,
+      "abort_share": {
+       "rf": null,
+       "vr": null
+      },
+      "n_runs": {
+       "rf": 1,
+       "vr": 1
+      }
+     },
+     {
+      "tag": "A6",
+      "key": "a6",
+      "label": "Two-timescale PD",
+      "default": 0.9738222495245962,
+      "default_source": "code/sim/out/e7/main/summary.json runs.1.A6",
+      "rf": 1.0499245164845643,
+      "vr": 1.0469704408983331,
+      "refused_unavailable": 3.0,
+      "refused_capacity": 0.0,
+      "refused_capacity_max": 0.0,
+      "victims": 0.0,
+      "violation_events_max": 0.0,
+      "guarded": false,
+      "abort_share": {
+       "rf": null,
+       "vr": null
+      },
+      "n_runs": {
+       "rf": 1,
+       "vr": 1
+      }
+     },
+     {
+      "tag": "BL5",
+      "key": "bl5_lag",
+      "label": "RetroRenting-style, lagged",
+      "default": 0.715850698689078,
+      "default_source": "code/sim/out/e7/main/summary.json runs.1.BL5",
+      "rf": 0.9527802742010898,
+      "vr": 0.9690246306812144,
+      "refused_unavailable": 10.0,
+      "refused_capacity": 0.0,
+      "refused_capacity_max": 0.0,
+      "victims": 0.0,
+      "violation_events_max": 0.0,
+      "guarded": false,
+      "abort_share": {
+       "rf": null,
+       "vr": null
+      },
+      "n_runs": {
+       "rf": 1,
+       "vr": 1
+      }
+     },
+     {
+      "tag": "BL1",
+      "key": "bl1",
+      "label": "Greedy renting",
+      "default": 0.6619217556617112,
+      "default_source": "code/sim/out/e7/main/summary.json runs.1.BL1",
+      "rf": 0.6216750886803694,
+      "vr": 0.637638346747186,
+      "refused_unavailable": 7.0,
+      "refused_capacity": 0.0,
+      "refused_capacity_max": 0.0,
+      "victims": 0.0,
+      "violation_events_max": 0.0,
+      "guarded": false,
+      "abort_share": {
+       "rf": null,
+       "vr": null
+      },
+      "n_runs": {
+       "rf": 1,
+       "vr": 1
+      }
+     },
+     {
+      "tag": "BL2",
+      "key": "bl2",
+      "label": "Per-borrower ski rental",
+      "default": 0.6835527103271365,
+      "default_source": "code/sim/out/e7/main/summary.json runs.1.BL2",
+      "rf": 0.6612228021877694,
+      "vr": 0.7075956094349832,
+      "refused_unavailable": 19.0,
+      "refused_capacity": 0.0,
+      "refused_capacity_max": 0.0,
+      "victims": 0.0,
+      "violation_events_max": 0.0,
+      "guarded": false,
+      "abort_share": {
+       "rf": null,
+       "vr": null
+      },
+      "n_runs": {
+       "rf": 1,
+       "vr": 1
+      }
+     },
+     {
+      "tag": "BL4",
+      "key": "bl4",
+      "label": "CoCaR-style",
+      "default": 0.9080303676223338,
+      "default_source": "code/sim/out/e7/main/summary.json runs.1.BL4",
+      "rf": 1.017755960923123,
+      "vr": 1.017755960923123,
+      "refused_unavailable": 0.0,
+      "refused_capacity": 0.0,
+      "refused_capacity_max": 0.0,
+      "victims": 0.0,
+      "violation_events_max": 0.0,
+      "guarded": false,
+      "abort_share": {
+       "rf": null,
+       "vr": null
+      },
+      "n_runs": {
+       "rf": 1,
+       "vr": 1
+      }
+     },
+     {
+      "tag": "BL3",
+      "key": "bl3",
+      "label": "SpotHedge-style",
+      "default": 0.955345569473629,
+      "default_source": "q28/summary.json runs.default.BL3 (this part's default jobs)",
+      "rf": 0.9534486547183754,
+      "vr": 0.955345569473629,
+      "refused_unavailable": 4.0,
+      "refused_capacity": 0.0,
+      "refused_capacity_max": 0.0,
+      "victims": 0.0,
+      "violation_events_max": 0.0,
+      "guarded": false,
+      "abort_share": {
+       "rf": null,
+       "vr": null
+      },
+      "n_runs": {
+       "rf": 1,
+       "vr": 1
+      }
+     }
+    ]
+   }
+  },
+  "grid": {
+   "n_alignments": 1,
+   "n_policy_seeds": 1,
+   "horizon_min": 120,
+   "alignments": [
+    1
+   ],
+   "B0_rule": "0.1*BL0a",
+   "default_prices": {
+    "1": {
+     "a0_usd_per_gpu_h": 2.85,
+     "q_gpu_usd_per_gpu_h": 7.15,
+     "alpha": 0.3986013986013986,
+     "committed_price_usd_per_gpu_h": 5.97,
+     "alpha_p": 0.8349650349650349
+    }
+   },
+   "q28_horizon_min": 120
+  },
+  "meta": {
+   "git_revision": {
+    "sweep": "c82fa05f835c1b4896ddf639d6edb81495a1abee",
+    "q28": "c82fa05f835c1b4896ddf639d6edb81495a1abee",
+    "e7": "939847ca5925ce069d6df9089fe3a3d1d3207bb7"
+   },
+   "reduced": true
+  },
+  "labels": {
+   "x": "Saving over all-fallback (%)",
+   "titles": {
+    "a": "Prices, costs, timing",
+    "b": "LLMs and demand",
+    "c": "Lenders, contracts, stress"
+   },
+   "no_change": "no change",
+   "no_violation": "none",
+   "default_point": "Default point",
+   "caption": "The saving over all-fallback of Lagged RetroRenting + one-way guard ($B_0=10\\%$ of the all-fallback bill) in overflow accounting per assumption on E7's main week (120 min; medians over 1 alignment \u00d7 1 policy seed; each setting's saving over its own all-fallback cost). A bar runs from the lowest to the highest median over the row's settings (markers) and the default (grey line, -5.4%), labeled with the settings at its ends; rows sorted by span. $\\Gamma$ is re-solved to keep the market tightness at its default 0.5 (in its own row, at the row's values) in every row of (b) and in the lease quantile, offered layers $V_\\ell$, buffer quantile and layer GPUs rows of (c). Its allowance $B_0$ is 10\\% of each run's all-fallback cost. The $\\alpha_p$ and protected term rows change nothing: the policy leases no protected capacity at their settings. L-rf refuses purchases on unavailable layers, L-vr turns buffer violations into reclaims without notice (off: the default lender; on: the variant); no buffer violation occurred in its L-vr runs, so they equal the default lender's. The $\\mu/\\tilde{\\beta}$ row reuses E7's runs. Bar ends not labeled: $\\mu/\\tilde{\\beta}$ from 1 to 0.2; Load scenario from WAN 1 Gb/s to warm peer (Table~\\ref{tab:s1-points}). Not run: the warm-peer and SSD load-rate scaling, the client unit $1/u$ and the pool width $\\zeta$ (no sweep in the register); the tier map (its sweep is the default); a per-tier tokens-per-conversation factor and a clock alignment at local midnight (no source); a non-causal smoothing window and a load scenario per region pair (not built); $V_\\ell$ as the whole block below the lease quantile (beyond the evaluation's memory budget); $V_\\ell$ as a share of the mean lendable capacity (not defined); a uniform $\\kappa$ multiplier (identical to the default).",
+   "gamma": "$\\Gamma$ is re-solved to keep the market tightness at its default {tight} (in its own row, at the row's values) {where}. ",
+   "protected": "{rows} change{s} nothing: the policy leases no protected capacity at {these}. ",
+   "vr": "; no buffer violation occurred in its L-vr runs, so they equal the default lender's",
+   "moved": "Bar ends not labeled: {rows} (Table~\\ref{{tab:s1-points}}). "
+  },
+  "sources": [
+   "code/sim/out/s1/sweep/summary.json",
+   "code/sim/out/s1/q28/summary.json",
+   "code/sim/out/e7/main/summary.json"
+  ],
+  "layout": {
+   "x_range": [
+    -20.99144460792882,
+    31.554037453388943
+   ],
+   "end_labels": {
+    "mu": false,
+    "load_scenario": false,
+    "alpha": true,
+    "mu_split": true,
+    "phi": true,
+    "slow_slot": true,
+    "delta1": true,
+    "transfer_fee": true,
+    "alpha_p": true,
+    "wildchat": true,
+    "catalog": true,
+    "own_capacity": true,
+    "precision": true,
+    "tightness": true,
+    "kappa_L": true,
+    "smoothing": true,
+    "s_S": true,
+    "xi": true,
+    "gpt4o_mini": true,
+    "q28_rf": true,
+    "lease_quantile": true,
+    "n_layers": true,
+    "buffer_quantile": true,
+    "layer_width": true,
+    "slo_class": true,
+    "protected_term": true,
+    "q28_vr": true
+   },
+   "side": {
+    "alpha": "both",
+    "mu_split": "both",
+    "phi": "both",
+    "slow_slot": "both",
+    "delta1": "both",
+    "transfer_fee": "both",
+    "alpha_p": "right",
+    "wildchat": "both",
+    "catalog": "both",
+    "own_capacity": "both",
+    "precision": "both",
+    "tightness": "both",
+    "kappa_L": "both",
+    "smoothing": "both",
+    "s_S": "both",
+    "xi": "both",
+    "gpt4o_mini": "both",
+    "q28_rf": "both",
+    "lease_quantile": "both",
+    "n_layers": "both",
+    "buffer_quantile": "both",
+    "layer_width": "both",
+    "slo_class": "both",
+    "protected_term": "right",
+    "q28_vr": "right"
+   },
+   "moved": [
+    "mu",
+    "load_scenario"
+   ],
+   "all_fit": false,
+   "rule": "the data keep at least 0.7 of the axes width; end labels 4.5 pt outside their bars and at least 4 pt inside the axes"
+  }
+ }
+}

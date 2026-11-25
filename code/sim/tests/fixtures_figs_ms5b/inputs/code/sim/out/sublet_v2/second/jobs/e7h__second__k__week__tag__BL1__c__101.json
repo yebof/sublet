@@ -1,0 +1,107 @@
+{
+ "job": "e7h:second:k=week:tag=BL1:c=101",
+ "exp": "e7h",
+ "kind": "pool",
+ "params": {
+  "part": "second",
+  "kind": "week",
+  "tag": "BL1",
+  "c": 101,
+  "modes": [
+   "L-vr",
+   "L-rf",
+   "L-ad",
+   "L-b999",
+   "L-iid-0.1",
+   "L-iid-0.34",
+   "L-iid-0.5",
+   "L-iid-0.8",
+   "L-iid-1"
+  ],
+  "policy_seeds": [
+   0
+  ],
+  "horizon_min": 120
+ },
+ "status": "ok",
+ "started": "2026-11-03T14:02:26",
+ "pid": 1689684,
+ "argv": [
+  "/work/sublet/code/sim/sublet/experiments/e7h.py",
+  "--job",
+  "e7h:second:k=week:tag=BL1:c=101",
+  "--out",
+  "/work/u36_fix/second/out/sublet_v2/second"
+ ],
+ "slots": [
+  "slot1"
+ ],
+ "milp_limit_s": null,
+ "git_revision": "5c7d33285b9a4f4e4df2b76e80b3e5f56d58bd37",
+ "versions": {
+  "python": "3.12.3",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "sublet": "0.1.0"
+ },
+ "runs": 9,
+ "errors": [],
+ "n_errors": 0,
+ "outputs": [
+  "runs/e7h__second__k__week__tag__BL1__c__101.json"
+ ],
+ "result": {
+  "instance_hash": "037bc069dae13e922b562fb59844552be4254d8e0a1ab54443b3816fb975a848",
+  "r0": [
+   [
+    "L-vr",
+    0,
+    0.6638351134177733
+   ],
+   [
+    "L-rf",
+    0,
+    0.6380749275111499
+   ],
+   [
+    "L-ad",
+    0,
+    1.9456081095151643
+   ],
+   [
+    "L-b999",
+    0,
+    0.6752769383586191
+   ],
+   [
+    "L-iid-0.1",
+    0,
+    0.6697881580136565
+   ],
+   [
+    "L-iid-0.34",
+    0,
+    1.0071008658219973
+   ],
+   [
+    "L-iid-0.5",
+    0,
+    1.2062793075456633
+   ],
+   [
+    "L-iid-0.8",
+    0,
+    1.6454883312780089
+   ],
+   [
+    "L-iid-1",
+    0,
+    1.9456081095151643
+   ]
+  ]
+ },
+ "wall_s": 23.040114297065884,
+ "peak_rss_kb": 150520,
+ "peak_rss_mb": 146.9921875,
+ "finished": "2026-11-03T14:02:49"
+}

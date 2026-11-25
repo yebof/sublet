@@ -1,0 +1,101 @@
+{
+ "block": "Q6",
+ "tier": 1,
+ "grid": "core",
+ "lb": "exact",
+ "description": "families F1-F3 (53 instance-modes x 10 runs x 11 policies; RR_RENEW and MARKING only on the T4/O1 family F1-F2); exact OPT: fam.opt_dp on F1 (per run) and F2, core.opt_eager on F3",
+ "policies": [
+  "PS",
+  "PS-G",
+  "PS-GR",
+  "BL1",
+  "BL5",
+  "BL1-G",
+  "BL5-G",
+  "A2-th",
+  "A3",
+  "RR_RENEW",
+  "MARKING"
+ ],
+ "policy_seeds": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9
+ ],
+ "families": [
+  {
+   "id": "F1",
+   "kind": "fam",
+   "m": [
+    2,
+    4,
+    8
+   ],
+   "rho": [
+    4,
+    8,
+    16
+   ],
+   "tau": 2,
+   "H": 1,
+   "T": 48,
+   "modes": [
+    "F-ad"
+   ],
+   "note": "cat-and-mouse Fam(m, rho, 2, 1, 48) = check_c4_lower.cm_instance, C3-T4's adaptive lender; one lender seed, policy seeds 0-9"
+  },
+  {
+   "id": "F2",
+   "kind": "fam",
+   "m": [
+    2,
+    4,
+    8,
+    16
+   ],
+   "rho": [
+    4,
+    16,
+    64
+   ],
+   "tau": 2,
+   "H": 1,
+   "T": 96,
+   "modes": [
+    "F-ss",
+    "F-iid",
+    "F-eg"
+   ],
+   "note": "T4/O1 family Fam(m, rho, 2, 1, 96) (E10(a) setup; T = 96 as o1_ub and E9's fam_m8, so that safe_site has at least two phases at m = 16); safe_site (default k = m, D = 3) and iid_step p = 0.5 with lender seed = policy seed 0-9; eager with one lender seed"
+  },
+  {
+   "id": "F3",
+   "kind": "c3p5",
+   "beta": [
+    2,
+    6,
+    14,
+    30
+   ],
+   "T": [
+    48,
+    192
+   ],
+   "modes": [
+    "F-eg"
+   ],
+   "exclude_policies": [
+    "RR_RENEW",
+    "MARKING"
+   ],
+   "note": "C3-P5 single site, check_c4_lower.single(T, [(1, 1), (T, 0)], beta, [1.0, 1.3]); eager"
+  }
+ ]
+}

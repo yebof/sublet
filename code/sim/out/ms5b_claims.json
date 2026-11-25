@@ -1,0 +1,2066 @@
+{
+ "meta": {
+  "module": "sublet.experiments.ms5b_claims",
+  "spec": "design/sublet_v2.md \u00a711 (W11, W15)",
+  "git_revision": "992823b93d06ab079b469b16d32b1b9309e79b35",
+  "written": "2026-11-25T06:41:56",
+  "input_root": "/work/sublet",
+  "input_root_is_repository": true,
+  "inputs": {
+   "code/sim/out/figs/fig1.json": "ok",
+   "code/sim/out/figs/fig1v2.json": "ok",
+   "code/sim/out/figs/fig1v3.json": "ok",
+   "code/sim/out/figs/fig2.json": "ok",
+   "code/sim/out/figs/fig3.json": "ok",
+   "code/sim/out/figs/fig4.json": "ok",
+   "code/sim/out/figs/fig4v2.json": "ok",
+   "code/sim/out/figs/fig4v3.json": "ok",
+   "code/sim/out/figs/fig5.json": "ok",
+   "code/sim/out/figs/fig6.json": "ok",
+   "code/sim/out/figs/fig7.json": "ok",
+   "code/sim/out/figs/floats_heights.json": "ok",
+   "code/sim/out/figs/floats_heights_ms4.json": "ok",
+   "code/sim/out/figs/floats_heights_ms5b.json": "ok",
+   "code/sim/out/figs/floats_heights_ms7.json": "ok",
+   "code/sim/out/figs/rebuild.json": "ok",
+   "code/sim/out/figs/sf_bl_ms7.json": "ok",
+   "code/sim/out/figs/sf_cap.json": "ok",
+   "code/sim/out/figs/sf_e10_cross.json": "ok",
+   "code/sim/out/figs/sf_e10_rho.json": "ok",
+   "code/sim/out/figs/sf_e10b.json": "ok",
+   "code/sim/out/figs/sf_e11_fam.json": "ok",
+   "code/sim/out/figs/sf_e11_guard.json": "ok",
+   "code/sim/out/figs/sf_e11_inst.json": "ok",
+   "code/sim/out/figs/sf_e1_rotation.json": "ok",
+   "code/sim/out/figs/sf_e1_sched.json": "ok",
+   "code/sim/out/figs/sf_e2_mu_cost.json": "ok",
+   "code/sim/out/figs/sf_e2_mu_ep.json": "ok",
+   "code/sim/out/figs/sf_e2_pool.json": "ok",
+   "code/sim/out/figs/sf_e2_por.json": "ok",
+   "code/sim/out/figs/sf_e3_mu.json": "ok",
+   "code/sim/out/figs/sf_e3_util.json": "ok",
+   "code/sim/out/figs/sf_e3_v2.json": "ok",
+   "code/sim/out/figs/sf_e4.json": "ok",
+   "code/sim/out/figs/sf_e5.json": "ok",
+   "code/sim/out/figs/sf_e5_v2.json": "ok",
+   "code/sim/out/figs/sf_e6a.json": "ok",
+   "code/sim/out/figs/sf_e6b.json": "ok",
+   "code/sim/out/figs/sf_e7_allow.json": "ok",
+   "code/sim/out/figs/sf_e7_boundary.json": "ok",
+   "code/sim/out/figs/sf_e7_decomp.json": "ok",
+   "code/sim/out/figs/sf_e7_grid_dev.json": "ok",
+   "code/sim/out/figs/sf_e7_intensity.json": "ok",
+   "code/sim/out/figs/sf_e7_links.json": "ok",
+   "code/sim/out/figs/sf_e7_mix.json": "ok",
+   "code/sim/out/figs/sf_e7_mu.json": "ok",
+   "code/sim/out/figs/sf_e8.json": "ok",
+   "code/sim/out/figs/sf_e8_v2.json": "ok",
+   "code/sim/out/figs/sf_e8q.json": "ok",
+   "code/sim/out/figs/sf_e9.json": "ok",
+   "code/sim/out/figs/sf_e9_v2.json": "ok",
+   "code/sim/out/figs/sf_fam_v2.json": "ok",
+   "code/sim/out/figs/sf_lag_v2.json": "ok",
+   "code/sim/out/figs/sf_oos.json": "ok",
+   "code/sim/out/figs/sf_s1.json": "ok",
+   "code/sim/out/figs/sf_s1_v2.json": "ok",
+   "code/sim/out/figs/sf_slack.json": "ok",
+   "code/sim/out/figs/sf_stress_ms7.json": "ok",
+   "code/sim/out/figs/table3_e7.json": "ok",
+   "code/sim/out/figs/table3_v2.json": "ok",
+   "code/sim/out/figs/table3_v3.json": "ok",
+   "code/sim/out/figs/table5_alglb.json": "ok",
+   "code/sim/out/ms3_copy_sublet_v2.json": "ok",
+   "code/sim/out/sublet_v2/analysis.json": "ok",
+   "code/sim/out/sublet_v2/e3/manifest.json": "ok",
+   "code/sim/out/sublet_v2/e3/summary.json": "ok",
+   "code/sim/out/sublet_v2/fam/manifest.json": "ok",
+   "code/sim/out/sublet_v2/fam/summary.json": "ok",
+   "code/sim/out/sublet_v2/grid/manifest.json": "ok",
+   "code/sim/out/sublet_v2/grid/summary.json": "ok",
+   "code/sim/out/sublet_v2/main/manifest.json": "ok",
+   "code/sim/out/sublet_v2/main/summary.json": "ok",
+   "code/sim/out/sublet_v2/second/manifest.json": "ok",
+   "code/sim/out/sublet_v2/second/summary.json": "ok",
+   "code/sim/out/sublet_v2/seeds/manifest.json": "ok",
+   "code/sim/out/sublet_v2/seeds/summary.json": "ok",
+   "design/Sublet_design.md": "ok",
+   "design/sublet_v2.md": "ok",
+   "design/sublet_v2_prereg.md": "ok",
+   "paper/supplement/tables/ms5b_deviations.tex": "ok"
+  },
+  "out_dir": "/work/sublet/code/sim/out"
+ },
+ "criterion": {
+  "holds": true,
+  "text": "holds: no row is a bug, and every row is reproduced, holds, informative or explained (2 explained)",
+  "reasons": "No row is a bug, and every row is reproduced, holds, informative or explained (2 explained)",
+  "n_rows": 46,
+  "counts": {
+   "reproduced": 10,
+   "holds": 33,
+   "informative": 1,
+   "explained": 2,
+   "bug": 0,
+   "missing": 0,
+   "pending": 0
+  },
+  "bug": [],
+  "missing": [],
+  "pending": [],
+  "explained": [
+   "H2b",
+   "H5"
+  ],
+  "unexplained": []
+ },
+ "rows": [
+  {
+   "id": "G-1",
+   "group": "G",
+   "section": "\u00a74.3",
+   "kind": "property",
+   "claim": {
+    "spec": "each part's gate record: ok, the pre-registration at HEAD, one HEAD (the freeze commit), the pre-registration's and the analysis script's sha256 then equal to theirs now, a clean tree, the pilot anchor an ancestor with \u00a75 and \u00a76 unchanged",
+    "summary": null
+   },
+   "status_label": null,
+   "status_label_note": "the confirmation's gate (\u00a74.3)",
+   "reference": {
+    "value": "the pre-registration now and its analysis_sha256 line; experiments/ms5b_analysis.py now",
+    "values": {},
+    "file": "design/sublet_v2_prereg.md; code/sim/sublet/experiments/ms5b_analysis.py"
+   },
+   "regenerated": {
+    "value": {
+     "freeze_commit": "eb76b1602c96ac4f5fae6646085e7a37c04ab1b7",
+     "prereg_sha256": "a42316b071e00a7292792cc8d00573fa84c29c36f3dc75e3423c074095aa9923",
+     "analysis_sha256_prereg": "dde0835e12643e95d17f103843f0e8418acf2042ed921dbd9720ddcb7b46992e",
+     "analysis_sha256_module": "dde0835e12643e95d17f103843f0e8418acf2042ed921dbd9720ddcb7b46992e",
+     "analysis_sha256_root": "dde0835e12643e95d17f103843f0e8418acf2042ed921dbd9720ddcb7b46992e",
+     "freeze_in_git": true,
+     "n_parts": 6,
+     "len(failures)": 0
+    },
+    "file": "code/sim/out/sublet_v2/<part>/summary.json meta.confirmation_gate"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "G-2",
+   "group": "G",
+   "section": "\u00a74.3",
+   "kind": "property",
+   "claim": {
+    "spec": "no part from a reduced run, and one commit over the summaries and manifests of the six parts",
+    "summary": null
+   },
+   "status_label": null,
+   "status_label_note": "the provenance of the confirmation's outputs",
+   "reference": {
+    "value": "meta.reduced false; one meta.git_revision",
+    "values": {},
+    "file": "code/sim/sublet/experiments/ms5b_common.py (check_confirmation, check_copy); design/sublet_v2_prereg.md \u00a78"
+   },
+   "regenerated": {
+    "value": {
+     "commits": [
+      "eb76b1602c96ac4f5fae6646085e7a37c04ab1b7"
+     ],
+     "n_files": 12,
+     "reduced": {
+      "main": false,
+      "seeds": false,
+      "second": false,
+      "e3": false,
+      "fam": false,
+      "grid": false
+     }
+    },
+    "file": "code/sim/out/sublet_v2/<part>/summary.json, manifest.json meta"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "G-3",
+   "group": "G",
+   "section": "\u00a74.3",
+   "kind": "property",
+   "claim": {
+    "spec": "the copy check passed against the clean clone of the summaries' commit, and the copy is unchanged since (tree digests over the six part folders)",
+    "summary": null
+   },
+   "status_label": null,
+   "status_label_note": "the copy of the confirmation's outputs (\u00a74.3; prereg \u00a78)",
+   "reference": {
+    "value": "every check true; the clone's commit; the tree digests",
+    "values": {},
+    "file": "code/sim/out/ms3_copy_sublet_v2.json"
+   },
+   "regenerated": {
+    "value": {
+     "pass": true,
+     "failed": [],
+     "clone_commit": "eb76b1602c96ac4f5fae6646085e7a37c04ab1b7",
+     "n_files_copy": 4712,
+     "versioned_current": true,
+     "full_current": true
+    },
+    "file": "code/sim/out/ms3_copy_sublet_v2.json (and the tree digests recomputed by this report)"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "G-4",
+   "group": "G",
+   "section": "\u00a74.5",
+   "kind": "property",
+   "claim": {
+    "spec": "every listed job of the six parts has an 'ok' record (Q39's MILP rule for part e3), and no run is missing",
+    "summary": null
+   },
+   "status_label": null,
+   "status_label_note": "the job records and the missing-run rule (\u00a74.5)",
+   "reference": {
+    "value": "jobs = jobs_ok = the job list; jobs_not_ok, missing empty",
+    "values": {},
+    "file": "code/sim/sublet/experiments/ms5b_common.py (check_confirmation, check_copy); design/sublet_v2_prereg.md \u00a78"
+   },
+   "regenerated": {
+    "value": {
+     "parts.*.jobs": {
+      "main": 352,
+      "seeds": 12,
+      "second": 160,
+      "e3": 300,
+      "fam": 71,
+      "grid": 200
+     },
+     "parts.*.n_blocking": {
+      "main": 0,
+      "seeds": 0,
+      "second": 0,
+      "e3": 0,
+      "fam": 0,
+      "grid": 0
+     },
+     "n_blocking": 0,
+     "n_milp_lp_fallback": 0
+    },
+    "file": "code/sim/out/sublet_v2/<part>/manifest.json, jobs/, summary.json meta"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "G-5",
+   "group": "G",
+   "section": "\u00a74.5",
+   "kind": "property",
+   "claim": {
+    "spec": "every run of every part ok, with no invariant failure",
+    "summary": null
+   },
+   "status_label": null,
+   "status_label_note": "the engine's invariants",
+   "reference": {
+    "value": "status ok; n_invariant_failures 0",
+    "values": {},
+    "file": "design/Sublet_design.md \u00a75.2"
+   },
+   "regenerated": {
+    "value": {
+     "n_runs": 9596,
+     "n_not_ok": 0,
+     "n_invariant_failures": 0
+    },
+    "file": "code/sim/out/sublet_v2/<part>/summary.json runs"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "A-1",
+   "group": "A",
+   "section": "\u00a74.3, \u00a76",
+   "kind": "reproduction",
+   "claim": {
+    "spec": "the analysis recomputed by experiments/ms5b_analysis.py from the six summaries equals analysis.json except meta; the script's sha256 equals the pre-registration's analysis_sha256",
+    "summary": null
+   },
+   "status_label": null,
+   "status_label_note": "the frozen analysis (\u00a74.3)",
+   "reference": {
+    "value": "analysis.json without meta; the pre-registration's analysis_sha256",
+    "values": {},
+    "file": "code/sim/out/sublet_v2/analysis.json; design/sublet_v2_prereg.md"
+   },
+   "regenerated": {
+    "value": {
+     "equal": true,
+     "n_differences": 0,
+     "sha256": "dde0835e12643e95d17f103843f0e8418acf2042ed921dbd9720ddcb7b46992e",
+     "analysis_sha256_prereg": "dde0835e12643e95d17f103843f0e8418acf2042ed921dbd9720ddcb7b46992e",
+     "analysis_sha256_module": "dde0835e12643e95d17f103843f0e8418acf2042ed921dbd9720ddcb7b46992e",
+     "pilot_dry_run": false,
+     "git_revision": "eb76b1602c96ac4f5fae6646085e7a37c04ab1b7"
+    },
+    "file": "ms5b_analysis.analyse(ms5b_analysis.load(<root>/code/sim)), recomputed by this report"
+   },
+   "summary_status": "pass",
+   "verdict": "reproduced",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "A-2",
+   "group": "A",
+   "section": "\u00a76",
+   "kind": "property",
+   "claim": {
+    "spec": "the analysis's CONFIG is the one the pre-registration registers",
+    "summary": null
+   },
+   "status_label": null,
+   "status_label_note": "the values the pilot set (\u00a76)",
+   "reference": {
+    "value": "the pre-registration's CONFIG values (\u00a75, As registered)",
+    "values": {
+     "registered": {
+      "H4_wording": "deployed",
+      "H5_status": "primary",
+      "H6_threshold": 0.01
+     }
+    },
+    "file": "design/sublet_v2_prereg.md"
+   },
+   "regenerated": {
+    "value": {
+     "config": {
+      "H5_status": "primary",
+      "H6_threshold": 0.01,
+      "H4_wording": "deployed"
+     }
+    },
+    "file": "code/sim/out/sublet_v2/analysis.json config"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "H1",
+   "group": "H",
+   "section": "\u00a76",
+   "kind": "hypothesis",
+   "claim": {
+    "spec": "H1 as registered (the pre-registration's \u00a75); verdict from analysis.json `pass`, a failure explained only by its consequence rows",
+    "summary": "H1 (primary, trace): On the 16 weeks (L-tr, policy seed 0) Sublet's $r_0$ is below the per-week minimum over {BL1, BL1-BO, BL2, BL3-0, BL4, BL5, BL5-cur} in at least 12 of 16 weeks (one-sided sign test, $p=0.0384$, descriptive under \u00a74.5's dependence), and the median paired margin over that minimum is \u2265 0.02 BL0a with a week-bootstrap 95% interval above 0."
+   },
+   "status_label": null,
+   "status_label_note": "a pre-registered hypothesis, a measurement",
+   "reference": {
+    "value": "the registered statement and threshold",
+    "values": {
+     "threshold": {
+      "wins": 12,
+      "median_margin": 0.02,
+      "ci_low": 0.0
+     }
+    },
+    "file": "design/sublet_v2_prereg.md \u00a75"
+   },
+   "regenerated": {
+    "value": {
+     "wins": 16,
+     "n_weeks": 16,
+     "median_margin.median": 0.05212125864337397,
+     "median_margin.ci": [
+      0.038457190097476925,
+      0.0798108717196716
+     ],
+     "sign_test.p": 1.52587890625e-05,
+     "median_margin.wilcoxon.p": 1.52587890625e-05,
+     "pass": true
+    },
+    "file": "code/sim/out/sublet_v2/analysis.json H1"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "H2",
+   "group": "H",
+   "section": "\u00a76",
+   "kind": "hypothesis",
+   "claim": {
+    "spec": "H2 as registered (the pre-registration's \u00a75); verdict from analysis.json `pass`, a failure explained only by its consequence rows",
+    "summary": "H2 (primary, robustness): Per week, Sublet's $W_0<1$ in 16 of 16 weeks and below the $W_0$ of every policy of H1's set in 16 of 16 weeks; the median of Sublet's $W_0$ is \u2264 0.85."
+   },
+   "status_label": null,
+   "status_label_note": "a pre-registered hypothesis, a measurement",
+   "reference": {
+    "value": "the registered statement and threshold",
+    "values": {},
+    "file": "design/sublet_v2_prereg.md \u00a75"
+   },
+   "regenerated": {
+    "value": {
+     "weeks_below_1": 16,
+     "weeks_below_set": 16,
+     "n_weeks": 16,
+     "median_W0": 0.7695181494733832,
+     "pass": true
+    },
+    "file": "code/sim/out/sublet_v2/analysis.json H2"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "H2b",
+   "group": "H",
+   "section": "\u00a76",
+   "kind": "hypothesis",
+   "claim": {
+    "spec": "H2b as registered (the pre-registration's \u00a75); verdict from analysis.json `pass`, a failure explained only by its consequence rows",
+    "summary": "H2b (secondary, robust competitors): Sublet's $W_0$ is below that of BL5-tau60, BL1-GP, BL1N and BL5N in 16 of 16 weeks. The paper says that Sublet has a lower worst case than every baseline only if H2 and H2b both hold; with H2 alone it names H1's set."
+   },
+   "status_label": null,
+   "status_label_note": "a pre-registered hypothesis, a measurement",
+   "reference": {
+    "value": "the registered statement and threshold",
+    "values": {},
+    "file": "design/sublet_v2_prereg.md \u00a75"
+   },
+   "regenerated": {
+    "value": {
+     "weeks_below_set": 13,
+     "n_weeks": 16,
+     "failing_weeks": [
+      "302",
+      "307",
+      "309"
+     ],
+     "pass": false
+    },
+    "file": "code/sim/out/sublet_v2/analysis.json H2b"
+   },
+   "summary_status": "explained",
+   "verdict": "explained",
+   "explanation": "H2b fails as registered: Sublet's W0 below that of every policy of H2b's set in 13 of 16 weeks; not in week 302: Sublet 0.7808, BL5-tau60 0.7354; week 307: Sublet 0.7825, BL5-tau60 0.7337; week 309: Sublet 0.7082, BL5-tau60 0.6911. Registered consequence (design/sublet_v2.md \u00a76): \"H2b or H6 fails: reported as measured.\" Wording rule of the registered statement: \"The paper says that Sublet has a lower worst case than every baseline only if H2 and H2b both hold; with H2 alone it names H1's set.\" Applied: C-H2b holds, R-18 holds.",
+   "note": null
+  },
+  {
+   "id": "H3",
+   "group": "H",
+   "section": "\u00a76",
+   "kind": "hypothesis",
+   "claim": {
+    "spec": "H3 as registered (the pre-registration's \u00a75); verdict from analysis.json `pass`, a failure explained only by its consequence rows",
+    "summary": "H3 (primary, certificate): In every guarded run of the confirmation (A8P and A8 rows, all experiments) the per-run certificate (`q44_study.certificate`) holds, with $\\mathrm{ALG}(t)+R(t)\\le\\gamma C_S(t)+B(t)$ + tolerance at every executed slot from the ledger; no A8P run in which $S$ follows FB at every slot and T0g stays in bound form aborts. Aborts, switches of $S$, robust-form slots, projected slots, dropped actions and K0 uses are reported."
+   },
+   "status_label": "Theorem W(a)(b) (PROVEN for the engine as implemented under C1-C3, audited); W(c) (CONJECTURE); Proposition P (a)-(c) and its Consequence PROVEN, audited, for its instance class, and (d) under its three float hypotheses",
+   "status_label_note": null,
+   "reference": {
+    "value": "the registered statement and threshold",
+    "values": {},
+    "file": "design/sublet_v2_prereg.md \u00a75"
+   },
+   "regenerated": {
+    "value": {
+     "n_runs": 4962,
+     "n_not_held": 0,
+     "n_envelope_violations": 0,
+     "n_aborts_s_fb_bound_form": 0,
+     "n_missing_guarded_runs": 0,
+     "aborts": 578,
+     "one_way_aborts": 471,
+     "projected_slots": 168147,
+     "K0": 1487,
+     "pass": true
+    },
+    "file": "code/sim/out/sublet_v2/analysis.json H3"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "H4",
+   "group": "H",
+   "section": "\u00a76",
+   "kind": "hypothesis",
+   "claim": {
+    "spec": "H4 as registered (the pre-registration's \u00a75); verdict from analysis.json `pass`, a failure explained only by its consequence rows",
+    "summary": "H4 (primary, families): On every F1/F2 run that \u00a74.4(d) counts (the confirmation's fresh instances, and the Q6 instances under F-ss and F-iid), A9 equals RR_RENEW in total cost and purchase count, and Sublet projects in no such run. F3 is reported against BL1-G, BL5-G and A9 alone with no criterion. [Wording from P3: the deployed policy equals RR-renew on F1/F2.]"
+   },
+   "status_label": null,
+   "status_label_note": "a pre-registered hypothesis, a measurement",
+   "reference": {
+    "value": "the registered statement and threshold",
+    "values": {},
+    "file": "design/sublet_v2_prereg.md \u00a75"
+   },
+   "regenerated": {
+    "value": {
+     "n_counted_pairs": 328,
+     "len(mismatches)": 0,
+     "len(missing_pairs)": 0,
+     "identity_holds": true,
+     "sublet_projected_runs": 0,
+     "wording": "deployed",
+     "pass": true
+    },
+    "file": "code/sim/out/sublet_v2/analysis.json H4"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "H5",
+   "group": "H",
+   "section": "\u00a76",
+   "kind": "hypothesis",
+   "claim": {
+    "spec": "H5 as registered (the pre-registration's \u00a75); verdict from analysis.json `pass`, a failure explained only by its consequence rows",
+    "summary": "H5 (primary [P4]): On E3 at config seeds 301\u2013304, the median over the seeds of Sublet's ALG/LB is \u2264 that of Sublet-MS4 at every $b$, and the median over the seeds of Sublet's shared ALG/LB is below that of Sublet siloed at every $b\\ge2$."
+   },
+   "status_label": null,
+   "status_label_note": "a pre-registered hypothesis, a measurement",
+   "reference": {
+    "value": "the registered statement and threshold",
+    "values": {},
+    "file": "design/sublet_v2_prereg.md \u00a75"
+   },
+   "regenerated": {
+    "value": {
+     "kind": "primary",
+     "b[*].b": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32
+     ],
+     "b[*].le_MS4": [
+      false,
+      true,
+      true,
+      true,
+      true,
+      true
+     ],
+     "b[*].shared_below_siloed": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+     ],
+     "failing": [
+      1
+     ],
+     "pass": false
+    },
+    "file": "code/sim/out/sublet_v2/analysis.json H5"
+   },
+   "summary_status": "explained",
+   "verdict": "explained",
+   "explanation": "H5 fails as registered: median over the seeds: b = 1: Sublet's shared ALG/LB 1.6710 above Sublet-MS4's 1.6672. Registered consequence (design/sublet_v2.md \u00a76): \"H5 fails: the sharing claim leaves the main text and E3 is reported as measured.\" Applied: C-H5 holds, R-16 holds.",
+   "note": null
+  },
+  {
+   "id": "H6",
+   "group": "H",
+   "section": "\u00a76",
+   "kind": "hypothesis",
+   "claim": {
+    "spec": "H6 as registered (the pre-registration's \u00a75); verdict from analysis.json `pass`, a failure explained only by its consequence rows",
+    "summary": "H6 (secondary, price of the guard): The median of $r_0(\\text{Sublet})-r_0(\\text{A9})$ over the trace and stress week runs of (a) is \u2264 0.01 BL0a [P2: the alternative allowance passed and was kept, so the threshold applies]."
+   },
+   "status_label": null,
+   "status_label_note": "a pre-registered hypothesis, a measurement",
+   "reference": {
+    "value": "the registered statement and threshold",
+    "values": {
+     "threshold": 0.01
+    },
+    "file": "design/sublet_v2_prereg.md \u00a75"
+   },
+   "regenerated": {
+    "value": {
+     "n": 96,
+     "median_price": 0.0,
+     "threshold": 0.01,
+     "n_loss": 0,
+     "pass": true
+    },
+    "file": "code/sim/out/sublet_v2/analysis.json H6"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "C-H5",
+   "group": "C",
+   "section": "\u00a76, W3",
+   "kind": "consequence",
+   "claim": {
+    "spec": "H5's consequence: no main-text figure or float extract (fig4v2, table3_v2; the frozen Figs. 1-3 and 5-7) carries E3 data, and design \u00a72.7 bars an empirical sharing claim from E3 in the main text for any policy",
+    "summary": null
+   },
+   "status_label": null,
+   "status_label_note": "H5's registered consequence as W3 reads it",
+   "reference": {
+    "value": "no E3 file or E3 key in the extracts; the \u00a72.7 item",
+    "values": {},
+    "file": "code/sim/out/figs/fig4v2.json, table3_v2.json, fig1-3, fig5-7.json; design/Sublet_design.md \u00a72.7"
+   },
+   "regenerated": {
+    "value": {
+     "H5_pass": false,
+     "extracts_with_e3": {
+      "fig4v2": [],
+      "table3_v2": [],
+      "fig1": [],
+      "fig2": [],
+      "fig3": [],
+      "fig5": [],
+      "fig6": [],
+      "fig7": [],
+      "fig1v2": [],
+      "fig1v3": [],
+      "fig4v3": []
+     },
+     "design_item": "- Any empirical sharing claim from E3 in the main text, for any policy: no statement that a policy captures or keeps ..."
+    },
+    "file": "code/sim/out/figs/fig4v2.json, table3_v2.json and the other main-text extracts (every string and key, sources included); design/Sublet_design.md \u00a72.7"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "C-H2b",
+   "group": "C",
+   "section": "\u00a76, W1, W2",
+   "kind": "consequence",
+   "claim": {
+    "spec": "H2b's consequence: Fig. 4's and Table III's caption drafts state H2b's count and name H1's set; no extract caption says 'every baseline'",
+    "summary": null
+   },
+   "status_label": null,
+   "status_label_note": "H2b's registered wording rule",
+   "reference": {
+    "value": "H2b's count from analysis.json; H1's set (ms5b_common.H1_SET)",
+    "values": {},
+    "file": "code/sim/out/sublet_v2/analysis.json H2b; code/sim/out/figs/*.json labels.caption"
+   },
+   "regenerated": {
+    "value": {
+     "H2b_pass": false,
+     "count": [
+      3,
+      13
+     ],
+     "n_weeks": 16,
+     "every_baseline": []
+    },
+    "file": "code/sim/out/figs/fig4v2.json, table3_v2.json labels.caption; the captions of code/sim/out/figs/*.json"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "R-1",
+   "group": "R",
+   "section": "\u00a76, reported in full",
+   "kind": "property",
+   "claim": {
+    "spec": "the transplants (Sublet against BL1N and BL5N per week) and the decomposition rows: per-week L-tr r0 and W0 of every tag of part main: the table covers its scope",
+    "summary": null
+   },
+   "status_label": null,
+   "status_label_note": "reported with no threshold, or as measured (\u00a76)",
+   "reference": {
+    "value": "the scope derived from the summaries and analysis.json",
+    "values": {},
+    "file": "code/sim/out/sublet_v2/<part>/summary.json; code/sim/out/sublet_v2/analysis.json"
+   },
+   "regenerated": {
+    "value": {
+     "table_exists": true,
+     "required": {
+      "tags": 22,
+      "cells": 16
+     },
+     "uncovered": {}
+    },
+    "file": "paper/supplement/tables/e7v2_weeks.tex; code/sim/out/figs/sf_e7_decomp.json tables.e7v2_weeks.tex.scope"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "R-2",
+   "group": "R",
+   "section": "\u00a76, reported in full",
+   "kind": "property",
+   "claim": {
+    "spec": "the per-week Pareto front of L-tr r0 and W0 over every tag of \u00a73 that is not an ablation of A9: the table covers its scope",
+    "summary": null
+   },
+   "status_label": null,
+   "status_label_note": "reported with no threshold, or as measured (\u00a76)",
+   "reference": {
+    "value": "the scope derived from the summaries and analysis.json",
+    "values": {},
+    "file": "code/sim/out/sublet_v2/<part>/summary.json; code/sim/out/sublet_v2/analysis.json"
+   },
+   "regenerated": {
+    "value": {
+     "table_exists": true,
+     "required": {
+      "cells": 16,
+      "tags": 15
+     },
+     "uncovered": {}
+    },
+    "file": "paper/supplement/tables/e7v2_pareto.tex; code/sim/out/figs/sf_e7_decomp.json tables.e7v2_pareto.tex.scope"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "R-3",
+   "group": "R",
+   "section": "\u00a76, reported in full",
+   "kind": "property",
+   "claim": {
+    "spec": "the stress-intensity curve and each policy's crossing of 1, every tag and week with its grid: the table covers its scope",
+    "summary": null
+   },
+   "status_label": null,
+   "status_label_note": "reported with no threshold, or as measured (\u00a76)",
+   "reference": {
+    "value": "the scope derived from the summaries and analysis.json",
+    "values": {},
+    "file": "code/sim/out/sublet_v2/<part>/summary.json; code/sim/out/sublet_v2/analysis.json"
+   },
+   "regenerated": {
+    "value": {
+     "table_exists": true,
+     "required": {
+      "tags": 22,
+      "cells": 16
+     },
+     "uncovered": {}
+    },
+    "file": "paper/supplement/tables/e7v2_crossings.tex; code/sim/out/figs/sf_e7_intensity.json tables.e7v2_crossings.tex.scope"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "R-4",
+   "group": "R",
+   "section": "\u00a76, reported in full; \u00a74.5",
+   "kind": "property",
+   "claim": {
+    "spec": "RC under every mode, with each run's fallback and stranding totals and MS4's fallback share after reclaims: the table covers its scope",
+    "summary": null
+   },
+   "status_label": null,
+   "status_label_note": "reported with no threshold, or as measured (\u00a76)",
+   "reference": {
+    "value": "the scope derived from the summaries and analysis.json",
+    "values": {},
+    "file": "code/sim/out/sublet_v2/<part>/summary.json; code/sim/out/sublet_v2/analysis.json"
+   },
+   "regenerated": {
+    "value": {
+     "table_exists": true,
+     "required": {
+      "tags": 22,
+      "modes": 15,
+      "cells": 16,
+      "seeds": 3
+     },
+     "uncovered": {},
+     "data_rows": 2688,
+     "data_sha256_equal": true
+    },
+    "file": "paper/supplement/tables/e7v2_rc.tex; code/sim/out/figs/sf_e7_decomp.json tables.e7v2_rc.tex.scope"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "R-5",
+   "group": "R",
+   "section": "\u00a76, reported in full",
+   "kind": "property",
+   "claim": {
+    "spec": "L-vr, L-rf, L-ad and the p99.9 buffer (part second): the table covers its scope",
+    "summary": null
+   },
+   "status_label": null,
+   "status_label_note": "reported with no threshold, or as measured (\u00a76)",
+   "reference": {
+    "value": "the scope derived from the summaries and analysis.json",
+    "values": {},
+    "file": "code/sim/out/sublet_v2/<part>/summary.json; code/sim/out/sublet_v2/analysis.json"
+   },
+   "regenerated": {
+    "value": {
+     "table_exists": true,
+     "required": {
+      "tags": 12,
+      "modes": 4,
+      "cells": 4
+     },
+     "uncovered": {}
+    },
+    "file": "paper/supplement/tables/e7v2_boundary.tex; code/sim/out/figs/sf_e7_boundary.json tables.e7v2_boundary.tex.scope"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "R-6",
+   "group": "R",
+   "section": "\u00a76, reported in full",
+   "kind": "property",
+   "claim": {
+    "spec": "the E5 menus (part second): the table covers its scope",
+    "summary": null
+   },
+   "status_label": null,
+   "status_label_note": "reported with no threshold, or as measured (\u00a76)",
+   "reference": {
+    "value": "the scope derived from the summaries and analysis.json",
+    "values": {},
+    "file": "code/sim/out/sublet_v2/<part>/summary.json; code/sim/out/sublet_v2/analysis.json"
+   },
+   "regenerated": {
+    "value": {
+     "table_exists": true,
+     "required": {
+      "tags": 6,
+      "modes": 2,
+      "cells": 8
+     },
+     "uncovered": {}
+    },
+    "file": "paper/supplement/tables/e7v2_e5.tex; code/sim/out/figs/sf_e7_boundary.json tables.e7v2_e5.tex.scope"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "R-7",
+   "group": "R",
+   "section": "\u00a76, reported in full",
+   "kind": "property",
+   "claim": {
+    "spec": "lagged demand (part second): the table covers its scope",
+    "summary": null
+   },
+   "status_label": null,
+   "status_label_note": "reported with no threshold, or as measured (\u00a76)",
+   "reference": {
+    "value": "the scope derived from the summaries and analysis.json",
+    "values": {},
+    "file": "code/sim/out/sublet_v2/<part>/summary.json; code/sim/out/sublet_v2/analysis.json"
+   },
+   "regenerated": {
+    "value": {
+     "table_exists": true,
+     "required": {
+      "tags": 3,
+      "cells": 4
+     },
+     "uncovered": {}
+    },
+    "file": "paper/supplement/tables/e7v2_lag.tex; code/sim/out/figs/sf_e7_boundary.json tables.e7v2_lag.tex.scope"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "R-8",
+   "group": "R",
+   "section": "\u00a76, reported in full",
+   "kind": "property",
+   "claim": {
+    "spec": "the gap-day ALG/LB (part second): the table covers its scope",
+    "summary": null
+   },
+   "status_label": null,
+   "status_label_note": "reported with no threshold, or as measured (\u00a76)",
+   "reference": {
+    "value": "the scope derived from the summaries and analysis.json",
+    "values": {},
+    "file": "code/sim/out/sublet_v2/<part>/summary.json; code/sim/out/sublet_v2/analysis.json"
+   },
+   "regenerated": {
+    "value": {
+     "table_exists": true,
+     "required": {
+      "tags": 12,
+      "cells": 4
+     },
+     "uncovered": {}
+    },
+    "file": "paper/supplement/tables/e7v2_gap.tex; code/sim/out/figs/sf_e7_boundary.json tables.e7v2_gap.tex.scope"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "R-9",
+   "group": "R",
+   "section": "\u00a76, reported in full",
+   "kind": "property",
+   "claim": {
+    "spec": "Q44 criteria T and S on the development-exposed cells (part grid): the table covers its scope",
+    "summary": null
+   },
+   "status_label": null,
+   "status_label_note": "reported with no threshold, or as measured (\u00a76)",
+   "reference": {
+    "value": "the scope derived from the summaries and analysis.json",
+    "values": {},
+    "file": "code/sim/out/sublet_v2/<part>/summary.json; code/sim/out/sublet_v2/analysis.json"
+   },
+   "regenerated": {
+    "value": {
+     "table_exists": true,
+     "required": {
+      "tags": 3,
+      "cells": 20
+     },
+     "uncovered": {}
+    },
+    "file": "paper/supplement/tables/e7v2_q44.tex; code/sim/out/figs/sf_e7_grid_dev.json tables.e7v2_q44.tex.scope"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "R-10",
+   "group": "R",
+   "section": "\u00a76, reported in full",
+   "kind": "property",
+   "claim": {
+    "spec": "policy seeds 1-2 (part seeds): the table covers its scope",
+    "summary": null
+   },
+   "status_label": null,
+   "status_label_note": "reported with no threshold, or as measured (\u00a76)",
+   "reference": {
+    "value": "the scope derived from the summaries and analysis.json",
+    "values": {},
+    "file": "code/sim/out/sublet_v2/<part>/summary.json; code/sim/out/sublet_v2/analysis.json"
+   },
+   "regenerated": {
+    "value": {
+     "table_exists": true,
+     "required": {
+      "tags": 3,
+      "modes": 7,
+      "cells": 4,
+      "seeds": 2
+     },
+     "uncovered": {}
+    },
+    "file": "paper/supplement/tables/e7v2_seeds.tex; code/sim/out/figs/sf_e7_decomp.json tables.e7v2_seeds.tex.scope"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "R-11",
+   "group": "R",
+   "section": "\u00a76, reported in full",
+   "kind": "property",
+   "claim": {
+    "spec": "the development-exposed E7 grid, its week runs and gap reruns (part grid): the table covers its scope",
+    "summary": null
+   },
+   "status_label": null,
+   "status_label_note": "reported with no threshold, or as measured (\u00a76)",
+   "reference": {
+    "value": "the scope derived from the summaries and analysis.json",
+    "values": {},
+    "file": "code/sim/out/sublet_v2/<part>/summary.json; code/sim/out/sublet_v2/analysis.json"
+   },
+   "regenerated": {
+    "value": {
+     "table_exists": true,
+     "required": {
+      "tags": 22,
+      "modes": 6,
+      "cells": 8,
+      "seeds": 3
+     },
+     "uncovered": {}
+    },
+    "file": "paper/supplement/tables/e7v2_grid.tex; code/sim/out/figs/sf_e7_grid_dev.json tables.e7v2_grid.tex.scope"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "R-12",
+   "group": "R",
+   "section": "\u00a76, reported in full",
+   "kind": "property",
+   "claim": {
+    "spec": "the Q6 family runs under F-ad and F-eg (part fam): the table covers its scope",
+    "summary": null
+   },
+   "status_label": null,
+   "status_label_note": "reported with no threshold, or as measured (\u00a76)",
+   "reference": {
+    "value": "the scope derived from the summaries and analysis.json",
+    "values": {},
+    "file": "code/sim/out/sublet_v2/<part>/summary.json; code/sim/out/sublet_v2/analysis.json"
+   },
+   "regenerated": {
+    "value": {
+     "table_exists": true,
+     "required": {
+      "tags": 8,
+      "modes": 2,
+      "cells": 29,
+      "seeds": 10
+     },
+     "uncovered": {}
+    },
+    "file": "paper/supplement/tables/fam_v2_q6.tex; code/sim/out/figs/sf_fam_v2.json tables.fam_v2_q6.tex.scope"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "R-13",
+   "group": "R",
+   "section": "\u00a76, H3 (reported)",
+   "kind": "property",
+   "claim": {
+    "spec": "H3's counts: aborts, switches of S, robust-form slots, projected slots, dropped actions and K0 uses, by part and row: the table covers its scope",
+    "summary": null
+   },
+   "status_label": null,
+   "status_label_note": "reported with no threshold, or as measured (\u00a76)",
+   "reference": {
+    "value": "the scope derived from the summaries and analysis.json",
+    "values": {},
+    "file": "code/sim/out/sublet_v2/<part>/summary.json; code/sim/out/sublet_v2/analysis.json"
+   },
+   "regenerated": {
+    "value": {
+     "table_exists": true,
+     "required": {
+      "parts": 6,
+      "tags": 7
+     },
+     "uncovered": {}
+    },
+    "file": "paper/supplement/tables/e7v2_h3.tex; code/sim/out/figs/sf_e7_decomp.json tables.e7v2_h3.tex.scope"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "R-14",
+   "group": "R",
+   "section": "\u00a76, H4 (reported, no criterion)",
+   "kind": "property",
+   "claim": {
+    "spec": "F3 against BL1-G, BL5-G and A9 alone: the table covers its scope",
+    "summary": null
+   },
+   "status_label": null,
+   "status_label_note": "reported with no threshold, or as measured (\u00a76)",
+   "reference": {
+    "value": "the scope derived from the summaries and analysis.json",
+    "values": {},
+    "file": "code/sim/out/sublet_v2/<part>/summary.json; code/sim/out/sublet_v2/analysis.json"
+   },
+   "regenerated": {
+    "value": {
+     "table_exists": true,
+     "required": {
+      "tags": 6,
+      "cells": 10
+     },
+     "uncovered": {}
+    },
+    "file": "paper/supplement/tables/fam_v2_f3.tex; code/sim/out/figs/sf_fam_v2.json tables.fam_v2_f3.tex.scope"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "R-15",
+   "group": "R",
+   "section": "\u00a76, H4",
+   "kind": "property",
+   "claim": {
+    "spec": "H4's counted pairs by family and lender: the table covers its scope",
+    "summary": null
+   },
+   "status_label": null,
+   "status_label_note": "reported with no threshold, or as measured (\u00a76)",
+   "reference": {
+    "value": "the scope derived from the summaries and analysis.json",
+    "values": {},
+    "file": "code/sim/out/sublet_v2/<part>/summary.json; code/sim/out/sublet_v2/analysis.json"
+   },
+   "regenerated": {
+    "value": {
+     "table_exists": true,
+     "required": {
+      "families": 2,
+      "modes": 4
+     },
+     "uncovered": {}
+    },
+    "file": "paper/supplement/tables/fam_v2_pairs.tex; code/sim/out/figs/sf_fam_v2.json tables.fam_v2_pairs.tex.scope"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "R-16",
+   "group": "R",
+   "section": "\u00a76, H5's consequence; W3",
+   "kind": "property",
+   "claim": {
+    "spec": "E3, every policy shared and siloed (reported as measured): the table covers its scope",
+    "summary": null
+   },
+   "status_label": null,
+   "status_label_note": "reported with no threshold, or as measured (\u00a76)",
+   "reference": {
+    "value": "the scope derived from the summaries and analysis.json",
+    "values": {},
+    "file": "code/sim/out/sublet_v2/<part>/summary.json; code/sim/out/sublet_v2/analysis.json"
+   },
+   "regenerated": {
+    "value": {
+     "table_exists": true,
+     "required": {
+      "tags": 5,
+      "modes": 2,
+      "cells": 24
+     },
+     "uncovered": {}
+    },
+    "file": "paper/supplement/tables/e3_v2.tex; code/sim/out/figs/sf_e3_v2.json tables.e3_v2.tex.scope"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "R-17",
+   "group": "R",
+   "section": "W2",
+   "kind": "property",
+   "claim": {
+    "spec": "Table III's intervals and per-week values (its weeks and gap days): the table covers its scope",
+    "summary": null
+   },
+   "status_label": null,
+   "status_label_note": "reported with no threshold, or as measured (\u00a76)",
+   "reference": {
+    "value": "the scope derived from the summaries and analysis.json",
+    "values": {},
+    "file": "code/sim/out/sublet_v2/<part>/summary.json; code/sim/out/sublet_v2/analysis.json"
+   },
+   "regenerated": {
+    "value": {
+     "table_exists": true,
+     "required": {
+      "tags": 13,
+      "cells": 20
+     },
+     "uncovered": {}
+    },
+    "file": "paper/supplement/tables/e7v2_table3_intervals.tex; code/sim/out/figs/sf_e7_decomp.json tables.e7v2_table3_intervals.tex.scope"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "R-18",
+   "group": "R",
+   "section": "\u00a76; prereg \u00a78",
+   "kind": "property",
+   "claim": {
+    "spec": "the pre-registered outcomes: each hypothesis's kind, criterion, measured value, holds or fails (a failed criterion is reported as measured): the table covers its scope",
+    "summary": null
+   },
+   "status_label": null,
+   "status_label_note": "reported with no threshold, or as measured (\u00a76)",
+   "reference": {
+    "value": "the scope derived from the summaries and analysis.json",
+    "values": {},
+    "file": "code/sim/out/sublet_v2/<part>/summary.json; code/sim/out/sublet_v2/analysis.json"
+   },
+   "regenerated": {
+    "value": {
+     "table_exists": true,
+     "required": {
+      "hypotheses": 7
+     },
+     "uncovered": {}
+    },
+    "file": "paper/supplement/tables/ms5b_outcomes.tex; code/sim/out/figs/sf_e7_decomp.json tables.ms5b_outcomes.tex.scope"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "D-1",
+   "group": "D",
+   "section": "prereg \u00a77",
+   "kind": "property",
+   "claim": {
+    "spec": "ms5b_deviations.tex lists exactly the deviations that the pre-registration's \u00a77 names (B1, B2, B3, B5, B12, B13, C2), each with its text",
+    "summary": null
+   },
+   "status_label": null,
+   "status_label_note": "the deviations reported with their reasons (prereg \u00a77)",
+   "reference": {
+    "value": "the pre-registration's \u00a77 items",
+    "values": {},
+    "file": "design/sublet_v2_prereg.md \u00a77"
+   },
+   "regenerated": {
+    "value": {
+     "registered": [
+      "B1",
+      "B2",
+      "B3",
+      "B5",
+      "B12",
+      "B13",
+      "C2"
+     ],
+     "listed": [
+      "B1",
+      "B2",
+      "B3",
+      "B5",
+      "B12",
+      "B13",
+      "C2"
+     ],
+     "len(text_differs)": 0
+    },
+    "file": "paper/supplement/tables/ms5b_deviations.tex"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "F-1",
+   "group": "F",
+   "section": "W10",
+   "kind": "reproduction",
+   "claim": {
+    "spec": "fig4v2: the build on the root equals its versioned extract, and the runs/ files it lists have the recorded sha256",
+    "summary": null
+   },
+   "status_label": null,
+   "status_label_note": "the provenance of a figure or float (W10)",
+   "reference": {
+    "value": "the versioned extract code/sim/out/figs/fig4v2.json",
+    "values": {},
+    "file": "code/sim/figs/fig4_v2.py"
+   },
+   "regenerated": {
+    "value": {
+     "equal": true,
+     "sources_equal": true,
+     "n_runs_listed": 128,
+     "n_runs_sources": 128,
+     "len(runs_unlisted)": 0,
+     "len(runs_sha256_differ)": 0
+    },
+    "file": "figs.fig4_v2.build on the root (this report)"
+   },
+   "summary_status": "pass",
+   "verdict": "reproduced",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "F-2",
+   "group": "F",
+   "section": "W10",
+   "kind": "reproduction",
+   "claim": {
+    "spec": "sf_e3_v2: the build on the root equals its versioned extract, and the runs/ files it lists have the recorded sha256",
+    "summary": null
+   },
+   "status_label": null,
+   "status_label_note": "the provenance of a figure or float (W10)",
+   "reference": {
+    "value": "the versioned extract code/sim/out/figs/sf_e3_v2.json",
+    "values": {},
+    "file": "code/sim/figs/supp/sf_e3_v2.py"
+   },
+   "regenerated": {
+    "value": {
+     "equal": true,
+     "sources_equal": true,
+     "n_runs_listed": 0,
+     "n_runs_sources": 0,
+     "len(runs_unlisted)": 0,
+     "len(runs_sha256_differ)": 0
+    },
+    "file": "figs.supp.sf_e3_v2.build on the root (this report)"
+   },
+   "summary_status": "pass",
+   "verdict": "reproduced",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "F-3",
+   "group": "F",
+   "section": "W10",
+   "kind": "reproduction",
+   "claim": {
+    "spec": "sf_e7_intensity: the build on the root equals its versioned extract, and the runs/ files it lists have the recorded sha256",
+    "summary": null
+   },
+   "status_label": null,
+   "status_label_note": "the provenance of a figure or float (W10)",
+   "reference": {
+    "value": "the versioned extract code/sim/out/figs/sf_e7_intensity.json",
+    "values": {},
+    "file": "code/sim/figs/supp/sf_e7_intensity.py"
+   },
+   "regenerated": {
+    "value": {
+     "equal": true,
+     "sources_equal": true,
+     "n_runs_listed": 0,
+     "n_runs_sources": 0,
+     "len(runs_unlisted)": 0,
+     "len(runs_sha256_differ)": 0
+    },
+    "file": "figs.supp.sf_e7_intensity.build on the root (this report)"
+   },
+   "summary_status": "pass",
+   "verdict": "reproduced",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "F-4",
+   "group": "F",
+   "section": "W10",
+   "kind": "reproduction",
+   "claim": {
+    "spec": "sf_e7_decomp: the build on the root equals its versioned extract, and the runs/ files it lists have the recorded sha256",
+    "summary": null
+   },
+   "status_label": null,
+   "status_label_note": "the provenance of a figure or float (W10)",
+   "reference": {
+    "value": "the versioned extract code/sim/out/figs/sf_e7_decomp.json",
+    "values": {},
+    "file": "code/sim/figs/supp/sf_e7_decomp.py"
+   },
+   "regenerated": {
+    "value": {
+     "equal": true,
+     "sources_equal": true,
+     "n_runs_listed": 208,
+     "n_runs_sources": 208,
+     "len(runs_unlisted)": 0,
+     "len(runs_sha256_differ)": 0
+    },
+    "file": "figs.supp.sf_e7_decomp.build on the root (this report)"
+   },
+   "summary_status": "pass",
+   "verdict": "reproduced",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "F-5",
+   "group": "F",
+   "section": "W10",
+   "kind": "reproduction",
+   "claim": {
+    "spec": "sf_e7_boundary: the build on the root equals its versioned extract, and the runs/ files it lists have the recorded sha256",
+    "summary": null
+   },
+   "status_label": null,
+   "status_label_note": "the provenance of a figure or float (W10)",
+   "reference": {
+    "value": "the versioned extract code/sim/out/figs/sf_e7_boundary.json",
+    "values": {},
+    "file": "code/sim/figs/supp/sf_e7_boundary.py"
+   },
+   "regenerated": {
+    "value": {
+     "equal": true,
+     "sources_equal": true,
+     "n_runs_listed": 48,
+     "n_runs_sources": 48,
+     "len(runs_unlisted)": 0,
+     "len(runs_sha256_differ)": 0
+    },
+    "file": "figs.supp.sf_e7_boundary.build on the root (this report)"
+   },
+   "summary_status": "pass",
+   "verdict": "reproduced",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "F-6",
+   "group": "F",
+   "section": "W10",
+   "kind": "reproduction",
+   "claim": {
+    "spec": "sf_e7_grid_dev: the build on the root equals its versioned extract, and the runs/ files it lists have the recorded sha256",
+    "summary": null
+   },
+   "status_label": null,
+   "status_label_note": "the provenance of a figure or float (W10)",
+   "reference": {
+    "value": "the versioned extract code/sim/out/figs/sf_e7_grid_dev.json",
+    "values": {},
+    "file": "code/sim/figs/supp/sf_e7_grid_dev.py"
+   },
+   "regenerated": {
+    "value": {
+     "equal": true,
+     "sources_equal": true,
+     "n_runs_listed": 0,
+     "n_runs_sources": 0,
+     "len(runs_unlisted)": 0,
+     "len(runs_sha256_differ)": 0
+    },
+    "file": "figs.supp.sf_e7_grid_dev.build on the root (this report)"
+   },
+   "summary_status": "pass",
+   "verdict": "reproduced",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "F-7",
+   "group": "F",
+   "section": "W10",
+   "kind": "reproduction",
+   "claim": {
+    "spec": "sf_fam_v2: the build on the root equals its versioned extract, and the runs/ files it lists have the recorded sha256",
+    "summary": null
+   },
+   "status_label": null,
+   "status_label_note": "the provenance of a figure or float (W10)",
+   "reference": {
+    "value": "the versioned extract code/sim/out/figs/sf_fam_v2.json",
+    "values": {},
+    "file": "code/sim/figs/supp/sf_fam_v2.py"
+   },
+   "regenerated": {
+    "value": {
+     "equal": true,
+     "sources_equal": true,
+     "n_runs_listed": 0,
+     "n_runs_sources": 0,
+     "len(runs_unlisted)": 0,
+     "len(runs_sha256_differ)": 0
+    },
+    "file": "figs.supp.sf_fam_v2.build on the root (this report)"
+   },
+   "summary_status": "pass",
+   "verdict": "reproduced",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "F-8",
+   "group": "F",
+   "section": "W10",
+   "kind": "reproduction",
+   "claim": {
+    "spec": "sf_e7_links: the build on the root equals its versioned extract, and the runs/ files it lists have the recorded sha256",
+    "summary": null
+   },
+   "status_label": null,
+   "status_label_note": "the provenance of a figure or float (W10)",
+   "reference": {
+    "value": "the versioned extract code/sim/out/figs/sf_e7_links.json",
+    "values": {},
+    "file": "code/sim/figs/supp/sf_e7_links.py"
+   },
+   "regenerated": {
+    "value": {
+     "equal": true,
+     "sources_equal": true,
+     "n_runs_listed": 0,
+     "n_runs_sources": 0,
+     "len(runs_unlisted)": 0,
+     "len(runs_sha256_differ)": 0
+    },
+    "file": "figs.supp.sf_e7_links.build on the root (this report)"
+   },
+   "summary_status": "pass",
+   "verdict": "reproduced",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "F-9",
+   "group": "F",
+   "section": "W10",
+   "kind": "reproduction",
+   "claim": {
+    "spec": "table3_v2: the build on the root equals its versioned extract, and the runs/ files it lists have the recorded sha256",
+    "summary": null
+   },
+   "status_label": null,
+   "status_label_note": "the provenance of a figure or float (W10)",
+   "reference": {
+    "value": "the versioned extract code/sim/out/figs/table3_v2.json",
+    "values": {},
+    "file": "code/sim/figs/table3_v2.py"
+   },
+   "regenerated": {
+    "value": {
+     "equal": true,
+     "sources_equal": true,
+     "n_runs_listed": 212,
+     "n_runs_sources": 212,
+     "len(runs_unlisted)": 0,
+     "len(runs_sha256_differ)": 0
+    },
+    "file": "figs.table3_v2.build on the root (this report)"
+   },
+   "summary_status": "pass",
+   "verdict": "reproduced",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "FL-1",
+   "group": "FL",
+   "section": "W5, W14",
+   "kind": "informative",
+   "claim": {
+    "spec": "the heights of the v2 floats against their budgets",
+    "summary": null
+   },
+   "status_label": null,
+   "status_label_note": "the page arithmetic (W14), informative",
+   "reference": {
+    "value": "BUDGETS_MS5B of floats_heights.py",
+    "values": {},
+    "file": "paper/layout_check/pageplan/floats_heights.py"
+   },
+   "regenerated": {
+    "value": {
+     "floats.*.measured_pages": {
+      "table3_v2": 0.2767,
+      "table2_policies_v2": 0.2853,
+      "alg1_guard_v2": 0.2577
+     },
+     "floats.*.budget_pages": {
+      "table3_v2": 0.172,
+      "table2_policies_v2": 0.4362,
+      "alg1_guard_v2": 0.1913
+     }
+    },
+    "file": "code/sim/out/figs/floats_heights_ms5b.json"
+   },
+   "summary_status": "informative",
+   "verdict": "informative",
+   "explanation": null,
+   "note": "measured heights Table III v2 0.2767 page (budget 0.172), Table II v2 0.2853 page (budget 0.4362), Algorithm 1 v2 0.2577 page (budget 0.1913); over budget: Table III v2, Algorithm 1 v2 (informative, W11)"
+  },
+  {
+   "id": "RB-1",
+   "group": "RB",
+   "section": "W15",
+   "kind": "property",
+   "claim": {
+    "spec": "the MS5b exit rebuild: CHECK=1 in a clean clone, every output identical, the three float-height measurements equal, the record current and its entries today's list",
+    "summary": null
+   },
+   "status_label": null,
+   "status_label_note": "the frozen rebuild (W15 item 5)",
+   "reference": {
+    "value": "every output byte-identical; heights equal; today's rebuild list",
+    "values": {},
+    "file": "code/sim/figs/rebuild.py"
+   },
+   "regenerated": {
+    "value": {
+     "mode": "check",
+     "git_revision": "992823b93d06ab079b469b16d32b1b9309e79b35",
+     "n_outputs": 235,
+     "n_identical": 235,
+     "heights_equal": {
+      "plain": true,
+      "ms4": true,
+      "ms5b": true
+     },
+     "len(problems)": 0
+    },
+    "file": "code/sim/out/figs/rebuild.json (read by this report)"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  }
+ ],
+ "figures": {
+  "run": true,
+  "extracts": "/work/sublet/code/sim/out/figs",
+  "rows": [
+   {
+    "figure": "fig4v2",
+    "script": "figs/fig4_v2.py",
+    "extract": "/work/sublet/code/sim/out/figs/fig4v2.json",
+    "status": "ok",
+    "small_glyphs": [],
+    "n_small_glyphs": 0,
+    "n_glyph_warnings": 0,
+    "min_glyph_pt": 4.9,
+    "text_pt": [
+     7.0,
+     7.970112079701122
+    ],
+    "error": null
+   },
+   {
+    "figure": "sf_e3_v2",
+    "script": "figs/supp/sf_e3_v2.py",
+    "extract": "/work/sublet/code/sim/out/figs/sf_e3_v2.json",
+    "status": "ok",
+    "small_glyphs": [],
+    "n_small_glyphs": 0,
+    "n_glyph_warnings": 0,
+    "min_glyph_pt": 4.9,
+    "text_pt": [
+     7.0,
+     7.970112079701122
+    ],
+    "error": null
+   },
+   {
+    "figure": "sf_e7_intensity",
+    "script": "figs/supp/sf_e7_intensity.py",
+    "extract": "/work/sublet/code/sim/out/figs/sf_e7_intensity.json",
+    "status": "ok",
+    "small_glyphs": [],
+    "n_small_glyphs": 0,
+    "n_glyph_warnings": 0,
+    "min_glyph_pt": 4.9,
+    "text_pt": [
+     7.0,
+     7.970112079701122
+    ],
+    "error": null
+   },
+   {
+    "figure": "sf_e7_decomp",
+    "script": "figs/supp/sf_e7_decomp.py",
+    "extract": "/work/sublet/code/sim/out/figs/sf_e7_decomp.json",
+    "status": "ok",
+    "small_glyphs": [],
+    "n_small_glyphs": 0,
+    "n_glyph_warnings": 0,
+    "min_glyph_pt": 4.9,
+    "text_pt": [
+     7.0,
+     7.970112079701122
+    ],
+    "error": null
+   },
+   {
+    "figure": "sf_e7_boundary",
+    "script": "figs/supp/sf_e7_boundary.py",
+    "extract": "/work/sublet/code/sim/out/figs/sf_e7_boundary.json",
+    "status": "ok",
+    "small_glyphs": [],
+    "n_small_glyphs": 0,
+    "n_glyph_warnings": 0,
+    "min_glyph_pt": 4.9,
+    "text_pt": [
+     7.0,
+     7.970112079701122
+    ],
+    "error": null
+   },
+   {
+    "figure": "sf_e7_grid_dev",
+    "script": "figs/supp/sf_e7_grid_dev.py",
+    "extract": "/work/sublet/code/sim/out/figs/sf_e7_grid_dev.json",
+    "status": "ok",
+    "small_glyphs": [],
+    "n_small_glyphs": 0,
+    "n_glyph_warnings": 0,
+    "min_glyph_pt": 4.9,
+    "text_pt": [
+     7.0,
+     7.970112079701122
+    ],
+    "error": null
+   },
+   {
+    "figure": "sf_fam_v2",
+    "script": "figs/supp/sf_fam_v2.py",
+    "extract": "/work/sublet/code/sim/out/figs/sf_fam_v2.json",
+    "status": "ok",
+    "small_glyphs": [],
+    "n_small_glyphs": 0,
+    "n_glyph_warnings": 0,
+    "min_glyph_pt": 7.0,
+    "text_pt": [
+     7.0,
+     7.970112079701122
+    ],
+    "error": null
+   },
+   {
+    "figure": "sf_e7_links",
+    "script": "figs/supp/sf_e7_links.py",
+    "extract": "/work/sublet/code/sim/out/figs/sf_e7_links.json",
+    "status": "ok",
+    "small_glyphs": [],
+    "n_small_glyphs": 0,
+    "n_glyph_warnings": 0,
+    "min_glyph_pt": 7.0,
+    "text_pt": [
+     7.0,
+     7.970112079701122
+    ],
+    "error": null
+   }
+  ],
+  "counts": {
+   "ok": 8,
+   "missing": 0,
+   "error": 0
+  },
+  "note": "8 figure script(s) rerun with --from-extract into a temporary folder (removed)"
+ },
+ "copy_checks": {
+  "records": {
+   "sublet_v2": {
+    "file": "code/sim/out/ms3_copy_sublet_v2.json",
+    "present": true,
+    "pass": true,
+    "exp_matches": true,
+    "commit": "eb76b1602c96ac4f5fae6646085e7a37c04ab1b7",
+    "time": "2026-11-03T12:55:03",
+    "failed": [],
+    "parts": [
+     "main",
+     "seeds",
+     "second",
+     "e3",
+     "fam",
+     "grid"
+    ],
+    "records_by_status": null
+   }
+  },
+  "commits": [
+   "eb76b1602c96ac4f5fae6646085e7a37c04ab1b7"
+  ],
+  "one_commit": true,
+  "note": "1 of 1 records present; every present record passes; one clone commit"
+ },
+ "jobs": {
+  "rows": {
+   "main": {
+    "manifest": "code/sim/out/sublet_v2/main/manifest.json",
+    "present": true,
+    "n_listed": 352,
+    "by_status": {
+     "ok": 354
+    },
+    "n_blocking": 0,
+    "blocking": [],
+    "n_milp_lp_fallback": 0,
+    "milp_lp_fallback": [],
+    "n_unlisted_records": 0,
+    "n_unreadable_records": 0
+   },
+   "seeds": {
+    "manifest": "code/sim/out/sublet_v2/seeds/manifest.json",
+    "present": true,
+    "n_listed": 12,
+    "by_status": {
+     "ok": 14
+    },
+    "n_blocking": 0,
+    "blocking": [],
+    "n_milp_lp_fallback": 0,
+    "milp_lp_fallback": [],
+    "n_unlisted_records": 0,
+    "n_unreadable_records": 0
+   },
+   "second": {
+    "manifest": "code/sim/out/sublet_v2/second/manifest.json",
+    "present": true,
+    "n_listed": 160,
+    "by_status": {
+     "ok": 162
+    },
+    "n_blocking": 0,
+    "blocking": [],
+    "n_milp_lp_fallback": 0,
+    "milp_lp_fallback": [],
+    "n_unlisted_records": 0,
+    "n_unreadable_records": 0
+   },
+   "e3": {
+    "manifest": "code/sim/out/sublet_v2/e3/manifest.json",
+    "present": true,
+    "n_listed": 300,
+    "by_status": {
+     "ok": 302
+    },
+    "n_blocking": 0,
+    "blocking": [],
+    "n_milp_lp_fallback": 0,
+    "milp_lp_fallback": [],
+    "n_unlisted_records": 0,
+    "n_unreadable_records": 0
+   },
+   "fam": {
+    "manifest": "code/sim/out/sublet_v2/fam/manifest.json",
+    "present": true,
+    "n_listed": 71,
+    "by_status": {
+     "ok": 73
+    },
+    "n_blocking": 0,
+    "blocking": [],
+    "n_milp_lp_fallback": 0,
+    "milp_lp_fallback": [],
+    "n_unlisted_records": 0,
+    "n_unreadable_records": 0
+   },
+   "grid": {
+    "manifest": "code/sim/out/sublet_v2/grid/manifest.json",
+    "present": true,
+    "n_listed": 200,
+    "by_status": {
+     "ok": 202
+    },
+    "n_blocking": 0,
+    "blocking": [],
+    "n_milp_lp_fallback": 0,
+    "milp_lp_fallback": [],
+    "n_unlisted_records": 0,
+    "n_unreadable_records": 0
+   }
+  },
+  "n_blocking": 0,
+  "note": "every listed job has an 'ok' record, or is a MILP job whose LB is the LP under Q39's rule"
+ },
+ "rebuild": {
+  "file": "code/sim/out/figs/rebuild.json",
+  "present": true,
+  "status": "pass",
+  "pass": true,
+  "mode": "check",
+  "only": null,
+  "git_revision": "992823b93d06ab079b469b16d32b1b9309e79b35",
+  "tracked_files_dirty": false,
+  "root_is_repository": true,
+  "written": "2026-11-25T06:39:59",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "scipy": "1.17.1",
+   "matplotlib": "3.10.8",
+   "pymupdf": "1.27.2.3",
+   "pillow": "12.2.0",
+   "poppler": "pdffonts version 24.02.0",
+   "ghostscript": "10.02.1",
+   "pdflatex": "pdfTeX 3.141592653-2.6-1.40.29 (TeX Live 2026)"
+  },
+  "fonts": {
+   "Liberation Sans regular": {
+    "path": "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf",
+    "sha256": "4659bc0c58c5028dd488ec928d41d9265db43d9b669fc14ca8b0832daca7b144"
+   },
+   "Liberation Sans bold": {
+    "path": "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf",
+    "sha256": "3973aa5054fb467dd5627245d3dc82e37bf16fe075756156a570455871351582"
+   },
+   "Liberation Sans italic": {
+    "path": "/usr/share/fonts/truetype/liberation/LiberationSans-Italic.ttf",
+    "sha256": "830c5fa600505fb4c1a271b4271c53c44bae43f492b2a240d0e98a3a7a380121"
+   },
+   "STIXGeneral": {
+    "path": "/opt/venv/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneral.ttf",
+    "sha256": "167378031e2dddc6216d67819c9260e9a06ffc4c478e4e23cb98a6fd44b183c2"
+   }
+  },
+  "n_scripts": 62,
+  "n_outputs": 235,
+  "n_identical": 235,
+  "different": [],
+  "not_written": [],
+  "unlisted": [],
+  "missing": [],
+  "heights_equal": {
+   "plain": true,
+   "ms4": true,
+   "ms5b": true,
+   "ms7": true
+  },
+  "hand_set_ok": true,
+  "note": "235 of 235 outputs identical in mode 'check' at 992823b93d06ab079b469b16d32b1b9309e79b35"
+ },
+ "captions": {
+  "fig4v2": {
+   "text": "Fig. 4. E7, 16 confirmation weeks (trace lender, overflow accounting); all-fallback: 35,010 USD/week (median). Medians, 95% intervals. (a) Segments: component medians, scaled; provision for peak: 24.3. (b) Per week, least of H1's set minus Sublet: trace cost (H1: median 0.052 [0.038, 0.080]), W0 (>0 in 16/16, H2); RetroRenting, \u03c4\u22651 h minus Sublet: W0 (<0 in 3/16; H2b fails). (c) Grey: all-fallback; critical-ratio renting alone coincides with Sublet. Weeks: rotations of one series; statistics descriptive; RetroRenting-style, lagged (H1's set): supplement.",
+   "n_chars": 560,
+   "reduced": false,
+   "source": "/work/sublet/code/sim/out/figs/fig4v2.json",
+   "notes": []
+  },
+  "sf_e3_v2": {
+   "text": "The sharing study on its confirmation instances, reported as measured (H5 failed at b = 1): cost over the shared lower bound against the borrowers per LLM b (u = 8, mu/beta~ = 1, one day), (a) shared and (b) siloed replicas (dashed). Each point is the median over 4 config seeds (301, 302, 303, 304) with the range over the seeds (the registered bootstrap's 95% interval, equal to the range in every cell); intervals narrower than a marker are hidden by it, and every one is in Table e3_v2. Lagged RetroRenting + one-way guard: the lagged RetroRenting-style rule in the one-way guard at B0 = 10% of all-fallback. Stars: siloed OPT / shared OPT (the median of the seeds' bracket points, with the bracket ends over the seeds); grey: b, the copy bound on siloed OPT (each borrower can copy the whole shared plan), attained on C3-P7's instance (PROVEN, elementary).",
+   "n_chars": 861,
+   "reduced": false,
+   "source": "/work/sublet/code/sim/out/figs/sf_e3_v2.json",
+   "notes": []
+  },
+  "sf_e7_intensity": {
+   "text": "Stress-intensity curves of the 12 policies of part second on weeks 301--304 (4 weeks, policy seed 0): cost over all-fallback against the reclaim probability $p$ of the i.i.d. lender per site and slot, on the grid $p\\in\\{0, 0.05, 0.1, 0.2, 0.34, 0.5, 0.8, 1\\}$ ($p=0$ is the honoring lender L-hon; part main's runs and part second's merged). Medians over the 4 weeks with their ranges; the weeks are rotations of one series. Sublet is drawn and labeled in every panel; the grey line marks all-fallback. The $p$ axis has a square-root scale (minor ticks: the grid's other points), and the series of a panel are offset horizontally by 1.4 pt each, so that equal medians stay apart. Critical-ratio renting's medians lie within 0.0001 of Sublet's at every $p$. At $p=0$, Greedy + guard; Greedy renting; and Greedy, back-off share the median 0.632. At $p\\ge0.5$, Lagged RetroRenting + one-way guard ($B_0=10\\%$ of the all-fallback bill) and RetroRenting-style differ by at most 0.03. Each policy's first $p$ with a cost above 1, on every week, is in Table~\\ref{tab:e7v2-crossings}.",
+   "n_chars": 1075,
+   "reduced": false,
+   "source": "/work/sublet/code/sim/out/figs/sf_e7_intensity.json",
+   "notes": []
+  },
+  "sf_e7_decomp": {
+   "text": "The ablations of critical-ratio renting (A9, Sublet's inner policy) and the transplants against Sublet on weeks 301--316 of part main (16 weeks, policy seed 0): per week the difference from Sublet of the cost over all-fallback under the trace lender ($\\Delta r_0$) and of the worst cost over the five stress lenders ($\\Delta W_0$); medians over the weeks with 95\\% week-bootstrap intervals (10,000 resamples, seed 20261031; descriptive, the weeks being rotations of one series). Sublet is the origin; positive is worse. (a) Critical-ratio renting and its ablations, with $\\Delta W_0$ on a scale linear within $\\pm0.02$ and logarithmic beyond; (b) greedy renting with critical-ratio renting's notice layer and with Sublet's guard, RetroRenting-style with critical-ratio renting's contract rule and make-before-break (arrows from the base policy, in its color), and Sublet's guard without projection. Critical-ratio renting and its ablation ``no insurance'' have Sublet's medians and intervals (one name). The ablations ``no commitment rule'' and ``no site marking'' have a lower $W_0$ than Sublet: median $\\Delta W_0$ $-$0.012 and $-$0.018, respectively (intervals below 0), at a median $\\Delta r_0$ of 0.0009 and 0.0014. Sublet, one-way: in weeks 301, 306, 309, 311, 313 and 316, in which its guard aborts in every run (42 of its 112 runs of part main), $\\Delta r_0$ is 0.44--0.51 and $\\Delta W_0$ 0.21--0.29, right of the drawn range (its name gives the count); in the other 10 weeks it equals Sublet. Sublet, one-way's interval on $\\Delta r_0$ reaches 0.45 (arrow). Per-week values in Table~\\ref{tab:e7v2-weeks}.",
+   "n_chars": 1614,
+   "reduced": false,
+   "source": "/work/sublet/code/sim/out/figs/sf_e7_decomp.json",
+   "notes": []
+  },
+  "sf_e7_boundary": {
+   "text": "Boundary conditions of part second on weeks 301--304 (4 weeks, policy seed 0), one row per policy: the median cost over all-fallback with its range over the weeks (the weeks being rotations of one series) under (a) L-vr, the trace lender with buffer violations turned into reclaims without notice: no buffer violation occurred in its 48 runs, so its cost equals the trace lender's for every policy on every week; (b) L-rf, the trace lender refusing purchases on unavailable layers; (c) L-ad, the adaptive lender, which announces every lease at the end of its guaranteed period (on these weeks its cost equals that of the eager lender L-eg and of the i.i.d. lender at $p=1$ for every policy: each announces every revocable lease when its guaranteed period ends); (d) the trace lender with the P99.9 lease buffer; (e) the trace lender with demand lagged by one slot, for the policy of its row on slot $t-1$'s demand (RetroRenting-style: its lagged build), each marker in the lagged variant's style. Grey ticks: the row's policy under the trace lender on the same weeks (part main); grey line: all-fallback. Panel (c) has its own $x$ range. Per-week values in Tables~\\ref{tab:e7v2-boundary} and \\ref{tab:e7v2-lag}; the E5 menus and the gap days in Tables~\\ref{tab:e7v2-e5} and \\ref{tab:e7v2-gap}.",
+   "n_chars": 1293,
+   "reduced": false,
+   "source": "/work/sublet/code/sim/out/figs/sf_e7_boundary.json",
+   "notes": []
+  },
+  "sf_e7_grid_dev": {
+   "text": "Part grid, development-exposed (continuity, not a confirmation result). (a) The end-to-end week at 4 alignments under the trace lender: cost over all-fallback, the median over the policy seeds with their range; Critical-ratio renting ran policy seed 0 only. Ranges narrower than a marker are hidden by it (the largest is 0.017); every entry is in Table e7v2_grid. (b), (c) The guard study's held-out cells of 4 instances: the median cost under the trace lender and W0, the largest median over the stress lenders; Greedy + one-way guard, Lagged RetroRenting + one-way guard and the lagged RetroRenting-style rule from the guard study's summary (its cells). In every panel the series sit left to right in the legend's order, read down its columns. Criterion S: W0 <= 1.05 on every instance. It holds for Sublet; Greedy + guard; Greedy + one-way guard; Lagged RetroRenting + one-way guard. It fails for Critical-ratio renting; RetroRenting-style, lagged. Criterion T is not computable: part grid runs no renting baseline (BL1, BL2, BL5) on these cells (the guard study's own T for its rows is in Table e7v2_q44).",
+   "n_chars": 1109,
+   "reduced": false,
+   "source": "/work/sublet/code/sim/out/figs/sf_e7_grid_dev.json",
+   "notes": []
+  },
+  "sf_fam_v2": {
+   "text": "The guard study's family instances and the confirmation's fresh instances (policy seeds 13-22): ALG/OPT against the exact OPT, each instance's mean over its seeds, the median over the instances with their range; (a) F1 and F2 by lender, (b) F3 against beta under the eager lender; the series sit left to right in the legend's order, read down its columns. Critical-ratio renting equals RR-renew on 328 of the 328 counted pairs (H4), and Sublet projects in 0 of them; RR-renew and Marking are in the tables. Equal at every instance: (a) Sublet = Critical-ratio renting = Critical-ratio renting, no insurance; Greedy + guard = Greedy + one-way guard; (b) Greedy + guard = Greedy + one-way guard. On F3 Sublet aborts in 39 of its 100 runs; Greedy + guard in 68 of 100; Greedy + one-way guard in 68 of 100; Lagged RetroRenting + one-way guard in 100 of 100 (Table fam_v2_f3).",
+   "n_chars": 871,
+   "reduced": false,
+   "source": "/work/sublet/code/sim/out/figs/sf_fam_v2.json",
+   "notes": []
+  },
+  "sf_e7_links": {
+   "text": "MS4's E7 result on the development-exposed alignments 1, 2, 3, 4 (policy seeds 0, 1, 2; not a confirmation result): saving over all-fallback (overflow accounting) against the cross-region links of the routing graph, medians with MS4's 95% bootstrap intervals. Lagged RetroRenting + one-way guard (filled markers) is the lagged RetroRenting-style rule (open markers) in the one-way guard at B0 = 10% of all-fallback. Their medians are equal at every number of cross-region links.",
+   "n_chars": 478,
+   "reduced": false,
+   "source": "/work/sublet/code/sim/out/figs/sf_e7_links.json",
+   "notes": []
+  },
+  "table3_v2": {
+   "text": "End-to-end cost per policy, medians of 16 confirmation weeks (301--316; trace lender, full menu, $\\mu/\\tilde\\beta=1$). ALG/LB: the first day of weeks 301--304 (5-min routing, reduced menu) over the LP bound, an upper bound on the ratio to the offline optimum. $p^\\ast$: lower median over weeks 301--304 of the first i.i.d.\\ reclaim probability with $r_0>1$ (0.00: $r_0>1$ already without reclaims; none: $r_0\\le1$ at every $p\\le1$; $>$0.2: likewise, but only $p\\le0.2$ ran). Guarded rows: per-group allowance $\\min\\{\\Wk,\\mathrm{LB}'\\}$. Theorem~\\ref{thm:fullmodel}'s bound held in 448 of 448 guarded runs (trace, five stress and honoring lenders; 112 of Lagged RetroRenting + one-way guard (\\mbox{$B_0=10\\%$} of the all-fallback bill); cases (a) 382, (b) 66); Corollary~\\ref{cor:ratio}(b) holds for Sublet and Sublet, one-way, on core instances (Lemma~\\ref{lem:projection}(e)); Sublet, one-way aborted in 42 of 112 runs (under the trace lender in 6 of 16 weeks, at the all-fallback bill; in the rest at Sublet's cost); Sublet and Greedy + guard in none. Primary baselines (H1): Greedy renting; Greedy, back-off; RetroRenting-style; Per-borrower ski rental; SpotHedge-style, \\mbox{$N_{\\mathrm{Extra}}=0$}; CoCaR-style; and RetroRenting-style, lagged (supplement). Provision for peak: 24.3 times the all-fallback bill in overflow accounting.",
+   "n_chars": 1339,
+   "reduced": false,
+   "source": "/work/sublet/code/sim/out/figs/table3_v2.json",
+   "notes": []
+  }
+ }
+}

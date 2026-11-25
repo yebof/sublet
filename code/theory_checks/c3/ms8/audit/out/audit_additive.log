@@ -1,0 +1,12 @@
+Audit R3: independent check of Proposition A (design/theory/core_additive.md)
+random instances 3000 (modes {'persistent': 1218, 'arbitrary': 577, 'predictable': 619, 'always': 586}), with S < D_min 1169, one phase 1383, unequal phase lengths 573, rho >= m 2727, closed form (b) applies 1638, (c) 1446
+largest ratio (alpha OPT_eager(sigma^1) + sum_i OPT_eager(sigma^r_i)) / (c_A(alpha) OPT(sigma, never)): alpha=1: 0.6923, alpha=2: 0.6923, alpha=8: 0.8182, alpha=40: 0.9535
+inequality (1) tightness: segments 1.0000, rests 1.0000 (left side over sum gamma c_L + serv; attained trivially, e.g. by plans without leases); on instances with several phases and a plan with leases: 1.0000, 1.0000
+lemma tightness over leases whose coefficient exceeds its trivial value: A.2 0.9286, A.3 0.9091
+ratio on instances with several phases and leases: alpha=1: 0.6923, alpha=2: 0.6923, alpha=8: 0.8000, alpha=40: 0.9524
+adversarial search (120 starts x 80 steps): best ratio alpha=1: 0.7777, alpha=40: 0.9524
+Proposition B(b) optimum bound on 120 set-cover instances: max OPT/bound 1.0000
+negative controls: S>Dmin: B=720.00 vs c_A OPT=368.00 fails=True
+errors 0
+violations 0
+time 280.3 s

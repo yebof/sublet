@@ -1,0 +1,60 @@
+C2-SW formula breakpoints (formula CONJECTURE; units beta = beta~ = 1, q = 1): alpha=0.398601 alpha_p=0.834965
+default calibration: lambda = 0.7150, bw = 0.5970; mu grid step 0.001; each row: first mu with that label
+label = (simple form mu/(2(1-alpha)) or above it, minimizing reaction, regime of that reaction's threshold)
+
+lambda=0.7150 bw=0.5970 (default calibration); 2 bw = 1.1940
+  mu >= 0.001: simple form, cold, sit-out (H* = 0.0008)
+  mu >= 1.195: above simple form, cold, sit-out (H* = 0.9969)
+  mu >= 1.619: above simple form, cold, known window (H* = 4.4284)
+  mu >= 1.725: above simple form, pre-warm, known window (H* = 4.8682)
+
+lambda=0.5000 bw=0.5970 (default switch, lambda = 0.5); 2 bw = 1.1940
+  mu >= 0.001: simple form, cold, sit-out (H* = 0.0008)
+  mu >= 1.195: above simple form, cold, sit-out (H* = 0.9969)
+  mu >= 1.619: above simple form, cold, known window (H* = 4.4284)
+  mu >= 1.673: above simple form, pre-warm, known window (H* = 4.6532)
+
+lambda=0.2500 bw=0.5970 (default switch, lambda = 0.25); 2 bw = 1.1940
+  mu >= 0.001: simple form, cold, sit-out (H* = 0.0008)
+  mu >= 1.195: above simple form, cold, sit-out (H* = 0.9969)
+  mu >= 1.613: above simple form, pre-warm, sit-out (H* = 2.7404)
+
+lambda=0.0000 bw=0.5970 (default switch, lambda -> 0); 2 bw = 1.1940
+  mu >= 0.001: simple form, cold, sit-out (H* = 0.0008)
+  mu >= 1.195: above simple form, cold, sit-out (H* = 0.9969)
+  mu >= 1.554: above simple form, pre-warm, sit-out (H* = 2.4904)
+
+lambda=0.5000 bw=0.7182 (fee-consistent pair); 2 bw = 1.4364
+  mu >= 0.001: simple form, cold, sit-out (H* = 0.0008)
+  mu >= 1.437: above simple form, cold, sit-out (H* = 1.1967)
+  mu >= 1.813: above simple form, cold, known window (H* = 4.4280)
+  mu >= 1.989: above simple form, pre-warm, known window (H* = 5.1588)
+
+lambda=0.2500 bw=0.8591 (fee-consistent pair); 2 bw = 1.7182
+  mu >= 0.001: simple form, cold, sit-out (H* = 0.0008)
+  mu >= 1.719: above simple form, cold, sit-out (H* = 1.4318)
+  mu >= 2.039: above simple form, cold, known window (H* = 4.4295)
+  mu >= 2.295: above simple form, pre-warm, known window (H* = 5.4966)
+
+lambda dependence at mu = 2, bw = 0.8 (formula; exact brackets in model_switch_cost_default.txt):
+  lambda=0.2500: H* = 4.6616 (cold, known window); cold 4.6616, pre-warm 5.2500
+  lambda=0.5000: H* = 4.6616 (cold, known window); cold 4.6616, pre-warm 5.5000
+  lambda=0.7150: H* = 4.6616 (cold, known window); cold 4.6616, pre-warm 5.7150
+
+c2_single_site.md §6 check at mu = 2 beta: cold threshold in the known-window regime iff L3 > R_wait (the kappa term is below R_wait in every case below)
+  alpha = 1/3, alpha_p = 0.8: R_wait = 3.7500, kappa term (mu + a)/chi = 2.3333
+    bw=0.6000: L3 = 6.0000 -> known window (cold threshold above s0 + mu/(2(1-a)) = 3.0000: True)
+    bw=0.8000: L3 = 4.5000 -> known window (cold threshold above s0 + mu/(2(1-a)) = 3.0000: True)
+    bw=0.8591: L3 = 4.0568 -> known window (cold threshold above s0 + mu/(2(1-a)) = 3.0000: True)
+    bw=0.9000: L3 = 3.7500 -> sit-out (cold threshold above s0 + mu/(2(1-a)) = 3.0000: True)
+    bw=0.9500: L3 = 3.3750 -> sit-out (cold threshold above s0 + mu/(2(1-a)) = 3.0000: True)
+    bw=1.0000: L3 = 3.0000 -> sit-out (cold threshold above s0 + mu/(2(1-a)) = 3.0000: False)
+    L3 = R_wait at bw = 0.9000
+  default prices: R_wait = 4.4277, kappa term (mu + a)/chi = 2.5558
+    bw=0.6000: L3 = 5.9977 -> known window (cold threshold above s0 + mu/(2(1-a)) = 3.3256: True)
+    bw=0.8000: L3 = 4.6616 -> known window (cold threshold above s0 + mu/(2(1-a)) = 3.3256: True)
+    bw=0.8591: L3 = 4.2668 -> sit-out (cold threshold above s0 + mu/(2(1-a)) = 3.3256: True)
+    bw=0.9000: L3 = 3.9936 -> sit-out (cold threshold above s0 + mu/(2(1-a)) = 3.3256: True)
+    bw=0.9500: L3 = 3.6596 -> sit-out (cold threshold above s0 + mu/(2(1-a)) = 3.3256: True)
+    bw=1.0000: L3 = 3.3256 -> sit-out (cold threshold above s0 + mu/(2(1-a)) = 3.3256: False)
+    L3 = R_wait at bw = 0.8350

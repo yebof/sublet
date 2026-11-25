@@ -1,0 +1,1271 @@
+{
+ "table": "table3_v3",
+ "sources": [
+  "code/sim/out/figs/table3_v2.json",
+  "code/sim/out/sublet_v2/main/summary.json",
+  "code/sim/out/e7c/analysis.json",
+  "code/sim/out/e7r/analysis.json",
+  "code/sim/out/e7r/eval/summary.json"
+ ],
+ "data": {
+  "order": [
+   "Sublet",
+   "BL1-GP",
+   "BL1N",
+   "BL5N",
+   "BL1",
+   "BL1-BO",
+   "BL5-cur",
+   "BL5-tau60",
+   "BL2",
+   "BL3-0",
+   "BL4",
+   "MPC-T",
+   "A9-P",
+   "BL0a"
+  ],
+  "rows": {
+   "Sublet": {
+    "label": "Sublet",
+    "style_key": "sublet_v2",
+    "source": "conf",
+    "lagged": "Sublet-lag",
+    "c2": null,
+    "cells": {
+     "usd": {
+      "text": "1.7 (36.1)",
+      "overflow": 1725.4302239326942,
+      "total": 36071.37156028086,
+      "overflow_by_week": {
+       "101": 1725.4302239326942
+      },
+      "total_by_week": {
+       "101": 36071.37156028086
+      },
+      "note": null
+     },
+     "saving_pct": {
+      "text": "3.7",
+      "value": 3.710775681685563,
+      "by_week": {
+       "101": 3.710775681685563
+      },
+      "note": null
+     },
+     "RC": {
+      "text": "0.062",
+      "value": 0.0616705887878064,
+      "by_week": {
+       "101": 0.0616705887878064
+      },
+      "note": null
+     },
+     "W0": {
+      "text": "1.025",
+      "value": 1.0246634486851858,
+      "by_week": {
+       "101": 1.0246634486851858
+      },
+      "note": null,
+      "min": 1.0246634486851858,
+      "max": 1.0246634486851858,
+      "range_text": "1.025--1.025"
+     },
+     "r0": {
+      "text": "0.963",
+      "value": 0.9628922431831444,
+      "by_week": {
+       "101": 0.9628922431831444
+      },
+      "note": null,
+      "min": 0.9628922431831444,
+      "max": 0.9628922431831444,
+      "range_text": "0.963--0.963"
+     },
+     "lag_r0": {
+      "text": "1.101",
+      "value": 1.100909506809022,
+      "by_week": {
+       "101": 1.100909506809022
+      },
+      "note": "lagged tag Sublet-lag"
+     },
+     "W0_kbar": {
+      "text": "--",
+      "value": null,
+      "by_week": {},
+      "note": "no contract transplant (X4 transplanted the as-built baselines that buy k*)"
+     }
+    }
+   },
+   "BL1-GP": {
+    "label": "Greedy + guard",
+    "style_key": "bl1_gp",
+    "source": "conf",
+    "lagged": "BL1-GP-lag",
+    "c2": null,
+    "cells": {
+     "usd": {
+      "text": "1.9 (36.2)",
+      "overflow": 1862.4026158656798,
+      "total": 36208.34395221384,
+      "overflow_by_week": {
+       "101": 1862.4026158656798
+      },
+      "total_by_week": {
+       "101": 36208.34395221384
+      },
+      "note": null
+     },
+     "saving_pct": {
+      "text": "$-$3.9",
+      "value": -3.9330949247944336,
+      "by_week": {
+       "101": -3.9330949247944336
+      },
+      "note": null
+     },
+     "RC": {
+      "text": "0.016",
+      "value": 0.016061426900996656,
+      "by_week": {
+       "101": 0.016061426900996656
+      },
+      "note": null
+     },
+     "W0": {
+      "text": "1.143",
+      "value": 1.1428208595957485,
+      "by_week": {
+       "101": 1.1428208595957485
+      },
+      "note": null,
+      "min": 1.1428208595957485,
+      "max": 1.1428208595957485,
+      "range_text": "1.143--1.143"
+     },
+     "r0": {
+      "text": "1.039",
+      "value": 1.0393309492479443,
+      "by_week": {
+       "101": 1.0393309492479443
+      },
+      "note": null,
+      "min": 1.0393309492479443,
+      "max": 1.0393309492479443,
+      "range_text": "1.039--1.039"
+     },
+     "lag_r0": {
+      "text": "0.997",
+      "value": 0.9970045747344712,
+      "by_week": {
+       "101": 0.9970045747344712
+      },
+      "note": "lagged tag BL1-GP-lag"
+     },
+     "W0_kbar": {
+      "text": "--",
+      "value": null,
+      "by_week": {},
+      "note": "no contract transplant (X4 transplanted the as-built baselines that buy k*)"
+     }
+    }
+   },
+   "BL1N": {
+    "label": "Greedy + notice layer",
+    "style_key": "bl1n",
+    "source": "conf",
+    "lagged": "BL1N-lag",
+    "c2": null,
+    "cells": {
+     "usd": {
+      "text": "1.2 (35.5)",
+      "overflow": 1184.6849452324802,
+      "total": 35530.62628158065,
+      "overflow_by_week": {
+       "101": 1184.6849452324802
+      },
+      "total_by_week": {
+       "101": 35530.62628158065
+      },
+      "note": null
+     },
+     "saving_pct": {
+      "text": "33.9",
+      "value": 33.88756447187974,
+      "by_week": {
+       "101": 33.88756447187974
+      },
+      "note": null
+     },
+     "RC": {
+      "text": "0.030",
+      "value": 0.02985036526465079,
+      "by_week": {
+       "101": 0.02985036526465079
+      },
+      "note": null
+     },
+     "W0": {
+      "text": "1.081",
+      "value": 1.0809665708207665,
+      "by_week": {
+       "101": 1.0809665708207665
+      },
+      "note": null,
+      "min": 1.0809665708207665,
+      "max": 1.0809665708207665,
+      "range_text": "1.081--1.081"
+     },
+     "r0": {
+      "text": "0.661",
+      "value": 0.6611243552812026,
+      "by_week": {
+       "101": 0.6611243552812026
+      },
+      "note": null,
+      "min": 0.6611243552812026,
+      "max": 0.6611243552812026,
+      "range_text": "0.661--0.661"
+     },
+     "lag_r0": {
+      "text": "0.873",
+      "value": 0.8729217672284462,
+      "by_week": {
+       "101": 0.8729217672284462
+      },
+      "note": "lagged tag BL1N-lag"
+     },
+     "W0_kbar": {
+      "text": "--",
+      "value": null,
+      "by_week": {},
+      "note": "no contract transplant (X4 transplanted the as-built baselines that buy k*)"
+     }
+    }
+   },
+   "BL5N": {
+    "label": "RetroRenting + notice layer",
+    "style_key": "bl5n",
+    "source": "conf",
+    "lagged": "BL5N-lag",
+    "c2": null,
+    "cells": {
+     "usd": {
+      "text": "1.5 (35.9)",
+      "overflow": 1530.2399260945263,
+      "total": 35876.18126244269,
+      "overflow_by_week": {
+       "101": 1530.2399260945263
+      },
+      "total_by_week": {
+       "101": 35876.18126244269
+      },
+      "note": null
+     },
+     "saving_pct": {
+      "text": "14.6",
+      "value": 14.603550198211657,
+      "by_week": {
+       "101": 14.603550198211657
+      },
+      "note": null
+     },
+     "RC": {
+      "text": "0.023",
+      "value": 0.023042414370147313,
+      "by_week": {
+       "101": 0.023042414370147313
+      },
+      "note": null
+     },
+     "W0": {
+      "text": "1.140",
+      "value": 1.1395405908116896,
+      "by_week": {
+       "101": 1.1395405908116896
+      },
+      "note": null,
+      "min": 1.1395405908116896,
+      "max": 1.1395405908116896,
+      "range_text": "1.140--1.140"
+     },
+     "r0": {
+      "text": "0.854",
+      "value": 0.8539644980178834,
+      "by_week": {
+       "101": 0.8539644980178834
+      },
+      "note": null,
+      "min": 0.8539644980178834,
+      "max": 0.8539644980178834,
+      "range_text": "0.854--0.854"
+     },
+     "lag_r0": {
+      "text": "1.039",
+      "value": 1.0394651759986113,
+      "by_week": {
+       "101": 1.0394651759986113
+      },
+      "note": "lagged tag BL5N-lag"
+     },
+     "W0_kbar": {
+      "text": "--",
+      "value": null,
+      "by_week": {},
+      "note": "no contract transplant (X4 transplanted the as-built baselines that buy k*)"
+     }
+    }
+   },
+   "BL1": {
+    "label": "Greedy renting",
+    "style_key": "bl1",
+    "source": "conf",
+    "lagged": "BL1-lag",
+    "c2": "BL1-c2",
+    "cells": {
+     "usd": {
+      "text": "1.2 (35.5)",
+      "overflow": 1189.5424192143546,
+      "total": 35535.48375556252,
+      "overflow_by_week": {
+       "101": 1189.5424192143546
+      },
+      "total_by_week": {
+       "101": 35535.48375556252
+      },
+      "note": null
+     },
+     "saving_pct": {
+      "text": "33.6",
+      "value": 33.616488658222664,
+      "by_week": {
+       "101": 33.616488658222664
+      },
+      "note": null
+     },
+     "RC": {
+      "text": "0.046",
+      "value": 0.045903509114593066,
+      "by_week": {
+       "101": 0.045903509114593066
+      },
+      "note": null
+     },
+     "W0": {
+      "text": "1.946",
+      "value": 1.9456081095151643,
+      "by_week": {
+       "101": 1.9456081095151643
+      },
+      "note": null,
+      "min": 1.9456081095151643,
+      "max": 1.9456081095151643,
+      "range_text": "1.946--1.946"
+     },
+     "r0": {
+      "text": "0.664",
+      "value": 0.6638351134177733,
+      "by_week": {
+       "101": 0.6638351134177733
+      },
+      "note": null,
+      "min": 0.6638351134177733,
+      "max": 0.6638351134177733,
+      "range_text": "0.664--0.664"
+     },
+     "lag_r0": {
+      "text": "0.858",
+      "value": 0.858386293256374,
+      "by_week": {
+       "101": 0.858386293256374
+      },
+      "note": "lagged tag BL1-lag"
+     },
+     "W0_kbar": {
+      "text": "0.838",
+      "value": 0.8378433175379533,
+      "by_week": {
+       "101": 0.8378433175379533
+      },
+      "note": "transplant BL1-c2"
+     }
+    }
+   },
+   "BL1-BO": {
+    "label": "Greedy, back-off",
+    "style_key": "bl1_bo",
+    "source": "conf",
+    "lagged": "BL1-BO-lag",
+    "c2": null,
+    "cells": {
+     "usd": {
+      "text": "1.2 (35.5)",
+      "overflow": 1166.8645191227045,
+      "total": 35512.80585547087,
+      "overflow_by_week": {
+       "101": 1166.8645191227045
+      },
+      "total_by_week": {
+       "101": 35512.80585547087
+      },
+      "note": null
+     },
+     "saving_pct": {
+      "text": "34.9",
+      "value": 34.88204977956211,
+      "by_week": {
+       "101": 34.88204977956211
+      },
+      "note": null
+     },
+     "RC": {
+      "text": "0.033",
+      "value": 0.03324789790119864,
+      "by_week": {
+       "101": 0.03324789790119864
+      },
+      "note": null
+     },
+     "W0": {
+      "text": "1.635",
+      "value": 1.6352307081061959,
+      "by_week": {
+       "101": 1.6352307081061959
+      },
+      "note": null,
+      "min": 1.6352307081061959,
+      "max": 1.6352307081061959,
+      "range_text": "1.635--1.635"
+     },
+     "r0": {
+      "text": "0.651",
+      "value": 0.6511795022043789,
+      "by_week": {
+       "101": 0.6511795022043789
+      },
+      "note": null,
+      "min": 0.6511795022043789,
+      "max": 0.6511795022043789,
+      "range_text": "0.651--0.651"
+     },
+     "lag_r0": {
+      "text": "0.855",
+      "value": 0.8550181356869478,
+      "by_week": {
+       "101": 0.8550181356869478
+      },
+      "note": "lagged tag BL1-BO-lag"
+     },
+     "W0_kbar": {
+      "text": "--",
+      "value": null,
+      "by_week": {},
+      "note": "no contract transplant (X4 transplanted the as-built baselines that buy k*)"
+     }
+    }
+   },
+   "BL5-cur": {
+    "label": "RetroRenting-style",
+    "style_key": "bl5_cur",
+    "source": "conf",
+    "lagged": "BL5",
+    "c2": "BL5-cur-c2",
+    "cells": {
+     "usd": {
+      "text": "1.5 (35.8)",
+      "overflow": 1491.2419382277628,
+      "total": 35837.18327457593,
+      "overflow_by_week": {
+       "101": 1491.2419382277628
+      },
+      "total_by_week": {
+       "101": 35837.18327457593
+      },
+      "note": null
+     },
+     "saving_pct": {
+      "text": "16.8",
+      "value": 16.77986886330777,
+      "by_week": {
+       "101": 16.77986886330777
+      },
+      "note": null
+     },
+     "RC": {
+      "text": "0.019",
+      "value": 0.019055548169909065,
+      "by_week": {
+       "101": 0.019055548169909065
+      },
+      "note": null
+     },
+     "W0": {
+      "text": "1.265",
+      "value": 1.265240979290852,
+      "by_week": {
+       "101": 1.265240979290852
+      },
+      "note": null,
+      "min": 1.265240979290852,
+      "max": 1.265240979290852,
+      "range_text": "1.265--1.265"
+     },
+     "r0": {
+      "text": "0.832",
+      "value": 0.8322013113669223,
+      "by_week": {
+       "101": 0.8322013113669223
+      },
+      "note": null,
+      "min": 0.8322013113669223,
+      "max": 0.8322013113669223,
+      "range_text": "0.832--0.832"
+     },
+     "lag_r0": {
+      "text": "0.973",
+      "value": 0.9731856438139714,
+      "by_week": {
+       "101": 0.9731856438139714
+      },
+      "note": "lagged tag BL5"
+     },
+     "W0_kbar": {
+      "text": "0.874",
+      "value": 0.8735705689135203,
+      "by_week": {
+       "101": 0.8735705689135203
+      },
+      "note": "transplant BL5-cur-c2"
+     }
+    }
+   },
+   "BL5-tau60": {
+    "label": "RetroRenting, $\\tau\\geq1$ h",
+    "style_key": "bl5_tau60",
+    "source": "conf",
+    "lagged": "BL5-tau60-lag",
+    "c2": null,
+    "cells": {
+     "usd": {
+      "text": "3.1 (37.4)",
+      "overflow": 3077.560537922366,
+      "total": 37423.50187427053,
+      "overflow_by_week": {
+       "101": 3077.560537922366
+      },
+      "total_by_week": {
+       "101": 37423.50187427053
+      },
+      "note": null
+     },
+     "saving_pct": {
+      "text": "$-$71.7",
+      "value": -71.74610301758494,
+      "by_week": {
+       "101": -71.74610301758494
+      },
+      "note": null
+     },
+     "RC": {
+      "text": "0.000",
+      "value": -0.0004522323344302581,
+      "by_week": {
+       "101": -0.0004522323344302581
+      },
+      "note": null
+     },
+     "W0": {
+      "text": "1.718",
+      "value": 1.7179132625102798,
+      "by_week": {
+       "101": 1.7179132625102798
+      },
+      "note": null,
+      "min": 1.7179132625102798,
+      "max": 1.7179132625102798,
+      "range_text": "1.718--1.718"
+     },
+     "r0": {
+      "text": "1.717",
+      "value": 1.7174610301758495,
+      "by_week": {
+       "101": 1.7174610301758495
+      },
+      "note": null,
+      "min": 1.7174610301758495,
+      "max": 1.7174610301758495,
+      "range_text": "1.717--1.717"
+     },
+     "lag_r0": {
+      "text": "1.877",
+      "value": 1.8765967178726275,
+      "by_week": {
+       "101": 1.8765967178726275
+      },
+      "note": "lagged tag BL5-tau60-lag"
+     },
+     "W0_kbar": {
+      "text": "--",
+      "value": null,
+      "by_week": {},
+      "note": "no contract transplant (X4 transplanted the as-built baselines that buy k*)"
+     }
+    }
+   },
+   "BL2": {
+    "label": "Per-borrower ski rental",
+    "style_key": "bl2",
+    "source": "conf",
+    "lagged": "BL2-lag",
+    "c2": "BL2-c2",
+    "cells": {
+     "usd": {
+      "text": "1.3 (35.7)",
+      "overflow": 1341.7755842973352,
+      "total": 35687.7169206455,
+      "overflow_by_week": {
+       "101": 1341.7755842973352
+      },
+      "total_by_week": {
+       "101": 35687.7169206455
+      },
+      "note": null
+     },
+     "saving_pct": {
+      "text": "25.1",
+      "value": 25.120976537221406,
+      "by_week": {
+       "101": 25.120976537221406
+      },
+      "note": null
+     },
+     "RC": {
+      "text": "0.059",
+      "value": 0.058951358269270004,
+      "by_week": {
+       "101": 0.058951358269270004
+      },
+      "note": null
+     },
+     "W0": {
+      "text": "1.739",
+      "value": 1.73857429140966,
+      "by_week": {
+       "101": 1.73857429140966
+      },
+      "note": null,
+      "min": 1.73857429140966,
+      "max": 1.73857429140966,
+      "range_text": "1.739--1.739"
+     },
+     "r0": {
+      "text": "0.749",
+      "value": 0.7487902346277859,
+      "by_week": {
+       "101": 0.7487902346277859
+      },
+      "note": null,
+      "min": 0.7487902346277859,
+      "max": 0.7487902346277859,
+      "range_text": "0.749--0.749"
+     },
+     "lag_r0": {
+      "text": "0.920",
+      "value": 0.9204488737793691,
+      "by_week": {
+       "101": 0.9204488737793691
+      },
+      "note": "lagged tag BL2-lag"
+     },
+     "W0_kbar": {
+      "text": "0.907",
+      "value": 0.907431201017556,
+      "by_week": {
+       "101": 0.907431201017556
+      },
+      "note": "transplant BL2-c2"
+     }
+    }
+   },
+   "BL3-0": {
+    "label": "SpotHedge-style, $N_{\\mathrm{Extra}}=0$",
+    "style_key": "bl3_0",
+    "source": "conf",
+    "lagged": "BL3-0-lag",
+    "c2": "BL3-0-c2",
+    "cells": {
+     "usd": {
+      "text": "1.4 (35.7)",
+      "overflow": 1399.5552216304952,
+      "total": 35745.49655797866,
+      "overflow_by_week": {
+       "101": 1399.5552216304952
+      },
+      "total_by_week": {
+       "101": 35745.49655797866
+      },
+      "note": null
+     },
+     "saving_pct": {
+      "text": "21.9",
+      "value": 21.89653060887622,
+      "by_week": {
+       "101": 21.89653060887622
+      },
+      "note": null
+     },
+     "RC": {
+      "text": "0.034",
+      "value": 0.034340462565775165,
+      "by_week": {
+       "101": 0.034340462565775165
+      },
+      "note": null
+     },
+     "W0": {
+      "text": "1.752",
+      "value": 1.7516817693646891,
+      "by_week": {
+       "101": 1.7516817693646891
+      },
+      "note": null,
+      "min": 1.7516817693646891,
+      "max": 1.7516817693646891,
+      "range_text": "1.752--1.752"
+     },
+     "r0": {
+      "text": "0.781",
+      "value": 0.7810346939112378,
+      "by_week": {
+       "101": 0.7810346939112378
+      },
+      "note": null,
+      "min": 0.7810346939112378,
+      "max": 0.7810346939112378,
+      "range_text": "0.781--0.781"
+     },
+     "lag_r0": {
+      "text": "0.944",
+      "value": 0.9440354407550766,
+      "by_week": {
+       "101": 0.9440354407550766
+      },
+      "note": "lagged tag BL3-0-lag"
+     },
+     "W0_kbar": {
+      "text": "1.163",
+      "value": 1.1625163886273429,
+      "by_week": {
+       "101": 1.1625163886273429
+      },
+      "note": "transplant BL3-0-c2"
+     }
+    }
+   },
+   "BL4": {
+    "label": "CoCaR-style",
+    "style_key": "bl4",
+    "source": "conf",
+    "lagged": "BL4-lag",
+    "c2": "BL4-c2",
+    "cells": {
+     "usd": {
+      "text": "1.8 (36.1)",
+      "overflow": 1781.4019437869324,
+      "total": 36127.3432801351,
+      "overflow_by_week": {
+       "101": 1781.4019437869324
+      },
+      "total_by_week": {
+       "101": 36127.3432801351
+      },
+      "note": null
+     },
+     "saving_pct": {
+      "text": "0.6",
+      "value": 0.5872222549682449,
+      "by_week": {
+       "101": 0.5872222549682449
+      },
+      "note": null
+     },
+     "RC": {
+      "text": "0.002",
+      "value": 0.0020561157087380932,
+      "by_week": {
+       "101": 0.0020561157087380932
+      },
+      "note": null
+     },
+     "W0": {
+      "text": "1.017",
+      "value": 1.0168935261350465,
+      "by_week": {
+       "101": 1.0168935261350465
+      },
+      "note": null,
+      "min": 1.0168935261350465,
+      "max": 1.0168935261350465,
+      "range_text": "1.017--1.017"
+     },
+     "r0": {
+      "text": "0.994",
+      "value": 0.9941277774503176,
+      "by_week": {
+       "101": 0.9941277774503176
+      },
+      "note": null,
+      "min": 0.9941277774503176,
+      "max": 0.9941277774503176,
+      "range_text": "0.994--0.994"
+     },
+     "lag_r0": {
+      "text": "1.002",
+      "value": 1.0017866401000728,
+      "by_week": {
+       "101": 1.0017866401000728
+      },
+      "note": "lagged tag BL4-lag"
+     },
+     "W0_kbar": {
+      "text": "1.022",
+      "value": 1.0221882469846257,
+      "by_week": {
+       "101": 1.0221882469846257
+      },
+      "note": "transplant BL4-c2"
+     }
+    }
+   },
+   "MPC-T": {
+    "label": "MPC",
+    "style_key": "mpc",
+    "source": "e7r",
+    "lagged": null,
+    "c2": null,
+    "cells": {
+     "usd": {
+      "text": "1.3 (35.6)",
+      "overflow": 1257.0463806240998,
+      "total": 35602.98771697227,
+      "overflow_by_week": {
+       "101": 1257.0463806240998
+      },
+      "total_by_week": {
+       "101": 35602.98771697227
+      },
+      "note": null
+     },
+     "saving_pct": {
+      "text": "29.8",
+      "value": 29.849367859942642,
+      "by_week": {
+       "101": 29.849367859942642
+      },
+      "note": null
+     },
+     "r0": {
+      "text": "0.702",
+      "value": 0.7015063214005736,
+      "by_week": {
+       "101": 0.7015063214005736
+      },
+      "note": null,
+      "min": 0.7015063214005736,
+      "max": 0.7015063214005736,
+      "range_text": "0.702--0.702"
+     },
+     "RC": {
+      "text": "0.011",
+      "value": 0.010644519129262009,
+      "by_week": {
+       "101": 0.010644519129262009
+      },
+      "note": null
+     },
+     "W0": {
+      "text": "0.778",
+      "value": 0.7784506461659282,
+      "by_week": {
+       "101": 0.7784506461659282
+      },
+      "note": null,
+      "min": 0.7784506461659282,
+      "max": 0.7784506461659282,
+      "range_text": "0.778--0.778"
+     },
+     "lag_r0": {
+      "text": "--",
+      "value": null,
+      "by_week": {},
+      "note": "no lagged run (X1 ran the confirmation's policies)"
+     },
+     "W0_kbar": {
+      "text": "--",
+      "value": null,
+      "by_week": {},
+      "note": "no contract transplant (X4 transplanted the as-built baselines that buy k*)"
+     }
+    }
+   },
+   "A9-P": {
+    "label": "Protected-only renting",
+    "style_key": "a9p",
+    "source": "e7r",
+    "lagged": null,
+    "c2": null,
+    "cells": {
+     "usd": {
+      "text": "2.1 (36.4)",
+      "overflow": 2079.446713464561,
+      "total": 36425.388049812726,
+      "overflow_by_week": {
+       "101": 2079.446713464561
+      },
+      "total_by_week": {
+       "101": 36425.388049812726
+      },
+      "note": null
+     },
+     "saving_pct": {
+      "text": "$-$16.0",
+      "value": -16.045440883955074,
+      "by_week": {
+       "101": -16.045440883955074
+      },
+      "note": null
+     },
+     "r0": {
+      "text": "1.160",
+      "value": 1.1604544088395508,
+      "by_week": {
+       "101": 1.1604544088395508
+      },
+      "note": null,
+      "min": 1.1604544088395508,
+      "max": 1.1604544088395508,
+      "range_text": "1.160--1.160"
+     },
+     "RC": {
+      "text": "0.000",
+      "value": 0.0,
+      "by_week": {
+       "101": 0.0
+      },
+      "note": null
+     },
+     "W0": {
+      "text": "1.160",
+      "value": 1.1604544088395508,
+      "by_week": {
+       "101": 1.1604544088395508
+      },
+      "note": null,
+      "min": 1.1604544088395508,
+      "max": 1.1604544088395508,
+      "range_text": "1.160--1.160"
+     },
+     "lag_r0": {
+      "text": "--",
+      "value": null,
+      "by_week": {},
+      "note": "no lagged run (X1 ran the confirmation's policies)"
+     },
+     "W0_kbar": {
+      "text": "--",
+      "value": null,
+      "by_week": {},
+      "note": "no contract transplant (X4 transplanted the as-built baselines that buy k*)"
+     }
+    }
+   },
+   "BL0a": {
+    "label": "All-fallback",
+    "style_key": "bl0a",
+    "source": "conf",
+    "lagged": null,
+    "c2": null,
+    "cells": {
+     "usd": {
+      "text": "1.8 (36.1)",
+      "overflow": 1791.924523380456,
+      "total": 36137.86585972862,
+      "overflow_by_week": {
+       "101": 1791.924523380456
+      },
+      "total_by_week": {
+       "101": 36137.86585972862
+      },
+      "note": null
+     },
+     "saving_pct": {
+      "text": "0.0",
+      "value": 0.0,
+      "by_week": {
+       "101": 0.0
+      },
+      "note": "0 by definition (BL0a / BL0a)"
+     },
+     "RC": {
+      "text": "--",
+      "value": null,
+      "by_week": {},
+      "note": "BL0a has no runs (an analytic reference)"
+     },
+     "W0": {
+      "text": "1.000",
+      "value": 1.0,
+      "by_week": {
+       "101": 1.0
+      },
+      "note": "largest BL0a under a stress mode over BL0a under L-tr (1 by definition)",
+      "min": 1.0,
+      "max": 1.0,
+      "range_text": null
+     },
+     "r0": {
+      "text": "1.000",
+      "value": 1.0,
+      "by_week": {
+       "101": 1.0
+      },
+      "note": "1 in every week (the reference)",
+      "min": 1.0,
+      "max": 1.0,
+      "range_text": null
+     },
+     "lag_r0": {
+      "text": "--",
+      "value": null,
+      "by_week": {},
+      "note": "an analytic reference"
+     },
+     "W0_kbar": {
+      "text": "--",
+      "value": null,
+      "by_week": {},
+      "note": "no contract transplant (X4 transplanted the as-built baselines that buy k*)"
+     }
+    }
+   }
+  },
+  "columns": [
+   "usd",
+   "r0",
+   "lag_r0",
+   "RC",
+   "W0",
+   "W0_kbar"
+  ],
+  "header": [
+   [
+    "",
+    "Policy"
+   ],
+   [
+    "\\multicolumn{1}{r}{\\makebox[0pt][r]{USD/week (k)}}",
+    "\\multicolumn{1}{r}{\\makebox[0pt][r]{overflow (total)}}"
+   ],
+   [
+    "",
+    "$r_0$"
+   ],
+   [
+    "$r_0$,",
+    "lagged"
+   ],
+   [
+    "",
+    "RC"
+   ],
+   [
+    "",
+    "$W_0$"
+   ],
+   [
+    "$W_0$,",
+    "$\\bar k$"
+   ]
+  ],
+  "caption": "End-to-end cost per policy, the confirmation week (101; trace lender except $W_0$, the worst stress lender; full menu, $\\mu/\\tilde\\beta=1$).",
+  "note": "Medians of per-week values, min--max below. $r_0$, lagged: demand one slot late (RetroRenting-style's row: RetroRenting-style, lagged, a primary baseline). $W_0$, $\\bar k$: with Algorithm~2's base contract. --: not run.",
+  "labels": {
+   "caption": "End-to-end cost per policy, the confirmation week (101; trace lender except $W_0$, the worst stress lender; full menu, $\\mu/\\tilde\\beta=1$). Medians of per-week values, min--max below. $r_0$, lagged: demand one slot late (RetroRenting-style's row: RetroRenting-style, lagged, a primary baseline). $W_0$, $\\bar k$: with Algorithm~2's base contract. --: not run."
+  },
+  "caption_source": {
+   "weeks": [
+    "101"
+   ],
+   "n_weeks": 1,
+   "lender": "trace",
+   "menu": "full",
+   "mu_over_beta_tilde": 1.0,
+   "seed": 0,
+   "e7r_rows": {
+    "MPC-T": "MPC",
+    "A9-P": "Protected-only renting"
+   },
+   "mpc_setting": "T setting of MPC: MPC-g04 (e7r_select.py)",
+   "lag_rows": {
+    "Sublet": "Sublet-lag",
+    "BL1-GP": "BL1-GP-lag",
+    "BL1N": "BL1N-lag",
+    "BL5N": "BL5N-lag",
+    "BL1": "BL1-lag",
+    "BL1-BO": "BL1-BO-lag",
+    "BL5-cur": "BL5",
+    "BL5-tau60": "BL5-tau60-lag",
+    "BL2": "BL2-lag",
+    "BL3-0": "BL3-0-lag",
+    "BL4": "BL4-lag"
+   },
+   "lag_named": [
+    {
+     "row": "BL5-cur",
+     "row_label": "RetroRenting-style",
+     "lagged": "BL5",
+     "label": "RetroRenting-style, lagged",
+     "primary": true
+    }
+   ],
+   "c2_rows": {
+    "BL1": "BL1-c2",
+    "BL5-cur": "BL5-cur-c2",
+    "BL2": "BL2-c2",
+    "BL3-0": "BL3-0-c2",
+    "BL4": "BL4-c2"
+   }
+  },
+  "notes": {
+   "Sublet.lag_r0": "lagged tag Sublet-lag",
+   "Sublet.W0_kbar": "no contract transplant (X4 transplanted the as-built baselines that buy k*)",
+   "BL1-GP.lag_r0": "lagged tag BL1-GP-lag",
+   "BL1-GP.W0_kbar": "no contract transplant (X4 transplanted the as-built baselines that buy k*)",
+   "BL1N.lag_r0": "lagged tag BL1N-lag",
+   "BL1N.W0_kbar": "no contract transplant (X4 transplanted the as-built baselines that buy k*)",
+   "BL5N.lag_r0": "lagged tag BL5N-lag",
+   "BL5N.W0_kbar": "no contract transplant (X4 transplanted the as-built baselines that buy k*)",
+   "BL1.lag_r0": "lagged tag BL1-lag",
+   "BL1.W0_kbar": "transplant BL1-c2",
+   "BL1-BO.lag_r0": "lagged tag BL1-BO-lag",
+   "BL1-BO.W0_kbar": "no contract transplant (X4 transplanted the as-built baselines that buy k*)",
+   "BL5-cur.lag_r0": "lagged tag BL5",
+   "BL5-cur.W0_kbar": "transplant BL5-cur-c2",
+   "BL5-tau60.lag_r0": "lagged tag BL5-tau60-lag",
+   "BL5-tau60.W0_kbar": "no contract transplant (X4 transplanted the as-built baselines that buy k*)",
+   "BL2.lag_r0": "lagged tag BL2-lag",
+   "BL2.W0_kbar": "transplant BL2-c2",
+   "BL3-0.lag_r0": "lagged tag BL3-0-lag",
+   "BL3-0.W0_kbar": "transplant BL3-0-c2",
+   "BL4.lag_r0": "lagged tag BL4-lag",
+   "BL4.W0_kbar": "transplant BL4-c2",
+   "MPC-T.lag_r0": "no lagged run (X1 ran the confirmation's policies)",
+   "MPC-T.W0_kbar": "no contract transplant (X4 transplanted the as-built baselines that buy k*)",
+   "A9-P.lag_r0": "no lagged run (X1 ran the confirmation's policies)",
+   "A9-P.W0_kbar": "no contract transplant (X4 transplanted the as-built baselines that buy k*)",
+   "BL0a.saving_pct": "0 by definition (BL0a / BL0a)",
+   "BL0a.RC": "BL0a has no runs (an analytic reference)",
+   "BL0a.W0": "largest BL0a under a stress mode over BL0a under L-tr (1 by definition)",
+   "BL0a.r0": "1 in every week (the reference)",
+   "BL0a.lag_r0": "an analytic reference",
+   "BL0a.W0_kbar": "no contract transplant (X4 transplanted the as-built baselines that buy k*)"
+  },
+  "lagged_policies_without_row": [],
+  "own_capacity_usd": {
+   "101": 34345.941336348165
+  },
+  "checks": {
+   "e7c": {
+    "registration_matches": true,
+    "weeks_are_confirmation_weeks": false,
+    "gate_pass": false
+   },
+   "e7r": {
+    "identity_all_identical": true,
+    "script_sha256": "1f1dbf42d2ab74fc85aa5763802e2c7fa2c814f0db8b690a67ad4d9ab69f3fbb"
+   }
+  },
+  "tables": {
+   "table3_v3.tex": {
+    "scope": {
+     "tags": [
+      "Sublet",
+      "BL1-GP",
+      "BL1N",
+      "BL5N",
+      "BL1",
+      "BL1-BO",
+      "BL5-cur",
+      "BL5-tau60",
+      "BL2",
+      "BL3-0",
+      "BL4",
+      "MPC-T",
+      "A9-P",
+      "BL0a"
+     ],
+     "keys": [
+      "sublet_v2",
+      "bl1_gp",
+      "bl1n",
+      "bl5n",
+      "bl1",
+      "bl1_bo",
+      "bl5_cur",
+      "bl5_tau60",
+      "bl2",
+      "bl3_0",
+      "bl4",
+      "mpc",
+      "a9p",
+      "bl0a"
+     ],
+     "weeks": [
+      "101"
+     ],
+     "modes": [
+      "L-tr",
+      "L-hon",
+      "the five stress modes"
+     ],
+     "seeds": [
+      0
+     ]
+    }
+   }
+  },
+  "statistic": "statistics.median over the weeks of the per-week values (no interval: design/ms7/plan.md D4); for r0 and W0 also their min and max over the weeks (RC16(4), C9)",
+  "meta": {
+   "reduced": true,
+   "reduced_by_input": {
+    "table3_v2": true,
+    "main": true,
+    "e7c": true,
+    "e7r": true,
+    "e7r_eval": true
+   },
+   "git_revisions": {
+    "table3_v2": "5c7d33285b9a4f4e4df2b76e80b3e5f56d58bd37",
+    "main": "5c7d33285b9a4f4e4df2b76e80b3e5f56d58bd37",
+    "e7c": "6a96bce82ce4e4c692d1962cdbf979a9ee8c7fac",
+    "e7r": "6a96bce82ce4e4c692d1962cdbf979a9ee8c7fac",
+    "e7r_eval": "56b847bec39b437ed5074dff124ffb69416e7f2b"
+   },
+   "inputs_sha256": {
+    "code/sim/out/figs/table3_v2.json": "2703d29b0e9d59d171214fc264a9df41d50cd0bf463c882e931b2fc66a81705e",
+    "code/sim/out/sublet_v2/main/summary.json": "25e556eeee1df3687e1d9fc72390099c5305ce71e90c18e8b27be30a0dbd0c9d",
+    "code/sim/out/e7c/analysis.json": "832fbb594a4eba148b326e21bdbe297f9d0e69897af57cf242e355aafbf4c588",
+    "code/sim/out/e7r/analysis.json": "b7a67fefc9c68e6f83e5b3f44cd565353f7822274adfd6291182ea28000bc939",
+    "code/sim/out/e7r/eval/summary.json": "7c3355b3e7e2ecb072342f3e51db194be9b70974d2c616b9a796336cf0455b6e"
+   },
+   "sources": [
+    "code/sim/out/figs/table3_v2.json",
+    "code/sim/out/sublet_v2/main/summary.json",
+    "code/sim/out/e7c/analysis.json",
+    "code/sim/out/e7r/analysis.json",
+    "code/sim/out/e7r/eval/summary.json"
+   ]
+  }
+ }
+}

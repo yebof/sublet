@@ -1,0 +1,55 @@
+{
+ "job": "e3:milp:b=8:u=8:mu=1:c=1:part=b00",
+ "exp": "e3",
+ "kind": "milp",
+ "params": {
+  "b": 8,
+  "u": 8,
+  "mu": 1.0,
+  "c": 1,
+  "part": "b00",
+  "horizon": [
+   156,
+   24
+  ]
+ },
+ "status": "ok",
+ "started": "2026-10-26T14:00:59",
+ "pid": 933344,
+ "argv": [
+  "/work/ms4wt/u25/code/sim/sublet/experiments/e3.py",
+  "--job",
+  "e3:milp:b=8:u=8:mu=1:c=1:part=b00",
+  "--out",
+  "/work/ms4u/u25scratch/fixture_roots/e3/out/e3"
+ ],
+ "slots": [
+  "slot0",
+  "milp0"
+ ],
+ "milp_limit_s": 30,
+ "git_revision": "939847ca5925ce069d6df9089fe3a3d1d3207bb7",
+ "versions": {
+  "python": "3.12.3",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "sublet": "0.1.0"
+ },
+ "runs": 0,
+ "errors": [],
+ "n_errors": 0,
+ "outputs": [
+  "lb/e3__milp__b__8__u__8__mu__1__c__1__part__b00.json"
+ ],
+ "result": {
+  "status": 1,
+  "objective": 34.259856556825206,
+  "dual_bound": 34.04905591779364,
+  "gap": 0.0061529924587373245,
+  "n_vars": 1205
+ },
+ "wall_s": 30.62930490099825,
+ "peak_rss_kb": 187684,
+ "peak_rss_mb": 183.28515625,
+ "finished": "2026-10-26T14:01:29"
+}

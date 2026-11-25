@@ -1,0 +1,315 @@
+{
+ "table": "table5_alglb",
+ "sources": [
+  "code/sim/out/sublet_v2/second/summary.json",
+  "code/sim/out/s1v2/analysis.json",
+  "code/sim/out/sublet_v2/second/lb/gap_lp_c101.json",
+  "code/sim/out/sublet_v2/main/summary.json",
+  "code/sim/out/sublet_v2/seeds/summary.json"
+ ],
+ "data": {
+  "order": [
+   "Sublet",
+   "BL1-GP",
+   "BL1",
+   "BL1-BO",
+   "BL5-cur",
+   "BL5-tau60",
+   "BL3-0",
+   "BL4",
+   "BL0a"
+  ],
+  "rows": {
+   "Sublet": {
+    "label": "Sublet",
+    "style_key": "sublet_v2",
+    "by_cell": {
+     "gap:c101": 1.2810188101056437
+    },
+    "median": 1.2810188101056437,
+    "min": 1.2810188101056437,
+    "max": 1.2810188101056437,
+    "seed_spread": 0.0,
+    "seed_spread_at": "L-tr:101:1",
+    "seed_pairs": 7,
+    "bound_gap_max": null,
+    "texts": {
+     "gap": "1.28",
+     "range": "1.28--1.28",
+     "seeds": "0.000"
+    }
+   },
+   "BL1-GP": {
+    "label": "Greedy + guard",
+    "style_key": "bl1_gp",
+    "by_cell": {
+     "gap:c101": 1.2080584894083801
+    },
+    "median": 1.2080584894083801,
+    "min": 1.2080584894083801,
+    "max": 1.2080584894083801,
+    "seed_spread": null,
+    "seed_spread_at": null,
+    "seed_pairs": null,
+    "bound_gap_max": null,
+    "texts": {
+     "gap": "1.21",
+     "range": "1.21--1.21",
+     "seeds": "--"
+    }
+   },
+   "BL1": {
+    "label": "Greedy renting",
+    "style_key": "bl1",
+    "by_cell": {
+     "gap:c101": 1.1616423050133737
+    },
+    "median": 1.1616423050133737,
+    "min": 1.1616423050133737,
+    "max": 1.1616423050133737,
+    "seed_spread": 0.008067985206480222,
+    "seed_spread_at": "L-iid-0.05:101:1",
+    "seed_pairs": 7,
+    "bound_gap_max": null,
+    "texts": {
+     "gap": "1.16",
+     "range": "1.16--1.16",
+     "seeds": "0.008"
+    }
+   },
+   "BL1-BO": {
+    "label": "Greedy, back-off",
+    "style_key": "bl1_bo",
+    "by_cell": {
+     "gap:c101": 1.154531726757203
+    },
+    "median": 1.154531726757203,
+    "min": 1.154531726757203,
+    "max": 1.154531726757203,
+    "seed_spread": null,
+    "seed_spread_at": null,
+    "seed_pairs": null,
+    "bound_gap_max": null,
+    "texts": {
+     "gap": "1.15",
+     "range": "1.15--1.15",
+     "seeds": "--"
+    }
+   },
+   "BL5-cur": {
+    "label": "RetroRenting-style",
+    "style_key": "bl5_cur",
+    "by_cell": {
+     "gap:c101": 1.3279770598740643
+    },
+    "median": 1.3279770598740643,
+    "min": 1.3279770598740643,
+    "max": 1.3279770598740643,
+    "seed_spread": 0.006507656295648645,
+    "seed_spread_at": "L-iid-0.2:101:1",
+    "seed_pairs": 7,
+    "bound_gap_max": null,
+    "texts": {
+     "gap": "1.33",
+     "range": "1.33--1.33",
+     "seeds": "0.007"
+    }
+   },
+   "BL5-tau60": {
+    "label": "RetroRenting, $\\tau\\geq1$ h",
+    "style_key": "bl5_tau60",
+    "by_cell": {
+     "gap:c101": 1.8847470017965058
+    },
+    "median": 1.8847470017965058,
+    "min": 1.8847470017965058,
+    "max": 1.8847470017965058,
+    "seed_spread": null,
+    "seed_spread_at": null,
+    "seed_pairs": null,
+    "bound_gap_max": null,
+    "texts": {
+     "gap": "1.88",
+     "range": "1.88--1.88",
+     "seeds": "--"
+    }
+   },
+   "BL3-0": {
+    "label": "SpotHedge-style, $N_{\\mathrm{Extra}}=0$",
+    "style_key": "bl3_0",
+    "by_cell": {
+     "gap:c101": 1.242875163276576
+    },
+    "median": 1.242875163276576,
+    "min": 1.242875163276576,
+    "max": 1.242875163276576,
+    "seed_spread": null,
+    "seed_spread_at": null,
+    "seed_pairs": null,
+    "bound_gap_max": null,
+    "texts": {
+     "gap": "1.24",
+     "range": "1.24--1.24",
+     "seeds": "--"
+    }
+   },
+   "BL4": {
+    "label": "CoCaR-style",
+    "style_key": "bl4",
+    "by_cell": {
+     "gap:c101": 1.453066879340342
+    },
+    "median": 1.453066879340342,
+    "min": 1.453066879340342,
+    "max": 1.453066879340342,
+    "seed_spread": null,
+    "seed_spread_at": null,
+    "seed_pairs": null,
+    "bound_gap_max": null,
+    "texts": {
+     "gap": "1.45",
+     "range": "1.45--1.45",
+     "seeds": "--"
+    }
+   },
+   "BL0a": {
+    "label": "All-fallback",
+    "style_key": "bl0a",
+    "by_cell": {
+     "gap:c101": 2.0212619638650446
+    },
+    "median": 2.0212619638650446,
+    "min": 2.0212619638650446,
+    "max": 2.0212619638650446,
+    "seed_spread": null,
+    "seed_spread_at": null,
+    "seed_pairs": null,
+    "bound_gap_max": null,
+    "texts": {
+     "gap": "2.02",
+     "range": "2.02--2.02",
+     "seeds": "--"
+    }
+   }
+  },
+  "columns": [
+   "gap",
+   "range",
+   "seeds"
+  ],
+  "caption": "ALG/LB on the first 120 min of week 101 (LB: the LP bound) and the largest change of $r_0$ from policy seed 0 (--: one seed).",
+  "note": "",
+  "labels": {
+   "caption": "ALG/LB on the first 120 min of week 101 (LB: the LP bound) and the largest change of $r_0$ from policy seed 0 (--: one seed)."
+  },
+  "caption_source": {
+   "gap_cells": [
+    "gap:c101"
+   ],
+   "horizon_min": 120,
+   "grid": "slow",
+   "menu": "reduced",
+   "seed": 0,
+   "methods": {
+    "gap:c101": "lp"
+   },
+   "milp_cells": [],
+   "spread": {
+    "weeks": [
+     "101"
+    ],
+    "seeds": [
+     "1"
+    ],
+    "reference_seed": "0",
+    "n_modes": 7,
+    "tags": [
+     "BL1",
+     "BL5-cur",
+     "Sublet"
+    ]
+   }
+  },
+  "notes": {
+   "BL1-GP.seeds": "one policy seed (the seed spread covers the tags of part seeds only)",
+   "BL1-BO.seeds": "one policy seed (the seed spread covers the tags of part seeds only)",
+   "BL5-tau60.seeds": "one policy seed (the seed spread covers the tags of part seeds only)",
+   "BL3-0.seeds": "one policy seed (the seed spread covers the tags of part seeds only)",
+   "BL4.seeds": "one policy seed (the seed spread covers the tags of part seeds only)",
+   "BL0a.seeds": "one policy seed (the seed spread covers the tags of part seeds only)"
+  },
+  "seed_spread_tags_without_row": [],
+  "tables": {
+   "table5_alglb.tex": {
+    "scope": {
+     "tags": [
+      "Sublet",
+      "BL1-GP",
+      "BL1",
+      "BL1-BO",
+      "BL5-cur",
+      "BL5-tau60",
+      "BL3-0",
+      "BL4",
+      "BL0a"
+     ],
+     "keys": [
+      "sublet_v2",
+      "bl1_gp",
+      "bl1",
+      "bl1_bo",
+      "bl5_cur",
+      "bl5_tau60",
+      "bl3_0",
+      "bl4",
+      "bl0a"
+     ],
+     "gap_cells": [
+      "gap:c101"
+     ],
+     "seeds": [
+      0
+     ],
+     "seed_spread": {
+      "weeks": [
+       "101"
+      ],
+      "seeds": [
+       "1"
+      ],
+      "reference_seed": "0",
+      "n_modes": 7,
+      "tags": [
+       "BL1",
+       "BL5-cur",
+       "Sublet"
+      ]
+     }
+    }
+   }
+  },
+  "statistic": "statistics.median, min and max over the gap days (no interval: design/ms7/plan.md D4)",
+  "meta": {
+   "reduced": true,
+   "reduced_by_input": {
+    "second": true,
+    "s1v2": true
+   },
+   "git_revisions": {
+    "second": "5c7d33285b9a4f4e4df2b76e80b3e5f56d58bd37",
+    "s1v2": "6a96bce82ce4e4c692d1962cdbf979a9ee8c7fac"
+   },
+   "s1v2_registration_matches": true,
+   "inputs_sha256": {
+    "code/sim/out/sublet_v2/second/summary.json": "f1be847be373047f0ede10a72a2479aa5d52efffbfa757cd48907a35b02bd2a7",
+    "code/sim/out/s1v2/analysis.json": "7bd6c76e1ad7c3de26505611c0d34e8efb965a769778d6d3e29a0161c1a7751f",
+    "code/sim/out/sublet_v2/main/summary.json": "25e556eeee1df3687e1d9fc72390099c5305ce71e90c18e8b27be30a0dbd0c9d",
+    "code/sim/out/sublet_v2/seeds/summary.json": "f94e9c71a3934a1e39a6c7aa1c26db1eab2695e547bc8233e65fb81c5dc445c4"
+   },
+   "sources": [
+    "code/sim/out/sublet_v2/second/summary.json",
+    "code/sim/out/s1v2/analysis.json"
+   ]
+  }
+ }
+}

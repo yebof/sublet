@@ -1,0 +1,55 @@
+{
+ "job": "e3:milp:b=1:u=8:mu=1:c=101:part=b00",
+ "exp": "e7h",
+ "kind": "milp",
+ "params": {
+  "part": "e3",
+  "kind": "e3milp",
+  "b": 1,
+  "u": 8,
+  "mu": 1.0,
+  "c": 101,
+  "part_": "b00",
+  "horizon": [
+   156,
+   24
+  ]
+ },
+ "status": "ok",
+ "started": "2026-11-03T14:24:52",
+ "pid": 1732847,
+ "argv": [
+  "/work/sublet/code/sim/sublet/experiments/e7h.py",
+  "--job",
+  "e3:milp:b=1:u=8:mu=1:c=101:part=b00",
+  "--out",
+  "/work/u36_fix/e3/out/sublet_v2/e3"
+ ],
+ "slots": [
+  "slot0",
+  "milp0"
+ ],
+ "milp_limit_s": 30,
+ "git_revision": "5c7d33285b9a4f4e4df2b76e80b3e5f56d58bd37",
+ "versions": {
+  "python": "3.12.3",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "sublet": "0.1.0"
+ },
+ "runs": 0,
+ "errors": [],
+ "n_errors": 0,
+ "outputs": [
+  "lb/e3__milp__b__1__u__8__mu__1__c__101__part__b00.json"
+ ],
+ "result": {
+  "status": 0,
+  "objective": 92.86694296442758,
+  "copied_from": "e3:milp:b=1:u=8:mu=1:c=101:part=shared"
+ },
+ "wall_s": 1.001549901906401,
+ "peak_rss_kb": 134284,
+ "peak_rss_mb": 131.13671875,
+ "finished": "2026-11-03T14:24:53"
+}

@@ -1,0 +1,97 @@
+{
+ "check": "copy",
+ "exp": "sublet_v2",
+ "driver": "e7h",
+ "pass": true,
+ "checks": {
+  "same_file_list": true,
+  "same_sha256": true,
+  "no_symlinks": true,
+  "json_readable": true,
+  "revisions": true,
+  "revisions_recorded": true,
+  "manifest_revision": true,
+  "summary_ok": true,
+  "no_running_records": true,
+  "run_log_done": true
+ },
+ "copy": "/work/sublet/code/sim/out/sublet_v2",
+ "clone": "/work/ms5b_conf",
+ "clone_out": "/work/ms5b_conf/code/sim/out/sublet_v2",
+ "clone_commit": "eb76b1602c96ac4f5fae6646085e7a37c04ab1b7",
+ "parts": [
+  "main",
+  "seeds",
+  "second",
+  "e3",
+  "fam",
+  "grid"
+ ],
+ "per_part": {
+  "main": {
+   "manifest_revision": "eb76b1602c96ac4f5fae6646085e7a37c04ab1b7",
+   "summary_object": true,
+   "summary_record": "ok",
+   "manifest_record": "ok",
+   "log_last_line": "[run_e7h] done 2026-11-03T04:56:47+08:00",
+   "log_done": true
+  },
+  "seeds": {
+   "manifest_revision": "eb76b1602c96ac4f5fae6646085e7a37c04ab1b7",
+   "summary_object": true,
+   "summary_record": "ok",
+   "manifest_record": "ok",
+   "log_last_line": "[run_e7h] done 2026-11-03T05:59:25+08:00",
+   "log_done": true
+  },
+  "second": {
+   "manifest_revision": "eb76b1602c96ac4f5fae6646085e7a37c04ab1b7",
+   "summary_object": true,
+   "summary_record": "ok",
+   "manifest_record": "ok",
+   "log_last_line": "[run_e7h] done 2026-11-03T09:41:46+08:00",
+   "log_done": true
+  },
+  "e3": {
+   "manifest_revision": "eb76b1602c96ac4f5fae6646085e7a37c04ab1b7",
+   "summary_object": true,
+   "summary_record": "ok",
+   "manifest_record": "ok",
+   "log_last_line": "[run_e7h] done 2026-11-03T04:50:06+08:00",
+   "log_done": true
+  },
+  "fam": {
+   "manifest_revision": "eb76b1602c96ac4f5fae6646085e7a37c04ab1b7",
+   "summary_object": true,
+   "summary_record": "ok",
+   "manifest_record": "ok",
+   "log_last_line": "[run_e7h] done 2026-11-03T09:43:26+08:00",
+   "log_done": true
+  },
+  "grid": {
+   "manifest_revision": "eb76b1602c96ac4f5fae6646085e7a37c04ab1b7",
+   "summary_object": true,
+   "summary_record": "ok",
+   "manifest_record": "ok",
+   "log_last_line": "[run_e7h] done 2026-11-03T12:53:59+08:00",
+   "log_done": true
+  }
+ },
+ "tree_sha256": "6188d705fb355dd7c91da78c583c5874460fd7206a473dfd728e4af4b2b52d00",
+ "tree_sha256_versioned": "77bd809dd190a37dbb1e765b6d477bbae7130e109ea97ff91262653a8d8935a6",
+ "n_files_copy": 4712,
+ "n_files_clone": 4712,
+ "only_in_copy": [],
+ "only_in_clone": [],
+ "sha256_mismatch": [],
+ "symlinks": [],
+ "json_unreadable": [],
+ "revision_differs": [],
+ "no_revision_unexpected": [],
+ "running_records": [],
+ "checked_by": {
+  "module": "sublet.experiments.ms5b_common",
+  "git_revision": "eb76b1602c96ac4f5fae6646085e7a37c04ab1b7"
+ },
+ "time": "2026-11-03T12:55:03"
+}

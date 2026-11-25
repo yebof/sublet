@@ -1,0 +1,32 @@
+{
+ "kind": "lp",
+ "job": "e4:eager:panel=burstgpt:c=1",
+ "panel": "burstgpt",
+ "c": 1,
+ "mu": 1.0,
+ "d_star": 1,
+ "day_slots": 24,
+ "instance_hash": "ce04639cad1f6e55b6a95752e2508a57eeed1506f9065380cf388bb626819846",
+ "week_instance_hash": "699af1005a7b855a1529a76b3e3f76571255e98f7a1d60bf0b93e8b02e7c93a4",
+ "schedule_hash": "4c22588a8fb3a052b1d6109538005a708f54b31ba515ff8c072d27fef26e836d",
+ "time_limit_s": null,
+ "wall_s": 0.10933050699532032,
+ "method": "lp",
+ "benchmark": "omega",
+ "grid": "slow",
+ "status": 0,
+ "status_msg": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+ "objective": 47.59701412443904,
+ "dual_bound": 47.59701412443904,
+ "gap": 0.0,
+ "size": {
+  "n_vars": 2908,
+  "n_int": 2756,
+  "n_rows": 2700,
+  "nnz": 9480
+ },
+ "build_s": 0.025928378105163574,
+ "solve_s": 0.08310451288707554,
+ "peak_rss_mb": 139.69921875,
+ "git_revision": "939847ca5925ce069d6df9089fe3a3d1d3207bb7"
+}

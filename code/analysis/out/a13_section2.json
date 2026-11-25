@@ -1,0 +1,279 @@
+{
+ "_meta": {
+  "script": "code/analysis/a13_paper_extract.py",
+  "purpose": "Section II numbers that are medians or ranges over clusters, pools, sizes and leads (design/ms6_spec.md \u00a76 II; design/ms6/inventory_sec2_sec3.md Q8)",
+  "inputs_sha256": {
+   "code/analysis/out/a1_lender_spotgpu.json": "07415bcdf915494060d88652e2d7b0746c130948a68d8c1378ecfccaa1e1c527",
+   "code/analysis/out/a2_lender_maas.json": "86f1b46458968a64aab8205808087e5cfce2c3a4b9b26d6a76d44d43b2fb4784",
+   "code/analysis/out/a9_notice_buffer.json": "13fa510b8cd4173fcaa1024ef9f2f26dacbc77e9c91cb450cf35a19e616a1644"
+  },
+  "median": "statistics.median (mean of the two middle values for an even count)",
+  "units": "shares in [0, 1] (or of mean lendable capacity for L7), minutes for windows and residuals, reclaims per day for L3"
+ },
+ "L1": {
+  "maas_alloc_peak_to_trough_median": 1.0259674423995346,
+  "maas_used_peak_to_trough_median_nonzero": 2.09317908978491,
+  "n_used_nonzero": 19,
+  "maas_sm_util_of_alloc_median": 0.17742355124327217,
+  "n_clusters": 20
+ },
+ "L2": {
+  "maas": {
+   "p10": {
+    "share_ge_60_median": 0.9841048033622635,
+    "share_ge_360_median": 0.8884942227958637,
+    "window_p50_min_median": 47.5
+   },
+   "p25": {
+    "share_ge_60_median": 0.9717523417074987,
+    "share_ge_360_median": 0.8734505581755088,
+    "window_p50_min_median": 27.5
+   },
+   "p50": {
+    "share_ge_60_median": 0.9374979336793732,
+    "share_ge_360_median": 0.8093447198345805,
+    "window_p50_min_median": 27.5
+   }
+  },
+  "maas_range": {
+   "share_ge_60_median": {
+    "min": 0.9374979336793732,
+    "max": 0.9841048033622635,
+    "n": 3
+   },
+   "share_ge_360_median": {
+    "min": 0.8093447198345805,
+    "max": 0.8884942227958637,
+    "n": 3
+   },
+   "window_p50_min_median": {
+    "min": 27.5,
+    "max": 47.5,
+    "n": 3
+   }
+  },
+  "spot": {
+   "pools": [
+    "A100-SXM4-80GB",
+    "H800",
+    "GPU-series-2"
+   ],
+   "share_ge_60": {
+    "min": 0.94894718268439,
+    "max": 0.9898915079952944,
+    "n": 9
+   },
+   "share_ge_360": {
+    "min": 0.840332509900796,
+    "max": 0.9789333798091586,
+    "n": 9
+   },
+   "window_p50_min": {
+    "min": 15.0,
+    "max": 25.0,
+    "n": 9
+   }
+  }
+ },
+ "L3": {
+  "maas_median": {
+   "p10": 2.142857142857143,
+   "p25": 2.928571428571429,
+   "p50": 3.571428571428571
+  },
+  "maas_range": {
+   "min": 2.142857142857143,
+   "max": 3.571428571428571,
+   "n": 3
+  },
+  "spot": {
+   "pools": [
+    "A100-SXM4-80GB",
+    "H800",
+    "A800-SXM4-80GB",
+    "GPU-series-2"
+   ],
+   "min": 1.1803973094346283,
+   "max": 3.541191928303885,
+   "n": 12
+  }
+ },
+ "L4": {
+  "maas": {
+   "p10": {
+    "residual_p10_min_median": 67.5,
+    "residual_p50_min_median": 672.5
+   },
+   "p25": {
+    "residual_p10_min_median": 35.0,
+    "residual_p50_min_median": 488.75
+   },
+   "p50": {
+    "residual_p10_min_median": 20.0,
+    "residual_p50_min_median": 265.0
+   }
+  },
+  "maas_range": {
+   "residual_p10_min_median": {
+    "min": 20.0,
+    "max": 67.5,
+    "n": 3
+   },
+   "residual_p50_min_median": {
+    "min": 265.0,
+    "max": 672.5,
+    "n": 3
+   }
+  }
+ },
+ "L5": {
+  "leads_min": [
+   15,
+   30,
+   60,
+   120
+  ],
+  "maas": {
+   "p10": {
+    "15": {
+     "recall_median": 0.271889400921659,
+     "precision_median": 0.11319148936170212
+    },
+    "30": {
+     "recall_median": 0.31761006289308175,
+     "precision_median": 0.1330128205128205
+    },
+    "60": {
+     "recall_median": 0.29516129032258065,
+     "precision_median": 0.12078496406854616
+    },
+    "120": {
+     "recall_median": 0.29583333333333334,
+     "precision_median": 0.16686848810514898
+    }
+   },
+   "p25": {
+    "15": {
+     "recall_median": 0.3888888888888889,
+     "precision_median": 0.1857745398773006
+    },
+    "30": {
+     "recall_median": 0.3879598662207358,
+     "precision_median": 0.20472873900293254
+    },
+    "60": {
+     "recall_median": 0.43990042674253205,
+     "precision_median": 0.25565610859728505
+    },
+    "120": {
+     "recall_median": 0.44155844155844154,
+     "precision_median": 0.2734728682170543
+    }
+   },
+   "p50": {
+    "15": {
+     "recall_median": 0.3262411347517731,
+     "precision_median": 0.1943173150266972
+    },
+    "30": {
+     "recall_median": 0.3829268292682927,
+     "precision_median": 0.26353276353276356
+    },
+    "60": {
+     "recall_median": 0.42160278745644597,
+     "precision_median": 0.28363128491620115
+    },
+    "120": {
+     "recall_median": 0.4807692307692308,
+     "precision_median": 0.2538772389689821
+    }
+   }
+  },
+  "maas_range": {
+   "recall": {
+    "min": 0.271889400921659,
+    "max": 0.4807692307692308,
+    "n": 12
+   },
+   "precision": {
+    "min": 0.11319148936170212,
+    "max": 0.28363128491620115,
+    "n": 12
+   }
+  }
+ },
+ "L7": {
+  "maas_p99_median": {
+   "5": 0.004214344546011035,
+   "15": 0.009140433857089967,
+   "30": 0.01315327710831648,
+   "60": 0.016842575089132485,
+   "120": 0.026295211708872987,
+   "240": 0.03100305902191191
+  },
+  "maas_p99_max": {
+   "5": {
+    "value": 0.016920758877794317,
+    "cluster": "c01"
+   },
+   "15": {
+    "value": 0.025435091541172787,
+    "cluster": "c01"
+   },
+   "30": {
+    "value": 0.037772489807833994,
+    "cluster": "c05"
+   },
+   "60": {
+    "value": 0.10036057015027718,
+    "cluster": "c05"
+   },
+   "120": {
+    "value": 0.22162619785531706,
+    "cluster": "c05"
+   },
+   "240": {
+    "value": 0.23657746894826331,
+    "cluster": "c05"
+   }
+  },
+  "spot_pools": [
+   "A100-SXM4-80GB",
+   "H800",
+   "A800-SXM4-80GB",
+   "GPU-series-2"
+  ],
+  "spot_p99_range": {
+   "5": {
+    "min": 0.09110285630239834,
+    "max": 0.5298384685192223,
+    "n": 4
+   },
+   "15": {
+    "min": 0.25544789995111,
+    "max": 0.7911603218159438,
+    "n": 4
+   },
+   "30": {
+    "min": 0.33212363801740613,
+    "max": 0.8288346228547983,
+    "n": 4
+   },
+   "60": {
+    "min": 0.48731599375288376,
+    "max": 1.1679033322044885,
+    "n": 4
+   },
+   "120": {
+    "min": 0.6184528104079505,
+    "max": 1.5823206436318875,
+    "n": 4
+   },
+   "240": {
+    "min": 0.7069391355893934,
+    "max": 1.6576692457095965,
+    "n": 4
+   }
+  }
+ }
+}

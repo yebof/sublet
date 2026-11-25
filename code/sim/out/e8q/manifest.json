@@ -1,0 +1,1171 @@
+{
+ "meta": {
+  "exp": "e8q",
+  "git_revision": "467b21817c8f506f152248c731f072a406c33d3a",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "scipy": "1.17.1",
+   "sublet": "0.1.0"
+  },
+  "written": "2026-11-25T04:36:10",
+  "script": "code/sim/sublet/experiments/e8q.py",
+  "script_sha256": "61d75c4a8da9062f7906938cb2e1a7ff422f57d3b1f95a038c0fe00366a8421f"
+ },
+ "jobs": [
+  {
+   "id": "e8q:requests",
+   "kind": "pool",
+   "params": {
+    "kind": "requests",
+    "horizon_min": 10080
+   },
+   "est_s": 54.0,
+   "status": "ok",
+   "wall_s": 73.65390845015645,
+   "peak_rss_mb": 1447.72265625,
+   "runs": 0
+  },
+  {
+   "id": "e8q:cell:tier=S:win=60:c=1",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "tier": "S",
+    "win": 60,
+    "mu": 1.0,
+    "c": 1,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "bill": "BL0a",
+    "waits": [
+     0.0,
+     1.0,
+     2.5,
+     10.0
+    ]
+   },
+   "est_s": 1730.0,
+   "status": "ok",
+   "wall_s": 1553.46622186061,
+   "peak_rss_mb": 613.17578125,
+   "runs": 4
+  },
+  {
+   "id": "e8q:cell:tier=S:win=60:c=2",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "tier": "S",
+    "win": 60,
+    "mu": 1.0,
+    "c": 2,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "bill": "BL0a",
+    "waits": [
+     0.0,
+     1.0,
+     2.5,
+     10.0
+    ]
+   },
+   "est_s": 1730.0,
+   "status": "ok",
+   "wall_s": 2037.3396313432604,
+   "peak_rss_mb": 855.55859375,
+   "runs": 4
+  },
+  {
+   "id": "e8q:cell:tier=S:win=60:c=3",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "tier": "S",
+    "win": 60,
+    "mu": 1.0,
+    "c": 3,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "bill": "BL0a",
+    "waits": [
+     0.0,
+     1.0,
+     2.5,
+     10.0
+    ]
+   },
+   "est_s": 1730.0,
+   "status": "ok",
+   "wall_s": 2228.6240029511973,
+   "peak_rss_mb": 856.5078125,
+   "runs": 4
+  },
+  {
+   "id": "e8q:cell:tier=S:win=60:c=4",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "tier": "S",
+    "win": 60,
+    "mu": 1.0,
+    "c": 4,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "bill": "BL0a",
+    "waits": [
+     0.0,
+     1.0,
+     2.5,
+     10.0
+    ]
+   },
+   "est_s": 1730.0,
+   "status": "ok",
+   "wall_s": 2334.597316686064,
+   "peak_rss_mb": 640.44140625,
+   "runs": 4
+  },
+  {
+   "id": "e8q:cell:tier=S:win=15:c=1",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "tier": "S",
+    "win": 15,
+    "mu": 1.0,
+    "c": 1,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "bill": "BL0a",
+    "waits": [
+     0.0,
+     1.0,
+     2.5,
+     10.0
+    ]
+   },
+   "est_s": 1730.0,
+   "status": "ok",
+   "wall_s": 1447.0437707025558,
+   "peak_rss_mb": 854.6796875,
+   "runs": 4
+  },
+  {
+   "id": "e8q:cell:tier=S:win=15:c=2",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "tier": "S",
+    "win": 15,
+    "mu": 1.0,
+    "c": 2,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "bill": "BL0a",
+    "waits": [
+     0.0,
+     1.0,
+     2.5,
+     10.0
+    ]
+   },
+   "est_s": 1730.0,
+   "status": "ok",
+   "wall_s": 1850.641384777613,
+   "peak_rss_mb": 856.74609375,
+   "runs": 4
+  },
+  {
+   "id": "e8q:cell:tier=S:win=15:c=3",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "tier": "S",
+    "win": 15,
+    "mu": 1.0,
+    "c": 3,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "bill": "BL0a",
+    "waits": [
+     0.0,
+     1.0,
+     2.5,
+     10.0
+    ]
+   },
+   "est_s": 1730.0,
+   "status": "ok",
+   "wall_s": 1668.6907669631764,
+   "peak_rss_mb": 775.40234375,
+   "runs": 4
+  },
+  {
+   "id": "e8q:cell:tier=S:win=15:c=4",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "tier": "S",
+    "win": 15,
+    "mu": 1.0,
+    "c": 4,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "bill": "BL0a",
+    "waits": [
+     0.0,
+     1.0,
+     2.5,
+     10.0
+    ]
+   },
+   "est_s": 1730.0,
+   "status": "ok",
+   "wall_s": 1017.8507482307032,
+   "peak_rss_mb": 856.44921875,
+   "runs": 4
+  },
+  {
+   "id": "e8q:cell:tier=S:win=5:c=1",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "tier": "S",
+    "win": 5,
+    "mu": 1.0,
+    "c": 1,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "bill": "BL0a",
+    "waits": [
+     0.0,
+     1.0,
+     2.5,
+     10.0
+    ]
+   },
+   "est_s": 1730.0,
+   "status": "ok",
+   "wall_s": 946.7687805891037,
+   "peak_rss_mb": 856.0,
+   "runs": 4
+  },
+  {
+   "id": "e8q:cell:tier=S:win=5:c=2",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "tier": "S",
+    "win": 5,
+    "mu": 1.0,
+    "c": 2,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "bill": "BL0a",
+    "waits": [
+     0.0,
+     1.0,
+     2.5,
+     10.0
+    ]
+   },
+   "est_s": 1730.0,
+   "status": "ok",
+   "wall_s": 943.7424114057794,
+   "peak_rss_mb": 858.16015625,
+   "runs": 4
+  },
+  {
+   "id": "e8q:cell:tier=S:win=5:c=3",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "tier": "S",
+    "win": 5,
+    "mu": 1.0,
+    "c": 3,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "bill": "BL0a",
+    "waits": [
+     0.0,
+     1.0,
+     2.5,
+     10.0
+    ]
+   },
+   "est_s": 1730.0,
+   "status": "ok",
+   "wall_s": 942.0166982477531,
+   "peak_rss_mb": 857.4296875,
+   "runs": 4
+  },
+  {
+   "id": "e8q:cell:tier=S:win=5:c=4",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "tier": "S",
+    "win": 5,
+    "mu": 1.0,
+    "c": 4,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "bill": "BL0a",
+    "waits": [
+     0.0,
+     1.0,
+     2.5,
+     10.0
+    ]
+   },
+   "est_s": 1730.0,
+   "status": "ok",
+   "wall_s": 984.7616379493847,
+   "peak_rss_mb": 857.77734375,
+   "runs": 4
+  },
+  {
+   "id": "e8q:cell:tier=M:win=60:c=1",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "tier": "M",
+    "win": 60,
+    "mu": 1.0,
+    "c": 1,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "bill": "BL0a",
+    "waits": [
+     0.0,
+     1.0,
+     2.5,
+     10.0
+    ]
+   },
+   "est_s": 1160.0,
+   "status": "ok",
+   "wall_s": 1488.00392783992,
+   "peak_rss_mb": 856.2109375,
+   "runs": 4
+  },
+  {
+   "id": "e8q:cell:tier=M:win=60:c=2",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "tier": "M",
+    "win": 60,
+    "mu": 1.0,
+    "c": 2,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "bill": "BL0a",
+    "waits": [
+     0.0,
+     1.0,
+     2.5,
+     10.0
+    ]
+   },
+   "est_s": 1160.0,
+   "status": "ok",
+   "wall_s": 1456.6414044471458,
+   "peak_rss_mb": 856.8046875,
+   "runs": 4
+  },
+  {
+   "id": "e8q:cell:tier=M:win=60:c=3",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "tier": "M",
+    "win": 60,
+    "mu": 1.0,
+    "c": 3,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "bill": "BL0a",
+    "waits": [
+     0.0,
+     1.0,
+     2.5,
+     10.0
+    ]
+   },
+   "est_s": 1160.0,
+   "status": "ok",
+   "wall_s": 1539.0915401568636,
+   "peak_rss_mb": 857.328125,
+   "runs": 4
+  },
+  {
+   "id": "e8q:cell:tier=M:win=60:c=4",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "tier": "M",
+    "win": 60,
+    "mu": 1.0,
+    "c": 4,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "bill": "BL0a",
+    "waits": [
+     0.0,
+     1.0,
+     2.5,
+     10.0
+    ]
+   },
+   "est_s": 1160.0,
+   "status": "ok",
+   "wall_s": 1467.467552445829,
+   "peak_rss_mb": 857.8046875,
+   "runs": 4
+  },
+  {
+   "id": "e8q:cell:tier=M:win=15:c=1",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "tier": "M",
+    "win": 15,
+    "mu": 1.0,
+    "c": 1,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "bill": "BL0a",
+    "waits": [
+     0.0,
+     1.0,
+     2.5,
+     10.0
+    ]
+   },
+   "est_s": 1160.0,
+   "status": "ok",
+   "wall_s": 1387.3314564777538,
+   "peak_rss_mb": 856.5390625,
+   "runs": 4
+  },
+  {
+   "id": "e8q:cell:tier=M:win=15:c=2",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "tier": "M",
+    "win": 15,
+    "mu": 1.0,
+    "c": 2,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "bill": "BL0a",
+    "waits": [
+     0.0,
+     1.0,
+     2.5,
+     10.0
+    ]
+   },
+   "est_s": 1160.0,
+   "status": "ok",
+   "wall_s": 1749.6164870196953,
+   "peak_rss_mb": 845.484375,
+   "runs": 4
+  },
+  {
+   "id": "e8q:cell:tier=M:win=15:c=3",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "tier": "M",
+    "win": 15,
+    "mu": 1.0,
+    "c": 3,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "bill": "BL0a",
+    "waits": [
+     0.0,
+     1.0,
+     2.5,
+     10.0
+    ]
+   },
+   "est_s": 1160.0,
+   "status": "ok",
+   "wall_s": 1653.1523383529857,
+   "peak_rss_mb": 854.80078125,
+   "runs": 4
+  },
+  {
+   "id": "e8q:cell:tier=M:win=15:c=4",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "tier": "M",
+    "win": 15,
+    "mu": 1.0,
+    "c": 4,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "bill": "BL0a",
+    "waits": [
+     0.0,
+     1.0,
+     2.5,
+     10.0
+    ]
+   },
+   "est_s": 1160.0,
+   "status": "ok",
+   "wall_s": 1242.9565669996664,
+   "peak_rss_mb": 856.265625,
+   "runs": 4
+  },
+  {
+   "id": "e8q:cell:tier=M:win=5:c=1",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "tier": "M",
+    "win": 5,
+    "mu": 1.0,
+    "c": 1,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "bill": "BL0a",
+    "waits": [
+     0.0,
+     1.0,
+     2.5,
+     10.0
+    ]
+   },
+   "est_s": 1160.0,
+   "status": "ok",
+   "wall_s": 1243.4045090097934,
+   "peak_rss_mb": 855.75,
+   "runs": 4
+  },
+  {
+   "id": "e8q:cell:tier=M:win=5:c=2",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "tier": "M",
+    "win": 5,
+    "mu": 1.0,
+    "c": 2,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "bill": "BL0a",
+    "waits": [
+     0.0,
+     1.0,
+     2.5,
+     10.0
+    ]
+   },
+   "est_s": 1160.0,
+   "status": "ok",
+   "wall_s": 1512.0361187215894,
+   "peak_rss_mb": 841.41796875,
+   "runs": 4
+  },
+  {
+   "id": "e8q:cell:tier=M:win=5:c=3",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "tier": "M",
+    "win": 5,
+    "mu": 1.0,
+    "c": 3,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "bill": "BL0a",
+    "waits": [
+     0.0,
+     1.0,
+     2.5,
+     10.0
+    ]
+   },
+   "est_s": 1160.0,
+   "status": "ok",
+   "wall_s": 1544.0796416755766,
+   "peak_rss_mb": 656.6953125,
+   "runs": 4
+  },
+  {
+   "id": "e8q:cell:tier=M:win=5:c=4",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "tier": "M",
+    "win": 5,
+    "mu": 1.0,
+    "c": 4,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "bill": "BL0a",
+    "waits": [
+     0.0,
+     1.0,
+     2.5,
+     10.0
+    ]
+   },
+   "est_s": 1160.0,
+   "status": "ok",
+   "wall_s": 1366.1240239748731,
+   "peak_rss_mb": 856.72265625,
+   "runs": 4
+  },
+  {
+   "id": "e8q:cell:tier=L:win=60:c=1",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "tier": "L",
+    "win": 60,
+    "mu": 1.0,
+    "c": 1,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "bill": "BL0a",
+    "waits": [
+     0.0,
+     1.0,
+     2.5,
+     10.0
+    ]
+   },
+   "est_s": 630.0,
+   "status": "ok",
+   "wall_s": 894.8348452216014,
+   "peak_rss_mb": 893.140625,
+   "runs": 4
+  },
+  {
+   "id": "e8q:cell:tier=L:win=60:c=2",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "tier": "L",
+    "win": 60,
+    "mu": 1.0,
+    "c": 2,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "bill": "BL0a",
+    "waits": [
+     0.0,
+     1.0,
+     2.5,
+     10.0
+    ]
+   },
+   "est_s": 630.0,
+   "status": "ok",
+   "wall_s": 852.7273040544242,
+   "peak_rss_mb": 890.125,
+   "runs": 4
+  },
+  {
+   "id": "e8q:cell:tier=L:win=60:c=3",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "tier": "L",
+    "win": 60,
+    "mu": 1.0,
+    "c": 3,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "bill": "BL0a",
+    "waits": [
+     0.0,
+     1.0,
+     2.5,
+     10.0
+    ]
+   },
+   "est_s": 630.0,
+   "status": "ok",
+   "wall_s": 923.2492290241644,
+   "peak_rss_mb": 893.28125,
+   "runs": 4
+  },
+  {
+   "id": "e8q:cell:tier=L:win=60:c=4",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "tier": "L",
+    "win": 60,
+    "mu": 1.0,
+    "c": 4,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "bill": "BL0a",
+    "waits": [
+     0.0,
+     1.0,
+     2.5,
+     10.0
+    ]
+   },
+   "est_s": 630.0,
+   "status": "ok",
+   "wall_s": 911.2017597099766,
+   "peak_rss_mb": 892.8125,
+   "runs": 4
+  },
+  {
+   "id": "e8q:cell:tier=L:win=15:c=1",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "tier": "L",
+    "win": 15,
+    "mu": 1.0,
+    "c": 1,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "bill": "BL0a",
+    "waits": [
+     0.0,
+     1.0,
+     2.5,
+     10.0
+    ]
+   },
+   "est_s": 630.0,
+   "status": "ok",
+   "wall_s": 856.5278791896999,
+   "peak_rss_mb": 898.3046875,
+   "runs": 4
+  },
+  {
+   "id": "e8q:cell:tier=L:win=15:c=2",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "tier": "L",
+    "win": 15,
+    "mu": 1.0,
+    "c": 2,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "bill": "BL0a",
+    "waits": [
+     0.0,
+     1.0,
+     2.5,
+     10.0
+    ]
+   },
+   "est_s": 630.0,
+   "status": "ok",
+   "wall_s": 788.0659273210913,
+   "peak_rss_mb": 888.953125,
+   "runs": 4
+  },
+  {
+   "id": "e8q:cell:tier=L:win=15:c=3",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "tier": "L",
+    "win": 15,
+    "mu": 1.0,
+    "c": 3,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "bill": "BL0a",
+    "waits": [
+     0.0,
+     1.0,
+     2.5,
+     10.0
+    ]
+   },
+   "est_s": 630.0,
+   "status": "ok",
+   "wall_s": 786.1215062430128,
+   "peak_rss_mb": 889.26171875,
+   "runs": 4
+  },
+  {
+   "id": "e8q:cell:tier=L:win=15:c=4",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "tier": "L",
+    "win": 15,
+    "mu": 1.0,
+    "c": 4,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "bill": "BL0a",
+    "waits": [
+     0.0,
+     1.0,
+     2.5,
+     10.0
+    ]
+   },
+   "est_s": 630.0,
+   "status": "ok",
+   "wall_s": 728.7020247019827,
+   "peak_rss_mb": 890.40625,
+   "runs": 4
+  },
+  {
+   "id": "e8q:cell:tier=L:win=5:c=1",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "tier": "L",
+    "win": 5,
+    "mu": 1.0,
+    "c": 1,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "bill": "BL0a",
+    "waits": [
+     0.0,
+     1.0,
+     2.5,
+     10.0
+    ]
+   },
+   "est_s": 630.0,
+   "status": "ok",
+   "wall_s": 691.4846846479923,
+   "peak_rss_mb": 896.15234375,
+   "runs": 4
+  },
+  {
+   "id": "e8q:cell:tier=L:win=5:c=2",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "tier": "L",
+    "win": 5,
+    "mu": 1.0,
+    "c": 2,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "bill": "BL0a",
+    "waits": [
+     0.0,
+     1.0,
+     2.5,
+     10.0
+    ]
+   },
+   "est_s": 630.0,
+   "status": "ok",
+   "wall_s": 705.2341726245359,
+   "peak_rss_mb": 894.08984375,
+   "runs": 4
+  },
+  {
+   "id": "e8q:cell:tier=L:win=5:c=3",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "tier": "L",
+    "win": 5,
+    "mu": 1.0,
+    "c": 3,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "bill": "BL0a",
+    "waits": [
+     0.0,
+     1.0,
+     2.5,
+     10.0
+    ]
+   },
+   "est_s": 630.0,
+   "status": "ok",
+   "wall_s": 721.4024091837928,
+   "peak_rss_mb": 896.35546875,
+   "runs": 4
+  },
+  {
+   "id": "e8q:cell:tier=L:win=5:c=4",
+   "kind": "pool",
+   "params": {
+    "kind": "cell",
+    "tier": "L",
+    "win": 5,
+    "mu": 1.0,
+    "c": 4,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur"
+    ],
+    "bill": "BL0a",
+    "waits": [
+     0.0,
+     1.0,
+     2.5,
+     10.0
+    ]
+   },
+   "est_s": 630.0,
+   "status": "ok",
+   "wall_s": 710.2497314391658,
+   "peak_rss_mb": 893.45703125,
+   "runs": 4
+  }
+ ],
+ "instance_hashes": {},
+ "settings": {
+  "reduced": false,
+  "horizon_min": 10080,
+  "market_tightness": 0.5,
+  "tiers": [
+   "S",
+   "M",
+   "L"
+  ],
+  "windows": [
+   5,
+   15,
+   60
+  ],
+  "alignments": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "waits": [
+   0.0,
+   1.0,
+   2.5,
+   10.0
+  ]
+ },
+ "instance_hashes_from_outputs": {
+  "e8q:cell:tier=S:win=60:c=1": "4cf6686b974552b9823ffa9d6f33e12647c833b2c9b0fb0b24be02cd37005dc3",
+  "e8q:cell:tier=S:win=60:c=2": "0f81cb08a018c74ee4978a7a3884a9ca52accd11a07c63fff7aa58bff3bc28f1",
+  "e8q:cell:tier=S:win=60:c=3": "f6aca1c08e507409549275da46b33453c21583a361051ae595ad33f48eefd838",
+  "e8q:cell:tier=S:win=60:c=4": "81888ba322cae0066ee481c906978bae8ae4f83c1e4d40283ef696ceb2170cf4",
+  "e8q:cell:tier=S:win=15:c=1": "8ea6776ac61b1dba97d2a7fc1215dc0dd13019f3072214cd6e7862fe6ebb502f",
+  "e8q:cell:tier=S:win=15:c=2": "a21b92867abf50e4a128133fb106889ed7856f0ecfb9e865d84ce172a5eebd29",
+  "e8q:cell:tier=S:win=15:c=3": "6ca8b6b9c8851266973f37041db1cc0223d5aabdead48d2f0fbaaf8640ef0931",
+  "e8q:cell:tier=S:win=15:c=4": "915e593408aeaeb9d3550d2d311442d5de35de1537750c7a985e5da8b5c05b20",
+  "e8q:cell:tier=S:win=5:c=1": "b1343c0b23dcde409259fc28f4db7895c912b97602a09229709f5503f51a3a5b",
+  "e8q:cell:tier=S:win=5:c=2": "bf471867db6220dcf2c5f74da319864082802a9fa5341a4f8fb9acdc35fba813",
+  "e8q:cell:tier=S:win=5:c=3": "2b070fac882dcd50949d05f5c0052dfc18e65089cbae9524ed3da8c06761ee1f",
+  "e8q:cell:tier=S:win=5:c=4": "e612e39ec2d559d88dbe349d02d894872f88c622dde36505257fcf14e4a2620f",
+  "e8q:cell:tier=M:win=60:c=1": "36c8fd2ab90e3432d00ceb87e9031258e5f576fd045a397a691f4d47c1e9cbee",
+  "e8q:cell:tier=M:win=60:c=2": "07601feed11222198c7dfab6b47bf6db0fb0b3bb11fb51f8c21aaf25cc86c0f7",
+  "e8q:cell:tier=M:win=60:c=3": "16e99cb7867515292c551ea3b31b6b533f8a65ebdf5fd4eb2ddb159098ce98ce",
+  "e8q:cell:tier=M:win=60:c=4": "4d85e818f05e9a007d6e538e0c84ae2bce231047ba1e1baa8ffff0804d7979b7",
+  "e8q:cell:tier=M:win=15:c=1": "9ed923b7205c4f8522d246e08753d278a00df248a47ed1f0545db432a5bf9dbb",
+  "e8q:cell:tier=M:win=15:c=2": "246e9453ebcbe27bc5b08300694098bd1087e47bce55322cc90837b06da2a22b",
+  "e8q:cell:tier=M:win=15:c=3": "b095d5088571eae9f9ef2b97cfdc9056848f1be1d30bcefb7241ce210f4e46dd",
+  "e8q:cell:tier=M:win=15:c=4": "cce2ed6ac1cdaffe1892115678a183e7e90dec242360f182e21551f34c51a0e7",
+  "e8q:cell:tier=M:win=5:c=1": "8199df199d579586030d2390c80205987f5cb5c5771e0255d55f9063c0d7aedf",
+  "e8q:cell:tier=M:win=5:c=2": "a917487f8e2991f5ab7bd9ecb7cc1ef447e99779bc627bb378bb2bc4e4fa151b",
+  "e8q:cell:tier=M:win=5:c=3": "a1abf0e3ad2c7f7b16c94ea6795939443ed7b87706d08f1eacab9ac23dfe92ff",
+  "e8q:cell:tier=M:win=5:c=4": "6de0ca57b25d97ece57c96c322394888f33273c70a6395181f8450a2bb2fc039",
+  "e8q:cell:tier=L:win=60:c=1": "8a29c8a301296fda6684b400deed749710a14160f770a5dc08acf4a7bb53e8e5",
+  "e8q:cell:tier=L:win=60:c=2": "b10b17fbbdbe2f2f208b78940221435e9022c445404c5433ca587e81a38a844d",
+  "e8q:cell:tier=L:win=60:c=3": "8f39336f114038ba10d0fc2520c0450d24d14d4da92bb2071ddfb564225343a0",
+  "e8q:cell:tier=L:win=60:c=4": "29bbd1ce595fe3508b919a45f4ad3cc1a54e946a66029b37db801a80869e18be",
+  "e8q:cell:tier=L:win=15:c=1": "6871072a7ef5343189b64835cb7e75694123bfc18867b54f925a755dbfa3e426",
+  "e8q:cell:tier=L:win=15:c=2": "2ff45d99662070c448425d3d60e5062733b733a4e7daed8e3986af56f9232414",
+  "e8q:cell:tier=L:win=15:c=3": "ef7d928b7720996f6174e2a0242e2424340648ab83cb8b2f22bb3fb752287aa3",
+  "e8q:cell:tier=L:win=15:c=4": "bf81f6fb21009c6cd4210901c21bb6cfa58f91824d0a5918697204f438dd2030",
+  "e8q:cell:tier=L:win=5:c=1": "bc08b00536d3466f75f0a837bb2ba1d9fcac71fbfb8745c4bcac21ecf8f5a619",
+  "e8q:cell:tier=L:win=5:c=2": "af756eafcdc41dd289467b3d137267d62dc0e3ca744ccbd14b7c86fb69daf6a6",
+  "e8q:cell:tier=L:win=5:c=3": "27fc77530b04d93e5ff07192ec18d8b2171adfb841e7ce5a16d9d4e36d9a2a68",
+  "e8q:cell:tier=L:win=5:c=4": "403617c757a99184e2d8dbad5e084f2ced61fa8f471cc84fa7babb5f2f38ff7e"
+ },
+ "gate_record": {
+  "head": "467b21817c8f506f152248c731f072a406c33d3a",
+  "registration": "design/ms8/registration.md",
+  "registration_at_head": true,
+  "registration_sha256": "4efe023be0d2f586ae1efd0a7977ca44e494cce30feb2aa890bbb23128172c72",
+  "analysis": "code/sim/sublet/experiments/e8q_analysis.py",
+  "analysis_sha256_registered": "68b7f7a3d2ac57863662385322b9fad1e1463ed5fc528967c79273b3cfd1c728",
+  "analysis_sha256_head": "68b7f7a3d2ac57863662385322b9fad1e1463ed5fc528967c79273b3cfd1c728",
+  "analysis_sha256_disk": "68b7f7a3d2ac57863662385322b9fad1e1463ed5fc528967c79273b3cfd1c728",
+  "dirty_paths": []
+ },
+ "raw_azure": {
+  "file": "/mnt/data/datasets/azure-llm-2024/AzureLLMInferenceTrace_conv_1week.csv",
+  "file_bytes": 1135195393,
+  "mtime": 1791678510
+ },
+ "sources_sha256": {
+  "code/sim/sublet/experiments/e8q.py": "61d75c4a8da9062f7906938cb2e1a7ff422f57d3b1f95a038c0fe00366a8421f",
+  "code/sim/sublet/experiments/e8q_analysis.py": "68b7f7a3d2ac57863662385322b9fad1e1463ed5fc528967c79273b3cfd1c728",
+  "code/sim/sublet/replay/queue.py": "6b33eb12f635362f8962fcb9c0fd39d7a982ee4b0c7487d37d9e7a0dc6e8437f",
+  "code/sim/sublet/replay/loop.py": "f6ee2f204ac6af762f02c7ab13ab166225704a4fad1e74779ceb2e84d77073f5",
+  "code/sim/sublet/replay/scale.py": "f83b914b37ab4590037beffe867b4ea5b2a884b0e13c800ec19e70fc02c6ed72",
+  "code/sim/sublet/experiments/e8v2.py": "b137725f52a226548f2f998b73d56b13eff91e764b1f8d4f40b8e2f4c297a621",
+  "code/sim/sublet/experiments/e8.py": "b521ea9bdf7359247205275d1bc251924b757398d8427475ce869967812355bb",
+  "code/sim/sublet/experiments/s1v2.py": "37a88cd96d534f74e2f68e747dc30c21036614a7d787aa7e22a271ee7bdedc23",
+  "code/sim/out/e8v2/a/summary.json": "a380aeb305c6f28ad356e9d6f8e7dbe49045a1f724dbf36f1cd4d5e7a9ee5371",
+  "code/sim/configs/bench_e1.json": "00c069e6c385245a363730711eb1f931cef9e718d7913e05e10cf98b9ce127b7",
+  "code/analysis/out/a12_minute_io.npz": "7a2d61df69c77080f2be11e12cdb3cce82243524d247f75a037042738240f208",
+  "code/analysis/out/a12_sim_inputs.json": "ab8ba5e607aa4a896d1daf23973fa9d6acc16362705973f5eeaf2b517e540377",
+  "code/analysis/out/a5_reclaim_cost_calibration.json": "3a600ad9336eef24be7afb696fac70ab3c0c66db537aa0f146442ba60c1137db"
+ }
+}

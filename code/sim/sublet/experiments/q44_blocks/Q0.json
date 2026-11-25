@@ -1,0 +1,34 @@
+{
+ "block": "Q0",
+ "tier": 1,
+ "grid": "1min",
+ "lb": null,
+ "description": "V1 (note \u00a75.5): with every knob off A6, A3 and A2 reproduce pd_cost_diag.json on ms s3, policy seed 0 (787.10, 736.12, 747.96; BL0a 551.35, BL1 352.14)",
+ "policies": [
+  "BL0a",
+  "BL1",
+  "A6",
+  "A3",
+  "A2"
+ ],
+ "policy_seeds": [
+  0
+ ],
+ "modes": [
+  "L-tr"
+ ],
+ "instances": [
+  {
+   "id": "I1",
+   "family": "I1",
+   "config": "ms2_multi_small.json",
+   "overrides": {},
+   "config_seeds": [
+    3
+   ],
+   "tuning_seeds": [
+    3
+   ]
+  }
+ ]
+}

@@ -1,0 +1,2323 @@
+{
+ "meta": {
+  "exp": "e7r",
+  "git_revision": "44d1b4e42b5be44503039b1b5d6bfba8e32930ff",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "scipy": "1.17.1",
+   "sublet": "0.1.0"
+  },
+  "written": "2026-11-10T05:38:16",
+  "script": "code/sim/sublet/experiments/e7r.py",
+  "script_sha256": "b04b446efc3cddc478b3343c039d22b517a456b9247f68b00a60b53d538e4f57"
+ },
+ "jobs": [
+  {
+   "id": "e7r:confirm:k=week:tag=BL1:c=121",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "BL1",
+    "policy_id": "BL1",
+    "params": {},
+    "family": "ms5b",
+    "c": 121,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 208.0,
+   "status": "ok",
+   "wall_s": 315.6326976059936,
+   "peak_rss_mb": 239.98828125,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=BL1-T:c=121",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "BL1-T",
+    "policy_id": "BL1",
+    "params": {
+     "backoff_cap": 288
+    },
+    "family": "BL1",
+    "c": 121,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 73.0,
+   "status": "ok",
+   "wall_s": 79.40965192066506,
+   "peak_rss_mb": 164.4296875,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=BL1-W:c=121",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "BL1-W",
+    "policy_id": "A9",
+    "params": {
+     "target": "ceil",
+     "release": "now",
+     "site_rule": "static",
+     "mbb": false,
+     "commit": false,
+     "insure": false
+    },
+    "family": "BL1",
+    "c": 121,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 222.0,
+   "status": "ok",
+   "wall_s": 169.72951825335622,
+   "peak_rss_mb": 191.796875,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=BL2:c=121",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "BL2",
+    "policy_id": "BL2",
+    "params": {},
+    "family": "ms5b",
+    "c": 121,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 196.0,
+   "status": "ok",
+   "wall_s": 193.06211705459282,
+   "peak_rss_mb": 263.01171875,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=BL2-T:c=121",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "BL2-T",
+    "policy_id": "BL2",
+    "params": {
+     "contract_rule": "c2"
+    },
+    "family": "BL2",
+    "c": 121,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 196.0,
+   "status": "ok",
+   "wall_s": 198.50601070187986,
+   "peak_rss_mb": 224.24609375,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=BL3-0:c=121",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "BL3-0",
+    "policy_id": "BL3",
+    "params": {
+     "n_extra": 0
+    },
+    "family": "ms5b",
+    "c": 121,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 172.0,
+   "status": "ok",
+   "wall_s": 275.9583752960898,
+   "peak_rss_mb": 235.05859375,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=BL3-T:c=121",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "BL3-T",
+    "policy_id": "BL3",
+    "params": {
+     "n_extra": 0
+    },
+    "family": "BL3",
+    "c": 121,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 172.0,
+   "status": "ok",
+   "wall_s": 276.4822727423161,
+   "peak_rss_mb": 235.59375,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=BL3-W:c=121",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "BL3-W",
+    "policy_id": "BL3",
+    "params": {
+     "n_extra": 0,
+     "contract_rule": "c2",
+     "react_at": "death"
+    },
+    "family": "BL3",
+    "c": 121,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 172.0,
+   "status": "ok",
+   "wall_s": 177.514182058163,
+   "peak_rss_mb": 187.85546875,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=BL4:c=121",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "BL4",
+    "policy_id": "BL4",
+    "params": {},
+    "family": "ms5b",
+    "c": 121,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 184.0,
+   "status": "ok",
+   "wall_s": 223.12043093005195,
+   "peak_rss_mb": 181.39453125,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=BL4-T:c=121",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "BL4-T",
+    "policy_id": "BL4",
+    "params": {
+     "window_min": 30
+    },
+    "family": "BL4",
+    "c": 121,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 184.0,
+   "status": "ok",
+   "wall_s": 255.25647987192497,
+   "peak_rss_mb": 169.33203125,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=BL4-W:c=121",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "BL4-W",
+    "policy_id": "BL4",
+    "params": {
+     "window_min": 120,
+     "contract_rule": "c2"
+    },
+    "family": "BL4",
+    "c": 121,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 184.0,
+   "status": "ok",
+   "wall_s": 223.1902097100392,
+   "peak_rss_mb": 209.21484375,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=BL5-cur:c=121",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "BL5-cur",
+    "policy_id": "BL5",
+    "params": {
+     "use_current_slot": true
+    },
+    "family": "ms5b",
+    "c": 121,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 100.0,
+   "status": "ok",
+   "wall_s": 122.1001693457365,
+   "peak_rss_mb": 179.984375,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=BL5-T:c=121",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "BL5-T",
+    "policy_id": "BL5",
+    "params": {
+     "use_current_slot": true,
+     "contract_rule": "c2"
+    },
+    "family": "BL5",
+    "c": 121,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 100.0,
+   "status": "ok",
+   "wall_s": 168.61692539509386,
+   "peak_rss_mb": 173.02734375,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=BL5-W:c=121",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "BL5-W",
+    "policy_id": "BL5",
+    "params": {
+     "use_current_slot": true,
+     "tau_min": 60
+    },
+    "family": "BL5",
+    "c": 121,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 100.0,
+   "status": "ok",
+   "wall_s": 137.1134217819199,
+   "peak_rss_mb": 156.70703125,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=MPC:c=121",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "MPC",
+    "policy_id": "MPC",
+    "params": {},
+    "family": "MPC",
+    "c": 121,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 2350.0,
+   "status": "ok",
+   "wall_s": 2355.963963421993,
+   "peak_rss_mb": 284.16015625,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=MPC-T:c=121",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "MPC-T",
+    "policy_id": "MPC",
+    "params": {
+     "contract_rule": "c2"
+    },
+    "family": "MPC",
+    "c": 121,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 2350.0,
+   "status": "ok",
+   "wall_s": 2413.0408355686814,
+   "peak_rss_mb": 246.51953125,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=BL1:c=122",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "BL1",
+    "policy_id": "BL1",
+    "params": {},
+    "family": "ms5b",
+    "c": 122,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 208.0,
+   "status": "ok",
+   "wall_s": 135.6938624442555,
+   "peak_rss_mb": 195.18359375,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=BL1-T:c=122",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "BL1-T",
+    "policy_id": "BL1",
+    "params": {
+     "backoff_cap": 288
+    },
+    "family": "BL1",
+    "c": 122,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 73.0,
+   "status": "ok",
+   "wall_s": 56.409505407791585,
+   "peak_rss_mb": 160.39453125,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=BL1-W:c=122",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "BL1-W",
+    "policy_id": "A9",
+    "params": {
+     "target": "ceil",
+     "release": "now",
+     "site_rule": "static",
+     "mbb": false,
+     "commit": false,
+     "insure": false
+    },
+    "family": "BL1",
+    "c": 122,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 222.0,
+   "status": "ok",
+   "wall_s": 102.60496387584135,
+   "peak_rss_mb": 169.98046875,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=BL2:c=122",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "BL2",
+    "policy_id": "BL2",
+    "params": {},
+    "family": "ms5b",
+    "c": 122,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 196.0,
+   "status": "ok",
+   "wall_s": 178.7532794107683,
+   "peak_rss_mb": 227.1953125,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=BL2-T:c=122",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "BL2-T",
+    "policy_id": "BL2",
+    "params": {
+     "contract_rule": "c2"
+    },
+    "family": "BL2",
+    "c": 122,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 196.0,
+   "status": "ok",
+   "wall_s": 189.1767705050297,
+   "peak_rss_mb": 205.796875,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=BL3-0:c=122",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "BL3-0",
+    "policy_id": "BL3",
+    "params": {
+     "n_extra": 0
+    },
+    "family": "ms5b",
+    "c": 122,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 172.0,
+   "status": "ok",
+   "wall_s": 131.39130079280585,
+   "peak_rss_mb": 196.03125,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=BL3-T:c=122",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "BL3-T",
+    "policy_id": "BL3",
+    "params": {
+     "n_extra": 0
+    },
+    "family": "BL3",
+    "c": 122,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 172.0,
+   "status": "ok",
+   "wall_s": 130.51350595569238,
+   "peak_rss_mb": 195.68359375,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=BL3-W:c=122",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "BL3-W",
+    "policy_id": "BL3",
+    "params": {
+     "n_extra": 0,
+     "contract_rule": "c2",
+     "react_at": "death"
+    },
+    "family": "BL3",
+    "c": 122,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 172.0,
+   "status": "ok",
+   "wall_s": 110.83419998921454,
+   "peak_rss_mb": 169.46484375,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=BL4:c=122",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "BL4",
+    "policy_id": "BL4",
+    "params": {},
+    "family": "ms5b",
+    "c": 122,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 184.0,
+   "status": "ok",
+   "wall_s": 185.77533119544387,
+   "peak_rss_mb": 178.1953125,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=BL4-T:c=122",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "BL4-T",
+    "policy_id": "BL4",
+    "params": {
+     "window_min": 30
+    },
+    "family": "BL4",
+    "c": 122,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 184.0,
+   "status": "ok",
+   "wall_s": 208.84109051292762,
+   "peak_rss_mb": 162.91796875,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=BL4-W:c=122",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "BL4-W",
+    "policy_id": "BL4",
+    "params": {
+     "window_min": 120,
+     "contract_rule": "c2"
+    },
+    "family": "BL4",
+    "c": 122,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 184.0,
+   "status": "ok",
+   "wall_s": 194.57377392193303,
+   "peak_rss_mb": 211.6484375,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=BL5-cur:c=122",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "BL5-cur",
+    "policy_id": "BL5",
+    "params": {
+     "use_current_slot": true
+    },
+    "family": "ms5b",
+    "c": 122,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 100.0,
+   "status": "ok",
+   "wall_s": 64.2732307203114,
+   "peak_rss_mb": 161.56640625,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=BL5-T:c=122",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "BL5-T",
+    "policy_id": "BL5",
+    "params": {
+     "use_current_slot": true,
+     "contract_rule": "c2"
+    },
+    "family": "BL5",
+    "c": 122,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 100.0,
+   "status": "ok",
+   "wall_s": 107.60124150803313,
+   "peak_rss_mb": 158.32421875,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=BL5-W:c=122",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "BL5-W",
+    "policy_id": "BL5",
+    "params": {
+     "use_current_slot": true,
+     "tau_min": 60
+    },
+    "family": "BL5",
+    "c": 122,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 100.0,
+   "status": "ok",
+   "wall_s": 80.52805864624679,
+   "peak_rss_mb": 152.40625,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=MPC:c=122",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "MPC",
+    "policy_id": "MPC",
+    "params": {},
+    "family": "MPC",
+    "c": 122,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 2350.0,
+   "status": "ok",
+   "wall_s": 2084.3097160332836,
+   "peak_rss_mb": 226.55859375,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=MPC-T:c=122",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "MPC-T",
+    "policy_id": "MPC",
+    "params": {
+     "contract_rule": "c2"
+    },
+    "family": "MPC",
+    "c": 122,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 2350.0,
+   "status": "ok",
+   "wall_s": 2355.4721042211168,
+   "peak_rss_mb": 213.03515625,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=BL1:c=123",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "BL1",
+    "policy_id": "BL1",
+    "params": {},
+    "family": "ms5b",
+    "c": 123,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 208.0,
+   "status": "ok",
+   "wall_s": 191.82611770089716,
+   "peak_rss_mb": 211.94140625,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=BL1-T:c=123",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "BL1-T",
+    "policy_id": "BL1",
+    "params": {
+     "backoff_cap": 288
+    },
+    "family": "BL1",
+    "c": 123,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 73.0,
+   "status": "ok",
+   "wall_s": 70.74259240087122,
+   "peak_rss_mb": 159.6171875,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=BL1-W:c=123",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "BL1-W",
+    "policy_id": "A9",
+    "params": {
+     "target": "ceil",
+     "release": "now",
+     "site_rule": "static",
+     "mbb": false,
+     "commit": false,
+     "insure": false
+    },
+    "family": "BL1",
+    "c": 123,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 222.0,
+   "status": "ok",
+   "wall_s": 130.57757316203788,
+   "peak_rss_mb": 176.1875,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=BL2:c=123",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "BL2",
+    "policy_id": "BL2",
+    "params": {},
+    "family": "ms5b",
+    "c": 123,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 196.0,
+   "status": "ok",
+   "wall_s": 216.0614035911858,
+   "peak_rss_mb": 240.8125,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=BL2-T:c=123",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "BL2-T",
+    "policy_id": "BL2",
+    "params": {
+     "contract_rule": "c2"
+    },
+    "family": "BL2",
+    "c": 123,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 196.0,
+   "status": "ok",
+   "wall_s": 214.884551982861,
+   "peak_rss_mb": 211.0234375,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=BL3-0:c=123",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "BL3-0",
+    "policy_id": "BL3",
+    "params": {
+     "n_extra": 0
+    },
+    "family": "ms5b",
+    "c": 123,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 172.0,
+   "status": "ok",
+   "wall_s": 173.5229633259587,
+   "peak_rss_mb": 209.30078125,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=BL3-T:c=123",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "BL3-T",
+    "policy_id": "BL3",
+    "params": {
+     "n_extra": 0
+    },
+    "family": "BL3",
+    "c": 123,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 172.0,
+   "status": "ok",
+   "wall_s": 185.42802639165893,
+   "peak_rss_mb": 209.64453125,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=BL3-W:c=123",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "BL3-W",
+    "policy_id": "BL3",
+    "params": {
+     "n_extra": 0,
+     "contract_rule": "c2",
+     "react_at": "death"
+    },
+    "family": "BL3",
+    "c": 123,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 172.0,
+   "status": "ok",
+   "wall_s": 180.3284283997491,
+   "peak_rss_mb": 174.51171875,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=BL4:c=123",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "BL4",
+    "policy_id": "BL4",
+    "params": {},
+    "family": "ms5b",
+    "c": 123,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 184.0,
+   "status": "ok",
+   "wall_s": 235.70754578430206,
+   "peak_rss_mb": 177.58203125,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=BL4-T:c=123",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "BL4-T",
+    "policy_id": "BL4",
+    "params": {
+     "window_min": 30
+    },
+    "family": "BL4",
+    "c": 123,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 184.0,
+   "status": "ok",
+   "wall_s": 220.5376445511356,
+   "peak_rss_mb": 166.703125,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=BL4-W:c=123",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "BL4-W",
+    "policy_id": "BL4",
+    "params": {
+     "window_min": 120,
+     "contract_rule": "c2"
+    },
+    "family": "BL4",
+    "c": 123,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 184.0,
+   "status": "ok",
+   "wall_s": 200.5107509191148,
+   "peak_rss_mb": 209.82421875,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=BL5-cur:c=123",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "BL5-cur",
+    "policy_id": "BL5",
+    "params": {
+     "use_current_slot": true
+    },
+    "family": "ms5b",
+    "c": 123,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 100.0,
+   "status": "ok",
+   "wall_s": 91.3025549580343,
+   "peak_rss_mb": 169.0390625,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=BL5-T:c=123",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "BL5-T",
+    "policy_id": "BL5",
+    "params": {
+     "use_current_slot": true,
+     "contract_rule": "c2"
+    },
+    "family": "BL5",
+    "c": 123,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 100.0,
+   "status": "ok",
+   "wall_s": 137.76010610209778,
+   "peak_rss_mb": 162.97265625,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=BL5-W:c=123",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "BL5-W",
+    "policy_id": "BL5",
+    "params": {
+     "use_current_slot": true,
+     "tau_min": 60
+    },
+    "family": "BL5",
+    "c": 123,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 100.0,
+   "status": "ok",
+   "wall_s": 109.16110169282183,
+   "peak_rss_mb": 153.6796875,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=MPC:c=123",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "MPC",
+    "policy_id": "MPC",
+    "params": {},
+    "family": "MPC",
+    "c": 123,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 2350.0,
+   "status": "ok",
+   "wall_s": 2014.9862552210689,
+   "peak_rss_mb": 247.97265625,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=MPC-T:c=123",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "MPC-T",
+    "policy_id": "MPC",
+    "params": {
+     "contract_rule": "c2"
+    },
+    "family": "MPC",
+    "c": 123,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 2350.0,
+   "status": "ok",
+   "wall_s": 2236.087678924203,
+   "peak_rss_mb": 220.4296875,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=BL1:c=124",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "BL1",
+    "policy_id": "BL1",
+    "params": {},
+    "family": "ms5b",
+    "c": 124,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 208.0,
+   "status": "ok",
+   "wall_s": 207.4840935887769,
+   "peak_rss_mb": 215.953125,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=BL1-T:c=124",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "BL1-T",
+    "policy_id": "BL1",
+    "params": {
+     "backoff_cap": 288
+    },
+    "family": "BL1",
+    "c": 124,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 73.0,
+   "status": "ok",
+   "wall_s": 66.51157971424982,
+   "peak_rss_mb": 159.87109375,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=BL1-W:c=124",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "BL1-W",
+    "policy_id": "A9",
+    "params": {
+     "target": "ceil",
+     "release": "now",
+     "site_rule": "static",
+     "mbb": false,
+     "commit": false,
+     "insure": false
+    },
+    "family": "BL1",
+    "c": 124,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 222.0,
+   "status": "ok",
+   "wall_s": 134.04775058012456,
+   "peak_rss_mb": 179.73828125,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=BL2:c=124",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "BL2",
+    "policy_id": "BL2",
+    "params": {},
+    "family": "ms5b",
+    "c": 124,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 196.0,
+   "status": "ok",
+   "wall_s": 196.92397605394945,
+   "peak_rss_mb": 242.44140625,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=BL2-T:c=124",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "BL2-T",
+    "policy_id": "BL2",
+    "params": {
+     "contract_rule": "c2"
+    },
+    "family": "BL2",
+    "c": 124,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 196.0,
+   "status": "ok",
+   "wall_s": 196.13275836128742,
+   "peak_rss_mb": 215.87890625,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=BL3-0:c=124",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "BL3-0",
+    "policy_id": "BL3",
+    "params": {
+     "n_extra": 0
+    },
+    "family": "ms5b",
+    "c": 124,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 172.0,
+   "status": "ok",
+   "wall_s": 163.7565365540795,
+   "peak_rss_mb": 210.4375,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=BL3-T:c=124",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "BL3-T",
+    "policy_id": "BL3",
+    "params": {
+     "n_extra": 0
+    },
+    "family": "BL3",
+    "c": 124,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 172.0,
+   "status": "ok",
+   "wall_s": 170.4667620882392,
+   "peak_rss_mb": 210.63671875,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=BL3-W:c=124",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "BL3-W",
+    "policy_id": "BL3",
+    "params": {
+     "n_extra": 0,
+     "contract_rule": "c2",
+     "react_at": "death"
+    },
+    "family": "BL3",
+    "c": 124,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 172.0,
+   "status": "ok",
+   "wall_s": 130.8395350589417,
+   "peak_rss_mb": 176.25390625,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=BL4:c=124",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "BL4",
+    "policy_id": "BL4",
+    "params": {},
+    "family": "ms5b",
+    "c": 124,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 184.0,
+   "status": "ok",
+   "wall_s": 189.8994162529707,
+   "peak_rss_mb": 175.84765625,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=BL4-T:c=124",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "BL4-T",
+    "policy_id": "BL4",
+    "params": {
+     "window_min": 30
+    },
+    "family": "BL4",
+    "c": 124,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 184.0,
+   "status": "ok",
+   "wall_s": 213.68968643294647,
+   "peak_rss_mb": 165.0,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=BL4-W:c=124",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "BL4-W",
+    "policy_id": "BL4",
+    "params": {
+     "window_min": 120,
+     "contract_rule": "c2"
+    },
+    "family": "BL4",
+    "c": 124,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 184.0,
+   "status": "ok",
+   "wall_s": 191.89293013699353,
+   "peak_rss_mb": 210.0703125,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=BL5-cur:c=124",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "BL5-cur",
+    "policy_id": "BL5",
+    "params": {
+     "use_current_slot": true
+    },
+    "family": "ms5b",
+    "c": 124,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 100.0,
+   "status": "ok",
+   "wall_s": 84.95741203706712,
+   "peak_rss_mb": 168.390625,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=BL5-T:c=124",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "BL5-T",
+    "policy_id": "BL5",
+    "params": {
+     "use_current_slot": true,
+     "contract_rule": "c2"
+    },
+    "family": "BL5",
+    "c": 124,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 100.0,
+   "status": "ok",
+   "wall_s": 129.68786710780114,
+   "peak_rss_mb": 163.0703125,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=BL5-W:c=124",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "BL5-W",
+    "policy_id": "BL5",
+    "params": {
+     "use_current_slot": true,
+     "tau_min": 60
+    },
+    "family": "BL5",
+    "c": 124,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 100.0,
+   "status": "ok",
+   "wall_s": 98.44187212921679,
+   "peak_rss_mb": 153.8046875,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=MPC:c=124",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "MPC",
+    "policy_id": "MPC",
+    "params": {},
+    "family": "MPC",
+    "c": 124,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 2350.0,
+   "status": "ok",
+   "wall_s": 1895.0322696478106,
+   "peak_rss_mb": 252.72265625,
+   "runs": 6
+  },
+  {
+   "id": "e7r:confirm:k=week:tag=MPC-T:c=124",
+   "kind": "pool",
+   "params": {
+    "part": "confirm",
+    "kind": "week",
+    "tag": "MPC-T",
+    "policy_id": "MPC",
+    "params": {
+     "contract_rule": "c2"
+    },
+    "family": "MPC",
+    "c": 124,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 2350.0,
+   "status": "ok",
+   "wall_s": 1999.8654481582344,
+   "peak_rss_mb": 228.66015625,
+   "runs": 6
+  }
+ ],
+ "instance_hashes": {},
+ "part": "confirm",
+ "design": {
+  "reduced": false,
+  "horizon_min": 10080
+ },
+ "instance_hashes_from_outputs": {
+  "e7r:confirm:k=week:tag=BL1:c=121": {
+   "base": "3fd2c210108d11087cd27c3bdacaeea885ad70ddb6c4e4097f275135d303c74c"
+  },
+  "e7r:confirm:k=week:tag=BL1-T:c=121": {
+   "base": "3fd2c210108d11087cd27c3bdacaeea885ad70ddb6c4e4097f275135d303c74c"
+  },
+  "e7r:confirm:k=week:tag=BL1-W:c=121": {
+   "base": "3fd2c210108d11087cd27c3bdacaeea885ad70ddb6c4e4097f275135d303c74c"
+  },
+  "e7r:confirm:k=week:tag=BL2:c=121": {
+   "base": "3fd2c210108d11087cd27c3bdacaeea885ad70ddb6c4e4097f275135d303c74c"
+  },
+  "e7r:confirm:k=week:tag=BL2-T:c=121": {
+   "base": "3fd2c210108d11087cd27c3bdacaeea885ad70ddb6c4e4097f275135d303c74c"
+  },
+  "e7r:confirm:k=week:tag=BL3-0:c=121": {
+   "base": "3fd2c210108d11087cd27c3bdacaeea885ad70ddb6c4e4097f275135d303c74c"
+  },
+  "e7r:confirm:k=week:tag=BL3-T:c=121": {
+   "base": "3fd2c210108d11087cd27c3bdacaeea885ad70ddb6c4e4097f275135d303c74c"
+  },
+  "e7r:confirm:k=week:tag=BL3-W:c=121": {
+   "base": "3fd2c210108d11087cd27c3bdacaeea885ad70ddb6c4e4097f275135d303c74c"
+  },
+  "e7r:confirm:k=week:tag=BL4:c=121": {
+   "base": "3fd2c210108d11087cd27c3bdacaeea885ad70ddb6c4e4097f275135d303c74c"
+  },
+  "e7r:confirm:k=week:tag=BL4-T:c=121": {
+   "base": "3fd2c210108d11087cd27c3bdacaeea885ad70ddb6c4e4097f275135d303c74c"
+  },
+  "e7r:confirm:k=week:tag=BL4-W:c=121": {
+   "base": "3fd2c210108d11087cd27c3bdacaeea885ad70ddb6c4e4097f275135d303c74c"
+  },
+  "e7r:confirm:k=week:tag=BL5-cur:c=121": {
+   "base": "3fd2c210108d11087cd27c3bdacaeea885ad70ddb6c4e4097f275135d303c74c"
+  },
+  "e7r:confirm:k=week:tag=BL5-T:c=121": {
+   "base": "3fd2c210108d11087cd27c3bdacaeea885ad70ddb6c4e4097f275135d303c74c"
+  },
+  "e7r:confirm:k=week:tag=BL5-W:c=121": {
+   "base": "3fd2c210108d11087cd27c3bdacaeea885ad70ddb6c4e4097f275135d303c74c"
+  },
+  "e7r:confirm:k=week:tag=MPC:c=121": {
+   "base": "3fd2c210108d11087cd27c3bdacaeea885ad70ddb6c4e4097f275135d303c74c"
+  },
+  "e7r:confirm:k=week:tag=MPC-T:c=121": {
+   "base": "3fd2c210108d11087cd27c3bdacaeea885ad70ddb6c4e4097f275135d303c74c"
+  },
+  "e7r:confirm:k=week:tag=BL1:c=122": {
+   "base": "9ac35d2e1c0c60def3bc59c201f2fbb6700b876de61d37d6d2023f975fac0c21"
+  },
+  "e7r:confirm:k=week:tag=BL1-T:c=122": {
+   "base": "9ac35d2e1c0c60def3bc59c201f2fbb6700b876de61d37d6d2023f975fac0c21"
+  },
+  "e7r:confirm:k=week:tag=BL1-W:c=122": {
+   "base": "9ac35d2e1c0c60def3bc59c201f2fbb6700b876de61d37d6d2023f975fac0c21"
+  },
+  "e7r:confirm:k=week:tag=BL2:c=122": {
+   "base": "9ac35d2e1c0c60def3bc59c201f2fbb6700b876de61d37d6d2023f975fac0c21"
+  },
+  "e7r:confirm:k=week:tag=BL2-T:c=122": {
+   "base": "9ac35d2e1c0c60def3bc59c201f2fbb6700b876de61d37d6d2023f975fac0c21"
+  },
+  "e7r:confirm:k=week:tag=BL3-0:c=122": {
+   "base": "9ac35d2e1c0c60def3bc59c201f2fbb6700b876de61d37d6d2023f975fac0c21"
+  },
+  "e7r:confirm:k=week:tag=BL3-T:c=122": {
+   "base": "9ac35d2e1c0c60def3bc59c201f2fbb6700b876de61d37d6d2023f975fac0c21"
+  },
+  "e7r:confirm:k=week:tag=BL3-W:c=122": {
+   "base": "9ac35d2e1c0c60def3bc59c201f2fbb6700b876de61d37d6d2023f975fac0c21"
+  },
+  "e7r:confirm:k=week:tag=BL4:c=122": {
+   "base": "9ac35d2e1c0c60def3bc59c201f2fbb6700b876de61d37d6d2023f975fac0c21"
+  },
+  "e7r:confirm:k=week:tag=BL4-T:c=122": {
+   "base": "9ac35d2e1c0c60def3bc59c201f2fbb6700b876de61d37d6d2023f975fac0c21"
+  },
+  "e7r:confirm:k=week:tag=BL4-W:c=122": {
+   "base": "9ac35d2e1c0c60def3bc59c201f2fbb6700b876de61d37d6d2023f975fac0c21"
+  },
+  "e7r:confirm:k=week:tag=BL5-cur:c=122": {
+   "base": "9ac35d2e1c0c60def3bc59c201f2fbb6700b876de61d37d6d2023f975fac0c21"
+  },
+  "e7r:confirm:k=week:tag=BL5-T:c=122": {
+   "base": "9ac35d2e1c0c60def3bc59c201f2fbb6700b876de61d37d6d2023f975fac0c21"
+  },
+  "e7r:confirm:k=week:tag=BL5-W:c=122": {
+   "base": "9ac35d2e1c0c60def3bc59c201f2fbb6700b876de61d37d6d2023f975fac0c21"
+  },
+  "e7r:confirm:k=week:tag=MPC:c=122": {
+   "base": "9ac35d2e1c0c60def3bc59c201f2fbb6700b876de61d37d6d2023f975fac0c21"
+  },
+  "e7r:confirm:k=week:tag=MPC-T:c=122": {
+   "base": "9ac35d2e1c0c60def3bc59c201f2fbb6700b876de61d37d6d2023f975fac0c21"
+  },
+  "e7r:confirm:k=week:tag=BL1:c=123": {
+   "base": "24616a42895cf41e0be93a8d36a2e2aec15bd8260ca51d45cfabc20481134899"
+  },
+  "e7r:confirm:k=week:tag=BL1-T:c=123": {
+   "base": "24616a42895cf41e0be93a8d36a2e2aec15bd8260ca51d45cfabc20481134899"
+  },
+  "e7r:confirm:k=week:tag=BL1-W:c=123": {
+   "base": "24616a42895cf41e0be93a8d36a2e2aec15bd8260ca51d45cfabc20481134899"
+  },
+  "e7r:confirm:k=week:tag=BL2:c=123": {
+   "base": "24616a42895cf41e0be93a8d36a2e2aec15bd8260ca51d45cfabc20481134899"
+  },
+  "e7r:confirm:k=week:tag=BL2-T:c=123": {
+   "base": "24616a42895cf41e0be93a8d36a2e2aec15bd8260ca51d45cfabc20481134899"
+  },
+  "e7r:confirm:k=week:tag=BL3-0:c=123": {
+   "base": "24616a42895cf41e0be93a8d36a2e2aec15bd8260ca51d45cfabc20481134899"
+  },
+  "e7r:confirm:k=week:tag=BL3-T:c=123": {
+   "base": "24616a42895cf41e0be93a8d36a2e2aec15bd8260ca51d45cfabc20481134899"
+  },
+  "e7r:confirm:k=week:tag=BL3-W:c=123": {
+   "base": "24616a42895cf41e0be93a8d36a2e2aec15bd8260ca51d45cfabc20481134899"
+  },
+  "e7r:confirm:k=week:tag=BL4:c=123": {
+   "base": "24616a42895cf41e0be93a8d36a2e2aec15bd8260ca51d45cfabc20481134899"
+  },
+  "e7r:confirm:k=week:tag=BL4-T:c=123": {
+   "base": "24616a42895cf41e0be93a8d36a2e2aec15bd8260ca51d45cfabc20481134899"
+  },
+  "e7r:confirm:k=week:tag=BL4-W:c=123": {
+   "base": "24616a42895cf41e0be93a8d36a2e2aec15bd8260ca51d45cfabc20481134899"
+  },
+  "e7r:confirm:k=week:tag=BL5-cur:c=123": {
+   "base": "24616a42895cf41e0be93a8d36a2e2aec15bd8260ca51d45cfabc20481134899"
+  },
+  "e7r:confirm:k=week:tag=BL5-T:c=123": {
+   "base": "24616a42895cf41e0be93a8d36a2e2aec15bd8260ca51d45cfabc20481134899"
+  },
+  "e7r:confirm:k=week:tag=BL5-W:c=123": {
+   "base": "24616a42895cf41e0be93a8d36a2e2aec15bd8260ca51d45cfabc20481134899"
+  },
+  "e7r:confirm:k=week:tag=MPC:c=123": {
+   "base": "24616a42895cf41e0be93a8d36a2e2aec15bd8260ca51d45cfabc20481134899"
+  },
+  "e7r:confirm:k=week:tag=MPC-T:c=123": {
+   "base": "24616a42895cf41e0be93a8d36a2e2aec15bd8260ca51d45cfabc20481134899"
+  },
+  "e7r:confirm:k=week:tag=BL1:c=124": {
+   "base": "a26a4b809cc7af9079df39bc0dd9dc5ab9faf988f4f7552d5e713bae5bc0f3a2"
+  },
+  "e7r:confirm:k=week:tag=BL1-T:c=124": {
+   "base": "a26a4b809cc7af9079df39bc0dd9dc5ab9faf988f4f7552d5e713bae5bc0f3a2"
+  },
+  "e7r:confirm:k=week:tag=BL1-W:c=124": {
+   "base": "a26a4b809cc7af9079df39bc0dd9dc5ab9faf988f4f7552d5e713bae5bc0f3a2"
+  },
+  "e7r:confirm:k=week:tag=BL2:c=124": {
+   "base": "a26a4b809cc7af9079df39bc0dd9dc5ab9faf988f4f7552d5e713bae5bc0f3a2"
+  },
+  "e7r:confirm:k=week:tag=BL2-T:c=124": {
+   "base": "a26a4b809cc7af9079df39bc0dd9dc5ab9faf988f4f7552d5e713bae5bc0f3a2"
+  },
+  "e7r:confirm:k=week:tag=BL3-0:c=124": {
+   "base": "a26a4b809cc7af9079df39bc0dd9dc5ab9faf988f4f7552d5e713bae5bc0f3a2"
+  },
+  "e7r:confirm:k=week:tag=BL3-T:c=124": {
+   "base": "a26a4b809cc7af9079df39bc0dd9dc5ab9faf988f4f7552d5e713bae5bc0f3a2"
+  },
+  "e7r:confirm:k=week:tag=BL3-W:c=124": {
+   "base": "a26a4b809cc7af9079df39bc0dd9dc5ab9faf988f4f7552d5e713bae5bc0f3a2"
+  },
+  "e7r:confirm:k=week:tag=BL4:c=124": {
+   "base": "a26a4b809cc7af9079df39bc0dd9dc5ab9faf988f4f7552d5e713bae5bc0f3a2"
+  },
+  "e7r:confirm:k=week:tag=BL4-T:c=124": {
+   "base": "a26a4b809cc7af9079df39bc0dd9dc5ab9faf988f4f7552d5e713bae5bc0f3a2"
+  },
+  "e7r:confirm:k=week:tag=BL4-W:c=124": {
+   "base": "a26a4b809cc7af9079df39bc0dd9dc5ab9faf988f4f7552d5e713bae5bc0f3a2"
+  },
+  "e7r:confirm:k=week:tag=BL5-cur:c=124": {
+   "base": "a26a4b809cc7af9079df39bc0dd9dc5ab9faf988f4f7552d5e713bae5bc0f3a2"
+  },
+  "e7r:confirm:k=week:tag=BL5-T:c=124": {
+   "base": "a26a4b809cc7af9079df39bc0dd9dc5ab9faf988f4f7552d5e713bae5bc0f3a2"
+  },
+  "e7r:confirm:k=week:tag=BL5-W:c=124": {
+   "base": "a26a4b809cc7af9079df39bc0dd9dc5ab9faf988f4f7552d5e713bae5bc0f3a2"
+  },
+  "e7r:confirm:k=week:tag=MPC:c=124": {
+   "base": "a26a4b809cc7af9079df39bc0dd9dc5ab9faf988f4f7552d5e713bae5bc0f3a2"
+  },
+  "e7r:confirm:k=week:tag=MPC-T:c=124": {
+   "base": "a26a4b809cc7af9079df39bc0dd9dc5ab9faf988f4f7552d5e713bae5bc0f3a2"
+  }
+ },
+ "sources_sha256": {
+  "code/sim/sublet/experiments/e7r.py": "b04b446efc3cddc478b3343c039d22b517a456b9247f68b00a60b53d538e4f57",
+  "code/sim/sublet/experiments/ms7_baselines.py": "f74d8fd39b5984daf80d0a8f9148e8e4ab26de145cf9d2097584f3bfad1353c2",
+  "code/sim/sublet/experiments/e7r_select.py": "44dca0ba8ea5e1882c9f69dac6056783228db5362d46ec7484704f888ec2b7da",
+  "code/sim/sublet/experiments/e7r_analysis.py": "1f1dbf42d2ab74fc85aa5763802e2c7fa2c814f0db8b690a67ad4d9ab69f3fbb",
+  "code/sim/sublet/experiments/e7h.py": "e6ea63450ad36e45a32b35442c278bf72cb3bf879ae1033031fc76b52403a078",
+  "code/sim/sublet/experiments/ms5b_common.py": "6ae2f94e94f322f271addcdb3dfc16fffca696a376ad37fca499ba7c0d3ebe84",
+  "code/sim/sublet/baselines/mpc.py": "fab28943bf94327db90f95643cde1aac28a6ae18ae788d65cd46a01ec689c217",
+  "code/sim/sublet/baselines/spothedge.py": "71dac8f94604166c80ad6f7e9e809a1f9a083471b37b3fa70068665d37e59456",
+  "code/sim/sublet/baselines/cocar.py": "ac3aa5951f90af2e989e3869d0c47255494de240695b04efb7a23ff0137c07a7",
+  "code/sim/sublet/baselines/ski.py": "cac53754d5ee105ecb2c4b89f2986dafd1eef1539dcd31802ab6ad1c6a5fd2d0",
+  "code/sim/sublet/baselines/common.py": "87e198c0c104d1dac69af2798a4417aeafb3a79401371630c2e5cd92cab5d7da",
+  "code/sim/sublet/baselines/greedy.py": "e4383ddd6d8430b6bdddf6a621941090b4ebd0f17ae44dea2dd2f6b337ea67eb",
+  "code/sim/sublet/baselines/retrorenting.py": "74253f86406b05bbc31ac086b533501b1e115f1579ec0f7f6c0c36006446cd27",
+  "code/sim/sublet/algos/a9p.py": "fa25f4239b3b4efbc23fd37d8d6a82d389be903481345cfedaf2ef057f8c60a1",
+  "code/sim/sublet/algos/a9.py": "60843cc690083e8a553af4c8e5c8570210fca9b24f1be00f62f0ea4dc3842582",
+  "code/sim/sublet/algos/guard.py": "72c92b01fe0f46ecca11c3ba1bd51bc66ee3605454f3666ea7ad4d612b6abe0f",
+  "code/sim/sublet/algos/online_lb.py": "a52b5800bc2a617783c127e8237a6d52d3950bb154735db19c4be8822f174e8b",
+  "code/sim/sublet/algos/registry.py": "574f0810aca55b7f8e4a0db5716fb4c9aacef2b03f37392d2b6a49dd85d0b9d7",
+  "code/sim/sublet/lender.py": "d5fec8f5530b000af525f80f3768587905be29d164e3704e5c2285f62a43bbf6",
+  "code/sim/sublet/config.py": "7cad8c2f3ea7a4279601206dd570fafad7ce57284c6e088830aa0da2f28bea06",
+  "code/sim/sublet/drivers/run.py": "efbd089a698c51d329d760ad0a436c8fbd397781e8e2a8e2eff2147f6da3cf3a"
+ },
+ "selection": {
+  "path": "out/e7r/tune/selection.json",
+  "sha256": "20a4f944a9e54876b66101037e06f66714a6f98b26d21e6e8f8b11e7096c5747"
+ },
+ "gate": {
+  "ok": true,
+  "reason": "registration at HEAD, clean tree, sha256 of e7r_select.py and e7r_analysis.py as registered",
+  "record": {
+   "head": "44d1b4e42b5be44503039b1b5d6bfba8e32930ff",
+   "registration": "design/ms7/registration.md",
+   "registration_at_head": true,
+   "registration_sha256": "163ff03578ced770f5ded225c058281e32093b613cf2aed29b6e40b6ef094ec8",
+   "files": {
+    "e7r_select.py": {
+     "recorded": "44dca0ba8ea5e1882c9f69dac6056783228db5362d46ec7484704f888ec2b7da",
+     "head": "44dca0ba8ea5e1882c9f69dac6056783228db5362d46ec7484704f888ec2b7da",
+     "disk": "44dca0ba8ea5e1882c9f69dac6056783228db5362d46ec7484704f888ec2b7da"
+    },
+    "e7r_analysis.py": {
+     "recorded": "1f1dbf42d2ab74fc85aa5763802e2c7fa2c814f0db8b690a67ad4d9ab69f3fbb",
+     "head": "1f1dbf42d2ab74fc85aa5763802e2c7fa2c814f0db8b690a67ad4d9ab69f3fbb",
+     "disk": "1f1dbf42d2ab74fc85aa5763802e2c7fa2c814f0db8b690a67ad4d9ab69f3fbb"
+    }
+   },
+   "dirty_paths": []
+  }
+ }
+}

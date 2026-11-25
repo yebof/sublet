@@ -1,0 +1,67 @@
+{
+ "job": "e3:milp:b=32:u=8:mu=1:c=304:part=b14",
+ "kind": "milp",
+ "part": "b14",
+ "borrower": "b14",
+ "b": 32,
+ "u": 8,
+ "mu": 1.0,
+ "c": 304,
+ "cell_job": "e3:cell:b=32:u=8:mu=1:c=304",
+ "instance_hash": "2016fecdc47de258e46bf1e537e515d44c153441e37943a17c84e05d16f9fb4f",
+ "schedule_hash": "176d65ee11766b470dd2347ed00fdd94064c31fb40a2350839b13a0944a2ad18",
+ "method": "milp",
+ "benchmark": "omega",
+ "grid": "slow",
+ "status": 0,
+ "status_msg": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+ "objective": 32.168587099318884,
+ "dual_bound": 32.168587099318884,
+ "gap": 0.0,
+ "size": {
+  "n_vars": 34154,
+  "n_int": 30841,
+  "n_rows": 31672,
+  "nnz": 127980
+ },
+ "build_s": 0.038276289124041796,
+ "solve_s": 15.163320862222463,
+ "peak_rss_mb": 354.234375,
+ "git_revision": "eb76b1602c96ac4f5fae6646085e7a37c04ab1b7",
+ "time_limit_s": 300.0,
+ "mip_rel_gap": 0.0001,
+ "estimate": {
+  "n_vars": 34154,
+  "n_int": 30841,
+  "n_rows": 31672,
+  "nnz": 127980,
+  "est_mb_milp": 745.546,
+  "est_mb_lp": 199.1092
+ },
+ "wall_s": 15.780200299806893,
+ "gate": {
+  "kind": "confirmation",
+  "ok": true,
+  "reason": "pre-registration at HEAD, clean tree, analysis sha256 as recorded",
+  "enforced": true,
+  "confirmation": {
+   "head": "eb76b1602c96ac4f5fae6646085e7a37c04ab1b7",
+   "prereg": "design/sublet_v2_prereg.md",
+   "prereg_at_head": true,
+   "prereg_sha256": "a42316b071e00a7292792cc8d00573fa84c29c36f3dc75e3423c074095aa9923",
+   "analysis_sha256_prereg": "dde0835e12643e95d17f103843f0e8418acf2042ed921dbd9720ddcb7b46992e",
+   "analysis_sha256_head": "dde0835e12643e95d17f103843f0e8418acf2042ed921dbd9720ddcb7b46992e",
+   "analysis_sha256_disk": "dde0835e12643e95d17f103843f0e8418acf2042ed921dbd9720ddcb7b46992e",
+   "dirty_paths": [],
+   "pilot": {
+    "anchor": "a6b242f7a6e9cb5629e49c2d1b10b8b781e5c655",
+    "head": "eb76b1602c96ac4f5fae6646085e7a37c04ab1b7",
+    "anchor_is_ancestor": true,
+    "spec": "design/sublet_v2.md",
+    "spec_sha256_head": "55c08bbb1f624567f5a03da51b023f3d5f0b053d441a023d744386c696b31d9a",
+    "spec_sha256_anchor": "05f7b97ecbcf92840c5c2475fb349d7a89874f64954cad6be538d067ae2b4cda",
+    "sections_changed_since_anchor": []
+   }
+  }
+ }
+}

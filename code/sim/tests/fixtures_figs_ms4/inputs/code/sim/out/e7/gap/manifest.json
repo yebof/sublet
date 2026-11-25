@@ -1,0 +1,209 @@
+{
+ "meta": {
+  "exp": "e7",
+  "git_revision": "939847ca5925ce069d6df9089fe3a3d1d3207bb7",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "scipy": "1.17.1",
+   "sublet": "0.1.0"
+  },
+  "written": "2026-10-26T14:49:20",
+  "script": "code/sim/sublet/experiments/e7.py",
+  "script_sha256": "8c51a9defa4a8bc821e1bf2dae79e759830ea9c857453c204d2ffd06bd96198d"
+ },
+ "jobs": [
+  {
+   "id": "e7:gap_lp:c=1",
+   "kind": "alone",
+   "params": {
+    "part": "gap",
+    "kind": "gap_lp",
+    "c": 1,
+    "horizon_min": 120,
+    "time_limit_s": 1500.0
+   },
+   "est_s": 22.358333333333334,
+   "status": "ok",
+   "wall_s": 2.3297492160927504,
+   "peak_rss_mb": 172.6328125,
+   "runs": 1
+  },
+  {
+   "id": "e7:gap_run:pol=Sublet:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "gap",
+    "kind": "gap_run",
+    "tag": "Sublet",
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 6.558333333333334,
+   "status": "ok",
+   "wall_s": 5.651430530007929,
+   "peak_rss_mb": 144.5390625,
+   "runs": 1
+  },
+  {
+   "id": "e7:gap_run:pol=A7G:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "gap",
+    "kind": "gap_run",
+    "tag": "A7G",
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 7.583333333333334,
+   "status": "ok",
+   "wall_s": 10.401330522960052,
+   "peak_rss_mb": 166.66015625,
+   "runs": 1
+  },
+  {
+   "id": "e7:gap_run:pol=A7:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "gap",
+    "kind": "gap_run",
+    "tag": "A7",
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 6.333333333333333,
+   "status": "ok",
+   "wall_s": 6.3355696049984545,
+   "peak_rss_mb": 161.8828125,
+   "runs": 1
+  },
+  {
+   "id": "e7:gap_run:pol=A6:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "gap",
+    "kind": "gap_run",
+    "tag": "A6",
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 6.066666666666666,
+   "status": "ok",
+   "wall_s": 4.341743994969875,
+   "peak_rss_mb": 144.45703125,
+   "runs": 1
+  },
+  {
+   "id": "e7:gap_run:pol=BL5:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "gap",
+    "kind": "gap_run",
+    "tag": "BL5",
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 6.666666666666667,
+   "status": "ok",
+   "wall_s": 1.5794863069895655,
+   "peak_rss_mb": 143.9765625,
+   "runs": 1
+  },
+  {
+   "id": "e7:gap_run:pol=BL1:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "gap",
+    "kind": "gap_run",
+    "tag": "BL1",
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 6.666666666666667,
+   "status": "ok",
+   "wall_s": 1.4501527801621705,
+   "peak_rss_mb": 144.31640625,
+   "runs": 1
+  },
+  {
+   "id": "e7:gap_run:pol=BL2:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "gap",
+    "kind": "gap_run",
+    "tag": "BL2",
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 6.666666666666667,
+   "status": "ok",
+   "wall_s": 1.6281737938988954,
+   "peak_rss_mb": 144.234375,
+   "runs": 1
+  },
+  {
+   "id": "e7:gap_run:pol=BL4:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "gap",
+    "kind": "gap_run",
+    "tag": "BL4",
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120
+   },
+   "est_s": 6.666666666666667,
+   "status": "ok",
+   "wall_s": 1.813798001036048,
+   "peak_rss_mb": 162.62890625,
+   "runs": 1
+  }
+ ],
+ "instance_hashes": {
+  "gap:c=1": "a0f86222ff0901fd82b63ed7a7e186153147b5fcc708d93369ccadc3e1790b07"
+ },
+ "design": {
+  "reduced": true,
+  "alignments": [
+   1
+  ],
+  "policy_seeds": [
+   0
+  ],
+  "horizon_min": 120,
+  "gap_horizon_min": 120
+ },
+ "parts": [
+  "gap"
+ ],
+ "reduced": true,
+ "B0_rule": "0.1*BL0a",
+ "inputs_sha256": {
+  "code/sim/configs/bench_e7f.json": "c34eee8133082cfe148d314b9209ea3d703c1e110f74c1372e4945cf25f952f0",
+  "code/sim/configs/bench_e7r.json": "d23da7053411ceb465fa3d25c41883aa0ac0f557a503c71410faba63ae3b184e",
+  "code/sim/sublet/experiments/q44_blocks/Q4.json": "ad15dedba6b335a39d4316cc768bc6ecc387478cc46ef09f4a061318d155b58c"
+ }
+}

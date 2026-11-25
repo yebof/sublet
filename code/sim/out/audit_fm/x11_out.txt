@@ -1,0 +1,40 @@
+X11: LB'(t), W_k(t) and B(t) against oracles written from the definition (design/theory/c3_c4_c5_general.md §9, 'Per-group allowance', Lemma G5'(a), 'Relation to the prototype'; audit addendum of step P6 in design/theory/audit_guard.md)
+oracles: oracle_uf (union-find groups, brute-force minima, an exact Fraction variant) and oracle_edge (written separately), against sublet/algos/online_lb.py, x10_g5p_pathwise.lb_prime and the prototype sublet/experiments/ms5b_proto/lb.py; script code/sim/audit/x11_g5p_oracle.py
+instances: (a) 4000 of 4000, exact 60, core 200; (b) 400 of 400 (default); wall time 18 s on one worker
+tolerance: agreement to 1e-12 relative (max(1, |value|)); B, monotonicity and non-anticipation bit for bit; prototype below LB' outside (i)-(iii) iff by more than 1e-09 relative
+
+(a) random full-model instances:
+  instances: 4000
+  kappa_infinite: 1604
+  at least 2 groups: 2087
+  a load-time corner at a group site ((iii) fails): 2743
+  Delta_f not dividing an offered P_k ((ii) fails, zeta < 1): 2328
+  kappa_infinite with a group r >= q ((i) fails): 100
+  (i)-(iii) hold: 516
+  (i)-(iii) fail: 3484
+  prototype differs outside (i)-(iii): 2899
+  W_k entries not bit-equal to the formula: 0
+  max relative differences:
+    online_lb vs oracle_uf: 3.667700e-15
+    x10 lb_prime vs oracle_uf: 5.017282e-15
+    W_k vs formula: 0.000000e+00
+    prototype vs oracle_uf under (i)-(iii): 1.008730e-15
+    oracle_uf float64 vs exact: 9.077943e-16
+    from_core online_lb vs core form: 3.242129e-16
+(b) edge-case instances:
+  instances: 400
+  kappa_infinite: 140
+  an offered P_k = 0: 176
+  an offered P_k not a multiple of Delta_f: 211
+  a tie q (d - floor d) = r: 26
+  a group with r >= q: 17
+  the corner at 0 at a group site: 174
+  a load-time corner at a group site: 300
+  two LLMs with groups sharing a site: 107
+  a client without a usable arc: 90
+  max relative differences:
+    online_lb vs oracle_edge: 1.378208e-15
+    oracle_uf vs oracle_edge: 1.378208e-15
+    x10 lb_prime vs oracle_edge: 1.164117e-15
+failures by kind: none
+failures: 0, errors: 0

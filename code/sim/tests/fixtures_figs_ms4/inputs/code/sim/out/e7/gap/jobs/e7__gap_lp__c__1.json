@@ -1,0 +1,55 @@
+{
+ "job": "e7:gap_lp:c=1",
+ "exp": "e7",
+ "kind": "alone",
+ "params": {
+  "part": "gap",
+  "kind": "gap_lp",
+  "c": 1,
+  "horizon_min": 120,
+  "time_limit_s": 1500.0
+ },
+ "status": "ok",
+ "started": "2026-10-26T14:32:25",
+ "pid": 962428,
+ "argv": [
+  "/work/ms4wt/u25/code/sim/sublet/experiments/e7.py",
+  "--job",
+  "e7:gap_lp:c=1",
+  "--out",
+  "/work/ms4u/u25scratch/fixture_roots/e7/out/e7/gap"
+ ],
+ "slots": [
+  "slot0"
+ ],
+ "milp_limit_s": null,
+ "git_revision": "939847ca5925ce069d6df9089fe3a3d1d3207bb7",
+ "versions": {
+  "python": "3.12.3",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "sublet": "0.1.0"
+ },
+ "runs": 1,
+ "errors": [],
+ "n_errors": 0,
+ "outputs": [
+  "lb/lp_c1.json",
+  "runs/e7__gap_lp__c__1.json"
+ ],
+ "result": {
+  "status": 0,
+  "objective": 831.7605767161778,
+  "instance_hash": "a0f86222ff0901fd82b63ed7a7e186153147b5fcc708d93369ccadc3e1790b07",
+  "schedule_hash": "ff9a5316fc5801390393dafd58273884acde7763b60e1949ddfcda4bdefd762c",
+  "n_vars": 21114,
+  "nnz": 84390,
+  "solve_s": 0.836113675031811,
+  "bl0a_engine_usd": 1808.8874224881097,
+  "bl0a_analytic_usd": 1808.8874224881097
+ },
+ "wall_s": 2.3297492160927504,
+ "peak_rss_kb": 176776,
+ "peak_rss_mb": 172.6328125,
+ "finished": "2026-10-26T14:32:28"
+}

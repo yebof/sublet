@@ -1,0 +1,1881 @@
+{
+ "meta": {
+  "exp": "e5",
+  "git_revision": "939847ca5925ce069d6df9089fe3a3d1d3207bb7",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "scipy": "1.17.1",
+   "sublet": "0.1.0"
+  },
+  "written": "2026-10-26T14:31:22",
+  "script": "code/sim/sublet/experiments/e5.py",
+  "script_sha256": "048947569465fe072bb973d1c0125a8536fa841517699dcfad6b2e07404209ba"
+ },
+ "jobs": [
+  {
+   "id": "e5:run:level=trace:menu=short:pol=A6-off:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "trace",
+    "menu": "short",
+    "tag": "A6-off",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 13.657142857142855,
+   "status": "ok",
+   "wall_s": 11.899497097823769,
+   "peak_rss_mb": 169.51171875,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=trace:menu=short:pol=A6-rule:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "trace",
+    "menu": "short",
+    "tag": "A6-rule",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 13.657142857142855,
+   "status": "ok",
+   "wall_s": 11.227938330033794,
+   "peak_rss_mb": 170.078125,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=trace:menu=short:pol=A6-always2:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "trace",
+    "menu": "short",
+    "tag": "A6-always2",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 13.657142857142855,
+   "status": "ok",
+   "wall_s": 11.746845131972805,
+   "peak_rss_mb": 169.37109375,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=trace:menu=short:pol=BL3-0:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "trace",
+    "menu": "short",
+    "tag": "BL3-0",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 4.085714285714285,
+   "status": "ok",
+   "wall_s": 3.1038589640520513,
+   "peak_rss_mb": 141.30859375,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=trace:menu=short:pol=BL3-1:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "trace",
+    "menu": "short",
+    "tag": "BL3-1",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 4.085714285714285,
+   "status": "ok",
+   "wall_s": 3.514660133048892,
+   "peak_rss_mb": 141.6171875,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=trace:menu=short:pol=BL3-2:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "trace",
+    "menu": "short",
+    "tag": "BL3-2",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 4.085714285714285,
+   "status": "ok",
+   "wall_s": 3.8136260248720646,
+   "peak_rss_mb": 140.5390625,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=trace:menu=short:pol=Sublet:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "trace",
+    "menu": "short",
+    "tag": "Sublet",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 20.028571428571425,
+   "status": "ok",
+   "wall_s": 19.101159133017063,
+   "peak_rss_mb": 175.8359375,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=trace:menu=long:pol=A6-off:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "trace",
+    "menu": "long",
+    "tag": "A6-off",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 13.657142857142855,
+   "status": "ok",
+   "wall_s": 10.01511417911388,
+   "peak_rss_mb": 141.625,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=trace:menu=long:pol=A6-rule:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "trace",
+    "menu": "long",
+    "tag": "A6-rule",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 13.657142857142855,
+   "status": "ok",
+   "wall_s": 10.289263943908736,
+   "peak_rss_mb": 141.609375,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=trace:menu=long:pol=A6-always2:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "trace",
+    "menu": "long",
+    "tag": "A6-always2",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 13.657142857142855,
+   "status": "ok",
+   "wall_s": 10.227462189039215,
+   "peak_rss_mb": 141.62109375,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=trace:menu=long:pol=BL3-0:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "trace",
+    "menu": "long",
+    "tag": "BL3-0",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 4.085714285714285,
+   "status": "ok",
+   "wall_s": 3.768669115146622,
+   "peak_rss_mb": 141.44140625,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=trace:menu=long:pol=BL3-1:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "trace",
+    "menu": "long",
+    "tag": "BL3-1",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 4.085714285714285,
+   "status": "ok",
+   "wall_s": 4.047626449959353,
+   "peak_rss_mb": 142.0390625,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=trace:menu=long:pol=BL3-2:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "trace",
+    "menu": "long",
+    "tag": "BL3-2",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 4.085714285714285,
+   "status": "ok",
+   "wall_s": 4.057863656198606,
+   "peak_rss_mb": 141.51953125,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=trace:menu=long:pol=Sublet:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "trace",
+    "menu": "long",
+    "tag": "Sublet",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 20.028571428571425,
+   "status": "ok",
+   "wall_s": 18.33884979202412,
+   "peak_rss_mb": 143.5546875,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=sh0.25:menu=short:pol=A6-off:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "sh0.25",
+    "menu": "short",
+    "tag": "A6-off",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 13.657142857142855,
+   "status": "ok",
+   "wall_s": 11.620481433114037,
+   "peak_rss_mb": 169.33984375,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=sh0.25:menu=short:pol=A6-rule:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "sh0.25",
+    "menu": "short",
+    "tag": "A6-rule",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 13.657142857142855,
+   "status": "ok",
+   "wall_s": 11.5814384710975,
+   "peak_rss_mb": 169.796875,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=sh0.25:menu=short:pol=A6-always2:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "sh0.25",
+    "menu": "short",
+    "tag": "A6-always2",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 13.657142857142855,
+   "status": "ok",
+   "wall_s": 11.687469239113852,
+   "peak_rss_mb": 170.46484375,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=sh0.25:menu=short:pol=BL3-0:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "sh0.25",
+    "menu": "short",
+    "tag": "BL3-0",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 4.085714285714285,
+   "status": "ok",
+   "wall_s": 3.323970512021333,
+   "peak_rss_mb": 140.54296875,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=sh0.25:menu=short:pol=BL3-1:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "sh0.25",
+    "menu": "short",
+    "tag": "BL3-1",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 4.085714285714285,
+   "status": "ok",
+   "wall_s": 3.465869071893394,
+   "peak_rss_mb": 141.3984375,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=sh0.25:menu=short:pol=BL3-2:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "sh0.25",
+    "menu": "short",
+    "tag": "BL3-2",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 4.085714285714285,
+   "status": "ok",
+   "wall_s": 3.7176033640280366,
+   "peak_rss_mb": 141.390625,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=sh0.25:menu=short:pol=Sublet:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "sh0.25",
+    "menu": "short",
+    "tag": "Sublet",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 20.028571428571425,
+   "status": "ok",
+   "wall_s": 20.218481610063463,
+   "peak_rss_mb": 175.3203125,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=sh0.25:menu=long:pol=A6-off:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "sh0.25",
+    "menu": "long",
+    "tag": "A6-off",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 13.657142857142855,
+   "status": "ok",
+   "wall_s": 10.6139934619423,
+   "peak_rss_mb": 142.03515625,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=sh0.25:menu=long:pol=A6-rule:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "sh0.25",
+    "menu": "long",
+    "tag": "A6-rule",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 13.657142857142855,
+   "status": "ok",
+   "wall_s": 10.244262754917145,
+   "peak_rss_mb": 141.10546875,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=sh0.25:menu=long:pol=A6-always2:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "sh0.25",
+    "menu": "long",
+    "tag": "A6-always2",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 13.657142857142855,
+   "status": "ok",
+   "wall_s": 10.008669435977936,
+   "peak_rss_mb": 141.66015625,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=sh0.25:menu=long:pol=BL3-0:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "sh0.25",
+    "menu": "long",
+    "tag": "BL3-0",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 4.085714285714285,
+   "status": "ok",
+   "wall_s": 3.7840195689350367,
+   "peak_rss_mb": 142.44140625,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=sh0.25:menu=long:pol=BL3-1:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "sh0.25",
+    "menu": "long",
+    "tag": "BL3-1",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 4.085714285714285,
+   "status": "ok",
+   "wall_s": 4.180749920895323,
+   "peak_rss_mb": 142.30859375,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=sh0.25:menu=long:pol=BL3-2:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "sh0.25",
+    "menu": "long",
+    "tag": "BL3-2",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 4.085714285714285,
+   "status": "ok",
+   "wall_s": 4.19429880194366,
+   "peak_rss_mb": 142.375,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=sh0.25:menu=long:pol=Sublet:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "sh0.25",
+    "menu": "long",
+    "tag": "Sublet",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 20.028571428571425,
+   "status": "ok",
+   "wall_s": 18.334395012119785,
+   "peak_rss_mb": 143.65234375,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=sh0.5:menu=short:pol=A6-off:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "sh0.5",
+    "menu": "short",
+    "tag": "A6-off",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 13.657142857142855,
+   "status": "ok",
+   "wall_s": 11.784616770921275,
+   "peak_rss_mb": 168.578125,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=sh0.5:menu=short:pol=A6-rule:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "sh0.5",
+    "menu": "short",
+    "tag": "A6-rule",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 13.657142857142855,
+   "status": "ok",
+   "wall_s": 11.675617369124666,
+   "peak_rss_mb": 169.8828125,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=sh0.5:menu=short:pol=A6-always2:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "sh0.5",
+    "menu": "short",
+    "tag": "A6-always2",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 13.657142857142855,
+   "status": "ok",
+   "wall_s": 11.620677282102406,
+   "peak_rss_mb": 169.875,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=sh0.5:menu=short:pol=BL3-0:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "sh0.5",
+    "menu": "short",
+    "tag": "BL3-0",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 4.085714285714285,
+   "status": "ok",
+   "wall_s": 3.2832226720638573,
+   "peak_rss_mb": 141.38671875,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=sh0.5:menu=short:pol=BL3-1:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "sh0.5",
+    "menu": "short",
+    "tag": "BL3-1",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 4.085714285714285,
+   "status": "ok",
+   "wall_s": 3.47717166505754,
+   "peak_rss_mb": 140.9375,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=sh0.5:menu=short:pol=BL3-2:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "sh0.5",
+    "menu": "short",
+    "tag": "BL3-2",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 4.085714285714285,
+   "status": "ok",
+   "wall_s": 3.7097711169626564,
+   "peak_rss_mb": 141.59765625,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=sh0.5:menu=short:pol=Sublet:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "sh0.5",
+    "menu": "short",
+    "tag": "Sublet",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 20.028571428571425,
+   "status": "ok",
+   "wall_s": 20.313752338988706,
+   "peak_rss_mb": 177.63671875,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=sh0.5:menu=long:pol=A6-off:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "sh0.5",
+    "menu": "long",
+    "tag": "A6-off",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 13.657142857142855,
+   "status": "ok",
+   "wall_s": 10.20513233798556,
+   "peak_rss_mb": 141.55859375,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=sh0.5:menu=long:pol=A6-rule:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "sh0.5",
+    "menu": "long",
+    "tag": "A6-rule",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 13.657142857142855,
+   "status": "ok",
+   "wall_s": 10.091531148878857,
+   "peak_rss_mb": 141.03515625,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=sh0.5:menu=long:pol=A6-always2:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "sh0.5",
+    "menu": "long",
+    "tag": "A6-always2",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 13.657142857142855,
+   "status": "ok",
+   "wall_s": 10.172422321047634,
+   "peak_rss_mb": 141.984375,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=sh0.5:menu=long:pol=BL3-0:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "sh0.5",
+    "menu": "long",
+    "tag": "BL3-0",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 4.085714285714285,
+   "status": "ok",
+   "wall_s": 3.8393309500534087,
+   "peak_rss_mb": 141.30859375,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=sh0.5:menu=long:pol=BL3-1:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "sh0.5",
+    "menu": "long",
+    "tag": "BL3-1",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 4.085714285714285,
+   "status": "ok",
+   "wall_s": 4.124907702906057,
+   "peak_rss_mb": 141.81640625,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=sh0.5:menu=long:pol=BL3-2:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "sh0.5",
+    "menu": "long",
+    "tag": "BL3-2",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 4.085714285714285,
+   "status": "ok",
+   "wall_s": 4.104535293066874,
+   "peak_rss_mb": 141.765625,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=sh0.5:menu=long:pol=Sublet:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "sh0.5",
+    "menu": "long",
+    "tag": "Sublet",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 20.028571428571425,
+   "status": "ok",
+   "wall_s": 18.809901032829657,
+   "peak_rss_mb": 143.53515625,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=sh1:menu=short:pol=A6-off:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "sh1",
+    "menu": "short",
+    "tag": "A6-off",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 13.657142857142855,
+   "status": "ok",
+   "wall_s": 11.623164389980957,
+   "peak_rss_mb": 169.375,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=sh1:menu=short:pol=A6-rule:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "sh1",
+    "menu": "short",
+    "tag": "A6-rule",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 13.657142857142855,
+   "status": "ok",
+   "wall_s": 11.905281707877293,
+   "peak_rss_mb": 168.609375,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=sh1:menu=short:pol=A6-always2:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "sh1",
+    "menu": "short",
+    "tag": "A6-always2",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 13.657142857142855,
+   "status": "ok",
+   "wall_s": 11.771768050966784,
+   "peak_rss_mb": 169.98828125,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=sh1:menu=short:pol=BL3-0:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "sh1",
+    "menu": "short",
+    "tag": "BL3-0",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 4.085714285714285,
+   "status": "ok",
+   "wall_s": 3.310566707048565,
+   "peak_rss_mb": 141.11328125,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=sh1:menu=short:pol=BL3-1:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "sh1",
+    "menu": "short",
+    "tag": "BL3-1",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 4.085714285714285,
+   "status": "ok",
+   "wall_s": 3.6976252109743655,
+   "peak_rss_mb": 141.46484375,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=sh1:menu=short:pol=BL3-2:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "sh1",
+    "menu": "short",
+    "tag": "BL3-2",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 4.085714285714285,
+   "status": "ok",
+   "wall_s": 3.633460930082947,
+   "peak_rss_mb": 141.1171875,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=sh1:menu=short:pol=Sublet:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "sh1",
+    "menu": "short",
+    "tag": "Sublet",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 20.028571428571425,
+   "status": "ok",
+   "wall_s": 19.337078202981502,
+   "peak_rss_mb": 175.80859375,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=sh1:menu=long:pol=A6-off:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "sh1",
+    "menu": "long",
+    "tag": "A6-off",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 13.657142857142855,
+   "status": "ok",
+   "wall_s": 10.144016760867089,
+   "peak_rss_mb": 141.37109375,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=sh1:menu=long:pol=A6-rule:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "sh1",
+    "menu": "long",
+    "tag": "A6-rule",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 13.657142857142855,
+   "status": "ok",
+   "wall_s": 10.090044589014724,
+   "peak_rss_mb": 142.0390625,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=sh1:menu=long:pol=A6-always2:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "sh1",
+    "menu": "long",
+    "tag": "A6-always2",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 13.657142857142855,
+   "status": "ok",
+   "wall_s": 10.369589956011623,
+   "peak_rss_mb": 141.19921875,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=sh1:menu=long:pol=BL3-0:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "sh1",
+    "menu": "long",
+    "tag": "BL3-0",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 4.085714285714285,
+   "status": "ok",
+   "wall_s": 3.8887826951686293,
+   "peak_rss_mb": 142.328125,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=sh1:menu=long:pol=BL3-1:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "sh1",
+    "menu": "long",
+    "tag": "BL3-1",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 4.085714285714285,
+   "status": "ok",
+   "wall_s": 4.346338385948911,
+   "peak_rss_mb": 141.8203125,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=sh1:menu=long:pol=BL3-2:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "sh1",
+    "menu": "long",
+    "tag": "BL3-2",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 4.085714285714285,
+   "status": "ok",
+   "wall_s": 4.2230844451114535,
+   "peak_rss_mb": 141.1328125,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=sh1:menu=long:pol=Sublet:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "sh1",
+    "menu": "long",
+    "tag": "Sublet",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 20.028571428571425,
+   "status": "ok",
+   "wall_s": 18.493880960857496,
+   "peak_rss_mb": 143.74609375,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=all1:menu=short:pol=A6-off:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "all1",
+    "menu": "short",
+    "tag": "A6-off",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 13.657142857142855,
+   "status": "ok",
+   "wall_s": 11.29211745900102,
+   "peak_rss_mb": 170.78125,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=all1:menu=short:pol=A6-rule:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "all1",
+    "menu": "short",
+    "tag": "A6-rule",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 13.657142857142855,
+   "status": "ok",
+   "wall_s": 11.260299231857061,
+   "peak_rss_mb": 168.46875,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=all1:menu=short:pol=A6-always2:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "all1",
+    "menu": "short",
+    "tag": "A6-always2",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 13.657142857142855,
+   "status": "ok",
+   "wall_s": 11.76101784594357,
+   "peak_rss_mb": 168.69140625,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=all1:menu=short:pol=BL3-0:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "all1",
+    "menu": "short",
+    "tag": "BL3-0",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 20.028571428571425,
+   "status": "ok",
+   "wall_s": 4.491464007180184,
+   "peak_rss_mb": 146.32421875,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=all1:menu=short:pol=BL3-1:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "all1",
+    "menu": "short",
+    "tag": "BL3-1",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 20.028571428571425,
+   "status": "ok",
+   "wall_s": 5.860098324948922,
+   "peak_rss_mb": 156.703125,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=all1:menu=short:pol=BL3-2:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "all1",
+    "menu": "short",
+    "tag": "BL3-2",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 20.028571428571425,
+   "status": "ok",
+   "wall_s": 7.5080041768960655,
+   "peak_rss_mb": 169.421875,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=all1:menu=short:pol=Sublet:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "all1",
+    "menu": "short",
+    "tag": "Sublet",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 20.028571428571425,
+   "status": "ok",
+   "wall_s": 18.681639434071258,
+   "peak_rss_mb": 176.84765625,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=all1:menu=long:pol=A6-off:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "all1",
+    "menu": "long",
+    "tag": "A6-off",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 13.657142857142855,
+   "status": "ok",
+   "wall_s": 9.920127460034564,
+   "peak_rss_mb": 142.046875,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=all1:menu=long:pol=A6-rule:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "all1",
+    "menu": "long",
+    "tag": "A6-rule",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 13.657142857142855,
+   "status": "ok",
+   "wall_s": 10.561391338007525,
+   "peak_rss_mb": 141.52734375,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=all1:menu=long:pol=A6-always2:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "all1",
+    "menu": "long",
+    "tag": "A6-always2",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 13.657142857142855,
+   "status": "ok",
+   "wall_s": 10.504327283008024,
+   "peak_rss_mb": 141.328125,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=all1:menu=long:pol=BL3-0:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "all1",
+    "menu": "long",
+    "tag": "BL3-0",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 20.028571428571425,
+   "status": "ok",
+   "wall_s": 7.548250781139359,
+   "peak_rss_mb": 143.53125,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=all1:menu=long:pol=BL3-1:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "all1",
+    "menu": "long",
+    "tag": "BL3-1",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 20.028571428571425,
+   "status": "ok",
+   "wall_s": 12.63914924301207,
+   "peak_rss_mb": 153.63671875,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=all1:menu=long:pol=BL3-2:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "all1",
+    "menu": "long",
+    "tag": "BL3-2",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 20.028571428571425,
+   "status": "ok",
+   "wall_s": 21.271299900952727,
+   "peak_rss_mb": 162.07421875,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=all1:menu=long:pol=Sublet:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "all1",
+    "menu": "long",
+    "tag": "Sublet",
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 20.028571428571425,
+   "status": "ok",
+   "wall_s": 16.967007528059185,
+   "peak_rss_mb": 143.51171875,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=trace:menu=short:pol=A6-off:mu=0.2:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "trace",
+    "menu": "short",
+    "tag": "A6-off",
+    "mu": 0.2,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 13.657142857142855,
+   "status": "ok",
+   "wall_s": 10.724432958988473,
+   "peak_rss_mb": 168.859375,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=trace:menu=short:pol=A6-rule:mu=0.2:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "trace",
+    "menu": "short",
+    "tag": "A6-rule",
+    "mu": 0.2,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 13.657142857142855,
+   "status": "ok",
+   "wall_s": 10.861097987974063,
+   "peak_rss_mb": 169.42578125,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=trace:menu=short:pol=A6-always2:mu=0.2:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "trace",
+    "menu": "short",
+    "tag": "A6-always2",
+    "mu": 0.2,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 13.657142857142855,
+   "status": "ok",
+   "wall_s": 11.612296452978626,
+   "peak_rss_mb": 169.42578125,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=trace:menu=short:pol=BL3-0:mu=0.2:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "trace",
+    "menu": "short",
+    "tag": "BL3-0",
+    "mu": 0.2,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 4.085714285714285,
+   "status": "ok",
+   "wall_s": 3.0976787579711527,
+   "peak_rss_mb": 140.24609375,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=trace:menu=short:pol=BL3-1:mu=0.2:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "trace",
+    "menu": "short",
+    "tag": "BL3-1",
+    "mu": 0.2,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 4.085714285714285,
+   "status": "ok",
+   "wall_s": 3.2155665250029415,
+   "peak_rss_mb": 141.375,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=trace:menu=short:pol=BL3-2:mu=0.2:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "trace",
+    "menu": "short",
+    "tag": "BL3-2",
+    "mu": 0.2,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 4.085714285714285,
+   "status": "ok",
+   "wall_s": 3.3464210340753198,
+   "peak_rss_mb": 141.02734375,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=trace:menu=short:pol=Sublet:mu=0.2:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "trace",
+    "menu": "short",
+    "tag": "Sublet",
+    "mu": 0.2,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 20.028571428571425,
+   "status": "ok",
+   "wall_s": 18.834269274957478,
+   "peak_rss_mb": 175.59765625,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=trace:menu=short:pol=A6-off:mu=0.5:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "trace",
+    "menu": "short",
+    "tag": "A6-off",
+    "mu": 0.5,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 13.657142857142855,
+   "status": "ok",
+   "wall_s": 11.198432537028566,
+   "peak_rss_mb": 168.875,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=trace:menu=short:pol=A6-rule:mu=0.5:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "trace",
+    "menu": "short",
+    "tag": "A6-rule",
+    "mu": 0.5,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 13.657142857142855,
+   "status": "ok",
+   "wall_s": 10.885238331975415,
+   "peak_rss_mb": 169.84375,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=trace:menu=short:pol=A6-always2:mu=0.5:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "trace",
+    "menu": "short",
+    "tag": "A6-always2",
+    "mu": 0.5,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 13.657142857142855,
+   "status": "ok",
+   "wall_s": 10.749644359806553,
+   "peak_rss_mb": 169.84375,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=trace:menu=short:pol=BL3-0:mu=0.5:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "trace",
+    "menu": "short",
+    "tag": "BL3-0",
+    "mu": 0.5,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 4.085714285714285,
+   "status": "ok",
+   "wall_s": 2.9696856720838696,
+   "peak_rss_mb": 141.38671875,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=trace:menu=short:pol=BL3-1:mu=0.5:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "trace",
+    "menu": "short",
+    "tag": "BL3-1",
+    "mu": 0.5,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 4.085714285714285,
+   "status": "ok",
+   "wall_s": 3.1114878149237484,
+   "peak_rss_mb": 141.0234375,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=trace:menu=short:pol=BL3-2:mu=0.5:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "trace",
+    "menu": "short",
+    "tag": "BL3-2",
+    "mu": 0.5,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 4.085714285714285,
+   "status": "ok",
+   "wall_s": 3.276139446068555,
+   "peak_rss_mb": 141.08203125,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=trace:menu=short:pol=Sublet:mu=0.5:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "trace",
+    "menu": "short",
+    "tag": "Sublet",
+    "mu": 0.5,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 20.028571428571425,
+   "status": "ok",
+   "wall_s": 18.537720527034253,
+   "peak_rss_mb": 176.6328125,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=trace:menu=short:pol=A6-off:mu=2:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "trace",
+    "menu": "short",
+    "tag": "A6-off",
+    "mu": 2.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 13.657142857142855,
+   "status": "ok",
+   "wall_s": 10.830515538807958,
+   "peak_rss_mb": 168.1875,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=trace:menu=short:pol=A6-rule:mu=2:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "trace",
+    "menu": "short",
+    "tag": "A6-rule",
+    "mu": 2.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 13.657142857142855,
+   "status": "ok",
+   "wall_s": 10.811389374081045,
+   "peak_rss_mb": 167.0625,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=trace:menu=short:pol=A6-always2:mu=2:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "trace",
+    "menu": "short",
+    "tag": "A6-always2",
+    "mu": 2.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 13.657142857142855,
+   "status": "ok",
+   "wall_s": 10.9534024130553,
+   "peak_rss_mb": 169.0078125,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=trace:menu=short:pol=BL3-0:mu=2:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "trace",
+    "menu": "short",
+    "tag": "BL3-0",
+    "mu": 2.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 4.085714285714285,
+   "status": "ok",
+   "wall_s": 2.8926359568722546,
+   "peak_rss_mb": 140.91015625,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=trace:menu=short:pol=BL3-1:mu=2:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "trace",
+    "menu": "short",
+    "tag": "BL3-1",
+    "mu": 2.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 4.085714285714285,
+   "status": "ok",
+   "wall_s": 3.1851169569417834,
+   "peak_rss_mb": 141.90625,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=trace:menu=short:pol=BL3-2:mu=2:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "trace",
+    "menu": "short",
+    "tag": "BL3-2",
+    "mu": 2.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 4.085714285714285,
+   "status": "ok",
+   "wall_s": 3.4647802461404353,
+   "peak_rss_mb": 141.234375,
+   "runs": 1
+  },
+  {
+   "id": "e5:run:level=trace:menu=short:pol=Sublet:mu=2:c=1",
+   "kind": "pool",
+   "params": {
+    "level": "trace",
+    "menu": "short",
+    "tag": "Sublet",
+    "mu": 2.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 1440
+   },
+   "est_s": 20.028571428571425,
+   "status": "ok",
+   "wall_s": 19.41160787292756,
+   "peak_rss_mb": 176.7890625,
+   "runs": 1
+  }
+ ],
+ "instance_hashes": {
+  "menu=long:mu=1:c=1": {
+   "instance_hash": "f1cfa56744dbfbfccd26ab768c39e21994663d262727d9fe280d6c44b9963526",
+   "demand_sha256": "60a6a2ad7d26b76d1e922dafa68141e5a73d6bdf3de715d12846150c7e666058",
+   "bl0a_usd": 6762.294354963841
+  },
+  "menu=short:mu=0.2:c=1": {
+   "instance_hash": "b4fe5279bf544631bd485a7eaf9c04857b2553171e829bc5f23bddc0d940ad7e",
+   "demand_sha256": "60a6a2ad7d26b76d1e922dafa68141e5a73d6bdf3de715d12846150c7e666058",
+   "bl0a_usd": 6762.294354963841
+  },
+  "menu=short:mu=0.5:c=1": {
+   "instance_hash": "2f5661f504b9404a66b13b17a7482dc619b069624939666fe888796c2a38b8c4",
+   "demand_sha256": "60a6a2ad7d26b76d1e922dafa68141e5a73d6bdf3de715d12846150c7e666058",
+   "bl0a_usd": 6762.294354963841
+  },
+  "menu=short:mu=1:c=1": {
+   "instance_hash": "c9cd1dfda2f8c7e0adc84f377db01d53ebb1b9c534538c2a1a4c9b366cf947c6",
+   "demand_sha256": "60a6a2ad7d26b76d1e922dafa68141e5a73d6bdf3de715d12846150c7e666058",
+   "bl0a_usd": 6762.294354963841
+  },
+  "menu=short:mu=2:c=1": {
+   "instance_hash": "4bdc7bb8a85587dbd48d7fdb9d49bd8e9e33451cdcf22f5eae2bceb1a20a294d",
+   "demand_sha256": "60a6a2ad7d26b76d1e922dafa68141e5a73d6bdf3de715d12846150c7e666058",
+   "bl0a_usd": 6762.294354963841
+  }
+ },
+ "settings": {
+  "reduced": true,
+  "alignments": [
+   1
+  ],
+  "policy_seeds": [
+   0
+  ],
+  "horizon_min": 1440
+ },
+ "inputs_sha256": {
+  "code/sim/configs/bench_e7r.json": "d23da7053411ceb465fa3d25c41883aa0ac0f557a503c71410faba63ae3b184e",
+  "code/analysis/out/a11_calibration.json": "2575d4ce7e15244a1a75641e8fe55a7249c8703e1fa166cb9f6af87041544a58",
+  "code/analysis/out/a12_sim_inputs.json": "ab8ba5e607aa4a896d1daf23973fa9d6acc16362705973f5eeaf2b517e540377",
+  "code/analysis/out/a12_minute_io.npz": "7a2d61df69c77080f2be11e12cdb3cce82243524d247f75a037042738240f208",
+  "code/analysis/out/a5b_exposure_thresholds.json": "02d7cf87d656d79568a692c83963d3eb97c07811df2c9aeeb223ba0376f39eb3"
+ }
+}

@@ -1,0 +1,26 @@
+{
+ "meta": {
+  "script": "code/sim/figs/ms6_eval_extract.py",
+  "sources": {
+   "code/sim/out/sublet_v2/main/summary.json": "83389fc94372dd69b3b1402e87be93b7506da4ac398d100cbbeb535de219142c",
+   "code/sim/out/sublet_v2/analysis.json": "7976cbaf17589e67a0fba0f14663015e47ea2df76d1b6aa2381be6b281ec60eb"
+  },
+  "note": "review D5 finding R10; over the week runs of the confirmation's part main"
+ },
+ "projection": {
+  "sublet_runs": 112,
+  "runs_projected": 42,
+  "slots_total": 137,
+  "slots_min": 1,
+  "slots_max": 10,
+  "oneway_aborts": 42,
+  "same_as_oneway_aborts": true
+ },
+ "price": {
+  "definition": "r0(Sublet) - r0(A9) per (week, mode), modes other than L-hon",
+  "n": 96,
+  "min": -0.003044892639422203,
+  "max": 0.005373124826971498,
+  "n_nonzero": 36
+ }
+}

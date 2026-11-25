@@ -1,0 +1,2628 @@
+{
+ "meta": {
+  "exp": "e8",
+  "git_revision": "939847ca5925ce069d6df9089fe3a3d1d3207bb7",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "scipy": "1.17.1",
+   "sublet": "0.1.0"
+  },
+  "written": "2026-10-27T05:10:18",
+  "script": "code/sim/sublet/experiments/e8.py",
+  "script_sha256": "b521ea9bdf7359247205275d1bc251924b757398d8427475ce869967812355bb"
+ },
+ "jobs": [
+  {
+   "id": "e8:requests",
+   "kind": "pool",
+   "params": {
+    "kind": "requests",
+    "horizon_min": 10080
+   },
+   "est_s": 54.0,
+   "status": "ok",
+   "wall_s": 57.91020871303044,
+   "peak_rss_mb": 1464.96875,
+   "runs": 0
+  },
+  {
+   "id": "e8:pair:tier=S:win=60:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "S",
+    "win": 60,
+    "mu": 1.0,
+    "c": 1
+   },
+   "est_s": 148.3,
+   "status": "ok",
+   "wall_s": 144.3659157040529,
+   "peak_rss_mb": 981.16796875,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=S:win=60:mu=1:c=2",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "S",
+    "win": 60,
+    "mu": 1.0,
+    "c": 2
+   },
+   "est_s": 148.3,
+   "status": "ok",
+   "wall_s": 145.2865061268676,
+   "peak_rss_mb": 982.75390625,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=S:win=60:mu=1:c=3",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "S",
+    "win": 60,
+    "mu": 1.0,
+    "c": 3
+   },
+   "est_s": 148.3,
+   "status": "ok",
+   "wall_s": 144.22566788899712,
+   "peak_rss_mb": 980.9609375,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=S:win=60:mu=1:c=4",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "S",
+    "win": 60,
+    "mu": 1.0,
+    "c": 4
+   },
+   "est_s": 148.3,
+   "status": "ok",
+   "wall_s": 150.71926652407274,
+   "peak_rss_mb": 981.1171875,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=S:win=60:mu=0.2:c=1",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "S",
+    "win": 60,
+    "mu": 0.2,
+    "c": 1
+   },
+   "est_s": 148.3,
+   "status": "ok",
+   "wall_s": 147.61237392597832,
+   "peak_rss_mb": 980.85546875,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=S:win=60:mu=0.2:c=2",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "S",
+    "win": 60,
+    "mu": 0.2,
+    "c": 2
+   },
+   "est_s": 148.3,
+   "status": "ok",
+   "wall_s": 146.6963217491284,
+   "peak_rss_mb": 983.90234375,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=S:win=60:mu=0.2:c=3",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "S",
+    "win": 60,
+    "mu": 0.2,
+    "c": 3
+   },
+   "est_s": 148.3,
+   "status": "ok",
+   "wall_s": 143.51888508396223,
+   "peak_rss_mb": 980.44921875,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=S:win=60:mu=0.2:c=4",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "S",
+    "win": 60,
+    "mu": 0.2,
+    "c": 4
+   },
+   "est_s": 148.3,
+   "status": "ok",
+   "wall_s": 148.40947079006582,
+   "peak_rss_mb": 982.1015625,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=S:win=60:mu=0.5:c=1",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "S",
+    "win": 60,
+    "mu": 0.5,
+    "c": 1
+   },
+   "est_s": 148.3,
+   "status": "ok",
+   "wall_s": 146.12521045398898,
+   "peak_rss_mb": 982.5234375,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=S:win=60:mu=0.5:c=2",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "S",
+    "win": 60,
+    "mu": 0.5,
+    "c": 2
+   },
+   "est_s": 148.3,
+   "status": "ok",
+   "wall_s": 150.0541766032111,
+   "peak_rss_mb": 982.27734375,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=S:win=60:mu=0.5:c=3",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "S",
+    "win": 60,
+    "mu": 0.5,
+    "c": 3
+   },
+   "est_s": 148.3,
+   "status": "ok",
+   "wall_s": 148.30253150011413,
+   "peak_rss_mb": 981.05078125,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=S:win=60:mu=0.5:c=4",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "S",
+    "win": 60,
+    "mu": 0.5,
+    "c": 4
+   },
+   "est_s": 148.3,
+   "status": "ok",
+   "wall_s": 148.23688547313213,
+   "peak_rss_mb": 981.375,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=S:win=60:mu=2:c=1",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "S",
+    "win": 60,
+    "mu": 2.0,
+    "c": 1
+   },
+   "est_s": 148.3,
+   "status": "ok",
+   "wall_s": 146.65478339907713,
+   "peak_rss_mb": 981.16015625,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=S:win=60:mu=2:c=2",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "S",
+    "win": 60,
+    "mu": 2.0,
+    "c": 2
+   },
+   "est_s": 148.3,
+   "status": "ok",
+   "wall_s": 150.62521354900673,
+   "peak_rss_mb": 982.578125,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=S:win=60:mu=2:c=3",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "S",
+    "win": 60,
+    "mu": 2.0,
+    "c": 3
+   },
+   "est_s": 148.3,
+   "status": "ok",
+   "wall_s": 147.02541425894015,
+   "peak_rss_mb": 981.53515625,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=S:win=60:mu=2:c=4",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "S",
+    "win": 60,
+    "mu": 2.0,
+    "c": 4
+   },
+   "est_s": 148.3,
+   "status": "ok",
+   "wall_s": 149.81591310095973,
+   "peak_rss_mb": 982.08203125,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=S:win=15:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "S",
+    "win": 15,
+    "mu": 1.0,
+    "c": 1
+   },
+   "est_s": 132.4,
+   "status": "ok",
+   "wall_s": 134.8435060698539,
+   "peak_rss_mb": 951.1015625,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=S:win=15:mu=1:c=2",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "S",
+    "win": 15,
+    "mu": 1.0,
+    "c": 2
+   },
+   "est_s": 132.4,
+   "status": "ok",
+   "wall_s": 136.88954197405837,
+   "peak_rss_mb": 951.2890625,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=S:win=15:mu=1:c=3",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "S",
+    "win": 15,
+    "mu": 1.0,
+    "c": 3
+   },
+   "est_s": 132.4,
+   "status": "ok",
+   "wall_s": 132.66692459699698,
+   "peak_rss_mb": 953.80859375,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=S:win=15:mu=1:c=4",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "S",
+    "win": 15,
+    "mu": 1.0,
+    "c": 4
+   },
+   "est_s": 132.4,
+   "status": "ok",
+   "wall_s": 134.73198009910993,
+   "peak_rss_mb": 952.8984375,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=S:win=15:mu=0.2:c=1",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "S",
+    "win": 15,
+    "mu": 0.2,
+    "c": 1
+   },
+   "est_s": 132.4,
+   "status": "ok",
+   "wall_s": 131.6469633569941,
+   "peak_rss_mb": 950.98828125,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=S:win=15:mu=0.2:c=2",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "S",
+    "win": 15,
+    "mu": 0.2,
+    "c": 2
+   },
+   "est_s": 132.4,
+   "status": "ok",
+   "wall_s": 132.2133909240365,
+   "peak_rss_mb": 952.375,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=S:win=15:mu=0.2:c=3",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "S",
+    "win": 15,
+    "mu": 0.2,
+    "c": 3
+   },
+   "est_s": 132.4,
+   "status": "ok",
+   "wall_s": 132.9789733728394,
+   "peak_rss_mb": 953.77734375,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=S:win=15:mu=0.2:c=4",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "S",
+    "win": 15,
+    "mu": 0.2,
+    "c": 4
+   },
+   "est_s": 132.4,
+   "status": "ok",
+   "wall_s": 134.04616775899194,
+   "peak_rss_mb": 952.828125,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=S:win=15:mu=0.5:c=1",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "S",
+    "win": 15,
+    "mu": 0.5,
+    "c": 1
+   },
+   "est_s": 132.4,
+   "status": "ok",
+   "wall_s": 130.80271666985936,
+   "peak_rss_mb": 950.8125,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=S:win=15:mu=0.5:c=2",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "S",
+    "win": 15,
+    "mu": 0.5,
+    "c": 2
+   },
+   "est_s": 132.4,
+   "status": "ok",
+   "wall_s": 134.17791727301665,
+   "peak_rss_mb": 952.5546875,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=S:win=15:mu=0.5:c=3",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "S",
+    "win": 15,
+    "mu": 0.5,
+    "c": 3
+   },
+   "est_s": 132.4,
+   "status": "ok",
+   "wall_s": 132.40642667398788,
+   "peak_rss_mb": 951.81640625,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=S:win=15:mu=0.5:c=4",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "S",
+    "win": 15,
+    "mu": 0.5,
+    "c": 4
+   },
+   "est_s": 132.4,
+   "status": "ok",
+   "wall_s": 135.99522683396935,
+   "peak_rss_mb": 953.609375,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=S:win=15:mu=2:c=1",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "S",
+    "win": 15,
+    "mu": 2.0,
+    "c": 1
+   },
+   "est_s": 132.4,
+   "status": "ok",
+   "wall_s": 132.96356612909585,
+   "peak_rss_mb": 952.3515625,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=S:win=15:mu=2:c=2",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "S",
+    "win": 15,
+    "mu": 2.0,
+    "c": 2
+   },
+   "est_s": 132.4,
+   "status": "ok",
+   "wall_s": 135.6278885891661,
+   "peak_rss_mb": 952.3203125,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=S:win=15:mu=2:c=3",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "S",
+    "win": 15,
+    "mu": 2.0,
+    "c": 3
+   },
+   "est_s": 132.4,
+   "status": "ok",
+   "wall_s": 135.34927473287098,
+   "peak_rss_mb": 952.296875,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=S:win=15:mu=2:c=4",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "S",
+    "win": 15,
+    "mu": 2.0,
+    "c": 4
+   },
+   "est_s": 132.4,
+   "status": "ok",
+   "wall_s": 131.57592997001484,
+   "peak_rss_mb": 952.90234375,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=S:win=5:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "S",
+    "win": 5,
+    "mu": 1.0,
+    "c": 1
+   },
+   "est_s": 126.7,
+   "status": "ok",
+   "wall_s": 127.61810625204816,
+   "peak_rss_mb": 930.89453125,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=S:win=5:mu=1:c=2",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "S",
+    "win": 5,
+    "mu": 1.0,
+    "c": 2
+   },
+   "est_s": 126.7,
+   "status": "ok",
+   "wall_s": 123.88370494008996,
+   "peak_rss_mb": 931.87890625,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=S:win=5:mu=1:c=3",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "S",
+    "win": 5,
+    "mu": 1.0,
+    "c": 3
+   },
+   "est_s": 126.7,
+   "status": "ok",
+   "wall_s": 122.81334917200729,
+   "peak_rss_mb": 931.0234375,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=S:win=5:mu=1:c=4",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "S",
+    "win": 5,
+    "mu": 1.0,
+    "c": 4
+   },
+   "est_s": 126.7,
+   "status": "ok",
+   "wall_s": 128.12069596210495,
+   "peak_rss_mb": 930.53515625,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=S:win=5:mu=0.2:c=1",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "S",
+    "win": 5,
+    "mu": 0.2,
+    "c": 1
+   },
+   "est_s": 126.7,
+   "status": "ok",
+   "wall_s": 124.56623252108693,
+   "peak_rss_mb": 931.08203125,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=S:win=5:mu=0.2:c=2",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "S",
+    "win": 5,
+    "mu": 0.2,
+    "c": 2
+   },
+   "est_s": 126.7,
+   "status": "ok",
+   "wall_s": 128.65187817416154,
+   "peak_rss_mb": 931.96484375,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=S:win=5:mu=0.2:c=3",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "S",
+    "win": 5,
+    "mu": 0.2,
+    "c": 3
+   },
+   "est_s": 126.7,
+   "status": "ok",
+   "wall_s": 126.28260205104016,
+   "peak_rss_mb": 930.734375,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=S:win=5:mu=0.2:c=4",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "S",
+    "win": 5,
+    "mu": 0.2,
+    "c": 4
+   },
+   "est_s": 126.7,
+   "status": "ok",
+   "wall_s": 125.126808851026,
+   "peak_rss_mb": 930.265625,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=S:win=5:mu=0.5:c=1",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "S",
+    "win": 5,
+    "mu": 0.5,
+    "c": 1
+   },
+   "est_s": 126.7,
+   "status": "ok",
+   "wall_s": 122.91963970195502,
+   "peak_rss_mb": 930.2109375,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=S:win=5:mu=0.5:c=2",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "S",
+    "win": 5,
+    "mu": 0.5,
+    "c": 2
+   },
+   "est_s": 126.7,
+   "status": "ok",
+   "wall_s": 124.44624232617207,
+   "peak_rss_mb": 931.7421875,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=S:win=5:mu=0.5:c=3",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "S",
+    "win": 5,
+    "mu": 0.5,
+    "c": 3
+   },
+   "est_s": 126.7,
+   "status": "ok",
+   "wall_s": 122.6426510559395,
+   "peak_rss_mb": 930.84375,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=S:win=5:mu=0.5:c=4",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "S",
+    "win": 5,
+    "mu": 0.5,
+    "c": 4
+   },
+   "est_s": 126.7,
+   "status": "ok",
+   "wall_s": 155.60420362092555,
+   "peak_rss_mb": 930.61328125,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=S:win=5:mu=2:c=1",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "S",
+    "win": 5,
+    "mu": 2.0,
+    "c": 1
+   },
+   "est_s": 126.7,
+   "status": "ok",
+   "wall_s": 158.56535217212513,
+   "peak_rss_mb": 931.13671875,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=S:win=5:mu=2:c=2",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "S",
+    "win": 5,
+    "mu": 2.0,
+    "c": 2
+   },
+   "est_s": 126.7,
+   "status": "ok",
+   "wall_s": 162.87888555205427,
+   "peak_rss_mb": 930.625,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=S:win=5:mu=2:c=3",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "S",
+    "win": 5,
+    "mu": 2.0,
+    "c": 3
+   },
+   "est_s": 126.7,
+   "status": "ok",
+   "wall_s": 161.01479848194867,
+   "peak_rss_mb": 930.125,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=S:win=5:mu=2:c=4",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "S",
+    "win": 5,
+    "mu": 2.0,
+    "c": 4
+   },
+   "est_s": 126.7,
+   "status": "ok",
+   "wall_s": 127.05913833086379,
+   "peak_rss_mb": 930.8828125,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=M:win=60:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "M",
+    "win": 60,
+    "mu": 1.0,
+    "c": 1
+   },
+   "est_s": 86.8,
+   "status": "ok",
+   "wall_s": 115.19300005096011,
+   "peak_rss_mb": 840.62890625,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=M:win=60:mu=1:c=2",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "M",
+    "win": 60,
+    "mu": 1.0,
+    "c": 2
+   },
+   "est_s": 86.8,
+   "status": "ok",
+   "wall_s": 129.75454309000634,
+   "peak_rss_mb": 839.640625,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=M:win=60:mu=1:c=3",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "M",
+    "win": 60,
+    "mu": 1.0,
+    "c": 3
+   },
+   "est_s": 86.8,
+   "status": "ok",
+   "wall_s": 130.3023930969648,
+   "peak_rss_mb": 841.71875,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=M:win=60:mu=1:c=4",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "M",
+    "win": 60,
+    "mu": 1.0,
+    "c": 4
+   },
+   "est_s": 86.8,
+   "status": "ok",
+   "wall_s": 82.0333121791482,
+   "peak_rss_mb": 840.6015625,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=M:win=60:mu=0.2:c=1",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "M",
+    "win": 60,
+    "mu": 0.2,
+    "c": 1
+   },
+   "est_s": 86.8,
+   "status": "ok",
+   "wall_s": 80.58015711000189,
+   "peak_rss_mb": 840.66015625,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=M:win=60:mu=0.2:c=2",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "M",
+    "win": 60,
+    "mu": 0.2,
+    "c": 2
+   },
+   "est_s": 86.8,
+   "status": "ok",
+   "wall_s": 85.62264089519158,
+   "peak_rss_mb": 839.53125,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=M:win=60:mu=0.2:c=3",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "M",
+    "win": 60,
+    "mu": 0.2,
+    "c": 3
+   },
+   "est_s": 86.8,
+   "status": "ok",
+   "wall_s": 86.84192733792588,
+   "peak_rss_mb": 841.44921875,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=M:win=60:mu=0.2:c=4",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "M",
+    "win": 60,
+    "mu": 0.2,
+    "c": 4
+   },
+   "est_s": 86.8,
+   "status": "ok",
+   "wall_s": 85.44704543007538,
+   "peak_rss_mb": 840.015625,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=M:win=60:mu=0.5:c=1",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "M",
+    "win": 60,
+    "mu": 0.5,
+    "c": 1
+   },
+   "est_s": 86.8,
+   "status": "ok",
+   "wall_s": 83.91216587089002,
+   "peak_rss_mb": 840.48046875,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=M:win=60:mu=0.5:c=2",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "M",
+    "win": 60,
+    "mu": 0.5,
+    "c": 2
+   },
+   "est_s": 86.8,
+   "status": "ok",
+   "wall_s": 84.02059576218016,
+   "peak_rss_mb": 839.58203125,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=M:win=60:mu=0.5:c=3",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "M",
+    "win": 60,
+    "mu": 0.5,
+    "c": 3
+   },
+   "est_s": 86.8,
+   "status": "ok",
+   "wall_s": 84.96316490508616,
+   "peak_rss_mb": 841.5546875,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=M:win=60:mu=0.5:c=4",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "M",
+    "win": 60,
+    "mu": 0.5,
+    "c": 4
+   },
+   "est_s": 86.8,
+   "status": "ok",
+   "wall_s": 84.93172201304697,
+   "peak_rss_mb": 840.453125,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=M:win=60:mu=2:c=1",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "M",
+    "win": 60,
+    "mu": 2.0,
+    "c": 1
+   },
+   "est_s": 86.8,
+   "status": "ok",
+   "wall_s": 86.21775996405631,
+   "peak_rss_mb": 840.140625,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=M:win=60:mu=2:c=2",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "M",
+    "win": 60,
+    "mu": 2.0,
+    "c": 2
+   },
+   "est_s": 86.8,
+   "status": "ok",
+   "wall_s": 90.4713281581644,
+   "peak_rss_mb": 840.66796875,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=M:win=60:mu=2:c=3",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "M",
+    "win": 60,
+    "mu": 2.0,
+    "c": 3
+   },
+   "est_s": 86.8,
+   "status": "ok",
+   "wall_s": 86.38569302088581,
+   "peak_rss_mb": 841.56640625,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=M:win=60:mu=2:c=4",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "M",
+    "win": 60,
+    "mu": 2.0,
+    "c": 4
+   },
+   "est_s": 86.8,
+   "status": "ok",
+   "wall_s": 89.79247490596026,
+   "peak_rss_mb": 838.3828125,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=M:win=15:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "M",
+    "win": 15,
+    "mu": 1.0,
+    "c": 1
+   },
+   "est_s": 81.8,
+   "status": "ok",
+   "wall_s": 80.6203641758766,
+   "peak_rss_mb": 830.50390625,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=M:win=15:mu=1:c=2",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "M",
+    "win": 15,
+    "mu": 1.0,
+    "c": 2
+   },
+   "est_s": 81.8,
+   "status": "ok",
+   "wall_s": 83.96285956702195,
+   "peak_rss_mb": 831.015625,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=M:win=15:mu=1:c=3",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "M",
+    "win": 15,
+    "mu": 1.0,
+    "c": 3
+   },
+   "est_s": 81.8,
+   "status": "ok",
+   "wall_s": 81.21543630515225,
+   "peak_rss_mb": 830.47265625,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=M:win=15:mu=1:c=4",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "M",
+    "win": 15,
+    "mu": 1.0,
+    "c": 4
+   },
+   "est_s": 81.8,
+   "status": "ok",
+   "wall_s": 83.09837277512997,
+   "peak_rss_mb": 830.56640625,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=M:win=15:mu=0.2:c=1",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "M",
+    "win": 15,
+    "mu": 0.2,
+    "c": 1
+   },
+   "est_s": 81.8,
+   "status": "ok",
+   "wall_s": 81.11517610610463,
+   "peak_rss_mb": 830.49609375,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=M:win=15:mu=0.2:c=2",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "M",
+    "win": 15,
+    "mu": 0.2,
+    "c": 2
+   },
+   "est_s": 81.8,
+   "status": "ok",
+   "wall_s": 80.71945251105353,
+   "peak_rss_mb": 830.60546875,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=M:win=15:mu=0.2:c=3",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "M",
+    "win": 15,
+    "mu": 0.2,
+    "c": 3
+   },
+   "est_s": 81.8,
+   "status": "ok",
+   "wall_s": 76.85596568393521,
+   "peak_rss_mb": 830.515625,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=M:win=15:mu=0.2:c=4",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "M",
+    "win": 15,
+    "mu": 0.2,
+    "c": 4
+   },
+   "est_s": 81.8,
+   "status": "ok",
+   "wall_s": 79.41798466001637,
+   "peak_rss_mb": 830.66015625,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=M:win=15:mu=0.5:c=1",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "M",
+    "win": 15,
+    "mu": 0.5,
+    "c": 1
+   },
+   "est_s": 81.8,
+   "status": "ok",
+   "wall_s": 78.8268136489205,
+   "peak_rss_mb": 831.484375,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=M:win=15:mu=0.5:c=2",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "M",
+    "win": 15,
+    "mu": 0.5,
+    "c": 2
+   },
+   "est_s": 81.8,
+   "status": "ok",
+   "wall_s": 80.44130790699273,
+   "peak_rss_mb": 830.55078125,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=M:win=15:mu=0.5:c=3",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "M",
+    "win": 15,
+    "mu": 0.5,
+    "c": 3
+   },
+   "est_s": 81.8,
+   "status": "ok",
+   "wall_s": 77.1566508228425,
+   "peak_rss_mb": 830.4296875,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=M:win=15:mu=0.5:c=4",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "M",
+    "win": 15,
+    "mu": 0.5,
+    "c": 4
+   },
+   "est_s": 81.8,
+   "status": "ok",
+   "wall_s": 80.36677452316508,
+   "peak_rss_mb": 830.6640625,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=M:win=15:mu=2:c=1",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "M",
+    "win": 15,
+    "mu": 2.0,
+    "c": 1
+   },
+   "est_s": 81.8,
+   "status": "ok",
+   "wall_s": 80.20639630686492,
+   "peak_rss_mb": 830.2578125,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=M:win=15:mu=2:c=2",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "M",
+    "win": 15,
+    "mu": 2.0,
+    "c": 2
+   },
+   "est_s": 81.8,
+   "status": "ok",
+   "wall_s": 83.30181512399577,
+   "peak_rss_mb": 830.6015625,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=M:win=15:mu=2:c=3",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "M",
+    "win": 15,
+    "mu": 2.0,
+    "c": 3
+   },
+   "est_s": 81.8,
+   "status": "ok",
+   "wall_s": 80.85628163302317,
+   "peak_rss_mb": 830.23046875,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=M:win=15:mu=2:c=4",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "M",
+    "win": 15,
+    "mu": 2.0,
+    "c": 4
+   },
+   "est_s": 81.8,
+   "status": "ok",
+   "wall_s": 81.31792079401202,
+   "peak_rss_mb": 830.55078125,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=M:win=5:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "M",
+    "win": 5,
+    "mu": 1.0,
+    "c": 1
+   },
+   "est_s": 78.4,
+   "status": "ok",
+   "wall_s": 76.78801084007137,
+   "peak_rss_mb": 823.44140625,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=M:win=5:mu=1:c=2",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "M",
+    "win": 5,
+    "mu": 1.0,
+    "c": 2
+   },
+   "est_s": 78.4,
+   "status": "ok",
+   "wall_s": 80.49481407413259,
+   "peak_rss_mb": 823.9609375,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=M:win=5:mu=1:c=3",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "M",
+    "win": 5,
+    "mu": 1.0,
+    "c": 3
+   },
+   "est_s": 78.4,
+   "status": "ok",
+   "wall_s": 78.47940917196684,
+   "peak_rss_mb": 825.265625,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=M:win=5:mu=1:c=4",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "M",
+    "win": 5,
+    "mu": 1.0,
+    "c": 4
+   },
+   "est_s": 78.4,
+   "status": "ok",
+   "wall_s": 80.727762038121,
+   "peak_rss_mb": 825.2578125,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=M:win=5:mu=0.2:c=1",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "M",
+    "win": 5,
+    "mu": 0.2,
+    "c": 1
+   },
+   "est_s": 78.4,
+   "status": "ok",
+   "wall_s": 81.40425351308659,
+   "peak_rss_mb": 824.48828125,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=M:win=5:mu=0.2:c=2",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "M",
+    "win": 5,
+    "mu": 0.2,
+    "c": 2
+   },
+   "est_s": 78.4,
+   "status": "ok",
+   "wall_s": 81.77994452393614,
+   "peak_rss_mb": 824.86328125,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=M:win=5:mu=0.2:c=3",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "M",
+    "win": 5,
+    "mu": 0.2,
+    "c": 3
+   },
+   "est_s": 78.4,
+   "status": "ok",
+   "wall_s": 73.27124559693038,
+   "peak_rss_mb": 825.10546875,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=M:win=5:mu=0.2:c=4",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "M",
+    "win": 5,
+    "mu": 0.2,
+    "c": 4
+   },
+   "est_s": 78.4,
+   "status": "ok",
+   "wall_s": 74.97701867111027,
+   "peak_rss_mb": 825.4765625,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=M:win=5:mu=0.5:c=1",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "M",
+    "win": 5,
+    "mu": 0.5,
+    "c": 1
+   },
+   "est_s": 78.4,
+   "status": "ok",
+   "wall_s": 74.93862807005644,
+   "peak_rss_mb": 824.84375,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=M:win=5:mu=0.5:c=2",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "M",
+    "win": 5,
+    "mu": 0.5,
+    "c": 2
+   },
+   "est_s": 78.4,
+   "status": "ok",
+   "wall_s": 76.56011931598186,
+   "peak_rss_mb": 824.81640625,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=M:win=5:mu=0.5:c=3",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "M",
+    "win": 5,
+    "mu": 0.5,
+    "c": 3
+   },
+   "est_s": 78.4,
+   "status": "ok",
+   "wall_s": 75.80621300917119,
+   "peak_rss_mb": 825.2578125,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=M:win=5:mu=0.5:c=4",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "M",
+    "win": 5,
+    "mu": 0.5,
+    "c": 4
+   },
+   "est_s": 78.4,
+   "status": "ok",
+   "wall_s": 79.57460332103074,
+   "peak_rss_mb": 825.5546875,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=M:win=5:mu=2:c=1",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "M",
+    "win": 5,
+    "mu": 2.0,
+    "c": 1
+   },
+   "est_s": 78.4,
+   "status": "ok",
+   "wall_s": 77.49716353183612,
+   "peak_rss_mb": 821.46875,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=M:win=5:mu=2:c=2",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "M",
+    "win": 5,
+    "mu": 2.0,
+    "c": 2
+   },
+   "est_s": 78.4,
+   "status": "ok",
+   "wall_s": 78.7760342839174,
+   "peak_rss_mb": 822.93359375,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=M:win=5:mu=2:c=3",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "M",
+    "win": 5,
+    "mu": 2.0,
+    "c": 3
+   },
+   "est_s": 78.4,
+   "status": "ok",
+   "wall_s": 76.44673913600855,
+   "peak_rss_mb": 825.49609375,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=M:win=5:mu=2:c=4",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "M",
+    "win": 5,
+    "mu": 2.0,
+    "c": 4
+   },
+   "est_s": 78.4,
+   "status": "ok",
+   "wall_s": 77.08038659603335,
+   "peak_rss_mb": 825.67578125,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=L:win=60:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "L",
+    "win": 60,
+    "mu": 1.0,
+    "c": 1
+   },
+   "est_s": 36.6,
+   "status": "ok",
+   "wall_s": 31.79353857715614,
+   "peak_rss_mb": 768.0859375,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=L:win=60:mu=1:c=2",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "L",
+    "win": 60,
+    "mu": 1.0,
+    "c": 2
+   },
+   "est_s": 36.6,
+   "status": "ok",
+   "wall_s": 31.601414105156437,
+   "peak_rss_mb": 769.04296875,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=L:win=60:mu=1:c=3",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "L",
+    "win": 60,
+    "mu": 1.0,
+    "c": 3
+   },
+   "est_s": 36.6,
+   "status": "ok",
+   "wall_s": 31.962520206114277,
+   "peak_rss_mb": 770.15234375,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=L:win=60:mu=1:c=4",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "L",
+    "win": 60,
+    "mu": 1.0,
+    "c": 4
+   },
+   "est_s": 36.6,
+   "status": "ok",
+   "wall_s": 33.03208251600154,
+   "peak_rss_mb": 769.46875,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=L:win=60:mu=0.2:c=1",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "L",
+    "win": 60,
+    "mu": 0.2,
+    "c": 1
+   },
+   "est_s": 36.6,
+   "status": "ok",
+   "wall_s": 34.04887858591974,
+   "peak_rss_mb": 767.87890625,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=L:win=60:mu=0.2:c=2",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "L",
+    "win": 60,
+    "mu": 0.2,
+    "c": 2
+   },
+   "est_s": 36.6,
+   "status": "ok",
+   "wall_s": 34.53117701294832,
+   "peak_rss_mb": 768.93359375,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=L:win=60:mu=0.2:c=3",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "L",
+    "win": 60,
+    "mu": 0.2,
+    "c": 3
+   },
+   "est_s": 36.6,
+   "status": "ok",
+   "wall_s": 33.486333209089935,
+   "peak_rss_mb": 770.58203125,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=L:win=60:mu=0.2:c=4",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "L",
+    "win": 60,
+    "mu": 0.2,
+    "c": 4
+   },
+   "est_s": 36.6,
+   "status": "ok",
+   "wall_s": 34.90599390701391,
+   "peak_rss_mb": 769.08203125,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=L:win=60:mu=0.5:c=1",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "L",
+    "win": 60,
+    "mu": 0.5,
+    "c": 1
+   },
+   "est_s": 36.6,
+   "status": "ok",
+   "wall_s": 35.31911417096853,
+   "peak_rss_mb": 769.08984375,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=L:win=60:mu=0.5:c=2",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "L",
+    "win": 60,
+    "mu": 0.5,
+    "c": 2
+   },
+   "est_s": 36.6,
+   "status": "ok",
+   "wall_s": 33.785816449904814,
+   "peak_rss_mb": 769.1484375,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=L:win=60:mu=0.5:c=3",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "L",
+    "win": 60,
+    "mu": 0.5,
+    "c": 3
+   },
+   "est_s": 36.6,
+   "status": "ok",
+   "wall_s": 34.911186123033985,
+   "peak_rss_mb": 769.53125,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=L:win=60:mu=0.5:c=4",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "L",
+    "win": 60,
+    "mu": 0.5,
+    "c": 4
+   },
+   "est_s": 36.6,
+   "status": "ok",
+   "wall_s": 34.70100119221024,
+   "peak_rss_mb": 768.953125,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=L:win=60:mu=2:c=1",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "L",
+    "win": 60,
+    "mu": 2.0,
+    "c": 1
+   },
+   "est_s": 36.6,
+   "status": "ok",
+   "wall_s": 32.855071116006,
+   "peak_rss_mb": 768.87109375,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=L:win=60:mu=2:c=2",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "L",
+    "win": 60,
+    "mu": 2.0,
+    "c": 2
+   },
+   "est_s": 36.6,
+   "status": "ok",
+   "wall_s": 32.118530470179394,
+   "peak_rss_mb": 769.03125,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=L:win=60:mu=2:c=3",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "L",
+    "win": 60,
+    "mu": 2.0,
+    "c": 3
+   },
+   "est_s": 36.6,
+   "status": "ok",
+   "wall_s": 32.49771849787794,
+   "peak_rss_mb": 770.11328125,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=L:win=60:mu=2:c=4",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "L",
+    "win": 60,
+    "mu": 2.0,
+    "c": 4
+   },
+   "est_s": 36.6,
+   "status": "ok",
+   "wall_s": 32.802330643171445,
+   "peak_rss_mb": 769.00390625,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=L:win=15:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "L",
+    "win": 15,
+    "mu": 1.0,
+    "c": 1
+   },
+   "est_s": 36.4,
+   "status": "ok",
+   "wall_s": 34.984730617841706,
+   "peak_rss_mb": 767.37109375,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=L:win=15:mu=1:c=2",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "L",
+    "win": 15,
+    "mu": 1.0,
+    "c": 2
+   },
+   "est_s": 36.4,
+   "status": "ok",
+   "wall_s": 33.85114062600769,
+   "peak_rss_mb": 768.671875,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=L:win=15:mu=1:c=3",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "L",
+    "win": 15,
+    "mu": 1.0,
+    "c": 3
+   },
+   "est_s": 36.4,
+   "status": "ok",
+   "wall_s": 33.27013288694434,
+   "peak_rss_mb": 768.19140625,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=L:win=15:mu=1:c=4",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "L",
+    "win": 15,
+    "mu": 1.0,
+    "c": 4
+   },
+   "est_s": 36.4,
+   "status": "ok",
+   "wall_s": 33.80906131188385,
+   "peak_rss_mb": 768.30078125,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=L:win=15:mu=0.2:c=1",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "L",
+    "win": 15,
+    "mu": 0.2,
+    "c": 1
+   },
+   "est_s": 36.4,
+   "status": "ok",
+   "wall_s": 34.23523531714454,
+   "peak_rss_mb": 767.2578125,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=L:win=15:mu=0.2:c=2",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "L",
+    "win": 15,
+    "mu": 0.2,
+    "c": 2
+   },
+   "est_s": 36.4,
+   "status": "ok",
+   "wall_s": 34.5965690901503,
+   "peak_rss_mb": 768.52734375,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=L:win=15:mu=0.2:c=3",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "L",
+    "win": 15,
+    "mu": 0.2,
+    "c": 3
+   },
+   "est_s": 36.4,
+   "status": "ok",
+   "wall_s": 37.14980894792825,
+   "peak_rss_mb": 768.1875,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=L:win=15:mu=0.2:c=4",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "L",
+    "win": 15,
+    "mu": 0.2,
+    "c": 4
+   },
+   "est_s": 36.4,
+   "status": "ok",
+   "wall_s": 36.06120346393436,
+   "peak_rss_mb": 768.33203125,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=L:win=15:mu=0.5:c=1",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "L",
+    "win": 15,
+    "mu": 0.5,
+    "c": 1
+   },
+   "est_s": 36.4,
+   "status": "ok",
+   "wall_s": 36.990942599019036,
+   "peak_rss_mb": 767.1015625,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=L:win=15:mu=0.5:c=2",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "L",
+    "win": 15,
+    "mu": 0.5,
+    "c": 2
+   },
+   "est_s": 36.4,
+   "status": "ok",
+   "wall_s": 36.57263176096603,
+   "peak_rss_mb": 768.37890625,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=L:win=15:mu=0.5:c=3",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "L",
+    "win": 15,
+    "mu": 0.5,
+    "c": 3
+   },
+   "est_s": 36.4,
+   "status": "ok",
+   "wall_s": 35.723571034148335,
+   "peak_rss_mb": 768.5390625,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=L:win=15:mu=0.5:c=4",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "L",
+    "win": 15,
+    "mu": 0.5,
+    "c": 4
+   },
+   "est_s": 36.4,
+   "status": "ok",
+   "wall_s": 35.89981561712921,
+   "peak_rss_mb": 768.078125,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=L:win=15:mu=2:c=1",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "L",
+    "win": 15,
+    "mu": 2.0,
+    "c": 1
+   },
+   "est_s": 36.4,
+   "status": "ok",
+   "wall_s": 33.916553522925824,
+   "peak_rss_mb": 767.171875,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=L:win=15:mu=2:c=2",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "L",
+    "win": 15,
+    "mu": 2.0,
+    "c": 2
+   },
+   "est_s": 36.4,
+   "status": "ok",
+   "wall_s": 33.81498667690903,
+   "peak_rss_mb": 768.625,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=L:win=15:mu=2:c=3",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "L",
+    "win": 15,
+    "mu": 2.0,
+    "c": 3
+   },
+   "est_s": 36.4,
+   "status": "ok",
+   "wall_s": 35.04351991089061,
+   "peak_rss_mb": 768.64453125,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=L:win=15:mu=2:c=4",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "L",
+    "win": 15,
+    "mu": 2.0,
+    "c": 4
+   },
+   "est_s": 36.4,
+   "status": "ok",
+   "wall_s": 32.97587790992111,
+   "peak_rss_mb": 768.63671875,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=L:win=5:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "L",
+    "win": 5,
+    "mu": 1.0,
+    "c": 1
+   },
+   "est_s": 36.2,
+   "status": "ok",
+   "wall_s": 33.789758953033015,
+   "peak_rss_mb": 767.984375,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=L:win=5:mu=1:c=2",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "L",
+    "win": 5,
+    "mu": 1.0,
+    "c": 2
+   },
+   "est_s": 36.2,
+   "status": "ok",
+   "wall_s": 32.477038477081805,
+   "peak_rss_mb": 768.09765625,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=L:win=5:mu=1:c=3",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "L",
+    "win": 5,
+    "mu": 1.0,
+    "c": 3
+   },
+   "est_s": 36.2,
+   "status": "ok",
+   "wall_s": 31.95562294195406,
+   "peak_rss_mb": 768.42578125,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=L:win=5:mu=1:c=4",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "L",
+    "win": 5,
+    "mu": 1.0,
+    "c": 4
+   },
+   "est_s": 36.2,
+   "status": "ok",
+   "wall_s": 33.093461566837505,
+   "peak_rss_mb": 768.2265625,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=L:win=5:mu=0.2:c=1",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "L",
+    "win": 5,
+    "mu": 0.2,
+    "c": 1
+   },
+   "est_s": 36.2,
+   "status": "ok",
+   "wall_s": 32.26557309203781,
+   "peak_rss_mb": 768.1328125,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=L:win=5:mu=0.2:c=2",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "L",
+    "win": 5,
+    "mu": 0.2,
+    "c": 2
+   },
+   "est_s": 36.2,
+   "status": "ok",
+   "wall_s": 33.121880922000855,
+   "peak_rss_mb": 768.08984375,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=L:win=5:mu=0.2:c=3",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "L",
+    "win": 5,
+    "mu": 0.2,
+    "c": 3
+   },
+   "est_s": 36.2,
+   "status": "ok",
+   "wall_s": 32.73186687100679,
+   "peak_rss_mb": 768.1328125,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=L:win=5:mu=0.2:c=4",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "L",
+    "win": 5,
+    "mu": 0.2,
+    "c": 4
+   },
+   "est_s": 36.2,
+   "status": "ok",
+   "wall_s": 32.30530038289726,
+   "peak_rss_mb": 768.12109375,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=L:win=5:mu=0.5:c=1",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "L",
+    "win": 5,
+    "mu": 0.5,
+    "c": 1
+   },
+   "est_s": 36.2,
+   "status": "ok",
+   "wall_s": 32.45695172785781,
+   "peak_rss_mb": 768.1953125,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=L:win=5:mu=0.5:c=2",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "L",
+    "win": 5,
+    "mu": 0.5,
+    "c": 2
+   },
+   "est_s": 36.2,
+   "status": "ok",
+   "wall_s": 33.31832679081708,
+   "peak_rss_mb": 768.38671875,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=L:win=5:mu=0.5:c=3",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "L",
+    "win": 5,
+    "mu": 0.5,
+    "c": 3
+   },
+   "est_s": 36.2,
+   "status": "ok",
+   "wall_s": 33.72421358991414,
+   "peak_rss_mb": 768.01953125,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=L:win=5:mu=0.5:c=4",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "L",
+    "win": 5,
+    "mu": 0.5,
+    "c": 4
+   },
+   "est_s": 36.2,
+   "status": "ok",
+   "wall_s": 34.09268728387542,
+   "peak_rss_mb": 768.12109375,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=L:win=5:mu=2:c=1",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "L",
+    "win": 5,
+    "mu": 2.0,
+    "c": 1
+   },
+   "est_s": 36.2,
+   "status": "ok",
+   "wall_s": 34.65292580798268,
+   "peak_rss_mb": 768.15625,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=L:win=5:mu=2:c=2",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "L",
+    "win": 5,
+    "mu": 2.0,
+    "c": 2
+   },
+   "est_s": 36.2,
+   "status": "ok",
+   "wall_s": 34.45853100786917,
+   "peak_rss_mb": 768.12109375,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=L:win=5:mu=2:c=3",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "L",
+    "win": 5,
+    "mu": 2.0,
+    "c": 3
+   },
+   "est_s": 36.2,
+   "status": "ok",
+   "wall_s": 34.61082474212162,
+   "peak_rss_mb": 767.42578125,
+   "runs": 1
+  },
+  {
+   "id": "e8:pair:tier=L:win=5:mu=2:c=4",
+   "kind": "pool",
+   "params": {
+    "kind": "pair",
+    "tier": "L",
+    "win": 5,
+    "mu": 2.0,
+    "c": 4
+   },
+   "est_s": 36.2,
+   "status": "ok",
+   "wall_s": 33.56235502590425,
+   "peak_rss_mb": 768.11328125,
+   "runs": 1
+  },
+  {
+   "id": "e8:mooncake:win=5:prefix=off",
+   "kind": "pool",
+   "params": {
+    "kind": "mooncake",
+    "win": 5,
+    "prefix": "off",
+    "tier": "M",
+    "mu": 1.0,
+    "c": 1
+   },
+   "est_s": 11.4,
+   "status": "ok",
+   "wall_s": 13.148472429951653,
+   "peak_rss_mb": 189.671875,
+   "runs": 1
+  },
+  {
+   "id": "e8:mooncake:win=5:prefix=on",
+   "kind": "pool",
+   "params": {
+    "kind": "mooncake",
+    "win": 5,
+    "prefix": "on",
+    "tier": "M",
+    "mu": 1.0,
+    "c": 1
+   },
+   "est_s": 25.1,
+   "status": "ok",
+   "wall_s": 24.695881427964196,
+   "peak_rss_mb": 251.76171875,
+   "runs": 1
+  },
+  {
+   "id": "e8:mooncake:win=15:prefix=off",
+   "kind": "pool",
+   "params": {
+    "kind": "mooncake",
+    "win": 15,
+    "prefix": "off",
+    "tier": "M",
+    "mu": 1.0,
+    "c": 1
+   },
+   "est_s": 11.4,
+   "status": "ok",
+   "wall_s": 12.290169508894905,
+   "peak_rss_mb": 194.5234375,
+   "runs": 1
+  },
+  {
+   "id": "e8:mooncake:win=15:prefix=on",
+   "kind": "pool",
+   "params": {
+    "kind": "mooncake",
+    "win": 15,
+    "prefix": "on",
+    "tier": "M",
+    "mu": 1.0,
+    "c": 1
+   },
+   "est_s": 25.1,
+   "status": "ok",
+   "wall_s": 25.38895833492279,
+   "peak_rss_mb": 265.9609375,
+   "runs": 1
+  },
+  {
+   "id": "e8:mooncake:win=60:prefix=off",
+   "kind": "pool",
+   "params": {
+    "kind": "mooncake",
+    "win": 60,
+    "prefix": "off",
+    "tier": "M",
+    "mu": 1.0,
+    "c": 1
+   },
+   "est_s": 11.4,
+   "status": "ok",
+   "wall_s": 12.589207265060395,
+   "peak_rss_mb": 199.20703125,
+   "runs": 1
+  },
+  {
+   "id": "e8:mooncake:win=60:prefix=on",
+   "kind": "pool",
+   "params": {
+    "kind": "mooncake",
+    "win": 60,
+    "prefix": "on",
+    "tier": "M",
+    "mu": 1.0,
+    "c": 1
+   },
+   "est_s": 25.1,
+   "status": "ok",
+   "wall_s": 26.199101479025558,
+   "peak_rss_mb": 285.73046875,
+   "runs": 1
+  }
+ ],
+ "instance_hashes": {
+  "e8:pair:tier=S:win=60:mu=1:c=1": "4cf6686b974552b9823ffa9d6f33e12647c833b2c9b0fb0b24be02cd37005dc3",
+  "e8:pair:tier=S:win=60:mu=1:c=2": "0f81cb08a018c74ee4978a7a3884a9ca52accd11a07c63fff7aa58bff3bc28f1",
+  "e8:pair:tier=S:win=60:mu=1:c=3": "f6aca1c08e507409549275da46b33453c21583a361051ae595ad33f48eefd838",
+  "e8:pair:tier=S:win=60:mu=1:c=4": "81888ba322cae0066ee481c906978bae8ae4f83c1e4d40283ef696ceb2170cf4",
+  "e8:pair:tier=S:win=60:mu=0.2:c=1": "1fd826eeb70d8f90a8570257e2af9560c98f571732f20a595d93720fa9f0fd9a",
+  "e8:pair:tier=S:win=60:mu=0.2:c=2": "f3f6a9504660529d557704c8421d604ff47356fd9c72be0aaf386ab463128713",
+  "e8:pair:tier=S:win=60:mu=0.2:c=3": "1e562f4a96d5cb56fe0af2a58e2f2c3e24ecc64ca1e3cee9d40dc9080d800341",
+  "e8:pair:tier=S:win=60:mu=0.2:c=4": "0ef3d706fea252d60f66c3f1a43fe39b839feeea449161cd9951e3842f0a8309",
+  "e8:pair:tier=S:win=60:mu=0.5:c=1": "20ce82bfe7769021f95f68a84061969d17bbdcab65f34a252fa96caa73c22f7e",
+  "e8:pair:tier=S:win=60:mu=0.5:c=2": "6d71b23e323bf93bf4615c85ce91c474160d3b518c9abdbbb58dd2a7a6a6b86f",
+  "e8:pair:tier=S:win=60:mu=0.5:c=3": "8106566387792d9dda4e6c1b913e8f17082cb15558bfebb1830deab17286d082",
+  "e8:pair:tier=S:win=60:mu=0.5:c=4": "cc51ec0702649d34ab3eedf1253d3ffe2b654ca3802565977dd25474c0d72877",
+  "e8:pair:tier=S:win=60:mu=2:c=1": "eb9fcc35b28cd0bfde50bc3f9da8edfaf588e62c54ea02c732f02ed028d493ba",
+  "e8:pair:tier=S:win=60:mu=2:c=2": "5c152c2f4a1fb7f3474ea540160aaebbc92c24628b8a3098b943aa461824eff0",
+  "e8:pair:tier=S:win=60:mu=2:c=3": "43458d19c30cc4d787eed2ca6cf281885f03bac7b003ff86c959be81adefcb05",
+  "e8:pair:tier=S:win=60:mu=2:c=4": "8b352da0fb7ab98185852a023a52cf784f4afa6e918ea466618263ce4ec8c5f0",
+  "e8:pair:tier=S:win=15:mu=1:c=1": "8ea6776ac61b1dba97d2a7fc1215dc0dd13019f3072214cd6e7862fe6ebb502f",
+  "e8:pair:tier=S:win=15:mu=1:c=2": "a21b92867abf50e4a128133fb106889ed7856f0ecfb9e865d84ce172a5eebd29",
+  "e8:pair:tier=S:win=15:mu=1:c=3": "6ca8b6b9c8851266973f37041db1cc0223d5aabdead48d2f0fbaaf8640ef0931",
+  "e8:pair:tier=S:win=15:mu=1:c=4": "915e593408aeaeb9d3550d2d311442d5de35de1537750c7a985e5da8b5c05b20",
+  "e8:pair:tier=S:win=15:mu=0.2:c=1": "16f3d4b817d56eea8fdaa350c7bed08950ce12de57e71ba68dbc73c4181ca8f8",
+  "e8:pair:tier=S:win=15:mu=0.2:c=2": "b3b97f83fdfc2d7c0a957f883fbaaddb98f7c0a23752bc1a00c380d5a8081a11",
+  "e8:pair:tier=S:win=15:mu=0.2:c=3": "92ac3a5a64fb055a45c1e23a6d014baabce22345e4e6933f8dd7465bd1135cdf",
+  "e8:pair:tier=S:win=15:mu=0.2:c=4": "6a2f8da850a0edbf55d48e4361c12a006106800d8d8bd59dfb2ceb2d986a5642",
+  "e8:pair:tier=S:win=15:mu=0.5:c=1": "2d49dec8f143ca31067848e7e9b60170c534012b5b5e3012e0c7b5953e95d7d8",
+  "e8:pair:tier=S:win=15:mu=0.5:c=2": "e718cbc0896fd7687006020c14417e71a4dc4c71587cd72f60048f85a0f817b6",
+  "e8:pair:tier=S:win=15:mu=0.5:c=3": "bb7b46c7ee8e6aea9ab6b012fb819be02c8155bdd356aa3d5e4cbcc5e2a82f0d",
+  "e8:pair:tier=S:win=15:mu=0.5:c=4": "da9523ee8f3128ad0c1ac560621de7f733e41a1cd721968f1076cab62c8cb2fb",
+  "e8:pair:tier=S:win=15:mu=2:c=1": "c022f7168036518946bd1b01d22524d9fb7db5a8c7ebcbffb4ffc417302ee511",
+  "e8:pair:tier=S:win=15:mu=2:c=2": "6c13ddcc5c38eb3efb54015d118def906b518a2174ddb78c6b218f309333efcd",
+  "e8:pair:tier=S:win=15:mu=2:c=3": "206f1d02a0bbb4faa6ddbcf6b4765ebc07150db687cea9f925ba9d618365e25a",
+  "e8:pair:tier=S:win=15:mu=2:c=4": "0881f5ee02b1c61861349355b519cb77c2736587bdf30bc8f814b6360d2aea20",
+  "e8:pair:tier=S:win=5:mu=1:c=1": "b1343c0b23dcde409259fc28f4db7895c912b97602a09229709f5503f51a3a5b",
+  "e8:pair:tier=S:win=5:mu=1:c=2": "bf471867db6220dcf2c5f74da319864082802a9fa5341a4f8fb9acdc35fba813",
+  "e8:pair:tier=S:win=5:mu=1:c=3": "2b070fac882dcd50949d05f5c0052dfc18e65089cbae9524ed3da8c06761ee1f",
+  "e8:pair:tier=S:win=5:mu=1:c=4": "e612e39ec2d559d88dbe349d02d894872f88c622dde36505257fcf14e4a2620f",
+  "e8:pair:tier=S:win=5:mu=0.2:c=1": "f0aa03e595ffe0025e0e0c7747b917cd7bbc17e7e1654350829c252dd9dd6ec8",
+  "e8:pair:tier=S:win=5:mu=0.2:c=2": "a89240403721cde5ea28adc3a628dd6b0c0356fe5f3dab6b2c4b6bb7f3f79858",
+  "e8:pair:tier=S:win=5:mu=0.2:c=3": "72464984a0a2938149750d3a0d526f3136e5f9cdc1a5f9c2afb604a6663a8eea",
+  "e8:pair:tier=S:win=5:mu=0.2:c=4": "7331fa74fc13f1c9eca4181f4cbd76a2a638f67354b3982e24ea7a52183a432d",
+  "e8:pair:tier=S:win=5:mu=0.5:c=1": "3a1a9a342c55674c85ca78b105e5cc5a88522659e78bf08fc7d1976910b141de",
+  "e8:pair:tier=S:win=5:mu=0.5:c=2": "16da1b86bc12ce3c5b22de65d2fd017987f4f6ea8e50cad89d84c0efb72e4f04",
+  "e8:pair:tier=S:win=5:mu=0.5:c=3": "e33dc53dae3b156d328deda8b2a4e27fd893cece54a41ea5e981ee28107db01e",
+  "e8:pair:tier=S:win=5:mu=0.5:c=4": "2cee573eaec9d9e0a5f6349ab7b38ea77c9e2a2b7fbfdb027dfa69cdbe49a069",
+  "e8:pair:tier=S:win=5:mu=2:c=1": "4960cedbabddea7b5140976f39130c648c88814a8ff3c51e35481052ff5afbab",
+  "e8:pair:tier=S:win=5:mu=2:c=2": "12b647cb68e900331d70d649f5a3ed123eff275e8c0dd9979b07c11b2c6a1907",
+  "e8:pair:tier=S:win=5:mu=2:c=3": "80898ff0b1a071468f3c4b803caf24ccb70d9f61c0abfd5003bacf49336af14e",
+  "e8:pair:tier=S:win=5:mu=2:c=4": "32f90c53686cbe424dd2871632586e0a59715a215b843c1b292109b76f14d506",
+  "e8:pair:tier=M:win=60:mu=1:c=1": "36c8fd2ab90e3432d00ceb87e9031258e5f576fd045a397a691f4d47c1e9cbee",
+  "e8:pair:tier=M:win=60:mu=1:c=2": "07601feed11222198c7dfab6b47bf6db0fb0b3bb11fb51f8c21aaf25cc86c0f7",
+  "e8:pair:tier=M:win=60:mu=1:c=3": "16e99cb7867515292c551ea3b31b6b533f8a65ebdf5fd4eb2ddb159098ce98ce",
+  "e8:pair:tier=M:win=60:mu=1:c=4": "4d85e818f05e9a007d6e538e0c84ae2bce231047ba1e1baa8ffff0804d7979b7",
+  "e8:pair:tier=M:win=60:mu=0.2:c=1": "ea358203520334c1588ecee8b56340835aa9efaf333b2874972a17ce7e816c7d",
+  "e8:pair:tier=M:win=60:mu=0.2:c=2": "a7006afbc0bac3aaca8db56fd897b64989d8e52cf9f184f1fbc0832925979b6f",
+  "e8:pair:tier=M:win=60:mu=0.2:c=3": "70992687315aa7bfcdab70be87450581bab42c7ec60033cd152fa1f684c3e5ec",
+  "e8:pair:tier=M:win=60:mu=0.2:c=4": "0804051eba1a46e5fa3fe0b3fc8018dc085b9e9bdd6cb3b8b0aa8711e0eca1c0",
+  "e8:pair:tier=M:win=60:mu=0.5:c=1": "859b97c5995bc6cc268c213d20c42119cfdcb3731ff192436fd426eb22b5f856",
+  "e8:pair:tier=M:win=60:mu=0.5:c=2": "07b6973ea55ab2d25863e7e1b105dd16d5419f194ef05b0ee5a315e3413c2232",
+  "e8:pair:tier=M:win=60:mu=0.5:c=3": "2c866085503c0dc6200213eb60b68bd0075b0ae79e911154fe09c8abdb6c5002",
+  "e8:pair:tier=M:win=60:mu=0.5:c=4": "9140e440b928de04a538206a99a7c925c61c3a610c1cea5721278eb2ed49ce90",
+  "e8:pair:tier=M:win=60:mu=2:c=1": "666a69cde3651e86a984b3ffe4eebe19568fec3b80f3365367f1dd0687c9cc12",
+  "e8:pair:tier=M:win=60:mu=2:c=2": "dc9fa8e1ba065c18f74b69b0e4bd54519f75a2818cbef1854797fef5912015d7",
+  "e8:pair:tier=M:win=60:mu=2:c=3": "68fe97d751a594d14b4608233934b85396ecb63a6919376934fc90dcf06338e6",
+  "e8:pair:tier=M:win=60:mu=2:c=4": "25dae628c70e6628a0613ae60d57553ec9ecc38c6e6dffb255201694d810f8fa",
+  "e8:pair:tier=M:win=15:mu=1:c=1": "9ed923b7205c4f8522d246e08753d278a00df248a47ed1f0545db432a5bf9dbb",
+  "e8:pair:tier=M:win=15:mu=1:c=2": "246e9453ebcbe27bc5b08300694098bd1087e47bce55322cc90837b06da2a22b",
+  "e8:pair:tier=M:win=15:mu=1:c=3": "b095d5088571eae9f9ef2b97cfdc9056848f1be1d30bcefb7241ce210f4e46dd",
+  "e8:pair:tier=M:win=15:mu=1:c=4": "cce2ed6ac1cdaffe1892115678a183e7e90dec242360f182e21551f34c51a0e7",
+  "e8:pair:tier=M:win=15:mu=0.2:c=1": "038a5c62b60b388340b58bb31505ce7218e971e0d26ab84116b403647c0a3445",
+  "e8:pair:tier=M:win=15:mu=0.2:c=2": "c8c79b49f5e135fe70a55c78788d69f7e60f757364439c6f3b0f887d06e89b7f",
+  "e8:pair:tier=M:win=15:mu=0.2:c=3": "ad5b63c62e1054bae3c11ed7c48ff7c949b6b5ac6321e6e6facdb2289bb48748",
+  "e8:pair:tier=M:win=15:mu=0.2:c=4": "6735de97686d2b924402ea165d375a0e5f0eb46cd979ed9d4caafbf6397409b8",
+  "e8:pair:tier=M:win=15:mu=0.5:c=1": "7f49850076c7f4ff115ea98869be36054d6631ce7089ee1debbfb44aca10ae3b",
+  "e8:pair:tier=M:win=15:mu=0.5:c=2": "3056b23f18385b41d7af00705ecf78ac663a1cb9499bd4041ad151e5f85285ed",
+  "e8:pair:tier=M:win=15:mu=0.5:c=3": "b42765cd9e9fbf1029cdbe34760d3e9af4ff4aca4fbd8d1c6998fcaca6ca9cd9",
+  "e8:pair:tier=M:win=15:mu=0.5:c=4": "ac21fc8d049626f8f4bb481f15cd2eb9c87ddf362189382fdcdea7e0e4a4ea6e",
+  "e8:pair:tier=M:win=15:mu=2:c=1": "8874ca0fcc8c488424be2d79b503614bb29863db495dc1c9228838a59069d178",
+  "e8:pair:tier=M:win=15:mu=2:c=2": "caace0fd01062f5ae51ce3e5f45c42c99cbce1fb86257e61ebdafbb43eec5013",
+  "e8:pair:tier=M:win=15:mu=2:c=3": "ca6920bc0212f1d779e1c781d37fc6813a16be7b3e3ec2834f1ef69c58c156fd",
+  "e8:pair:tier=M:win=15:mu=2:c=4": "3ff7167dad3ad73b90be53402acd55519a24afeb42ff56021ec56dadc0731d02",
+  "e8:pair:tier=M:win=5:mu=1:c=1": "8199df199d579586030d2390c80205987f5cb5c5771e0255d55f9063c0d7aedf",
+  "e8:pair:tier=M:win=5:mu=1:c=2": "a917487f8e2991f5ab7bd9ecb7cc1ef447e99779bc627bb378bb2bc4e4fa151b",
+  "e8:pair:tier=M:win=5:mu=1:c=3": "a1abf0e3ad2c7f7b16c94ea6795939443ed7b87706d08f1eacab9ac23dfe92ff",
+  "e8:pair:tier=M:win=5:mu=1:c=4": "6de0ca57b25d97ece57c96c322394888f33273c70a6395181f8450a2bb2fc039",
+  "e8:pair:tier=M:win=5:mu=0.2:c=1": "ca6432f5bf735151a2faf4707f17e910a24c189cf744acd95c551aaec248ff69",
+  "e8:pair:tier=M:win=5:mu=0.2:c=2": "56d7908c96e8a06ad170579eb8af3738686dfed8970760e6e32f6d7178174b0e",
+  "e8:pair:tier=M:win=5:mu=0.2:c=3": "68ae7f92ac3a3b2fbe21d9c0d0012ff153510efac7810597c22fb14d2819edb2",
+  "e8:pair:tier=M:win=5:mu=0.2:c=4": "6a6d96cd4735d5d490ec3761d44e25c967016f495fe0a47fbb500bd424a254f3",
+  "e8:pair:tier=M:win=5:mu=0.5:c=1": "f83b85d2f5991b5c8b72a6927c7de28e3a139994d5f8a5711b630263eafd508b",
+  "e8:pair:tier=M:win=5:mu=0.5:c=2": "202003590d8fe8d4217de169f4413fb113b06ac14c593ed81c1d801007326741",
+  "e8:pair:tier=M:win=5:mu=0.5:c=3": "f19e52ddd6b7d01b6f5d90ea64a5ba969a7718fe836a5328f325db692f9efadc",
+  "e8:pair:tier=M:win=5:mu=0.5:c=4": "e7c6c1302184a40d8ac9e58df5a26babfcc1f94a835cef8aea9eec82eb0fb783",
+  "e8:pair:tier=M:win=5:mu=2:c=1": "971be7abdabea2d58fbb1bd462e15b6f235a039368410df33f048b9686c97264",
+  "e8:pair:tier=M:win=5:mu=2:c=2": "eeaaf779af18769ddd98cb332ad9cc492353f6276d3c104d10fec61aa9278fe2",
+  "e8:pair:tier=M:win=5:mu=2:c=3": "ebef319d50b8f50388aeb1d6791c7d6b055348da0c904bb8126fd0d843bca495",
+  "e8:pair:tier=M:win=5:mu=2:c=4": "f62c165592d12a67b98ca927b340b55185694ccb2aa24f5f10fe35a1946c15ff",
+  "e8:pair:tier=L:win=60:mu=1:c=1": "8a29c8a301296fda6684b400deed749710a14160f770a5dc08acf4a7bb53e8e5",
+  "e8:pair:tier=L:win=60:mu=1:c=2": "b10b17fbbdbe2f2f208b78940221435e9022c445404c5433ca587e81a38a844d",
+  "e8:pair:tier=L:win=60:mu=1:c=3": "8f39336f114038ba10d0fc2520c0450d24d14d4da92bb2071ddfb564225343a0",
+  "e8:pair:tier=L:win=60:mu=1:c=4": "29bbd1ce595fe3508b919a45f4ad3cc1a54e946a66029b37db801a80869e18be",
+  "e8:pair:tier=L:win=60:mu=0.2:c=1": "06787708b2b10aaa07b415bcff2cabf4a1e3442633ae4f595b1526a9289ce70c",
+  "e8:pair:tier=L:win=60:mu=0.2:c=2": "8dadde82ff2d3a709576e63f21f0dc3cb344198fc95d373a438be3212fba25d3",
+  "e8:pair:tier=L:win=60:mu=0.2:c=3": "2c2845cca1be568cbb7f62e551143eeeb4b0e02395f07855b2ec5671f9941c22",
+  "e8:pair:tier=L:win=60:mu=0.2:c=4": "6ba47cbe16072762ad5eeadb2f562b40025ca0f3589e1bf46636fd02a938ec08",
+  "e8:pair:tier=L:win=60:mu=0.5:c=1": "2dfcd91d5e0f337ad3ac6403b812f62facdb15043ca6a54d259ed1fd138e2fbc",
+  "e8:pair:tier=L:win=60:mu=0.5:c=2": "d8bb2abcf18d864ea370e8245c85c244d60079722f836b0a751ed535fdbb99d7",
+  "e8:pair:tier=L:win=60:mu=0.5:c=3": "c5bbbaa970a3d2e4b67715d58be018656e9f2145788ec90227d891842efae588",
+  "e8:pair:tier=L:win=60:mu=0.5:c=4": "a62d63575b8ec846655d3ad085bd24a4e0089c975f977484e8fe5b1f8653d9ae",
+  "e8:pair:tier=L:win=60:mu=2:c=1": "b03f0c7efdf13d65811f287b669b0095d3989a85a7560c49b37223bbe9ed1e2f",
+  "e8:pair:tier=L:win=60:mu=2:c=2": "ac849087416556f70274579e57be3ca062cda962e7614c58193ace700a039eb1",
+  "e8:pair:tier=L:win=60:mu=2:c=3": "f3e70058eb0bcda13970dad54b95deef39b59b2b006bd1181d6db19b0bc0fa9e",
+  "e8:pair:tier=L:win=60:mu=2:c=4": "55df532363dc015decb326c6a2341aff0ae8b908090f89da854e12be27f0402b",
+  "e8:pair:tier=L:win=15:mu=1:c=1": "6871072a7ef5343189b64835cb7e75694123bfc18867b54f925a755dbfa3e426",
+  "e8:pair:tier=L:win=15:mu=1:c=2": "2ff45d99662070c448425d3d60e5062733b733a4e7daed8e3986af56f9232414",
+  "e8:pair:tier=L:win=15:mu=1:c=3": "ef7d928b7720996f6174e2a0242e2424340648ab83cb8b2f22bb3fb752287aa3",
+  "e8:pair:tier=L:win=15:mu=1:c=4": "bf81f6fb21009c6cd4210901c21bb6cfa58f91824d0a5918697204f438dd2030",
+  "e8:pair:tier=L:win=15:mu=0.2:c=1": "391364779389fb78839fb5f7db0fb31f49ed5ff421122d29634e5ff211de7a8e",
+  "e8:pair:tier=L:win=15:mu=0.2:c=2": "11935a713038c9eb9d0a1c4bb72817bda2055256c1dd8a8e3e4766cd44380310",
+  "e8:pair:tier=L:win=15:mu=0.2:c=3": "a26ad329b87451bd42cefa4270faa7661b5d987325030928def44f35b5180a49",
+  "e8:pair:tier=L:win=15:mu=0.2:c=4": "02b1343eccc0b7666aa59ec2fc4fec9f7c6702872be6fac1e08e47779b67de0d",
+  "e8:pair:tier=L:win=15:mu=0.5:c=1": "0f1ab628852502e0a13c8d7e7d048e23ad0cf4525a50bcd33ce1e9118325c2df",
+  "e8:pair:tier=L:win=15:mu=0.5:c=2": "578f892cc1d9a2018ae37d67bf686181391e2e51792201bbd24657b5b7378c2f",
+  "e8:pair:tier=L:win=15:mu=0.5:c=3": "fb1064f41c07efd85cee7d0fd45e76e0a11f21563ff6f9fe9bfac782f0a4894e",
+  "e8:pair:tier=L:win=15:mu=0.5:c=4": "1248ab8457c60ed822d7b36880910d9cfbf4c4c3f9b102cfc26dc2ea17c78494",
+  "e8:pair:tier=L:win=15:mu=2:c=1": "00de0bb5a17166e0d3d0ef389f219f6337829320fa610429e861763114a68186",
+  "e8:pair:tier=L:win=15:mu=2:c=2": "f757bb1b9c20338e58cc0e123b608dbb550acf2e39e42fa53002d3c2ae631423",
+  "e8:pair:tier=L:win=15:mu=2:c=3": "9176e4cd3b3176ba6120fb871a2adc72b06562a414c0cb4224b7c176431beb1a",
+  "e8:pair:tier=L:win=15:mu=2:c=4": "bec132e26cc762cd99dcb0fcbf892009d777d240d590d8e1ea5da20a9d0967ad",
+  "e8:pair:tier=L:win=5:mu=1:c=1": "bc08b00536d3466f75f0a837bb2ba1d9fcac71fbfb8745c4bcac21ecf8f5a619",
+  "e8:pair:tier=L:win=5:mu=1:c=2": "af756eafcdc41dd289467b3d137267d62dc0e3ca744ccbd14b7c86fb69daf6a6",
+  "e8:pair:tier=L:win=5:mu=1:c=3": "27fc77530b04d93e5ff07192ec18d8b2171adfb841e7ce5a16d9d4e36d9a2a68",
+  "e8:pair:tier=L:win=5:mu=1:c=4": "403617c757a99184e2d8dbad5e084f2ced61fa8f471cc84fa7babb5f2f38ff7e",
+  "e8:pair:tier=L:win=5:mu=0.2:c=1": "f6812e56dc27b66163297fc2dd04e2185ba1b94c09e3c0baa789a58c09c4a16f",
+  "e8:pair:tier=L:win=5:mu=0.2:c=2": "3b18b63f0756a6a65a5ddec1bb97e6ff94ae407235e23ab1815fcd83a1bc5357",
+  "e8:pair:tier=L:win=5:mu=0.2:c=3": "1f9c763447d905bedd708508190669b6628ae028b9077d0b601c89ba8fe41ea4",
+  "e8:pair:tier=L:win=5:mu=0.2:c=4": "2dfa765659433185c72961665d1ac8e9491761fc216a2c6a89f9dddfe61514e5",
+  "e8:pair:tier=L:win=5:mu=0.5:c=1": "58df19d1f96311aef4bdf796df652cb474432f4b2e4d7ca490641ef8f8d37e59",
+  "e8:pair:tier=L:win=5:mu=0.5:c=2": "bc70a64b45888a9a5e81cb95421e1f4963daff3627a1175150b70c6d640f0af1",
+  "e8:pair:tier=L:win=5:mu=0.5:c=3": "6d87bdaf7195f1893d75add7cf395552d21bd0c7cc3894914e67cf18017e2153",
+  "e8:pair:tier=L:win=5:mu=0.5:c=4": "5445b00ac2c2de74741b2aef6710a056e6a8b374e1c30fe44aca1727a4a307b8",
+  "e8:pair:tier=L:win=5:mu=2:c=1": "19fd27c4fbf575517ab0519ce301870cf77650fc3e7d66d57ac3a4e08f32618c",
+  "e8:pair:tier=L:win=5:mu=2:c=2": "52103128d3e3f51890b34334f0f90f823a9c102ad01b496dbe428c84a39968fd",
+  "e8:pair:tier=L:win=5:mu=2:c=3": "c3c488bfd07006a77daf1405a54919cb941d5fcce3ca3d09c3daf001c7090b11",
+  "e8:pair:tier=L:win=5:mu=2:c=4": "d0a398c9da3b34555e91be261d7ebef456f0fac3b730fa54de4b7178ecd3a8f2",
+  "e8:mooncake:win=5:prefix=off": "8199df199d579586030d2390c80205987f5cb5c5771e0255d55f9063c0d7aedf",
+  "e8:mooncake:win=5:prefix=on": "8199df199d579586030d2390c80205987f5cb5c5771e0255d55f9063c0d7aedf",
+  "e8:mooncake:win=15:prefix=off": "9ed923b7205c4f8522d246e08753d278a00df248a47ed1f0545db432a5bf9dbb",
+  "e8:mooncake:win=15:prefix=on": "9ed923b7205c4f8522d246e08753d278a00df248a47ed1f0545db432a5bf9dbb",
+  "e8:mooncake:win=60:prefix=off": "36c8fd2ab90e3432d00ceb87e9031258e5f576fd045a397a691f4d47c1e9cbee",
+  "e8:mooncake:win=60:prefix=on": "36c8fd2ab90e3432d00ceb87e9031258e5f576fd045a397a691f4d47c1e9cbee"
+ },
+ "inputs_sha256": {
+  "code/sim/configs/bench_e1.json": "00c069e6c385245a363730711eb1f931cef9e718d7913e05e10cf98b9ce127b7",
+  "code/analysis/out/a12_minute_io.npz": "7a2d61df69c77080f2be11e12cdb3cce82243524d247f75a037042738240f208",
+  "code/analysis/out/a12_sim_inputs.json": "ab8ba5e607aa4a896d1daf23973fa9d6acc16362705973f5eeaf2b517e540377",
+  "code/analysis/out/a5_reclaim_cost_calibration.json": "3a600ad9336eef24be7afb696fac70ab3c0c66db537aa0f146442ba60c1137db",
+  "/mnt/data/datasets/mooncake/conversation_trace.jsonl": "b8cbb061a85206d729d91cdc2981f43c9e0d99209dce588d3af5f7934408b9df"
+ },
+ "raw_azure": {
+  "file": "/mnt/data/datasets/azure-llm-2024/AzureLLMInferenceTrace_conv_1week.csv",
+  "file_bytes": 1135195393,
+  "mtime": 1791678510
+ },
+ "reduced": false,
+ "settings": {
+  "reduced": false,
+  "horizon_min": 10080,
+  "market_tightness": 0.5,
+  "tiers": [
+   "S",
+   "M",
+   "L"
+  ],
+  "windows": [
+   5,
+   15,
+   60
+  ],
+  "mus": [
+   1.0,
+   0.2,
+   0.5,
+   2.0
+  ],
+  "alignments": [
+   1,
+   2,
+   3,
+   4
+  ]
+ }
+}

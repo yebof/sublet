@@ -1,0 +1,833 @@
+{
+ "meta": {
+  "exp": "e3",
+  "git_revision": "939847ca5925ce069d6df9089fe3a3d1d3207bb7",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "scipy": "1.17.1",
+   "sublet": "0.1.0"
+  },
+  "written": "2026-10-26T14:04:21",
+  "script": "code/sim/sublet/experiments/e3.py",
+  "script_sha256": "9405b83500cd7d0dc76204a3ca1b974300ae058c372030e03b04fbd921d13e30"
+ },
+ "jobs": [
+  {
+   "id": "e3:cell:b=1:u=8:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "b": 1,
+    "u": 8,
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon": [
+     156,
+     24
+    ]
+   },
+   "est_s": 10.4,
+   "status": "ok",
+   "wall_s": 1.5981135279871523,
+   "peak_rss_mb": 137.87890625,
+   "runs": 6
+  },
+  {
+   "id": "e3:cell:b=8:u=8:mu=1:c=1",
+   "kind": "pool",
+   "params": {
+    "b": 8,
+    "u": 8,
+    "mu": 1.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon": [
+     156,
+     24
+    ]
+   },
+   "est_s": 55.2,
+   "status": "ok",
+   "wall_s": 2.363354664063081,
+   "peak_rss_mb": 142.39453125,
+   "runs": 6
+  },
+  {
+   "id": "e3:cell:b=8:u=8:mu=2:c=1",
+   "kind": "pool",
+   "params": {
+    "b": 8,
+    "u": 8,
+    "mu": 2.0,
+    "c": 1,
+    "policy_seeds": [
+     0
+    ],
+    "horizon": [
+     156,
+     24
+    ]
+   },
+   "est_s": 55.2,
+   "status": "ok",
+   "wall_s": 2.3697513749357313,
+   "peak_rss_mb": 141.6171875,
+   "runs": 6
+  },
+  {
+   "id": "e3:milp:b=1:u=8:mu=1:c=1:part=shared",
+   "kind": "milp",
+   "params": {
+    "b": 1,
+    "u": 8,
+    "mu": 1.0,
+    "c": 1,
+    "part": "shared",
+    "horizon": [
+     156,
+     24
+    ]
+   },
+   "est_s": 90.0,
+   "status": "ok",
+   "wall_s": 30.624697868945077,
+   "peak_rss_mb": 191.078125,
+   "runs": 0
+  },
+  {
+   "id": "e3:milp:b=1:u=8:mu=1:c=1:part=b00",
+   "kind": "milp",
+   "params": {
+    "b": 1,
+    "u": 8,
+    "mu": 1.0,
+    "c": 1,
+    "part": "b00",
+    "horizon": [
+     156,
+     24
+    ]
+   },
+   "est_s": 90.0,
+   "status": "ok",
+   "wall_s": 0.5326764190103859,
+   "peak_rss_mb": 130.32421875,
+   "runs": 0
+  },
+  {
+   "id": "e3:milp:b=8:u=8:mu=1:c=1:part=shared",
+   "kind": "milp",
+   "params": {
+    "b": 8,
+    "u": 8,
+    "mu": 1.0,
+    "c": 1,
+    "part": "shared",
+    "horizon": [
+     156,
+     24
+    ]
+   },
+   "est_s": 90.0,
+   "status": "ok",
+   "wall_s": 30.629207498161122,
+   "peak_rss_mb": 190.28515625,
+   "runs": 0
+  },
+  {
+   "id": "e3:milp:b=8:u=8:mu=1:c=1:part=b00",
+   "kind": "milp",
+   "params": {
+    "b": 8,
+    "u": 8,
+    "mu": 1.0,
+    "c": 1,
+    "part": "b00",
+    "horizon": [
+     156,
+     24
+    ]
+   },
+   "est_s": 90.0,
+   "status": "ok",
+   "wall_s": 30.62930490099825,
+   "peak_rss_mb": 183.28515625,
+   "runs": 0
+  },
+  {
+   "id": "e3:milp:b=8:u=8:mu=1:c=1:part=b01",
+   "kind": "milp",
+   "params": {
+    "b": 8,
+    "u": 8,
+    "mu": 1.0,
+    "c": 1,
+    "part": "b01",
+    "horizon": [
+     156,
+     24
+    ]
+   },
+   "est_s": 90.0,
+   "status": "ok",
+   "wall_s": 0.7083075300324708,
+   "peak_rss_mb": 139.4296875,
+   "runs": 0
+  },
+  {
+   "id": "e3:milp:b=8:u=8:mu=1:c=1:part=b02",
+   "kind": "milp",
+   "params": {
+    "b": 8,
+    "u": 8,
+    "mu": 1.0,
+    "c": 1,
+    "part": "b02",
+    "horizon": [
+     156,
+     24
+    ]
+   },
+   "est_s": 90.0,
+   "status": "ok",
+   "wall_s": 3.542568663833663,
+   "peak_rss_mb": 204.61328125,
+   "runs": 0
+  },
+  {
+   "id": "e3:milp:b=8:u=8:mu=1:c=1:part=b03",
+   "kind": "milp",
+   "params": {
+    "b": 8,
+    "u": 8,
+    "mu": 1.0,
+    "c": 1,
+    "part": "b03",
+    "horizon": [
+     156,
+     24
+    ]
+   },
+   "est_s": 90.0,
+   "status": "ok",
+   "wall_s": 0.5551785819698125,
+   "peak_rss_mb": 140.18359375,
+   "runs": 0
+  },
+  {
+   "id": "e3:milp:b=8:u=8:mu=1:c=1:part=b04",
+   "kind": "milp",
+   "params": {
+    "b": 8,
+    "u": 8,
+    "mu": 1.0,
+    "c": 1,
+    "part": "b04",
+    "horizon": [
+     156,
+     24
+    ]
+   },
+   "est_s": 90.0,
+   "status": "ok",
+   "wall_s": 4.178758243797347,
+   "peak_rss_mb": 205.17578125,
+   "runs": 0
+  },
+  {
+   "id": "e3:milp:b=8:u=8:mu=1:c=1:part=b05",
+   "kind": "milp",
+   "params": {
+    "b": 8,
+    "u": 8,
+    "mu": 1.0,
+    "c": 1,
+    "part": "b05",
+    "horizon": [
+     156,
+     24
+    ]
+   },
+   "est_s": 90.0,
+   "status": "ok",
+   "wall_s": 0.6285001470241696,
+   "peak_rss_mb": 139.4140625,
+   "runs": 0
+  },
+  {
+   "id": "e3:milp:b=8:u=8:mu=1:c=1:part=b06",
+   "kind": "milp",
+   "params": {
+    "b": 8,
+    "u": 8,
+    "mu": 1.0,
+    "c": 1,
+    "part": "b06",
+    "horizon": [
+     156,
+     24
+    ]
+   },
+   "est_s": 90.0,
+   "status": "ok",
+   "wall_s": 0.6611591321416199,
+   "peak_rss_mb": 142.1484375,
+   "runs": 0
+  },
+  {
+   "id": "e3:milp:b=8:u=8:mu=1:c=1:part=b07",
+   "kind": "milp",
+   "params": {
+    "b": 8,
+    "u": 8,
+    "mu": 1.0,
+    "c": 1,
+    "part": "b07",
+    "horizon": [
+     156,
+     24
+    ]
+   },
+   "est_s": 90.0,
+   "status": "ok",
+   "wall_s": 2.5737079719547182,
+   "peak_rss_mb": 215.828125,
+   "runs": 0
+  },
+  {
+   "id": "e3:milp:b=8:u=8:mu=2:c=1:part=shared",
+   "kind": "milp",
+   "params": {
+    "b": 8,
+    "u": 8,
+    "mu": 2.0,
+    "c": 1,
+    "part": "shared",
+    "horizon": [
+     156,
+     24
+    ]
+   },
+   "est_s": 90.0,
+   "status": "ok",
+   "wall_s": 30.59441586607136,
+   "peak_rss_mb": 171.15625,
+   "runs": 0
+  },
+  {
+   "id": "e3:milp:b=8:u=8:mu=2:c=1:part=b00",
+   "kind": "milp",
+   "params": {
+    "b": 8,
+    "u": 8,
+    "mu": 2.0,
+    "c": 1,
+    "part": "b00",
+    "horizon": [
+     156,
+     24
+    ]
+   },
+   "est_s": 90.0,
+   "status": "ok",
+   "wall_s": 19.902157568139955,
+   "peak_rss_mb": 180.5078125,
+   "runs": 0
+  },
+  {
+   "id": "e3:milp:b=8:u=8:mu=2:c=1:part=b01",
+   "kind": "milp",
+   "params": {
+    "b": 8,
+    "u": 8,
+    "mu": 2.0,
+    "c": 1,
+    "part": "b01",
+    "horizon": [
+     156,
+     24
+    ]
+   },
+   "est_s": 90.0,
+   "status": "ok",
+   "wall_s": 0.6243810709565878,
+   "peak_rss_mb": 139.1796875,
+   "runs": 0
+  },
+  {
+   "id": "e3:milp:b=8:u=8:mu=2:c=1:part=b02",
+   "kind": "milp",
+   "params": {
+    "b": 8,
+    "u": 8,
+    "mu": 2.0,
+    "c": 1,
+    "part": "b02",
+    "horizon": [
+     156,
+     24
+    ]
+   },
+   "est_s": 90.0,
+   "status": "ok",
+   "wall_s": 3.298017079010606,
+   "peak_rss_mb": 156.66796875,
+   "runs": 0
+  },
+  {
+   "id": "e3:milp:b=8:u=8:mu=2:c=1:part=b03",
+   "kind": "milp",
+   "params": {
+    "b": 8,
+    "u": 8,
+    "mu": 2.0,
+    "c": 1,
+    "part": "b03",
+    "horizon": [
+     156,
+     24
+    ]
+   },
+   "est_s": 90.0,
+   "status": "ok",
+   "wall_s": 0.5353561970405281,
+   "peak_rss_mb": 139.921875,
+   "runs": 0
+  },
+  {
+   "id": "e3:milp:b=8:u=8:mu=2:c=1:part=b04",
+   "kind": "milp",
+   "params": {
+    "b": 8,
+    "u": 8,
+    "mu": 2.0,
+    "c": 1,
+    "part": "b04",
+    "horizon": [
+     156,
+     24
+    ]
+   },
+   "est_s": 90.0,
+   "status": "ok",
+   "wall_s": 3.4443044199142605,
+   "peak_rss_mb": 189.4921875,
+   "runs": 0
+  },
+  {
+   "id": "e3:milp:b=8:u=8:mu=2:c=1:part=b05",
+   "kind": "milp",
+   "params": {
+    "b": 8,
+    "u": 8,
+    "mu": 2.0,
+    "c": 1,
+    "part": "b05",
+    "horizon": [
+     156,
+     24
+    ]
+   },
+   "est_s": 90.0,
+   "status": "ok",
+   "wall_s": 0.6447316349949688,
+   "peak_rss_mb": 139.95703125,
+   "runs": 0
+  },
+  {
+   "id": "e3:milp:b=8:u=8:mu=2:c=1:part=b06",
+   "kind": "milp",
+   "params": {
+    "b": 8,
+    "u": 8,
+    "mu": 2.0,
+    "c": 1,
+    "part": "b06",
+    "horizon": [
+     156,
+     24
+    ]
+   },
+   "est_s": 90.0,
+   "status": "ok",
+   "wall_s": 0.6442880081012845,
+   "peak_rss_mb": 141.5859375,
+   "runs": 0
+  },
+  {
+   "id": "e3:milp:b=8:u=8:mu=2:c=1:part=b07",
+   "kind": "milp",
+   "params": {
+    "b": 8,
+    "u": 8,
+    "mu": 2.0,
+    "c": 1,
+    "part": "b07",
+    "horizon": [
+     156,
+     24
+    ]
+   },
+   "est_s": 90.0,
+   "status": "ok",
+   "wall_s": 2.7135369710158557,
+   "peak_rss_mb": 185.74609375,
+   "runs": 0
+  },
+  {
+   "id": "e3:gate",
+   "kind": "pool",
+   "params": {
+    "b": 8,
+    "u": 8,
+    "mu": 1.0,
+    "c": 1,
+    "horizon": [
+     156,
+     24
+    ]
+   },
+   "est_s": 17.2,
+   "status": "ok",
+   "wall_s": 1.3536203620024025,
+   "peak_rss_mb": 142.2890625,
+   "runs": 8
+  }
+ ],
+ "instance_hashes": {
+  "b=1:u=8:mu=1:c=1": {
+   "shared": "2c688559ec00973e02e5bcd061fb520df0287f36b3c877c838a7407b4562c93b",
+   "siloed": "2c688559ec00973e02e5bcd061fb520df0287f36b3c877c838a7407b4562c93b",
+   "sub": {
+    "b00": "2c688559ec00973e02e5bcd061fb520df0287f36b3c877c838a7407b4562c93b"
+   }
+  },
+  "b=8:u=8:mu=1:c=1": {
+   "shared": "90b92e61836c90f492a455c7ba85dbd3c9a07fdc244b4a798ef4274575203b69",
+   "siloed": "65f82299c14b6bb620f3a21eff173058f0a6007c076e37165a14ccceadcf6214",
+   "sub": {
+    "b00": "3bc854a2350dea670781045f98509428195a231304615ee92f9f1edaa4f11485",
+    "b01": "681d7795f47feb38186586acf22fbabedc999fa688549d33d92b4844404db40c",
+    "b02": "36403787779ce1e5511add231522a8901663154774a68f0c7eff6084803059ab",
+    "b04": "100443c7b27bc7ba388450323df9449217102d9e47af9e282a3436a75c3ace8c",
+    "b05": "a8aa17b78cc74077b649a5d06b246270f10241cf7079231c2aed5ccec629b63a",
+    "b06": "f43746822d4b2b439fa08b667b113ebc90f3f0a6ae80e145a69c1afaeddfb8bd",
+    "b07": "6ea3e0b1852e49a98786f5d33cb69432c8f1c8ffe4fc2a8f75262c59238d11f0"
+   }
+  },
+  "b=8:u=8:mu=2:c=1": {
+   "shared": "7bf4d13fbc5a2bfe10cc1dc6a832c5f4eb0255a69254b3b5a677c052d0e49cdf",
+   "siloed": "069c7f7d4a8e1c5e155275c49c9a308f5ea2180eecead088d31c9455a75500fa",
+   "sub": {
+    "b00": "218cf678730324fec8f2da014f3c9a186acf1877cf14f37878f876020e3075f0",
+    "b01": "3a86c0f3ff8e35a26e773869850693ea6d6f50800b63fc66f024308fa240232e",
+    "b02": "e25b741a0d9a80cd7f8e6fe58d32489724c2607ccee82de4909d627ab6fe14de",
+    "b04": "a563a7b01e8d0d543e8cd9e5d2824fdc2731cf938c8c67f67ff308367d323111",
+    "b05": "c33ee7b6c547b308347da166b7f21370ba13947e78adda8b72610aee8aac9fdf",
+    "b06": "760377367f88ac1fd34cebcce67642ca1ab58ae00fe32cf6f1d253fd76acc1cf",
+    "b07": "2052f6d04337caf5beb57b204ad42b33e1e45f7cd837e8768e3c633dc030c2f7"
+   }
+  }
+ },
+ "config_hashes": {
+  "b=1:u=8:mu=1:c=1": {
+   "shared": "22262a1cabdb9c151afc6bbff37a744de6f0a86fde7c2f97e0c5234a43dab7d5",
+   "siloed": "756c18fb9d081675afbf2e29a163f4893fce66a02ca5bd1d5b744cc2055afd8a"
+  },
+  "b=8:u=8:mu=1:c=1": {
+   "shared": "921ee5b9dcd0b04c954cae533029ccec6cb42f0e2ed77aaa4965753a34976a1a",
+   "siloed": "cf24a289466b0efd4fabac0bd2d23c9691d886fb1a91313d557afe73da1f8673"
+  },
+  "b=8:u=8:mu=2:c=1": {
+   "shared": "f9e510627318c7fabfe72275f2ecebd2e32be874e70efaac054624426bf4becb",
+   "siloed": "0b368a69568709337c78f09d7826a59d86c0f11a58ee4cb66d7da5689fb32f84"
+  }
+ },
+ "grid_config_hash": "aaaac5b804bde51e77c8d9aa6f16a404d369f37639c7a92a4ac258c9bc1e6aa4",
+ "slices": [
+  [
+   "azure2024_conv",
+   0
+  ],
+  [
+   "azure2024_code",
+   0
+  ],
+  [
+   "burstgpt_1__ChatGPT__conv",
+   0
+  ],
+  [
+   "burstgpt_1__ChatGPT__api",
+   0
+  ],
+  [
+   "burstgpt_2__ChatGPT__conv",
+   0
+  ],
+  [
+   "burstgpt_2__ChatGPT__api",
+   0
+  ],
+  [
+   "burstgpt_3__ChatGPT__conv",
+   0
+  ],
+  [
+   "burstgpt_3__ChatGPT__api",
+   0
+  ],
+  [
+   "burstgpt_1__ChatGPT__conv",
+   1
+  ],
+  [
+   "burstgpt_1__ChatGPT__api",
+   1
+  ],
+  [
+   "burstgpt_2__ChatGPT__conv",
+   1
+  ],
+  [
+   "burstgpt_2__ChatGPT__api",
+   1
+  ],
+  [
+   "burstgpt_3__ChatGPT__conv",
+   1
+  ],
+  [
+   "burstgpt_3__ChatGPT__api",
+   1
+  ],
+  [
+   "burstgpt_1__ChatGPT__conv",
+   2
+  ],
+  [
+   "burstgpt_1__ChatGPT__api",
+   2
+  ],
+  [
+   "burstgpt_2__ChatGPT__conv",
+   2
+  ],
+  [
+   "burstgpt_2__ChatGPT__api",
+   2
+  ],
+  [
+   "burstgpt_3__ChatGPT__conv",
+   2
+  ],
+  [
+   "burstgpt_3__ChatGPT__api",
+   2
+  ],
+  [
+   "burstgpt_1__ChatGPT__conv",
+   3
+  ],
+  [
+   "burstgpt_1__ChatGPT__api",
+   3
+  ],
+  [
+   "burstgpt_2__ChatGPT__conv",
+   3
+  ],
+  [
+   "burstgpt_2__ChatGPT__api",
+   3
+  ],
+  [
+   "burstgpt_3__ChatGPT__conv",
+   3
+  ],
+  [
+   "burstgpt_3__ChatGPT__api",
+   3
+  ],
+  [
+   "burstgpt_1__ChatGPT__conv",
+   4
+  ],
+  [
+   "burstgpt_1__ChatGPT__api",
+   4
+  ],
+  [
+   "burstgpt_2__ChatGPT__conv",
+   4
+  ],
+  [
+   "burstgpt_2__ChatGPT__api",
+   4
+  ],
+  [
+   "burstgpt_3__ChatGPT__conv",
+   4
+  ],
+  [
+   "burstgpt_3__ChatGPT__api",
+   4
+  ],
+  [
+   "burstgpt_1__ChatGPT__conv",
+   5
+  ],
+  [
+   "burstgpt_1__ChatGPT__api",
+   5
+  ],
+  [
+   "burstgpt_2__ChatGPT__conv",
+   5
+  ],
+  [
+   "burstgpt_2__ChatGPT__api",
+   5
+  ],
+  [
+   "burstgpt_3__ChatGPT__conv",
+   5
+  ],
+  [
+   "burstgpt_3__ChatGPT__api",
+   5
+  ],
+  [
+   "burstgpt_1__ChatGPT__conv",
+   6
+  ],
+  [
+   "burstgpt_1__ChatGPT__api",
+   6
+  ],
+  [
+   "burstgpt_2__ChatGPT__conv",
+   6
+  ],
+  [
+   "burstgpt_2__ChatGPT__api",
+   6
+  ],
+  [
+   "burstgpt_3__ChatGPT__conv",
+   6
+  ],
+  [
+   "burstgpt_3__ChatGPT__api",
+   6
+  ],
+  [
+   "burstgpt_1__ChatGPT__conv",
+   7
+  ],
+  [
+   "burstgpt_1__ChatGPT__api",
+   7
+  ],
+  [
+   "burstgpt_2__ChatGPT__conv",
+   7
+  ],
+  [
+   "burstgpt_2__ChatGPT__api",
+   7
+  ],
+  [
+   "burstgpt_3__ChatGPT__conv",
+   7
+  ],
+  [
+   "burstgpt_3__ChatGPT__api",
+   7
+  ],
+  [
+   "burstgpt_3__ChatGPT__conv",
+   8
+  ],
+  [
+   "burstgpt_3__ChatGPT__api",
+   8
+  ],
+  [
+   "burstgpt_3__ChatGPT__conv",
+   9
+  ],
+  [
+   "burstgpt_3__ChatGPT__api",
+   9
+  ],
+  [
+   "burstgpt_3__ChatGPT__conv",
+   10
+  ],
+  [
+   "burstgpt_3__ChatGPT__api",
+   10
+  ],
+  [
+   "burstgpt_3__ChatGPT__conv",
+   11
+  ],
+  [
+   "burstgpt_3__ChatGPT__api",
+   11
+  ],
+  [
+   "burstgpt_3__ChatGPT__conv",
+   12
+  ],
+  [
+   "burstgpt_3__ChatGPT__api",
+   12
+  ],
+  [
+   "burstgpt_3__ChatGPT__conv",
+   13
+  ],
+  [
+   "burstgpt_3__ChatGPT__api",
+   13
+  ],
+  [
+   "burstgpt_3__ChatGPT__conv",
+   14
+  ],
+  [
+   "burstgpt_3__ChatGPT__api",
+   14
+  ]
+ ],
+ "design": {
+  "reduced": true,
+  "bs": [
+   1,
+   8
+  ],
+  "us": [
+   8
+  ],
+  "mus_sweep": [
+   2.0
+  ],
+  "alignments": [
+   1
+  ],
+  "policy_seeds": [
+   0
+  ],
+  "horizon": [
+   156,
+   24
+  ]
+ }
+}

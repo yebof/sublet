@@ -1,0 +1,883 @@
+{
+ "figure": "fig4v2",
+ "size_in": [
+  7.1399,
+  2.4
+ ],
+ "sources": [
+  "code/sim/out/sublet_v2/main/summary.json",
+  "code/sim/out/sublet_v2/analysis.json",
+  "code/sim/out/sublet_v2/main/runs/e7h__main__k__week__tag__Sublet__c__101.json",
+  "code/sim/out/sublet_v2/main/runs/e7h__main__k__week__tag__BL1-BO__c__101.json",
+  "code/sim/out/sublet_v2/main/runs/e7h__main__k__week__tag__BL1__c__101.json",
+  "code/sim/out/sublet_v2/main/runs/e7h__main__k__week__tag__BL5-cur__c__101.json",
+  "code/sim/out/sublet_v2/main/runs/e7h__main__k__week__tag__BL5-tau60__c__101.json",
+  "code/sim/out/sublet_v2/main/runs/e7h__main__k__week__tag__BL2__c__101.json",
+  "code/sim/out/sublet_v2/main/runs/e7h__main__k__week__tag__BL3-0__c__101.json",
+  "code/sim/out/sublet_v2/main/runs/e7h__main__k__week__tag__BL4__c__101.json"
+ ],
+ "data": {
+  "a": {
+   "order": [
+    "sublet_v2",
+    "bl1_bo",
+    "bl1",
+    "bl5_cur",
+    "bl5_tau60",
+    "bl2",
+    "bl3_0",
+    "bl4"
+   ],
+   "accounting": "overflow",
+   "mode": "L-tr",
+   "policy_seed": 0,
+   "weeks": [
+    "101"
+   ],
+   "sublet_v2": {
+    "tag": "Sublet",
+    "label": "Sublet",
+    "r0": [
+     0.9628922431831444
+    ],
+    "missing": [],
+    "median": 0.9628922431831444,
+    "ci_lo": 0.9628922431831444,
+    "ci_hi": 0.9628922431831444,
+    "n": 1,
+    "components_over_bl0a": {
+     "lease": [
+      0.3410621842051033
+     ],
+     "loading": [
+      0.0
+     ],
+     "routing": [
+      0.010370834434467246
+     ],
+     "fallback": [
+      0.587821432600844
+     ],
+     "stranding": [
+      0.023637791942729792
+     ]
+    },
+    "components_median_over_bl0a": {
+     "lease": 0.3410621842051033,
+     "loading": 0.0,
+     "routing": 0.010370834434467246,
+     "fallback": 0.587821432600844,
+     "stranding": 0.023637791942729792
+    },
+    "total_over_bl0a_median": 0.9981599826700929,
+    "segments": {
+     "lease": 0.3410621842051033,
+     "routing": 0.010370834434467246,
+     "fallback": 0.587821432600844,
+     "stranding": 0.023637791942729792
+    }
+   },
+   "bl1_bo": {
+    "tag": "BL1-BO",
+    "label": "Greedy, back-off",
+    "r0": [
+     0.6511795022043789
+    ],
+    "missing": [],
+    "median": 0.6511795022043789,
+    "ci_lo": 0.6511795022043789,
+    "ci_hi": 0.6511795022043789,
+    "n": 1,
+    "components_over_bl0a": {
+     "lease": [
+      0.5306874564557434
+     ],
+     "loading": [
+      0.0
+     ],
+     "routing": [
+      0.023626244573948137
+     ],
+     "fallback": [
+      0.07009294751780364
+     ],
+     "stranding": [
+      0.026772853656883776
+     ]
+    },
+    "components_median_over_bl0a": {
+     "lease": 0.5306874564557434,
+     "loading": 0.0,
+     "routing": 0.023626244573948137,
+     "fallback": 0.07009294751780364,
+     "stranding": 0.026772853656883776
+    },
+    "total_over_bl0a_median": 0.982703461054287,
+    "segments": {
+     "lease": 0.5306874564557434,
+     "routing": 0.023626244573948133,
+     "fallback": 0.07009294751780362,
+     "stranding": 0.026772853656883772
+    }
+   },
+   "bl1": {
+    "tag": "BL1",
+    "label": "Greedy renting",
+    "r0": [
+     0.6638351134177733
+    ],
+    "missing": [],
+    "median": 0.6638351134177733,
+    "ci_lo": 0.6638351134177733,
+    "ci_hi": 0.6638351134177733,
+    "n": 1,
+    "components_over_bl0a": {
+     "lease": [
+      0.5307840716432626
+     ],
+     "loading": [
+      0.0
+     ],
+     "routing": [
+      0.02166846180041815
+     ],
+     "fallback": [
+      0.07683854707239007
+     ],
+     "stranding": [
+      0.03454403290170253
+     ]
+    },
+    "components_median_over_bl0a": {
+     "lease": 0.5307840716432626,
+     "loading": 0.0,
+     "routing": 0.02166846180041815,
+     "fallback": 0.07683854707239007,
+     "stranding": 0.03454403290170253
+    },
+    "total_over_bl0a_median": 0.9833309994977489,
+    "segments": {
+     "lease": 0.5307840716432626,
+     "routing": 0.02166846180041815,
+     "fallback": 0.07683854707239007,
+     "stranding": 0.03454403290170253
+    }
+   },
+   "bl5_cur": {
+    "tag": "BL5-cur",
+    "label": "RetroRenting-style",
+    "r0": [
+     0.8322013113669223
+    ],
+    "missing": [],
+    "median": 0.8322013113669223,
+    "ci_lo": 0.8322013113669223,
+    "ci_hi": 0.8322013113669223,
+    "n": 1,
+    "components_over_bl0a": {
+     "lease": [
+      0.3912983219953556
+     ],
+     "loading": [
+      0.0
+     ],
+     "routing": [
+      0.009755797649389747
+     ],
+     "fallback": [
+      0.3983525349477676
+     ],
+     "stranding": [
+      0.032794656774409486
+     ]
+    },
+    "components_median_over_bl0a": {
+     "lease": 0.3912983219953556,
+     "loading": 0.0,
+     "routing": 0.009755797649389747,
+     "fallback": 0.3983525349477676,
+     "stranding": 0.032794656774409486
+    },
+    "total_over_bl0a_median": 0.9916795699469414,
+    "segments": {
+     "lease": 0.3912983219953555,
+     "routing": 0.009755797649389745,
+     "fallback": 0.39835253494776757,
+     "stranding": 0.03279465677440948
+    }
+   },
+   "bl5_tau60": {
+    "tag": "BL5-tau60",
+    "label": "RetroRenting, $\\tau\\geq1$ h",
+    "r0": [
+     1.7174610301758495
+    ],
+    "missing": [],
+    "median": 1.7174610301758495,
+    "ci_lo": 1.7174610301758495,
+    "ci_hi": 1.7174610301758495,
+    "n": 1,
+    "components_over_bl0a": {
+     "lease": [
+      1.3584104377820119
+     ],
+     "loading": [
+      0.0
+     ],
+     "routing": [
+      0.013617074943342187
+     ],
+     "fallback": [
+      0.2994267827697158
+     ],
+     "stranding": [
+      0.046006734680779704
+     ]
+    },
+    "components_median_over_bl0a": {
+     "lease": 1.3584104377820119,
+     "loading": 0.0,
+     "routing": 0.013617074943342187,
+     "fallback": 0.2994267827697158,
+     "stranding": 0.046006734680779704
+    },
+    "total_over_bl0a_median": 1.0355758699069886,
+    "segments": {
+     "lease": 1.3584104377820116,
+     "routing": 0.013617074943342187,
+     "fallback": 0.2994267827697158,
+     "stranding": 0.046006734680779704
+    }
+   },
+   "bl2": {
+    "tag": "BL2",
+    "label": "Per-borrower ski rental",
+    "r0": [
+     0.7487902346277859
+    ],
+    "missing": [],
+    "median": 0.7487902346277859,
+    "ci_lo": 0.7487902346277859,
+    "ci_hi": 0.7487902346277859,
+    "n": 1,
+    "components_over_bl0a": {
+     "lease": [
+      0.4489153326567468
+     ],
+     "loading": [
+      0.0
+     ],
+     "routing": [
+      0.004439124982115621
+     ],
+     "fallback": [
+      0.25382461069490014
+     ],
+     "stranding": [
+      0.041611166294023366
+     ]
+    },
+    "components_median_over_bl0a": {
+     "lease": 0.4489153326567468,
+     "loading": 0.0,
+     "routing": 0.004439124982115621,
+     "fallback": 0.25382461069490014,
+     "stranding": 0.041611166294023366
+    },
+    "total_over_bl0a_median": 0.987543566052561,
+    "segments": {
+     "lease": 0.4489153326567468,
+     "routing": 0.004439124982115621,
+     "fallback": 0.25382461069490014,
+     "stranding": 0.041611166294023366
+    }
+   },
+   "bl3_0": {
+    "tag": "BL3-0",
+    "label": "SpotHedge-style, $N_{\\mathrm{Extra}}=0$",
+    "r0": [
+     0.7810346939112378
+    ],
+    "missing": [],
+    "median": 0.7810346939112378,
+    "ci_lo": 0.7810346939112378,
+    "ci_hi": 0.7810346939112378,
+    "n": 1,
+    "components_over_bl0a": {
+     "lease": [
+      0.43622835486817524
+     ],
+     "loading": [
+      0.0
+     ],
+     "routing": [
+      0.01609861903052759
+     ],
+     "fallback": [
+      0.27444226051881
+     ],
+     "stranding": [
+      0.054265459493725035
+     ]
+    },
+    "components_median_over_bl0a": {
+     "lease": 0.43622835486817524,
+     "loading": 0.0,
+     "routing": 0.01609861903052759,
+     "fallback": 0.27444226051881,
+     "stranding": 0.054265459493725035
+    },
+    "total_over_bl0a_median": 0.9891424329462906,
+    "segments": {
+     "lease": 0.43622835486817524,
+     "routing": 0.01609861903052759,
+     "fallback": 0.27444226051881,
+     "stranding": 0.054265459493725035
+    }
+   },
+   "bl4": {
+    "tag": "BL4",
+    "label": "CoCaR-style",
+    "r0": [
+     0.9941277774503176
+    ],
+    "missing": [],
+    "median": 0.9941277774503176,
+    "ci_lo": 0.9941277774503176,
+    "ci_hi": 0.9941277774503176,
+    "n": 1,
+    "components_over_bl0a": {
+     "lease": [
+      0.0947952913534562
+     ],
+     "loading": [
+      0.0
+     ],
+     "routing": [
+      0.0031888652370188016
+     ],
+     "fallback": [
+      0.8828812075143265
+     ],
+     "stranding": [
+      0.013262413345516087
+     ]
+    },
+    "components_median_over_bl0a": {
+     "lease": 0.0947952913534562,
+     "loading": 0.0,
+     "routing": 0.0031888652370188016,
+     "fallback": 0.8828812075143265,
+     "stranding": 0.013262413345516087
+    },
+    "total_over_bl0a_median": 0.9997088212227484,
+    "segments": {
+     "lease": 0.09479529135345618,
+     "routing": 0.003188865237018801,
+     "fallback": 0.8828812075143264,
+     "stranding": 0.013262413345516085
+    }
+   },
+   "zero_components": [
+    "loading"
+   ],
+   "components": {
+    "order": [
+     "lease",
+     "routing",
+     "fallback",
+     "stranding"
+    ],
+    "labels": {
+     "lease": "Lease",
+     "routing": "Routing",
+     "fallback": "Fallback",
+     "stranding": "Stranding"
+    },
+    "note": "lease is lease_prepaid + lease_rent (the run files' grouped components over the run's bl0a_usd); each bar's median r0 split by the components' medians over the weeks, scaled to the bar (W1)"
+   },
+   "bl0a": {
+    "x": 1.0,
+    "usd_by_week": {
+     "101": 1791.924523380456
+    },
+    "usd_median": 1791.924523380456,
+    "label": "All-fallback"
+   },
+   "bl0b": {
+    "overflow_over_bl0a": 5.856641071034571,
+    "total_over_bl0a": 1.2408203702516294,
+    "overflow_over_bl0a_by_week": {
+     "101": 5.856641071034571
+    },
+    "total_over_bl0a_by_week": {
+     "101": 1.2408203702516294
+    },
+    "off_scale": true,
+    "label": "Provision for peak",
+    "rule": "median over the weeks of the run files' references bl0b_overflow_usd / bl0a_usd (total accounting: bl0b_total_usd / bl0a_total_usd)"
+   },
+   "own_capacity_usd": {
+    "by_week": {
+     "101": 34345.941336348165
+    },
+    "median": 34345.941336348165
+   }
+  },
+  "b": {
+   "weeks": [
+    "101"
+   ],
+   "x": [
+    101
+   ],
+   "trace": [
+    -0.31171274097876545
+   ],
+   "w0_set": [
+    -0.007769922550139308
+   ],
+   "w0_tau60": [
+    0.693249813825094
+   ],
+   "best_trace": [
+    "BL1-BO"
+   ],
+   "best_w0": [
+    "BL4"
+   ],
+   "dodge_weeks": {
+    "trace": 0.25,
+    "w0_set": 0.0,
+    "w0_tau60": -0.25
+   },
+   "negative": [
+    {
+     "week": "101",
+     "x": 101,
+     "series": [
+      "trace",
+      "w0_set"
+     ],
+     "lowest": "trace",
+     "y": -0.31171274097876545
+    }
+   ],
+   "missing_weeks": [],
+   "notes": [],
+   "h1_set": [
+    "BL1",
+    "BL1-BO",
+    "BL2",
+    "BL3-0",
+    "BL4",
+    "BL5",
+    "BL5-cur"
+   ],
+   "h2b_set": [
+    "BL5-tau60",
+    "BL1-GP",
+    "BL1N",
+    "BL5N"
+   ],
+   "tau60_below_sublet_weeks": [],
+   "h2b_failing_weeks": [],
+   "sources": {
+    "trace": "analysis.json H1.margins.<week>.delta",
+    "w0_set": "analysis.json min(H2.weeks[i].others) - H2.weeks[i].Sublet",
+    "w0_tau60": "analysis.json H2b.weeks[i].others.BL5-tau60 - H2b.weeks[i].Sublet"
+   }
+  },
+  "c": {
+   "order": [
+    "bl1",
+    "bl5_cur",
+    "bl1n",
+    "bl5n",
+    "bl1_gp",
+    "sublet_v2"
+   ],
+   "mode": "L-tr",
+   "policy_seed": 0,
+   "bl1": {
+    "tag": "BL1",
+    "r0": {
+     "median": 0.6638351134177733,
+     "ci": [
+      0.6638351134177733,
+      0.6638351134177733
+     ],
+     "n": 1
+    },
+    "W0": {
+     "median": 1.9456081095151643,
+     "ci": [
+      1.9456081095151643,
+      1.9456081095151643
+     ],
+     "n": 1
+    },
+    "missing_r0": [],
+    "missing_W0": [],
+    "label": "Greedy renting"
+   },
+   "bl5_cur": {
+    "tag": "BL5-cur",
+    "r0": {
+     "median": 0.8322013113669223,
+     "ci": [
+      0.8322013113669223,
+      0.8322013113669223
+     ],
+     "n": 1
+    },
+    "W0": {
+     "median": 1.265240979290852,
+     "ci": [
+      1.265240979290852,
+      1.265240979290852
+     ],
+     "n": 1
+    },
+    "missing_r0": [],
+    "missing_W0": [],
+    "label": "RetroRenting-style"
+   },
+   "bl1n": {
+    "tag": "BL1N",
+    "r0": {
+     "median": 0.6611243552812026,
+     "ci": [
+      0.6611243552812026,
+      0.6611243552812026
+     ],
+     "n": 1
+    },
+    "W0": {
+     "median": 1.0809665708207665,
+     "ci": [
+      1.0809665708207665,
+      1.0809665708207665
+     ],
+     "n": 1
+    },
+    "missing_r0": [],
+    "missing_W0": [],
+    "label": "Greedy + notice layer"
+   },
+   "bl5n": {
+    "tag": "BL5N",
+    "r0": {
+     "median": 0.8539644980178834,
+     "ci": [
+      0.8539644980178834,
+      0.8539644980178834
+     ],
+     "n": 1
+    },
+    "W0": {
+     "median": 1.1395405908116896,
+     "ci": [
+      1.1395405908116896,
+      1.1395405908116896
+     ],
+     "n": 1
+    },
+    "missing_r0": [],
+    "missing_W0": [],
+    "label": "RetroRenting + notice layer"
+   },
+   "bl1_gp": {
+    "tag": "BL1-GP",
+    "r0": {
+     "median": 1.0393309492479443,
+     "ci": [
+      1.0393309492479443,
+      1.0393309492479443
+     ],
+     "n": 1
+    },
+    "W0": {
+     "median": 1.1428208595957485,
+     "ci": [
+      1.1428208595957485,
+      1.1428208595957485
+     ],
+     "n": 1
+    },
+    "missing_r0": [],
+    "missing_W0": [],
+    "label": "Greedy + guard"
+   },
+   "sublet_v2": {
+    "tag": "Sublet",
+    "r0": {
+     "median": 0.9628922431831444,
+     "ci": [
+      0.9628922431831444,
+      0.9628922431831444
+     ],
+     "n": 1
+    },
+    "W0": {
+     "median": 1.0246634486851858,
+     "ci": [
+      1.0246634486851858,
+      1.0246634486851858
+     ],
+     "n": 1
+    },
+    "missing_r0": [],
+    "missing_W0": [],
+    "label": "Sublet"
+   },
+   "a9": {
+    "tag": "A9",
+    "r0": {
+     "median": 0.6851858680161168,
+     "ci": [
+      0.6851858680161168,
+      0.6851858680161168
+     ],
+     "n": 1
+    },
+    "W0": {
+     "median": 1.0303346736136634,
+     "ci": [
+      1.0303346736136634,
+      1.0303346736136634
+     ],
+     "n": 1
+    },
+    "missing_r0": [],
+    "missing_W0": [],
+    "abs_diff_to_sublet": {
+     "r0": 0.27770637516702756,
+     "W0": 0.005671224928477603
+    },
+    "tol": 0.001,
+    "coincides": false
+   }
+  },
+  "hypotheses": {
+   "H1": {
+    "wins": 0,
+    "n_weeks": 1,
+    "median_margin": -0.31171274097876545,
+    "ci": [
+     -0.31171274097876545,
+     -0.31171274097876545
+    ],
+    "B": 10000,
+    "seed": 20261031,
+    "pass": false
+   },
+   "H2": {
+    "weeks_below_1": 0,
+    "weeks_below_set": 0,
+    "n_weeks": 1,
+    "median_W0": 1.0246634486851858,
+    "set": [
+     "BL1",
+     "BL1-BO",
+     "BL2",
+     "BL3-0",
+     "BL4",
+     "BL5",
+     "BL5-cur"
+    ],
+    "pass": false
+   },
+   "H2b": {
+    "weeks_below_set": 1,
+    "n_weeks": 1,
+    "set": [
+     "BL5-tau60",
+     "BL1-GP",
+     "BL1N",
+     "BL5N"
+    ],
+    "tau60_below_sublet_weeks": [],
+    "failing_weeks": [],
+    "pass": false
+   },
+   "H6": {
+    "median_price": 0.12332957007526424,
+    "n": 6,
+    "pass": false
+   }
+  },
+  "labels": {
+   "a_x": "Trace cost / all-fallback",
+   "b_x": "Week",
+   "b_y": "Sublet's margin",
+   "c_x": "Trace cost / all-fallback",
+   "c_y": "Worst case $W_0$",
+   "no_data": "no runs",
+   "bars": {
+    "sublet_v2": "Sublet",
+    "bl1_bo": "Greedy, back-off",
+    "bl1": "Greedy renting",
+    "bl5_cur": "RetroRenting-style",
+    "bl5_tau60": "RetroRenting, $\\tau\\geq1$ h",
+    "bl2": "Per-borrower ski rental",
+    "bl3_0": "SpotHedge-style, $N_{\\mathrm{Extra}}=0$",
+    "bl4": "CoCaR-style"
+   },
+   "bl0a": "All-fallback",
+   "bl0b": "Provision for peak",
+   "bl0b_ratio": "5.9",
+   "components": {
+    "lease": "Lease",
+    "routing": "Routing",
+    "fallback": "Fallback",
+    "stranding": "Stranding"
+   },
+   "margins": {
+    "trace": "Cost vs. best",
+    "w0_set": "$W_0$ vs. best",
+    "w0_tau60": "$W_0$ vs. $\\tau\\geq1$ h"
+   },
+   "accounting": "overflow accounting: cost / BL0a without the borrowers' own capacity (M2)",
+   "own_capacity": "34,346 USD per week",
+   "caption": "Fig. 4. E7, 1 confirmation week (trace lender, overflow accounting); all-fallback: 1,792 USD/week (median). Medians, 95% intervals. (a) Segments: component medians, scaled; provision for peak: 5.9. (b) Per week, least of H1's set minus Sublet: trace cost (H1: median -0.312 [-0.312, -0.312]), W0 (>0 in 0/1, H2); RetroRenting, \u03c4\u22651 h minus Sublet: W0 (<0 in 0/1; H2b fails). (c) Grey: all-fallback; critical-ratio renting alone: 0.685, 1.030. Weeks: rotations of one series; statistics descriptive; RetroRenting-style, lagged (H1's set): supplement.",
+   "caption_chars": 548,
+   "caption_lines_est": 4,
+   "status": {
+    "statistics": "descriptive (design/sublet_v2.md \u00a74.5, Dependence)"
+   }
+  },
+  "scope": {
+   "part": "main",
+   "weeks": [
+    "101"
+   ],
+   "seeds": [
+    0
+   ],
+   "modes": [
+    "L-tr"
+   ],
+   "W0_modes": "the five stress modes of W0 (main/summary.json W0.0; ms4_common.stress_modes)",
+   "tags": {
+    "a": [
+     "Sublet",
+     "BL1-BO",
+     "BL1",
+     "BL5-cur",
+     "BL5-tau60",
+     "BL2",
+     "BL3-0",
+     "BL4"
+    ],
+    "b": [
+     "Sublet",
+     "BL1",
+     "BL1-BO",
+     "BL2",
+     "BL3-0",
+     "BL4",
+     "BL5",
+     "BL5-cur",
+     "BL5-tau60"
+    ],
+    "c": [
+     "BL1",
+     "BL5-cur",
+     "BL1N",
+     "BL5N",
+     "BL1-GP",
+     "Sublet"
+    ],
+    "a9": [
+     "A9"
+    ]
+   }
+  },
+  "stats": {
+   "function": "sublet.experiments.ms5b_common.bootstrap_median_ci",
+   "B": 10000,
+   "seed": 20261031,
+   "level": 0.95,
+   "over": "the weeks, policy seed 0"
+  },
+  "runs_files": [
+   {
+    "path": "code/sim/out/sublet_v2/main/runs/e7h__main__k__week__tag__Sublet__c__101.json",
+    "sha256": "c7018e0661a7cedd08ced42140b75fb31691e655269762921e43cc20967187cb"
+   },
+   {
+    "path": "code/sim/out/sublet_v2/main/runs/e7h__main__k__week__tag__BL1-BO__c__101.json",
+    "sha256": "bad4af9549183d8dbd860dbce8f5dc360e08ea3cc4887874041ae0242c849ae7"
+   },
+   {
+    "path": "code/sim/out/sublet_v2/main/runs/e7h__main__k__week__tag__BL1__c__101.json",
+    "sha256": "e7450cbec2da6fafa7966e017dd13a11ee58bdfa41d1504c1437ca0acae03010"
+   },
+   {
+    "path": "code/sim/out/sublet_v2/main/runs/e7h__main__k__week__tag__BL5-cur__c__101.json",
+    "sha256": "0fcc021e483390c5698cc8a20bf64ce2fad93e3a41aee8e9062d83e09eb841e2"
+   },
+   {
+    "path": "code/sim/out/sublet_v2/main/runs/e7h__main__k__week__tag__BL5-tau60__c__101.json",
+    "sha256": "b064537ca6b1a851fcc4b595676c8d024c93160457122f36eacf939c8c615d66"
+   },
+   {
+    "path": "code/sim/out/sublet_v2/main/runs/e7h__main__k__week__tag__BL2__c__101.json",
+    "sha256": "70e79bb71aa405f57a737424e5644b3e1b5bfb4c56cc5c63b99a7be24272bff1"
+   },
+   {
+    "path": "code/sim/out/sublet_v2/main/runs/e7h__main__k__week__tag__BL3-0__c__101.json",
+    "sha256": "2eefcdd3820c731a5d366a40d8beade5bf581a68dd4ad017798b1eabcdf83141"
+   },
+   {
+    "path": "code/sim/out/sublet_v2/main/runs/e7h__main__k__week__tag__BL4__c__101.json",
+    "sha256": "4035c5e16e60f9b0a78e34eb63a981b30a2e9b4b0ae76686473b6ea6ac1c9c80"
+   }
+  ],
+  "meta": {
+   "git_revision": "5c7d33285b9a4f4e4df2b76e80b3e5f56d58bd37",
+   "analysis_git_revision": "5c7d33285b9a4f4e4df2b76e80b3e5f56d58bd37",
+   "analysis_sha256": "dde0835e12643e95d17f103843f0e8418acf2042ed921dbd9720ddcb7b46992e",
+   "reduced": true,
+   "weeks": [
+    "101"
+   ],
+   "sources": [
+    "code/sim/out/sublet_v2/main/summary.json",
+    "code/sim/out/sublet_v2/analysis.json",
+    "code/sim/out/sublet_v2/main/runs/e7h__main__k__week__tag__Sublet__c__101.json",
+    "code/sim/out/sublet_v2/main/runs/e7h__main__k__week__tag__BL1-BO__c__101.json",
+    "code/sim/out/sublet_v2/main/runs/e7h__main__k__week__tag__BL1__c__101.json",
+    "code/sim/out/sublet_v2/main/runs/e7h__main__k__week__tag__BL5-cur__c__101.json",
+    "code/sim/out/sublet_v2/main/runs/e7h__main__k__week__tag__BL5-tau60__c__101.json",
+    "code/sim/out/sublet_v2/main/runs/e7h__main__k__week__tag__BL2__c__101.json",
+    "code/sim/out/sublet_v2/main/runs/e7h__main__k__week__tag__BL3-0__c__101.json",
+    "code/sim/out/sublet_v2/main/runs/e7h__main__k__week__tag__BL4__c__101.json"
+   ]
+  },
+  "layout": {
+   "left_in": [
+    1.5907,
+    0.5,
+    0.5
+   ],
+   "axes_in": [
+    2.048,
+    1.2206,
+    1.2206
+   ],
+   "a_x_hi": 1.7174610301758495,
+   "a_x_max": 2.8815936151871013,
+   "a_column_in": 0.8274,
+   "measured": {
+    "bar_names_in": 1.5907,
+    "key_in": 0.7163,
+    "bl0a_label_in": 0.61,
+    "bl0b_in": 0.4003,
+    "width_in": 0.7163
+   },
+   "rule": "(a): reserve = widest bar name (ytick_reserve); axes = the bars' [0, x_hi] at (b)'s width + the label column (4 pt + the widest of BL0a's label, the components' key and BL0b's ratio with its arrow, at 9 pt, + 4 pt); (b) = (c)"
+  }
+ }
+}

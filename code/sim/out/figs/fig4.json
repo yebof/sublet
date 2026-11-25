@@ -1,0 +1,859 @@
+{
+ "figure": "fig4",
+ "size_in": [
+  7.1399,
+  2.2
+ ],
+ "sources": [
+  "code/sim/out/e7/main/summary.json",
+  "code/sim/out/e3/summary.json"
+ ],
+ "data": {
+  "a": {
+   "order": [
+    "sublet",
+    "bl5",
+    "bl1",
+    "bl4",
+    "a7",
+    "a7_guard",
+    "a6"
+   ],
+   "accounting": "overflow",
+   "sublet": {
+    "tag": "Sublet",
+    "median": 0.715850698689078,
+    "ci_lo": 0.6903204156757248,
+    "ci_hi": 0.7863053806910788,
+    "n": 12,
+    "components_mean_over_bl0a": {
+     "lease": 0.39648151308949964,
+     "loading": 0.0,
+     "routing": 0.003372600054878452,
+     "fallback": 0.311017374424857,
+     "stranding": 0.028837106254353855
+    },
+    "total_over_bl0a_median": 0.961803361344337,
+    "label": "Sublet",
+    "segments": {
+     "lease": 0.3836937552602086,
+     "routing": 0.00326382324856339,
+     "fallback": 0.30098609999328163,
+     "stranding": 0.027907020187024484
+    }
+   },
+   "bl5": {
+    "tag": "BL5",
+    "median": 0.715850698689078,
+    "ci_lo": 0.6903204156757248,
+    "ci_hi": 0.7863053806910788,
+    "n": 12,
+    "components_mean_over_bl0a": {
+     "lease": 0.39648151308949964,
+     "loading": 0.0,
+     "routing": 0.003372600054878452,
+     "fallback": 0.311017374424857,
+     "stranding": 0.028837106254353855
+    },
+    "total_over_bl0a_median": 0.961803361344337,
+    "label": "RetroRenting-style",
+    "segments": {
+     "lease": 0.3836937552602086,
+     "routing": 0.00326382324856339,
+     "fallback": 0.30098609999328163,
+     "stranding": 0.027907020187024484
+    }
+   },
+   "bl1": {
+    "tag": "BL1",
+    "median": 0.6619217556617112,
+    "ci_lo": 0.5992962007860436,
+    "ci_hi": 0.7413249539999398,
+    "n": 12,
+    "components_mean_over_bl0a": {
+     "lease": 0.6071762711881609,
+     "loading": 0.0,
+     "routing": 0.005463933507925532,
+     "fallback": 0.032677932842095775,
+     "stranding": 0.024002920091143094
+    },
+    "total_over_bl0a_median": 0.9556032686788756,
+    "label": "Greedy renting",
+    "segments": {
+     "lease": 0.600463975904932,
+     "routing": 0.005403530068506933,
+     "fallback": 0.03231668036091359,
+     "stranding": 0.02373756932735876
+    }
+   },
+   "bl4": {
+    "tag": "BL4",
+    "median": 0.9080303676223338,
+    "ci_lo": 0.8954607124923406,
+    "ci_hi": 0.9240208295435021,
+    "n": 12,
+    "components_mean_over_bl0a": {
+     "lease": 0.3801036349473312,
+     "loading": 0.0,
+     "routing": 0.004685341184513084,
+     "fallback": 0.5093775876180132,
+     "stranding": 0.016042174907480302
+    },
+    "total_over_bl0a_median": 0.9877305418687297,
+    "label": "CoCaR-style",
+    "segments": {
+     "lease": 0.37919394608860807,
+     "routing": 0.0046741279198057924,
+     "fallback": 0.5081585118877757,
+     "stranding": 0.016003781726144257
+    }
+   },
+   "a7": {
+    "tag": "A7",
+    "median": 0.7422282118118826,
+    "ci_lo": 0.7203378465411594,
+    "ci_hi": 0.778198011270924,
+    "n": 12,
+    "components_mean_over_bl0a": {
+     "lease": 0.5287510167491432,
+     "loading": 0.0,
+     "routing": 0.019466751062453415,
+     "fallback": 0.14104267742388205,
+     "stranding": 0.061046852037393656
+    },
+    "total_over_bl0a_median": 0.9661858240074581,
+    "label": "PD heuristic",
+    "segments": {
+     "lease": 0.5230575833153644,
+     "routing": 0.019257138886145105,
+     "fallback": 0.13952397188990145,
+     "stranding": 0.0603895177204716
+    }
+   },
+   "a7_guard": {
+    "tag": "A7G",
+    "median": 0.7422282118118826,
+    "ci_lo": 0.7203378465411594,
+    "ci_hi": 0.778198011270924,
+    "n": 12,
+    "components_mean_over_bl0a": {
+     "lease": 0.5287510167491432,
+     "loading": 0.0,
+     "routing": 0.019466751062453415,
+     "fallback": 0.14104267742388205,
+     "stranding": 0.061046852037393656
+    },
+    "total_over_bl0a_median": 0.9661858240074581,
+    "label": "PD heuristic + guard",
+    "segments": {
+     "lease": 0.5230575833153644,
+     "routing": 0.019257138886145105,
+     "fallback": 0.13952397188990145,
+     "stranding": 0.0603895177204716
+    }
+   },
+   "a6": {
+    "tag": "A6",
+    "median": 0.9738222495245962,
+    "ci_lo": 0.8854528749284105,
+    "ci_hi": 1.0664100355434276,
+    "n": 12,
+    "components_mean_over_bl0a": {
+     "lease": 0.6351586490992177,
+     "loading": 0.0,
+     "routing": 0.013525330961874091,
+     "fallback": 0.3268108944836055,
+     "stranding": 0.00461214229974283
+    },
+    "total_over_bl0a_median": 0.9962842865195678,
+    "label": "Two-timescale PD",
+    "segments": {
+     "lease": 0.6310858037342012,
+     "routing": 0.013438602108230193,
+     "fallback": 0.3247152759499964,
+     "stranding": 0.004582567732168343
+    }
+   },
+   "zero_components": [
+    "loading"
+   ],
+   "components": {
+    "order": [
+     "lease",
+     "routing",
+     "fallback",
+     "stranding"
+    ],
+    "labels": {
+     "lease": "Lease",
+     "routing": "Routing",
+     "fallback": "Fallback",
+     "stranding": "Stranding"
+    },
+    "note": "lease is rent and billed term (lease_rent + lease_prepaid; sf_e6b.component_groups); each bar's median split in proportion to the components' mean ratios to BL0a"
+   },
+   "bl0a": {
+    "x": 1.0,
+    "usd_by_alignment": {
+     "1": 20388.072363725325,
+     "2": 24719.383586939042,
+     "3": 37801.163136902236,
+     "4": 37190.305119683886
+    }
+   },
+   "bl0b": {
+    "overflow_over_bl0a": 28.75692159523566,
+    "total_over_bl0a": 4.714904061165264,
+    "overflow_over_bl0a_by_alignment": {
+     "1": 38.329112376316615,
+     "2": 33.291211168957275,
+     "3": 24.22263202151404,
+     "4": 21.761966841552933
+    },
+    "total_over_bl0a_by_alignment": {
+     "1": 5.581886744232907,
+     "2": 5.354803230308741,
+     "3": 4.075004892021786,
+     "4": 3.8873381465111896
+    },
+    "off_scale": true,
+    "label": "Provision for peak",
+    "rule": "median over the alignments of meta.bl0b_overflow_usd / meta.bl0a_usd (and the total accounting's bl0b_total_usd / bl0a_total_usd)"
+   },
+   "own_capacity_usd": {
+    "by_alignment": {
+     "1": 145715.69381074718,
+     "2": 158576.80527799713,
+     "3": 247675.61896224067,
+     "4": 230233.821373815
+    },
+    "median": 194405.31332590606
+   }
+  },
+  "b": {
+   "bl5": {
+    "tag": "BL5",
+    "links": [
+     0.0,
+     2.0,
+     3.0,
+     5.0
+    ],
+    "median": [
+     25.080391173179894,
+     26.671728080520495,
+     26.994532456856813,
+     28.4149301310922
+    ],
+    "ci_lo": [
+     17.71739714743552,
+     19.784923537736343,
+     20.098112917312033,
+     21.369461930892122
+    ],
+    "ci_hi": [
+     27.789379860740894,
+     29.26852252885938,
+     29.650191751616646,
+     30.967958432427523
+    ],
+    "n": [
+     12,
+     12,
+     12,
+     12
+    ],
+    "note": [
+     null,
+     null,
+     null,
+     null
+    ],
+    "source": [
+     "links.0.BL5",
+     "links.2.BL5",
+     "links.3.BL5",
+     "runs.1.BL5"
+    ]
+   },
+   "bl1": {
+    "tag": "BL1",
+    "links": [
+     0.0,
+     2.0,
+     3.0,
+     5.0
+    ],
+    "median": [
+     31.794896132355827,
+     33.07382699217929,
+     33.230755281743214,
+     33.80782443382888
+    ],
+    "ci_lo": [
+     18.280534684113576,
+     23.72383824511048,
+     23.92058885986141,
+     25.867504600006015
+    ],
+    "ci_hi": [
+     37.299354567522414,
+     39.29496714646976,
+     39.334544888447084,
+     40.07037992139564
+    ],
+    "n": [
+     12,
+     12,
+     12,
+     12
+    ],
+    "note": [
+     null,
+     null,
+     null,
+     null
+    ],
+    "source": [
+     "links.0.BL1",
+     "links.2.BL1",
+     "links.3.BL1",
+     "runs.1.BL1"
+    ]
+   },
+   "sublet": {
+    "tag": "Sublet",
+    "links": [
+     0.0,
+     2.0,
+     3.0,
+     5.0
+    ],
+    "median": [
+     25.080391173179894,
+     26.671728080520495,
+     26.994532456856813,
+     28.4149301310922
+    ],
+    "ci_lo": [
+     17.71739714743552,
+     19.784923537736343,
+     20.098112917312033,
+     21.369461930892122
+    ],
+    "ci_hi": [
+     27.789379860740894,
+     29.26852252885938,
+     29.650191751616646,
+     30.967958432427523
+    ],
+    "n": [
+     12,
+     12,
+     12,
+     12
+    ],
+    "note": [
+     null,
+     null,
+     null,
+     null
+    ],
+    "source": [
+     "links.0.Sublet",
+     "links.2.Sublet",
+     "links.3.Sublet",
+     "runs.1.Sublet"
+    ]
+   },
+   "agree": {
+    "pair": [
+     "sublet",
+     "bl5"
+    ],
+    "max_rel_diff": 0.0,
+    "within_pct": 0,
+    "key": "Sublet = RetroRenting-style"
+   },
+   "cross_region_links": {
+    "0": [],
+    "2": [
+     [
+      "north_america",
+      "south_america"
+     ],
+     [
+      "east_asia",
+      "south_southeast_asia"
+     ]
+    ],
+    "3": [
+     [
+      "north_america",
+      "south_america"
+     ],
+     [
+      "east_asia",
+      "south_southeast_asia"
+     ],
+     [
+      "north_america",
+      "europe"
+     ]
+    ],
+    "5": "S7, config.DEFAULT_ADJACENCY: the main grid (runs.1)"
+   }
+  },
+  "c": {
+   "u": 8.0,
+   "mu": 1.0,
+   "bl2": {
+    "tag": "BL2",
+    "b": [
+     1.0,
+     2.0,
+     4.0,
+     8.0,
+     16.0,
+     32.0
+    ],
+    "median": [
+     1.615629900155117,
+     1.5065943723456356,
+     1.6333741270204227,
+     1.9363298080568558,
+     2.276911724755382,
+     2.846779643467201
+    ],
+    "ci_lo": [
+     1.6025044898995024,
+     1.485945737931242,
+     1.6177797907803302,
+     1.9260176930580921,
+     2.254310504085694,
+     2.816026237749366
+    ],
+    "ci_hi": [
+     1.644027547064064,
+     1.5496904848482225,
+     1.6727680621112861,
+     1.989819870771882,
+     2.3622940615036656,
+     2.936684653038194
+    ],
+    "n": [
+     12,
+     12,
+     12,
+     12,
+     12,
+     12
+    ],
+    "open": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "note": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "u": 8.0
+   },
+   "a6_siloed": {
+    "tag": "A6-siloed",
+    "b": [
+     1.0,
+     2.0,
+     4.0,
+     8.0,
+     16.0,
+     32.0
+    ],
+    "median": [
+     1.6459331315687038,
+     1.8260776588590035,
+     1.7152820633900911,
+     2.009840281222772,
+     2.2905210096047846,
+     2.9086276833137616
+    ],
+    "ci_lo": [
+     1.5253128139986947,
+     1.7433804674186342,
+     1.6858052770750844,
+     1.9855997587292076,
+     2.2626608488856346,
+     2.775089216831283
+    ],
+    "ci_hi": [
+     1.7365483108529853,
+     1.894683058276931,
+     1.7609162446404723,
+     2.018762704870092,
+     2.5162395420762524,
+     3.3045204253183
+    ],
+    "n": [
+     12,
+     12,
+     12,
+     12,
+     12,
+     12
+    ],
+    "open": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "note": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "u": 8.0
+   },
+   "a6": {
+    "tag": "A6",
+    "b": [
+     1.0,
+     2.0,
+     4.0,
+     8.0,
+     16.0,
+     32.0
+    ],
+    "median": [
+     1.6459331315687038,
+     1.857201222375891,
+     1.667815953563415,
+     1.6623239921349977,
+     1.580949105240959,
+     1.753653731928098
+    ],
+    "ci_lo": [
+     1.5253128139986947,
+     1.7028168986757586,
+     1.6422706719954547,
+     1.6155717208876723,
+     1.569673659027381,
+     1.7272434254974565
+    ],
+    "ci_hi": [
+     1.7365483108529853,
+     1.9392866418253816,
+     1.6867832609170936,
+     1.6981845046309398,
+     1.6339988400163508,
+     1.766478110644453
+    ],
+    "n": [
+     12,
+     12,
+     12,
+     12,
+     12,
+     12
+    ],
+    "open": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "note": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "u": 8.0
+   },
+   "sublet_siloed": {
+    "tag": "Sublet-siloed",
+    "b": [
+     1.0,
+     2.0,
+     4.0,
+     8.0,
+     16.0,
+     32.0
+    ],
+    "median": [
+     1.6632404644891876,
+     1.5840249724524882,
+     1.5913878869808473,
+     1.8545558296474198,
+     1.920515806791601,
+     2.1017961988873326
+    ],
+    "ci_lo": [
+     1.6547961326245533,
+     1.5771384268270219,
+     1.5830255435710188,
+     1.844683735104533,
+     1.9182988667802472,
+     2.083878636127686
+    ],
+    "ci_hi": [
+     1.6737565485352133,
+     1.5905660096778695,
+     1.594580994650538,
+     1.8600858681279533,
+     1.926796900004975,
+     2.1126011855478097
+    ],
+    "n": [
+     12,
+     12,
+     12,
+     12,
+     12,
+     12
+    ],
+    "open": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "note": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "u": 8.0
+   },
+   "sublet": {
+    "tag": "Sublet",
+    "b": [
+     1.0,
+     2.0,
+     4.0,
+     8.0,
+     16.0,
+     32.0
+    ],
+    "median": [
+     1.6632404644891876,
+     1.4982456933401653,
+     1.5521650064702261,
+     1.4160667213040403,
+     1.4568838413901815,
+     1.3724019472732618
+    ],
+    "ci_lo": [
+     1.6547961326245533,
+     1.4663501878362322,
+     1.5448706800134815,
+     1.4109647122086462,
+     1.4540202274319918,
+     1.3567101954534047
+    ],
+    "ci_hi": [
+     1.6737565485352133,
+     1.5100094527409884,
+     1.5631077090266576,
+     1.4308449780844308,
+     1.469152987225529,
+     1.3768382262737067
+    ],
+    "n": [
+     12,
+     12,
+     12,
+     12,
+     12,
+     12
+    ],
+    "open": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "note": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "u": 8.0
+   },
+   "opt": {
+    "b": [
+     1.0,
+     2.0,
+     4.0,
+     8.0,
+     16.0,
+     32.0
+    ],
+    "point": [
+     1.0,
+     1.0400308491058088,
+     1.0780787245069505,
+     1.2127678519720475,
+     1.313136448805826,
+     1.4999302282482625
+    ],
+    "lo": [
+     0.9984298083267632,
+     1.0381925900905227,
+     1.0751625898959374,
+     1.2065867740634688,
+     1.3055727359866254,
+     1.4944880434275143
+    ],
+    "hi": [
+     1.0015726610525262,
+     1.0460213535534235,
+     1.0806042974025358,
+     1.222003389283137,
+     1.3266252333261963,
+     1.5168916015762148
+    ],
+    "exact": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "open": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "note": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ]
+   },
+   "theory": {
+    "b": [
+     1.0,
+     2.0,
+     4.0,
+     8.0,
+     16.0,
+     32.0
+    ],
+    "upper_b": [
+     1.0,
+     2.0,
+     4.0,
+     8.0,
+     16.0,
+     32.0
+    ],
+    "u": 8.0,
+    "kind": "upper"
+   }
+  },
+  "labels": {
+   "a_x": "Week cost / all-fallback",
+   "b_x": "Cross-region links",
+   "b_y": "Saving (%)",
+   "c_x": "Borrowers b",
+   "c_y": "Cost / shared OPT",
+   "theory": "b, bound on\nsiloed OPT",
+   "theory_forms": [
+    "b, bound on\nsiloed OPT",
+    "b, bound\non OPT"
+   ],
+   "no_data": "no runs",
+   "bars": {
+    "sublet": "Sublet",
+    "bl5": "RetroRenting-style",
+    "bl1": "Greedy renting",
+    "bl4": "CoCaR-style",
+    "a7": "PD heuristic",
+    "a7_guard": "PD heuristic + guard",
+    "a6": "Two-timescale PD"
+   },
+   "bl0a": "All-fallback",
+   "bl0b": "Provision for peak",
+   "bl0b_ratio": "28.8",
+   "components": {
+    "lease": "Lease",
+    "routing": "Routing",
+    "fallback": "Fallback",
+    "stranding": "Stranding"
+   },
+   "agree": "Sublet = RetroRenting-style",
+   "accounting": "overflow accounting: cost / BL0a without the borrowers' own capacity (M2)",
+   "own_capacity": "194,405 USD per week",
+   "caption": "Fig. 4. (a) Week cost over all-fallback by component, overflow accounting (not drawn: the borrowers' own capacity, 194,405 USD per week, the same for every policy); medians with 95% intervals over 4 alignments \u00d7 3 seeds. (b) Saving over all-fallback against cross-region links. (c) Cost over shared OPT against b (u = 8); dashed, open markers: siloed. Grey: b, the bound on siloed OPT (stars; tight by C3-P7, PROVEN).",
+   "caption_chars": 417,
+   "c_open": "open star: siloed/shared OPT bracket open (a shared MILP without a result: LB from the LP alone, sim_spec_ms4 \u00a74.6)",
+   "status": {
+    "copy bound siloed OPT <= b * shared OPT, attained on C3-P7's instance": "PROVEN, elementary",
+    "Theorem W(a)(b) for every A8 run (certificate per run)": "PROVEN for the engine as implemented under C1-C3, audited; W(c) CONJECTURE"
+   }
+  },
+  "meta": {
+   "e7_main": {
+    "git_revision": "939847ca5925ce069d6df9089fe3a3d1d3207bb7",
+    "B0_rule": "0.1*BL0a",
+    "reduced": false,
+    "alignments": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ]
+   },
+   "e3": {
+    "git_revision": "939847ca5925ce069d6df9089fe3a3d1d3207bb7",
+    "B0_rule": "0.1*BL0a",
+    "reduced": false,
+    "normalize": "mean"
+   }
+  },
+  "sources": [
+   "code/sim/out/e7/main/summary.json",
+   "code/sim/out/e3/summary.json"
+  ]
+ }
+}

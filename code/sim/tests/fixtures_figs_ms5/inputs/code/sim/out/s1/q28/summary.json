@@ -1,0 +1,6207 @@
+{
+ "meta": {
+  "exp": "s1",
+  "part": "q28",
+  "spec": "design/sim_spec_ms5.md \u00a73, \u00a74",
+  "git_revision": "c82fa05f835c1b4896ddf639d6edb81495a1abee",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "scipy": "1.17.1",
+   "sublet": "0.1.0"
+  },
+  "written": "2026-10-29T21:11:40",
+  "reduced": true,
+  "grids": {
+   "alignments": [
+    1
+   ],
+   "alignments_design": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "policy_seeds": [
+    0
+   ],
+   "policy_seeds_design": [
+    0,
+    1,
+    2
+   ],
+   "horizon_min": 120,
+   "horizon_min_design": 10080,
+   "mu_over_beta_tilde": 1.0
+  },
+  "B0_rule": "0.1*BL0a",
+  "info_class_reported_a8": "online-I1 + a-priori N + a-priori BL0a",
+  "jobs_ok": 19,
+  "jobs_missing": [],
+  "ignored_outputs": [],
+  "reduced_note": "reduced job list (MS3_S1_REDUCED=1): alignment 1, policy seed 0, a 120-min horizon; not a result",
+  "variants": {
+   "rf": {
+    "mode": "L-rf",
+    "lender_model": {
+     "schedule": "trace",
+     "params": {},
+     "on_unavailable": "refuse"
+    }
+   },
+   "vr": {
+    "mode": "L-vr",
+    "lender_model": {
+     "schedule": "trace",
+     "params": {},
+     "violations": "reclaim"
+    }
+   },
+   "default": {
+    "mode": "L-tr",
+    "lender_model": {}
+   }
+  },
+  "stress_variants": [
+   "rf",
+   "vr"
+  ],
+  "tags": {
+   "Sublet": {
+    "policy_id": "A8",
+    "params": "ms4_common.sublet_params(inst, 'BL5')",
+    "style_key": "sublet",
+    "a8": true
+   },
+   "A7G": {
+    "policy_id": "A8",
+    "params": "ms4_common.sublet_params(inst, 'A7')",
+    "style_key": "a7_guard",
+    "a8": true
+   },
+   "A7": {
+    "policy_id": "A7",
+    "params": {},
+    "style_key": "a7",
+    "a8": false
+   },
+   "A6": {
+    "policy_id": "A6",
+    "params": {},
+    "style_key": "a6",
+    "a8": false
+   },
+   "BL5": {
+    "policy_id": "BL5",
+    "params": {},
+    "style_key": "bl5",
+    "a8": false
+   },
+   "BL1": {
+    "policy_id": "BL1",
+    "params": {},
+    "style_key": "bl1",
+    "a8": false
+   },
+   "BL2": {
+    "policy_id": "BL2",
+    "params": {},
+    "style_key": "bl2",
+    "a8": false
+   },
+   "BL4": {
+    "policy_id": "BL4",
+    "params": {},
+    "style_key": "bl4",
+    "a8": false
+   },
+   "BL3": {
+    "policy_id": "BL3",
+    "params": {},
+    "style_key": "bl3",
+    "a8": false
+   }
+  },
+  "references": {
+   "1": {
+    "bl0a_usd": 1527.7154508483445,
+    "own_capacity_usd": 23870.52067533807,
+    "bl0b_overflow_usd": 8510.268227089482,
+    "bl0b_total_usd": 32380.788902427554,
+    "committed_price_usd_per_gpu_h": 5.97,
+    "bl0a_total_usd": 25398.236126186413
+   }
+  },
+  "instances": {
+   "1": {
+    "n_sites": 169,
+    "n_sites_by_kind": {
+     "layer": 164,
+     "protected": 5
+    },
+    "n_contracts": 21,
+    "contracts": [
+     "s5_tau5_H0",
+     "s5_tau5_H1",
+     "s5_tau5_H2",
+     "s5_tau5_H5",
+     "s5_tau5_H10",
+     "s5_tau5_H15",
+     "s5_tau5_H30",
+     "s5_tau5_H60",
+     "s5_tau5_H120",
+     "s5_tau5_H240",
+     "s5_tau60_H0",
+     "s5_tau60_H1",
+     "s5_tau60_H2",
+     "s5_tau60_H5",
+     "s5_tau60_H10",
+     "s5_tau60_H15",
+     "s5_tau60_H30",
+     "s5_tau60_H60",
+     "s5_tau60_H120",
+     "s5_tau60_H240",
+     "protected"
+    ],
+    "n_clients": 15,
+    "n_llms": 3,
+    "T_slow": 24,
+    "T_fast": 120,
+    "slow_min": 5,
+    "fast_min": 1,
+    "horizon_min": 120,
+    "start_mow": 154,
+    "n_units": 2387,
+    "gamma": 63078600.0,
+    "gamma_note": "the builder's note, 6 significant digits (instance.py _regional)",
+    "llms": [
+     {
+      "id": "S",
+      "tier": "S",
+      "g": 1,
+      "w_GB": 8.0
+     },
+     {
+      "id": "M",
+      "tier": "M",
+      "g": 1,
+      "w_GB": 60.0
+     },
+     {
+      "id": "L",
+      "tier": "L",
+      "g": 8,
+      "w_GB": 359.0
+     }
+    ],
+    "supply_gpus_layer": 1312.0,
+    "n_layer_sites": 164,
+    "protected_prepaid_min": [
+     5
+    ],
+    "instance_hash": "fddc5752788e170ecd364592b0f94ae2631bc2acfb1e71aa32462e0be77b1273",
+    "unavailable_share": {
+     "revocable_sites": 164,
+     "mean": 0.01244918699186992,
+     "min": 0.0,
+     "max": 0.7083333333333334
+    }
+   }
+  },
+  "one_instance_per_alignment": {
+   "1": true
+  },
+  "e7_summary": {
+   "file": "code/sim/out/e7/main/summary.json",
+   "exists": true,
+   "sha256": "bbdcc02a25606ae81e5482f2a6adbcb1ba18ffd8a7a9e2ec733583b90ecf2abc",
+   "git_revision": "939847ca5925ce069d6df9089fe3a3d1d3207bb7",
+   "reduced": false
+  },
+  "sweep_summary": {
+   "file": "sweep/summary.json",
+   "used": true,
+   "git_revision": "c82fa05f835c1b4896ddf639d6edb81495a1abee",
+   "reduced": true
+  },
+  "jobs_not_ok": {}
+ },
+ "runs": {
+  "rf": {
+   "Sublet": {
+    "n_runs": 1,
+    "alignments": [
+     1
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "overflow_usd": {
+     "n": 1,
+     "median": 1541.7913273221525,
+     "p95": 1541.7913273221525,
+     "max": 1541.7913273221525,
+     "median_ci95": [
+      1541.7913273221525,
+      1541.7913273221525
+     ],
+     "mean": 1541.7913273221525
+    },
+    "total_usd": {
+     "n": 1,
+     "median": 25412.312002660223,
+     "p95": 25412.312002660223,
+     "max": 25412.312002660223,
+     "median_ci95": [
+      25412.312002660223,
+      25412.312002660223
+     ],
+     "mean": 25412.312002660223
+    },
+    "overflow_over_bl0a": {
+     "n": 1,
+     "median": 1.0092136768440692,
+     "p95": 1.0092136768440692,
+     "max": 1.0092136768440692,
+     "median_ci95": [
+      1.0092136768440692,
+      1.0092136768440692
+     ],
+     "mean": 1.0092136768440692
+    },
+    "total_over_bl0a": {
+     "n": 1,
+     "median": 1.0005542068513686,
+     "p95": 1.0005542068513686,
+     "max": 1.0005542068513686,
+     "median_ci95": [
+      1.0005542068513686,
+      1.0005542068513686
+     ],
+     "mean": 1.0005542068513686
+    },
+    "own_share_of_total": {
+     "n": 1,
+     "median": 0.9393289627814756,
+     "p95": 0.9393289627814756,
+     "max": 0.9393289627814756,
+     "median_ci95": [
+      0.9393289627814756,
+      0.9393289627814756
+     ],
+     "mean": 0.9393289627814756
+    },
+    "overflow_over_bl0b": {
+     "n": 1,
+     "median": 0.18116835876152476,
+     "p95": 0.18116835876152476,
+     "max": 0.18116835876152476,
+     "median_ci95": [
+      0.18116835876152476,
+      0.18116835876152476
+     ],
+     "mean": 0.18116835876152476
+    },
+    "total_over_bl0b": {
+     "n": 1,
+     "median": 0.7847959504394623,
+     "p95": 0.7847959504394623,
+     "max": 0.7847959504394623,
+     "median_ci95": [
+      0.7847959504394623,
+      0.7847959504394623
+     ],
+     "mean": 0.7847959504394623
+    },
+    "saving_pct": {
+     "n": 1,
+     "median": -0.9213676844069152,
+     "p95": -0.9213676844069152,
+     "max": -0.9213676844069152,
+     "median_ci95": [
+      -0.9213676844069152,
+      -0.9213676844069152
+     ],
+     "mean": -0.9213676844069152
+    },
+    "saving_pct_total": {
+     "n": 1,
+     "median": -0.05542068513686438,
+     "p95": -0.05542068513686438,
+     "max": -0.05542068513686438,
+     "median_ci95": [
+      -0.05542068513686438,
+      -0.05542068513686438
+     ],
+     "mean": -0.05542068513686438
+    },
+    "components_over_bl0a": {
+     "lease_prepaid": 0.005153544359141085,
+     "lease_rent": 0.005313027082875958,
+     "lease": 0.010466571442017044,
+     "loading": 0.0,
+     "routing": 7.623193055271746e-06,
+     "fallback": 0.9979556919619115,
+     "stranding": 0.0007837902470851845,
+     "total": 1.0092136768440692
+    },
+    "fallback_share_after_reclaims": {
+     "n": 0,
+     "median": null,
+     "p95": null,
+     "max": null,
+     "median_ci95": [
+      null,
+      null
+     ],
+     "median_note": "no run with a reclaim-caused capacity drop",
+     "p95_note": "no run with a reclaim-caused capacity drop",
+     "max_note": "no run with a reclaim-caused capacity drop",
+     "mean": null,
+     "mean_note": "no run with a reclaim-caused capacity drop",
+     "median_ci95_note": "no run with a reclaim-caused capacity drop",
+     "n_null": 1
+    },
+    "fallback_share": {
+     "n": 1,
+     "median": 0.9967067188081864,
+     "p95": 0.9967067188081864,
+     "max": 0.9967067188081864,
+     "median_ci95": [
+      0.9967067188081864,
+      0.9967067188081864
+     ],
+     "mean": 0.9967067188081864
+    },
+    "stranding_events_per_day": {
+     "n": 1,
+     "median": 84.0,
+     "p95": 84.0,
+     "max": 84.0,
+     "median_ci95": [
+      84.0,
+      84.0
+     ],
+     "mean": 84.0
+    },
+    "loads_per_day": {
+     "n": 1,
+     "median": 144.0,
+     "p95": 144.0,
+     "max": 144.0,
+     "median_ci95": [
+      144.0,
+      144.0
+     ],
+     "mean": 144.0
+    },
+    "replica_utilization": {
+     "n": 1,
+     "median": 0.2686223357656935,
+     "p95": 0.2686223357656935,
+     "max": 0.2686223357656935,
+     "median_ci95": [
+      0.2686223357656935,
+      0.2686223357656935
+     ],
+     "mean": 0.2686223357656935
+    },
+    "n_leases": {
+     "n": 1,
+     "median": 12.0,
+     "p95": 12.0,
+     "max": 12.0,
+     "median_ci95": [
+      12.0,
+      12.0
+     ],
+     "mean": 12.0
+    },
+    "gpu_hour_share": {
+     "spot-like": 1.0
+    },
+    "abort_share": 1.0,
+    "t_a": [
+     11
+    ],
+    "t_a_first": 11,
+    "t_a_median": 11.0,
+    "certificates": {
+     "n": 1,
+     "held": 1,
+     "by_case": {
+      "W(a)": {
+       "runs": 0,
+       "held": 0
+      },
+      "W(b)": {
+       "runs": 1,
+       "held": 1
+      },
+      "W(c)": {
+       "runs": 0,
+       "held": 0
+      },
+      "unavailable": {
+       "runs": 0,
+       "held": 0
+      }
+     },
+     "failures": 0
+    },
+    "info_class_reported": [
+     "online-I1 + a-priori N + a-priori BL0a"
+    ],
+    "n_runs_with_invariant_failures": 0,
+    "n_runs_with_gpu_only_lease_slots": 0,
+    "refusals": {
+     "unavailable": {
+      "n": 1,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0,
+      "median_ci95": [
+       0.0,
+       0.0
+      ],
+      "mean": 0.0
+     },
+     "capacity": {
+      "n": 1,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0,
+      "median_ci95": [
+       0.0,
+       0.0
+      ],
+      "mean": 0.0
+     }
+    },
+    "violation_events": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "violation_lender_slots": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "violation_victims": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "violation_deaths": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "n_runs_with_violations": 0,
+    "n_runs_with_victims": 0,
+    "ratio_validity": {
+     "fast": [
+      "None"
+     ],
+     "slow_lb": [
+      "None"
+     ],
+     "slow": [
+      "bench grid 'slow' on a run with \u0394f = 1 < \u0394s = 5 min: the slow-grid approximation bounds the run's optimum in neither direction"
+     ]
+    },
+    "ratio_validity_note": "the distinct reasons of drivers.run.ratio_validity over the runs ('None': a ratio is meaningful)",
+    "reference": {
+     "source": "code/sim/out/e7/main/summary.json runs.1.Sublet",
+     "overflow_over_bl0a_median": 0.715850698689078,
+     "saving_pct_median": 28.4149301310922
+    },
+    "delta_overflow_over_bl0a": 0.2933629781549911,
+    "reference_s1_default": {
+     "source": "sweep/summary.json points.default",
+     "overflow_over_bl0a_median": 1.0537628129012426,
+     "saving_pct_median": -5.376281290124263
+    },
+    "delta_overflow_over_bl0a_s1_default": -0.04454913605717348
+   },
+   "A7G": {
+    "n_runs": 1,
+    "alignments": [
+     1
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "overflow_usd": {
+     "n": 1,
+     "median": 1549.5416480316815,
+     "p95": 1549.5416480316815,
+     "max": 1549.5416480316815,
+     "median_ci95": [
+      1549.5416480316815,
+      1549.5416480316815
+     ],
+     "mean": 1549.5416480316815
+    },
+    "total_usd": {
+     "n": 1,
+     "median": 25420.06232336975,
+     "p95": 25420.06232336975,
+     "max": 25420.06232336975,
+     "median_ci95": [
+      25420.06232336975,
+      25420.06232336975
+     ],
+     "mean": 25420.06232336975
+    },
+    "overflow_over_bl0a": {
+     "n": 1,
+     "median": 1.0142868209987774,
+     "p95": 1.0142868209987774,
+     "max": 1.0142868209987774,
+     "median_ci95": [
+      1.0142868209987774,
+      1.0142868209987774
+     ],
+     "mean": 1.0142868209987774
+    },
+    "total_over_bl0a": {
+     "n": 1,
+     "median": 1.0008593587788892,
+     "p95": 1.0008593587788892,
+     "max": 1.0008593587788892,
+     "median_ci95": [
+      1.0008593587788892,
+      1.0008593587788892
+     ],
+     "mean": 1.0008593587788892
+    },
+    "own_share_of_total": {
+     "n": 1,
+     "median": 0.9390425708513263,
+     "p95": 0.9390425708513263,
+     "max": 0.9390425708513263,
+     "median_ci95": [
+      0.9390425708513263,
+      0.9390425708513263
+     ],
+     "mean": 0.9390425708513263
+    },
+    "overflow_over_bl0b": {
+     "n": 1,
+     "median": 0.18207906104525048,
+     "p95": 0.18207906104525048,
+     "max": 0.18207906104525048,
+     "median_ci95": [
+      0.18207906104525048,
+      0.18207906104525048
+     ],
+     "mean": 0.18207906104525048
+    },
+    "total_over_bl0b": {
+     "n": 1,
+     "median": 0.7850352997874007,
+     "p95": 0.7850352997874007,
+     "max": 0.7850352997874007,
+     "median_ci95": [
+      0.7850352997874007,
+      0.7850352997874007
+     ],
+     "mean": 0.7850352997874007
+    },
+    "saving_pct": {
+     "n": 1,
+     "median": -1.4286820998777428,
+     "p95": -1.4286820998777428,
+     "max": -1.4286820998777428,
+     "median_ci95": [
+      -1.4286820998777428,
+      -1.4286820998777428
+     ],
+     "mean": -1.4286820998777428
+    },
+    "saving_pct_total": {
+     "n": 1,
+     "median": -0.08593587788892076,
+     "p95": -0.08593587788892076,
+     "max": -0.08593587788892076,
+     "median_ci95": [
+      -0.08593587788892076,
+      -0.08593587788892076
+     ],
+     "mean": -0.08593587788892076
+    },
+    "components_over_bl0a": {
+     "lease_prepaid": 0.013616037628608057,
+     "lease_rent": 0.004230228875631957,
+     "lease": 0.017846266504240017,
+     "loading": 0.0,
+     "routing": 6.903770479874918e-05,
+     "fallback": 0.9900651341759896,
+     "stranding": 0.006306382613749147,
+     "total": 1.0142868209987774
+    },
+    "fallback_share_after_reclaims": {
+     "n": 0,
+     "median": null,
+     "p95": null,
+     "max": null,
+     "median_ci95": [
+      null,
+      null
+     ],
+     "median_note": "no run with a reclaim-caused capacity drop",
+     "p95_note": "no run with a reclaim-caused capacity drop",
+     "max_note": "no run with a reclaim-caused capacity drop",
+     "mean": null,
+     "mean_note": "no run with a reclaim-caused capacity drop",
+     "median_ci95_note": "no run with a reclaim-caused capacity drop",
+     "n_null": 1
+    },
+    "fallback_share": {
+     "n": 1,
+     "median": 0.9918474970718958,
+     "p95": 0.9918474970718958,
+     "max": 0.9918474970718958,
+     "median_ci95": [
+      0.9918474970718958,
+      0.9918474970718958
+     ],
+     "mean": 0.9918474970718958
+    },
+    "stranding_events_per_day": {
+     "n": 1,
+     "median": 300.0,
+     "p95": 300.0,
+     "max": 300.0,
+     "median_ci95": [
+      300.0,
+      300.0
+     ],
+     "mean": 300.0
+    },
+    "loads_per_day": {
+     "n": 1,
+     "median": 456.0,
+     "p95": 456.0,
+     "max": 456.0,
+     "median_ci95": [
+      456.0,
+      456.0
+     ],
+     "mean": 456.0
+    },
+    "replica_utilization": {
+     "n": 1,
+     "median": 0.31348745822603896,
+     "p95": 0.31348745822603896,
+     "max": 0.31348745822603896,
+     "median_ci95": [
+      0.31348745822603896,
+      0.31348745822603896
+     ],
+     "mean": 0.31348745822603896
+    },
+    "n_leases": {
+     "n": 1,
+     "median": 38.0,
+     "p95": 38.0,
+     "max": 38.0,
+     "median_ci95": [
+      38.0,
+      38.0
+     ],
+     "mean": 38.0
+    },
+    "gpu_hour_share": {
+     "spot-like": 1.0
+    },
+    "abort_share": 1.0,
+    "t_a": [
+     10
+    ],
+    "t_a_first": 10,
+    "t_a_median": 10.0,
+    "certificates": {
+     "n": 1,
+     "held": 1,
+     "by_case": {
+      "W(a)": {
+       "runs": 0,
+       "held": 0
+      },
+      "W(b)": {
+       "runs": 1,
+       "held": 1
+      },
+      "W(c)": {
+       "runs": 0,
+       "held": 0
+      },
+      "unavailable": {
+       "runs": 0,
+       "held": 0
+      }
+     },
+     "failures": 0
+    },
+    "info_class_reported": [
+     "online-I1 + a-priori N + a-priori BL0a"
+    ],
+    "n_runs_with_invariant_failures": 0,
+    "n_runs_with_gpu_only_lease_slots": 0,
+    "refusals": {
+     "unavailable": {
+      "n": 1,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0,
+      "median_ci95": [
+       0.0,
+       0.0
+      ],
+      "mean": 0.0
+     },
+     "capacity": {
+      "n": 1,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0,
+      "median_ci95": [
+       0.0,
+       0.0
+      ],
+      "mean": 0.0
+     }
+    },
+    "violation_events": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "violation_lender_slots": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "violation_victims": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "violation_deaths": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "n_runs_with_violations": 0,
+    "n_runs_with_victims": 0,
+    "ratio_validity": {
+     "fast": [
+      "None"
+     ],
+     "slow_lb": [
+      "None"
+     ],
+     "slow": [
+      "bench grid 'slow' on a run with \u0394f = 1 < \u0394s = 5 min: the slow-grid approximation bounds the run's optimum in neither direction"
+     ]
+    },
+    "ratio_validity_note": "the distinct reasons of drivers.run.ratio_validity over the runs ('None': a ratio is meaningful)",
+    "reference": {
+     "source": "code/sim/out/e7/main/summary.json runs.1.A7G",
+     "overflow_over_bl0a_median": 0.7422282118118826,
+     "saving_pct_median": 25.77717881881174
+    },
+    "delta_overflow_over_bl0a": 0.27205860918689484
+   },
+   "A7": {
+    "n_runs": 1,
+    "alignments": [
+     1
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "overflow_usd": {
+     "n": 1,
+     "median": 1307.1188505373266,
+     "p95": 1307.1188505373266,
+     "max": 1307.1188505373266,
+     "median_ci95": [
+      1307.1188505373266,
+      1307.1188505373266
+     ],
+     "mean": 1307.1188505373266
+    },
+    "total_usd": {
+     "n": 1,
+     "median": 25177.6395258754,
+     "p95": 25177.6395258754,
+     "max": 25177.6395258754,
+     "median_ci95": [
+      25177.6395258754,
+      25177.6395258754
+     ],
+     "mean": 25177.6395258754
+    },
+    "overflow_over_bl0a": {
+     "n": 1,
+     "median": 0.8556036072106752,
+     "p95": 0.8556036072106752,
+     "max": 0.8556036072106752,
+     "median_ci95": [
+      0.8556036072106752,
+      0.8556036072106752
+     ],
+     "mean": 0.8556036072106752
+    },
+    "total_over_bl0a": {
+     "n": 1,
+     "median": 0.9913144913207743,
+     "p95": 0.9913144913207743,
+     "max": 0.9913144913207743,
+     "median_ci95": [
+      0.9913144913207743,
+      0.9913144913207743
+     ],
+     "mean": 0.9913144913207743
+    },
+    "own_share_of_total": {
+     "n": 1,
+     "median": 0.9480841383405308,
+     "p95": 0.9480841383405308,
+     "max": 0.9480841383405308,
+     "median_ci95": [
+      0.9480841383405308,
+      0.9480841383405308
+     ],
+     "mean": 0.9480841383405308
+    },
+    "overflow_over_bl0b": {
+     "n": 1,
+     "median": 0.15359314367748925,
+     "p95": 0.15359314367748925,
+     "max": 0.15359314367748925,
+     "median_ci95": [
+      0.15359314367748925,
+      0.15359314367748925
+     ],
+     "mean": 0.15359314367748925
+    },
+    "total_over_bl0b": {
+     "n": 1,
+     "median": 0.7775486755972105,
+     "p95": 0.7775486755972105,
+     "max": 0.7775486755972105,
+     "median_ci95": [
+      0.7775486755972105,
+      0.7775486755972105
+     ],
+     "mean": 0.7775486755972105
+    },
+    "saving_pct": {
+     "n": 1,
+     "median": 14.439639278932482,
+     "p95": 14.439639278932482,
+     "max": 14.439639278932482,
+     "median_ci95": [
+      14.439639278932482,
+      14.439639278932482
+     ],
+     "mean": 14.439639278932482
+    },
+    "saving_pct_total": {
+     "n": 1,
+     "median": 0.8685508679225684,
+     "p95": 0.8685508679225684,
+     "max": 0.8685508679225684,
+     "median_ci95": [
+      0.8685508679225684,
+      0.8685508679225684
+     ],
+     "mean": 0.8685508679225684
+    },
+    "components_over_bl0a": {
+     "lease_prepaid": 0.10899335736492063,
+     "lease_rent": 0.23918255349063575,
+     "lease": 0.3481759108555564,
+     "loading": 0.0,
+     "routing": 0.010976029393384018,
+     "fallback": 0.4625885228041011,
+     "stranding": 0.03386314415763362,
+     "total": 0.8556036072106752
+    },
+    "fallback_share_after_reclaims": {
+     "n": 1,
+     "median": 0.5652070989094137,
+     "p95": 0.5652070989094137,
+     "max": 0.5652070989094137,
+     "median_ci95": [
+      0.5652070989094137,
+      0.5652070989094137
+     ],
+     "mean": 0.5652070989094137,
+     "n_null": 0
+    },
+    "fallback_share": {
+     "n": 1,
+     "median": 0.218339344584831,
+     "p95": 0.218339344584831,
+     "max": 0.218339344584831,
+     "median_ci95": [
+      0.218339344584831,
+      0.218339344584831
+     ],
+     "mean": 0.218339344584831
+    },
+    "stranding_events_per_day": {
+     "n": 1,
+     "median": 672.0,
+     "p95": 672.0,
+     "max": 672.0,
+     "median_ci95": [
+      672.0,
+      672.0
+     ],
+     "mean": 672.0
+    },
+    "loads_per_day": {
+     "n": 1,
+     "median": 4836.0,
+     "p95": 4836.0,
+     "max": 4836.0,
+     "median_ci95": [
+      4836.0,
+      4836.0
+     ],
+     "mean": 4836.0
+    },
+    "replica_utilization": {
+     "n": 1,
+     "median": 0.7086557282688789,
+     "p95": 0.7086557282688789,
+     "max": 0.7086557282688789,
+     "median_ci95": [
+      0.7086557282688789,
+      0.7086557282688789
+     ],
+     "mean": 0.7086557282688789
+    },
+    "n_leases": {
+     "n": 1,
+     "median": 403.0,
+     "p95": 403.0,
+     "max": 403.0,
+     "median_ci95": [
+      403.0,
+      403.0
+     ],
+     "mean": 403.0
+    },
+    "gpu_hour_share": {
+     "spot-like": 1.0
+    },
+    "abort_share": null,
+    "abort_share_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a": null,
+    "t_a_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_first": null,
+    "t_a_first_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_median": null,
+    "t_a_median_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificates": null,
+    "certificates_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "info_class_reported": [
+     "online-I1"
+    ],
+    "n_runs_with_invariant_failures": 0,
+    "n_runs_with_gpu_only_lease_slots": 0,
+    "refusals": {
+     "unavailable": {
+      "n": 1,
+      "median": 11.0,
+      "p95": 11.0,
+      "max": 11.0,
+      "median_ci95": [
+       11.0,
+       11.0
+      ],
+      "mean": 11.0
+     },
+     "capacity": {
+      "n": 1,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0,
+      "median_ci95": [
+       0.0,
+       0.0
+      ],
+      "mean": 0.0
+     }
+    },
+    "violation_events": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "violation_lender_slots": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "violation_victims": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "violation_deaths": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "n_runs_with_violations": 0,
+    "n_runs_with_victims": 0,
+    "ratio_validity": {
+     "fast": [
+      "None"
+     ],
+     "slow_lb": [
+      "None"
+     ],
+     "slow": [
+      "bench grid 'slow' on a run with \u0394f = 1 < \u0394s = 5 min: the slow-grid approximation bounds the run's optimum in neither direction"
+     ]
+    },
+    "ratio_validity_note": "the distinct reasons of drivers.run.ratio_validity over the runs ('None': a ratio is meaningful)",
+    "reference": {
+     "source": "code/sim/out/e7/main/summary.json runs.1.A7",
+     "overflow_over_bl0a_median": 0.7422282118118826,
+     "saving_pct_median": 25.77717881881174
+    },
+    "delta_overflow_over_bl0a": 0.1133753953987926
+   },
+   "A6": {
+    "n_runs": 1,
+    "alignments": [
+     1
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "overflow_usd": {
+     "n": 1,
+     "median": 1603.9859060579463,
+     "p95": 1603.9859060579463,
+     "max": 1603.9859060579463,
+     "median_ci95": [
+      1603.9859060579463,
+      1603.9859060579463
+     ],
+     "mean": 1603.9859060579463
+    },
+    "total_usd": {
+     "n": 1,
+     "median": 25474.506581396017,
+     "p95": 25474.506581396017,
+     "max": 25474.506581396017,
+     "median_ci95": [
+      25474.506581396017,
+      25474.506581396017
+     ],
+     "mean": 25474.506581396017
+    },
+    "overflow_over_bl0a": {
+     "n": 1,
+     "median": 1.0499245164845643,
+     "p95": 1.0499245164845643,
+     "max": 1.0499245164845643,
+     "median_ci95": [
+      1.0499245164845643,
+      1.0499245164845643
+     ],
+     "mean": 1.0499245164845643
+    },
+    "total_over_bl0a": {
+     "n": 1,
+     "median": 1.0030029823658095,
+     "p95": 1.0030029823658095,
+     "max": 1.0030029823658095,
+     "median_ci95": [
+      1.0030029823658095,
+      1.0030029823658095
+     ],
+     "mean": 1.0030029823658095
+    },
+    "own_share_of_total": {
+     "n": 1,
+     "median": 0.9370356438138301,
+     "p95": 0.9370356438138301,
+     "max": 0.9370356438138301,
+     "median_ci95": [
+      0.9370356438138301,
+      0.9370356438138301
+     ],
+     "mean": 0.9370356438138301
+    },
+    "overflow_over_bl0b": {
+     "n": 1,
+     "median": 0.1884765395469222,
+     "p95": 0.1884765395469222,
+     "max": 0.1884765395469222,
+     "median_ci95": [
+      0.1884765395469222,
+      0.1884765395469222
+     ],
+     "mean": 0.1884765395469222
+    },
+    "total_over_bl0b": {
+     "n": 1,
+     "median": 0.786716675067982,
+     "p95": 0.786716675067982,
+     "max": 0.786716675067982,
+     "median_ci95": [
+      0.786716675067982,
+      0.786716675067982
+     ],
+     "mean": 0.786716675067982
+    },
+    "saving_pct": {
+     "n": 1,
+     "median": -4.992451648456431,
+     "p95": -4.992451648456431,
+     "max": -4.992451648456431,
+     "median_ci95": [
+      -4.992451648456431,
+      -4.992451648456431
+     ],
+     "mean": -4.992451648456431
+    },
+    "saving_pct_total": {
+     "n": 1,
+     "median": -0.30029823658095367,
+     "p95": -0.30029823658095367,
+     "max": -0.30029823658095367,
+     "median_ci95": [
+      -0.30029823658095367,
+      -0.30029823658095367
+     ],
+     "mean": -0.30029823658095367
+    },
+    "components_over_bl0a": {
+     "lease_prepaid": 0.12083102025139685,
+     "lease_rent": 0.03951701090941917,
+     "lease": 0.16034803116081603,
+     "loading": 0.0,
+     "routing": 0.001246489471948073,
+     "fallback": 0.8873620594259328,
+     "stranding": 0.0009679364258673902,
+     "total": 1.0499245164845643
+    },
+    "fallback_share_after_reclaims": {
+     "n": 0,
+     "median": null,
+     "p95": null,
+     "max": null,
+     "median_ci95": [
+      null,
+      null
+     ],
+     "median_note": "no run with a reclaim-caused capacity drop",
+     "p95_note": "no run with a reclaim-caused capacity drop",
+     "max_note": "no run with a reclaim-caused capacity drop",
+     "mean": null,
+     "mean_note": "no run with a reclaim-caused capacity drop",
+     "median_ci95_note": "no run with a reclaim-caused capacity drop",
+     "n_null": 1
+    },
+    "fallback_share": {
+     "n": 1,
+     "median": 0.8968264091643134,
+     "p95": 0.8968264091643134,
+     "max": 0.8968264091643134,
+     "median_ci95": [
+      0.8968264091643134,
+      0.8968264091643134
+     ],
+     "mean": 0.8968264091643134
+    },
+    "stranding_events_per_day": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "loads_per_day": {
+     "n": 1,
+     "median": 696.0,
+     "p95": 696.0,
+     "max": 696.0,
+     "median_ci95": [
+      696.0,
+      696.0
+     ],
+     "mean": 696.0
+    },
+    "replica_utilization": {
+     "n": 1,
+     "median": 0.39391877079474896,
+     "p95": 0.39391877079474896,
+     "max": 0.39391877079474896,
+     "median_ci95": [
+      0.39391877079474896,
+      0.39391877079474896
+     ],
+     "mean": 0.39391877079474896
+    },
+    "n_leases": {
+     "n": 1,
+     "median": 58.0,
+     "p95": 58.0,
+     "max": 58.0,
+     "median_ci95": [
+      58.0,
+      58.0
+     ],
+     "mean": 58.0
+    },
+    "gpu_hour_share": {
+     "general": 0.8607442977190877,
+     "spot-like": 0.13925570228091239
+    },
+    "abort_share": null,
+    "abort_share_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a": null,
+    "t_a_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_first": null,
+    "t_a_first_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_median": null,
+    "t_a_median_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificates": null,
+    "certificates_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "info_class_reported": [
+     "online-I1"
+    ],
+    "n_runs_with_invariant_failures": 0,
+    "n_runs_with_gpu_only_lease_slots": 0,
+    "refusals": {
+     "unavailable": {
+      "n": 1,
+      "median": 3.0,
+      "p95": 3.0,
+      "max": 3.0,
+      "median_ci95": [
+       3.0,
+       3.0
+      ],
+      "mean": 3.0
+     },
+     "capacity": {
+      "n": 1,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0,
+      "median_ci95": [
+       0.0,
+       0.0
+      ],
+      "mean": 0.0
+     }
+    },
+    "violation_events": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "violation_lender_slots": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "violation_victims": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "violation_deaths": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "n_runs_with_violations": 0,
+    "n_runs_with_victims": 0,
+    "ratio_validity": {
+     "fast": [
+      "None"
+     ],
+     "slow_lb": [
+      "None"
+     ],
+     "slow": [
+      "bench grid 'slow' on a run with \u0394f = 1 < \u0394s = 5 min: the slow-grid approximation bounds the run's optimum in neither direction"
+     ]
+    },
+    "ratio_validity_note": "the distinct reasons of drivers.run.ratio_validity over the runs ('None': a ratio is meaningful)",
+    "reference": {
+     "source": "code/sim/out/e7/main/summary.json runs.1.A6",
+     "overflow_over_bl0a_median": 0.9738222495245962,
+     "saving_pct_median": 2.617775047540383
+    },
+    "delta_overflow_over_bl0a": 0.07610226695996813
+   },
+   "BL5": {
+    "n_runs": 1,
+    "alignments": [
+     1
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "overflow_usd": {
+     "n": 1,
+     "median": 1455.5771461605273,
+     "p95": 1455.5771461605273,
+     "max": 1455.5771461605273,
+     "median_ci95": [
+      1455.5771461605273,
+      1455.5771461605273
+     ],
+     "mean": 1455.5771461605273
+    },
+    "total_usd": {
+     "n": 1,
+     "median": 25326.097821498595,
+     "p95": 25326.097821498595,
+     "max": 25326.097821498595,
+     "median_ci95": [
+      25326.097821498595,
+      25326.097821498595
+     ],
+     "mean": 25326.097821498595
+    },
+    "overflow_over_bl0a": {
+     "n": 1,
+     "median": 0.9527802742010898,
+     "p95": 0.9527802742010898,
+     "max": 0.9527802742010898,
+     "median_ci95": [
+      0.9527802742010898,
+      0.9527802742010898
+     ],
+     "mean": 0.9527802742010898
+    },
+    "total_over_bl0a": {
+     "n": 1,
+     "median": 0.9971597120237243,
+     "p95": 0.9971597120237243,
+     "max": 0.9971597120237243,
+     "median_ci95": [
+      0.9971597120237243,
+      0.9971597120237243
+     ],
+     "mean": 0.9971597120237243
+    },
+    "own_share_of_total": {
+     "n": 1,
+     "median": 0.9425265922756988,
+     "p95": 0.9425265922756988,
+     "max": 0.9425265922756988,
+     "median_ci95": [
+      0.9425265922756988,
+      0.9425265922756988
+     ],
+     "mean": 0.9425265922756988
+    },
+    "overflow_over_bl0b": {
+     "n": 1,
+     "median": 0.1710377519626471,
+     "p95": 0.1710377519626471,
+     "max": 0.1710377519626471,
+     "median_ci95": [
+      0.1710377519626471,
+      0.1710377519626471
+     ],
+     "mean": 0.1710377519626471
+    },
+    "total_over_bl0b": {
+     "n": 1,
+     "median": 0.7821334402263412,
+     "p95": 0.7821334402263412,
+     "max": 0.7821334402263412,
+     "median_ci95": [
+      0.7821334402263412,
+      0.7821334402263412
+     ],
+     "mean": 0.7821334402263412
+    },
+    "saving_pct": {
+     "n": 1,
+     "median": 4.721972579891021,
+     "p95": 4.721972579891021,
+     "max": 4.721972579891021,
+     "median_ci95": [
+      4.721972579891021,
+      4.721972579891021
+     ],
+     "mean": 4.721972579891021
+    },
+    "saving_pct_total": {
+     "n": 1,
+     "median": 0.28402879762756683,
+     "p95": 0.28402879762756683,
+     "max": 0.28402879762756683,
+     "median_ci95": [
+      0.28402879762756683,
+      0.28402879762756683
+     ],
+     "mean": 0.28402879762756683
+    },
+    "components_over_bl0a": {
+     "lease_prepaid": 0.10641342012886652,
+     "lease_rent": 0.40394294666338193,
+     "lease": 0.5103563667922484,
+     "loading": 0.0,
+     "routing": 0.0003107672384599094,
+     "fallback": 0.4421002904653481,
+     "stranding": 1.2849705033488161e-05,
+     "total": 0.9527802742010898
+    },
+    "fallback_share_after_reclaims": {
+     "n": 0,
+     "median": null,
+     "p95": null,
+     "max": null,
+     "median_ci95": [
+      null,
+      null
+     ],
+     "median_note": "no run with a reclaim-caused capacity drop",
+     "p95_note": "no run with a reclaim-caused capacity drop",
+     "max_note": "no run with a reclaim-caused capacity drop",
+     "mean": null,
+     "mean_note": "no run with a reclaim-caused capacity drop",
+     "median_ci95_note": "no run with a reclaim-caused capacity drop",
+     "n_null": 1
+    },
+    "fallback_share": {
+     "n": 1,
+     "median": 0.3970101811716891,
+     "p95": 0.3970101811716891,
+     "max": 0.3970101811716891,
+     "median_ci95": [
+      0.3970101811716891,
+      0.3970101811716891
+     ],
+     "mean": 0.3970101811716891
+    },
+    "stranding_events_per_day": {
+     "n": 1,
+     "median": 24.0,
+     "p95": 24.0,
+     "max": 24.0,
+     "median_ci95": [
+      24.0,
+      24.0
+     ],
+     "mean": 24.0
+    },
+    "loads_per_day": {
+     "n": 1,
+     "median": 3312.0,
+     "p95": 3312.0,
+     "max": 3312.0,
+     "median_ci95": [
+      3312.0,
+      3312.0
+     ],
+     "mean": 3312.0
+    },
+    "replica_utilization": {
+     "n": 1,
+     "median": 0.5776049502239342,
+     "p95": 0.5776049502239342,
+     "max": 0.5776049502239342,
+     "median_ci95": [
+      0.5776049502239342,
+      0.5776049502239342
+     ],
+     "mean": 0.5776049502239342
+    },
+    "n_leases": {
+     "n": 1,
+     "median": 276.0,
+     "p95": 276.0,
+     "max": 276.0,
+     "median_ci95": [
+      276.0,
+      276.0
+     ],
+     "mean": 276.0
+    },
+    "gpu_hour_share": {
+     "spot-like": 1.0
+    },
+    "abort_share": null,
+    "abort_share_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a": null,
+    "t_a_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_first": null,
+    "t_a_first_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_median": null,
+    "t_a_median_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificates": null,
+    "certificates_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "info_class_reported": [
+     "online-I1"
+    ],
+    "n_runs_with_invariant_failures": 0,
+    "n_runs_with_gpu_only_lease_slots": 0,
+    "refusals": {
+     "unavailable": {
+      "n": 1,
+      "median": 10.0,
+      "p95": 10.0,
+      "max": 10.0,
+      "median_ci95": [
+       10.0,
+       10.0
+      ],
+      "mean": 10.0
+     },
+     "capacity": {
+      "n": 1,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0,
+      "median_ci95": [
+       0.0,
+       0.0
+      ],
+      "mean": 0.0
+     }
+    },
+    "violation_events": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "violation_lender_slots": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "violation_victims": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "violation_deaths": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "n_runs_with_violations": 0,
+    "n_runs_with_victims": 0,
+    "ratio_validity": {
+     "fast": [
+      "None"
+     ],
+     "slow_lb": [
+      "None"
+     ],
+     "slow": [
+      "bench grid 'slow' on a run with \u0394f = 1 < \u0394s = 5 min: the slow-grid approximation bounds the run's optimum in neither direction"
+     ]
+    },
+    "ratio_validity_note": "the distinct reasons of drivers.run.ratio_validity over the runs ('None': a ratio is meaningful)",
+    "reference": {
+     "source": "code/sim/out/e7/main/summary.json runs.1.BL5",
+     "overflow_over_bl0a_median": 0.715850698689078,
+     "saving_pct_median": 28.4149301310922
+    },
+    "delta_overflow_over_bl0a": 0.23692957551201177
+   },
+   "BL1": {
+    "n_runs": 1,
+    "alignments": [
+     1
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "overflow_usd": {
+     "n": 1,
+     "median": 949.742638384515,
+     "p95": 949.742638384515,
+     "max": 949.742638384515,
+     "median_ci95": [
+      949.742638384515,
+      949.742638384515
+     ],
+     "mean": 949.742638384515
+    },
+    "total_usd": {
+     "n": 1,
+     "median": 24820.263313722586,
+     "p95": 24820.263313722586,
+     "max": 24820.263313722586,
+     "median_ci95": [
+      24820.263313722586,
+      24820.263313722586
+     ],
+     "mean": 24820.263313722586
+    },
+    "overflow_over_bl0a": {
+     "n": 1,
+     "median": 0.6216750886803694,
+     "p95": 0.6216750886803694,
+     "max": 0.6216750886803694,
+     "median_ci95": [
+      0.6216750886803694,
+      0.6216750886803694
+     ],
+     "mean": 0.6216750886803694
+    },
+    "total_over_bl0a": {
+     "n": 1,
+     "median": 0.9772435845705081,
+     "p95": 0.9772435845705081,
+     "max": 0.9772435845705081,
+     "median_ci95": [
+      0.9772435845705081,
+      0.9772435845705081
+     ],
+     "mean": 0.9772435845705081
+    },
+    "own_share_of_total": {
+     "n": 1,
+     "median": 0.9617351908648195,
+     "p95": 0.9617351908648195,
+     "max": 0.9617351908648195,
+     "median_ci95": [
+      0.9617351908648195,
+      0.9617351908648195
+     ],
+     "mean": 0.9617351908648195
+    },
+    "overflow_over_bl0b": {
+     "n": 1,
+     "median": 0.11159961273151642,
+     "p95": 0.11159961273151642,
+     "max": 0.11159961273151642,
+     "median_ci95": [
+      0.11159961273151642,
+      0.11159961273151642
+     ],
+     "mean": 0.11159961273151642
+    },
+    "total_over_bl0b": {
+     "n": 1,
+     "median": 0.7665120015609576,
+     "p95": 0.7665120015609576,
+     "max": 0.7665120015609576,
+     "median_ci95": [
+      0.7665120015609576,
+      0.7665120015609576
+     ],
+     "mean": 0.7665120015609576
+    },
+    "saving_pct": {
+     "n": 1,
+     "median": 37.83249113196307,
+     "p95": 37.83249113196307,
+     "max": 37.83249113196307,
+     "median_ci95": [
+      37.83249113196307,
+      37.83249113196307
+     ],
+     "mean": 37.83249113196307
+    },
+    "saving_pct_total": {
+     "n": 1,
+     "median": 2.2756415429491916,
+     "p95": 2.2756415429491916,
+     "max": 2.2756415429491916,
+     "median_ci95": [
+      2.2756415429491916,
+      2.2756415429491916
+     ],
+     "mean": 2.2756415429491916
+    },
+    "components_over_bl0a": {
+     "lease_prepaid": 0.14244592363057618,
+     "lease_rent": 0.3921414322011693,
+     "lease": 0.5345873558317455,
+     "loading": 0.0,
+     "routing": 0.0024611212364819435,
+     "fallback": 0.07386542713248419,
+     "stranding": 0.010761184479657628,
+     "total": 0.6216750886803694
+    },
+    "fallback_share_after_reclaims": {
+     "n": 1,
+     "median": 0.41232258163917873,
+     "p95": 0.41232258163917873,
+     "max": 0.41232258163917873,
+     "median_ci95": [
+      0.41232258163917873,
+      0.41232258163917873
+     ],
+     "mean": 0.41232258163917873,
+     "n_null": 0
+    },
+    "fallback_share": {
+     "n": 1,
+     "median": 0.050628005684528334,
+     "p95": 0.050628005684528334,
+     "max": 0.050628005684528334,
+     "median_ci95": [
+      0.050628005684528334,
+      0.050628005684528334
+     ],
+     "mean": 0.050628005684528334
+    },
+    "stranding_events_per_day": {
+     "n": 1,
+     "median": 1548.0,
+     "p95": 1548.0,
+     "max": 1548.0,
+     "median_ci95": [
+      1548.0,
+      1548.0
+     ],
+     "mean": 1548.0
+    },
+    "loads_per_day": {
+     "n": 1,
+     "median": 4320.0,
+     "p95": 4320.0,
+     "max": 4320.0,
+     "median_ci95": [
+      4320.0,
+      4320.0
+     ],
+     "mean": 4320.0
+    },
+    "replica_utilization": {
+     "n": 1,
+     "median": 0.8181296891801112,
+     "p95": 0.8181296891801112,
+     "max": 0.8181296891801112,
+     "median_ci95": [
+      0.8181296891801112,
+      0.8181296891801112
+     ],
+     "mean": 0.8181296891801112
+    },
+    "n_leases": {
+     "n": 1,
+     "median": 360.0,
+     "p95": 360.0,
+     "max": 360.0,
+     "median_ci95": [
+      360.0,
+      360.0
+     ],
+     "mean": 360.0
+    },
+    "gpu_hour_share": {
+     "spot-like": 1.0
+    },
+    "abort_share": null,
+    "abort_share_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a": null,
+    "t_a_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_first": null,
+    "t_a_first_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_median": null,
+    "t_a_median_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificates": null,
+    "certificates_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "info_class_reported": [
+     "online-I1"
+    ],
+    "n_runs_with_invariant_failures": 0,
+    "n_runs_with_gpu_only_lease_slots": 0,
+    "refusals": {
+     "unavailable": {
+      "n": 1,
+      "median": 7.0,
+      "p95": 7.0,
+      "max": 7.0,
+      "median_ci95": [
+       7.0,
+       7.0
+      ],
+      "mean": 7.0
+     },
+     "capacity": {
+      "n": 1,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0,
+      "median_ci95": [
+       0.0,
+       0.0
+      ],
+      "mean": 0.0
+     }
+    },
+    "violation_events": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "violation_lender_slots": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "violation_victims": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "violation_deaths": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "n_runs_with_violations": 0,
+    "n_runs_with_victims": 0,
+    "ratio_validity": {
+     "fast": [
+      "None"
+     ],
+     "slow_lb": [
+      "None"
+     ],
+     "slow": [
+      "bench grid 'slow' on a run with \u0394f = 1 < \u0394s = 5 min: the slow-grid approximation bounds the run's optimum in neither direction"
+     ]
+    },
+    "ratio_validity_note": "the distinct reasons of drivers.run.ratio_validity over the runs ('None': a ratio is meaningful)",
+    "reference": {
+     "source": "code/sim/out/e7/main/summary.json runs.1.BL1",
+     "overflow_over_bl0a_median": 0.6619217556617112,
+     "saving_pct_median": 33.80782443382888
+    },
+    "delta_overflow_over_bl0a": -0.04024666698134183
+   },
+   "BL2": {
+    "n_runs": 1,
+    "alignments": [
+     1
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "overflow_usd": {
+     "n": 1,
+     "median": 1010.1602913554939,
+     "p95": 1010.1602913554939,
+     "max": 1010.1602913554939,
+     "median_ci95": [
+      1010.1602913554939,
+      1010.1602913554939
+     ],
+     "mean": 1010.1602913554939
+    },
+    "total_usd": {
+     "n": 1,
+     "median": 24880.680966693562,
+     "p95": 24880.680966693562,
+     "max": 24880.680966693562,
+     "median_ci95": [
+      24880.680966693562,
+      24880.680966693562
+     ],
+     "mean": 24880.680966693562
+    },
+    "overflow_over_bl0a": {
+     "n": 1,
+     "median": 0.6612228021877694,
+     "p95": 0.6612228021877694,
+     "max": 0.6612228021877694,
+     "median_ci95": [
+      0.6612228021877694,
+      0.6612228021877694
+     ],
+     "mean": 0.6612228021877694
+    },
+    "total_over_bl0a": {
+     "n": 1,
+     "median": 0.9796223975192028,
+     "p95": 0.9796223975192028,
+     "max": 0.9796223975192028,
+     "median_ci95": [
+      0.9796223975192028,
+      0.9796223975192028
+     ],
+     "mean": 0.9796223975192028
+    },
+    "own_share_of_total": {
+     "n": 1,
+     "median": 0.95939981334483,
+     "p95": 0.95939981334483,
+     "max": 0.95939981334483,
+     "median_ci95": [
+      0.95939981334483,
+      0.95939981334483
+     ],
+     "mean": 0.95939981334483
+    },
+    "overflow_over_bl0b": {
+     "n": 1,
+     "median": 0.11869899566032473,
+     "p95": 0.11869899566032473,
+     "max": 0.11869899566032473,
+     "median_ci95": [
+      0.11869899566032473,
+      0.11869899566032473
+     ],
+     "mean": 0.11869899566032473
+    },
+    "total_over_bl0b": {
+     "n": 1,
+     "median": 0.7683778502638113,
+     "p95": 0.7683778502638113,
+     "max": 0.7683778502638113,
+     "median_ci95": [
+      0.7683778502638113,
+      0.7683778502638113
+     ],
+     "mean": 0.7683778502638113
+    },
+    "saving_pct": {
+     "n": 1,
+     "median": 33.87771978122306,
+     "p95": 33.87771978122306,
+     "max": 33.87771978122306,
+     "median_ci95": [
+      33.87771978122306,
+      33.87771978122306
+     ],
+     "mean": 33.87771978122306
+    },
+    "saving_pct_total": {
+     "n": 1,
+     "median": 2.037760248079723,
+     "p95": 2.037760248079723,
+     "max": 2.037760248079723,
+     "median_ci95": [
+      2.037760248079723,
+      2.037760248079723
+     ],
+     "mean": 2.037760248079723
+    },
+    "components_over_bl0a": {
+     "lease_prepaid": 0.13919246502993426,
+     "lease_rent": 0.35427177277424116,
+     "lease": 0.4934642378041753,
+     "loading": 0.0,
+     "routing": 0.0,
+     "fallback": 0.16035704488643293,
+     "stranding": 0.007401519497161359,
+     "total": 0.6612228021877694
+    },
+    "fallback_share_after_reclaims": {
+     "n": 1,
+     "median": 0.7468551114672155,
+     "p95": 0.7468551114672155,
+     "max": 0.7468551114672155,
+     "median_ci95": [
+      0.7468551114672155,
+      0.7468551114672155
+     ],
+     "mean": 0.7468551114672155,
+     "n_null": 0
+    },
+    "fallback_share": {
+     "n": 1,
+     "median": 0.08407670385407023,
+     "p95": 0.08407670385407023,
+     "max": 0.08407670385407023,
+     "median_ci95": [
+      0.08407670385407023,
+      0.08407670385407023
+     ],
+     "mean": 0.08407670385407023
+    },
+    "stranding_events_per_day": {
+     "n": 1,
+     "median": 1716.0,
+     "p95": 1716.0,
+     "max": 1716.0,
+     "median_ci95": [
+      1716.0,
+      1716.0
+     ],
+     "mean": 1716.0
+    },
+    "loads_per_day": {
+     "n": 1,
+     "median": 4248.0,
+     "p95": 4248.0,
+     "max": 4248.0,
+     "median_ci95": [
+      4248.0,
+      4248.0
+     ],
+     "mean": 4248.0
+    },
+    "replica_utilization": {
+     "n": 1,
+     "median": 0.8125886949352792,
+     "p95": 0.8125886949352792,
+     "max": 0.8125886949352792,
+     "median_ci95": [
+      0.8125886949352792,
+      0.8125886949352792
+     ],
+     "mean": 0.8125886949352792
+    },
+    "n_leases": {
+     "n": 1,
+     "median": 354.0,
+     "p95": 354.0,
+     "max": 354.0,
+     "median_ci95": [
+      354.0,
+      354.0
+     ],
+     "mean": 354.0
+    },
+    "gpu_hour_share": {
+     "spot-like": 1.0
+    },
+    "abort_share": null,
+    "abort_share_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a": null,
+    "t_a_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_first": null,
+    "t_a_first_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_median": null,
+    "t_a_median_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificates": null,
+    "certificates_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "info_class_reported": [
+     "online-I1"
+    ],
+    "n_runs_with_invariant_failures": 0,
+    "n_runs_with_gpu_only_lease_slots": 0,
+    "refusals": {
+     "unavailable": {
+      "n": 1,
+      "median": 19.0,
+      "p95": 19.0,
+      "max": 19.0,
+      "median_ci95": [
+       19.0,
+       19.0
+      ],
+      "mean": 19.0
+     },
+     "capacity": {
+      "n": 1,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0,
+      "median_ci95": [
+       0.0,
+       0.0
+      ],
+      "mean": 0.0
+     }
+    },
+    "violation_events": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "violation_lender_slots": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "violation_victims": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "violation_deaths": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "n_runs_with_violations": 0,
+    "n_runs_with_victims": 0,
+    "ratio_validity": {
+     "fast": [
+      "None"
+     ],
+     "slow_lb": [
+      "None"
+     ],
+     "slow": [
+      "bench grid 'slow' on a run with \u0394f = 1 < \u0394s = 5 min: the slow-grid approximation bounds the run's optimum in neither direction"
+     ]
+    },
+    "ratio_validity_note": "the distinct reasons of drivers.run.ratio_validity over the runs ('None': a ratio is meaningful)",
+    "reference": {
+     "source": "code/sim/out/e7/main/summary.json runs.1.BL2",
+     "overflow_over_bl0a_median": 0.6835527103271365,
+     "saving_pct_median": 31.64472896728635
+    },
+    "delta_overflow_over_bl0a": -0.022329908139367083
+   },
+   "BL4": {
+    "n_runs": 1,
+    "alignments": [
+     1
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "overflow_usd": {
+     "n": 1,
+     "median": 1554.8415066952589,
+     "p95": 1554.8415066952589,
+     "max": 1554.8415066952589,
+     "median_ci95": [
+      1554.8415066952589,
+      1554.8415066952589
+     ],
+     "mean": 1554.8415066952589
+    },
+    "total_usd": {
+     "n": 1,
+     "median": 25425.36218203333,
+     "p95": 25425.36218203333,
+     "max": 25425.36218203333,
+     "median_ci95": [
+      25425.36218203333,
+      25425.36218203333
+     ],
+     "mean": 25425.36218203333
+    },
+    "overflow_over_bl0a": {
+     "n": 1,
+     "median": 1.017755960923123,
+     "p95": 1.017755960923123,
+     "max": 1.017755960923123,
+     "median_ci95": [
+      1.017755960923123,
+      1.017755960923123
+     ],
+     "mean": 1.017755960923123
+    },
+    "total_over_bl0a": {
+     "n": 1,
+     "median": 1.0010680291226581,
+     "p95": 1.0010680291226581,
+     "max": 1.0010680291226581,
+     "median_ci95": [
+      1.0010680291226581,
+      1.0010680291226581
+     ],
+     "mean": 1.0010680291226581
+    },
+    "own_share_of_total": {
+     "n": 1,
+     "median": 0.9388468295726392,
+     "p95": 0.9388468295726392,
+     "max": 0.9388468295726392,
+     "median_ci95": [
+      0.9388468295726392,
+      0.9388468295726392
+     ],
+     "mean": 0.9388468295726392
+    },
+    "overflow_over_bl0b": {
+     "n": 1,
+     "median": 0.18270182151791187,
+     "p95": 0.18270182151791187,
+     "max": 0.18270182151791187,
+     "median_ci95": [
+      0.18270182151791187,
+      0.18270182151791187
+     ],
+     "mean": 0.18270182151791187
+    },
+    "total_over_bl0b": {
+     "n": 1,
+     "median": 0.785198972719507,
+     "p95": 0.785198972719507,
+     "max": 0.785198972719507,
+     "median_ci95": [
+      0.785198972719507,
+      0.785198972719507
+     ],
+     "mean": 0.785198972719507
+    },
+    "saving_pct": {
+     "n": 1,
+     "median": -1.7755960923123038,
+     "p95": -1.7755960923123038,
+     "max": -1.7755960923123038,
+     "median_ci95": [
+      -1.7755960923123038,
+      -1.7755960923123038
+     ],
+     "mean": -1.7755960923123038
+    },
+    "saving_pct_total": {
+     "n": 1,
+     "median": -0.10680291226581318,
+     "p95": -0.10680291226581318,
+     "max": -0.10680291226581318,
+     "median_ci95": [
+      -0.10680291226581318,
+      -0.10680291226581318
+     ],
+     "mean": -0.10680291226581318
+    },
+    "components_over_bl0a": {
+     "lease_prepaid": 0.004219168565813261,
+     "lease_rent": 0.06328752848719892,
+     "lease": 0.06750669705301218,
+     "loading": 0.0,
+     "routing": 0.002110311600842979,
+     "fallback": 0.9371966876889208,
+     "stranding": 0.010942264580346988,
+     "total": 1.017755960923123
+    },
+    "fallback_share_after_reclaims": {
+     "n": 0,
+     "median": null,
+     "p95": null,
+     "max": null,
+     "median_ci95": [
+      null,
+      null
+     ],
+     "median_note": "no run with a reclaim-caused capacity drop",
+     "p95_note": "no run with a reclaim-caused capacity drop",
+     "max_note": "no run with a reclaim-caused capacity drop",
+     "mean": null,
+     "mean_note": "no run with a reclaim-caused capacity drop",
+     "median_ci95_note": "no run with a reclaim-caused capacity drop",
+     "n_null": 1
+    },
+    "fallback_share": {
+     "n": 1,
+     "median": 0.9666308237173872,
+     "p95": 0.9666308237173872,
+     "max": 0.9666308237173872,
+     "median_ci95": [
+      0.9666308237173872,
+      0.9666308237173872
+     ],
+     "mean": 0.9666308237173872
+    },
+    "stranding_events_per_day": {
+     "n": 1,
+     "median": 48.0,
+     "p95": 48.0,
+     "max": 48.0,
+     "median_ci95": [
+      48.0,
+      48.0
+     ],
+     "mean": 48.0
+    },
+    "loads_per_day": {
+     "n": 1,
+     "median": 72.0,
+     "p95": 72.0,
+     "max": 72.0,
+     "median_ci95": [
+      72.0,
+      72.0
+     ],
+     "mean": 72.0
+    },
+    "replica_utilization": {
+     "n": 1,
+     "median": 0.38384587335601666,
+     "p95": 0.38384587335601666,
+     "max": 0.38384587335601666,
+     "median_ci95": [
+      0.38384587335601666,
+      0.38384587335601666
+     ],
+     "mean": 0.38384587335601666
+    },
+    "n_leases": {
+     "n": 1,
+     "median": 6.0,
+     "p95": 6.0,
+     "max": 6.0,
+     "median_ci95": [
+      6.0,
+      6.0
+     ],
+     "mean": 6.0
+    },
+    "gpu_hour_share": {
+     "spot-like": 1.0
+    },
+    "abort_share": null,
+    "abort_share_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a": null,
+    "t_a_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_first": null,
+    "t_a_first_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_median": null,
+    "t_a_median_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificates": null,
+    "certificates_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "info_class_reported": [
+     "online-I1"
+    ],
+    "n_runs_with_invariant_failures": 0,
+    "n_runs_with_gpu_only_lease_slots": 0,
+    "refusals": {
+     "unavailable": {
+      "n": 1,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0,
+      "median_ci95": [
+       0.0,
+       0.0
+      ],
+      "mean": 0.0
+     },
+     "capacity": {
+      "n": 1,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0,
+      "median_ci95": [
+       0.0,
+       0.0
+      ],
+      "mean": 0.0
+     }
+    },
+    "violation_events": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "violation_lender_slots": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "violation_victims": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "violation_deaths": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "n_runs_with_violations": 0,
+    "n_runs_with_victims": 0,
+    "ratio_validity": {
+     "fast": [
+      "None"
+     ],
+     "slow_lb": [
+      "None"
+     ],
+     "slow": [
+      "bench grid 'slow' on a run with \u0394f = 1 < \u0394s = 5 min: the slow-grid approximation bounds the run's optimum in neither direction"
+     ]
+    },
+    "ratio_validity_note": "the distinct reasons of drivers.run.ratio_validity over the runs ('None': a ratio is meaningful)",
+    "reference": {
+     "source": "code/sim/out/e7/main/summary.json runs.1.BL4",
+     "overflow_over_bl0a_median": 0.9080303676223338,
+     "saving_pct_median": 9.19696323776662
+    },
+    "delta_overflow_over_bl0a": 0.10972559330078924
+   },
+   "BL3": {
+    "n_runs": 1,
+    "alignments": [
+     1
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "overflow_usd": {
+     "n": 1,
+     "median": 1456.5982414038303,
+     "p95": 1456.5982414038303,
+     "max": 1456.5982414038303,
+     "median_ci95": [
+      1456.5982414038303,
+      1456.5982414038303
+     ],
+     "mean": 1456.5982414038303
+    },
+    "total_usd": {
+     "n": 1,
+     "median": 25327.1189167419,
+     "p95": 25327.1189167419,
+     "max": 25327.1189167419,
+     "median_ci95": [
+      25327.1189167419,
+      25327.1189167419
+     ],
+     "mean": 25327.1189167419
+    },
+    "overflow_over_bl0a": {
+     "n": 1,
+     "median": 0.9534486547183754,
+     "p95": 0.9534486547183754,
+     "max": 0.9534486547183754,
+     "median_ci95": [
+      0.9534486547183754,
+      0.9534486547183754
+     ],
+     "mean": 0.9534486547183754
+    },
+    "total_over_bl0a": {
+     "n": 1,
+     "median": 0.9971999154157327,
+     "p95": 0.9971999154157327,
+     "max": 0.9971999154157327,
+     "median_ci95": [
+      0.9971999154157327,
+      0.9971999154157327
+     ],
+     "mean": 0.9971999154157327
+    },
+    "own_share_of_total": {
+     "n": 1,
+     "median": 0.9424885931087496,
+     "p95": 0.9424885931087496,
+     "max": 0.9424885931087496,
+     "median_ci95": [
+      0.9424885931087496,
+      0.9424885931087496
+     ],
+     "mean": 0.9424885931087496
+    },
+    "overflow_over_bl0b": {
+     "n": 1,
+     "median": 0.17115773587103353,
+     "p95": 0.17115773587103353,
+     "max": 0.17115773587103353,
+     "median_ci95": [
+      0.17115773587103353,
+      0.17115773587103353
+     ],
+     "mean": 0.17115773587103353
+    },
+    "total_over_bl0b": {
+     "n": 1,
+     "median": 0.782164974209234,
+     "p95": 0.782164974209234,
+     "max": 0.782164974209234,
+     "median_ci95": [
+      0.782164974209234,
+      0.782164974209234
+     ],
+     "mean": 0.782164974209234
+    },
+    "saving_pct": {
+     "n": 1,
+     "median": 4.655134528162463,
+     "p95": 4.655134528162463,
+     "max": 4.655134528162463,
+     "median_ci95": [
+      4.655134528162463,
+      4.655134528162463
+     ],
+     "mean": 4.655134528162463
+    },
+    "saving_pct_total": {
+     "n": 1,
+     "median": 0.28000845842672817,
+     "p95": 0.28000845842672817,
+     "max": 0.28000845842672817,
+     "median_ci95": [
+      0.28000845842672817,
+      0.28000845842672817
+     ],
+     "mean": 0.28000845842672817
+    },
+    "components_over_bl0a": {
+     "lease_prepaid": 0.12055317931611911,
+     "lease_rent": 0.6635157387758319,
+     "lease": 0.7840689180919511,
+     "loading": 0.0,
+     "routing": 0.008148838752186152,
+     "fallback": 0.15017379552604085,
+     "stranding": 0.01105710234819743,
+     "total": 0.9534486547183754
+    },
+    "fallback_share_after_reclaims": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0,
+     "n_null": 0
+    },
+    "fallback_share": {
+     "n": 1,
+     "median": 0.17083458958987938,
+     "p95": 0.17083458958987938,
+     "max": 0.17083458958987938,
+     "median_ci95": [
+      0.17083458958987938,
+      0.17083458958987938
+     ],
+     "mean": 0.17083458958987938
+    },
+    "stranding_events_per_day": {
+     "n": 1,
+     "median": 1272.0,
+     "p95": 1272.0,
+     "max": 1272.0,
+     "median_ci95": [
+      1272.0,
+      1272.0
+     ],
+     "mean": 1272.0
+    },
+    "loads_per_day": {
+     "n": 1,
+     "median": 3552.0,
+     "p95": 3552.0,
+     "max": 3552.0,
+     "median_ci95": [
+      3552.0,
+      3552.0
+     ],
+     "mean": 3552.0
+    },
+    "replica_utilization": {
+     "n": 1,
+     "median": 0.5392286979308453,
+     "p95": 0.5392286979308453,
+     "max": 0.5392286979308453,
+     "median_ci95": [
+      0.5392286979308453,
+      0.5392286979308453
+     ],
+     "mean": 0.5392286979308453
+    },
+    "n_leases": {
+     "n": 1,
+     "median": 296.0,
+     "p95": 296.0,
+     "max": 296.0,
+     "median_ci95": [
+      296.0,
+      296.0
+     ],
+     "mean": 296.0
+    },
+    "gpu_hour_share": {
+     "spot-like": 1.0
+    },
+    "abort_share": null,
+    "abort_share_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a": null,
+    "t_a_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_first": null,
+    "t_a_first_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_median": null,
+    "t_a_median_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificates": null,
+    "certificates_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "info_class_reported": [
+     "online-I1"
+    ],
+    "n_runs_with_invariant_failures": 0,
+    "n_runs_with_gpu_only_lease_slots": 0,
+    "refusals": {
+     "unavailable": {
+      "n": 1,
+      "median": 4.0,
+      "p95": 4.0,
+      "max": 4.0,
+      "median_ci95": [
+       4.0,
+       4.0
+      ],
+      "mean": 4.0
+     },
+     "capacity": {
+      "n": 1,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0,
+      "median_ci95": [
+       0.0,
+       0.0
+      ],
+      "mean": 0.0
+     }
+    },
+    "violation_events": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "violation_lender_slots": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "violation_victims": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "violation_deaths": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "n_runs_with_violations": 0,
+    "n_runs_with_victims": 0,
+    "ratio_validity": {
+     "fast": [
+      "None"
+     ],
+     "slow_lb": [
+      "None"
+     ],
+     "slow": [
+      "bench grid 'slow' on a run with \u0394f = 1 < \u0394s = 5 min: the slow-grid approximation bounds the run's optimum in neither direction"
+     ]
+    },
+    "ratio_validity_note": "the distinct reasons of drivers.run.ratio_validity over the runs ('None': a ratio is meaningful)",
+    "reference": {
+     "source": "q28/summary.json runs.default.BL3 (this part's default jobs)",
+     "overflow_over_bl0a_median": 0.955345569473629,
+     "saving_pct_median": 4.465443052637097
+    },
+    "delta_overflow_over_bl0a": -0.0018969147552536647
+   }
+  },
+  "vr": {
+   "Sublet": {
+    "n_runs": 1,
+    "alignments": [
+     1
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "overflow_usd": {
+     "n": 1,
+     "median": 1609.8497307986415,
+     "p95": 1609.8497307986415,
+     "max": 1609.8497307986415,
+     "median_ci95": [
+      1609.8497307986415,
+      1609.8497307986415
+     ],
+     "mean": 1609.8497307986415
+    },
+    "total_usd": {
+     "n": 1,
+     "median": 25480.37040613671,
+     "p95": 25480.37040613671,
+     "max": 25480.37040613671,
+     "median_ci95": [
+      25480.37040613671,
+      25480.37040613671
+     ],
+     "mean": 25480.37040613671
+    },
+    "overflow_over_bl0a": {
+     "n": 1,
+     "median": 1.0537628129012426,
+     "p95": 1.0537628129012426,
+     "max": 1.0537628129012426,
+     "median_ci95": [
+      1.0537628129012426,
+      1.0537628129012426
+     ],
+     "mean": 1.0537628129012426
+    },
+    "total_over_bl0a": {
+     "n": 1,
+     "median": 1.0032338576404372,
+     "p95": 1.0032338576404372,
+     "max": 1.0032338576404372,
+     "median_ci95": [
+      1.0032338576404372,
+      1.0032338576404372
+     ],
+     "mean": 1.0032338576404372
+    },
+    "own_share_of_total": {
+     "n": 1,
+     "median": 0.9368200028045541,
+     "p95": 0.9368200028045541,
+     "max": 0.9368200028045541,
+     "median_ci95": [
+      0.9368200028045541,
+      0.9368200028045541
+     ],
+     "mean": 0.9368200028045541
+    },
+    "overflow_over_bl0b": {
+     "n": 1,
+     "median": 0.18916556891523634,
+     "p95": 0.18916556891523634,
+     "max": 0.18916556891523634,
+     "median_ci95": [
+      0.18916556891523634,
+      0.18916556891523634
+     ],
+     "mean": 0.18916556891523634
+    },
+    "total_over_bl0b": {
+     "n": 1,
+     "median": 0.7868977646874586,
+     "p95": 0.7868977646874586,
+     "max": 0.7868977646874586,
+     "median_ci95": [
+      0.7868977646874586,
+      0.7868977646874586
+     ],
+     "mean": 0.7868977646874586
+    },
+    "saving_pct": {
+     "n": 1,
+     "median": -5.376281290124263,
+     "p95": -5.376281290124263,
+     "max": -5.376281290124263,
+     "median_ci95": [
+      -5.376281290124263,
+      -5.376281290124263
+     ],
+     "mean": -5.376281290124263
+    },
+    "saving_pct_total": {
+     "n": 1,
+     "median": -0.32338576404371544,
+     "p95": -0.32338576404371544,
+     "max": -0.32338576404371544,
+     "median_ci95": [
+      -0.32338576404371544,
+      -0.32338576404371544
+     ],
+     "mean": -0.32338576404371544
+    },
+    "components_over_bl0a": {
+     "lease_prepaid": 0.03396759630722329,
+     "lease_rent": 0.006091137373766255,
+     "lease": 0.04005873368098955,
+     "loading": 0.0,
+     "routing": 7.623193055271746e-06,
+     "fallback": 0.9527138462842456,
+     "stranding": 0.06098260974295225,
+     "total": 1.0537628129012426
+    },
+    "fallback_share_after_reclaims": {
+     "n": 0,
+     "median": null,
+     "p95": null,
+     "max": null,
+     "median_ci95": [
+      null,
+      null
+     ],
+     "median_note": "no run with a reclaim-caused capacity drop",
+     "p95_note": "no run with a reclaim-caused capacity drop",
+     "max_note": "no run with a reclaim-caused capacity drop",
+     "mean": null,
+     "mean_note": "no run with a reclaim-caused capacity drop",
+     "median_ci95_note": "no run with a reclaim-caused capacity drop",
+     "n_null": 1
+    },
+    "fallback_share": {
+     "n": 1,
+     "median": 0.9435805142286303,
+     "p95": 0.9435805142286303,
+     "max": 0.9435805142286303,
+     "median_ci95": [
+      0.9435805142286303,
+      0.9435805142286303
+     ],
+     "mean": 0.9435805142286303
+    },
+    "stranding_events_per_day": {
+     "n": 1,
+     "median": 1128.0,
+     "p95": 1128.0,
+     "max": 1128.0,
+     "median_ci95": [
+      1128.0,
+      1128.0
+     ],
+     "mean": 1128.0
+    },
+    "loads_per_day": {
+     "n": 1,
+     "median": 1188.0,
+     "p95": 1188.0,
+     "max": 1188.0,
+     "median_ci95": [
+      1188.0,
+      1188.0
+     ],
+     "mean": 1188.0
+    },
+    "replica_utilization": {
+     "n": 1,
+     "median": 0.8628666879560676,
+     "p95": 0.8628666879560676,
+     "max": 0.8628666879560676,
+     "median_ci95": [
+      0.8628666879560676,
+      0.8628666879560676
+     ],
+     "mean": 0.8628666879560676
+    },
+    "n_leases": {
+     "n": 1,
+     "median": 99.0,
+     "p95": 99.0,
+     "max": 99.0,
+     "median_ci95": [
+      99.0,
+      99.0
+     ],
+     "mean": 99.0
+    },
+    "gpu_hour_share": {
+     "spot-like": 1.0
+    },
+    "abort_share": 1.0,
+    "t_a": [
+     12
+    ],
+    "t_a_first": 12,
+    "t_a_median": 12.0,
+    "certificates": {
+     "n": 1,
+     "held": 1,
+     "by_case": {
+      "W(a)": {
+       "runs": 0,
+       "held": 0
+      },
+      "W(b)": {
+       "runs": 1,
+       "held": 1
+      },
+      "W(c)": {
+       "runs": 0,
+       "held": 0
+      },
+      "unavailable": {
+       "runs": 0,
+       "held": 0
+      }
+     },
+     "failures": 0
+    },
+    "info_class_reported": [
+     "online-I1 + a-priori N + a-priori BL0a"
+    ],
+    "n_runs_with_invariant_failures": 0,
+    "n_runs_with_gpu_only_lease_slots": 0,
+    "refusals": {
+     "unavailable": {
+      "n": 1,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0,
+      "median_ci95": [
+       0.0,
+       0.0
+      ],
+      "mean": 0.0
+     },
+     "capacity": {
+      "n": 1,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0,
+      "median_ci95": [
+       0.0,
+       0.0
+      ],
+      "mean": 0.0
+     }
+    },
+    "violation_events": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "violation_lender_slots": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "violation_victims": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "violation_deaths": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "n_runs_with_violations": 0,
+    "n_runs_with_victims": 0,
+    "ratio_validity": {
+     "fast": [
+      "violations = 'reclaim': the realized schedule is no valid omega for the benchmark"
+     ],
+     "slow_lb": [
+      "violations = 'reclaim': the realized schedule is no valid omega for the benchmark"
+     ],
+     "slow": [
+      "bench grid 'slow' on a run with \u0394f = 1 < \u0394s = 5 min: the slow-grid approximation bounds the run's optimum in neither direction"
+     ]
+    },
+    "ratio_validity_note": "the distinct reasons of drivers.run.ratio_validity over the runs ('None': a ratio is meaningful)",
+    "reference": {
+     "source": "code/sim/out/e7/main/summary.json runs.1.Sublet",
+     "overflow_over_bl0a_median": 0.715850698689078,
+     "saving_pct_median": 28.4149301310922
+    },
+    "delta_overflow_over_bl0a": 0.3379121142121646,
+    "reference_s1_default": {
+     "source": "sweep/summary.json points.default",
+     "overflow_over_bl0a_median": 1.0537628129012426,
+     "saving_pct_median": -5.376281290124263
+    },
+    "delta_overflow_over_bl0a_s1_default": 0.0
+   },
+   "A7G": {
+    "n_runs": 1,
+    "alignments": [
+     1
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "overflow_usd": {
+     "n": 1,
+     "median": 1592.1522889615399,
+     "p95": 1592.1522889615399,
+     "max": 1592.1522889615399,
+     "median_ci95": [
+      1592.1522889615399,
+      1592.1522889615399
+     ],
+     "mean": 1592.1522889615399
+    },
+    "total_usd": {
+     "n": 1,
+     "median": 25462.67296429961,
+     "p95": 25462.67296429961,
+     "max": 25462.67296429961,
+     "median_ci95": [
+      25462.67296429961,
+      25462.67296429961
+     ],
+     "mean": 25462.67296429961
+    },
+    "overflow_over_bl0a": {
+     "n": 1,
+     "median": 1.042178560200732,
+     "p95": 1.042178560200732,
+     "max": 1.042178560200732,
+     "median_ci95": [
+      1.042178560200732,
+      1.042178560200732
+     ],
+     "mean": 1.042178560200732
+    },
+    "total_over_bl0a": {
+     "n": 1,
+     "median": 1.0025370595734702,
+     "p95": 1.0025370595734702,
+     "max": 1.0025370595734702,
+     "median_ci95": [
+      1.0025370595734702,
+      1.0025370595734702
+     ],
+     "mean": 1.0025370595734702
+    },
+    "own_share_of_total": {
+     "n": 1,
+     "median": 0.9374711252352081,
+     "p95": 0.9374711252352081,
+     "max": 0.9374711252352081,
+     "median_ci95": [
+      0.9374711252352081,
+      0.9374711252352081
+     ],
+     "mean": 0.9374711252352081
+    },
+    "overflow_over_bl0b": {
+     "n": 1,
+     "median": 0.18708602907408678,
+     "p95": 0.18708602907408678,
+     "max": 0.18708602907408678,
+     "median_ci95": [
+      0.18708602907408678,
+      0.18708602907408678
+     ],
+     "mean": 0.18708602907408678
+    },
+    "total_over_bl0b": {
+     "n": 1,
+     "median": 0.7863512232832197,
+     "p95": 0.7863512232832197,
+     "max": 0.7863512232832197,
+     "median_ci95": [
+      0.7863512232832197,
+      0.7863512232832197
+     ],
+     "mean": 0.7863512232832197
+    },
+    "saving_pct": {
+     "n": 1,
+     "median": -4.217856020073207,
+     "p95": -4.217856020073207,
+     "max": -4.217856020073207,
+     "median_ci95": [
+      -4.217856020073207,
+      -4.217856020073207
+     ],
+     "mean": -4.217856020073207
+    },
+    "saving_pct_total": {
+     "n": 1,
+     "median": -0.25370595734701684,
+     "p95": -0.25370595734701684,
+     "max": -0.25370595734701684,
+     "median_ci95": [
+      -0.25370595734701684,
+      -0.25370595734701684
+     ],
+     "mean": -0.25370595734701684
+    },
+    "components_over_bl0a": {
+     "lease_prepaid": 0.035542942866884246,
+     "lease_rent": 0.004230228875631957,
+     "lease": 0.039773171742516204,
+     "loading": 0.0,
+     "routing": 0.0006849799891969256,
+     "fallback": 0.9601646493087427,
+     "stranding": 0.04155575916027604,
+     "total": 1.042178560200732
+    },
+    "fallback_share_after_reclaims": {
+     "n": 1,
+     "median": 1.0,
+     "p95": 1.0,
+     "max": 1.0,
+     "median_ci95": [
+      1.0,
+      1.0
+     ],
+     "mean": 1.0,
+     "n_null": 0
+    },
+    "fallback_share": {
+     "n": 1,
+     "median": 0.9414474635069762,
+     "p95": 0.9414474635069762,
+     "max": 0.9414474635069762,
+     "median_ci95": [
+      0.9414474635069762,
+      0.9414474635069762
+     ],
+     "mean": 0.9414474635069762
+    },
+    "stranding_events_per_day": {
+     "n": 1,
+     "median": 1476.0,
+     "p95": 1476.0,
+     "max": 1476.0,
+     "median_ci95": [
+      1476.0,
+      1476.0
+     ],
+     "mean": 1476.0
+    },
+    "loads_per_day": {
+     "n": 1,
+     "median": 1632.0,
+     "p95": 1632.0,
+     "max": 1632.0,
+     "median_ci95": [
+      1632.0,
+      1632.0
+     ],
+     "mean": 1632.0
+    },
+    "replica_utilization": {
+     "n": 1,
+     "median": 0.7296577664003062,
+     "p95": 0.7296577664003062,
+     "max": 0.7296577664003062,
+     "median_ci95": [
+      0.7296577664003062,
+      0.7296577664003062
+     ],
+     "mean": 0.7296577664003062
+    },
+    "n_leases": {
+     "n": 1,
+     "median": 136.0,
+     "p95": 136.0,
+     "max": 136.0,
+     "median_ci95": [
+      136.0,
+      136.0
+     ],
+     "mean": 136.0
+    },
+    "gpu_hour_share": {
+     "spot-like": 1.0
+    },
+    "abort_share": 1.0,
+    "t_a": [
+     11
+    ],
+    "t_a_first": 11,
+    "t_a_median": 11.0,
+    "certificates": {
+     "n": 1,
+     "held": 1,
+     "by_case": {
+      "W(a)": {
+       "runs": 0,
+       "held": 0
+      },
+      "W(b)": {
+       "runs": 1,
+       "held": 1
+      },
+      "W(c)": {
+       "runs": 0,
+       "held": 0
+      },
+      "unavailable": {
+       "runs": 0,
+       "held": 0
+      }
+     },
+     "failures": 0
+    },
+    "info_class_reported": [
+     "online-I1 + a-priori N + a-priori BL0a"
+    ],
+    "n_runs_with_invariant_failures": 0,
+    "n_runs_with_gpu_only_lease_slots": 0,
+    "refusals": {
+     "unavailable": {
+      "n": 1,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0,
+      "median_ci95": [
+       0.0,
+       0.0
+      ],
+      "mean": 0.0
+     },
+     "capacity": {
+      "n": 1,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0,
+      "median_ci95": [
+       0.0,
+       0.0
+      ],
+      "mean": 0.0
+     }
+    },
+    "violation_events": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "violation_lender_slots": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "violation_victims": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "violation_deaths": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "n_runs_with_violations": 0,
+    "n_runs_with_victims": 0,
+    "ratio_validity": {
+     "fast": [
+      "violations = 'reclaim': the realized schedule is no valid omega for the benchmark"
+     ],
+     "slow_lb": [
+      "violations = 'reclaim': the realized schedule is no valid omega for the benchmark"
+     ],
+     "slow": [
+      "bench grid 'slow' on a run with \u0394f = 1 < \u0394s = 5 min: the slow-grid approximation bounds the run's optimum in neither direction"
+     ]
+    },
+    "ratio_validity_note": "the distinct reasons of drivers.run.ratio_validity over the runs ('None': a ratio is meaningful)",
+    "reference": {
+     "source": "code/sim/out/e7/main/summary.json runs.1.A7G",
+     "overflow_over_bl0a_median": 0.7422282118118826,
+     "saving_pct_median": 25.77717881881174
+    },
+    "delta_overflow_over_bl0a": 0.2999503483888495
+   },
+   "A7": {
+    "n_runs": 1,
+    "alignments": [
+     1
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "overflow_usd": {
+     "n": 1,
+     "median": 1309.7421631555012,
+     "p95": 1309.7421631555012,
+     "max": 1309.7421631555012,
+     "median_ci95": [
+      1309.7421631555012,
+      1309.7421631555012
+     ],
+     "mean": 1309.7421631555012
+    },
+    "total_usd": {
+     "n": 1,
+     "median": 25180.26283849357,
+     "p95": 25180.26283849357,
+     "max": 25180.26283849357,
+     "median_ci95": [
+      25180.26283849357,
+      25180.26283849357
+     ],
+     "mean": 25180.26283849357
+    },
+    "overflow_over_bl0a": {
+     "n": 1,
+     "median": 0.8573207546131695,
+     "p95": 0.8573207546131695,
+     "max": 0.8573207546131695,
+     "median_ci95": [
+      0.8573207546131695,
+      0.8573207546131695
+     ],
+     "mean": 0.8573207546131695
+    },
+    "total_over_bl0a": {
+     "n": 1,
+     "median": 0.9914177785177726,
+     "p95": 0.9914177785177726,
+     "max": 0.9914177785177726,
+     "median_ci95": [
+      0.9914177785177726,
+      0.9914177785177726
+     ],
+     "mean": 0.9914177785177726
+    },
+    "own_share_of_total": {
+     "n": 1,
+     "median": 0.9479853656986744,
+     "p95": 0.9479853656986744,
+     "max": 0.9479853656986744,
+     "median_ci95": [
+      0.9479853656986744,
+      0.9479853656986744
+     ],
+     "mean": 0.9479853656986744
+    },
+    "overflow_over_bl0b": {
+     "n": 1,
+     "median": 0.15390139631397187,
+     "p95": 0.15390139631397187,
+     "max": 0.15390139631397187,
+     "median_ci95": [
+      0.15390139631397187,
+      0.15390139631397187
+     ],
+     "mean": 0.15390139631397187
+    },
+    "total_over_bl0b": {
+     "n": 1,
+     "median": 0.7776296900723698,
+     "p95": 0.7776296900723698,
+     "max": 0.7776296900723698,
+     "median_ci95": [
+      0.7776296900723698,
+      0.7776296900723698
+     ],
+     "mean": 0.7776296900723698
+    },
+    "saving_pct": {
+     "n": 1,
+     "median": 14.267924538683053,
+     "p95": 14.267924538683053,
+     "max": 14.267924538683053,
+     "median_ci95": [
+      14.267924538683053,
+      14.267924538683053
+     ],
+     "mean": 14.267924538683053
+    },
+    "saving_pct_total": {
+     "n": 1,
+     "median": 0.8582221482227426,
+     "p95": 0.8582221482227426,
+     "max": 0.8582221482227426,
+     "median_ci95": [
+      0.8582221482227426,
+      0.8582221482227426
+     ],
+     "mean": 0.8582221482227426
+    },
+    "components_over_bl0a": {
+     "lease_prepaid": 0.11455359826305762,
+     "lease_rent": 0.23871657628638823,
+     "lease": 0.35327017454944587,
+     "loading": 0.0,
+     "routing": 0.011077657255072875,
+     "fallback": 0.4586937764262664,
+     "stranding": 0.034279146382384384,
+     "total": 0.8573207546131695
+    },
+    "fallback_share_after_reclaims": {
+     "n": 1,
+     "median": 0.14895459363013286,
+     "p95": 0.14895459363013286,
+     "max": 0.14895459363013286,
+     "median_ci95": [
+      0.14895459363013286,
+      0.14895459363013286
+     ],
+     "mean": 0.14895459363013286,
+     "n_null": 0
+    },
+    "fallback_share": {
+     "n": 1,
+     "median": 0.21686618672824046,
+     "p95": 0.21686618672824046,
+     "max": 0.21686618672824046,
+     "median_ci95": [
+      0.21686618672824046,
+      0.21686618672824046
+     ],
+     "mean": 0.21686618672824046
+    },
+    "stranding_events_per_day": {
+     "n": 1,
+     "median": 684.0,
+     "p95": 684.0,
+     "max": 684.0,
+     "median_ci95": [
+      684.0,
+      684.0
+     ],
+     "mean": 684.0
+    },
+    "loads_per_day": {
+     "n": 1,
+     "median": 4992.0,
+     "p95": 4992.0,
+     "max": 4992.0,
+     "median_ci95": [
+      4992.0,
+      4992.0
+     ],
+     "mean": 4992.0
+    },
+    "replica_utilization": {
+     "n": 1,
+     "median": 0.7113089798021978,
+     "p95": 0.7113089798021978,
+     "max": 0.7113089798021978,
+     "median_ci95": [
+      0.7113089798021978,
+      0.7113089798021978
+     ],
+     "mean": 0.7113089798021978
+    },
+    "n_leases": {
+     "n": 1,
+     "median": 416.0,
+     "p95": 416.0,
+     "max": 416.0,
+     "median_ci95": [
+      416.0,
+      416.0
+     ],
+     "mean": 416.0
+    },
+    "gpu_hour_share": {
+     "spot-like": 1.0
+    },
+    "abort_share": null,
+    "abort_share_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a": null,
+    "t_a_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_first": null,
+    "t_a_first_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_median": null,
+    "t_a_median_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificates": null,
+    "certificates_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "info_class_reported": [
+     "online-I1"
+    ],
+    "n_runs_with_invariant_failures": 0,
+    "n_runs_with_gpu_only_lease_slots": 0,
+    "refusals": {
+     "unavailable": {
+      "n": 1,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0,
+      "median_ci95": [
+       0.0,
+       0.0
+      ],
+      "mean": 0.0
+     },
+     "capacity": {
+      "n": 1,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0,
+      "median_ci95": [
+       0.0,
+       0.0
+      ],
+      "mean": 0.0
+     }
+    },
+    "violation_events": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "violation_lender_slots": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "violation_victims": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "violation_deaths": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "n_runs_with_violations": 0,
+    "n_runs_with_victims": 0,
+    "ratio_validity": {
+     "fast": [
+      "violations = 'reclaim': the realized schedule is no valid omega for the benchmark"
+     ],
+     "slow_lb": [
+      "violations = 'reclaim': the realized schedule is no valid omega for the benchmark"
+     ],
+     "slow": [
+      "bench grid 'slow' on a run with \u0394f = 1 < \u0394s = 5 min: the slow-grid approximation bounds the run's optimum in neither direction"
+     ]
+    },
+    "ratio_validity_note": "the distinct reasons of drivers.run.ratio_validity over the runs ('None': a ratio is meaningful)",
+    "reference": {
+     "source": "code/sim/out/e7/main/summary.json runs.1.A7",
+     "overflow_over_bl0a_median": 0.7422282118118826,
+     "saving_pct_median": 25.77717881881174
+    },
+    "delta_overflow_over_bl0a": 0.11509254280128689
+   },
+   "A6": {
+    "n_runs": 1,
+    "alignments": [
+     1
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "overflow_usd": {
+     "n": 1,
+     "median": 1599.472919141887,
+     "p95": 1599.472919141887,
+     "max": 1599.472919141887,
+     "median_ci95": [
+      1599.472919141887,
+      1599.472919141887
+     ],
+     "mean": 1599.472919141887
+    },
+    "total_usd": {
+     "n": 1,
+     "median": 25469.993594479958,
+     "p95": 25469.993594479958,
+     "max": 25469.993594479958,
+     "median_ci95": [
+      25469.993594479958,
+      25469.993594479958
+     ],
+     "mean": 25469.993594479958
+    },
+    "overflow_over_bl0a": {
+     "n": 1,
+     "median": 1.0469704408983331,
+     "p95": 1.0469704408983331,
+     "max": 1.0469704408983331,
+     "median_ci95": [
+      1.0469704408983331,
+      1.0469704408983331
+     ],
+     "mean": 1.0469704408983331
+    },
+    "total_over_bl0a": {
+     "n": 1,
+     "median": 1.0028252933761632,
+     "p95": 1.0028252933761632,
+     "max": 1.0028252933761632,
+     "median_ci95": [
+      1.0028252933761632,
+      1.0028252933761632
+     ],
+     "mean": 1.0028252933761632
+    },
+    "own_share_of_total": {
+     "n": 1,
+     "median": 0.9372016756420175,
+     "p95": 0.9372016756420175,
+     "max": 0.9372016756420175,
+     "median_ci95": [
+      0.9372016756420175,
+      0.9372016756420175
+     ],
+     "mean": 0.9372016756420175
+    },
+    "overflow_over_bl0b": {
+     "n": 1,
+     "median": 0.18794624052512476,
+     "p95": 0.18794624052512476,
+     "max": 0.18794624052512476,
+     "median_ci95": [
+      0.18794624052512476,
+      0.18794624052512476
+     ],
+     "mean": 0.18794624052512476
+    },
+    "total_over_bl0b": {
+     "n": 1,
+     "median": 0.7865773027095859,
+     "p95": 0.7865773027095859,
+     "max": 0.7865773027095859,
+     "median_ci95": [
+      0.7865773027095859,
+      0.7865773027095859
+     ],
+     "mean": 0.7865773027095859
+    },
+    "saving_pct": {
+     "n": 1,
+     "median": -4.697044089833313,
+     "p95": -4.697044089833313,
+     "max": -4.697044089833313,
+     "median_ci95": [
+      -4.697044089833313,
+      -4.697044089833313
+     ],
+     "mean": -4.697044089833313
+    },
+    "saving_pct_total": {
+     "n": 1,
+     "median": -0.2825293376163218,
+     "p95": -0.2825293376163218,
+     "max": -0.2825293376163218,
+     "median_ci95": [
+      -0.2825293376163218,
+      -0.2825293376163218
+     ],
+     "mean": -0.2825293376163218
+    },
+    "components_over_bl0a": {
+     "lease_prepaid": 0.12042958736595072,
+     "lease_rent": 0.03832698877040535,
+     "lease": 0.1587565761363561,
+     "loading": 0.0,
+     "routing": 0.0013117224312848709,
+     "fallback": 0.8859342059048247,
+     "stranding": 0.0009679364258673902,
+     "total": 1.0469704408983331
+    },
+    "fallback_share_after_reclaims": {
+     "n": 1,
+     "median": 0.5116355772543242,
+     "p95": 0.5116355772543242,
+     "max": 0.5116355772543242,
+     "median_ci95": [
+      0.5116355772543242,
+      0.5116355772543242
+     ],
+     "mean": 0.5116355772543242,
+     "n_null": 0
+    },
+    "fallback_share": {
+     "n": 1,
+     "median": 0.8951010830186997,
+     "p95": 0.8951010830186997,
+     "max": 0.8951010830186997,
+     "median_ci95": [
+      0.8951010830186997,
+      0.8951010830186997
+     ],
+     "mean": 0.8951010830186997
+    },
+    "stranding_events_per_day": {
+     "n": 1,
+     "median": 12.0,
+     "p95": 12.0,
+     "max": 12.0,
+     "median_ci95": [
+      12.0,
+      12.0
+     ],
+     "mean": 12.0
+    },
+    "loads_per_day": {
+     "n": 1,
+     "median": 672.0,
+     "p95": 672.0,
+     "max": 672.0,
+     "median_ci95": [
+      672.0,
+      672.0
+     ],
+     "mean": 672.0
+    },
+    "replica_utilization": {
+     "n": 1,
+     "median": 0.4118990519818977,
+     "p95": 0.4118990519818977,
+     "max": 0.4118990519818977,
+     "median_ci95": [
+      0.4118990519818977,
+      0.4118990519818977
+     ],
+     "mean": 0.4118990519818977
+    },
+    "n_leases": {
+     "n": 1,
+     "median": 56.0,
+     "p95": 56.0,
+     "max": 56.0,
+     "median_ci95": [
+      56.0,
+      56.0
+     ],
+     "mean": 56.0
+    },
+    "gpu_hour_share": {
+     "general": 0.8768342554726966,
+     "spot-like": 0.12316574452730332
+    },
+    "abort_share": null,
+    "abort_share_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a": null,
+    "t_a_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_first": null,
+    "t_a_first_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_median": null,
+    "t_a_median_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificates": null,
+    "certificates_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "info_class_reported": [
+     "online-I1"
+    ],
+    "n_runs_with_invariant_failures": 0,
+    "n_runs_with_gpu_only_lease_slots": 0,
+    "refusals": {
+     "unavailable": {
+      "n": 1,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0,
+      "median_ci95": [
+       0.0,
+       0.0
+      ],
+      "mean": 0.0
+     },
+     "capacity": {
+      "n": 1,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0,
+      "median_ci95": [
+       0.0,
+       0.0
+      ],
+      "mean": 0.0
+     }
+    },
+    "violation_events": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "violation_lender_slots": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "violation_victims": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "violation_deaths": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "n_runs_with_violations": 0,
+    "n_runs_with_victims": 0,
+    "ratio_validity": {
+     "fast": [
+      "violations = 'reclaim': the realized schedule is no valid omega for the benchmark"
+     ],
+     "slow_lb": [
+      "violations = 'reclaim': the realized schedule is no valid omega for the benchmark"
+     ],
+     "slow": [
+      "bench grid 'slow' on a run with \u0394f = 1 < \u0394s = 5 min: the slow-grid approximation bounds the run's optimum in neither direction"
+     ]
+    },
+    "ratio_validity_note": "the distinct reasons of drivers.run.ratio_validity over the runs ('None': a ratio is meaningful)",
+    "reference": {
+     "source": "code/sim/out/e7/main/summary.json runs.1.A6",
+     "overflow_over_bl0a_median": 0.9738222495245962,
+     "saving_pct_median": 2.617775047540383
+    },
+    "delta_overflow_over_bl0a": 0.07314819137373696
+   },
+   "BL5": {
+    "n_runs": 1,
+    "alignments": [
+     1
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "overflow_usd": {
+     "n": 1,
+     "median": 1480.393900544302,
+     "p95": 1480.393900544302,
+     "max": 1480.393900544302,
+     "median_ci95": [
+      1480.393900544302,
+      1480.393900544302
+     ],
+     "mean": 1480.393900544302
+    },
+    "total_usd": {
+     "n": 1,
+     "median": 25350.914575882372,
+     "p95": 25350.914575882372,
+     "max": 25350.914575882372,
+     "median_ci95": [
+      25350.914575882372,
+      25350.914575882372
+     ],
+     "mean": 25350.914575882372
+    },
+    "overflow_over_bl0a": {
+     "n": 1,
+     "median": 0.9690246306812144,
+     "p95": 0.9690246306812144,
+     "max": 0.9690246306812144,
+     "median_ci95": [
+      0.9690246306812144,
+      0.9690246306812144
+     ],
+     "mean": 0.9690246306812144
+    },
+    "total_over_bl0a": {
+     "n": 1,
+     "median": 0.9981368174518525,
+     "p95": 0.9981368174518525,
+     "max": 0.9981368174518525,
+     "median_ci95": [
+      0.9981368174518525,
+      0.9981368174518525
+     ],
+     "mean": 0.9981368174518525
+    },
+    "own_share_of_total": {
+     "n": 1,
+     "median": 0.9416039253292787,
+     "p95": 0.9416039253292787,
+     "max": 0.9416039253292787,
+     "median_ci95": [
+      0.9416039253292787,
+      0.9416039253292787
+     ],
+     "mean": 0.9416039253292787
+    },
+    "overflow_over_bl0b": {
+     "n": 1,
+     "median": 0.17395384740424305,
+     "p95": 0.17395384740424305,
+     "max": 0.17395384740424305,
+     "median_ci95": [
+      0.17395384740424305,
+      0.17395384740424305
+     ],
+     "mean": 0.17395384740424305
+    },
+    "total_over_bl0b": {
+     "n": 1,
+     "median": 0.7828998438633421,
+     "p95": 0.7828998438633421,
+     "max": 0.7828998438633421,
+     "median_ci95": [
+      0.7828998438633421,
+      0.7828998438633421
+     ],
+     "mean": 0.7828998438633421
+    },
+    "saving_pct": {
+     "n": 1,
+     "median": 3.097536931878564,
+     "p95": 3.097536931878564,
+     "max": 3.097536931878564,
+     "median_ci95": [
+      3.097536931878564,
+      3.097536931878564
+     ],
+     "mean": 3.097536931878564
+    },
+    "saving_pct_total": {
+     "n": 1,
+     "median": 0.1863182548147546,
+     "p95": 0.1863182548147546,
+     "max": 0.1863182548147546,
+     "median_ci95": [
+      0.1863182548147546,
+      0.1863182548147546
+     ],
+     "mean": 0.1863182548147546
+    },
+    "components_over_bl0a": {
+     "lease_prepaid": 0.10703756670492033,
+     "lease_rent": 0.39894977405495136,
+     "lease": 0.5059873407598716,
+     "loading": 0.0,
+     "routing": 0.0003107672384599094,
+     "fallback": 0.4519674069935117,
+     "stranding": 0.010759115689371147,
+     "total": 0.9690246306812144
+    },
+    "fallback_share_after_reclaims": {
+     "n": 1,
+     "median": 0.8867590667589106,
+     "p95": 0.8867590667589106,
+     "max": 0.8867590667589106,
+     "median_ci95": [
+      0.8867590667589106,
+      0.8867590667589106
+     ],
+     "mean": 0.8867590667589106,
+     "n_null": 0
+    },
+    "fallback_share": {
+     "n": 1,
+     "median": 0.3982268049862972,
+     "p95": 0.3982268049862972,
+     "max": 0.3982268049862972,
+     "median_ci95": [
+      0.3982268049862972,
+      0.3982268049862972
+     ],
+     "mean": 0.3982268049862972
+    },
+    "stranding_events_per_day": {
+     "n": 1,
+     "median": 96.0,
+     "p95": 96.0,
+     "max": 96.0,
+     "median_ci95": [
+      96.0,
+      96.0
+     ],
+     "mean": 96.0
+    },
+    "loads_per_day": {
+     "n": 1,
+     "median": 3360.0,
+     "p95": 3360.0,
+     "max": 3360.0,
+     "median_ci95": [
+      3360.0,
+      3360.0
+     ],
+     "mean": 3360.0
+    },
+    "replica_utilization": {
+     "n": 1,
+     "median": 0.5772612684742697,
+     "p95": 0.5772612684742697,
+     "max": 0.5772612684742697,
+     "median_ci95": [
+      0.5772612684742697,
+      0.5772612684742697
+     ],
+     "mean": 0.5772612684742697
+    },
+    "n_leases": {
+     "n": 1,
+     "median": 280.0,
+     "p95": 280.0,
+     "max": 280.0,
+     "median_ci95": [
+      280.0,
+      280.0
+     ],
+     "mean": 280.0
+    },
+    "gpu_hour_share": {
+     "spot-like": 1.0
+    },
+    "abort_share": null,
+    "abort_share_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a": null,
+    "t_a_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_first": null,
+    "t_a_first_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_median": null,
+    "t_a_median_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificates": null,
+    "certificates_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "info_class_reported": [
+     "online-I1"
+    ],
+    "n_runs_with_invariant_failures": 0,
+    "n_runs_with_gpu_only_lease_slots": 0,
+    "refusals": {
+     "unavailable": {
+      "n": 1,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0,
+      "median_ci95": [
+       0.0,
+       0.0
+      ],
+      "mean": 0.0
+     },
+     "capacity": {
+      "n": 1,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0,
+      "median_ci95": [
+       0.0,
+       0.0
+      ],
+      "mean": 0.0
+     }
+    },
+    "violation_events": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "violation_lender_slots": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "violation_victims": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "violation_deaths": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "n_runs_with_violations": 0,
+    "n_runs_with_victims": 0,
+    "ratio_validity": {
+     "fast": [
+      "violations = 'reclaim': the realized schedule is no valid omega for the benchmark"
+     ],
+     "slow_lb": [
+      "violations = 'reclaim': the realized schedule is no valid omega for the benchmark"
+     ],
+     "slow": [
+      "bench grid 'slow' on a run with \u0394f = 1 < \u0394s = 5 min: the slow-grid approximation bounds the run's optimum in neither direction"
+     ]
+    },
+    "ratio_validity_note": "the distinct reasons of drivers.run.ratio_validity over the runs ('None': a ratio is meaningful)",
+    "reference": {
+     "source": "code/sim/out/e7/main/summary.json runs.1.BL5",
+     "overflow_over_bl0a_median": 0.715850698689078,
+     "saving_pct_median": 28.4149301310922
+    },
+    "delta_overflow_over_bl0a": 0.25317393199213634
+   },
+   "BL1": {
+    "n_runs": 1,
+    "alignments": [
+     1
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "overflow_usd": {
+     "n": 1,
+     "median": 974.1299543790703,
+     "p95": 974.1299543790703,
+     "max": 974.1299543790703,
+     "median_ci95": [
+      974.1299543790703,
+      974.1299543790703
+     ],
+     "mean": 974.1299543790703
+    },
+    "total_usd": {
+     "n": 1,
+     "median": 24844.65062971714,
+     "p95": 24844.65062971714,
+     "max": 24844.65062971714,
+     "median_ci95": [
+      24844.65062971714,
+      24844.65062971714
+     ],
+     "mean": 24844.65062971714
+    },
+    "overflow_over_bl0a": {
+     "n": 1,
+     "median": 0.637638346747186,
+     "p95": 0.637638346747186,
+     "max": 0.637638346747186,
+     "median_ci95": [
+      0.637638346747186,
+      0.637638346747186
+     ],
+     "mean": 0.637638346747186
+    },
+    "total_over_bl0a": {
+     "n": 1,
+     "median": 0.9782037818012681,
+     "p95": 0.9782037818012681,
+     "max": 0.9782037818012681,
+     "median_ci95": [
+      0.9782037818012681,
+      0.9782037818012681
+     ],
+     "mean": 0.9782037818012681
+    },
+    "own_share_of_total": {
+     "n": 1,
+     "median": 0.960791159074948,
+     "p95": 0.960791159074948,
+     "max": 0.960791159074948,
+     "median_ci95": [
+      0.960791159074948,
+      0.960791159074948
+     ],
+     "mean": 0.960791159074948
+    },
+    "overflow_over_bl0b": {
+     "n": 1,
+     "median": 0.11446524696815855,
+     "p95": 0.11446524696815855,
+     "max": 0.11446524696815855,
+     "median_ci95": [
+      0.11446524696815855,
+      0.11446524696815855
+     ],
+     "mean": 0.11446524696815855
+    },
+    "total_over_bl0b": {
+     "n": 1,
+     "median": 0.7672651430631007,
+     "p95": 0.7672651430631007,
+     "max": 0.7672651430631007,
+     "median_ci95": [
+      0.7672651430631007,
+      0.7672651430631007
+     ],
+     "mean": 0.7672651430631007
+    },
+    "saving_pct": {
+     "n": 1,
+     "median": 36.2361653252814,
+     "p95": 36.2361653252814,
+     "max": 36.2361653252814,
+     "median_ci95": [
+      36.2361653252814,
+      36.2361653252814
+     ],
+     "mean": 36.2361653252814
+    },
+    "saving_pct_total": {
+     "n": 1,
+     "median": 2.17962181987319,
+     "p95": 2.17962181987319,
+     "max": 2.17962181987319,
+     "median_ci95": [
+      2.17962181987319,
+      2.17962181987319
+     ],
+     "mean": 2.17962181987319
+    },
+    "components_over_bl0a": {
+     "lease_prepaid": 0.14931020598260453,
+     "lease_rent": 0.3896448458969541,
+     "lease": 0.5389550518795586,
+     "loading": 0.0,
+     "routing": 0.0024611212364819435,
+     "fallback": 0.07347402776079565,
+     "stranding": 0.022748145870349765,
+     "total": 0.637638346747186
+    },
+    "fallback_share_after_reclaims": {
+     "n": 1,
+     "median": 0.41270124273154385,
+     "p95": 0.41270124273154385,
+     "max": 0.41270124273154385,
+     "median_ci95": [
+      0.41270124273154385,
+      0.41270124273154385
+     ],
+     "mean": 0.41270124273154385,
+     "n_null": 0
+    },
+    "fallback_share": {
+     "n": 1,
+     "median": 0.05063623517172566,
+     "p95": 0.05063623517172566,
+     "max": 0.05063623517172566,
+     "median_ci95": [
+      0.05063623517172566,
+      0.05063623517172566
+     ],
+     "mean": 0.05063623517172566
+    },
+    "stranding_events_per_day": {
+     "n": 1,
+     "median": 1740.0,
+     "p95": 1740.0,
+     "max": 1740.0,
+     "median_ci95": [
+      1740.0,
+      1740.0
+     ],
+     "mean": 1740.0
+    },
+    "loads_per_day": {
+     "n": 1,
+     "median": 4512.0,
+     "p95": 4512.0,
+     "max": 4512.0,
+     "median_ci95": [
+      4512.0,
+      4512.0
+     ],
+     "mean": 4512.0
+    },
+    "replica_utilization": {
+     "n": 1,
+     "median": 0.8187779342560592,
+     "p95": 0.8187779342560592,
+     "max": 0.8187779342560592,
+     "median_ci95": [
+      0.8187779342560592,
+      0.8187779342560592
+     ],
+     "mean": 0.8187779342560592
+    },
+    "n_leases": {
+     "n": 1,
+     "median": 376.0,
+     "p95": 376.0,
+     "max": 376.0,
+     "median_ci95": [
+      376.0,
+      376.0
+     ],
+     "mean": 376.0
+    },
+    "gpu_hour_share": {
+     "spot-like": 1.0
+    },
+    "abort_share": null,
+    "abort_share_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a": null,
+    "t_a_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_first": null,
+    "t_a_first_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_median": null,
+    "t_a_median_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificates": null,
+    "certificates_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "info_class_reported": [
+     "online-I1"
+    ],
+    "n_runs_with_invariant_failures": 0,
+    "n_runs_with_gpu_only_lease_slots": 0,
+    "refusals": {
+     "unavailable": {
+      "n": 1,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0,
+      "median_ci95": [
+       0.0,
+       0.0
+      ],
+      "mean": 0.0
+     },
+     "capacity": {
+      "n": 1,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0,
+      "median_ci95": [
+       0.0,
+       0.0
+      ],
+      "mean": 0.0
+     }
+    },
+    "violation_events": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "violation_lender_slots": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "violation_victims": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "violation_deaths": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "n_runs_with_violations": 0,
+    "n_runs_with_victims": 0,
+    "ratio_validity": {
+     "fast": [
+      "violations = 'reclaim': the realized schedule is no valid omega for the benchmark"
+     ],
+     "slow_lb": [
+      "violations = 'reclaim': the realized schedule is no valid omega for the benchmark"
+     ],
+     "slow": [
+      "bench grid 'slow' on a run with \u0394f = 1 < \u0394s = 5 min: the slow-grid approximation bounds the run's optimum in neither direction"
+     ]
+    },
+    "ratio_validity_note": "the distinct reasons of drivers.run.ratio_validity over the runs ('None': a ratio is meaningful)",
+    "reference": {
+     "source": "code/sim/out/e7/main/summary.json runs.1.BL1",
+     "overflow_over_bl0a_median": 0.6619217556617112,
+     "saving_pct_median": 33.80782443382888
+    },
+    "delta_overflow_over_bl0a": -0.024283408914525184
+   },
+   "BL2": {
+    "n_runs": 1,
+    "alignments": [
+     1
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "overflow_usd": {
+     "n": 1,
+     "median": 1081.0047454862745,
+     "p95": 1081.0047454862745,
+     "max": 1081.0047454862745,
+     "median_ci95": [
+      1081.0047454862745,
+      1081.0047454862745
+     ],
+     "mean": 1081.0047454862745
+    },
+    "total_usd": {
+     "n": 1,
+     "median": 24951.525420824346,
+     "p95": 24951.525420824346,
+     "max": 24951.525420824346,
+     "median_ci95": [
+      24951.525420824346,
+      24951.525420824346
+     ],
+     "mean": 24951.525420824346
+    },
+    "overflow_over_bl0a": {
+     "n": 1,
+     "median": 0.7075956094349832,
+     "p95": 0.7075956094349832,
+     "max": 0.7075956094349832,
+     "median_ci95": [
+      0.7075956094349832,
+      0.7075956094349832
+     ],
+     "mean": 0.7075956094349832
+    },
+    "total_over_bl0a": {
+     "n": 1,
+     "median": 0.982411742959524,
+     "p95": 0.982411742959524,
+     "max": 0.982411742959524,
+     "median_ci95": [
+      0.982411742959524,
+      0.982411742959524
+     ],
+     "mean": 0.982411742959524
+    },
+    "own_share_of_total": {
+     "n": 1,
+     "median": 0.9566758052962935,
+     "p95": 0.9566758052962935,
+     "max": 0.9566758052962935,
+     "median_ci95": [
+      0.9566758052962935,
+      0.9566758052962935
+     ],
+     "mean": 0.9566758052962935
+    },
+    "overflow_over_bl0b": {
+     "n": 1,
+     "median": 0.12702358100127462,
+     "p95": 0.12702358100127462,
+     "max": 0.12702358100127462,
+     "median_ci95": [
+      0.12702358100127462,
+      0.12702358100127462
+     ],
+     "mean": 0.12702358100127462
+    },
+    "total_over_bl0b": {
+     "n": 1,
+     "median": 0.7705657047458085,
+     "p95": 0.7705657047458085,
+     "max": 0.7705657047458085,
+     "median_ci95": [
+      0.7705657047458085,
+      0.7705657047458085
+     ],
+     "mean": 0.7705657047458085
+    },
+    "saving_pct": {
+     "n": 1,
+     "median": 29.24043905650168,
+     "p95": 29.24043905650168,
+     "max": 29.24043905650168,
+     "median_ci95": [
+      29.24043905650168,
+      29.24043905650168
+     ],
+     "mean": 29.24043905650168
+    },
+    "saving_pct_total": {
+     "n": 1,
+     "median": 1.7588257040475952,
+     "p95": 1.7588257040475952,
+     "max": 1.7588257040475952,
+     "median_ci95": [
+      1.7588257040475952,
+      1.7588257040475952
+     ],
+     "mean": 1.7588257040475952
+    },
+    "components_over_bl0a": {
+     "lease_prepaid": 0.15292368970311832,
+     "lease_rent": 0.34678201386159524,
+     "lease": 0.4997057035647135,
+     "loading": 0.0,
+     "routing": 0.0,
+     "fallback": 0.16949960993084112,
+     "stranding": 0.03839029593942844,
+     "total": 0.7075956094349832
+    },
+    "fallback_share_after_reclaims": {
+     "n": 1,
+     "median": 0.6224961102558436,
+     "p95": 0.6224961102558436,
+     "max": 0.6224961102558436,
+     "median_ci95": [
+      0.6224961102558436,
+      0.6224961102558436
+     ],
+     "mean": 0.6224961102558436,
+     "n_null": 0
+    },
+    "fallback_share": {
+     "n": 1,
+     "median": 0.08137399467962383,
+     "p95": 0.08137399467962383,
+     "max": 0.08137399467962383,
+     "median_ci95": [
+      0.08137399467962383,
+      0.08137399467962383
+     ],
+     "mean": 0.08137399467962383
+    },
+    "stranding_events_per_day": {
+     "n": 1,
+     "median": 1956.0,
+     "p95": 1956.0,
+     "max": 1956.0,
+     "median_ci95": [
+      1956.0,
+      1956.0
+     ],
+     "mean": 1956.0
+    },
+    "loads_per_day": {
+     "n": 1,
+     "median": 4548.0,
+     "p95": 4548.0,
+     "max": 4548.0,
+     "median_ci95": [
+      4548.0,
+      4548.0
+     ],
+     "mean": 4548.0
+    },
+    "replica_utilization": {
+     "n": 1,
+     "median": 0.8113762075949397,
+     "p95": 0.8113762075949397,
+     "max": 0.8113762075949397,
+     "median_ci95": [
+      0.8113762075949397,
+      0.8113762075949397
+     ],
+     "mean": 0.8113762075949397
+    },
+    "n_leases": {
+     "n": 1,
+     "median": 379.0,
+     "p95": 379.0,
+     "max": 379.0,
+     "median_ci95": [
+      379.0,
+      379.0
+     ],
+     "mean": 379.0
+    },
+    "gpu_hour_share": {
+     "spot-like": 1.0
+    },
+    "abort_share": null,
+    "abort_share_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a": null,
+    "t_a_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_first": null,
+    "t_a_first_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_median": null,
+    "t_a_median_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificates": null,
+    "certificates_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "info_class_reported": [
+     "online-I1"
+    ],
+    "n_runs_with_invariant_failures": 0,
+    "n_runs_with_gpu_only_lease_slots": 0,
+    "refusals": {
+     "unavailable": {
+      "n": 1,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0,
+      "median_ci95": [
+       0.0,
+       0.0
+      ],
+      "mean": 0.0
+     },
+     "capacity": {
+      "n": 1,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0,
+      "median_ci95": [
+       0.0,
+       0.0
+      ],
+      "mean": 0.0
+     }
+    },
+    "violation_events": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "violation_lender_slots": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "violation_victims": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "violation_deaths": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "n_runs_with_violations": 0,
+    "n_runs_with_victims": 0,
+    "ratio_validity": {
+     "fast": [
+      "violations = 'reclaim': the realized schedule is no valid omega for the benchmark"
+     ],
+     "slow_lb": [
+      "violations = 'reclaim': the realized schedule is no valid omega for the benchmark"
+     ],
+     "slow": [
+      "bench grid 'slow' on a run with \u0394f = 1 < \u0394s = 5 min: the slow-grid approximation bounds the run's optimum in neither direction"
+     ]
+    },
+    "ratio_validity_note": "the distinct reasons of drivers.run.ratio_validity over the runs ('None': a ratio is meaningful)",
+    "reference": {
+     "source": "code/sim/out/e7/main/summary.json runs.1.BL2",
+     "overflow_over_bl0a_median": 0.6835527103271365,
+     "saving_pct_median": 31.64472896728635
+    },
+    "delta_overflow_over_bl0a": 0.024042899107846738
+   },
+   "BL4": {
+    "n_runs": 1,
+    "alignments": [
+     1
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "overflow_usd": {
+     "n": 1,
+     "median": 1554.8415066952589,
+     "p95": 1554.8415066952589,
+     "max": 1554.8415066952589,
+     "median_ci95": [
+      1554.8415066952589,
+      1554.8415066952589
+     ],
+     "mean": 1554.8415066952589
+    },
+    "total_usd": {
+     "n": 1,
+     "median": 25425.36218203333,
+     "p95": 25425.36218203333,
+     "max": 25425.36218203333,
+     "median_ci95": [
+      25425.36218203333,
+      25425.36218203333
+     ],
+     "mean": 25425.36218203333
+    },
+    "overflow_over_bl0a": {
+     "n": 1,
+     "median": 1.017755960923123,
+     "p95": 1.017755960923123,
+     "max": 1.017755960923123,
+     "median_ci95": [
+      1.017755960923123,
+      1.017755960923123
+     ],
+     "mean": 1.017755960923123
+    },
+    "total_over_bl0a": {
+     "n": 1,
+     "median": 1.0010680291226581,
+     "p95": 1.0010680291226581,
+     "max": 1.0010680291226581,
+     "median_ci95": [
+      1.0010680291226581,
+      1.0010680291226581
+     ],
+     "mean": 1.0010680291226581
+    },
+    "own_share_of_total": {
+     "n": 1,
+     "median": 0.9388468295726392,
+     "p95": 0.9388468295726392,
+     "max": 0.9388468295726392,
+     "median_ci95": [
+      0.9388468295726392,
+      0.9388468295726392
+     ],
+     "mean": 0.9388468295726392
+    },
+    "overflow_over_bl0b": {
+     "n": 1,
+     "median": 0.18270182151791187,
+     "p95": 0.18270182151791187,
+     "max": 0.18270182151791187,
+     "median_ci95": [
+      0.18270182151791187,
+      0.18270182151791187
+     ],
+     "mean": 0.18270182151791187
+    },
+    "total_over_bl0b": {
+     "n": 1,
+     "median": 0.785198972719507,
+     "p95": 0.785198972719507,
+     "max": 0.785198972719507,
+     "median_ci95": [
+      0.785198972719507,
+      0.785198972719507
+     ],
+     "mean": 0.785198972719507
+    },
+    "saving_pct": {
+     "n": 1,
+     "median": -1.7755960923123038,
+     "p95": -1.7755960923123038,
+     "max": -1.7755960923123038,
+     "median_ci95": [
+      -1.7755960923123038,
+      -1.7755960923123038
+     ],
+     "mean": -1.7755960923123038
+    },
+    "saving_pct_total": {
+     "n": 1,
+     "median": -0.10680291226581318,
+     "p95": -0.10680291226581318,
+     "max": -0.10680291226581318,
+     "median_ci95": [
+      -0.10680291226581318,
+      -0.10680291226581318
+     ],
+     "mean": -0.10680291226581318
+    },
+    "components_over_bl0a": {
+     "lease_prepaid": 0.004219168565813261,
+     "lease_rent": 0.06328752848719892,
+     "lease": 0.06750669705301218,
+     "loading": 0.0,
+     "routing": 0.002110311600842979,
+     "fallback": 0.9371966876889208,
+     "stranding": 0.010942264580346988,
+     "total": 1.017755960923123
+    },
+    "fallback_share_after_reclaims": {
+     "n": 0,
+     "median": null,
+     "p95": null,
+     "max": null,
+     "median_ci95": [
+      null,
+      null
+     ],
+     "median_note": "no run with a reclaim-caused capacity drop",
+     "p95_note": "no run with a reclaim-caused capacity drop",
+     "max_note": "no run with a reclaim-caused capacity drop",
+     "mean": null,
+     "mean_note": "no run with a reclaim-caused capacity drop",
+     "median_ci95_note": "no run with a reclaim-caused capacity drop",
+     "n_null": 1
+    },
+    "fallback_share": {
+     "n": 1,
+     "median": 0.9666308237173872,
+     "p95": 0.9666308237173872,
+     "max": 0.9666308237173872,
+     "median_ci95": [
+      0.9666308237173872,
+      0.9666308237173872
+     ],
+     "mean": 0.9666308237173872
+    },
+    "stranding_events_per_day": {
+     "n": 1,
+     "median": 48.0,
+     "p95": 48.0,
+     "max": 48.0,
+     "median_ci95": [
+      48.0,
+      48.0
+     ],
+     "mean": 48.0
+    },
+    "loads_per_day": {
+     "n": 1,
+     "median": 72.0,
+     "p95": 72.0,
+     "max": 72.0,
+     "median_ci95": [
+      72.0,
+      72.0
+     ],
+     "mean": 72.0
+    },
+    "replica_utilization": {
+     "n": 1,
+     "median": 0.38384587335601666,
+     "p95": 0.38384587335601666,
+     "max": 0.38384587335601666,
+     "median_ci95": [
+      0.38384587335601666,
+      0.38384587335601666
+     ],
+     "mean": 0.38384587335601666
+    },
+    "n_leases": {
+     "n": 1,
+     "median": 6.0,
+     "p95": 6.0,
+     "max": 6.0,
+     "median_ci95": [
+      6.0,
+      6.0
+     ],
+     "mean": 6.0
+    },
+    "gpu_hour_share": {
+     "spot-like": 1.0
+    },
+    "abort_share": null,
+    "abort_share_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a": null,
+    "t_a_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_first": null,
+    "t_a_first_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_median": null,
+    "t_a_median_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificates": null,
+    "certificates_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "info_class_reported": [
+     "online-I1"
+    ],
+    "n_runs_with_invariant_failures": 0,
+    "n_runs_with_gpu_only_lease_slots": 0,
+    "refusals": {
+     "unavailable": {
+      "n": 1,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0,
+      "median_ci95": [
+       0.0,
+       0.0
+      ],
+      "mean": 0.0
+     },
+     "capacity": {
+      "n": 1,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0,
+      "median_ci95": [
+       0.0,
+       0.0
+      ],
+      "mean": 0.0
+     }
+    },
+    "violation_events": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "violation_lender_slots": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "violation_victims": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "violation_deaths": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "n_runs_with_violations": 0,
+    "n_runs_with_victims": 0,
+    "ratio_validity": {
+     "fast": [
+      "violations = 'reclaim': the realized schedule is no valid omega for the benchmark"
+     ],
+     "slow_lb": [
+      "violations = 'reclaim': the realized schedule is no valid omega for the benchmark"
+     ],
+     "slow": [
+      "bench grid 'slow' on a run with \u0394f = 1 < \u0394s = 5 min: the slow-grid approximation bounds the run's optimum in neither direction"
+     ]
+    },
+    "ratio_validity_note": "the distinct reasons of drivers.run.ratio_validity over the runs ('None': a ratio is meaningful)",
+    "reference": {
+     "source": "code/sim/out/e7/main/summary.json runs.1.BL4",
+     "overflow_over_bl0a_median": 0.9080303676223338,
+     "saving_pct_median": 9.19696323776662
+    },
+    "delta_overflow_over_bl0a": 0.10972559330078924
+   },
+   "BL3": {
+    "n_runs": 1,
+    "alignments": [
+     1
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "overflow_usd": {
+     "n": 1,
+     "median": 1459.4961873843736,
+     "p95": 1459.4961873843736,
+     "max": 1459.4961873843736,
+     "median_ci95": [
+      1459.4961873843736,
+      1459.4961873843736
+     ],
+     "mean": 1459.4961873843736
+    },
+    "total_usd": {
+     "n": 1,
+     "median": 25330.016862722445,
+     "p95": 25330.016862722445,
+     "max": 25330.016862722445,
+     "median_ci95": [
+      25330.016862722445,
+      25330.016862722445
+     ],
+     "mean": 25330.016862722445
+    },
+    "overflow_over_bl0a": {
+     "n": 1,
+     "median": 0.955345569473629,
+     "p95": 0.955345569473629,
+     "max": 0.955345569473629,
+     "median_ci95": [
+      0.955345569473629,
+      0.955345569473629
+     ],
+     "mean": 0.955345569473629
+    },
+    "total_over_bl0a": {
+     "n": 1,
+     "median": 0.9973140157007347,
+     "p95": 0.9973140157007347,
+     "max": 0.9973140157007347,
+     "median_ci95": [
+      0.9973140157007347,
+      0.9973140157007347
+     ],
+     "mean": 0.9973140157007347
+    },
+    "own_share_of_total": {
+     "n": 1,
+     "median": 0.9423807652677768,
+     "p95": 0.9423807652677768,
+     "max": 0.9423807652677768,
+     "median_ci95": [
+      0.9423807652677768,
+      0.9423807652677768
+     ],
+     "mean": 0.9423807652677768
+    },
+    "overflow_over_bl0b": {
+     "n": 1,
+     "median": 0.1714982593308369,
+     "p95": 0.1714982593308369,
+     "max": 0.1714982593308369,
+     "median_ci95": [
+      0.1714982593308369,
+      0.1714982593308369
+     ],
+     "mean": 0.1714982593308369
+    },
+    "total_over_bl0b": {
+     "n": 1,
+     "median": 0.7822544700516385,
+     "p95": 0.7822544700516385,
+     "max": 0.7822544700516385,
+     "median_ci95": [
+      0.7822544700516385,
+      0.7822544700516385
+     ],
+     "mean": 0.7822544700516385
+    },
+    "saving_pct": {
+     "n": 1,
+     "median": 4.465443052637097,
+     "p95": 4.465443052637097,
+     "max": 4.465443052637097,
+     "median_ci95": [
+      4.465443052637097,
+      4.465443052637097
+     ],
+     "mean": 4.465443052637097
+    },
+    "saving_pct_total": {
+     "n": 1,
+     "median": 0.2685984299265254,
+     "p95": 0.2685984299265254,
+     "max": 0.2685984299265254,
+     "median_ci95": [
+      0.2685984299265254,
+      0.2685984299265254
+     ],
+     "mean": 0.2685984299265254
+    },
+    "components_over_bl0a": {
+     "lease_prepaid": 0.12243465707797169,
+     "lease_rent": 0.6635157387758319,
+     "lease": 0.7859503958538036,
+     "loading": 0.0,
+     "routing": 0.008156639070406438,
+     "fallback": 0.15001778916163513,
+     "stranding": 0.011220745387783877,
+     "total": 0.955345569473629
+    },
+    "fallback_share_after_reclaims": {
+     "n": 1,
+     "median": 0.1896151644289716,
+     "p95": 0.1896151644289716,
+     "max": 0.1896151644289716,
+     "median_ci95": [
+      0.1896151644289716,
+      0.1896151644289716
+     ],
+     "mean": 0.1896151644289716,
+     "n_null": 0
+    },
+    "fallback_share": {
+     "n": 1,
+     "median": 0.17046307766974264,
+     "p95": 0.17046307766974264,
+     "max": 0.17046307766974264,
+     "median_ci95": [
+      0.17046307766974264,
+      0.17046307766974264
+     ],
+     "mean": 0.17046307766974264
+    },
+    "stranding_events_per_day": {
+     "n": 1,
+     "median": 1320.0,
+     "p95": 1320.0,
+     "max": 1320.0,
+     "median_ci95": [
+      1320.0,
+      1320.0
+     ],
+     "mean": 1320.0
+    },
+    "loads_per_day": {
+     "n": 1,
+     "median": 3600.0,
+     "p95": 3600.0,
+     "max": 3600.0,
+     "median_ci95": [
+      3600.0,
+      3600.0
+     ],
+     "mean": 3600.0
+    },
+    "replica_utilization": {
+     "n": 1,
+     "median": 0.5386894042788344,
+     "p95": 0.5386894042788344,
+     "max": 0.5386894042788344,
+     "median_ci95": [
+      0.5386894042788344,
+      0.5386894042788344
+     ],
+     "mean": 0.5386894042788344
+    },
+    "n_leases": {
+     "n": 1,
+     "median": 300.0,
+     "p95": 300.0,
+     "max": 300.0,
+     "median_ci95": [
+      300.0,
+      300.0
+     ],
+     "mean": 300.0
+    },
+    "gpu_hour_share": {
+     "spot-like": 1.0
+    },
+    "abort_share": null,
+    "abort_share_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a": null,
+    "t_a_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_first": null,
+    "t_a_first_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_median": null,
+    "t_a_median_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificates": null,
+    "certificates_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "info_class_reported": [
+     "online-I1"
+    ],
+    "n_runs_with_invariant_failures": 0,
+    "n_runs_with_gpu_only_lease_slots": 0,
+    "refusals": {
+     "unavailable": {
+      "n": 1,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0,
+      "median_ci95": [
+       0.0,
+       0.0
+      ],
+      "mean": 0.0
+     },
+     "capacity": {
+      "n": 1,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0,
+      "median_ci95": [
+       0.0,
+       0.0
+      ],
+      "mean": 0.0
+     }
+    },
+    "violation_events": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "violation_lender_slots": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "violation_victims": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "violation_deaths": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "n_runs_with_violations": 0,
+    "n_runs_with_victims": 0,
+    "ratio_validity": {
+     "fast": [
+      "violations = 'reclaim': the realized schedule is no valid omega for the benchmark"
+     ],
+     "slow_lb": [
+      "violations = 'reclaim': the realized schedule is no valid omega for the benchmark"
+     ],
+     "slow": [
+      "bench grid 'slow' on a run with \u0394f = 1 < \u0394s = 5 min: the slow-grid approximation bounds the run's optimum in neither direction"
+     ]
+    },
+    "ratio_validity_note": "the distinct reasons of drivers.run.ratio_validity over the runs ('None': a ratio is meaningful)",
+    "reference": {
+     "source": "q28/summary.json runs.default.BL3 (this part's default jobs)",
+     "overflow_over_bl0a_median": 0.955345569473629,
+     "saving_pct_median": 4.465443052637097
+    },
+    "delta_overflow_over_bl0a": 0.0
+   }
+  },
+  "default": {
+   "BL3": {
+    "n_runs": 1,
+    "alignments": [
+     1
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "overflow_usd": {
+     "n": 1,
+     "median": 1459.4961873843736,
+     "p95": 1459.4961873843736,
+     "max": 1459.4961873843736,
+     "median_ci95": [
+      1459.4961873843736,
+      1459.4961873843736
+     ],
+     "mean": 1459.4961873843736
+    },
+    "total_usd": {
+     "n": 1,
+     "median": 25330.016862722445,
+     "p95": 25330.016862722445,
+     "max": 25330.016862722445,
+     "median_ci95": [
+      25330.016862722445,
+      25330.016862722445
+     ],
+     "mean": 25330.016862722445
+    },
+    "overflow_over_bl0a": {
+     "n": 1,
+     "median": 0.955345569473629,
+     "p95": 0.955345569473629,
+     "max": 0.955345569473629,
+     "median_ci95": [
+      0.955345569473629,
+      0.955345569473629
+     ],
+     "mean": 0.955345569473629
+    },
+    "total_over_bl0a": {
+     "n": 1,
+     "median": 0.9973140157007347,
+     "p95": 0.9973140157007347,
+     "max": 0.9973140157007347,
+     "median_ci95": [
+      0.9973140157007347,
+      0.9973140157007347
+     ],
+     "mean": 0.9973140157007347
+    },
+    "own_share_of_total": {
+     "n": 1,
+     "median": 0.9423807652677768,
+     "p95": 0.9423807652677768,
+     "max": 0.9423807652677768,
+     "median_ci95": [
+      0.9423807652677768,
+      0.9423807652677768
+     ],
+     "mean": 0.9423807652677768
+    },
+    "overflow_over_bl0b": {
+     "n": 1,
+     "median": 0.1714982593308369,
+     "p95": 0.1714982593308369,
+     "max": 0.1714982593308369,
+     "median_ci95": [
+      0.1714982593308369,
+      0.1714982593308369
+     ],
+     "mean": 0.1714982593308369
+    },
+    "total_over_bl0b": {
+     "n": 1,
+     "median": 0.7822544700516385,
+     "p95": 0.7822544700516385,
+     "max": 0.7822544700516385,
+     "median_ci95": [
+      0.7822544700516385,
+      0.7822544700516385
+     ],
+     "mean": 0.7822544700516385
+    },
+    "saving_pct": {
+     "n": 1,
+     "median": 4.465443052637097,
+     "p95": 4.465443052637097,
+     "max": 4.465443052637097,
+     "median_ci95": [
+      4.465443052637097,
+      4.465443052637097
+     ],
+     "mean": 4.465443052637097
+    },
+    "saving_pct_total": {
+     "n": 1,
+     "median": 0.2685984299265254,
+     "p95": 0.2685984299265254,
+     "max": 0.2685984299265254,
+     "median_ci95": [
+      0.2685984299265254,
+      0.2685984299265254
+     ],
+     "mean": 0.2685984299265254
+    },
+    "components_over_bl0a": {
+     "lease_prepaid": 0.12243465707797169,
+     "lease_rent": 0.6635157387758319,
+     "lease": 0.7859503958538036,
+     "loading": 0.0,
+     "routing": 0.008156639070406438,
+     "fallback": 0.15001778916163513,
+     "stranding": 0.011220745387783877,
+     "total": 0.955345569473629
+    },
+    "fallback_share_after_reclaims": {
+     "n": 1,
+     "median": 0.1896151644289716,
+     "p95": 0.1896151644289716,
+     "max": 0.1896151644289716,
+     "median_ci95": [
+      0.1896151644289716,
+      0.1896151644289716
+     ],
+     "mean": 0.1896151644289716,
+     "n_null": 0
+    },
+    "fallback_share": {
+     "n": 1,
+     "median": 0.17046307766974264,
+     "p95": 0.17046307766974264,
+     "max": 0.17046307766974264,
+     "median_ci95": [
+      0.17046307766974264,
+      0.17046307766974264
+     ],
+     "mean": 0.17046307766974264
+    },
+    "stranding_events_per_day": {
+     "n": 1,
+     "median": 1320.0,
+     "p95": 1320.0,
+     "max": 1320.0,
+     "median_ci95": [
+      1320.0,
+      1320.0
+     ],
+     "mean": 1320.0
+    },
+    "loads_per_day": {
+     "n": 1,
+     "median": 3600.0,
+     "p95": 3600.0,
+     "max": 3600.0,
+     "median_ci95": [
+      3600.0,
+      3600.0
+     ],
+     "mean": 3600.0
+    },
+    "replica_utilization": {
+     "n": 1,
+     "median": 0.5386894042788344,
+     "p95": 0.5386894042788344,
+     "max": 0.5386894042788344,
+     "median_ci95": [
+      0.5386894042788344,
+      0.5386894042788344
+     ],
+     "mean": 0.5386894042788344
+    },
+    "n_leases": {
+     "n": 1,
+     "median": 300.0,
+     "p95": 300.0,
+     "max": 300.0,
+     "median_ci95": [
+      300.0,
+      300.0
+     ],
+     "mean": 300.0
+    },
+    "gpu_hour_share": {
+     "spot-like": 1.0
+    },
+    "abort_share": null,
+    "abort_share_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a": null,
+    "t_a_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_first": null,
+    "t_a_first_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "t_a_median": null,
+    "t_a_median_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "certificates": null,
+    "certificates_note": "unguarded policy (not an A8 tag): no abort, no certificate",
+    "info_class_reported": [
+     "online-I1"
+    ],
+    "n_runs_with_invariant_failures": 0,
+    "n_runs_with_gpu_only_lease_slots": 0,
+    "refusals": {
+     "unavailable": {
+      "n": 1,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0,
+      "median_ci95": [
+       0.0,
+       0.0
+      ],
+      "mean": 0.0
+     },
+     "capacity": {
+      "n": 1,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0,
+      "median_ci95": [
+       0.0,
+       0.0
+      ],
+      "mean": 0.0
+     }
+    },
+    "violation_events": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "violation_lender_slots": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "violation_victims": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "violation_deaths": {
+     "n": 1,
+     "median": 0.0,
+     "p95": 0.0,
+     "max": 0.0,
+     "median_ci95": [
+      0.0,
+      0.0
+     ],
+     "mean": 0.0
+    },
+    "n_runs_with_violations": 0,
+    "n_runs_with_victims": 0,
+    "ratio_validity": {
+     "fast": [
+      "None"
+     ],
+     "slow_lb": [
+      "None"
+     ],
+     "slow": [
+      "bench grid 'slow' on a run with \u0394f = 1 < \u0394s = 5 min: the slow-grid approximation bounds the run's optimum in neither direction"
+     ]
+    },
+    "ratio_validity_note": "the distinct reasons of drivers.run.ratio_validity over the runs ('None': a ratio is meaningful)"
+   }
+  }
+ },
+ "rows": {
+  "q28_rf": {
+   "label": "Q28: refusals (L-rf)",
+   "panel": "c",
+   "gamma_row": false,
+   "default_label": "L-tr",
+   "points": {
+    "q28_rf": {
+     "value": "L-rf",
+     "label": "L-rf",
+     "n_runs": 1,
+     "saving_pct_median": -0.9213676844069152
+    }
+   },
+   "default": {
+    "label": "L-tr",
+    "saving_pct_median": -5.376281290124263
+   },
+   "n_points": 1,
+   "points_missing": [],
+   "complete": true,
+   "source": {
+    "kind": "q28",
+    "runs": "runs.rf.Sublet",
+    "default": "sweep/summary.json points.default"
+   },
+   "lo": -5.376281290124263,
+   "hi": -0.9213676844069152,
+   "span": 4.454913605717348,
+   "lo_points": [
+    "default"
+   ],
+   "hi_points": [
+    "q28_rf"
+   ],
+   "lo_point": "default",
+   "hi_point": "q28_rf"
+  },
+  "q28_vr": {
+   "label": "Q28: violations as reclaims (L-vr)",
+   "panel": "c",
+   "gamma_row": false,
+   "default_label": "L-tr",
+   "points": {
+    "q28_vr": {
+     "value": "L-vr",
+     "label": "L-vr",
+     "n_runs": 1,
+     "saving_pct_median": -5.376281290124263
+    }
+   },
+   "default": {
+    "label": "L-tr",
+    "saving_pct_median": -5.376281290124263
+   },
+   "n_points": 1,
+   "points_missing": [],
+   "complete": true,
+   "source": {
+    "kind": "q28",
+    "runs": "runs.vr.Sublet",
+    "default": "sweep/summary.json points.default"
+   },
+   "lo": -5.376281290124263,
+   "hi": -5.376281290124263,
+   "span": 0.0,
+   "lo_points": [
+    "default",
+    "q28_vr"
+   ],
+   "hi_points": [
+    "default",
+    "q28_vr"
+   ],
+   "lo_point": "default",
+   "hi_point": "default"
+  }
+ },
+ "certificates": {
+  "n": 4,
+  "held": 4,
+  "by_case": {
+   "W(a)": {
+    "runs": 0,
+    "held": 0
+   },
+   "W(b)": {
+    "runs": 4,
+    "held": 4
+   },
+   "W(c)": {
+    "runs": 0,
+    "held": 0
+   },
+   "unavailable": {
+    "runs": 0,
+    "held": 0
+   }
+  },
+  "failures": 0,
+  "w_c_runs": []
+ },
+ "checks": {
+  "Q28-1": {
+   "status": "pass",
+   "claim": "every run of every policy under both variants (and BL3's reference runs under the default lender) finishes with no invariant failure and handles every refusal and every violation death (no error record)",
+   "n_runs": 19,
+   "n_sub_runs": 30,
+   "invariant_failures": [],
+   "n_invariant_failures": 0,
+   "run_errors": [],
+   "n_run_errors": 0,
+   "job_failures": [],
+   "n_job_failures": 0,
+   "refusals_unavailable_total": 54,
+   "violation_deaths_total": 0
+  },
+  "Q28-2": {
+   "status": "pass",
+   "claim": "every L-vr run reports no ratio (ratio_validity non-null for every grid) and every L-rf run on the trace schedule keeps its ratio validity as under the default lender (the same reason for every grid); every stress run file records its variant's lender model (the L-rf half holds by construction once the lender model is L-rf's)",
+   "grids": [
+    "fast",
+    "slow_lb",
+    "slow"
+   ],
+   "n_vr": 9,
+   "n_rf": 9,
+   "vr_with_a_ratio": [],
+   "n_vr_with_a_ratio": 0,
+   "rf_changed": [],
+   "n_rf_changed": 0,
+   "n_files_checked": 18,
+   "wrong_lender_model": [],
+   "n_wrong_lender_model": 0
+  },
+  "Q28-3": {
+   "status": "pass",
+   "claim": "every A8 run under both variants has its certificate (available true), and in Theorem W's proven cases (W(a), W(b); PROVEN for the engine as implemented under C1-C3, audited) it holds; W(c) runs (CONJECTURE) are counted and listed",
+   "n_runs": 4,
+   "certificates": {
+    "n": 4,
+    "held": 4,
+    "by_case": {
+     "W(a)": {
+      "runs": 0,
+      "held": 0
+     },
+     "W(b)": {
+      "runs": 4,
+      "held": 4
+     },
+     "W(c)": {
+      "runs": 0,
+      "held": 0
+     },
+     "unavailable": {
+      "runs": 0,
+      "held": 0
+     }
+    },
+    "failures": 0
+   },
+   "unavailable": [],
+   "n_unavailable": 0,
+   "failures": [],
+   "n_failures": 0,
+   "w_c_runs": [],
+   "n_w_c": 0,
+   "run_errors": [],
+   "n_run_errors": 0
+  },
+  "Q28-4": {
+   "status": "informative",
+   "claim": "the change of each policy's median cost over BL0a against its reference, the refusals and the violation victims (informative)",
+   "delta_overflow_over_bl0a": {
+    "rf": {
+     "Sublet": 0.2933629781549911,
+     "A7G": 0.27205860918689484,
+     "A7": 0.1133753953987926,
+     "A6": 0.07610226695996813,
+     "BL5": 0.23692957551201177,
+     "BL1": -0.04024666698134183,
+     "BL2": -0.022329908139367083,
+     "BL4": 0.10972559330078924,
+     "BL3": -0.0018969147552536647
+    },
+    "vr": {
+     "Sublet": 0.3379121142121646,
+     "A7G": 0.2999503483888495,
+     "A7": 0.11509254280128689,
+     "A6": 0.07314819137373696,
+     "BL5": 0.25317393199213634,
+     "BL1": -0.024283408914525184,
+     "BL2": 0.024042899107846738,
+     "BL4": 0.10972559330078924,
+     "BL3": 0.0
+    }
+   },
+   "delta_overflow_over_bl0a_s1_default": {
+    "rf": -0.04454913605717348,
+    "vr": 0.0
+   },
+   "saving_pct_median": {
+    "rf": {
+     "Sublet": -0.9213676844069152,
+     "A7G": -1.4286820998777428,
+     "A7": 14.439639278932482,
+     "A6": -4.992451648456431,
+     "BL5": 4.721972579891021,
+     "BL1": 37.83249113196307,
+     "BL2": 33.87771978122306,
+     "BL4": -1.7755960923123038,
+     "BL3": 4.655134528162463
+    },
+    "vr": {
+     "Sublet": -5.376281290124263,
+     "A7G": -4.217856020073207,
+     "A7": 14.267924538683053,
+     "A6": -4.697044089833313,
+     "BL5": 3.097536931878564,
+     "BL1": 36.2361653252814,
+     "BL2": 29.24043905650168,
+     "BL4": -1.7755960923123038,
+     "BL3": 4.465443052637097
+    },
+    "default": {
+     "BL3": 4.465443052637097
+    }
+   },
+   "refusals_unavailable_median": {
+    "rf": {
+     "Sublet": 0.0,
+     "A7G": 0.0,
+     "A7": 11.0,
+     "A6": 3.0,
+     "BL5": 10.0,
+     "BL1": 7.0,
+     "BL2": 19.0,
+     "BL4": 0.0,
+     "BL3": 4.0
+    },
+    "vr": {
+     "Sublet": 0.0,
+     "A7G": 0.0,
+     "A7": 0.0,
+     "A6": 0.0,
+     "BL5": 0.0,
+     "BL1": 0.0,
+     "BL2": 0.0,
+     "BL4": 0.0,
+     "BL3": 0.0
+    },
+    "default": {
+     "BL3": 0.0
+    }
+   },
+   "violation_victims_median": {
+    "rf": {
+     "Sublet": 0.0,
+     "A7G": 0.0,
+     "A7": 0.0,
+     "A6": 0.0,
+     "BL5": 0.0,
+     "BL1": 0.0,
+     "BL2": 0.0,
+     "BL4": 0.0,
+     "BL3": 0.0
+    },
+    "vr": {
+     "Sublet": 0.0,
+     "A7G": 0.0,
+     "A7": 0.0,
+     "A6": 0.0,
+     "BL5": 0.0,
+     "BL1": 0.0,
+     "BL2": 0.0,
+     "BL4": 0.0,
+     "BL3": 0.0
+    },
+    "default": {
+     "BL3": 0.0
+    }
+   },
+   "n_runs_with_violations": {
+    "rf": {
+     "Sublet": 0,
+     "A7G": 0,
+     "A7": 0,
+     "A6": 0,
+     "BL5": 0,
+     "BL1": 0,
+     "BL2": 0,
+     "BL4": 0,
+     "BL3": 0
+    },
+    "vr": {
+     "Sublet": 0,
+     "A7G": 0,
+     "A7": 0,
+     "A6": 0,
+     "BL5": 0,
+     "BL1": 0,
+     "BL2": 0,
+     "BL4": 0,
+     "BL3": 0
+    },
+    "default": {
+     "BL3": 0
+    }
+   },
+   "saving_rises": {
+    "rf": [
+     "BL1",
+     "BL2",
+     "BL3"
+    ],
+    "vr": [
+     "BL1"
+    ]
+   }
+  }
+ }
+}

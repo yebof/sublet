@@ -1,0 +1,132 @@
+{
+ "block": "T2_stress",
+ "tier": 2,
+ "grid": "1min",
+ "lb": null,
+ "description": "load time (warm_peer_rdma, cold_wan_1gbps), loading charge (beta_jl 0.5, 3.5) and stranding (mu / beta~ = 2) on I2 seeds 1-4 x L-tr, L-eg, L-iid 0.05",
+ "policies": [
+  "BL0a",
+  "BL1",
+  "BL2",
+  "BL5",
+  "A6",
+  "A2",
+  "PS",
+  "PS-G",
+  "PS-G1",
+  "BL1-G",
+  "BL5-G"
+ ],
+ "policy_seeds": [
+  0,
+  1,
+  2
+ ],
+ "modes": [
+  "L-tr",
+  "L-eg",
+  "L-iid-0.05"
+ ],
+ "instances": [
+  {
+   "id": "I2-warm",
+   "family": "I2",
+   "config": "example_1day.json",
+   "overrides": {
+    "lender_defaults.load_scenario": "warm_peer_rdma"
+   },
+   "config_seeds": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "tuning_seeds": [
+    1
+   ],
+   "extra_policies": [
+    "PS-GR"
+   ]
+  },
+  {
+   "id": "I2-wan",
+   "family": "I2",
+   "config": "example_1day.json",
+   "overrides": {
+    "lender_defaults.load_scenario": "cold_wan_1gbps"
+   },
+   "config_seeds": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "tuning_seeds": [
+    1
+   ],
+   "extra_policies": [
+    "PS-GR"
+   ]
+  },
+  {
+   "id": "I2-beta0.5",
+   "family": "I2",
+   "config": "example_1day.json",
+   "overrides": {
+    "costs.beta_jl_usd": 0.5
+   },
+   "config_seeds": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "tuning_seeds": [
+    1
+   ],
+   "extra_policies": [
+    "PS-GR"
+   ]
+  },
+  {
+   "id": "I2-beta3.5",
+   "family": "I2",
+   "config": "example_1day.json",
+   "overrides": {
+    "costs.beta_jl_usd": 3.5
+   },
+   "config_seeds": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "tuning_seeds": [
+    1
+   ],
+   "extra_policies": [
+    "PS-GR"
+   ]
+  },
+  {
+   "id": "I2-mu2",
+   "family": "I2",
+   "config": "example_1day.json",
+   "overrides": {
+    "stranding.mu_over_beta_tilde": 2.0
+   },
+   "config_seeds": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "tuning_seeds": [
+    1
+   ],
+   "extra_policies": [
+    "PS-GR"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,35 @@
+X12: Lemma G5'(c) pathwise on engine runs with same-list Load and Unload, ALG(t) >= LB'(t) at every slow slot (design/theory/c3_c4_c5_general.md §9, Lemma G5'(c), Steps 2-3; audit addendum of step P6 in design/theory/audit_guard.md, finding G5P-F7)
+oracle: LB' from x11_g5p_oracle.py (oracle_uf in (a), oracle_edge in (b)), written from the text; script code/sim/audit/x12_g5p_same_list.py
+runs: (a) 12000 of 12000, (b) 4000 on 400 of 400 instances (default); run errors: 0; wall time 232 s on one worker
+tolerance: violation iff LB'(t) - ALG(t) > 1e-09 max(1, ALG(t))
+
+(a) the policy Attack on x11's rand_instance:
+  style: churn 1978, late 1984, mix 2032, pack 2057, samelist 1904, tight 2045
+  mode skipped (replaced by trace): none
+  mode: adaptive 2085, eager 2024, iid_step 1959, trace 2028, trace information=I2 3573, trace on_unavailable=refuse 331
+  slots: 113979
+  auto_drain: 3560
+  leases with >= 2 LLMs: 35014
+  replicas loaded after their lease's purchase: 278088
+  replicas created and unloaded in their load slot: 67413
+  replicas never warm: 296637
+  tight slots (LB' > 0): 456
+  minimum relative slack (ALG(t) - LB'(t)) / max(1, ALG(t)): -4.607219e-16 (run 9674 style=churn mode=iid_step auto_drain=0)
+(b) the policies SameList and Lean on x11's rand_instance_edge:
+  instances: 400
+  kappa_infinite: 140
+  instances with a group: 394
+  runs samelist: 2000
+  runs lean: 2000
+  slots: 31840
+  Buys: 16172
+  Unloads of new replicas: 12871
+  Loads onto new leases: 11527
+  Releases of new leases: 1366
+  leases with >= 2 LLMs: 3559
+  tight slots (LB' = 0 included): 280
+  minimum relative slack, samelist: 0.000000e+00 (instance 41 mode=trace policy=samelist)
+  minimum relative slack, lean: -1.332268e-16 (instance 14 mode=trace policy=lean)
+failures by kind: none
+engine invariant failures: 0
+violations: 0

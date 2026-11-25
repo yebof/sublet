@@ -1,0 +1,148 @@
+{
+ "check": "copy",
+ "exp": "e7",
+ "pass": true,
+ "checks": {
+  "same_file_list": true,
+  "same_sha256": true,
+  "no_symlinks": true,
+  "json_readable": true,
+  "revisions": true,
+  "revisions_recorded": true,
+  "manifest_revision": true,
+  "summary_ok": true,
+  "no_running_records": true,
+  "record_statuses_known": true,
+  "run_log_done": true
+ },
+ "copy": "/work/sublet/code/sim/out/e7",
+ "clone": "/work/ms4runs",
+ "clone_out": "/work/ms4runs/code/sim/out/e7",
+ "clone_commit": "939847ca5925ce069d6df9089fe3a3d1d3207bb7",
+ "parts": [
+  "main",
+  "stress",
+  "gap",
+  "allow"
+ ],
+ "tree_sha256": "7fa5b6f3b12321428a35e55a29c900682bd75007ced60a3842eb22ee24c94ad5",
+ "tree_sha256_versioned": "d6e9832b04f70cb9a1db513c3858e8d76af206e39dd57d9c6eb1646d3b7c5ec6",
+ "n_files_copy": 1177,
+ "n_files_clone": 1177,
+ "n_files_compared": 1177,
+ "n_only_in_copy": 0,
+ "only_in_copy": [],
+ "n_only_in_clone": 0,
+ "only_in_clone": [],
+ "n_sha256_mismatch": 0,
+ "sha256_mismatch": [],
+ "n_symlinks": 0,
+ "symlinks": [],
+ "n_partial": 0,
+ "n_json": 585,
+ "revisions_found": {
+  "939847ca5925ce069d6df9089fe3a3d1d3207bb7": 585
+ },
+ "n_revision_differs": 0,
+ "revision_differs": [],
+ "n_no_revision": 0,
+ "no_revision_by_kind": {},
+ "n_no_revision_unexpected": 0,
+ "no_revision_unexpected": [],
+ "no_revision_allowed_under": [],
+ "n_json_unreadable": 0,
+ "json_unreadable": [],
+ "manifest_git_revision": {
+  "main": "939847ca5925ce069d6df9089fe3a3d1d3207bb7",
+  "stress": "939847ca5925ce069d6df9089fe3a3d1d3207bb7",
+  "gap": "939847ca5925ce069d6df9089fe3a3d1d3207bb7",
+  "allow": "939847ca5925ce069d6df9089fe3a3d1d3207bb7"
+ },
+ "summaries": {
+  "main": {
+   "file": "main/summary.json",
+   "exists": true,
+   "object": true,
+   "summary_record": "ok",
+   "manifest_record": "ok",
+   "ok": true
+  },
+  "stress": {
+   "file": "stress/summary.json",
+   "exists": true,
+   "object": true,
+   "summary_record": "ok",
+   "manifest_record": "ok",
+   "ok": true
+  },
+  "gap": {
+   "file": "gap/summary.json",
+   "exists": true,
+   "object": true,
+   "summary_record": "ok",
+   "manifest_record": "ok",
+   "ok": true
+  },
+  "allow": {
+   "file": "allow/summary.json",
+   "exists": true,
+   "object": true,
+   "summary_record": "ok",
+   "manifest_record": "ok",
+   "ok": true
+  }
+ },
+ "records_by_status": {
+  "ok": 290
+ },
+ "records_by_part": {
+  "main": {
+   "ok": 166
+  },
+  "stress": {
+   "ok": 42
+  },
+  "gap": {
+   "ok": 38
+  },
+  "allow": {
+   "ok": 44
+  }
+ },
+ "n_running": 0,
+ "running_records": [],
+ "n_unknown_status": 0,
+ "unknown_status_records": [],
+ "run_logs": {
+  "main": {
+   "file": "main/run_e7.log",
+   "exists": true,
+   "last_line": "[run_e7] done 2026-10-27T07:43:45+08:00",
+   "done": true
+  },
+  "stress": {
+   "file": "stress/run_e7.log",
+   "exists": true,
+   "last_line": "[run_e7] done 2026-10-27T07:43:25+08:00",
+   "done": true
+  },
+  "gap": {
+   "file": "gap/run_e7.log",
+   "exists": true,
+   "last_line": "[run_e7] done 2026-10-27T07:43:23+08:00",
+   "done": true
+  },
+  "allow": {
+   "file": "allow/run_e7.log",
+   "exists": true,
+   "last_line": "[run_e7] done 2026-10-27T07:43:27+08:00",
+   "done": true
+  }
+ },
+ "lists_truncated_at": 200,
+ "checked_by": {
+  "module": "sublet.experiments.ms3_common",
+  "git_revision": "cb8772a1c9884588a985b4d175538973b207f2e7"
+ },
+ "time": "2026-10-27T07:45:16"
+}

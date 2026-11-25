@@ -1,0 +1,313 @@
+{
+ "inputs": {
+  "alpha": 0.3986013986013986,
+  "alpha_p": 0.8349650349650349,
+  "phi": 1.0,
+  "tau_s": 60.0,
+  "slow_slot_s": 300.0,
+  "beta_jl": 0.0,
+  "notices_s": {
+   "spot_like_2min": 120.0,
+   "aep82_min_1h": 3600.0,
+   "h_4h": 14400.0
+  },
+  "mu_over_beta_tilde": [
+   0.2,
+   0.5,
+   1.0,
+   2.0
+  ]
+ },
+ "conditions": {
+  "C_prime": {
+   "(2-a)ap>=1": true,
+   "ap>a(2-a)": true,
+   "lambda<=s0": true,
+   "s0_over_lambda": 2.325581395348837
+  },
+  "C_alpha<=0.5": true,
+  "cor5_3_proviso_at_mu_2beta": {
+   "needs_ap_ge": 0.6993006993006993,
+   "holds": true
+  },
+  "chi": 0.9385104406083429
+ },
+ "H_star_beta_over_lambda_plus_tau": 3.5087719298245617,
+ "prewarm_switch_cost_over_beta_tilde": 0.597,
+ "H_star_mu_over_lambda": {
+  "switch_beta_tilde": {
+   "0.2": {
+    "H_over_lambda": 0.23255813953488375,
+    "reaction": "cold",
+    "regime": "sit-out (R <= R_wait)"
+   },
+   "0.5": {
+    "H_over_lambda": 0.5813953488372093,
+    "reaction": "cold",
+    "regime": "sit-out (R <= R_wait)"
+   },
+   "1.0": {
+    "H_over_lambda": 1.162790697674418,
+    "reaction": "cold",
+    "regime": "sit-out (R <= R_wait)"
+   },
+   "2.0": {
+    "H_over_lambda": 2.3255813953488373,
+    "reaction": "cold",
+    "regime": "sit-out (R <= R_wait)"
+   }
+  },
+  "switch_full_model_C2SW_conjecture": {
+   "0.2": {
+    "H_over_lambda": 0.23255813953488375,
+    "reaction": "cold",
+    "regime": "sit-out (R <= R_wait)"
+   },
+   "0.5": {
+    "H_over_lambda": 0.5813953488372093,
+    "reaction": "cold",
+    "regime": "sit-out (R <= R_wait)"
+   },
+   "1.0": {
+    "H_over_lambda": 1.162790697674418,
+    "reaction": "cold",
+    "regime": "sit-out (R <= R_wait)"
+   },
+   "2.0": {
+    "H_over_lambda": 6.808690330477354,
+    "reaction": "pre-warm",
+    "regime": "known window (R > R_wait)"
+   }
+  }
+ },
+ "rows": [
+  {
+   "load": "warm peer over RDMA, 1.2 s (zhang2025blitzscale Fig. 21)",
+   "lambda_s": 1.2,
+   "H_star_beta_s": -55.78947368421053,
+   "rho": {
+    "spot_like_2min": 1.023391812865497,
+    "aep82_min_1h": 1.001150417026172,
+    "h_4h": 1.0002911843925166
+   },
+   "slot_5min": {
+    "H_star_beta_s": -295.7894736842105,
+    "rho": {
+     "spot_like_2min": 1.0140350877192983,
+     "aep82_min_1h": 1.0010796221322538,
+     "h_4h": 1.0002864303616184
+    }
+   },
+   "H_star_mu_s": {
+    "switch_beta_tilde": {
+     "0.2": 0.27906976744186046,
+     "0.5": 0.6976744186046512,
+     "1.0": 1.3953488372093015,
+     "2.0": 2.7906976744186047
+    },
+    "switch_full_model_C2SW_conjecture": {
+     "0.2": 0.27906976744186046,
+     "0.5": 0.6976744186046512,
+     "1.0": 1.3953488372093015,
+     "2.0": 8.170428396572825
+    }
+   }
+  },
+  {
+   "load": "LLaMA-2-70B local SSD, optimized loader (fu2024serverlessllm Fig. 6a)",
+   "lambda_s": 10.3,
+   "H_star_beta_s": -23.859649122807014,
+   "rho": {
+    "spot_like_2min": 1.2007797270955165,
+    "aep82_min_1h": 1.0098744128079762,
+    "h_4h": 1.0024993327024339
+   },
+   "slot_5min": {
+    "H_star_beta_s": -263.859649122807,
+    "rho": {
+     "spot_like_2min": 1.12046783625731,
+     "aep82_min_1h": 1.0092667566351776,
+     "h_4h": 1.0024585272705573
+    }
+   },
+   "H_star_mu_s": {
+    "switch_beta_tilde": {
+     "0.2": 2.3953488372093026,
+     "0.5": 5.988372093023257,
+     "1.0": 11.976744186046506,
+     "2.0": 23.953488372093027
+    },
+    "switch_full_model_C2SW_conjecture": {
+     "0.2": 2.3953488372093026,
+     "0.5": 5.988372093023257,
+     "1.0": 11.976744186046506,
+     "2.0": 70.12951040391675
+    }
+   }
+  },
+  {
+   "load": "a5 model, 8B at 10 GB/s",
+   "lambda_s": 61.6,
+   "H_star_beta_s": 156.14035087719301,
+   "rho": {
+    "spot_like_2min": 2.200779727095517,
+    "aep82_min_1h": 1.0590547406768287,
+    "h_4h": 1.0149474654825168
+   },
+   "slot_5min": {
+    "H_star_beta_s": -83.85964912280699,
+    "rho": {
+     "spot_like_2min": 1.72046783625731,
+     "aep82_min_1h": 1.0554206027890238,
+     "h_4h": 1.014703425229741
+    }
+   },
+   "H_star_mu_s": {
+    "switch_beta_tilde": {
+     "0.2": 14.32558139534884,
+     "0.5": 35.81395348837209,
+     "1.0": 71.62790697674416,
+     "2.0": 143.25581395348837
+    },
+    "switch_full_model_C2SW_conjecture": {
+     "0.2": 14.32558139534884,
+     "0.5": 35.81395348837209,
+     "1.0": 71.62790697674416,
+     "2.0": 419.41532435740504
+    }
+   }
+  },
+  {
+   "load": "OPT-6.7B over 1 Gbps, stock stack (fu2024serverlessllm p. 148)",
+   "lambda_s": 128.0,
+   "H_star_beta_s": 389.1228070175439,
+   "rho": {
+    "spot_like_2min": 3.4951267056530217,
+    "aep82_min_1h": 1.1227111494583453,
+    "h_4h": 1.0310596685351
+   },
+   "slot_5min": {
+    "H_star_beta_s": 149.1228070175439,
+    "rho": {
+     "spot_like_2min": 2.497076023391813,
+     "aep82_min_1h": 1.1151596941070625,
+     "h_4h": 1.0305525719059554
+    }
+   },
+   "H_star_mu_s": {
+    "switch_beta_tilde": {
+     "0.2": 29.76744186046512,
+     "0.5": 74.4186046511628,
+     "1.0": 148.8372093023255,
+     "2.0": 297.6744186046512
+    },
+    "switch_full_model_C2SW_conjecture": {
+     "0.2": 29.76744186046512,
+     "0.5": 74.4186046511628,
+     "1.0": 148.8372093023255,
+     "2.0": 871.5123623011013
+    }
+   }
+  },
+  {
+   "load": "a5 model, 405B at 2 GB/s",
+   "lambda_s": 465.0,
+   "H_star_beta_s": 1571.5789473684213,
+   "rho": {
+    "spot_like_2min": 10.064327485380119,
+    "aep82_min_1h": 1.445786597641645,
+    "h_4h": 1.1128339521001673
+   },
+   "slot_5min": {
+    "H_star_beta_s": 1331.5789473684213,
+    "rho": {
+     "spot_like_2min": 6.438596491228071,
+     "aep82_min_1h": 1.4183535762483133,
+     "h_4h": 1.1109917651271035
+    }
+   },
+   "H_star_mu_s": {
+    "switch_beta_tilde": {
+     "0.2": 108.13953488372094,
+     "0.5": 270.34883720930236,
+     "1.0": 540.6976744186044,
+     "2.0": 1081.3953488372094
+    },
+    "switch_full_model_C2SW_conjecture": {
+     "0.2": 108.13953488372094,
+     "0.5": 270.34883720930236,
+     "1.0": 540.6976744186044,
+     "2.0": 3166.0410036719695
+    }
+   }
+  },
+  {
+   "load": "Llama-70B over 1 Gbps, lower bound (yu2025lambdascale p. 3)",
+   "lambda_s": 1080.0,
+   "H_star_beta_s": 3729.4736842105267,
+   "rho": {
+    "spot_like_2min": 22.05263157894737,
+    "aep82_min_1h": 2.0353753235547885,
+    "h_4h": 1.262065953264905
+   },
+   "slot_5min": {
+    "H_star_beta_s": 3489.4736842105267,
+    "rho": {
+     "spot_like_2min": 13.631578947368423,
+     "aep82_min_1h": 1.9716599190283401,
+     "h_4h": 1.2577873254564984
+    }
+   },
+   "H_star_mu_s": {
+    "switch_beta_tilde": {
+     "0.2": 251.16279069767444,
+     "0.5": 627.9069767441861,
+     "1.0": 1255.8139534883715,
+     "2.0": 2511.6279069767443
+    },
+    "switch_full_model_C2SW_conjecture": {
+     "0.2": 251.16279069767444,
+     "0.5": 627.9069767441861,
+     "1.0": 1255.8139534883715,
+     "2.0": 7353.385556915543
+    }
+   }
+  }
+ ],
+ "max_load_s_with_rho_le_2": {
+  "spot_like_2min": 51.3,
+  "aep82_min_1h": 1043.1,
+  "h_4h": 4121.099999999999
+ },
+ "max_load_s_with_rho_le_2_slot_5min": {
+  "spot_like_2min": 85.5,
+  "aep82_min_1h": 1111.5,
+  "h_4h": 4189.5
+ },
+ "lambda_s_above_which_H_star_mu_lt_H_star_beta": {
+  "switch_beta_tilde": {
+   "0.2": 18.31382316313823,
+   "0.5": 20.496167247386758,
+   "1.0": 25.575652173913035,
+   "2.0": 50.710344827586205
+  },
+  "switch_full_model_C2SW_conjecture": {
+   "0.2": 18.31382316313823,
+   "0.5": 20.496167247386758,
+   "1.0": 25.575652173913035,
+   "2.0": null
+  }
+ },
+ "spare_threshold": {
+  "rule": "spare pays if n_exp > alpha / (nu lambda) (design \u00a73.2.6)",
+  "nu_per_day_median_over_maas_clusters_by_lease_size": {
+   "p10": 2.142857142857143,
+   "p25": 2.928571428571429,
+   "p50": 3.571428571428571
+  },
+  "nu_per_day_used": 3.571428571428571,
+  "lambda_s": 300.0,
+  "nu_lambda": 0.01240079365079365,
+  "n_exp_threshold": 32.143216783216786
+ }
+}

@@ -1,0 +1,53 @@
+{
+ "job": "e8:mooncake:win=60:prefix=on",
+ "exp": "e8",
+ "kind": "pool",
+ "params": {
+  "kind": "mooncake",
+  "win": 60,
+  "prefix": "on",
+  "tier": "M",
+  "mu": 1.0,
+  "c": 1
+ },
+ "status": "ok",
+ "started": "2026-10-26T14:50:24",
+ "pid": 979132,
+ "argv": [
+  "/work/ms4wt/u25/code/sim/sublet/experiments/e8.py",
+  "--job",
+  "e8:mooncake:win=60:prefix=on",
+  "--out",
+  "/work/ms4u/u25scratch/fixture_roots/e8/out/e8"
+ ],
+ "slots": [
+  "slot0"
+ ],
+ "milp_limit_s": null,
+ "git_revision": "939847ca5925ce069d6df9089fe3a3d1d3207bb7",
+ "versions": {
+  "python": "3.12.3",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "sublet": "0.1.0"
+ },
+ "runs": 1,
+ "errors": [],
+ "n_errors": 0,
+ "outputs": [
+  "runs/mooncake/e8__mooncake__win__60__prefix__on.json"
+ ],
+ "result": {
+  "error": -0.032880638847933415,
+  "gamma_mc": 15.382630244332354,
+  "hour": 2,
+  "e8_1": true,
+  "e8_3": true,
+  "replay_s": 7.4035803829319775,
+  "instance_hash": "a40730ce5902980b360b84d0bae8c35e6bc4480ba98d5b7b8f594a664cfef67b"
+ },
+ "wall_s": 8.437996482942253,
+ "peak_rss_kb": 205688,
+ "peak_rss_mb": 200.8671875,
+ "finished": "2026-10-26T14:50:32"
+}

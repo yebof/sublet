@@ -1,0 +1,110 @@
+{
+ "check": "copy",
+ "exp": "e7b",
+ "pass": true,
+ "checks": {
+  "same_file_list": true,
+  "same_sha256": true,
+  "no_symlinks": true,
+  "json_readable": true,
+  "revisions": true,
+  "revisions_recorded": true,
+  "manifest_revision": true,
+  "summary_ok": true,
+  "no_running_records": true,
+  "record_statuses_known": true,
+  "run_log_done": true
+ },
+ "copy": "/work/sublet/code/sim/out/e7b",
+ "clone": "/work/ms8_runs",
+ "clone_out": "/work/ms8_runs/code/sim/out/e7b",
+ "clone_commit": "467b21817c8f506f152248c731f072a406c33d3a",
+ "parts": [
+  "week",
+  "sens"
+ ],
+ "tree_sha256": "4c4e7c9b98ab22853e00cdf9f2aad21294c88c05fcc1bcbb8e5418369c4cc554",
+ "tree_sha256_versioned": "36dc121df9638bc1afa85662c1ad49e98d47dee37ed38c3bd4aa76f35ab0445e",
+ "n_files_copy": 1354,
+ "n_files_clone": 1354,
+ "n_files_compared": 1354,
+ "n_only_in_copy": 0,
+ "only_in_copy": [],
+ "n_only_in_clone": 0,
+ "only_in_clone": [],
+ "n_sha256_mismatch": 0,
+ "sha256_mismatch": [],
+ "n_symlinks": 0,
+ "symlinks": [],
+ "n_partial": 0,
+ "n_json": 673,
+ "revisions_found": {
+  "467b21817c8f506f152248c731f072a406c33d3a": 673
+ },
+ "n_revision_differs": 0,
+ "revision_differs": [],
+ "n_no_revision": 0,
+ "no_revision_by_kind": {},
+ "n_no_revision_unexpected": 0,
+ "no_revision_unexpected": [],
+ "no_revision_allowed_under": [],
+ "n_json_unreadable": 0,
+ "json_unreadable": [],
+ "manifest_git_revision": {
+  "week": "467b21817c8f506f152248c731f072a406c33d3a",
+  "sens": "467b21817c8f506f152248c731f072a406c33d3a"
+ },
+ "summaries": {
+  "week": {
+   "file": "week/summary.json",
+   "exists": true,
+   "object": true,
+   "summary_record": "ok",
+   "manifest_record": "ok",
+   "ok": true
+  },
+  "sens": {
+   "file": "sens/summary.json",
+   "exists": true,
+   "object": true,
+   "summary_record": "ok",
+   "manifest_record": "ok",
+   "ok": true
+  }
+ },
+ "records_by_status": {
+  "ok": 336
+ },
+ "records_by_part": {
+  "week": {
+   "ok": 146
+  },
+  "sens": {
+   "ok": 190
+  }
+ },
+ "n_running": 0,
+ "running_records": [],
+ "n_unknown_status": 0,
+ "unknown_status_records": [],
+ "run_logs": {
+  "week": {
+   "file": "week/run_e7b.log",
+   "exists": true,
+   "last_line": "[run_e7b] done 2026-11-24T22:34:07+08:00",
+   "done": true
+  },
+  "sens": {
+   "file": "sens/run_e7b.log",
+   "exists": true,
+   "last_line": "[run_e7b] done 2026-11-25T05:42:13+08:00",
+   "done": true
+  }
+ },
+ "lists_truncated_at": 200,
+ "checked_by": {
+  "module": "sublet.experiments.ms3_common",
+  "git_revision": "c6770e0ea824b335a6bb2627dfce2551cc485c1c"
+ },
+ "time": "2026-11-25T05:43:20"
+}

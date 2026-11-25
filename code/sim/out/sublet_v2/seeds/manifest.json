@@ -1,0 +1,444 @@
+{
+ "meta": {
+  "exp": "e7h",
+  "git_revision": "eb76b1602c96ac4f5fae6646085e7a37c04ab1b7",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "scipy": "1.17.1",
+   "sublet": "0.1.0"
+  },
+  "written": "2026-11-03T05:59:25",
+  "script": "code/sim/sublet/experiments/e7h.py",
+  "script_sha256": "e973cc90f7107bfae54f61162cb8accdcd15bc5f28dcf7e49f97b7ef7d0db95c"
+ },
+ "jobs": [
+  {
+   "id": "e7h:seeds:k=week:tag=Sublet:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "seeds",
+    "kind": "week",
+    "tag": "Sublet",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 2417.7999999999997,
+   "status": "ok",
+   "wall_s": 3754.8434142228216,
+   "peak_rss_mb": 465.72265625,
+   "runs": 14
+  },
+  {
+   "id": "e7h:seeds:k=week:tag=BL1:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "seeds",
+    "kind": "week",
+    "tag": "BL1",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 212.20000000000002,
+   "status": "ok",
+   "wall_s": 635.653668644838,
+   "peak_rss_mb": 235.62890625,
+   "runs": 14
+  },
+  {
+   "id": "e7h:seeds:k=week:tag=BL5-cur:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "seeds",
+    "kind": "week",
+    "tag": "BL5-cur",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 181.4,
+   "status": "ok",
+   "wall_s": 228.21266860887408,
+   "peak_rss_mb": 180.44140625,
+   "runs": 14
+  },
+  {
+   "id": "e7h:seeds:k=week:tag=Sublet:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "seeds",
+    "kind": "week",
+    "tag": "Sublet",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 2417.7999999999997,
+   "status": "ok",
+   "wall_s": 3134.4765409878455,
+   "peak_rss_mb": 462.1640625,
+   "runs": 14
+  },
+  {
+   "id": "e7h:seeds:k=week:tag=BL1:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "seeds",
+    "kind": "week",
+    "tag": "BL1",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 212.20000000000002,
+   "status": "ok",
+   "wall_s": 503.58642880572006,
+   "peak_rss_mb": 220.6796875,
+   "runs": 14
+  },
+  {
+   "id": "e7h:seeds:k=week:tag=BL5-cur:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "seeds",
+    "kind": "week",
+    "tag": "BL5-cur",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 181.4,
+   "status": "ok",
+   "wall_s": 225.27580768801272,
+   "peak_rss_mb": 174.48046875,
+   "runs": 14
+  },
+  {
+   "id": "e7h:seeds:k=week:tag=Sublet:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "seeds",
+    "kind": "week",
+    "tag": "Sublet",
+    "c": 303,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 2417.7999999999997,
+   "status": "ok",
+   "wall_s": 2236.5376486424357,
+   "peak_rss_mb": 440.0078125,
+   "runs": 14
+  },
+  {
+   "id": "e7h:seeds:k=week:tag=BL1:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "seeds",
+    "kind": "week",
+    "tag": "BL1",
+    "c": 303,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 212.20000000000002,
+   "status": "ok",
+   "wall_s": 321.1440079198219,
+   "peak_rss_mb": 201.125,
+   "runs": 14
+  },
+  {
+   "id": "e7h:seeds:k=week:tag=BL5-cur:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "seeds",
+    "kind": "week",
+    "tag": "BL5-cur",
+    "c": 303,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 181.4,
+   "status": "ok",
+   "wall_s": 142.2695278855972,
+   "peak_rss_mb": 166.296875,
+   "runs": 14
+  },
+  {
+   "id": "e7h:seeds:k=week:tag=Sublet:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "seeds",
+    "kind": "week",
+    "tag": "Sublet",
+    "c": 304,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 2417.7999999999997,
+   "status": "ok",
+   "wall_s": 2353.119942374062,
+   "peak_rss_mb": 439.06640625,
+   "runs": 14
+  },
+  {
+   "id": "e7h:seeds:k=week:tag=BL1:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "seeds",
+    "kind": "week",
+    "tag": "BL1",
+    "c": 304,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 212.20000000000002,
+   "status": "ok",
+   "wall_s": 269.75269006285816,
+   "peak_rss_mb": 194.98828125,
+   "runs": 14
+  },
+  {
+   "id": "e7h:seeds:k=week:tag=BL5-cur:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "seeds",
+    "kind": "week",
+    "tag": "BL5-cur",
+    "c": 304,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co",
+     "L-hon"
+    ],
+    "policy_seeds": [
+     1,
+     2
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 181.4,
+   "status": "ok",
+   "wall_s": 141.62703172303736,
+   "peak_rss_mb": 163.171875,
+   "runs": 14
+  }
+ ],
+ "instance_hashes": {},
+ "part": "seeds",
+ "design": {
+  "reduced": false,
+  "horizon_min": 10080,
+  "window": null,
+  "e5_horizon_min": null,
+  "gap_horizon_min": 1440
+ },
+ "instance_hashes_from_outputs": {
+  "e7h:seeds:k=week:tag=Sublet:c=301": {
+   "base": "2b619e9c729caa92598f444d715a469866c5a5875f57eec7cb8b948f77d4bba6"
+  },
+  "e7h:seeds:k=week:tag=BL1:c=301": {
+   "base": "2b619e9c729caa92598f444d715a469866c5a5875f57eec7cb8b948f77d4bba6"
+  },
+  "e7h:seeds:k=week:tag=BL5-cur:c=301": {
+   "base": "2b619e9c729caa92598f444d715a469866c5a5875f57eec7cb8b948f77d4bba6"
+  },
+  "e7h:seeds:k=week:tag=Sublet:c=302": {
+   "base": "92901ac5e0531e3bd3f400764b3a6d74be057ce1061914706db9ef2f8ef35ef9"
+  },
+  "e7h:seeds:k=week:tag=BL1:c=302": {
+   "base": "92901ac5e0531e3bd3f400764b3a6d74be057ce1061914706db9ef2f8ef35ef9"
+  },
+  "e7h:seeds:k=week:tag=BL5-cur:c=302": {
+   "base": "92901ac5e0531e3bd3f400764b3a6d74be057ce1061914706db9ef2f8ef35ef9"
+  },
+  "e7h:seeds:k=week:tag=Sublet:c=303": {
+   "base": "7c3c40d0b00a781b8c6b80401d6deb54d8d7fd6653ea0c7dfc9fd93b6c3470c2"
+  },
+  "e7h:seeds:k=week:tag=BL1:c=303": {
+   "base": "7c3c40d0b00a781b8c6b80401d6deb54d8d7fd6653ea0c7dfc9fd93b6c3470c2"
+  },
+  "e7h:seeds:k=week:tag=BL5-cur:c=303": {
+   "base": "7c3c40d0b00a781b8c6b80401d6deb54d8d7fd6653ea0c7dfc9fd93b6c3470c2"
+  },
+  "e7h:seeds:k=week:tag=Sublet:c=304": {
+   "base": "5064e702339390148b4ffd45439bf54a5de20266d177ab4a1fd0e7c3499f58d2"
+  },
+  "e7h:seeds:k=week:tag=BL1:c=304": {
+   "base": "5064e702339390148b4ffd45439bf54a5de20266d177ab4a1fd0e7c3499f58d2"
+  },
+  "e7h:seeds:k=week:tag=BL5-cur:c=304": {
+   "base": "5064e702339390148b4ffd45439bf54a5de20266d177ab4a1fd0e7c3499f58d2"
+  }
+ },
+ "sources_sha256": {
+  "code/sim/sublet/experiments/e7h.py": "e973cc90f7107bfae54f61162cb8accdcd15bc5f28dcf7e49f97b7ef7d0db95c",
+  "code/sim/sublet/experiments/ms5b_common.py": "6ae2f94e94f322f271addcdb3dfc16fffca696a376ad37fca499ba7c0d3ebe84",
+  "code/sim/sublet/experiments/ms5b_analysis.py": "dde0835e12643e95d17f103843f0e8418acf2042ed921dbd9720ddcb7b46992e",
+  "code/sim/sublet/experiments/ms5b_proto/lb.py": "75cb0789abf02822024dc2cb56c3a7d3a8f7f4c20c7ae10eb01291e62357b61c",
+  "code/sim/sublet/experiments/ms5b_proto/projected.py": "9b32441244d49a89a37736787478f44226f597045106332e43aec8cf5e414470",
+  "code/sim/sublet/experiments/ms5b_proto/run_proj.py": "84b2021806b816b871cccdeb2b38d0f1e9457015b8389e7fd3395298fed624b7"
+ },
+ "gate": {
+  "kind": "confirmation",
+  "ok": true,
+  "reason": "pre-registration at HEAD, clean tree, analysis sha256 as recorded",
+  "confirmation": {
+   "head": "eb76b1602c96ac4f5fae6646085e7a37c04ab1b7",
+   "prereg": "design/sublet_v2_prereg.md",
+   "prereg_at_head": true,
+   "prereg_sha256": "a42316b071e00a7292792cc8d00573fa84c29c36f3dc75e3423c074095aa9923",
+   "analysis_sha256_prereg": "dde0835e12643e95d17f103843f0e8418acf2042ed921dbd9720ddcb7b46992e",
+   "analysis_sha256_head": "dde0835e12643e95d17f103843f0e8418acf2042ed921dbd9720ddcb7b46992e",
+   "analysis_sha256_disk": "dde0835e12643e95d17f103843f0e8418acf2042ed921dbd9720ddcb7b46992e",
+   "dirty_paths": [],
+   "pilot": {
+    "anchor": "a6b242f7a6e9cb5629e49c2d1b10b8b781e5c655",
+    "head": "eb76b1602c96ac4f5fae6646085e7a37c04ab1b7",
+    "anchor_is_ancestor": true,
+    "spec": "design/sublet_v2.md",
+    "spec_sha256_head": "55c08bbb1f624567f5a03da51b023f3d5f0b053d441a023d744386c696b31d9a",
+    "spec_sha256_anchor": "05f7b97ecbcf92840c5c2475fb349d7a89874f64954cad6be538d067ae2b4cda",
+    "sections_changed_since_anchor": []
+   }
+  }
+ }
+}

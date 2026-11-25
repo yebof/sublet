@@ -1,0 +1,96 @@
+{
+ "id": "dp_maas_dp_2d_fast",
+ "family": "dp_maas",
+ "method": "dp",
+ "days": 2,
+ "grid": "fast",
+ "config_file": "bench_dp_maas.json",
+ "started_unix": 1792156177.1315005,
+ "env": {
+  "python": "3.12.3",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "host": "host",
+  "platform": "Linux-6.8.0-146-generic-x86_64-with-glibc2.39",
+  "cpu_affinity": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "omp_num_threads": "1",
+  "cgroup": {
+   "path": "/user.slice/user-1001.slice/user@1001.service/app.slice/run-r98f44f28520c46c5893bdcc544d2ecbc.scope",
+   "memory_max": "3221225472",
+   "memory_peak": "18567168"
+  },
+  "git": {
+   "head": "61d98b843024a74f50008d4a12a0b6093345e613",
+   "dirty": true
+  },
+  "cgroup_end": {
+   "path": "/user.slice/user-1001.slice/user@1001.service/app.slice/run-r98f44f28520c46c5893bdcc544d2ecbc.scope",
+   "memory_max": "3221225472",
+   "memory_peak": "59568128"
+  }
+ },
+ "config": "bench_dp_maas",
+ "config_hash": "c129544bed6ebde6e4c283f32c97a8e36edd991118cc83d29c591f8f3c4b6e37",
+ "horizon_min": 2880,
+ "instance_build_s": 0.028101205825805664,
+ "rss_after_instance_mb": 88.3046875,
+ "notes": [
+  "lender a2:c05: D_max 65 min, buffer 315.000 GPUs (b = 0.102651), v_top 283, v0 282, 1 offered layers in 1 site(s)",
+  "1 of 1 trace lenders have at least one site",
+  "2 sites: a2:c05/L283-283, prot:europe",
+  "1 clients; beta_tilde_ref = [0.183333] USD"
+ ],
+ "merged": false,
+ "instance": {
+  "n_sites": 2,
+  "n_sites_by_kind": {
+   "layer": 1,
+   "protected": 1,
+   "synthetic": 0
+  },
+  "n_clients": 1,
+  "n_llms": 1,
+  "n_contracts": 3,
+  "n_usable_triples": 3,
+  "n_starts": 1728,
+  "n_cohorts": 305,
+  "T_slow": 576,
+  "T_bench": 2880
+ },
+ "dp_states": {
+  "n_states_formula": 900,
+  "N_Q": 1,
+  "Y": 74,
+  "T_bench": 2880,
+  "choices_mb": 9.8876953125
+ },
+ "predicted_peak_mb": 94.83447265625,
+ "prediction_basis": "measured n_states and overhead of dp_maas_dp_1d_fast",
+ "status": "ok",
+ "built": {
+  "n_states": 900,
+  "n_p": 75,
+  "n_q": 6,
+  "T_b": 2880,
+  "n_options": 3,
+  "N_Q": 1,
+  "choice_bytes": 4147200,
+  "rss_after_build_mb": 88.62109375
+ },
+ "build_s": 0.012585271964780986,
+ "solve_s": 0.4193282979540527,
+ "rss_after_build_mb": 88.62109375,
+ "solve_status": 0,
+ "status_msg": "optimal",
+ "objective": 106.4230406401882,
+ "dual_bound": 106.4230406401882,
+ "gap": 0.0,
+ "solver_peak_rss_mb": 91.6640625,
+ "peak_rss_mb": 91.6640625,
+ "wall_s": 0.8404355049133301
+}

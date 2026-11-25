@@ -1,0 +1,21 @@
+sanity bw=beta {'alpha': 0.3333333333333333, 'ap': 0.8, 'mu': 2.0, 'lam': 0.5} H=1.0: det_game 1.79096  variant 1.79096  diff +0.00e+00
+sanity bw=beta {'alpha': 0.3, 'ap': 0.7, 'mu': 2.0, 'lam': 0.5} H=0.25: det_game 2.01133  variant 2.01133  diff +0.00e+00
+sanity bw=beta {'alpha': 0.0, 'ap': 0.5, 'mu': 4.0, 'lam': 0.5} H=0.0: det_game 3.50000  variant 3.50000  diff +0.00e+00
+exact threshold (dt=0.05, H grid 0.05), alpha=1/3, ap=0.8, beta=1; claim (Cor. 5.1/5.3, Sec. 9): H* = mu/(2(1-alpha)) for every lam > 0
+mu=2.0 lam=0.25 bw=1.0: H*_exact=1.50   mu/(2(1-alpha))=1.500
+mu=2.0 lam=0.5 bw=1.0: H*_exact=1.50   mu/(2(1-alpha))=1.500
+mu=2.0 lam=1.0 bw=1.0: H*_exact=1.50   mu/(2(1-alpha))=1.500
+mu=2.0 lam=0.25 bw=0.6: H*_exact=4.45   mu/(2(1-alpha))=1.500
+mu=2.0 lam=0.5 bw=0.6: H*_exact=4.70   mu/(2(1-alpha))=1.500
+mu=2.0 lam=1.0 bw=0.6: H*_exact=5.20   mu/(2(1-alpha))=1.500
+mu=2.0 lam=0.25 bw=0.2: H*_exact=1.15   mu/(2(1-alpha))=1.500
+mu=2.0 lam=0.5 bw=0.2: H*_exact=1.40   mu/(2(1-alpha))=1.500
+mu=2.0 lam=1.0 bw=0.2: H*_exact=1.90   mu/(2(1-alpha))=1.500
+mu=1.0 lam=0.25 bw=1.0: H*_exact=0.75   mu/(2(1-alpha))=0.750
+mu=1.0 lam=0.5 bw=1.0: H*_exact=0.75   mu/(2(1-alpha))=0.750
+mu=1.0 lam=0.25 bw=0.2: H*_exact=1.15   mu/(2(1-alpha))=0.750
+mu=1.0 lam=0.5 bw=0.2: H*_exact=1.40   mu/(2(1-alpha))=0.750
+extra: bw = ap = 0.8 (consistent switch cost with negligible fees), alpha=1/3, lam=0.5
+mu=1.5 lam=0.5 bw=0.8: H*_exact=1.15   mu/(2(1-alpha))=1.125
+mu=1.6 lam=0.5 bw=0.8: H*_exact=1.20   mu/(2(1-alpha))=1.200
+mu=2.0 lam=0.5 bw=0.8: H*_exact=4.50   mu/(2(1-alpha))=1.500

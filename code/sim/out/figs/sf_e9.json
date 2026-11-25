@@ -1,0 +1,1823 @@
+{
+ "figure": "sf_e9",
+ "size_in": [
+  7.1399,
+  2.2
+ ],
+ "sources": [
+  "code/sim/out/e9/summary.json",
+  "code/sim/out/ms5spec/e9_lp_gated.json",
+  "code/sim/out/ms5spec/e9_sizing_grid.json"
+ ],
+ "data": {
+  "tags": {
+   "a6": "A6",
+   "sublet_ms4": "Sublet"
+  },
+  "a": {
+   "base": "e7f",
+   "llm_set": "SML",
+   "points": [
+    "e7f_V1_SML",
+    "e7f_V2_SML",
+    "e7f_V4_SML",
+    "e7f_V8_SML",
+    "e7f_V16_SML",
+    "e7f_V32_SML",
+    "e7f_V64_SML"
+   ],
+   "V": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    64
+   ],
+   "series": {
+    "a6": {
+     "slow_loop_s_per_h": {
+      "point": [
+       "e7f_V1_SML",
+       "e7f_V2_SML",
+       "e7f_V4_SML",
+       "e7f_V8_SML",
+       "e7f_V16_SML",
+       "e7f_V32_SML",
+       "e7f_V64_SML"
+      ],
+      "x": [
+       84,
+       147,
+       267,
+       507,
+       987,
+       1947,
+       3855
+      ],
+      "median": [
+       0.10368206995190121,
+       0.18007238339244697,
+       0.323231027131745,
+       0.6420992706747104,
+       1.2219570564193418,
+       2.6614603452811325,
+       5.9467351746085715
+      ],
+      "min": [
+       0.07038534825551324,
+       0.11399377554577465,
+       0.19409606495173648,
+       0.34788677183678374,
+       0.6258452037582174,
+       1.2508546369499527,
+       2.9065394735662267
+      ],
+      "max": [
+       0.12896299248677678,
+       0.22636641234081858,
+       0.3907001356613667,
+       0.7606656317560313,
+       1.4197746019926853,
+       3.113403049200618,
+       6.983969467692077
+      ],
+      "note": [
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null
+      ]
+     },
+     "fast_loop_s_per_h": {
+      "point": [
+       "e7f_V1_SML",
+       "e7f_V2_SML",
+       "e7f_V4_SML",
+       "e7f_V8_SML",
+       "e7f_V16_SML",
+       "e7f_V32_SML",
+       "e7f_V64_SML"
+      ],
+      "x": [
+       84,
+       147,
+       267,
+       507,
+       987,
+       1947,
+       3855
+      ],
+      "median": [
+       0.05998236424541877,
+       0.07538135142628259,
+       0.09383614696465278,
+       0.10854908281665607,
+       0.11562639928403465,
+       0.12602698085538577,
+       0.13474749128605862
+      ],
+      "min": [
+       0.04245382055523805,
+       0.04908986808732152,
+       0.0575502608747532,
+       0.07351309254105824,
+       0.09042592663899995,
+       0.1067397140917213,
+       0.12505045780562796
+      ],
+      "max": [
+       0.06085617117544947,
+       0.08022683750217159,
+       0.10488007245779347,
+       0.12692439647313827,
+       0.13935009102957943,
+       0.14910898855305277,
+       0.15977366730415574
+      ],
+      "note": [
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null
+      ]
+     }
+    },
+    "sublet_ms4": {
+     "slow_loop_s_per_h": {
+      "point": [
+       "e7f_V1_SML",
+       "e7f_V2_SML",
+       "e7f_V4_SML",
+       "e7f_V8_SML",
+       "e7f_V16_SML",
+       "e7f_V32_SML",
+       "e7f_V64_SML"
+      ],
+      "x": [
+       84,
+       147,
+       267,
+       507,
+       987,
+       1947,
+       3855
+      ],
+      "median": [
+       0.22667627885433222,
+       0.4787216375455804,
+       1.0884872411115794,
+       2.832012711941691,
+       8.260837243249018,
+       27.41932552025537,
+       105.41224032469229
+      ],
+      "min": [
+       0.16694708727300167,
+       0.31565652021284524,
+       0.6805635383255625,
+       1.6338621696728903,
+       4.447016580534789,
+       14.576929035043577,
+       56.22889890219085
+      ],
+      "max": [
+       0.278454134434772,
+       0.6036787162787126,
+       1.3560820007114671,
+       3.452816593227908,
+       9.682859798330659,
+       30.765233629509265,
+       112.78519685349117
+      ],
+      "note": [
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null
+      ]
+     },
+     "fast_loop_s_per_h": {
+      "point": [
+       "e7f_V1_SML",
+       "e7f_V2_SML",
+       "e7f_V4_SML",
+       "e7f_V8_SML",
+       "e7f_V16_SML",
+       "e7f_V32_SML",
+       "e7f_V64_SML"
+      ],
+      "x": [
+       84,
+       147,
+       267,
+       507,
+       987,
+       1947,
+       3855
+      ],
+      "median": [
+       0.036464380750355,
+       0.05418814013925536,
+       0.07461929399869405,
+       0.09108633263773905,
+       0.10921825798868667,
+       0.1344471875151309,
+       0.1736613594645557
+      ],
+      "min": [
+       0.025793746074972052,
+       0.034325027343584225,
+       0.042602582019753754,
+       0.056194501385713615,
+       0.07189801702043042,
+       0.09297720204146269,
+       0.1164392646557341
+      ],
+      "max": [
+       0.04661914076617298,
+       0.05838928088390579,
+       0.07621265411338148,
+       0.09605512877654594,
+       0.12049542581856561,
+       0.14654123538639396,
+       0.18997416010824963
+      ],
+      "note": [
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null
+      ]
+     }
+    }
+   }
+  },
+  "b": {
+   "base": "e7r",
+   "llm_set": "SML",
+   "points": [
+    "e7r_V1_SML",
+    "e7r_V2_SML",
+    "e7r_V4_SML",
+    "e7r_V8_SML",
+    "e7r_V16_SML",
+    "e7r_V32_SML",
+    "e7r_V64_SML"
+   ],
+   "V": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    64
+   ],
+   "series": {
+    "a6": {
+     "slow_loop_s_per_h": {
+      "point": [
+       "e7r_V1_SML",
+       "e7r_V2_SML",
+       "e7r_V4_SML",
+       "e7r_V8_SML",
+       "e7r_V16_SML",
+       "e7r_V32_SML",
+       "e7r_V64_SML"
+      ],
+      "x": [
+       84,
+       150,
+       276,
+       525,
+       1005,
+       1965,
+       3885
+      ],
+      "median": [
+       0.1053623374318704,
+       0.1926234107425747,
+       0.37662921466593013,
+       0.7259618629274579,
+       1.524090588267427,
+       3.3642450095891645,
+       8.070080515676333
+      ],
+      "min": [
+       0.07161999693683659,
+       0.12859554745955393,
+       0.22313919527611384,
+       0.4182786447151254,
+       0.8065407037890205,
+       1.7784297685914983,
+       3.799592557246797
+      ],
+      "max": [
+       0.13143113179830834,
+       0.25887274437506375,
+       0.44697100011399016,
+       0.917613606453718,
+       1.7443374532740563,
+       4.134696398628876,
+       9.531067047772618
+      ],
+      "note": [
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null
+      ]
+     },
+     "fast_loop_s_per_h": {
+      "point": [
+       "e7r_V1_SML",
+       "e7r_V2_SML",
+       "e7r_V4_SML",
+       "e7r_V8_SML",
+       "e7r_V16_SML",
+       "e7r_V32_SML",
+       "e7r_V64_SML"
+      ],
+      "x": [
+       84,
+       150,
+       276,
+       525,
+       1005,
+       1965,
+       3885
+      ],
+      "median": [
+       0.055174054248103246,
+       0.07187754853900212,
+       0.09273331754957326,
+       0.10672559743397869,
+       0.11531527502423462,
+       0.12436336861962143,
+       0.1343819088166735
+      ],
+      "min": [
+       0.037265860747235514,
+       0.04851480843111252,
+       0.05864813939357797,
+       0.06964044986913602,
+       0.08788627283259605,
+       0.1054119118489325,
+       0.120882114492512
+      ],
+      "max": [
+       0.058973922238995634,
+       0.08037881083631267,
+       0.10461144508250679,
+       0.12078448375298952,
+       0.1373921662258605,
+       0.14557574538048357,
+       0.1551731606790175
+      ],
+      "note": [
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null
+      ]
+     }
+    },
+    "sublet_ms4": {
+     "slow_loop_s_per_h": {
+      "point": [
+       "e7r_V1_SML",
+       "e7r_V2_SML",
+       "e7r_V4_SML",
+       "e7r_V8_SML",
+       "e7r_V16_SML",
+       "e7r_V32_SML",
+       "e7r_V64_SML"
+      ],
+      "x": [
+       84,
+       150,
+       276,
+       525,
+       1005,
+       1965,
+       3885
+      ],
+      "median": [
+       0.14012553793145344,
+       0.2550189249741379,
+       0.5306317967673142,
+       1.1407457719809222,
+       2.7869359567121137,
+       7.865859184802199,
+       26.375745145400288
+      ],
+      "min": [
+       0.10470524451617773,
+       0.18118604441406205,
+       0.352186106882679,
+       0.7127507466551227,
+       1.6277716261683963,
+       4.767195405380335,
+       20.712589867490653
+      ],
+      "max": [
+       0.17154606037850803,
+       0.3351428822497837,
+       0.7014742201815048,
+       1.535817403792559,
+       3.5224875305236005,
+       8.403342367499135,
+       30.839209137154587
+      ],
+      "note": [
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null
+      ]
+     },
+     "fast_loop_s_per_h": {
+      "point": [
+       "e7r_V1_SML",
+       "e7r_V2_SML",
+       "e7r_V4_SML",
+       "e7r_V8_SML",
+       "e7r_V16_SML",
+       "e7r_V32_SML",
+       "e7r_V64_SML"
+      ],
+      "x": [
+       84,
+       150,
+       276,
+       525,
+       1005,
+       1965,
+       3885
+      ],
+      "median": [
+       0.03671681833414671,
+       0.05491355601892186,
+       0.07560743328455524,
+       0.09287081497798985,
+       0.10984946738850947,
+       0.13400801104338217,
+       0.17545149128030363
+      ],
+      "min": [
+       0.02465132315410301,
+       0.035082395595964044,
+       0.04294466390274465,
+       0.05501571223915865,
+       0.07129034487297758,
+       0.08781575306784362,
+       0.11761001491686329
+      ],
+      "max": [
+       0.046247810998465866,
+       0.061814330654063575,
+       0.07690481727089112,
+       0.09886558747772749,
+       0.1235524841855901,
+       0.15056253996832916,
+       0.19300570604779446
+      ],
+      "note": [
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null
+      ]
+     }
+    }
+   },
+   "lp": {
+    "point": [
+     "e7r_V1_SML",
+     "e7r_V2_SML",
+     "e7r_V4_SML",
+     "e7r_V8_SML",
+     "e7r_V16_SML",
+     "e7r_V32_SML",
+     "e7r_V64_SML"
+    ],
+    "x": [
+     84,
+     150,
+     276,
+     525,
+     1005,
+     1965,
+     3885
+    ],
+    "median": [
+     0.64266082837518,
+     1.7538745451699165,
+     3.792754124267958,
+     7.805315837593905,
+     10.235309203863533,
+     13.144459804471504,
+     14.080812277747707
+    ],
+    "min": [
+     0.41877564646226045,
+     0.6813711024976025,
+     1.4906198764995982,
+     2.837803849737005,
+     3.7432841040426865,
+     4.372663068274657,
+     4.755771973810624
+    ],
+    "max": [
+     0.9912015783290068,
+     2.4106292191233174,
+     5.115818179930405,
+     11.210762841335963,
+     16.66726360761095,
+     26.23700260487385,
+     31.14660132903373
+    ],
+    "note": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ]
+   }
+  },
+  "c": {
+   "base": "e7f",
+   "llm_set": "SML",
+   "points": [
+    "e7f_V1_SML",
+    "e7f_V2_SML",
+    "e7f_V4_SML",
+    "e7f_V8_SML",
+    "e7f_V16_SML",
+    "e7f_V32_SML",
+    "e7f_V64_SML"
+   ],
+   "V": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    64
+   ],
+   "series": {
+    "a6": {
+     "slow_step_p99_s": {
+      "point": [
+       "e7f_V1_SML",
+       "e7f_V2_SML",
+       "e7f_V4_SML",
+       "e7f_V8_SML",
+       "e7f_V16_SML",
+       "e7f_V32_SML",
+       "e7f_V64_SML"
+      ],
+      "x": [
+       84,
+       147,
+       267,
+       507,
+       987,
+       1947,
+       3855
+      ],
+      "median": [
+       0.06880987097392788,
+       0.10418375727604137,
+       0.17538215293083334,
+       0.3277792257152032,
+       0.5406036393763495,
+       1.227220281749032,
+       2.528858971851877
+      ],
+      "min": [
+       0.04518525242572647,
+       0.07739151631947605,
+       0.11905500735156234,
+       0.2367743360018357,
+       0.3862380327074786,
+       0.6623740909504702,
+       1.5904882389213877
+      ],
+      "max": [
+       0.07745485045947133,
+       0.12759230535011734,
+       0.194399954706896,
+       0.389835538698826,
+       0.728477510921657,
+       1.5591190269589423,
+       3.3624344940157602
+      ],
+      "note": [
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null
+      ]
+     }
+    },
+    "sublet_ms4": {
+     "slow_step_p99_s": {
+      "point": [
+       "e7f_V1_SML",
+       "e7f_V2_SML",
+       "e7f_V4_SML",
+       "e7f_V8_SML",
+       "e7f_V16_SML",
+       "e7f_V32_SML",
+       "e7f_V64_SML"
+      ],
+      "x": [
+       84,
+       147,
+       267,
+       507,
+       987,
+       1947,
+       3855
+      ],
+      "median": [
+       0.13584801385761236,
+       0.3142869236250408,
+       0.7235128891537896,
+       1.807149593568174,
+       5.051316482154651,
+       16.284727598475286,
+       60.6675939772324
+      ],
+      "min": [
+       0.11400434476789083,
+       0.22731926620006548,
+       0.5140121424966491,
+       1.1808774992893447,
+       2.960159253273156,
+       9.764397058098098,
+       43.84742606949984
+      ],
+      "max": [
+       0.14898494251305236,
+       0.3315172634483315,
+       0.7643931229924783,
+       2.03053534160368,
+       5.594015524289563,
+       18.642187429987803,
+       76.68348572760819
+      ],
+      "note": [
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null
+      ]
+     }
+    }
+   }
+  },
+  "axes": {
+   "x": [
+    50.0,
+    5000.0
+   ],
+   "y_ab": [
+    0.01,
+    10000.0
+   ],
+   "y_c": [
+    0.01,
+    1000.0
+   ]
+  },
+  "real_time_s_per_h": 3600.0,
+  "slow_slot_s": 300.0,
+  "fast_slot_s": 60.0,
+  "table": {
+   "runs": [
+    {
+     "point": "e7f_V1_SML",
+     "base": "e7f",
+     "menu": "full",
+     "V": 1,
+     "llms": [
+      "S",
+      "M",
+      "L"
+     ],
+     "n_sites": 28,
+     "n_units": 371.0,
+     "sites_x_llms": 84,
+     "key": "sublet_ms4",
+     "label": "Lagged RetroRenting + one-way guard ($B_0=10\\%$ of the all-fallback bill)",
+     "slow_loop_s_per_h": 0.22667627885433222,
+     "fast_loop_s_per_h": 0.036464380750355,
+     "setup_s": 0.6463057816727087,
+     "slow_step_p50_s": 0.009634337911847979,
+     "slow_step_p99_s": 0.13584801385761236,
+     "slow_step_max_s": 0.1729626221349463,
+     "fast_step_p99_s": 0.004598854106152427,
+     "peak_rss_mb": 145.162109375,
+     "cost_over_bl0a": 0.7984149989444396,
+     "note": null
+    },
+    {
+     "point": "e7f_V1_SML",
+     "base": "e7f",
+     "menu": "full",
+     "V": 1,
+     "llms": [
+      "S",
+      "M",
+      "L"
+     ],
+     "n_sites": 28,
+     "n_units": 371.0,
+     "sites_x_llms": 84,
+     "key": "a6",
+     "label": "Two-timescale PD",
+     "slow_loop_s_per_h": 0.10368206995190121,
+     "fast_loop_s_per_h": 0.05998236424541877,
+     "setup_s": 0.8039353126659989,
+     "slow_step_p50_s": 0.0036323522799648345,
+     "slow_step_p99_s": 0.06880987097392788,
+     "slow_step_max_s": 0.08020760398358107,
+     "fast_step_p99_s": 0.00465940716327168,
+     "peak_rss_mb": 145.931640625,
+     "cost_over_bl0a": 1.1154512985481573,
+     "note": null
+    },
+    {
+     "point": "e7f_V2_SML",
+     "base": "e7f",
+     "menu": "full",
+     "V": 2,
+     "llms": [
+      "S",
+      "M",
+      "L"
+     ],
+     "n_sites": 49,
+     "n_units": 703.0,
+     "sites_x_llms": 147,
+     "key": "sublet_ms4",
+     "label": "Lagged RetroRenting + one-way guard ($B_0=10\\%$ of the all-fallback bill)",
+     "slow_loop_s_per_h": 0.4787216375455804,
+     "fast_loop_s_per_h": 0.05418814013925536,
+     "setup_s": 0.6499160442035645,
+     "slow_step_p50_s": 0.017117022536695004,
+     "slow_step_p99_s": 0.3142869236250408,
+     "slow_step_max_s": 0.35611327993683517,
+     "fast_step_p99_s": 0.004878209691960362,
+     "peak_rss_mb": 148.73828125,
+     "cost_over_bl0a": 0.757888332124137,
+     "note": null
+    },
+    {
+     "point": "e7f_V2_SML",
+     "base": "e7f",
+     "menu": "full",
+     "V": 2,
+     "llms": [
+      "S",
+      "M",
+      "L"
+     ],
+     "n_sites": 49,
+     "n_units": 703.0,
+     "sites_x_llms": 147,
+     "key": "a6",
+     "label": "Two-timescale PD",
+     "slow_loop_s_per_h": 0.18007238339244697,
+     "fast_loop_s_per_h": 0.07538135142628259,
+     "setup_s": 1.1714960586978123,
+     "slow_step_p50_s": 0.006359303020872176,
+     "slow_step_p99_s": 0.10418375727604137,
+     "slow_step_max_s": 0.13692948513198644,
+     "fast_step_p99_s": 0.004829805792542174,
+     "peak_rss_mb": 148.90234375,
+     "cost_over_bl0a": 0.9462356052850369,
+     "note": null
+    },
+    {
+     "point": "e7f_V4_SML",
+     "base": "e7f",
+     "menu": "full",
+     "V": 4,
+     "llms": [
+      "S",
+      "M",
+      "L"
+     ],
+     "n_sites": 89,
+     "n_units": 1335.5,
+     "sites_x_llms": 267,
+     "key": "sublet_ms4",
+     "label": "Lagged RetroRenting + one-way guard ($B_0=10\\%$ of the all-fallback bill)",
+     "slow_loop_s_per_h": 1.0884872411115794,
+     "fast_loop_s_per_h": 0.07461929399869405,
+     "setup_s": 0.6665421094512567,
+     "slow_step_p50_s": 0.036190012004226446,
+     "slow_step_p99_s": 0.7235128891537896,
+     "slow_step_max_s": 0.8242577876662835,
+     "fast_step_p99_s": 0.005134987820638341,
+     "peak_rss_mb": 159.80078125,
+     "cost_over_bl0a": 0.7307146904865169,
+     "note": null
+    },
+    {
+     "point": "e7f_V4_SML",
+     "base": "e7f",
+     "menu": "full",
+     "V": 4,
+     "llms": [
+      "S",
+      "M",
+      "L"
+     ],
+     "n_sites": 89,
+     "n_units": 1335.5,
+     "sites_x_llms": 267,
+     "key": "a6",
+     "label": "Two-timescale PD",
+     "slow_loop_s_per_h": 0.323231027131745,
+     "fast_loop_s_per_h": 0.09383614696465278,
+     "setup_s": 2.3685289606219158,
+     "slow_step_p50_s": 0.011375010770279914,
+     "slow_step_p99_s": 0.17538215293083334,
+     "slow_step_max_s": 0.20089564460795373,
+     "fast_step_p99_s": 0.005232281724456696,
+     "peak_rss_mb": 159.78515625,
+     "cost_over_bl0a": 0.8620978594045037,
+     "note": null
+    },
+    {
+     "point": "e7f_V8_SML",
+     "base": "e7f",
+     "menu": "full",
+     "V": 8,
+     "llms": [
+      "S",
+      "M",
+      "L"
+     ],
+     "n_sites": 169,
+     "n_units": 2599.0,
+     "sites_x_llms": 507,
+     "key": "sublet_ms4",
+     "label": "Lagged RetroRenting + one-way guard ($B_0=10\\%$ of the all-fallback bill)",
+     "slow_loop_s_per_h": 2.832012711941691,
+     "fast_loop_s_per_h": 0.09108633263773905,
+     "setup_s": 0.7011867351830006,
+     "slow_step_p50_s": 0.09140104579273611,
+     "slow_step_p99_s": 1.807149593568174,
+     "slow_step_max_s": 1.9884731695055962,
+     "fast_step_p99_s": 0.005550835444591938,
+     "peak_rss_mb": 177.6953125,
+     "cost_over_bl0a": 0.7058228534070263,
+     "note": null
+    },
+    {
+     "point": "e7f_V8_SML",
+     "base": "e7f",
+     "menu": "full",
+     "V": 8,
+     "llms": [
+      "S",
+      "M",
+      "L"
+     ],
+     "n_sites": 169,
+     "n_units": 2599.0,
+     "sites_x_llms": 507,
+     "key": "a6",
+     "label": "Two-timescale PD",
+     "slow_loop_s_per_h": 0.6420992706747104,
+     "fast_loop_s_per_h": 0.10854908281665607,
+     "setup_s": 6.96716527629178,
+     "slow_step_p50_s": 0.024173103622160852,
+     "slow_step_p99_s": 0.3277792257152032,
+     "slow_step_max_s": 0.3888348925393075,
+     "fast_step_p99_s": 0.005636002751998601,
+     "peak_rss_mb": 177.47265625,
+     "cost_over_bl0a": 0.8468581702403166,
+     "note": null
+    },
+    {
+     "point": "e7f_V16_SML",
+     "base": "e7f",
+     "menu": "full",
+     "V": 16,
+     "llms": [
+      "S",
+      "M",
+      "L"
+     ],
+     "n_sites": 329,
+     "n_units": 5128.5,
+     "sites_x_llms": 987,
+     "key": "sublet_ms4",
+     "label": "Lagged RetroRenting + one-way guard ($B_0=10\\%$ of the all-fallback bill)",
+     "slow_loop_s_per_h": 8.260837243249018,
+     "fast_loop_s_per_h": 0.10921825798868667,
+     "setup_s": 0.7657961135264486,
+     "slow_step_p50_s": 0.26358066248940304,
+     "slow_step_p99_s": 5.051316482154651,
+     "slow_step_max_s": 5.91796890553087,
+     "fast_step_p99_s": 0.00631629056180826,
+     "peak_rss_mb": 216.265625,
+     "cost_over_bl0a": 0.6945739551012058,
+     "note": null
+    },
+    {
+     "point": "e7f_V16_SML",
+     "base": "e7f",
+     "menu": "full",
+     "V": 16,
+     "llms": [
+      "S",
+      "M",
+      "L"
+     ],
+     "n_sites": 329,
+     "n_units": 5128.5,
+     "sites_x_llms": 987,
+     "key": "a6",
+     "label": "Two-timescale PD",
+     "slow_loop_s_per_h": 1.2219570564193418,
+     "fast_loop_s_per_h": 0.11562639928403465,
+     "setup_s": 24.29032043227926,
+     "slow_step_p50_s": 0.05010332621168345,
+     "slow_step_p99_s": 0.5406036393763495,
+     "slow_step_max_s": 0.6641976620303467,
+     "fast_step_p99_s": 0.005770561237586661,
+     "peak_rss_mb": 209.966796875,
+     "cost_over_bl0a": 0.8565043517280753,
+     "note": null
+    },
+    {
+     "point": "e7f_V32_SML",
+     "base": "e7f",
+     "menu": "full",
+     "V": 32,
+     "llms": [
+      "S",
+      "M",
+      "L"
+     ],
+     "n_sites": 649,
+     "n_units": 10183.5,
+     "sites_x_llms": 1947,
+     "key": "sublet_ms4",
+     "label": "Lagged RetroRenting + one-way guard ($B_0=10\\%$ of the all-fallback bill)",
+     "slow_loop_s_per_h": 27.41932552025537,
+     "fast_loop_s_per_h": 0.1344471875151309,
+     "setup_s": 0.8993310085497797,
+     "slow_step_p50_s": 0.8474660267238505,
+     "slow_step_p99_s": 16.284727598475286,
+     "slow_step_max_s": 26.107176496414468,
+     "fast_step_p99_s": 0.008458134070970097,
+     "peak_rss_mb": 294.466796875,
+     "cost_over_bl0a": 0.6930625627753282,
+     "note": null
+    },
+    {
+     "point": "e7f_V32_SML",
+     "base": "e7f",
+     "menu": "full",
+     "V": 32,
+     "llms": [
+      "S",
+      "M",
+      "L"
+     ],
+     "n_sites": 649,
+     "n_units": 10183.5,
+     "sites_x_llms": 1947,
+     "key": "a6",
+     "label": "Two-timescale PD",
+     "slow_loop_s_per_h": 2.6614603452811325,
+     "fast_loop_s_per_h": 0.12602698085538577,
+     "setup_s": 92.06290832650848,
+     "slow_step_p50_s": 0.11893341166432947,
+     "slow_step_p99_s": 1.227220281749032,
+     "slow_step_max_s": 1.5178337548859417,
+     "fast_step_p99_s": 0.006047562414314598,
+     "peak_rss_mb": 282.267578125,
+     "cost_over_bl0a": 0.9013709182528802,
+     "note": null
+    },
+    {
+     "point": "e7f_V64_SML",
+     "base": "e7f",
+     "menu": "full",
+     "V": 64,
+     "llms": [
+      "S",
+      "M",
+      "L"
+     ],
+     "n_sites": 1285,
+     "n_units": 20233.5,
+     "sites_x_llms": 3855,
+     "key": "sublet_ms4",
+     "label": "Lagged RetroRenting + one-way guard ($B_0=10\\%$ of the all-fallback bill)",
+     "slow_loop_s_per_h": 105.41224032469229,
+     "fast_loop_s_per_h": 0.1736613594645557,
+     "setup_s": 1.1499720874708146,
+     "slow_step_p50_s": 3.201008651580196,
+     "slow_step_p99_s": 60.6675939772324,
+     "slow_step_max_s": 153.31337499420624,
+     "fast_step_p99_s": 0.013164618574082698,
+     "peak_rss_mb": 446.53125,
+     "cost_over_bl0a": 0.6927893981963713,
+     "note": null
+    },
+    {
+     "point": "e7f_V64_SML",
+     "base": "e7f",
+     "menu": "full",
+     "V": 64,
+     "llms": [
+      "S",
+      "M",
+      "L"
+     ],
+     "n_sites": 1285,
+     "n_units": 20233.5,
+     "sites_x_llms": 3855,
+     "key": "a6",
+     "label": "Two-timescale PD",
+     "slow_loop_s_per_h": 5.9467351746085715,
+     "fast_loop_s_per_h": 0.13474749128605862,
+     "setup_s": 362.2740713431267,
+     "slow_step_p50_s": 0.2745736140059307,
+     "slow_step_p99_s": 2.528858971851877,
+     "slow_step_max_s": 3.3077100035734475,
+     "fast_step_p99_s": 0.0063337794248946,
+     "peak_rss_mb": 422.416015625,
+     "cost_over_bl0a": 0.9308784437538773,
+     "note": null
+    },
+    {
+     "point": "e7f_V8_S",
+     "base": "e7f",
+     "menu": "full",
+     "V": 8,
+     "llms": [
+      "S"
+     ],
+     "n_sites": 169,
+     "n_units": 6498.5,
+     "sites_x_llms": 169,
+     "key": "sublet_ms4",
+     "label": "Lagged RetroRenting + one-way guard ($B_0=10\\%$ of the all-fallback bill)",
+     "slow_loop_s_per_h": 4.939515428006416,
+     "fast_loop_s_per_h": 0.049048835528083146,
+     "setup_s": 0.6389066088013351,
+     "slow_step_p50_s": 0.17037677997723222,
+     "slow_step_p99_s": 2.9202652951818875,
+     "slow_step_max_s": 4.10956641100347,
+     "fast_step_p99_s": 0.0026132777170278128,
+     "peak_rss_mb": 159.7421875,
+     "cost_over_bl0a": 0.6192545404847801,
+     "note": null
+    },
+    {
+     "point": "e7f_V8_S",
+     "base": "e7f",
+     "menu": "full",
+     "V": 8,
+     "llms": [
+      "S"
+     ],
+     "n_sites": 169,
+     "n_units": 6498.5,
+     "sites_x_llms": 169,
+     "key": "a6",
+     "label": "Two-timescale PD",
+     "slow_loop_s_per_h": 0.7744531924739325,
+     "fast_loop_s_per_h": 0.04756025274400599,
+     "setup_s": 2.686452723108232,
+     "slow_step_p50_s": 0.03700056078378111,
+     "slow_step_p99_s": 0.36559843386989077,
+     "slow_step_max_s": 0.4230048612225801,
+     "fast_step_p99_s": 0.002312179768923669,
+     "peak_rss_mb": 151.44921875,
+     "cost_over_bl0a": 0.9209928910136269,
+     "note": null
+    },
+    {
+     "point": "e7f_V8_ML",
+     "base": "e7f",
+     "menu": "full",
+     "V": 8,
+     "llms": [
+      "M",
+      "L"
+     ],
+     "n_sites": 169,
+     "n_units": 2412.5,
+     "sites_x_llms": 338,
+     "key": "sublet_ms4",
+     "label": "Lagged RetroRenting + one-way guard ($B_0=10\\%$ of the all-fallback bill)",
+     "slow_loop_s_per_h": 2.5917024143661065,
+     "fast_loop_s_per_h": 0.0709553919635558,
+     "setup_s": 0.672080859541893,
+     "slow_step_p50_s": 0.08251062734052539,
+     "slow_step_p99_s": 1.6044830875517797,
+     "slow_step_max_s": 1.8062219778075814,
+     "fast_step_p99_s": 0.004026663925033062,
+     "peak_rss_mb": 165.919921875,
+     "cost_over_bl0a": 0.7091336205232104,
+     "note": null
+    },
+    {
+     "point": "e7f_V8_ML",
+     "base": "e7f",
+     "menu": "full",
+     "V": 8,
+     "llms": [
+      "M",
+      "L"
+     ],
+     "n_sites": 169,
+     "n_units": 2412.5,
+     "sites_x_llms": 338,
+     "key": "a6",
+     "label": "Two-timescale PD",
+     "slow_loop_s_per_h": 0.5515752461118002,
+     "fast_loop_s_per_h": 0.07876282395833792,
+     "setup_s": 4.744730309583247,
+     "slow_step_p50_s": 0.021647087996825576,
+     "slow_step_p99_s": 0.2825392989790998,
+     "slow_step_max_s": 0.3066966242622584,
+     "fast_step_p99_s": 0.0038592744385823573,
+     "peak_rss_mb": 165.0390625,
+     "cost_over_bl0a": 0.8267131677560839,
+     "note": null
+    },
+    {
+     "point": "e7r_V1_SML",
+     "base": "e7r",
+     "menu": "reduced",
+     "V": 1,
+     "llms": [
+      "S",
+      "M",
+      "L"
+     ],
+     "n_sites": 28,
+     "n_units": 371.0,
+     "sites_x_llms": 84,
+     "key": "sublet_ms4",
+     "label": "Lagged RetroRenting + one-way guard ($B_0=10\\%$ of the all-fallback bill)",
+     "slow_loop_s_per_h": 0.14012553793145344,
+     "fast_loop_s_per_h": 0.03671681833414671,
+     "setup_s": 0.2784824981354177,
+     "slow_step_p50_s": 0.005902936449274421,
+     "slow_step_p99_s": 0.07785890910774468,
+     "slow_step_max_s": 0.10611786786466837,
+     "fast_step_p99_s": 0.004479612591676414,
+     "peak_rss_mb": 141.9609375,
+     "cost_over_bl0a": 0.7937705817230554,
+     "note": null
+    },
+    {
+     "point": "e7r_V1_SML",
+     "base": "e7r",
+     "menu": "reduced",
+     "V": 1,
+     "llms": [
+      "S",
+      "M",
+      "L"
+     ],
+     "n_sites": 28,
+     "n_units": 371.0,
+     "sites_x_llms": 84,
+     "key": "a6",
+     "label": "Two-timescale PD",
+     "slow_loop_s_per_h": 0.1053623374318704,
+     "fast_loop_s_per_h": 0.055174054248103246,
+     "setup_s": 0.2863220232538879,
+     "slow_step_p50_s": 0.003960391273722053,
+     "slow_step_p99_s": 0.06301629678811876,
+     "slow_step_max_s": 0.07988766231574118,
+     "fast_step_p99_s": 0.0045613432815298435,
+     "peak_rss_mb": 143.5625,
+     "cost_over_bl0a": 1.0974378883770939,
+     "note": null
+    },
+    {
+     "point": "e7r_V2_SML",
+     "base": "e7r",
+     "menu": "reduced",
+     "V": 2,
+     "llms": [
+      "S",
+      "M",
+      "L"
+     ],
+     "n_sites": 50,
+     "n_units": 718.5,
+     "sites_x_llms": 150,
+     "key": "sublet_ms4",
+     "label": "Lagged RetroRenting + one-way guard ($B_0=10\\%$ of the all-fallback bill)",
+     "slow_loop_s_per_h": 0.2550189249741379,
+     "fast_loop_s_per_h": 0.05491355601892186,
+     "setup_s": 0.28409129474312067,
+     "slow_step_p50_s": 0.009182891109958291,
+     "slow_step_p99_s": 0.17191128178732465,
+     "slow_step_max_s": 0.21007104963064194,
+     "fast_step_p99_s": 0.0047335571050643906,
+     "peak_rss_mb": 142.787109375,
+     "cost_over_bl0a": 0.7479564490112904,
+     "note": null
+    },
+    {
+     "point": "e7r_V2_SML",
+     "base": "e7r",
+     "menu": "reduced",
+     "V": 2,
+     "llms": [
+      "S",
+      "M",
+      "L"
+     ],
+     "n_sites": 50,
+     "n_units": 718.5,
+     "sites_x_llms": 150,
+     "key": "a6",
+     "label": "Two-timescale PD",
+     "slow_loop_s_per_h": 0.1926234107425747,
+     "fast_loop_s_per_h": 0.07187754853900212,
+     "setup_s": 0.3083433178253472,
+     "slow_step_p50_s": 0.006714777206070721,
+     "slow_step_p99_s": 0.12599949892144646,
+     "slow_step_max_s": 0.1540647300425917,
+     "fast_step_p99_s": 0.0048140815226361145,
+     "peak_rss_mb": 142.423828125,
+     "cost_over_bl0a": 0.9574589167516341,
+     "note": null
+    },
+    {
+     "point": "e7r_V4_SML",
+     "base": "e7r",
+     "menu": "reduced",
+     "V": 4,
+     "llms": [
+      "S",
+      "M",
+      "L"
+     ],
+     "n_sites": 92,
+     "n_units": 1382.5,
+     "sites_x_llms": 276,
+     "key": "sublet_ms4",
+     "label": "Lagged RetroRenting + one-way guard ($B_0=10\\%$ of the all-fallback bill)",
+     "slow_loop_s_per_h": 0.5306317967673142,
+     "fast_loop_s_per_h": 0.07560743328455524,
+     "setup_s": 0.28499383735470474,
+     "slow_step_p50_s": 0.01685779250692576,
+     "slow_step_p99_s": 0.38380328005645414,
+     "slow_step_max_s": 0.4454241639468819,
+     "fast_step_p99_s": 0.005083435166161507,
+     "peak_rss_mb": 144.228515625,
+     "cost_over_bl0a": 0.7212250652394826,
+     "note": null
+    },
+    {
+     "point": "e7r_V4_SML",
+     "base": "e7r",
+     "menu": "reduced",
+     "V": 4,
+     "llms": [
+      "S",
+      "M",
+      "L"
+     ],
+     "n_sites": 92,
+     "n_units": 1382.5,
+     "sites_x_llms": 276,
+     "key": "a6",
+     "label": "Two-timescale PD",
+     "slow_loop_s_per_h": 0.37662921466593013,
+     "fast_loop_s_per_h": 0.09273331754957326,
+     "setup_s": 0.3722623416688293,
+     "slow_step_p50_s": 0.012813706533052027,
+     "slow_step_p99_s": 0.23334789727115998,
+     "slow_step_max_s": 0.27248981641605496,
+     "fast_step_p99_s": 0.005129667024593798,
+     "peak_rss_mb": 144.0,
+     "cost_over_bl0a": 0.9017187626912868,
+     "note": null
+    },
+    {
+     "point": "e7r_V8_SML",
+     "base": "e7r",
+     "menu": "reduced",
+     "V": 8,
+     "llms": [
+      "S",
+      "M",
+      "L"
+     ],
+     "n_sites": 175,
+     "n_units": 2693.5,
+     "sites_x_llms": 525,
+     "key": "sublet_ms4",
+     "label": "Lagged RetroRenting + one-way guard ($B_0=10\\%$ of the all-fallback bill)",
+     "slow_loop_s_per_h": 1.1407457719809222,
+     "fast_loop_s_per_h": 0.09287081497798985,
+     "setup_s": 0.29312822688370943,
+     "slow_step_p50_s": 0.035276639624498785,
+     "slow_step_p99_s": 0.8381989353499368,
+     "slow_step_max_s": 1.0345805725082755,
+     "fast_step_p99_s": 0.005513041806407271,
+     "peak_rss_mb": 153.072265625,
+     "cost_over_bl0a": 0.7039897297693782,
+     "note": null
+    },
+    {
+     "point": "e7r_V8_SML",
+     "base": "e7r",
+     "menu": "reduced",
+     "V": 8,
+     "llms": [
+      "S",
+      "M",
+      "L"
+     ],
+     "n_sites": 175,
+     "n_units": 2693.5,
+     "sites_x_llms": 525,
+     "key": "a6",
+     "label": "Two-timescale PD",
+     "slow_loop_s_per_h": 0.7259618629274579,
+     "fast_loop_s_per_h": 0.10672559743397869,
+     "setup_s": 0.593753919005394,
+     "slow_step_p50_s": 0.02457934501580894,
+     "slow_step_p99_s": 0.412495701482985,
+     "slow_step_max_s": 0.5238068751059473,
+     "fast_step_p99_s": 0.0054015068244189016,
+     "peak_rss_mb": 149.54296875,
+     "cost_over_bl0a": 0.8853623774676129,
+     "note": null
+    },
+    {
+     "point": "e7r_V16_SML",
+     "base": "e7r",
+     "menu": "reduced",
+     "V": 16,
+     "llms": [
+      "S",
+      "M",
+      "L"
+     ],
+     "n_sites": 335,
+     "n_units": 5223.0,
+     "sites_x_llms": 1005,
+     "key": "sublet_ms4",
+     "label": "Lagged RetroRenting + one-way guard ($B_0=10\\%$ of the all-fallback bill)",
+     "slow_loop_s_per_h": 2.7869359567121137,
+     "fast_loop_s_per_h": 0.10984946738850947,
+     "setup_s": 0.31335452990606427,
+     "slow_step_p50_s": 0.07863871962763369,
+     "slow_step_p99_s": 2.017450223090126,
+     "slow_step_max_s": 3.3036057124845684,
+     "fast_step_p99_s": 0.006446457530837502,
+     "peak_rss_mb": 166.77734375,
+     "cost_over_bl0a": 0.6940516300470948,
+     "note": null
+    },
+    {
+     "point": "e7r_V16_SML",
+     "base": "e7r",
+     "menu": "reduced",
+     "V": 16,
+     "llms": [
+      "S",
+      "M",
+      "L"
+     ],
+     "n_sites": 335,
+     "n_units": 5223.0,
+     "sites_x_llms": 1005,
+     "key": "a6",
+     "label": "Two-timescale PD",
+     "slow_loop_s_per_h": 1.524090588267427,
+     "fast_loop_s_per_h": 0.11531527502423462,
+     "setup_s": 1.3866514870896935,
+     "slow_step_p50_s": 0.054651075159199536,
+     "slow_step_p99_s": 0.7952083836030212,
+     "slow_step_max_s": 0.9035746252629906,
+     "fast_step_p99_s": 0.005624088328331707,
+     "peak_rss_mb": 160.48046875,
+     "cost_over_bl0a": 0.9162628173856857,
+     "note": null
+    },
+    {
+     "point": "e7r_V32_SML",
+     "base": "e7r",
+     "menu": "reduced",
+     "V": 32,
+     "llms": [
+      "S",
+      "M",
+      "L"
+     ],
+     "n_sites": 655,
+     "n_units": 10278.5,
+     "sites_x_llms": 1965,
+     "key": "sublet_ms4",
+     "label": "Lagged RetroRenting + one-way guard ($B_0=10\\%$ of the all-fallback bill)",
+     "slow_loop_s_per_h": 7.865859184802199,
+     "fast_loop_s_per_h": 0.13400801104338217,
+     "setup_s": 0.34801028692163527,
+     "slow_step_p50_s": 0.17656209447886795,
+     "slow_step_p99_s": 5.563081624580075,
+     "slow_step_max_s": 17.635734104551375,
+     "fast_step_p99_s": 0.00841092630755153,
+     "peak_rss_mb": 195.44921875,
+     "cost_over_bl0a": 0.6922332292045819,
+     "note": null
+    },
+    {
+     "point": "e7r_V32_SML",
+     "base": "e7r",
+     "menu": "reduced",
+     "V": 32,
+     "llms": [
+      "S",
+      "M",
+      "L"
+     ],
+     "n_sites": 655,
+     "n_units": 10278.5,
+     "sites_x_llms": 1965,
+     "key": "a6",
+     "label": "Two-timescale PD",
+     "slow_loop_s_per_h": 3.3642450095891645,
+     "fast_loop_s_per_h": 0.12436336861962143,
+     "setup_s": 4.426815113518387,
+     "slow_step_p50_s": 0.12852878018748015,
+     "slow_step_p99_s": 1.7689847062341868,
+     "slow_step_max_s": 1.9537898334674537,
+     "fast_step_p99_s": 0.00579263525083661,
+     "peak_rss_mb": 179.6328125,
+     "cost_over_bl0a": 0.9395820466081918,
+     "note": null
+    },
+    {
+     "point": "e7r_V64_SML",
+     "base": "e7r",
+     "menu": "reduced",
+     "V": 64,
+     "llms": [
+      "S",
+      "M",
+      "L"
+     ],
+     "n_sites": 1295,
+     "n_units": 20391.5,
+     "sites_x_llms": 3885,
+     "key": "sublet_ms4",
+     "label": "Lagged RetroRenting + one-way guard ($B_0=10\\%$ of the all-fallback bill)",
+     "slow_loop_s_per_h": 26.375745145400288,
+     "fast_loop_s_per_h": 0.17545149128030363,
+     "setup_s": 0.41646762820892036,
+     "slow_step_p50_s": 0.4871736333006993,
+     "slow_step_p99_s": 26.556374017628812,
+     "slow_step_max_s": 125.21604415844195,
+     "fast_step_p99_s": 0.013284212995786079,
+     "peak_rss_mb": 253.201171875,
+     "cost_over_bl0a": 0.6930675831493538,
+     "note": null
+    },
+    {
+     "point": "e7r_V64_SML",
+     "base": "e7r",
+     "menu": "reduced",
+     "V": 64,
+     "llms": [
+      "S",
+      "M",
+      "L"
+     ],
+     "n_sites": 1295,
+     "n_units": 20391.5,
+     "sites_x_llms": 3885,
+     "key": "a6",
+     "label": "Two-timescale PD",
+     "slow_loop_s_per_h": 8.070080515676333,
+     "fast_loop_s_per_h": 0.1343819088166735,
+     "setup_s": 15.911881170002744,
+     "slow_step_p50_s": 0.32284132950007915,
+     "slow_step_p99_s": 4.477912157594691,
+     "slow_step_max_s": 4.921007971977815,
+     "fast_step_p99_s": 0.006120021250098943,
+     "peak_rss_mb": 222.3125,
+     "cost_over_bl0a": 0.9479460256322393,
+     "note": null
+    }
+   ],
+   "lp": [
+    {
+     "point": "e7r_V1_SML",
+     "base": "e7r",
+     "menu": "reduced",
+     "V": 1,
+     "llms": [
+      "S",
+      "M",
+      "L"
+     ],
+     "sites_x_llms": 84,
+     "n_vars": 259030.0,
+     "nnz": 1060474.0,
+     "n_sites_merged": 28.0,
+     "solve_s": 15.271410764660686,
+     "s_per_h": 0.64266082837518,
+     "peak_rss_mb": 675.169921875,
+     "objective_over_bl0a": 0.4366202852784939,
+     "n_sites_merged_min": 28.0,
+     "n_sites_merged_max": 28.0,
+     "note": null
+    },
+    {
+     "point": "e7r_V2_SML",
+     "base": "e7r",
+     "menu": "reduced",
+     "V": 2,
+     "llms": [
+      "S",
+      "M",
+      "L"
+     ],
+     "sites_x_llms": 150,
+     "n_vars": 404935.0,
+     "nnz": 1702066.0,
+     "n_sites_merged": 41.5,
+     "solve_s": 41.85586090059951,
+     "s_per_h": 1.7538745451699165,
+     "peak_rss_mb": 947.57421875,
+     "objective_over_bl0a": 0.4350317556455634,
+     "n_sites_merged_min": 36.0,
+     "n_sites_merged_max": 46.0,
+     "note": null
+    },
+    {
+     "point": "e7r_V4_SML",
+     "base": "e7r",
+     "menu": "reduced",
+     "V": 4,
+     "llms": [
+      "S",
+      "M",
+      "L"
+     ],
+     "sites_x_llms": 276,
+     "n_vars": 604693.0,
+     "nnz": 2568583.0,
+     "n_sites_merged": 59.5,
+     "solve_s": 90.67986302636564,
+     "s_per_h": 3.792754124267958,
+     "peak_rss_mb": 1351.943359375,
+     "objective_over_bl0a": 0.4337627451898459,
+     "n_sites_merged_min": 49.0,
+     "n_sites_merged_max": 64.0,
+     "note": null
+    },
+    {
+     "point": "e7r_V8_SML",
+     "base": "e7r",
+     "menu": "reduced",
+     "V": 8,
+     "llms": [
+      "S",
+      "M",
+      "L"
+     ],
+     "sites_x_llms": 525,
+     "n_vars": 858695.5,
+     "nnz": 3668575.5,
+     "n_sites_merged": 81.5,
+     "solve_s": 186.85625179065391,
+     "s_per_h": 7.805315837593905,
+     "peak_rss_mb": 1854.955078125,
+     "objective_over_bl0a": 0.43249369001497984,
+     "n_sites_merged_min": 65.0,
+     "n_sites_merged_max": 84.0,
+     "note": null
+    },
+    {
+     "point": "e7r_V16_SML",
+     "base": "e7r",
+     "menu": "reduced",
+     "V": 16,
+     "llms": [
+      "S",
+      "M",
+      "L"
+     ],
+     "sites_x_llms": 1005,
+     "n_vars": 973548.0,
+     "nnz": 4203931.0,
+     "n_sites_merged": 94.5,
+     "solve_s": 245.10864367801696,
+     "s_per_h": 10.235309203863533,
+     "peak_rss_mb": 2038.0,
+     "objective_over_bl0a": 0.43184375417042037,
+     "n_sites_merged_min": 76.0,
+     "n_sites_merged_max": 97.0,
+     "note": null
+    },
+    {
+     "point": "e7r_V32_SML",
+     "base": "e7r",
+     "menu": "reduced",
+     "V": 32,
+     "llms": [
+      "S",
+      "M",
+      "L"
+     ],
+     "sites_x_llms": 1965,
+     "n_vars": 1040560.0,
+     "nnz": 4514170.0,
+     "n_sites_merged": 101.5,
+     "solve_s": 314.88652457180433,
+     "s_per_h": 13.144459804471504,
+     "peak_rss_mb": 2158.88671875,
+     "objective_over_bl0a": 0.4315765624518187,
+     "n_sites_merged_min": 80.0,
+     "n_sites_merged_max": 110.0,
+     "note": null
+    },
+    {
+     "point": "e7r_V64_SML",
+     "base": "e7r",
+     "menu": "reduced",
+     "V": 64,
+     "llms": [
+      "S",
+      "M",
+      "L"
+     ],
+     "sites_x_llms": 3885,
+     "n_vars": 1040560.0,
+     "nnz": 4514170.0,
+     "n_sites_merged": 101.5,
+     "solve_s": 337.35952125745825,
+     "s_per_h": 14.080812277747707,
+     "peak_rss_mb": 2163.142578125,
+     "objective_over_bl0a": 0.4314522510261465,
+     "n_sites_merged_min": 80.0,
+     "n_sites_merged_max": 110.0,
+     "note": null
+    }
+   ]
+  },
+  "lp_completed": {
+   "e7r_V32_SML": {
+    "V": 32,
+    "alignments": [
+     2
+    ]
+   },
+   "e7r_V64_SML": {
+    "V": 64,
+    "alignments": [
+     2
+    ]
+   }
+  },
+  "grid": {
+   "alignments": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "policy_seed": 0,
+   "horizon_min": 1440.0,
+   "revocable_contracts": {
+    "e7f": [
+     20
+    ],
+    "e7r": [
+     3
+    ]
+   },
+   "llm_axis_points": [
+    "e7f_V8_S",
+    "e7f_V8_ML"
+   ],
+   "lp_gate_mb": 2800.0
+  },
+  "no_lp_a": {
+   "points": [
+    "e7f_V1_SML",
+    "e7f_V2_SML",
+    "e7f_V4_SML",
+    "e7f_V8_SML",
+    "e7f_V16_SML",
+    "e7f_V32_SML",
+    "e7f_V64_SML"
+   ],
+   "est_mb_lp": [
+    4906.29298,
+    7819.33486,
+    11476.36606,
+    16141.30618,
+    19530.48928,
+    22449.40852,
+    22449.40852
+   ],
+   "cap_mb": 3072.0
+  },
+  "load": {
+   "n_jobs": 156,
+   "median": 1.4248046875,
+   "max": 3.9951171875
+  },
+  "meta": {
+   "git_revision": "622cf450266ed08609c0958193131e62070450e2",
+   "reduced": false,
+   "host": "host"
+  },
+  "sources": [
+   "code/sim/out/e9/summary.json",
+   "code/sim/out/ms5spec/e9_lp_gated.json",
+   "code/sim/out/ms5spec/e9_sizing_grid.json"
+  ],
+  "labels": {
+   "x": "Sites \u00d7 LLMs",
+   "a_y": "Wall time per\nsimulated hour (s)",
+   "c_y": "Slow-step P99 (s)",
+   "titles": {
+    "a": "Full menu",
+    "b": "Reduced menu",
+    "c": "Slow steps, full menu"
+   },
+   "slow": "slow loop",
+   "fast": "fast loop",
+   "lp": "LP solve time",
+   "real_time": "real time",
+   "slot": "5-min slot",
+   "moved": {
+    "slow": "lines with markers: the slow loops",
+    "fast": "lines with small markers: the fast loops",
+    "lp": "black dashed: the LP bound"
+   },
+   "moved_rule": "a direct label that fits nowhere next to its line moves to the caption (M25)",
+   "caption": "Wall time per simulated hour against sites \u00d7 LLMs (one day per run; medians over 4 alignments at policy seed 0, with the range over the alignments as bars and, for the LP, as a grey band; invariant checks on; the host's 1-min load average at a job's start: median 1.42, at most 4.00). The points are, from left to right, $V$ = 1, 2, 4, 8, 16, 32 and 64 layers per trace lender. (a) The full menu of E7 (20 revocable contracts) and (b) the reduced menu (3): the slow loop (lines with markers) and the fast loop (lines with small markers) of each policy; the setup per run (build, inputs, construction and reset) is left out and given in Table~\\ref{tab:e9-steps}. (b) also gives the time to build and solve the LP bound over the day, divided by its simulated hours (black dashed; the merged relaxation on the slow grid). (a) has no LP bound: on the full menu the LP's estimated memory, at least 4.8 GB, exceeds the 3 GB cap of a job. (c) The slow-step P99 on the full menu. Grey: real time (3,600 s per simulated hour) and the 5-min slow slot. The two fast loops cross between $V$ = 16 and 32 and differ by at most 31% from $V$ = 16 on; where they meet, the line of Lagged RetroRenting + one-way guard ($B_0=10\\%$ of the all-fallback bill), drawn last, covers the other. At $V$ = 32 and 64 the LP of alignment 2 was not solved in E9's run, since its estimated memory exceeded the LP runs' gate of 2,800 MB; it was solved separately on the same instance and is included in the median and range.",
+   "load": "; the host's 1-min load average at a job's start: median {med:.2f}, at most {max:.2f}",
+   "no_lp": " (a) has no LP bound: on the full menu the LP's estimated memory, at least {est_gb:.1f} GB, exceeds the {cap_gb:g} GB cap of a job.",
+   "crossing": "The two fast loops cross between $V$ = {v0} and {v1}{where} and differ by at most {pct:.0f}% from $V$ = {v0} on; where they meet, the line of {top}, drawn last, covers the other."
+  },
+  "layout": {
+   "moved": [],
+   "rule": "a direct label that fits nowhere next to its line moves to the caption (M25)"
+  }
+ }
+}

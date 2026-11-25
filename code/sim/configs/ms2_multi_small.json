@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "name": "ms2_multi_small",
+  "seed": 3,
+  "time": {"slow_slot_min": 5, "fast_slot_min": 1, "horizon_min": 1440, "start_minute_of_week": 0},
+  "billing": "prepaid_D",
+  "prices": {"a0_usd_per_gpu_h": "a11", "q_gpu_usd_per_gpu_h": "a11", "a_protected_usd_per_gpu_h": "a11",
+             "revocable_price": "ir", "buffer_quantile": "p99"},
+  "contracts": [
+    {"id": "s5_tau5_H2", "tau_min": 5, "H_min": 2},
+    {"id": "s5_tau5_H60", "tau_min": 5, "H_min": 60},
+    {"id": "protected", "tau_min": null, "H_min": 0, "prepaid_min": 5}
+  ],
+  "llms": [
+    {"id": "M", "catalog": "explicit", "tier": "M", "g": 1, "w_GB": 60.0,
+     "kappa_wtok_per_min": 219428.5714, "w_in": 0.3048, "T_dr_s": 28.49},
+    {"id": "M2", "catalog": "explicit", "tier": "M", "g": 2, "w_GB": 60.0,
+     "kappa_wtok_per_min": 219428.5714, "w_in": 0.3048, "T_dr_s": 28.49}
+  ],
+  "lender_defaults": {"kind": "trace", "n_layers": 2, "layer_gpus": 8, "lease_size_quantile": 25,
+                      "offset": 0, "load_scenario": "auto", "menu": ["s5_tau5_H2", "s5_tau5_H60"]},
+  "lenders": [
+    {"id": "X0", "region": "europe", "group": "gX0",
+     "series_values": [44, 48, 52, 54, 55, 54, 53, 50, 49, 48, 48, 49, 51, 54, 56, 58, 59, 58, 55, 52, 48, 44, 41, 39, 39, 40, 41, 43, 44, 44, 43, 40, 37, 33, 30, 28, 28, 29, 32, 35, 38, 41, 43, 44, 43, 42, 40, 39, 38, 39, 42, 45, 49, 53, 56, 58, 58, 57, 55, 52, 50, 48, 48, 48, 50, 52, 54, 55, 55, 53, 51, 47, 43, 39, 36, 34, 34, 35, 37, 39, 40, 41, 40, 38, 35, 33, 30, 29, 29, 31, 34, 38, 42, 45, 47, 48, 48, 47, 45, 44, 43, 44, 46, 49, 53, 56, 59, 60, 60, 58, 55, 52, 49, 46, 45, 45, 46, 48, 49, 50, 50, 48, 45, 42, 38, 34, 31, 30, 30, 32, 34, 37, 39, 40, 40, 39, 37, 35, 33, 32, 33, 35, 39, 43]},
+    {"id": "X1", "region": "europe", "group": "gX1",
+     "series_values": [58, 58, 57, 55, 51, 47, 43, 41, 39, 39, 40, 41, 43, 44, 44, 42, 40, 36, 33, 30, 28, 28, 29, 32, 35, 38, 41, 43, 44, 43, 42, 40, 39, 39, 40, 42, 46, 50, 53, 56, 58, 58, 57, 55, 52, 50, 48, 48, 48, 50, 52, 54, 55, 55, 53, 50, 46, 42, 38, 35, 34, 34, 35, 37, 39, 40, 41, 40, 38, 35, 33, 30, 29, 30, 31, 35, 38, 42, 46, 48, 49, 48, 47, 45, 44, 44, 44, 47, 50, 53, 56, 59, 60, 60, 58, 55, 51, 48, 46, 45, 45, 46, 48, 49, 50, 50, 48, 45, 41, 37, 34, 31, 30, 30, 32, 34, 37, 39, 40, 40, 39, 37, 35, 33, 33, 33, 36, 39, 43, 47, 51, 53, 54, 53, 52, 50, 48, 47, 47, 49, 51, 54, 57, 59]},
+    {"id": "X2", "region": "north_america", "group": "gX2",
+     "series_values": [40, 37, 33, 30, 28, 28, 29, 32, 35, 38, 41, 43, 43, 42, 41, 39, 38, 38, 39, 41, 45, 49, 53, 56, 58, 58, 57, 54, 52, 50, 48, 48, 49, 51, 53, 55, 56, 55, 54, 51, 47, 43, 39, 36, 35, 35, 36, 38, 40, 41, 41, 40, 38, 35, 32, 30, 29, 29, 31, 34, 38, 42, 45, 47, 48, 47, 46, 44, 43, 43, 44, 46, 49, 53, 56, 59, 60, 59, 58, 55, 52, 49, 47, 46, 46, 47, 49, 50, 51, 51, 49, 46, 42, 38, 34, 32, 31, 31, 33, 35, 37, 39, 40, 40, 38, 36, 34, 32, 32, 33, 35, 39, 43, 47, 50, 52, 53, 52, 51, 49, 47, 47, 47, 49, 51, 54, 57, 59, 59, 58, 56, 52, 49, 45, 43, 41, 41, 42, 44, 45, 46, 46, 44, 41]}
+  ],
+  "protected_per_region": {"enabled": true, "menu": ["protected"], "capacity_gpus": null,
+                           "load_scenario": "a5_2GBps"},
+  "lender_model": {"schedule": "trace", "information": "I1", "on_unavailable": "sell", "violations": "absorb",
+                   "merge_identical_layers": false, "params": {}},
+  "regions": {"list": ["europe", "north_america"], "adjacency": [["europe", "north_america"]],
+              "default_slo_class": "strict", "relaxed_routing_cost_over_q": 0.05},
+  "borrowers": {"model": "explicit", "clients": [
+    {"llm": "M", "region": "europe", "slo_class": "strict", "borrowers": ["b0"],
+     "demand": {"kind": "onoff", "on_mean_min": 60, "off_mean_min": 30, "level": 1.5, "seed": 1}},
+    {"llm": "M", "region": "north_america", "slo_class": "relaxed", "borrowers": ["b1"],
+     "demand": {"kind": "onoff", "on_mean_min": 90, "off_mean_min": 45, "level": 0.75, "seed": 2}},
+    {"llm": "M2", "region": "europe", "slo_class": "relaxed", "borrowers": ["b2"],
+     "demand": {"kind": "onoff", "on_mean_min": 45, "off_mean_min": 30, "level": 1.0, "seed": 3}},
+    {"llm": "M2", "region": "north_america", "slo_class": "strict", "borrowers": ["b3"],
+     "demand": {"kind": "onoff", "on_mean_min": 120, "off_mean_min": 60, "level": 0.5, "seed": 4}}]},
+  "costs": {"phi": 1.0, "beta_jl_usd": 0.0},
+  "stranding": {"mu_over_beta_tilde": 1.0, "kv_share": 0.0, "mu_fl_over_beta_tilde": 0.0, "pi_over_q": 0.0,
+                "W_f_min": 0, "beta_tilde_ref": {"price": "a0", "load_time": "median_site"}},
+  "units": {"per_replica": 4},
+  "engine": {"auto_drain": false, "record_routing": false, "check_invariants": true},
+  "bench": {"grid": "slow", "time_limit_s": 60, "mip_rel_gap": 1e-9, "max_vars": 200000}
+}

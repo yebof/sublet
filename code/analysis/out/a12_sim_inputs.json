@@ -1,0 +1,1008 @@
+{
+ "meta": {
+  "description": "Simulator inputs that no other analysis output provides (design/sim_spec.md \u00a73.9; design \u00a75.2).",
+  "minute_s": 60,
+  "npz": "a12_minute_io.npz: float64 <name>__in, <name>__out, <name>__req per minute",
+  "maas_week_days": [
+   140,
+   146
+  ]
+ },
+ "series": {
+  "azure2024_code": {
+   "n_minutes": 10080,
+   "start_utc": "2024-05-10T00:00:00.009930+00:00",
+   "rows": 16803695,
+   "raw_time_order_non_decreasing": true,
+   "totals": {
+    "in_tokens": 42198710773,
+    "out_tokens": 381271302,
+    "requests": 16803695
+   }
+  },
+  "azure2024_conv": {
+   "n_minutes": 10080,
+   "start_utc": "2024-05-12T00:00:00.001163+00:00",
+   "rows": 27303999,
+   "raw_time_order_non_decreasing": true,
+   "totals": {
+    "in_tokens": 44548646118,
+    "out_tokens": 2880822750,
+    "requests": 27303999
+   }
+  },
+  "burstgpt_1": {
+   "n_minutes": 87833,
+   "start_utc": "relative",
+   "rows_file": 1429737,
+   "rows_response_gt_0": 1404294,
+   "raw_time_order_non_decreasing": true,
+   "split_rows": {
+    "burstgpt_1__ChatGPT__conv": 97418,
+    "burstgpt_1__ChatGPT__api": 1091749,
+    "burstgpt_1__GPT-4__conv": 48289,
+    "burstgpt_1__GPT-4__api": 166838
+   },
+   "totals": {
+    "in_tokens": 872973440,
+    "out_tokens": 176278813,
+    "requests": 1404294
+   }
+  },
+  "burstgpt_1__ChatGPT__conv": {
+   "n_minutes": 87833,
+   "start_utc": "relative",
+   "rows": 97418,
+   "split_of": "burstgpt_1",
+   "totals": {
+    "in_tokens": 70857675,
+    "out_tokens": 25649939,
+    "requests": 97418
+   }
+  },
+  "burstgpt_1__ChatGPT__api": {
+   "n_minutes": 87833,
+   "start_utc": "relative",
+   "rows": 1091749,
+   "split_of": "burstgpt_1",
+   "totals": {
+    "in_tokens": 659985114,
+    "out_tokens": 103548990,
+    "requests": 1091749
+   }
+  },
+  "burstgpt_1__GPT-4__conv": {
+   "n_minutes": 87833,
+   "start_utc": "relative",
+   "rows": 48289,
+   "split_of": "burstgpt_1",
+   "totals": {
+    "in_tokens": 39994908,
+    "out_tokens": 12957188,
+    "requests": 48289
+   }
+  },
+  "burstgpt_1__GPT-4__api": {
+   "n_minutes": 87833,
+   "start_utc": "relative",
+   "rows": 166838,
+   "split_of": "burstgpt_1",
+   "totals": {
+    "in_tokens": 102135743,
+    "out_tokens": 34122696,
+    "requests": 166838
+   }
+  },
+  "burstgpt_2": {
+   "n_minutes": 86400,
+   "start_utc": "relative",
+   "rows_file": 3858436,
+   "rows_response_gt_0": 3784213,
+   "raw_time_order_non_decreasing": true,
+   "split_rows": {
+    "burstgpt_2__ChatGPT__conv": 55319,
+    "burstgpt_2__ChatGPT__api": 3641545,
+    "burstgpt_2__GPT-4__conv": 24126,
+    "burstgpt_2__GPT-4__api": 63223
+   },
+   "totals": {
+    "in_tokens": 990841244,
+    "out_tokens": 135429771,
+    "requests": 3784213
+   }
+  },
+  "burstgpt_2__ChatGPT__conv": {
+   "n_minutes": 86400,
+   "start_utc": "relative",
+   "rows": 55319,
+   "split_of": "burstgpt_2",
+   "totals": {
+    "in_tokens": 40734443,
+    "out_tokens": 11187676,
+    "requests": 55319
+   }
+  },
+  "burstgpt_2__ChatGPT__api": {
+   "n_minutes": 86400,
+   "start_utc": "relative",
+   "rows": 3641545,
+   "split_of": "burstgpt_2",
+   "totals": {
+    "in_tokens": 883407341,
+    "out_tokens": 93761809,
+    "requests": 3641545
+   }
+  },
+  "burstgpt_2__GPT-4__conv": {
+   "n_minutes": 86400,
+   "start_utc": "relative",
+   "rows": 24126,
+   "split_of": "burstgpt_2",
+   "totals": {
+    "in_tokens": 27158880,
+    "out_tokens": 9721086,
+    "requests": 24126
+   }
+  },
+  "burstgpt_2__GPT-4__api": {
+   "n_minutes": 86400,
+   "start_utc": "relative",
+   "rows": 63223,
+   "split_of": "burstgpt_2",
+   "totals": {
+    "in_tokens": 39540580,
+    "out_tokens": 20759200,
+    "requests": 63223
+   }
+  },
+  "burstgpt_3": {
+   "n_minutes": 158398,
+   "start_utc": "relative",
+   "rows_file": 5344021,
+   "rows_response_gt_0": 4956058,
+   "raw_time_order_non_decreasing": true,
+   "split_rows": {
+    "burstgpt_3__ChatGPT__conv": 157278,
+    "burstgpt_3__ChatGPT__api": 4044244,
+    "burstgpt_3__GPT-4__conv": 74483,
+    "burstgpt_3__GPT-4__api": 680053
+   },
+   "totals": {
+    "in_tokens": 2555498915,
+    "out_tokens": 415893390,
+    "requests": 4956058
+   }
+  },
+  "burstgpt_3__ChatGPT__conv": {
+   "n_minutes": 158398,
+   "start_utc": "relative",
+   "rows": 157278,
+   "split_of": "burstgpt_3",
+   "totals": {
+    "in_tokens": 124070605,
+    "out_tokens": 31309345,
+    "requests": 157278
+   }
+  },
+  "burstgpt_3__ChatGPT__api": {
+   "n_minutes": 158398,
+   "start_utc": "relative",
+   "rows": 4044244,
+   "split_of": "burstgpt_3",
+   "totals": {
+    "in_tokens": 1578283325,
+    "out_tokens": 230527209,
+    "requests": 4044244
+   }
+  },
+  "burstgpt_3__GPT-4__conv": {
+   "n_minutes": 158398,
+   "start_utc": "relative",
+   "rows": 74483,
+   "split_of": "burstgpt_3",
+   "totals": {
+    "in_tokens": 98481960,
+    "out_tokens": 32230160,
+    "requests": 74483
+   }
+  },
+  "burstgpt_3__GPT-4__api": {
+   "n_minutes": 158398,
+   "start_utc": "relative",
+   "rows": 680053,
+   "split_of": "burstgpt_3",
+   "totals": {
+    "in_tokens": 754663025,
+    "out_tokens": 121826676,
+    "requests": 680053
+   }
+  }
+ },
+ "checks": {
+  "reproduce_a3": {
+   "azure2024_code": {
+    "max_abs_diff": 0.0
+   },
+   "azure2024_conv": {
+    "max_abs_diff": 0.0
+   },
+   "burstgpt_1": {
+    "max_abs_diff": 0.0
+   },
+   "burstgpt_2": {
+    "max_abs_diff": 0.0
+   },
+   "burstgpt_3": {
+    "max_abs_diff": 0.0
+   },
+   "burstgpt_total_equals_request_plus_response": {
+    "burstgpt_1": true,
+    "burstgpt_2": true,
+    "burstgpt_3": true
+   }
+  },
+  "burstgpt_total_tokens": {
+   "burstgpt_1": {
+    "rows": 1429737,
+    "rows_total_ne_request_plus_response": 0,
+    "rows_response_gt_0_total_ne_request_plus_response": 0,
+    "total_equals_request_plus_response_every_row": true,
+    "total_equals_request_plus_response_rows_used": true
+   },
+   "burstgpt_2": {
+    "rows": 3858436,
+    "rows_total_ne_request_plus_response": 0,
+    "rows_response_gt_0_total_ne_request_plus_response": 0,
+    "total_equals_request_plus_response_every_row": true,
+    "total_equals_request_plus_response_rows_used": true
+   },
+   "burstgpt_3": {
+    "rows": 5344021,
+    "rows_total_ne_request_plus_response": 0,
+    "rows_response_gt_0_total_ne_request_plus_response": 0,
+    "total_equals_request_plus_response_every_row": true,
+    "total_equals_request_plus_response_rows_used": true
+   }
+  },
+  "burstgpt_splits_sum_to_unsplit_max_abs_diff": {
+   "burstgpt_1": {
+    "in": 0.0,
+    "out": 0.0,
+    "req": 0.0
+   },
+   "burstgpt_2": {
+    "in": 0.0,
+    "out": 0.0,
+    "req": 0.0
+   },
+   "burstgpt_3": {
+    "in": 0.0,
+    "out": 0.0,
+    "req": 0.0
+   }
+  },
+  "maas_site_id": {
+   "n_clusters": 20,
+   "n_with_one_site_id": 15,
+   "clusters_with_several_site_ids": [
+    "c00",
+    "c01",
+    "c06",
+    "c13",
+    "c16"
+   ],
+   "rule": "site_id = the cluster's only site_id; a cluster with several site_ids goes to the site with the largest share of its mean slack over days 140-146 (per site C_s - a_on,s(t), C_s = max_t a_all,s(t), from instance_week_5min with each instance's site_id in the instance_daily rows of its cluster; sim_spec \u00a710 S34); the site sums reproduce a2_slack_series.npz exactly (asserted). site_shares holds every share. sim_spec \u00a73.9 asserts one site_id per cluster, which holds only for n_with_one_site_id clusters"
+  }
+ },
+ "maas_clusters": [
+  {
+   "npz_key": "c00",
+   "cluster_id": "cluster_2bd9e6ddd08fe67eda7ec3814016a1db71ae229fbb3ec24eab5043b347675276",
+   "site_id": "site_a7c1032fc9d9401c5a8ffd226d5a9f7df40ad9bc3bc8acea4bc7de1f7ba7c4d2",
+   "n_site_ids": 2,
+   "site_shares": {
+    "site_fe1a1f3abb78848903f6dc1ce92ca6a9e8e9a37df8ac285b784b9ca93e3ab0c9": 0.3693948925293973,
+    "site_a7c1032fc9d9401c5a8ffd226d5a9f7df40ad9bc3bc8acea4bc7de1f7ba7c4d2": 0.6306051074706027
+   },
+   "site_share": 0.6306051074706027,
+   "site_share_online_gpu_hours_week": 0.3297519722217447,
+   "sites": [
+    {
+     "site_id": "site_fe1a1f3abb78848903f6dc1ce92ca6a9e8e9a37df8ac285b784b9ca93e3ab0c9",
+     "online_gpu_hours_week": 547142.4777777778,
+     "gpu_hours_week": 1009084.0777777776,
+     "online_gpu_hours_all": 15299482.494444463,
+     "gpu_hours_all": 29696655.02222222
+    },
+    {
+     "site_id": "site_a7c1032fc9d9401c5a8ffd226d5a9f7df40ad9bc3bc8acea4bc7de1f7ba7c4d2",
+     "online_gpu_hours_week": 269185.8888888889,
+     "gpu_hours_week": 1014206.8499999999,
+     "online_gpu_hours_all": 4900114.394444446,
+     "gpu_hours_all": 17490068.23888886
+    }
+   ]
+  },
+  {
+   "npz_key": "c01",
+   "cluster_id": "cluster_a220b7a7fd983dbc03bf85a2d744deb2743084e95ea086a456fa3526695f3443",
+   "site_id": "site_6674f8593ed921f1c7537e06c318eb036808299367b93f0779d0d1f435e4ad23",
+   "n_site_ids": 3,
+   "site_shares": {
+    "site_6674f8593ed921f1c7537e06c318eb036808299367b93f0779d0d1f435e4ad23": 0.5033707854655833,
+    "site_846d6e772fa79d9aabe2464785d5c9a0cffee3a43997b99e6287164b8f58ca38": 0.49214941416060876,
+    "site_b229b43eb5e54587dea07519f72eb55915cfe32742f9ae254a3f6057653b3874": 0.004479800373807904
+   },
+   "site_share": 0.5033707854655833,
+   "site_share_online_gpu_hours_week": 0.6045744658505735,
+   "sites": [
+    {
+     "site_id": "site_6674f8593ed921f1c7537e06c318eb036808299367b93f0779d0d1f435e4ad23",
+     "online_gpu_hours_week": 397684.34444444446,
+     "gpu_hours_week": 531615.7444444444,
+     "online_gpu_hours_all": 9529652.633333342,
+     "gpu_hours_all": 12620903.050000006
+    },
+    {
+     "site_id": "site_846d6e772fa79d9aabe2464785d5c9a0cffee3a43997b99e6287164b8f58ca38",
+     "online_gpu_hours_week": 260107.81666666668,
+     "gpu_hours_week": 463815.99444444437,
+     "online_gpu_hours_all": 8156452.327777783,
+     "gpu_hours_all": 13449436.688888885
+    },
+    {
+     "site_id": "site_b229b43eb5e54587dea07519f72eb55915cfe32742f9ae254a3f6057653b3874",
+     "online_gpu_hours_week": 0.0,
+     "gpu_hours_week": 1311.6333333333334,
+     "online_gpu_hours_all": 0.0,
+     "gpu_hours_all": 12644.488888888889
+    }
+   ]
+  },
+  {
+   "npz_key": "c02",
+   "cluster_id": "cluster_e8cb65ab4fa30f509a794dced53f792f2f11b484267d6ab58a9157ea16c7cba4",
+   "site_id": "site_e3b33cae10ea8c15c1160784b075b9690f05dde810b1fcf40998f6e10cca2d53",
+   "n_site_ids": 1,
+   "site_shares": {
+    "site_e3b33cae10ea8c15c1160784b075b9690f05dde810b1fcf40998f6e10cca2d53": 1.0
+   },
+   "site_share": 1.0,
+   "site_share_online_gpu_hours_week": 1.0,
+   "sites": [
+    {
+     "site_id": "site_e3b33cae10ea8c15c1160784b075b9690f05dde810b1fcf40998f6e10cca2d53",
+     "online_gpu_hours_week": 459353.8833333333,
+     "gpu_hours_week": 1106862.494444444,
+     "online_gpu_hours_all": 12321163.488888916,
+     "gpu_hours_all": 25244457.205555584
+    }
+   ]
+  },
+  {
+   "npz_key": "c03",
+   "cluster_id": "cluster_625d0c5078b9aeae265349f0d1e75046c7233912e7b28c64fa5cd4a8d386859a",
+   "site_id": "site_729a3482ad5bb629f1753691a8d29eca0187a5e1860d83165b5080c6a2c12ec5",
+   "n_site_ids": 1,
+   "site_shares": {
+    "site_729a3482ad5bb629f1753691a8d29eca0187a5e1860d83165b5080c6a2c12ec5": 1.0
+   },
+   "site_share": 1.0,
+   "site_share_online_gpu_hours_week": 1.0,
+   "sites": [
+    {
+     "site_id": "site_729a3482ad5bb629f1753691a8d29eca0187a5e1860d83165b5080c6a2c12ec5",
+     "online_gpu_hours_week": 399391.28888888884,
+     "gpu_hours_week": 818164.4277777777,
+     "online_gpu_hours_all": 11256956.522222228,
+     "gpu_hours_all": 20796550.92222222
+    }
+   ]
+  },
+  {
+   "npz_key": "c04",
+   "cluster_id": "cluster_e01391bcafe69718ac30789d211118bb79b5def0d7acf6fae2f0b050b466e1dd",
+   "site_id": "site_941df8d86fd9aeb89fe94d58968d015bad19dee5539a5ee36e896af6049daf8e",
+   "n_site_ids": 1,
+   "site_shares": {
+    "site_941df8d86fd9aeb89fe94d58968d015bad19dee5539a5ee36e896af6049daf8e": 1.0
+   },
+   "site_share": 1.0,
+   "site_share_online_gpu_hours_week": 1.0,
+   "sites": [
+    {
+     "site_id": "site_941df8d86fd9aeb89fe94d58968d015bad19dee5539a5ee36e896af6049daf8e",
+     "online_gpu_hours_week": 384918.0722222221,
+     "gpu_hours_week": 1021498.5999999997,
+     "online_gpu_hours_all": 11128002.688888915,
+     "gpu_hours_all": 31965798.866666663
+    }
+   ]
+  },
+  {
+   "npz_key": "c05",
+   "cluster_id": "cluster_2c2d92ac8aa87923c6c32a2924bad62220860b3ff8f43b188ce9515c12e1b779",
+   "site_id": "site_e3b33cae10ea8c15c1160784b075b9690f05dde810b1fcf40998f6e10cca2d53",
+   "n_site_ids": 1,
+   "site_shares": {
+    "site_e3b33cae10ea8c15c1160784b075b9690f05dde810b1fcf40998f6e10cca2d53": 1.0
+   },
+   "site_share": 1.0,
+   "site_share_online_gpu_hours_week": 1.0,
+   "sites": [
+    {
+     "site_id": "site_e3b33cae10ea8c15c1160784b075b9690f05dde810b1fcf40998f6e10cca2d53",
+     "online_gpu_hours_week": 266940.9222222222,
+     "gpu_hours_week": 479397.23888888885,
+     "online_gpu_hours_all": 3197946.444444444,
+     "gpu_hours_all": 11404030.288888887
+    }
+   ]
+  },
+  {
+   "npz_key": "c06",
+   "cluster_id": "cluster_bbf102251e9b0461211ff6d13c80af213f346ddcc3052517989d34fbdbbd6bda",
+   "site_id": "site_f32ff241fd6a0128c61653271a67c3e9fe20ecfa05453ffb46b725f41023fa74",
+   "n_site_ids": 9,
+   "site_shares": {
+    "site_6674f8593ed921f1c7537e06c318eb036808299367b93f0779d0d1f435e4ad23": 0.23539165729575984,
+    "site_846d6e772fa79d9aabe2464785d5c9a0cffee3a43997b99e6287164b8f58ca38": 0.13623059010709987,
+    "site_f32ff241fd6a0128c61653271a67c3e9fe20ecfa05453ffb46b725f41023fa74": 0.44213099067206474,
+    "site_9afa27d5d8649ce216056d14a68daebb7f9fabcf0da4d0b8f3778639e6160bfb": 0.0837648451973436,
+    "site_5bd94d2b58e47aac32d94db7be482bafb94aa61ea5ed30a8b883529c709ad9f2": 0.08215877344350922,
+    "site_d981515a91474ad4f32140249935e907a8bc5b805874c5b28db37770afb859cc": 0.014815817982237916,
+    "site_8b8ab298770a29a1101ab261cb4ec015bed6b21c1d24f8f20d8a10b20fec2dae": 0.0049280706077759005,
+    "site_24a05b8e995881ee448b4daab0eb362bc4ea71d1fc18b0d15318f65f5919f433": 0.0,
+    "site_d2c48e46197a463faa9c393e5d4ef1626ace1edbbe3cf1adc45b6a0103847894": 0.000579254694208976
+   },
+   "site_share": 0.44213099067206474,
+   "site_share_online_gpu_hours_week": 0.14492512518167666,
+   "sites": [
+    {
+     "site_id": "site_6674f8593ed921f1c7537e06c318eb036808299367b93f0779d0d1f435e4ad23",
+     "online_gpu_hours_week": 89166.19444444445,
+     "gpu_hours_week": 182107.7888888889,
+     "online_gpu_hours_all": 3319037.9833333315,
+     "gpu_hours_all": 4831302.444444441
+    },
+    {
+     "site_id": "site_846d6e772fa79d9aabe2464785d5c9a0cffee3a43997b99e6287164b8f58ca38",
+     "online_gpu_hours_week": 85492.75555555556,
+     "gpu_hours_week": 107177.7888888889,
+     "online_gpu_hours_all": 2139755.488888889,
+     "gpu_hours_all": 3331318.5000000005
+    },
+    {
+     "site_id": "site_f32ff241fd6a0128c61653271a67c3e9fe20ecfa05453ffb46b725f41023fa74",
+     "online_gpu_hours_week": 36099.10555555556,
+     "gpu_hours_week": 221226.46111111098,
+     "online_gpu_hours_all": 1491621.7888888894,
+     "gpu_hours_all": 6493000.58333333
+    },
+    {
+     "site_id": "site_9afa27d5d8649ce216056d14a68daebb7f9fabcf0da4d0b8f3778639e6160bfb",
+     "online_gpu_hours_week": 27714.755555555555,
+     "gpu_hours_week": 47569.683333333334,
+     "online_gpu_hours_all": 830105.4777777779,
+     "gpu_hours_all": 1362620.3333333333
+    },
+    {
+     "site_id": "site_5bd94d2b58e47aac32d94db7be482bafb94aa61ea5ed30a8b883529c709ad9f2",
+     "online_gpu_hours_week": 7133.561111111111,
+     "gpu_hours_week": 49298.822222222225,
+     "online_gpu_hours_all": 187451.1,
+     "gpu_hours_all": 1138780.116666667
+    },
+    {
+     "site_id": "site_d981515a91474ad4f32140249935e907a8bc5b805874c5b28db37770afb859cc",
+     "online_gpu_hours_week": 2730.0555555555557,
+     "gpu_hours_week": 5783.527777777777,
+     "online_gpu_hours_all": 62441.166666666664,
+     "gpu_hours_all": 156503.44444444444
+    },
+    {
+     "site_id": "site_8b8ab298770a29a1101ab261cb4ec015bed6b21c1d24f8f20d8a10b20fec2dae",
+     "online_gpu_hours_week": 751.5444444444445,
+     "gpu_hours_week": 1894.0722222222223,
+     "online_gpu_hours_all": 24943.916666666668,
+     "gpu_hours_all": 49909.05
+    },
+    {
+     "site_id": "site_24a05b8e995881ee448b4daab0eb362bc4ea71d1fc18b0d15318f65f5919f433",
+     "online_gpu_hours_week": 0.0,
+     "gpu_hours_week": 0.0,
+     "online_gpu_hours_all": 76.49444444444444,
+     "gpu_hours_all": 42698.666666666664
+    },
+    {
+     "site_id": "site_d2c48e46197a463faa9c393e5d4ef1626ace1edbbe3cf1adc45b6a0103847894",
+     "online_gpu_hours_week": 0.0,
+     "gpu_hours_week": 98.17222222222222,
+     "online_gpu_hours_all": 832.6944444444445,
+     "gpu_hours_all": 2673.238888888889
+    }
+   ]
+  },
+  {
+   "npz_key": "c07",
+   "cluster_id": "cluster_a7ce126a0af56cb39e6cfe405b63f6ebcf8fdcae9d4cf801a909ce3c7392bcc6",
+   "site_id": "site_729a3482ad5bb629f1753691a8d29eca0187a5e1860d83165b5080c6a2c12ec5",
+   "n_site_ids": 1,
+   "site_shares": {
+    "site_729a3482ad5bb629f1753691a8d29eca0187a5e1860d83165b5080c6a2c12ec5": 1.0
+   },
+   "site_share": 1.0,
+   "site_share_online_gpu_hours_week": 1.0,
+   "sites": [
+    {
+     "site_id": "site_729a3482ad5bb629f1753691a8d29eca0187a5e1860d83165b5080c6a2c12ec5",
+     "online_gpu_hours_week": 210380.4,
+     "gpu_hours_week": 331697.4111111111,
+     "online_gpu_hours_all": 5872272.372222221,
+     "gpu_hours_all": 8045103.96111111
+    }
+   ]
+  },
+  {
+   "npz_key": "c08",
+   "cluster_id": "cluster_15b6c65d2b6be2c2096c60f96fde365ae5fb240487ba698b979bee1afd725c8f",
+   "site_id": "site_8f1ad249c2b70b80298d1fe6b9f79ec441c3ff2239dc582f1ad4926170f6e6e9",
+   "n_site_ids": 1,
+   "site_shares": {
+    "site_8f1ad249c2b70b80298d1fe6b9f79ec441c3ff2239dc582f1ad4926170f6e6e9": 1.0
+   },
+   "site_share": 1.0,
+   "site_share_online_gpu_hours_week": 1.0,
+   "sites": [
+    {
+     "site_id": "site_8f1ad249c2b70b80298d1fe6b9f79ec441c3ff2239dc582f1ad4926170f6e6e9",
+     "online_gpu_hours_week": 185073.15555555554,
+     "gpu_hours_week": 362345.51666666655,
+     "online_gpu_hours_all": 4037716.827777777,
+     "gpu_hours_all": 8879006.649999993
+    }
+   ]
+  },
+  {
+   "npz_key": "c09",
+   "cluster_id": "cluster_fb59af3638db8c622bfde92a6a057e3ca55cd3a6a3694dad2021934225d10428",
+   "site_id": "site_e3b33cae10ea8c15c1160784b075b9690f05dde810b1fcf40998f6e10cca2d53",
+   "n_site_ids": 1,
+   "site_shares": {
+    "site_e3b33cae10ea8c15c1160784b075b9690f05dde810b1fcf40998f6e10cca2d53": 1.0
+   },
+   "site_share": 1.0,
+   "site_share_online_gpu_hours_week": 1.0,
+   "sites": [
+    {
+     "site_id": "site_e3b33cae10ea8c15c1160784b075b9690f05dde810b1fcf40998f6e10cca2d53",
+     "online_gpu_hours_week": 155690.07222222222,
+     "gpu_hours_week": 552290.9999999998,
+     "online_gpu_hours_all": 4760662.111111109,
+     "gpu_hours_all": 17195291.74444447
+    }
+   ]
+  },
+  {
+   "npz_key": "c10",
+   "cluster_id": "cluster_5e0f73960795106338f0c74935043adc2dd07ef8c447df7a3a699471d94105a5",
+   "site_id": "site_941df8d86fd9aeb89fe94d58968d015bad19dee5539a5ee36e896af6049daf8e",
+   "n_site_ids": 1,
+   "site_shares": {
+    "site_941df8d86fd9aeb89fe94d58968d015bad19dee5539a5ee36e896af6049daf8e": 1.0
+   },
+   "site_share": 1.0,
+   "site_share_online_gpu_hours_week": 1.0,
+   "sites": [
+    {
+     "site_id": "site_941df8d86fd9aeb89fe94d58968d015bad19dee5539a5ee36e896af6049daf8e",
+     "online_gpu_hours_week": 141252.7666666667,
+     "gpu_hours_week": 265372.35000000003,
+     "online_gpu_hours_all": 3205971.1166666667,
+     "gpu_hours_all": 6552897.116666665
+    }
+   ]
+  },
+  {
+   "npz_key": "c11",
+   "cluster_id": "cluster_b4fa42afd66f9f0272582f550aab5719b9c104c7f4fd19c9d8992d10a0e03dca",
+   "site_id": "site_8f1ad249c2b70b80298d1fe6b9f79ec441c3ff2239dc582f1ad4926170f6e6e9",
+   "n_site_ids": 1,
+   "site_shares": {
+    "site_8f1ad249c2b70b80298d1fe6b9f79ec441c3ff2239dc582f1ad4926170f6e6e9": 1.0
+   },
+   "site_share": 1.0,
+   "site_share_online_gpu_hours_week": 1.0,
+   "sites": [
+    {
+     "site_id": "site_8f1ad249c2b70b80298d1fe6b9f79ec441c3ff2239dc582f1ad4926170f6e6e9",
+     "online_gpu_hours_week": 140007.58333333334,
+     "gpu_hours_week": 365970.8222222221,
+     "online_gpu_hours_all": 3685520.649999999,
+     "gpu_hours_all": 9313491.144444438
+    }
+   ]
+  },
+  {
+   "npz_key": "c12",
+   "cluster_id": "cluster_9f1eb3ee8072734d1961cd16500a2fec8205024079893f793f9701a16ca26d7e",
+   "site_id": "site_941df8d86fd9aeb89fe94d58968d015bad19dee5539a5ee36e896af6049daf8e",
+   "n_site_ids": 1,
+   "site_shares": {
+    "site_941df8d86fd9aeb89fe94d58968d015bad19dee5539a5ee36e896af6049daf8e": 1.0
+   },
+   "site_share": 1.0,
+   "site_share_online_gpu_hours_week": 1.0,
+   "sites": [
+    {
+     "site_id": "site_941df8d86fd9aeb89fe94d58968d015bad19dee5539a5ee36e896af6049daf8e",
+     "online_gpu_hours_week": 136939.07222222222,
+     "gpu_hours_week": 297082.25,
+     "online_gpu_hours_all": 2314683.611111111,
+     "gpu_hours_all": 8994493.816666665
+    }
+   ]
+  },
+  {
+   "npz_key": "c13",
+   "cluster_id": "cluster_aa8041b8226788b31d0f7727a5ac43bfc8ba28c23d59fc80e66f35f36dd59611",
+   "site_id": "site_8f1ad249c2b70b80298d1fe6b9f79ec441c3ff2239dc582f1ad4926170f6e6e9",
+   "n_site_ids": 10,
+   "site_shares": {
+    "site_5e0fc6f81f3ba06e2ed12d813b6194232978f39f304e5108be2d34a1d132fc2b": 0.22883707778144416,
+    "site_a42ec019d238783aaadd3af667cc76e879a641f6ffa19ca0b6b6d5f75b30910b": 0.043620137205448946,
+    "site_8313a10c0bc5e0449352ef41c0fdc83c3981a6924452c651f4ad3c3a7c7b12d5": 0.18450248121718701,
+    "site_5016fc05d6d52ddbaa4d5f20183b1bdc6b1dc1e6aa3d77abb889f1aff27e7dc9": 0.0727549654814634,
+    "site_e52472abbf7cda6d29c5dbbcc4e8f4cc274aa2fc53fde77241f3f2e95427a40f": 0.016085307865723302,
+    "site_3ec6814043d6c12d436e8deaf4682e3616b3db1fbc94832115290cfcadfd43e5": 0.019132618859200756,
+    "site_4a764c7e4916478e90635dddfc49710ebb5b890bb63787327a4b3408258fa1fc": 0.033219922513070904,
+    "site_8f1ad249c2b70b80298d1fe6b9f79ec441c3ff2239dc582f1ad4926170f6e6e9": 0.4000604542534376,
+    "site_fe1a1f3abb78848903f6dc1ce92ca6a9e8e9a37df8ac285b784b9ca93e3ab0c9": 0.0017870348230239403,
+    "site_e3b33cae10ea8c15c1160784b075b9690f05dde810b1fcf40998f6e10cca2d53": 0.0
+   },
+   "site_share": 0.4000604542534376,
+   "site_share_online_gpu_hours_week": 0.004299601053222119,
+   "sites": [
+    {
+     "site_id": "site_5e0fc6f81f3ba06e2ed12d813b6194232978f39f304e5108be2d34a1d132fc2b",
+     "online_gpu_hours_week": 89761.71666666669,
+     "gpu_hours_week": 142950.22222222225,
+     "online_gpu_hours_all": 2758796.6166666667,
+     "gpu_hours_all": 3744073.3611111115
+    },
+    {
+     "site_id": "site_a42ec019d238783aaadd3af667cc76e879a641f6ffa19ca0b6b6d5f75b30910b",
+     "online_gpu_hours_week": 23394.594444444443,
+     "gpu_hours_week": 33841.194444444445,
+     "online_gpu_hours_all": 782731.6833333333,
+     "gpu_hours_all": 968248.7111111111
+    },
+    {
+     "site_id": "site_8313a10c0bc5e0449352ef41c0fdc83c3981a6924452c651f4ad3c3a7c7b12d5",
+     "online_gpu_hours_week": 13432.216666666667,
+     "gpu_hours_week": 48973.57222222222,
+     "online_gpu_hours_all": 575182.3111111112,
+     "gpu_hours_all": 1177727.5888888887
+    },
+    {
+     "site_id": "site_5016fc05d6d52ddbaa4d5f20183b1bdc6b1dc1e6aa3d77abb889f1aff27e7dc9",
+     "online_gpu_hours_week": 4389.705555555555,
+     "gpu_hours_week": 14470.466666666667,
+     "online_gpu_hours_all": 110824.05,
+     "gpu_hours_all": 271400.2666666666
+    },
+    {
+     "site_id": "site_e52472abbf7cda6d29c5dbbcc4e8f4cc274aa2fc53fde77241f3f2e95427a40f",
+     "online_gpu_hours_week": 1510.038888888889,
+     "gpu_hours_week": 3644.7333333333336,
+     "online_gpu_hours_all": 51265.22777777778,
+     "gpu_hours_all": 86373.6222222222
+    },
+    {
+     "site_id": "site_3ec6814043d6c12d436e8deaf4682e3616b3db1fbc94832115290cfcadfd43e5",
+     "online_gpu_hours_week": 1372.2555555555557,
+     "gpu_hours_week": 4214.511111111111,
+     "online_gpu_hours_all": 46435.850000000006,
+     "gpu_hours_all": 77930.33333333334
+    },
+    {
+     "site_id": "site_4a764c7e4916478e90635dddfc49710ebb5b890bb63787327a4b3408258fa1fc",
+     "online_gpu_hours_week": 611.4111111111112,
+     "gpu_hours_week": 8285.405555555555,
+     "online_gpu_hours_all": 79421.72222222222,
+     "gpu_hours_all": 224246.25555555557
+    },
+    {
+     "site_id": "site_8f1ad249c2b70b80298d1fe6b9f79ec441c3ff2239dc582f1ad4926170f6e6e9",
+     "online_gpu_hours_week": 582.1222222222223,
+     "gpu_hours_week": 41547.299999999996,
+     "online_gpu_hours_all": 22394.15,
+     "gpu_hours_all": 616113.8166666667
+    },
+    {
+     "site_id": "site_fe1a1f3abb78848903f6dc1ce92ca6a9e8e9a37df8ac285b784b9ca93e3ab0c9",
+     "online_gpu_hours_week": 335.7611111111111,
+     "gpu_hours_week": 519.9611111111111,
+     "online_gpu_hours_all": 10123.633333333333,
+     "gpu_hours_all": 13744.93888888889
+    },
+    {
+     "site_id": "site_e3b33cae10ea8c15c1160784b075b9690f05dde810b1fcf40998f6e10cca2d53",
+     "online_gpu_hours_week": 0.0,
+     "gpu_hours_week": 0.0,
+     "online_gpu_hours_all": 0.0,
+     "gpu_hours_all": 147.95555555555555
+    }
+   ]
+  },
+  {
+   "npz_key": "c14",
+   "cluster_id": "cluster_09a44fe5de192cd85155678f434c81914ac5d9e7b96425a39a2435e435fecaed",
+   "site_id": "site_941df8d86fd9aeb89fe94d58968d015bad19dee5539a5ee36e896af6049daf8e",
+   "n_site_ids": 1,
+   "site_shares": {
+    "site_941df8d86fd9aeb89fe94d58968d015bad19dee5539a5ee36e896af6049daf8e": 1.0
+   },
+   "site_share": 1.0,
+   "site_share_online_gpu_hours_week": 1.0,
+   "sites": [
+    {
+     "site_id": "site_941df8d86fd9aeb89fe94d58968d015bad19dee5539a5ee36e896af6049daf8e",
+     "online_gpu_hours_week": 129751.63333333333,
+     "gpu_hours_week": 174208.78333333333,
+     "online_gpu_hours_all": 1842287.8,
+     "gpu_hours_all": 3206047.3555555553
+    }
+   ]
+  },
+  {
+   "npz_key": "c15",
+   "cluster_id": "cluster_92eeed1e25d6d0340b9edfa102d3229a257971959264742b36e54a16297c7d2f",
+   "site_id": "site_a55805ab9458b8fa2c4ee5984bf1c84741ab6f6fafc9f6edd62a16feb4d17c85",
+   "n_site_ids": 1,
+   "site_shares": {
+    "site_a55805ab9458b8fa2c4ee5984bf1c84741ab6f6fafc9f6edd62a16feb4d17c85": 1.0
+   },
+   "site_share": 1.0,
+   "site_share_online_gpu_hours_week": 1.0,
+   "sites": [
+    {
+     "site_id": "site_a55805ab9458b8fa2c4ee5984bf1c84741ab6f6fafc9f6edd62a16feb4d17c85",
+     "online_gpu_hours_week": 110228.55555555556,
+     "gpu_hours_week": 152984.48333333334,
+     "online_gpu_hours_all": 1734925.4333333333,
+     "gpu_hours_all": 2708278.1500000004
+    }
+   ]
+  },
+  {
+   "npz_key": "c16",
+   "cluster_id": "cluster_4564acfc9bedf1c00c951747bd859215b088a6af03bcefe63fb7324c300ba195",
+   "site_id": "site_941df8d86fd9aeb89fe94d58968d015bad19dee5539a5ee36e896af6049daf8e",
+   "n_site_ids": 8,
+   "site_shares": {
+    "site_53161150c0fd1dbda3b24f6a663fd87cf1b78c529f152a2142efa3b9bfba5da0": 0.010379224332997185,
+    "site_74d1c5236b3aee7cd8aebfe05c813a0d19fff6dae3323996d52071d17f8a4e98": 0.021533546264949067,
+    "site_941df8d86fd9aeb89fe94d58968d015bad19dee5539a5ee36e896af6049daf8e": 0.7307380413951158,
+    "site_ab1a14658ef6b32716a3a6a0ca08a80ce4dd8496cdb9a13f24567ed06ad2984c": 0.035227981540962135,
+    "site_d766f665f95c385e83dc3a9ce4c16edf4517fbb5c473a37f33e18b89e90386bd": 0.1823484530945397,
+    "site_21e66d0be3b6cc2be45b3ef6281c119cdcebd603f84bfa1fa1db3853b07cac52": 0.012907214006354166,
+    "site_e74df915ee714af616cd57c8fd15f84e37e890758698549e25511b1b06c9df38": 0.006865539365082003,
+    "site_729a3482ad5bb629f1753691a8d29eca0187a5e1860d83165b5080c6a2c12ec5": 0.0
+   },
+   "site_share": 0.7307380413951158,
+   "site_share_online_gpu_hours_week": 0.1778512590775467,
+   "sites": [
+    {
+     "site_id": "site_53161150c0fd1dbda3b24f6a663fd87cf1b78c529f152a2142efa3b9bfba5da0",
+     "online_gpu_hours_week": 38647.044444444444,
+     "gpu_hours_week": 38982.42222222222,
+     "online_gpu_hours_all": 1073247.7222222225,
+     "gpu_hours_all": 1125356.4666666668
+    },
+    {
+     "site_id": "site_74d1c5236b3aee7cd8aebfe05c813a0d19fff6dae3323996d52071d17f8a4e98",
+     "online_gpu_hours_week": 36420.27777777778,
+     "gpu_hours_week": 37303.23333333334,
+     "online_gpu_hours_all": 921378.5444444446,
+     "gpu_hours_all": 1007921.1833333335
+    },
+    {
+     "site_id": "site_941df8d86fd9aeb89fe94d58968d015bad19dee5539a5ee36e896af6049daf8e",
+     "online_gpu_hours_week": 19320.455555555556,
+     "gpu_hours_week": 110916.33333333331,
+     "online_gpu_hours_all": 727561.55,
+     "gpu_hours_all": 6895035.48888886
+    },
+    {
+     "site_id": "site_ab1a14658ef6b32716a3a6a0ca08a80ce4dd8496cdb9a13f24567ed06ad2984c",
+     "online_gpu_hours_week": 11734.78888888889,
+     "gpu_hours_week": 16682.550000000003,
+     "online_gpu_hours_all": 306686.22222222225,
+     "gpu_hours_all": 419692.1055555556
+    },
+    {
+     "site_id": "site_d766f665f95c385e83dc3a9ce4c16edf4517fbb5c473a37f33e18b89e90386bd",
+     "online_gpu_hours_week": 2510.0944444444444,
+     "gpu_hours_week": 71558.61111111112,
+     "online_gpu_hours_all": 78078.75555555556,
+     "gpu_hours_all": 1472501.3944444444
+    },
+    {
+     "site_id": "site_21e66d0be3b6cc2be45b3ef6281c119cdcebd603f84bfa1fa1db3853b07cac52",
+     "online_gpu_hours_week": 0.0,
+     "gpu_hours_week": 3074.083333333333,
+     "online_gpu_hours_all": 174.58888888888887,
+     "gpu_hours_all": 65436.15555555555
+    },
+    {
+     "site_id": "site_e74df915ee714af616cd57c8fd15f84e37e890758698549e25511b1b06c9df38",
+     "online_gpu_hours_week": 0.0,
+     "gpu_hours_week": 105.57777777777778,
+     "online_gpu_hours_all": 0.0,
+     "gpu_hours_all": 1230.0333333333333
+    },
+    {
+     "site_id": "site_729a3482ad5bb629f1753691a8d29eca0187a5e1860d83165b5080c6a2c12ec5",
+     "online_gpu_hours_week": 0.0,
+     "gpu_hours_week": 0.0,
+     "online_gpu_hours_all": 0.0,
+     "gpu_hours_all": 155.63333333333333
+    }
+   ]
+  },
+  {
+   "npz_key": "c17",
+   "cluster_id": "cluster_eb2ce987686d370cc86f13d1e38ec38afb2f519b96d4f1c33606901e48994d1f",
+   "site_id": "site_729a3482ad5bb629f1753691a8d29eca0187a5e1860d83165b5080c6a2c12ec5",
+   "n_site_ids": 1,
+   "site_shares": {
+    "site_729a3482ad5bb629f1753691a8d29eca0187a5e1860d83165b5080c6a2c12ec5": 1.0
+   },
+   "site_share": 1.0,
+   "site_share_online_gpu_hours_week": 1.0,
+   "sites": [
+    {
+     "site_id": "site_729a3482ad5bb629f1753691a8d29eca0187a5e1860d83165b5080c6a2c12ec5",
+     "online_gpu_hours_week": 97348.58888888889,
+     "gpu_hours_week": 421186.71666666627,
+     "online_gpu_hours_all": 3288407.066666666,
+     "gpu_hours_all": 10240242.03333333
+    }
+   ]
+  },
+  {
+   "npz_key": "c18",
+   "cluster_id": "cluster_58ea38f997280d3be01865396556e643c2f9f9e140f521d563be192fb73bbb25",
+   "site_id": "site_941df8d86fd9aeb89fe94d58968d015bad19dee5539a5ee36e896af6049daf8e",
+   "n_site_ids": 1,
+   "site_shares": {
+    "site_941df8d86fd9aeb89fe94d58968d015bad19dee5539a5ee36e896af6049daf8e": 1.0
+   },
+   "site_share": 1.0,
+   "site_share_online_gpu_hours_week": 1.0,
+   "sites": [
+    {
+     "site_id": "site_941df8d86fd9aeb89fe94d58968d015bad19dee5539a5ee36e896af6049daf8e",
+     "online_gpu_hours_week": 91838.62777777777,
+     "gpu_hours_week": 277532.98888888885,
+     "online_gpu_hours_all": 2252312.1944444445,
+     "gpu_hours_all": 6089400.283333329
+    }
+   ]
+  },
+  {
+   "npz_key": "c19",
+   "cluster_id": "cluster_7afd9e80a2fc90ec5047aff995327d789a1c7c650cda5c9bbefb5633152146f3",
+   "site_id": "site_d6d2c40a725396a8315811bb9b54fbd18abc3a9c8c6e32c159f1714014eb2529",
+   "n_site_ids": 1,
+   "site_shares": {
+    "site_d6d2c40a725396a8315811bb9b54fbd18abc3a9c8c6e32c159f1714014eb2529": 1.0
+   },
+   "site_share": 1.0,
+   "site_share_online_gpu_hours_week": 1.0,
+   "sites": [
+    {
+     "site_id": "site_d6d2c40a725396a8315811bb9b54fbd18abc3a9c8c6e32c159f1714014eb2529",
+     "online_gpu_hours_week": 86918.49444444446,
+     "gpu_hours_week": 164447.65555555557,
+     "online_gpu_hours_all": 9878276.061111117,
+     "gpu_hours_all": 15073187.283333337
+    }
+   ]
+  }
+ ],
+ "corr_groups_dS": {
+  "threshold": 0.2,
+  "rule": "connected components of the graph on the 20 clusters (npz keys) with an edge where the Pearson correlation of the 5-min changes of a2_slack_series.npz exceeds the threshold; an alternative to the site_id grouping, recorded only (the simulator groups clusters by site_id, sim_spec \u00a710 S34)",
+  "groups": [
+   [
+    "c00"
+   ],
+   [
+    "c01"
+   ],
+   [
+    "c02",
+    "c09"
+   ],
+   [
+    "c03",
+    "c07"
+   ],
+   [
+    "c04"
+   ],
+   [
+    "c05"
+   ],
+   [
+    "c06"
+   ],
+   [
+    "c08"
+   ],
+   [
+    "c10"
+   ],
+   [
+    "c11"
+   ],
+   [
+    "c12",
+    "c14",
+    "c18"
+   ],
+   [
+    "c13"
+   ],
+   [
+    "c15"
+   ],
+   [
+    "c16"
+   ],
+   [
+    "c17"
+   ],
+   [
+    "c19"
+   ]
+  ],
+  "edges": [
+   {
+    "a": "c14",
+    "b": "c18",
+    "corr": 0.8697064117997015
+   },
+   {
+    "a": "c12",
+    "b": "c14",
+    "corr": 0.3538529933718876
+   },
+   {
+    "a": "c02",
+    "b": "c09",
+    "corr": 0.34616344941469424
+   },
+   {
+    "a": "c12",
+    "b": "c18",
+    "corr": 0.32896254474121983
+   },
+   {
+    "a": "c03",
+    "b": "c07",
+    "corr": 0.256485792470237
+   }
+  ]
+ },
+ "spot_pools": [
+  "A10",
+  "A100-SXM4-80GB",
+  "A800-SXM4-80GB",
+  "GPU-series-1",
+  "GPU-series-2",
+  "H800"
+ ]
+}

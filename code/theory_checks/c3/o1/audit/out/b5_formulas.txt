@@ -1,0 +1,7 @@
+b5: closed-form corollaries on a grid (rho in [1, 512] incl. non-integers, m in 3..1024)
+O1-A Cor.1  min LB_A(k=m) / (rho m/(2(m+rho-1)))      = 1.0020 at (rho, m) = (512.0, 3)   (claim: >= 1)
+O1-A Cor.2  min max_k LB_A / (min(rho,m)/4)            = 1.0751 at (256.0, 256)   (claim: >= 1)
+O1-C        min mu_(m,1/2) / ((1-1/e)(floor(log2 m)+1)) = 1.6299 at m = 1024   (claim: >= 1)
+O1-C Cor.1  min LB_C(1/2) / (min(rho+1, 0.63 log2 m)/4) = 1.4978 at (5.6569, 1024)   (claim: >= 1)
+I1 gap      max min(rho,2m) / max_k LB_A               = 5.817 at (512.0, 256)   (constant-factor gap of Theta(min(rho,m)))
+I2 gap      max min(rho,2H_m+1) / max_p LB_C           = 4.349 at (16, 1024)   (on the coarse grid)

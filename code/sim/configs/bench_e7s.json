@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "name": "bench_e7s",
+  "seed": 1,
+  "time": {
+    "slow_slot_min": 5,
+    "fast_slot_min": 1,
+    "horizon_min": 1440,
+    "start_minute_of_week": "random",
+    "clock_alignment": "random_offset"
+  },
+  "billing": "prepaid_D",
+  "prices": {
+    "a0_usd_per_gpu_h": "a11",
+    "q_gpu_usd_per_gpu_h": "a11",
+    "a_protected_usd_per_gpu_h": "a11",
+    "revocable_price": "ir",
+    "buffer_quantile": "p99"
+  },
+  "contracts": [
+    {
+      "id": "s5_tau5_H2",
+      "tau_min": 5,
+      "H_min": 2
+    },
+    {
+      "id": "s5_tau5_H60",
+      "tau_min": 5,
+      "H_min": 60
+    },
+    {
+      "id": "s5_tau60_H0",
+      "tau_min": 60,
+      "H_min": 0
+    },
+    {
+      "id": "protected",
+      "tau_min": null,
+      "H_min": 0,
+      "prepaid_min": 5
+    }
+  ],
+  "llms": [
+    {
+      "id": "S",
+      "catalog": "maas_a10",
+      "entry": "S",
+      "kappa_mult": 1.0
+    },
+    {
+      "id": "M",
+      "catalog": "maas_a10",
+      "entry": "M",
+      "kappa_mult": 1.0
+    },
+    {
+      "id": "L",
+      "catalog": "maas_a10",
+      "entry": "L",
+      "kappa_mult": 1.0
+    }
+  ],
+  "lenders_preset": "maas20",
+  "lender_defaults": {
+    "kind": "trace",
+    "n_layers": 2,
+    "layer_gpus": 8,
+    "lease_size_quantile": 25,
+    "offset": "random",
+    "load_scenario": "auto",
+    "region": "auto",
+    "group": "auto",
+    "menu": [
+      "s5_tau5_H2",
+      "s5_tau5_H60",
+      "s5_tau60_H0"
+    ]
+  },
+  "protected_per_region": {
+    "enabled": true,
+    "menu": [
+      "protected"
+    ],
+    "capacity_gpus": null,
+    "load_scenario": "a5_2GBps"
+  },
+  "lender_model": {
+    "schedule": "trace",
+    "information": "I1",
+    "on_unavailable": "sell",
+    "violations": "absorb",
+    "merge_identical_layers": false,
+    "params": {}
+  },
+  "regions": {
+    "list": [
+      "north_america",
+      "europe",
+      "east_asia",
+      "south_southeast_asia",
+      "south_america"
+    ],
+    "default_slo_class": "relaxed",
+    "relaxed_routing_cost_over_q": 0.05
+  },
+  "borrowers": {
+    "model": "regional",
+    "wildchat_model": "early",
+    "s_S": 0.25,
+    "xi_sources": "default",
+    "own_capacity_quantile": 75,
+    "smoothing_min": 15,
+    "market_tightness": 0.5
+  },
+  "costs": {
+    "phi": 1.0,
+    "beta_jl_usd": 0.0
+  },
+  "stranding": {
+    "mu_over_beta_tilde": 1.0,
+    "kv_share": 0.0,
+    "mu_fl_over_beta_tilde": 0.0,
+    "pi_over_q": 0.0,
+    "W_f_min": 0,
+    "beta_tilde_ref": {
+      "price": "a0",
+      "load_time": "median_site"
+    }
+  },
+  "units": {
+    "per_replica": 8
+  },
+  "engine": {
+    "auto_drain": false,
+    "record_routing": false,
+    "check_invariants": false
+  },
+  "bench": {
+    "grid": "slow",
+    "time_limit_s": 300,
+    "mip_rel_gap": 0.0001,
+    "max_vars": 200000
+  }
+}

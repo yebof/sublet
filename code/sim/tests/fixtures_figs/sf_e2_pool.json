@@ -1,0 +1,946 @@
+{
+ "figure": "sf_e2_pool",
+ "size_in": [
+  7.1399,
+  2.2
+ ],
+ "sources": [
+  "code/sim/out/e2/summary.json",
+  "code/analysis/out/a11_calibration.json"
+ ],
+ "data": {
+  "a": {
+   "a1:A100-SXM4-80GB": {
+    "H_min": [
+     0.0,
+     1.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     30.0,
+     60.0,
+     120.0,
+     240.0
+    ],
+    "median": [
+     1.361,
+     1.245,
+     1.186,
+     1.132,
+     1.124,
+     1.123,
+     1.123,
+     1.123,
+     null,
+     null
+    ],
+    "ci_lo": [
+     1.347,
+     1.233,
+     1.174,
+     1.12,
+     1.112,
+     1.112,
+     1.112,
+     1.112,
+     null,
+     null
+    ],
+    "ci_hi": [
+     1.374,
+     1.258,
+     1.198,
+     1.143,
+     1.135,
+     1.134,
+     1.134,
+     1.134,
+     null,
+     null
+    ],
+    "note": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     "no A1 cell of this pool at this H",
+     "no A1 cell of this pool at this H"
+    ],
+    "label": "A100"
+   },
+   "a1:A800-SXM4-80GB": {
+    "H_min": [
+     0.0,
+     1.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     30.0,
+     60.0,
+     120.0,
+     240.0
+    ],
+    "median": [
+     1.386,
+     1.268,
+     1.208,
+     1.153,
+     1.144,
+     1.144,
+     null,
+     null,
+     null,
+     null
+    ],
+    "ci_lo": [
+     1.372,
+     1.256,
+     1.196,
+     1.141,
+     1.133,
+     1.133,
+     null,
+     null,
+     null,
+     null
+    ],
+    "ci_hi": [
+     1.4,
+     1.281,
+     1.22,
+     1.164,
+     1.156,
+     1.155,
+     null,
+     null,
+     null,
+     null
+    ],
+    "note": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     "no A1 cell of this pool at this H",
+     "no A1 cell of this pool at this H",
+     "no A1 cell of this pool at this H",
+     "no A1 cell of this pool at this H"
+    ],
+    "label": "A800"
+   },
+   "a1:GPU-series-2": {
+    "H_min": [
+     0.0,
+     1.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     30.0,
+     60.0,
+     120.0,
+     240.0
+    ],
+    "median": [
+     1.411,
+     1.291,
+     1.23,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "ci_lo": [
+     1.397,
+     1.278,
+     1.217,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "ci_hi": [
+     1.425,
+     1.304,
+     1.242,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "note": [
+     null,
+     null,
+     null,
+     "no A1 cell of this pool at this H",
+     "no A1 cell of this pool at this H",
+     "no A1 cell of this pool at this H",
+     "no A1 cell of this pool at this H",
+     "no A1 cell of this pool at this H",
+     "no A1 cell of this pool at this H",
+     "no A1 cell of this pool at this H"
+    ],
+    "label": "Series 2"
+   },
+   "a1:H800": {
+    "H_min": [
+     0.0,
+     1.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     30.0,
+     60.0,
+     120.0,
+     240.0
+    ],
+    "median": [
+     1.436,
+     1.314,
+     1.252,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "ci_lo": [
+     1.422,
+     1.301,
+     1.239,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "ci_hi": [
+     1.451,
+     1.328,
+     1.264,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "note": [
+     null,
+     null,
+     null,
+     "no A1 cell of this pool at this H",
+     "no A1 cell of this pool at this H",
+     "no A1 cell of this pool at this H",
+     "no A1 cell of this pool at this H",
+     "no A1 cell of this pool at this H",
+     "no A1 cell of this pool at this H",
+     "no A1 cell of this pool at this H"
+    ],
+    "label": "H800"
+   }
+  },
+  "b": {
+   "maas_q1": {
+    "H_min": [
+     0.0,
+     1.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     30.0,
+     60.0,
+     120.0,
+     240.0
+    ],
+    "median": [
+     1.273,
+     1.164,
+     1.109,
+     1.058,
+     1.051,
+     1.05,
+     1.05,
+     1.05,
+     1.05,
+     1.05
+    ],
+    "ci_lo": [
+     1.26,
+     1.153,
+     1.098,
+     1.048,
+     1.04,
+     1.04,
+     1.04,
+     1.04,
+     1.04,
+     1.04
+    ],
+    "ci_hi": [
+     1.285,
+     1.176,
+     1.12,
+     1.069,
+     1.061,
+     1.061,
+     1.061,
+     1.061,
+     1.061,
+     1.061
+    ],
+    "note": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "label": "Q1",
+    "members": [
+     "a2:c19",
+     "a2:c04",
+     "a2:c06",
+     "a2:c08",
+     "a2:c16"
+    ]
+   },
+   "maas_q2": {
+    "H_min": [
+     0.0,
+     1.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     30.0,
+     60.0,
+     120.0,
+     240.0
+    ],
+    "median": [
+     1.285,
+     1.176,
+     1.12,
+     1.069,
+     1.061,
+     1.061,
+     1.061,
+     1.061,
+     1.061,
+     1.061
+    ],
+    "ci_lo": [
+     1.272,
+     1.164,
+     1.109,
+     1.058,
+     1.05,
+     1.05,
+     1.05,
+     1.05,
+     1.05,
+     1.05
+    ],
+    "ci_hi": [
+     1.298,
+     1.188,
+     1.131,
+     1.079,
+     1.072,
+     1.071,
+     1.071,
+     1.071,
+     1.071,
+     1.071
+    ],
+    "note": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "label": "Q2",
+    "members": [
+     "a2:c11",
+     "a2:c13",
+     "a2:c12",
+     "a2:c00",
+     "a2:c14"
+    ]
+   },
+   "maas_q3": {
+    "H_min": [
+     0.0,
+     1.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     30.0,
+     60.0,
+     120.0,
+     240.0
+    ],
+    "median": [
+     1.298,
+     1.188,
+     1.131,
+     1.079,
+     1.071,
+     1.071,
+     1.071,
+     1.071,
+     1.071,
+     1.071
+    ],
+    "ci_lo": [
+     1.285,
+     1.176,
+     1.12,
+     1.068,
+     1.061,
+     1.06,
+     1.06,
+     1.06,
+     1.06,
+     1.06
+    ],
+    "ci_hi": [
+     1.311,
+     1.199,
+     1.142,
+     1.09,
+     1.082,
+     1.082,
+     1.082,
+     1.082,
+     1.082,
+     1.082
+    ],
+    "note": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "label": "Q3",
+    "members": [
+     "a2:c02",
+     "a2:c03",
+     "a2:c17",
+     "a2:c18",
+     "a2:c07"
+    ]
+   },
+   "maas_q4": {
+    "H_min": [
+     0.0,
+     1.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     30.0,
+     60.0,
+     120.0,
+     240.0
+    ],
+    "median": [
+     1.31,
+     1.199,
+     1.142,
+     1.09,
+     1.082,
+     1.082,
+     1.082,
+     1.082,
+     1.082,
+     1.082
+    ],
+    "ci_lo": [
+     1.297,
+     1.187,
+     1.13,
+     1.079,
+     1.071,
+     1.071,
+     1.071,
+     1.071,
+     1.071,
+     1.071
+    ],
+    "ci_hi": [
+     1.324,
+     1.211,
+     1.153,
+     1.101,
+     1.093,
+     1.092,
+     1.092,
+     1.092,
+     1.092,
+     1.092
+    ],
+    "note": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "label": "Q4",
+    "members": [
+     "a2:c15",
+     "a2:c10",
+     "a2:c09",
+     "a2:c01",
+     "a2:c05"
+    ]
+   }
+  },
+  "c": {
+   "maas": {
+    "trace": {
+     "H_min": [
+      0.0,
+      1.0,
+      2.0,
+      5.0,
+      10.0,
+      15.0,
+      30.0,
+      60.0,
+      120.0,
+      240.0
+     ],
+     "median": [
+      1.162,
+      1.141,
+      1.124,
+      1.092,
+      1.072,
+      1.066,
+      1.064,
+      1.064,
+      1.064,
+      1.064
+     ],
+     "ci_lo": [
+      1.127,
+      1.106,
+      1.09,
+      1.059,
+      1.04,
+      1.034,
+      1.032,
+      1.032,
+      1.032,
+      1.032
+     ],
+     "ci_hi": [
+      1.197,
+      1.175,
+      1.157,
+      1.125,
+      1.104,
+      1.098,
+      1.096,
+      1.096,
+      1.096,
+      1.096
+     ],
+     "note": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    "eager": {
+     "H_min": [
+      0.0,
+      1.0,
+      2.0,
+      5.0,
+      10.0,
+      15.0,
+      30.0,
+      60.0,
+      120.0,
+      240.0
+     ],
+     "median": [
+      1.263,
+      1.239,
+      1.22,
+      1.186,
+      1.164,
+      1.158,
+      1.156,
+      1.156,
+      1.156,
+      1.156
+     ],
+     "ci_lo": [
+      1.237,
+      1.214,
+      1.196,
+      1.163,
+      1.141,
+      1.135,
+      1.133,
+      1.132,
+      1.132,
+      1.132
+     ],
+     "ci_hi": [
+      1.288,
+      1.264,
+      1.245,
+      1.21,
+      1.188,
+      1.181,
+      1.179,
+      1.179,
+      1.179,
+      1.179
+     ],
+     "note": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    }
+   },
+   "spot": {
+    "trace": {
+     "H_min": [
+      0.0,
+      1.0,
+      2.0,
+      5.0,
+      10.0,
+      15.0,
+      30.0,
+      60.0,
+      120.0,
+      240.0
+     ],
+     "median": [
+      1.232,
+      1.209,
+      1.191,
+      1.158,
+      1.136,
+      1.13,
+      null,
+      null,
+      null,
+      null
+     ],
+     "ci_lo": [
+      1.195,
+      1.173,
+      1.155,
+      1.123,
+      1.102,
+      1.096,
+      null,
+      null,
+      null,
+      null
+     ],
+     "ci_hi": [
+      1.269,
+      1.245,
+      1.227,
+      1.192,
+      1.17,
+      1.164,
+      null,
+      null,
+      null,
+      null
+     ],
+     "note": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      "missing",
+      "missing",
+      "missing",
+      "missing"
+     ]
+    },
+    "eager": {
+     "H_min": [
+      0.0,
+      1.0,
+      2.0,
+      5.0,
+      10.0,
+      15.0,
+      30.0,
+      60.0,
+      120.0,
+      240.0
+     ],
+     "median": [
+      1.338,
+      1.313,
+      1.294,
+      1.257,
+      1.234,
+      1.228,
+      null,
+      null,
+      null,
+      null
+     ],
+     "ci_lo": [
+      1.312,
+      1.287,
+      1.268,
+      1.232,
+      1.21,
+      1.203,
+      null,
+      null,
+      null,
+      null
+     ],
+     "ci_hi": [
+      1.365,
+      1.34,
+      1.32,
+      1.283,
+      1.259,
+      1.252,
+      null,
+      null,
+      null,
+      null
+     ],
+     "note": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      "fewer than two pools with data (M23)",
+      "fewer than two pools with data (M23)",
+      "fewer than two pools with data (M23)",
+      "fewer than two pools with data (M23)"
+     ]
+    }
+   }
+  },
+  "c_trace_four_alignments": {
+   "maas": {
+    "H_min": [
+     0.0,
+     1.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     30.0,
+     60.0,
+     120.0,
+     240.0
+    ],
+    "median": [
+     1.18,
+     1.158,
+     1.141,
+     1.109,
+     1.088,
+     1.082,
+     1.08,
+     1.08,
+     1.08,
+     1.08
+    ],
+    "ci_lo": [
+     1.156,
+     1.135,
+     1.118,
+     1.086,
+     1.066,
+     1.061,
+     1.058,
+     1.058,
+     1.058,
+     1.058
+    ],
+    "ci_hi": [
+     1.204,
+     1.181,
+     1.163,
+     1.131,
+     1.11,
+     1.104,
+     1.102,
+     1.102,
+     1.102,
+     1.102
+    ],
+    "note": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ]
+   },
+   "spot": {
+    "H_min": [
+     0.0,
+     1.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     30.0,
+     60.0,
+     120.0,
+     240.0
+    ],
+    "median": [
+     1.251,
+     1.227,
+     1.209,
+     1.175,
+     1.154,
+     1.147,
+     null,
+     null,
+     null,
+     null
+    ],
+    "ci_lo": [
+     1.226,
+     1.203,
+     1.185,
+     1.152,
+     1.13,
+     1.124,
+     null,
+     null,
+     null,
+     null
+    ],
+    "ci_hi": [
+     1.276,
+     1.252,
+     1.233,
+     1.199,
+     1.177,
+     1.17,
+     null,
+     null,
+     null,
+     null
+    ],
+    "note": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     "fewer than two pools with data (M23)",
+     "fewer than two pools with data (M23)",
+     "fewer than two pools with data (M23)",
+     "fewer than two pools with data (M23)"
+    ]
+   }
+  },
+  "labels": {
+   "H": "Notice $H$ (min)",
+   "a_y": "Median per-episode ALG / OPT",
+   "c_y": "Whole-trace \u03a3ALG / \u03a3DP",
+   "trace": "Trace schedule",
+   "eager": "Eager schedule",
+   "titles": {
+    "a": "Spot pools",
+    "b": "MaaS clusters by price quartile",
+    "c": "Whole traces"
+   },
+   "note": "A1 (ALG*), mu/beta~ = 1; (a), (b) trace schedule, four alignments pooled (M19); (c) alignment 1"
+  },
+  "sources": [
+   "code/sim/out/e2/summary.json",
+   "code/analysis/out/a11_calibration.json"
+  ]
+ }
+}

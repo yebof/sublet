@@ -1,0 +1,119 @@
+{
+ "job": "e7h:fam:k=fam:src=F1:inst=F1_m2_r4:mode=F-ad",
+ "exp": "e7h",
+ "kind": "pool",
+ "params": {
+  "part": "fam",
+  "kind": "fam",
+  "family": {
+   "id": "F1",
+   "kind": "fam",
+   "m": [
+    2,
+    4,
+    8
+   ],
+   "rho": [
+    4,
+    8,
+    16
+   ],
+   "tau": 2,
+   "H": 1,
+   "T": 48,
+   "modes": [
+    "F-ad"
+   ],
+   "note": "cat-and-mouse Fam(m, rho, 2, 1, 48) = check_c4_lower.cm_instance, C3-T4's adaptive lender; one lender seed, policy seeds 0-9",
+   "fam": "F1"
+  },
+  "values": {
+   "m": 2,
+   "rho": 4.0
+  },
+  "inst": "F1_m2_r4",
+  "mode": "F-ad",
+  "entries": [
+   [
+    "A9",
+    [
+     0
+    ]
+   ],
+   [
+    "A9-noIns",
+    [
+     0
+    ]
+   ],
+   [
+    "Sublet",
+    [
+     0
+    ]
+   ],
+   [
+    "BL1-G",
+    [
+     0
+    ]
+   ],
+   [
+    "BL5-G",
+    [
+     0
+    ]
+   ],
+   [
+    "BL1-GP",
+    [
+     0
+    ]
+   ],
+   [
+    "RR_RENEW",
+    [
+     0
+    ]
+   ],
+   [
+    "MARKING",
+    [
+     0
+    ]
+   ]
+  ]
+ },
+ "status": "ok",
+ "started": "2026-11-03T14:23:55",
+ "pid": 1730390,
+ "argv": [
+  "/work/sublet/code/sim/sublet/experiments/e7h.py",
+  "--job",
+  "e7h:fam:k=fam:src=F1:inst=F1_m2_r4:mode=F-ad",
+  "--out",
+  "/work/u36_fix/fam/out/sublet_v2/fam"
+ ],
+ "slots": [
+  "slot0"
+ ],
+ "milp_limit_s": null,
+ "git_revision": "5c7d33285b9a4f4e4df2b76e80b3e5f56d58bd37",
+ "versions": {
+  "python": "3.12.3",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "sublet": "0.1.0"
+ },
+ "runs": 8,
+ "errors": [],
+ "n_errors": 0,
+ "outputs": [
+  "runs/e7h__fam__k__fam__src__F1__inst__F1_m2_r4__mode__F-ad.json"
+ ],
+ "result": {},
+ "wall_s": 1.131884142756462,
+ "peak_rss_kb": 94084,
+ "peak_rss_mb": 91.87890625,
+ "finished": "2026-11-03T14:23:56"
+}

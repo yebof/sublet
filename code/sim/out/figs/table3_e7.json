@@ -1,0 +1,619 @@
+{
+ "table": "table3_e7",
+ "sources": [
+  "code/sim/out/e7/table3.json"
+ ],
+ "data": {
+  "order": [
+   "Sublet",
+   "BL5",
+   "BL1",
+   "BL2",
+   "BL4",
+   "A7",
+   "A7G",
+   "A6",
+   "BL0b",
+   "BL0a"
+  ],
+  "rows": {
+   "Sublet": {
+    "label": "Sublet",
+    "style_key": "sublet",
+    "cells": {
+     "usd": {
+      "text": "23.8 (218.6)",
+      "overflow": 23785.450748527925,
+      "total": 218589.1715006387,
+      "note": null
+     },
+     "saving_pct": {
+      "text": "28.4",
+      "value": 28.4149301310922,
+      "n": 12,
+      "note": null
+     },
+     "gap": {
+      "text": "1.62",
+      "value": 1.6174541113781868,
+      "n": 12,
+      "note": null
+     },
+     "fallback_share_after_reclaims": {
+      "text": "0.31",
+      "value": 0.3106344877529315,
+      "n": 12,
+      "note": null
+     },
+     "W0": {
+      "text": "1.10",
+      "value": 1.099765955088116,
+      "n": 3,
+      "note": "the largest 3-seed mean of r0 over the five stress modes (mode L-ss); interval: the range of r0 over that mode's seeds (one cell, no bootstrap)"
+     },
+     "abort_share": {
+      "text": "0.00",
+      "value": 0.0,
+      "n": 12,
+      "note": "share of the trace week runs at mu = 1 with an abort (M24)"
+     }
+    }
+   },
+   "BL5": {
+    "label": "RetroRenting-style",
+    "style_key": "bl5",
+    "cells": {
+     "usd": {
+      "text": "23.8 (218.6)",
+      "overflow": 23785.450748527925,
+      "total": 218589.1715006387,
+      "note": null
+     },
+     "saving_pct": {
+      "text": "28.4",
+      "value": 28.4149301310922,
+      "n": 12,
+      "note": null
+     },
+     "gap": {
+      "text": "1.62",
+      "value": 1.6174541113781868,
+      "n": 12,
+      "note": null
+     },
+     "fallback_share_after_reclaims": {
+      "text": "0.31",
+      "value": 0.3106344877529315,
+      "n": 12,
+      "note": null
+     },
+     "W0": {
+      "text": "1.21",
+      "value": 1.2125738429606188,
+      "n": 3,
+      "note": "the largest 3-seed mean of r0 over the five stress modes (mode L-eg); interval: the range of r0 over that mode's seeds (one cell, no bootstrap)"
+     },
+     "abort_share": {
+      "text": "--",
+      "value": null,
+      "n": 0,
+      "note": "unguarded policy (not an A8 tag): no abort, no certificate"
+     }
+    }
+   },
+   "BL1": {
+    "label": "Greedy renting",
+    "style_key": "bl1",
+    "cells": {
+     "usd": {
+      "text": "20.6 (215.0)",
+      "overflow": 20562.368502074474,
+      "total": 215039.74071163585,
+      "note": null
+     },
+     "saving_pct": {
+      "text": "33.8",
+      "value": 33.80782443382888,
+      "n": 12,
+      "note": null
+     },
+     "gap": {
+      "text": "1.36",
+      "value": 1.362503162453807,
+      "n": 12,
+      "note": null
+     },
+     "fallback_share_after_reclaims": {
+      "text": "0.05",
+      "value": 0.046849066713865836,
+      "n": 12,
+      "note": null
+     },
+     "W0": {
+      "text": "2.03",
+      "value": 2.0282017865743884,
+      "n": 3,
+      "note": "the largest 3-seed mean of r0 over the five stress modes (mode L-eg); interval: the range of r0 over that mode's seeds (one cell, no bootstrap)"
+     },
+     "abort_share": {
+      "text": "--",
+      "value": null,
+      "n": 0,
+      "note": "unguarded policy (not an A8 tag): no abort, no certificate"
+     }
+    }
+   },
+   "BL2": {
+    "label": "Per-borrower ski rental",
+    "style_key": "bl2",
+    "cells": {
+     "usd": {
+      "text": "23.2 (217.8)",
+      "overflow": 23214.278760177505,
+      "total": 217795.52762281243,
+      "note": null
+     },
+     "saving_pct": {
+      "text": "31.6",
+      "value": 31.64472896728635,
+      "n": 12,
+      "note": null
+     },
+     "gap": {
+      "text": "1.47",
+      "value": 1.4659128197034639,
+      "n": 12,
+      "note": null
+     },
+     "fallback_share_after_reclaims": {
+      "text": "0.19",
+      "value": 0.19399835709736327,
+      "n": 12,
+      "note": null
+     },
+     "W0": {
+      "text": "1.97",
+      "value": 1.9737009775945797,
+      "n": 3,
+      "note": "the largest 3-seed mean of r0 over the five stress modes (mode L-eg); interval: the range of r0 over that mode's seeds (one cell, no bootstrap)"
+     },
+     "abort_share": {
+      "text": "--",
+      "value": null,
+      "n": 0,
+      "note": "unguarded policy (not an A8 tag): no abort, no certificate"
+     }
+    }
+   },
+   "BL4": {
+    "label": "CoCaR-style",
+    "style_key": "bl4",
+    "cells": {
+     "usd": {
+      "text": "28.4 (223.0)",
+      "overflow": 28358.35549358356,
+      "total": 223007.0379953852,
+      "note": null
+     },
+     "saving_pct": {
+      "text": "9.2",
+      "value": 9.19696323776662,
+      "n": 12,
+      "note": null
+     },
+     "gap": {
+      "text": "1.92",
+      "value": 1.9249290781305817,
+      "n": 12,
+      "note": null
+     },
+     "fallback_share_after_reclaims": {
+      "text": "0.49",
+      "value": 0.48798380090688753,
+      "n": 12,
+      "note": null
+     },
+     "W0": {
+      "text": "1.05",
+      "value": 1.0472338596286077,
+      "n": 3,
+      "note": "the largest 3-seed mean of r0 over the five stress modes (mode L-eg); interval: the range of r0 over that mode's seeds (one cell, no bootstrap)"
+     },
+     "abort_share": {
+      "text": "--",
+      "value": null,
+      "n": 0,
+      "note": "unguarded policy (not an A8 tag): no abort, no certificate"
+     }
+    }
+   },
+   "A7": {
+    "label": "PD heuristic",
+    "style_key": "a7",
+    "cells": {
+     "usd": {
+      "text": "23.3 (218.1)",
+      "overflow": 23322.32219083445,
+      "total": 218050.20060023188,
+      "note": null
+     },
+     "saving_pct": {
+      "text": "25.8",
+      "value": 25.77717881881174,
+      "n": 12,
+      "note": null
+     },
+     "gap": {
+      "text": "1.67",
+      "value": 1.6713006533694652,
+      "n": 12,
+      "note": null
+     },
+     "fallback_share_after_reclaims": {
+      "text": "0.08",
+      "value": 0.07939432114435192,
+      "n": 12,
+      "note": null
+     },
+     "W0": {
+      "text": "1.60",
+      "value": 1.5954756477503729,
+      "n": 3,
+      "note": "the largest 3-seed mean of r0 over the five stress modes (mode L-eg); interval: the range of r0 over that mode's seeds (one cell, no bootstrap)"
+     },
+     "abort_share": {
+      "text": "--",
+      "value": null,
+      "n": 0,
+      "note": "unguarded policy (not an A8 tag): no abort, no certificate"
+     }
+    }
+   },
+   "A7G": {
+    "label": "PD heuristic + guard",
+    "style_key": "a7_guard",
+    "cells": {
+     "usd": {
+      "text": "23.3 (218.1)",
+      "overflow": 23322.32219083445,
+      "total": 218050.20060023188,
+      "note": null
+     },
+     "saving_pct": {
+      "text": "25.8",
+      "value": 25.77717881881174,
+      "n": 12,
+      "note": null
+     },
+     "gap": {
+      "text": "1.67",
+      "value": 1.6713006533694652,
+      "n": 12,
+      "note": null
+     },
+     "fallback_share_after_reclaims": {
+      "text": "0.08",
+      "value": 0.07939432114435192,
+      "n": 12,
+      "note": null
+     },
+     "W0": {
+      "text": "1.10",
+      "value": 1.0981565379338956,
+      "n": 3,
+      "note": "the largest 3-seed mean of r0 over the five stress modes (mode L-eg); interval: the range of r0 over that mode's seeds (one cell, no bootstrap)"
+     },
+     "abort_share": {
+      "text": "0.00",
+      "value": 0.0,
+      "n": 12,
+      "note": "share of the trace week runs at mu = 1 with an abort (M24)"
+     }
+    }
+   },
+   "A6": {
+    "label": "Two-timescale PD",
+    "style_key": "a6",
+    "cells": {
+     "usd": {
+      "text": "29.3 (223.8)",
+      "overflow": 29301.043480381897,
+      "total": 223765.57275372365,
+      "note": null
+     },
+     "saving_pct": {
+      "text": "2.6",
+      "value": 2.617775047540383,
+      "n": 12,
+      "note": null
+     },
+     "gap": {
+      "text": "1.95",
+      "value": 1.9495090869931655,
+      "n": 12,
+      "note": null
+     },
+     "fallback_share_after_reclaims": {
+      "text": "0.44",
+      "value": 0.43837041332173365,
+      "n": 12,
+      "note": null
+     },
+     "W0": {
+      "text": "1.10",
+      "value": 1.0995030701916542,
+      "n": 3,
+      "note": "the largest 3-seed mean of r0 over the five stress modes (mode L-iid-0.2); interval: the range of r0 over that mode's seeds (one cell, no bootstrap)"
+     },
+     "abort_share": {
+      "text": "--",
+      "value": null,
+      "n": 0,
+      "note": "unguarded policy (not an A8 tag): no abort, no certificate"
+     }
+    }
+   },
+   "BL0b": {
+    "label": "Provision for peak",
+    "style_key": "bl0b",
+    "cells": {
+     "usd": {
+      "text": "816.1 (1010.5)",
+      "overflow": 816136.2029005206,
+      "total": 1010541.5162264267,
+      "note": "overflow: analytic, median over the alignments; total: analytic, median over the alignments"
+     },
+     "saving_pct": {
+      "text": "$-$2776",
+      "value": -2775.692159523566,
+      "n": 4,
+      "note": "analytic, median over the alignments"
+     },
+     "gap": {
+      "text": "--",
+      "value": null,
+      "n": 0,
+      "note": "analytic: no engine run, no gap (M23)"
+     },
+     "fallback_share_after_reclaims": {
+      "text": "--",
+      "value": null,
+      "n": 0,
+      "note": "no leases"
+     },
+     "W0": {
+      "text": "--",
+      "value": null,
+      "n": 0,
+      "note": "analytic reference: no stress run"
+     },
+     "abort_share": {
+      "text": "--",
+      "value": null,
+      "n": 0,
+      "note": "not guarded"
+     }
+    }
+   },
+   "BL0a": {
+    "label": "All-fallback",
+    "style_key": "bl0a",
+    "cells": {
+     "usd": {
+      "text": "31.0 (225.4)",
+      "overflow": 30954.844353311462,
+      "total": 225360.15767921755,
+      "note": "overflow: analytic, median over the alignments; total: analytic, median over the alignments"
+     },
+     "saving_pct": {
+      "text": "0.0",
+      "value": 0.0,
+      "n": 4,
+      "note": "0 by definition"
+     },
+     "gap": {
+      "text": "2.22",
+      "value": 2.216504863769294,
+      "n": 4,
+      "note": null
+     },
+     "fallback_share_after_reclaims": {
+      "text": "--",
+      "value": null,
+      "n": 0,
+      "note": "no leases"
+     },
+     "W0": {
+      "text": "1.00",
+      "value": 1.0,
+      "n": 0,
+      "note": "1 by definition"
+     },
+     "abort_share": {
+      "text": "--",
+      "value": null,
+      "n": 0,
+      "note": "not guarded"
+     }
+    }
+   }
+  },
+  "columns": [
+   "usd",
+   "saving_pct",
+   "gap",
+   "fallback_share_after_reclaims",
+   "W0",
+   "abort_share"
+  ],
+  "header": [
+   [
+    "",
+    "Policy"
+   ],
+   [
+    "USD/week (k)",
+    "overflow (total)"
+   ],
+   [
+    "Saving",
+    "(\\%)"
+   ],
+   [
+    "ALG/",
+    "LB"
+   ],
+   [
+    "Fallback",
+    "after recl."
+   ],
+   [
+    "",
+    "$W_0$"
+   ],
+   [
+    "Abort",
+    "share"
+   ]
+  ],
+  "caption": "One week, full menu, trace lender, $\\mu/\\tilde\\beta=1$, medians of 4 alignments $\\times$ 3 seeds (ALG/LB: reruns on the slow grid, e7r menu). Guarded rows: $\\gamma=1$, $B_0$ = 10\\% of all-fallback; 312 of 312 certificates held (W(a) 223, W(b) 89, W(c) 0).",
+  "caption_source": {
+   "certificates": {
+    "n": 312,
+    "held": 312,
+    "failures": 0,
+    "by_case": {
+     "W(a)": {
+      "runs": 223,
+      "held": 223
+     },
+     "W(b)": {
+      "runs": 89,
+      "held": 89
+     },
+     "W(c)": {
+      "runs": 0,
+      "held": 0
+     },
+     "unavailable": {
+      "runs": 0,
+      "held": 0
+     }
+    },
+    "w_c_runs": [],
+    "parts_counted": {
+     "main": true,
+     "stress": true,
+     "gap": true,
+     "allow": true
+    }
+   },
+   "B0_rule": "0.1*BL0a",
+   "gamma": 1.0,
+   "kappa": null,
+   "kappa_note": "kappa None: the constant allowance B(t) = B0 (guard.Ratchet.allowance; M36)",
+   "info_class_reported": "online-I1 + a-priori N + a-priori BL0a",
+   "own_capacity_usd": {
+    "by_alignment": {
+     "1": 145715.69381074718,
+     "2": 158576.80527799713,
+     "3": 247675.61896224067,
+     "4": 230233.821373815
+    },
+    "median": 194405.31332590606
+   },
+   "scope": {
+    "horizon_min": 10080,
+    "menu": "full (a11_default)",
+    "lender": "trace",
+    "mu_over_beta_tilde": 1.0,
+    "alignments": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "policy_seeds": [
+     0,
+     1,
+     2
+    ]
+   }
+  },
+  "notes": {
+   "Sublet.W0": "the largest 3-seed mean of r0 over the five stress modes (mode L-ss); interval: the range of r0 over that mode's seeds (one cell, no bootstrap)",
+   "Sublet.abort_share": "share of the trace week runs at mu = 1 with an abort (M24)",
+   "BL5.W0": "the largest 3-seed mean of r0 over the five stress modes (mode L-eg); interval: the range of r0 over that mode's seeds (one cell, no bootstrap)",
+   "BL5.abort_share": "unguarded policy (not an A8 tag): no abort, no certificate",
+   "BL1.W0": "the largest 3-seed mean of r0 over the five stress modes (mode L-eg); interval: the range of r0 over that mode's seeds (one cell, no bootstrap)",
+   "BL1.abort_share": "unguarded policy (not an A8 tag): no abort, no certificate",
+   "BL2.W0": "the largest 3-seed mean of r0 over the five stress modes (mode L-eg); interval: the range of r0 over that mode's seeds (one cell, no bootstrap)",
+   "BL2.abort_share": "unguarded policy (not an A8 tag): no abort, no certificate",
+   "BL4.W0": "the largest 3-seed mean of r0 over the five stress modes (mode L-eg); interval: the range of r0 over that mode's seeds (one cell, no bootstrap)",
+   "BL4.abort_share": "unguarded policy (not an A8 tag): no abort, no certificate",
+   "A7.W0": "the largest 3-seed mean of r0 over the five stress modes (mode L-eg); interval: the range of r0 over that mode's seeds (one cell, no bootstrap)",
+   "A7.abort_share": "unguarded policy (not an A8 tag): no abort, no certificate",
+   "A7G.W0": "the largest 3-seed mean of r0 over the five stress modes (mode L-eg); interval: the range of r0 over that mode's seeds (one cell, no bootstrap)",
+   "A7G.abort_share": "share of the trace week runs at mu = 1 with an abort (M24)",
+   "A6.W0": "the largest 3-seed mean of r0 over the five stress modes (mode L-iid-0.2); interval: the range of r0 over that mode's seeds (one cell, no bootstrap)",
+   "A6.abort_share": "unguarded policy (not an A8 tag): no abort, no certificate",
+   "BL0b.usd": "overflow: analytic, median over the alignments; total: analytic, median over the alignments",
+   "BL0b.saving_pct": "analytic, median over the alignments",
+   "BL0b.gap": "analytic: no engine run, no gap (M23)",
+   "BL0b.fallback_share_after_reclaims": "no leases",
+   "BL0b.W0": "analytic reference: no stress run",
+   "BL0b.abort_share": "not guarded",
+   "BL0a.usd": "overflow: analytic, median over the alignments; total: analytic, median over the alignments",
+   "BL0a.saving_pct": "0 by definition",
+   "BL0a.fallback_share_after_reclaims": "no leases",
+   "BL0a.W0": "1 by definition",
+   "BL0a.abort_share": "not guarded"
+  },
+  "column_definitions": {
+   "usd": "USD per week, overflow (total) accounting, median; main grid, mu / beta~ = 1 (M2)",
+   "saving_pct": "100 (1 - cost / BL0a) %, overflow accounting, median",
+   "gap": "ALG / merged LP bound, slow grid, e7r menu with s5_tau5_H5, one day: median over the 12 gap reruns (4 for BL0a), an upper bound on the ratio to OPT(sigma, omega) (Proposition M4) against a merged bound (Proposition M6) (M39)",
+   "fallback_share_after_reclaims": "median over the main-grid runs where it is defined",
+   "W0": "the worst cost over BL0a under the five stress modes (note \u00a75.5), overflow accounting",
+   "abort_share": "aborted runs of the 12 trace week runs at mu / beta~ = 1 (M24)"
+  },
+  "meta": {
+   "git_revision": "939847ca5925ce069d6df9089fe3a3d1d3207bb7",
+   "reduced": false,
+   "sources": {
+    "main": {
+     "file": "code/sim/out/e7/main/summary.json",
+     "exists": true,
+     "sha256": "bbdcc02a25606ae81e5482f2a6adbcb1ba18ffd8a7a9e2ec733583b90ecf2abc",
+     "used": true,
+     "git_revision": "939847ca5925ce069d6df9089fe3a3d1d3207bb7",
+     "reduced": false
+    },
+    "stress": {
+     "file": "code/sim/out/e7/stress/summary.json",
+     "exists": true,
+     "sha256": "4e50a94f5cc2f4caa34a8749ed789114cd230378dcb111a7045a4bfe9d3daf95",
+     "used": true,
+     "git_revision": "939847ca5925ce069d6df9089fe3a3d1d3207bb7",
+     "reduced": false
+    },
+    "gap": {
+     "file": "code/sim/out/e7/gap/summary.json",
+     "exists": true,
+     "sha256": "7afa927881a22c2d951919785330a2aaa568730e77355a49e09d4bad4572c088",
+     "used": true,
+     "git_revision": "939847ca5925ce069d6df9089fe3a3d1d3207bb7",
+     "reduced": false
+    },
+    "allow": {
+     "file": "code/sim/out/e7/allow/summary.json",
+     "exists": true,
+     "sha256": "7b443b251c55be53aded9dcc81a1e8616277ba2053d4e526d6be8fbe4b03f724",
+     "used": true,
+     "git_revision": "939847ca5925ce069d6df9089fe3a3d1d3207bb7",
+     "reduced": false
+    }
+   }
+  }
+ }
+}

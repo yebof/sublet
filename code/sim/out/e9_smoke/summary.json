@@ -1,0 +1,182 @@
+{
+ "meta": {
+  "script": "code/sim/sublet/experiments/e9_smoke.py",
+  "spec": "design/sim_spec_ms2.md \u00a718",
+  "git_revision": "71a8af0c4ff711ef67eed8a0f89ede2a4d1c550c",
+  "written": "2026-10-17T10:13:10",
+  "cap_mb": 3072.0,
+  "note": "targets P1-P4 do not block MS2 (\u00a71.4, M53)"
+ },
+ "cases": [
+  {
+   "case": "pd_bench",
+   "status": "ok",
+   "wall_s": 37.23321932496037,
+   "peak_rss_mb": 740.41015625,
+   "runs": 0,
+   "invariant_failures": 0,
+   "gpu_only_lease_slots": 0,
+   "pass": true
+  },
+  {
+   "case": "a2_ex1d",
+   "status": "ok",
+   "wall_s": 1.4272433600854129,
+   "peak_rss_mb": 130.76171875,
+   "runs": 1,
+   "invariant_failures": 0,
+   "gpu_only_lease_slots": 0,
+   "pass": true
+  },
+  {
+   "case": "a6_ex1d",
+   "status": "ok",
+   "wall_s": 1.3821690230397508,
+   "peak_rss_mb": 130.9609375,
+   "runs": 1,
+   "invariant_failures": 0,
+   "gpu_only_lease_slots": 0,
+   "pass": true
+  },
+  {
+   "case": "a6_e7r_1d_slow",
+   "status": "ok",
+   "wall_s": 10.482597494963557,
+   "peak_rss_mb": 143.22265625,
+   "runs": 1,
+   "invariant_failures": 0,
+   "gpu_only_lease_slots": 0,
+   "pass": true
+  },
+  {
+   "case": "a6_e7r_7d",
+   "status": "ok",
+   "wall_s": 47.720584627008066,
+   "peak_rss_mb": 206.84765625,
+   "runs": 1,
+   "invariant_failures": 0,
+   "gpu_only_lease_slots": 0,
+   "pass": true
+  },
+  {
+   "case": "fam_m8",
+   "status": "ok",
+   "wall_s": 0.47047549101989716,
+   "peak_rss_mb": 85.88671875,
+   "runs": 3,
+   "invariant_failures": 0,
+   "gpu_only_lease_slots": 0,
+   "pass": true
+  },
+  {
+   "case": "a1_single_7d",
+   "status": "ok",
+   "wall_s": 4.33023725298699,
+   "peak_rss_mb": 96.78125,
+   "runs": 1,
+   "invariant_failures": 0,
+   "gpu_only_lease_slots": 0,
+   "pass": true
+  },
+  {
+   "case": "bl_e7r_1d",
+   "status": "ok",
+   "wall_s": 8.496051309048198,
+   "peak_rss_mb": 169.85546875,
+   "runs": 4,
+   "invariant_failures": 0,
+   "gpu_only_lease_slots": 0,
+   "pass": true
+  }
+ ],
+ "targets": {
+  "P1": {
+   "target": "VecPD mean time per request <= pd.FracPD's on every pd_bench instance (same process)",
+   "pass": true,
+   "values": [
+    {
+     "T": 48,
+     "m": 6,
+     "n": 12,
+     "ref_ms_per_request": 0.8213518943283444,
+     "vec_ms_per_request": 0.29145226296815724
+    },
+    {
+     "T": 96,
+     "m": 12,
+     "n": 24,
+     "ref_ms_per_request": 1.1378618367035092,
+     "vec_ms_per_request": 0.3235565705953406
+    },
+    {
+     "T": 96,
+     "m": 24,
+     "n": 24,
+     "ref_ms_per_request": 1.8045486182844175,
+     "vec_ms_per_request": 0.38057128713792554
+    },
+    {
+     "T": 96,
+     "m": 48,
+     "n": 24,
+     "ref_ms_per_request": 3.004150736331694,
+     "vec_ms_per_request": 0.43788400982692594
+    },
+    {
+     "T": 96,
+     "m": 96,
+     "n": 24,
+     "ref_ms_per_request": 5.998616594364098,
+     "vec_ms_per_request": 0.5720763925437329
+    },
+    {
+     "T": 96,
+     "m": 160,
+     "n": 24,
+     "ref_ms_per_request": 9.888972014756174,
+     "vec_ms_per_request": 0.6670263405026613
+    }
+   ]
+  },
+  "P2": {
+   "target": "A6 on bench_e7r: policy_act_s_mean <= 0.1 s and policy_act_s_p99 <= 2 s",
+   "values": [
+    {
+     "policy_act_s_mean": 0.017460697837368425,
+     "policy_act_s_p99": 0.20029207627521814,
+     "horizon_min": 10080,
+     "fast_min": 1
+    },
+    {
+     "policy_act_s_mean": 0.03152378169276441,
+     "policy_act_s_p99": 0.24698315656743935,
+     "horizon_min": 1440,
+     "fast_min": 5
+    }
+   ],
+   "pass": true
+  },
+  "P3": {
+   "target": "A6 on bench_e7r, one week, 1-min routing: wall time <= 2 h on one core",
+   "values": [
+    47.33818173606414
+   ],
+   "pass": true
+  },
+  "P4": {
+   "target": "peak RSS <= 1.5 GB per policy run",
+   "values": {
+    "pd_bench": 740.41015625,
+    "a2_ex1d": 130.76171875,
+    "a6_ex1d": 130.9609375,
+    "a6_e7r_1d_slow": 143.22265625,
+    "a6_e7r_7d": 206.84765625,
+    "fam_m8": 85.88671875,
+    "a1_single_7d": 96.78125,
+    "bl_e7r_1d": 169.85546875
+   },
+   "pass": true
+  }
+ },
+ "ms2_pass": true
+}

@@ -1,0 +1,56 @@
+{
+ "job": "e3:gate",
+ "exp": "e3",
+ "kind": "pool",
+ "params": {
+  "b": 8,
+  "u": 8,
+  "mu": 1.0,
+  "c": 1,
+  "horizon": [
+   156,
+   24
+  ]
+ },
+ "status": "ok",
+ "started": "2026-10-26T14:02:20",
+ "pid": 934345,
+ "argv": [
+  "/work/ms4wt/u25/code/sim/sublet/experiments/e3.py",
+  "--job",
+  "e3:gate",
+  "--out",
+  "/work/ms4u/u25scratch/fixture_roots/e3/out/e3"
+ ],
+ "slots": [
+  "slot0"
+ ],
+ "milp_limit_s": null,
+ "git_revision": "939847ca5925ce069d6df9089fe3a3d1d3207bb7",
+ "versions": {
+  "python": "3.12.3",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "sublet": "0.1.0"
+ },
+ "runs": 8,
+ "errors": [],
+ "n_errors": 0,
+ "outputs": [
+  "gate.json"
+ ],
+ "result": {
+  "config_hash": "aaaac5b804bde51e77c8d9aa6f16a404d369f37639c7a92a4ac258c9bc1e6aa4",
+  "bracket": {
+   "point": 1.233315601424277,
+   "lo": 1.2313029139260616,
+   "hi": 1.2335697829088093
+  },
+  "shared_need_usd": 36.604047113756295,
+  "n_sub_abort_at_B0": 7
+ },
+ "wall_s": 1.3536203620024025,
+ "peak_rss_kb": 145704,
+ "peak_rss_mb": 142.2890625,
+ "finished": "2026-10-26T14:02:21"
+}

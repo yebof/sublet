@@ -1,0 +1,49 @@
+{
+ "job": "e7h:grid:k=gap:tag=BL5-cur:c=101",
+ "exp": "e7h",
+ "kind": "pool",
+ "params": {
+  "part": "grid",
+  "kind": "gap",
+  "tag": "BL5-cur",
+  "c": 101,
+  "policy_seeds": [
+   0
+  ],
+  "horizon_min": 120
+ },
+ "status": "ok",
+ "started": "2026-11-03T14:19:47",
+ "pid": 1725821,
+ "argv": [
+  "/work/sublet/code/sim/sublet/experiments/e7h.py",
+  "--job",
+  "e7h:grid:k=gap:tag=BL5-cur:c=101",
+  "--out",
+  "/work/u36_fix/grid/out/sublet_v2/grid"
+ ],
+ "slots": [
+  "slot1"
+ ],
+ "milp_limit_s": null,
+ "git_revision": "5c7d33285b9a4f4e4df2b76e80b3e5f56d58bd37",
+ "versions": {
+  "python": "3.12.3",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "sublet": "0.1.0"
+ },
+ "runs": 1,
+ "errors": [],
+ "n_errors": 0,
+ "outputs": [
+  "runs/e7h__grid__k__gap__tag__BL5-cur__c__101.json"
+ ],
+ "result": {
+  "instance_hash": "21815c2f9a0f013083e860d00da4cb4fe40c7788eaf97548103290974c33dcc6"
+ },
+ "wall_s": 1.8235062048770487,
+ "peak_rss_kb": 148996,
+ "peak_rss_mb": 145.50390625,
+ "finished": "2026-11-03T14:19:49"
+}

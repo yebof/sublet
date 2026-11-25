@@ -1,0 +1,875 @@
+{
+ "meta": {
+  "exp": "s1v2",
+  "git_revision": "44d1b4e42b5be44503039b1b5d6bfba8e32930ff",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "scipy": "1.17.1",
+   "sublet": "0.1.0"
+  },
+  "written": "2026-11-09T20:26:29",
+  "script": "code/sim/sublet/experiments/s1v2.py",
+  "script_sha256": "37a88cd96d534f74e2f68e747dc30c21036614a7d787aa7e22a271ee7bdedc23"
+ },
+ "jobs": [
+  {
+   "id": "s1v2:w0:pt=scen_cold_wan_1gbps:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "w0",
+    "kind": "w0",
+    "point": "scen_cold_wan_1gbps",
+    "row": "load_scenario",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur",
+     "BL4"
+    ],
+    "modes": [
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 3907
+   },
+   "est_s": 1302.2455000000002,
+   "status": "ok",
+   "wall_s": 1823.0915112281218,
+   "peak_rss_mb": 420.2734375,
+   "runs": 25
+  },
+  {
+   "id": "s1v2:w0:pt=scen_cold_wan_1gbps:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "w0",
+    "kind": "w0",
+    "point": "scen_cold_wan_1gbps",
+    "row": "load_scenario",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur",
+     "BL4"
+    ],
+    "modes": [
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 3907
+   },
+   "est_s": 1302.2455000000002,
+   "status": "ok",
+   "wall_s": 1499.4868766549043,
+   "peak_rss_mb": 424.65234375,
+   "runs": 25
+  },
+  {
+   "id": "s1v2:w0:pt=scen_warm_peer_rdma:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "w0",
+    "kind": "w0",
+    "point": "scen_warm_peer_rdma",
+    "row": "load_scenario",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur",
+     "BL4"
+    ],
+    "modes": [
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 3839
+   },
+   "est_s": 1279.6645,
+   "status": "ok",
+   "wall_s": 1989.7518087881617,
+   "peak_rss_mb": 485.73046875,
+   "runs": 25
+  },
+  {
+   "id": "s1v2:w0:pt=scen_warm_peer_rdma:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "w0",
+    "kind": "w0",
+    "point": "scen_warm_peer_rdma",
+    "row": "load_scenario",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur",
+     "BL4"
+    ],
+    "modes": [
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 3839
+   },
+   "est_s": 1279.6645,
+   "status": "ok",
+   "wall_s": 1739.3633891199715,
+   "peak_rss_mb": 476.54296875,
+   "runs": 25
+  },
+  {
+   "id": "s1v2:w0:pt=scen_ssd_optimized:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "w0",
+    "kind": "w0",
+    "point": "scen_ssd_optimized",
+    "row": "load_scenario",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur",
+     "BL4"
+    ],
+    "modes": [
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 3839
+   },
+   "est_s": 1279.6645,
+   "status": "ok",
+   "wall_s": 1978.0358073199168,
+   "peak_rss_mb": 486.12109375,
+   "runs": 25
+  },
+  {
+   "id": "s1v2:w0:pt=scen_ssd_optimized:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "w0",
+    "kind": "w0",
+    "point": "scen_ssd_optimized",
+    "row": "load_scenario",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur",
+     "BL4"
+    ],
+    "modes": [
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 3839
+   },
+   "est_s": 1279.6645,
+   "status": "ok",
+   "wall_s": 1733.5171062401496,
+   "peak_rss_mb": 468.375,
+   "runs": 25
+  },
+  {
+   "id": "s1v2:w0:pt=scen_ssd_stock_safetensors:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "w0",
+    "kind": "w0",
+    "point": "scen_ssd_stock_safetensors",
+    "row": "load_scenario",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur",
+     "BL4"
+    ],
+    "modes": [
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 3839
+   },
+   "est_s": 1279.6645,
+   "status": "ok",
+   "wall_s": 1974.3068754570559,
+   "peak_rss_mb": 479.4609375,
+   "runs": 25
+  },
+  {
+   "id": "s1v2:w0:pt=scen_ssd_stock_safetensors:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "w0",
+    "kind": "w0",
+    "point": "scen_ssd_stock_safetensors",
+    "row": "load_scenario",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur",
+     "BL4"
+    ],
+    "modes": [
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 3839
+   },
+   "est_s": 1279.6645,
+   "status": "ok",
+   "wall_s": 1666.215111379046,
+   "peak_rss_mb": 464.3359375,
+   "runs": 25
+  },
+  {
+   "id": "s1v2:w0:pt=scen_ssd_stock_pytorch:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "w0",
+    "kind": "w0",
+    "point": "scen_ssd_stock_pytorch",
+    "row": "load_scenario",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur",
+     "BL4"
+    ],
+    "modes": [
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 3839
+   },
+   "est_s": 1279.6645,
+   "status": "ok",
+   "wall_s": 1887.1359806293622,
+   "peak_rss_mb": 474.56640625,
+   "runs": 25
+  },
+  {
+   "id": "s1v2:w0:pt=scen_ssd_stock_pytorch:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "w0",
+    "kind": "w0",
+    "point": "scen_ssd_stock_pytorch",
+    "row": "load_scenario",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur",
+     "BL4"
+    ],
+    "modes": [
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 3839
+   },
+   "est_s": 1279.6645,
+   "status": "ok",
+   "wall_s": 1627.9968934389763,
+   "peak_rss_mb": 458.20703125,
+   "runs": 25
+  },
+  {
+   "id": "s1v2:w0:pt=scen_a5_10GBps:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "w0",
+    "kind": "w0",
+    "point": "scen_a5_10GBps",
+    "row": "load_scenario",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur",
+     "BL4"
+    ],
+    "modes": [
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 3839
+   },
+   "est_s": 1279.6645,
+   "status": "ok",
+   "wall_s": 2005.3631130591966,
+   "peak_rss_mb": 485.56640625,
+   "runs": 25
+  },
+  {
+   "id": "s1v2:w0:pt=scen_a5_10GBps:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "w0",
+    "kind": "w0",
+    "point": "scen_a5_10GBps",
+    "row": "load_scenario",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur",
+     "BL4"
+    ],
+    "modes": [
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 3839
+   },
+   "est_s": 1279.6645,
+   "status": "ok",
+   "wall_s": 1681.9382711672224,
+   "peak_rss_mb": 473.7734375,
+   "runs": 25
+  },
+  {
+   "id": "s1v2:w0:pt=scen_a5_2GBps:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "w0",
+    "kind": "w0",
+    "point": "scen_a5_2GBps",
+    "row": "load_scenario",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur",
+     "BL4"
+    ],
+    "modes": [
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 3839
+   },
+   "est_s": 1279.6645,
+   "status": "ok",
+   "wall_s": 1914.2086803531274,
+   "peak_rss_mb": 473.16796875,
+   "runs": 25
+  },
+  {
+   "id": "s1v2:w0:pt=scen_a5_2GBps:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "w0",
+    "kind": "w0",
+    "point": "scen_a5_2GBps",
+    "row": "load_scenario",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur",
+     "BL4"
+    ],
+    "modes": [
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 3839
+   },
+   "est_s": 1279.6645,
+   "status": "ok",
+   "wall_s": 1646.7452599471435,
+   "peak_rss_mb": 457.1171875,
+   "runs": 25
+  },
+  {
+   "id": "s1v2:w0:pt=scen_cold_wan_10gbps:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "w0",
+    "kind": "w0",
+    "point": "scen_cold_wan_10gbps",
+    "row": "load_scenario",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur",
+     "BL4"
+    ],
+    "modes": [
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 3839
+   },
+   "est_s": 1279.6645,
+   "status": "ok",
+   "wall_s": 1895.1141064479016,
+   "peak_rss_mb": 478.84375,
+   "runs": 25
+  },
+  {
+   "id": "s1v2:w0:pt=scen_cold_wan_10gbps:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "w0",
+    "kind": "w0",
+    "point": "scen_cold_wan_10gbps",
+    "row": "load_scenario",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur",
+     "BL4"
+    ],
+    "modes": [
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 3839
+   },
+   "est_s": 1279.6645,
+   "status": "ok",
+   "wall_s": 1637.5742397122085,
+   "peak_rss_mb": 456.51171875,
+   "runs": 25
+  },
+  {
+   "id": "s1v2:w0:pt=fee4:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "w0",
+    "kind": "w0",
+    "point": "fee4",
+    "row": "transfer_fee",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur",
+     "BL4"
+    ],
+    "modes": [
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 3839
+   },
+   "est_s": 1279.6645,
+   "status": "ok",
+   "wall_s": 1793.3591880849563,
+   "peak_rss_mb": 427.4453125,
+   "runs": 25
+  },
+  {
+   "id": "s1v2:w0:pt=fee4:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "w0",
+    "kind": "w0",
+    "point": "fee4",
+    "row": "transfer_fee",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur",
+     "BL4"
+    ],
+    "modes": [
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 3839
+   },
+   "est_s": 1279.6645,
+   "status": "ok",
+   "wall_s": 1547.331485718023,
+   "peak_rss_mb": 428.203125,
+   "runs": 25
+  },
+  {
+   "id": "s1v2:w0:pt=fee8:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "w0",
+    "kind": "w0",
+    "point": "fee8",
+    "row": "transfer_fee",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur",
+     "BL4"
+    ],
+    "modes": [
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 3839
+   },
+   "est_s": 1279.6645,
+   "status": "ok",
+   "wall_s": 1781.1435125269927,
+   "peak_rss_mb": 419.4765625,
+   "runs": 25
+  },
+  {
+   "id": "s1v2:w0:pt=fee8:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "w0",
+    "kind": "w0",
+    "point": "fee8",
+    "row": "transfer_fee",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur",
+     "BL4"
+    ],
+    "modes": [
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 3839
+   },
+   "est_s": 1279.6645,
+   "status": "ok",
+   "wall_s": 1466.0211650072597,
+   "peak_rss_mb": 421.73828125,
+   "runs": 25
+  },
+  {
+   "id": "s1v2:w0:pt=fee16:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "w0",
+    "kind": "w0",
+    "point": "fee16",
+    "row": "transfer_fee",
+    "mu": 1.0,
+    "c": 301,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur",
+     "BL4"
+    ],
+    "modes": [
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 3839
+   },
+   "est_s": 1279.6645,
+   "status": "ok",
+   "wall_s": 1785.4803368980065,
+   "peak_rss_mb": 416.0234375,
+   "runs": 25
+  },
+  {
+   "id": "s1v2:w0:pt=fee16:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "w0",
+    "kind": "w0",
+    "point": "fee16",
+    "row": "transfer_fee",
+    "mu": 1.0,
+    "c": 302,
+    "tags": [
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "BL5-cur",
+     "BL4"
+    ],
+    "modes": [
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080,
+    "limit_s": 3839
+   },
+   "est_s": 1279.6645,
+   "status": "ok",
+   "wall_s": 1452.9439565599896,
+   "peak_rss_mb": 415.3984375,
+   "runs": 25
+  }
+ ],
+ "instance_hashes": {},
+ "parts": [
+  "w0"
+ ],
+ "design": {
+  "reduced": false,
+  "weeks": [
+   301,
+   302,
+   303,
+   304
+  ],
+  "w0_weeks": [
+   301,
+   302
+  ],
+  "policy_seeds": [
+   0
+  ],
+  "horizon_min": 10080
+ },
+ "instance_hashes_from_outputs": {
+  "s1v2:w0:pt=scen_cold_wan_1gbps:c=301": "c04c4e551529d4cad5ba44f18ec07df6a453296aee7a6c6b2b6e26785f6196fa",
+  "s1v2:w0:pt=scen_cold_wan_1gbps:c=302": "e6ee0825bcc1a8e34ff7464afff1f2a5cfdda01b58710ceeb1633cf39b90334e",
+  "s1v2:w0:pt=scen_warm_peer_rdma:c=301": "828ed6b62576086987ac7f2e428b5443d87fdc72831733757f996327f68e2971",
+  "s1v2:w0:pt=scen_warm_peer_rdma:c=302": "f8aa528f140275872ab0d8adea9a9fb73eff6f28510029cecd5bed1204c408a2",
+  "s1v2:w0:pt=scen_ssd_optimized:c=301": "e8f86d8060c56d87036e27f701a59c1707596e363cd12361dceb6fb346803443",
+  "s1v2:w0:pt=scen_ssd_optimized:c=302": "a297f0d9c7b375ae070685206ad5999cc7c62c9162c85098f316882fd0e76600",
+  "s1v2:w0:pt=scen_ssd_stock_safetensors:c=301": "d7eabbce89da2706dbc7399880c991dbf913686af47bdd568638976d65d39102",
+  "s1v2:w0:pt=scen_ssd_stock_safetensors:c=302": "35a457832fb8a1ce7fc908d1d651065bc6249248fb05656675276c63ddc24d1d",
+  "s1v2:w0:pt=scen_ssd_stock_pytorch:c=301": "585978ae5be1103a5f5ac5de7d6c9721208bcbaee813996ff3a17f134879ddf3",
+  "s1v2:w0:pt=scen_ssd_stock_pytorch:c=302": "358c5638861dd3c3a078e2a9af3ebe4d753d48ae139485b55c09e55387326620",
+  "s1v2:w0:pt=scen_a5_10GBps:c=301": "b27fa5f9aa630f6332df05c7fb16cc4fe7b489d9b783496e0876668280526c95",
+  "s1v2:w0:pt=scen_a5_10GBps:c=302": "b5b4b7c20f74fe69cbe1999c4f86b3a4ade2295f3a3ec7a965876a4a73e21284",
+  "s1v2:w0:pt=scen_a5_2GBps:c=301": "b558174ed53974a3ce61f23dac521bc47f674ddb17252ec7287b2b930d9b74ff",
+  "s1v2:w0:pt=scen_a5_2GBps:c=302": "255a809654c8f37c4d44d08f88c6bda57badfa6f26601535c93a64f5204688e9",
+  "s1v2:w0:pt=scen_cold_wan_10gbps:c=301": "c2d669f754f7ad50c27ff6c254e76b4fef37ece8903e9141389bb3d710a5ccc6",
+  "s1v2:w0:pt=scen_cold_wan_10gbps:c=302": "bba6ccc0da53ea2d73dd4b6e462cfe29f4fdac7b17bf6e0b42f44a0025324cf0",
+  "s1v2:w0:pt=fee4:c=301": "5625e52900235ac307ecab8ba2fe78696cde67a7febcf7cff43380b77f96ebc6",
+  "s1v2:w0:pt=fee4:c=302": "785addd66ac0c3730275e1381473c270de4d64d656e72c652c2602e5d20172a6",
+  "s1v2:w0:pt=fee8:c=301": "2768586347c4d6513c37fbd0856d7bd3140b51231f1dae22882a0ce2c1c664fa",
+  "s1v2:w0:pt=fee8:c=302": "40f4a019825e904a9caf1cb962b130ceaaeb9f31199327d65d347de6a8e43dbb",
+  "s1v2:w0:pt=fee16:c=301": "dd6cfef53b7c2b774ba9c8a44d2fae12eda0363283896a931bbb361fe2601117",
+  "s1v2:w0:pt=fee16:c=302": "fa789236c674cd1c25db694916f8a594a9c83e9021bdaa7f6bf3009a3c28b3d0"
+ },
+ "gate_record": {
+  "head": "44d1b4e42b5be44503039b1b5d6bfba8e32930ff",
+  "registration": "design/ms7/registration.md",
+  "registration_at_head": true,
+  "registration_sha256": "163ff03578ced770f5ded225c058281e32093b613cf2aed29b6e40b6ef094ec8",
+  "analysis": "code/sim/sublet/experiments/ms7_sens_analysis.py",
+  "analysis_sha256_registered": "6d9772304fe30b20d0d500c2c56b867ccecc97dc99e672c63bdfcd66912e4a2d",
+  "analysis_sha256_head": "6d9772304fe30b20d0d500c2c56b867ccecc97dc99e672c63bdfcd66912e4a2d",
+  "analysis_sha256_disk": "6d9772304fe30b20d0d500c2c56b867ccecc97dc99e672c63bdfcd66912e4a2d",
+  "dirty_paths": []
+ },
+ "sources_sha256": {
+  "code/sim/sublet/experiments/s1v2.py": "37a88cd96d534f74e2f68e747dc30c21036614a7d787aa7e22a271ee7bdedc23",
+  "code/sim/sublet/experiments/s1.py": "8afb76a9aa6dd1fe57477c829fccfaad72079268ea825b1649c0a4389d7cd802",
+  "code/sim/sublet/experiments/ms5b_common.py": "6ae2f94e94f322f271addcdb3dfc16fffca696a376ad37fca499ba7c0d3ebe84",
+  "code/sim/sublet/experiments/e7h.py": "e6ea63450ad36e45a32b35442c278bf72cb3bf879ae1033031fc76b52403a078",
+  "code/sim/sublet/experiments/ms7_sens_analysis.py": "6d9772304fe30b20d0d500c2c56b867ccecc97dc99e672c63bdfcd66912e4a2d",
+  "code/sim/out/sublet_v2/main/summary.json": "83389fc94372dd69b3b1402e87be93b7506da4ac398d100cbbeb535de219142c",
+  "code/sim/out/sublet_v2/main/manifest.json": "3940219d259f5a294b6ed81b614f3fd6bcf5bd02e4fab632f2c78c0765f2faef",
+  "code/sim/out/sublet_v2/second/summary.json": "8349e8803a8f43c8d1d5415615503df20bc0e6b291d37265821bf8ff43ff65de"
+ }
+}

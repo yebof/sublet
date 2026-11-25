@@ -1,0 +1,60 @@
+{
+ "job": "e4:pcols:panel=azure:c=1:mu=2:pred=prev",
+ "exp": "e4",
+ "kind": "pool",
+ "params": {
+  "panel": "azure",
+  "c": 1,
+  "mu": 2.0,
+  "pred": "prev",
+  "days": [
+   1,
+   2
+  ],
+  "window": [
+   444,
+   72
+  ],
+  "day_slots": 24
+ },
+ "status": "ok",
+ "started": "2026-10-26T14:08:12",
+ "pid": 937671,
+ "argv": [
+  "/work/ms4wt/u25/code/sim/sublet/experiments/e4.py",
+  "--job",
+  "e4:pcols:panel=azure:c=1:mu=2:pred=prev",
+  "--out",
+  "/work/ms4u/u25scratch/fixture_roots/e4/out/e4"
+ ],
+ "slots": [
+  "slot0"
+ ],
+ "milp_limit_s": null,
+ "git_revision": "939847ca5925ce069d6df9089fe3a3d1d3207bb7",
+ "versions": {
+  "python": "3.12.3",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "sublet": "0.1.0"
+ },
+ "runs": 0,
+ "errors": [],
+ "n_errors": 0,
+ "outputs": [
+  "runs/pcols/e4__pcols__panel__azure__c__1__mu__2__pred__prev.json"
+ ],
+ "result": {
+  "n_cols": 61,
+  "methods": {
+   "milp": 2,
+   "lp_round": 0,
+   "none": 0
+  },
+  "instance_hash": "10e71765df7c05ae5ae5170bc5bbfd6068819f55b1e1ab536c3e00320593f0b2"
+ },
+ "wall_s": 0.18838555389083922,
+ "peak_rss_kb": 134316,
+ "peak_rss_mb": 131.16796875,
+ "finished": "2026-10-26T14:08:13"
+}

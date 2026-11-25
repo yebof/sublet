@@ -1,0 +1,1563 @@
+{
+ "meta": {
+  "script": "code/sim/figs/ms7_eval_extract.py",
+  "spec": "design/ms7/w_spec.md (unit W-X; \u00a72.7, \u00a72.8, \u00a73 Values)",
+  "statistic": "statistics.median over the weeks of per-week (paired) values",
+  "inputs": {
+   "code/analysis/out/a11_calibration.json": "2575d4ce7e15244a1a75641e8fe55a7249c8703e1fa166cb9f6af87041544a58",
+   "code/analysis/out/a12_minute_io.npz": "7a2d61df69c77080f2be11e12cdb3cce82243524d247f75a037042738240f208",
+   "code/analysis/out/a12_sim_inputs.json": "ab8ba5e607aa4a896d1daf23973fa9d6acc16362705973f5eeaf2b517e540377",
+   "code/analysis/out/a1_slack_series.npz": "c4570444f5d8a15f676b14df1ef240ee80a4b1fc34bf948bc274ed77c96dbded",
+   "code/analysis/out/a2_slack_series.npz": "bfbee6bfcdb338e7a0bc6c9521610d50238103e22e2a3fdea002b63ec1740900",
+   "code/analysis/out/a4b_wildchat_weekly.json": "242c2ad8e8ea9782f4b74b0ef0c6c21421273b09cb5c128b819286726adb4da6",
+   "code/sim/configs/bench_e7f.json": "c34eee8133082cfe148d314b9209ea3d703c1e110f74c1372e4945cf25f952f0",
+   "code/sim/out/figs/fig4v2.json": "71c26f72c0e23fb26d500597b4fbe38a108615a30dcbc828bd6855986f8bd5d1",
+   "code/sim/out/figs/table3_v2.json": "83b45466faa8f7ea4bd036fd1ab21c1aa13bdbd55bc137bc7e415db6de94154d",
+   "code/sim/out/sublet_v2/analysis.json": "7976cbaf17589e67a0fba0f14663015e47ea2df76d1b6aa2381be6b281ec60eb",
+   "code/sim/out/sublet_v2/e3/summary.json": "df58d0fd63536cdfcf5a5a855d416911cff1b1c555b33c1b26a54b765ea114cf",
+   "code/sim/out/sublet_v2/fam/summary.json": "547330681efec977919884a09660201f8db4f020a733d661ec16025206e2191a",
+   "code/sim/out/sublet_v2/grid/summary.json": "38bb6b53108ebec39613b747fa789af05264739b990b080a9bc4d48e9cb852fc",
+   "code/sim/out/sublet_v2/main/jobs/e7h__main__k__week__tag__Sublet__c__301.json": "89803b33945e22afc7aaea353de4e0c113db4826209b8c58dfe1577f01d6d60d",
+   "code/sim/out/sublet_v2/main/jobs/e7h__main__k__week__tag__Sublet__c__302.json": "35cf5d75c995fb33ce7b0ff502eea6f5757c304683efc6a44a5681adc1817c3f",
+   "code/sim/out/sublet_v2/main/jobs/e7h__main__k__week__tag__Sublet__c__303.json": "6cd7fc9de82a728445f830095ca10c6bdad5bcace56cf79d42ded76a58a454d5",
+   "code/sim/out/sublet_v2/main/jobs/e7h__main__k__week__tag__Sublet__c__304.json": "c2f4afd433190a013ab30eef9fdd04aa474a96df96c3c34a8fb7d8c4d8ba9ea8",
+   "code/sim/out/sublet_v2/main/jobs/e7h__main__k__week__tag__Sublet__c__305.json": "c47958da733651baf294f228ef3b023e0dad2829c644dd4f1da369adc239ab5a",
+   "code/sim/out/sublet_v2/main/jobs/e7h__main__k__week__tag__Sublet__c__306.json": "8e924d324a6e4430f40ef9604cfa13f5b4715ccdfaa599dd4aa1e37be99b0a35",
+   "code/sim/out/sublet_v2/main/jobs/e7h__main__k__week__tag__Sublet__c__307.json": "3343d5124ed1732dcebaff31ff04e4c87dc24a5e4367c14826597bd7a62ec516",
+   "code/sim/out/sublet_v2/main/jobs/e7h__main__k__week__tag__Sublet__c__308.json": "64ee2971351b223bf56871c0568d5f6f2bc40706a8ddeffaa21a1214568d0a36",
+   "code/sim/out/sublet_v2/main/jobs/e7h__main__k__week__tag__Sublet__c__309.json": "9e23cf2d549b562732f977ba0c91b82ff39e8f0c2cdaf42358fbe7bb4f50872d",
+   "code/sim/out/sublet_v2/main/jobs/e7h__main__k__week__tag__Sublet__c__310.json": "929b081739bae5b80cbebed9291ec5da1a8d1ee9a9a4e958a0c30f379aaa8a84",
+   "code/sim/out/sublet_v2/main/jobs/e7h__main__k__week__tag__Sublet__c__311.json": "027b679f50d1a46a8723ceb84e82e0962fa89723d88c793f2ca5e1573e121fec",
+   "code/sim/out/sublet_v2/main/jobs/e7h__main__k__week__tag__Sublet__c__312.json": "6e34aa42b48c328ac9610f7be4821a7a6231122e270f435a1afb31a55222bb4c",
+   "code/sim/out/sublet_v2/main/jobs/e7h__main__k__week__tag__Sublet__c__313.json": "492ff2c46fcce91cacae705ea849394c39d28b470b78cfcd652b9363aa9c2c42",
+   "code/sim/out/sublet_v2/main/jobs/e7h__main__k__week__tag__Sublet__c__314.json": "8f26c6281875a74f042617cfcf22b45c30cde36a82f4b97e392328426ae1423f",
+   "code/sim/out/sublet_v2/main/jobs/e7h__main__k__week__tag__Sublet__c__315.json": "4b3c0ae1899444ddd3e2df120876adce0ffaa5aedb616f4469bcfd8fa478fdf7",
+   "code/sim/out/sublet_v2/main/jobs/e7h__main__k__week__tag__Sublet__c__316.json": "6cba148bee1244bc8f7d7eb7d1326c84f40b38c64cf7ad8ccdea8885404902f7",
+   "code/sim/out/sublet_v2/main/summary.json": "83389fc94372dd69b3b1402e87be93b7506da4ac398d100cbbeb535de219142c",
+   "code/sim/out/sublet_v2/second/summary.json": "8349e8803a8f43c8d1d5415615503df20bc0e6b291d37265821bf8ff43ff65de",
+   "code/sim/out/sublet_v2/seeds/summary.json": "f6ea589fe27700b45429052baeab8caaaf8f61543db1693ad82408635bf89ee7"
+  }
+ },
+ "econ": {
+  "weeks": [
+   "301",
+   "302",
+   "303",
+   "304",
+   "305",
+   "306",
+   "307",
+   "308",
+   "309",
+   "310",
+   "311",
+   "312",
+   "313",
+   "314",
+   "315",
+   "316"
+  ],
+  "n_weeks": 16,
+  "mode": "L-tr",
+  "policy_seed": 0,
+  "accounting": "total = overflow + own capacity of the instance (ms4_common.accountings); overflow = r0 x bl0a_usd; a USD difference between policies is the same in both",
+  "primary_set": [
+   "BL1",
+   "BL1-BO",
+   "BL2",
+   "BL3-0",
+   "BL4",
+   "BL5",
+   "BL5-cur"
+  ],
+  "primary_labels": {
+   "BL1": "Greedy renting",
+   "BL1-BO": "Greedy, back-off",
+   "BL2": "Per-borrower ski rental",
+   "BL3-0": "SpotHedge-style, $N_{\\mathrm{Extra}}=0$",
+   "BL4": "CoCaR-style",
+   "BL5": "RetroRenting-style, lagged",
+   "BL5-cur": "RetroRenting-style"
+  },
+  "own_capacity_usd": {
+   "median": 265417.89261672844,
+   "min": 133630.57020458,
+   "max": 511247.4062359991,
+   "by_week": {
+    "301": 325321.82789818256,
+    "302": 246112.11123834437,
+    "303": 133630.57020458,
+    "304": 171517.77815048557,
+    "305": 177097.85780412055,
+    "306": 176705.1498539586,
+    "307": 179924.93443118728,
+    "308": 271255.8917102306,
+    "309": 259579.89352322626,
+    "310": 439009.2885916233,
+    "311": 218916.9547014312,
+    "312": 406473.5424549586,
+    "313": 282404.9055960284,
+    "314": 419677.0240962087,
+    "315": 511247.4062359991,
+    "316": 375979.5670785241
+   }
+  },
+  "bl0a_total_usd": {
+   "median": 302147.3019217851,
+   "by_week": {
+    "301": 366257.9804262798,
+    "302": 283665.3916092669,
+    "303": 155585.83976818976,
+    "304": 190975.8213115677,
+    "305": 204826.35115581634,
+    "306": 201416.1932760052,
+    "307": 212392.5895632881,
+    "308": 299820.6298462103,
+    "309": 304473.97399735986,
+    "310": 488553.3358370551,
+    "311": 249820.34630119213,
+    "312": 450798.9540387315,
+    "313": 310757.38509368803,
+    "314": 476786.91280544805,
+    "315": 565379.4320183499,
+    "316": 418854.75627878023
+   }
+  },
+  "sublet_total_usd": {
+   "median": 284624.5833296681,
+   "by_week": {
+    "301": 347716.84661838267,
+    "302": 265853.6123073759,
+    "303": 145429.15093673402,
+    "304": 182402.27822464707,
+    "305": 191974.56720839825,
+    "306": 190154.89552721803,
+    "307": 197178.78681338392,
+    "308": 287772.66528017825,
+    "309": 281476.50137915794,
+    "310": 464808.5877994548,
+    "311": 236094.13463115154,
+    "312": 430905.0004983094,
+    "313": 297741.04091774835,
+    "314": 449403.32502534206,
+    "315": 540364.868639477,
+    "316": 399041.22819810716
+   }
+  },
+  "saving_vs_fallback": {
+   "usd": {
+    "median": 16512.791025897604,
+    "min": 8573.543086920632,
+    "max": 27383.587780105998,
+    "by_week": {
+     "301": 18541.13380789716,
+     "302": 17811.779301891045,
+     "303": 10156.688831455744,
+     "304": 8573.543086920632,
+     "305": 12851.783947418095,
+     "306": 11261.297748787154,
+     "307": 15213.802749904164,
+     "308": 12047.964566032053,
+     "309": 22997.472618201922,
+     "310": 23744.748037600308,
+     "311": 13726.21167004059,
+     "312": 19893.95354042214,
+     "313": 13016.344175939681,
+     "314": 27383.587780105998,
+     "315": 25014.563378872932,
+     "316": 19813.528080673073
+    }
+   },
+   "pct_total": {
+    "median": 5.278374178176076,
+    "min": 4.01839078658861,
+    "max": 7.553181743672233,
+    "by_week": {
+     "301": 5.062315307455567,
+     "302": 6.279151362400159,
+     "303": 6.528029058806628,
+     "304": 4.489334318889149,
+     "305": 6.274477807614431,
+     "306": 5.5910587751777925,
+     "307": 7.163057233393166,
+     "308": 4.01839078658861,
+     "309": 7.553181743672233,
+     "310": 4.860216131145156,
+     "311": 5.494433048896585,
+     "312": 4.4130434115232875,
+     "313": 4.188587238889097,
+     "314": 5.74335977868583,
+     "315": 4.424385105339502,
+     "316": 4.730405417071504
+    }
+   },
+   "pct_overflow_median": 46.21119572239097
+  },
+  "margin_vs_cheapest_primary": {
+   "definition": "per week, min over the primary baselines of their total minus Sublet's total",
+   "usd": {
+    "median": 1860.4120709909912,
+    "min": 905.2099839353177,
+    "max": 2687.225702859141,
+    "by_week": {
+     "301": 1778.8594334147638,
+     "302": 2133.091974955052,
+     "303": 905.2099839353177,
+     "304": 1941.9647085672186,
+     "305": 2213.0352258719795,
+     "306": 2687.225702859141,
+     "307": 2046.6957323707757,
+     "308": 2578.446263106249,
+     "309": 1498.3279362187022,
+     "310": 1657.8468061758904,
+     "311": 1718.4889480528946,
+     "312": 2155.726137486985,
+     "313": 2348.3843244572636,
+     "314": 1709.1975426451536,
+     "315": 1629.2344008312793,
+     "316": 1774.8418143205927
+    }
+   },
+   "pct_total": {
+    "median": 0.6706066381054201,
+    "min": 0.30060002344898445,
+    "max": 1.3934848287906203,
+    "by_week": {
+     "301": 0.5089789095008583,
+     "302": 0.7959693301454928,
+     "303": 0.6185901781646823,
+     "304": 1.0534447280085493,
+     "305": 1.1396377513961329,
+     "306": 1.3934848287906203,
+     "307": 1.0273262768485079,
+     "308": 0.8880442197728123,
+     "309": 0.5294915946565726,
+     "310": 0.3554053803630051,
+     "311": 0.7226230980461578,
+     "312": 0.49778841739670115,
+     "313": 0.7825615056451442,
+     "314": 0.3788849693011039,
+     "315": 0.30060002344898445,
+     "316": 0.44280704969378143
+    }
+   },
+   "cheapest_by_week": {
+    "301": "BL1-BO",
+    "302": "BL1-BO",
+    "303": "BL5-cur",
+    "304": "BL5-cur",
+    "305": "BL5-cur",
+    "306": "BL5-cur",
+    "307": "BL5-cur",
+    "308": "BL5-cur",
+    "309": "BL5-cur",
+    "310": "BL1-BO",
+    "311": "BL1-BO",
+    "312": "BL1-BO",
+    "313": "BL5-cur",
+    "314": "BL1-BO",
+    "315": "BL1-BO",
+    "316": "BL1-BO"
+   },
+   "cheapest_counts": {
+    "BL1-BO": 8,
+    "BL5-cur": 8
+   },
+   "weeks_positive": 16,
+   "n_weeks": 16
+  },
+  "margin_vs_lowest_median_primary": {
+   "tag": "BL5-cur",
+   "label": "RetroRenting-style",
+   "median_total_usd": 286662.9704293306,
+   "usd": {
+    "median": 2733.5021214081353,
+    "min": 905.2099839353177,
+    "max": 6392.346102400799
+   }
+  }
+ },
+ "guard": {
+  "definition": "s_fb_all: the safe expert S followed all-fallback (FB) at every slot (ms5b_common.guard_extras)",
+  "week": {
+   "runs": 724,
+   "s_fb_all": 724,
+   "aborted": 105,
+   "parts": [
+    "main",
+    "seeds",
+    "second",
+    "grid"
+   ],
+   "by_part": {
+    "main": {
+     "runs": 448,
+     "s_fb_all": 448,
+     "aborted": 66
+    },
+    "seeds": {
+     "runs": 56,
+     "s_fb_all": 56,
+     "aborted": 0
+    },
+    "second": {
+     "runs": 112,
+     "s_fb_all": 112,
+     "aborted": 3
+    },
+    "grid": {
+     "runs": 108,
+     "s_fb_all": 108,
+     "aborted": 36
+    }
+   },
+   "by_tag": {
+    "BL1-GP": {
+     "runs": 175,
+     "s_fb_all": 175,
+     "aborted": 0
+    },
+    "Sublet": {
+     "runs": 231,
+     "s_fb_all": 231,
+     "aborted": 0
+    },
+    "Sublet-1way": {
+     "runs": 139,
+     "s_fb_all": 139,
+     "aborted": 69
+    },
+    "Sublet-MS4": {
+     "runs": 175,
+     "s_fb_all": 175,
+     "aborted": 36
+    },
+    "Sublet-lag": {
+     "runs": 4,
+     "s_fb_all": 4,
+     "aborted": 0
+    }
+   }
+  },
+  "week_confirmation_weeks": {
+   "runs": 616,
+   "s_fb_all": 616,
+   "aborted": 69,
+   "parts": [
+    "main",
+    "seeds",
+    "second"
+   ]
+  },
+  "week_main": {
+   "runs": 448,
+   "s_fb_all": 448,
+   "aborted": 66
+  },
+  "sublet_week": {
+   "runs": 231,
+   "s_fb_all": 231,
+   "aborted": 0,
+   "by_part": {
+    "main": {
+     "runs": 112,
+     "s_fb_all": 112,
+     "aborted": 0
+    },
+    "seeds": {
+     "runs": 56,
+     "s_fb_all": 56,
+     "aborted": 0
+    },
+    "second": {
+     "runs": 36,
+     "s_fb_all": 36,
+     "aborted": 0
+    },
+    "grid": {
+     "runs": 27,
+     "s_fb_all": 27,
+     "aborted": 0
+    }
+   }
+  },
+  "not_family": {
+   "runs": 2122,
+   "s_fb_all": 2122,
+   "aborted": 303
+  },
+  "all": {
+   "runs": 4962,
+   "s_fb_all": 4534,
+   "aborted": 578
+  },
+  "projected_aborts_s_fb_all": 0,
+  "rows": [
+   {
+    "part": "main",
+    "kind": "week",
+    "tag": "BL1-GP",
+    "runs": 112,
+    "s_fb_all": 112,
+    "aborted": 0
+   },
+   {
+    "part": "main",
+    "kind": "week",
+    "tag": "Sublet",
+    "runs": 112,
+    "s_fb_all": 112,
+    "aborted": 0
+   },
+   {
+    "part": "main",
+    "kind": "week",
+    "tag": "Sublet-1way",
+    "runs": 112,
+    "s_fb_all": 112,
+    "aborted": 42
+   },
+   {
+    "part": "main",
+    "kind": "week",
+    "tag": "Sublet-MS4",
+    "runs": 112,
+    "s_fb_all": 112,
+    "aborted": 24
+   },
+   {
+    "part": "seeds",
+    "kind": "week",
+    "tag": "Sublet",
+    "runs": 56,
+    "s_fb_all": 56,
+    "aborted": 0
+   },
+   {
+    "part": "second",
+    "kind": "e5",
+    "tag": "Sublet",
+    "runs": 16,
+    "s_fb_all": 16,
+    "aborted": 0
+   },
+   {
+    "part": "second",
+    "kind": "e5",
+    "tag": "Sublet-MS4",
+    "runs": 16,
+    "s_fb_all": 16,
+    "aborted": 1
+   },
+   {
+    "part": "second",
+    "kind": "gap",
+    "tag": "BL1-GP",
+    "runs": 4,
+    "s_fb_all": 4,
+    "aborted": 0
+   },
+   {
+    "part": "second",
+    "kind": "gap",
+    "tag": "Sublet",
+    "runs": 4,
+    "s_fb_all": 4,
+    "aborted": 0
+   },
+   {
+    "part": "second",
+    "kind": "gap",
+    "tag": "Sublet-MS4",
+    "runs": 4,
+    "s_fb_all": 4,
+    "aborted": 0
+   },
+   {
+    "part": "second",
+    "kind": "week",
+    "tag": "BL1-GP",
+    "runs": 36,
+    "s_fb_all": 36,
+    "aborted": 0
+   },
+   {
+    "part": "second",
+    "kind": "week",
+    "tag": "Sublet",
+    "runs": 36,
+    "s_fb_all": 36,
+    "aborted": 0
+   },
+   {
+    "part": "second",
+    "kind": "week",
+    "tag": "Sublet-MS4",
+    "runs": 36,
+    "s_fb_all": 36,
+    "aborted": 3
+   },
+   {
+    "part": "second",
+    "kind": "week",
+    "tag": "Sublet-lag",
+    "runs": 4,
+    "s_fb_all": 4,
+    "aborted": 0
+   },
+   {
+    "part": "e3",
+    "kind": "e3cell",
+    "tag": "Sublet",
+    "runs": 260,
+    "s_fb_all": 260,
+    "aborted": 0
+   },
+   {
+    "part": "e3",
+    "kind": "e3cell",
+    "tag": "Sublet-MS4",
+    "runs": 260,
+    "s_fb_all": 260,
+    "aborted": 185
+   },
+   {
+    "part": "fam",
+    "kind": "fam",
+    "tag": "BL1-G",
+    "runs": 710,
+    "s_fb_all": 603,
+    "aborted": 68
+   },
+   {
+    "part": "fam",
+    "kind": "fam",
+    "tag": "BL1-GP",
+    "runs": 710,
+    "s_fb_all": 603,
+    "aborted": 68
+   },
+   {
+    "part": "fam",
+    "kind": "fam",
+    "tag": "BL5-G",
+    "runs": 710,
+    "s_fb_all": 603,
+    "aborted": 100
+   },
+   {
+    "part": "fam",
+    "kind": "fam",
+    "tag": "Sublet",
+    "runs": 710,
+    "s_fb_all": 603,
+    "aborted": 39
+   },
+   {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "BL1-GP",
+    "runs": 12,
+    "s_fb_all": 12,
+    "aborted": 0
+   },
+   {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "Sublet",
+    "runs": 12,
+    "s_fb_all": 12,
+    "aborted": 0
+   },
+   {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "Sublet-1way",
+    "runs": 12,
+    "s_fb_all": 12,
+    "aborted": 12
+   },
+   {
+    "part": "grid",
+    "kind": "gap",
+    "tag": "Sublet-MS4",
+    "runs": 12,
+    "s_fb_all": 12,
+    "aborted": 0
+   },
+   {
+    "part": "grid",
+    "kind": "q44",
+    "tag": "BL1-GP",
+    "runs": 393,
+    "s_fb_all": 393,
+    "aborted": 0
+   },
+   {
+    "part": "grid",
+    "kind": "q44",
+    "tag": "Sublet",
+    "runs": 393,
+    "s_fb_all": 393,
+    "aborted": 0
+   },
+   {
+    "part": "grid",
+    "kind": "week",
+    "tag": "BL1-GP",
+    "runs": 27,
+    "s_fb_all": 27,
+    "aborted": 0
+   },
+   {
+    "part": "grid",
+    "kind": "week",
+    "tag": "Sublet",
+    "runs": 27,
+    "s_fb_all": 27,
+    "aborted": 0
+   },
+   {
+    "part": "grid",
+    "kind": "week",
+    "tag": "Sublet-1way",
+    "runs": 27,
+    "s_fb_all": 27,
+    "aborted": 27
+   },
+   {
+    "part": "grid",
+    "kind": "week",
+    "tag": "Sublet-MS4",
+    "runs": 27,
+    "s_fb_all": 27,
+    "aborted": 9
+   }
+  ]
+ },
+ "allowance": {
+  "definition": "B_T: B(T), the last entry of the safe expert's B curve; Wk_T: B_peak(T), the cap; LB_T: LB'(T); B = min{B_peak, LB'}; excess: ALG - bl0a_usd - B_T, overflow accounting, USD",
+  "sublet_week": {
+   "runs": 231,
+   "B_T": {
+    "min": 306.8569365325592,
+    "max": 323.9167731559327,
+    "min_floor": 306,
+    "max_ceil": 324
+   },
+   "Wk_T": {
+    "min": 306.8569365325592,
+    "max": 323.9167731559327
+   },
+   "LB_T": {
+    "min": 8578.686013151731,
+    "max": 23860.597678867874
+   },
+   "B_T_eq_Wk_T": 231,
+   "B_T_over_bl0a_max": 0.016297067917947303,
+   "excess_max": -4802.087100202686,
+   "by_part": {
+    "main": {
+     "runs": 112,
+     "B_T_min": 312.7973603563697,
+     "B_T_max": 323.9167731559327
+    },
+    "seeds": {
+     "runs": 56,
+     "B_T_min": 313.7633705659438,
+     "B_T_max": 317.22839414422486
+    },
+    "second": {
+     "runs": 36,
+     "B_T_min": 306.8569365325592,
+     "B_T_max": 317.22839414422486
+    },
+    "grid": {
+     "runs": 27,
+     "B_T_min": 312.6685142464404,
+     "B_T_max": 316.2704857470802
+    }
+   }
+  },
+  "sublet_week_main": {
+   "runs": 112,
+   "B_T": {
+    "min": 312.7973603563697,
+    "max": 323.9167731559327,
+    "min_floor": 312,
+    "max_ceil": 324
+   },
+   "Wk_T": {
+    "min": 312.7973603563697,
+    "max": 323.9167731559327
+   },
+   "LB_T": {
+    "min": 8752.085213622953,
+    "max": 23860.597678867874
+   },
+   "B_T_eq_Wk_T": 112,
+   "B_T_over_bl0a_max": 0.01618268634512628,
+   "excess_max": -5340.8745175170925
+  }
+ },
+ "fam_f3": {
+  "definition": "runs of part fam whose 'fam' field is F3 (sources F3 and CF3); t_a: the abort slot",
+  "modes": [
+   "F-eg"
+  ],
+  "by_tag": {
+   "BL1-G": {
+    "runs": 100,
+    "aborts": 68,
+    "abort_slots": [
+     12,
+     14,
+     16,
+     18,
+     20,
+     22,
+     24,
+     26,
+     28,
+     30,
+     32,
+     34,
+     36,
+     42,
+     44,
+     46,
+     48,
+     50,
+     84,
+     86,
+     92,
+     94,
+     96,
+     98,
+     164,
+     170,
+     172,
+     174,
+     176,
+     178
+    ],
+    "abort_slot_min": 12,
+    "abort_slot_max": 178,
+    "aborts_at_slot0": 0,
+    "aborts_s_fb_all": 0,
+    "abort_cases": {
+     "W(c)": 68
+    },
+    "by_src": {
+     "CF3": {
+      "runs": 20,
+      "aborts": 10,
+      "abort_slots": [
+       28,
+       30,
+       32,
+       34,
+       36
+      ],
+      "abort_slot_min": 28,
+      "abort_slot_max": 36,
+      "aborts_at_slot0": 0,
+      "aborts_s_fb_all": 0,
+      "abort_cases": {
+       "W(c)": 10
+      }
+     },
+     "F3": {
+      "runs": 80,
+      "aborts": 58,
+      "abort_slots": [
+       12,
+       14,
+       16,
+       18,
+       20,
+       22,
+       24,
+       26,
+       28,
+       42,
+       44,
+       46,
+       48,
+       50,
+       84,
+       86,
+       92,
+       94,
+       96,
+       98,
+       164,
+       170,
+       172,
+       174,
+       176,
+       178
+      ],
+      "abort_slot_min": 12,
+      "abort_slot_max": 178,
+      "aborts_at_slot0": 0,
+      "aborts_s_fb_all": 0,
+      "abort_cases": {
+       "W(c)": 58
+      }
+     }
+    }
+   },
+   "BL1-GP": {
+    "runs": 100,
+    "aborts": 68,
+    "abort_slots": [
+     12,
+     14,
+     16,
+     18,
+     20,
+     22,
+     24,
+     26,
+     28,
+     30,
+     32,
+     34,
+     36,
+     42,
+     44,
+     46,
+     48,
+     50,
+     84,
+     86,
+     92,
+     94,
+     96,
+     98,
+     164,
+     170,
+     172,
+     174,
+     176,
+     178
+    ],
+    "abort_slot_min": 12,
+    "abort_slot_max": 178,
+    "aborts_at_slot0": 0,
+    "aborts_s_fb_all": 0,
+    "abort_cases": {
+     "W(c)": 68
+    },
+    "by_src": {
+     "CF3": {
+      "runs": 20,
+      "aborts": 10,
+      "abort_slots": [
+       28,
+       30,
+       32,
+       34,
+       36
+      ],
+      "abort_slot_min": 28,
+      "abort_slot_max": 36,
+      "aborts_at_slot0": 0,
+      "aborts_s_fb_all": 0,
+      "abort_cases": {
+       "W(c)": 10
+      }
+     },
+     "F3": {
+      "runs": 80,
+      "aborts": 58,
+      "abort_slots": [
+       12,
+       14,
+       16,
+       18,
+       20,
+       22,
+       24,
+       26,
+       28,
+       42,
+       44,
+       46,
+       48,
+       50,
+       84,
+       86,
+       92,
+       94,
+       96,
+       98,
+       164,
+       170,
+       172,
+       174,
+       176,
+       178
+      ],
+      "abort_slot_min": 12,
+      "abort_slot_max": 178,
+      "aborts_at_slot0": 0,
+      "aborts_s_fb_all": 0,
+      "abort_cases": {
+       "W(c)": 58
+      }
+     }
+    }
+   },
+   "BL5-G": {
+    "runs": 100,
+    "aborts": 100,
+    "abort_slots": [
+     0
+    ],
+    "abort_slot_min": 0,
+    "abort_slot_max": 0,
+    "aborts_at_slot0": 100,
+    "aborts_s_fb_all": 0,
+    "abort_cases": {
+     "W(c)": 100
+    },
+    "by_src": {
+     "CF3": {
+      "runs": 20,
+      "aborts": 20,
+      "abort_slots": [
+       0
+      ],
+      "abort_slot_min": 0,
+      "abort_slot_max": 0,
+      "aborts_at_slot0": 20,
+      "aborts_s_fb_all": 0,
+      "abort_cases": {
+       "W(c)": 20
+      }
+     },
+     "F3": {
+      "runs": 80,
+      "aborts": 80,
+      "abort_slots": [
+       0
+      ],
+      "abort_slot_min": 0,
+      "abort_slot_max": 0,
+      "aborts_at_slot0": 80,
+      "aborts_s_fb_all": 0,
+      "abort_cases": {
+       "W(c)": 80
+      }
+     }
+    }
+   },
+   "Sublet": {
+    "runs": 100,
+    "aborts": 39,
+    "abort_slots": [
+     0
+    ],
+    "abort_slot_min": 0,
+    "abort_slot_max": 0,
+    "aborts_at_slot0": 39,
+    "aborts_s_fb_all": 0,
+    "abort_cases": {
+     "W(c)": 39
+    },
+    "by_src": {
+     "CF3": {
+      "runs": 20,
+      "aborts": 7,
+      "abort_slots": [
+       0
+      ],
+      "abort_slot_min": 0,
+      "abort_slot_max": 0,
+      "aborts_at_slot0": 7,
+      "aborts_s_fb_all": 0,
+      "abort_cases": {
+       "W(c)": 7
+      }
+     },
+     "F3": {
+      "runs": 80,
+      "aborts": 32,
+      "abort_slots": [
+       0
+      ],
+      "abort_slot_min": 0,
+      "abort_slot_max": 0,
+      "aborts_at_slot0": 32,
+      "aborts_s_fb_all": 0,
+      "abort_cases": {
+       "W(c)": 32
+      }
+     }
+    },
+    "inner_insured_runs": 100
+   }
+  }
+ },
+ "alpha_N": {
+  "formula": "4 ceil(2 ln N) ln(m K + 2) + 1 (Theorem 1(d))",
+  "N_definition": "the request bound that Sublet's primal-dual uses as the a-priori N: drivers/run.py driver_inputs, N_bound = max(N_u T_slow, 3), N_u client units (sized by each client's peak demand over the week: a hindsight-reference statistic, design/sim_spec_ms2.md M6), T_slow routing slots; a request is a unit-slot",
+  "N_info_class": "online-I1 + a-priori N",
+  "weeks": [
+   "301",
+   "302",
+   "303",
+   "304",
+   "305",
+   "306",
+   "307",
+   "308",
+   "309",
+   "310",
+   "311",
+   "312",
+   "313",
+   "314",
+   "315",
+   "316"
+  ],
+  "m": 169,
+  "K": 21,
+  "d": 3550,
+  "N": {
+   "min": 4642848,
+   "max": 6306048
+  },
+  "rbar": {
+   "min": 31,
+   "max": 32
+  },
+  "value": {
+   "min": 1014.6980820849428,
+   "max": 1047.3980202167152
+  },
+  "requests": {
+   "min": 112306,
+   "max": 271206
+  },
+  "value_at_requests": {
+   "min": 785.7985151625364,
+   "max": 851.1983914260811
+  },
+  "rho_definition": "Theorem 1(b)'s rho: the largest rho_ljk = 1 + beta~_jlk / (g_j a_lk D_k / 60) over the usable revocable triples (sublet.calib.instance_rho, the maximum over the LLMs)",
+  "rho": {
+   "min": 3.797027026521908,
+   "max": 3.7990953457267063
+  },
+  "by_week": {
+   "301": {
+    "m": 169,
+    "K": 21,
+    "n_clients": 15,
+    "n_units": 2357,
+    "T_slow": 2016,
+    "requests": 239895,
+    "N": 4751712,
+    "rbar": 31,
+    "value": 1014.6980820849428,
+    "value_at_requests": 818.4984532943088,
+    "instance_hash": "2b619e9c729caa92598f444d715a469866c5a5875f57eec7cb8b948f77d4bba6",
+    "rho": 3.7990953457267063,
+    "rho_by_llm": {
+     "L": [
+      3.7990953457267063,
+      "a2:c19/L232-232",
+      "s5_tau5_H0"
+     ],
+     "M": [
+      2.0518521132167162,
+      "a2:c19/L232-232",
+      "s5_tau5_H0"
+     ],
+     "S": [
+      1.7479837249541093,
+      "a2:c19/L232-232",
+      "s5_tau5_H0"
+     ]
+    }
+   },
+   "302": {
+    "m": 169,
+    "K": 21,
+    "n_clients": 15,
+    "n_units": 2502,
+    "T_slow": 2016,
+    "requests": 196736,
+    "N": 5044032,
+    "rbar": 31,
+    "value": 1014.6980820849428,
+    "value_at_requests": 818.4984532943088,
+    "instance_hash": "92901ac5e0531e3bd3f400764b3a6d74be057ce1061914706db9ef2f8ef35ef9",
+    "rho": 3.797815764792976,
+    "rho_by_llm": {
+     "L": [
+      3.797815764792976,
+      "a2:c04/L1022-1022",
+      "s5_tau5_H0"
+     ],
+     "M": [
+      2.051371268606964,
+      "a2:c04/L1022-1022",
+      "s5_tau5_H0"
+     ],
+     "S": [
+      1.7476417910093964,
+      "a2:c04/L1022-1022",
+      "s5_tau5_H0"
+     ]
+    }
+   },
+   "303": {
+    "m": 169,
+    "K": 21,
+    "n_clients": 15,
+    "n_units": 2333,
+    "T_slow": 2016,
+    "requests": 128859,
+    "N": 4703328,
+    "rbar": 31,
+    "value": 1014.6980820849428,
+    "value_at_requests": 785.7985151625364,
+    "instance_hash": "7c3c40d0b00a781b8c6b80401d6deb54d8d7fd6653ea0c7dfc9fd93b6c3470c2",
+    "rho": 3.7990953457267063,
+    "rho_by_llm": {
+     "L": [
+      3.7990953457267063,
+      "a2:c19/L232-232",
+      "s5_tau5_H0"
+     ],
+     "M": [
+      2.0518521132167162,
+      "a2:c19/L232-232",
+      "s5_tau5_H0"
+     ],
+     "S": [
+      1.7479837249541093,
+      "a2:c19/L232-232",
+      "s5_tau5_H0"
+     ]
+    }
+   },
+   "304": {
+    "m": 169,
+    "K": 21,
+    "n_clients": 15,
+    "n_units": 2522,
+    "T_slow": 2016,
+    "requests": 112306,
+    "N": 5084352,
+    "rbar": 31,
+    "value": 1014.6980820849428,
+    "value_at_requests": 785.7985151625364,
+    "instance_hash": "5064e702339390148b4ffd45439bf54a5de20266d177ab4a1fd0e7c3499f58d2",
+    "rho": 3.7980027919910726,
+    "rho_by_llm": {
+     "L": [
+      3.7980027919910726,
+      "a2:c13/L224-224",
+      "s5_tau5_H0"
+     ],
+     "M": [
+      2.0514415502262904,
+      "a2:c13/L224-224",
+      "s5_tau5_H0"
+     ],
+     "S": [
+      1.7476917690498064,
+      "a2:c13/L224-224",
+      "s5_tau5_H0"
+     ]
+    }
+   },
+   "305": {
+    "m": 169,
+    "K": 21,
+    "n_clients": 15,
+    "n_units": 2597,
+    "T_slow": 2016,
+    "requests": 149821,
+    "N": 5235552,
+    "rbar": 31,
+    "value": 1014.6980820849428,
+    "value_at_requests": 785.7985151625364,
+    "instance_hash": "9b3a7ca1fa658ada6ad7d92724277b4b2f6404d796de5c05a3bb85d965b40176",
+    "rho": 3.7980027919910726,
+    "rho_by_llm": {
+     "L": [
+      3.7980027919910726,
+      "a2:c13/L224-224",
+      "s5_tau5_H0"
+     ],
+     "M": [
+      2.0514415502262904,
+      "a2:c13/L224-224",
+      "s5_tau5_H0"
+     ],
+     "S": [
+      1.7476917690498064,
+      "a2:c13/L224-224",
+      "s5_tau5_H0"
+     ]
+    }
+   },
+   "306": {
+    "m": 169,
+    "K": 21,
+    "n_clients": 15,
+    "n_units": 2474,
+    "T_slow": 2016,
+    "requests": 133262,
+    "N": 4987584,
+    "rbar": 31,
+    "value": 1014.6980820849428,
+    "value_at_requests": 785.7985151625364,
+    "instance_hash": "f8d015225ba1782ee23aa348229476b75ee7f39c2202db36d2747a96ab972434",
+    "rho": 3.7990953457267063,
+    "rho_by_llm": {
+     "L": [
+      3.7990953457267063,
+      "a2:c19/L232-232",
+      "s5_tau5_H0"
+     ],
+     "M": [
+      2.0518521132167162,
+      "a2:c19/L232-232",
+      "s5_tau5_H0"
+     ],
+     "S": [
+      1.7479837249541093,
+      "a2:c19/L232-232",
+      "s5_tau5_H0"
+     ]
+    }
+   },
+   "307": {
+    "m": 169,
+    "K": 21,
+    "n_clients": 15,
+    "n_units": 2605,
+    "T_slow": 2016,
+    "requests": 173410,
+    "N": 5251680,
+    "rbar": 31,
+    "value": 1014.6980820849428,
+    "value_at_requests": 818.4984532943088,
+    "instance_hash": "1380e05125ef3a5a2acdcde33386f138af1934e4dfc5e8f95e0c14c9ae8bd13c",
+    "rho": 3.7990953457267063,
+    "rho_by_llm": {
+     "L": [
+      3.7990953457267063,
+      "a2:c19/L232-232",
+      "s5_tau5_H0"
+     ],
+     "M": [
+      2.0518521132167162,
+      "a2:c19/L232-232",
+      "s5_tau5_H0"
+     ],
+     "S": [
+      1.7479837249541093,
+      "a2:c19/L232-232",
+      "s5_tau5_H0"
+     ]
+    }
+   },
+   "308": {
+    "m": 169,
+    "K": 21,
+    "n_clients": 15,
+    "n_units": 2303,
+    "T_slow": 2016,
+    "requests": 161824,
+    "N": 4642848,
+    "rbar": 31,
+    "value": 1014.6980820849428,
+    "value_at_requests": 785.7985151625364,
+    "instance_hash": "74689c5fb07756a34a7aaef68f16e7bd57b7505f1397a3753a70c6107354e3cf",
+    "rho": 3.7990953457267063,
+    "rho_by_llm": {
+     "L": [
+      3.7990953457267063,
+      "a2:c19/L232-232",
+      "s5_tau5_H0"
+     ],
+     "M": [
+      2.0518521132167162,
+      "a2:c19/L232-232",
+      "s5_tau5_H0"
+     ],
+     "S": [
+      1.7479837249541093,
+      "a2:c19/L232-232",
+      "s5_tau5_H0"
+     ]
+    }
+   },
+   "309": {
+    "m": 169,
+    "K": 21,
+    "n_clients": 15,
+    "n_units": 2479,
+    "T_slow": 2016,
+    "requests": 238032,
+    "N": 4997664,
+    "rbar": 31,
+    "value": 1014.6980820849428,
+    "value_at_requests": 818.4984532943088,
+    "instance_hash": "5b2912ef0605c39896454e436b1ea57f64e83854dcec05e924175241ad3897f8",
+    "rho": 3.7972095271192052,
+    "rho_by_llm": {
+     "L": [
+      3.7972095271192052,
+      "a2:c06/L492-492",
+      "s5_tau5_H0"
+     ],
+     "M": [
+      2.0511434548673426,
+      "a2:c06/L492-492",
+      "s5_tau5_H0"
+     ],
+     "S": [
+      1.7474797901278878,
+      "a2:c06/L492-492",
+      "s5_tau5_H0"
+     ]
+    }
+   },
+   "310": {
+    "m": 169,
+    "K": 21,
+    "n_clients": 15,
+    "n_units": 2688,
+    "T_slow": 2016,
+    "requests": 247579,
+    "N": 5419008,
+    "rbar": 32,
+    "value": 1047.3980202167152,
+    "value_at_requests": 818.4984532943088,
+    "instance_hash": "8f8cdc92591d3ffcaebeba8a2e8166e5310e2c3017cd2a74dd707d6e45b51117",
+    "rho": 3.797027026521908,
+    "rho_by_llm": {
+     "L": [
+      3.797027026521908,
+      "a2:c08/L230-230",
+      "s5_tau5_H0"
+     ],
+     "M": [
+      2.0510748742671057,
+      "a2:c08/L230-230",
+      "s5_tau5_H0"
+     ],
+     "S": [
+      1.7474310217010527,
+      "a2:c08/L230-230",
+      "s5_tau5_H0"
+     ]
+    }
+   },
+   "311": {
+    "m": 169,
+    "K": 21,
+    "n_clients": 15,
+    "n_units": 2499,
+    "T_slow": 2016,
+    "requests": 147699,
+    "N": 5037984,
+    "rbar": 31,
+    "value": 1014.6980820849428,
+    "value_at_requests": 785.7985151625364,
+    "instance_hash": "076af1ec9f0b843609aab563192a882ed903a9b62b9fbe5807b78d39886fdf55",
+    "rho": 3.797815764792976,
+    "rho_by_llm": {
+     "L": [
+      3.797815764792976,
+      "a2:c04/L1022-1022",
+      "s5_tau5_H0"
+     ],
+     "M": [
+      2.051371268606964,
+      "a2:c04/L1022-1022",
+      "s5_tau5_H0"
+     ],
+     "S": [
+      1.7476417910093964,
+      "a2:c04/L1022-1022",
+      "s5_tau5_H0"
+     ]
+    }
+   },
+   "312": {
+    "m": 169,
+    "K": 21,
+    "n_clients": 15,
+    "n_units": 2809,
+    "T_slow": 2016,
+    "requests": 231156,
+    "N": 5662944,
+    "rbar": 32,
+    "value": 1047.3980202167152,
+    "value_at_requests": 818.4984532943088,
+    "instance_hash": "278fabac36c91b8103bdca32d53251de6462e604ddccc64bc55665ddb3276c76",
+    "rho": 3.7980027919910726,
+    "rho_by_llm": {
+     "L": [
+      3.7980027919910726,
+      "a2:c13/L224-224",
+      "s5_tau5_H0"
+     ],
+     "M": [
+      2.0514415502262904,
+      "a2:c13/L224-224",
+      "s5_tau5_H0"
+     ],
+     "S": [
+      1.7476917690498064,
+      "a2:c13/L224-224",
+      "s5_tau5_H0"
+     ]
+    }
+   },
+   "313": {
+    "m": 169,
+    "K": 21,
+    "n_clients": 15,
+    "n_units": 2393,
+    "T_slow": 2016,
+    "requests": 149661,
+    "N": 4824288,
+    "rbar": 31,
+    "value": 1014.6980820849428,
+    "value_at_requests": 785.7985151625364,
+    "instance_hash": "1aa22e9e538dce29262864b25fd0009e1fefe683a84e235aec2b3a4bfb739db0",
+    "rho": 3.7990953457267063,
+    "rho_by_llm": {
+     "L": [
+      3.7990953457267063,
+      "a2:c19/L232-232",
+      "s5_tau5_H0"
+     ],
+     "M": [
+      2.0518521132167162,
+      "a2:c19/L232-232",
+      "s5_tau5_H0"
+     ],
+     "S": [
+      1.7479837249541093,
+      "a2:c19/L232-232",
+      "s5_tau5_H0"
+     ]
+    }
+   },
+   "314": {
+    "m": 169,
+    "K": 21,
+    "n_clients": 15,
+    "n_units": 3128,
+    "T_slow": 2016,
+    "requests": 271206,
+    "N": 6306048,
+    "rbar": 32,
+    "value": 1047.3980202167152,
+    "value_at_requests": 851.1983914260811,
+    "instance_hash": "3668d16691ad40042c58e492b61a0fb3276e9ac7cbbc8c7ecef9f31e7e85e60a",
+    "rho": 3.7980027919910726,
+    "rho_by_llm": {
+     "L": [
+      3.7980027919910726,
+      "a2:c13/L224-224",
+      "s5_tau5_H0"
+     ],
+     "M": [
+      2.0514415502262904,
+      "a2:c13/L224-224",
+      "s5_tau5_H0"
+     ],
+     "S": [
+      1.7476917690498064,
+      "a2:c13/L224-224",
+      "s5_tau5_H0"
+     ]
+    }
+   },
+   "315": {
+    "m": 169,
+    "K": 21,
+    "n_clients": 15,
+    "n_units": 2832,
+    "T_slow": 2016,
+    "requests": 239910,
+    "N": 5709312,
+    "rbar": 32,
+    "value": 1047.3980202167152,
+    "value_at_requests": 818.4984532943088,
+    "instance_hash": "1b44f61860e551ec8823b15f199032c830775d2b8589da9b0cf499354b117df7",
+    "rho": 3.7980027919910726,
+    "rho_by_llm": {
+     "L": [
+      3.7980027919910726,
+      "a2:c13/L224-224",
+      "s5_tau5_H0"
+     ],
+     "M": [
+      2.0514415502262904,
+      "a2:c13/L224-224",
+      "s5_tau5_H0"
+     ],
+     "S": [
+      1.7476917690498064,
+      "a2:c13/L224-224",
+      "s5_tau5_H0"
+     ]
+    }
+   },
+   "316": {
+    "m": 169,
+    "K": 21,
+    "n_clients": 15,
+    "n_units": 2488,
+    "T_slow": 2016,
+    "requests": 208358,
+    "N": 5015808,
+    "rbar": 31,
+    "value": 1014.6980820849428,
+    "value_at_requests": 818.4984532943088,
+    "instance_hash": "5d2718e0921a6cf984a6e9bcae2d133adfe5da3b44dd95756667e9ffe4d6c96a",
+    "rho": 3.7990953457267063,
+    "rho_by_llm": {
+     "L": [
+      3.7990953457267063,
+      "a2:c19/L232-232",
+      "s5_tau5_H0"
+     ],
+     "M": [
+      2.0518521132167162,
+      "a2:c19/L232-232",
+      "s5_tau5_H0"
+     ],
+     "S": [
+      1.7479837249541093,
+      "a2:c19/L232-232",
+      "s5_tau5_H0"
+     ]
+    }
+   }
+  },
+  "planner_check": {
+   "week": "301",
+   "policy": "ProjectedGuarded",
+   "rbar": 31,
+   "N_bound": 4751712,
+   "d": 3550,
+   "m": 169,
+   "K": 21,
+   "matches": true
+  }
+ }
+}

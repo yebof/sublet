@@ -1,0 +1,101 @@
+{
+ "floats": {
+  "table_notation": {
+   "measured_pages": 0.1288,
+   "budget_pages": 0.155,
+   "within_budget": true,
+   "difference_pages": -0.0262,
+   "source": "paper/floats/table_notation.tex",
+   "sha256": "7425535c7d2266144a29aaf6494f05ac716d016c8690f0211ee066e8a83f2c65",
+   "undefined_refs": []
+  },
+  "table1_price_of_revocation": {
+   "measured_pages": 0.1374,
+   "budget_pages": 0.13,
+   "within_budget": false,
+   "difference_pages": 0.0074,
+   "source": "paper/floats/table1_price_of_revocation.tex",
+   "sha256": "13902d0a49d0963671e684e97cf03848c77837480e9b3aca046c6b697fa2adcc",
+   "undefined_refs": []
+  },
+  "table2_glossary": {
+   "measured_pages": 0.2577,
+   "budget_pages": 0.258,
+   "within_budget": true,
+   "difference_pages": -0.0003,
+   "source": "paper/floats/table2_glossary.tex",
+   "sha256": "82221fd0776254989c7ece1bf8ba774954791d1d146f35ae65358f60be630865",
+   "undefined_refs": [
+    "sec:s-baselines"
+   ]
+  },
+  "table3_v3": {
+   "measured_pages": 0.2577,
+   "budget_pages": 0.258,
+   "within_budget": true,
+   "difference_pages": -0.0003,
+   "source": "paper/floats/table3_v3.tex",
+   "sha256": "d8f64d227798922beebbc11639b04824d7059b512ab86f235abd949765cddd53",
+   "undefined_refs": []
+  },
+  "table5_alglb": {
+   "measured_pages": 0.1202,
+   "budget_pages": 0.12,
+   "within_budget": false,
+   "difference_pages": 0.0002,
+   "source": "paper/floats/table5_alglb.tex",
+   "sha256": "57e222eb5cebc20c3c930b87e9a3dde8b9aa92bf6520ddf3fe7a587f3c1d155f",
+   "undefined_refs": []
+  },
+  "alg1_guard_v3": {
+   "measured_pages": 0.1546,
+   "budget_pages": 0.155,
+   "within_budget": true,
+   "difference_pages": -0.0004,
+   "source": "paper/floats/alg1_guard_v3.tex",
+   "sha256": "c4bf1e138ed6a179336ca65828657fc34eff3362dd387732f6c5b97316b1ad71",
+   "undefined_refs": [
+    "def:s-fm-guard"
+   ]
+  },
+  "alg2_crr": {
+   "measured_pages": 0.1718,
+   "budget_pages": 0.18,
+   "within_budget": true,
+   "difference_pages": -0.0082,
+   "source": "paper/floats/alg2_crr.tex",
+   "sha256": "02e996e3db5cd69dd1237f71e6e2c2f95b2774eb298f1a8544ab10813a438a64",
+   "undefined_refs": []
+  }
+ },
+ "probes": {
+  "tab8": {
+   "file": "paper/layout_check/pageplan/F_tab8.tex",
+   "measured_pages": 0.1117,
+   "plan_value_pages": 0.112
+  },
+  "alg16": {
+   "file": "paper/layout_check/pageplan/F_alg16.tex",
+   "measured_pages": 0.1288,
+   "plan_value_pages": 0.129
+  }
+ },
+ "baseline_used_pages": 2.2338,
+ "method": "floats.py's page-area difference (this folder): fill text of A_body.tex, float after its first third, used pages = full pages + mean column fill of the last page",
+ "class": "paper/layout_check/IEEEtran.cls",
+ "class_sha256": "da751920a317ed318b7b5cd7fa585a6cc7d28502d457856382e9be24b10a3bd7",
+ "preamble": "\\documentclass[journal]{IEEEtran}\\usepackage{booktabs}\\usepackage{array}\\usepackage{amsmath}\\usepackage{amssymb}\\usepackage{graphicx}",
+ "pdflatex": "pdfTeX 3.141592653-2.6-1.40.29 (TeX Live 2026)",
+ "script": "paper/layout_check/pageplan/floats_heights.py",
+ "labels": {
+  "file": "paper/generated/labels_stub_ms7.tex",
+  "sha256": "c05d22933da34c01cc0de560e344fc078f37ed5b19957ec78bf0cb4532fc17df"
+ },
+ "macros": [
+  {
+   "file": "paper/macros.tex",
+   "sha256": "907e04fbdd51b8a4e6b12d751d96b954fee7f8ca3a70c766bbd9d19de042702f"
+  }
+ ],
+ "written": "2026-11-25T06:35:10"
+}

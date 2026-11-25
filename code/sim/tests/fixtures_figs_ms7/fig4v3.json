@@ -1,0 +1,1279 @@
+{
+ "figure": "fig4v3",
+ "size_in": [
+  7.1399,
+  2.4
+ ],
+ "sources": [
+  "code/sim/out/sublet_v2/main/summary.json",
+  "code/sim/out/sublet_v2/analysis.json",
+  "code/sim/out/figs/fig4v2.json",
+  "code/sim/out/e7c/analysis.json",
+  "code/sim/out/e7r/analysis.json"
+ ],
+ "data": {
+  "a": {
+   "order": [
+    "sublet_v2",
+    "bl1_bo",
+    "bl1",
+    "bl5_cur",
+    "bl5_tau60",
+    "bl2",
+    "bl3_0",
+    "bl4"
+   ],
+   "accounting": "overflow",
+   "mode": "L-tr",
+   "policy_seed": 0,
+   "weeks": [
+    "101"
+   ],
+   "sublet_v2": {
+    "tag": "Sublet",
+    "label": "Sublet",
+    "r0": [
+     0.9628922431831444
+    ],
+    "missing": [],
+    "median": 0.9628922431831444,
+    "n": 1,
+    "components_over_bl0a": {
+     "lease": [
+      0.3410621842051033
+     ],
+     "loading": [
+      0.0
+     ],
+     "routing": [
+      0.010370834434467246
+     ],
+     "fallback": [
+      0.587821432600844
+     ],
+     "stranding": [
+      0.023637791942729792
+     ]
+    },
+    "components_median_over_bl0a": {
+     "lease": 0.3410621842051033,
+     "loading": 0.0,
+     "routing": 0.010370834434467246,
+     "fallback": 0.587821432600844,
+     "stranding": 0.023637791942729792
+    },
+    "total_over_bl0a_median": 0.9981599826700929,
+    "segments": {
+     "lease": 0.3410621842051033,
+     "routing": 0.010370834434467246,
+     "fallback": 0.587821432600844,
+     "stranding": 0.023637791942729792
+    },
+    "range": {
+     "min": 0.9628922431831444,
+     "max": 0.9628922431831444,
+     "n": 1
+    }
+   },
+   "bl1_bo": {
+    "tag": "BL1-BO",
+    "label": "Greedy, back-off",
+    "r0": [
+     0.6511795022043789
+    ],
+    "missing": [],
+    "median": 0.6511795022043789,
+    "n": 1,
+    "components_over_bl0a": {
+     "lease": [
+      0.5306874564557434
+     ],
+     "loading": [
+      0.0
+     ],
+     "routing": [
+      0.023626244573948137
+     ],
+     "fallback": [
+      0.07009294751780364
+     ],
+     "stranding": [
+      0.026772853656883776
+     ]
+    },
+    "components_median_over_bl0a": {
+     "lease": 0.5306874564557434,
+     "loading": 0.0,
+     "routing": 0.023626244573948137,
+     "fallback": 0.07009294751780364,
+     "stranding": 0.026772853656883776
+    },
+    "total_over_bl0a_median": 0.982703461054287,
+    "segments": {
+     "lease": 0.5306874564557434,
+     "routing": 0.023626244573948133,
+     "fallback": 0.07009294751780362,
+     "stranding": 0.026772853656883772
+    },
+    "range": {
+     "min": 0.6511795022043789,
+     "max": 0.6511795022043789,
+     "n": 1
+    }
+   },
+   "bl1": {
+    "tag": "BL1",
+    "label": "Greedy renting",
+    "r0": [
+     0.6638351134177733
+    ],
+    "missing": [],
+    "median": 0.6638351134177733,
+    "n": 1,
+    "components_over_bl0a": {
+     "lease": [
+      0.5307840716432626
+     ],
+     "loading": [
+      0.0
+     ],
+     "routing": [
+      0.02166846180041815
+     ],
+     "fallback": [
+      0.07683854707239007
+     ],
+     "stranding": [
+      0.03454403290170253
+     ]
+    },
+    "components_median_over_bl0a": {
+     "lease": 0.5307840716432626,
+     "loading": 0.0,
+     "routing": 0.02166846180041815,
+     "fallback": 0.07683854707239007,
+     "stranding": 0.03454403290170253
+    },
+    "total_over_bl0a_median": 0.9833309994977489,
+    "segments": {
+     "lease": 0.5307840716432626,
+     "routing": 0.02166846180041815,
+     "fallback": 0.07683854707239007,
+     "stranding": 0.03454403290170253
+    },
+    "range": {
+     "min": 0.6638351134177733,
+     "max": 0.6638351134177733,
+     "n": 1
+    }
+   },
+   "bl5_cur": {
+    "tag": "BL5-cur",
+    "label": "RetroRenting-style",
+    "r0": [
+     0.8322013113669223
+    ],
+    "missing": [],
+    "median": 0.8322013113669223,
+    "n": 1,
+    "components_over_bl0a": {
+     "lease": [
+      0.3912983219953556
+     ],
+     "loading": [
+      0.0
+     ],
+     "routing": [
+      0.009755797649389747
+     ],
+     "fallback": [
+      0.3983525349477676
+     ],
+     "stranding": [
+      0.032794656774409486
+     ]
+    },
+    "components_median_over_bl0a": {
+     "lease": 0.3912983219953556,
+     "loading": 0.0,
+     "routing": 0.009755797649389747,
+     "fallback": 0.3983525349477676,
+     "stranding": 0.032794656774409486
+    },
+    "total_over_bl0a_median": 0.9916795699469414,
+    "segments": {
+     "lease": 0.3912983219953555,
+     "routing": 0.009755797649389745,
+     "fallback": 0.39835253494776757,
+     "stranding": 0.03279465677440948
+    },
+    "range": {
+     "min": 0.8322013113669223,
+     "max": 0.8322013113669223,
+     "n": 1
+    }
+   },
+   "bl5_tau60": {
+    "tag": "BL5-tau60",
+    "label": "RetroRenting, $\\tau\\geq1$ h",
+    "r0": [
+     1.7174610301758495
+    ],
+    "missing": [],
+    "median": 1.7174610301758495,
+    "n": 1,
+    "components_over_bl0a": {
+     "lease": [
+      1.3584104377820119
+     ],
+     "loading": [
+      0.0
+     ],
+     "routing": [
+      0.013617074943342187
+     ],
+     "fallback": [
+      0.2994267827697158
+     ],
+     "stranding": [
+      0.046006734680779704
+     ]
+    },
+    "components_median_over_bl0a": {
+     "lease": 1.3584104377820119,
+     "loading": 0.0,
+     "routing": 0.013617074943342187,
+     "fallback": 0.2994267827697158,
+     "stranding": 0.046006734680779704
+    },
+    "total_over_bl0a_median": 1.0355758699069886,
+    "segments": {
+     "lease": 1.3584104377820116,
+     "routing": 0.013617074943342187,
+     "fallback": 0.2994267827697158,
+     "stranding": 0.046006734680779704
+    },
+    "range": {
+     "min": 1.7174610301758495,
+     "max": 1.7174610301758495,
+     "n": 1
+    }
+   },
+   "bl2": {
+    "tag": "BL2",
+    "label": "Per-borrower ski rental",
+    "r0": [
+     0.7487902346277859
+    ],
+    "missing": [],
+    "median": 0.7487902346277859,
+    "n": 1,
+    "components_over_bl0a": {
+     "lease": [
+      0.4489153326567468
+     ],
+     "loading": [
+      0.0
+     ],
+     "routing": [
+      0.004439124982115621
+     ],
+     "fallback": [
+      0.25382461069490014
+     ],
+     "stranding": [
+      0.041611166294023366
+     ]
+    },
+    "components_median_over_bl0a": {
+     "lease": 0.4489153326567468,
+     "loading": 0.0,
+     "routing": 0.004439124982115621,
+     "fallback": 0.25382461069490014,
+     "stranding": 0.041611166294023366
+    },
+    "total_over_bl0a_median": 0.987543566052561,
+    "segments": {
+     "lease": 0.4489153326567468,
+     "routing": 0.004439124982115621,
+     "fallback": 0.25382461069490014,
+     "stranding": 0.041611166294023366
+    },
+    "range": {
+     "min": 0.7487902346277859,
+     "max": 0.7487902346277859,
+     "n": 1
+    }
+   },
+   "bl3_0": {
+    "tag": "BL3-0",
+    "label": "SpotHedge-style, $N_{\\mathrm{Extra}}=0$",
+    "r0": [
+     0.7810346939112378
+    ],
+    "missing": [],
+    "median": 0.7810346939112378,
+    "n": 1,
+    "components_over_bl0a": {
+     "lease": [
+      0.43622835486817524
+     ],
+     "loading": [
+      0.0
+     ],
+     "routing": [
+      0.01609861903052759
+     ],
+     "fallback": [
+      0.27444226051881
+     ],
+     "stranding": [
+      0.054265459493725035
+     ]
+    },
+    "components_median_over_bl0a": {
+     "lease": 0.43622835486817524,
+     "loading": 0.0,
+     "routing": 0.01609861903052759,
+     "fallback": 0.27444226051881,
+     "stranding": 0.054265459493725035
+    },
+    "total_over_bl0a_median": 0.9891424329462906,
+    "segments": {
+     "lease": 0.43622835486817524,
+     "routing": 0.01609861903052759,
+     "fallback": 0.27444226051881,
+     "stranding": 0.054265459493725035
+    },
+    "range": {
+     "min": 0.7810346939112378,
+     "max": 0.7810346939112378,
+     "n": 1
+    }
+   },
+   "bl4": {
+    "tag": "BL4",
+    "label": "CoCaR-style",
+    "r0": [
+     0.9941277774503176
+    ],
+    "missing": [],
+    "median": 0.9941277774503176,
+    "n": 1,
+    "components_over_bl0a": {
+     "lease": [
+      0.0947952913534562
+     ],
+     "loading": [
+      0.0
+     ],
+     "routing": [
+      0.0031888652370188016
+     ],
+     "fallback": [
+      0.8828812075143265
+     ],
+     "stranding": [
+      0.013262413345516087
+     ]
+    },
+    "components_median_over_bl0a": {
+     "lease": 0.0947952913534562,
+     "loading": 0.0,
+     "routing": 0.0031888652370188016,
+     "fallback": 0.8828812075143265,
+     "stranding": 0.013262413345516087
+    },
+    "total_over_bl0a_median": 0.9997088212227484,
+    "segments": {
+     "lease": 0.09479529135345618,
+     "routing": 0.003188865237018801,
+     "fallback": 0.8828812075143264,
+     "stranding": 0.013262413345516085
+    },
+    "range": {
+     "min": 0.9941277774503176,
+     "max": 0.9941277774503176,
+     "n": 1
+    }
+   },
+   "zero_components": [
+    "loading"
+   ],
+   "components": {
+    "order": [
+     "lease",
+     "routing",
+     "fallback",
+     "stranding"
+    ],
+    "labels": {
+     "lease": "Lease",
+     "routing": "Routing",
+     "fallback": "Fallback",
+     "stranding": "Stranding"
+    },
+    "note": "lease is lease_prepaid + lease_rent (the run files' grouped components over the run's bl0a_usd); each bar's median r0 split by the components' medians over the weeks, scaled to the bar (W1)"
+   },
+   "bl0a": {
+    "x": 1.0,
+    "usd_by_week": {
+     "101": 1791.924523380456
+    },
+    "usd_median": 1791.924523380456,
+    "label": "All-fallback"
+   },
+   "bl0b": {
+    "overflow_over_bl0a": 5.856641071034571,
+    "total_over_bl0a": 1.2408203702516294,
+    "overflow_over_bl0a_by_week": {
+     "101": 5.856641071034571
+    },
+    "total_over_bl0a_by_week": {
+     "101": 1.2408203702516294
+    },
+    "off_scale": true,
+    "label": "Provision for peak",
+    "rule": "median over the weeks of the run files' references bl0b_overflow_usd / bl0a_usd (total accounting: bl0b_total_usd / bl0a_total_usd)"
+   },
+   "own_capacity_usd": {
+    "by_week": {
+     "101": 34345.941336348165
+    },
+    "median": 34345.941336348165
+   },
+   "whiskers": "range over the weeks: min to max of the per-week r0 (code/sim/out/sublet_v2/main/summary.json table.<tag>.L-tr.<week>.0), n weeks; fig4v2's week-bootstrap intervals are not drawn (C10)",
+   "source": {
+    "extract": "code/sim/out/figs/fig4v2.json",
+    "sha256": "11c664cef0d51aefb0d4715a671c262a42dd630d31dd0a5d5ab2283a3d0de4e2",
+    "fig4v2_meta": {
+     "git_revision": "5c7d33285b9a4f4e4df2b76e80b3e5f56d58bd37",
+     "analysis_git_revision": "5c7d33285b9a4f4e4df2b76e80b3e5f56d58bd37",
+     "analysis_sha256": "dde0835e12643e95d17f103843f0e8418acf2042ed921dbd9720ddcb7b46992e",
+     "reduced": true
+    },
+    "runs_files": 8
+   }
+  },
+  "b": {
+   "weeks": [
+    "101"
+   ],
+   "x": [
+    101
+   ],
+   "trace": [
+    -0.31171274097876545
+   ],
+   "trace_lag": [
+    -0.24589137112207415
+   ],
+   "w0_set": [
+    -0.007769922550139308
+   ],
+   "w0_tau60": [
+    0.693249813825094
+   ],
+   "best_trace": [
+    "BL1-BO"
+   ],
+   "best_trace_lag": [
+    "BL1-BO-lag"
+   ],
+   "best_w0": [
+    "BL4"
+   ],
+   "h1_set": [
+    "BL1",
+    "BL1-BO",
+    "BL2",
+    "BL3-0",
+    "BL4",
+    "BL5",
+    "BL5-cur"
+   ],
+   "h1_lag_set": [
+    "BL1-lag",
+    "BL1-BO-lag",
+    "BL2-lag",
+    "BL3-0-lag",
+    "BL4-lag",
+    "BL5"
+   ],
+   "notes": [],
+   "lag_summary": {
+    "n_weeks": 1,
+    "n_wins": 0,
+    "n_ties": 0,
+    "n_losses": 1,
+    "n_lost_missing": 0,
+    "median": -0.24589137112207415,
+    "min": -0.24589137112207415,
+    "max": -0.24589137112207415
+   },
+   "sources": {
+    "trace": "analysis.json H1.margins.<week>.delta",
+    "w0_set": "analysis.json min(H2.weeks[i].others) - H2.weeks[i].Sublet",
+    "w0_tau60": "analysis.json H2b.weeks[i].others.BL5-tau60 - H2b.weeks[i].Sublet",
+    "trace_lag": "e7c analysis.json margins.h1.r0.weeks.<week>.delta"
+   },
+   "negative": [
+    {
+     "week": "101",
+     "x": 101,
+     "series": [
+      "trace",
+      "trace_lag",
+      "w0_set"
+     ],
+     "lowest": "trace",
+     "y": -0.31171274097876545,
+     "subpanel": "cost"
+    }
+   ],
+   "missing_weeks": [],
+   "subpanels": [
+    [
+     "cost",
+     [
+      "trace",
+      "trace_lag"
+     ]
+    ],
+    [
+     "w0",
+     [
+      "w0_set",
+      "w0_tau60"
+     ]
+    ]
+   ],
+   "shaded": {
+    "cost": [
+     "101"
+    ],
+    "w0": [
+     "101"
+    ]
+   },
+   "dodge_weeks": {
+    "trace": -0.25,
+    "trace_lag": 0.25,
+    "w0_set": -0.25,
+    "w0_tau60": 0.25
+   }
+  },
+  "c": {
+   "order": [
+    "bl4",
+    "bl3_0",
+    "bl2",
+    "bl5_tau60",
+    "bl1",
+    "bl1_bo",
+    "bl5_cur",
+    "a9p",
+    "cr",
+    "a9_kstar",
+    "a9_static",
+    "a9_nocommit",
+    "a9_nombb",
+    "sublet_v2"
+   ],
+   "arrows": [
+    [
+     "bl1",
+     "bl1n"
+    ],
+    [
+     "bl5_cur",
+     "bl5n"
+    ]
+   ],
+   "named": [
+    "cr",
+    "a9_kstar",
+    "a9_nombb",
+    "a9_nocommit",
+    "a9_static"
+   ],
+   "legend": [
+    "a9p"
+   ],
+   "mode": "L-tr",
+   "policy_seed": 0,
+   "sublet_v2": {
+    "tag": "Sublet",
+    "source": "main",
+    "r0": {
+     "median": 0.9628922431831444,
+     "min": 0.9628922431831444,
+     "max": 0.9628922431831444,
+     "n": 1,
+     "weeks": {
+      "101": 0.9628922431831444
+     }
+    },
+    "W0": {
+     "median": 1.0246634486851858,
+     "min": 1.0246634486851858,
+     "max": 1.0246634486851858,
+     "n": 1,
+     "weeks": {
+      "101": 1.0246634486851858
+     }
+    },
+    "label": "Sublet"
+   },
+   "cr": {
+    "tag": "CR",
+    "source": "main",
+    "r0": {
+     "median": 0.6948964819853559,
+     "min": 0.6948964819853559,
+     "max": 0.6948964819853559,
+     "n": 1,
+     "weeks": {
+      "101": 0.6948964819853559
+     }
+    },
+    "W0": {
+     "median": 1.780305626621733,
+     "min": 1.780305626621733,
+     "max": 1.780305626621733,
+     "n": 1,
+     "weeks": {
+      "101": 1.780305626621733
+     }
+    },
+    "label": "Critical-ratio planning"
+   },
+   "a9_kstar": {
+    "tag": "A9-kstar",
+    "source": "main",
+    "r0": {
+     "median": 0.6813335815805541,
+     "min": 0.6813335815805541,
+     "max": 0.6813335815805541,
+     "n": 1,
+     "weeks": {
+      "101": 0.6813335815805541
+     }
+    },
+    "W0": {
+     "median": 1.7781341074673271,
+     "min": 1.7781341074673271,
+     "max": 1.7781341074673271,
+     "n": 1,
+     "weeks": {
+      "101": 1.7781341074673271
+     }
+    },
+    "label": "Critical-ratio renting, $k^{\\ast}$ contract"
+   },
+   "a9_nombb": {
+    "tag": "A9-noMBB",
+    "source": "main",
+    "r0": {
+     "median": 0.6987114955045193,
+     "min": 0.6987114955045193,
+     "max": 0.6987114955045193,
+     "n": 1,
+     "weeks": {
+      "101": 0.6987114955045193
+     }
+    },
+    "W0": {
+     "median": 1.0126379376570012,
+     "min": 1.0126379376570012,
+     "max": 1.0126379376570012,
+     "n": 1,
+     "weeks": {
+      "101": 1.0126379376570012
+     }
+    },
+    "label": "Critical-ratio renting, no make-before-break"
+   },
+   "a9_nocommit": {
+    "tag": "A9-noCommit",
+    "source": "main",
+    "r0": {
+     "median": 0.6919294615048355,
+     "min": 0.6919294615048355,
+     "max": 0.6919294615048355,
+     "n": 1,
+     "weeks": {
+      "101": 0.6919294615048355
+     }
+    },
+    "W0": {
+     "median": 0.8469863848871229,
+     "min": 0.8469863848871229,
+     "max": 0.8469863848871229,
+     "n": 1,
+     "weeks": {
+      "101": 0.8469863848871229
+     }
+    },
+    "label": "Critical-ratio renting, no commitment rule"
+   },
+   "a9_static": {
+    "tag": "A9-static",
+    "source": "main",
+    "r0": {
+     "median": 0.6646590095853264,
+     "min": 0.6646590095853264,
+     "max": 0.6646590095853264,
+     "n": 1,
+     "weeks": {
+      "101": 0.6646590095853264
+     }
+    },
+    "W0": {
+     "median": 0.9728972577366284,
+     "min": 0.9728972577366284,
+     "max": 0.9728972577366284,
+     "n": 1,
+     "weeks": {
+      "101": 0.9728972577366284
+     }
+    },
+    "label": "Critical-ratio renting, no site marking"
+   },
+   "bl1": {
+    "tag": "BL1",
+    "source": "main",
+    "r0": {
+     "median": 0.6638351134177733,
+     "min": 0.6638351134177733,
+     "max": 0.6638351134177733,
+     "n": 1,
+     "weeks": {
+      "101": 0.6638351134177733
+     }
+    },
+    "W0": {
+     "median": 1.9456081095151643,
+     "min": 1.9456081095151643,
+     "max": 1.9456081095151643,
+     "n": 1,
+     "weeks": {
+      "101": 1.9456081095151643
+     }
+    },
+    "label": "Greedy renting"
+   },
+   "bl1_bo": {
+    "tag": "BL1-BO",
+    "source": "main",
+    "r0": {
+     "median": 0.6511795022043789,
+     "min": 0.6511795022043789,
+     "max": 0.6511795022043789,
+     "n": 1,
+     "weeks": {
+      "101": 0.6511795022043789
+     }
+    },
+    "W0": {
+     "median": 1.6352307081061959,
+     "min": 1.6352307081061959,
+     "max": 1.6352307081061959,
+     "n": 1,
+     "weeks": {
+      "101": 1.6352307081061959
+     }
+    },
+    "label": "Greedy, back-off"
+   },
+   "bl5_cur": {
+    "tag": "BL5-cur",
+    "source": "main",
+    "r0": {
+     "median": 0.8322013113669223,
+     "min": 0.8322013113669223,
+     "max": 0.8322013113669223,
+     "n": 1,
+     "weeks": {
+      "101": 0.8322013113669223
+     }
+    },
+    "W0": {
+     "median": 1.265240979290852,
+     "min": 1.265240979290852,
+     "max": 1.265240979290852,
+     "n": 1,
+     "weeks": {
+      "101": 1.265240979290852
+     }
+    },
+    "label": "RetroRenting-style"
+   },
+   "bl5_tau60": {
+    "tag": "BL5-tau60",
+    "source": "main",
+    "r0": {
+     "median": 1.7174610301758495,
+     "min": 1.7174610301758495,
+     "max": 1.7174610301758495,
+     "n": 1,
+     "weeks": {
+      "101": 1.7174610301758495
+     }
+    },
+    "W0": {
+     "median": 1.7179132625102798,
+     "min": 1.7179132625102798,
+     "max": 1.7179132625102798,
+     "n": 1,
+     "weeks": {
+      "101": 1.7179132625102798
+     }
+    },
+    "label": "RetroRenting, $\\tau\\geq1$ h"
+   },
+   "bl2": {
+    "tag": "BL2",
+    "source": "main",
+    "r0": {
+     "median": 0.7487902346277859,
+     "min": 0.7487902346277859,
+     "max": 0.7487902346277859,
+     "n": 1,
+     "weeks": {
+      "101": 0.7487902346277859
+     }
+    },
+    "W0": {
+     "median": 1.73857429140966,
+     "min": 1.73857429140966,
+     "max": 1.73857429140966,
+     "n": 1,
+     "weeks": {
+      "101": 1.73857429140966
+     }
+    },
+    "label": "Per-borrower ski rental"
+   },
+   "bl3_0": {
+    "tag": "BL3-0",
+    "source": "main",
+    "r0": {
+     "median": 0.7810346939112378,
+     "min": 0.7810346939112378,
+     "max": 0.7810346939112378,
+     "n": 1,
+     "weeks": {
+      "101": 0.7810346939112378
+     }
+    },
+    "W0": {
+     "median": 1.7516817693646891,
+     "min": 1.7516817693646891,
+     "max": 1.7516817693646891,
+     "n": 1,
+     "weeks": {
+      "101": 1.7516817693646891
+     }
+    },
+    "label": "SpotHedge-style, $N_{\\mathrm{Extra}}=0$"
+   },
+   "bl4": {
+    "tag": "BL4",
+    "source": "main",
+    "r0": {
+     "median": 0.9941277774503176,
+     "min": 0.9941277774503176,
+     "max": 0.9941277774503176,
+     "n": 1,
+     "weeks": {
+      "101": 0.9941277774503176
+     }
+    },
+    "W0": {
+     "median": 1.0168935261350465,
+     "min": 1.0168935261350465,
+     "max": 1.0168935261350465,
+     "n": 1,
+     "weeks": {
+      "101": 1.0168935261350465
+     }
+    },
+    "label": "CoCaR-style"
+   },
+   "bl1n": {
+    "tag": "BL1N",
+    "source": "main",
+    "r0": {
+     "median": 0.6611243552812026,
+     "min": 0.6611243552812026,
+     "max": 0.6611243552812026,
+     "n": 1,
+     "weeks": {
+      "101": 0.6611243552812026
+     }
+    },
+    "W0": {
+     "median": 1.0809665708207665,
+     "min": 1.0809665708207665,
+     "max": 1.0809665708207665,
+     "n": 1,
+     "weeks": {
+      "101": 1.0809665708207665
+     }
+    },
+    "label": "Greedy + notice layer"
+   },
+   "bl5n": {
+    "tag": "BL5N",
+    "source": "main",
+    "r0": {
+     "median": 0.8539644980178834,
+     "min": 0.8539644980178834,
+     "max": 0.8539644980178834,
+     "n": 1,
+     "weeks": {
+      "101": 0.8539644980178834
+     }
+    },
+    "W0": {
+     "median": 1.1395405908116896,
+     "min": 1.1395405908116896,
+     "max": 1.1395405908116896,
+     "n": 1,
+     "weeks": {
+      "101": 1.1395405908116896
+     }
+    },
+    "label": "RetroRenting + notice layer"
+   },
+   "a9p": {
+    "tag": "A9-P",
+    "source": "e7r",
+    "r0": {
+     "median": 1.1604544088395508,
+     "min": 1.1604544088395508,
+     "max": 1.1604544088395508,
+     "n": 1,
+     "weeks": {
+      "101": 1.1604544088395508
+     }
+    },
+    "W0": {
+     "median": 1.1604544088395508,
+     "min": 1.1604544088395508,
+     "max": 1.1604544088395508,
+     "n": 1,
+     "weeks": {
+      "101": 1.1604544088395508
+     }
+    },
+    "label": "Protected-only renting"
+   },
+   "names": {
+    "cr": "Critical-ratio planning",
+    "a9_kstar": "$k^{\\ast}$ contract",
+    "a9_nombb": "no make-before-break",
+    "a9_nocommit": "no commitment rule",
+    "a9_static": "no site marking"
+   }
+  },
+  "labels": {
+   "a_x": "Trace cost / all-fallback",
+   "b_x": "Week",
+   "b_y": {
+    "cost": "Cost margin",
+    "w0": "$W_0$ margin"
+   },
+   "c_x": "Trace cost / all-fallback",
+   "c_y": "Worst case $W_0$",
+   "no_data": "no runs",
+   "bars": {
+    "sublet_v2": "Sublet",
+    "bl1_bo": "Greedy, back-off",
+    "bl1": "Greedy renting",
+    "bl5_cur": "RetroRenting-style",
+    "bl5_tau60": "RetroRenting, $\\tau\\geq1$ h",
+    "bl2": "Per-borrower ski rental",
+    "bl3_0": "SpotHedge-style, $N_{\\mathrm{Extra}}=0$",
+    "bl4": "CoCaR-style"
+   },
+   "bl0a": "All-fallback",
+   "bl0b": "Provision for peak",
+   "bl0b_ratio": "5.9",
+   "components": {
+    "lease": "Lease",
+    "routing": "Routing",
+    "fallback": "Fallback",
+    "stranding": "Stranding"
+   },
+   "own_capacity": "34,346 USD per week",
+   "margins": {
+    "trace": "vs. best",
+    "trace_lag": "lagged",
+    "w0_set": "vs. best",
+    "w0_tau60": "vs. $\\tau\\geq1$ h"
+   },
+   "c_names": {
+    "cr": "Critical-ratio planning",
+    "a9_kstar": "$k^{\\ast}$ contract",
+    "a9_nombb": "no make-before-break",
+    "a9_nocommit": "no commitment rule",
+    "a9_static": "no site marking"
+   },
+   "c_legend": {
+    "a9p": "Protected-only renting"
+   },
+   "status": {
+    "statistics": "descriptive (design/ms7/plan.md D4; design/sublet_v2.md \u00a74.5, Dependence)"
+   },
+   "caption": "Fig. 3. End-to-end cost on 1 confirmation week (trace lender, overflow accounting; all-fallback: 1,792 USD/week, median). (a) Medians; whiskers: range over the 1 week; segments: component medians, scaled; routing: white hairline (at most 0.0237); markers: as in (c); provision for peak: 5.9. (b) Per week, the least primary baseline minus Sublet (positive: Sublet costs less): trace cost, also with demand one slot late (0 of 1 weeks positive; -0.246 to -0.246), and W0; RetroRenting, \u03c4\u22651 h, minus Sublet: W0; shaded: negative margin. (c) Medians; named in blue: Sublet, critical-ratio planning and critical-ratio renting with one part changed; arrows: notice layer added; grey: all-fallback.",
+   "caption_chars": 692,
+   "caption_lines_est": 5
+  },
+  "scope": {
+   "part": "main",
+   "weeks": [
+    "101"
+   ],
+   "seeds": [
+    0
+   ],
+   "modes": [
+    "L-tr"
+   ],
+   "W0_modes": [
+    "L-eg",
+    "L-ss",
+    "L-iid-0.05",
+    "L-iid-0.2",
+    "L-co"
+   ],
+   "tags": {
+    "a": [
+     "Sublet",
+     "BL1-BO",
+     "BL1",
+     "BL5-cur",
+     "BL5-tau60",
+     "BL2",
+     "BL3-0",
+     "BL4"
+    ],
+    "b": [
+     "Sublet",
+     "Sublet-lag",
+     "BL1",
+     "BL1-BO",
+     "BL2",
+     "BL3-0",
+     "BL4",
+     "BL5",
+     "BL5-cur",
+     "BL1-lag",
+     "BL1-BO-lag",
+     "BL2-lag",
+     "BL3-0-lag",
+     "BL4-lag",
+     "BL5",
+     "BL5-tau60"
+    ],
+    "c": [
+     "BL4",
+     "BL3-0",
+     "BL2",
+     "BL5-tau60",
+     "BL1",
+     "BL1-BO",
+     "BL5-cur",
+     "A9-P",
+     "CR",
+     "A9-kstar",
+     "A9-static",
+     "A9-noCommit",
+     "A9-noMBB",
+     "Sublet",
+     "BL1N",
+     "BL5N"
+    ]
+   }
+  },
+  "checks": {
+   "e7c": {
+    "registration_matches": true,
+    "weeks_are_confirmation_weeks": false,
+    "identity_holds": false,
+    "gate_pass": false
+   },
+   "e7r": {
+    "identity_all_identical": true,
+    "registration_sha256": "1f1dbf42d2ab74fc85aa5763802e2c7fa2c814f0db8b690a67ad4d9ab69f3fbb"
+   }
+  },
+  "meta": {
+   "git_revision": "5c7d33285b9a4f4e4df2b76e80b3e5f56d58bd37",
+   "analysis_git_revision": "5c7d33285b9a4f4e4df2b76e80b3e5f56d58bd37",
+   "e7c_git_revision": "6a96bce82ce4e4c692d1962cdbf979a9ee8c7fac",
+   "e7r_git_revision": "6a96bce82ce4e4c692d1962cdbf979a9ee8c7fac",
+   "reduced": true,
+   "reduced_by_input": {
+    "main": true,
+    "fig4v2": true,
+    "e7c": true,
+    "e7r": true
+   },
+   "weeks": [
+    "101"
+   ],
+   "inputs_sha256": {
+    "code/sim/out/sublet_v2/main/summary.json": "25e556eeee1df3687e1d9fc72390099c5305ce71e90c18e8b27be30a0dbd0c9d",
+    "code/sim/out/sublet_v2/analysis.json": "dfe0bd73117472a2c54f78595057e7b09422ef42dc30b6cf3063dc889d8fcc08",
+    "code/sim/out/figs/fig4v2.json": "11c664cef0d51aefb0d4715a671c262a42dd630d31dd0a5d5ab2283a3d0de4e2",
+    "code/sim/out/e7c/analysis.json": "832fbb594a4eba148b326e21bdbe297f9d0e69897af57cf242e355aafbf4c588",
+    "code/sim/out/e7r/analysis.json": "b7a67fefc9c68e6f83e5b3f44cd565353f7822274adfd6291182ea28000bc939"
+   },
+   "sources": [
+    "code/sim/out/sublet_v2/main/summary.json",
+    "code/sim/out/sublet_v2/analysis.json",
+    "code/sim/out/figs/fig4v2.json",
+    "code/sim/out/e7c/analysis.json",
+    "code/sim/out/e7r/analysis.json"
+   ]
+  },
+  "layout": {
+   "left_in": [
+    1.3586,
+    0.43,
+    0.9567
+   ],
+   "axes_in": [
+    1.6768,
+    1.2041,
+    1.0837
+   ],
+   "right_in": 0.43,
+   "a_x_hi": 1.7174610301758495,
+   "a_x_max": 2.86990196593814,
+   "a_column_in": 0.6733,
+   "a_key": {
+    "keys": [
+     "sublet_v2",
+     "bl1_bo",
+     "bl1",
+     "bl5_cur",
+     "bl5_tau60",
+     "bl2",
+     "bl3_0",
+     "bl4"
+    ],
+    "width_pt": 4.6,
+    "pad_pt": 8.6,
+    "center_pt": 4.3
+   },
+   "a_thin": [
+    {
+     "component": "routing",
+     "label": "Routing",
+     "max": 0.023626244573948133,
+     "max_pt": 0.9939
+    }
+   ],
+   "c_name_lines": {
+    "cr": [
+     "Critical-ratio",
+     "planning"
+    ],
+    "a9_kstar": [
+     "$k^{\\ast}$ contract"
+    ],
+    "a9_nombb": [
+     "no make-",
+     "before-break"
+    ],
+    "a9_nocommit": [
+     "no commitment",
+     "rule"
+    ],
+    "a9_static": [
+     "no site marking"
+    ]
+   },
+   "c_names_in": 0.665,
+   "c_slot_in": 4.8362,
+   "letters_in": 2.28,
+   "a_top_in": 2.2792,
+   "b_rects_in": [
+    [
+     3.4653,
+     1.4453,
+     1.2041,
+     0.799
+    ],
+    [
+     3.4653,
+     0.38,
+     1.2041,
+     0.799
+    ]
+   ],
+   "c_rect_in": [
+    5.6262,
+    0.38,
+    1.0837,
+    1.8643
+   ],
+   "keys": {
+    "cost": {
+     "loc": "upper left",
+     "x_in": 3.217,
+     "y_in": 2.3767,
+     "entries": [
+      "trace",
+      "trace_lag"
+     ],
+     "w_in": 0.9969,
+     "h_in": 0.0907,
+     "ink_below_in": 0.0,
+     "ink_above_in": 0.0001
+    },
+    "w0": {
+     "loc": "lower left",
+     "x_in": 3.217,
+     "y_in": 1.2014,
+     "entries": [
+      "w0_set",
+      "w0_tau60"
+     ],
+     "w_in": 1.1299,
+     "h_in": 0.0972,
+     "ink_below_in": 0.0192,
+     "ink_above_in": 0.0061
+    },
+    "c": {
+     "loc": "upper left",
+     "x_in": 5.0116,
+     "y_in": 2.3767,
+     "lines": [
+      "Protected-only renting"
+     ],
+     "entries": [
+      "a9p"
+     ],
+     "w_in": 1.0875,
+     "h_in": 0.0907,
+     "ink_below_in": 0.0,
+     "ink_above_in": 0.0001
+    }
+   },
+   "measured": {
+    "bar_names_in": 1.2669,
+    "key_in": 0.5622,
+    "bl0a_label_in": 0.4688,
+    "bl0b_in": 0.3628,
+    "width_in": 0.5622,
+    "b_need_in": 0.9649
+   },
+   "rule": "(a): reserve = widest bar name + the key markers' column; axes = bars + fig4_v2's label column; (b) the standard reserve; (c): reserve = widest name line (names wrapped at 0.67 in) + 2 + 7 + 12 pt (the gutter after (b), where (c)'s slot starts), y axis in a right reserve of 0.43 in; the axes share the rest in the ratios [1.0, 1.2, 1.08], (b) at least its keys' width right of its letter (3 pt after the letter, 6 pt before (b)'s axes end). Heights: the letters' line 0.12 in below the top; (a)'s top on it (lower by BL0a's label room where x_hi > 1); the keys of (b) and (c) start level with their letters; (b)'s upper sub-panel and (c) 3 pt below the deeper key's ink; (b)'s lower key's ink 11 pt below the upper sub-panel, its sub-panel 3 pt below it; the two sub-panels of one height; the keys measured as the PDF sets them, by their ink"
+  }
+ }
+}

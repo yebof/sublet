@@ -1,0 +1,10 @@
+T9 with nearest predicted column only (d = mK + 2); 10 instances x 9 predictions x 5 lambdas
+max d: 14
+max consistency check P/(2c(P)/(1-lam)): 0.519 (must be <= 1)
+max dual load / (c ln(1+d/lam)): 0.996 (must be <= 1)
+max P / (2 ln(1+d/lam) LP_al): 0.410 (must be <= 1)
+lam=0.1: mean P/OPT_eager with exact prediction 1.132
+lam=0.3: mean P/OPT_eager with exact prediction 1.315
+lam=0.5: mean P/OPT_eager with exact prediction 1.499
+lam=0.8: mean P/OPT_eager with exact prediction 1.776
+lam=1.0: mean P/OPT_eager with exact prediction 1.958

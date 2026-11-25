@@ -1,0 +1,56 @@
+{
+ "job": "e8:pair:tier=L:win=5:mu=1:c=1",
+ "exp": "e8",
+ "kind": "pool",
+ "params": {
+  "kind": "pair",
+  "tier": "L",
+  "win": 5,
+  "mu": 1.0,
+  "c": 1
+ },
+ "status": "ok",
+ "started": "2026-10-26T14:50:10",
+ "pid": 978869,
+ "argv": [
+  "/work/ms4wt/u25/code/sim/sublet/experiments/e8.py",
+  "--job",
+  "e8:pair:tier=L:win=5:mu=1:c=1",
+  "--out",
+  "/work/ms4u/u25scratch/fixture_roots/e8/out/e8"
+ ],
+ "slots": [
+  "slot0"
+ ],
+ "milp_limit_s": null,
+ "git_revision": "939847ca5925ce069d6df9089fe3a3d1d3207bb7",
+ "versions": {
+  "python": "3.12.3",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "sublet": "0.1.0"
+ },
+ "runs": 1,
+ "errors": [],
+ "n_errors": 0,
+ "outputs": [
+  "runs/fluid/e8__pair__tier__L__win__5__mu__1__c__1.json",
+  "runs/pairs/e8__pair__tier__L__win__5__mu__1__c__1.json"
+ ],
+ "result": {
+  "error": 0.0995003591333508,
+  "C_fluid": 85.68352255547762,
+  "C_replay": 95.15109020256244,
+  "e8_1": true,
+  "e8_2": true,
+  "e8_3": true,
+  "fluid_s": 0.0756643929053098,
+  "replay_s": 1.046471088891849,
+  "copies": 135193,
+  "instance_hash": "f013f59a867336d25b2444d17e816541e04d41dd851dbc9653b8dcb89fb3fa45"
+ },
+ "wall_s": 1.7901575430296361,
+ "peak_rss_kb": 146444,
+ "peak_rss_mb": 143.01171875,
+ "finished": "2026-10-26T14:50:12"
+}

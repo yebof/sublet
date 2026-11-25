@@ -1,0 +1,1816 @@
+{
+ "meta": {
+  "exp": "e5v2",
+  "spec": "design/ms7/feasibility/sens.md \u00a72 A-D (C56)",
+  "change": "C56",
+  "git_revision": "c1f4dc18be025cfeb540f8856b8e4a7782c9ea90",
+  "analysis_sha256": "6d9772304fe30b20d0d500c2c56b867ccecc97dc99e672c63bdfcd66912e4a2d",
+  "registration": {
+   "path": "design/ms7/registration.md",
+   "exists": true,
+   "registered_sha256": "6d9772304fe30b20d0d500c2c56b867ccecc97dc99e672c63bdfcd66912e4a2d",
+   "analysis_sha256": "6d9772304fe30b20d0d500c2c56b867ccecc97dc99e672c63bdfcd66912e4a2d",
+   "matches": true
+  },
+  "inputs": {
+   "out/e5v2/summary.json": "c6db11717173cc31e1f9b33d977d904394aff5235936bfe95e3d0add2f92ec6e"
+  },
+  "input_records": [
+   {
+    "file": "out/e5v2/summary.json",
+    "exists": true,
+    "sha256": "c6db11717173cc31e1f9b33d977d904394aff5235936bfe95e3d0add2f92ec6e",
+    "git_revision": "56b847bec39b437ed5074dff124ffb69416e7f2b",
+    "reduced": true,
+    "gate_kind": "ms7_registration",
+    "gate_ok": false,
+    "gate_enforced": false
+   }
+  ],
+  "confirmation_inputs": {},
+  "reduced": true,
+  "registered_full_inputs": false,
+  "label": "exploratory: post-freeze runs on the confirmation weeks (design/ms7/plan.md D6)"
+ },
+ "cells": {
+  "trace": {
+   "short": {
+    "1": {
+     "by_tag": {
+      "Sublet": {
+       "r0": {
+        "101": null
+       },
+       "saving_pct": {
+        "101": null
+       },
+       "median_r0": null,
+       "median_saving_pct": null,
+       "n": 0,
+       "source": "second"
+      },
+      "A9": {
+       "r0": {
+        "101": null
+       },
+       "saving_pct": {
+        "101": null
+       },
+       "median_r0": null,
+       "median_saving_pct": null,
+       "n": 0,
+       "source": "second"
+      },
+      "BL1-BO": {
+       "r0": {
+        "101": 0.6509712474790633
+       },
+       "saving_pct": {
+        "101": 34.902875252093665
+       },
+       "median_r0": 0.6509712474790633,
+       "median_saving_pct": 34.902875252093665,
+       "n": 1,
+       "source": "e5v2"
+      },
+      "BL5-cur": {
+       "r0": {
+        "101": null
+       },
+       "saving_pct": {
+        "101": null
+       },
+       "median_r0": null,
+       "median_saving_pct": null,
+       "n": 0,
+       "source": "second"
+      },
+      "BL3-0": {
+       "r0": {
+        "101": null
+       },
+       "saving_pct": {
+        "101": null
+       },
+       "median_r0": null,
+       "median_saving_pct": null,
+       "n": 0,
+       "source": "second"
+      },
+      "BL3-2": {
+       "r0": {
+        "101": 0.9294739654700739
+       },
+       "saving_pct": {
+        "101": 7.052603452992612
+       },
+       "median_r0": 0.9294739654700739,
+       "median_saving_pct": 7.052603452992612,
+       "n": 1,
+       "source": "e5v2"
+      }
+     },
+     "vs_pair": {
+      "by_week": {
+       "101": {
+        "delta": null,
+        "best": null,
+        "missing": [
+         "Sublet",
+         "BL5-cur"
+        ]
+       }
+      },
+      "n_weeks": 1,
+      "weeks_hold": 0,
+      "loss_weeks": [
+       "101"
+      ],
+      "delta_median": null,
+      "delta_min": null,
+      "delta_max": null
+     },
+     "vs_baselines": {
+      "by_week": {
+       "101": {
+        "delta": null,
+        "best": null,
+        "missing": [
+         "Sublet",
+         "BL5-cur",
+         "BL3-0"
+        ]
+       }
+      },
+      "n_weeks": 1,
+      "weeks_hold": 0,
+      "loss_weeks": [
+       "101"
+      ],
+      "delta_median": null,
+      "delta_min": null,
+      "delta_max": null
+     },
+     "baselines": [
+      "BL1-BO",
+      "BL5-cur",
+      "BL3-0",
+      "BL3-2"
+     ],
+     "sublet_minus_a9_r0": {
+      "by_week": {
+       "101": null
+      },
+      "median": null
+     },
+     "bl3_spares_r0": {
+      "by_week": {
+       "101": null
+      },
+      "median": null
+     }
+    },
+    "0.2": {
+     "by_tag": {
+      "Sublet": {
+       "r0": {
+        "101": 0.636132137797762
+       },
+       "saving_pct": {
+        "101": 36.3867862202238
+       },
+       "median_r0": 0.636132137797762,
+       "median_saving_pct": 36.3867862202238,
+       "n": 1,
+       "source": "e5v2"
+      },
+      "A9": {
+       "r0": {
+        "101": 0.636132137797762
+       },
+       "saving_pct": {
+        "101": 36.3867862202238
+       },
+       "median_r0": 0.636132137797762,
+       "median_saving_pct": 36.3867862202238,
+       "n": 1,
+       "source": "e5v2"
+      },
+      "BL1-BO": {
+       "r0": {
+        "101": 0.6294786129717399
+       },
+       "saving_pct": {
+        "101": 37.05213870282601
+       },
+       "median_r0": 0.6294786129717399,
+       "median_saving_pct": 37.05213870282601,
+       "n": 1,
+       "source": "e5v2"
+      },
+      "BL5-cur": {
+       "r0": {
+        "101": 0.8060080741172239
+       },
+       "saving_pct": {
+        "101": 19.399192588277614
+       },
+       "median_r0": 0.8060080741172239,
+       "median_saving_pct": 19.399192588277614,
+       "n": 1,
+       "source": "e5v2"
+      }
+     },
+     "vs_pair": {
+      "by_week": {
+       "101": {
+        "delta": -0.006653524826022106,
+        "best": "BL1-BO",
+        "best_r0": 0.6294786129717399,
+        "sublet_r0": 0.636132137797762,
+        "missing": []
+       }
+      },
+      "n_weeks": 1,
+      "weeks_hold": 0,
+      "loss_weeks": [],
+      "delta_median": -0.006653524826022106,
+      "delta_min": -0.006653524826022106,
+      "delta_max": -0.006653524826022106
+     },
+     "vs_baselines": {
+      "by_week": {
+       "101": {
+        "delta": -0.006653524826022106,
+        "best": "BL1-BO",
+        "best_r0": 0.6294786129717399,
+        "sublet_r0": 0.636132137797762,
+        "missing": []
+       }
+      },
+      "n_weeks": 1,
+      "weeks_hold": 0,
+      "loss_weeks": [],
+      "delta_median": -0.006653524826022106,
+      "delta_min": -0.006653524826022106,
+      "delta_max": -0.006653524826022106
+     },
+     "baselines": [
+      "BL1-BO",
+      "BL5-cur"
+     ],
+     "sublet_minus_a9_r0": {
+      "by_week": {
+       "101": 0.0
+      },
+      "median": 0.0
+     }
+    },
+    "0.5": {
+     "by_tag": {
+      "Sublet": {
+       "r0": {
+        "101": 0.6533618528514051
+       },
+       "saving_pct": {
+        "101": 34.663814714859484
+       },
+       "median_r0": 0.6533618528514051,
+       "median_saving_pct": 34.663814714859484,
+       "n": 1,
+       "source": "e5v2"
+      },
+      "A9": {
+       "r0": {
+        "101": 0.6533618528514051
+       },
+       "saving_pct": {
+        "101": 34.663814714859484
+       },
+       "median_r0": 0.6533618528514051,
+       "median_saving_pct": 34.663814714859484,
+       "n": 1,
+       "source": "e5v2"
+      },
+      "BL1-BO": {
+       "r0": {
+        "101": 0.6375383509119862
+       },
+       "saving_pct": {
+        "101": 36.24616490880138
+       },
+       "median_r0": 0.6375383509119862,
+       "median_saving_pct": 36.24616490880138,
+       "n": 1,
+       "source": "e5v2"
+      },
+      "BL5-cur": {
+       "r0": {
+        "101": 0.8149311271055087
+       },
+       "saving_pct": {
+        "101": 18.506887289449125
+       },
+       "median_r0": 0.8149311271055087,
+       "median_saving_pct": 18.506887289449125,
+       "n": 1,
+       "source": "e5v2"
+      }
+     },
+     "vs_pair": {
+      "by_week": {
+       "101": {
+        "delta": -0.01582350193941895,
+        "best": "BL1-BO",
+        "best_r0": 0.6375383509119862,
+        "sublet_r0": 0.6533618528514051,
+        "missing": []
+       }
+      },
+      "n_weeks": 1,
+      "weeks_hold": 0,
+      "loss_weeks": [],
+      "delta_median": -0.01582350193941895,
+      "delta_min": -0.01582350193941895,
+      "delta_max": -0.01582350193941895
+     },
+     "vs_baselines": {
+      "by_week": {
+       "101": {
+        "delta": -0.01582350193941895,
+        "best": "BL1-BO",
+        "best_r0": 0.6375383509119862,
+        "sublet_r0": 0.6533618528514051,
+        "missing": []
+       }
+      },
+      "n_weeks": 1,
+      "weeks_hold": 0,
+      "loss_weeks": [],
+      "delta_median": -0.01582350193941895,
+      "delta_min": -0.01582350193941895,
+      "delta_max": -0.01582350193941895
+     },
+     "baselines": [
+      "BL1-BO",
+      "BL5-cur"
+     ],
+     "sublet_minus_a9_r0": {
+      "by_week": {
+       "101": 0.0
+      },
+      "median": 0.0
+     }
+    },
+    "2": {
+     "by_tag": {
+      "Sublet": {
+       "r0": {
+        "101": 1.0414752534519947
+       },
+       "saving_pct": {
+        "101": -4.147525345199465
+       },
+       "median_r0": 1.0414752534519947,
+       "median_saving_pct": -4.147525345199465,
+       "n": 1,
+       "source": "e5v2"
+      },
+      "A9": {
+       "r0": {
+        "101": 0.7265100895918151
+       },
+       "saving_pct": {
+        "101": 27.348991040818493
+       },
+       "median_r0": 0.7265100895918151,
+       "median_saving_pct": 27.348991040818493,
+       "n": 1,
+       "source": "e5v2"
+      },
+      "BL1-BO": {
+       "r0": {
+        "101": 0.6778370406132176
+       },
+       "saving_pct": {
+        "101": 32.21629593867824
+       },
+       "median_r0": 0.6778370406132176,
+       "median_saving_pct": 32.21629593867824,
+       "n": 1,
+       "source": "e5v2"
+      },
+      "BL5-cur": {
+       "r0": {
+        "101": 0.8595463920469345
+       },
+       "saving_pct": {
+        "101": 14.04536079530655
+       },
+       "median_r0": 0.8595463920469345,
+       "median_saving_pct": 14.04536079530655,
+       "n": 1,
+       "source": "e5v2"
+      }
+     },
+     "vs_pair": {
+      "by_week": {
+       "101": {
+        "delta": -0.36363821283877706,
+        "best": "BL1-BO",
+        "best_r0": 0.6778370406132176,
+        "sublet_r0": 1.0414752534519947,
+        "missing": []
+       }
+      },
+      "n_weeks": 1,
+      "weeks_hold": 0,
+      "loss_weeks": [],
+      "delta_median": -0.36363821283877706,
+      "delta_min": -0.36363821283877706,
+      "delta_max": -0.36363821283877706
+     },
+     "vs_baselines": {
+      "by_week": {
+       "101": {
+        "delta": -0.36363821283877706,
+        "best": "BL1-BO",
+        "best_r0": 0.6778370406132176,
+        "sublet_r0": 1.0414752534519947,
+        "missing": []
+       }
+      },
+      "n_weeks": 1,
+      "weeks_hold": 0,
+      "loss_weeks": [],
+      "delta_median": -0.36363821283877706,
+      "delta_min": -0.36363821283877706,
+      "delta_max": -0.36363821283877706
+     },
+     "baselines": [
+      "BL1-BO",
+      "BL5-cur"
+     ],
+     "sublet_minus_a9_r0": {
+      "by_week": {
+       "101": 0.3149651638601796
+      },
+      "median": 0.3149651638601796
+     }
+    }
+   },
+   "long": {
+    "1": {
+     "by_tag": {
+      "Sublet": {
+       "r0": {
+        "101": null
+       },
+       "saving_pct": {
+        "101": null
+       },
+       "median_r0": null,
+       "median_saving_pct": null,
+       "n": 0,
+       "source": "second"
+      },
+      "A9": {
+       "r0": {
+        "101": null
+       },
+       "saving_pct": {
+        "101": null
+       },
+       "median_r0": null,
+       "median_saving_pct": null,
+       "n": 0,
+       "source": "second"
+      },
+      "BL1-BO": {
+       "r0": {
+        "101": 1.7873522995542217
+       },
+       "saving_pct": {
+        "101": -78.73522995542217
+       },
+       "median_r0": 1.7873522995542217,
+       "median_saving_pct": -78.73522995542217,
+       "n": 1,
+       "source": "e5v2"
+      },
+      "BL5-cur": {
+       "r0": {
+        "101": null
+       },
+       "saving_pct": {
+        "101": null
+       },
+       "median_r0": null,
+       "median_saving_pct": null,
+       "n": 0,
+       "source": "second"
+      },
+      "BL3-0": {
+       "r0": {
+        "101": null
+       },
+       "saving_pct": {
+        "101": null
+       },
+       "median_r0": null,
+       "median_saving_pct": null,
+       "n": 0,
+       "source": "second"
+      },
+      "BL3-2": {
+       "r0": {
+        "101": 2.1630566888346476
+       },
+       "saving_pct": {
+        "101": -116.30566888346476
+       },
+       "median_r0": 2.1630566888346476,
+       "median_saving_pct": -116.30566888346476,
+       "n": 1,
+       "source": "e5v2"
+      }
+     },
+     "vs_pair": {
+      "by_week": {
+       "101": {
+        "delta": null,
+        "best": null,
+        "missing": [
+         "Sublet",
+         "BL5-cur"
+        ]
+       }
+      },
+      "n_weeks": 1,
+      "weeks_hold": 0,
+      "loss_weeks": [
+       "101"
+      ],
+      "delta_median": null,
+      "delta_min": null,
+      "delta_max": null
+     },
+     "vs_baselines": {
+      "by_week": {
+       "101": {
+        "delta": null,
+        "best": null,
+        "missing": [
+         "Sublet",
+         "BL5-cur",
+         "BL3-0"
+        ]
+       }
+      },
+      "n_weeks": 1,
+      "weeks_hold": 0,
+      "loss_weeks": [
+       "101"
+      ],
+      "delta_median": null,
+      "delta_min": null,
+      "delta_max": null
+     },
+     "baselines": [
+      "BL1-BO",
+      "BL5-cur",
+      "BL3-0",
+      "BL3-2"
+     ],
+     "sublet_minus_a9_r0": {
+      "by_week": {
+       "101": null
+      },
+      "median": null
+     },
+     "bl3_spares_r0": {
+      "by_week": {
+       "101": null
+      },
+      "median": null
+     }
+    }
+   }
+  },
+  "sh0.25": {
+   "short": {
+    "1": {
+     "by_tag": {
+      "Sublet": {
+       "r0": {
+        "101": 0.8331004779478816
+       },
+       "saving_pct": {
+        "101": 16.689952205211846
+       },
+       "median_r0": 0.8331004779478816,
+       "median_saving_pct": 16.689952205211846,
+       "n": 1,
+       "source": "e5v2"
+      },
+      "A9": {
+       "r0": {
+        "101": 0.6690676014320897
+       },
+       "saving_pct": {
+        "101": 33.09323985679104
+       },
+       "median_r0": 0.6690676014320897,
+       "median_saving_pct": 33.09323985679104,
+       "n": 1,
+       "source": "e5v2"
+      },
+      "BL1-BO": {
+       "r0": {
+        "101": 0.6586844598956699
+       },
+       "saving_pct": {
+        "101": 34.13155401043301
+       },
+       "median_r0": 0.6586844598956699,
+       "median_saving_pct": 34.13155401043301,
+       "n": 1,
+       "source": "e5v2"
+      },
+      "BL5-cur": {
+       "r0": {
+        "101": 0.8360799103885936
+       },
+       "saving_pct": {
+        "101": 16.392008961140636
+       },
+       "median_r0": 0.8360799103885936,
+       "median_saving_pct": 16.392008961140636,
+       "n": 1,
+       "source": "e5v2"
+      },
+      "BL3-0": {
+       "r0": {
+        "101": 0.8035925710400589
+       },
+       "saving_pct": {
+        "101": 19.640742895994112
+       },
+       "median_r0": 0.8035925710400589,
+       "median_saving_pct": 19.640742895994112,
+       "n": 1,
+       "source": "e5v2"
+      },
+      "BL3-2": {
+       "r0": {
+        "101": 0.9492409185628434
+       },
+       "saving_pct": {
+        "101": 5.075908143715657
+       },
+       "median_r0": 0.9492409185628434,
+       "median_saving_pct": 5.075908143715657,
+       "n": 1,
+       "source": "e5v2"
+      }
+     },
+     "vs_pair": {
+      "by_week": {
+       "101": {
+        "delta": -0.17441601805221163,
+        "best": "BL1-BO",
+        "best_r0": 0.6586844598956699,
+        "sublet_r0": 0.8331004779478816,
+        "missing": []
+       }
+      },
+      "n_weeks": 1,
+      "weeks_hold": 0,
+      "loss_weeks": [],
+      "delta_median": -0.17441601805221163,
+      "delta_min": -0.17441601805221163,
+      "delta_max": -0.17441601805221163
+     },
+     "vs_baselines": {
+      "by_week": {
+       "101": {
+        "delta": -0.17441601805221163,
+        "best": "BL1-BO",
+        "best_r0": 0.6586844598956699,
+        "sublet_r0": 0.8331004779478816,
+        "missing": []
+       }
+      },
+      "n_weeks": 1,
+      "weeks_hold": 0,
+      "loss_weeks": [],
+      "delta_median": -0.17441601805221163,
+      "delta_min": -0.17441601805221163,
+      "delta_max": -0.17441601805221163
+     },
+     "baselines": [
+      "BL1-BO",
+      "BL5-cur",
+      "BL3-0",
+      "BL3-2"
+     ],
+     "sublet_minus_a9_r0": {
+      "by_week": {
+       "101": 0.1640328765157919
+      },
+      "median": 0.1640328765157919
+     },
+     "bl3_spares_r0": {
+      "by_week": {
+       "101": 0.14564834752278455
+      },
+      "median": 0.14564834752278455
+     }
+    }
+   },
+   "long": {
+    "1": {
+     "by_tag": {
+      "Sublet": {
+       "r0": {
+        "101": 1.3679287567355443
+       },
+       "saving_pct": {
+        "101": -36.79287567355443
+       },
+       "median_r0": 1.3679287567355443,
+       "median_saving_pct": -36.79287567355443,
+       "n": 1,
+       "source": "e5v2"
+      },
+      "A9": {
+       "r0": {
+        "101": 1.7112101011675265
+       },
+       "saving_pct": {
+        "101": -71.12101011675264
+       },
+       "median_r0": 1.7112101011675265,
+       "median_saving_pct": -71.12101011675264,
+       "n": 1,
+       "source": "e5v2"
+      },
+      "BL1-BO": {
+       "r0": {
+        "101": 1.7873522995542217
+       },
+       "saving_pct": {
+        "101": -78.73522995542217
+       },
+       "median_r0": 1.7873522995542217,
+       "median_saving_pct": -78.73522995542217,
+       "n": 1,
+       "source": "e5v2"
+      },
+      "BL5-cur": {
+       "r0": {
+        "101": 1.7530308635238632
+       },
+       "saving_pct": {
+        "101": -75.30308635238632
+       },
+       "median_r0": 1.7530308635238632,
+       "median_saving_pct": -75.30308635238632,
+       "n": 1,
+       "source": "e5v2"
+      },
+      "BL3-0": {
+       "r0": {
+        "101": 1.9243680365734848
+       },
+       "saving_pct": {
+        "101": -92.43680365734848
+       },
+       "median_r0": 1.9243680365734848,
+       "median_saving_pct": -92.43680365734848,
+       "n": 1,
+       "source": "e5v2"
+      },
+      "BL3-2": {
+       "r0": {
+        "101": 2.162359903855054
+       },
+       "saving_pct": {
+        "101": -116.23599038550539
+       },
+       "median_r0": 2.162359903855054,
+       "median_saving_pct": -116.23599038550539,
+       "n": 1,
+       "source": "e5v2"
+      }
+     },
+     "vs_pair": {
+      "by_week": {
+       "101": {
+        "delta": 0.3851021067883189,
+        "best": "BL5-cur",
+        "best_r0": 1.7530308635238632,
+        "sublet_r0": 1.3679287567355443,
+        "missing": []
+       }
+      },
+      "n_weeks": 1,
+      "weeks_hold": 1,
+      "loss_weeks": [],
+      "delta_median": 0.3851021067883189,
+      "delta_min": 0.3851021067883189,
+      "delta_max": 0.3851021067883189
+     },
+     "vs_baselines": {
+      "by_week": {
+       "101": {
+        "delta": 0.3851021067883189,
+        "best": "BL5-cur",
+        "best_r0": 1.7530308635238632,
+        "sublet_r0": 1.3679287567355443,
+        "missing": []
+       }
+      },
+      "n_weeks": 1,
+      "weeks_hold": 1,
+      "loss_weeks": [],
+      "delta_median": 0.3851021067883189,
+      "delta_min": 0.3851021067883189,
+      "delta_max": 0.3851021067883189
+     },
+     "baselines": [
+      "BL1-BO",
+      "BL5-cur",
+      "BL3-0",
+      "BL3-2"
+     ],
+     "sublet_minus_a9_r0": {
+      "by_week": {
+       "101": -0.3432813444319822
+      },
+      "median": -0.3432813444319822
+     },
+     "bl3_spares_r0": {
+      "by_week": {
+       "101": 0.23799186728156907
+      },
+      "median": 0.23799186728156907
+     }
+    }
+   }
+  },
+  "sh0.5": {
+   "short": {
+    "1": {
+     "by_tag": {
+      "Sublet": {
+       "r0": {
+        "101": 0.8816452041577857
+       },
+       "saving_pct": {
+        "101": 11.835479584221432
+       },
+       "median_r0": 0.8816452041577857,
+       "median_saving_pct": 11.835479584221432,
+       "n": 1,
+       "source": "e5v2"
+      },
+      "A9": {
+       "r0": {
+        "101": 0.6720658361015257
+       },
+       "saving_pct": {
+        "101": 32.79341638984743
+       },
+       "median_r0": 0.6720658361015257,
+       "median_saving_pct": 32.79341638984743,
+       "n": 1,
+       "source": "e5v2"
+      },
+      "BL1-BO": {
+       "r0": {
+        "101": 0.6662803949502816
+       },
+       "saving_pct": {
+        "101": 33.371960504971845
+       },
+       "median_r0": 0.6662803949502816,
+       "median_saving_pct": 33.371960504971845,
+       "n": 1,
+       "source": "e5v2"
+      },
+      "BL5-cur": {
+       "r0": {
+        "101": 0.8508572852144393
+       },
+       "saving_pct": {
+        "101": 14.914271478556074
+       },
+       "median_r0": 0.8508572852144393,
+       "median_saving_pct": 14.914271478556074,
+       "n": 1,
+       "source": "e5v2"
+      },
+      "BL3-0": {
+       "r0": {
+        "101": 0.8150708933744243
+       },
+       "saving_pct": {
+        "101": 18.49291066255757
+       },
+       "median_r0": 0.8150708933744243,
+       "median_saving_pct": 18.49291066255757,
+       "n": 1,
+       "source": "e5v2"
+      },
+      "BL3-2": {
+       "r0": {
+        "101": 0.9584375886413503
+       },
+       "saving_pct": {
+        "101": 4.156241135864969
+       },
+       "median_r0": 0.9584375886413503,
+       "median_saving_pct": 4.156241135864969,
+       "n": 1,
+       "source": "e5v2"
+      }
+     },
+     "vs_pair": {
+      "by_week": {
+       "101": {
+        "delta": -0.21536480920750412,
+        "best": "BL1-BO",
+        "best_r0": 0.6662803949502816,
+        "sublet_r0": 0.8816452041577857,
+        "missing": []
+       }
+      },
+      "n_weeks": 1,
+      "weeks_hold": 0,
+      "loss_weeks": [],
+      "delta_median": -0.21536480920750412,
+      "delta_min": -0.21536480920750412,
+      "delta_max": -0.21536480920750412
+     },
+     "vs_baselines": {
+      "by_week": {
+       "101": {
+        "delta": -0.21536480920750412,
+        "best": "BL1-BO",
+        "best_r0": 0.6662803949502816,
+        "sublet_r0": 0.8816452041577857,
+        "missing": []
+       }
+      },
+      "n_weeks": 1,
+      "weeks_hold": 0,
+      "loss_weeks": [],
+      "delta_median": -0.21536480920750412,
+      "delta_min": -0.21536480920750412,
+      "delta_max": -0.21536480920750412
+     },
+     "baselines": [
+      "BL1-BO",
+      "BL5-cur",
+      "BL3-0",
+      "BL3-2"
+     ],
+     "sublet_minus_a9_r0": {
+      "by_week": {
+       "101": 0.20957936805625998
+      },
+      "median": 0.20957936805625998
+     },
+     "bl3_spares_r0": {
+      "by_week": {
+       "101": 0.14336669526692603
+      },
+      "median": 0.14336669526692603
+     }
+    }
+   },
+   "long": {
+    "1": {
+     "by_tag": {
+      "Sublet": {
+       "r0": {
+        "101": 1.3679287567355443
+       },
+       "saving_pct": {
+        "101": -36.79287567355443
+       },
+       "median_r0": 1.3679287567355443,
+       "median_saving_pct": -36.79287567355443,
+       "n": 1,
+       "source": "e5v2"
+      },
+      "A9": {
+       "r0": {
+        "101": 1.7112101011675265
+       },
+       "saving_pct": {
+        "101": -71.12101011675264
+       },
+       "median_r0": 1.7112101011675265,
+       "median_saving_pct": -71.12101011675264,
+       "n": 1,
+       "source": "e5v2"
+      },
+      "BL1-BO": {
+       "r0": {
+        "101": 1.788825065080054
+       },
+       "saving_pct": {
+        "101": -78.88250650800539
+       },
+       "median_r0": 1.788825065080054,
+       "median_saving_pct": -78.88250650800539,
+       "n": 1,
+       "source": "e5v2"
+      },
+      "BL5-cur": {
+       "r0": {
+        "101": 1.7530308635238632
+       },
+       "saving_pct": {
+        "101": -75.30308635238632
+       },
+       "median_r0": 1.7530308635238632,
+       "median_saving_pct": -75.30308635238632,
+       "n": 1,
+       "source": "e5v2"
+      },
+      "BL3-0": {
+       "r0": {
+        "101": 1.928857681197702
+       },
+       "saving_pct": {
+        "101": -92.8857681197702
+       },
+       "median_r0": 1.928857681197702,
+       "median_saving_pct": -92.8857681197702,
+       "n": 1,
+       "source": "e5v2"
+      },
+      "BL3-2": {
+       "r0": {
+        "101": 2.0716590248950952
+       },
+       "saving_pct": {
+        "101": -107.16590248950952
+       },
+       "median_r0": 2.0716590248950952,
+       "median_saving_pct": -107.16590248950952,
+       "n": 1,
+       "source": "e5v2"
+      }
+     },
+     "vs_pair": {
+      "by_week": {
+       "101": {
+        "delta": 0.3851021067883189,
+        "best": "BL5-cur",
+        "best_r0": 1.7530308635238632,
+        "sublet_r0": 1.3679287567355443,
+        "missing": []
+       }
+      },
+      "n_weeks": 1,
+      "weeks_hold": 1,
+      "loss_weeks": [],
+      "delta_median": 0.3851021067883189,
+      "delta_min": 0.3851021067883189,
+      "delta_max": 0.3851021067883189
+     },
+     "vs_baselines": {
+      "by_week": {
+       "101": {
+        "delta": 0.3851021067883189,
+        "best": "BL5-cur",
+        "best_r0": 1.7530308635238632,
+        "sublet_r0": 1.3679287567355443,
+        "missing": []
+       }
+      },
+      "n_weeks": 1,
+      "weeks_hold": 1,
+      "loss_weeks": [],
+      "delta_median": 0.3851021067883189,
+      "delta_min": 0.3851021067883189,
+      "delta_max": 0.3851021067883189
+     },
+     "baselines": [
+      "BL1-BO",
+      "BL5-cur",
+      "BL3-0",
+      "BL3-2"
+     ],
+     "sublet_minus_a9_r0": {
+      "by_week": {
+       "101": -0.3432813444319822
+      },
+      "median": -0.3432813444319822
+     },
+     "bl3_spares_r0": {
+      "by_week": {
+       "101": 0.14280134369739317
+      },
+      "median": 0.14280134369739317
+     }
+    }
+   }
+  },
+  "sh1": {
+   "short": {
+    "1": {
+     "by_tag": {
+      "Sublet": {
+       "r0": {
+        "101": 0.8479877463418356
+       },
+       "saving_pct": {
+        "101": 15.20122536581644
+       },
+       "median_r0": 0.8479877463418356,
+       "median_saving_pct": 15.20122536581644,
+       "n": 1,
+       "source": "e5v2"
+      },
+      "A9": {
+       "r0": {
+        "101": 0.6806435083390397
+       },
+       "saving_pct": {
+        "101": 31.935649166096024
+       },
+       "median_r0": 0.6806435083390397,
+       "median_saving_pct": 31.935649166096024,
+       "n": 1,
+       "source": "e5v2"
+      },
+      "BL1-BO": {
+       "r0": {
+        "101": 0.686244865161305
+       },
+       "saving_pct": {
+        "101": 31.3755134838695
+       },
+       "median_r0": 0.686244865161305,
+       "median_saving_pct": 31.3755134838695,
+       "n": 1,
+       "source": "e5v2"
+      },
+      "BL5-cur": {
+       "r0": {
+        "101": 0.869319256921311
+       },
+       "saving_pct": {
+        "101": 13.068074307868905
+       },
+       "median_r0": 0.869319256921311,
+       "median_saving_pct": 13.068074307868905,
+       "n": 1,
+       "source": "e5v2"
+      },
+      "BL3-0": {
+       "r0": {
+        "101": 0.8342455982341832
+       },
+       "saving_pct": {
+        "101": 16.57544017658168
+       },
+       "median_r0": 0.8342455982341832,
+       "median_saving_pct": 16.57544017658168,
+       "n": 1,
+       "source": "e5v2"
+      },
+      "BL3-2": {
+       "r0": {
+        "101": 0.9937019715520444
+       },
+       "saving_pct": {
+        "101": 0.6298028447955573
+       },
+       "median_r0": 0.9937019715520444,
+       "median_saving_pct": 0.6298028447955573,
+       "n": 1,
+       "source": "e5v2"
+      }
+     },
+     "vs_pair": {
+      "by_week": {
+       "101": {
+        "delta": -0.1617428811805306,
+        "best": "BL1-BO",
+        "best_r0": 0.686244865161305,
+        "sublet_r0": 0.8479877463418356,
+        "missing": []
+       }
+      },
+      "n_weeks": 1,
+      "weeks_hold": 0,
+      "loss_weeks": [],
+      "delta_median": -0.1617428811805306,
+      "delta_min": -0.1617428811805306,
+      "delta_max": -0.1617428811805306
+     },
+     "vs_baselines": {
+      "by_week": {
+       "101": {
+        "delta": -0.1617428811805306,
+        "best": "BL1-BO",
+        "best_r0": 0.686244865161305,
+        "sublet_r0": 0.8479877463418356,
+        "missing": []
+       }
+      },
+      "n_weeks": 1,
+      "weeks_hold": 0,
+      "loss_weeks": [],
+      "delta_median": -0.1617428811805306,
+      "delta_min": -0.1617428811805306,
+      "delta_max": -0.1617428811805306
+     },
+     "baselines": [
+      "BL1-BO",
+      "BL5-cur",
+      "BL3-0",
+      "BL3-2"
+     ],
+     "sublet_minus_a9_r0": {
+      "by_week": {
+       "101": 0.16734423800279585
+      },
+      "median": 0.16734423800279585
+     },
+     "bl3_spares_r0": {
+      "by_week": {
+       "101": 0.15945637331786122
+      },
+      "median": 0.15945637331786122
+     }
+    }
+   },
+   "long": {
+    "1": {
+     "by_tag": {
+      "Sublet": {
+       "r0": {
+        "101": 1.3679287567355443
+       },
+       "saving_pct": {
+        "101": -36.79287567355443
+       },
+       "median_r0": 1.3679287567355443,
+       "median_saving_pct": -36.79287567355443,
+       "n": 1,
+       "source": "e5v2"
+      },
+      "A9": {
+       "r0": {
+        "101": 1.7112101011675265
+       },
+       "saving_pct": {
+        "101": -71.12101011675264
+       },
+       "median_r0": 1.7112101011675265,
+       "median_saving_pct": -71.12101011675264,
+       "n": 1,
+       "source": "e5v2"
+      },
+      "BL1-BO": {
+       "r0": {
+        "101": 1.788825065080054
+       },
+       "saving_pct": {
+        "101": -78.88250650800539
+       },
+       "median_r0": 1.788825065080054,
+       "median_saving_pct": -78.88250650800539,
+       "n": 1,
+       "source": "e5v2"
+      },
+      "BL5-cur": {
+       "r0": {
+        "101": 1.7530308635238632
+       },
+       "saving_pct": {
+        "101": -75.30308635238632
+       },
+       "median_r0": 1.7530308635238632,
+       "median_saving_pct": -75.30308635238632,
+       "n": 1,
+       "source": "e5v2"
+      },
+      "BL3-0": {
+       "r0": {
+        "101": 1.9926587283484911
+       },
+       "saving_pct": {
+        "101": -99.2658728348491
+       },
+       "median_r0": 1.9926587283484911,
+       "median_saving_pct": -99.2658728348491,
+       "n": 1,
+       "source": "e5v2"
+      },
+      "BL3-2": {
+       "r0": {
+        "101": 2.2087753485197403
+       },
+       "saving_pct": {
+        "101": -120.87753485197403
+       },
+       "median_r0": 2.2087753485197403,
+       "median_saving_pct": -120.87753485197403,
+       "n": 1,
+       "source": "e5v2"
+      }
+     },
+     "vs_pair": {
+      "by_week": {
+       "101": {
+        "delta": 0.3851021067883189,
+        "best": "BL5-cur",
+        "best_r0": 1.7530308635238632,
+        "sublet_r0": 1.3679287567355443,
+        "missing": []
+       }
+      },
+      "n_weeks": 1,
+      "weeks_hold": 1,
+      "loss_weeks": [],
+      "delta_median": 0.3851021067883189,
+      "delta_min": 0.3851021067883189,
+      "delta_max": 0.3851021067883189
+     },
+     "vs_baselines": {
+      "by_week": {
+       "101": {
+        "delta": 0.3851021067883189,
+        "best": "BL5-cur",
+        "best_r0": 1.7530308635238632,
+        "sublet_r0": 1.3679287567355443,
+        "missing": []
+       }
+      },
+      "n_weeks": 1,
+      "weeks_hold": 1,
+      "loss_weeks": [],
+      "delta_median": 0.3851021067883189,
+      "delta_min": 0.3851021067883189,
+      "delta_max": 0.3851021067883189
+     },
+     "baselines": [
+      "BL1-BO",
+      "BL5-cur",
+      "BL3-0",
+      "BL3-2"
+     ],
+     "sublet_minus_a9_r0": {
+      "by_week": {
+       "101": -0.3432813444319822
+      },
+      "median": -0.3432813444319822
+     },
+     "bl3_spares_r0": {
+      "by_week": {
+       "101": 0.21611662017124922
+      },
+      "median": 0.21611662017124922
+     }
+    }
+   }
+  },
+  "all1": {
+   "short": {
+    "1": {
+     "by_tag": {
+      "Sublet": {
+       "r0": {
+        "101": null
+       },
+       "saving_pct": {
+        "101": null
+       },
+       "median_r0": null,
+       "median_saving_pct": null,
+       "n": 0,
+       "source": "second"
+      },
+      "A9": {
+       "r0": {
+        "101": null
+       },
+       "saving_pct": {
+        "101": null
+       },
+       "median_r0": null,
+       "median_saving_pct": null,
+       "n": 0,
+       "source": "second"
+      },
+      "BL1-BO": {
+       "r0": {
+        "101": 1.4034676858093085
+       },
+       "saving_pct": {
+        "101": -40.34676858093085
+       },
+       "median_r0": 1.4034676858093085,
+       "median_saving_pct": -40.34676858093085,
+       "n": 1,
+       "source": "e5v2"
+      },
+      "BL5-cur": {
+       "r0": {
+        "101": null
+       },
+       "saving_pct": {
+        "101": null
+       },
+       "median_r0": null,
+       "median_saving_pct": null,
+       "n": 0,
+       "source": "second"
+      },
+      "BL3-0": {
+       "r0": {
+        "101": null
+       },
+       "saving_pct": {
+        "101": null
+       },
+       "median_r0": null,
+       "median_saving_pct": null,
+       "n": 0,
+       "source": "second"
+      },
+      "BL3-2": {
+       "r0": {
+        "101": 1.7779308285719946
+       },
+       "saving_pct": {
+        "101": -77.79308285719947
+       },
+       "median_r0": 1.7779308285719946,
+       "median_saving_pct": -77.79308285719947,
+       "n": 1,
+       "source": "e5v2"
+      }
+     },
+     "vs_pair": {
+      "by_week": {
+       "101": {
+        "delta": null,
+        "best": null,
+        "missing": [
+         "Sublet",
+         "BL5-cur"
+        ]
+       }
+      },
+      "n_weeks": 1,
+      "weeks_hold": 0,
+      "loss_weeks": [
+       "101"
+      ],
+      "delta_median": null,
+      "delta_min": null,
+      "delta_max": null
+     },
+     "vs_baselines": {
+      "by_week": {
+       "101": {
+        "delta": null,
+        "best": null,
+        "missing": [
+         "Sublet",
+         "BL5-cur",
+         "BL3-0"
+        ]
+       }
+      },
+      "n_weeks": 1,
+      "weeks_hold": 0,
+      "loss_weeks": [
+       "101"
+      ],
+      "delta_median": null,
+      "delta_min": null,
+      "delta_max": null
+     },
+     "baselines": [
+      "BL1-BO",
+      "BL5-cur",
+      "BL3-0",
+      "BL3-2"
+     ],
+     "sublet_minus_a9_r0": {
+      "by_week": {
+       "101": null
+      },
+      "median": null
+     },
+     "bl3_spares_r0": {
+      "by_week": {
+       "101": null
+      },
+      "median": null
+     }
+    }
+   },
+   "long": {
+    "1": {
+     "by_tag": {
+      "Sublet": {
+       "r0": {
+        "101": null
+       },
+       "saving_pct": {
+        "101": null
+       },
+       "median_r0": null,
+       "median_saving_pct": null,
+       "n": 0,
+       "source": "second"
+      },
+      "A9": {
+       "r0": {
+        "101": null
+       },
+       "saving_pct": {
+        "101": null
+       },
+       "median_r0": null,
+       "median_saving_pct": null,
+       "n": 0,
+       "source": "second"
+      },
+      "BL1-BO": {
+       "r0": {
+        "101": 1.792444526387723
+       },
+       "saving_pct": {
+        "101": -79.24445263877229
+       },
+       "median_r0": 1.792444526387723,
+       "median_saving_pct": -79.24445263877229,
+       "n": 1,
+       "source": "e5v2"
+      },
+      "BL5-cur": {
+       "r0": {
+        "101": null
+       },
+       "saving_pct": {
+        "101": null
+       },
+       "median_r0": null,
+       "median_saving_pct": null,
+       "n": 0,
+       "source": "second"
+      },
+      "BL3-0": {
+       "r0": {
+        "101": null
+       },
+       "saving_pct": {
+        "101": null
+       },
+       "median_r0": null,
+       "median_saving_pct": null,
+       "n": 0,
+       "source": "second"
+      },
+      "BL3-2": {
+       "r0": {
+        "101": 2.908371712702771
+       },
+       "saving_pct": {
+        "101": -190.83717127027708
+       },
+       "median_r0": 2.908371712702771,
+       "median_saving_pct": -190.83717127027708,
+       "n": 1,
+       "source": "e5v2"
+      }
+     },
+     "vs_pair": {
+      "by_week": {
+       "101": {
+        "delta": null,
+        "best": null,
+        "missing": [
+         "Sublet",
+         "BL5-cur"
+        ]
+       }
+      },
+      "n_weeks": 1,
+      "weeks_hold": 0,
+      "loss_weeks": [
+       "101"
+      ],
+      "delta_median": null,
+      "delta_min": null,
+      "delta_max": null
+     },
+     "vs_baselines": {
+      "by_week": {
+       "101": {
+        "delta": null,
+        "best": null,
+        "missing": [
+         "Sublet",
+         "BL5-cur",
+         "BL3-0"
+        ]
+       }
+      },
+      "n_weeks": 1,
+      "weeks_hold": 0,
+      "loss_weeks": [
+       "101"
+      ],
+      "delta_median": null,
+      "delta_min": null,
+      "delta_max": null
+     },
+     "baselines": [
+      "BL1-BO",
+      "BL5-cur",
+      "BL3-0",
+      "BL3-2"
+     ],
+     "sublet_minus_a9_r0": {
+      "by_week": {
+       "101": null
+      },
+      "median": null
+     },
+     "bl3_spares_r0": {
+      "by_week": {
+       "101": null
+      },
+      "median": null
+     }
+    }
+   }
+  }
+ },
+ "weeks": [
+  "101"
+ ],
+ "flips": [
+  {
+   "level": "trace",
+   "menu": "short",
+   "mu": "1",
+   "weeks_hold_pair": 0,
+   "weeks_hold_baselines": 0,
+   "n_weeks": 1
+  },
+  {
+   "level": "trace",
+   "menu": "short",
+   "mu": "0.2",
+   "weeks_hold_pair": 0,
+   "weeks_hold_baselines": 0,
+   "n_weeks": 1
+  },
+  {
+   "level": "trace",
+   "menu": "short",
+   "mu": "0.5",
+   "weeks_hold_pair": 0,
+   "weeks_hold_baselines": 0,
+   "n_weeks": 1
+  },
+  {
+   "level": "trace",
+   "menu": "short",
+   "mu": "2",
+   "weeks_hold_pair": 0,
+   "weeks_hold_baselines": 0,
+   "n_weeks": 1
+  },
+  {
+   "level": "trace",
+   "menu": "long",
+   "mu": "1",
+   "weeks_hold_pair": 0,
+   "weeks_hold_baselines": 0,
+   "n_weeks": 1
+  },
+  {
+   "level": "sh0.25",
+   "menu": "short",
+   "mu": "1",
+   "weeks_hold_pair": 0,
+   "weeks_hold_baselines": 0,
+   "n_weeks": 1
+  },
+  {
+   "level": "sh0.5",
+   "menu": "short",
+   "mu": "1",
+   "weeks_hold_pair": 0,
+   "weeks_hold_baselines": 0,
+   "n_weeks": 1
+  },
+  {
+   "level": "sh1",
+   "menu": "short",
+   "mu": "1",
+   "weeks_hold_pair": 0,
+   "weeks_hold_baselines": 0,
+   "n_weeks": 1
+  },
+  {
+   "level": "all1",
+   "menu": "short",
+   "mu": "1",
+   "weeks_hold_pair": 0,
+   "weeks_hold_baselines": 0,
+   "n_weeks": 1
+  },
+  {
+   "level": "all1",
+   "menu": "long",
+   "mu": "1",
+   "weeks_hold_pair": 0,
+   "weeks_hold_baselines": 0,
+   "n_weeks": 1
+  }
+ ],
+ "headline": {
+  "n_cells": 13,
+  "vs_pair": {
+   "cells_all_weeks_hold": 3,
+   "cells_with_failures": [
+    "all1:long:1",
+    "all1:short:1",
+    "sh0.25:short:1",
+    "sh0.5:short:1",
+    "sh1:short:1",
+    "trace:long:1",
+    "trace:short:0.2",
+    "trace:short:0.5",
+    "trace:short:1",
+    "trace:short:2"
+   ],
+   "cell_weeks_hold": 3,
+   "cell_weeks": 13
+  },
+  "vs_baselines": {
+   "cells_all_weeks_hold": 3,
+   "cells_with_failures": [
+    "all1:long:1",
+    "all1:short:1",
+    "sh0.25:short:1",
+    "sh0.5:short:1",
+    "sh1:short:1",
+    "trace:long:1",
+    "trace:short:0.2",
+    "trace:short:0.5",
+    "trace:short:1",
+    "trace:short:2"
+   ],
+   "cell_weeks_hold": 3,
+   "cell_weeks": 13
+  },
+  "sublet_saving_lo": -36.79287567355443,
+  "sublet_saving_lo_cell": "sh0.25:long:1",
+  "sublet_saving_hi": 16.689952205211846,
+  "sublet_saving_hi_cell": "sh0.25:short:1",
+  "bl3_spares_r0_median": {
+   "trace:short": null,
+   "trace:long": null,
+   "sh0.25:short": 0.14564834752278455,
+   "sh0.25:long": 0.23799186728156907,
+   "sh0.5:short": 0.14336669526692603,
+   "sh0.5:long": 0.14280134369739317,
+   "sh1:short": 0.15945637331786122,
+   "sh1:long": 0.21611662017124922,
+   "all1:short": null,
+   "all1:long": null
+  },
+  "sublet_vs_best_baseline_median_delta": {
+   "trace:short:1": null,
+   "trace:short:0.2": -0.006653524826022106,
+   "trace:short:0.5": -0.01582350193941895,
+   "trace:short:2": -0.36363821283877706,
+   "trace:long:1": null,
+   "sh0.25:short:1": -0.17441601805221163,
+   "sh0.25:long:1": 0.3851021067883189,
+   "sh0.5:short:1": -0.21536480920750412,
+   "sh0.5:long:1": 0.3851021067883189,
+   "sh1:short:1": -0.1617428811805306,
+   "sh1:long:1": 0.3851021067883189,
+   "all1:short:1": null,
+   "all1:long:1": null
+  }
+ }
+}

@@ -1,0 +1,63 @@
+{
+ "job": "e9:run:pt=e7f_V4_SML:pol=A6:c=1",
+ "exp": "e9",
+ "kind": "alone",
+ "params": {
+  "kind": "run",
+  "point": "e7f_V4_SML",
+  "base": "e7f",
+  "V": 4,
+  "llm_set": "SML",
+  "tag": "A6",
+  "c": 1,
+  "policy_seed": 0,
+  "horizon_min": 120,
+  "limit_s": 900
+ },
+ "status": "ok",
+ "started": "2026-10-29T17:03:39",
+ "pid": 3032844,
+ "argv": [
+  "/work/sublet/code/sim/sublet/experiments/e9.py",
+  "--job",
+  "e9:run:pt=e7f_V4_SML:pol=A6:c=1",
+  "--out",
+  "/work/ms5build/u28/reduced/out/e9"
+ ],
+ "slots": [
+  "slot0",
+  "slot1",
+  "slot2",
+  "slot3"
+ ],
+ "milp_limit_s": null,
+ "git_revision": "c82fa05f835c1b4896ddf639d6edb81495a1abee",
+ "versions": {
+  "python": "3.12.3",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "sublet": "0.1.0"
+ },
+ "runs": 1,
+ "errors": [],
+ "n_errors": 0,
+ "outputs": [
+  "runs/e9__run__pt__e7f_V4_SML__pol__A6__c__1.json"
+ ],
+ "result": {
+  "point": "e7f_V4_SML",
+  "tag": "A6",
+  "c": 1,
+  "instance_hash": "a175700b774f35c6570f9c2b5d9fa6eba94a9316870e17e02954e75cd19d0ac6",
+  "slow_loop_s_per_h": 0.4290298211853951,
+  "fast_loop_s_per_h": 0.0780325667001307,
+  "setup_s": 2.3827806708868593,
+  "cost_over_bl0a": 1.0133211789316376,
+  "t_a": null,
+  "steps_ok": true
+ },
+ "wall_s": 3.7820393468718976,
+ "peak_rss_kb": 147124,
+ "peak_rss_mb": 143.67578125,
+ "finished": "2026-10-29T17:03:43"
+}

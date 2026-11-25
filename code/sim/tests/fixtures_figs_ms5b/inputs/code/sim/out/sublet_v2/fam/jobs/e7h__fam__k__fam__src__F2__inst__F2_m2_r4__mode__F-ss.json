@@ -1,0 +1,122 @@
+{
+ "job": "e7h:fam:k=fam:src=F2:inst=F2_m2_r4:mode=F-ss",
+ "exp": "e7h",
+ "kind": "pool",
+ "params": {
+  "part": "fam",
+  "kind": "fam",
+  "family": {
+   "id": "F2",
+   "kind": "fam",
+   "m": [
+    2,
+    4,
+    8,
+    16
+   ],
+   "rho": [
+    4,
+    16,
+    64
+   ],
+   "tau": 2,
+   "H": 1,
+   "T": 96,
+   "modes": [
+    "F-ss",
+    "F-iid",
+    "F-eg"
+   ],
+   "note": "T4/O1 family Fam(m, rho, 2, 1, 96) (E10(a) setup; T = 96 as o1_ub and E9's fam_m8, so that safe_site has at least two phases at m = 16); safe_site (default k = m, D = 3) and iid_step p = 0.5 with lender seed = policy seed 0-9; eager with one lender seed",
+   "fam": "F2"
+  },
+  "values": {
+   "m": 2,
+   "rho": 4.0
+  },
+  "inst": "F2_m2_r4",
+  "mode": "F-ss",
+  "entries": [
+   [
+    "A9",
+    [
+     0
+    ]
+   ],
+   [
+    "A9-noIns",
+    [
+     0
+    ]
+   ],
+   [
+    "Sublet",
+    [
+     0
+    ]
+   ],
+   [
+    "BL1-G",
+    [
+     0
+    ]
+   ],
+   [
+    "BL5-G",
+    [
+     0
+    ]
+   ],
+   [
+    "BL1-GP",
+    [
+     0
+    ]
+   ],
+   [
+    "RR_RENEW",
+    [
+     0
+    ]
+   ],
+   [
+    "MARKING",
+    [
+     0
+    ]
+   ]
+  ]
+ },
+ "status": "ok",
+ "started": "2026-11-03T14:23:45",
+ "pid": 1729772,
+ "argv": [
+  "/work/sublet/code/sim/sublet/experiments/e7h.py",
+  "--job",
+  "e7h:fam:k=fam:src=F2:inst=F2_m2_r4:mode=F-ss",
+  "--out",
+  "/work/u36_fix/fam/out/sublet_v2/fam"
+ ],
+ "slots": [
+  "slot0"
+ ],
+ "milp_limit_s": null,
+ "git_revision": "5c7d33285b9a4f4e4df2b76e80b3e5f56d58bd37",
+ "versions": {
+  "python": "3.12.3",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "sublet": "0.1.0"
+ },
+ "runs": 8,
+ "errors": [],
+ "n_errors": 0,
+ "outputs": [
+  "runs/e7h__fam__k__fam__src__F2__inst__F2_m2_r4__mode__F-ss.json"
+ ],
+ "result": {},
+ "wall_s": 1.3058090759441257,
+ "peak_rss_kb": 94220,
+ "peak_rss_mb": 92.01171875,
+ "finished": "2026-11-03T14:23:46"
+}

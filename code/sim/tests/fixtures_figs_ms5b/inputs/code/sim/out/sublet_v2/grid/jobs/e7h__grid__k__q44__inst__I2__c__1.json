@@ -1,0 +1,73 @@
+{
+ "job": "e7h:grid:k=q44:inst=I2:c=1",
+ "exp": "e7h",
+ "kind": "pool",
+ "params": {
+  "part": "grid",
+  "kind": "q44",
+  "block": "Q1",
+  "inst": "I2",
+  "c": 1,
+  "modes": [
+   "L-tr"
+  ],
+  "entries": [
+   [
+    "Sublet",
+    [
+     0
+    ]
+   ],
+   [
+    "A9",
+    [
+     0
+    ]
+   ],
+   [
+    "BL1-GP",
+    [
+     0
+    ]
+   ]
+  ],
+  "window": [
+   156,
+   24
+  ]
+ },
+ "status": "ok",
+ "started": "2026-11-03T14:21:23",
+ "pid": 1727444,
+ "argv": [
+  "/work/sublet/code/sim/sublet/experiments/e7h.py",
+  "--job",
+  "e7h:grid:k=q44:inst=I2:c=1",
+  "--out",
+  "/work/u36_fix/grid/out/sublet_v2/grid"
+ ],
+ "slots": [
+  "slot1"
+ ],
+ "milp_limit_s": null,
+ "git_revision": "5c7d33285b9a4f4e4df2b76e80b3e5f56d58bd37",
+ "versions": {
+  "python": "3.12.3",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "sublet": "0.1.0"
+ },
+ "runs": 3,
+ "errors": [],
+ "n_errors": 0,
+ "outputs": [
+  "runs/e7h__grid__k__q44__inst__I2__c__1.json"
+ ],
+ "result": {
+  "instance_hash": "dc188c94e64ec58b098cbf7a3f465f54c174f3cbacacac970d687c12367159e6"
+ },
+ "wall_s": 11.99368262803182,
+ "peak_rss_kb": 144664,
+ "peak_rss_mb": 141.2734375,
+ "finished": "2026-11-03T14:21:35"
+}

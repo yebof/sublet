@@ -1,0 +1,84 @@
+{
+ "meta": {
+  "script": "code/sim/sublet/experiments/repro_c3_upper.py",
+  "spec": "design/sim_spec_ms2.md \u00a717.3 R1 and M54 (informative)",
+  "families": "check_c3_upper.make(fam, seed), seeds 0-11",
+  "rounding_seeds": 40,
+  "seconds": 62.1858457159251
+ },
+ "families": {
+  "rand": {
+   "requests": 2192,
+   "raises_hist": {
+    "2": 3,
+    "3": 209,
+    "4": 801,
+    "5": 845,
+    "6": 268,
+    "7": 58,
+    "8": 4,
+    "9": 3,
+    "10": 1
+   },
+   "raises_mean": 4.628193430656935,
+   "raises_max": 10,
+   "cap_hits": 0
+  },
+  "slo": {
+   "requests": 2937,
+   "raises_hist": {
+    "2": 238,
+    "3": 1352,
+    "4": 973,
+    "5": 304,
+    "6": 55,
+    "7": 15
+   },
+   "raises_mean": 3.5338781069118146,
+   "raises_max": 7,
+   "cap_hits": 0
+  },
+  "setcover": {
+   "requests": 120,
+   "raises_hist": {
+    "0": 37,
+    "1": 83
+   },
+   "raises_mean": 0.6916666666666667,
+   "raises_max": 1,
+   "cap_hits": 0
+  },
+  "spiky": {
+   "requests": 1290,
+   "raises_hist": {
+    "3": 128,
+    "4": 524,
+    "5": 435,
+    "6": 159,
+    "7": 38,
+    "8": 6
+   },
+   "raises_mean": 4.591472868217054,
+   "raises_max": 8,
+   "cap_hits": 0
+  },
+  "big": {
+   "requests": 4360,
+   "raises_hist": {
+    "1": 1,
+    "2": 155,
+    "3": 1232,
+    "4": 1598,
+    "5": 936,
+    "6": 338,
+    "7": 84,
+    "8": 11,
+    "9": 4,
+    "10": 1
+   },
+   "raises_mean": 4.089220183486239,
+   "raises_max": 10,
+   "cap_hits": 0
+  }
+ }
+}

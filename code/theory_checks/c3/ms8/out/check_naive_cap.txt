@@ -1,0 +1,425 @@
+a n=4 C                                =       3.000000  got       3.000000  ok
+a n=4 OPT_eager                        =       3.000000  got       3.000000  ok
+a n=4 X=0 paid/stop core               =      12.000000  got      12.000000  ok
+a n=4 X=0 paid/stop engine             =      12.000000  got      12.000000  ok
+a n=4 X=0 paid/latch core              =      20.000000  got      20.000000  ok
+a n=4 X=0 paid/latch engine            =      20.000000  got      20.000000  ok
+a n=4 X=0 slot/stop core               =       8.000000  got       8.000000  ok
+a n=4 X=0 slot/stop engine             =       8.000000  got       8.000000  ok
+a n=4 X=0 slot/latch core              =       8.000000  got       8.000000  ok
+a n=4 X=0 slot/latch engine            =       8.000000  got       8.000000  ok
+a n=4 X=0 paid/stop excess n - X       =       4.000000  got       4.000000  ok
+a n=4 X=0 A8P B0=X <= FB + X           <=       8.000000  got       8.000000  ok
+a n=4 X=0 A8P B0=X                     =       8.000000  got       8.000000  ok
+a n=4 X=3 paid/stop core               =      12.000000  got      12.000000  ok
+a n=4 X=3 paid/stop engine             =      12.000000  got      12.000000  ok
+a n=4 X=3 paid/latch core              =      20.000000  got      20.000000  ok
+a n=4 X=3 paid/latch engine            =      20.000000  got      20.000000  ok
+a n=4 X=3 slot/stop core               =       8.000000  got       8.000000  ok
+a n=4 X=3 slot/stop engine             =       8.000000  got       8.000000  ok
+a n=4 X=3 slot/latch core              =       8.000000  got       8.000000  ok
+a n=4 X=3 slot/latch engine            =       8.000000  got       8.000000  ok
+a n=4 X=3 paid/stop excess n - X       =       1.000000  got       1.000000  ok
+a n=4 X=3 A8P B0=X <= FB + X           <=      11.000000  got       3.000000  ok
+a n=4 X=3 A8P B0=X                     =       3.000000  got       3.000000  ok
+a n=4 X=30 paid/stop core              =      12.000000  got      12.000000  ok
+a n=4 X=30 paid/stop engine            =      12.000000  got      12.000000  ok
+a n=4 X=30 paid/latch core             =      12.000000  got      12.000000  ok
+a n=4 X=30 paid/latch engine           =      12.000000  got      12.000000  ok
+a n=4 X=30 slot/stop core              =      12.000000  got      12.000000  ok
+a n=4 X=30 slot/stop engine            =      12.000000  got      12.000000  ok
+a n=4 X=30 slot/latch core             =      12.000000  got      12.000000  ok
+a n=4 X=30 slot/latch engine           =      12.000000  got      12.000000  ok
+a n=4 X=30 paid/stop excess n - X      =     -26.000000  got     -26.000000  ok
+a n=4 X=30 A8P B0=X <= FB + X          <=      38.000000  got      12.000000  ok
+a n=4 X=30 A8P B0=X                    =      12.000000  got      12.000000  ok
+a n=4 A8 T0g                           =       8.000000  got       8.000000  ok
+a n=4 A8 T0g <= FB + B                 <=      20.000000  got       8.000000  ok
+a n=4 A8P lb                           =       8.000000  got       8.000000  ok
+a n=4 A8P lb <= FB + B                 <=      10.000000  got       8.000000  ok
+a n=64 C                               =       3.000000  got       3.000000  ok
+a n=64 OPT_eager                       =       3.000000  got       3.000000  ok
+a n=64 X=0 paid/stop core              =     192.000000  got     192.000000  ok
+a n=64 X=0 paid/stop engine            =     192.000000  got     192.000000  ok
+a n=64 X=0 paid/latch core             =     320.000000  got     320.000000  ok
+a n=64 X=0 paid/latch engine           =     320.000000  got     320.000000  ok
+a n=64 X=0 slot/stop core              =     128.000000  got     128.000000  ok
+a n=64 X=0 slot/stop engine            =     128.000000  got     128.000000  ok
+a n=64 X=0 slot/latch core             =     128.000000  got     128.000000  ok
+a n=64 X=0 slot/latch engine           =     128.000000  got     128.000000  ok
+a n=64 X=0 paid/stop excess n - X      =      64.000000  got      64.000000  ok
+a n=64 X=0 A8P B0=X <= FB + X          <=     128.000000  got     128.000000  ok
+a n=64 X=0 A8P B0=X                    =     128.000000  got     128.000000  ok
+a n=64 X=3 paid/stop core              =     192.000000  got     192.000000  ok
+a n=64 X=3 paid/stop engine            =     192.000000  got     192.000000  ok
+a n=64 X=3 paid/latch core             =     320.000000  got     320.000000  ok
+a n=64 X=3 paid/latch engine           =     320.000000  got     320.000000  ok
+a n=64 X=3 slot/stop core              =     128.000000  got     128.000000  ok
+a n=64 X=3 slot/stop engine            =     128.000000  got     128.000000  ok
+a n=64 X=3 slot/latch core             =     128.000000  got     128.000000  ok
+a n=64 X=3 slot/latch engine           =     128.000000  got     128.000000  ok
+a n=64 X=3 paid/stop excess n - X      =      61.000000  got      61.000000  ok
+a n=64 X=3 A8P B0=X <= FB + X          <=     131.000000  got       3.000000  ok
+a n=64 X=3 A8P B0=X                    =       3.000000  got       3.000000  ok
+a n=64 X=30 paid/stop core             =     192.000000  got     192.000000  ok
+a n=64 X=30 paid/stop engine           =     192.000000  got     192.000000  ok
+a n=64 X=30 paid/latch core            =     320.000000  got     320.000000  ok
+a n=64 X=30 paid/latch engine          =     320.000000  got     320.000000  ok
+a n=64 X=30 slot/stop core             =     128.000000  got     128.000000  ok
+a n=64 X=30 slot/stop engine           =     128.000000  got     128.000000  ok
+a n=64 X=30 slot/latch core            =     128.000000  got     128.000000  ok
+a n=64 X=30 slot/latch engine          =     128.000000  got     128.000000  ok
+a n=64 X=30 paid/stop excess n - X     =      34.000000  got      34.000000  ok
+a n=64 X=30 A8P B0=X <= FB + X         <=     158.000000  got       3.000000  ok
+a n=64 X=30 A8P B0=X                   =       3.000000  got       3.000000  ok
+a n=64 A8 T0g                          =     128.000000  got     128.000000  ok
+a n=64 A8 T0g <= FB + B                <=     158.000000  got     128.000000  ok
+a n=64 A8P lb                          =     128.000000  got     128.000000  ok
+a n=64 A8P lb <= FB + B                <=     130.000000  got     128.000000  ok
+a n=1024 C                             =       3.000000  got       3.000000  ok
+a n=1024 X=0 paid/stop core            =    3072.000000  got    3072.000000  ok
+a n=1024 X=0 paid/stop engine          =    3072.000000  got    3072.000000  ok
+a n=1024 X=0 paid/latch core           =    5120.000000  got    5120.000000  ok
+a n=1024 X=0 paid/latch engine         =    5120.000000  got    5120.000000  ok
+a n=1024 X=0 slot/stop core            =    2048.000000  got    2048.000000  ok
+a n=1024 X=0 slot/stop engine          =    2048.000000  got    2048.000000  ok
+a n=1024 X=0 slot/latch core           =    2048.000000  got    2048.000000  ok
+a n=1024 X=0 slot/latch engine         =    2048.000000  got    2048.000000  ok
+a n=1024 X=0 paid/stop excess n - X    =    1024.000000  got    1024.000000  ok
+a n=1024 X=0 A8P B0=X <= FB + X        <=    2048.000000  got    2048.000000  ok
+a n=1024 X=0 A8P B0=X                  =    2048.000000  got    2048.000000  ok
+a n=1024 X=3 paid/stop core            =    3072.000000  got    3072.000000  ok
+a n=1024 X=3 paid/stop engine          =    3072.000000  got    3072.000000  ok
+a n=1024 X=3 paid/latch core           =    5120.000000  got    5120.000000  ok
+a n=1024 X=3 paid/latch engine         =    5120.000000  got    5120.000000  ok
+a n=1024 X=3 slot/stop core            =    2048.000000  got    2048.000000  ok
+a n=1024 X=3 slot/stop engine          =    2048.000000  got    2048.000000  ok
+a n=1024 X=3 slot/latch core           =    2048.000000  got    2048.000000  ok
+a n=1024 X=3 slot/latch engine         =    2048.000000  got    2048.000000  ok
+a n=1024 X=3 paid/stop excess n - X    =    1021.000000  got    1021.000000  ok
+a n=1024 X=3 A8P B0=X <= FB + X        <=    2051.000000  got       3.000000  ok
+a n=1024 X=3 A8P B0=X                  =       3.000000  got       3.000000  ok
+a n=1024 X=30 paid/stop core           =    3072.000000  got    3072.000000  ok
+a n=1024 X=30 paid/stop engine         =    3072.000000  got    3072.000000  ok
+a n=1024 X=30 paid/latch core          =    5120.000000  got    5120.000000  ok
+a n=1024 X=30 paid/latch engine        =    5120.000000  got    5120.000000  ok
+a n=1024 X=30 slot/stop core           =    2048.000000  got    2048.000000  ok
+a n=1024 X=30 slot/stop engine         =    2048.000000  got    2048.000000  ok
+a n=1024 X=30 slot/latch core          =    2048.000000  got    2048.000000  ok
+a n=1024 X=30 slot/latch engine        =    2048.000000  got    2048.000000  ok
+a n=1024 X=30 paid/stop excess n - X   =     994.000000  got     994.000000  ok
+a n=1024 X=30 A8P B0=X <= FB + X       <=    2078.000000  got       3.000000  ok
+a n=1024 X=30 A8P B0=X                 =       3.000000  got       3.000000  ok
+a n=1024 A8 T0g                        =    2048.000000  got    2048.000000  ok
+a n=1024 A8 T0g <= FB + B              <=    2078.000000  got    2048.000000  ok
+a n=1024 A8P lb                        =    2048.000000  got    2048.000000  ok
+a n=1024 A8P lb <= FB + B              <=    2050.000000  got    2048.000000  ok
+b T=5 X=0 paid/stop core               =       5.000000  got       5.000000  ok
+b T=5 X=0 paid/stop engine             =       5.000000  got       5.000000  ok
+b T=5 X=0 paid/latch core              =       3.000000  got       3.000000  ok
+b T=5 X=0 paid/latch engine            =       3.000000  got       3.000000  ok
+b T=5 X=0 slot/stop core               =       5.000000  got       5.000000  ok
+b T=5 X=0 slot/stop engine             =       5.000000  got       5.000000  ok
+b T=5 X=0 slot/latch core              =       2.000000  got       2.000000  ok
+b T=5 X=0 slot/latch engine            =       2.000000  got       2.000000  ok
+b T=5 X=0 stop excess T - 2 - X        =       3.000000  got       3.000000  ok
+b T=5 X=0 A8P B0=X = floor(X) + 2      =       2.000000  got       2.000000  ok
+b T=5 X=0 A8P B0=X <= FB + X           <=       2.000000  got       2.000000  ok
+b T=5 X=1 paid/stop core               =       5.000000  got       5.000000  ok
+b T=5 X=1 paid/stop engine             =       5.000000  got       5.000000  ok
+b T=5 X=1 paid/latch core              =       4.000000  got       4.000000  ok
+b T=5 X=1 paid/latch engine            =       4.000000  got       4.000000  ok
+b T=5 X=1 slot/stop core               =       5.000000  got       5.000000  ok
+b T=5 X=1 slot/stop engine             =       5.000000  got       5.000000  ok
+b T=5 X=1 slot/latch core              =       3.000000  got       3.000000  ok
+b T=5 X=1 slot/latch engine            =       3.000000  got       3.000000  ok
+b T=5 X=1 stop excess T - 2 - X        =       2.000000  got       2.000000  ok
+b T=5 X=1 A8P B0=X = floor(X) + 2      =       3.000000  got       3.000000  ok
+b T=5 X=1 A8P B0=X <= FB + X           <=       3.000000  got       3.000000  ok
+b T=5 X=2 paid/stop core               =       5.000000  got       5.000000  ok
+b T=5 X=2 paid/stop engine             =       5.000000  got       5.000000  ok
+b T=5 X=2 paid/latch core              =       5.000000  got       5.000000  ok
+b T=5 X=2 paid/latch engine            =       5.000000  got       5.000000  ok
+b T=5 X=2 slot/stop core               =       5.000000  got       5.000000  ok
+b T=5 X=2 slot/stop engine             =       5.000000  got       5.000000  ok
+b T=5 X=2 slot/latch core              =       4.000000  got       4.000000  ok
+b T=5 X=2 slot/latch engine            =       4.000000  got       4.000000  ok
+b T=5 X=2 stop excess T - 2 - X        =       1.000000  got       1.000000  ok
+b T=5 X=2 A8P B0=X = floor(X) + 2      =       4.000000  got       4.000000  ok
+b T=5 X=2 A8P B0=X <= FB + X           <=       4.000000  got       4.000000  ok
+b T=5 X=1.5 A8P B0=X = floor(X) + 2    =       3.000000  got       3.000000  ok
+b T=5 X=1.5 A8P B0=X <= FB + X         <=       3.500000  got       3.000000  ok
+b T=5 A8P lb B(T)                      =       1.000000  got       1.000000  ok
+b T=5 A8P lb                           =       3.000000  got       3.000000  ok
+b T=5 A8P lb <= FB + B                 <=       3.000000  got       3.000000  ok
+b T=50 X=0 paid/stop core              =      50.000000  got      50.000000  ok
+b T=50 X=0 paid/stop engine            =      50.000000  got      50.000000  ok
+b T=50 X=0 paid/latch core             =       3.000000  got       3.000000  ok
+b T=50 X=0 paid/latch engine           =       3.000000  got       3.000000  ok
+b T=50 X=0 slot/stop core              =      50.000000  got      50.000000  ok
+b T=50 X=0 slot/stop engine            =      50.000000  got      50.000000  ok
+b T=50 X=0 slot/latch core             =       2.000000  got       2.000000  ok
+b T=50 X=0 slot/latch engine           =       2.000000  got       2.000000  ok
+b T=50 X=0 stop excess T - 2 - X       =      48.000000  got      48.000000  ok
+b T=50 X=0 A8P B0=X = floor(X) + 2     =       2.000000  got       2.000000  ok
+b T=50 X=0 A8P B0=X <= FB + X          <=       2.000000  got       2.000000  ok
+b T=50 X=1 paid/stop core              =      50.000000  got      50.000000  ok
+b T=50 X=1 paid/stop engine            =      50.000000  got      50.000000  ok
+b T=50 X=1 paid/latch core             =       4.000000  got       4.000000  ok
+b T=50 X=1 paid/latch engine           =       4.000000  got       4.000000  ok
+b T=50 X=1 slot/stop core              =      50.000000  got      50.000000  ok
+b T=50 X=1 slot/stop engine            =      50.000000  got      50.000000  ok
+b T=50 X=1 slot/latch core             =       3.000000  got       3.000000  ok
+b T=50 X=1 slot/latch engine           =       3.000000  got       3.000000  ok
+b T=50 X=1 stop excess T - 2 - X       =      47.000000  got      47.000000  ok
+b T=50 X=1 A8P B0=X = floor(X) + 2     =       3.000000  got       3.000000  ok
+b T=50 X=1 A8P B0=X <= FB + X          <=       3.000000  got       3.000000  ok
+b T=50 X=2 paid/stop core              =      50.000000  got      50.000000  ok
+b T=50 X=2 paid/stop engine            =      50.000000  got      50.000000  ok
+b T=50 X=2 paid/latch core             =       5.000000  got       5.000000  ok
+b T=50 X=2 paid/latch engine           =       5.000000  got       5.000000  ok
+b T=50 X=2 slot/stop core              =      50.000000  got      50.000000  ok
+b T=50 X=2 slot/stop engine            =      50.000000  got      50.000000  ok
+b T=50 X=2 slot/latch core             =       4.000000  got       4.000000  ok
+b T=50 X=2 slot/latch engine           =       4.000000  got       4.000000  ok
+b T=50 X=2 stop excess T - 2 - X       =      46.000000  got      46.000000  ok
+b T=50 X=2 A8P B0=X = floor(X) + 2     =       4.000000  got       4.000000  ok
+b T=50 X=2 A8P B0=X <= FB + X          <=       4.000000  got       4.000000  ok
+b T=50 X=1.5 A8P B0=X = floor(X) + 2   =       3.000000  got       3.000000  ok
+b T=50 X=1.5 A8P B0=X <= FB + X        <=       3.500000  got       3.000000  ok
+b T=50 A8P lb B(T)                     =       1.000000  got       1.000000  ok
+b T=50 A8P lb                          =       3.000000  got       3.000000  ok
+b T=50 A8P lb <= FB + B                <=       3.000000  got       3.000000  ok
+b T=500 X=0 paid/stop core             =     500.000000  got     500.000000  ok
+b T=500 X=0 paid/stop engine           =     500.000000  got     500.000000  ok
+b T=500 X=0 paid/latch core            =       3.000000  got       3.000000  ok
+b T=500 X=0 paid/latch engine          =       3.000000  got       3.000000  ok
+b T=500 X=0 slot/stop core             =     500.000000  got     500.000000  ok
+b T=500 X=0 slot/stop engine           =     500.000000  got     500.000000  ok
+b T=500 X=0 slot/latch core            =       2.000000  got       2.000000  ok
+b T=500 X=0 slot/latch engine          =       2.000000  got       2.000000  ok
+b T=500 X=0 stop excess T - 2 - X      =     498.000000  got     498.000000  ok
+b T=500 X=0 A8P B0=X = floor(X) + 2    =       2.000000  got       2.000000  ok
+b T=500 X=0 A8P B0=X <= FB + X         <=       2.000000  got       2.000000  ok
+b T=500 X=1 paid/stop core             =     500.000000  got     500.000000  ok
+b T=500 X=1 paid/stop engine           =     500.000000  got     500.000000  ok
+b T=500 X=1 paid/latch core            =       4.000000  got       4.000000  ok
+b T=500 X=1 paid/latch engine          =       4.000000  got       4.000000  ok
+b T=500 X=1 slot/stop core             =     500.000000  got     500.000000  ok
+b T=500 X=1 slot/stop engine           =     500.000000  got     500.000000  ok
+b T=500 X=1 slot/latch core            =       3.000000  got       3.000000  ok
+b T=500 X=1 slot/latch engine          =       3.000000  got       3.000000  ok
+b T=500 X=1 stop excess T - 2 - X      =     497.000000  got     497.000000  ok
+b T=500 X=1 A8P B0=X = floor(X) + 2    =       3.000000  got       3.000000  ok
+b T=500 X=1 A8P B0=X <= FB + X         <=       3.000000  got       3.000000  ok
+b T=500 X=2 paid/stop core             =     500.000000  got     500.000000  ok
+b T=500 X=2 paid/stop engine           =     500.000000  got     500.000000  ok
+b T=500 X=2 paid/latch core            =       5.000000  got       5.000000  ok
+b T=500 X=2 paid/latch engine          =       5.000000  got       5.000000  ok
+b T=500 X=2 slot/stop core             =     500.000000  got     500.000000  ok
+b T=500 X=2 slot/stop engine           =     500.000000  got     500.000000  ok
+b T=500 X=2 slot/latch core            =       4.000000  got       4.000000  ok
+b T=500 X=2 slot/latch engine          =       4.000000  got       4.000000  ok
+b T=500 X=2 stop excess T - 2 - X      =     496.000000  got     496.000000  ok
+b T=500 X=2 A8P B0=X = floor(X) + 2    =       4.000000  got       4.000000  ok
+b T=500 X=2 A8P B0=X <= FB + X         <=       4.000000  got       4.000000  ok
+b T=500 X=1.5 A8P B0=X = floor(X) + 2  =       3.000000  got       3.000000  ok
+b T=500 X=1.5 A8P B0=X <= FB + X       <=       3.500000  got       3.000000  ok
+b T=500 A8P lb B(T)                    =       1.000000  got       1.000000  ok
+b T=500 A8P lb                         =       3.000000  got       3.000000  ok
+b T=500 A8P lb <= FB + B               <=       3.000000  got       3.000000  ok
+c n=4 core cost without stranding      =      12.000000  got      12.000000  ok
+c n=4 X=0 paid/stop engine             =      14.000000  got      14.000000  ok
+c n=4 X=0 paid/latch engine            =      14.000000  got      14.000000  ok
+c n=4 X=0 slot/stop engine             =      14.000000  got      14.000000  ok
+c n=4 X=0 slot/latch engine            =      14.000000  got      14.000000  ok
+c n=4 X=0 A8P B0=X <= FB + X           <=      12.000000  got      12.000000  ok
+c n=4 X=0 A8P B0=X                     =      12.000000  got      12.000000  ok
+c n=4 X=5 paid/stop engine             =      14.000000  got      14.000000  ok
+c n=4 X=5 paid/latch engine            =      14.000000  got      14.000000  ok
+c n=4 X=5 slot/stop engine             =      14.000000  got      14.000000  ok
+c n=4 X=5 slot/latch engine            =      14.000000  got      14.000000  ok
+c n=4 X=5 A8P B0=X <= FB + X           <=      17.000000  got      14.000000  ok
+c n=4 X=5 A8P B0=X                     =      14.000000  got      14.000000  ok
+c n=4 X=50 paid/stop engine            =      14.000000  got      14.000000  ok
+c n=4 X=50 paid/latch engine           =      14.000000  got      14.000000  ok
+c n=4 X=50 slot/stop engine            =      14.000000  got      14.000000  ok
+c n=4 X=50 slot/latch engine           =      14.000000  got      14.000000  ok
+c n=4 X=50 A8P B0=X <= FB + X          <=      62.000000  got      14.000000  ok
+c n=4 X=50 A8P B0=X                    =      14.000000  got      14.000000  ok
+c n=4 A8P lb <= FB + B                 <=      24.000000  got      14.000000  ok
+c n=64 core cost without stranding     =     192.000000  got     192.000000  ok
+c n=64 X=0 paid/stop engine            =     224.000000  got     224.000000  ok
+c n=64 X=0 paid/latch engine           =     224.000000  got     224.000000  ok
+c n=64 X=0 slot/stop engine            =     224.000000  got     224.000000  ok
+c n=64 X=0 slot/latch engine           =     224.000000  got     224.000000  ok
+c n=64 X=0 A8P B0=X <= FB + X          <=     192.000000  got     192.000000  ok
+c n=64 X=0 A8P B0=X                    =     192.000000  got     192.000000  ok
+c n=64 X=5 paid/stop engine            =     224.000000  got     224.000000  ok
+c n=64 X=5 paid/latch engine           =     224.000000  got     224.000000  ok
+c n=64 X=5 slot/stop engine            =     224.000000  got     224.000000  ok
+c n=64 X=5 slot/latch engine           =     224.000000  got     224.000000  ok
+c n=64 X=5 A8P B0=X <= FB + X          <=     197.000000  got     192.000000  ok
+c n=64 X=5 A8P B0=X                    =     192.000000  got     192.000000  ok
+c n=64 X=50 paid/stop engine           =     224.000000  got     224.000000  ok
+c n=64 X=50 paid/latch engine          =     224.000000  got     224.000000  ok
+c n=64 X=50 slot/stop engine           =     224.000000  got     224.000000  ok
+c n=64 X=50 slot/latch engine          =     224.000000  got     224.000000  ok
+c n=64 X=50 A8P B0=X <= FB + X         <=     242.000000  got     224.000000  ok
+c n=64 X=50 A8P B0=X                   =     224.000000  got     224.000000  ok
+c n=64 A8P lb <= FB + B                <=     384.000000  got     224.000000  ok
+c n=1024 core cost without stranding   =    3072.000000  got    3072.000000  ok
+c n=1024 X=0 paid/stop engine          =    3584.000000  got    3584.000000  ok
+c n=1024 X=0 paid/latch engine         =    3584.000000  got    3584.000000  ok
+c n=1024 X=0 slot/stop engine          =    3584.000000  got    3584.000000  ok
+c n=1024 X=0 slot/latch engine         =    3584.000000  got    3584.000000  ok
+c n=1024 X=0 A8P B0=X <= FB + X        <=    3072.000000  got    3072.000000  ok
+c n=1024 X=0 A8P B0=X                  =    3072.000000  got    3072.000000  ok
+c n=1024 X=5 paid/stop engine          =    3584.000000  got    3584.000000  ok
+c n=1024 X=5 paid/latch engine         =    3584.000000  got    3584.000000  ok
+c n=1024 X=5 slot/stop engine          =    3584.000000  got    3584.000000  ok
+c n=1024 X=5 slot/latch engine         =    3584.000000  got    3584.000000  ok
+c n=1024 X=5 A8P B0=X <= FB + X        <=    3077.000000  got    3072.000000  ok
+c n=1024 X=5 A8P B0=X                  =    3072.000000  got    3072.000000  ok
+c n=1024 X=50 paid/stop engine         =    3584.000000  got    3584.000000  ok
+c n=1024 X=50 paid/latch engine        =    3584.000000  got    3584.000000  ok
+c n=1024 X=50 slot/stop engine         =    3584.000000  got    3584.000000  ok
+c n=1024 X=50 slot/latch engine        =    3584.000000  got    3584.000000  ok
+c n=1024 X=50 A8P B0=X <= FB + X       <=    3122.000000  got    3072.000000  ok
+c n=1024 X=50 A8P B0=X                 =    3072.000000  got    3072.000000  ok
+c n=1024 A8P lb <= FB + B              <=    6144.000000  got    3584.000000  ok
+d n=4 C site 1 = Q(0)                  =       4.000000  got       4.000000  ok
+d n=4 OPT_eager                        =       1.000000  got       1.000000  ok
+d n=4 X=0 paid/stop core               =       8.000000  got       8.000000  ok
+d n=4 X=0 paid/stop engine             =       8.000000  got       8.000000  ok
+d n=4 X=0 paid/stop no bind            =       0.000000  got       0.000000  ok
+d n=4 X=0 paid/latch core              =       8.000000  got       8.000000  ok
+d n=4 X=0 paid/latch engine            =       8.000000  got       8.000000  ok
+d n=4 X=0 paid/latch no bind           =       0.000000  got       0.000000  ok
+d n=4 X=0 slot/stop core               =       8.000000  got       8.000000  ok
+d n=4 X=0 slot/stop engine             =       8.000000  got       8.000000  ok
+d n=4 X=0 slot/stop no bind            =       0.000000  got       0.000000  ok
+d n=4 X=0 slot/latch core              =       8.000000  got       8.000000  ok
+d n=4 X=0 slot/latch engine            =       8.000000  got       8.000000  ok
+d n=4 X=0 slot/latch no bind           =       0.000000  got       0.000000  ok
+d n=4 X=0 A8P B0=X <= FB + X           <=       4.000000  got       4.000000  ok
+d n=4 X=0 A8P B0=X                     =       4.000000  got       4.000000  ok
+d n=4 X=5 paid/stop core               =       8.000000  got       8.000000  ok
+d n=4 X=5 paid/stop engine             =       8.000000  got       8.000000  ok
+d n=4 X=5 paid/stop no bind            =       0.000000  got       0.000000  ok
+d n=4 X=5 paid/latch core              =       8.000000  got       8.000000  ok
+d n=4 X=5 paid/latch engine            =       8.000000  got       8.000000  ok
+d n=4 X=5 paid/latch no bind           =       0.000000  got       0.000000  ok
+d n=4 X=5 slot/stop core               =       8.000000  got       8.000000  ok
+d n=4 X=5 slot/stop engine             =       8.000000  got       8.000000  ok
+d n=4 X=5 slot/stop no bind            =       0.000000  got       0.000000  ok
+d n=4 X=5 slot/latch core              =       8.000000  got       8.000000  ok
+d n=4 X=5 slot/latch engine            =       8.000000  got       8.000000  ok
+d n=4 X=5 slot/latch no bind           =       0.000000  got       0.000000  ok
+d n=4 X=5 A8P B0=X <= FB + X           <=       9.000000  got       8.000000  ok
+d n=4 X=5 A8P B0=X                     =       8.000000  got       8.000000  ok
+d n=4 X=50 paid/stop core              =       8.000000  got       8.000000  ok
+d n=4 X=50 paid/stop engine            =       8.000000  got       8.000000  ok
+d n=4 X=50 paid/stop no bind           =       0.000000  got       0.000000  ok
+d n=4 X=50 paid/latch core             =       8.000000  got       8.000000  ok
+d n=4 X=50 paid/latch engine           =       8.000000  got       8.000000  ok
+d n=4 X=50 paid/latch no bind          =       0.000000  got       0.000000  ok
+d n=4 X=50 slot/stop core              =       8.000000  got       8.000000  ok
+d n=4 X=50 slot/stop engine            =       8.000000  got       8.000000  ok
+d n=4 X=50 slot/stop no bind           =       0.000000  got       0.000000  ok
+d n=4 X=50 slot/latch core             =       8.000000  got       8.000000  ok
+d n=4 X=50 slot/latch engine           =       8.000000  got       8.000000  ok
+d n=4 X=50 slot/latch no bind          =       0.000000  got       0.000000  ok
+d n=4 X=50 A8P B0=X <= FB + X          <=      54.000000  got       8.000000  ok
+d n=4 X=50 A8P B0=X                    =       8.000000  got       8.000000  ok
+d n=4 A8P lb <= FB + B                 <=       4.000000  got       4.000000  ok
+d n=64 C site 1 = Q(0)                 =      64.000000  got      64.000000  ok
+d n=64 OPT_eager                       =       1.000000  got       1.000000  ok
+d n=64 X=0 paid/stop core              =     128.000000  got     128.000000  ok
+d n=64 X=0 paid/stop engine            =     128.000000  got     128.000000  ok
+d n=64 X=0 paid/stop no bind           =       0.000000  got       0.000000  ok
+d n=64 X=0 paid/latch core             =     128.000000  got     128.000000  ok
+d n=64 X=0 paid/latch engine           =     128.000000  got     128.000000  ok
+d n=64 X=0 paid/latch no bind          =       0.000000  got       0.000000  ok
+d n=64 X=0 slot/stop core              =     128.000000  got     128.000000  ok
+d n=64 X=0 slot/stop engine            =     128.000000  got     128.000000  ok
+d n=64 X=0 slot/stop no bind           =       0.000000  got       0.000000  ok
+d n=64 X=0 slot/latch core             =     128.000000  got     128.000000  ok
+d n=64 X=0 slot/latch engine           =     128.000000  got     128.000000  ok
+d n=64 X=0 slot/latch no bind          =       0.000000  got       0.000000  ok
+d n=64 X=0 A8P B0=X <= FB + X          <=      64.000000  got      64.000000  ok
+d n=64 X=0 A8P B0=X                    =      64.000000  got      64.000000  ok
+d n=64 X=5 paid/stop core              =     128.000000  got     128.000000  ok
+d n=64 X=5 paid/stop engine            =     128.000000  got     128.000000  ok
+d n=64 X=5 paid/stop no bind           =       0.000000  got       0.000000  ok
+d n=64 X=5 paid/latch core             =     128.000000  got     128.000000  ok
+d n=64 X=5 paid/latch engine           =     128.000000  got     128.000000  ok
+d n=64 X=5 paid/latch no bind          =       0.000000  got       0.000000  ok
+d n=64 X=5 slot/stop core              =     128.000000  got     128.000000  ok
+d n=64 X=5 slot/stop engine            =     128.000000  got     128.000000  ok
+d n=64 X=5 slot/stop no bind           =       0.000000  got       0.000000  ok
+d n=64 X=5 slot/latch core             =     128.000000  got     128.000000  ok
+d n=64 X=5 slot/latch engine           =     128.000000  got     128.000000  ok
+d n=64 X=5 slot/latch no bind          =       0.000000  got       0.000000  ok
+d n=64 X=5 A8P B0=X <= FB + X          <=      69.000000  got      64.000000  ok
+d n=64 X=5 A8P B0=X                    =      64.000000  got      64.000000  ok
+d n=64 X=50 paid/stop core             =     128.000000  got     128.000000  ok
+d n=64 X=50 paid/stop engine           =     128.000000  got     128.000000  ok
+d n=64 X=50 paid/stop no bind          =       0.000000  got       0.000000  ok
+d n=64 X=50 paid/latch core            =     128.000000  got     128.000000  ok
+d n=64 X=50 paid/latch engine          =     128.000000  got     128.000000  ok
+d n=64 X=50 paid/latch no bind         =       0.000000  got       0.000000  ok
+d n=64 X=50 slot/stop core             =     128.000000  got     128.000000  ok
+d n=64 X=50 slot/stop engine           =     128.000000  got     128.000000  ok
+d n=64 X=50 slot/stop no bind          =       0.000000  got       0.000000  ok
+d n=64 X=50 slot/latch core            =     128.000000  got     128.000000  ok
+d n=64 X=50 slot/latch engine          =     128.000000  got     128.000000  ok
+d n=64 X=50 slot/latch no bind         =       0.000000  got       0.000000  ok
+d n=64 X=50 A8P B0=X <= FB + X         <=     114.000000  got      64.000000  ok
+d n=64 X=50 A8P B0=X                   =      64.000000  got      64.000000  ok
+d n=64 A8P lb <= FB + B                <=      64.000000  got      64.000000  ok
+d n=1024 C site 1 = Q(0)               =    1024.000000  got    1024.000000  ok
+d n=1024 X=0 paid/stop core            =    2048.000000  got    2048.000000  ok
+d n=1024 X=0 paid/stop engine          =    2048.000000  got    2048.000000  ok
+d n=1024 X=0 paid/stop no bind         =       0.000000  got       0.000000  ok
+d n=1024 X=0 paid/latch core           =    2048.000000  got    2048.000000  ok
+d n=1024 X=0 paid/latch engine         =    2048.000000  got    2048.000000  ok
+d n=1024 X=0 paid/latch no bind        =       0.000000  got       0.000000  ok
+d n=1024 X=0 slot/stop core            =    2048.000000  got    2048.000000  ok
+d n=1024 X=0 slot/stop engine          =    2048.000000  got    2048.000000  ok
+d n=1024 X=0 slot/stop no bind         =       0.000000  got       0.000000  ok
+d n=1024 X=0 slot/latch core           =    2048.000000  got    2048.000000  ok
+d n=1024 X=0 slot/latch engine         =    2048.000000  got    2048.000000  ok
+d n=1024 X=0 slot/latch no bind        =       0.000000  got       0.000000  ok
+d n=1024 X=0 A8P B0=X <= FB + X        <=    1024.000000  got    1024.000000  ok
+d n=1024 X=0 A8P B0=X                  =    1024.000000  got    1024.000000  ok
+d n=1024 X=5 paid/stop core            =    2048.000000  got    2048.000000  ok
+d n=1024 X=5 paid/stop engine          =    2048.000000  got    2048.000000  ok
+d n=1024 X=5 paid/stop no bind         =       0.000000  got       0.000000  ok
+d n=1024 X=5 paid/latch core           =    2048.000000  got    2048.000000  ok
+d n=1024 X=5 paid/latch engine         =    2048.000000  got    2048.000000  ok
+d n=1024 X=5 paid/latch no bind        =       0.000000  got       0.000000  ok
+d n=1024 X=5 slot/stop core            =    2048.000000  got    2048.000000  ok
+d n=1024 X=5 slot/stop engine          =    2048.000000  got    2048.000000  ok
+d n=1024 X=5 slot/stop no bind         =       0.000000  got       0.000000  ok
+d n=1024 X=5 slot/latch core           =    2048.000000  got    2048.000000  ok
+d n=1024 X=5 slot/latch engine         =    2048.000000  got    2048.000000  ok
+d n=1024 X=5 slot/latch no bind        =       0.000000  got       0.000000  ok
+d n=1024 X=5 A8P B0=X <= FB + X        <=    1029.000000  got    1024.000000  ok
+d n=1024 X=5 A8P B0=X                  =    1024.000000  got    1024.000000  ok
+d n=1024 X=50 paid/stop core           =    2048.000000  got    2048.000000  ok
+d n=1024 X=50 paid/stop engine         =    2048.000000  got    2048.000000  ok
+d n=1024 X=50 paid/stop no bind        =       0.000000  got       0.000000  ok
+d n=1024 X=50 paid/latch core          =    2048.000000  got    2048.000000  ok
+d n=1024 X=50 paid/latch engine        =    2048.000000  got    2048.000000  ok
+d n=1024 X=50 paid/latch no bind       =       0.000000  got       0.000000  ok
+d n=1024 X=50 slot/stop core           =    2048.000000  got    2048.000000  ok
+d n=1024 X=50 slot/stop engine         =    2048.000000  got    2048.000000  ok
+d n=1024 X=50 slot/stop no bind        =       0.000000  got       0.000000  ok
+d n=1024 X=50 slot/latch core          =    2048.000000  got    2048.000000  ok
+d n=1024 X=50 slot/latch engine        =    2048.000000  got    2048.000000  ok
+d n=1024 X=50 slot/latch no bind       =       0.000000  got       0.000000  ok
+d n=1024 X=50 A8P B0=X <= FB + X       <=    1074.000000  got    1024.000000  ok
+d n=1024 X=50 A8P B0=X                 =    1024.000000  got    1024.000000  ok
+d n=1024 A8P lb <= FB + B              <=    1024.000000  got    1024.000000  ok
+[check_naive_cap] 424 checks, 0 violations

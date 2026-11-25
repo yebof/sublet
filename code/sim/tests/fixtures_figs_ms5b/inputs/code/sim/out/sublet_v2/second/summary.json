@@ -1,0 +1,7158 @@
+{
+ "meta": {
+  "exp": "e7h",
+  "part": "second",
+  "spec": "design/sublet_v2.md \u00a74, \u00a75, \u00a78.1",
+  "git_revision": "5c7d33285b9a4f4e4df2b76e80b3e5f56d58bd37",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "scipy": "1.17.1",
+   "sublet": "0.1.0"
+  },
+  "written": "2026-11-03T14:15:06",
+  "reduced": true,
+  "design": {
+   "reduced": true,
+   "horizon_min": 120,
+   "window": [
+    156,
+    24
+   ],
+   "e5_horizon_min": 120,
+   "gap_horizon_min": 120
+  },
+  "tags": {
+   "A9": {
+    "policy_id": "A9",
+    "params": {},
+    "kind": "inner",
+    "a9_family": true,
+    "role": "the inner policy alone; with Sublet, the price of the guard",
+    "information": "I1"
+   },
+   "A9-lag": {
+    "policy_id": "A9",
+    "params": {
+     "demand_lag": 1
+    },
+    "kind": "lag",
+    "a9_family": true,
+    "role": "A9 on slot t - 1's demand",
+    "information": "I1"
+   },
+   "BL1": {
+    "policy_id": "BL1",
+    "params": {},
+    "kind": "baseline",
+    "a9_family": false,
+    "role": "greedy, as built",
+    "information": "I1"
+   },
+   "BL1-BO": {
+    "policy_id": "BL1",
+    "params": {
+     "backoff_cap": 288
+    },
+    "kind": "baseline",
+    "a9_family": false,
+    "role": "generic site back-off",
+    "information": "I1"
+   },
+   "BL1-GP": {
+    "policy_id": "A8P",
+    "params": "ms5b_common.sublet_v2_params(inst) with inner 'BL1'",
+    "kind": "guard",
+    "a9_family": false,
+    "role": "the certificate without the revocation layer (D10)",
+    "information": "I1"
+   },
+   "BL1-lag": {
+    "policy_id": "BL1",
+    "params": {
+     "demand_lag": 1
+    },
+    "kind": "lag",
+    "a9_family": false,
+    "role": "BL1 on slot t - 1's demand",
+    "information": "I1"
+   },
+   "BL1N": {
+    "policy_id": "A9",
+    "params": {
+     "target": "ceil",
+     "release": "now"
+    },
+    "kind": "transplant",
+    "a9_family": true,
+    "role": "BL1's planning with the whole revocation layer A9.3-A9.5",
+    "information": "I1"
+   },
+   "BL3-0": {
+    "policy_id": "BL3",
+    "params": {
+     "n_extra": 0
+    },
+    "kind": "baseline",
+    "a9_family": false,
+    "role": "SpotHedge-style, notice-reactive",
+    "information": "I1"
+   },
+   "BL4": {
+    "policy_id": "BL4",
+    "params": {},
+    "kind": "baseline",
+    "a9_family": false,
+    "role": "CoCaR-style",
+    "information": "I1"
+   },
+   "BL5": {
+    "policy_id": "BL5",
+    "params": {},
+    "kind": "baseline",
+    "a9_family": false,
+    "role": "lagged build, supplement",
+    "information": "I1"
+   },
+   "BL5-cur": {
+    "policy_id": "BL5",
+    "params": {
+     "use_current_slot": true
+    },
+    "kind": "baseline",
+    "a9_family": false,
+    "role": "main RetroRenting-style row (D7)",
+    "information": "I1"
+   },
+   "BL5-tau60": {
+    "policy_id": "BL5",
+    "params": {
+     "use_current_slot": true,
+     "tau_min": 60
+    },
+    "kind": "baseline",
+    "a9_family": false,
+    "role": "rent long windows",
+    "information": "I1"
+   },
+   "BL5N": {
+    "policy_id": "BL5",
+    "params": {
+     "use_current_slot": true,
+     "contract_rule": "c2",
+     "mbb": true
+    },
+    "kind": "transplant",
+    "a9_family": false,
+    "role": "partial transplant of A9.3 and A9.4 onto BL5-cur",
+    "information": "I1"
+   },
+   "Sublet": {
+    "policy_id": "A8P",
+    "params": "ms5b_common.sublet_v2_params(inst)",
+    "kind": "headline",
+    "a9_family": true,
+    "role": "headline (D1, D2, D3): A8P around A9 at P2's allowance min{W_k, LB'} (kappa None)",
+    "information": "I1"
+   },
+   "Sublet-MS4": {
+    "policy_id": "A8",
+    "params": "ms4_common.sublet_params(inst, 'BL5')",
+    "kind": "legacy",
+    "a9_family": false,
+    "role": "legacy row: A8 around BL5, B0 = 0.1 BL0a",
+    "information": "I1"
+   },
+   "Sublet-lag": {
+    "policy_id": "A8P",
+    "params": "ms5b_common.sublet_v2_params(inst) with inner_params {'demand_lag': 1}",
+    "kind": "lag",
+    "a9_family": true,
+    "role": "Sublet with inner A9 on slot t - 1's demand",
+    "information": "I1"
+   }
+  },
+  "jobs": 40,
+  "jobs_ok": 40,
+  "jobs_not_ok": {},
+  "ignored_outputs": [],
+  "n_runs": 147,
+  "n_missing": 0,
+  "confirmation_gate": {
+   "ok": false,
+   "reason": "the confirmation does not start (\u00a74.3): the working tree is dirty (11 paths, e.g. [' M code/sim/figs/print_sheet.py', ' M code/sim/figs/rebuild.py', ' M code/sim/figs/style.py'])",
+   "record": {
+    "head": "5c7d33285b9a4f4e4df2b76e80b3e5f56d58bd37",
+    "prereg": "design/sublet_v2_prereg.md",
+    "prereg_at_head": true,
+    "prereg_sha256": "a42316b071e00a7292792cc8d00573fa84c29c36f3dc75e3423c074095aa9923",
+    "analysis_sha256_prereg": "dde0835e12643e95d17f103843f0e8418acf2042ed921dbd9720ddcb7b46992e",
+    "analysis_sha256_head": "dde0835e12643e95d17f103843f0e8418acf2042ed921dbd9720ddcb7b46992e",
+    "analysis_sha256_disk": "dde0835e12643e95d17f103843f0e8418acf2042ed921dbd9720ddcb7b46992e",
+    "dirty_paths": [
+     " M code/sim/figs/print_sheet.py",
+     " M code/sim/figs/rebuild.py",
+     " M code/sim/figs/style.py",
+     " M code/sim/tests/test_figs_ms3.py",
+     " M code/sim/tests/test_figs_style.py",
+     " M code/sim/tests/test_ms4_additions.py",
+     " M code/sim/tests/test_ms5_additions.py",
+     " M code/sim/tests/test_rebuild.py",
+     " M paper/layout_check/pageplan/floats_heights.py",
+     "?? code/sim/tests/fixtures_figs_ms5b/",
+     "?? code/sim/tests/test_ms5b_additions_figs.py"
+    ],
+    "pilot": {
+     "anchor": "a6b242f7a6e9cb5629e49c2d1b10b8b781e5c655",
+     "head": "5c7d33285b9a4f4e4df2b76e80b3e5f56d58bd37",
+     "anchor_is_ancestor": true,
+     "spec": "design/sublet_v2.md",
+     "spec_sha256_head": "f5f462743377dbf9e352ef8b59b5fb7a09e8eb6d5b5072228c212589c9421b72",
+     "spec_sha256_anchor": "05f7b97ecbcf92840c5c2475fb349d7a89874f64954cad6be538d067ae2b4cda",
+     "sections_changed_since_anchor": []
+    }
+   }
+  },
+  "reduced_note": "reduced job list (MS3_E7H_REDUCED=1): development cells only; not a result"
+ },
+ "runs": [
+  {
+   "job": "e7h:second:k=week:tag=Sublet:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "Sublet",
+   "mode": "L-vr",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.9628922431831444,
+   "ALG": 1725.4302239326942,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 1053.3316404460843,
+   "stranding_usd": 42.35713906074247,
+   "fallback_share": 0.3446611008914778,
+   "fallback_share_after_reclaims": 0.3432988046788063,
+   "n_leases": 318,
+   "guard": {
+    "held": true,
+    "case": "W(a)",
+    "env_ok": true,
+    "env_max_excess_usd": -1.0834694014118966,
+    "aborted": false,
+    "t_a": null,
+    "s_fb_all": true,
+    "t0g_bound_all": true,
+    "project": true,
+    "robust_slots": 0,
+    "switches": 0,
+    "projected_slots": 8,
+    "projection": {
+     "slots": 8,
+     "P1": 8,
+     "P0": 0,
+     "K0": 0,
+     "dropped_buys": 257,
+     "dropped_other": 0,
+     "guard_releases": 0
+    },
+    "B_T": 318.6012723489015,
+    "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+    "B0_usd": null,
+    "info_class_reported": "online-I1 + a-priori N",
+    "online_lb": {
+     "LB_T": 771.0417666278704,
+     "Wk_T": 318.6012723489015,
+     "B_T": 318.6012723489015,
+     "n_groups": 3
+    }
+   },
+   "a9": {
+    "insured": 0,
+    "marks": 62,
+    "phase_ends": 0,
+    "mark_expiries": 10,
+    "notices": 62,
+    "commit_fallbacks": 103
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=Sublet:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "Sublet",
+   "mode": "L-rf",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.9344476401369288,
+   "ALG": 1674.459642176358,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 1284.3212734622114,
+   "stranding_usd": 16.187524921785716,
+   "fallback_share": 0.49110561176336215,
+   "fallback_share_after_reclaims": null,
+   "n_leases": 195,
+   "guard": {
+    "held": true,
+    "case": "W(a)",
+    "env_ok": true,
+    "env_max_excess_usd": -5.698480688424363,
+    "aborted": false,
+    "t_a": null,
+    "s_fb_all": true,
+    "t0g_bound_all": true,
+    "project": true,
+    "robust_slots": 0,
+    "switches": 0,
+    "projected_slots": 11,
+    "projection": {
+     "slots": 11,
+     "P1": 11,
+     "P0": 0,
+     "K0": 0,
+     "dropped_buys": 372,
+     "dropped_other": 0,
+     "guard_releases": 0
+    },
+    "B_T": 318.6012723489015,
+    "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+    "B0_usd": null,
+    "info_class_reported": "online-I1 + a-priori N",
+    "online_lb": {
+     "LB_T": 771.0417666278704,
+     "Wk_T": 318.6012723489015,
+     "B_T": 318.6012723489015,
+     "n_groups": 3
+    }
+   },
+   "a9": {
+    "insured": 0,
+    "marks": 0,
+    "phase_ends": 0,
+    "mark_expiries": 0,
+    "notices": 0,
+    "commit_fallbacks": 98
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=Sublet:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "Sublet",
+   "mode": "L-ad",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.0246634486851858,
+   "ALG": 1836.1195619105758,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 1180.4225592393786,
+   "stranding_usd": 95.57696353390435,
+   "fallback_share": 0.40887067621334344,
+   "fallback_share_after_reclaims": 0.4087907308186916,
+   "n_leases": 624,
+   "guard": {
+    "held": true,
+    "case": "W(a)",
+    "env_ok": true,
+    "env_max_excess_usd": -1.3435873041497128,
+    "aborted": false,
+    "t_a": null,
+    "s_fb_all": true,
+    "t0g_bound_all": true,
+    "project": true,
+    "robust_slots": 0,
+    "switches": 0,
+    "projected_slots": 9,
+    "projection": {
+     "slots": 9,
+     "P1": 9,
+     "P0": 0,
+     "K0": 0,
+     "dropped_buys": 378,
+     "dropped_other": 0,
+     "guard_releases": 0
+    },
+    "B_T": 318.6012723489015,
+    "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+    "B0_usd": null,
+    "info_class_reported": "online-I1 + a-priori N",
+    "online_lb": {
+     "LB_T": 771.0417666278704,
+     "Wk_T": 318.6012723489015,
+     "B_T": 318.6012723489015,
+     "n_groups": 3
+    }
+   },
+   "a9": {
+    "insured": 0,
+    "marks": 571,
+    "phase_ends": 0,
+    "mark_expiries": 16,
+    "notices": 571,
+    "commit_fallbacks": 104
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=Sublet:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "Sublet",
+   "mode": "L-b999",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.9356641708657143,
+   "ALG": 1635.7459252904532,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1748.2190472004447,
+   "fallback_usd": 1037.5087864417808,
+   "stranding_usd": 20.002265108618033,
+   "fallback_share": 0.35596870982082396,
+   "fallback_share_after_reclaims": 0.39072571795720534,
+   "n_leases": 270,
+   "guard": {
+    "held": true,
+    "case": "W(a)",
+    "env_ok": true,
+    "env_max_excess_usd": -0.9816271481961323,
+    "aborted": false,
+    "t_a": null,
+    "s_fb_all": true,
+    "t0g_bound_all": true,
+    "project": true,
+    "robust_slots": 0,
+    "switches": 0,
+    "projected_slots": 8,
+    "projection": {
+     "slots": 8,
+     "P1": 8,
+     "P0": 0,
+     "K0": 0,
+     "dropped_buys": 231,
+     "dropped_other": 0,
+     "guard_releases": 0
+    },
+    "B_T": 308.7887805421901,
+    "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+    "B0_usd": null,
+    "info_class_reported": "online-I1 + a-priori N",
+    "online_lb": {
+     "LB_T": 754.5327293131958,
+     "Wk_T": 308.7887805421901,
+     "B_T": 308.7887805421901,
+     "n_groups": 3
+    }
+   },
+   "a9": {
+    "insured": 0,
+    "marks": 18,
+    "phase_ends": 0,
+    "mark_expiries": 6,
+    "notices": 18,
+    "commit_fallbacks": 97
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=Sublet:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "Sublet",
+   "mode": "L-iid-0.1",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.9425092533713733,
+   "ALG": 1688.9054446291675,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 1020.0442634295663,
+   "stranding_usd": 28.290422182437794,
+   "fallback_share": 0.3406677680730267,
+   "fallback_share_after_reclaims": 0.35261993537633035,
+   "n_leases": 301,
+   "guard": {
+    "held": true,
+    "case": "W(a)",
+    "env_ok": true,
+    "env_max_excess_usd": -1.0834694014118966,
+    "aborted": false,
+    "t_a": null,
+    "s_fb_all": true,
+    "t0g_bound_all": true,
+    "project": true,
+    "robust_slots": 0,
+    "switches": 0,
+    "projected_slots": 8,
+    "projection": {
+     "slots": 8,
+     "P1": 8,
+     "P0": 0,
+     "K0": 0,
+     "dropped_buys": 240,
+     "dropped_other": 0,
+     "guard_releases": 0
+    },
+    "B_T": 318.6012723489015,
+    "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+    "B0_usd": null,
+    "info_class_reported": "online-I1 + a-priori N",
+    "online_lb": {
+     "LB_T": 771.0417666278704,
+     "Wk_T": 318.6012723489015,
+     "B_T": 318.6012723489015,
+     "n_groups": 3
+    }
+   },
+   "a9": {
+    "insured": 0,
+    "marks": 96,
+    "phase_ends": 0,
+    "mark_expiries": 5,
+    "notices": 96,
+    "commit_fallbacks": 100
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=Sublet:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "Sublet",
+   "mode": "L-iid-0.34",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.0168971053960412,
+   "ALG": 1822.2028609137665,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 1244.785309596355,
+   "stranding_usd": 64.88442850550999,
+   "fallback_share": 0.482416534540732,
+   "fallback_share_after_reclaims": 0.4920593186000566,
+   "n_leases": 348,
+   "guard": {
+    "held": true,
+    "case": "W(a)",
+    "env_ok": true,
+    "env_max_excess_usd": -1.0834694014118966,
+    "aborted": false,
+    "t_a": null,
+    "s_fb_all": true,
+    "t0g_bound_all": true,
+    "project": true,
+    "robust_slots": 0,
+    "switches": 0,
+    "projected_slots": 10,
+    "projection": {
+     "slots": 10,
+     "P1": 9,
+     "P0": 0,
+     "K0": 1,
+     "dropped_buys": 466,
+     "dropped_other": 0,
+     "guard_releases": 8
+    },
+    "B_T": 318.6012723489015,
+    "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+    "B0_usd": null,
+    "info_class_reported": "online-I1 + a-priori N",
+    "online_lb": {
+     "LB_T": 771.0417666278704,
+     "Wk_T": 318.6012723489015,
+     "B_T": 318.6012723489015,
+     "n_groups": 3
+    }
+   },
+   "a9": {
+    "insured": 0,
+    "marks": 244,
+    "phase_ends": 0,
+    "mark_expiries": 14,
+    "notices": 244,
+    "commit_fallbacks": 101
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=Sublet:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "Sublet",
+   "mode": "L-iid-0.5",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.0418712241850754,
+   "ALG": 1866.9545968216535,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 1276.9873747688707,
+   "stranding_usd": 74.745221002065,
+   "fallback_share": 0.5105487295895841,
+   "fallback_share_after_reclaims": 0.5111623352503941,
+   "n_leases": 362,
+   "guard": {
+    "held": true,
+    "case": "W(a)",
+    "env_ok": true,
+    "env_max_excess_usd": -1.3435873041497128,
+    "aborted": false,
+    "t_a": null,
+    "s_fb_all": true,
+    "t0g_bound_all": true,
+    "project": true,
+    "robust_slots": 0,
+    "switches": 0,
+    "projected_slots": 9,
+    "projection": {
+     "slots": 9,
+     "P1": 9,
+     "P0": 0,
+     "K0": 0,
+     "dropped_buys": 495,
+     "dropped_other": 0,
+     "guard_releases": 0
+    },
+    "B_T": 318.6012723489015,
+    "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+    "B0_usd": null,
+    "info_class_reported": "online-I1 + a-priori N",
+    "online_lb": {
+     "LB_T": 771.0417666278704,
+     "Wk_T": 318.6012723489015,
+     "B_T": 318.6012723489015,
+     "n_groups": 3
+    }
+   },
+   "a9": {
+    "insured": 0,
+    "marks": 272,
+    "phase_ends": 0,
+    "mark_expiries": 1,
+    "notices": 272,
+    "commit_fallbacks": 101
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=Sublet:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "Sublet",
+   "mode": "L-iid-0.8",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.0543674013140611,
+   "ALG": 1889.346803067589,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 1291.1906359196328,
+   "stranding_usd": 90.63116405030506,
+   "fallback_share": 0.5335064479074314,
+   "fallback_share_after_reclaims": 0.5342766493058824,
+   "n_leases": 436,
+   "guard": {
+    "held": true,
+    "case": "W(a)",
+    "env_ok": true,
+    "env_max_excess_usd": -1.3435873041497128,
+    "aborted": false,
+    "t_a": null,
+    "s_fb_all": true,
+    "t0g_bound_all": true,
+    "project": true,
+    "robust_slots": 0,
+    "switches": 0,
+    "projected_slots": 9,
+    "projection": {
+     "slots": 9,
+     "P1": 9,
+     "P0": 0,
+     "K0": 0,
+     "dropped_buys": 535,
+     "dropped_other": 0,
+     "guard_releases": 0
+    },
+    "B_T": 318.6012723489015,
+    "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+    "B0_usd": null,
+    "info_class_reported": "online-I1 + a-priori N",
+    "online_lb": {
+     "LB_T": 771.0417666278704,
+     "Wk_T": 318.6012723489015,
+     "B_T": 318.6012723489015,
+     "n_groups": 3
+    }
+   },
+   "a9": {
+    "insured": 0,
+    "marks": 364,
+    "phase_ends": 0,
+    "mark_expiries": 1,
+    "notices": 364,
+    "commit_fallbacks": 103
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=Sublet:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "Sublet",
+   "mode": "L-iid-1",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.0246634486851858,
+   "ALG": 1836.1195619105758,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 1180.4225592393786,
+   "stranding_usd": 95.57696353390435,
+   "fallback_share": 0.40887067621334344,
+   "fallback_share_after_reclaims": 0.4087907308186916,
+   "n_leases": 624,
+   "guard": {
+    "held": true,
+    "case": "W(a)",
+    "env_ok": true,
+    "env_max_excess_usd": -1.3435873041497128,
+    "aborted": false,
+    "t_a": null,
+    "s_fb_all": true,
+    "t0g_bound_all": true,
+    "project": true,
+    "robust_slots": 0,
+    "switches": 0,
+    "projected_slots": 9,
+    "projection": {
+     "slots": 9,
+     "P1": 9,
+     "P0": 0,
+     "K0": 0,
+     "dropped_buys": 378,
+     "dropped_other": 0,
+     "guard_releases": 0
+    },
+    "B_T": 318.6012723489015,
+    "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+    "B0_usd": null,
+    "info_class_reported": "online-I1 + a-priori N",
+    "online_lb": {
+     "LB_T": 771.0417666278704,
+     "Wk_T": 318.6012723489015,
+     "B_T": 318.6012723489015,
+     "n_groups": 3
+    }
+   },
+   "a9": {
+    "insured": 0,
+    "marks": 571,
+    "phase_ends": 0,
+    "mark_expiries": 16,
+    "notices": 571,
+    "commit_fallbacks": 104
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=A9:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "A9",
+   "mode": "L-vr",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.6851858680161168,
+   "ALG": 1227.8013599718042,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 227.78749740897433,
+   "stranding_usd": 40.514323166095494,
+   "fallback_share": 0.10354913748749887,
+   "fallback_share_after_reclaims": 0.12537995801330418,
+   "n_leases": 320,
+   "a9": {
+    "insured": 0,
+    "marks": 22,
+    "phase_ends": 0,
+    "mark_expiries": 7,
+    "notices": 22,
+    "commit_fallbacks": 97
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=A9:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "A9",
+   "mode": "L-rf",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.6821373486674636,
+   "ALG": 1222.3386433909527,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 362.4552107201813,
+   "stranding_usd": 16.1375459140179,
+   "fallback_share": 0.17892612152112033,
+   "fallback_share_after_reclaims": null,
+   "n_leases": 273,
+   "a9": {
+    "insured": 0,
+    "marks": 0,
+    "phase_ends": 0,
+    "mark_expiries": 0,
+    "notices": 0,
+    "commit_fallbacks": 101
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=A9:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "A9",
+   "mode": "L-ad",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.0303346736136634,
+   "ALG": 1846.2819689375215,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 291.1101241540722,
+   "stranding_usd": 241.89125044759686,
+   "fallback_share": 0.11387436853980723,
+   "fallback_share_after_reclaims": 0.11178223866924578,
+   "n_leases": 978,
+   "a9": {
+    "insured": 0,
+    "marks": 909,
+    "phase_ends": 0,
+    "mark_expiries": 47,
+    "notices": 909,
+    "commit_fallbacks": 117
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=A9:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "A9",
+   "mode": "L-b999",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.6862643863430171,
+   "ALG": 1199.7404716201872,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1748.2190472004447,
+   "fallback_usd": 246.3903955006274,
+   "stranding_usd": 34.77676641925066,
+   "fallback_share": 0.11539672765348179,
+   "fallback_share_after_reclaims": 0.1312507631564981,
+   "n_leases": 309,
+   "a9": {
+    "insured": 0,
+    "marks": 22,
+    "phase_ends": 0,
+    "mark_expiries": 7,
+    "notices": 22,
+    "commit_fallbacks": 90
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=A9:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "A9",
+   "mode": "L-iid-0.1",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.6770252735339296,
+   "ALG": 1213.1781905938096,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 233.54354437404757,
+   "stranding_usd": 16.745854405530572,
+   "fallback_share": 0.10379257684100743,
+   "fallback_share_after_reclaims": 0.0937292632193218,
+   "n_leases": 351,
+   "a9": {
+    "insured": 0,
+    "marks": 128,
+    "phase_ends": 0,
+    "mark_expiries": 20,
+    "notices": 128,
+    "commit_fallbacks": 88
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=A9:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "A9",
+   "mode": "L-iid-0.34",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.7719570527712227,
+   "ALG": 1383.288773857255,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 224.24900856880643,
+   "stranding_usd": 40.05118275749102,
+   "fallback_share": 0.10132204561600686,
+   "fallback_share_after_reclaims": 0.09942799128515904,
+   "n_leases": 526,
+   "a9": {
+    "insured": 0,
+    "marks": 399,
+    "phase_ends": 0,
+    "mark_expiries": 55,
+    "notices": 399,
+    "commit_fallbacks": 100
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=A9:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "A9",
+   "mode": "L-iid-0.5",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.8203571560359195,
+   "ALG": 1470.0181058314115,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 198.45888112879524,
+   "stranding_usd": 89.16211216337898,
+   "fallback_share": 0.09592318677294176,
+   "fallback_share_after_reclaims": 0.09370861099937769,
+   "n_leases": 547,
+   "a9": {
+    "insured": 0,
+    "marks": 458,
+    "phase_ends": 0,
+    "mark_expiries": 81,
+    "notices": 458,
+    "commit_fallbacks": 107
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=A9:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "A9",
+   "mode": "L-iid-0.8",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.9602211950000987,
+   "ALG": 1720.643907190364,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 255.04845750873005,
+   "stranding_usd": 188.18487624776125,
+   "fallback_share": 0.10641324717683173,
+   "fallback_share_after_reclaims": 0.1042702246266369,
+   "n_leases": 761,
+   "a9": {
+    "insured": 0,
+    "marks": 691,
+    "phase_ends": 0,
+    "mark_expiries": 91,
+    "notices": 691,
+    "commit_fallbacks": 115
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=A9:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "A9",
+   "mode": "L-iid-1",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.0303346736136634,
+   "ALG": 1846.2819689375215,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 291.1101241540722,
+   "stranding_usd": 241.89125044759686,
+   "fallback_share": 0.11387436853980723,
+   "fallback_share_after_reclaims": 0.11178223866924578,
+   "n_leases": 978,
+   "a9": {
+    "insured": 0,
+    "marks": 909,
+    "phase_ends": 0,
+    "mark_expiries": 47,
+    "notices": 909,
+    "commit_fallbacks": 117
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL1:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL1",
+   "mode": "L-vr",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.6638351134177733,
+   "ALG": 1189.5424192143546,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 137.68887683993933,
+   "stranding_usd": 61.90029969302209,
+   "fallback_share": 0.08461277761924507,
+   "fallback_share_after_reclaims": 0.08206667182199787,
+   "n_leases": 462
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL1:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL1",
+   "mode": "L-rf",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.6380749275111499,
+   "ALG": 1143.3821103614364,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 159.95207957412845,
+   "stranding_usd": 23.61523222914232,
+   "fallback_share": 0.09513987462276952,
+   "fallback_share_after_reclaims": 0.1046844537326141,
+   "n_leases": 352
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL1:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL1",
+   "mode": "L-ad",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.9456081095151643,
+   "ALG": 3486.382884328111,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 965.3331698366497,
+   "stranding_usd": 1554.1724590243277,
+   "fallback_share": 0.4486937661174915,
+   "fallback_share_after_reclaims": 0.44898773758795807,
+   "n_leases": 1338
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL1:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL1",
+   "mode": "L-b999",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.6752769383586191,
+   "ALG": 1180.5320057737385,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1748.2190472004447,
+   "fallback_usd": 148.5872367757835,
+   "stranding_usd": 61.468380450649995,
+   "fallback_share": 0.09833311099502977,
+   "fallback_share_after_reclaims": 0.09862066122241966,
+   "n_leases": 482
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL1:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL1",
+   "mode": "L-iid-0.1",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.6697881580136565,
+   "ALG": 1200.2098258144952,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 140.13287805012072,
+   "stranding_usd": 71.20470237758448,
+   "fallback_share": 0.05566389817952277,
+   "fallback_share_after_reclaims": 0.053023074903272786,
+   "n_leases": 381
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL1:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL1",
+   "mode": "L-iid-0.34",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.0071008658219973,
+   "ALG": 1804.648738984127,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 348.5215556276007,
+   "stranding_usd": 475.0431948870131,
+   "fallback_share": 0.14647031436431038,
+   "fallback_share_after_reclaims": 0.1447060694283324,
+   "n_leases": 613
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL1:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL1",
+   "mode": "L-iid-0.5",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.2062793075456633,
+   "ALG": 2161.5614732374693,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 473.53797575122815,
+   "stranding_usd": 710.7026745756372,
+   "fallback_share": 0.21510739677558938,
+   "fallback_share_after_reclaims": 0.21380806401157046,
+   "n_leases": 781
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL1:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL1",
+   "mode": "L-iid-0.8",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.6454883312780089,
+   "ALG": 2948.590893753448,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 762.7804829379012,
+   "stranding_usd": 1214.5048632156806,
+   "fallback_share": 0.3651025512979913,
+   "fallback_share_after_reclaims": 0.3648263429377045,
+   "n_leases": 1148
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL1:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL1",
+   "mode": "L-iid-1",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.9456081095151643,
+   "ALG": 3486.382884328111,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 965.3331698366497,
+   "stranding_usd": 1554.1724590243277,
+   "fallback_share": 0.4486937661174915,
+   "fallback_share_after_reclaims": 0.44898773758795807,
+   "n_leases": 1338
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL1-BO:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL1-BO",
+   "mode": "L-vr",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.6511795022043789,
+   "ALG": 1166.8645191227045,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 125.6012715731716,
+   "stranding_usd": 47.97493302864616,
+   "fallback_share": 0.06856480105919335,
+   "fallback_share_after_reclaims": 0.06407487251334353,
+   "n_leases": 404
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL1-BO:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL1-BO",
+   "mode": "L-rf",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.6359547640654731,
+   "ALG": 1139.5829374895534,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 152.54969044825458,
+   "stranding_usd": 20.305702531281185,
+   "fallback_share": 0.09259400400189413,
+   "fallback_share_after_reclaims": 0.1028943164549399,
+   "n_leases": 351
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL1-BO:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL1-BO",
+   "mode": "L-ad",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.6352307081061959,
+   "ALG": 2930.210007240281,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 1308.9141687883448,
+   "stranding_usd": 996.7664722894206,
+   "fallback_share": 0.6519693956044109,
+   "fallback_share_after_reclaims": 0.6536499202463735,
+   "n_leases": 880
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL1-BO:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL1-BO",
+   "mode": "L-b999",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.6486289629569776,
+   "ALG": 1133.94550760726,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1748.2190472004447,
+   "fallback_usd": 125.12125782498198,
+   "stranding_usd": 34.38453618370363,
+   "fallback_share": 0.05869554900469477,
+   "fallback_share_after_reclaims": 0.051242264128910774,
+   "n_leases": 365
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL1-BO:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL1-BO",
+   "mode": "L-iid-0.1",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.6695233835069015,
+   "ALG": 1199.7353698826748,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 140.88165236345566,
+   "stranding_usd": 66.84248248763686,
+   "fallback_share": 0.05691147155275838,
+   "fallback_share_after_reclaims": 0.054824802013512926,
+   "n_leases": 386
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL1-BO:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL1-BO",
+   "mode": "L-iid-0.34",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.0541414864065093,
+   "ALG": 1888.9419806045498,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 531.7589013289955,
+   "stranding_usd": 486.4194770729882,
+   "fallback_share": 0.19575428450295207,
+   "fallback_share_after_reclaims": 0.19432732750411483,
+   "n_leases": 620
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL1-BO:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL1-BO",
+   "mode": "L-iid-0.5",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.2211434585790069,
+   "ALG": 2188.1969099933485,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 764.199794970017,
+   "stranding_usd": 622.99392535574,
+   "fallback_share": 0.29634624921414476,
+   "fallback_share_after_reclaims": 0.2956010507001669,
+   "n_leases": 706
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL1-BO:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL1-BO",
+   "mode": "L-iid-0.8",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.4175769905140023,
+   "ALG": 2540.1909730819048,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 1057.5208257745135,
+   "stranding_usd": 780.1951265290917,
+   "fallback_share": 0.5242715717124481,
+   "fallback_share_after_reclaims": 0.5250810631510826,
+   "n_leases": 821
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL1-BO:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL1-BO",
+   "mode": "L-iid-1",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.6352307081061959,
+   "ALG": 2930.210007240281,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 1308.9141687883448,
+   "stranding_usd": 996.7664722894206,
+   "fallback_share": 0.6519693956044109,
+   "fallback_share_after_reclaims": 0.6536499202463735,
+   "n_leases": 880
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL3-0:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL3-0",
+   "mode": "L-vr",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.7810346939112378,
+   "ALG": 1399.5552216304952,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 491.7798168756235,
+   "stranding_usd": 97.23960763931468,
+   "fallback_share": 0.23477245202992497,
+   "fallback_share_after_reclaims": 0.2211008787688094,
+   "n_leases": 329
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL3-0:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL3-0",
+   "mode": "L-rf",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.7658704626850803,
+   "ALG": 1372.3820638181319,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 519.5695169068831,
+   "stranding_usd": 64.05080711943017,
+   "fallback_share": 0.2530752042574828,
+   "fallback_share_after_reclaims": null,
+   "n_leases": 307
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL3-0:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL3-0",
+   "mode": "L-ad",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.7516817693646891,
+   "ALG": 3138.8815196830546,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 1116.6539252410398,
+   "stranding_usd": 1216.6729694522355,
+   "fallback_share": 0.5313213394539266,
+   "fallback_share_after_reclaims": 0.5308903137465784,
+   "n_leases": 1099
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL3-0:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL3-0",
+   "mode": "L-b999",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.7925429095719695,
+   "ALG": 1385.5386102373768,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1748.2190472004447,
+   "fallback_usd": 475.9756522832966,
+   "stranding_usd": 113.87705371685219,
+   "fallback_share": 0.2328920615798536,
+   "fallback_share_after_reclaims": 0.22934725369185763,
+   "n_leases": 326
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL3-0:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL3-0",
+   "mode": "L-iid-0.1",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.7885785284020559,
+   "ALG": 1413.0732036549155,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 500.5466851031475,
+   "stranding_usd": 103.50809413421658,
+   "fallback_share": 0.23802407352135366,
+   "fallback_share_after_reclaims": 0.23439701347794845,
+   "n_leases": 373
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL3-0:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL3-0",
+   "mode": "L-iid-0.34",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.0359333956184507,
+   "ALG": 1856.3144561974896,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 648.5496214748101,
+   "stranding_usd": 387.7633566131721,
+   "fallback_share": 0.30540456152323225,
+   "fallback_share_after_reclaims": 0.30343254624559174,
+   "n_leases": 551
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL3-0:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL3-0",
+   "mode": "L-iid-0.5",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.1977390799647951,
+   "ALG": 2146.2580300000614,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 744.2439948789713,
+   "stranding_usd": 584.1932076864388,
+   "fallback_share": 0.3699741258697772,
+   "fallback_share_after_reclaims": 0.3684425427996412,
+   "n_leases": 731
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL3-0:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL3-0",
+   "mode": "L-iid-0.8",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.4807275584651756,
+   "ALG": 2653.3520244590163,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 925.4147762495245,
+   "stranding_usd": 917.7550618466902,
+   "fallback_share": 0.447220949628461,
+   "fallback_share_after_reclaims": 0.4462162709823376,
+   "n_leases": 915
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL3-0:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL3-0",
+   "mode": "L-iid-1",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.7516817693646891,
+   "ALG": 3138.8815196830546,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 1116.6539252410398,
+   "stranding_usd": 1216.6729694522355,
+   "fallback_share": 0.5313213394539266,
+   "fallback_share_after_reclaims": 0.5308903137465784,
+   "n_leases": 1099
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL4:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL4",
+   "mode": "L-vr",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.9941277774503176,
+   "ALG": 1781.4019437869324,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 1582.056486976671,
+   "stranding_usd": 23.765243713038515,
+   "fallback_share": 0.9067774151341069,
+   "fallback_share_after_reclaims": 1.0,
+   "n_leases": 11
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL4:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL4",
+   "mode": "L-rf",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.9941277774503176,
+   "ALG": 1781.4019437869324,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 1582.056486976671,
+   "stranding_usd": 23.765243713038515,
+   "fallback_share": 0.9067774151341069,
+   "fallback_share_after_reclaims": 1.0,
+   "n_leases": 11
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL4:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL4",
+   "mode": "L-ad",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.003622490659715,
+   "ALG": 1798.4157532293164,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 1786.6825345606123,
+   "stranding_usd": 0.0,
+   "fallback_share": 0.9968601217453243,
+   "fallback_share_after_reclaims": 1.0,
+   "n_leases": 14
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL4:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL4",
+   "mode": "L-b999",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.0106662491263403,
+   "ALG": 1766.8659870852978,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1748.2190472004447,
+   "fallback_usd": 1729.7135109647506,
+   "stranding_usd": 5.515344096406067,
+   "fallback_share": 0.974377501610897,
+   "fallback_share_after_reclaims": 0.9990032478971343,
+   "n_leases": 11
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL4:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL4",
+   "mode": "L-iid-0.1",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.0236366058325324,
+   "ALG": 1834.2795370212484,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 1749.6963467341077,
+   "stranding_usd": 11.274585769271287,
+   "fallback_share": 0.9850956843004905,
+   "fallback_share_after_reclaims": 0.9922951898365326,
+   "n_leases": 14
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL4:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL4",
+   "mode": "L-iid-0.34",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.0113434251502778,
+   "ALG": 1812.2510850863696,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 1786.6689367093925,
+   "stranding_usd": 0.0,
+   "fallback_share": 0.996837713147763,
+   "fallback_share_after_reclaims": 1.0,
+   "n_leases": 14
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL4:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL4",
+   "mode": "L-iid-0.5",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.0094820302081944,
+   "ALG": 1808.915605841954,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 1786.6825345606123,
+   "stranding_usd": 0.0,
+   "fallback_share": 0.9968601217453243,
+   "fallback_share_after_reclaims": 1.0,
+   "n_leases": 14
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL4:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL4",
+   "mode": "L-iid-0.8",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.003622490659715,
+   "ALG": 1798.4157532293164,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 1786.6825345606123,
+   "stranding_usd": 0.0,
+   "fallback_share": 0.9968601217453243,
+   "fallback_share_after_reclaims": 1.0,
+   "n_leases": 14
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL4:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL4",
+   "mode": "L-iid-1",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.003622490659715,
+   "ALG": 1798.4157532293164,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 1786.6825345606123,
+   "stranding_usd": 0.0,
+   "fallback_share": 0.9968601217453243,
+   "fallback_share_after_reclaims": 1.0,
+   "n_leases": 14
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL5-cur:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL5-cur",
+   "mode": "L-vr",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.8322013113669223,
+   "ALG": 1491.2419382277628,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 713.817676323675,
+   "stranding_usd": 58.765549709909365,
+   "fallback_share": 0.26012157295841426,
+   "fallback_share_after_reclaims": 0.15404849003677334,
+   "n_leases": 311
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL5-cur:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL5-cur",
+   "mode": "L-rf",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.8405343693333607,
+   "ALG": 1506.1741491525745,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 730.5812599159709,
+   "stranding_usd": 10.75290868812768,
+   "fallback_share": 0.2597593965659375,
+   "fallback_share_after_reclaims": 0.15604885588539585,
+   "n_leases": 296
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL5-cur:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL5-cur",
+   "mode": "L-ad",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.265240979290852,
+   "ALG": 2267.2163387771816,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 1493.8822365057763,
+   "stranding_usd": 495.0298084431888,
+   "fallback_share": 0.7432683545373647,
+   "fallback_share_after_reclaims": 0.7436965928297867,
+   "n_leases": 490
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL5-cur:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL5-cur",
+   "mode": "L-b999",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.8473484112485651,
+   "ALG": 1481.350632159777,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1748.2190472004447,
+   "fallback_usd": 723.4268070372714,
+   "stranding_usd": 52.40472553403304,
+   "fallback_share": 0.2913479731916206,
+   "fallback_share_after_reclaims": 0.1904300860474943,
+   "n_leases": 299
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL5-cur:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL5-cur",
+   "mode": "L-iid-0.1",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.808047805263875,
+   "ALG": 1447.9606783160928,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 719.3164737989426,
+   "stranding_usd": 55.47373570024453,
+   "fallback_share": 0.2636846593889012,
+   "fallback_share_after_reclaims": 0.25969682536812405,
+   "n_leases": 310
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL5-cur:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL5-cur",
+   "mode": "L-iid-0.34",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.987808561814794,
+   "ALG": 1770.0783863211086,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 978.9352652367969,
+   "stranding_usd": 294.1944867713628,
+   "fallback_share": 0.41837894835946354,
+   "fallback_share_after_reclaims": 0.416946126841681,
+   "n_leases": 380
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL5-cur:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL5-cur",
+   "mode": "L-iid-0.5",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.0853038866604867,
+   "ALG": 1944.7826498270492,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 1144.4096224435216,
+   "stranding_usd": 380.10374587401714,
+   "fallback_share": 0.5232377494041965,
+   "fallback_share_after_reclaims": 0.521311271981919,
+   "n_leases": 418
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL5-cur:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL5-cur",
+   "mode": "L-iid-0.8",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.211333549296128,
+   "ALG": 2170.6182929772203,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 1382.7734399883461,
+   "stranding_usd": 467.91693679856314,
+   "fallback_share": 0.674484631789635,
+   "fallback_share_after_reclaims": 0.6741767628810993,
+   "n_leases": 474
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL5-cur:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL5-cur",
+   "mode": "L-iid-1",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.265240979290852,
+   "ALG": 2267.2163387771816,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 1493.8822365057763,
+   "stranding_usd": 495.0298084431888,
+   "fallback_share": 0.7432683545373647,
+   "fallback_share_after_reclaims": 0.7436965928297867,
+   "n_leases": 490
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL5-tau60:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL5-tau60",
+   "mode": "L-vr",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.7174610301758495,
+   "ALG": 3077.560537922366,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 536.5501950019664,
+   "stranding_usd": 82.44059611514727,
+   "fallback_share": 0.16998266311959292,
+   "fallback_share_after_reclaims": 0.0787236547355272,
+   "n_leases": 288
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL5-tau60:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL5-tau60",
+   "mode": "L-rf",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.6438079079910362,
+   "ALG": 2945.579702055862,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 563.6763878069454,
+   "stranding_usd": 82.44059611514727,
+   "fallback_share": 0.21079631281256095,
+   "fallback_share_after_reclaims": 0.08398740314406974,
+   "n_leases": 281
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL5-tau60:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL5-tau60",
+   "mode": "L-ad",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.7154305435633588,
+   "ALG": 3073.9220591670482,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 536.5501950019664,
+   "stranding_usd": 82.44059611514727,
+   "fallback_share": 0.16998266311959292,
+   "fallback_share_after_reclaims": 0.1406241998222731,
+   "n_leases": 288
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL5-tau60:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL5-tau60",
+   "mode": "L-b999",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.7263357823818042,
+   "ALG": 3018.013096623552,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1748.2190472004447,
+   "fallback_usd": 527.248453601875,
+   "stranding_usd": 77.41412020711894,
+   "fallback_share": 0.1719976186066488,
+   "fallback_share_after_reclaims": 0.07797941177178881,
+   "n_leases": 281
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL5-tau60:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL5-tau60",
+   "mode": "L-iid-0.1",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.7179132625102798,
+   "ALG": 3078.3709041326974,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 536.5501950019664,
+   "stranding_usd": 82.44059611514727,
+   "fallback_share": 0.16998266311959292,
+   "fallback_share_after_reclaims": 0.2795467519240868,
+   "n_leases": 288
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL5-tau60:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL5-tau60",
+   "mode": "L-iid-0.34",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.7179132625102798,
+   "ALG": 3078.3709041326974,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 536.5501950019664,
+   "stranding_usd": 82.44059611514727,
+   "fallback_share": 0.16998266311959292,
+   "fallback_share_after_reclaims": 0.14064772615738172,
+   "n_leases": 288
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL5-tau60:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL5-tau60",
+   "mode": "L-iid-0.5",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.7174610301758495,
+   "ALG": 3077.560537922366,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 536.5501950019664,
+   "stranding_usd": 82.44059611514727,
+   "fallback_share": 0.16998266311959292,
+   "fallback_share_after_reclaims": 0.1406241998222731,
+   "n_leases": 288
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL5-tau60:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL5-tau60",
+   "mode": "L-iid-0.8",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.7165786653525579,
+   "ALG": 3075.979406756942,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 536.5501950019664,
+   "stranding_usd": 82.44059611514727,
+   "fallback_share": 0.16998266311959292,
+   "fallback_share_after_reclaims": 0.1406241998222731,
+   "n_leases": 288
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL5-tau60:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL5-tau60",
+   "mode": "L-iid-1",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.7154305435633588,
+   "ALG": 3073.9220591670482,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 536.5501950019664,
+   "stranding_usd": 82.44059611514727,
+   "fallback_share": 0.16998266311959292,
+   "fallback_share_after_reclaims": 0.1406241998222731,
+   "n_leases": 288
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL1N:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL1N",
+   "mode": "L-vr",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.6611243552812026,
+   "ALG": 1184.6849452324802,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 105.04151434910888,
+   "stranding_usd": 7.851997378850087,
+   "fallback_share": 0.04328070135381118,
+   "fallback_share_after_reclaims": 0.02924068774258765,
+   "n_leases": 392,
+   "a9": {
+    "insured": 0,
+    "marks": 64,
+    "phase_ends": 0,
+    "mark_expiries": 13,
+    "notices": 64,
+    "commit_fallbacks": 105
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL1N:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL1N",
+   "mode": "L-rf",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.6627145393938044,
+   "ALG": 1187.5344351405415,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 184.99755643367743,
+   "stranding_usd": 22.468497140558426,
+   "fallback_share": 0.06747864404840952,
+   "fallback_share_after_reclaims": 0.0753976621580557,
+   "n_leases": 324,
+   "a9": {
+    "insured": 0,
+    "marks": 2,
+    "phase_ends": 0,
+    "mark_expiries": 0,
+    "notices": 2,
+    "commit_fallbacks": 108
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL1N:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL1N",
+   "mode": "L-ad",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.0809665708207665,
+   "ALG": 1937.010507208208,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 179.81122824601604,
+   "stranding_usd": 159.92773250983308,
+   "fallback_share": 0.05888870637226875,
+   "fallback_share_after_reclaims": 0.057603601307131186,
+   "n_leases": 1184,
+   "a9": {
+    "insured": 0,
+    "marks": 1097,
+    "phase_ends": 0,
+    "mark_expiries": 78,
+    "notices": 1097,
+    "commit_fallbacks": 144
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL1N:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL1N",
+   "mode": "L-b999",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.668301872366076,
+   "ALG": 1168.3380625500945,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1748.2190472004447,
+   "fallback_usd": 103.06925797242403,
+   "stranding_usd": 7.660485247658575,
+   "fallback_share": 0.04314274734434344,
+   "fallback_share_after_reclaims": 0.029500140841830315,
+   "n_leases": 387,
+   "a9": {
+    "insured": 0,
+    "marks": 70,
+    "phase_ends": 0,
+    "mark_expiries": 13,
+    "notices": 70,
+    "commit_fallbacks": 104
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL1N:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL1N",
+   "mode": "L-iid-0.1",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.6803906254627776,
+   "ALG": 1219.2086472449182,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 89.95355230664573,
+   "stranding_usd": 4.996499720854783,
+   "fallback_share": 0.04017267288697738,
+   "fallback_share_after_reclaims": 0.03600733735128972,
+   "n_leases": 380,
+   "a9": {
+    "insured": 0,
+    "marks": 110,
+    "phase_ends": 0,
+    "mark_expiries": 27,
+    "notices": 110,
+    "commit_fallbacks": 105
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL1N:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL1N",
+   "mode": "L-iid-0.34",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.812522761541652,
+   "ALG": 1455.9794622112968,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 92.5921924842664,
+   "stranding_usd": 4.6898572945660275,
+   "fallback_share": 0.040734726748088104,
+   "fallback_share_after_reclaims": 0.03932667975251339,
+   "n_leases": 616,
+   "a9": {
+    "insured": 0,
+    "marks": 436,
+    "phase_ends": 0,
+    "mark_expiries": 93,
+    "notices": 436,
+    "commit_fallbacks": 119
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL1N:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL1N",
+   "mode": "L-iid-0.5",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.8578736003345772,
+   "ALG": 1537.244742400213,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 90.4196539317652,
+   "stranding_usd": 11.805420866194734,
+   "fallback_share": 0.040069063030345124,
+   "fallback_share_after_reclaims": 0.0386555882426391,
+   "n_leases": 703,
+   "a9": {
+    "insured": 0,
+    "marks": 576,
+    "phase_ends": 0,
+    "mark_expiries": 112,
+    "notices": 576,
+    "commit_fallbacks": 125
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL1N:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL1N",
+   "mode": "L-iid-0.8",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.9817272724882201,
+   "ALG": 1759.181174843049,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 132.18987985931295,
+   "stranding_usd": 96.57248583381023,
+   "fallback_share": 0.049012251464318604,
+   "fallback_share_after_reclaims": 0.04765977860939573,
+   "n_leases": 987,
+   "a9": {
+    "insured": 0,
+    "marks": 896,
+    "phase_ends": 0,
+    "mark_expiries": 111,
+    "notices": 896,
+    "commit_fallbacks": 150
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL1N:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL1N",
+   "mode": "L-iid-1",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.0809665708207665,
+   "ALG": 1937.010507208208,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 179.81122824601604,
+   "stranding_usd": 159.92773250983308,
+   "fallback_share": 0.05888870637226875,
+   "fallback_share_after_reclaims": 0.057603601307131186,
+   "n_leases": 1184,
+   "a9": {
+    "insured": 0,
+    "marks": 1097,
+    "phase_ends": 0,
+    "mark_expiries": 78,
+    "notices": 1097,
+    "commit_fallbacks": 144
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL5N:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL5N",
+   "mode": "L-vr",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.8539644980178834,
+   "ALG": 1530.2399260945263,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 683.2318854585835,
+   "stranding_usd": 8.422212410345118,
+   "fallback_share": 0.25046323511123747,
+   "fallback_share_after_reclaims": 0.1083449817078358,
+   "n_leases": 309
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL5N:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL5N",
+   "mode": "L-rf",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.8501073171368535,
+   "ALG": 1523.3281490826944,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 723.7036384736332,
+   "stranding_usd": 8.626504383703075,
+   "fallback_share": 0.2566734074925245,
+   "fallback_share_after_reclaims": 0.10716810618236325,
+   "n_leases": 295
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL5N:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL5N",
+   "mode": "L-ad",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.1395405908116896,
+   "ALG": 2041.97073006292,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 860.3947599772928,
+   "stranding_usd": 45.125555441783305,
+   "fallback_share": 0.5433478098172982,
+   "fallback_share_after_reclaims": 0.5382110374159831,
+   "n_leases": 490
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL5N:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL5N",
+   "mode": "L-b999",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.8590147485648733,
+   "ALG": 1501.7459452672124,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1748.2190472004447,
+   "fallback_usd": 670.4508361321325,
+   "stranding_usd": 13.757744990037782,
+   "fallback_share": 0.24590836049645035,
+   "fallback_share_after_reclaims": 0.07288906212739753,
+   "n_leases": 292
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL5N:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL5N",
+   "mode": "L-iid-0.1",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.8650687630747492,
+   "ALG": 1550.1379309640406,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 667.9173511501239,
+   "stranding_usd": 7.846969702962038,
+   "fallback_share": 0.22247629509608569,
+   "fallback_share_after_reclaims": 0.19462520048755996,
+   "n_leases": 346
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL5N:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL5N",
+   "mode": "L-iid-0.34",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.9720258197365951,
+   "ALG": 1741.7969037449952,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 690.0359482671292,
+   "stranding_usd": 8.300624713228778,
+   "fallback_share": 0.25892666754140653,
+   "fallback_share_after_reclaims": 0.24660805038212483,
+   "n_leases": 461
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL5N:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL5N",
+   "mode": "L-iid-0.5",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.024041068857516,
+   "ALG": 1835.0043042345171,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 716.0176196934949,
+   "stranding_usd": 9.922885266491486,
+   "fallback_share": 0.30174319859141907,
+   "fallback_share_after_reclaims": 0.2905009177258727,
+   "n_leases": 510
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL5N:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL5N",
+   "mode": "L-iid-0.8",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.1052881687870117,
+   "ALG": 1980.592975051723,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 833.1915566399746,
+   "stranding_usd": 36.273918776844965,
+   "fallback_share": 0.498518253579814,
+   "fallback_share_after_reclaims": 0.49224860861589786,
+   "n_leases": 491
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL5N:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL5N",
+   "mode": "L-iid-1",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.1395405908116896,
+   "ALG": 2041.97073006292,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 860.3947599772928,
+   "stranding_usd": 45.125555441783305,
+   "fallback_share": 0.5433478098172982,
+   "fallback_share_after_reclaims": 0.5382110374159831,
+   "n_leases": 490
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL1-GP:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL1-GP",
+   "mode": "L-vr",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.0393309492479443,
+   "ALG": 1862.4026158656798,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 1285.0881354974142,
+   "stranding_usd": 172.97745784179955,
+   "fallback_share": 0.588977319695562,
+   "fallback_share_after_reclaims": 0.6213986631620314,
+   "n_leases": 416,
+   "guard": {
+    "held": true,
+    "case": "W(a)",
+    "env_ok": true,
+    "env_max_excess_usd": -0.30986716437744377,
+    "aborted": false,
+    "t_a": null,
+    "s_fb_all": true,
+    "t0g_bound_all": true,
+    "project": true,
+    "robust_slots": 0,
+    "switches": 0,
+    "projected_slots": 11,
+    "projection": {
+     "slots": 11,
+     "P1": 10,
+     "P0": 0,
+     "K0": 1,
+     "dropped_buys": 422,
+     "dropped_other": 0,
+     "guard_releases": 133
+    },
+    "B_T": 318.6012723489015,
+    "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+    "B0_usd": null,
+    "info_class_reported": "online-I1 + a-priori N",
+    "online_lb": {
+     "LB_T": 771.0417666278704,
+     "Wk_T": 318.6012723489015,
+     "B_T": 318.6012723489015,
+     "n_groups": 3
+    }
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL1-GP:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL1-GP",
+   "mode": "L-rf",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.900817521829555,
+   "ALG": 1614.197008457189,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 1132.0589754501127,
+   "stranding_usd": 43.171784688437775,
+   "fallback_share": 0.37801894779106804,
+   "fallback_share_after_reclaims": 0.38033280265783126,
+   "n_leases": 280,
+   "guard": {
+    "held": true,
+    "case": "W(a)",
+    "env_ok": true,
+    "env_max_excess_usd": -6.489658800534745,
+    "aborted": false,
+    "t_a": null,
+    "s_fb_all": true,
+    "t0g_bound_all": true,
+    "project": true,
+    "robust_slots": 0,
+    "switches": 0,
+    "projected_slots": 12,
+    "projection": {
+     "slots": 12,
+     "P1": 12,
+     "P0": 0,
+     "K0": 0,
+     "dropped_buys": 338,
+     "dropped_other": 0,
+     "guard_releases": 0
+    },
+    "B_T": 318.6012723489015,
+    "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+    "B0_usd": null,
+    "info_class_reported": "online-I1 + a-priori N",
+    "online_lb": {
+     "LB_T": 771.0417666278704,
+     "Wk_T": 318.6012723489015,
+     "B_T": 318.6012723489015,
+     "n_groups": 3
+    }
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL1-GP:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL1-GP",
+   "mode": "L-ad",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.1428208595957485,
+   "ALG": 2047.8487241403548,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 1552.435142749598,
+   "stranding_usd": 253.4620968391247,
+   "fallback_share": 0.6907202032675743,
+   "fallback_share_after_reclaims": 0.6926650490945162,
+   "n_leases": 658,
+   "guard": {
+    "held": true,
+    "case": "W(a)",
+    "env_ok": true,
+    "env_max_excess_usd": -0.30986716437744377,
+    "aborted": false,
+    "t_a": null,
+    "s_fb_all": true,
+    "t0g_bound_all": true,
+    "project": true,
+    "robust_slots": 0,
+    "switches": 0,
+    "projected_slots": 14,
+    "projection": {
+     "slots": 14,
+     "P1": 14,
+     "P0": 0,
+     "K0": 0,
+     "dropped_buys": 622,
+     "dropped_other": 0,
+     "guard_releases": 0
+    },
+    "B_T": 318.6012723489015,
+    "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+    "B0_usd": null,
+    "info_class_reported": "online-I1 + a-priori N",
+    "online_lb": {
+     "LB_T": 771.0417666278704,
+     "Wk_T": 318.6012723489015,
+     "B_T": 318.6012723489015,
+     "n_groups": 3
+    }
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL1-GP:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL1-GP",
+   "mode": "L-b999",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.0396991364532338,
+   "ALG": 1817.6218337053974,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1748.2190472004447,
+   "fallback_usd": 1262.5043030655856,
+   "stranding_usd": 164.05436582529947,
+   "fallback_share": 0.5923985543212226,
+   "fallback_share_after_reclaims": 0.6479587884225513,
+   "n_leases": 410,
+   "guard": {
+    "held": true,
+    "case": "W(a)",
+    "env_ok": true,
+    "env_max_excess_usd": -0.07254571310215141,
+    "aborted": false,
+    "t_a": null,
+    "s_fb_all": true,
+    "t0g_bound_all": true,
+    "project": true,
+    "robust_slots": 0,
+    "switches": 0,
+    "projected_slots": 10,
+    "projection": {
+     "slots": 10,
+     "P1": 9,
+     "P0": 0,
+     "K0": 1,
+     "dropped_buys": 458,
+     "dropped_other": 0,
+     "guard_releases": 81
+    },
+    "B_T": 308.7887805421901,
+    "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+    "B0_usd": null,
+    "info_class_reported": "online-I1 + a-priori N",
+    "online_lb": {
+     "LB_T": 754.5327293131958,
+     "Wk_T": 308.7887805421901,
+     "B_T": 308.7887805421901,
+     "n_groups": 3
+    }
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL1-GP:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL1-GP",
+   "mode": "L-iid-0.1",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.0587456546086151,
+   "ALG": 1897.1923025156718,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 1337.4432092098843,
+   "stranding_usd": 176.20975554544174,
+   "fallback_share": 0.5964603445922938,
+   "fallback_share_after_reclaims": 0.6034546056336699,
+   "n_leases": 427,
+   "guard": {
+    "held": true,
+    "case": "W(a)",
+    "env_ok": true,
+    "env_max_excess_usd": -0.30986716437744377,
+    "aborted": false,
+    "t_a": null,
+    "s_fb_all": true,
+    "t0g_bound_all": true,
+    "project": true,
+    "robust_slots": 0,
+    "switches": 0,
+    "projected_slots": 12,
+    "projection": {
+     "slots": 12,
+     "P1": 11,
+     "P0": 0,
+     "K0": 1,
+     "dropped_buys": 419,
+     "dropped_other": 0,
+     "guard_releases": 145
+    },
+    "B_T": 318.6012723489015,
+    "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+    "B0_usd": null,
+    "info_class_reported": "online-I1 + a-priori N",
+    "online_lb": {
+     "LB_T": 771.0417666278704,
+     "Wk_T": 318.6012723489015,
+     "B_T": 318.6012723489015,
+     "n_groups": 3
+    }
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL1-GP:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL1-GP",
+   "mode": "L-iid-0.34",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.9848433813343495,
+   "ALG": 1764.7650067019508,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 1191.53808560831,
+   "stranding_usd": 114.1517429347544,
+   "fallback_share": 0.40256677329396584,
+   "fallback_share_after_reclaims": 0.40255519248180843,
+   "n_leases": 462,
+   "guard": {
+    "held": true,
+    "case": "W(a)",
+    "env_ok": true,
+    "env_max_excess_usd": -0.30986716437744377,
+    "aborted": false,
+    "t_a": null,
+    "s_fb_all": true,
+    "t0g_bound_all": true,
+    "project": true,
+    "robust_slots": 0,
+    "switches": 0,
+    "projected_slots": 11,
+    "projection": {
+     "slots": 11,
+     "P1": 11,
+     "P0": 0,
+     "K0": 0,
+     "dropped_buys": 335,
+     "dropped_other": 0,
+     "guard_releases": 0
+    },
+    "B_T": 318.6012723489015,
+    "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+    "B0_usd": null,
+    "info_class_reported": "online-I1 + a-priori N",
+    "online_lb": {
+     "LB_T": 771.0417666278704,
+     "Wk_T": 318.6012723489015,
+     "B_T": 318.6012723489015,
+     "n_groups": 3
+    }
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL1-GP:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL1-GP",
+   "mode": "L-iid-0.5",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.0309744503148737,
+   "ALG": 1847.4284004979077,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 1248.1792193925098,
+   "stranding_usd": 159.0874504030863,
+   "fallback_share": 0.452469940435614,
+   "fallback_share_after_reclaims": 0.45278966937877985,
+   "n_leases": 510,
+   "guard": {
+    "held": true,
+    "case": "W(a)",
+    "env_ok": true,
+    "env_max_excess_usd": -0.30986716437744377,
+    "aborted": false,
+    "t_a": null,
+    "s_fb_all": true,
+    "t0g_bound_all": true,
+    "project": true,
+    "robust_slots": 0,
+    "switches": 0,
+    "projected_slots": 11,
+    "projection": {
+     "slots": 11,
+     "P1": 11,
+     "P0": 0,
+     "K0": 0,
+     "dropped_buys": 366,
+     "dropped_other": 0,
+     "guard_releases": 0
+    },
+    "B_T": 318.6012723489015,
+    "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+    "B0_usd": null,
+    "info_class_reported": "online-I1 + a-priori N",
+    "online_lb": {
+     "LB_T": 771.0417666278704,
+     "Wk_T": 318.6012723489015,
+     "B_T": 318.6012723489015,
+     "n_groups": 3
+    }
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL1-GP:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL1-GP",
+   "mode": "L-iid-0.8",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.1136710216307095,
+   "ALG": 1995.6144146382348,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 1445.4467169626682,
+   "stranding_usd": 212.05794590076658,
+   "fallback_share": 0.6140891961932193,
+   "fallback_share_after_reclaims": 0.6155113381123585,
+   "n_leases": 651,
+   "guard": {
+    "held": true,
+    "case": "W(a)",
+    "env_ok": true,
+    "env_max_excess_usd": -0.30986716437744377,
+    "aborted": false,
+    "t_a": null,
+    "s_fb_all": true,
+    "t0g_bound_all": true,
+    "project": true,
+    "robust_slots": 0,
+    "switches": 0,
+    "projected_slots": 12,
+    "projection": {
+     "slots": 12,
+     "P1": 12,
+     "P0": 0,
+     "K0": 0,
+     "dropped_buys": 516,
+     "dropped_other": 0,
+     "guard_releases": 0
+    },
+    "B_T": 318.6012723489015,
+    "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+    "B0_usd": null,
+    "info_class_reported": "online-I1 + a-priori N",
+    "online_lb": {
+     "LB_T": 771.0417666278704,
+     "Wk_T": 318.6012723489015,
+     "B_T": 318.6012723489015,
+     "n_groups": 3
+    }
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL1-GP:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL1-GP",
+   "mode": "L-iid-1",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.1428208595957485,
+   "ALG": 2047.8487241403548,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 1552.435142749598,
+   "stranding_usd": 253.4620968391247,
+   "fallback_share": 0.6907202032675743,
+   "fallback_share_after_reclaims": 0.6926650490945162,
+   "n_leases": 658,
+   "guard": {
+    "held": true,
+    "case": "W(a)",
+    "env_ok": true,
+    "env_max_excess_usd": -0.30986716437744377,
+    "aborted": false,
+    "t_a": null,
+    "s_fb_all": true,
+    "t0g_bound_all": true,
+    "project": true,
+    "robust_slots": 0,
+    "switches": 0,
+    "projected_slots": 14,
+    "projection": {
+     "slots": 14,
+     "P1": 14,
+     "P0": 0,
+     "K0": 0,
+     "dropped_buys": 622,
+     "dropped_other": 0,
+     "guard_releases": 0
+    },
+    "B_T": 318.6012723489015,
+    "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+    "B0_usd": null,
+    "info_class_reported": "online-I1 + a-priori N",
+    "online_lb": {
+     "LB_T": 771.0417666278704,
+     "Wk_T": 318.6012723489015,
+     "B_T": 318.6012723489015,
+     "n_groups": 3
+    }
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=Sublet-MS4:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "Sublet-MS4",
+   "mode": "L-vr",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.0670480419439334,
+   "ALG": 1912.0695539844319,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 1720.8170918983533,
+   "stranding_usd": 2.366031650097388,
+   "fallback_share": 0.960036231346215,
+   "fallback_share_after_reclaims": null,
+   "n_leases": 58,
+   "guard": {
+    "held": true,
+    "case": "W(b)",
+    "env_ok": true,
+    "env_max_excess_usd": -58.95073079398742,
+    "aborted": true,
+    "t_a": 20,
+    "s_fb_all": true,
+    "t0g_bound_all": true,
+    "project": null,
+    "robust_slots": 0,
+    "switches": 0,
+    "projected_slots": 0,
+    "projection": null,
+    "B_T": 179.19245233804563,
+    "B0_rule": "0.1*BL0a",
+    "B0_usd": 179.19245233804563,
+    "info_class_reported": "online-I1 + a-priori N + a-priori BL0a"
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=Sublet-MS4:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "Sublet-MS4",
+   "mode": "L-rf",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.066505864000303,
+   "ALG": 1911.0980120312045,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 1723.6770918983532,
+   "stranding_usd": 0.4382538723196103,
+   "fallback_share": 0.9647493722675019,
+   "fallback_share_after_reclaims": null,
+   "n_leases": 50,
+   "guard": {
+    "held": true,
+    "case": "W(b)",
+    "env_ok": true,
+    "env_max_excess_usd": -57.25560496820913,
+    "aborted": true,
+    "t_a": 20,
+    "s_fb_all": true,
+    "t0g_bound_all": true,
+    "project": null,
+    "robust_slots": 0,
+    "switches": 0,
+    "projected_slots": 0,
+    "projection": null,
+    "B_T": 179.19245233804563,
+    "B0_rule": "0.1*BL0a",
+    "B0_usd": 179.19245233804563,
+    "info_class_reported": "online-I1 + a-priori N + a-priori BL0a"
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=Sublet-MS4:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "Sublet-MS4",
+   "mode": "L-ad",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.0448405706833006,
+   "ALG": 1872.2754416302373,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 1766.1929216781077,
+   "stranding_usd": 52.23348630051065,
+   "fallback_share": 0.9799107854845733,
+   "fallback_share_after_reclaims": 0.9805449363760457,
+   "n_leases": 63,
+   "guard": {
+    "held": true,
+    "case": "W(b)",
+    "env_ok": true,
+    "env_max_excess_usd": -94.89260519011816,
+    "aborted": true,
+    "t_a": 20,
+    "s_fb_all": true,
+    "t0g_bound_all": true,
+    "project": null,
+    "robust_slots": 0,
+    "switches": 0,
+    "projected_slots": 0,
+    "projection": null,
+    "B_T": 179.19245233804563,
+    "B0_rule": "0.1*BL0a",
+    "B0_usd": 179.19245233804563,
+    "info_class_reported": "online-I1 + a-priori N + a-priori BL0a"
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=Sublet-MS4:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "Sublet-MS4",
+   "mode": "L-b999",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.0659558924010233,
+   "ALG": 1863.5243945710167,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1748.2190472004447,
+   "fallback_usd": 1677.5692781368643,
+   "stranding_usd": 2.3712768985753945,
+   "fallback_share": 0.9593113133018167,
+   "fallback_share_after_reclaims": null,
+   "n_leases": 56,
+   "guard": {
+    "held": true,
+    "case": "W(b)",
+    "env_ok": true,
+    "env_max_excess_usd": -59.419866409390465,
+    "aborted": true,
+    "t_a": 20,
+    "s_fb_all": true,
+    "t0g_bound_all": true,
+    "project": null,
+    "robust_slots": 0,
+    "switches": 0,
+    "projected_slots": 0,
+    "projection": null,
+    "B_T": 174.82190472004447,
+    "B0_rule": "0.1*BL0a",
+    "B0_usd": 174.82190472004447,
+    "info_class_reported": "online-I1 + a-priori N + a-priori BL0a"
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=Sublet-MS4:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "Sublet-MS4",
+   "mode": "L-iid-0.1",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.0532845040100403,
+   "ALG": 1887.4063328322113,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 1724.4820696354943,
+   "stranding_usd": 3.523701883325304,
+   "fallback_share": 0.9607911944820772,
+   "fallback_share_after_reclaims": 0.9570764899977728,
+   "n_leases": 58,
+   "guard": {
+    "held": true,
+    "case": "W(b)",
+    "env_ok": true,
+    "env_max_excess_usd": -83.61395194620832,
+    "aborted": true,
+    "t_a": 20,
+    "s_fb_all": true,
+    "t0g_bound_all": true,
+    "project": null,
+    "robust_slots": 0,
+    "switches": 0,
+    "projected_slots": 0,
+    "projection": null,
+    "B_T": 179.19245233804563,
+    "B0_rule": "0.1*BL0a",
+    "B0_usd": 179.19245233804563,
+    "info_class_reported": "online-I1 + a-priori N + a-priori BL0a"
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=Sublet-MS4:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "Sublet-MS4",
+   "mode": "L-iid-0.34",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.0379803095022884,
+   "ALG": 1859.9823713831865,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 1731.6073506109387,
+   "stranding_usd": 11.825860966737233,
+   "fallback_share": 0.964285314422634,
+   "fallback_share_after_reclaims": 0.9643381739144714,
+   "n_leases": 58,
+   "guard": {
+    "held": true,
+    "case": "W(b)",
+    "env_ok": true,
+    "env_max_excess_usd": -111.03791339523298,
+    "aborted": true,
+    "t_a": 20,
+    "s_fb_all": true,
+    "t0g_bound_all": true,
+    "project": null,
+    "robust_slots": 0,
+    "switches": 0,
+    "projected_slots": 0,
+    "projection": null,
+    "B_T": 179.19245233804563,
+    "B0_rule": "0.1*BL0a",
+    "B0_usd": 179.19245233804563,
+    "info_class_reported": "online-I1 + a-priori N + a-priori BL0a"
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=Sublet-MS4:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "Sublet-MS4",
+   "mode": "L-iid-0.5",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.0388251844856862,
+   "ALG": 1861.4963235851276,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 1738.3302422047284,
+   "stranding_usd": 22.47030541118168,
+   "fallback_share": 0.9656701892250844,
+   "fallback_share_after_reclaims": 0.9657691055990385,
+   "n_leases": 58,
+   "guard": {
+    "held": true,
+    "case": "W(b)",
+    "env_ok": true,
+    "env_max_excess_usd": -109.52396119329183,
+    "aborted": true,
+    "t_a": 20,
+    "s_fb_all": true,
+    "t0g_bound_all": true,
+    "project": null,
+    "robust_slots": 0,
+    "switches": 0,
+    "projected_slots": 0,
+    "projection": null,
+    "B_T": 179.19245233804563,
+    "B0_rule": "0.1*BL0a",
+    "B0_usd": 179.19245233804563,
+    "info_class_reported": "online-I1 + a-priori N + a-priori BL0a"
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=Sublet-MS4:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "Sublet-MS4",
+   "mode": "L-iid-0.8",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.0383462448029221,
+   "ALG": 1860.6380998223626,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 1758.5257377037651,
+   "stranding_usd": 41.58904185606622,
+   "fallback_share": 0.9783313921917187,
+   "fallback_share_after_reclaims": 0.9788513831144018,
+   "n_leases": 63,
+   "guard": {
+    "held": true,
+    "case": "W(b)",
+    "env_ok": true,
+    "env_max_excess_usd": -109.35977673688626,
+    "aborted": true,
+    "t_a": 20,
+    "s_fb_all": true,
+    "t0g_bound_all": true,
+    "project": null,
+    "robust_slots": 0,
+    "switches": 0,
+    "projected_slots": 0,
+    "projection": null,
+    "B_T": 179.19245233804563,
+    "B0_rule": "0.1*BL0a",
+    "B0_usd": 179.19245233804563,
+    "info_class_reported": "online-I1 + a-priori N + a-priori BL0a"
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=Sublet-MS4:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "Sublet-MS4",
+   "mode": "L-iid-1",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.0448405706833006,
+   "ALG": 1872.2754416302373,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 1766.1929216781077,
+   "stranding_usd": 52.23348630051065,
+   "fallback_share": 0.9799107854845733,
+   "fallback_share_after_reclaims": 0.9805449363760457,
+   "n_leases": 63,
+   "guard": {
+    "held": true,
+    "case": "W(b)",
+    "env_ok": true,
+    "env_max_excess_usd": -94.89260519011816,
+    "aborted": true,
+    "t_a": 20,
+    "s_fb_all": true,
+    "t0g_bound_all": true,
+    "project": null,
+    "robust_slots": 0,
+    "switches": 0,
+    "projected_slots": 0,
+    "projection": null,
+    "B_T": 179.19245233804563,
+    "B0_rule": "0.1*BL0a",
+    "B0_usd": 179.19245233804563,
+    "info_class_reported": "online-I1 + a-priori N + a-priori BL0a"
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=A9-lag:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "A9-lag",
+   "mode": "L-tr",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.8696781823091136,
+   "ALG": 1558.3976623286399,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 727.9711296130552,
+   "stranding_usd": 6.602050834170877,
+   "fallback_share": 0.3829895244915085,
+   "fallback_share_after_reclaims": 0.3787355346944231,
+   "n_leases": 320,
+   "a9": {
+    "insured": 0,
+    "marks": 22,
+    "phase_ends": 0,
+    "mark_expiries": 7,
+    "notices": 22,
+    "commit_fallbacks": 97
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=Sublet-lag:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "Sublet-lag",
+   "mode": "L-tr",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.100909506809022,
+   "ALG": 1972.7467432737699,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 1270.901242037059,
+   "stranding_usd": 46.93569298704713,
+   "fallback_share": 0.5550761408315955,
+   "fallback_share_after_reclaims": 0.5197041216852261,
+   "n_leases": 329,
+   "guard": {
+    "held": true,
+    "case": "W(a)",
+    "env_ok": true,
+    "env_max_excess_usd": -0.8011517014504079,
+    "aborted": false,
+    "t_a": null,
+    "s_fb_all": true,
+    "t0g_bound_all": true,
+    "project": true,
+    "robust_slots": 0,
+    "switches": 0,
+    "projected_slots": 5,
+    "projection": {
+     "slots": 5,
+     "P1": 5,
+     "P0": 0,
+     "K0": 0,
+     "dropped_buys": 238,
+     "dropped_other": 0,
+     "guard_releases": 0
+    },
+    "B_T": 318.6012723489015,
+    "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+    "B0_usd": null,
+    "info_class_reported": "online-I1 + a-priori N",
+    "online_lb": {
+     "LB_T": 771.0417666278704,
+     "Wk_T": 318.6012723489015,
+     "B_T": 318.6012723489015,
+     "n_groups": 3
+    }
+   },
+   "a9": {
+    "insured": 0,
+    "marks": 61,
+    "phase_ends": 0,
+    "mark_expiries": 6,
+    "notices": 61,
+    "commit_fallbacks": 99
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL1-lag:c=101",
+   "kind": "week",
+   "cell": "101",
+   "tag": "BL1-lag",
+   "mode": "L-tr",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.858386293256374,
+   "ALG": 1538.1634494197442,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1791.924523380456,
+   "fallback_usd": 609.1664184583715,
+   "stranding_usd": 22.890198624807482,
+   "fallback_share": 0.321065389222641,
+   "fallback_share_after_reclaims": 0.19300785698295558,
+   "n_leases": 445
+  },
+  {
+   "job": "e7h:second:k=e5:menu=short:tag=Sublet:c=101",
+   "kind": "e5",
+   "cell": "short:c101",
+   "tag": "Sublet",
+   "mode": "trace",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.8767065409572223,
+   "ALG": 1638.0464850239641,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1868.4091066954754,
+   "fallback_usd": 1072.2637669911603,
+   "stranding_usd": 19.245151006245138,
+   "fallback_share": 0.3658223620796807,
+   "fallback_share_after_reclaims": 0.34155181417430347,
+   "n_leases": 345,
+   "guard": {
+    "held": true,
+    "case": "W(a)",
+    "env_ok": true,
+    "env_max_excess_usd": -1.1108839829443404,
+    "aborted": false,
+    "t_a": null,
+    "s_fb_all": true,
+    "t0g_bound_all": true,
+    "project": true,
+    "robust_slots": 0,
+    "switches": 0,
+    "projected_slots": 7,
+    "projection": {
+     "slots": 7,
+     "P1": 7,
+     "P0": 0,
+     "K0": 0,
+     "dropped_buys": 273,
+     "dropped_other": 0,
+     "guard_releases": 0
+    },
+    "B_T": 330.0280094264978,
+    "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+    "B0_usd": null,
+    "info_class_reported": "online-I1 + a-priori N",
+    "online_lb": {
+     "LB_T": 804.0981805575407,
+     "Wk_T": 330.0280094264978,
+     "B_T": 330.0280094264978,
+     "n_groups": 3
+    }
+   },
+   "a9": {
+    "insured": 0,
+    "marks": 102,
+    "phase_ends": 0,
+    "mark_expiries": 12,
+    "notices": 102,
+    "commit_fallbacks": 0
+   }
+  },
+  {
+   "job": "e7h:second:k=e5:menu=short:tag=Sublet:c=101",
+   "kind": "e5",
+   "cell": "short:c101",
+   "tag": "Sublet",
+   "mode": "all1",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.9773731699837258,
+   "ALG": 1826.1329314374182,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1868.4091066954754,
+   "fallback_usd": 964.7772412552265,
+   "stranding_usd": 201.38813689656592,
+   "fallback_share": 0.326576525106385,
+   "fallback_share_after_reclaims": 0.32754756329990337,
+   "n_leases": 632,
+   "guard": {
+    "held": true,
+    "case": "W(a)",
+    "env_ok": true,
+    "env_max_excess_usd": -4.673947553043913,
+    "aborted": false,
+    "t_a": null,
+    "s_fb_all": true,
+    "t0g_bound_all": true,
+    "project": true,
+    "robust_slots": 0,
+    "switches": 0,
+    "projected_slots": 5,
+    "projection": {
+     "slots": 5,
+     "P1": 5,
+     "P0": 0,
+     "K0": 0,
+     "dropped_buys": 221,
+     "dropped_other": 0,
+     "guard_releases": 0
+    },
+    "B_T": 330.0280094264978,
+    "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+    "B0_usd": null,
+    "info_class_reported": "online-I1 + a-priori N",
+    "online_lb": {
+     "LB_T": 804.0981805575407,
+     "Wk_T": 330.0280094264978,
+     "B_T": 330.0280094264978,
+     "n_groups": 3
+    }
+   },
+   "a9": {
+    "insured": 0,
+    "marks": 519,
+    "phase_ends": 0,
+    "mark_expiries": 57,
+    "notices": 519,
+    "commit_fallbacks": 0
+   }
+  },
+  {
+   "job": "e7h:second:k=e5:menu=short:tag=A9:c=101",
+   "kind": "e5",
+   "cell": "short:c101",
+   "tag": "A9",
+   "mode": "trace",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.6688426901921719,
+   "ALG": 1249.6717733017545,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1868.4091066954754,
+   "fallback_usd": 247.04857844026765,
+   "stranding_usd": 40.356866451694295,
+   "fallback_share": 0.10487457244401643,
+   "fallback_share_after_reclaims": 0.12796174467180244,
+   "n_leases": 331,
+   "a9": {
+    "insured": 0,
+    "marks": 19,
+    "phase_ends": 0,
+    "mark_expiries": 7,
+    "notices": 19,
+    "commit_fallbacks": 0
+   }
+  },
+  {
+   "job": "e7h:second:k=e5:menu=short:tag=A9:c=101",
+   "kind": "e5",
+   "cell": "short:c101",
+   "tag": "A9",
+   "mode": "all1",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.0118734262428497,
+   "ALG": 1890.593524415293,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1868.4091066954754,
+   "fallback_usd": 489.7147353908281,
+   "stranding_usd": 392.81734674425206,
+   "fallback_share": 0.15355502170629415,
+   "fallback_share_after_reclaims": 0.1481527335597511,
+   "n_leases": 847,
+   "a9": {
+    "insured": 0,
+    "marks": 743,
+    "phase_ends": 0,
+    "mark_expiries": 79,
+    "notices": 743,
+    "commit_fallbacks": 0
+   }
+  },
+  {
+   "job": "e7h:second:k=e5:menu=short:tag=BL3-0:c=101",
+   "kind": "e5",
+   "cell": "short:c101",
+   "tag": "BL3-0",
+   "mode": "trace",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.7960375346532639,
+   "ALG": 1487.3237790175733,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1868.4091066954754,
+   "fallback_usd": 529.0774499511632,
+   "stranding_usd": 113.55884147681854,
+   "fallback_share": 0.23605883168717698,
+   "fallback_share_after_reclaims": 0.22707617069747205,
+   "n_leases": 345
+  },
+  {
+   "job": "e7h:second:k=e5:menu=short:tag=BL3-0:c=101",
+   "kind": "e5",
+   "cell": "short:c101",
+   "tag": "BL3-0",
+   "mode": "all1",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.530946666266263,
+   "ALG": 2860.4346931169644,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1868.4091066954754,
+   "fallback_usd": 998.2780027900722,
+   "stranding_usd": 1019.3357206624066,
+   "fallback_share": 0.45216124763763876,
+   "fallback_share_after_reclaims": 0.4510791843729864,
+   "n_leases": 958
+  },
+  {
+   "job": "e7h:second:k=e5:menu=short:tag=BL5:c=101",
+   "kind": "e5",
+   "cell": "short:c101",
+   "tag": "BL5",
+   "mode": "trace",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.9702511473753754,
+   "ALG": 1812.8260795378853,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1868.4091066954754,
+   "fallback_usd": 1151.601747252127,
+   "stranding_usd": 14.65537360717604,
+   "fallback_share": 0.4884722476291712,
+   "fallback_share_after_reclaims": 0.06736525171151003,
+   "n_leases": 306
+  },
+  {
+   "job": "e7h:second:k=e5:menu=short:tag=BL5:c=101",
+   "kind": "e5",
+   "cell": "short:c101",
+   "tag": "BL5",
+   "mode": "all1",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.1829522820761085,
+   "ALG": 2210.238816617196,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1868.4091066954754,
+   "fallback_usd": 1572.7972020595184,
+   "stranding_usd": 354.26517442399074,
+   "fallback_share": 0.7877965332583825,
+   "fallback_share_after_reclaims": 0.7864928846325443,
+   "n_leases": 409
+  },
+  {
+   "job": "e7h:second:k=e5:menu=short:tag=BL5-cur:c=101",
+   "kind": "e5",
+   "cell": "short:c101",
+   "tag": "BL5-cur",
+   "mode": "trace",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.8298028820859841,
+   "ALG": 1550.4112616516045,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1868.4091066954754,
+   "fallback_usd": 736.3012093568543,
+   "stranding_usd": 55.57304487612733,
+   "fallback_share": 0.25696125640176154,
+   "fallback_share_after_reclaims": 0.15282042030573528,
+   "n_leases": 321
+  },
+  {
+   "job": "e7h:second:k=e5:menu=short:tag=BL5-cur:c=101",
+   "kind": "e5",
+   "cell": "short:c101",
+   "tag": "BL5-cur",
+   "mode": "all1",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.2021843970917288,
+   "ALG": 2246.1722754533957,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1868.4091066954754,
+   "fallback_usd": 1442.8685572073734,
+   "stranding_usd": 458.80415948648164,
+   "fallback_share": 0.6835075722503818,
+   "fallback_share_after_reclaims": 0.6837089238823556,
+   "n_leases": 490
+  },
+  {
+   "job": "e7h:second:k=e5:menu=short:tag=Sublet-MS4:c=101",
+   "kind": "e5",
+   "cell": "short:c101",
+   "tag": "Sublet-MS4",
+   "mode": "trace",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.0642898827903813,
+   "ALG": 1988.5289091694087,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1868.4091066954754,
+   "fallback_usd": 1790.4453222200514,
+   "stranding_usd": 2.606852465260876,
+   "fallback_share": 0.9586994102597427,
+   "fallback_share_after_reclaims": null,
+   "n_leases": 59,
+   "guard": {
+    "held": true,
+    "case": "W(b)",
+    "env_ok": true,
+    "env_max_excess_usd": -66.6244172555322,
+    "aborted": true,
+    "t_a": 20,
+    "s_fb_all": true,
+    "t0g_bound_all": true,
+    "project": null,
+    "robust_slots": 0,
+    "switches": 0,
+    "projected_slots": 0,
+    "projection": null,
+    "B_T": 186.84091066954755,
+    "B0_rule": "0.1*BL0a",
+    "B0_usd": 186.84091066954755,
+    "info_class_reported": "online-I1 + a-priori N + a-priori BL0a"
+   }
+  },
+  {
+   "job": "e7h:second:k=e5:menu=short:tag=Sublet-MS4:c=101",
+   "kind": "e5",
+   "cell": "short:c101",
+   "tag": "Sublet-MS4",
+   "mode": "all1",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.0452074946856469,
+   "ALG": 1952.8752014570252,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1868.4091066954754,
+   "fallback_usd": 1833.2367148444537,
+   "stranding_usd": 48.04675573944908,
+   "fallback_share": 0.9779288754431456,
+   "fallback_share_after_reclaims": 0.9788600474768596,
+   "n_leases": 65,
+   "guard": {
+    "held": true,
+    "case": "W(b)",
+    "env_ok": true,
+    "env_max_excess_usd": -102.2781249679158,
+    "aborted": true,
+    "t_a": 20,
+    "s_fb_all": true,
+    "t0g_bound_all": true,
+    "project": null,
+    "robust_slots": 0,
+    "switches": 0,
+    "projected_slots": 0,
+    "projection": null,
+    "B_T": 186.84091066954755,
+    "B0_rule": "0.1*BL0a",
+    "B0_usd": 186.84091066954755,
+    "info_class_reported": "online-I1 + a-priori N + a-priori BL0a"
+   }
+  },
+  {
+   "job": "e7h:second:k=e5:menu=long:tag=Sublet:c=101",
+   "kind": "e5",
+   "cell": "long:c101",
+   "tag": "Sublet",
+   "mode": "trace",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.3679287567355443,
+   "ALG": 2555.8505463953106,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1868.4091066954754,
+   "fallback_usd": 1561.5556450322638,
+   "stranding_usd": 2.1228539089871803,
+   "fallback_share": 0.6680428002024105,
+   "fallback_share_after_reclaims": 0.6765034754275981,
+   "n_leases": 173,
+   "guard": {
+    "held": true,
+    "case": "W(a)",
+    "env_ok": true,
+    "env_max_excess_usd": -0.9331411401036149,
+    "aborted": false,
+    "t_a": null,
+    "s_fb_all": true,
+    "t0g_bound_all": true,
+    "project": true,
+    "robust_slots": 0,
+    "switches": 0,
+    "projected_slots": 14,
+    "projection": {
+     "slots": 14,
+     "P1": 12,
+     "P0": 2,
+     "K0": 0,
+     "dropped_buys": 652,
+     "dropped_other": 0,
+     "guard_releases": 0
+    },
+    "B_T": 806.9929018235999,
+    "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+    "B0_usd": null,
+    "info_class_reported": "online-I1 + a-priori N",
+    "online_lb": {
+     "LB_T": 806.9929018235999,
+     "Wk_T": 2302.093156572092,
+     "B_T": 806.9929018235999,
+     "n_groups": 3
+    }
+   },
+   "a9": {
+    "insured": 0,
+    "marks": 2,
+    "phase_ends": 0,
+    "mark_expiries": 0,
+    "notices": 2,
+    "commit_fallbacks": 0
+   }
+  },
+  {
+   "job": "e7h:second:k=e5:menu=long:tag=Sublet:c=101",
+   "kind": "e5",
+   "cell": "long:c101",
+   "tag": "Sublet",
+   "mode": "all1",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.3679373358933418,
+   "ALG": 2555.8665757718672,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1868.4091066954754,
+   "fallback_usd": 1561.5556450322638,
+   "stranding_usd": 2.1228539089871803,
+   "fallback_share": 0.6680428002024105,
+   "fallback_share_after_reclaims": 0.2208488022801344,
+   "n_leases": 173,
+   "guard": {
+    "held": true,
+    "case": "W(a)",
+    "env_ok": true,
+    "env_max_excess_usd": -0.9331411401036149,
+    "aborted": false,
+    "t_a": null,
+    "s_fb_all": true,
+    "t0g_bound_all": true,
+    "project": true,
+    "robust_slots": 0,
+    "switches": 0,
+    "projected_slots": 14,
+    "projection": {
+     "slots": 14,
+     "P1": 12,
+     "P0": 2,
+     "K0": 0,
+     "dropped_buys": 652,
+     "dropped_other": 0,
+     "guard_releases": 0
+    },
+    "B_T": 806.9929018235999,
+    "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+    "B0_usd": null,
+    "info_class_reported": "online-I1 + a-priori N",
+    "online_lb": {
+     "LB_T": 806.9929018235999,
+     "Wk_T": 2302.093156572092,
+     "B_T": 806.9929018235999,
+     "n_groups": 3
+    }
+   },
+   "a9": {
+    "insured": 0,
+    "marks": 90,
+    "phase_ends": 0,
+    "mark_expiries": 1,
+    "notices": 90,
+    "commit_fallbacks": 0
+   }
+  },
+  {
+   "job": "e7h:second:k=e5:menu=long:tag=A9:c=101",
+   "kind": "e5",
+   "cell": "long:c101",
+   "tag": "A9",
+   "mode": "trace",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.7112101011675265,
+   "ALG": 3197.240536490692,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1868.4091066954754,
+   "fallback_usd": 137.10743547510026,
+   "stranding_usd": 3.1591875649461123,
+   "fallback_share": 0.06602722907288656,
+   "fallback_share_after_reclaims": 1.1886772857741666e-18,
+   "n_leases": 314,
+   "a9": {
+    "insured": 0,
+    "marks": 19,
+    "phase_ends": 0,
+    "mark_expiries": 12,
+    "notices": 19,
+    "commit_fallbacks": 0
+   }
+  },
+  {
+   "job": "e7h:second:k=e5:menu=long:tag=A9:c=101",
+   "kind": "e5",
+   "cell": "long:c101",
+   "tag": "A9",
+   "mode": "all1",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.709169149151361,
+   "ALG": 3193.42720315736,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1868.4091066954754,
+   "fallback_usd": 133.29410214176693,
+   "stranding_usd": 3.1591875649461203,
+   "fallback_share": 0.06527386151821692,
+   "fallback_share_after_reclaims": 0.0419269992759275,
+   "n_leases": 314,
+   "a9": {
+    "insured": 0,
+    "marks": 218,
+    "phase_ends": 0,
+    "mark_expiries": 64,
+    "notices": 218,
+    "commit_fallbacks": 0
+   }
+  },
+  {
+   "job": "e7h:second:k=e5:menu=long:tag=BL3-0:c=101",
+   "kind": "e5",
+   "cell": "long:c101",
+   "tag": "BL3-0",
+   "mode": "trace",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.8605741236236606,
+   "ALG": 3476.313636260401,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1868.4091066954754,
+   "fallback_usd": 226.2301251590029,
+   "stranding_usd": 6.116681641012743,
+   "fallback_share": 0.11825489449346704,
+   "fallback_share_after_reclaims": 0.10241982662896976,
+   "n_leases": 331
+  },
+  {
+   "job": "e7h:second:k=e5:menu=long:tag=BL3-0:c=101",
+   "kind": "e5",
+   "cell": "long:c101",
+   "tag": "BL3-0",
+   "mode": "all1",
+   "seed": 0,
+   "status": "ok",
+   "r0": 2.634523170699258,
+   "ALG": 4922.367083934732,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1868.4091066954754,
+   "fallback_usd": 110.2364752970499,
+   "stranding_usd": 3.2960504568764106,
+   "fallback_share": 0.06421184861851886,
+   "fallback_share_after_reclaims": 0.05732718030156592,
+   "n_leases": 618
+  },
+  {
+   "job": "e7h:second:k=e5:menu=long:tag=BL5:c=101",
+   "kind": "e5",
+   "cell": "long:c101",
+   "tag": "BL5",
+   "mode": "trace",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.9486925537655757,
+   "ALG": 3640.954913605264,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1868.4091066954754,
+   "fallback_usd": 879.2332615401358,
+   "stranding_usd": 6.401999002461219,
+   "fallback_share": 0.37924731124373895,
+   "fallback_share_after_reclaims": 0.0,
+   "n_leases": 298
+  },
+  {
+   "job": "e7h:second:k=e5:menu=long:tag=BL5:c=101",
+   "kind": "e5",
+   "cell": "long:c101",
+   "tag": "BL5",
+   "mode": "all1",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.9486925537655757,
+   "ALG": 3640.954913605264,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1868.4091066954754,
+   "fallback_usd": 879.2332615401358,
+   "stranding_usd": 6.401999002461219,
+   "fallback_share": 0.37924731124373895,
+   "fallback_share_after_reclaims": 0.35083257090392983,
+   "n_leases": 298
+  },
+  {
+   "job": "e7h:second:k=e5:menu=long:tag=BL5-cur:c=101",
+   "kind": "e5",
+   "cell": "long:c101",
+   "tag": "BL5-cur",
+   "mode": "trace",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.7530308635238632,
+   "ALG": 3275.378829726219,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1868.4091066954754,
+   "fallback_usd": 494.3552240814183,
+   "stranding_usd": 15.868782395240938,
+   "fallback_share": 0.14975062405942646,
+   "fallback_share_after_reclaims": 0.013959657165135439,
+   "n_leases": 298
+  },
+  {
+   "job": "e7h:second:k=e5:menu=long:tag=BL5-cur:c=101",
+   "kind": "e5",
+   "cell": "long:c101",
+   "tag": "BL5-cur",
+   "mode": "all1",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.7530308635238632,
+   "ALG": 3275.378829726219,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1868.4091066954754,
+   "fallback_usd": 494.3552240814183,
+   "stranding_usd": 15.868782395240938,
+   "fallback_share": 0.14975062405942646,
+   "fallback_share_after_reclaims": 0.11852484724158649,
+   "n_leases": 298
+  },
+  {
+   "job": "e7h:second:k=e5:menu=long:tag=Sublet-MS4:c=101",
+   "kind": "e5",
+   "cell": "long:c101",
+   "tag": "Sublet-MS4",
+   "mode": "trace",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.0560196333669123,
+   "ALG": 1973.076699831956,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1868.4091066954754,
+   "fallback_usd": 1821.6011617061113,
+   "stranding_usd": 0.09803138693282318,
+   "fallback_share": 0.9552031191501638,
+   "fallback_share_after_reclaims": null,
+   "n_leases": 20,
+   "guard": {
+    "held": true,
+    "case": "W(b)",
+    "env_ok": true,
+    "env_max_excess_usd": -54.736829874409125,
+    "aborted": true,
+    "t_a": 9,
+    "s_fb_all": true,
+    "t0g_bound_all": true,
+    "project": null,
+    "robust_slots": 0,
+    "switches": 0,
+    "projected_slots": 0,
+    "projection": null,
+    "B_T": 186.84091066954755,
+    "B0_rule": "0.1*BL0a",
+    "B0_usd": 186.84091066954755,
+    "info_class_reported": "online-I1 + a-priori N + a-priori BL0a"
+   }
+  },
+  {
+   "job": "e7h:second:k=e5:menu=long:tag=Sublet-MS4:c=101",
+   "kind": "e5",
+   "cell": "long:c101",
+   "tag": "Sublet-MS4",
+   "mode": "all1",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.0560196333669123,
+   "ALG": 1973.076699831956,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1868.4091066954754,
+   "fallback_usd": 1821.6011617061113,
+   "stranding_usd": 0.09803138693282318,
+   "fallback_share": 0.9552031191501638,
+   "fallback_share_after_reclaims": 1.0,
+   "n_leases": 20,
+   "guard": {
+    "held": true,
+    "case": "W(b)",
+    "env_ok": true,
+    "env_max_excess_usd": -54.736829874409125,
+    "aborted": true,
+    "t_a": 9,
+    "s_fb_all": true,
+    "t0g_bound_all": true,
+    "project": null,
+    "robust_slots": 0,
+    "switches": 0,
+    "projected_slots": 0,
+    "projection": null,
+    "B_T": 186.84091066954755,
+    "B0_rule": "0.1*BL0a",
+    "B0_usd": 186.84091066954755,
+    "info_class_reported": "online-I1 + a-priori N + a-priori BL0a"
+   }
+  },
+  {
+   "job": "e7h:second:k=gap:tag=Sublet:c=101",
+   "kind": "gap",
+   "cell": "gap:c101",
+   "tag": "Sublet",
+   "mode": "L-tr",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.6337717886186743,
+   "ALG": 841.911147975895,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1328.4137336104325,
+   "fallback_usd": 235.53199498871385,
+   "stranding_usd": 0.9524435690811627,
+   "fallback_share": 0.17787088628359018,
+   "fallback_share_after_reclaims": 0.07711677919842953,
+   "n_leases": 136,
+   "ratio_validity": null,
+   "guard": {
+    "held": true,
+    "case": "W(a)",
+    "env_ok": true,
+    "env_max_excess_usd": -14.443818289523165,
+    "aborted": false,
+    "t_a": null,
+    "s_fb_all": true,
+    "t0g_bound_all": true,
+    "project": true,
+    "robust_slots": 0,
+    "switches": 0,
+    "projected_slots": 1,
+    "projection": {
+     "slots": 1,
+     "P1": 1,
+     "P0": 0,
+     "K0": 0,
+     "dropped_buys": 27,
+     "dropped_other": 0,
+     "guard_releases": 0
+    },
+    "B_T": 147.68828818829036,
+    "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+    "B0_usd": null,
+    "info_class_reported": "online-I1 + a-priori N",
+    "online_lb": {
+     "LB_T": 565.5643213244921,
+     "Wk_T": 147.68828818829036,
+     "B_T": 147.68828818829036,
+     "n_groups": 3
+    }
+   },
+   "a9": {
+    "insured": 0,
+    "marks": 6,
+    "phase_ends": 0,
+    "mark_expiries": 6,
+    "notices": 6,
+    "commit_fallbacks": 44
+   }
+  },
+  {
+   "job": "e7h:second:k=gap:tag=A9:c=101",
+   "kind": "gap",
+   "cell": "gap:c101",
+   "tag": "A9",
+   "mode": "L-tr",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.6206305167744429,
+   "ALG": 824.4541019809099,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1328.4137336104325,
+   "fallback_usd": 186.94920885902567,
+   "stranding_usd": 0.9524435690811627,
+   "fallback_share": 0.14868940181269996,
+   "fallback_share_after_reclaims": 0.04004529993954032,
+   "n_leases": 144,
+   "ratio_validity": null,
+   "a9": {
+    "insured": 0,
+    "marks": 12,
+    "phase_ends": 0,
+    "mark_expiries": 12,
+    "notices": 12,
+    "commit_fallbacks": 41
+   }
+  },
+  {
+   "job": "e7h:second:k=gap:tag=BL1:c=101",
+   "kind": "gap",
+   "cell": "gap:c101",
+   "tag": "BL1",
+   "mode": "L-tr",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.5747114059337902,
+   "ALG": 763.4545245050072,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1328.4137336104325,
+   "fallback_usd": 174.8012672282149,
+   "stranding_usd": 0.2410050674224324,
+   "fallback_share": 0.15880733346891493,
+   "fallback_share_after_reclaims": 0.09883567425399249,
+   "n_leases": 155,
+   "ratio_validity": null
+  },
+  {
+   "job": "e7h:second:k=gap:tag=BL1-BO:c=101",
+   "kind": "gap",
+   "cell": "gap:c101",
+   "tag": "BL1-BO",
+   "mode": "L-tr",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.5711935154360273,
+   "ALG": 758.7813104544412,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1328.4137336104325,
+   "fallback_usd": 170.03460056154825,
+   "stranding_usd": 0.2410050674224324,
+   "fallback_share": 0.14919379972060365,
+   "fallback_share_after_reclaims": 0.0725778286067911,
+   "n_leases": 147,
+   "ratio_validity": null
+  },
+  {
+   "job": "e7h:second:k=gap:tag=BL3-0:c=101",
+   "kind": "gap",
+   "cell": "gap:c101",
+   "tag": "BL3-0",
+   "mode": "L-tr",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.6149005846327598,
+   "ALG": 816.8423814312421,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1328.4137336104325,
+   "fallback_usd": 208.4414885121748,
+   "stranding_usd": 2.8030468187848854,
+   "fallback_share": 0.18058291099054313,
+   "fallback_share_after_reclaims": 0.1256371719466682,
+   "n_leases": 143,
+   "ratio_validity": null
+  },
+  {
+   "job": "e7h:second:k=gap:tag=BL4:c=101",
+   "kind": "gap",
+   "cell": "gap:c101",
+   "tag": "BL4",
+   "mode": "L-tr",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.7188909232536077,
+   "ALG": 954.9845754179759,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1328.4137336104325,
+   "fallback_usd": 393.4609278787841,
+   "stranding_usd": 13.702987214473122,
+   "fallback_share": 0.31881313240762654,
+   "fallback_share_after_reclaims": 0.03066728905930312,
+   "n_leases": 52,
+   "ratio_validity": null
+  },
+  {
+   "job": "e7h:second:k=gap:tag=BL5-cur:c=101",
+   "kind": "gap",
+   "cell": "gap:c101",
+   "tag": "BL5-cur",
+   "mode": "L-tr",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.6570039329957582,
+   "ALG": 872.7730476276336,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1328.4137336104325,
+   "fallback_usd": 316.89875906563486,
+   "stranding_usd": 1.7933047421909187,
+   "fallback_share": 0.21807757029219157,
+   "fallback_share_after_reclaims": 0.1758678068507673,
+   "n_leases": 140,
+   "ratio_validity": null
+  },
+  {
+   "job": "e7h:second:k=gap:tag=BL5-tau60:c=101",
+   "kind": "gap",
+   "cell": "gap:c101",
+   "tag": "BL5-tau60",
+   "mode": "L-tr",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.9324605298525999,
+   "ALG": 1238.6933739058543,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1328.4137336104325,
+   "fallback_usd": 296.73363580468566,
+   "stranding_usd": 1.7933047421909187,
+   "fallback_share": 0.17740804029051488,
+   "fallback_share_after_reclaims": null,
+   "n_leases": 121,
+   "ratio_validity": null
+  },
+  {
+   "job": "e7h:second:k=gap:tag=BL1N:c=101",
+   "kind": "gap",
+   "cell": "gap:c101",
+   "tag": "BL1N",
+   "mode": "L-tr",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.5959249319654643,
+   "ALG": 791.6348638237853,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1328.4137336104325,
+   "fallback_usd": 160.00521180384933,
+   "stranding_usd": 0.008866429140501092,
+   "fallback_share": 0.1373781171425986,
+   "fallback_share_after_reclaims": 0.03277191420197591,
+   "n_leases": 148,
+   "ratio_validity": null,
+   "a9": {
+    "insured": 0,
+    "marks": 12,
+    "phase_ends": 0,
+    "mark_expiries": 12,
+    "notices": 12,
+    "commit_fallbacks": 41
+   }
+  },
+  {
+   "job": "e7h:second:k=gap:tag=BL5N:c=101",
+   "kind": "gap",
+   "cell": "gap:c101",
+   "tag": "BL5N",
+   "mode": "L-tr",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.8470500951891023,
+   "ALG": 1125.2329795052276,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1328.4137336104325,
+   "fallback_usd": 310.9404257323015,
+   "stranding_usd": 1.7933047421909187,
+   "fallback_share": 0.20606065310680244,
+   "fallback_share_after_reclaims": 0.12945999620310283,
+   "n_leases": 140,
+   "ratio_validity": null
+  },
+  {
+   "job": "e7h:second:k=gap:tag=BL1-GP:c=101",
+   "kind": "gap",
+   "cell": "gap:c101",
+   "tag": "BL1-GP",
+   "mode": "L-tr",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.5976753686584683,
+   "ALG": 793.9601679665875,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1328.4137336104325,
+   "fallback_usd": 223.3840533579031,
+   "stranding_usd": 0.2410050674224324,
+   "fallback_share": 0.1879888179398052,
+   "fallback_share_after_reclaims": 0.08095811940694793,
+   "n_leases": 154,
+   "ratio_validity": null,
+   "guard": {
+    "held": true,
+    "case": "W(a)",
+    "env_ok": true,
+    "env_max_excess_usd": -13.286281017373312,
+    "aborted": false,
+    "t_a": null,
+    "s_fb_all": true,
+    "t0g_bound_all": true,
+    "project": true,
+    "robust_slots": 0,
+    "switches": 0,
+    "projected_slots": 1,
+    "projection": {
+     "slots": 1,
+     "P1": 1,
+     "P0": 0,
+     "K0": 0,
+     "dropped_buys": 27,
+     "dropped_other": 0,
+     "guard_releases": 0
+    },
+    "B_T": 147.68828818829036,
+    "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+    "B0_usd": null,
+    "info_class_reported": "online-I1 + a-priori N",
+    "online_lb": {
+     "LB_T": 565.5643213244921,
+     "Wk_T": 147.68828818829036,
+     "B_T": 147.68828818829036,
+     "n_groups": 3
+    }
+   }
+  },
+  {
+   "job": "e7h:second:k=gap:tag=Sublet-MS4:c=101",
+   "kind": "gap",
+   "cell": "gap:c101",
+   "tag": "Sublet-MS4",
+   "mode": "L-tr",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.7545020515919685,
+   "ALG": 1002.290887372018,
+   "n_invariant_failures": 0,
+   "c": 101,
+   "bl0a_usd": 1328.4137336104325,
+   "fallback_usd": 486.972987142168,
+   "stranding_usd": 4.781358003810061,
+   "fallback_share": 0.36761520318751306,
+   "fallback_share_after_reclaims": 0.3016891253573054,
+   "n_leases": 140,
+   "ratio_validity": null,
+   "guard": {
+    "held": true,
+    "case": "W(a)",
+    "env_ok": true,
+    "env_max_excess_usd": -87.1100366825454,
+    "aborted": false,
+    "t_a": null,
+    "s_fb_all": true,
+    "t0g_bound_all": true,
+    "project": null,
+    "robust_slots": 0,
+    "switches": 0,
+    "projected_slots": 0,
+    "projection": null,
+    "B_T": 132.84137336104325,
+    "B0_rule": "0.1*BL0a",
+    "B0_usd": 132.84137336104325,
+    "info_class_reported": "online-I1 + a-priori N + a-priori BL0a"
+   }
+  }
+ ],
+ "table": {
+  "Sublet": {
+   "L-vr": {
+    "101": {
+     "0": 0.9628922431831444
+    }
+   },
+   "L-rf": {
+    "101": {
+     "0": 0.9344476401369288
+    }
+   },
+   "L-ad": {
+    "101": {
+     "0": 1.0246634486851858
+    }
+   },
+   "L-b999": {
+    "101": {
+     "0": 0.9356641708657143
+    }
+   },
+   "L-iid-0.1": {
+    "101": {
+     "0": 0.9425092533713733
+    }
+   },
+   "L-iid-0.34": {
+    "101": {
+     "0": 1.0168971053960412
+    }
+   },
+   "L-iid-0.5": {
+    "101": {
+     "0": 1.0418712241850754
+    }
+   },
+   "L-iid-0.8": {
+    "101": {
+     "0": 1.0543674013140611
+    }
+   },
+   "L-iid-1": {
+    "101": {
+     "0": 1.0246634486851858
+    }
+   },
+   "trace": {
+    "short:c101": {
+     "0": 0.8767065409572223
+    },
+    "long:c101": {
+     "0": 1.3679287567355443
+    }
+   },
+   "all1": {
+    "short:c101": {
+     "0": 0.9773731699837258
+    },
+    "long:c101": {
+     "0": 1.3679373358933418
+    }
+   },
+   "L-tr": {
+    "gap:c101": {
+     "0": 0.6337717886186743
+    }
+   }
+  },
+  "A9": {
+   "L-vr": {
+    "101": {
+     "0": 0.6851858680161168
+    }
+   },
+   "L-rf": {
+    "101": {
+     "0": 0.6821373486674636
+    }
+   },
+   "L-ad": {
+    "101": {
+     "0": 1.0303346736136634
+    }
+   },
+   "L-b999": {
+    "101": {
+     "0": 0.6862643863430171
+    }
+   },
+   "L-iid-0.1": {
+    "101": {
+     "0": 0.6770252735339296
+    }
+   },
+   "L-iid-0.34": {
+    "101": {
+     "0": 0.7719570527712227
+    }
+   },
+   "L-iid-0.5": {
+    "101": {
+     "0": 0.8203571560359195
+    }
+   },
+   "L-iid-0.8": {
+    "101": {
+     "0": 0.9602211950000987
+    }
+   },
+   "L-iid-1": {
+    "101": {
+     "0": 1.0303346736136634
+    }
+   },
+   "trace": {
+    "short:c101": {
+     "0": 0.6688426901921719
+    },
+    "long:c101": {
+     "0": 1.7112101011675265
+    }
+   },
+   "all1": {
+    "short:c101": {
+     "0": 1.0118734262428497
+    },
+    "long:c101": {
+     "0": 1.709169149151361
+    }
+   },
+   "L-tr": {
+    "gap:c101": {
+     "0": 0.6206305167744429
+    }
+   }
+  },
+  "BL1": {
+   "L-vr": {
+    "101": {
+     "0": 0.6638351134177733
+    }
+   },
+   "L-rf": {
+    "101": {
+     "0": 0.6380749275111499
+    }
+   },
+   "L-ad": {
+    "101": {
+     "0": 1.9456081095151643
+    }
+   },
+   "L-b999": {
+    "101": {
+     "0": 0.6752769383586191
+    }
+   },
+   "L-iid-0.1": {
+    "101": {
+     "0": 0.6697881580136565
+    }
+   },
+   "L-iid-0.34": {
+    "101": {
+     "0": 1.0071008658219973
+    }
+   },
+   "L-iid-0.5": {
+    "101": {
+     "0": 1.2062793075456633
+    }
+   },
+   "L-iid-0.8": {
+    "101": {
+     "0": 1.6454883312780089
+    }
+   },
+   "L-iid-1": {
+    "101": {
+     "0": 1.9456081095151643
+    }
+   },
+   "L-tr": {
+    "gap:c101": {
+     "0": 0.5747114059337902
+    }
+   }
+  },
+  "BL1-BO": {
+   "L-vr": {
+    "101": {
+     "0": 0.6511795022043789
+    }
+   },
+   "L-rf": {
+    "101": {
+     "0": 0.6359547640654731
+    }
+   },
+   "L-ad": {
+    "101": {
+     "0": 1.6352307081061959
+    }
+   },
+   "L-b999": {
+    "101": {
+     "0": 0.6486289629569776
+    }
+   },
+   "L-iid-0.1": {
+    "101": {
+     "0": 0.6695233835069015
+    }
+   },
+   "L-iid-0.34": {
+    "101": {
+     "0": 1.0541414864065093
+    }
+   },
+   "L-iid-0.5": {
+    "101": {
+     "0": 1.2211434585790069
+    }
+   },
+   "L-iid-0.8": {
+    "101": {
+     "0": 1.4175769905140023
+    }
+   },
+   "L-iid-1": {
+    "101": {
+     "0": 1.6352307081061959
+    }
+   },
+   "L-tr": {
+    "gap:c101": {
+     "0": 0.5711935154360273
+    }
+   }
+  },
+  "BL3-0": {
+   "L-vr": {
+    "101": {
+     "0": 0.7810346939112378
+    }
+   },
+   "L-rf": {
+    "101": {
+     "0": 0.7658704626850803
+    }
+   },
+   "L-ad": {
+    "101": {
+     "0": 1.7516817693646891
+    }
+   },
+   "L-b999": {
+    "101": {
+     "0": 0.7925429095719695
+    }
+   },
+   "L-iid-0.1": {
+    "101": {
+     "0": 0.7885785284020559
+    }
+   },
+   "L-iid-0.34": {
+    "101": {
+     "0": 1.0359333956184507
+    }
+   },
+   "L-iid-0.5": {
+    "101": {
+     "0": 1.1977390799647951
+    }
+   },
+   "L-iid-0.8": {
+    "101": {
+     "0": 1.4807275584651756
+    }
+   },
+   "L-iid-1": {
+    "101": {
+     "0": 1.7516817693646891
+    }
+   },
+   "trace": {
+    "short:c101": {
+     "0": 0.7960375346532639
+    },
+    "long:c101": {
+     "0": 1.8605741236236606
+    }
+   },
+   "all1": {
+    "short:c101": {
+     "0": 1.530946666266263
+    },
+    "long:c101": {
+     "0": 2.634523170699258
+    }
+   },
+   "L-tr": {
+    "gap:c101": {
+     "0": 0.6149005846327598
+    }
+   }
+  },
+  "BL4": {
+   "L-vr": {
+    "101": {
+     "0": 0.9941277774503176
+    }
+   },
+   "L-rf": {
+    "101": {
+     "0": 0.9941277774503176
+    }
+   },
+   "L-ad": {
+    "101": {
+     "0": 1.003622490659715
+    }
+   },
+   "L-b999": {
+    "101": {
+     "0": 1.0106662491263403
+    }
+   },
+   "L-iid-0.1": {
+    "101": {
+     "0": 1.0236366058325324
+    }
+   },
+   "L-iid-0.34": {
+    "101": {
+     "0": 1.0113434251502778
+    }
+   },
+   "L-iid-0.5": {
+    "101": {
+     "0": 1.0094820302081944
+    }
+   },
+   "L-iid-0.8": {
+    "101": {
+     "0": 1.003622490659715
+    }
+   },
+   "L-iid-1": {
+    "101": {
+     "0": 1.003622490659715
+    }
+   },
+   "L-tr": {
+    "gap:c101": {
+     "0": 0.7188909232536077
+    }
+   }
+  },
+  "BL5-cur": {
+   "L-vr": {
+    "101": {
+     "0": 0.8322013113669223
+    }
+   },
+   "L-rf": {
+    "101": {
+     "0": 0.8405343693333607
+    }
+   },
+   "L-ad": {
+    "101": {
+     "0": 1.265240979290852
+    }
+   },
+   "L-b999": {
+    "101": {
+     "0": 0.8473484112485651
+    }
+   },
+   "L-iid-0.1": {
+    "101": {
+     "0": 0.808047805263875
+    }
+   },
+   "L-iid-0.34": {
+    "101": {
+     "0": 0.987808561814794
+    }
+   },
+   "L-iid-0.5": {
+    "101": {
+     "0": 1.0853038866604867
+    }
+   },
+   "L-iid-0.8": {
+    "101": {
+     "0": 1.211333549296128
+    }
+   },
+   "L-iid-1": {
+    "101": {
+     "0": 1.265240979290852
+    }
+   },
+   "trace": {
+    "short:c101": {
+     "0": 0.8298028820859841
+    },
+    "long:c101": {
+     "0": 1.7530308635238632
+    }
+   },
+   "all1": {
+    "short:c101": {
+     "0": 1.2021843970917288
+    },
+    "long:c101": {
+     "0": 1.7530308635238632
+    }
+   },
+   "L-tr": {
+    "gap:c101": {
+     "0": 0.6570039329957582
+    }
+   }
+  },
+  "BL5-tau60": {
+   "L-vr": {
+    "101": {
+     "0": 1.7174610301758495
+    }
+   },
+   "L-rf": {
+    "101": {
+     "0": 1.6438079079910362
+    }
+   },
+   "L-ad": {
+    "101": {
+     "0": 1.7154305435633588
+    }
+   },
+   "L-b999": {
+    "101": {
+     "0": 1.7263357823818042
+    }
+   },
+   "L-iid-0.1": {
+    "101": {
+     "0": 1.7179132625102798
+    }
+   },
+   "L-iid-0.34": {
+    "101": {
+     "0": 1.7179132625102798
+    }
+   },
+   "L-iid-0.5": {
+    "101": {
+     "0": 1.7174610301758495
+    }
+   },
+   "L-iid-0.8": {
+    "101": {
+     "0": 1.7165786653525579
+    }
+   },
+   "L-iid-1": {
+    "101": {
+     "0": 1.7154305435633588
+    }
+   },
+   "L-tr": {
+    "gap:c101": {
+     "0": 0.9324605298525999
+    }
+   }
+  },
+  "BL1N": {
+   "L-vr": {
+    "101": {
+     "0": 0.6611243552812026
+    }
+   },
+   "L-rf": {
+    "101": {
+     "0": 0.6627145393938044
+    }
+   },
+   "L-ad": {
+    "101": {
+     "0": 1.0809665708207665
+    }
+   },
+   "L-b999": {
+    "101": {
+     "0": 0.668301872366076
+    }
+   },
+   "L-iid-0.1": {
+    "101": {
+     "0": 0.6803906254627776
+    }
+   },
+   "L-iid-0.34": {
+    "101": {
+     "0": 0.812522761541652
+    }
+   },
+   "L-iid-0.5": {
+    "101": {
+     "0": 0.8578736003345772
+    }
+   },
+   "L-iid-0.8": {
+    "101": {
+     "0": 0.9817272724882201
+    }
+   },
+   "L-iid-1": {
+    "101": {
+     "0": 1.0809665708207665
+    }
+   },
+   "L-tr": {
+    "gap:c101": {
+     "0": 0.5959249319654643
+    }
+   }
+  },
+  "BL5N": {
+   "L-vr": {
+    "101": {
+     "0": 0.8539644980178834
+    }
+   },
+   "L-rf": {
+    "101": {
+     "0": 0.8501073171368535
+    }
+   },
+   "L-ad": {
+    "101": {
+     "0": 1.1395405908116896
+    }
+   },
+   "L-b999": {
+    "101": {
+     "0": 0.8590147485648733
+    }
+   },
+   "L-iid-0.1": {
+    "101": {
+     "0": 0.8650687630747492
+    }
+   },
+   "L-iid-0.34": {
+    "101": {
+     "0": 0.9720258197365951
+    }
+   },
+   "L-iid-0.5": {
+    "101": {
+     "0": 1.024041068857516
+    }
+   },
+   "L-iid-0.8": {
+    "101": {
+     "0": 1.1052881687870117
+    }
+   },
+   "L-iid-1": {
+    "101": {
+     "0": 1.1395405908116896
+    }
+   },
+   "L-tr": {
+    "gap:c101": {
+     "0": 0.8470500951891023
+    }
+   }
+  },
+  "BL1-GP": {
+   "L-vr": {
+    "101": {
+     "0": 1.0393309492479443
+    }
+   },
+   "L-rf": {
+    "101": {
+     "0": 0.900817521829555
+    }
+   },
+   "L-ad": {
+    "101": {
+     "0": 1.1428208595957485
+    }
+   },
+   "L-b999": {
+    "101": {
+     "0": 1.0396991364532338
+    }
+   },
+   "L-iid-0.1": {
+    "101": {
+     "0": 1.0587456546086151
+    }
+   },
+   "L-iid-0.34": {
+    "101": {
+     "0": 0.9848433813343495
+    }
+   },
+   "L-iid-0.5": {
+    "101": {
+     "0": 1.0309744503148737
+    }
+   },
+   "L-iid-0.8": {
+    "101": {
+     "0": 1.1136710216307095
+    }
+   },
+   "L-iid-1": {
+    "101": {
+     "0": 1.1428208595957485
+    }
+   },
+   "L-tr": {
+    "gap:c101": {
+     "0": 0.5976753686584683
+    }
+   }
+  },
+  "Sublet-MS4": {
+   "L-vr": {
+    "101": {
+     "0": 1.0670480419439334
+    }
+   },
+   "L-rf": {
+    "101": {
+     "0": 1.066505864000303
+    }
+   },
+   "L-ad": {
+    "101": {
+     "0": 1.0448405706833006
+    }
+   },
+   "L-b999": {
+    "101": {
+     "0": 1.0659558924010233
+    }
+   },
+   "L-iid-0.1": {
+    "101": {
+     "0": 1.0532845040100403
+    }
+   },
+   "L-iid-0.34": {
+    "101": {
+     "0": 1.0379803095022884
+    }
+   },
+   "L-iid-0.5": {
+    "101": {
+     "0": 1.0388251844856862
+    }
+   },
+   "L-iid-0.8": {
+    "101": {
+     "0": 1.0383462448029221
+    }
+   },
+   "L-iid-1": {
+    "101": {
+     "0": 1.0448405706833006
+    }
+   },
+   "trace": {
+    "short:c101": {
+     "0": 1.0642898827903813
+    },
+    "long:c101": {
+     "0": 1.0560196333669123
+    }
+   },
+   "all1": {
+    "short:c101": {
+     "0": 1.0452074946856469
+    },
+    "long:c101": {
+     "0": 1.0560196333669123
+    }
+   },
+   "L-tr": {
+    "gap:c101": {
+     "0": 0.7545020515919685
+    }
+   }
+  },
+  "A9-lag": {
+   "L-tr": {
+    "101": {
+     "0": 0.8696781823091136
+    }
+   }
+  },
+  "Sublet-lag": {
+   "L-tr": {
+    "101": {
+     "0": 1.100909506809022
+    }
+   }
+  },
+  "BL1-lag": {
+   "L-tr": {
+    "101": {
+     "0": 0.858386293256374
+    }
+   }
+  },
+  "BL5": {
+   "trace": {
+    "short:c101": {
+     "0": 0.9702511473753754
+    },
+    "long:c101": {
+     "0": 1.9486925537655757
+    }
+   },
+   "all1": {
+    "short:c101": {
+     "0": 1.1829522820761085
+    },
+    "long:c101": {
+     "0": 1.9486925537655757
+    }
+   }
+  }
+ },
+ "missing": [],
+ "guarded": [
+  {
+   "job": "e7h:second:k=week:tag=Sublet:c=101",
+   "cell": "101",
+   "tag": "Sublet",
+   "mode": "L-vr",
+   "seed": 0,
+   "held": true,
+   "case": "W(a)",
+   "env_ok": true,
+   "env_max_excess_usd": -1.0834694014118966,
+   "aborted": false,
+   "t_a": null,
+   "s_fb_all": true,
+   "t0g_bound_all": true,
+   "project": true,
+   "robust_slots": 0,
+   "switches": 0,
+   "projected_slots": 8,
+   "projection": {
+    "slots": 8,
+    "P1": 8,
+    "P0": 0,
+    "K0": 0,
+    "dropped_buys": 257,
+    "dropped_other": 0,
+    "guard_releases": 0
+   },
+   "B_T": 318.6012723489015,
+   "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+   "B0_usd": null,
+   "info_class_reported": "online-I1 + a-priori N",
+   "online_lb": {
+    "LB_T": 771.0417666278704,
+    "Wk_T": 318.6012723489015,
+    "B_T": 318.6012723489015,
+    "n_groups": 3
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=Sublet:c=101",
+   "cell": "101",
+   "tag": "Sublet",
+   "mode": "L-rf",
+   "seed": 0,
+   "held": true,
+   "case": "W(a)",
+   "env_ok": true,
+   "env_max_excess_usd": -5.698480688424363,
+   "aborted": false,
+   "t_a": null,
+   "s_fb_all": true,
+   "t0g_bound_all": true,
+   "project": true,
+   "robust_slots": 0,
+   "switches": 0,
+   "projected_slots": 11,
+   "projection": {
+    "slots": 11,
+    "P1": 11,
+    "P0": 0,
+    "K0": 0,
+    "dropped_buys": 372,
+    "dropped_other": 0,
+    "guard_releases": 0
+   },
+   "B_T": 318.6012723489015,
+   "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+   "B0_usd": null,
+   "info_class_reported": "online-I1 + a-priori N",
+   "online_lb": {
+    "LB_T": 771.0417666278704,
+    "Wk_T": 318.6012723489015,
+    "B_T": 318.6012723489015,
+    "n_groups": 3
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=Sublet:c=101",
+   "cell": "101",
+   "tag": "Sublet",
+   "mode": "L-ad",
+   "seed": 0,
+   "held": true,
+   "case": "W(a)",
+   "env_ok": true,
+   "env_max_excess_usd": -1.3435873041497128,
+   "aborted": false,
+   "t_a": null,
+   "s_fb_all": true,
+   "t0g_bound_all": true,
+   "project": true,
+   "robust_slots": 0,
+   "switches": 0,
+   "projected_slots": 9,
+   "projection": {
+    "slots": 9,
+    "P1": 9,
+    "P0": 0,
+    "K0": 0,
+    "dropped_buys": 378,
+    "dropped_other": 0,
+    "guard_releases": 0
+   },
+   "B_T": 318.6012723489015,
+   "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+   "B0_usd": null,
+   "info_class_reported": "online-I1 + a-priori N",
+   "online_lb": {
+    "LB_T": 771.0417666278704,
+    "Wk_T": 318.6012723489015,
+    "B_T": 318.6012723489015,
+    "n_groups": 3
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=Sublet:c=101",
+   "cell": "101",
+   "tag": "Sublet",
+   "mode": "L-b999",
+   "seed": 0,
+   "held": true,
+   "case": "W(a)",
+   "env_ok": true,
+   "env_max_excess_usd": -0.9816271481961323,
+   "aborted": false,
+   "t_a": null,
+   "s_fb_all": true,
+   "t0g_bound_all": true,
+   "project": true,
+   "robust_slots": 0,
+   "switches": 0,
+   "projected_slots": 8,
+   "projection": {
+    "slots": 8,
+    "P1": 8,
+    "P0": 0,
+    "K0": 0,
+    "dropped_buys": 231,
+    "dropped_other": 0,
+    "guard_releases": 0
+   },
+   "B_T": 308.7887805421901,
+   "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+   "B0_usd": null,
+   "info_class_reported": "online-I1 + a-priori N",
+   "online_lb": {
+    "LB_T": 754.5327293131958,
+    "Wk_T": 308.7887805421901,
+    "B_T": 308.7887805421901,
+    "n_groups": 3
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=Sublet:c=101",
+   "cell": "101",
+   "tag": "Sublet",
+   "mode": "L-iid-0.1",
+   "seed": 0,
+   "held": true,
+   "case": "W(a)",
+   "env_ok": true,
+   "env_max_excess_usd": -1.0834694014118966,
+   "aborted": false,
+   "t_a": null,
+   "s_fb_all": true,
+   "t0g_bound_all": true,
+   "project": true,
+   "robust_slots": 0,
+   "switches": 0,
+   "projected_slots": 8,
+   "projection": {
+    "slots": 8,
+    "P1": 8,
+    "P0": 0,
+    "K0": 0,
+    "dropped_buys": 240,
+    "dropped_other": 0,
+    "guard_releases": 0
+   },
+   "B_T": 318.6012723489015,
+   "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+   "B0_usd": null,
+   "info_class_reported": "online-I1 + a-priori N",
+   "online_lb": {
+    "LB_T": 771.0417666278704,
+    "Wk_T": 318.6012723489015,
+    "B_T": 318.6012723489015,
+    "n_groups": 3
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=Sublet:c=101",
+   "cell": "101",
+   "tag": "Sublet",
+   "mode": "L-iid-0.34",
+   "seed": 0,
+   "held": true,
+   "case": "W(a)",
+   "env_ok": true,
+   "env_max_excess_usd": -1.0834694014118966,
+   "aborted": false,
+   "t_a": null,
+   "s_fb_all": true,
+   "t0g_bound_all": true,
+   "project": true,
+   "robust_slots": 0,
+   "switches": 0,
+   "projected_slots": 10,
+   "projection": {
+    "slots": 10,
+    "P1": 9,
+    "P0": 0,
+    "K0": 1,
+    "dropped_buys": 466,
+    "dropped_other": 0,
+    "guard_releases": 8
+   },
+   "B_T": 318.6012723489015,
+   "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+   "B0_usd": null,
+   "info_class_reported": "online-I1 + a-priori N",
+   "online_lb": {
+    "LB_T": 771.0417666278704,
+    "Wk_T": 318.6012723489015,
+    "B_T": 318.6012723489015,
+    "n_groups": 3
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=Sublet:c=101",
+   "cell": "101",
+   "tag": "Sublet",
+   "mode": "L-iid-0.5",
+   "seed": 0,
+   "held": true,
+   "case": "W(a)",
+   "env_ok": true,
+   "env_max_excess_usd": -1.3435873041497128,
+   "aborted": false,
+   "t_a": null,
+   "s_fb_all": true,
+   "t0g_bound_all": true,
+   "project": true,
+   "robust_slots": 0,
+   "switches": 0,
+   "projected_slots": 9,
+   "projection": {
+    "slots": 9,
+    "P1": 9,
+    "P0": 0,
+    "K0": 0,
+    "dropped_buys": 495,
+    "dropped_other": 0,
+    "guard_releases": 0
+   },
+   "B_T": 318.6012723489015,
+   "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+   "B0_usd": null,
+   "info_class_reported": "online-I1 + a-priori N",
+   "online_lb": {
+    "LB_T": 771.0417666278704,
+    "Wk_T": 318.6012723489015,
+    "B_T": 318.6012723489015,
+    "n_groups": 3
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=Sublet:c=101",
+   "cell": "101",
+   "tag": "Sublet",
+   "mode": "L-iid-0.8",
+   "seed": 0,
+   "held": true,
+   "case": "W(a)",
+   "env_ok": true,
+   "env_max_excess_usd": -1.3435873041497128,
+   "aborted": false,
+   "t_a": null,
+   "s_fb_all": true,
+   "t0g_bound_all": true,
+   "project": true,
+   "robust_slots": 0,
+   "switches": 0,
+   "projected_slots": 9,
+   "projection": {
+    "slots": 9,
+    "P1": 9,
+    "P0": 0,
+    "K0": 0,
+    "dropped_buys": 535,
+    "dropped_other": 0,
+    "guard_releases": 0
+   },
+   "B_T": 318.6012723489015,
+   "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+   "B0_usd": null,
+   "info_class_reported": "online-I1 + a-priori N",
+   "online_lb": {
+    "LB_T": 771.0417666278704,
+    "Wk_T": 318.6012723489015,
+    "B_T": 318.6012723489015,
+    "n_groups": 3
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=Sublet:c=101",
+   "cell": "101",
+   "tag": "Sublet",
+   "mode": "L-iid-1",
+   "seed": 0,
+   "held": true,
+   "case": "W(a)",
+   "env_ok": true,
+   "env_max_excess_usd": -1.3435873041497128,
+   "aborted": false,
+   "t_a": null,
+   "s_fb_all": true,
+   "t0g_bound_all": true,
+   "project": true,
+   "robust_slots": 0,
+   "switches": 0,
+   "projected_slots": 9,
+   "projection": {
+    "slots": 9,
+    "P1": 9,
+    "P0": 0,
+    "K0": 0,
+    "dropped_buys": 378,
+    "dropped_other": 0,
+    "guard_releases": 0
+   },
+   "B_T": 318.6012723489015,
+   "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+   "B0_usd": null,
+   "info_class_reported": "online-I1 + a-priori N",
+   "online_lb": {
+    "LB_T": 771.0417666278704,
+    "Wk_T": 318.6012723489015,
+    "B_T": 318.6012723489015,
+    "n_groups": 3
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL1-GP:c=101",
+   "cell": "101",
+   "tag": "BL1-GP",
+   "mode": "L-vr",
+   "seed": 0,
+   "held": true,
+   "case": "W(a)",
+   "env_ok": true,
+   "env_max_excess_usd": -0.30986716437744377,
+   "aborted": false,
+   "t_a": null,
+   "s_fb_all": true,
+   "t0g_bound_all": true,
+   "project": true,
+   "robust_slots": 0,
+   "switches": 0,
+   "projected_slots": 11,
+   "projection": {
+    "slots": 11,
+    "P1": 10,
+    "P0": 0,
+    "K0": 1,
+    "dropped_buys": 422,
+    "dropped_other": 0,
+    "guard_releases": 133
+   },
+   "B_T": 318.6012723489015,
+   "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+   "B0_usd": null,
+   "info_class_reported": "online-I1 + a-priori N",
+   "online_lb": {
+    "LB_T": 771.0417666278704,
+    "Wk_T": 318.6012723489015,
+    "B_T": 318.6012723489015,
+    "n_groups": 3
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL1-GP:c=101",
+   "cell": "101",
+   "tag": "BL1-GP",
+   "mode": "L-rf",
+   "seed": 0,
+   "held": true,
+   "case": "W(a)",
+   "env_ok": true,
+   "env_max_excess_usd": -6.489658800534745,
+   "aborted": false,
+   "t_a": null,
+   "s_fb_all": true,
+   "t0g_bound_all": true,
+   "project": true,
+   "robust_slots": 0,
+   "switches": 0,
+   "projected_slots": 12,
+   "projection": {
+    "slots": 12,
+    "P1": 12,
+    "P0": 0,
+    "K0": 0,
+    "dropped_buys": 338,
+    "dropped_other": 0,
+    "guard_releases": 0
+   },
+   "B_T": 318.6012723489015,
+   "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+   "B0_usd": null,
+   "info_class_reported": "online-I1 + a-priori N",
+   "online_lb": {
+    "LB_T": 771.0417666278704,
+    "Wk_T": 318.6012723489015,
+    "B_T": 318.6012723489015,
+    "n_groups": 3
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL1-GP:c=101",
+   "cell": "101",
+   "tag": "BL1-GP",
+   "mode": "L-ad",
+   "seed": 0,
+   "held": true,
+   "case": "W(a)",
+   "env_ok": true,
+   "env_max_excess_usd": -0.30986716437744377,
+   "aborted": false,
+   "t_a": null,
+   "s_fb_all": true,
+   "t0g_bound_all": true,
+   "project": true,
+   "robust_slots": 0,
+   "switches": 0,
+   "projected_slots": 14,
+   "projection": {
+    "slots": 14,
+    "P1": 14,
+    "P0": 0,
+    "K0": 0,
+    "dropped_buys": 622,
+    "dropped_other": 0,
+    "guard_releases": 0
+   },
+   "B_T": 318.6012723489015,
+   "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+   "B0_usd": null,
+   "info_class_reported": "online-I1 + a-priori N",
+   "online_lb": {
+    "LB_T": 771.0417666278704,
+    "Wk_T": 318.6012723489015,
+    "B_T": 318.6012723489015,
+    "n_groups": 3
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL1-GP:c=101",
+   "cell": "101",
+   "tag": "BL1-GP",
+   "mode": "L-b999",
+   "seed": 0,
+   "held": true,
+   "case": "W(a)",
+   "env_ok": true,
+   "env_max_excess_usd": -0.07254571310215141,
+   "aborted": false,
+   "t_a": null,
+   "s_fb_all": true,
+   "t0g_bound_all": true,
+   "project": true,
+   "robust_slots": 0,
+   "switches": 0,
+   "projected_slots": 10,
+   "projection": {
+    "slots": 10,
+    "P1": 9,
+    "P0": 0,
+    "K0": 1,
+    "dropped_buys": 458,
+    "dropped_other": 0,
+    "guard_releases": 81
+   },
+   "B_T": 308.7887805421901,
+   "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+   "B0_usd": null,
+   "info_class_reported": "online-I1 + a-priori N",
+   "online_lb": {
+    "LB_T": 754.5327293131958,
+    "Wk_T": 308.7887805421901,
+    "B_T": 308.7887805421901,
+    "n_groups": 3
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL1-GP:c=101",
+   "cell": "101",
+   "tag": "BL1-GP",
+   "mode": "L-iid-0.1",
+   "seed": 0,
+   "held": true,
+   "case": "W(a)",
+   "env_ok": true,
+   "env_max_excess_usd": -0.30986716437744377,
+   "aborted": false,
+   "t_a": null,
+   "s_fb_all": true,
+   "t0g_bound_all": true,
+   "project": true,
+   "robust_slots": 0,
+   "switches": 0,
+   "projected_slots": 12,
+   "projection": {
+    "slots": 12,
+    "P1": 11,
+    "P0": 0,
+    "K0": 1,
+    "dropped_buys": 419,
+    "dropped_other": 0,
+    "guard_releases": 145
+   },
+   "B_T": 318.6012723489015,
+   "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+   "B0_usd": null,
+   "info_class_reported": "online-I1 + a-priori N",
+   "online_lb": {
+    "LB_T": 771.0417666278704,
+    "Wk_T": 318.6012723489015,
+    "B_T": 318.6012723489015,
+    "n_groups": 3
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL1-GP:c=101",
+   "cell": "101",
+   "tag": "BL1-GP",
+   "mode": "L-iid-0.34",
+   "seed": 0,
+   "held": true,
+   "case": "W(a)",
+   "env_ok": true,
+   "env_max_excess_usd": -0.30986716437744377,
+   "aborted": false,
+   "t_a": null,
+   "s_fb_all": true,
+   "t0g_bound_all": true,
+   "project": true,
+   "robust_slots": 0,
+   "switches": 0,
+   "projected_slots": 11,
+   "projection": {
+    "slots": 11,
+    "P1": 11,
+    "P0": 0,
+    "K0": 0,
+    "dropped_buys": 335,
+    "dropped_other": 0,
+    "guard_releases": 0
+   },
+   "B_T": 318.6012723489015,
+   "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+   "B0_usd": null,
+   "info_class_reported": "online-I1 + a-priori N",
+   "online_lb": {
+    "LB_T": 771.0417666278704,
+    "Wk_T": 318.6012723489015,
+    "B_T": 318.6012723489015,
+    "n_groups": 3
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL1-GP:c=101",
+   "cell": "101",
+   "tag": "BL1-GP",
+   "mode": "L-iid-0.5",
+   "seed": 0,
+   "held": true,
+   "case": "W(a)",
+   "env_ok": true,
+   "env_max_excess_usd": -0.30986716437744377,
+   "aborted": false,
+   "t_a": null,
+   "s_fb_all": true,
+   "t0g_bound_all": true,
+   "project": true,
+   "robust_slots": 0,
+   "switches": 0,
+   "projected_slots": 11,
+   "projection": {
+    "slots": 11,
+    "P1": 11,
+    "P0": 0,
+    "K0": 0,
+    "dropped_buys": 366,
+    "dropped_other": 0,
+    "guard_releases": 0
+   },
+   "B_T": 318.6012723489015,
+   "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+   "B0_usd": null,
+   "info_class_reported": "online-I1 + a-priori N",
+   "online_lb": {
+    "LB_T": 771.0417666278704,
+    "Wk_T": 318.6012723489015,
+    "B_T": 318.6012723489015,
+    "n_groups": 3
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL1-GP:c=101",
+   "cell": "101",
+   "tag": "BL1-GP",
+   "mode": "L-iid-0.8",
+   "seed": 0,
+   "held": true,
+   "case": "W(a)",
+   "env_ok": true,
+   "env_max_excess_usd": -0.30986716437744377,
+   "aborted": false,
+   "t_a": null,
+   "s_fb_all": true,
+   "t0g_bound_all": true,
+   "project": true,
+   "robust_slots": 0,
+   "switches": 0,
+   "projected_slots": 12,
+   "projection": {
+    "slots": 12,
+    "P1": 12,
+    "P0": 0,
+    "K0": 0,
+    "dropped_buys": 516,
+    "dropped_other": 0,
+    "guard_releases": 0
+   },
+   "B_T": 318.6012723489015,
+   "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+   "B0_usd": null,
+   "info_class_reported": "online-I1 + a-priori N",
+   "online_lb": {
+    "LB_T": 771.0417666278704,
+    "Wk_T": 318.6012723489015,
+    "B_T": 318.6012723489015,
+    "n_groups": 3
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=BL1-GP:c=101",
+   "cell": "101",
+   "tag": "BL1-GP",
+   "mode": "L-iid-1",
+   "seed": 0,
+   "held": true,
+   "case": "W(a)",
+   "env_ok": true,
+   "env_max_excess_usd": -0.30986716437744377,
+   "aborted": false,
+   "t_a": null,
+   "s_fb_all": true,
+   "t0g_bound_all": true,
+   "project": true,
+   "robust_slots": 0,
+   "switches": 0,
+   "projected_slots": 14,
+   "projection": {
+    "slots": 14,
+    "P1": 14,
+    "P0": 0,
+    "K0": 0,
+    "dropped_buys": 622,
+    "dropped_other": 0,
+    "guard_releases": 0
+   },
+   "B_T": 318.6012723489015,
+   "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+   "B0_usd": null,
+   "info_class_reported": "online-I1 + a-priori N",
+   "online_lb": {
+    "LB_T": 771.0417666278704,
+    "Wk_T": 318.6012723489015,
+    "B_T": 318.6012723489015,
+    "n_groups": 3
+   }
+  },
+  {
+   "job": "e7h:second:k=week:tag=Sublet-MS4:c=101",
+   "cell": "101",
+   "tag": "Sublet-MS4",
+   "mode": "L-vr",
+   "seed": 0,
+   "held": true,
+   "case": "W(b)",
+   "env_ok": true,
+   "env_max_excess_usd": -58.95073079398742,
+   "aborted": true,
+   "t_a": 20,
+   "s_fb_all": true,
+   "t0g_bound_all": true,
+   "project": null,
+   "robust_slots": 0,
+   "switches": 0,
+   "projected_slots": 0,
+   "projection": null,
+   "B_T": 179.19245233804563,
+   "B0_rule": "0.1*BL0a",
+   "B0_usd": 179.19245233804563,
+   "info_class_reported": "online-I1 + a-priori N + a-priori BL0a"
+  },
+  {
+   "job": "e7h:second:k=week:tag=Sublet-MS4:c=101",
+   "cell": "101",
+   "tag": "Sublet-MS4",
+   "mode": "L-rf",
+   "seed": 0,
+   "held": true,
+   "case": "W(b)",
+   "env_ok": true,
+   "env_max_excess_usd": -57.25560496820913,
+   "aborted": true,
+   "t_a": 20,
+   "s_fb_all": true,
+   "t0g_bound_all": true,
+   "project": null,
+   "robust_slots": 0,
+   "switches": 0,
+   "projected_slots": 0,
+   "projection": null,
+   "B_T": 179.19245233804563,
+   "B0_rule": "0.1*BL0a",
+   "B0_usd": 179.19245233804563,
+   "info_class_reported": "online-I1 + a-priori N + a-priori BL0a"
+  },
+  {
+   "job": "e7h:second:k=week:tag=Sublet-MS4:c=101",
+   "cell": "101",
+   "tag": "Sublet-MS4",
+   "mode": "L-ad",
+   "seed": 0,
+   "held": true,
+   "case": "W(b)",
+   "env_ok": true,
+   "env_max_excess_usd": -94.89260519011816,
+   "aborted": true,
+   "t_a": 20,
+   "s_fb_all": true,
+   "t0g_bound_all": true,
+   "project": null,
+   "robust_slots": 0,
+   "switches": 0,
+   "projected_slots": 0,
+   "projection": null,
+   "B_T": 179.19245233804563,
+   "B0_rule": "0.1*BL0a",
+   "B0_usd": 179.19245233804563,
+   "info_class_reported": "online-I1 + a-priori N + a-priori BL0a"
+  },
+  {
+   "job": "e7h:second:k=week:tag=Sublet-MS4:c=101",
+   "cell": "101",
+   "tag": "Sublet-MS4",
+   "mode": "L-b999",
+   "seed": 0,
+   "held": true,
+   "case": "W(b)",
+   "env_ok": true,
+   "env_max_excess_usd": -59.419866409390465,
+   "aborted": true,
+   "t_a": 20,
+   "s_fb_all": true,
+   "t0g_bound_all": true,
+   "project": null,
+   "robust_slots": 0,
+   "switches": 0,
+   "projected_slots": 0,
+   "projection": null,
+   "B_T": 174.82190472004447,
+   "B0_rule": "0.1*BL0a",
+   "B0_usd": 174.82190472004447,
+   "info_class_reported": "online-I1 + a-priori N + a-priori BL0a"
+  },
+  {
+   "job": "e7h:second:k=week:tag=Sublet-MS4:c=101",
+   "cell": "101",
+   "tag": "Sublet-MS4",
+   "mode": "L-iid-0.1",
+   "seed": 0,
+   "held": true,
+   "case": "W(b)",
+   "env_ok": true,
+   "env_max_excess_usd": -83.61395194620832,
+   "aborted": true,
+   "t_a": 20,
+   "s_fb_all": true,
+   "t0g_bound_all": true,
+   "project": null,
+   "robust_slots": 0,
+   "switches": 0,
+   "projected_slots": 0,
+   "projection": null,
+   "B_T": 179.19245233804563,
+   "B0_rule": "0.1*BL0a",
+   "B0_usd": 179.19245233804563,
+   "info_class_reported": "online-I1 + a-priori N + a-priori BL0a"
+  },
+  {
+   "job": "e7h:second:k=week:tag=Sublet-MS4:c=101",
+   "cell": "101",
+   "tag": "Sublet-MS4",
+   "mode": "L-iid-0.34",
+   "seed": 0,
+   "held": true,
+   "case": "W(b)",
+   "env_ok": true,
+   "env_max_excess_usd": -111.03791339523298,
+   "aborted": true,
+   "t_a": 20,
+   "s_fb_all": true,
+   "t0g_bound_all": true,
+   "project": null,
+   "robust_slots": 0,
+   "switches": 0,
+   "projected_slots": 0,
+   "projection": null,
+   "B_T": 179.19245233804563,
+   "B0_rule": "0.1*BL0a",
+   "B0_usd": 179.19245233804563,
+   "info_class_reported": "online-I1 + a-priori N + a-priori BL0a"
+  },
+  {
+   "job": "e7h:second:k=week:tag=Sublet-MS4:c=101",
+   "cell": "101",
+   "tag": "Sublet-MS4",
+   "mode": "L-iid-0.5",
+   "seed": 0,
+   "held": true,
+   "case": "W(b)",
+   "env_ok": true,
+   "env_max_excess_usd": -109.52396119329183,
+   "aborted": true,
+   "t_a": 20,
+   "s_fb_all": true,
+   "t0g_bound_all": true,
+   "project": null,
+   "robust_slots": 0,
+   "switches": 0,
+   "projected_slots": 0,
+   "projection": null,
+   "B_T": 179.19245233804563,
+   "B0_rule": "0.1*BL0a",
+   "B0_usd": 179.19245233804563,
+   "info_class_reported": "online-I1 + a-priori N + a-priori BL0a"
+  },
+  {
+   "job": "e7h:second:k=week:tag=Sublet-MS4:c=101",
+   "cell": "101",
+   "tag": "Sublet-MS4",
+   "mode": "L-iid-0.8",
+   "seed": 0,
+   "held": true,
+   "case": "W(b)",
+   "env_ok": true,
+   "env_max_excess_usd": -109.35977673688626,
+   "aborted": true,
+   "t_a": 20,
+   "s_fb_all": true,
+   "t0g_bound_all": true,
+   "project": null,
+   "robust_slots": 0,
+   "switches": 0,
+   "projected_slots": 0,
+   "projection": null,
+   "B_T": 179.19245233804563,
+   "B0_rule": "0.1*BL0a",
+   "B0_usd": 179.19245233804563,
+   "info_class_reported": "online-I1 + a-priori N + a-priori BL0a"
+  },
+  {
+   "job": "e7h:second:k=week:tag=Sublet-MS4:c=101",
+   "cell": "101",
+   "tag": "Sublet-MS4",
+   "mode": "L-iid-1",
+   "seed": 0,
+   "held": true,
+   "case": "W(b)",
+   "env_ok": true,
+   "env_max_excess_usd": -94.89260519011816,
+   "aborted": true,
+   "t_a": 20,
+   "s_fb_all": true,
+   "t0g_bound_all": true,
+   "project": null,
+   "robust_slots": 0,
+   "switches": 0,
+   "projected_slots": 0,
+   "projection": null,
+   "B_T": 179.19245233804563,
+   "B0_rule": "0.1*BL0a",
+   "B0_usd": 179.19245233804563,
+   "info_class_reported": "online-I1 + a-priori N + a-priori BL0a"
+  },
+  {
+   "job": "e7h:second:k=week:tag=Sublet-lag:c=101",
+   "cell": "101",
+   "tag": "Sublet-lag",
+   "mode": "L-tr",
+   "seed": 0,
+   "held": true,
+   "case": "W(a)",
+   "env_ok": true,
+   "env_max_excess_usd": -0.8011517014504079,
+   "aborted": false,
+   "t_a": null,
+   "s_fb_all": true,
+   "t0g_bound_all": true,
+   "project": true,
+   "robust_slots": 0,
+   "switches": 0,
+   "projected_slots": 5,
+   "projection": {
+    "slots": 5,
+    "P1": 5,
+    "P0": 0,
+    "K0": 0,
+    "dropped_buys": 238,
+    "dropped_other": 0,
+    "guard_releases": 0
+   },
+   "B_T": 318.6012723489015,
+   "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+   "B0_usd": null,
+   "info_class_reported": "online-I1 + a-priori N",
+   "online_lb": {
+    "LB_T": 771.0417666278704,
+    "Wk_T": 318.6012723489015,
+    "B_T": 318.6012723489015,
+    "n_groups": 3
+   }
+  },
+  {
+   "job": "e7h:second:k=e5:menu=short:tag=Sublet:c=101",
+   "cell": "short:c101",
+   "tag": "Sublet",
+   "mode": "trace",
+   "seed": 0,
+   "held": true,
+   "case": "W(a)",
+   "env_ok": true,
+   "env_max_excess_usd": -1.1108839829443404,
+   "aborted": false,
+   "t_a": null,
+   "s_fb_all": true,
+   "t0g_bound_all": true,
+   "project": true,
+   "robust_slots": 0,
+   "switches": 0,
+   "projected_slots": 7,
+   "projection": {
+    "slots": 7,
+    "P1": 7,
+    "P0": 0,
+    "K0": 0,
+    "dropped_buys": 273,
+    "dropped_other": 0,
+    "guard_releases": 0
+   },
+   "B_T": 330.0280094264978,
+   "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+   "B0_usd": null,
+   "info_class_reported": "online-I1 + a-priori N",
+   "online_lb": {
+    "LB_T": 804.0981805575407,
+    "Wk_T": 330.0280094264978,
+    "B_T": 330.0280094264978,
+    "n_groups": 3
+   }
+  },
+  {
+   "job": "e7h:second:k=e5:menu=short:tag=Sublet:c=101",
+   "cell": "short:c101",
+   "tag": "Sublet",
+   "mode": "all1",
+   "seed": 0,
+   "held": true,
+   "case": "W(a)",
+   "env_ok": true,
+   "env_max_excess_usd": -4.673947553043913,
+   "aborted": false,
+   "t_a": null,
+   "s_fb_all": true,
+   "t0g_bound_all": true,
+   "project": true,
+   "robust_slots": 0,
+   "switches": 0,
+   "projected_slots": 5,
+   "projection": {
+    "slots": 5,
+    "P1": 5,
+    "P0": 0,
+    "K0": 0,
+    "dropped_buys": 221,
+    "dropped_other": 0,
+    "guard_releases": 0
+   },
+   "B_T": 330.0280094264978,
+   "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+   "B0_usd": null,
+   "info_class_reported": "online-I1 + a-priori N",
+   "online_lb": {
+    "LB_T": 804.0981805575407,
+    "Wk_T": 330.0280094264978,
+    "B_T": 330.0280094264978,
+    "n_groups": 3
+   }
+  },
+  {
+   "job": "e7h:second:k=e5:menu=short:tag=Sublet-MS4:c=101",
+   "cell": "short:c101",
+   "tag": "Sublet-MS4",
+   "mode": "trace",
+   "seed": 0,
+   "held": true,
+   "case": "W(b)",
+   "env_ok": true,
+   "env_max_excess_usd": -66.6244172555322,
+   "aborted": true,
+   "t_a": 20,
+   "s_fb_all": true,
+   "t0g_bound_all": true,
+   "project": null,
+   "robust_slots": 0,
+   "switches": 0,
+   "projected_slots": 0,
+   "projection": null,
+   "B_T": 186.84091066954755,
+   "B0_rule": "0.1*BL0a",
+   "B0_usd": 186.84091066954755,
+   "info_class_reported": "online-I1 + a-priori N + a-priori BL0a"
+  },
+  {
+   "job": "e7h:second:k=e5:menu=short:tag=Sublet-MS4:c=101",
+   "cell": "short:c101",
+   "tag": "Sublet-MS4",
+   "mode": "all1",
+   "seed": 0,
+   "held": true,
+   "case": "W(b)",
+   "env_ok": true,
+   "env_max_excess_usd": -102.2781249679158,
+   "aborted": true,
+   "t_a": 20,
+   "s_fb_all": true,
+   "t0g_bound_all": true,
+   "project": null,
+   "robust_slots": 0,
+   "switches": 0,
+   "projected_slots": 0,
+   "projection": null,
+   "B_T": 186.84091066954755,
+   "B0_rule": "0.1*BL0a",
+   "B0_usd": 186.84091066954755,
+   "info_class_reported": "online-I1 + a-priori N + a-priori BL0a"
+  },
+  {
+   "job": "e7h:second:k=e5:menu=long:tag=Sublet:c=101",
+   "cell": "long:c101",
+   "tag": "Sublet",
+   "mode": "trace",
+   "seed": 0,
+   "held": true,
+   "case": "W(a)",
+   "env_ok": true,
+   "env_max_excess_usd": -0.9331411401036149,
+   "aborted": false,
+   "t_a": null,
+   "s_fb_all": true,
+   "t0g_bound_all": true,
+   "project": true,
+   "robust_slots": 0,
+   "switches": 0,
+   "projected_slots": 14,
+   "projection": {
+    "slots": 14,
+    "P1": 12,
+    "P0": 2,
+    "K0": 0,
+    "dropped_buys": 652,
+    "dropped_other": 0,
+    "guard_releases": 0
+   },
+   "B_T": 806.9929018235999,
+   "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+   "B0_usd": null,
+   "info_class_reported": "online-I1 + a-priori N",
+   "online_lb": {
+    "LB_T": 806.9929018235999,
+    "Wk_T": 2302.093156572092,
+    "B_T": 806.9929018235999,
+    "n_groups": 3
+   }
+  },
+  {
+   "job": "e7h:second:k=e5:menu=long:tag=Sublet:c=101",
+   "cell": "long:c101",
+   "tag": "Sublet",
+   "mode": "all1",
+   "seed": 0,
+   "held": true,
+   "case": "W(a)",
+   "env_ok": true,
+   "env_max_excess_usd": -0.9331411401036149,
+   "aborted": false,
+   "t_a": null,
+   "s_fb_all": true,
+   "t0g_bound_all": true,
+   "project": true,
+   "robust_slots": 0,
+   "switches": 0,
+   "projected_slots": 14,
+   "projection": {
+    "slots": 14,
+    "P1": 12,
+    "P0": 2,
+    "K0": 0,
+    "dropped_buys": 652,
+    "dropped_other": 0,
+    "guard_releases": 0
+   },
+   "B_T": 806.9929018235999,
+   "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+   "B0_usd": null,
+   "info_class_reported": "online-I1 + a-priori N",
+   "online_lb": {
+    "LB_T": 806.9929018235999,
+    "Wk_T": 2302.093156572092,
+    "B_T": 806.9929018235999,
+    "n_groups": 3
+   }
+  },
+  {
+   "job": "e7h:second:k=e5:menu=long:tag=Sublet-MS4:c=101",
+   "cell": "long:c101",
+   "tag": "Sublet-MS4",
+   "mode": "trace",
+   "seed": 0,
+   "held": true,
+   "case": "W(b)",
+   "env_ok": true,
+   "env_max_excess_usd": -54.736829874409125,
+   "aborted": true,
+   "t_a": 9,
+   "s_fb_all": true,
+   "t0g_bound_all": true,
+   "project": null,
+   "robust_slots": 0,
+   "switches": 0,
+   "projected_slots": 0,
+   "projection": null,
+   "B_T": 186.84091066954755,
+   "B0_rule": "0.1*BL0a",
+   "B0_usd": 186.84091066954755,
+   "info_class_reported": "online-I1 + a-priori N + a-priori BL0a"
+  },
+  {
+   "job": "e7h:second:k=e5:menu=long:tag=Sublet-MS4:c=101",
+   "cell": "long:c101",
+   "tag": "Sublet-MS4",
+   "mode": "all1",
+   "seed": 0,
+   "held": true,
+   "case": "W(b)",
+   "env_ok": true,
+   "env_max_excess_usd": -54.736829874409125,
+   "aborted": true,
+   "t_a": 9,
+   "s_fb_all": true,
+   "t0g_bound_all": true,
+   "project": null,
+   "robust_slots": 0,
+   "switches": 0,
+   "projected_slots": 0,
+   "projection": null,
+   "B_T": 186.84091066954755,
+   "B0_rule": "0.1*BL0a",
+   "B0_usd": 186.84091066954755,
+   "info_class_reported": "online-I1 + a-priori N + a-priori BL0a"
+  },
+  {
+   "job": "e7h:second:k=gap:tag=Sublet:c=101",
+   "cell": "gap:c101",
+   "tag": "Sublet",
+   "mode": "L-tr",
+   "seed": 0,
+   "held": true,
+   "case": "W(a)",
+   "env_ok": true,
+   "env_max_excess_usd": -14.443818289523165,
+   "aborted": false,
+   "t_a": null,
+   "s_fb_all": true,
+   "t0g_bound_all": true,
+   "project": true,
+   "robust_slots": 0,
+   "switches": 0,
+   "projected_slots": 1,
+   "projection": {
+    "slots": 1,
+    "P1": 1,
+    "P0": 0,
+    "K0": 0,
+    "dropped_buys": 27,
+    "dropped_other": 0,
+    "guard_releases": 0
+   },
+   "B_T": 147.68828818829036,
+   "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+   "B0_usd": null,
+   "info_class_reported": "online-I1 + a-priori N",
+   "online_lb": {
+    "LB_T": 565.5643213244921,
+    "Wk_T": 147.68828818829036,
+    "B_T": 147.68828818829036,
+    "n_groups": 3
+   }
+  },
+  {
+   "job": "e7h:second:k=gap:tag=BL1-GP:c=101",
+   "cell": "gap:c101",
+   "tag": "BL1-GP",
+   "mode": "L-tr",
+   "seed": 0,
+   "held": true,
+   "case": "W(a)",
+   "env_ok": true,
+   "env_max_excess_usd": -13.286281017373312,
+   "aborted": false,
+   "t_a": null,
+   "s_fb_all": true,
+   "t0g_bound_all": true,
+   "project": true,
+   "robust_slots": 0,
+   "switches": 0,
+   "projected_slots": 1,
+   "projection": {
+    "slots": 1,
+    "P1": 1,
+    "P0": 0,
+    "K0": 0,
+    "dropped_buys": 27,
+    "dropped_other": 0,
+    "guard_releases": 0
+   },
+   "B_T": 147.68828818829036,
+   "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+   "B0_usd": null,
+   "info_class_reported": "online-I1 + a-priori N",
+   "online_lb": {
+    "LB_T": 565.5643213244921,
+    "Wk_T": 147.68828818829036,
+    "B_T": 147.68828818829036,
+    "n_groups": 3
+   }
+  },
+  {
+   "job": "e7h:second:k=gap:tag=Sublet-MS4:c=101",
+   "cell": "gap:c101",
+   "tag": "Sublet-MS4",
+   "mode": "L-tr",
+   "seed": 0,
+   "held": true,
+   "case": "W(a)",
+   "env_ok": true,
+   "env_max_excess_usd": -87.1100366825454,
+   "aborted": false,
+   "t_a": null,
+   "s_fb_all": true,
+   "t0g_bound_all": true,
+   "project": null,
+   "robust_slots": 0,
+   "switches": 0,
+   "projected_slots": 0,
+   "projection": null,
+   "B_T": 132.84137336104325,
+   "B0_rule": "0.1*BL0a",
+   "B0_usd": 132.84137336104325,
+   "info_class_reported": "online-I1 + a-priori N + a-priori BL0a"
+  }
+ ],
+ "guard_summary": {
+  "n_runs": 39,
+  "held": 39,
+  "not_held": [],
+  "envelope_violations": [],
+  "n_envelope_violations": 0,
+  "aborts": 13,
+  "aborts_s_fb_bound_form": [],
+  "n_aborts_s_fb_bound_form": 0,
+  "runs_with_switches": 0,
+  "runs_with_robust_slots": 0,
+  "projected_slots": 235,
+  "runs_projected": 25,
+  "K0": 4,
+  "dropped_buys": 9540
+ },
+ "W0": {
+  "0": {
+   "A9": {
+    "101": null
+   },
+   "A9-lag": {
+    "101": null
+   },
+   "BL1": {
+    "101": null
+   },
+   "BL1-BO": {
+    "101": null
+   },
+   "BL1-GP": {
+    "101": null
+   },
+   "BL1-lag": {
+    "101": null
+   },
+   "BL1N": {
+    "101": null
+   },
+   "BL3-0": {
+    "101": null
+   },
+   "BL4": {
+    "101": null
+   },
+   "BL5-cur": {
+    "101": null
+   },
+   "BL5-tau60": {
+    "101": null
+   },
+   "BL5N": {
+    "101": null
+   },
+   "Sublet": {
+    "101": null
+   },
+   "Sublet-MS4": {
+    "101": null
+   },
+   "Sublet-lag": {
+    "101": null
+   }
+  }
+ },
+ "RC": {},
+ "intensity_curves": {
+  "A9": {
+   "101": {
+    "points": [
+     [
+      0.0,
+      null
+     ],
+     [
+      0.05,
+      null
+     ],
+     [
+      0.1,
+      0.6770252735339296
+     ],
+     [
+      0.2,
+      null
+     ],
+     [
+      0.34,
+      0.7719570527712227
+     ],
+     [
+      0.5,
+      0.8203571560359195
+     ],
+     [
+      0.8,
+      0.9602211950000987
+     ],
+     [
+      1.0,
+      1.0303346736136634
+     ]
+    ],
+    "first_p_above_1": 1.0,
+    "first_p_note": "a point of the grid has no run"
+   }
+  },
+  "A9-lag": {
+   "101": {
+    "points": [
+     [
+      0.0,
+      null
+     ],
+     [
+      0.05,
+      null
+     ],
+     [
+      0.1,
+      null
+     ],
+     [
+      0.2,
+      null
+     ],
+     [
+      0.34,
+      null
+     ],
+     [
+      0.5,
+      null
+     ],
+     [
+      0.8,
+      null
+     ],
+     [
+      1.0,
+      null
+     ]
+    ],
+    "first_p_above_1": null,
+    "first_p_above_1_note": "r0 <= 1 at every p measured",
+    "first_p_note": "a point of the grid has no run"
+   }
+  },
+  "BL1": {
+   "101": {
+    "points": [
+     [
+      0.0,
+      null
+     ],
+     [
+      0.05,
+      null
+     ],
+     [
+      0.1,
+      0.6697881580136565
+     ],
+     [
+      0.2,
+      null
+     ],
+     [
+      0.34,
+      1.0071008658219973
+     ],
+     [
+      0.5,
+      1.2062793075456633
+     ],
+     [
+      0.8,
+      1.6454883312780089
+     ],
+     [
+      1.0,
+      1.9456081095151643
+     ]
+    ],
+    "first_p_above_1": 0.34,
+    "first_p_note": "a point of the grid has no run"
+   }
+  },
+  "BL1-BO": {
+   "101": {
+    "points": [
+     [
+      0.0,
+      null
+     ],
+     [
+      0.05,
+      null
+     ],
+     [
+      0.1,
+      0.6695233835069015
+     ],
+     [
+      0.2,
+      null
+     ],
+     [
+      0.34,
+      1.0541414864065093
+     ],
+     [
+      0.5,
+      1.2211434585790069
+     ],
+     [
+      0.8,
+      1.4175769905140023
+     ],
+     [
+      1.0,
+      1.6352307081061959
+     ]
+    ],
+    "first_p_above_1": 0.34,
+    "first_p_note": "a point of the grid has no run"
+   }
+  },
+  "BL1-GP": {
+   "101": {
+    "points": [
+     [
+      0.0,
+      null
+     ],
+     [
+      0.05,
+      null
+     ],
+     [
+      0.1,
+      1.0587456546086151
+     ],
+     [
+      0.2,
+      null
+     ],
+     [
+      0.34,
+      0.9848433813343495
+     ],
+     [
+      0.5,
+      1.0309744503148737
+     ],
+     [
+      0.8,
+      1.1136710216307095
+     ],
+     [
+      1.0,
+      1.1428208595957485
+     ]
+    ],
+    "first_p_above_1": 0.1,
+    "first_p_note": "a point of the grid has no run"
+   }
+  },
+  "BL1-lag": {
+   "101": {
+    "points": [
+     [
+      0.0,
+      null
+     ],
+     [
+      0.05,
+      null
+     ],
+     [
+      0.1,
+      null
+     ],
+     [
+      0.2,
+      null
+     ],
+     [
+      0.34,
+      null
+     ],
+     [
+      0.5,
+      null
+     ],
+     [
+      0.8,
+      null
+     ],
+     [
+      1.0,
+      null
+     ]
+    ],
+    "first_p_above_1": null,
+    "first_p_above_1_note": "r0 <= 1 at every p measured",
+    "first_p_note": "a point of the grid has no run"
+   }
+  },
+  "BL1N": {
+   "101": {
+    "points": [
+     [
+      0.0,
+      null
+     ],
+     [
+      0.05,
+      null
+     ],
+     [
+      0.1,
+      0.6803906254627776
+     ],
+     [
+      0.2,
+      null
+     ],
+     [
+      0.34,
+      0.812522761541652
+     ],
+     [
+      0.5,
+      0.8578736003345772
+     ],
+     [
+      0.8,
+      0.9817272724882201
+     ],
+     [
+      1.0,
+      1.0809665708207665
+     ]
+    ],
+    "first_p_above_1": 1.0,
+    "first_p_note": "a point of the grid has no run"
+   }
+  },
+  "BL3-0": {
+   "101": {
+    "points": [
+     [
+      0.0,
+      null
+     ],
+     [
+      0.05,
+      null
+     ],
+     [
+      0.1,
+      0.7885785284020559
+     ],
+     [
+      0.2,
+      null
+     ],
+     [
+      0.34,
+      1.0359333956184507
+     ],
+     [
+      0.5,
+      1.1977390799647951
+     ],
+     [
+      0.8,
+      1.4807275584651756
+     ],
+     [
+      1.0,
+      1.7516817693646891
+     ]
+    ],
+    "first_p_above_1": 0.34,
+    "first_p_note": "a point of the grid has no run"
+   }
+  },
+  "BL4": {
+   "101": {
+    "points": [
+     [
+      0.0,
+      null
+     ],
+     [
+      0.05,
+      null
+     ],
+     [
+      0.1,
+      1.0236366058325324
+     ],
+     [
+      0.2,
+      null
+     ],
+     [
+      0.34,
+      1.0113434251502778
+     ],
+     [
+      0.5,
+      1.0094820302081944
+     ],
+     [
+      0.8,
+      1.003622490659715
+     ],
+     [
+      1.0,
+      1.003622490659715
+     ]
+    ],
+    "first_p_above_1": 0.1,
+    "first_p_note": "a point of the grid has no run"
+   }
+  },
+  "BL5-cur": {
+   "101": {
+    "points": [
+     [
+      0.0,
+      null
+     ],
+     [
+      0.05,
+      null
+     ],
+     [
+      0.1,
+      0.808047805263875
+     ],
+     [
+      0.2,
+      null
+     ],
+     [
+      0.34,
+      0.987808561814794
+     ],
+     [
+      0.5,
+      1.0853038866604867
+     ],
+     [
+      0.8,
+      1.211333549296128
+     ],
+     [
+      1.0,
+      1.265240979290852
+     ]
+    ],
+    "first_p_above_1": 0.5,
+    "first_p_note": "a point of the grid has no run"
+   }
+  },
+  "BL5-tau60": {
+   "101": {
+    "points": [
+     [
+      0.0,
+      null
+     ],
+     [
+      0.05,
+      null
+     ],
+     [
+      0.1,
+      1.7179132625102798
+     ],
+     [
+      0.2,
+      null
+     ],
+     [
+      0.34,
+      1.7179132625102798
+     ],
+     [
+      0.5,
+      1.7174610301758495
+     ],
+     [
+      0.8,
+      1.7165786653525579
+     ],
+     [
+      1.0,
+      1.7154305435633588
+     ]
+    ],
+    "first_p_above_1": 0.1,
+    "first_p_note": "a point of the grid has no run"
+   }
+  },
+  "BL5N": {
+   "101": {
+    "points": [
+     [
+      0.0,
+      null
+     ],
+     [
+      0.05,
+      null
+     ],
+     [
+      0.1,
+      0.8650687630747492
+     ],
+     [
+      0.2,
+      null
+     ],
+     [
+      0.34,
+      0.9720258197365951
+     ],
+     [
+      0.5,
+      1.024041068857516
+     ],
+     [
+      0.8,
+      1.1052881687870117
+     ],
+     [
+      1.0,
+      1.1395405908116896
+     ]
+    ],
+    "first_p_above_1": 0.5,
+    "first_p_note": "a point of the grid has no run"
+   }
+  },
+  "Sublet": {
+   "101": {
+    "points": [
+     [
+      0.0,
+      null
+     ],
+     [
+      0.05,
+      null
+     ],
+     [
+      0.1,
+      0.9425092533713733
+     ],
+     [
+      0.2,
+      null
+     ],
+     [
+      0.34,
+      1.0168971053960412
+     ],
+     [
+      0.5,
+      1.0418712241850754
+     ],
+     [
+      0.8,
+      1.0543674013140611
+     ],
+     [
+      1.0,
+      1.0246634486851858
+     ]
+    ],
+    "first_p_above_1": 0.34,
+    "first_p_note": "a point of the grid has no run"
+   }
+  },
+  "Sublet-MS4": {
+   "101": {
+    "points": [
+     [
+      0.0,
+      null
+     ],
+     [
+      0.05,
+      null
+     ],
+     [
+      0.1,
+      1.0532845040100403
+     ],
+     [
+      0.2,
+      null
+     ],
+     [
+      0.34,
+      1.0379803095022884
+     ],
+     [
+      0.5,
+      1.0388251844856862
+     ],
+     [
+      0.8,
+      1.0383462448029221
+     ],
+     [
+      1.0,
+      1.0448405706833006
+     ]
+    ],
+    "first_p_above_1": 0.1,
+    "first_p_note": "a point of the grid has no run"
+   }
+  },
+  "Sublet-lag": {
+   "101": {
+    "points": [
+     [
+      0.0,
+      null
+     ],
+     [
+      0.05,
+      null
+     ],
+     [
+      0.1,
+      null
+     ],
+     [
+      0.2,
+      null
+     ],
+     [
+      0.34,
+      null
+     ],
+     [
+      0.5,
+      null
+     ],
+     [
+      0.8,
+      null
+     ],
+     [
+      1.0,
+      null
+     ]
+    ],
+    "first_p_above_1": null,
+    "first_p_above_1_note": "r0 <= 1 at every p measured",
+    "first_p_note": "a point of the grid has no run"
+   }
+  }
+ },
+ "gap_lp": {
+  "gap:c101": 657.2199731450188
+ },
+ "gap_ratio": {
+  "Sublet:gap:c101:0": 1.2810188101056437,
+  "A9:gap:c101:0": 1.2544568571700878,
+  "BL1:gap:c101:0": 1.1616423050133737,
+  "BL1-BO:gap:c101:0": 1.154531726757203,
+  "BL3-0:gap:c101:0": 1.242875163276576,
+  "BL4:gap:c101:0": 1.453066879340342,
+  "BL5-cur:gap:c101:0": 1.3279770598740643,
+  "BL5-tau60:gap:c101:0": 1.8847470017965058,
+  "BL1N:gap:c101:0": 1.2045203983006572,
+  "BL5N:gap:c101:0": 1.7121101388939977,
+  "BL1-GP:gap:c101:0": 1.2080584894083801,
+  "Sublet-MS4:gap:c101:0": 1.5250462985409874
+ }
+}

@@ -1,0 +1,66 @@
+Proposition A check: 722 instances, 5776 (instance, lender) pairs, violations 0
+ kind      inst  rho range     P/(rho Dmax) range   max LR/OPT  max B/OPT  max cA   max A2(sigma)/OPT  tight C2   C4    C6    C7   viol
+ contig      24  1.24-3.91    0.09- 0.80              11.392   142.781   565.40      11.313        0.921 0.000 0.854 0.000  0
+ longwin     24  1.64-3.41    0.05- 1.05               7.970   101.423   720.12       8.531        1.000 0.905 0.562 0.601  0
+ rand       600  1.17-3.96    0.26- 2.76 (+single)    14.489   165.622   327.20      16.638        1.000 0.999 1.000 1.000  0
+ setcover    30  2.00-4.00    0.25- 1.00 (+single)     5.619   161.663   239.76       5.600        1.000 0.750 0.828 0.533  0
+ thm2        44  2.00-6.00    0.20- 2.00 (+single)    13.646   218.761   296.68      18.621        1.000 0.964 0.857 0.885  0
+ tightness of the chain with alpha = 1: max B1/(c1 OPT_sw) per kind, B1 = OPT_eager(sigma^1) + sum_i OPT_eager(sigma^r_i), c1 = max (g1 + gR)
+  contig    max B1/(c1 OPT) 0.3424   max c1 10.981
+  longwin   max B1/(c1 OPT) 0.4330   max c1 18.292
+  rand      max B1/(c1 OPT) 0.6612   max c1  7.840
+  setcover  max B1/(c1 OPT) 0.5517   max c1  8.000
+  thm2      max B1/(c1 OPT) 0.7094   max c1 10.000
+ per lender: max LR/OPT_sw, max B/(c_A OPT_sw)
+  eager     pairs  722  max LR/OPT   8.322  max B/(cA OPT) 0.9263
+  none      pairs  722  max LR/OPT  14.489  max B/(cA OPT) 0.9263
+  bern0.05  pairs  722  max LR/OPT  12.529  max B/(cA OPT) 0.9263
+  bern0.2   pairs  722  max LR/OPT  11.404  max B/(cA OPT) 0.9263
+  bern0.6   pairs  722  max LR/OPT   8.817  max B/(cA OPT) 0.9263
+  adaptive  pairs 2166  max LR/OPT   9.886  max B/(cA OPT) 0.9263
+ Theorem 2 family (one client, always active): LR/OPT_sw under the adaptive rule vs rho m/(m+rho-1), and cA
+  m=2 rho=2 P= inf LR/OPT(adaptive)  1.444  limit 1.333  A2(sigma)/OPT  2.667  cA  47.36
+  m=2 rho=2 P= 6.0 LR/OPT(adaptive)  1.895  limit 1.333  A2(sigma)/OPT  2.526  cA  92.72
+  m=2 rho=2 P=12.0 LR/OPT(adaptive)  1.579  limit 1.333  A2(sigma)/OPT  2.526  cA  47.36
+  m=2 rho=2 P= 3.0 LR/OPT(adaptive)  2.087  limit 1.333  A2(sigma)/OPT  2.087  cA 183.45
+  m=2 rho=3 P= inf LR/OPT(adaptive)  1.625  limit 1.500  A2(sigma)/OPT  3.000  cA  48.36
+  m=2 rho=3 P= 9.0 LR/OPT(adaptive)  2.182  limit 1.500  A2(sigma)/OPT  3.273  cA  71.04
+  m=2 rho=3 P=15.0 LR/OPT(adaptive)  2.250  limit 1.500  A2(sigma)/OPT  3.600  cA  48.36
+  m=2 rho=3 P= 3.0 LR/OPT(adaptive)  2.118  limit 1.500  A2(sigma)/OPT  2.118  cA 139.08
+  m=2 rho=5 P= inf LR/OPT(adaptive)  1.806  limit 1.667  A2(sigma)/OPT  3.333  cA  50.36
+  m=2 rho=5 P=15.0 LR/OPT(adaptive)  2.679  limit 1.667  A2(sigma)/OPT  4.286  cA  61.70
+  m=2 rho=5 P=21.0 LR/OPT(adaptive)  2.500  limit 1.667  A2(sigma)/OPT  4.286  cA  50.36
+  m=2 rho=5 P= 3.0 LR/OPT(adaptive)  2.143  limit 1.667  A2(sigma)/OPT  2.143  cA 231.81
+  m=3 rho=2 P= inf LR/OPT(adaptive)  1.867  limit 1.500  A2(sigma)/OPT  4.567  cA  54.50
+  m=3 rho=2 P= 6.0 LR/OPT(adaptive)  2.526  limit 1.500  A2(sigma)/OPT  3.605  cA 107.00
+  m=3 rho=2 P=12.0 LR/OPT(adaptive)  2.250  limit 1.500  A2(sigma)/OPT  4.281  cA  54.50
+  m=3 rho=2 P= 3.0 LR/OPT(adaptive)  3.182  limit 1.500  A2(sigma)/OPT  3.114  cA 212.01
+  m=3 rho=3 P= inf LR/OPT(adaptive)  2.333  limit 1.800  A2(sigma)/OPT  5.708  cA  55.50
+  m=3 rho=3 P= 9.0 LR/OPT(adaptive)  2.727  limit 1.800  A2(sigma)/OPT  4.670  cA  81.75
+  m=3 rho=3 P=15.0 LR/OPT(adaptive)  2.700  limit 1.800  A2(sigma)/OPT  5.138  cA  55.50
+  m=3 rho=3 P= 3.0 LR/OPT(adaptive)  3.281  limit 1.800  A2(sigma)/OPT  3.211  cA 160.51
+  m=3 rho=5 P= inf LR/OPT(adaptive)  2.917  limit 2.143  A2(sigma)/OPT  7.135  cA  57.50
+  m=3 rho=5 P=15.0 LR/OPT(adaptive)  3.214  limit 2.143  A2(sigma)/OPT  6.116  cA  70.63
+  m=3 rho=5 P=21.0 LR/OPT(adaptive)  2.857  limit 2.143  A2(sigma)/OPT  6.116  cA  57.50
+  m=3 rho=5 P= 3.0 LR/OPT(adaptive)  3.365  limit 2.143  A2(sigma)/OPT  3.293  cA 267.51
+  m=4 rho=2 P= inf LR/OPT(adaptive)  2.000  limit 1.600  A2(sigma)/OPT  5.833  cA  60.34
+  m=4 rho=2 P= 6.0 LR/OPT(adaptive)  3.294  limit 1.600  A2(sigma)/OPT  5.147  cA 118.67
+  m=4 rho=2 P=12.0 LR/OPT(adaptive)  2.625  limit 1.600  A2(sigma)/OPT  5.469  cA  60.34
+  m=4 rho=2 P= 3.0 LR/OPT(adaptive)  4.600  limit 1.600  A2(sigma)/OPT  4.375  cA 235.35
+  m=4 rho=3 P= inf LR/OPT(adaptive)  2.500  limit 2.000  A2(sigma)/OPT  7.292  cA  61.34
+  m=4 rho=3 P= 9.0 LR/OPT(adaptive)  3.273  limit 2.000  A2(sigma)/OPT  5.966  cA  90.50
+  m=4 rho=3 P=15.0 LR/OPT(adaptive)  3.333  limit 2.000  A2(sigma)/OPT  7.292  cA  61.34
+  m=4 rho=3 P= 3.0 LR/OPT(adaptive)  4.929  limit 2.000  A2(sigma)/OPT  4.688  cA 178.01
+  m=4 rho=5 P= inf LR/OPT(adaptive)  3.125  limit 2.500  A2(sigma)/OPT  9.115  cA  63.34
+  m=4 rho=5 P=15.0 LR/OPT(adaptive)  4.167  limit 2.500  A2(sigma)/OPT  9.115  cA  77.92
+  m=4 rho=5 P=21.0 LR/OPT(adaptive)  3.750  limit 2.500  A2(sigma)/OPT  9.115  cA  63.34
+  m=4 rho=5 P= 3.0 LR/OPT(adaptive)  5.227  limit 2.500  A2(sigma)/OPT  4.972  cA 296.68
+  m=2 rho=3 P= inf LR/OPT(adaptive)  1.705  limit 1.500  A2(sigma)/OPT  3.273  cA  53.91
+  m=2 rho=3 P=15.0 LR/OPT(adaptive)  2.289  limit 1.500  A2(sigma)/OPT  3.789  cA  53.91
+  m=2 rho=6 P= inf LR/OPT(adaptive)  2.027  limit 1.714  A2(sigma)/OPT  3.892  cA  56.91
+  m=2 rho=6 P=24.0 LR/OPT(adaptive)  2.348  limit 1.714  A2(sigma)/OPT  4.174  cA  56.91
+  m=4 rho=3 P= inf LR/OPT(adaptive)  2.531  limit 2.000  A2(sigma)/OPT  8.438  cA  68.50
+  m=4 rho=3 P=15.0 LR/OPT(adaptive)  3.353  limit 2.000  A2(sigma)/OPT  7.941  cA  68.50
+  m=4 rho=6 P= inf LR/OPT(adaptive)  3.682  limit 2.667  A2(sigma)/OPT 12.273  cA  71.50
+  m=4 rho=6 P=24.0 LR/OPT(adaptive)  4.500  limit 2.667  A2(sigma)/OPT 12.273  cA  71.50
+ total time 1376 s

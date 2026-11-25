@@ -1,0 +1,23 @@
+Part 1: Lemma 1(b) vs brute-force OPT (tau=0).  violation = formula - brute (must be <= ~0);
+        gap = brute - formula (should be ~0 when R >= lam, i.e. Lemma 1(b) is exact there).
+  400 random (params, R, x): max violation +0.00e+00; max gap (R>=lam) +1.78e-15; max gap (R<lam) +0.00e+00
+  opt_exact (endpoint enumeration used in Part 2) agrees with brute force within the brute-force grid on all instances.
+
+Part 2: ALG* (Section 6) worst ratio minus (2 - alpha), exact in x, R on grid dR=0.01 + critical points.
+  H*=inf  {'b': 1.0, 'a': 0.0, 'ap': 0.500001, 'mu': 3.0, 'lam': 0.5, 'rrl': False}  (skipped: no finite notice)
+  H*=inf  {'b': 1.0, 'a': 0.0, 'ap': 0.500001, 'mu': 3.0, 'lam': 1.0, 'rrl': False}  (skipped: no finite notice)
+  H*=inf  {'b': 1.0, 'a': 0.0, 'ap': 0.500001, 'mu': 4.0, 'lam': 0.5, 'rrl': False}  (skipped: no finite notice)
+  H*=inf  {'b': 1.0, 'a': 0.0, 'ap': 0.500001, 'mu': 4.0, 'lam': 1.0, 'rrl': False}  (skipped: no finite notice)
+  H*=inf  {'b': 1.0, 'a': 0.0, 'ap': 0.8, 'mu': 3.0, 'lam': 0.5, 'rrl': False}  (skipped: no finite notice)
+  H*=inf  {'b': 1.0, 'a': 0.0, 'ap': 0.8, 'mu': 3.0, 'lam': 1.0, 'rrl': False}  (skipped: no finite notice)
+  H*=inf  {'b': 1.0, 'a': 0.0, 'ap': 0.8, 'mu': 4.0, 'lam': 0.5, 'rrl': False}  (skipped: no finite notice)
+  H*=inf  {'b': 1.0, 'a': 0.0, 'ap': 0.8, 'mu': 4.0, 'lam': 1.0, 'rrl': False}  (skipped: no finite notice)
+  H*=inf  {'b': 1.0, 'a': 0.0, 'ap': 1.0, 'mu': 3.0, 'lam': 0.5, 'rrl': False}  (skipped: no finite notice)
+  H*=inf  {'b': 1.0, 'a': 0.0, 'ap': 1.0, 'mu': 3.0, 'lam': 1.0, 'rrl': False}  (skipped: no finite notice)
+  H*=inf  {'b': 1.0, 'a': 0.0, 'ap': 1.0, 'mu': 4.0, 'lam': 0.5, 'rrl': False}  (skipped: no finite notice)
+  H*=inf  {'b': 1.0, 'a': 0.0, 'ap': 1.0, 'mu': 4.0, 'lam': 1.0, 'rrl': False}  (skipped: no finite notice)
+  menu cases: 654 runs, max excess +2.220e-16
+  RRL cases (Cor. 6, alpha up to 0.9): 84 runs, max excess +0.000e+00
+
+Part 3: ALG* just below H* (H = H* - 0.05) must fail (sanity: the algorithm needs the threshold).
+  46/46 cases: ALG* exceeds 2-alpha (or is ill-defined) at H = H* - 0.05

@@ -1,0 +1,834 @@
+{
+ "figure": "fig4",
+ "size_in": [
+  7.1399,
+  2.2
+ ],
+ "sources": [
+  "code/sim/out/e7/main/summary.json",
+  "code/sim/out/e3/summary.json"
+ ],
+ "data": {
+  "a": {
+   "order": [
+    "sublet",
+    "bl5",
+    "bl1",
+    "bl4",
+    "a7",
+    "a7_guard",
+    "a6"
+   ],
+   "accounting": "overflow",
+   "sublet": {
+    "tag": "Sublet",
+    "median": 1.0537628129012426,
+    "ci_lo": 1.0537628129012426,
+    "ci_hi": 1.0537628129012426,
+    "n": 1,
+    "components_mean_over_bl0a": {
+     "lease": 0.04005873368098955,
+     "loading": 0.0,
+     "routing": 7.623193055271746e-06,
+     "fallback": 0.9527138462842456,
+     "stranding": 0.06098260974295225
+    },
+    "total_over_bl0a_median": 1.0032338576404372,
+    "label": "Sublet",
+    "segments": {
+     "lease": 0.04005873368098955,
+     "routing": 7.623193055271746e-06,
+     "fallback": 0.9527138462842456,
+     "stranding": 0.06098260974295224
+    }
+   },
+   "bl5": {
+    "tag": "BL5",
+    "median": 0.9690246306812144,
+    "ci_lo": 0.9690246306812144,
+    "ci_hi": 0.9690246306812144,
+    "n": 1,
+    "components_mean_over_bl0a": {
+     "lease": 0.5059873407598716,
+     "loading": 0.0,
+     "routing": 0.0003107672384599094,
+     "fallback": 0.4519674069935117,
+     "stranding": 0.010759115689371147
+    },
+    "total_over_bl0a_median": 0.9981368174518525,
+    "label": "RetroRenting-style",
+    "segments": {
+     "lease": 0.5059873407598716,
+     "routing": 0.0003107672384599094,
+     "fallback": 0.4519674069935117,
+     "stranding": 0.010759115689371147
+    }
+   },
+   "bl1": {
+    "tag": "BL1",
+    "median": 0.637638346747186,
+    "ci_lo": 0.637638346747186,
+    "ci_hi": 0.637638346747186,
+    "n": 1,
+    "components_mean_over_bl0a": {
+     "lease": 0.5389550518795586,
+     "loading": 0.0,
+     "routing": 0.0024611212364819435,
+     "fallback": 0.07347402776079565,
+     "stranding": 0.022748145870349765
+    },
+    "total_over_bl0a_median": 0.9782037818012681,
+    "label": "Greedy renting",
+    "segments": {
+     "lease": 0.5389550518795586,
+     "routing": 0.0024611212364819435,
+     "fallback": 0.07347402776079565,
+     "stranding": 0.022748145870349765
+    }
+   },
+   "bl4": {
+    "tag": "BL4",
+    "median": 1.017755960923123,
+    "ci_lo": 1.017755960923123,
+    "ci_hi": 1.017755960923123,
+    "n": 1,
+    "components_mean_over_bl0a": {
+     "lease": 0.06750669705301218,
+     "loading": 0.0,
+     "routing": 0.002110311600842979,
+     "fallback": 0.9371966876889208,
+     "stranding": 0.010942264580346988
+    },
+    "total_over_bl0a_median": 1.0010680291226581,
+    "label": "CoCaR-style",
+    "segments": {
+     "lease": 0.06750669705301218,
+     "routing": 0.002110311600842979,
+     "fallback": 0.9371966876889208,
+     "stranding": 0.010942264580346988
+    }
+   },
+   "a7": {
+    "tag": "A7",
+    "median": 0.8573207546131695,
+    "ci_lo": 0.8573207546131695,
+    "ci_hi": 0.8573207546131695,
+    "n": 1,
+    "components_mean_over_bl0a": {
+     "lease": 0.35327017454944587,
+     "loading": 0.0,
+     "routing": 0.011077657255072875,
+     "fallback": 0.4586937764262664,
+     "stranding": 0.034279146382384384
+    },
+    "total_over_bl0a_median": 0.9914177785177726,
+    "label": "PD heuristic",
+    "segments": {
+     "lease": 0.3532701745494458,
+     "routing": 0.011077657255072874,
+     "fallback": 0.45869377642626635,
+     "stranding": 0.03427914638238438
+    }
+   },
+   "a7_guard": {
+    "tag": "A7G",
+    "median": 1.042178560200732,
+    "ci_lo": 1.042178560200732,
+    "ci_hi": 1.042178560200732,
+    "n": 1,
+    "components_mean_over_bl0a": {
+     "lease": 0.039773171742516204,
+     "loading": 0.0,
+     "routing": 0.0006849799891969256,
+     "fallback": 0.9601646493087427,
+     "stranding": 0.04155575916027604
+    },
+    "total_over_bl0a_median": 1.0025370595734702,
+    "label": "PD heuristic + guard",
+    "segments": {
+     "lease": 0.03977317174251621,
+     "routing": 0.0006849799891969258,
+     "fallback": 0.960164649308743,
+     "stranding": 0.04155575916027605
+    }
+   },
+   "a6": {
+    "tag": "A6",
+    "median": 1.0469704408983331,
+    "ci_lo": 1.0469704408983331,
+    "ci_hi": 1.0469704408983331,
+    "n": 1,
+    "components_mean_over_bl0a": {
+     "lease": 0.1587565761363561,
+     "loading": 0.0,
+     "routing": 0.0013117224312848709,
+     "fallback": 0.8859342059048247,
+     "stranding": 0.0009679364258673902
+    },
+    "total_over_bl0a_median": 1.0028252933761632,
+    "label": "Two-timescale PD",
+    "segments": {
+     "lease": 0.1587565761363561,
+     "routing": 0.0013117224312848709,
+     "fallback": 0.8859342059048247,
+     "stranding": 0.0009679364258673902
+    }
+   },
+   "zero_components": [
+    "loading"
+   ],
+   "components": {
+    "order": [
+     "lease",
+     "routing",
+     "fallback",
+     "stranding"
+    ],
+    "labels": {
+     "lease": "Lease",
+     "routing": "Routing",
+     "fallback": "Fallback",
+     "stranding": "Stranding"
+    },
+    "note": "lease is rent and billed term (lease_rent + lease_prepaid; sf_e6b.component_groups); each bar's median split in proportion to the components' mean ratios to BL0a"
+   },
+   "bl0a": {
+    "x": 1.0,
+    "usd_by_alignment": {
+     "1": 1527.7154508483445
+    }
+   },
+   "bl0b": {
+    "overflow_over_bl0a": 5.570584641507492,
+    "total_over_bl0a": 1.274922744301991,
+    "overflow_over_bl0a_by_alignment": {
+     "1": 5.570584641507492
+    },
+    "total_over_bl0a_by_alignment": {
+     "1": 1.274922744301991
+    },
+    "off_scale": true,
+    "label": "Provision for peak",
+    "rule": "median over the alignments of meta.bl0b_overflow_usd / meta.bl0a_usd (and the total accounting's bl0b_total_usd / bl0a_total_usd)"
+   },
+   "own_capacity_usd": {
+    "by_alignment": {
+     "1": 23870.52067533807
+    },
+    "median": 23870.52067533807
+   }
+  },
+  "b": {
+   "bl5": {
+    "tag": "BL5",
+    "links": [
+     0.0,
+     2.0,
+     3.0,
+     5.0
+    ],
+    "median": [
+     4.847886106592347,
+     2.930102231239007,
+     2.930102231239007,
+     3.097536931878564
+    ],
+    "ci_lo": [
+     4.847886106592347,
+     2.930102231239007,
+     2.930102231239007,
+     3.097536931878564
+    ],
+    "ci_hi": [
+     4.847886106592347,
+     2.930102231239007,
+     2.930102231239007,
+     3.097536931878564
+    ],
+    "n": [
+     1,
+     1,
+     1,
+     1
+    ],
+    "note": [
+     null,
+     null,
+     null,
+     null
+    ],
+    "source": [
+     "links.0.BL5",
+     "links.2.BL5",
+     "links.3.BL5",
+     "runs.1.BL5"
+    ]
+   },
+   "bl1": {
+    "tag": "BL1",
+    "links": [
+     0.0,
+     2.0,
+     3.0,
+     5.0
+    ],
+    "median": [
+     35.1566401629748,
+     35.74898744584741,
+     35.74898744584741,
+     36.2361653252814
+    ],
+    "ci_lo": [
+     35.1566401629748,
+     35.74898744584741,
+     35.74898744584741,
+     36.2361653252814
+    ],
+    "ci_hi": [
+     35.1566401629748,
+     35.74898744584741,
+     35.74898744584741,
+     36.2361653252814
+    ],
+    "n": [
+     1,
+     1,
+     1,
+     1
+    ],
+    "note": [
+     null,
+     null,
+     null,
+     null
+    ],
+    "source": [
+     "links.0.BL1",
+     "links.2.BL1",
+     "links.3.BL1",
+     "runs.1.BL1"
+    ]
+   },
+   "sublet": {
+    "tag": "Sublet",
+    "links": [
+     0.0,
+     2.0,
+     3.0,
+     5.0
+    ],
+    "median": [
+     -5.389480386425927,
+     -5.376281290124263,
+     -5.376281290124263,
+     -5.376281290124263
+    ],
+    "ci_lo": [
+     -5.389480386425927,
+     -5.376281290124263,
+     -5.376281290124263,
+     -5.376281290124263
+    ],
+    "ci_hi": [
+     -5.389480386425927,
+     -5.376281290124263,
+     -5.376281290124263,
+     -5.376281290124263
+    ],
+    "n": [
+     1,
+     1,
+     1,
+     1
+    ],
+    "note": [
+     null,
+     null,
+     null,
+     null
+    ],
+    "source": [
+     "links.0.Sublet",
+     "links.2.Sublet",
+     "links.3.Sublet",
+     "runs.1.Sublet"
+    ]
+   },
+   "agree": null,
+   "cross_region_links": {
+    "0": [],
+    "2": [
+     [
+      "north_america",
+      "south_america"
+     ],
+     [
+      "east_asia",
+      "south_southeast_asia"
+     ]
+    ],
+    "3": [
+     [
+      "north_america",
+      "south_america"
+     ],
+     [
+      "east_asia",
+      "south_southeast_asia"
+     ],
+     [
+      "north_america",
+      "europe"
+     ]
+    ],
+    "5": "S7, config.DEFAULT_ADJACENCY: the main grid (runs.1)"
+   }
+  },
+  "c": {
+   "u": 8.0,
+   "mu": 1.0,
+   "bl2": {
+    "tag": "BL2",
+    "b": [
+     1.0,
+     2.0,
+     4.0,
+     8.0,
+     16.0,
+     32.0
+    ],
+    "median": [
+     1.372973865221467,
+     null,
+     null,
+     2.0642108477759913,
+     null,
+     null
+    ],
+    "ci_lo": [
+     1.372973865221467,
+     null,
+     null,
+     2.0642108477759913,
+     null,
+     null
+    ],
+    "ci_hi": [
+     1.372973865221467,
+     null,
+     null,
+     2.0642108477759913,
+     null,
+     null
+    ],
+    "n": [
+     1,
+     0,
+     0,
+     1,
+     0,
+     0
+    ],
+    "open": [
+     false,
+     true,
+     true,
+     false,
+     true,
+     true
+    ],
+    "note": [
+     null,
+     "no run of this tag in the outputs",
+     "no run of this tag in the outputs",
+     null,
+     "no run of this tag in the outputs",
+     "no run of this tag in the outputs"
+    ],
+    "u": 8.0
+   },
+   "a6_siloed": {
+    "tag": "A6-siloed",
+    "b": [
+     1.0,
+     2.0,
+     4.0,
+     8.0,
+     16.0,
+     32.0
+    ],
+    "median": [
+     1.7798096499699134,
+     null,
+     null,
+     2.11453245397307,
+     null,
+     null
+    ],
+    "ci_lo": [
+     1.7798096499699134,
+     null,
+     null,
+     2.11453245397307,
+     null,
+     null
+    ],
+    "ci_hi": [
+     1.7798096499699134,
+     null,
+     null,
+     2.11453245397307,
+     null,
+     null
+    ],
+    "n": [
+     1,
+     0,
+     0,
+     1,
+     0,
+     0
+    ],
+    "open": [
+     false,
+     true,
+     true,
+     false,
+     true,
+     true
+    ],
+    "note": [
+     null,
+     "no run of this tag in the outputs",
+     "no run of this tag in the outputs",
+     null,
+     "no run of this tag in the outputs",
+     "no run of this tag in the outputs"
+    ],
+    "u": 8.0
+   },
+   "a6": {
+    "tag": "A6",
+    "b": [
+     1.0,
+     2.0,
+     4.0,
+     8.0,
+     16.0,
+     32.0
+    ],
+    "median": [
+     1.7798096499699134,
+     null,
+     null,
+     1.7771877445272954,
+     null,
+     null
+    ],
+    "ci_lo": [
+     1.7798096499699134,
+     null,
+     null,
+     1.7771877445272954,
+     null,
+     null
+    ],
+    "ci_hi": [
+     1.7798096499699134,
+     null,
+     null,
+     1.7771877445272954,
+     null,
+     null
+    ],
+    "n": [
+     1,
+     0,
+     0,
+     1,
+     0,
+     0
+    ],
+    "open": [
+     false,
+     true,
+     true,
+     false,
+     true,
+     true
+    ],
+    "note": [
+     null,
+     "no run of this tag in the outputs",
+     "no run of this tag in the outputs",
+     null,
+     "no run of this tag in the outputs",
+     "no run of this tag in the outputs"
+    ],
+    "u": 8.0
+   },
+   "sublet_siloed": {
+    "tag": "Sublet-siloed",
+    "b": [
+     1.0,
+     2.0,
+     4.0,
+     8.0,
+     16.0,
+     32.0
+    ],
+    "median": [
+     1.9566627148043254,
+     null,
+     null,
+     2.0096921875159803,
+     null,
+     null
+    ],
+    "ci_lo": [
+     1.9566627148043254,
+     null,
+     null,
+     2.0096921875159803,
+     null,
+     null
+    ],
+    "ci_hi": [
+     1.9566627148043254,
+     null,
+     null,
+     2.0096921875159803,
+     null,
+     null
+    ],
+    "n": [
+     1,
+     0,
+     0,
+     1,
+     0,
+     0
+    ],
+    "open": [
+     false,
+     true,
+     true,
+     false,
+     true,
+     true
+    ],
+    "note": [
+     null,
+     "no run of this tag in the outputs",
+     "no run of this tag in the outputs",
+     null,
+     "no run of this tag in the outputs",
+     "no run of this tag in the outputs"
+    ],
+    "u": 8.0
+   },
+   "sublet": {
+    "tag": "Sublet",
+    "b": [
+     1.0,
+     2.0,
+     4.0,
+     8.0,
+     16.0,
+     32.0
+    ],
+    "median": [
+     1.9566627148043254,
+     null,
+     null,
+     1.9110941116343405,
+     null,
+     null
+    ],
+    "ci_lo": [
+     1.9566627148043254,
+     null,
+     null,
+     1.9110941116343405,
+     null,
+     null
+    ],
+    "ci_hi": [
+     1.9566627148043254,
+     null,
+     null,
+     1.9110941116343405,
+     null,
+     null
+    ],
+    "n": [
+     1,
+     0,
+     0,
+     1,
+     0,
+     0
+    ],
+    "open": [
+     false,
+     true,
+     true,
+     false,
+     true,
+     true
+    ],
+    "note": [
+     null,
+     "no run of this tag in the outputs",
+     "no run of this tag in the outputs",
+     null,
+     "no run of this tag in the outputs",
+     "no run of this tag in the outputs"
+    ],
+    "u": 8.0
+   },
+   "opt": {
+    "b": [
+     1.0,
+     2.0,
+     4.0,
+     8.0,
+     16.0,
+     32.0
+    ],
+    "point": [
+     1.0,
+     null,
+     null,
+     1.233315601424277,
+     null,
+     null
+    ],
+    "lo": [
+     0.9993148534692031,
+     null,
+     null,
+     1.2313029139260616,
+     null,
+     null
+    ],
+    "hi": [
+     1.0006856162784115,
+     null,
+     null,
+     1.2335697829088093,
+     null,
+     null
+    ],
+    "exact": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "open": [
+     false,
+     true,
+     true,
+     false,
+     true,
+     true
+    ],
+    "note": [
+     null,
+     "no bracket with a value",
+     "no bracket with a value",
+     null,
+     "no bracket with a value",
+     "no bracket with a value"
+    ]
+   },
+   "theory": {
+    "b": [
+     1.0,
+     2.0,
+     4.0,
+     8.0,
+     16.0,
+     32.0
+    ],
+    "upper_b": [
+     1.0,
+     2.0,
+     4.0,
+     8.0,
+     16.0,
+     32.0
+    ],
+    "u": 8.0,
+    "kind": "upper"
+   }
+  },
+  "labels": {
+   "a_x": "Week cost / all-fallback",
+   "b_x": "Cross-region links",
+   "b_y": "Saving (%)",
+   "c_x": "Borrowers b",
+   "c_y": "Cost / shared OPT",
+   "theory": "b, bound on\nsiloed OPT",
+   "theory_forms": [
+    "b, bound on\nsiloed OPT",
+    "b, bound\non OPT"
+   ],
+   "no_data": "no runs",
+   "bars": {
+    "sublet": "Sublet",
+    "bl5": "RetroRenting-style",
+    "bl1": "Greedy renting",
+    "bl4": "CoCaR-style",
+    "a7": "PD heuristic",
+    "a7_guard": "PD heuristic + guard",
+    "a6": "Two-timescale PD"
+   },
+   "bl0a": "All-fallback",
+   "bl0b": "Provision for peak",
+   "bl0b_ratio": "5.6",
+   "components": {
+    "lease": "Lease",
+    "routing": "Routing",
+    "fallback": "Fallback",
+    "stranding": "Stranding"
+   },
+   "agree": null,
+   "accounting": "overflow accounting: cost / BL0a without the borrowers' own capacity (M2)",
+   "own_capacity": "23,871 USD per week",
+   "caption": "Fig. 4. (a) Week cost over all-fallback by component, overflow accounting (not drawn: the borrowers' own capacity, 23,871 USD per week, the same for every policy); medians with 95% intervals over 1 alignment \u00d7 1 seed. (b) Saving over all-fallback against cross-region links. (c) Cost over shared OPT against b (u = 8); dashed, open markers: siloed. Grey: b, the bound on siloed OPT (stars; tight by C3-P7, PROVEN).",
+   "caption_chars": 414,
+   "c_open": "open star: siloed/shared OPT bracket open (a shared MILP without a result: LB from the LP alone, sim_spec_ms4 \u00a74.6)",
+   "status": {
+    "copy bound siloed OPT <= b * shared OPT, attained on C3-P7's instance": "PROVEN, elementary",
+    "Theorem W(a)(b) for every A8 run (certificate per run)": "PROVEN for the engine as implemented under C1-C3, audited; W(c) CONJECTURE"
+   }
+  },
+  "meta": {
+   "e7_main": {
+    "git_revision": "939847ca5925ce069d6df9089fe3a3d1d3207bb7",
+    "B0_rule": "0.1*BL0a",
+    "reduced": true,
+    "alignments": [
+     1
+    ],
+    "policy_seeds": [
+     0
+    ]
+   },
+   "e3": {
+    "git_revision": "939847ca5925ce069d6df9089fe3a3d1d3207bb7",
+    "B0_rule": "0.1*BL0a",
+    "reduced": true,
+    "normalize": "mean"
+   }
+  },
+  "sources": [
+   "code/sim/out/e7/main/summary.json",
+   "code/sim/out/e3/summary.json"
+  ]
+ }
+}

@@ -1,0 +1,65 @@
+{
+ "block": "Q4",
+ "tier": 1,
+ "grid": "1min",
+ "lb": null,
+ "description": "s5_tau5_H5 in place of s5_tau5_H2 on I2 x L-tr, L-eg, L-iid 0.05; 24 cell-modes",
+ "policies": [
+  "BL0a",
+  "BL1",
+  "BL2",
+  "BL5",
+  "A6",
+  "A2",
+  "PS",
+  "PS-G",
+  "PS-G1",
+  "BL1-G",
+  "BL5-G"
+ ],
+ "policy_seeds": [
+  0,
+  1,
+  2
+ ],
+ "modes": [
+  "L-tr",
+  "L-eg",
+  "L-iid-0.05"
+ ],
+ "instances": [
+  {
+   "id": "I2-H5",
+   "family": "I2",
+   "config": "example_1day.json",
+   "overrides": {
+    "contracts.0": {
+     "id": "s5_tau5_H5",
+     "tau_min": 5,
+     "H_min": 5
+    },
+    "lender_defaults.menu": [
+     "s5_tau5_H5",
+     "s5_tau5_H60",
+     "s5_tau60_H0"
+    ]
+   },
+   "config_seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "tuning_seeds": [
+    1
+   ],
+   "extra_policies": [
+    "PS-GR"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,2088 @@
+{
+ "meta": {
+  "exp": "e4",
+  "git_revision": "939847ca5925ce069d6df9089fe3a3d1d3207bb7",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "scipy": "1.17.1",
+   "sublet": "0.1.0"
+  },
+  "written": "2026-10-26T14:15:52",
+  "script": "code/sim/sublet/experiments/e4.py",
+  "script_sha256": "859d8da8932ee0e971ce3ff0bcaa942cea1e10b809df9b04792f10f14638c39c"
+ },
+ "jobs": [
+  {
+   "id": "e4:phat:panel=azure:c=1:mu=1:pred=prev:day=1",
+   "kind": "milp",
+   "params": {
+    "panel": "azure",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "prev",
+    "day": 1,
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 70.0,
+   "status": "ok",
+   "wall_s": 10.25706335902214,
+   "peak_rss_mb": 222.51171875,
+   "runs": 0
+  },
+  {
+   "id": "e4:phat:panel=azure:c=1:mu=1:pred=prev:day=2",
+   "kind": "milp",
+   "params": {
+    "panel": "azure",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "prev",
+    "day": 2,
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 70.0,
+   "status": "ok",
+   "wall_s": 10.253530191956088,
+   "peak_rss_mb": 226.87109375,
+   "runs": 0
+  },
+  {
+   "id": "e4:phat:panel=azure:c=1:mu=1:pred=phase30:day=1",
+   "kind": "milp",
+   "params": {
+    "panel": "azure",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "phase30",
+    "day": 1,
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 70.0,
+   "status": "ok",
+   "wall_s": 10.263620631070808,
+   "peak_rss_mb": 217.92578125,
+   "runs": 0
+  },
+  {
+   "id": "e4:phat:panel=azure:c=1:mu=1:pred=phase30:day=2",
+   "kind": "milp",
+   "params": {
+    "panel": "azure",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "phase30",
+    "day": 2,
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 70.0,
+   "status": "ok",
+   "wall_s": 10.23692430392839,
+   "peak_rss_mb": 220.34765625,
+   "runs": 0
+  },
+  {
+   "id": "e4:phat:panel=azure:c=1:mu=1:pred=amp1.5:day=1",
+   "kind": "milp",
+   "params": {
+    "panel": "azure",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "amp1.5",
+    "day": 1,
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 70.0,
+   "status": "ok",
+   "wall_s": 10.239111118018627,
+   "peak_rss_mb": 215.625,
+   "runs": 0
+  },
+  {
+   "id": "e4:phat:panel=azure:c=1:mu=1:pred=amp1.5:day=2",
+   "kind": "milp",
+   "params": {
+    "panel": "azure",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "amp1.5",
+    "day": 2,
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 70.0,
+   "status": "ok",
+   "wall_s": 7.491863819072023,
+   "peak_rss_mb": 203.06640625,
+   "runs": 0
+  },
+  {
+   "id": "e4:phat:panel=azure:c=1:mu=1:pred=del_p90:day=1",
+   "kind": "milp",
+   "params": {
+    "panel": "azure",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "del_p90",
+    "day": 1,
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 70.0,
+   "status": "ok",
+   "wall_s": 10.291273097973317,
+   "peak_rss_mb": 208.546875,
+   "runs": 0
+  },
+  {
+   "id": "e4:phat:panel=azure:c=1:mu=1:pred=del_p90:day=2",
+   "kind": "milp",
+   "params": {
+    "panel": "azure",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "del_p90",
+    "day": 2,
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 70.0,
+   "status": "ok",
+   "wall_s": 10.267010332085192,
+   "peak_rss_mb": 241.52734375,
+   "runs": 0
+  },
+  {
+   "id": "e4:phat:panel=azure:c=1:mu=1:pred=inj3x30:day=1",
+   "kind": "milp",
+   "params": {
+    "panel": "azure",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "inj3x30",
+    "day": 1,
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 70.0,
+   "status": "ok",
+   "wall_s": 10.247654118109494,
+   "peak_rss_mb": 224.93359375,
+   "runs": 0
+  },
+  {
+   "id": "e4:phat:panel=azure:c=1:mu=1:pred=inj3x30:day=2",
+   "kind": "milp",
+   "params": {
+    "panel": "azure",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "inj3x30",
+    "day": 2,
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 70.0,
+   "status": "ok",
+   "wall_s": 10.24336921586655,
+   "peak_rss_mb": 208.7265625,
+   "runs": 0
+  },
+  {
+   "id": "e4:phat:panel=azure:c=1:mu=1:pred=empty:day=1",
+   "kind": "milp",
+   "params": {
+    "panel": "azure",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "empty",
+    "day": 1,
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 70.0,
+   "status": "ok",
+   "wall_s": 0.1914823839906603,
+   "peak_rss_mb": 131.5859375,
+   "runs": 0
+  },
+  {
+   "id": "e4:phat:panel=azure:c=1:mu=1:pred=empty:day=2",
+   "kind": "milp",
+   "params": {
+    "panel": "azure",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "empty",
+    "day": 2,
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 70.0,
+   "status": "ok",
+   "wall_s": 0.19246316887438297,
+   "peak_rss_mb": 131.40234375,
+   "runs": 0
+  },
+  {
+   "id": "e4:phat:panel=azure:c=1:mu=1:pred=exact:day=1",
+   "kind": "milp",
+   "params": {
+    "panel": "azure",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "exact",
+    "day": 1,
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 70.0,
+   "status": "ok",
+   "wall_s": 10.267355513060465,
+   "peak_rss_mb": 227.78515625,
+   "runs": 0
+  },
+  {
+   "id": "e4:phat:panel=azure:c=1:mu=1:pred=exact:day=2",
+   "kind": "milp",
+   "params": {
+    "panel": "azure",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "exact",
+    "day": 2,
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 70.0,
+   "status": "ok",
+   "wall_s": 0.2756208758801222,
+   "peak_rss_mb": 136.765625,
+   "runs": 0
+  },
+  {
+   "id": "e4:phat:panel=azure:c=1:mu=2:pred=prev:day=1",
+   "kind": "milp",
+   "params": {
+    "panel": "azure",
+    "c": 1,
+    "mu": 2.0,
+    "pred": "prev",
+    "day": 1,
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 70.0,
+   "status": "ok",
+   "wall_s": 10.26599489687942,
+   "peak_rss_mb": 219.59765625,
+   "runs": 0
+  },
+  {
+   "id": "e4:phat:panel=azure:c=1:mu=2:pred=prev:day=2",
+   "kind": "milp",
+   "params": {
+    "panel": "azure",
+    "c": 1,
+    "mu": 2.0,
+    "pred": "prev",
+    "day": 2,
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 70.0,
+   "status": "ok",
+   "wall_s": 10.240155335981399,
+   "peak_rss_mb": 213.765625,
+   "runs": 0
+  },
+  {
+   "id": "e4:phat:panel=burstgpt:c=1:mu=1:pred=prev:day=1",
+   "kind": "milp",
+   "params": {
+    "panel": "burstgpt",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "prev",
+    "day": 1,
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 70.0,
+   "status": "ok",
+   "wall_s": 3.2546537639573216,
+   "peak_rss_mb": 189.42578125,
+   "runs": 0
+  },
+  {
+   "id": "e4:phat:panel=burstgpt:c=1:mu=1:pred=prev:day=2",
+   "kind": "milp",
+   "params": {
+    "panel": "burstgpt",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "prev",
+    "day": 2,
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 70.0,
+   "status": "ok",
+   "wall_s": 0.7833680810872465,
+   "peak_rss_mb": 155.65625,
+   "runs": 0
+  },
+  {
+   "id": "e4:phat:panel=burstgpt:c=1:mu=1:pred=phase30:day=1",
+   "kind": "milp",
+   "params": {
+    "panel": "burstgpt",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "phase30",
+    "day": 1,
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 70.0,
+   "status": "ok",
+   "wall_s": 5.655924580059946,
+   "peak_rss_mb": 190.140625,
+   "runs": 0
+  },
+  {
+   "id": "e4:phat:panel=burstgpt:c=1:mu=1:pred=phase30:day=2",
+   "kind": "milp",
+   "params": {
+    "panel": "burstgpt",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "phase30",
+    "day": 2,
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 70.0,
+   "status": "ok",
+   "wall_s": 0.38527384120970964,
+   "peak_rss_mb": 144.01171875,
+   "runs": 0
+  },
+  {
+   "id": "e4:phat:panel=burstgpt:c=1:mu=1:pred=amp1.5:day=1",
+   "kind": "milp",
+   "params": {
+    "panel": "burstgpt",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "amp1.5",
+    "day": 1,
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 70.0,
+   "status": "ok",
+   "wall_s": 1.4743303400464356,
+   "peak_rss_mb": 148.96875,
+   "runs": 0
+  },
+  {
+   "id": "e4:phat:panel=burstgpt:c=1:mu=1:pred=amp1.5:day=2",
+   "kind": "milp",
+   "params": {
+    "panel": "burstgpt",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "amp1.5",
+    "day": 2,
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 70.0,
+   "status": "ok",
+   "wall_s": 0.6293853251263499,
+   "peak_rss_mb": 153.2421875,
+   "runs": 0
+  },
+  {
+   "id": "e4:phat:panel=burstgpt:c=1:mu=1:pred=del_p90:day=1",
+   "kind": "milp",
+   "params": {
+    "panel": "burstgpt",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "del_p90",
+    "day": 1,
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 70.0,
+   "status": "ok",
+   "wall_s": 3.648546134820208,
+   "peak_rss_mb": 170.08203125,
+   "runs": 0
+  },
+  {
+   "id": "e4:phat:panel=burstgpt:c=1:mu=1:pred=del_p90:day=2",
+   "kind": "milp",
+   "params": {
+    "panel": "burstgpt",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "del_p90",
+    "day": 2,
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 70.0,
+   "status": "ok",
+   "wall_s": 0.7346429070457816,
+   "peak_rss_mb": 153.6171875,
+   "runs": 0
+  },
+  {
+   "id": "e4:phat:panel=burstgpt:c=1:mu=1:pred=inj3x30:day=1",
+   "kind": "milp",
+   "params": {
+    "panel": "burstgpt",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "inj3x30",
+    "day": 1,
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 70.0,
+   "status": "ok",
+   "wall_s": 2.1294252700172365,
+   "peak_rss_mb": 159.48828125,
+   "runs": 0
+  },
+  {
+   "id": "e4:phat:panel=burstgpt:c=1:mu=1:pred=inj3x30:day=2",
+   "kind": "milp",
+   "params": {
+    "panel": "burstgpt",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "inj3x30",
+    "day": 2,
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 70.0,
+   "status": "ok",
+   "wall_s": 10.26543301413767,
+   "peak_rss_mb": 182.83203125,
+   "runs": 0
+  },
+  {
+   "id": "e4:phat:panel=burstgpt:c=1:mu=1:pred=empty:day=1",
+   "kind": "milp",
+   "params": {
+    "panel": "burstgpt",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "empty",
+    "day": 1,
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 70.0,
+   "status": "ok",
+   "wall_s": 0.2100661820732057,
+   "peak_rss_mb": 133.61328125,
+   "runs": 0
+  },
+  {
+   "id": "e4:phat:panel=burstgpt:c=1:mu=1:pred=empty:day=2",
+   "kind": "milp",
+   "params": {
+    "panel": "burstgpt",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "empty",
+    "day": 2,
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 70.0,
+   "status": "ok",
+   "wall_s": 0.1920386180281639,
+   "peak_rss_mb": 133.94921875,
+   "runs": 0
+  },
+  {
+   "id": "e4:phat:panel=burstgpt:c=1:mu=1:pred=exact:day=1",
+   "kind": "milp",
+   "params": {
+    "panel": "burstgpt",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "exact",
+    "day": 1,
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 70.0,
+   "status": "ok",
+   "wall_s": 0.7654760519508272,
+   "peak_rss_mb": 156.27734375,
+   "runs": 0
+  },
+  {
+   "id": "e4:phat:panel=burstgpt:c=1:mu=1:pred=exact:day=2",
+   "kind": "milp",
+   "params": {
+    "panel": "burstgpt",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "exact",
+    "day": 2,
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 70.0,
+   "status": "ok",
+   "wall_s": 0.6554853650741279,
+   "peak_rss_mb": 157.06640625,
+   "runs": 0
+  },
+  {
+   "id": "e4:phat:panel=burstgpt:c=1:mu=2:pred=prev:day=1",
+   "kind": "milp",
+   "params": {
+    "panel": "burstgpt",
+    "c": 1,
+    "mu": 2.0,
+    "pred": "prev",
+    "day": 1,
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 70.0,
+   "status": "ok",
+   "wall_s": 4.324252950027585,
+   "peak_rss_mb": 211.42578125,
+   "runs": 0
+  },
+  {
+   "id": "e4:phat:panel=burstgpt:c=1:mu=2:pred=prev:day=2",
+   "kind": "milp",
+   "params": {
+    "panel": "burstgpt",
+    "c": 1,
+    "mu": 2.0,
+    "pred": "prev",
+    "day": 2,
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 70.0,
+   "status": "ok",
+   "wall_s": 0.6095381379127502,
+   "peak_rss_mb": 151.2265625,
+   "runs": 0
+  },
+  {
+   "id": "e4:eager:panel=azure:c=1",
+   "kind": "milp",
+   "params": {
+    "panel": "azure",
+    "c": 1,
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 70.0,
+   "status": "ok",
+   "wall_s": 10.384482939960435,
+   "peak_rss_mb": 228.6796875,
+   "runs": 0
+  },
+  {
+   "id": "e4:eager:panel=burstgpt:c=1",
+   "kind": "milp",
+   "params": {
+    "panel": "burstgpt",
+    "c": 1,
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 70.0,
+   "status": "ok",
+   "wall_s": 0.8807728008832783,
+   "peak_rss_mb": 156.0078125,
+   "runs": 0
+  },
+  {
+   "id": "e4:pcols:panel=azure:c=1:mu=1:pred=prev",
+   "kind": "pool",
+   "params": {
+    "panel": "azure",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "prev",
+    "days": [
+     1,
+     2
+    ],
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 1.0,
+   "status": "ok",
+   "wall_s": 0.2221985619980842,
+   "peak_rss_mb": 131.60546875,
+   "runs": 0
+  },
+  {
+   "id": "e4:pcols:panel=azure:c=1:mu=1:pred=phase30",
+   "kind": "pool",
+   "params": {
+    "panel": "azure",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "phase30",
+    "days": [
+     1,
+     2
+    ],
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 1.0,
+   "status": "ok",
+   "wall_s": 0.22429984295740724,
+   "peak_rss_mb": 131.3984375,
+   "runs": 0
+  },
+  {
+   "id": "e4:pcols:panel=azure:c=1:mu=1:pred=amp1.5",
+   "kind": "pool",
+   "params": {
+    "panel": "azure",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "amp1.5",
+    "days": [
+     1,
+     2
+    ],
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 1.0,
+   "status": "ok",
+   "wall_s": 0.18694174801930785,
+   "peak_rss_mb": 130.890625,
+   "runs": 0
+  },
+  {
+   "id": "e4:pcols:panel=azure:c=1:mu=1:pred=del_p90",
+   "kind": "pool",
+   "params": {
+    "panel": "azure",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "del_p90",
+    "days": [
+     1,
+     2
+    ],
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 1.0,
+   "status": "ok",
+   "wall_s": 0.20070742815732956,
+   "peak_rss_mb": 131.82421875,
+   "runs": 0
+  },
+  {
+   "id": "e4:pcols:panel=azure:c=1:mu=1:pred=inj3x30",
+   "kind": "pool",
+   "params": {
+    "panel": "azure",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "inj3x30",
+    "days": [
+     1,
+     2
+    ],
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 1.0,
+   "status": "ok",
+   "wall_s": 0.190863445866853,
+   "peak_rss_mb": 131.6640625,
+   "runs": 0
+  },
+  {
+   "id": "e4:pcols:panel=azure:c=1:mu=1:pred=empty",
+   "kind": "pool",
+   "params": {
+    "panel": "azure",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "empty",
+    "days": [
+     1,
+     2
+    ],
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 1.0,
+   "status": "ok",
+   "wall_s": 0.18486761208623648,
+   "peak_rss_mb": 130.87890625,
+   "runs": 0
+  },
+  {
+   "id": "e4:pcols:panel=azure:c=1:mu=1:pred=exact",
+   "kind": "pool",
+   "params": {
+    "panel": "azure",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "exact",
+    "days": [
+     1,
+     2
+    ],
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 1.0,
+   "status": "ok",
+   "wall_s": 0.20606504613533616,
+   "peak_rss_mb": 131.65234375,
+   "runs": 0
+  },
+  {
+   "id": "e4:pcols:panel=azure:c=1:mu=2:pred=prev",
+   "kind": "pool",
+   "params": {
+    "panel": "azure",
+    "c": 1,
+    "mu": 2.0,
+    "pred": "prev",
+    "days": [
+     1,
+     2
+    ],
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 1.0,
+   "status": "ok",
+   "wall_s": 0.18838555389083922,
+   "peak_rss_mb": 131.16796875,
+   "runs": 0
+  },
+  {
+   "id": "e4:pcols:panel=burstgpt:c=1:mu=1:pred=prev",
+   "kind": "pool",
+   "params": {
+    "panel": "burstgpt",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "prev",
+    "days": [
+     1,
+     2
+    ],
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 1.0,
+   "status": "ok",
+   "wall_s": 0.2087994657922536,
+   "peak_rss_mb": 133.99609375,
+   "runs": 0
+  },
+  {
+   "id": "e4:pcols:panel=burstgpt:c=1:mu=1:pred=phase30",
+   "kind": "pool",
+   "params": {
+    "panel": "burstgpt",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "phase30",
+    "days": [
+     1,
+     2
+    ],
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 1.0,
+   "status": "ok",
+   "wall_s": 0.1864993181079626,
+   "peak_rss_mb": 134.41796875,
+   "runs": 0
+  },
+  {
+   "id": "e4:pcols:panel=burstgpt:c=1:mu=1:pred=amp1.5",
+   "kind": "pool",
+   "params": {
+    "panel": "burstgpt",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "amp1.5",
+    "days": [
+     1,
+     2
+    ],
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 1.0,
+   "status": "ok",
+   "wall_s": 0.20578409894369543,
+   "peak_rss_mb": 133.0,
+   "runs": 0
+  },
+  {
+   "id": "e4:pcols:panel=burstgpt:c=1:mu=1:pred=del_p90",
+   "kind": "pool",
+   "params": {
+    "panel": "burstgpt",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "del_p90",
+    "days": [
+     1,
+     2
+    ],
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 1.0,
+   "status": "ok",
+   "wall_s": 0.20715691894292831,
+   "peak_rss_mb": 133.75390625,
+   "runs": 0
+  },
+  {
+   "id": "e4:pcols:panel=burstgpt:c=1:mu=1:pred=inj3x30",
+   "kind": "pool",
+   "params": {
+    "panel": "burstgpt",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "inj3x30",
+    "days": [
+     1,
+     2
+    ],
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 1.0,
+   "status": "ok",
+   "wall_s": 0.1886680091265589,
+   "peak_rss_mb": 134.28515625,
+   "runs": 0
+  },
+  {
+   "id": "e4:pcols:panel=burstgpt:c=1:mu=1:pred=empty",
+   "kind": "pool",
+   "params": {
+    "panel": "burstgpt",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "empty",
+    "days": [
+     1,
+     2
+    ],
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 1.0,
+   "status": "ok",
+   "wall_s": 0.19022172992117703,
+   "peak_rss_mb": 133.52734375,
+   "runs": 0
+  },
+  {
+   "id": "e4:pcols:panel=burstgpt:c=1:mu=1:pred=exact",
+   "kind": "pool",
+   "params": {
+    "panel": "burstgpt",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "exact",
+    "days": [
+     1,
+     2
+    ],
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 1.0,
+   "status": "ok",
+   "wall_s": 0.18650976102799177,
+   "peak_rss_mb": 134.2421875,
+   "runs": 0
+  },
+  {
+   "id": "e4:pcols:panel=burstgpt:c=1:mu=2:pred=prev",
+   "kind": "pool",
+   "params": {
+    "panel": "burstgpt",
+    "c": 1,
+    "mu": 2.0,
+    "pred": "prev",
+    "days": [
+     1,
+     2
+    ],
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 1.0,
+   "status": "ok",
+   "wall_s": 0.21079626702703536,
+   "peak_rss_mb": 134.078125,
+   "runs": 0
+  },
+  {
+   "id": "e4:week:panel=azure:c=1:mu=1:pred=prev",
+   "kind": "pool",
+   "params": {
+    "panel": "azure",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "prev",
+    "tags": [
+     "A5",
+     "A6-pred"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 26.5,
+   "status": "ok",
+   "wall_s": 4.047018280019984,
+   "peak_rss_mb": 131.80078125,
+   "runs": 2
+  },
+  {
+   "id": "e4:week:panel=azure:c=1:mu=1:pred=phase30",
+   "kind": "pool",
+   "params": {
+    "panel": "azure",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "phase30",
+    "tags": [
+     "A5",
+     "A6-pred"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 26.5,
+   "status": "ok",
+   "wall_s": 3.883576778927818,
+   "peak_rss_mb": 132.15625,
+   "runs": 2
+  },
+  {
+   "id": "e4:week:panel=azure:c=1:mu=1:pred=amp1.5",
+   "kind": "pool",
+   "params": {
+    "panel": "azure",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "amp1.5",
+    "tags": [
+     "A5",
+     "A6-pred"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 26.5,
+   "status": "ok",
+   "wall_s": 3.9441893009934574,
+   "peak_rss_mb": 132.28125,
+   "runs": 2
+  },
+  {
+   "id": "e4:week:panel=azure:c=1:mu=1:pred=del_p90",
+   "kind": "pool",
+   "params": {
+    "panel": "azure",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "del_p90",
+    "tags": [
+     "A5",
+     "A6-pred"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 26.5,
+   "status": "ok",
+   "wall_s": 3.8211280840914696,
+   "peak_rss_mb": 132.3984375,
+   "runs": 2
+  },
+  {
+   "id": "e4:week:panel=azure:c=1:mu=1:pred=inj3x30",
+   "kind": "pool",
+   "params": {
+    "panel": "azure",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "inj3x30",
+    "tags": [
+     "A5",
+     "A6-pred"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 26.5,
+   "status": "ok",
+   "wall_s": 3.8505409688223153,
+   "peak_rss_mb": 132.16796875,
+   "runs": 2
+  },
+  {
+   "id": "e4:week:panel=azure:c=1:mu=1:pred=empty",
+   "kind": "pool",
+   "params": {
+    "panel": "azure",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "empty",
+    "tags": [
+     "A5",
+     "A6-pred"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 26.5,
+   "status": "ok",
+   "wall_s": 3.9989311709068716,
+   "peak_rss_mb": 131.56640625,
+   "runs": 2
+  },
+  {
+   "id": "e4:week:panel=azure:c=1:mu=1:pred=exact",
+   "kind": "pool",
+   "params": {
+    "panel": "azure",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "exact",
+    "tags": [
+     "A5",
+     "A6-pred"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 26.5,
+   "status": "ok",
+   "wall_s": 3.7320245990995318,
+   "peak_rss_mb": 132.21484375,
+   "runs": 2
+  },
+  {
+   "id": "e4:week:panel=azure:c=1:mu=1:pred=none",
+   "kind": "pool",
+   "params": {
+    "panel": "azure",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "none",
+    "tags": [
+     "A6"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 7.0,
+   "status": "ok",
+   "wall_s": 1.2043454558588564,
+   "peak_rss_mb": 132.28515625,
+   "runs": 1
+  },
+  {
+   "id": "e4:week:panel=azure:c=1:mu=2:pred=prev",
+   "kind": "pool",
+   "params": {
+    "panel": "azure",
+    "c": 1,
+    "mu": 2.0,
+    "pred": "prev",
+    "tags": [
+     "A5",
+     "A6-pred"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 26.5,
+   "status": "ok",
+   "wall_s": 3.852520742919296,
+   "peak_rss_mb": 132.12109375,
+   "runs": 2
+  },
+  {
+   "id": "e4:week:panel=azure:c=1:mu=2:pred=none",
+   "kind": "pool",
+   "params": {
+    "panel": "azure",
+    "c": 1,
+    "mu": 2.0,
+    "pred": "none",
+    "tags": [
+     "A6"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 7.0,
+   "status": "ok",
+   "wall_s": 1.200652452884242,
+   "peak_rss_mb": 131.83984375,
+   "runs": 1
+  },
+  {
+   "id": "e4:week:panel=burstgpt:c=1:mu=1:pred=prev",
+   "kind": "pool",
+   "params": {
+    "panel": "burstgpt",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "prev",
+    "tags": [
+     "A5",
+     "A6-pred"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 26.5,
+   "status": "ok",
+   "wall_s": 3.3533029078971595,
+   "peak_rss_mb": 133.66015625,
+   "runs": 2
+  },
+  {
+   "id": "e4:week:panel=burstgpt:c=1:mu=1:pred=phase30",
+   "kind": "pool",
+   "params": {
+    "panel": "burstgpt",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "phase30",
+    "tags": [
+     "A5",
+     "A6-pred"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 26.5,
+   "status": "ok",
+   "wall_s": 3.4523059038911015,
+   "peak_rss_mb": 134.31640625,
+   "runs": 2
+  },
+  {
+   "id": "e4:week:panel=burstgpt:c=1:mu=1:pred=amp1.5",
+   "kind": "pool",
+   "params": {
+    "panel": "burstgpt",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "amp1.5",
+    "tags": [
+     "A5",
+     "A6-pred"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 26.5,
+   "status": "ok",
+   "wall_s": 3.57244027312845,
+   "peak_rss_mb": 134.54296875,
+   "runs": 2
+  },
+  {
+   "id": "e4:week:panel=burstgpt:c=1:mu=1:pred=del_p90",
+   "kind": "pool",
+   "params": {
+    "panel": "burstgpt",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "del_p90",
+    "tags": [
+     "A5",
+     "A6-pred"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 26.5,
+   "status": "ok",
+   "wall_s": 3.4464587550610304,
+   "peak_rss_mb": 134.328125,
+   "runs": 2
+  },
+  {
+   "id": "e4:week:panel=burstgpt:c=1:mu=1:pred=inj3x30",
+   "kind": "pool",
+   "params": {
+    "panel": "burstgpt",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "inj3x30",
+    "tags": [
+     "A5",
+     "A6-pred"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 26.5,
+   "status": "ok",
+   "wall_s": 3.385183728998527,
+   "peak_rss_mb": 134.203125,
+   "runs": 2
+  },
+  {
+   "id": "e4:week:panel=burstgpt:c=1:mu=1:pred=empty",
+   "kind": "pool",
+   "params": {
+    "panel": "burstgpt",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "empty",
+    "tags": [
+     "A5",
+     "A6-pred"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 26.5,
+   "status": "ok",
+   "wall_s": 3.2538230721838772,
+   "peak_rss_mb": 134.53515625,
+   "runs": 2
+  },
+  {
+   "id": "e4:week:panel=burstgpt:c=1:mu=1:pred=exact",
+   "kind": "pool",
+   "params": {
+    "panel": "burstgpt",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "exact",
+    "tags": [
+     "A5",
+     "A6-pred"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 26.5,
+   "status": "ok",
+   "wall_s": 3.2405739361420274,
+   "peak_rss_mb": 133.734375,
+   "runs": 2
+  },
+  {
+   "id": "e4:week:panel=burstgpt:c=1:mu=1:pred=none",
+   "kind": "pool",
+   "params": {
+    "panel": "burstgpt",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "none",
+    "tags": [
+     "A6"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 7.0,
+   "status": "ok",
+   "wall_s": 1.0333789091091603,
+   "peak_rss_mb": 133.40234375,
+   "runs": 1
+  },
+  {
+   "id": "e4:week:panel=burstgpt:c=1:mu=2:pred=prev",
+   "kind": "pool",
+   "params": {
+    "panel": "burstgpt",
+    "c": 1,
+    "mu": 2.0,
+    "pred": "prev",
+    "tags": [
+     "A5",
+     "A6-pred"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 26.5,
+   "status": "ok",
+   "wall_s": 3.4732989040203393,
+   "peak_rss_mb": 133.76171875,
+   "runs": 2
+  },
+  {
+   "id": "e4:week:panel=burstgpt:c=1:mu=2:pred=none",
+   "kind": "pool",
+   "params": {
+    "panel": "burstgpt",
+    "c": 1,
+    "mu": 2.0,
+    "pred": "none",
+    "tags": [
+     "A6"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 7.0,
+   "status": "ok",
+   "wall_s": 1.0923592739272863,
+   "peak_rss_mb": 134.54296875,
+   "runs": 1
+  },
+  {
+   "id": "e4:ratio:panel=azure:c=1:pred=prev",
+   "kind": "pool",
+   "params": {
+    "panel": "azure",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "prev",
+    "tags": [
+     "A5"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 8.5,
+   "status": "ok",
+   "wall_s": 1.0848202661145478,
+   "peak_rss_mb": 132.046875,
+   "runs": 1
+  },
+  {
+   "id": "e4:ratio:panel=azure:c=1:pred=phase30",
+   "kind": "pool",
+   "params": {
+    "panel": "azure",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "phase30",
+    "tags": [
+     "A5"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 8.5,
+   "status": "ok",
+   "wall_s": 1.1764317119959742,
+   "peak_rss_mb": 132.0546875,
+   "runs": 1
+  },
+  {
+   "id": "e4:ratio:panel=azure:c=1:pred=amp1.5",
+   "kind": "pool",
+   "params": {
+    "panel": "azure",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "amp1.5",
+    "tags": [
+     "A5"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 8.5,
+   "status": "ok",
+   "wall_s": 1.0776264588348567,
+   "peak_rss_mb": 131.9921875,
+   "runs": 1
+  },
+  {
+   "id": "e4:ratio:panel=azure:c=1:pred=del_p90",
+   "kind": "pool",
+   "params": {
+    "panel": "azure",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "del_p90",
+    "tags": [
+     "A5"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 8.5,
+   "status": "ok",
+   "wall_s": 1.0753398549277335,
+   "peak_rss_mb": 131.90625,
+   "runs": 1
+  },
+  {
+   "id": "e4:ratio:panel=azure:c=1:pred=inj3x30",
+   "kind": "pool",
+   "params": {
+    "panel": "azure",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "inj3x30",
+    "tags": [
+     "A5"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 8.5,
+   "status": "ok",
+   "wall_s": 1.061834888998419,
+   "peak_rss_mb": 132.59375,
+   "runs": 1
+  },
+  {
+   "id": "e4:ratio:panel=azure:c=1:pred=empty",
+   "kind": "pool",
+   "params": {
+    "panel": "azure",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "empty",
+    "tags": [
+     "A5"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 8.5,
+   "status": "ok",
+   "wall_s": 1.3382614250294864,
+   "peak_rss_mb": 132.70703125,
+   "runs": 1
+  },
+  {
+   "id": "e4:ratio:panel=azure:c=1:pred=exact",
+   "kind": "pool",
+   "params": {
+    "panel": "azure",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "exact",
+    "tags": [
+     "A5"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 8.5,
+   "status": "ok",
+   "wall_s": 1.0533941849134862,
+   "peak_rss_mb": 132.12890625,
+   "runs": 1
+  },
+  {
+   "id": "e4:ratio:panel=burstgpt:c=1:pred=prev",
+   "kind": "pool",
+   "params": {
+    "panel": "burstgpt",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "prev",
+    "tags": [
+     "A5"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 7.7,
+   "status": "ok",
+   "wall_s": 0.7494229050353169,
+   "peak_rss_mb": 134.12109375,
+   "runs": 1
+  },
+  {
+   "id": "e4:ratio:panel=burstgpt:c=1:pred=phase30",
+   "kind": "pool",
+   "params": {
+    "panel": "burstgpt",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "phase30",
+    "tags": [
+     "A5"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 7.7,
+   "status": "ok",
+   "wall_s": 0.7705993291456252,
+   "peak_rss_mb": 133.5234375,
+   "runs": 1
+  },
+  {
+   "id": "e4:ratio:panel=burstgpt:c=1:pred=amp1.5",
+   "kind": "pool",
+   "params": {
+    "panel": "burstgpt",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "amp1.5",
+    "tags": [
+     "A5"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 7.7,
+   "status": "ok",
+   "wall_s": 0.7570096389390528,
+   "peak_rss_mb": 133.73828125,
+   "runs": 1
+  },
+  {
+   "id": "e4:ratio:panel=burstgpt:c=1:pred=del_p90",
+   "kind": "pool",
+   "params": {
+    "panel": "burstgpt",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "del_p90",
+    "tags": [
+     "A5"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 7.7,
+   "status": "ok",
+   "wall_s": 0.7714749060105532,
+   "peak_rss_mb": 134.53515625,
+   "runs": 1
+  },
+  {
+   "id": "e4:ratio:panel=burstgpt:c=1:pred=inj3x30",
+   "kind": "pool",
+   "params": {
+    "panel": "burstgpt",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "inj3x30",
+    "tags": [
+     "A5"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 7.7,
+   "status": "ok",
+   "wall_s": 0.796538959024474,
+   "peak_rss_mb": 135.015625,
+   "runs": 1
+  },
+  {
+   "id": "e4:ratio:panel=burstgpt:c=1:pred=empty",
+   "kind": "pool",
+   "params": {
+    "panel": "burstgpt",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "empty",
+    "tags": [
+     "A5"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 7.7,
+   "status": "ok",
+   "wall_s": 0.7404020591638982,
+   "peak_rss_mb": 133.1953125,
+   "runs": 1
+  },
+  {
+   "id": "e4:ratio:panel=burstgpt:c=1:pred=exact",
+   "kind": "pool",
+   "params": {
+    "panel": "burstgpt",
+    "c": 1,
+    "mu": 1.0,
+    "pred": "exact",
+    "tags": [
+     "A5"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "window": [
+     444,
+     72
+    ],
+    "day_slots": 24
+   },
+   "est_s": 7.7,
+   "status": "ok",
+   "wall_s": 0.6516735898330808,
+   "peak_rss_mb": 134.0625,
+   "runs": 1
+  },
+  {
+   "id": "e4:repro",
+   "kind": "pool",
+   "params": {
+    "script": "sublet.experiments.repro_c5_la",
+    "workers": 1,
+    "out": "repro"
+   },
+   "est_s": 251.4,
+   "status": "ok",
+   "wall_s": 280.8558169549797,
+   "peak_rss_mb": 103.80078125,
+   "runs": 0
+  }
+ ],
+ "instance_hashes": {
+  "panel=azure:c=1:mu=1": "520d279608a393a0b17342139403aa7b5cb4d290109fe78d7ff83c3c9109ea09",
+  "panel=azure:c=1:mu=2": "10e71765df7c05ae5ae5170bc5bbfd6068819f55b1e1ab536c3e00320593f0b2",
+  "panel=burstgpt:c=1:mu=1": "699af1005a7b855a1529a76b3e3f76571255e98f7a1d60bf0b93e8b02e7c93a4",
+  "panel=burstgpt:c=1:mu=2": "4718db7160612d036e210b2e98ebd5f48ff08164bf3f630b6d7a93d25ed07d88"
+ },
+ "ratio_day_instance_hashes": {
+  "panel=azure:c=1": "ae630bc96f1c0ef21885b1f1a4aa79e6f41014e660561d82d7999098f9e07d8a",
+  "panel=burstgpt:c=1": "ce04639cad1f6e55b6a95752e2508a57eeed1506f9065380cf388bb626819846"
+ },
+ "ratio_day": {
+  "azure": {
+   "1": 1
+  },
+  "burstgpt": {
+   "1": 1
+  }
+ },
+ "predictions": {
+  "prev": "previous-day",
+  "phase15": "perturbation:phase:15",
+  "phase30": "perturbation:phase:30",
+  "phase60": "perturbation:phase:60",
+  "phase120": "perturbation:phase:120",
+  "amp0.5": "perturbation:amplitude:0.5",
+  "amp0.75": "perturbation:amplitude:0.75",
+  "amp1.25": "perturbation:amplitude:1.25",
+  "amp1.5": "perturbation:amplitude:1.5",
+  "del_p90": "perturbation:burst_delete:P90",
+  "inj3x30": "perturbation:burst_inject:3x30min-P99",
+  "empty": "perturbation:empty",
+  "exact": "exact",
+  "none": "none"
+ },
+ "design": {
+  "reduced": true,
+  "panels": [
+   "azure",
+   "burstgpt"
+  ],
+  "alignments": [
+   1
+  ],
+  "policy_seeds": [
+   0
+  ],
+  "mu_points": [
+   2.0
+  ],
+  "predictions": [
+   "prev",
+   "phase30",
+   "amp1.5",
+   "del_p90",
+   "inj3x30",
+   "empty",
+   "exact"
+  ],
+  "window": [
+   444,
+   72
+  ],
+  "day_slots": 24,
+  "n_days": 3
+ }
+}

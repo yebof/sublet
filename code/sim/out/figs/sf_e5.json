@@ -1,0 +1,1387 @@
+{
+ "figure": "sf_e5",
+ "size_in": [
+  7.1399,
+  2.5
+ ],
+ "sources": [
+  "code/sim/out/e5/summary.json"
+ ],
+ "data": {
+  "levels": [
+   "trace",
+   "sh0.25",
+   "sh0.5",
+   "sh1",
+   "all1"
+  ],
+  "menus": [
+   "short",
+   "long"
+  ],
+  "tags": {
+   "sublet_ms4": "Sublet",
+   "a6_red_off": "A6-off",
+   "a6": "A6-rule",
+   "a6_always2": "A6-always2",
+   "bl3_n0": "BL3-0",
+   "bl3_n1": "BL3-1",
+   "bl3": "BL3-2"
+  },
+  "trace": {
+   "short": {
+    "sublet_ms4": {
+     "cost": {
+      "median": 0.7152001804229944,
+      "ci_lo": 0.6962021379725781,
+      "ci_hi": 0.7947042801426689,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.28213570939394106,
+      "ci_lo": 0.2643534339746858,
+      "ci_hi": 0.447555342272077,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "a6_red_off": {
+     "cost": {
+      "median": 1.04690919776675,
+      "ci_lo": 0.9475493986838781,
+      "ci_hi": 1.1627498737566855,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.37495624030536173,
+      "ci_lo": 0.28046992351295075,
+      "ci_hi": 0.391430269627153,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "a6": {
+     "cost": {
+      "median": 1.04690919776675,
+      "ci_lo": 0.9475493986838781,
+      "ci_hi": 1.1627498737566855,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.37495624030536173,
+      "ci_lo": 0.28046992351295075,
+      "ci_hi": 0.391430269627153,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "a6_always2": {
+     "cost": {
+      "median": 1.04690919776675,
+      "ci_lo": 0.9489223329624289,
+      "ci_hi": 1.1629732981477492,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.37495624030536173,
+      "ci_lo": 0.27992153508735873,
+      "ci_hi": 0.391430269627153,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "bl3_n0": {
+     "cost": {
+      "median": 0.6824222363990238,
+      "ci_lo": 0.6483560605076619,
+      "ci_hi": 0.7145319404912724,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.1066259977887857,
+      "ci_lo": 0.07829523151481527,
+      "ci_hi": 0.12779162856622478,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "bl3_n1": {
+     "cost": {
+      "median": 1.3809681732792827,
+      "ci_lo": 1.185039087592336,
+      "ci_hi": 1.680953650726627,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.06074398577179754,
+      "ci_lo": 0.03421076677687679,
+      "ci_hi": 0.07414580011628236,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "bl3": {
+     "cost": {
+      "median": 2.139001069166299,
+      "ci_lo": 1.7756943435184085,
+      "ci_hi": 2.701172252083648,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.039861111964168486,
+      "ci_lo": 0.03035499871600682,
+      "ci_hi": 0.05245683899260263,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    }
+   },
+   "long": {
+    "sublet_ms4": {
+     "cost": {
+      "median": 0.8410832271599598,
+      "ci_lo": 0.8250981009291383,
+      "ci_hi": 0.8639506466730393,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.15284690480287355,
+      "ci_lo": 0.12036766158567344,
+      "ci_hi": 0.2229459465211322,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "a6_red_off": {
+     "cost": {
+      "median": 0.9272988765430956,
+      "ci_lo": 0.8824672689681875,
+      "ci_hi": 0.9819263832340177,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.682475753800013,
+      "ci_lo": 0.6130163521763662,
+      "ci_hi": 0.717479615439224,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "a6": {
+     "cost": {
+      "median": 0.9272988765430956,
+      "ci_lo": 0.8824672689681875,
+      "ci_hi": 0.9819263832340177,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.682475753800013,
+      "ci_lo": 0.6130163521763662,
+      "ci_hi": 0.717479615439224,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "a6_always2": {
+     "cost": {
+      "median": 0.9272988765430956,
+      "ci_lo": 0.8824672689681875,
+      "ci_hi": 0.9819263832340177,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.682475753800013,
+      "ci_lo": 0.6130163521763662,
+      "ci_hi": 0.717479615439224,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "bl3_n0": {
+     "cost": {
+      "median": 0.9440193515963593,
+      "ci_lo": 0.8886407390671349,
+      "ci_hi": 1.000706587981477,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.043567732472422405,
+      "ci_lo": 0.03367243081189681,
+      "ci_hi": 0.06078634210324106,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "bl3_n1": {
+     "cost": {
+      "median": 1.7014437473204034,
+      "ci_lo": 1.4789424763881978,
+      "ci_hi": 2.031104000655183,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.02685941776801639,
+      "ci_lo": 0.018813307801705134,
+      "ci_hi": 0.042940225267346414,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "bl3": {
+     "cost": {
+      "median": 2.485850888038258,
+      "ci_lo": 2.1064455376262385,
+      "ci_hi": 3.0728392525082793,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.01994017812154031,
+      "ci_lo": 0.012742823651702751,
+      "ci_hi": 0.02471648262637794,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    }
+   }
+  },
+  "sh0.25": {
+   "short": {
+    "sublet_ms4": {
+     "cost": {
+      "median": 0.7197198005856384,
+      "ci_lo": 0.7006480481174215,
+      "ci_hi": 0.7993083859162452,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.28268177098015096,
+      "ci_lo": 0.26486343616543895,
+      "ci_hi": 0.44782288175800733,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "a6_red_off": {
+     "cost": {
+      "median": 1.0458402340806447,
+      "ci_lo": 0.9485988895419628,
+      "ci_hi": 1.152136350792977,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.38233739818915224,
+      "ci_lo": 0.28394230581904645,
+      "ci_hi": 0.4013117610715015,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "a6": {
+     "cost": {
+      "median": 1.0458402340806447,
+      "ci_lo": 0.9485988895419628,
+      "ci_hi": 1.152136350792977,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.38233739818915224,
+      "ci_lo": 0.28394230581904645,
+      "ci_hi": 0.4013117610715015,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "a6_always2": {
+     "cost": {
+      "median": 1.046208910146899,
+      "ci_lo": 0.948993920015015,
+      "ci_hi": 1.1526215418821857,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.38233739818915224,
+      "ci_lo": 0.28414628568752287,
+      "ci_hi": 0.4013117610715015,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "bl3_n0": {
+     "cost": {
+      "median": 0.6918613939508929,
+      "ci_lo": 0.6548448884397446,
+      "ci_hi": 0.7247618845774919,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.10867587176245046,
+      "ci_lo": 0.08364011567815474,
+      "ci_hi": 0.11989213999911641,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "bl3_n1": {
+     "cost": {
+      "median": 1.3884109694965558,
+      "ci_lo": 1.1896532431992854,
+      "ci_hi": 1.6896176699181715,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.05742625198339736,
+      "ci_lo": 0.043810604011138995,
+      "ci_hi": 0.07623464019677127,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "bl3": {
+     "cost": {
+      "median": 2.150173919303199,
+      "ci_lo": 1.7825209766621022,
+      "ci_hi": 2.709378404014191,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.03769291930985466,
+      "ci_lo": 0.028233562863269432,
+      "ci_hi": 0.05150086982322952,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    }
+   },
+   "long": {
+    "sublet_ms4": {
+     "cost": {
+      "median": 0.8426676673331192,
+      "ci_lo": 0.8266573170812468,
+      "ci_hi": 0.8635696276843203,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.1532037005098542,
+      "ci_lo": 0.1384288581468497,
+      "ci_hi": 0.1588126796847469,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "a6_red_off": {
+     "cost": {
+      "median": 0.9321727490491958,
+      "ci_lo": 0.8827453806832634,
+      "ci_hi": 0.9783581387554625,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.7061615616127688,
+      "ci_lo": 0.6410506143374237,
+      "ci_hi": 0.7546247953840823,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "a6": {
+     "cost": {
+      "median": 0.9321727490491958,
+      "ci_lo": 0.8827453806832634,
+      "ci_hi": 0.9783581387554625,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.7061615616127688,
+      "ci_lo": 0.6410506143374237,
+      "ci_hi": 0.7546247953840823,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "a6_always2": {
+     "cost": {
+      "median": 0.9321727490491958,
+      "ci_lo": 0.8827453806832634,
+      "ci_hi": 0.9783581387554625,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.7061615616127688,
+      "ci_lo": 0.6410506143374237,
+      "ci_hi": 0.7546247953840823,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "bl3_n0": {
+     "cost": {
+      "median": 0.9772828152304363,
+      "ci_lo": 0.912692960717961,
+      "ci_hi": 1.054414070517539,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.050978905600903415,
+      "ci_lo": 0.03833567732132549,
+      "ci_hi": 0.060091334851435474,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "bl3_n1": {
+     "cost": {
+      "median": 1.7497512693833683,
+      "ci_lo": 1.5206780413114966,
+      "ci_hi": 2.087940834314952,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.027806388382951658,
+      "ci_lo": 0.0242634158065832,
+      "ci_hi": 0.03186482428581356,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "bl3": {
+     "cost": {
+      "median": 2.569138790820756,
+      "ci_lo": 2.1591180531437217,
+      "ci_hi": 3.169433701932677,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.019057763919403864,
+      "ci_lo": 0.013947906638841389,
+      "ci_hi": 0.02427363543086981,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    }
+   }
+  },
+  "sh0.5": {
+   "short": {
+    "sublet_ms4": {
+     "cost": {
+      "median": 0.7231122073490945,
+      "ci_lo": 0.7042734120338758,
+      "ci_hi": 0.8021204566374749,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.2896899309655917,
+      "ci_lo": 0.27048523740130986,
+      "ci_hi": 0.44611866828706415,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "a6_red_off": {
+     "cost": {
+      "median": 1.0419022191067477,
+      "ci_lo": 0.9479327612289791,
+      "ci_hi": 1.1552194581090465,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.3845124997578959,
+      "ci_lo": 0.2986394743020462,
+      "ci_hi": 0.3967589427862105,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "a6": {
+     "cost": {
+      "median": 1.0419022191067477,
+      "ci_lo": 0.9479327612289791,
+      "ci_hi": 1.1552194581090465,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.3845124997578959,
+      "ci_lo": 0.2986394743020462,
+      "ci_hi": 0.3967589427862105,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "a6_always2": {
+     "cost": {
+      "median": 1.0426341009979585,
+      "ci_lo": 0.948723416942396,
+      "ci_hi": 1.1553983971806265,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.3845124997578959,
+      "ci_lo": 0.2988658848628558,
+      "ci_hi": 0.3967589427862105,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "bl3_n0": {
+     "cost": {
+      "median": 0.6965083794099718,
+      "ci_lo": 0.6540296088141018,
+      "ci_hi": 0.7286483532912746,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.09913562803708142,
+      "ci_lo": 0.0865829323729792,
+      "ci_hi": 0.11954273275867233,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "bl3_n1": {
+     "cost": {
+      "median": 1.3885276903309696,
+      "ci_lo": 1.1890840596119894,
+      "ci_hi": 1.691711516111648,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.061399333490022814,
+      "ci_lo": 0.04158837101957423,
+      "ci_hi": 0.0729759378782329,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "bl3": {
+     "cost": {
+      "median": 2.1543834781066096,
+      "ci_lo": 1.794250149873485,
+      "ci_hi": 2.7154032327709388,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.03756937135423177,
+      "ci_lo": 0.027651693950785348,
+      "ci_hi": 0.05138159178989965,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    }
+   },
+   "long": {
+    "sublet_ms4": {
+     "cost": {
+      "median": 0.8426059376616593,
+      "ci_lo": 0.8268573648665722,
+      "ci_hi": 0.8642212501540312,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.14793205517919258,
+      "ci_lo": 0.1236672313322872,
+      "ci_hi": 0.1537695110431881,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "a6_red_off": {
+     "cost": {
+      "median": 0.9353834482203358,
+      "ci_lo": 0.8796592526730802,
+      "ci_hi": 0.9792158179171809,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.6727234769869962,
+      "ci_lo": 0.6434845112949166,
+      "ci_hi": 0.7509421525918165,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "a6": {
+     "cost": {
+      "median": 0.9353834482203358,
+      "ci_lo": 0.8796592526730802,
+      "ci_hi": 0.9792158179171809,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.6727234769869962,
+      "ci_lo": 0.6434845112949166,
+      "ci_hi": 0.7509421525918165,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "a6_always2": {
+     "cost": {
+      "median": 0.9353834482203358,
+      "ci_lo": 0.8796592526730802,
+      "ci_hi": 0.9792158179171809,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.6727234769869962,
+      "ci_lo": 0.6434845112949166,
+      "ci_hi": 0.7509421525918165,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "bl3_n0": {
+     "cost": {
+      "median": 1.0045826028021732,
+      "ci_lo": 0.9249710407403094,
+      "ci_hi": 1.0718810366605518,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.04631676277210364,
+      "ci_lo": 0.03795180038362862,
+      "ci_hi": 0.058851173440735136,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "bl3_n1": {
+     "cost": {
+      "median": 1.805894868757909,
+      "ci_lo": 1.5489513295429336,
+      "ci_hi": 2.1103991166506253,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.022371836110772265,
+      "ci_lo": 0.02068661883700254,
+      "ci_hi": 0.03143040316779509,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "bl3": {
+     "cost": {
+      "median": 2.6184783758630985,
+      "ci_lo": 2.204228988220218,
+      "ci_hi": 3.1864830729129516,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.021910103410972624,
+      "ci_lo": 0.017106783346085407,
+      "ci_hi": 0.025555108488853978,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    }
+   }
+  },
+  "sh1": {
+   "short": {
+    "sublet_ms4": {
+     "cost": {
+      "median": 0.7297546447655539,
+      "ci_lo": 0.7081323483835504,
+      "ci_hi": 0.8059465762667335,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.28949331165938197,
+      "ci_lo": 0.2785128610632843,
+      "ci_hi": 0.4494442251199475,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "a6_red_off": {
+     "cost": {
+      "median": 1.043377928380567,
+      "ci_lo": 0.9467684114571154,
+      "ci_hi": 1.1531739341532976,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.3796195269012971,
+      "ci_lo": 0.3025610647137803,
+      "ci_hi": 0.41135205369496197,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "a6": {
+     "cost": {
+      "median": 1.043377928380567,
+      "ci_lo": 0.9467684114571154,
+      "ci_hi": 1.1531739341532976,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.3796195269012971,
+      "ci_lo": 0.3025610647137803,
+      "ci_hi": 0.41135205369496197,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "a6_always2": {
+     "cost": {
+      "median": 1.043674716323515,
+      "ci_lo": 0.9476235947054942,
+      "ci_hi": 1.1540144911695696,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.3796195269012971,
+      "ci_lo": 0.3030620571691719,
+      "ci_hi": 0.41135205369496197,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "bl3_n0": {
+     "cost": {
+      "median": 0.6986453042594637,
+      "ci_lo": 0.6558996541777239,
+      "ci_hi": 0.7361841431799154,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.10432223015132124,
+      "ci_lo": 0.08170994541625201,
+      "ci_hi": 0.11966097304289366,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "bl3_n1": {
+     "cost": {
+      "median": 1.3988886457514598,
+      "ci_lo": 1.1942150522189412,
+      "ci_hi": 1.6992276764190664,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.05477176642272863,
+      "ci_lo": 0.048041046696236836,
+      "ci_hi": 0.0692977311068947,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "bl3": {
+     "cost": {
+      "median": 2.160894383243045,
+      "ci_lo": 1.7939230445137326,
+      "ci_hi": 2.7171901090059425,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.03245639092158727,
+      "ci_lo": 0.026917225252578024,
+      "ci_hi": 0.051806818852774245,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    }
+   },
+   "long": {
+    "sublet_ms4": {
+     "cost": {
+      "median": 0.8442974685510005,
+      "ci_lo": 0.8297467823923673,
+      "ci_hi": 0.8640774507592424,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.14486606865649987,
+      "ci_lo": 0.13466879690999048,
+      "ci_hi": 0.1561314572980112,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "a6_red_off": {
+     "cost": {
+      "median": 0.9378536311011545,
+      "ci_lo": 0.8805028455927684,
+      "ci_hi": 0.9798138660735186,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.7020804739149518,
+      "ci_lo": 0.6476962677021587,
+      "ci_hi": 0.7499068833378949,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "a6": {
+     "cost": {
+      "median": 0.9378536311011545,
+      "ci_lo": 0.8805028455927684,
+      "ci_hi": 0.9798138660735186,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.7020804739149518,
+      "ci_lo": 0.6476962677021587,
+      "ci_hi": 0.7499068833378949,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "a6_always2": {
+     "cost": {
+      "median": 0.9378536311011545,
+      "ci_lo": 0.8805028455927684,
+      "ci_hi": 0.9798138660735186,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.7020804739149518,
+      "ci_lo": 0.6476962677021587,
+      "ci_hi": 0.7499068833378949,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "bl3_n0": {
+     "cost": {
+      "median": 1.029874491515695,
+      "ci_lo": 0.937215237328172,
+      "ci_hi": 1.1032044847376918,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.05239997291705691,
+      "ci_lo": 0.045053315301922296,
+      "ci_hi": 0.06183293334028815,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "bl3_n1": {
+     "cost": {
+      "median": 1.8461696824973588,
+      "ci_lo": 1.5779756774044693,
+      "ci_hi": 2.1516544400102626,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.021266880062343847,
+      "ci_lo": 0.01878183830969822,
+      "ci_hi": 0.027480835363818318,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "bl3": {
+     "cost": {
+      "median": 2.6755991619794717,
+      "ci_lo": 2.23714622027362,
+      "ci_hi": 3.2198494772517576,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.024490461569363107,
+      "ci_lo": 0.020453425082350804,
+      "ci_hi": 0.025602632910138444,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    }
+   }
+  },
+  "all1": {
+   "short": {
+    "sublet_ms4": {
+     "cost": {
+      "median": 1.0988937647690586,
+      "ci_lo": 1.0212295123786588,
+      "ci_hi": 1.099806799507887,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.7705934266506558,
+      "ci_lo": 0.6825193849391837,
+      "ci_hi": 0.8293946142424122,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "a6_red_off": {
+     "cost": {
+      "median": 1.1446695076329534,
+      "ci_lo": 1.0508019110280233,
+      "ci_hi": 1.1940927012617206,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.7486980668691524,
+      "ci_lo": 0.6588970913437702,
+      "ci_hi": 0.7875239246039454,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "a6": {
+     "cost": {
+      "median": 1.1446695076329534,
+      "ci_lo": 1.0508019110280233,
+      "ci_hi": 1.1940927012617206,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.7486980668691524,
+      "ci_lo": 0.6588970913437702,
+      "ci_hi": 0.7875239246039454,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "a6_always2": {
+     "cost": {
+      "median": 1.1447593147697246,
+      "ci_lo": 1.0535557389994372,
+      "ci_hi": 1.1942776136296835,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.7486980668691524,
+      "ci_lo": 0.6592275759510884,
+      "ci_hi": 0.7874997911856777,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "bl3_n0": {
+     "cost": {
+      "median": 1.7749785362628479,
+      "ci_lo": 1.3795319065572558,
+      "ci_hi": 1.8377636023961568,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.41324664714691994,
+      "ci_lo": 0.3318747143050083,
+      "ci_hi": 0.46304501522184066,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "bl3_n1": {
+     "cost": {
+      "median": 2.577276084239694,
+      "ci_lo": 1.9809257215454068,
+      "ci_hi": 2.7849771019144107,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.36875115823514626,
+      "ci_lo": 0.27855770503908794,
+      "ci_hi": 0.4140608088816783,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "bl3": {
+     "cost": {
+      "median": 3.3549206034462182,
+      "ci_lo": 2.5838527485392415,
+      "ci_hi": 3.827499959836806,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.3536453483158315,
+      "ci_lo": 0.2567243882745427,
+      "ci_hi": 0.3963522009770371,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    }
+   },
+   "long": {
+    "sublet_ms4": {
+     "cost": {
+      "median": 0.8909081473355317,
+      "ci_lo": 0.8620920616395565,
+      "ci_hi": 0.8981113783136456,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.18072360566495146,
+      "ci_lo": 0.1655398954572853,
+      "ci_hi": 0.1946594274881576,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "a6_red_off": {
+     "cost": {
+      "median": 0.9766176209537316,
+      "ci_lo": 0.9357043075452207,
+      "ci_hi": 1.0081612063531296,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.7790609010773166,
+      "ci_lo": 0.7521390946570206,
+      "ci_hi": 0.815401568553109,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "a6": {
+     "cost": {
+      "median": 0.9766176209537316,
+      "ci_lo": 0.9357043075452207,
+      "ci_hi": 1.0081612063531296,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.7790609010773166,
+      "ci_lo": 0.7521390946570206,
+      "ci_hi": 0.815401568553109,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "a6_always2": {
+     "cost": {
+      "median": 0.9766176209537316,
+      "ci_lo": 0.9357043075452207,
+      "ci_hi": 1.0081612063531296,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.7790609010773166,
+      "ci_lo": 0.7521390946570206,
+      "ci_hi": 0.815401568553109,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "bl3_n0": {
+     "cost": {
+      "median": 4.879642496941191,
+      "ci_lo": 3.659511135611756,
+      "ci_hi": 5.573840977832688,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.02096033448371073,
+      "ci_lo": 0.018907685014596245,
+      "ci_hi": 0.028665717628823452,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "bl3_n1": {
+     "cost": {
+      "median": 11.466998553239875,
+      "ci_lo": 8.366940085915061,
+      "ci_hi": 15.200887688058604,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.006094638274618406,
+      "ci_lo": 0.0030704787676160794,
+      "ci_hi": 0.013702637228139481,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    },
+    "bl3": {
+     "cost": {
+      "median": 13.926126956379829,
+      "ci_lo": 10.539677565361915,
+      "ci_hi": 18.363580142751985,
+      "n": 12,
+      "note": null
+     },
+     "fallback": {
+      "median": 0.005168395535832815,
+      "ci_lo": 0.0011639510247087254,
+      "ci_hi": 0.008890331012730446,
+      "n": 12,
+      "note": null
+     },
+     "n_null": 0
+    }
+   }
+  },
+  "zero_or_null": [],
+  "a6_coincide": {
+   "trace": {
+    "short": {
+     "drawn_as_one": true,
+     "runs_identical": false
+    },
+    "long": {
+     "drawn_as_one": true,
+     "runs_identical": true
+    }
+   },
+   "sh0.25": {
+    "short": {
+     "drawn_as_one": true,
+     "runs_identical": false
+    },
+    "long": {
+     "drawn_as_one": true,
+     "runs_identical": true
+    }
+   },
+   "sh0.5": {
+    "short": {
+     "drawn_as_one": true,
+     "runs_identical": false
+    },
+    "long": {
+     "drawn_as_one": true,
+     "runs_identical": true
+    }
+   },
+   "sh1": {
+    "short": {
+     "drawn_as_one": true,
+     "runs_identical": false
+    },
+    "long": {
+     "drawn_as_one": true,
+     "runs_identical": true
+    }
+   },
+   "all1": {
+    "short": {
+     "drawn_as_one": true,
+     "runs_identical": false
+    },
+    "long": {
+     "drawn_as_one": true,
+     "runs_identical": true
+    }
+   }
+  },
+  "under": [
+   {
+    "level": "all1",
+    "menu": "short",
+    "key": "a6",
+    "x": 1.1446695076329534,
+    "y": 0.7486980668691524,
+    "over": {
+     "menu": "short",
+     "key": "sublet_ms4",
+     "x": 1.0988937647690586,
+     "y": 0.7705934266506558
+    }
+   }
+  ],
+  "partly_under": [
+   {
+    "level": "all1",
+    "menu": "long",
+    "key": "a6",
+    "x": 0.9766176209537316,
+    "y": 0.7790609010773166,
+    "share": 0.151,
+    "over": {
+     "menu": "short",
+     "key": "sublet_ms4",
+     "x": 1.0988937647690586,
+     "y": 0.7705934266506558
+    }
+   }
+  ],
+  "bars_merged": [
+   {
+    "level": "all1",
+    "orient": "x",
+    "a": {
+     "menu": "short",
+     "key": "bl3_n1"
+    },
+    "b": {
+     "menu": "short",
+     "key": "bl3"
+    },
+    "lo": 2.5838527485392415,
+    "hi": 2.7849771019144107,
+    "d_pt": 0.67
+   }
+  ],
+  "labels": {
+   "x": "Cost / all-fallback",
+   "y": "Fallback share",
+   "a6_all_modes": "Two-timescale PD, all modes",
+   "panel": {
+    "trace": "Trace lender",
+    "sh0.25": "Groups, $p_{\\mathrm{sh}}$ = 0.25",
+    "sh0.5": "Groups, $p_{\\mathrm{sh}}$ = 0.5",
+    "sh1": "Groups, $p_{\\mathrm{sh}}$ = 1",
+    "all1": "One group, $p_{\\mathrm{sh}}$ = 1"
+   },
+   "coincide": "where Two-timescale PD's three modes (default, no spare, spare always) give one point (within 0.5% in both coordinates), only its default is drawn there (a6_coincide)",
+   "coincide_all": "{name}'s three modes ({modes}) give one point in every cell (within {pct:g}% in both coordinates), so only its default is drawn and its legend entry reads '{all_modes}'",
+   "under": "in ({letter}), the {menu}-menu point of {name} ({x}, {y}) is hidden by the {over_menu}-menu point of {over} ({ox}, {oy}) (cost, share)",
+   "partly": "in ({letter}), the {menu}-menu point of {name} ({x}, {y}) lies partly under the {over_menu}-menu point of {over} ({ox}, {oy}) (cost, share)",
+   "bars": "in ({letter}), the 95% {what} intervals of {points} overlap between {lo} and {hi}, where their bars, {d} pt apart, print as one line",
+   "hidden": "(hidden by {over})",
+   "hidden_short": "(hidden)",
+   "bl3_default": "'{name}' without N_Extra is its default, N_Extra = {n}",
+   "menu": {
+    "short": "Short-notice menu",
+    "long": "Long-notice menu"
+   },
+   "menu_contracts": " (leases with {tau} and {notice} min notice{protected})",
+   "note": "mu/beta~ = 1; y: the fallback share within 60 min after a reclaim-caused capacity drop; medians over 4 alignments x 3 policy seeds with 95% bootstrap intervals; filled: short-notice menu (leases with a 5-min guaranteed period and 0, 1 or 2 min notice, plus protected capacity), open: long-notice menu (leases with a 5-min guaranteed period and 60, 120 or 240 min notice, plus protected capacity); cost in overflow accounting; a share of 0, or without a value (no reclaim-caused drop), on the x spine; a policy drawn in no panel is left out of the legend; Two-timescale PD's three modes (default, no spare, spare always) give one point in every cell (within 0.5% in both coordinates), so only its default is drawn and its legend entry reads 'Two-timescale PD, all modes'; in (e), the short-menu point of Two-timescale PD (1.14, 0.749) is hidden by the short-menu point of Lagged RetroRenting + one-way guard (B_0 = 10% of the all-fallback bill) (1.10, 0.771) (cost, share); in (e), the long-menu point of Two-timescale PD (0.977, 0.779) lies partly under the short-menu point of Lagged RetroRenting + one-way guard (B_0 = 10% of the all-fallback bill) (1.10, 0.771) (cost, share); in (e), the 95% cost intervals of the short-menu points of 'SpotHedge-style, N_Extra = 1' and 'SpotHedge-style' overlap between 2.58 and 2.78, where their bars, 0.67 pt apart, print as one line; 'SpotHedge-style' without N_Extra is its default, N_Extra = 2"
+  },
+  "meta": {
+   "git_revision": "939847ca5925ce069d6df9089fe3a3d1d3207bb7",
+   "reduced": false,
+   "B0_rule": "0.1*BL0a"
+  },
+  "sources": [
+   "code/sim/out/e5/summary.json"
+  ]
+ }
+}

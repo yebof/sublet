@@ -1,0 +1,52 @@
+{
+ "floats": {
+  "table1_price_of_revocation": {
+   "measured_pages": 0.1374,
+   "budget_pages": 0.09,
+   "within_budget": false,
+   "difference_pages": 0.0474,
+   "source": "paper/floats/table1_price_of_revocation.tex",
+   "sha256": "13902d0a49d0963671e684e97cf03848c77837480e9b3aca046c6b697fa2adcc"
+  },
+  "table2_policies": {
+   "measured_pages": 0.3712,
+   "budget_pages": 0.22,
+   "within_budget": false,
+   "difference_pages": 0.1512,
+   "source": "paper/floats/table2_policies.tex",
+   "sha256": "5b9be55ee4b43c91ded5968bce31e72ba2bcbf2a78cdad3c5a9251dd2fe66c51"
+  },
+  "alg1_guard": {
+   "measured_pages": 0.1718,
+   "budget_pages": 0.129,
+   "within_budget": false,
+   "difference_pages": 0.0428,
+   "source": "paper/floats/alg1_guard.tex",
+   "sha256": "f27b3cac49f57f0267e986a3d5b316017adca133b638db99023f6c644cec5cf7"
+  }
+ },
+ "probes": {
+  "tab8": {
+   "file": "paper/layout_check/pageplan/F_tab8.tex",
+   "measured_pages": 0.1117,
+   "plan_value_pages": 0.112
+  },
+  "alg16": {
+   "file": "paper/layout_check/pageplan/F_alg16.tex",
+   "measured_pages": 0.1288,
+   "plan_value_pages": 0.129
+  }
+ },
+ "baseline_used_pages": 2.2338,
+ "method": "floats.py's page-area difference (this folder): fill text of A_body.tex, float after its first third, used pages = full pages + mean column fill of the last page",
+ "class": "paper/layout_check/IEEEtran.cls",
+ "class_sha256": "da751920a317ed318b7b5cd7fa585a6cc7d28502d457856382e9be24b10a3bd7",
+ "preamble": "\\documentclass[journal]{IEEEtran}\\usepackage{booktabs}\\usepackage{array}",
+ "pdflatex": "pdfTeX 3.141592653-2.6-1.40.29 (TeX Live 2026)",
+ "script": "paper/layout_check/pageplan/floats_heights.py",
+ "labels": {
+  "file": "paper/generated/labels_stub.tex",
+  "sha256": "1d4347dc2d2a2d270b84132a4eb67c3c87b42661f1a302411916d9d3cc69948e"
+ },
+ "written": "2026-11-07T13:24:56"
+}

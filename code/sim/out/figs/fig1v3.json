@@ -1,0 +1,59 @@
+{
+ "figure": "fig1v3",
+ "size_in": [
+  7.1399,
+  1.7
+ ],
+ "sources": [],
+ "data": {
+  "gamma": 1.0,
+  "labels": {
+   "a": {
+    "s": "$s$",
+    "s_tau": "$s+\\tau_k$",
+    "r": "$r$",
+    "s_D": "$s+D_k$",
+    "r_H": "$r+H_k$",
+    "tau": "$\\tau_k$",
+    "H": "$H_k$",
+    "lam": "$\\lambda$",
+    "T_dr": "$T^{\\mathrm{dr}}$",
+    "window": "guaranteed window $D_k=\\tau_k+H_k$",
+    "prewarm": "pre-warm",
+    "cold": "cold"
+   },
+   "b": {
+    "platform": "platform",
+    "crr": "critical-ratio renting",
+    "list": "list",
+    "guard": "Algorithm 1",
+    "cost": "$C_S(t)$",
+    "safe": "safe expert",
+    "fallback": "fallback capacity",
+    "borrowers": "borrowers",
+    "sites": "lender sites",
+    "demand": "demand",
+    "route": "routing per interval",
+    "menus": "menus, notices",
+    "decide": "contracts, replicas, reactions"
+   },
+   "c": {
+    "test": "list $Y$ passes if $\\hat a_Y+R_Y\\leq C_S(t)+B(t)$",
+    "lists": [
+     "$A_E(t)$: inner list",
+     "P1: fewer purchases",
+     "P0: no purchase",
+     "K0: release every lease"
+    ],
+    "fails": "fails",
+    "passes": "passes",
+    "execute": "execute the first list that passes; next slot",
+    "abort": "abort: follow the safe expert"
+   },
+   "caption": "(a)~Contract $k$: purchase $s$, announcement $r\\ge s+\\tau_k$, end $r+H_k$, guaranteed window $D_k=\\tau_k+H_k$, drain time $T^{\\mathrm{dr}}$, and load time $\\lambda$ of a replacement started by $r+H_k-\\lambda$ (pre-warm) or after $r+H_k$ (cold). (b)~The platform's control plane: Sublet, critical-ratio renting inside Algorithm~1, reads demand, menus and notices and decides contracts, replica placement, routing per interval and reactions to notices. (c)~One slot of Algorithm~1 ($\\gamma=1$; $C_S$: the safe expert's cost, $B$: the allowance): the inner list or the first trimmed list that passes the test is executed, else Algorithm~1 aborts to the safe expert.",
+   "caption_printed_chars": 594,
+   "caption_lines_est": 5
+  },
+  "note": "a schematic: no data; every drawn text is in labels"
+ }
+}

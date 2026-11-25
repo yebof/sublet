@@ -1,0 +1,113 @@
+{
+ "block": "Q1",
+ "tier": 1,
+ "grid": "1min",
+ "lb": null,
+ "description": "I1 (6 cells), I2 (8), I4 (8) x L-tr, L-eg, L-ss, L-iid (3 values), L-co; 154 cell-modes",
+ "policies": [
+  "BL0a",
+  "BL1",
+  "BL2",
+  "BL5",
+  "A6",
+  "A2",
+  "PS",
+  "PS-G",
+  "PS-G1",
+  "BL1-G",
+  "BL5-G"
+ ],
+ "policy_seeds": [
+  0,
+  1,
+  2
+ ],
+ "modes": [
+  "L-tr",
+  "L-eg",
+  "L-ss",
+  "L-iid-0.0124",
+  "L-iid-0.05",
+  "L-iid-0.2",
+  "L-co"
+ ],
+ "instances": [
+  {
+   "id": "I1",
+   "family": "I1",
+   "config": "ms2_multi_small.json",
+   "overrides": {},
+   "config_seeds": [
+    3,
+    4,
+    7
+   ],
+   "tuning_seeds": [
+    3
+   ],
+   "extra_policies": [
+    "PS-GR"
+   ]
+  },
+  {
+   "id": "I1-d100",
+   "family": "I1",
+   "config": "ms2_multi_small.json",
+   "overrides": {
+    "borrowers.clients.0.demand.seed": 101,
+    "borrowers.clients.1.demand.seed": 102,
+    "borrowers.clients.2.demand.seed": 103,
+    "borrowers.clients.3.demand.seed": 104
+   },
+   "config_seeds": [
+    3,
+    4,
+    7
+   ],
+   "tuning_seeds": [],
+   "extra_policies": [
+    "PS-GR"
+   ],
+   "note": "demand seeds of the four clients + 100 (as configured: 1, 2, 3, 4)"
+  },
+  {
+   "id": "I2",
+   "family": "I2",
+   "config": "example_1day.json",
+   "overrides": {},
+   "config_seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "tuning_seeds": [
+    1
+   ],
+   "extra_policies": [
+    "PS-GR"
+   ]
+  },
+  {
+   "id": "I4",
+   "family": "I4",
+   "config": "q44_spot_1day.json",
+   "overrides": {},
+   "config_seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "tuning_seeds": []
+  }
+ ]
+}

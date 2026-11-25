@@ -1,0 +1,44 @@
+{
+ "check": "E11-0",
+ "pass": true,
+ "checks": {
+  "same_file_list": true,
+  "same_sha256": true,
+  "manifest_revision": true,
+  "run_revisions": true,
+  "runs_readable": true,
+  "runs_without_revision_are_sums": true
+ },
+ "copy": "/work/sublet/code/sim/out/e11",
+ "clone": "/work/e11c/code/sim/out/e11",
+ "expected_git_revision": "29919ea0a0cb0be883ceb60b86c1f1ddd1dcfa3c",
+ "n_files_copy": 23403,
+ "n_files_clone": 23403,
+ "n_files_compared": 23403,
+ "n_only_in_copy": 0,
+ "only_in_copy": [],
+ "n_only_in_clone": 0,
+ "only_in_clone": [],
+ "n_sha256_mismatch": 0,
+ "sha256_mismatch": [],
+ "manifest_git_revision": "29919ea0a0cb0be883ceb60b86c1f1ddd1dcfa3c",
+ "n_run_files": 20465,
+ "run_revisions_found": {
+  "29919ea0a0cb0be883ceb60b86c1f1ddd1dcfa3c": 19601
+ },
+ "n_run_revision_differs": 0,
+ "run_revision_differs": [],
+ "n_runs_no_revision": 864,
+ "n_runs_no_revision_sum": 864,
+ "n_runs_no_revision_other": 0,
+ "runs_no_revision_other": [],
+ "n_runs_unreadable": 0,
+ "runs_unreadable": [],
+ "e11_log_done": true,
+ "lists_truncated_at": 200,
+ "checked_by": {
+  "module": "sublet.experiments.ms3_common",
+  "git_revision": "39fe99facb756eedb3fd78a433b556ce78b4c144"
+ },
+ "time": "2026-10-19T23:59:24"
+}

@@ -1,0 +1,1262 @@
+{
+ "meta": {
+  "exp": "s1",
+  "git_revision": "c82fa05f835c1b4896ddf639d6edb81495a1abee",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "scipy": "1.17.1",
+   "sublet": "0.1.0"
+  },
+  "written": "2026-10-29T21:11:37",
+  "script": "code/sim/sublet/experiments/s1.py",
+  "script_sha256": "8afb76a9aa6dd1fe57477c829fccfaad72079268ea825b1649c0a4389d7cd802"
+ },
+ "jobs": [
+  {
+   "id": "s1:sweep:pt=slow1:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "slow1",
+    "row": "slow_slot",
+    "c": 1,
+    "tag": "Sublet",
+    "mode": "L-tr",
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 7.341666666666667,
+   "status": "ok",
+   "wall_s": 44.57524740300141,
+   "peak_rss_mb": 149.60546875,
+   "runs": 1
+  },
+  {
+   "id": "s1:sweep:pt=tight2:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "tight2",
+    "row": "tightness",
+    "c": 1,
+    "tag": "Sublet",
+    "mode": "L-tr",
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 5.5130952380952385,
+   "status": "ok",
+   "wall_s": 33.221670522820204,
+   "peak_rss_mb": 145.91015625,
+   "runs": 1
+  },
+  {
+   "id": "s1:sweep:pt=nlayers16:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "nlayers16",
+    "row": "n_layers",
+    "c": 1,
+    "tag": "Sublet",
+    "mode": "L-tr",
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 4.492857142857142,
+   "status": "ok",
+   "wall_s": 26.473260327009484,
+   "peak_rss_mb": 151.125,
+   "runs": 1
+  },
+  {
+   "id": "s1:sweep:pt=tight1:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "tight1",
+    "row": "tightness",
+    "c": 1,
+    "tag": "Sublet",
+    "mode": "L-tr",
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 3.3697786880582576,
+   "status": "ok",
+   "wall_s": 17.15295103401877,
+   "peak_rss_mb": 144.2578125,
+   "runs": 1
+  },
+  {
+   "id": "s1:sweep:pt=layer16:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "layer16",
+    "row": "layer_width",
+    "c": 1,
+    "tag": "Sublet",
+    "mode": "L-tr",
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 2.8761904761904757,
+   "status": "ok",
+   "wall_s": 16.88424042891711,
+   "peak_rss_mb": 142.7734375,
+   "runs": 1
+  },
+  {
+   "id": "s1:sweep:pt=catLg4:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "catLg4",
+    "row": "catalog",
+    "c": 1,
+    "tag": "Sublet",
+    "mode": "L-tr",
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 2.4816512108626796,
+   "status": "ok",
+   "wall_s": 14.09377959696576,
+   "peak_rss_mb": 143.71875,
+   "runs": 1
+  },
+  {
+   "id": "s1:sweep:pt=xi1:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "xi1",
+    "row": "xi",
+    "c": 1,
+    "tag": "Sublet",
+    "mode": "L-tr",
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 2.2794376173408426,
+   "status": "ok",
+   "wall_s": 16.493581967893988,
+   "peak_rss_mb": 144.5390625,
+   "runs": 1
+  },
+  {
+   "id": "s1:sweep:pt=kappaL2:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "kappaL2",
+    "row": "kappa_L",
+    "c": 1,
+    "tag": "Sublet",
+    "mode": "L-tr",
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 2.2183032751133105,
+   "status": "ok",
+   "wall_s": 12.459180663106963,
+   "peak_rss_mb": 143.54296875,
+   "runs": 1
+  },
+  {
+   "id": "s1:sweep:pt=L16:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "L16",
+    "row": "precision",
+    "c": 1,
+    "tag": "Sublet",
+    "mode": "L-tr",
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 1.9583333333333333,
+   "status": "ok",
+   "wall_s": 12.34401047299616,
+   "peak_rss_mb": 142.1328125,
+   "runs": 1
+  },
+  {
+   "id": "s1:sweep:pt=sS05:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "sS05",
+    "row": "s_S",
+    "c": 1,
+    "tag": "Sublet",
+    "mode": "L-tr",
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 1.8877747435095102,
+   "status": "ok",
+   "wall_s": 12.185266389045864,
+   "peak_rss_mb": 143.46875,
+   "runs": 1
+  },
+  {
+   "id": "s1:sweep:pt=lease50:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "lease50",
+    "row": "lease_quantile",
+    "c": 1,
+    "tag": "Sublet",
+    "mode": "L-tr",
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 1.821937759572168,
+   "status": "ok",
+   "wall_s": 12.502409265842289,
+   "peak_rss_mb": 144.28125,
+   "runs": 1
+  },
+  {
+   "id": "s1:sweep:pt=alpha06:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "alpha06",
+    "row": "alpha",
+    "c": 1,
+    "tag": "Sublet",
+    "mode": "L-tr",
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 1.7214285714285713,
+   "status": "ok",
+   "wall_s": 11.193604147993028,
+   "peak_rss_mb": 143.37890625,
+   "runs": 1
+  },
+  {
+   "id": "s1:sweep:pt=smooth60:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "smooth60",
+    "row": "smoothing",
+    "c": 1,
+    "tag": "Sublet",
+    "mode": "L-tr",
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 1.720495059831977,
+   "status": "ok",
+   "wall_s": 11.522766534006223,
+   "peak_rss_mb": 142.41015625,
+   "runs": 1
+  },
+  {
+   "id": "s1:sweep:pt=scen_cold_wan_1gbps:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "scen_cold_wan_1gbps",
+    "row": "load_scenario",
+    "c": 1,
+    "tag": "Sublet",
+    "mode": "L-tr",
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 1.717857142857143,
+   "status": "ok",
+   "wall_s": 12.088894762797281,
+   "peak_rss_mb": 142.80859375,
+   "runs": 1
+  },
+  {
+   "id": "s1:sweep:pt=c0p50:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "c0p50",
+    "row": "own_capacity",
+    "c": 1,
+    "tag": "Sublet",
+    "mode": "L-tr",
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 1.7003408810756477,
+   "status": "ok",
+   "wall_s": 14.470502789830789,
+   "peak_rss_mb": 143.4453125,
+   "runs": 1
+  },
+  {
+   "id": "s1:sweep:pt=prothorizon:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "prothorizon",
+    "row": "protected_term",
+    "c": 1,
+    "tag": "Sublet",
+    "mode": "L-tr",
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 1.6952380952380952,
+   "status": "ok",
+   "wall_s": 11.059758474119008,
+   "peak_rss_mb": 143.33984375,
+   "runs": 1
+  },
+  {
+   "id": "s1:sweep:pt=smooth5:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "smooth5",
+    "row": "smoothing",
+    "c": 1,
+    "tag": "Sublet",
+    "mode": "L-tr",
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 1.6942946274487491,
+   "status": "ok",
+   "wall_s": 13.277999304002151,
+   "peak_rss_mb": 143.2578125,
+   "runs": 1
+  },
+  {
+   "id": "s1:sweep:pt=default:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "default",
+    "row": null,
+    "c": 1,
+    "tag": "Sublet",
+    "mode": "L-tr",
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 1.6869047619047617,
+   "status": "ok",
+   "wall_s": 10.376182510051876,
+   "peak_rss_mb": 143.25390625,
+   "runs": 1
+  },
+  {
+   "id": "s1:sweep:pt=alpha03:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "alpha03",
+    "row": "alpha",
+    "c": 1,
+    "tag": "Sublet",
+    "mode": "L-tr",
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 1.6869047619047617,
+   "status": "ok",
+   "wall_s": 10.334114165045321,
+   "peak_rss_mb": 142.27734375,
+   "runs": 1
+  },
+  {
+   "id": "s1:sweep:pt=alpha05:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "alpha05",
+    "row": "alpha",
+    "c": 1,
+    "tag": "Sublet",
+    "mode": "L-tr",
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 1.6869047619047617,
+   "status": "ok",
+   "wall_s": 10.695187934907153,
+   "peak_rss_mb": 143.296875,
+   "runs": 1
+  },
+  {
+   "id": "s1:sweep:pt=alphap06:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "alphap06",
+    "row": "alpha_p",
+    "c": 1,
+    "tag": "Sublet",
+    "mode": "L-tr",
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 1.6869047619047617,
+   "status": "ok",
+   "wall_s": 11.232531240908429,
+   "peak_rss_mb": 143.4140625,
+   "runs": 1
+  },
+  {
+   "id": "s1:sweep:pt=alphap10:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "alphap10",
+    "row": "alpha_p",
+    "c": 1,
+    "tag": "Sublet",
+    "mode": "L-tr",
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 1.6869047619047617,
+   "status": "ok",
+   "wall_s": 11.263704114127904,
+   "peak_rss_mb": 142.484375,
+   "runs": 1
+  },
+  {
+   "id": "s1:sweep:pt=kv05:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "kv05",
+    "row": "mu_split",
+    "c": 1,
+    "tag": "Sublet",
+    "mode": "L-tr",
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 1.6869047619047617,
+   "status": "ok",
+   "wall_s": 10.267277303850278,
+   "peak_rss_mb": 140.7109375,
+   "runs": 1
+  },
+  {
+   "id": "s1:sweep:pt=kv10:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "kv10",
+    "row": "mu_split",
+    "c": 1,
+    "tag": "Sublet",
+    "mode": "L-tr",
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 1.6869047619047617,
+   "status": "ok",
+   "wall_s": 10.025327134178951,
+   "peak_rss_mb": 140.58984375,
+   "runs": 1
+  },
+  {
+   "id": "s1:sweep:pt=scen_warm_peer_rdma:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "scen_warm_peer_rdma",
+    "row": "load_scenario",
+    "c": 1,
+    "tag": "Sublet",
+    "mode": "L-tr",
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 1.6869047619047617,
+   "status": "ok",
+   "wall_s": 9.285062309121713,
+   "peak_rss_mb": 144.58984375,
+   "runs": 1
+  },
+  {
+   "id": "s1:sweep:pt=scen_ssd_optimized:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "scen_ssd_optimized",
+    "row": "load_scenario",
+    "c": 1,
+    "tag": "Sublet",
+    "mode": "L-tr",
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 1.6869047619047617,
+   "status": "ok",
+   "wall_s": 9.38278053002432,
+   "peak_rss_mb": 143.8125,
+   "runs": 1
+  },
+  {
+   "id": "s1:sweep:pt=scen_ssd_stock_safetensors:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "scen_ssd_stock_safetensors",
+    "row": "load_scenario",
+    "c": 1,
+    "tag": "Sublet",
+    "mode": "L-tr",
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 1.6869047619047617,
+   "status": "ok",
+   "wall_s": 9.82500229892321,
+   "peak_rss_mb": 143.515625,
+   "runs": 1
+  },
+  {
+   "id": "s1:sweep:pt=scen_ssd_stock_pytorch:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "scen_ssd_stock_pytorch",
+    "row": "load_scenario",
+    "c": 1,
+    "tag": "Sublet",
+    "mode": "L-tr",
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 1.6869047619047617,
+   "status": "ok",
+   "wall_s": 9.932960737962276,
+   "peak_rss_mb": 143.61328125,
+   "runs": 1
+  },
+  {
+   "id": "s1:sweep:pt=scen_a5_10GBps:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "scen_a5_10GBps",
+    "row": "load_scenario",
+    "c": 1,
+    "tag": "Sublet",
+    "mode": "L-tr",
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 1.6869047619047617,
+   "status": "ok",
+   "wall_s": 10.237910855794325,
+   "peak_rss_mb": 143.96484375,
+   "runs": 1
+  },
+  {
+   "id": "s1:sweep:pt=scen_a5_2GBps:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "scen_a5_2GBps",
+    "row": "load_scenario",
+    "c": 1,
+    "tag": "Sublet",
+    "mode": "L-tr",
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 1.6869047619047617,
+   "status": "ok",
+   "wall_s": 10.302931471960619,
+   "peak_rss_mb": 143.83203125,
+   "runs": 1
+  },
+  {
+   "id": "s1:sweep:pt=scen_cold_wan_10gbps:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "scen_cold_wan_10gbps",
+    "row": "load_scenario",
+    "c": 1,
+    "tag": "Sublet",
+    "mode": "L-tr",
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 1.6869047619047617,
+   "status": "ok",
+   "wall_s": 10.176206632051617,
+   "peak_rss_mb": 143.421875,
+   "runs": 1
+  },
+  {
+   "id": "s1:sweep:pt=phi05:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "phi05",
+    "row": "phi",
+    "c": 1,
+    "tag": "Sublet",
+    "mode": "L-tr",
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 1.6869047619047617,
+   "status": "ok",
+   "wall_s": 9.955583025934175,
+   "peak_rss_mb": 143.62109375,
+   "runs": 1
+  },
+  {
+   "id": "s1:sweep:pt=prot1h:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "prot1h",
+    "row": "protected_term",
+    "c": 1,
+    "tag": "Sublet",
+    "mode": "L-tr",
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 1.6869047619047617,
+   "status": "ok",
+   "wall_s": 10.494729199213907,
+   "peak_rss_mb": 142.29296875,
+   "runs": 1
+  },
+  {
+   "id": "s1:sweep:pt=prot1d:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "prot1d",
+    "row": "protected_term",
+    "c": 1,
+    "tag": "Sublet",
+    "mode": "L-tr",
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 1.6869047619047617,
+   "status": "ok",
+   "wall_s": 10.359530490124598,
+   "peak_rss_mb": 142.62109375,
+   "runs": 1
+  },
+  {
+   "id": "s1:sweep:pt=delta0:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "delta0",
+    "row": "delta1",
+    "c": 1,
+    "tag": "Sublet",
+    "mode": "L-tr",
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 1.6869047619047617,
+   "status": "ok",
+   "wall_s": 3.9946811569388956,
+   "peak_rss_mb": 143.359375,
+   "runs": 1
+  },
+  {
+   "id": "s1:sweep:pt=delta02:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "delta02",
+    "row": "delta1",
+    "c": 1,
+    "tag": "Sublet",
+    "mode": "L-tr",
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 1.6869047619047617,
+   "status": "ok",
+   "wall_s": 7.592198327882215,
+   "peak_rss_mb": 142.32421875,
+   "runs": 1
+  },
+  {
+   "id": "s1:sweep:pt=strict:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "strict",
+    "row": "slo_class",
+    "c": 1,
+    "tag": "Sublet",
+    "mode": "L-tr",
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 1.6869047619047617,
+   "status": "ok",
+   "wall_s": 3.5538976988755167,
+   "peak_rss_mb": 141.7734375,
+   "runs": 1
+  },
+  {
+   "id": "s1:sweep:pt=slotier:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "slotier",
+    "row": "slo_class",
+    "c": 1,
+    "tag": "Sublet",
+    "mode": "L-tr",
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 1.6869047619047617,
+   "status": "ok",
+   "wall_s": 9.43232955597341,
+   "peak_rss_mb": 142.765625,
+   "runs": 1
+  },
+  {
+   "id": "s1:sweep:pt=fee4:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "fee4",
+    "row": "transfer_fee",
+    "c": 1,
+    "tag": "Sublet",
+    "mode": "L-tr",
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 1.6869047619047617,
+   "status": "ok",
+   "wall_s": 10.748322759987786,
+   "peak_rss_mb": 142.48046875,
+   "runs": 1
+  },
+  {
+   "id": "s1:sweep:pt=c0p90:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "c0p90",
+    "row": "own_capacity",
+    "c": 1,
+    "tag": "Sublet",
+    "mode": "L-tr",
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 1.6741404486924198,
+   "status": "ok",
+   "wall_s": 5.867209678050131,
+   "peak_rss_mb": 142.01953125,
+   "runs": 1
+  },
+  {
+   "id": "s1:sweep:pt=lease10:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "lease10",
+    "row": "lease_quantile",
+    "c": 1,
+    "tag": "Sublet",
+    "mode": "L-tr",
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 1.6560016878117234,
+   "status": "ok",
+   "wall_s": 10.215961390873417,
+   "peak_rss_mb": 142.5546875,
+   "runs": 1
+  },
+  {
+   "id": "s1:sweep:pt=buf999:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "buf999",
+    "row": "buffer_quantile",
+    "c": 1,
+    "tag": "Sublet",
+    "mode": "L-tr",
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 1.644047619047619,
+   "status": "ok",
+   "wall_s": 10.078985780011863,
+   "peak_rss_mb": 141.6484375,
+   "runs": 1
+  },
+  {
+   "id": "s1:sweep:pt=alpha02:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "alpha02",
+    "row": "alpha",
+    "c": 1,
+    "tag": "Sublet",
+    "mode": "L-tr",
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 1.601190476190476,
+   "status": "ok",
+   "wall_s": 9.322473417036235,
+   "peak_rss_mb": 142.75,
+   "runs": 1
+  },
+  {
+   "id": "s1:sweep:pt=sS0:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "sS0",
+    "row": "s_S",
+    "c": 1,
+    "tag": "Sublet",
+    "mode": "L-tr",
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 1.5686669132009634,
+   "status": "ok",
+   "wall_s": 9.362868982832879,
+   "peak_rss_mb": 142.65625,
+   "runs": 1
+  },
+  {
+   "id": "s1:sweep:pt=tiermap:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "tiermap",
+    "row": "gpt4o_mini",
+    "c": 1,
+    "tag": "Sublet",
+    "mode": "L-tr",
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 1.359735260093683,
+   "status": "ok",
+   "wall_s": 9.269538762047887,
+   "peak_rss_mb": 143.29296875,
+   "runs": 1
+  },
+  {
+   "id": "s1:sweep:pt=catM2:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "catM2",
+    "row": "catalog",
+    "c": 1,
+    "tag": "Sublet",
+    "mode": "L-tr",
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 1.2932264701977965,
+   "status": "ok",
+   "wall_s": 8.708482067100704,
+   "peak_rss_mb": 142.9765625,
+   "runs": 1
+  },
+  {
+   "id": "s1:sweep:pt=kappaL05:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "kappaL05",
+    "row": "kappa_L",
+    "c": 1,
+    "tag": "Sublet",
+    "mode": "L-tr",
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 1.248887276933872,
+   "status": "ok",
+   "wall_s": 8.735914241988212,
+   "peak_rss_mb": 143.19140625,
+   "runs": 1
+  },
+  {
+   "id": "s1:sweep:pt=wcfull:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "wcfull",
+    "row": "wildchat",
+    "c": 1,
+    "tag": "Sublet",
+    "mode": "L-tr",
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 1.230076710094631,
+   "status": "ok",
+   "wall_s": 8.828698203898966,
+   "peak_rss_mb": 143.4609375,
+   "runs": 1
+  },
+  {
+   "id": "s1:sweep:pt=a5:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "a5",
+    "row": "catalog",
+    "c": 1,
+    "tag": "Sublet",
+    "mode": "L-tr",
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 1.0523809523809524,
+   "status": "ok",
+   "wall_s": 7.029538404894993,
+   "peak_rss_mb": 142.46875,
+   "runs": 1
+  },
+  {
+   "id": "s1:sweep:pt=tight025:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "tight025",
+    "row": "tightness",
+    "c": 1,
+    "tag": "Sublet",
+    "mode": "L-tr",
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 1.0119047619047619,
+   "status": "ok",
+   "wall_s": 6.913688786095008,
+   "peak_rss_mb": 142.765625,
+   "runs": 1
+  },
+  {
+   "id": "s1:sweep:pt=nlayers4:c=1",
+   "kind": "pool",
+   "params": {
+    "part": "sweep",
+    "kind": "sweep",
+    "point": "nlayers4",
+    "row": "n_layers",
+    "c": 1,
+    "tag": "Sublet",
+    "mode": "L-tr",
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 120,
+    "limit_s": 1800
+   },
+   "est_s": 0.8666296865221594,
+   "status": "ok",
+   "wall_s": 5.24448029207997,
+   "peak_rss_mb": 140.45703125,
+   "runs": 1
+  }
+ ],
+ "instance_hashes": {
+  "sweep:pt=default:c=1": "fddc5752788e170ecd364592b0f94ae2631bc2acfb1e71aa32462e0be77b1273",
+  "sweep:pt=alpha02:c=1": "b8648940678a07f3e37acf59c491a79afab2fe0b9174bf2f5a09d0073156e556",
+  "sweep:pt=alpha03:c=1": "ed1bc37a38bb9b5244c63e18ba37e884eeb01c1260d3a626f5b9cfb620997baf",
+  "sweep:pt=alpha05:c=1": "18e816eb23676cb87206e853a61288eef67e3fb44873727a0416de5173fe773d",
+  "sweep:pt=alpha06:c=1": "b69013a9edd62a8469ae4f3ba29a3eb10b3cf6e45db9fae28d69d54b449668f1",
+  "sweep:pt=alphap06:c=1": "b348fdd15bbe36c24892e0ba9e98976088a4fd9eed89fb62ab941c5e0f46cefa",
+  "sweep:pt=alphap10:c=1": "1435ae99aa0a6b43c39e39a572a5406a899e0fa058da7d0d65bc9896ececaf81",
+  "sweep:pt=kv05:c=1": "54ac7f07e259a5672556ce0f8da03e8536c3383f9ba961cccb72969daf40d13e",
+  "sweep:pt=kv10:c=1": "871b79337e45bd0ed65bd0702180c921b1f2c44ab22052a35e1c907582e64344",
+  "sweep:pt=scen_warm_peer_rdma:c=1": "d4c005063c8eb66578f583eeb0b6212a8082d2776bd40b0596eaf5ff0b5ca5c3",
+  "sweep:pt=scen_ssd_optimized:c=1": "1f8a1ca81896e9d8864279db163808caa80b15671d163052de295cf399931bc5",
+  "sweep:pt=scen_ssd_stock_safetensors:c=1": "5ed5399509ec3965b597557ef579266c0506eba2d8359a90665ce25c7aca1a69",
+  "sweep:pt=scen_ssd_stock_pytorch:c=1": "775faa4ca8ff12514a0be35707066b1775139195abc5fa13414cc70d7b67a853",
+  "sweep:pt=scen_a5_10GBps:c=1": "e486de53dd728e2d2d50671ca051ace1affcb0e1b2affe51279e09a39b503e4e",
+  "sweep:pt=scen_a5_2GBps:c=1": "8be83a4c517d62ec4a5f1c47198b6ea69e84acd1505e9f2a6989e98fa41db9f6",
+  "sweep:pt=scen_cold_wan_10gbps:c=1": "94f310429221e76cfd5e28abaa90cacd0895f7130895ec7946f4851b7fcd44b1",
+  "sweep:pt=scen_cold_wan_1gbps:c=1": "ff13c9855298da58ff80cf14067fe7d8dd2f7b165dfda499d10ba1f13a707880",
+  "sweep:pt=phi05:c=1": "99a78f8d83a7557ce5fae06333179f20dc23d2342838277bbe8458bae0b12ccb",
+  "sweep:pt=kappaL05:c=1": "bce56d9f9665b00f6859485be3440598cd48a4409087e8545aec69351273d03a",
+  "sweep:pt=kappaL2:c=1": "37245128a45dfc7e73a2f139218f72a61fea9327576c9c1cb88438c09f178ca5",
+  "sweep:pt=a5:c=1": "e5058f010704a3ea78e18f8de16e0da007678fef0e807eede6eff29845330938",
+  "sweep:pt=catM2:c=1": "3735d9b676c9e42f314c524a61113b03d7d0e0e722af9dd733a8a0b0b52ff35d",
+  "sweep:pt=catLg4:c=1": "19366101affca3111c7646644966704491a67eb7ed80a7a68a3491d593f00755",
+  "sweep:pt=L16:c=1": "c1e6a5e8fc567ec5d0cca05248b9df87b30c676243e739a95e2db4fc1b12d7b6",
+  "sweep:pt=tiermap:c=1": "1b069a91034d5d18812aa32d1fed2af88c2da5ae166e14750c4ac7888c9ae91a",
+  "sweep:pt=sS0:c=1": "146349882ebcde0c1504d451388083421321cc86ce4545ffa036ab4d791a80d2",
+  "sweep:pt=sS05:c=1": "4fcf4397f39bdf21bba53b5486c0b9202c500f15de0edd949d3ce15a39545a00",
+  "sweep:pt=xi1:c=1": "e2eeb614e2f5840323b8acaba4cd3a3f62d7de051e8b133d2532a8b9f2305d8b",
+  "sweep:pt=wcfull:c=1": "1c6e6f2e7fb11857b753c8db9b7028f68ac6c6c0486b13dbb891c3dfbbb9bd2a",
+  "sweep:pt=c0p50:c=1": "347bbef43523fae86315df3c873449e91662773a7dff5b5c8a9d671a2b5469c9",
+  "sweep:pt=c0p90:c=1": "bb4b78d2169986ab627a5976314abbf9283887e47108a684e2282131eb7c20b0",
+  "sweep:pt=smooth5:c=1": "3463c359107bac9e0262fa9562608dea3b87a000e0f7a60ffcf2d9112691bdd6",
+  "sweep:pt=smooth60:c=1": "2f2be6fc67e338f3f6566593bae3ad0811181e985c4f4b6025ddf0ce3d8ee48d",
+  "sweep:pt=lease10:c=1": "fe2051f0b44a9e7600fe6ce95dd85af545992752f177e828942561a35cf40921",
+  "sweep:pt=lease50:c=1": "2185d09a212901806bea2421099e9e14b4d23b0d750bb23b7a073153317459a8",
+  "sweep:pt=layer16:c=1": "0d1e20303340bc2411ce3299072be5d27acc263a85d7a837615afbadea6c7954",
+  "sweep:pt=nlayers4:c=1": "a175700b774f35c6570f9c2b5d9fa6eba94a9316870e17e02954e75cd19d0ac6",
+  "sweep:pt=nlayers16:c=1": "7621e49fa3fd81f72ce3e8538ec4331ff65a90ad3e3742a667a7979e015f51bb",
+  "sweep:pt=prot1h:c=1": "553dcac889c9e5e4d7ae102a6bd538c6317a6a4379e5564d605cc0e61e9842a0",
+  "sweep:pt=prot1d:c=1": "3968074639b9f3ba13fc2912fbc4106d284a829c3b84065c66d1ad4a45a35b84",
+  "sweep:pt=prothorizon:c=1": "f5dd71c94f1fa704f0624e6b5224c4204d6a6844d30e5dc19f4478f72c39c17d",
+  "sweep:pt=buf999:c=1": "8455378e082c422972f925151c854c9aacbab1192cdb0d2cdbd267f24435ad91",
+  "sweep:pt=tight025:c=1": "4a84fe52b50f4e612e4ba5d7fec119c346da2b665b75f479b753af9b74be8858",
+  "sweep:pt=tight1:c=1": "95ec1dbabbd0b0f2af5a260f971f981fc02ed841995ea5f8250334318a303a5d",
+  "sweep:pt=tight2:c=1": "8dcc7eb302f1160e35af838e5033adcac1c5ba7cd32956d92b294629f5d0d4e0",
+  "sweep:pt=delta0:c=1": "20c595f4a3c1b3d17c57b33a5dc2dab86c190e1ca901ce164443e81ea75e04d0",
+  "sweep:pt=delta02:c=1": "937e34354af5f88d04881cb08b8b59a8d967e3e5de05a14d557f420ce3db1e73",
+  "sweep:pt=strict:c=1": "b5a8851b22e404507f7dc8b341f0b11e1a81ea99ce64e4d4325ce049478db92c",
+  "sweep:pt=slotier:c=1": "7d83a82c893281c3f74c9c7c1000cbbd04654f4e63e9fa946d6357f2499335c2",
+  "sweep:pt=fee4:c=1": "2a83e573d1b8b7a122f9233b564732b8bfcf0a585e1bbda5a013242ac8dc926e",
+  "sweep:pt=slow1:c=1": "d458df081ca5882342324e7a37ad467360439fc6f8a3ef8fb35083f8c75f351f"
+ },
+ "design": {
+  "reduced": true,
+  "alignments": [
+   1
+  ],
+  "policy_seeds": [
+   0
+  ],
+  "horizon_min": 120
+ },
+ "parts": [
+  "sweep"
+ ],
+ "reduced": true,
+ "B0_rule": "0.1*BL0a",
+ "inputs_sha256": {
+  "code/sim/configs/bench_e7f.json": "c34eee8133082cfe148d314b9209ea3d703c1e110f74c1372e4945cf25f952f0",
+  "code/sim/out/e7/main/summary.json": "bbdcc02a25606ae81e5482f2a6adbcb1ba18ffd8a7a9e2ec733583b90ecf2abc"
+ }
+}

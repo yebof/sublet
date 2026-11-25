@@ -1,0 +1,5554 @@
+{
+ "meta": {
+  "module": "sublet.experiments.ms3_claims",
+  "spec": "design/sim_spec_ms3.md \u00a71.4",
+  "git_revision": "992823b93d06ab079b469b16d32b1b9309e79b35",
+  "written": "2026-11-25T06:40:55",
+  "input_root": "/work/sublet",
+  "input_root_is_repository": true,
+  "inputs": {
+   "code/sim/out/e1/manifest.json": "ok",
+   "code/sim/out/e1/summary.json": "ok",
+   "code/sim/out/e10/manifest.json": "ok",
+   "code/sim/out/e10/summary.json": "ok",
+   "code/sim/out/e11/summary.json": "ok",
+   "code/sim/out/e2/manifest.json": "ok",
+   "code/sim/out/e2/summary.json": "ok",
+   "code/sim/out/e6/a/manifest.json": "ok",
+   "code/sim/out/e6/a/summary.json": "ok",
+   "code/sim/out/e6/b/manifest.json": "ok",
+   "code/sim/out/e6/b/summary.json": "ok",
+   "code/sim/out/figs/fig1.json": "ok",
+   "code/sim/out/figs/fig2.json": "ok",
+   "code/sim/out/figs/fig3.json": "ok",
+   "code/sim/out/figs/floats_heights.json": "ok",
+   "code/sim/out/ms3_copy_e1.json": "ok",
+   "code/sim/out/ms3_copy_e10.json": "ok",
+   "code/sim/out/ms3_copy_e2.json": "ok",
+   "code/sim/out/ms3_copy_e6.json": "ok",
+   "code/sim/out/ms3_e11_0.json": "ok",
+   "code/sim/out/q44_study/summary.json": "ok"
+  },
+  "out_dir": "/work/sublet/code/sim/out"
+ },
+ "criterion": {
+  "holds": true,
+  "text": "holds: no row is a bug, and every row is reproduced, holds, informative or explained (0 explained)",
+  "reasons": "No row is a bug, and every row is reproduced, holds, informative or explained (0 explained)",
+  "n_rows": 37,
+  "counts": {
+   "reproduced": 6,
+   "holds": 22,
+   "informative": 9,
+   "explained": 0,
+   "bug": 0,
+   "missing": 0,
+   "pending": 0
+  },
+  "bug": [],
+  "missing": [],
+  "pending": [],
+  "explained": [],
+  "unexplained": []
+ },
+ "rows": [
+  {
+   "id": "E11-0",
+   "experiment": "E11",
+   "section": "\u00a73.3",
+   "kind": "property",
+   "claim": {
+    "spec": "the copy of \u00a73.2 step 1: manifest.json meta.git_revision is E11's commit; every run file that records a git revision records it; the file list and the sha256 of every file equal the clone's",
+    "summary": null
+   },
+   "status_label": null,
+   "status_label_note": "the provenance of the copy (no claim of the design)",
+   "reference": {
+    "value": "the clone's files and their sha256; revision 29919ea0a0cb0be883ceb60b86c1f1ddd1dcfa3c (\u00a73.1)",
+    "values": {},
+    "file": "/work/e11c/code/sim/out/e11"
+   },
+   "regenerated": {
+    "value": {
+     "pass": true,
+     "n_files_copy": 23403,
+     "n_files_clone": 23403,
+     "n_sha256_mismatch": 0,
+     "n_only_in_copy": 0,
+     "n_only_in_clone": 0,
+     "manifest_git_revision": "29919ea0a0cb0be883ceb60b86c1f1ddd1dcfa3c",
+     "n_run_revision_differs": 0,
+     "n_runs_no_revision_other": 0,
+     "n_runs_unreadable": 0
+    },
+    "file": "code/sim/out/ms3_e11_0.json"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "E11-1",
+   "experiment": "E11",
+   "section": "\u00a73.3",
+   "kind": "property",
+   "claim": {
+    "spec": "e11/summary.json checks.V1-V7 each pass; V3 is computed from T2_ad (it was 'not run' in the first study, q44_study/summary.json checks.V3.why)",
+    "summary": null
+   },
+   "status_label": null,
+   "status_label_note": "the Q44 study's checks V1-V7 (design/q44_practical_sublet.md \u00a78.2)",
+   "reference": {
+    "value": "each pass (V1 against the values of its reference_file, V5 against c4_lower.json)",
+    "values": {
+     "V1_reference_file": "code/sim/out/ms2_checks/pd_cost_diag.json",
+     "V5_reference_file": "code/theory_checks/c3/out/c4_lower.json"
+    },
+    "file": "code/sim/out/e11/summary.json (checks.V1.reference_file, checks.V5.reference_file)"
+   },
+   "regenerated": {
+    "value": {
+     "V1": "pass",
+     "V2": "pass",
+     "V3": "pass",
+     "V4": "pass",
+     "V5": "pass",
+     "V6": "pass",
+     "V7": "pass",
+     "V3_pairs": 504
+    },
+    "file": "code/sim/out/e11/summary.json checks.V1-V7"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "E11-2",
+   "experiment": "E11",
+   "section": "\u00a73.3",
+   "kind": "property",
+   "claim": {
+    "spec": "certificate_full_model.all_held and the certificate of every core-export run (D5.certificate) true; a run in Theorem W's proven cases whose ALG(T) exceeds its bound plus the tolerance is a bug",
+    "summary": null
+   },
+   "status_label": "Theorem W(a)(b) (PROVEN for the engine as implemented under C1-C3, audited); W(c) (CONJECTURE)",
+   "status_label_note": null,
+   "reference": {
+    "value": "every certificate held (all_held true, no failure listed)",
+    "values": {},
+    "file": "code/sim/sublet/algos/guard.py (Theorem W, module docstring); design/Sublet_design.md \u00a72.9"
+   },
+   "regenerated": {
+    "value": {
+     "full_model_all_held": true,
+     "full_model_held": 4020,
+     "full_model_runs": 4020,
+     "full_model_failures": 0,
+     "core_all_held": true,
+     "core_held": 2120,
+     "core_runs": 2120,
+     "core_failures": 0
+    },
+    "file": "code/sim/out/e11/summary.json certificate_full_model, D5.certificate"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "E11-3",
+   "experiment": "E11",
+   "section": "\u00a73.3",
+   "kind": "informative",
+   "claim": {
+    "spec": "identity of the Fig. 1(b) run (\u00a78.1's rule) with the first study's file of the same path (t_a, ALG_T, the guard record), and whether the rule picks the same path in both (informative, M42)",
+    "summary": null
+   },
+   "status_label": null,
+   "status_label_note": "the identity of one run between the two studies (M42)",
+   "reference": {
+    "value": "the first study's run file of the same path",
+    "values": {
+     "t_a": 107,
+     "ALG_T": 732.6945471498149
+    },
+    "file": "code/sim/out/q44_study/runs/Q1/I2/1min/L-eg/BL5-G_c2_l2_p0.json"
+   },
+   "regenerated": {
+    "value": {
+     "run_file": "code/sim/out/e11/runs/Q1/I2/1min/L-eg/BL5-G_c2_l2_p0.json",
+     "same_as_first_study": true,
+     "t_a": 107,
+     "ALG_T": 732.6945471498149,
+     "identical": true
+    },
+    "file": "code/sim/out/figs/fig1.json data"
+   },
+   "summary_status": "informative",
+   "verdict": "informative",
+   "explanation": null,
+   "note": "the rule picks the same path in both studies and the run is identical (t_a, ALG_T and every guard series)"
+  },
+  {
+   "id": "E11-4",
+   "experiment": "E11",
+   "section": "\u00a73.3",
+   "kind": "informative",
+   "claim": {
+    "spec": "Fig. 3's numbers versus the first study's: fig3.json carries E11's values; the first study's come from fig3_e11.collect_a and collect_b on q44_study/summary.json and (c)'s series from its D5; (c)'s G3(b) line is not compared (informative; changes under L-co are expected from S11)",
+    "summary": null
+   },
+   "status_label": null,
+   "status_label_note": "measurements (Fig. 3's values), no pass condition",
+   "reference": {
+    "value": "the first study's Fig. 3 values (collect_a, collect_b, D5)",
+    "values": {},
+    "file": "code/sim/out/q44_study/summary.json"
+   },
+   "regenerated": {
+    "value": {
+     "n_compared": 383,
+     "n_differ": 14,
+     "n_differ_a": 1,
+     "n_differ_b": 13,
+     "n_differ_c": 0,
+     "max_abs_diff_a": 0.02248743995830238,
+     "max_abs_diff_b": 0.29999999999998295,
+     "max_abs_diff_c": 0.0,
+     "largest_a": "a6 W0 at I1",
+     "largest_b": "a6 x at L-co",
+     "largest_c": "all equal",
+     "n_without_counterpart": 0,
+     "e11_revision": "29919ea0a0cb0be883ceb60b86c1f1ddd1dcfa3c"
+    },
+    "file": "code/sim/out/figs/fig3.json data.a, data.b, data.c"
+   },
+   "summary_status": "informative",
+   "verdict": "informative",
+   "explanation": null,
+   "note": "14 of 383 compared values differ: (a) 1 of 98 (W0); (b) 13 of 217 (ci_hi, ci_lo, intensity, x); (c) 0 of 68; the figure and the text use E11's values (changes under L-co are expected from S11, \u00a73.3)",
+   "detail": [
+    {
+     "panel": "a",
+     "key": "bl5_g1",
+     "field": "x",
+     "at": null,
+     "e11": 1.0651165959347684,
+     "first_study": 1.0651165959347684,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl5_g1",
+     "field": "y",
+     "at": null,
+     "e11": 1.0181877116466476,
+     "first_study": 1.0181877116466476,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl5_g1",
+     "field": "x_min",
+     "at": null,
+     "e11": 1.0,
+     "first_study": 1.0,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl5_g1",
+     "field": "y_min",
+     "at": null,
+     "e11": 0.998503140167621,
+     "first_study": 0.998503140167621,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl5_g1",
+     "field": "D1",
+     "at": "I1",
+     "e11": 1.0651165959347684,
+     "first_study": 1.0651165959347684,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl5_g1",
+     "field": "D1",
+     "at": "I2",
+     "e11": 1.0566270324292493,
+     "first_study": 1.0566270324292493,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl5_g1",
+     "field": "D1",
+     "at": "I3",
+     "e11": 1.0438417898371135,
+     "first_study": 1.0438417898371135,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl5_g1",
+     "field": "D1",
+     "at": "I4",
+     "e11": 1.0,
+     "first_study": 1.0,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl5_g1",
+     "field": "W0",
+     "at": "I1",
+     "e11": 0.998503140167621,
+     "first_study": 0.998503140167621,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl5_g1",
+     "field": "W0",
+     "at": "I2",
+     "e11": 1.0106124601665178,
+     "first_study": 1.0106124601665178,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl5_g1",
+     "field": "W0",
+     "at": "I3",
+     "e11": 1.006669967019639,
+     "first_study": 1.006669967019639,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl5_g1",
+     "field": "W0",
+     "at": "I4",
+     "e11": 1.0181877116466476,
+     "first_study": 1.0181877116466476,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl5_lag",
+     "field": "x",
+     "at": null,
+     "e11": 1.0651165959347684,
+     "first_study": 1.0651165959347684,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl5_lag",
+     "field": "y",
+     "at": null,
+     "e11": 1.0820947130455794,
+     "first_study": 1.0820947130455794,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl5_lag",
+     "field": "x_min",
+     "at": null,
+     "e11": 1.0,
+     "first_study": 1.0,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl5_lag",
+     "field": "y_min",
+     "at": null,
+     "e11": 0.998503140167621,
+     "first_study": 0.998503140167621,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl5_lag",
+     "field": "D1",
+     "at": "I1",
+     "e11": 1.0651165959347684,
+     "first_study": 1.0651165959347684,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl5_lag",
+     "field": "D1",
+     "at": "I2",
+     "e11": 1.0206783373918782,
+     "first_study": 1.0206783373918782,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl5_lag",
+     "field": "D1",
+     "at": "I3",
+     "e11": 1.0153707079692513,
+     "first_study": 1.0153707079692513,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl5_lag",
+     "field": "D1",
+     "at": "I4",
+     "e11": 1.0,
+     "first_study": 1.0,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl5_lag",
+     "field": "W0",
+     "at": "I1",
+     "e11": 0.998503140167621,
+     "first_study": 0.998503140167621,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl5_lag",
+     "field": "W0",
+     "at": "I2",
+     "e11": 1.0820947130455794,
+     "first_study": 1.0820947130455794,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl5_lag",
+     "field": "W0",
+     "at": "I3",
+     "e11": 1.0434485175736323,
+     "first_study": 1.0434485175736323,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl5_lag",
+     "field": "W0",
+     "at": "I4",
+     "e11": 1.0226914586413303,
+     "first_study": 1.0226914586413303,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl1",
+     "field": "x",
+     "at": null,
+     "e11": 1.3110276137986654,
+     "first_study": 1.3110276137986654,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl1",
+     "field": "y",
+     "at": null,
+     "e11": 1.5071917145208533,
+     "first_study": 1.5071917145208533,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl1",
+     "field": "x_min",
+     "at": null,
+     "e11": 1.0,
+     "first_study": 1.0,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl1",
+     "field": "y_min",
+     "at": null,
+     "e11": 1.0542785493810167,
+     "first_study": 1.0542785493810167,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl1",
+     "field": "D1",
+     "at": "I1",
+     "e11": 1.0,
+     "first_study": 1.0,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl1",
+     "field": "D1",
+     "at": "I2",
+     "e11": 1.0,
+     "first_study": 1.0,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl1",
+     "field": "D1",
+     "at": "I3",
+     "e11": 1.0,
+     "first_study": 1.0,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl1",
+     "field": "D1",
+     "at": "I4",
+     "e11": 1.3110276137986654,
+     "first_study": 1.3110276137986654,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl1",
+     "field": "W0",
+     "at": "I1",
+     "e11": 1.0542785493810167,
+     "first_study": 1.0542785493810167,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl1",
+     "field": "W0",
+     "at": "I2",
+     "e11": 1.3975417565806543,
+     "first_study": 1.3975417565806543,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl1",
+     "field": "W0",
+     "at": "I3",
+     "e11": 1.1597271131977918,
+     "first_study": 1.1597271131977918,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl1",
+     "field": "W0",
+     "at": "I4",
+     "e11": 1.5071917145208533,
+     "first_study": 1.5071917145208533,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl2",
+     "field": "x",
+     "at": null,
+     "e11": 1.233920119973246,
+     "first_study": 1.233920119973246,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl2",
+     "field": "y",
+     "at": null,
+     "e11": 1.4751936538899932,
+     "first_study": 1.4751936538899932,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl2",
+     "field": "x_min",
+     "at": null,
+     "e11": 1.02282535718852,
+     "first_study": 1.02282535718852,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl2",
+     "field": "y_min",
+     "at": null,
+     "e11": 1.0929204616049426,
+     "first_study": 1.0929204616049426,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl2",
+     "field": "D1",
+     "at": "I1",
+     "e11": 1.0259144527001465,
+     "first_study": 1.0259144527001465,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl2",
+     "field": "D1",
+     "at": "I2",
+     "e11": 1.02282535718852,
+     "first_study": 1.02282535718852,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl2",
+     "field": "D1",
+     "at": "I3",
+     "e11": 1.0319222229195677,
+     "first_study": 1.0319222229195677,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl2",
+     "field": "D1",
+     "at": "I4",
+     "e11": 1.233920119973246,
+     "first_study": 1.233920119973246,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl2",
+     "field": "W0",
+     "at": "I1",
+     "e11": 1.0929204616049426,
+     "first_study": 1.0929204616049426,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl2",
+     "field": "W0",
+     "at": "I2",
+     "e11": 1.3110977421292795,
+     "first_study": 1.3110977421292795,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl2",
+     "field": "W0",
+     "at": "I3",
+     "e11": 1.2459751595928352,
+     "first_study": 1.2459751595928352,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl2",
+     "field": "W0",
+     "at": "I4",
+     "e11": 1.4751936538899932,
+     "first_study": 1.4751936538899932,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "a7",
+     "field": "x",
+     "at": null,
+     "e11": 1.1451988109027216,
+     "first_study": 1.1451988109027216,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "a7",
+     "field": "y",
+     "at": null,
+     "e11": 1.2381659163446874,
+     "first_study": 1.2381659163446874,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "a7",
+     "field": "x_min",
+     "at": null,
+     "e11": 1.0442467959729218,
+     "first_study": 1.0442467959729218,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "a7",
+     "field": "y_min",
+     "at": null,
+     "e11": 0.9740900650652571,
+     "first_study": 0.9740900650652571,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "a7",
+     "field": "D1",
+     "at": "I1",
+     "e11": 1.0589671956022917,
+     "first_study": 1.0589671956022917,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "a7",
+     "field": "D1",
+     "at": "I2",
+     "e11": 1.0642932849828262,
+     "first_study": 1.0642932849828262,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "a7",
+     "field": "D1",
+     "at": "I3",
+     "e11": 1.0442467959729218,
+     "first_study": 1.0442467959729218,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "a7",
+     "field": "D1",
+     "at": "I4",
+     "e11": 1.1451988109027216,
+     "first_study": 1.1451988109027216,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "a7",
+     "field": "W0",
+     "at": "I1",
+     "e11": 0.9740900650652571,
+     "first_study": 0.9740900650652571,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "a7",
+     "field": "W0",
+     "at": "I2",
+     "e11": 1.2381659163446874,
+     "first_study": 1.2381659163446874,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "a7",
+     "field": "W0",
+     "at": "I3",
+     "e11": 1.0546034046929134,
+     "first_study": 1.0546034046929134,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "a7",
+     "field": "W0",
+     "at": "I4",
+     "e11": 1.2304328445071704,
+     "first_study": 1.2304328445071704,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "a7_g1",
+     "field": "x",
+     "at": null,
+     "e11": 1.4193231568080884,
+     "first_study": 1.4193231568080884,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "a7_g1",
+     "field": "y",
+     "at": null,
+     "e11": 1.024219368938676,
+     "first_study": 1.024219368938676,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "a7_g1",
+     "field": "x_min",
+     "at": null,
+     "e11": 1.0589671956022917,
+     "first_study": 1.0589671956022917,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "a7_g1",
+     "field": "y_min",
+     "at": null,
+     "e11": 0.9833969967943452,
+     "first_study": 0.9833969967943452,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "a7_g1",
+     "field": "D1",
+     "at": "I1",
+     "e11": 1.0589671956022917,
+     "first_study": 1.0589671956022917,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "a7_g1",
+     "field": "D1",
+     "at": "I2",
+     "e11": 1.1275844695119945,
+     "first_study": 1.1275844695119945,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "a7_g1",
+     "field": "D1",
+     "at": "I3",
+     "e11": 1.4193231568080884,
+     "first_study": 1.4193231568080884,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "a7_g1",
+     "field": "D1",
+     "at": "I4",
+     "e11": 1.0983436109849412,
+     "first_study": 1.0983436109849412,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "a7_g1",
+     "field": "W0",
+     "at": "I1",
+     "e11": 0.9833969967943452,
+     "first_study": 0.9833969967943452,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "a7_g1",
+     "field": "W0",
+     "at": "I2",
+     "e11": 1.0104016116476644,
+     "first_study": 1.0104016116476644,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "a7_g1",
+     "field": "W0",
+     "at": "I3",
+     "e11": 1.0072127259672121,
+     "first_study": 1.0072127259672121,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "a7_g1",
+     "field": "W0",
+     "at": "I4",
+     "e11": 1.024219368938676,
+     "first_study": 1.024219368938676,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl1_g1",
+     "field": "x",
+     "at": null,
+     "e11": 1.4116328573364119,
+     "first_study": 1.4116328573364119,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl1_g1",
+     "field": "y",
+     "at": null,
+     "e11": 1.0240722824314126,
+     "first_study": 1.0240722824314126,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl1_g1",
+     "field": "x_min",
+     "at": null,
+     "e11": 1.0,
+     "first_study": 1.0,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl1_g1",
+     "field": "y_min",
+     "at": null,
+     "e11": 1.0,
+     "first_study": 1.0,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl1_g1",
+     "field": "D1",
+     "at": "I1",
+     "e11": 1.0,
+     "first_study": 1.0,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl1_g1",
+     "field": "D1",
+     "at": "I2",
+     "e11": 1.1873004905095823,
+     "first_study": 1.1873004905095823,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl1_g1",
+     "field": "D1",
+     "at": "I3",
+     "e11": 1.4116328573364119,
+     "first_study": 1.4116328573364119,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl1_g1",
+     "field": "D1",
+     "at": "I4",
+     "e11": 1.1110225294752665,
+     "first_study": 1.1110225294752665,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl1_g1",
+     "field": "W0",
+     "at": "I1",
+     "e11": 1.005069637329929,
+     "first_study": 1.005069637329929,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl1_g1",
+     "field": "W0",
+     "at": "I2",
+     "e11": 1.0063387272488935,
+     "first_study": 1.0063387272488935,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl1_g1",
+     "field": "W0",
+     "at": "I3",
+     "e11": 1.0,
+     "first_study": 1.0,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "bl1_g1",
+     "field": "W0",
+     "at": "I4",
+     "e11": 1.0240722824314126,
+     "first_study": 1.0240722824314126,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "a6",
+     "field": "x",
+     "at": null,
+     "e11": 2.1392327625396734,
+     "first_study": 2.1392327625396734,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "a6",
+     "field": "y",
+     "at": null,
+     "e11": 1.8753310542981212,
+     "first_study": 1.8753310542981212,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "a6",
+     "field": "x_min",
+     "at": null,
+     "e11": 1.3056255732875073,
+     "first_study": 1.3056255732875073,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "a6",
+     "field": "y_min",
+     "at": null,
+     "e11": 1.0847656752524002,
+     "first_study": 1.0847656752524002,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "a6",
+     "field": "D1",
+     "at": "I1",
+     "e11": 2.1392327625396734,
+     "first_study": 2.1392327625396734,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "a6",
+     "field": "D1",
+     "at": "I2",
+     "e11": 1.5131172740428964,
+     "first_study": 1.5131172740428964,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "a6",
+     "field": "D1",
+     "at": "I3",
+     "e11": 1.3056255732875073,
+     "first_study": 1.3056255732875073,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "a6",
+     "field": "D1",
+     "at": "I4",
+     "e11": 1.9070655235312932,
+     "first_study": 1.9070655235312932,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "a6",
+     "field": "W0",
+     "at": "I1",
+     "e11": 1.3773071033893192,
+     "first_study": 1.3548196634310168,
+     "abs_diff": 0.02248743995830238,
+     "rel_diff": 0.016598105685412035
+    },
+    {
+     "panel": "a",
+     "key": "a6",
+     "field": "W0",
+     "at": "I2",
+     "e11": 1.2551101800043276,
+     "first_study": 1.2551101800043276,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "a6",
+     "field": "W0",
+     "at": "I3",
+     "e11": 1.0847656752524002,
+     "first_study": 1.0847656752524002,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "a6",
+     "field": "W0",
+     "at": "I4",
+     "e11": 1.8753310542981212,
+     "first_study": 1.8753310542981212,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "criteria",
+     "field": "x_max",
+     "at": null,
+     "e11": 1.1,
+     "first_study": 1.1,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "a",
+     "key": "criteria",
+     "field": "y_max",
+     "at": null,
+     "e11": 1.05,
+     "first_study": 1.05,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a6",
+     "field": "x",
+     "at": "L-iid-0.0124",
+     "e11": 3.3,
+     "first_study": 3.3,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a6",
+     "field": "x",
+     "at": "L-iid-0.05",
+     "e11": 14.4,
+     "first_study": 14.4,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a6",
+     "field": "x",
+     "at": "L-tr",
+     "e11": 50.3,
+     "first_study": 50.3,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a6",
+     "field": "x",
+     "at": "L-iid-0.2",
+     "e11": 57.0,
+     "first_study": 57.0,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a6",
+     "field": "x",
+     "at": "L-co",
+     "e11": 197.3,
+     "first_study": 197.6,
+     "abs_diff": 0.29999999999998295,
+     "rel_diff": 0.001518218623481695
+    },
+    {
+     "panel": "b",
+     "key": "a6",
+     "field": "x",
+     "at": "L-ss",
+     "e11": 230.4,
+     "first_study": 230.4,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a6",
+     "field": "x",
+     "at": "L-eg",
+     "e11": 288.0,
+     "first_study": 288.0,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a6",
+     "field": "median",
+     "at": "L-iid-0.0124",
+     "e11": 1.8426072213423021,
+     "first_study": 1.8426072213423021,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a6",
+     "field": "median",
+     "at": "L-iid-0.05",
+     "e11": 1.8753310542981212,
+     "first_study": 1.8753310542981212,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a6",
+     "field": "median",
+     "at": "L-tr",
+     "e11": 1.7155871210497997,
+     "first_study": 1.7155871210497997,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a6",
+     "field": "median",
+     "at": "L-iid-0.2",
+     "e11": 1.7831609820828591,
+     "first_study": 1.7831609820828591,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a6",
+     "field": "median",
+     "at": "L-co",
+     "e11": 1.7125265084879766,
+     "first_study": 1.7125265084879766,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a6",
+     "field": "median",
+     "at": "L-ss",
+     "e11": 1.6303248313187666,
+     "first_study": 1.6303248313187666,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a6",
+     "field": "median",
+     "at": "L-eg",
+     "e11": 1.718609815131336,
+     "first_study": 1.718609815131336,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a6",
+     "field": "ci_lo",
+     "at": "L-iid-0.0124",
+     "e11": 1.6600175069469751,
+     "first_study": 1.6600175069469751,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a6",
+     "field": "ci_lo",
+     "at": "L-iid-0.05",
+     "e11": 1.5902525992404841,
+     "first_study": 1.5902525992404841,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a6",
+     "field": "ci_lo",
+     "at": "L-tr",
+     "e11": 1.634740955987109,
+     "first_study": 1.634740955987109,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a6",
+     "field": "ci_lo",
+     "at": "L-iid-0.2",
+     "e11": 1.5373744557767395,
+     "first_study": 1.5373744557767395,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a6",
+     "field": "ci_lo",
+     "at": "L-co",
+     "e11": 1.56863262110868,
+     "first_study": 1.578072390474798,
+     "abs_diff": 0.0094397693661179,
+     "rel_diff": 0.005981835448802027
+    },
+    {
+     "panel": "b",
+     "key": "a6",
+     "field": "ci_lo",
+     "at": "L-ss",
+     "e11": 1.4535076318940512,
+     "first_study": 1.4535076318940512,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a6",
+     "field": "ci_lo",
+     "at": "L-eg",
+     "e11": 1.5313508829620677,
+     "first_study": 1.5313508829620677,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a6",
+     "field": "ci_hi",
+     "at": "L-iid-0.0124",
+     "e11": 2.0303062492562085,
+     "first_study": 2.0303062492562085,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a6",
+     "field": "ci_hi",
+     "at": "L-iid-0.05",
+     "e11": 2.095326530791159,
+     "first_study": 2.095326530791159,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a6",
+     "field": "ci_hi",
+     "at": "L-tr",
+     "e11": 2.0002524437842935,
+     "first_study": 2.0002524437842935,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a6",
+     "field": "ci_hi",
+     "at": "L-iid-0.2",
+     "e11": 2.0172788960788792,
+     "first_study": 2.0172788960788792,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a6",
+     "field": "ci_hi",
+     "at": "L-co",
+     "e11": 1.8107566470081333,
+     "first_study": 1.8107566470081333,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a6",
+     "field": "ci_hi",
+     "at": "L-ss",
+     "e11": 1.9270858438265437,
+     "first_study": 1.9270858438265437,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a6",
+     "field": "ci_hi",
+     "at": "L-eg",
+     "e11": 1.8397706243230807,
+     "first_study": 1.8397706243230807,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a6",
+     "field": "n",
+     "at": "L-iid-0.0124",
+     "e11": 8,
+     "first_study": 8,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a6",
+     "field": "n",
+     "at": "L-iid-0.05",
+     "e11": 8,
+     "first_study": 8,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a6",
+     "field": "n",
+     "at": "L-tr",
+     "e11": 8,
+     "first_study": 8,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a6",
+     "field": "n",
+     "at": "L-iid-0.2",
+     "e11": 8,
+     "first_study": 8,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a6",
+     "field": "n",
+     "at": "L-co",
+     "e11": 8,
+     "first_study": 8,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a6",
+     "field": "n",
+     "at": "L-ss",
+     "e11": 8,
+     "first_study": 8,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a6",
+     "field": "n",
+     "at": "L-eg",
+     "e11": 8,
+     "first_study": 8,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl1",
+     "field": "x",
+     "at": "L-iid-0.0124",
+     "e11": 3.3,
+     "first_study": 3.3,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl1",
+     "field": "x",
+     "at": "L-iid-0.05",
+     "e11": 14.4,
+     "first_study": 14.4,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl1",
+     "field": "x",
+     "at": "L-tr",
+     "e11": 50.3,
+     "first_study": 50.3,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl1",
+     "field": "x",
+     "at": "L-iid-0.2",
+     "e11": 57.0,
+     "first_study": 57.0,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl1",
+     "field": "x",
+     "at": "L-co",
+     "e11": 197.3,
+     "first_study": 197.6,
+     "abs_diff": 0.29999999999998295,
+     "rel_diff": 0.001518218623481695
+    },
+    {
+     "panel": "b",
+     "key": "bl1",
+     "field": "x",
+     "at": "L-ss",
+     "e11": 230.4,
+     "first_study": 230.4,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl1",
+     "field": "x",
+     "at": "L-eg",
+     "e11": 288.0,
+     "first_study": 288.0,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl1",
+     "field": "median",
+     "at": "L-iid-0.0124",
+     "e11": 1.2115648548346583,
+     "first_study": 1.2115648548346583,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl1",
+     "field": "median",
+     "at": "L-iid-0.05",
+     "e11": 1.2216560175634417,
+     "first_study": 1.2216560175634417,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl1",
+     "field": "median",
+     "at": "L-tr",
+     "e11": 1.2120832929704493,
+     "first_study": 1.2120832929704493,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl1",
+     "field": "median",
+     "at": "L-iid-0.2",
+     "e11": 1.268775565863774,
+     "first_study": 1.268775565863774,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl1",
+     "field": "median",
+     "at": "L-co",
+     "e11": 1.3197346686712637,
+     "first_study": 1.3197346686712637,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl1",
+     "field": "median",
+     "at": "L-ss",
+     "e11": 1.40837434127814,
+     "first_study": 1.40837434127814,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl1",
+     "field": "median",
+     "at": "L-eg",
+     "e11": 1.5071917145208533,
+     "first_study": 1.5071917145208533,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl1",
+     "field": "ci_lo",
+     "at": "L-iid-0.0124",
+     "e11": 1.0760111209043597,
+     "first_study": 1.0760111209043597,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl1",
+     "field": "ci_lo",
+     "at": "L-iid-0.05",
+     "e11": 1.0839097734923293,
+     "first_study": 1.0839097734923293,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl1",
+     "field": "ci_lo",
+     "at": "L-tr",
+     "e11": 1.0946054008934871,
+     "first_study": 1.0946054008934871,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl1",
+     "field": "ci_lo",
+     "at": "L-iid-0.2",
+     "e11": 1.1249384721923854,
+     "first_study": 1.1249384721923854,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl1",
+     "field": "ci_lo",
+     "at": "L-co",
+     "e11": 1.1476176782349,
+     "first_study": 1.1476176782349,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl1",
+     "field": "ci_lo",
+     "at": "L-ss",
+     "e11": 1.1771207678385702,
+     "first_study": 1.1771207678385702,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl1",
+     "field": "ci_lo",
+     "at": "L-eg",
+     "e11": 1.2587644167084617,
+     "first_study": 1.2587644167084617,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl1",
+     "field": "ci_hi",
+     "at": "L-iid-0.0124",
+     "e11": 1.3476338880653582,
+     "first_study": 1.3476338880653582,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl1",
+     "field": "ci_hi",
+     "at": "L-iid-0.05",
+     "e11": 1.3954387120421392,
+     "first_study": 1.3954387120421392,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl1",
+     "field": "ci_hi",
+     "at": "L-tr",
+     "e11": 1.4303153017093202,
+     "first_study": 1.4303153017093202,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl1",
+     "field": "ci_hi",
+     "at": "L-iid-0.2",
+     "e11": 1.4599437367181773,
+     "first_study": 1.4599437367181773,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl1",
+     "field": "ci_hi",
+     "at": "L-co",
+     "e11": 1.6128273162145101,
+     "first_study": 1.6224620518867932,
+     "abs_diff": 0.009634735672283012,
+     "rel_diff": 0.005938342694104055
+    },
+    {
+     "panel": "b",
+     "key": "bl1",
+     "field": "ci_hi",
+     "at": "L-ss",
+     "e11": 1.5597418686313902,
+     "first_study": 1.5597418686313902,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl1",
+     "field": "ci_hi",
+     "at": "L-eg",
+     "e11": 1.6617566490860445,
+     "first_study": 1.6617566490860445,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl1",
+     "field": "n",
+     "at": "L-iid-0.0124",
+     "e11": 8,
+     "first_study": 8,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl1",
+     "field": "n",
+     "at": "L-iid-0.05",
+     "e11": 8,
+     "first_study": 8,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl1",
+     "field": "n",
+     "at": "L-tr",
+     "e11": 8,
+     "first_study": 8,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl1",
+     "field": "n",
+     "at": "L-iid-0.2",
+     "e11": 8,
+     "first_study": 8,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl1",
+     "field": "n",
+     "at": "L-co",
+     "e11": 8,
+     "first_study": 8,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl1",
+     "field": "n",
+     "at": "L-ss",
+     "e11": 8,
+     "first_study": 8,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl1",
+     "field": "n",
+     "at": "L-eg",
+     "e11": 8,
+     "first_study": 8,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl2",
+     "field": "x",
+     "at": "L-iid-0.0124",
+     "e11": 3.3,
+     "first_study": 3.3,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl2",
+     "field": "x",
+     "at": "L-iid-0.05",
+     "e11": 14.4,
+     "first_study": 14.4,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl2",
+     "field": "x",
+     "at": "L-tr",
+     "e11": 50.3,
+     "first_study": 50.3,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl2",
+     "field": "x",
+     "at": "L-iid-0.2",
+     "e11": 57.0,
+     "first_study": 57.0,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl2",
+     "field": "x",
+     "at": "L-co",
+     "e11": 197.3,
+     "first_study": 197.6,
+     "abs_diff": 0.29999999999998295,
+     "rel_diff": 0.001518218623481695
+    },
+    {
+     "panel": "b",
+     "key": "bl2",
+     "field": "x",
+     "at": "L-ss",
+     "e11": 230.4,
+     "first_study": 230.4,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl2",
+     "field": "x",
+     "at": "L-eg",
+     "e11": 288.0,
+     "first_study": 288.0,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl2",
+     "field": "median",
+     "at": "L-iid-0.0124",
+     "e11": 1.1103499180501584,
+     "first_study": 1.1103499180501584,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl2",
+     "field": "median",
+     "at": "L-iid-0.05",
+     "e11": 1.1278782242643517,
+     "first_study": 1.1278782242643517,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl2",
+     "field": "median",
+     "at": "L-tr",
+     "e11": 1.1057568978010066,
+     "first_study": 1.1057568978010066,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl2",
+     "field": "median",
+     "at": "L-iid-0.2",
+     "e11": 1.2022334974181108,
+     "first_study": 1.2022334974181108,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl2",
+     "field": "median",
+     "at": "L-co",
+     "e11": 1.2598466127667907,
+     "first_study": 1.2598466127667907,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl2",
+     "field": "median",
+     "at": "L-ss",
+     "e11": 1.3513752815834765,
+     "first_study": 1.3513752815834765,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl2",
+     "field": "median",
+     "at": "L-eg",
+     "e11": 1.4751936538899932,
+     "first_study": 1.4751936538899932,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl2",
+     "field": "ci_lo",
+     "at": "L-iid-0.0124",
+     "e11": 1.0007458703113223,
+     "first_study": 1.0007458703113223,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl2",
+     "field": "ci_lo",
+     "at": "L-iid-0.05",
+     "e11": 1.0318210222341,
+     "first_study": 1.0318210222341,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl2",
+     "field": "ci_lo",
+     "at": "L-tr",
+     "e11": 1.0406963587909976,
+     "first_study": 1.0406963587909976,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl2",
+     "field": "ci_lo",
+     "at": "L-iid-0.2",
+     "e11": 1.072590316187258,
+     "first_study": 1.072590316187258,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl2",
+     "field": "ci_lo",
+     "at": "L-co",
+     "e11": 1.1049997967793894,
+     "first_study": 1.1049997967793894,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl2",
+     "field": "ci_lo",
+     "at": "L-ss",
+     "e11": 1.1983560604816543,
+     "first_study": 1.1983560604816543,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl2",
+     "field": "ci_lo",
+     "at": "L-eg",
+     "e11": 1.2670212441365138,
+     "first_study": 1.2670212441365138,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl2",
+     "field": "ci_hi",
+     "at": "L-iid-0.0124",
+     "e11": 1.2269957172120514,
+     "first_study": 1.2269957172120514,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl2",
+     "field": "ci_hi",
+     "at": "L-iid-0.05",
+     "e11": 1.2712760786928756,
+     "first_study": 1.2712760786928756,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl2",
+     "field": "ci_hi",
+     "at": "L-tr",
+     "e11": 1.4030633527303957,
+     "first_study": 1.4030633527303957,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl2",
+     "field": "ci_hi",
+     "at": "L-iid-0.2",
+     "e11": 1.3467100703895585,
+     "first_study": 1.3467100703895585,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl2",
+     "field": "ci_hi",
+     "at": "L-co",
+     "e11": 1.541919766265808,
+     "first_study": 1.5394360837834895,
+     "abs_diff": 0.00248368248231845,
+     "rel_diff": 0.001613371616062341
+    },
+    {
+     "panel": "b",
+     "key": "bl2",
+     "field": "ci_hi",
+     "at": "L-ss",
+     "e11": 1.5492437343437495,
+     "first_study": 1.5492437343437495,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl2",
+     "field": "ci_hi",
+     "at": "L-eg",
+     "e11": 1.558440581106023,
+     "first_study": 1.558440581106023,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl2",
+     "field": "n",
+     "at": "L-iid-0.0124",
+     "e11": 8,
+     "first_study": 8,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl2",
+     "field": "n",
+     "at": "L-iid-0.05",
+     "e11": 8,
+     "first_study": 8,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl2",
+     "field": "n",
+     "at": "L-tr",
+     "e11": 8,
+     "first_study": 8,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl2",
+     "field": "n",
+     "at": "L-iid-0.2",
+     "e11": 8,
+     "first_study": 8,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl2",
+     "field": "n",
+     "at": "L-co",
+     "e11": 8,
+     "first_study": 8,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl2",
+     "field": "n",
+     "at": "L-ss",
+     "e11": 8,
+     "first_study": 8,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl2",
+     "field": "n",
+     "at": "L-eg",
+     "e11": 8,
+     "first_study": 8,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a7",
+     "field": "x",
+     "at": "L-iid-0.0124",
+     "e11": 3.3,
+     "first_study": 3.3,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a7",
+     "field": "x",
+     "at": "L-iid-0.05",
+     "e11": 14.4,
+     "first_study": 14.4,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a7",
+     "field": "x",
+     "at": "L-tr",
+     "e11": 50.3,
+     "first_study": 50.3,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a7",
+     "field": "x",
+     "at": "L-iid-0.2",
+     "e11": 57.0,
+     "first_study": 57.0,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a7",
+     "field": "x",
+     "at": "L-co",
+     "e11": 197.3,
+     "first_study": 197.6,
+     "abs_diff": 0.29999999999998295,
+     "rel_diff": 0.001518218623481695
+    },
+    {
+     "panel": "b",
+     "key": "a7",
+     "field": "x",
+     "at": "L-ss",
+     "e11": 230.4,
+     "first_study": 230.4,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a7",
+     "field": "x",
+     "at": "L-eg",
+     "e11": 288.0,
+     "first_study": 288.0,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a7",
+     "field": "median",
+     "at": "L-iid-0.0124",
+     "e11": 1.0841572478006107,
+     "first_study": 1.0841572478006107,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a7",
+     "field": "median",
+     "at": "L-iid-0.05",
+     "e11": 1.1187119912443033,
+     "first_study": 1.1187119912443033,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a7",
+     "field": "median",
+     "at": "L-tr",
+     "e11": 1.0385538531097254,
+     "first_study": 1.0385538531097254,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a7",
+     "field": "median",
+     "at": "L-iid-0.2",
+     "e11": 1.196692313660023,
+     "first_study": 1.196692313660023,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a7",
+     "field": "median",
+     "at": "L-co",
+     "e11": 1.1647075130621036,
+     "first_study": 1.1647075130621036,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a7",
+     "field": "median",
+     "at": "L-ss",
+     "e11": 1.2098645337573313,
+     "first_study": 1.2098645337573313,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a7",
+     "field": "median",
+     "at": "L-eg",
+     "e11": 1.2304328445071704,
+     "first_study": 1.2304328445071704,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a7",
+     "field": "ci_lo",
+     "at": "L-iid-0.0124",
+     "e11": 0.9770627356681036,
+     "first_study": 0.9770627356681036,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a7",
+     "field": "ci_lo",
+     "at": "L-iid-0.05",
+     "e11": 0.9991281066392308,
+     "first_study": 0.9991281066392308,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a7",
+     "field": "ci_lo",
+     "at": "L-tr",
+     "e11": 1.0013942689815551,
+     "first_study": 1.0013942689815551,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a7",
+     "field": "ci_lo",
+     "at": "L-iid-0.2",
+     "e11": 1.0951092075576736,
+     "first_study": 1.0951092075576736,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a7",
+     "field": "ci_lo",
+     "at": "L-co",
+     "e11": 1.0736492641908013,
+     "first_study": 1.0738475146295092,
+     "abs_diff": 0.00019825043870791426,
+     "rel_diff": 0.00018461693676900963
+    },
+    {
+     "panel": "b",
+     "key": "a7",
+     "field": "ci_lo",
+     "at": "L-ss",
+     "e11": 1.0900260837588267,
+     "first_study": 1.0900260837588267,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a7",
+     "field": "ci_lo",
+     "at": "L-eg",
+     "e11": 1.1330401875664822,
+     "first_study": 1.1330401875664822,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a7",
+     "field": "ci_hi",
+     "at": "L-iid-0.0124",
+     "e11": 1.168142974998751,
+     "first_study": 1.168142974998751,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a7",
+     "field": "ci_hi",
+     "at": "L-iid-0.05",
+     "e11": 1.2063080684645286,
+     "first_study": 1.2063080684645286,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a7",
+     "field": "ci_hi",
+     "at": "L-tr",
+     "e11": 1.1117013649631438,
+     "first_study": 1.1117013649631438,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a7",
+     "field": "ci_hi",
+     "at": "L-iid-0.2",
+     "e11": 1.2968558329323359,
+     "first_study": 1.2968558329323359,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a7",
+     "field": "ci_hi",
+     "at": "L-co",
+     "e11": 1.284819421194264,
+     "first_study": 1.2855442080852715,
+     "abs_diff": 0.0007247868910074118,
+     "rel_diff": 0.0005637977180784248
+    },
+    {
+     "panel": "b",
+     "key": "a7",
+     "field": "ci_hi",
+     "at": "L-ss",
+     "e11": 1.3024415838387118,
+     "first_study": 1.3024415838387118,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a7",
+     "field": "ci_hi",
+     "at": "L-eg",
+     "e11": 1.3167541615976726,
+     "first_study": 1.3167541615976726,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a7",
+     "field": "n",
+     "at": "L-iid-0.0124",
+     "e11": 8,
+     "first_study": 8,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a7",
+     "field": "n",
+     "at": "L-iid-0.05",
+     "e11": 8,
+     "first_study": 8,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a7",
+     "field": "n",
+     "at": "L-tr",
+     "e11": 8,
+     "first_study": 8,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a7",
+     "field": "n",
+     "at": "L-iid-0.2",
+     "e11": 8,
+     "first_study": 8,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a7",
+     "field": "n",
+     "at": "L-co",
+     "e11": 8,
+     "first_study": 8,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a7",
+     "field": "n",
+     "at": "L-ss",
+     "e11": 8,
+     "first_study": 8,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "a7",
+     "field": "n",
+     "at": "L-eg",
+     "e11": 8,
+     "first_study": 8,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_lag",
+     "field": "x",
+     "at": "L-iid-0.0124",
+     "e11": 3.3,
+     "first_study": 3.3,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_lag",
+     "field": "x",
+     "at": "L-iid-0.05",
+     "e11": 14.4,
+     "first_study": 14.4,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_lag",
+     "field": "x",
+     "at": "L-tr",
+     "e11": 50.3,
+     "first_study": 50.3,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_lag",
+     "field": "x",
+     "at": "L-iid-0.2",
+     "e11": 57.0,
+     "first_study": 57.0,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_lag",
+     "field": "x",
+     "at": "L-co",
+     "e11": 197.3,
+     "first_study": 197.6,
+     "abs_diff": 0.29999999999998295,
+     "rel_diff": 0.001518218623481695
+    },
+    {
+     "panel": "b",
+     "key": "bl5_lag",
+     "field": "x",
+     "at": "L-ss",
+     "e11": 230.4,
+     "first_study": 230.4,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_lag",
+     "field": "x",
+     "at": "L-eg",
+     "e11": 288.0,
+     "first_study": 288.0,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_lag",
+     "field": "median",
+     "at": "L-iid-0.0124",
+     "e11": 0.9515279314897777,
+     "first_study": 0.9515279314897777,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_lag",
+     "field": "median",
+     "at": "L-iid-0.05",
+     "e11": 0.9706227759262275,
+     "first_study": 0.9706227759262275,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_lag",
+     "field": "median",
+     "at": "L-tr",
+     "e11": 0.9256231791913291,
+     "first_study": 0.9256231791913291,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_lag",
+     "field": "median",
+     "at": "L-iid-0.2",
+     "e11": 0.9749102797146532,
+     "first_study": 0.9749102797146532,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_lag",
+     "field": "median",
+     "at": "L-co",
+     "e11": 0.9815114798873055,
+     "first_study": 0.9815114798873055,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_lag",
+     "field": "median",
+     "at": "L-ss",
+     "e11": 0.9910856428023278,
+     "first_study": 0.9910856428023278,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_lag",
+     "field": "median",
+     "at": "L-eg",
+     "e11": 1.0226914586413303,
+     "first_study": 1.0226914586413303,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_lag",
+     "field": "ci_lo",
+     "at": "L-iid-0.0124",
+     "e11": 0.858403198281387,
+     "first_study": 0.858403198281387,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_lag",
+     "field": "ci_lo",
+     "at": "L-iid-0.05",
+     "e11": 0.8936547552035898,
+     "first_study": 0.8936547552035898,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_lag",
+     "field": "ci_lo",
+     "at": "L-tr",
+     "e11": 0.8855568336536646,
+     "first_study": 0.8855568336536646,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_lag",
+     "field": "ci_lo",
+     "at": "L-iid-0.2",
+     "e11": 0.9299278498739953,
+     "first_study": 0.9299278498739953,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_lag",
+     "field": "ci_lo",
+     "at": "L-co",
+     "e11": 0.9022829649494511,
+     "first_study": 0.9022829649494511,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_lag",
+     "field": "ci_lo",
+     "at": "L-ss",
+     "e11": 0.9449730651745452,
+     "first_study": 0.9449730651745452,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_lag",
+     "field": "ci_lo",
+     "at": "L-eg",
+     "e11": 1.0120354291730178,
+     "first_study": 1.0120354291730178,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_lag",
+     "field": "ci_hi",
+     "at": "L-iid-0.0124",
+     "e11": 0.9621099406682749,
+     "first_study": 0.9621099406682749,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_lag",
+     "field": "ci_hi",
+     "at": "L-iid-0.05",
+     "e11": 0.9980676178106618,
+     "first_study": 0.9980676178106618,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_lag",
+     "field": "ci_hi",
+     "at": "L-tr",
+     "e11": 0.97035563127859,
+     "first_study": 0.97035563127859,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_lag",
+     "field": "ci_hi",
+     "at": "L-iid-0.2",
+     "e11": 1.0239485986420915,
+     "first_study": 1.0239485986420915,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_lag",
+     "field": "ci_hi",
+     "at": "L-co",
+     "e11": 1.0316786725225395,
+     "first_study": 1.0305010271704766,
+     "abs_diff": 0.0011776453520628838,
+     "rel_diff": 0.0011427891103577377
+    },
+    {
+     "panel": "b",
+     "key": "bl5_lag",
+     "field": "ci_hi",
+     "at": "L-ss",
+     "e11": 1.0438182195519843,
+     "first_study": 1.0438182195519843,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_lag",
+     "field": "ci_hi",
+     "at": "L-eg",
+     "e11": 1.0440061373799356,
+     "first_study": 1.0440061373799356,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_lag",
+     "field": "n",
+     "at": "L-iid-0.0124",
+     "e11": 8,
+     "first_study": 8,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_lag",
+     "field": "n",
+     "at": "L-iid-0.05",
+     "e11": 8,
+     "first_study": 8,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_lag",
+     "field": "n",
+     "at": "L-tr",
+     "e11": 8,
+     "first_study": 8,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_lag",
+     "field": "n",
+     "at": "L-iid-0.2",
+     "e11": 8,
+     "first_study": 8,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_lag",
+     "field": "n",
+     "at": "L-co",
+     "e11": 8,
+     "first_study": 8,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_lag",
+     "field": "n",
+     "at": "L-ss",
+     "e11": 8,
+     "first_study": 8,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_lag",
+     "field": "n",
+     "at": "L-eg",
+     "e11": 8,
+     "first_study": 8,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_g1",
+     "field": "x",
+     "at": "L-iid-0.0124",
+     "e11": 3.3,
+     "first_study": 3.3,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_g1",
+     "field": "x",
+     "at": "L-iid-0.05",
+     "e11": 14.4,
+     "first_study": 14.4,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_g1",
+     "field": "x",
+     "at": "L-tr",
+     "e11": 50.3,
+     "first_study": 50.3,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_g1",
+     "field": "x",
+     "at": "L-iid-0.2",
+     "e11": 57.0,
+     "first_study": 57.0,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_g1",
+     "field": "x",
+     "at": "L-co",
+     "e11": 197.3,
+     "first_study": 197.6,
+     "abs_diff": 0.29999999999998295,
+     "rel_diff": 0.001518218623481695
+    },
+    {
+     "panel": "b",
+     "key": "bl5_g1",
+     "field": "x",
+     "at": "L-ss",
+     "e11": 230.4,
+     "first_study": 230.4,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_g1",
+     "field": "x",
+     "at": "L-eg",
+     "e11": 288.0,
+     "first_study": 288.0,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_g1",
+     "field": "median",
+     "at": "L-iid-0.0124",
+     "e11": 0.9515279314897777,
+     "first_study": 0.9515279314897777,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_g1",
+     "field": "median",
+     "at": "L-iid-0.05",
+     "e11": 0.9800887792394684,
+     "first_study": 0.9800887792394684,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_g1",
+     "field": "median",
+     "at": "L-tr",
+     "e11": 0.9256231791913291,
+     "first_study": 0.9256231791913291,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_g1",
+     "field": "median",
+     "at": "L-iid-0.2",
+     "e11": 0.9817877919899185,
+     "first_study": 0.9817877919899185,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_g1",
+     "field": "median",
+     "at": "L-co",
+     "e11": 0.9815114798873055,
+     "first_study": 0.9815114798873055,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_g1",
+     "field": "median",
+     "at": "L-ss",
+     "e11": 0.9910856428023278,
+     "first_study": 0.9910856428023278,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_g1",
+     "field": "median",
+     "at": "L-eg",
+     "e11": 1.0181877116466476,
+     "first_study": 1.0181877116466476,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_g1",
+     "field": "ci_lo",
+     "at": "L-iid-0.0124",
+     "e11": 0.858403198281387,
+     "first_study": 0.858403198281387,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_g1",
+     "field": "ci_lo",
+     "at": "L-iid-0.05",
+     "e11": 0.8936547552035898,
+     "first_study": 0.8936547552035898,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_g1",
+     "field": "ci_lo",
+     "at": "L-tr",
+     "e11": 0.8855568336536646,
+     "first_study": 0.8855568336536646,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_g1",
+     "field": "ci_lo",
+     "at": "L-iid-0.2",
+     "e11": 0.9299278498739953,
+     "first_study": 0.9299278498739953,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_g1",
+     "field": "ci_lo",
+     "at": "L-co",
+     "e11": 0.9022829649494511,
+     "first_study": 0.9022829649494511,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_g1",
+     "field": "ci_lo",
+     "at": "L-ss",
+     "e11": 0.9449730651745452,
+     "first_study": 0.9449730651745452,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_g1",
+     "field": "ci_lo",
+     "at": "L-eg",
+     "e11": 1.0120354291730178,
+     "first_study": 1.0120354291730178,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_g1",
+     "field": "ci_hi",
+     "at": "L-iid-0.0124",
+     "e11": 0.9621099406682749,
+     "first_study": 0.9621099406682749,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_g1",
+     "field": "ci_hi",
+     "at": "L-iid-0.05",
+     "e11": 1.0189626113400472,
+     "first_study": 1.0189626113400472,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_g1",
+     "field": "ci_hi",
+     "at": "L-tr",
+     "e11": 0.97035563127859,
+     "first_study": 0.97035563127859,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_g1",
+     "field": "ci_hi",
+     "at": "L-iid-0.2",
+     "e11": 1.023585769631126,
+     "first_study": 1.023585769631126,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_g1",
+     "field": "ci_hi",
+     "at": "L-co",
+     "e11": 1.0244986892724954,
+     "first_study": 1.0244986892724954,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_g1",
+     "field": "ci_hi",
+     "at": "L-ss",
+     "e11": 1.022650975915333,
+     "first_study": 1.022650975915333,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_g1",
+     "field": "ci_hi",
+     "at": "L-eg",
+     "e11": 1.025592816101525,
+     "first_study": 1.025592816101525,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_g1",
+     "field": "n",
+     "at": "L-iid-0.0124",
+     "e11": 8,
+     "first_study": 8,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_g1",
+     "field": "n",
+     "at": "L-iid-0.05",
+     "e11": 8,
+     "first_study": 8,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_g1",
+     "field": "n",
+     "at": "L-tr",
+     "e11": 8,
+     "first_study": 8,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_g1",
+     "field": "n",
+     "at": "L-iid-0.2",
+     "e11": 8,
+     "first_study": 8,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_g1",
+     "field": "n",
+     "at": "L-co",
+     "e11": 8,
+     "first_study": 8,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_g1",
+     "field": "n",
+     "at": "L-ss",
+     "e11": 8,
+     "first_study": 8,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "bl5_g1",
+     "field": "n",
+     "at": "L-eg",
+     "e11": 8,
+     "first_study": 8,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "intensity",
+     "field": "intensity",
+     "at": "L-iid-0.0124",
+     "e11": 3.3,
+     "first_study": 3.3,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "intensity",
+     "field": "intensity",
+     "at": "L-iid-0.05",
+     "e11": 14.4,
+     "first_study": 14.4,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "intensity",
+     "field": "intensity",
+     "at": "L-tr",
+     "e11": 50.3,
+     "first_study": 50.3,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "intensity",
+     "field": "intensity",
+     "at": "L-iid-0.2",
+     "e11": 57.0,
+     "first_study": 57.0,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "intensity",
+     "field": "intensity",
+     "at": "L-co",
+     "e11": 197.3,
+     "first_study": 197.6,
+     "abs_diff": 0.29999999999998295,
+     "rel_diff": 0.001518218623481695
+    },
+    {
+     "panel": "b",
+     "key": "intensity",
+     "field": "intensity",
+     "at": "L-ss",
+     "e11": 230.4,
+     "first_study": 230.4,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "b",
+     "key": "intensity",
+     "field": "intensity",
+     "at": "L-eg",
+     "e11": 288.0,
+     "first_study": 288.0,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "bl5_lag",
+     "field": "mean",
+     "at": 2.0,
+     "e11": 3816.3434022257547,
+     "first_study": 3816.3434022257547,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "bl5_lag",
+     "field": "mean",
+     "at": 4.0,
+     "e11": 3757.370892018779,
+     "first_study": 3757.370892018779,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "bl5_lag",
+     "field": "mean",
+     "at": 8.0,
+     "e11": 3644.7951441578143,
+     "first_study": 3644.7951441578143,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "bl5_lag",
+     "field": "mean",
+     "at": 16.0,
+     "e11": 3438.969957081544,
+     "first_study": 3438.969957081544,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "bl5_lag",
+     "field": "min",
+     "at": 2.0,
+     "e11": 3816.3434022257547,
+     "first_study": 3816.3434022257547,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "bl5_lag",
+     "field": "min",
+     "at": 4.0,
+     "e11": 3757.370892018779,
+     "first_study": 3757.370892018779,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "bl5_lag",
+     "field": "min",
+     "at": 8.0,
+     "e11": 3644.795144157815,
+     "first_study": 3644.795144157815,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "bl5_lag",
+     "field": "min",
+     "at": 16.0,
+     "e11": 3438.9699570815446,
+     "first_study": 3438.9699570815446,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "bl5_lag",
+     "field": "max",
+     "at": 2.0,
+     "e11": 3816.3434022257547,
+     "first_study": 3816.3434022257547,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "bl5_lag",
+     "field": "max",
+     "at": 4.0,
+     "e11": 3757.370892018779,
+     "first_study": 3757.370892018779,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "bl5_lag",
+     "field": "max",
+     "at": 8.0,
+     "e11": 3644.795144157815,
+     "first_study": 3644.795144157815,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "bl5_lag",
+     "field": "max",
+     "at": 16.0,
+     "e11": 3438.9699570815446,
+     "first_study": 3438.9699570815446,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "bl5_lag",
+     "field": "runs",
+     "at": 2.0,
+     "e11": 10,
+     "first_study": 10,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "bl5_lag",
+     "field": "runs",
+     "at": 4.0,
+     "e11": 10,
+     "first_study": 10,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "bl5_lag",
+     "field": "runs",
+     "at": 8.0,
+     "e11": 10,
+     "first_study": 10,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "bl5_lag",
+     "field": "runs",
+     "at": 16.0,
+     "e11": 10,
+     "first_study": 10,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "bl1",
+     "field": "mean",
+     "at": 2.0,
+     "e11": 1.5262321144674085,
+     "first_study": 1.5262321144674085,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "bl1",
+     "field": "mean",
+     "at": 4.0,
+     "e11": 3.004694835680751,
+     "first_study": 3.004694835680751,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "bl1",
+     "field": "mean",
+     "at": 8.0,
+     "e11": 5.82701062215478,
+     "first_study": 5.82701062215478,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "bl1",
+     "field": "mean",
+     "at": 16.0,
+     "e11": 10.987124463519311,
+     "first_study": 10.987124463519311,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "bl1",
+     "field": "min",
+     "at": 2.0,
+     "e11": 1.5262321144674085,
+     "first_study": 1.5262321144674085,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "bl1",
+     "field": "min",
+     "at": 4.0,
+     "e11": 3.004694835680751,
+     "first_study": 3.004694835680751,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "bl1",
+     "field": "min",
+     "at": 8.0,
+     "e11": 5.82701062215478,
+     "first_study": 5.82701062215478,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "bl1",
+     "field": "min",
+     "at": 16.0,
+     "e11": 10.987124463519313,
+     "first_study": 10.987124463519313,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "bl1",
+     "field": "max",
+     "at": 2.0,
+     "e11": 1.5262321144674085,
+     "first_study": 1.5262321144674085,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "bl1",
+     "field": "max",
+     "at": 4.0,
+     "e11": 3.004694835680751,
+     "first_study": 3.004694835680751,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "bl1",
+     "field": "max",
+     "at": 8.0,
+     "e11": 5.82701062215478,
+     "first_study": 5.82701062215478,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "bl1",
+     "field": "max",
+     "at": 16.0,
+     "e11": 10.987124463519313,
+     "first_study": 10.987124463519313,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "bl1",
+     "field": "runs",
+     "at": 2.0,
+     "e11": 10,
+     "first_study": 10,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "bl1",
+     "field": "runs",
+     "at": 4.0,
+     "e11": 10,
+     "first_study": 10,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "bl1",
+     "field": "runs",
+     "at": 8.0,
+     "e11": 10,
+     "first_study": 10,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "bl1",
+     "field": "runs",
+     "at": 16.0,
+     "e11": 10,
+     "first_study": 10,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "a7_g1",
+     "field": "mean",
+     "at": 2.0,
+     "e11": 1.5262321144674085,
+     "first_study": 1.5262321144674085,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "a7_g1",
+     "field": "mean",
+     "at": 4.0,
+     "e11": 3.6697965571205002,
+     "first_study": 3.6697965571205002,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "a7_g1",
+     "field": "mean",
+     "at": 8.0,
+     "e11": 3.7253414264036415,
+     "first_study": 3.7253414264036415,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "a7_g1",
+     "field": "mean",
+     "at": 16.0,
+     "e11": 3.746781115879828,
+     "first_study": 3.746781115879828,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "a7_g1",
+     "field": "min",
+     "at": 2.0,
+     "e11": 1.5262321144674085,
+     "first_study": 1.5262321144674085,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "a7_g1",
+     "field": "min",
+     "at": 4.0,
+     "e11": 3.5665101721439747,
+     "first_study": 3.5665101721439747,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "a7_g1",
+     "field": "min",
+     "at": 8.0,
+     "e11": 3.6100151745068283,
+     "first_study": 3.6100151745068283,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "a7_g1",
+     "field": "min",
+     "at": 16.0,
+     "e11": 3.517882689556509,
+     "first_study": 3.517882689556509,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "a7_g1",
+     "field": "max",
+     "at": 2.0,
+     "e11": 1.5262321144674085,
+     "first_study": 1.5262321144674085,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "a7_g1",
+     "field": "max",
+     "at": 4.0,
+     "e11": 3.785602503912363,
+     "first_study": 3.785602503912363,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "a7_g1",
+     "field": "max",
+     "at": 8.0,
+     "e11": 3.9135053110773894,
+     "first_study": 3.9135053110773894,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "a7_g1",
+     "field": "max",
+     "at": 16.0,
+     "e11": 3.975679542203147,
+     "first_study": 3.975679542203147,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "a7_g1",
+     "field": "runs",
+     "at": 2.0,
+     "e11": 10,
+     "first_study": 10,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "a7_g1",
+     "field": "runs",
+     "at": 4.0,
+     "e11": 10,
+     "first_study": 10,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "a7_g1",
+     "field": "runs",
+     "at": 8.0,
+     "e11": 10,
+     "first_study": 10,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "a7_g1",
+     "field": "runs",
+     "at": 16.0,
+     "e11": 10,
+     "first_study": 10,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "bl5_g1",
+     "field": "mean",
+     "at": 2.0,
+     "e11": 2.4308426073131955,
+     "first_study": 2.4308426073131955,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "bl5_g1",
+     "field": "mean",
+     "at": 4.0,
+     "e11": 2.668231611893584,
+     "first_study": 2.668231611893584,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "bl5_g1",
+     "field": "mean",
+     "at": 8.0,
+     "e11": 2.693474962063733,
+     "first_study": 2.693474962063733,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "bl5_g1",
+     "field": "mean",
+     "at": 16.0,
+     "e11": 2.7167381974248928,
+     "first_study": 2.7167381974248928,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "bl5_g1",
+     "field": "min",
+     "at": 2.0,
+     "e11": 2.3990461049284577,
+     "first_study": 2.3990461049284577,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "bl5_g1",
+     "field": "min",
+     "at": 4.0,
+     "e11": 2.564945226917058,
+     "first_study": 2.564945226917058,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "bl5_g1",
+     "field": "min",
+     "at": 8.0,
+     "e11": 2.5781487101669196,
+     "first_study": 2.5781487101669196,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "bl5_g1",
+     "field": "min",
+     "at": 16.0,
+     "e11": 2.4878397711015734,
+     "first_study": 2.4878397711015734,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "bl5_g1",
+     "field": "max",
+     "at": 2.0,
+     "e11": 2.462639109697933,
+     "first_study": 2.462639109697933,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "bl5_g1",
+     "field": "max",
+     "at": 4.0,
+     "e11": 2.784037558685446,
+     "first_study": 2.784037558685446,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "bl5_g1",
+     "field": "max",
+     "at": 8.0,
+     "e11": 2.8816388467374807,
+     "first_study": 2.8816388467374807,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "bl5_g1",
+     "field": "max",
+     "at": 16.0,
+     "e11": 2.9456366237482117,
+     "first_study": 2.9456366237482117,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "bl5_g1",
+     "field": "runs",
+     "at": 2.0,
+     "e11": 10,
+     "first_study": 10,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "bl5_g1",
+     "field": "runs",
+     "at": 4.0,
+     "e11": 10,
+     "first_study": 10,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "bl5_g1",
+     "field": "runs",
+     "at": 8.0,
+     "e11": 10,
+     "first_study": 10,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "bl5_g1",
+     "field": "runs",
+     "at": 16.0,
+     "e11": 10,
+     "first_study": 10,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "revocable_only_limit",
+     "field": "revocable_only_limit",
+     "at": 2.0,
+     "e11": 1.5384615384615383,
+     "first_study": 1.5384615384615383,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "revocable_only_limit",
+     "field": "revocable_only_limit",
+     "at": 4.0,
+     "e11": 3.0769230769230766,
+     "first_study": 3.0769230769230766,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "revocable_only_limit",
+     "field": "revocable_only_limit",
+     "at": 8.0,
+     "e11": 6.153846153846153,
+     "first_study": 6.153846153846153,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    },
+    {
+     "panel": "c",
+     "key": "revocable_only_limit",
+     "field": "revocable_only_limit",
+     "at": 16.0,
+     "e11": 12.307692307692307,
+     "first_study": 12.307692307692307,
+     "abs_diff": 0.0,
+     "rel_diff": 0.0
+    }
+   ]
+  },
+  {
+   "id": "E1-1",
+   "experiment": "E1",
+   "section": "\u00a74.6",
+   "kind": "reproduction",
+   "claim": {
+    "spec": "Fig. 2(b)'s rho at maas_p99_median equals a11's rows.*.rho (computed by the Fig. 2 script into figs/fig2.json data.b.E1_1; e1/summary.json gives it the status 'elsewhere'); 1e-12 relative",
+    "summary": "Fig. 2(b)'s rho equals a11's rows.*.rho"
+   },
+   "status_label": null,
+   "status_label_note": "the calibration formula of a11 (field_sources.rho)",
+   "reference": {
+    "value": "rows.maas_a10.<t>.<s>.by_contract.<k>.rho",
+    "values": {},
+    "file": "code/analysis/out/a11_calibration.json"
+   },
+   "regenerated": {
+    "value": {
+     "n": 480,
+     "max_rel_err": 0.0,
+     "tol": 1e-12,
+     "price_ref": "maas_p99_median"
+    },
+    "file": "code/sim/out/figs/fig2.json data.b.E1_1"
+   },
+   "summary_status": "pass",
+   "verdict": "reproduced",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "E1-2",
+   "experiment": "E1",
+   "section": "\u00a74.6",
+   "kind": "property",
+   "claim": {
+    "spec": "instance_rho after beta_for_rho equals rho* for both LLMs, every config seed (1e-9)",
+    "summary": "instance_rho after beta_for_rho equals rho* for both LLMs, every config seed (1e-9)"
+   },
+   "status_label": null,
+   "status_label_note": "the construction of the per-LLM fee (C12)",
+   "reference": {
+    "value": "rho* in {1.5, 2, 4, 8, 16} (the target)",
+    "values": {},
+    "file": "code/sim/out/e1/summary.json meta.fees"
+   },
+   "regenerated": {
+    "value": {
+     "n_cells": 72,
+     "max_abs_diff": 1.7763568394002505e-15,
+     "len(failures)": 0
+    },
+    "file": "code/sim/out/e1/summary.json checks.E1-2"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "E1-3",
+   "experiment": "E1",
+   "section": "\u00a74.6",
+   "kind": "reproduction",
+   "claim": {
+    "spec": "tight family at T = 60 equals c3/out/c3_benchmark.json a[*] (OPT_eager, OPT_none, OPTeager_over_OPTnone); at every T the MILP values equal the closed forms (1e-9, status 0, gap 0)",
+    "summary": "C3-L1(c) tight family: T = 60 equals c3_benchmark.json a; MILP values equal the closed forms (1e-9, status 0, gap 0)"
+   },
+   "status_label": "C3-L2 (PROVEN, pathwise, tight for every rho); core.opt_omega and core.opt_eager (Proposition M1, Corollary M2, PROVEN)",
+   "status_label_note": null,
+   "reference": {
+    "value": "c3_benchmark.json a[*] at T = 60; the closed forms of \u00a74.4",
+    "values": {},
+    "file": "code/theory_checks/c3/out/c3_benchmark.json"
+   },
+   "regenerated": {
+    "value": {
+     "n_rows": 20,
+     "n_T60_compared": 5,
+     "max_abs_diff_T60_vs_reference": 0.0,
+     "max_rel_diff_closed_form": 0.0,
+     "len(not_optimal_or_gap)": 0,
+     "len(above_max2rho)": 0
+    },
+    "file": "code/sim/out/e1/tight_family.json check_E1_3"
+   },
+   "summary_status": "pass",
+   "verdict": "reproduced",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "E1-4",
+   "experiment": "E1",
+   "section": "\u00a74.6",
+   "kind": "property",
+   "claim": {
+    "spec": "on every instance with an exact core export, OPT_eager / OPT(sigma, omega) <= max(2, rho) (C3-L2); the tight family and c3_benchmark.json b (re-solved, reproduced to 1e-9, at most 1.513) are exact; on the trace instances the bracket is a diagnostic",
+    "summary": "C3-L2 (PROVEN): OPT_eager / OPT(sigma, omega) <= max(2, rho) on exact core exports"
+   },
+   "status_label": "C3-L2 (PROVEN, pathwise, tight for every rho)",
+   "status_label_note": null,
+   "reference": {
+    "value": "max(2, rho); c3_benchmark.json b[*].per_rate[*].eager_over_omega",
+    "values": {},
+    "file": "code/theory_checks/c3/out/c3_benchmark.json"
+   },
+   "regenerated": {
+    "value": {
+     "core_b_n": 50,
+     "core_b_max_eager_over_omega": 1.513418518102738,
+     "core_b_max_abs_diff": 0.0,
+     "core_b_reproduced": true,
+     "core_b_all_within_bound": true,
+     "len(tight_family_above_max2rho)": 0,
+     "trace_exports.n_exact": 0,
+     "trace_brackets_diagnostic.n_lo_above_max2rho": 0
+    },
+    "file": "code/sim/out/e1/core_b.json, tight_family.json; code/sim/out/e1/summary.json checks.E1-4"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "E1-5",
+   "experiment": "E1",
+   "section": "\u00a74.6",
+   "kind": "property",
+   "claim": {
+    "spec": "every Sublet run's certificate held in Theorem W's proven cases; W(c) runs reported",
+    "summary": "Theorem W: every Sublet certificate held in the proven cases; W(c) runs reported"
+   },
+   "status_label": "Theorem W(a)(b) (PROVEN for the engine as implemented under C1-C3, audited); W(c) (CONJECTURE)",
+   "status_label_note": null,
+   "reference": {
+    "value": "ALG(T) within Theorem W's bound in every proven case",
+    "values": {},
+    "file": "code/sim/sublet/algos/guard.py"
+   },
+   "regenerated": {
+    "value": {
+     "runs": 216,
+     "n_failures": 0,
+     "n_w_c": 0,
+     "by_case": {
+      "W(a)": {
+       "runs": 180,
+       "held": 180
+      },
+      "W(b)": {
+       "runs": 36,
+       "held": 36
+      },
+      "W(c)": {
+       "runs": 0,
+       "held": 0
+      },
+      "unavailable": {
+       "runs": 0,
+       "held": 0
+      }
+     }
+    },
+    "file": "code/sim/out/e1/summary.json checks.E1-5"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "E1-6",
+   "experiment": "E1",
+   "section": "\u00a74.6",
+   "kind": "property",
+   "claim": {
+    "spec": "every E1(b) run: invariant_failures empty, gpu_only_lease_slots 0, ratio_validity None; plan class P1 runs have ratio_LB >= 1 - 1e-6 (LB <= OPT_P1 <= ALG)",
+    "summary": "every run: no invariant failure, no GPU-only lease slot, ratio_validity None; P1 runs ratio_LB >= 1 - 1e-6 (Proposition M4)"
+   },
+   "status_label": "Proposition M4 (PROVEN)",
+   "status_label_note": null,
+   "reference": {
+    "value": "no failure; ratio_LB >= 1 - 1e-6 for P1 runs",
+    "values": {},
+    "file": "design/Sublet_design.md \u00a75.2.4 (Proposition M4)"
+   },
+   "regenerated": {
+    "value": {
+     "n_runs": 924,
+     "len(invariant_failures)": 0,
+     "len(gpu_only_lease_slots)": 0,
+     "len(ratio_validity_not_none)": 0,
+     "n_p1": 924,
+     "len(p1_below)": 0,
+     "min_ratio_LB_p1": 1.0
+    },
+    "file": "code/sim/out/e1/summary.json checks.E1-6"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "E1-7",
+   "experiment": "E1",
+   "section": "\u00a74.6",
+   "kind": "reproduction",
+   "claim": {
+    "spec": "A3 in reference mode with rbar = 1 and with the theory rbar reproduces c3/out/c4_lower.json a (pd_r1, pd_r1_min, pd_rth, pd_rth_min) through E10-1",
+    "summary": "A3 reference mode with rbar = 1 and theory reproduces c4_lower.json a"
+   },
+   "status_label": "C3-T4 (PROVEN)",
+   "status_label_note": null,
+   "reference": {
+    "value": "c4_lower.json a (pd_r1, pd_r1_min, pd_rth, pd_rth_min)",
+    "values": {},
+    "file": "code/theory_checks/c3/out/c4_lower.json"
+   },
+   "regenerated": {
+    "value": {
+     "n_points": 16,
+     "max_abs_diff_pd_columns": 0.0
+    },
+    "file": "code/sim/out/e10/repro.json (E10-1); code/sim/out/e1/summary.json checks.E1-7"
+   },
+   "summary_status": "pass",
+   "verdict": "reproduced",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "E1-8",
+   "experiment": "E1",
+   "section": "\u00a74.6",
+   "kind": "informative",
+   "claim": {
+    "spec": "ratios above max(2, rho) on trace instances are not bugs (plan \u00a77); counted and reported",
+    "summary": "ratios ALG/LB above max(2, rho*) on trace instances are not bugs (plan \u00a77)"
+   },
+   "status_label": "C3-Cor3 (PROVEN); trace instances leave the ORML core, so their ratios are diagnostics",
+   "status_label_note": null,
+   "reference": {
+    "value": "max(2, rho*)",
+    "values": {},
+    "file": "code/sim/out/e1/summary.json ratios.*.max2rho"
+   },
+   "regenerated": {
+    "value": {
+     "n_runs_above": 261,
+     "len(by_point)": 29
+    },
+    "file": "code/sim/out/e1/summary.json checks.E1-8"
+   },
+   "summary_status": "informative",
+   "verdict": "informative",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "E10-1",
+   "experiment": "E10",
+   "section": "\u00a75.5",
+   "kind": "reproduction",
+   "claim": {
+    "spec": "at T = 48, m in {2, 3, 4, 6}, rho in {2, 4, 8, 16}, RR-renew, stay and A3's reference mode (rbar = 1 and theory), seeds 0-3, under 'adaptive', reproduce c4_lower.json a (rr, stay, pd_r1, pd_r1_min, pd_rth, pd_rth_min, LB_T); exact to 1e-9",
+    "summary": "R2 reproduction of c4_lower.json a (rr, stay, pd_r1, pd_r1_min, pd_rth, pd_rth_min, LB_T) to 1e-9"
+   },
+   "status_label": "C3-T4 (PROVEN)",
+   "status_label_note": null,
+   "reference": {
+    "value": "c4_lower.json a (rr, stay, pd_r1, pd_r1_min, pd_rth, pd_rth_min, LB_T)",
+    "values": {},
+    "file": "code/theory_checks/c3/out/c4_lower.json"
+   },
+   "regenerated": {
+    "value": {
+     "n_points": 16,
+     "max_abs_diff": 0.0,
+     "len(failures)": 0
+    },
+    "file": "code/sim/out/e10/repro.json; code/sim/out/e10/summary.json checks.E10-1"
+   },
+   "summary_status": "pass",
+   "verdict": "reproduced",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "E10-2",
+   "experiment": "E10",
+   "section": "\u00a75.5",
+   "kind": "property",
+   "claim": {
+    "spec": "C3-T4: every run under 'adaptive' has ALG/OPT >= LB_T - 1e-9",
+    "summary": "C3-T4 (PROVEN): every adaptive run has ALG/OPT >= LB_T - 1e-9"
+   },
+   "status_label": "C3-T4 (PROVEN, pathwise for deterministic algorithms against the adaptive-offline lender)",
+   "status_label_note": null,
+   "reference": {
+    "value": "LB_T = (A0 beta + a T) / ((A0/m + 1) beta + a (T + D))",
+    "values": {},
+    "file": "code/sim/out/e10/summary.json bounds"
+   },
+   "regenerated": {
+    "value": {
+     "n_runs": 1638,
+     "min_ratio_over_LB_T": 1.0037313432835822,
+     "len(failures)": 0
+    },
+    "file": "code/sim/out/e10/summary.json checks.E10-2"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "E10-3",
+   "experiment": "E10",
+   "section": "\u00a75.5",
+   "kind": "property",
+   "claim": {
+    "spec": "O1-B: every RR-renew run, under every lender, has ALG <= min{rho (1 + D/T) OPT, 2 m OPT + a D} (1 + 1e-9)",
+    "summary": "O1-B (PROVEN): RR-renew ALG <= min{rho (1 + D/T) OPT, 2 m OPT + a D} (1 + 1e-9)"
+   },
+   "status_label": "O1-B (PROVEN, any lender)",
+   "status_label_note": null,
+   "reference": {
+    "value": "min{rho (1 + D/T) OPT, 2 m OPT + a D}",
+    "values": {},
+    "file": "code/sim/out/e10/summary.json checks.E10-3 (per run)"
+   },
+   "regenerated": {
+    "value": {
+     "n_runs": 1098,
+     "max_alg_over_bound": 0.9542919548598471,
+     "len(failures)": 0
+    },
+    "file": "code/sim/out/e10/summary.json checks.E10-3"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "E10-4",
+   "experiment": "E10",
+   "section": "\u00a75.5",
+   "kind": "property",
+   "claim": {
+    "spec": "under safe_site, OPT = Phi beta + a T on every schedule (1e-9)",
+    "summary": "under safe_site OPT = Phi beta + a T on every schedule (1e-9)"
+   },
+   "status_label": "O1-A (PROVEN for m >= 3 under one-notice I1 and the assumptions of design \u00a71.8.3); the check tests its Claim 1 (design/theory/o1_oblivious_lender.md)",
+   "status_label_note": null,
+   "reference": {
+    "value": "Phi beta + a T",
+    "values": {},
+    "file": "code/sim/out/e10/summary.json a.safe_site.*"
+   },
+   "regenerated": {
+    "value": {
+     "n_runs": 1620,
+     "max_rel_diff": 0.0
+    },
+    "file": "code/sim/out/e10/summary.json checks.E10-4"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "E10-5",
+   "experiment": "E10",
+   "section": "\u00a75.5",
+   "kind": "property",
+   "claim": {
+    "spec": "O1-A: at m >= 3 the upper end of the 95% interval of E[ALG]/OPT under safe_site at k* is at least LB_A(k*) - 1e-9; a point below is rerun with seeds 30-129 (pending until then), still below is a bug",
+    "summary": "O1-A (PROVEN, m >= 3): upper end of the 95% interval of E[ALG]/OPT under safe_site at k* >= LB_A(k*) - 1e-9 (private tags)"
+   },
+   "status_label": "O1-A (PROVEN for m >= 3 under one-notice I1 and the assumptions of design \u00a71.8.3)",
+   "status_label_note": null,
+   "reference": {
+    "value": "LB_A(k*)",
+    "values": {},
+    "file": "code/sim/out/e10/summary.json bounds.<rho>.<m>.LB_A; code/theory_checks/c3/o1/out/o1_lb.json A"
+   },
+   "regenerated": {
+    "value": {
+     "n_points": 15,
+     "len(flagged)": 0,
+     "len(still_flagged_after_rerun)": 0,
+     "len(rerun_pending)": 0
+    },
+    "file": "code/sim/out/e10/summary.json checks.E10-5"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "E10-6",
+   "experiment": "E10",
+   "section": "\u00a75.5",
+   "kind": "property",
+   "claim": {
+    "spec": "O1-D: the lower end of the 95% interval of marking's ratio is at most 2 h_m + 1 (reruns as E10-5)",
+    "summary": "O1-D (PROVEN): lower end of the 95% interval of marking's ratio <= 2 h_m + 1"
+   },
+   "status_label": "O1-D (PROVEN)",
+   "status_label_note": null,
+   "reference": {
+    "value": "2 h_m + 1",
+    "values": {},
+    "file": "code/sim/out/e10/summary.json bounds.<rho>.<m>.two_h_m_plus_1"
+   },
+   "regenerated": {
+    "value": {
+     "n_points": 36,
+     "len(flagged)": 0,
+     "len(still_flagged_after_rerun)": 0,
+     "len(rerun_pending)": 0
+    },
+    "file": "code/sim/out/e10/summary.json checks.E10-6"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "E10-7",
+   "experiment": "E10",
+   "section": "\u00a75.5",
+   "kind": "informative",
+   "claim": {
+    "spec": "O1-C: marking's ratio under iid_step at p* against max_p LB_C (a limit; finite runs may lie below)",
+    "summary": "O1-C (PROVEN with tau >= 1; a T -> infinity limit that bounds no finite run): marking's ratio under iid_step at p* against max_p LB_C"
+   },
+   "status_label": "O1-C (PROVEN with tau >= 1); a T -> infinity limit that bounds no finite run",
+   "status_label_note": null,
+   "reference": {
+    "value": "max_p LB_C",
+    "values": {},
+    "file": "code/sim/out/e10/summary.json bounds.<rho>.<m>.LB_C_max"
+   },
+   "regenerated": {
+    "value": {
+     "len(points)": 18,
+     "min(points[*].ratio_minus_LB_C)": -0.025357194542708683,
+     "max(points[*].ratio_minus_LB_C)": 0.03025851458609119
+    },
+    "file": "code/sim/out/e10/summary.json checks.E10-7"
+   },
+   "summary_status": "informative",
+   "verdict": "informative",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "E10-8",
+   "experiment": "E10",
+   "section": "\u00a75.5",
+   "kind": "informative",
+   "claim": {
+    "spec": "C-O1a: RR-renew's ratio under 'adaptive' against rho m / (m + rho - 1)",
+    "summary": "C-O1a (VERIFIED NUMERICALLY / CONJECTURE): RR-renew's adaptive ratio against rho m / (m + rho - 1)"
+   },
+   "status_label": "C-O1a (VERIFIED NUMERICALLY / CONJECTURE)",
+   "status_label_note": null,
+   "reference": {
+    "value": "rho m / (m + rho - 1)",
+    "values": {},
+    "file": "code/sim/out/e10/summary.json bounds.<rho>.<m>.limit"
+   },
+   "regenerated": {
+    "value": {
+     "len(points)": 18,
+     "min(points[*].ratio_over_limit)": 1.0,
+     "max(points[*].ratio_over_limit)": 1.0
+    },
+    "file": "code/sim/out/e10/summary.json checks.E10-8"
+   },
+   "summary_status": "informative",
+   "verdict": "informative",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "E10-9",
+   "experiment": "E10",
+   "section": "\u00a75.5",
+   "kind": "reproduction",
+   "claim": {
+    "spec": "o1_lb.lb_A, lb_C through import_ref reproduce o1_lb.json A at every listed (rho, m), and summary.json bounds equals them there (exact)",
+    "summary": "o1_lb.lb_A, lb_C through import_ref reproduce o1_lb.json A at every listed (rho, m); bounds equal them there"
+   },
+   "status_label": "O1-A (PROVEN for m >= 3 under one-notice I1 and the assumptions of design \u00a71.8.3); O1-C (PROVEN with tau >= 1): the values of LB_A and LB_C",
+   "status_label_note": null,
+   "reference": {
+    "value": "o1_lb.json A (k, LB_A, p, LB_C)",
+    "values": {},
+    "file": "code/theory_checks/c3/o1/out/o1_lb.json"
+   },
+   "regenerated": {
+    "value": {
+     "n_listed": 56,
+     "recompute_pass": true,
+     "len(bounds_mismatch)": 0
+    },
+    "file": "code/sim/out/e10/repro.json o1_lb; code/sim/out/e10/summary.json bounds"
+   },
+   "summary_status": "pass",
+   "verdict": "reproduced",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "E10-10",
+   "experiment": "E10",
+   "section": "\u00a75.5",
+   "kind": "informative",
+   "claim": {
+    "spec": "E10(b): ratios growing faster than min(rho, m) in m at fixed rho (informative evidence against C-O1b; the entry lists stale_milp_records)",
+    "summary": "C-O1b (CONJECTURE): E10(b) ratios against min(rho, m) in m"
+   },
+   "status_label": "C-O1b (CONJECTURE)",
+   "status_label_note": null,
+   "reference": {
+    "value": "min(rho, m) and min(rho, 1 + log2 m), orders up to polylog factors",
+    "values": {},
+    "file": "code/sim/out/e10/summary.json checks.E10-10.series"
+   },
+   "regenerated": {
+    "value": {
+     "n_runs": 320,
+     "n_empty_instances": 64,
+     "len(series)": 8,
+     "len(stale_milp_records)": 0
+    },
+    "file": "code/sim/out/e10/summary.json checks.E10-10"
+   },
+   "summary_status": "informative",
+   "verdict": "informative",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "E2-1",
+   "experiment": "E2",
+   "section": "\u00a76.9",
+   "kind": "reproduction",
+   "claim": {
+    "spec": "the finer-grid game reproduces por_default.json table_por_switch_beta at mu = 1, lambda = inputs.lambda_default, Hs = H_BASE (the same floats); exact to 1e-12",
+    "summary": "the exact C2 game on the finer H grid (det_game.solve_det, switch cost beta~) reproduces por_default.json table_por_switch_beta at mu = 1, lambda = inputs.lambda_default, Hs in H_BASE (exact to 1e-12)"
+   },
+   "status_label": "C2-P8 (lower bound PROVEN, table values interval-certified, equality VERIFIED NUMERICALLY at alpha = 0.3, CONJECTURE in general)",
+   "status_label_note": null,
+   "reference": {
+    "value": "table_por_switch_beta CR at Hs in H_BASE",
+    "values": {
+     "rows[*].CR_ref": [
+      1.770768685303752,
+      1.7245421094143223,
+      1.67356632868253,
+      1.6228015578317034,
+      1.6013985868702185,
+      1.6013985868702185,
+      1.6013985868702185,
+      1.6013985868702185
+     ]
+    },
+    "file": "code/theory_checks/c2/out/por_default.json"
+   },
+   "regenerated": {
+    "value": {
+     "max_abs_diff": 0.0,
+     "tolerance": 1e-12,
+     "len(missing_Hs)": 0,
+     "rows[*].CR": [
+      1.770768685303752,
+      1.7245421094143223,
+      1.67356632868253,
+      1.6228015578317034,
+      1.6013985868702185,
+      1.6013985868702185,
+      1.6013985868702185,
+      1.6013985868702185
+     ]
+    },
+    "file": "code/sim/out/e2/game.json; code/sim/out/e2/summary.json checks.E2-1"
+   },
+   "summary_status": "pass",
+   "verdict": "reproduced",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "E2-2",
+   "experiment": "E2",
+   "section": "\u00a76.9",
+   "kind": "property",
+   "claim": {
+    "spec": "(a) the cell kinds, A1's insurance decision and its reaction per mu, recomputed by c2rule at each e2_reactions.json row's units, equal the row's (exact); (b) A1's units of the run against the row's (informative, differences listed)",
+    "summary": "(a) the cell kinds, A1's insurance decision and its reaction per mu, recomputed by c2rule at each e2_reactions.json row's units, equal the row's (exact); (b) A1's units of the run against the row's (informative)"
+   },
+   "status_label": "every per-lender H*_mu at a lender's IR price is the C2-SW formula, CONJECTURE (code/sim/out/ms2_checks/e2_reactions.json, field status)",
+   "status_label_note": null,
+   "reference": {
+    "value": "e2_reactions.json rows (kind, insure_up_front, reaction, units)",
+    "values": {},
+    "file": "code/sim/out/ms2_checks/e2_reactions.json"
+   },
+   "regenerated": {
+    "value": {
+     "a.n_rows": 860,
+     "len(a.mismatches)": 0,
+     "len(a.alpha_kind_mismatches)": 0,
+     "b.n_cells": 1505,
+     "b.n_differences": 0
+    },
+    "file": "code/sim/out/e2/summary.json checks.E2-2"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "E2-3",
+   "experiment": "E2",
+   "section": "\u00a76.9",
+   "kind": "property",
+   "claim": {
+    "spec": "Q42 (a): at mu = 1 on every cell, A1 and 'always cold' give identical ledgers where A1 does not insure; all three rules identical where it insures (1e-9 USD)",
+    "summary": "Q42 (a) at mu = 1 on every cell: A1 and 'always cold' give identical ledgers where A1 does not insure, all three rules where it insures (1e-9 USD)"
+   },
+   "status_label": null,
+   "status_label_note": "the coincidence of the rules (Q42 (a)), a property of the build",
+   "reference": {
+    "value": "A1's ledgers (1e-9 USD)",
+    "values": {},
+    "file": "code/sim/out/e2/summary.json checks.E2-3"
+   },
+   "regenerated": {
+    "value": {
+     "n_cells": 860,
+     "n_compared": 932598,
+     "max_abs_diff_a1_cold": 0.0,
+     "max_abs_diff_insured": 0.0,
+     "len(violations)": 0
+    },
+    "file": "code/sim/out/e2/summary.json checks.E2-3"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "E2-3b",
+   "experiment": "E2",
+   "section": "\u00a76.9",
+   "kind": "property",
+   "claim": {
+    "spec": "band-less layers: every band-less DP value at most the layer's fallback cost (1e-9 USD)",
+    "summary": "band-less layers (M48): every band-less DP value at most the layer's fallback cost (1e-9 USD)"
+   },
+   "status_label": null,
+   "status_label_note": "the band-less layers (M48)",
+   "reference": {
+    "value": "the layer's fallback cost",
+    "values": {},
+    "file": "code/sim/out/e2/summary.json bandless"
+   },
+   "regenerated": {
+    "value": {
+     "n_bandless": 1645,
+     "max_dp_minus_fallback": 0.0,
+     "n_dp_missing": 0,
+     "len(violations)": 0
+    },
+    "file": "code/sim/out/e2/summary.json checks.E2-3b"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "E2-4",
+   "experiment": "E2",
+   "section": "\u00a76.9",
+   "kind": "property",
+   "claim": {
+    "spec": "every run: invariant_failures empty, gpu_only_lease_slots 0; every DP within its domain (status optimal)",
+    "summary": "every run: invariant_failures empty, gpu_only_lease_slots 0; every DP within its domain (status optimal)"
+   },
+   "status_label": null,
+   "status_label_note": "the engine's invariants and the DP's domain",
+   "reference": {
+    "value": "no failure",
+    "values": {},
+    "file": "code/sim/out/e2/summary.json checks.E2-4"
+   },
+   "regenerated": {
+    "value": {
+     "n_runs": 5593782,
+     "n_invariant_failures": 0,
+     "n_gpu_only_lease_slots": 0,
+     "n_dp": 1628713,
+     "n_dp_not_optimal": 0,
+     "n_dp_domain_error": 0
+    },
+    "file": "code/sim/out/e2/summary.json checks.E2-4"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "E2-5",
+   "experiment": "E2",
+   "section": "\u00a76.9",
+   "kind": "property",
+   "claim": {
+    "spec": "per-episode ratio at least 1 - 1e-9 (the DP is OPT on the episode's domain); below it a bug unless opt.milp.solve_opt on that episode returns an incumbent below the DP value (a confirmed counterexample to Claim D2: explained); pending while such an episode's MILP job has not run; ALG below the MILP's lower bound is a bug in any case",
+    "summary": "per-episode ratio at least 1 - 1e-9 (the DP is OPT on the episode's domain, Claim D2 CONJECTURE); below it a bug unless opt.milp.solve_opt returns an incumbent below the DP value (a counterexample to Claim D2: explained)"
+   },
+   "status_label": "Claim D2 (CONJECTURE)",
+   "status_label_note": null,
+   "reference": {
+    "value": "1 - 1e-9",
+    "values": {},
+    "file": "code/sim/out/e2/summary.json checks.E2-5"
+   },
+   "regenerated": {
+    "value": {
+     "n_episodes": 1534113,
+     "min_ratio": 0.999999999999996,
+     "n_below": 0,
+     "n_candidates": 0,
+     "len(unresolved)": 0,
+     "len(ep_milp_stale)": 0,
+     "len(milp)": 0
+    },
+    "file": "code/sim/out/e2/summary.json checks.E2-5"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "E2-6",
+   "experiment": "E2",
+   "section": "\u00a76.9",
+   "kind": "informative",
+   "claim": {
+    "spec": "the sum of the layers' DPs against the joint MILP's lower bound on 1-day instances",
+    "summary": "the sum of the layers' DPs against the joint MILP's lower bound on 1-day instances (M46; whether the sum equals the joint optimum is open, MS1 spec \u00a77.6; informative)"
+   },
+   "status_label": null,
+   "status_label_note": "open (MS1 spec \u00a77.6): whether the sum of the layers' DPs equals the joint optimum",
+   "reference": {
+    "value": "LB_joint = max(LP, dual bound)",
+    "values": {},
+    "file": "code/sim/out/e2/joint_milp.json"
+   },
+   "regenerated": {
+    "value": {
+     "len(rows)": 8,
+     "min(rows[*].ratio_sum_dp_over_LB)": 1.0011939713197187,
+     "max(rows[*].ratio_sum_dp_over_LB)": 1.0304795840165846
+    },
+    "file": "code/sim/out/e2/summary.json checks.E2-6"
+   },
+   "summary_status": "informative",
+   "verdict": "informative",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "E2-7",
+   "experiment": "E2",
+   "section": "\u00a76.9",
+   "kind": "informative",
+   "claim": {
+    "spec": "a ratio above 2 - alpha at H >= H*_mu is not a bug on trace episodes (the bug test on C2-core instances is the harness's, MS2 spec \u00a716)",
+    "summary": "per-episode ratios above 2 - alpha at H >= H*_mu are not bugs on trace episodes (C2-T4 PROVEN under (C'), tau = 0; the per-lender H*_mu is the C2-SW formula, CONJECTURE; informative)"
+   },
+   "status_label": "C2-T4 (PROVEN under (C'), tau = 0); every per-lender H*_mu at a lender's IR price is the C2-SW formula, CONJECTURE (code/sim/out/ms2_checks/e2_reactions.json, field status)",
+   "status_label_note": null,
+   "reference": {
+    "value": "2 - alpha_k at H >= H*_mu of the cell's e2_reactions.json row",
+    "values": {},
+    "file": "code/sim/out/ms2_checks/e2_reactions.json"
+   },
+   "regenerated": {
+    "value": {
+     "by_group.maas": {
+      "n_at_or_above_hstar": 1147300,
+      "n_above_2_minus_alpha": 342640
+     },
+     "by_group.spot": {
+      "n_at_or_above_hstar": 46279,
+      "n_above_2_minus_alpha": 4378
+     }
+    },
+    "file": "code/sim/out/e2/summary.json checks.E2-7"
+   },
+   "summary_status": "informative",
+   "verdict": "informative",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "E6-1",
+   "experiment": "E6",
+   "section": "\u00a77.3",
+   "kind": "property",
+   "claim": {
+    "spec": "C2-T2 in the harness and A1's insurance rule: (a) the harness's INS worst ratio within [CR_ins (1 - 1e-3), CR_ins + 1e-9], (b) insure_up_front equals the direct formula and A1 reports it (exact)",
+    "summary": "C2-T2 (PROVEN for insurance held to the end of the demand): (a) the harness's INS worst ratio lies in [CR_ins (1 - 1e-3), CR_ins + 1e-9], CR_ins = max(2 - alpha, alpha_p / alpha); (b) c2rule.insure_up_front(units, 'lb_react') equals the direct formula with families.lb_react, and A1 built at the row's protected price reports the same `insured` (exact)"
+   },
+   "status_label": "C2-T2 (PROVEN for insurance held to the end of the demand)",
+   "status_label_note": null,
+   "reference": {
+    "value": "CR_ins = max(2 - alpha, alpha_p / alpha); the direct formula with families.lb_react",
+    "values": {},
+    "file": "code/theory_checks/c2/out/por_default.json (inputs)"
+   },
+   "regenerated": {
+    "value": {
+     "a.n": 64,
+     "a.n_fail": 0,
+     "b.n": 512,
+     "b.n_fail": 0,
+     "b.a1.n": 128,
+     "b.a1.n_fail": 0
+    },
+    "file": "code/sim/out/e6/a/runs/c2t2.json (job e6:a_c2t2); code/sim/out/e6/a/summary.json checks.E6-1"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "E6-2",
+   "experiment": "E6",
+   "section": "\u00a77.3",
+   "kind": "property",
+   "claim": {
+    "spec": "linearity in a_p and in mu: INS and WARM reruns at r = 3, mu = 1 and WARM at r = 1.1, mu = 2 give A + a_p G + mu_fb W with the reference run's plan; A1's C2 units at c in {2, 3, 4} equal those at c = 1 (1e-9 relative)",
+    "summary": "linearity in a_p and in mu (M28): INS and WARM rerun at r = 3, mu / beta~ = 1 and WARM at r = 1.1, mu / beta~ = 2 give A + a_p G + mu_fb W with the reference run's plan; A1's C2 units at c in {2, 3, 4} equal those at c = 1 (1e-9 relative)"
+   },
+   "status_label": null,
+   "status_label_note": "the linearity of E6(a)'s evaluation (M28)",
+   "reference": {
+    "value": "A + a_p(r) G + mu_fb(mu) W of the reference run",
+    "values": {},
+    "file": "code/sim/out/e6/a/summary.json checks.E6-2"
+   },
+   "regenerated": {
+    "value": {
+     "n": 510,
+     "n_fail": 0,
+     "units_across_alignments.n": 100380,
+     "units_across_alignments.n_fail": 0
+    },
+    "file": "code/sim/out/e6/a/summary.json checks.E6-2"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "E6-3",
+   "experiment": "E6",
+   "section": "\u00a77.3",
+   "kind": "property",
+   "claim": {
+    "spec": "BL7 equals E2's cold, non-insured run of the same key (alignment 1, mu = 1, every 10th MaaS key; identical totals to 1e-9 USD)",
+    "summary": "BL7 equals E2's cold, non-insured run of the same key (alignment 1, mu = 1, every 10th MaaS key; 1e-9 USD)"
+   },
+   "status_label": null,
+   "status_label_note": "the identity of BL7 with E2's cold runs",
+   "reference": {
+    "value": "E2's cold, non-insured run of the same key",
+    "values": {},
+    "file": "code/sim/out/e2/runs/cells/ (E2's run files)"
+   },
+   "regenerated": {
+    "value": {
+     "n": 800,
+     "n_fail": 0,
+     "n_without_e2_cold": 0
+    },
+    "file": "code/sim/out/e6/a/summary.json checks.E6-3"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "E6-4",
+   "experiment": "E6",
+   "section": "\u00a77.3",
+   "kind": "property",
+   "claim": {
+    "spec": "where A1 neither insures nor pre-warms, the cell value is exactly 1",
+    "summary": "where A1 neither insures nor pre-warms, the cell value is exactly 1"
+   },
+   "status_label": null,
+   "status_label_note": "a property of the heatmap value (M29)",
+   "reference": {
+    "value": "1",
+    "values": {},
+    "file": "code/sim/out/e6/a/heatmap.json"
+   },
+   "regenerated": {
+    "value": {
+     "n_pairs": 39735,
+     "max_abs_dev": 0.0
+    },
+    "file": "code/sim/out/e6/a/summary.json checks.E6-4"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "E6-5",
+   "experiment": "E6",
+   "section": "\u00a77.3",
+   "kind": "informative",
+   "claim": {
+    "spec": "the cells where insuring pays on the traces (react_over_ins above 1) and the boundary's insuring region r < r*(H) differ, listed with their inputs (the experiment's question)",
+    "summary": "the cells where insuring pays on the traces (react_over_ins above 1) and the boundary r < r*(H) (certified LB_react, C2-T3 PROVEN for tau = 0) disagree (informative)"
+   },
+   "status_label": "C2-T3 (PROVEN for tau = 0): LB_react(H) <= CR_react(H), the boundary's certified bound",
+   "status_label_note": null,
+   "reference": {
+    "value": "r*(H) of the certified bound",
+    "values": {},
+    "file": "code/sim/out/e6/a/boundary.json"
+   },
+   "regenerated": {
+    "value": {
+     "n_cells": 1008,
+     "n_disagree": 275
+    },
+    "file": "code/sim/out/e6/a/summary.json checks.E6-5"
+   },
+   "summary_status": "informative",
+   "verdict": "informative",
+   "explanation": null,
+   "note": null
+  },
+  {
+   "id": "E6-6",
+   "experiment": "E6",
+   "section": "\u00a77.3",
+   "kind": "property",
+   "claim": {
+    "spec": "E6(b) runs: no invariant failure, no GPU-only lease slot",
+    "summary": "E6(b) runs: no invariant failure, no GPU-only lease slot"
+   },
+   "status_label": null,
+   "status_label_note": "the engine's invariants",
+   "reference": {
+    "value": "no failure",
+    "values": {},
+    "file": "code/sim/out/e6/b/summary.json checks.E6-6"
+   },
+   "regenerated": {
+    "value": {
+     "n_runs": 84,
+     "n_invariant_failures": 0,
+     "n_gpu_only_lease_slots": 0
+    },
+    "file": "code/sim/out/e6/b/summary.json checks.E6-6"
+   },
+   "summary_status": "pass",
+   "verdict": "holds",
+   "explanation": null,
+   "note": null
+  }
+ ],
+ "floats": {
+  "file": "code/sim/out/figs/floats_heights.json",
+  "present": true,
+  "rows": [
+   {
+    "float": "Table I",
+    "name": "table1_price_of_revocation",
+    "measured_pages": 0.1374,
+    "budget_pages": 0.09,
+    "within_budget": false,
+    "difference_pages": 0.0474,
+    "source": "paper/floats/table1_price_of_revocation.tex"
+   },
+   {
+    "float": "Table II",
+    "name": "table2_policies",
+    "measured_pages": 0.3712,
+    "budget_pages": 0.22,
+    "within_budget": false,
+    "difference_pages": 0.1512,
+    "source": "paper/floats/table2_policies.tex"
+   },
+   {
+    "float": "Algorithm 1",
+    "name": "alg1_guard",
+    "measured_pages": 0.1718,
+    "budget_pages": 0.129,
+    "within_budget": false,
+    "difference_pages": 0.0428,
+    "source": "paper/floats/alg1_guard.tex"
+   }
+  ],
+  "note": "3 of 3 floats exceed their budget (Table I, Table II, Algorithm 1); recorded, no float trimmed (decision of 2026-10-20, \u00a79)"
+ },
+ "figures": {
+  "run": true,
+  "extracts": "/work/sublet/code/sim/out/figs",
+  "rows": [
+   {
+    "figure": "fig1",
+    "script": "figs/fig1_guard.py",
+    "extract": "/work/sublet/code/sim/out/figs/fig1.json",
+    "status": "ok",
+    "small_glyphs": [],
+    "n_small_glyphs": 0,
+    "n_glyph_warnings": 0,
+    "min_glyph_pt": 4.9,
+    "text_pt": [
+     7.0,
+     7.970112079701122
+    ],
+    "error": null
+   },
+   {
+    "figure": "fig2",
+    "script": "figs/fig2_e1a.py",
+    "extract": "/work/sublet/code/sim/out/figs/fig2.json",
+    "status": "ok",
+    "small_glyphs": [],
+    "n_small_glyphs": 0,
+    "n_glyph_warnings": 0,
+    "min_glyph_pt": 7.0,
+    "text_pt": [
+     7.0,
+     7.970112079701122
+    ],
+    "error": null
+   },
+   {
+    "figure": "fig3",
+    "script": "figs/fig3_e11.py",
+    "extract": "/work/sublet/code/sim/out/figs/fig3.json",
+    "status": "ok",
+    "small_glyphs": [],
+    "n_small_glyphs": 0,
+    "n_glyph_warnings": 0,
+    "min_glyph_pt": 5.579,
+    "text_pt": [
+     7.0,
+     7.970112079701122
+    ],
+    "error": null
+   },
+   {
+    "figure": "fig5",
+    "script": "figs/fig5_e1_e10.py",
+    "extract": "/work/sublet/code/sim/out/figs/fig5.json",
+    "status": "ok",
+    "small_glyphs": [],
+    "n_small_glyphs": 0,
+    "n_glyph_warnings": 0,
+    "min_glyph_pt": 4.9,
+    "text_pt": [
+     7.0,
+     7.970112079701122
+    ],
+    "error": null
+   },
+   {
+    "figure": "fig6",
+    "script": "figs/fig6_e10.py",
+    "extract": "/work/sublet/code/sim/out/figs/fig6.json",
+    "status": "ok",
+    "small_glyphs": [],
+    "n_small_glyphs": 0,
+    "n_glyph_warnings": 0,
+    "min_glyph_pt": 4.9,
+    "text_pt": [
+     7.0,
+     7.970112079701122
+    ],
+    "error": null
+   },
+   {
+    "figure": "fig7",
+    "script": "figs/fig7_e2_e6.py",
+    "extract": "/work/sublet/code/sim/out/figs/fig7.json",
+    "status": "ok",
+    "small_glyphs": [],
+    "n_small_glyphs": 0,
+    "n_glyph_warnings": 0,
+    "min_glyph_pt": 4.9,
+    "text_pt": [
+     7.0,
+     7.970112079701122
+    ],
+    "error": null
+   },
+   {
+    "figure": "sf_e10_cross",
+    "script": "figs/supp/sf_e10_cross.py",
+    "extract": "/work/sublet/code/sim/out/figs/sf_e10_cross.json",
+    "status": "ok",
+    "small_glyphs": [],
+    "n_small_glyphs": 0,
+    "n_glyph_warnings": 0,
+    "min_glyph_pt": 5.579,
+    "text_pt": [
+     7.0,
+     7.970112079701122
+    ],
+    "error": null
+   },
+   {
+    "figure": "sf_e10_rho",
+    "script": "figs/supp/sf_e10_rho.py",
+    "extract": "/work/sublet/code/sim/out/figs/sf_e10_rho.json",
+    "status": "ok",
+    "small_glyphs": [],
+    "n_small_glyphs": 0,
+    "n_glyph_warnings": 0,
+    "min_glyph_pt": 4.9,
+    "text_pt": [
+     7.0,
+     7.970112079701122
+    ],
+    "error": null
+   },
+   {
+    "figure": "sf_e10b",
+    "script": "figs/supp/sf_e10b.py",
+    "extract": "/work/sublet/code/sim/out/figs/sf_e10b.json",
+    "status": "ok",
+    "small_glyphs": [],
+    "n_small_glyphs": 0,
+    "n_glyph_warnings": 0,
+    "min_glyph_pt": 4.9,
+    "text_pt": [
+     7.0,
+     7.970112079701122
+    ],
+    "error": null
+   },
+   {
+    "figure": "sf_e11_fam",
+    "script": "figs/supp/sf_e11_fam.py",
+    "extract": "/work/sublet/code/sim/out/figs/sf_e11_fam.json",
+    "status": "ok",
+    "small_glyphs": [],
+    "n_small_glyphs": 0,
+    "n_glyph_warnings": 0,
+    "min_glyph_pt": 5.579,
+    "text_pt": [
+     7.0,
+     7.970112079701122
+    ],
+    "error": null
+   },
+   {
+    "figure": "sf_e11_guard",
+    "script": "figs/supp/sf_e11_guard.py",
+    "extract": "/work/sublet/code/sim/out/figs/sf_e11_guard.json",
+    "status": "ok",
+    "small_glyphs": [],
+    "n_small_glyphs": 0,
+    "n_glyph_warnings": 0,
+    "min_glyph_pt": 7.0,
+    "text_pt": [
+     7.0,
+     7.970112079701122
+    ],
+    "error": null
+   },
+   {
+    "figure": "sf_e11_inst",
+    "script": "figs/supp/sf_e11_inst.py",
+    "extract": "/work/sublet/code/sim/out/figs/sf_e11_inst.json",
+    "status": "ok",
+    "small_glyphs": [],
+    "n_small_glyphs": 0,
+    "n_glyph_warnings": 0,
+    "min_glyph_pt": 7.0,
+    "text_pt": [
+     7.0,
+     7.970112079701122
+    ],
+    "error": null
+   },
+   {
+    "figure": "sf_e1_rotation",
+    "script": "figs/supp/sf_e1_rotation.py",
+    "extract": "/work/sublet/code/sim/out/figs/sf_e1_rotation.json",
+    "status": "ok",
+    "small_glyphs": [],
+    "n_small_glyphs": 0,
+    "n_glyph_warnings": 0,
+    "min_glyph_pt": 7.0,
+    "text_pt": [
+     7.0,
+     7.970112079701122
+    ],
+    "error": null
+   },
+   {
+    "figure": "sf_e1_sched",
+    "script": "figs/supp/sf_e1_sched.py",
+    "extract": "/work/sublet/code/sim/out/figs/sf_e1_sched.json",
+    "status": "ok",
+    "small_glyphs": [],
+    "n_small_glyphs": 0,
+    "n_glyph_warnings": 0,
+    "min_glyph_pt": 7.0,
+    "text_pt": [
+     7.0,
+     7.970112079701122
+    ],
+    "error": null
+   },
+   {
+    "figure": "sf_e2_mu_cost",
+    "script": "figs/supp/sf_e2_mu_cost.py",
+    "extract": "/work/sublet/code/sim/out/figs/sf_e2_mu_cost.json",
+    "status": "ok",
+    "small_glyphs": [],
+    "n_small_glyphs": 0,
+    "n_glyph_warnings": 0,
+    "min_glyph_pt": 7.0,
+    "text_pt": [
+     7.0,
+     7.970112079701122
+    ],
+    "error": null
+   },
+   {
+    "figure": "sf_e2_mu_ep",
+    "script": "figs/supp/sf_e2_mu_ep.py",
+    "extract": "/work/sublet/code/sim/out/figs/sf_e2_mu_ep.json",
+    "status": "ok",
+    "small_glyphs": [],
+    "n_small_glyphs": 0,
+    "n_glyph_warnings": 0,
+    "min_glyph_pt": 4.9,
+    "text_pt": [
+     7.0,
+     7.970112079701122
+    ],
+    "error": null
+   },
+   {
+    "figure": "sf_e2_pool",
+    "script": "figs/supp/sf_e2_pool.py",
+    "extract": "/work/sublet/code/sim/out/figs/sf_e2_pool.json",
+    "status": "ok",
+    "small_glyphs": [],
+    "n_small_glyphs": 0,
+    "n_glyph_warnings": 0,
+    "min_glyph_pt": 7.0,
+    "text_pt": [
+     7.0,
+     7.970112079701122
+    ],
+    "error": null
+   },
+   {
+    "figure": "sf_e2_por",
+    "script": "figs/supp/sf_e2_por.py",
+    "extract": "/work/sublet/code/sim/out/figs/sf_e2_por.json",
+    "status": "ok",
+    "small_glyphs": [],
+    "n_small_glyphs": 0,
+    "n_glyph_warnings": 0,
+    "min_glyph_pt": 7.0,
+    "text_pt": [
+     7.0,
+     7.970112079701122
+    ],
+    "error": null
+   },
+   {
+    "figure": "sf_e6a",
+    "script": "figs/supp/sf_e6a.py",
+    "extract": "/work/sublet/code/sim/out/figs/sf_e6a.json",
+    "status": "ok",
+    "small_glyphs": [],
+    "n_small_glyphs": 0,
+    "n_glyph_warnings": 0,
+    "min_glyph_pt": 4.9,
+    "text_pt": [
+     7.0,
+     7.970112079701122
+    ],
+    "error": null
+   },
+   {
+    "figure": "sf_e6b",
+    "script": "figs/supp/sf_e6b.py",
+    "extract": "/work/sublet/code/sim/out/figs/sf_e6b.json",
+    "status": "ok",
+    "small_glyphs": [],
+    "n_small_glyphs": 0,
+    "n_glyph_warnings": 0,
+    "min_glyph_pt": 7.0,
+    "text_pt": [
+     7.0,
+     7.970112079701122
+    ],
+    "error": null
+   }
+  ],
+  "counts": {
+   "ok": 20,
+   "missing": 0,
+   "error": 0
+  },
+  "note": "20 figure script(s) rerun with --from-extract into a temporary folder (removed)"
+ },
+ "copy_checks": {
+  "e11": {
+   "file": "code/sim/out/ms3_e11_0.json",
+   "present": true,
+   "pass": true,
+   "commit": "29919ea0a0cb0be883ceb60b86c1f1ddd1dcfa3c",
+   "time": "2026-10-19T23:59:24",
+   "failed": [],
+   "records_by_status": null
+  },
+  "e1": {
+   "file": "code/sim/out/ms3_copy_e1.json",
+   "present": true,
+   "pass": true,
+   "commit": "f10237bb39ab101b9831afcee79121d0fa4e1979",
+   "time": "2026-10-20T18:42:43",
+   "failed": [],
+   "records_by_status": {
+    "ok": 572
+   }
+  },
+  "e10": {
+   "file": "code/sim/out/ms3_copy_e10.json",
+   "present": true,
+   "pass": true,
+   "commit": "f10237bb39ab101b9831afcee79121d0fa4e1979",
+   "time": "2026-10-20T15:22:06",
+   "failed": [],
+   "records_by_status": {
+    "ok": 185
+   }
+  },
+  "e2": {
+   "file": "code/sim/out/ms3_copy_e2.json",
+   "present": true,
+   "pass": true,
+   "commit": "f10237bb39ab101b9831afcee79121d0fa4e1979",
+   "time": "2026-10-22T01:50:21",
+   "failed": [],
+   "records_by_status": {
+    "ok": 1533
+   }
+  },
+  "e6": {
+   "file": "code/sim/out/ms3_copy_e6.json",
+   "present": true,
+   "pass": true,
+   "commit": "f10237bb39ab101b9831afcee79121d0fa4e1979",
+   "time": "2026-10-22T17:26:50",
+   "failed": [],
+   "records_by_status": {
+    "ok": 909
+   }
+  }
+ },
+ "jobs": {
+  "rows": {
+   "e1": {
+    "manifest": "code/sim/out/e1/manifest.json",
+    "present": true,
+    "n_listed": 570,
+    "by_status": {
+     "ok": 572
+    },
+    "n_blocking": 0,
+    "blocking": [],
+    "n_milp_lp_fallback": 0,
+    "milp_lp_fallback": [],
+    "n_unlisted_records": 0,
+    "n_unreadable_records": 0,
+    "summary_jobs_missing": null,
+    "summary_ignored_outputs": 0
+   },
+   "e10": {
+    "manifest": "code/sim/out/e10/manifest.json",
+    "present": true,
+    "n_listed": 183,
+    "by_status": {
+     "ok": 185
+    },
+    "n_blocking": 0,
+    "blocking": [],
+    "n_milp_lp_fallback": 0,
+    "milp_lp_fallback": [],
+    "n_unlisted_records": 0,
+    "n_unreadable_records": 0,
+    "summary_jobs_missing": null,
+    "summary_ignored_outputs": 0
+   },
+   "e2": {
+    "manifest": "code/sim/out/e2/manifest.json",
+    "present": true,
+    "n_listed": 1531,
+    "by_status": {
+     "ok": 1533
+    },
+    "n_blocking": 0,
+    "blocking": [],
+    "n_milp_lp_fallback": 0,
+    "milp_lp_fallback": [],
+    "n_unlisted_records": 0,
+    "n_unreadable_records": 0,
+    "summary_jobs_missing": 0,
+    "summary_ignored_outputs": null
+   },
+   "e6/a": {
+    "manifest": "code/sim/out/e6/a/manifest.json",
+    "present": true,
+    "n_listed": 877,
+    "by_status": {
+     "ok": 879
+    },
+    "n_blocking": 0,
+    "blocking": [],
+    "n_milp_lp_fallback": 0,
+    "milp_lp_fallback": [],
+    "n_unlisted_records": 0,
+    "n_unreadable_records": 0,
+    "summary_jobs_missing": 0,
+    "summary_ignored_outputs": null
+   },
+   "e6/b": {
+    "manifest": "code/sim/out/e6/b/manifest.json",
+    "present": true,
+    "n_listed": 28,
+    "by_status": {
+     "ok": 30
+    },
+    "n_blocking": 0,
+    "blocking": [],
+    "n_milp_lp_fallback": 0,
+    "milp_lp_fallback": [],
+    "n_unlisted_records": 0,
+    "n_unreadable_records": 0,
+    "summary_jobs_missing": 0,
+    "summary_ignored_outputs": null
+   }
+  },
+  "n_blocking": 0,
+  "note": "every listed job has an 'ok' record, or is a MILP job whose LB is the LP under Q39's rule"
+ }
+}

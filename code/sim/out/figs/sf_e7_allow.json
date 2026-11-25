@@ -1,0 +1,163 @@
+{
+ "figure": "sf_e7_allow",
+ "size_in": [
+  3.4869,
+  2.2
+ ],
+ "sources": [
+  "code/sim/out/e7/allow/summary.json"
+ ],
+ "data": {
+  "a": {
+   "share_pct": [
+    0.5,
+    1.0,
+    2.0,
+    5.0,
+    10.0,
+    20.0
+   ],
+   "median": [
+    0.683386363447131,
+    0.683386363447131,
+    0.683386363447131,
+    0.683386363447131,
+    0.683386363447131,
+    0.683386363447131
+   ],
+   "ci_lo": [
+    0.6785869770245958,
+    0.6785869770245958,
+    0.6785869770245958,
+    0.6785869770245958,
+    0.6785869770245958,
+    0.6785869770245958
+   ],
+   "ci_hi": [
+    0.6834428314741369,
+    0.6834428314741369,
+    0.6834428314741369,
+    0.6834428314741369,
+    0.6834428314741369,
+    0.6834428314741369
+   ],
+   "n": [
+    3,
+    3,
+    3,
+    3,
+    3,
+    3
+   ],
+   "note": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "B0_usd": [
+    101.94036181862663,
+    203.88072363725325,
+    407.7614472745065,
+    1019.4036181862663,
+    2038.8072363725325,
+    4077.614472745065
+   ]
+  },
+  "b": {
+   "share_pct": [
+    0.5,
+    1.0,
+    2.0,
+    5.0,
+    10.0,
+    20.0
+   ],
+   "value": [
+    1.003903148392926,
+    1.008487774625025,
+    1.0193899362408236,
+    1.0488956505792884,
+    1.099765955088116,
+    1.1998246059074245
+   ],
+   "mode": [
+    "L-ss",
+    "L-eg",
+    "L-co",
+    "L-ss",
+    "L-ss",
+    "L-eg"
+   ],
+   "note": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  "default": {
+   "share_pct": 0.11929569155320797,
+   "B0_usd": 24.322091920674602,
+   "a": {
+    "median": 1.0,
+    "ci_lo": 1.0,
+    "ci_hi": 1.0,
+    "n": 3,
+    "note": null
+   },
+   "b": {
+    "value": 1.0,
+    "note": null
+   }
+  },
+  "bl5": {
+   "L-tr": 0.683386363447131,
+   "L-tr_note": null,
+   "W0": 1.2125738429606188,
+   "W0_note": null
+  },
+  "mode": "L-tr",
+  "same_as_bl5": [
+   0.5,
+   1.0,
+   2.0,
+   5.0,
+   10.0,
+   20.0
+  ],
+  "meta": {
+   "bl0a_usd": 20388.072363725325,
+   "b0_auto_usd": 24.322091920674602,
+   "kappa10_cap_usd": 23.77462227714409,
+   "git_revision": "939847ca5925ce069d6df9089fe3a3d1d3207bb7",
+   "reduced": false
+  },
+  "labels": {
+   "x": "$B_0$ / all-fallback (%)",
+   "a_y": "Cost / all-fallback",
+   "b_y": "Worst cost / all-fallback",
+   "default": "Per-LLM allowance",
+   "note": "Lagged RetroRenting + one-way guard (Algorithm 1 without projection around the lagged RetroRenting-style rule, gamma 1, kappa none) on the E7 week at alignment 1, B0 swept over 0.5, 1, 2, 5, 10 and 20% of all-fallback (the x ticks); (a) trace lender, medians over 3 policy seeds with 95% bootstrap intervals, which lie within the markers; (b) W0, the worst cost over all-fallback under the 5 stress modes; open marker (both panels): the per-LLM allowance min{B0, kappa B_on} (B0 auto, kappa 10; 0.12% of all-fallback); line with its open markers at its ends: 'RetroRenting-style, lagged', unguarded; in (a) the cost of Lagged RetroRenting + one-way guard equals that of 'RetroRenting-style, lagged' at every B0 (both 0.683); overflow accounting",
+   "within_all": ", which lie within the markers",
+   "within_some": ", which lie within the markers at B0 = {shares}%",
+   "same_all": "; in (a) the cost of {guard} equals that of {lagged} at every B0 (both {value})",
+   "same_some": "; in (a) the cost of {guard} equals that of {lagged} at B0 = {shares}% (both {value})"
+  },
+  "sources": [
+   "code/sim/out/e7/allow/summary.json"
+  ],
+  "ci_within_markers": [
+   0.5,
+   1.0,
+   2.0,
+   5.0,
+   10.0,
+   20.0
+  ]
+ }
+}

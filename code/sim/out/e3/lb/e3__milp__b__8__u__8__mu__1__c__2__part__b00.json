@@ -1,0 +1,42 @@
+{
+ "job": "e3:milp:b=8:u=8:mu=1:c=2:part=b00",
+ "kind": "milp",
+ "part": "b00",
+ "borrower": "b00",
+ "b": 8,
+ "u": 8,
+ "mu": 1.0,
+ "c": 2,
+ "cell_job": "e3:cell:b=8:u=8:mu=1:c=2",
+ "instance_hash": "491b3f84a2b7262c1bf1d92bffa3a84918236fbf69147c88c0d8b9e1d51bad7e",
+ "schedule_hash": "2957298e6f6e98429e8069170b6ea47550c62b123639ee7b4561ecb836c02f16",
+ "method": "milp",
+ "benchmark": "omega",
+ "grid": "slow",
+ "status": 1,
+ "status_msg": "Time limit reached. (HiGHS Status 13: Time limit reached)",
+ "objective": 89.31371867428665,
+ "dual_bound": 88.48937733405619,
+ "gap": 0.009229728114184864,
+ "size": {
+  "n_vars": 26173,
+  "n_int": 22195,
+  "n_rows": 23674,
+  "nnz": 108756
+ },
+ "build_s": 0.032099484000355005,
+ "solve_s": 300.0906104571186,
+ "peak_rss_mb": 432.15234375,
+ "git_revision": "939847ca5925ce069d6df9089fe3a3d1d3207bb7",
+ "time_limit_s": 300.0,
+ "mip_rel_gap": 0.0001,
+ "estimate": {
+  "n_vars": 26173,
+  "n_int": 22195,
+  "n_rows": 23674,
+  "nnz": 108756,
+  "est_mb_milp": 693.6412,
+  "est_mb_lp": 188.72824
+ },
+ "wall_s": 300.65387603407726
+}

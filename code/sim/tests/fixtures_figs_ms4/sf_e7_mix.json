@@ -1,0 +1,1284 @@
+{
+ "figure": "sf_e7_mix",
+ "size_in": [
+  7.1399,
+  2.2
+ ],
+ "sources": [
+  "code/sim/out/e7/main/summary.json",
+  "code/sim/out/e7/stress/summary.json",
+  "code/sim/out/e7/table3.json"
+ ],
+ "data": {
+  "keys": [
+   "sublet_ms4",
+   "bl5_lag",
+   "bl1",
+   "bl2",
+   "bl4",
+   "a7",
+   "a7_ms4",
+   "a6"
+  ],
+  "tags": {
+   "sublet_ms4": "Sublet",
+   "a7_ms4": "A7G",
+   "a7": "A7",
+   "a6": "A6",
+   "bl5_lag": "BL5",
+   "bl1": "BL1",
+   "bl2": "BL2",
+   "bl4": "BL4"
+  },
+  "a": {
+   "sublet_ms4": {
+    "spot-like": 1.0
+   },
+   "a7_ms4": {
+    "spot-like": 1.0
+   },
+   "a7": {
+    "spot-like": 1.0
+   },
+   "a6": {
+    "general": 0.8768342554726966,
+    "spot-like": 0.12316574452730332
+   },
+   "bl5_lag": {
+    "spot-like": 1.0
+   },
+   "bl1": {
+    "spot-like": 1.0
+   },
+   "bl2": {
+    "spot-like": 1.0
+   },
+   "bl4": {
+    "spot-like": 1.0
+   }
+  },
+  "b": {
+   "sublet_ms4": {
+    "spot-like": 1.0
+   },
+   "a7_ms4": {
+    "spot-like": 1.0
+   },
+   "a7": {
+    "spot-like": 1.0
+   },
+   "a6": {
+    "general": 0.8957332579824809,
+    "spot-like": 0.10426674201751909
+   },
+   "bl5_lag": {
+    "spot-like": 1.0
+   },
+   "bl1": {
+    "spot-like": 1.0
+   },
+   "bl2": {
+    "spot-like": 1.0
+   },
+   "bl4": {
+    "spot-like": 1.0
+   }
+  },
+  "notes": {
+   "sublet_ms4": {
+    "a": null,
+    "b": null
+   },
+   "a7_ms4": {
+    "a": null,
+    "b": null
+   },
+   "a7": {
+    "a": null,
+    "b": null
+   },
+   "a6": {
+    "a": null,
+    "b": null
+   },
+   "bl5_lag": {
+    "a": null,
+    "b": null
+   },
+   "bl1": {
+    "a": null,
+    "b": null
+   },
+   "bl2": {
+    "a": null,
+    "b": null
+   },
+   "bl4": {
+    "a": null,
+    "b": null
+   }
+  },
+  "stress_mode": "L-iid-0.2",
+  "tables": {
+   "table3_intervals": {
+    "order": [
+     "Sublet",
+     "BL5",
+     "BL1",
+     "BL2",
+     "BL4",
+     "A7",
+     "A7G",
+     "A6",
+     "BL0b",
+     "BL0a"
+    ],
+    "columns": [
+     {
+      "key": "usd.overflow",
+      "label": "USD per week, overflow accounting"
+     },
+     {
+      "key": "usd.total",
+      "label": "USD per week, total accounting"
+     },
+     {
+      "key": "saving_pct",
+      "label": "Saving over all-fallback (\\%), overflow accounting"
+     },
+     {
+      "key": "gap",
+      "label": "Cost / merged LP bound (slow grid, reduced menu)"
+     },
+     {
+      "key": "fallback_share_after_reclaims",
+      "label": "Fallback share after reclaims"
+     },
+     {
+      "key": "W0",
+      "label": "$W_0$ (worst cost / all-fallback, stress modes)"
+     },
+     {
+      "key": "abort_share",
+      "label": "Share of runs with an abort"
+     }
+    ],
+    "rows": [
+     {
+      "tag": "Sublet",
+      "key": "sublet_ms4",
+      "label": "Lagged RetroRenting + one-way guard ($B_0=10\\%$ of the all-fallback bill)",
+      "recorded_label": "Sublet",
+      "style_key": "sublet",
+      "cells": {
+       "usd.overflow": {
+        "median": 1609.8497307986415,
+        "lo": 1609.8497307986415,
+        "hi": 1609.8497307986415,
+        "n": 1,
+        "note": null
+       },
+       "usd.total": {
+        "median": 25480.37040613671,
+        "lo": 25480.37040613671,
+        "hi": 25480.37040613671,
+        "n": 1,
+        "note": null
+       },
+       "saving_pct": {
+        "median": -5.376281290124263,
+        "lo": -5.376281290124263,
+        "hi": -5.376281290124263,
+        "n": 1,
+        "note": null
+       },
+       "gap": {
+        "median": 1.2416271928622602,
+        "lo": 1.2416271928622602,
+        "hi": 1.2416271928622602,
+        "n": 1,
+        "note": null
+       },
+       "fallback_share_after_reclaims": {
+        "median": null,
+        "lo": null,
+        "hi": null,
+        "n": 0,
+        "note": "no run with a reclaim-caused capacity drop"
+       },
+       "W0": {
+        "median": 1.052738147606321,
+        "lo": 1.052738147606321,
+        "hi": 1.052738147606321,
+        "n": 1,
+        "note": "the largest 3-seed mean of r0 over the five stress modes (mode L-iid-0.05); interval: the range of r0 over that mode's seeds (one cell, no bootstrap)"
+       },
+       "abort_share": {
+        "median": 1.0,
+        "lo": null,
+        "hi": null,
+        "n": 1,
+        "note": "share of the trace week runs at mu = 1 with an abort (M24)"
+       }
+      }
+     },
+     {
+      "tag": "BL5",
+      "key": "bl5_lag",
+      "label": "RetroRenting-style, lagged",
+      "recorded_label": "RetroRenting-style",
+      "style_key": "bl5",
+      "cells": {
+       "usd.overflow": {
+        "median": 1480.393900544302,
+        "lo": 1480.393900544302,
+        "hi": 1480.393900544302,
+        "n": 1,
+        "note": null
+       },
+       "usd.total": {
+        "median": 25350.914575882372,
+        "lo": 25350.914575882372,
+        "hi": 25350.914575882372,
+        "n": 1,
+        "note": null
+       },
+       "saving_pct": {
+        "median": 3.097536931878564,
+        "lo": 3.097536931878564,
+        "hi": 3.097536931878564,
+        "n": 1,
+        "note": null
+       },
+       "gap": {
+        "median": 1.2416271928622602,
+        "lo": 1.2416271928622602,
+        "hi": 1.2416271928622602,
+        "n": 1,
+        "note": null
+       },
+       "fallback_share_after_reclaims": {
+        "median": 0.8867590667589106,
+        "lo": 0.8867590667589106,
+        "hi": 0.8867590667589106,
+        "n": 1,
+        "note": null
+       },
+       "W0": {
+        "median": 1.2372049887235295,
+        "lo": 1.2372049887235295,
+        "hi": 1.2372049887235295,
+        "n": 1,
+        "note": "the largest 3-seed mean of r0 over the five stress modes (mode L-eg); interval: the range of r0 over that mode's seeds (one cell, no bootstrap)"
+       },
+       "abort_share": {
+        "median": null,
+        "lo": null,
+        "hi": null,
+        "n": 0,
+        "note": "unguarded policy (not an A8 tag): no abort, no certificate"
+       }
+      }
+     },
+     {
+      "tag": "BL1",
+      "key": "bl1",
+      "label": "Greedy renting",
+      "recorded_label": "Greedy renting",
+      "style_key": "bl1",
+      "cells": {
+       "usd.overflow": {
+        "median": 974.1299543790703,
+        "lo": 974.1299543790703,
+        "hi": 974.1299543790703,
+        "n": 1,
+        "note": null
+       },
+       "usd.total": {
+        "median": 24844.65062971714,
+        "lo": 24844.65062971714,
+        "hi": 24844.65062971714,
+        "n": 1,
+        "note": null
+       },
+       "saving_pct": {
+        "median": 36.2361653252814,
+        "lo": 36.2361653252814,
+        "hi": 36.2361653252814,
+        "n": 1,
+        "note": null
+       },
+       "gap": {
+        "median": 1.095282996661302,
+        "lo": 1.095282996661302,
+        "hi": 1.095282996661302,
+        "n": 1,
+        "note": null
+       },
+       "fallback_share_after_reclaims": {
+        "median": 0.41270124273154385,
+        "lo": 0.41270124273154385,
+        "hi": 0.41270124273154385,
+        "n": 1,
+        "note": null
+       },
+       "W0": {
+        "median": 1.9536347877814584,
+        "lo": 1.9536347877814584,
+        "hi": 1.9536347877814584,
+        "n": 1,
+        "note": "the largest 3-seed mean of r0 over the five stress modes (mode L-eg); interval: the range of r0 over that mode's seeds (one cell, no bootstrap)"
+       },
+       "abort_share": {
+        "median": null,
+        "lo": null,
+        "hi": null,
+        "n": 0,
+        "note": "unguarded policy (not an A8 tag): no abort, no certificate"
+       }
+      }
+     },
+     {
+      "tag": "BL2",
+      "key": "bl2",
+      "label": "Per-borrower ski rental",
+      "recorded_label": "Per-borrower ski rental",
+      "style_key": "bl2",
+      "cells": {
+       "usd.overflow": {
+        "median": 1081.0047454862745,
+        "lo": 1081.0047454862745,
+        "hi": 1081.0047454862745,
+        "n": 1,
+        "note": null
+       },
+       "usd.total": {
+        "median": 24951.525420824346,
+        "lo": 24951.525420824346,
+        "hi": 24951.525420824346,
+        "n": 1,
+        "note": null
+       },
+       "saving_pct": {
+        "median": 29.24043905650168,
+        "lo": 29.24043905650168,
+        "hi": 29.24043905650168,
+        "n": 1,
+        "note": null
+       },
+       "gap": {
+        "median": 1.1138517144595799,
+        "lo": 1.1138517144595799,
+        "hi": 1.1138517144595799,
+        "n": 1,
+        "note": null
+       },
+       "fallback_share_after_reclaims": {
+        "median": 0.6224961102558436,
+        "lo": 0.6224961102558436,
+        "hi": 0.6224961102558436,
+        "n": 1,
+        "note": null
+       },
+       "W0": {
+        "median": 1.7387395989020662,
+        "lo": 1.7387395989020662,
+        "hi": 1.7387395989020662,
+        "n": 1,
+        "note": "the largest 3-seed mean of r0 over the five stress modes (mode L-eg); interval: the range of r0 over that mode's seeds (one cell, no bootstrap)"
+       },
+       "abort_share": {
+        "median": null,
+        "lo": null,
+        "hi": null,
+        "n": 0,
+        "note": "unguarded policy (not an A8 tag): no abort, no certificate"
+       }
+      }
+     },
+     {
+      "tag": "BL4",
+      "key": "bl4",
+      "label": "CoCaR-style",
+      "recorded_label": "CoCaR-style",
+      "style_key": "bl4",
+      "cells": {
+       "usd.overflow": {
+        "median": 1554.8415066952589,
+        "lo": 1554.8415066952589,
+        "hi": 1554.8415066952589,
+        "n": 1,
+        "note": null
+       },
+       "usd.total": {
+        "median": 25425.36218203333,
+        "lo": 25425.36218203333,
+        "hi": 25425.36218203333,
+        "n": 1,
+        "note": null
+       },
+       "saving_pct": {
+        "median": -1.7755960923123038,
+        "lo": -1.7755960923123038,
+        "hi": -1.7755960923123038,
+        "n": 1,
+        "note": null
+       },
+       "gap": {
+        "median": 1.2394102116612642,
+        "lo": 1.2394102116612642,
+        "hi": 1.2394102116612642,
+        "n": 1,
+        "note": null
+       },
+       "fallback_share_after_reclaims": {
+        "median": null,
+        "lo": null,
+        "hi": null,
+        "n": 0,
+        "note": "no run with a reclaim-caused capacity drop"
+       },
+       "W0": {
+        "median": 1.0232143576317867,
+        "lo": 1.0232143576317867,
+        "hi": 1.0232143576317867,
+        "n": 1,
+        "note": "the largest 3-seed mean of r0 over the five stress modes (mode L-iid-0.2); interval: the range of r0 over that mode's seeds (one cell, no bootstrap)"
+       },
+       "abort_share": {
+        "median": null,
+        "lo": null,
+        "hi": null,
+        "n": 0,
+        "note": "unguarded policy (not an A8 tag): no abort, no certificate"
+       }
+      }
+     },
+     {
+      "tag": "A7",
+      "key": "a7",
+      "label": "PD heuristic",
+      "recorded_label": "PD heuristic",
+      "style_key": "a7",
+      "cells": {
+       "usd.overflow": {
+        "median": 1309.7421631555012,
+        "lo": 1309.7421631555012,
+        "hi": 1309.7421631555012,
+        "n": 1,
+        "note": null
+       },
+       "usd.total": {
+        "median": 25180.26283849357,
+        "lo": 25180.26283849357,
+        "hi": 25180.26283849357,
+        "n": 1,
+        "note": null
+       },
+       "saving_pct": {
+        "median": 14.267924538683053,
+        "lo": 14.267924538683053,
+        "hi": 14.267924538683053,
+        "n": 1,
+        "note": null
+       },
+       "gap": {
+        "median": 1.2684492633988853,
+        "lo": 1.2684492633988853,
+        "hi": 1.2684492633988853,
+        "n": 1,
+        "note": null
+       },
+       "fallback_share_after_reclaims": {
+        "median": 0.14895459363013286,
+        "lo": 0.14895459363013286,
+        "hi": 0.14895459363013286,
+        "n": 1,
+        "note": null
+       },
+       "W0": {
+        "median": 1.2740578251648198,
+        "lo": 1.2740578251648198,
+        "hi": 1.2740578251648198,
+        "n": 1,
+        "note": "the largest 3-seed mean of r0 over the five stress modes (mode L-eg); interval: the range of r0 over that mode's seeds (one cell, no bootstrap)"
+       },
+       "abort_share": {
+        "median": null,
+        "lo": null,
+        "hi": null,
+        "n": 0,
+        "note": "unguarded policy (not an A8 tag): no abort, no certificate"
+       }
+      }
+     },
+     {
+      "tag": "A7G",
+      "key": "a7_ms4",
+      "label": "PD heuristic + one-way guard ($B_0=10\\%$ of the all-fallback bill)",
+      "recorded_label": "PD heuristic + guard",
+      "style_key": "a7_guard",
+      "cells": {
+       "usd.overflow": {
+        "median": 1592.1522889615399,
+        "lo": 1592.1522889615399,
+        "hi": 1592.1522889615399,
+        "n": 1,
+        "note": null
+       },
+       "usd.total": {
+        "median": 25462.67296429961,
+        "lo": 25462.67296429961,
+        "hi": 25462.67296429961,
+        "n": 1,
+        "note": null
+       },
+       "saving_pct": {
+        "median": -4.217856020073207,
+        "lo": -4.217856020073207,
+        "hi": -4.217856020073207,
+        "n": 1,
+        "note": null
+       },
+       "gap": {
+        "median": 1.2684492633988853,
+        "lo": 1.2684492633988853,
+        "hi": 1.2684492633988853,
+        "n": 1,
+        "note": null
+       },
+       "fallback_share_after_reclaims": {
+        "median": 1.0,
+        "lo": 1.0,
+        "hi": 1.0,
+        "n": 1,
+        "note": null
+       },
+       "W0": {
+        "median": 1.0448322139510107,
+        "lo": 1.0448322139510107,
+        "hi": 1.0448322139510107,
+        "n": 1,
+        "note": "the largest 3-seed mean of r0 over the five stress modes (mode L-eg); interval: the range of r0 over that mode's seeds (one cell, no bootstrap)"
+       },
+       "abort_share": {
+        "median": 1.0,
+        "lo": null,
+        "hi": null,
+        "n": 1,
+        "note": "share of the trace week runs at mu = 1 with an abort (M24)"
+       }
+      }
+     },
+     {
+      "tag": "A6",
+      "key": "a6",
+      "label": "Two-timescale PD",
+      "recorded_label": "Two-timescale PD",
+      "style_key": "a6",
+      "cells": {
+       "usd.overflow": {
+        "median": 1599.472919141887,
+        "lo": 1599.472919141887,
+        "hi": 1599.472919141887,
+        "n": 1,
+        "note": null
+       },
+       "usd.total": {
+        "median": 25469.993594479958,
+        "lo": 25469.993594479958,
+        "hi": 25469.993594479958,
+        "n": 1,
+        "note": null
+       },
+       "saving_pct": {
+        "median": -4.697044089833313,
+        "lo": -4.697044089833313,
+        "hi": -4.697044089833313,
+        "n": 1,
+        "note": null
+       },
+       "gap": {
+        "median": 2.010973070787688,
+        "lo": 2.010973070787688,
+        "hi": 2.010973070787688,
+        "n": 1,
+        "note": null
+       },
+       "fallback_share_after_reclaims": {
+        "median": 0.5116355772543242,
+        "lo": 0.5116355772543242,
+        "hi": 0.5116355772543242,
+        "n": 1,
+        "note": null
+       },
+       "W0": {
+        "median": 1.0445039379695384,
+        "lo": 1.0445039379695384,
+        "hi": 1.0445039379695384,
+        "n": 1,
+        "note": "the largest 3-seed mean of r0 over the five stress modes (mode L-iid-0.05); interval: the range of r0 over that mode's seeds (one cell, no bootstrap)"
+       },
+       "abort_share": {
+        "median": null,
+        "lo": null,
+        "hi": null,
+        "n": 0,
+        "note": "unguarded policy (not an A8 tag): no abort, no certificate"
+       }
+      }
+     },
+     {
+      "tag": "BL0b",
+      "key": "bl0b",
+      "label": "Provision for peak",
+      "recorded_label": "Provision for peak",
+      "style_key": "bl0b",
+      "cells": {
+       "usd.overflow": {
+        "median": 8510.268227089482,
+        "lo": 8510.268227089482,
+        "hi": 8510.268227089482,
+        "n": 1,
+        "note": "analytic, median over the alignments"
+       },
+       "usd.total": {
+        "median": 32380.788902427554,
+        "lo": 32380.788902427554,
+        "hi": 32380.788902427554,
+        "n": 1,
+        "note": "analytic, median over the alignments"
+       },
+       "saving_pct": {
+        "median": -457.05846415074916,
+        "lo": -457.05846415074916,
+        "hi": -457.05846415074916,
+        "n": 1,
+        "note": "analytic, median over the alignments"
+       },
+       "gap": {
+        "median": null,
+        "lo": null,
+        "hi": null,
+        "n": 0,
+        "note": "analytic: no engine run, no gap (M23)"
+       },
+       "fallback_share_after_reclaims": {
+        "median": null,
+        "lo": null,
+        "hi": null,
+        "n": 0,
+        "note": "no leases"
+       },
+       "W0": {
+        "median": null,
+        "lo": null,
+        "hi": null,
+        "n": 0,
+        "note": "analytic reference: no stress run"
+       },
+       "abort_share": {
+        "median": null,
+        "lo": null,
+        "hi": null,
+        "n": 0,
+        "note": "not guarded"
+       }
+      }
+     },
+     {
+      "tag": "BL0a",
+      "key": "bl0a",
+      "label": "All-fallback",
+      "recorded_label": "All-fallback",
+      "style_key": "bl0a",
+      "cells": {
+       "usd.overflow": {
+        "median": 1527.7154508483445,
+        "lo": 1527.7154508483445,
+        "hi": 1527.7154508483445,
+        "n": 1,
+        "note": "analytic, median over the alignments"
+       },
+       "usd.total": {
+        "median": 25398.236126186413,
+        "lo": 25398.236126186413,
+        "hi": 25398.236126186413,
+        "n": 1,
+        "note": "analytic, median over the alignments"
+       },
+       "saving_pct": {
+        "median": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "n": 1,
+        "note": "0 by definition"
+       },
+       "gap": {
+        "median": 2.1747693664800343,
+        "lo": 2.1747693664800343,
+        "hi": 2.1747693664800343,
+        "n": 1,
+        "note": null
+       },
+       "fallback_share_after_reclaims": {
+        "median": null,
+        "lo": null,
+        "hi": null,
+        "n": 0,
+        "note": "no leases"
+       },
+       "W0": {
+        "median": 1.0,
+        "lo": 1.0,
+        "hi": 1.0,
+        "n": 0,
+        "note": "1 by definition"
+       },
+       "abort_share": {
+        "median": null,
+        "lo": null,
+        "hi": null,
+        "n": 0,
+        "note": "not guarded"
+       }
+      }
+     }
+    ],
+    "scope": {
+     "horizon_min": 120,
+     "menu": "full (a11_default)",
+     "lender": "trace",
+     "mu_over_beta_tilde": 1.0
+    },
+    "reduced": true,
+    "git_revision": "939847ca5925ce069d6df9089fe3a3d1d3207bb7",
+    "b0_rule": "0.1*BL0a"
+   },
+   "total_accounting": {
+    "rows": [
+     {
+      "key": "sublet_ms4",
+      "label": "Lagged RetroRenting + one-way guard ($B_0=10\\%$ of the all-fallback bill)",
+      "usd": {
+       "median": 25480.37040613671,
+       "ci_lo": 25480.37040613671,
+       "ci_hi": 25480.37040613671,
+       "n": 1,
+       "note": null
+      },
+      "saving_pct": {
+       "median": -0.32338576404371544,
+       "ci_lo": -0.32338576404371544,
+       "ci_hi": -0.32338576404371544,
+       "n": 1,
+       "note": null
+      }
+     },
+     {
+      "key": "bl5_lag",
+      "label": "RetroRenting-style, lagged",
+      "usd": {
+       "median": 25350.914575882372,
+       "ci_lo": 25350.914575882372,
+       "ci_hi": 25350.914575882372,
+       "n": 1,
+       "note": null
+      },
+      "saving_pct": {
+       "median": 0.1863182548147546,
+       "ci_lo": 0.1863182548147546,
+       "ci_hi": 0.1863182548147546,
+       "n": 1,
+       "note": null
+      }
+     },
+     {
+      "key": "bl1",
+      "label": "Greedy renting",
+      "usd": {
+       "median": 24844.65062971714,
+       "ci_lo": 24844.65062971714,
+       "ci_hi": 24844.65062971714,
+       "n": 1,
+       "note": null
+      },
+      "saving_pct": {
+       "median": 2.17962181987319,
+       "ci_lo": 2.17962181987319,
+       "ci_hi": 2.17962181987319,
+       "n": 1,
+       "note": null
+      }
+     },
+     {
+      "key": "bl2",
+      "label": "Per-borrower ski rental",
+      "usd": {
+       "median": 24951.525420824346,
+       "ci_lo": 24951.525420824346,
+       "ci_hi": 24951.525420824346,
+       "n": 1,
+       "note": null
+      },
+      "saving_pct": {
+       "median": 1.7588257040475952,
+       "ci_lo": 1.7588257040475952,
+       "ci_hi": 1.7588257040475952,
+       "n": 1,
+       "note": null
+      }
+     },
+     {
+      "key": "bl4",
+      "label": "CoCaR-style",
+      "usd": {
+       "median": 25425.36218203333,
+       "ci_lo": 25425.36218203333,
+       "ci_hi": 25425.36218203333,
+       "n": 1,
+       "note": null
+      },
+      "saving_pct": {
+       "median": -0.10680291226581318,
+       "ci_lo": -0.10680291226581318,
+       "ci_hi": -0.10680291226581318,
+       "n": 1,
+       "note": null
+      }
+     },
+     {
+      "key": "a7",
+      "label": "PD heuristic",
+      "usd": {
+       "median": 25180.26283849357,
+       "ci_lo": 25180.26283849357,
+       "ci_hi": 25180.26283849357,
+       "n": 1,
+       "note": null
+      },
+      "saving_pct": {
+       "median": 0.8582221482227426,
+       "ci_lo": 0.8582221482227426,
+       "ci_hi": 0.8582221482227426,
+       "n": 1,
+       "note": null
+      }
+     },
+     {
+      "key": "a7_ms4",
+      "label": "PD heuristic + one-way guard ($B_0=10\\%$ of the all-fallback bill)",
+      "usd": {
+       "median": 25462.67296429961,
+       "ci_lo": 25462.67296429961,
+       "ci_hi": 25462.67296429961,
+       "n": 1,
+       "note": null
+      },
+      "saving_pct": {
+       "median": -0.25370595734701684,
+       "ci_lo": -0.25370595734701684,
+       "ci_hi": -0.25370595734701684,
+       "n": 1,
+       "note": null
+      }
+     },
+     {
+      "key": "a6",
+      "label": "Two-timescale PD",
+      "usd": {
+       "median": 25469.993594479958,
+       "ci_lo": 25469.993594479958,
+       "ci_hi": 25469.993594479958,
+       "n": 1,
+       "note": null
+      },
+      "saving_pct": {
+       "median": -0.2825293376163218,
+       "ci_lo": -0.2825293376163218,
+       "ci_hi": -0.2825293376163218,
+       "n": 1,
+       "note": null
+      }
+     },
+     {
+      "key": "bl0b",
+      "label": "Provision for peak",
+      "usd": {
+       "median": 32380.788902427554,
+       "ci_lo": null,
+       "ci_hi": null,
+       "n": 1,
+       "note": "analytic, median over the alignments"
+      },
+      "saving_pct": {
+       "median": -27.492274430199103,
+       "ci_lo": null,
+       "ci_hi": null,
+       "n": 1,
+       "note": "analytic, median over the alignments"
+      }
+     },
+     {
+      "key": "bl0a",
+      "label": "All-fallback",
+      "usd": {
+       "median": 25398.236126186413,
+       "ci_lo": null,
+       "ci_hi": null,
+       "n": 1,
+       "note": "analytic, median over the alignments"
+      },
+      "saving_pct": {
+       "median": 0.0,
+       "ci_lo": null,
+       "ci_hi": null,
+       "n": 1,
+       "note": "analytic, median over the alignments"
+      }
+     }
+    ],
+    "own_capacity_usd": {
+     "1": 23870.52067533807
+    },
+    "own_capacity_median": 23870.52067533807,
+    "grid": {
+     "n_alignments": 1,
+     "n_policy_seeds": 1
+    },
+    "b0_rule": "0.1*BL0a"
+   },
+   "stress_aborts": {
+    "modes": [
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "rows": [
+     {
+      "key": "sublet_ms4",
+      "label": "Lagged RetroRenting + one-way guard ($B_0=10\\%$ of the all-fallback bill)",
+      "mode": "L-eg",
+      "n_runs": 1,
+      "abort_share": 1.0,
+      "t_a_median": 12.0,
+      "cases": {
+       "W(a)": {
+        "runs": 0,
+        "held": 0
+       },
+       "W(b)": {
+        "runs": 1,
+        "held": 1
+       },
+       "W(c)": {
+        "runs": 0,
+        "held": 0
+       },
+       "unavailable": {
+        "runs": 0,
+        "held": 0
+       }
+      },
+      "failures": 0,
+      "note": null
+     },
+     {
+      "key": "sublet_ms4",
+      "label": "Lagged RetroRenting + one-way guard ($B_0=10\\%$ of the all-fallback bill)",
+      "mode": "L-ss",
+      "n_runs": 1,
+      "abort_share": 1.0,
+      "t_a_median": 12.0,
+      "cases": {
+       "W(a)": {
+        "runs": 0,
+        "held": 0
+       },
+       "W(b)": {
+        "runs": 1,
+        "held": 1
+       },
+       "W(c)": {
+        "runs": 0,
+        "held": 0
+       },
+       "unavailable": {
+        "runs": 0,
+        "held": 0
+       }
+      },
+      "failures": 0,
+      "note": null
+     },
+     {
+      "key": "sublet_ms4",
+      "label": "Lagged RetroRenting + one-way guard ($B_0=10\\%$ of the all-fallback bill)",
+      "mode": "L-iid-0.05",
+      "n_runs": 1,
+      "abort_share": 1.0,
+      "t_a_median": 12.0,
+      "cases": {
+       "W(a)": {
+        "runs": 0,
+        "held": 0
+       },
+       "W(b)": {
+        "runs": 1,
+        "held": 1
+       },
+       "W(c)": {
+        "runs": 0,
+        "held": 0
+       },
+       "unavailable": {
+        "runs": 0,
+        "held": 0
+       }
+      },
+      "failures": 0,
+      "note": null
+     },
+     {
+      "key": "sublet_ms4",
+      "label": "Lagged RetroRenting + one-way guard ($B_0=10\\%$ of the all-fallback bill)",
+      "mode": "L-iid-0.2",
+      "n_runs": 1,
+      "abort_share": 1.0,
+      "t_a_median": 12.0,
+      "cases": {
+       "W(a)": {
+        "runs": 0,
+        "held": 0
+       },
+       "W(b)": {
+        "runs": 1,
+        "held": 1
+       },
+       "W(c)": {
+        "runs": 0,
+        "held": 0
+       },
+       "unavailable": {
+        "runs": 0,
+        "held": 0
+       }
+      },
+      "failures": 0,
+      "note": null
+     },
+     {
+      "key": "sublet_ms4",
+      "label": "Lagged RetroRenting + one-way guard ($B_0=10\\%$ of the all-fallback bill)",
+      "mode": "L-co",
+      "n_runs": 1,
+      "abort_share": 1.0,
+      "t_a_median": 12.0,
+      "cases": {
+       "W(a)": {
+        "runs": 0,
+        "held": 0
+       },
+       "W(b)": {
+        "runs": 1,
+        "held": 1
+       },
+       "W(c)": {
+        "runs": 0,
+        "held": 0
+       },
+       "unavailable": {
+        "runs": 0,
+        "held": 0
+       }
+      },
+      "failures": 0,
+      "note": null
+     },
+     {
+      "key": "a7_ms4",
+      "label": "PD heuristic + one-way guard ($B_0=10\\%$ of the all-fallback bill)",
+      "mode": "L-eg",
+      "n_runs": 1,
+      "abort_share": 1.0,
+      "t_a_median": 11.0,
+      "cases": {
+       "W(a)": {
+        "runs": 0,
+        "held": 0
+       },
+       "W(b)": {
+        "runs": 1,
+        "held": 1
+       },
+       "W(c)": {
+        "runs": 0,
+        "held": 0
+       },
+       "unavailable": {
+        "runs": 0,
+        "held": 0
+       }
+      },
+      "failures": 0,
+      "note": null
+     },
+     {
+      "key": "a7_ms4",
+      "label": "PD heuristic + one-way guard ($B_0=10\\%$ of the all-fallback bill)",
+      "mode": "L-ss",
+      "n_runs": 1,
+      "abort_share": 1.0,
+      "t_a_median": 11.0,
+      "cases": {
+       "W(a)": {
+        "runs": 0,
+        "held": 0
+       },
+       "W(b)": {
+        "runs": 1,
+        "held": 1
+       },
+       "W(c)": {
+        "runs": 0,
+        "held": 0
+       },
+       "unavailable": {
+        "runs": 0,
+        "held": 0
+       }
+      },
+      "failures": 0,
+      "note": null
+     },
+     {
+      "key": "a7_ms4",
+      "label": "PD heuristic + one-way guard ($B_0=10\\%$ of the all-fallback bill)",
+      "mode": "L-iid-0.05",
+      "n_runs": 1,
+      "abort_share": 1.0,
+      "t_a_median": 11.0,
+      "cases": {
+       "W(a)": {
+        "runs": 0,
+        "held": 0
+       },
+       "W(b)": {
+        "runs": 1,
+        "held": 1
+       },
+       "W(c)": {
+        "runs": 0,
+        "held": 0
+       },
+       "unavailable": {
+        "runs": 0,
+        "held": 0
+       }
+      },
+      "failures": 0,
+      "note": null
+     },
+     {
+      "key": "a7_ms4",
+      "label": "PD heuristic + one-way guard ($B_0=10\\%$ of the all-fallback bill)",
+      "mode": "L-iid-0.2",
+      "n_runs": 1,
+      "abort_share": 1.0,
+      "t_a_median": 11.0,
+      "cases": {
+       "W(a)": {
+        "runs": 0,
+        "held": 0
+       },
+       "W(b)": {
+        "runs": 1,
+        "held": 1
+       },
+       "W(c)": {
+        "runs": 0,
+        "held": 0
+       },
+       "unavailable": {
+        "runs": 0,
+        "held": 0
+       }
+      },
+      "failures": 0,
+      "note": null
+     },
+     {
+      "key": "a7_ms4",
+      "label": "PD heuristic + one-way guard ($B_0=10\\%$ of the all-fallback bill)",
+      "mode": "L-co",
+      "n_runs": 1,
+      "abort_share": 1.0,
+      "t_a_median": 11.0,
+      "cases": {
+       "W(a)": {
+        "runs": 0,
+        "held": 0
+       },
+       "W(b)": {
+        "runs": 1,
+        "held": 1
+       },
+       "W(c)": {
+        "runs": 0,
+        "held": 0
+       },
+       "unavailable": {
+        "runs": 0,
+        "held": 0
+       }
+      },
+      "failures": 0,
+      "note": null
+     }
+    ],
+    "grid": {
+     "alignment": 1,
+     "n_policy_seeds": 1,
+     "slow_min": 5
+    },
+    "b0_rule": "0.1*BL0a"
+   }
+  },
+  "labels": {
+   "a_x": "GPU-hour share",
+   "b_x": "GPU-hour share",
+   "classes": {
+    "spot-like": "Spot-like",
+    "AEP-82-like": "AEP-82-like",
+    "general": "General",
+    "GFS-like": "GFS-like",
+    "protected": "Protected"
+   },
+   "small": "{} {}%",
+   "small_summary": "{} classes {}%",
+   "no_data": "no leases",
+   "titles": {
+    "a": "Trace lender (main grid)",
+    "b": "i.i.d. lender, $p = 0.2$"
+   },
+   "note": "GPU-hours per contract class summed over the runs and normalized: (a) the main grid at mu/beta~ = 1 (1 alignment x 1 policy seed), (b) the stress block under the i.i.d. lender at p = 0.2 (alignment 1, 1 policy seed); Lagged RetroRenting + one-way guard ($B_0=10\\%$ of the all-fallback bill) and PD heuristic + one-way guard ($B_0=10\\%$ of the all-fallback bill) run at B0 = 10% of each run's all-fallback cost",
+   "guards": "; {names} run at B0 = {pct} of each run's all-fallback cost"
+  },
+  "meta": {
+   "git_revision": {
+    "main": "939847ca5925ce069d6df9089fe3a3d1d3207bb7",
+    "stress": "939847ca5925ce069d6df9089fe3a3d1d3207bb7",
+    "table3": "939847ca5925ce069d6df9089fe3a3d1d3207bb7"
+   },
+   "reduced": true,
+   "B0_rule": "0.1*BL0a"
+  },
+  "sources": [
+   "code/sim/out/e7/main/summary.json",
+   "code/sim/out/e7/stress/summary.json",
+   "code/sim/out/e7/table3.json"
+  ]
+ }
+}

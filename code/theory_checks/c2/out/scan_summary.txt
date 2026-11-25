@@ -1,0 +1,147 @@
+rows: 1120
+insurance class (best plan committing to p before notice) minus max(2-a, ap/a): min -0.0005 max +0.0143
+rows where a planned pre-notice upgrade r->p is the unique optimum: 0
+exact - LB: min -0.0001, median +0.0141, max +0.3999
+rows with exact - LB < -0.035 (LB violated beyond grid error): 0
+rows with exact - LB > 0.035 (families not tight): 26
+  gap +0.3999: alpha=0.0 ap=1.0 mu=4.0 lam=0.0 H=2.0 tau=0.0 allow_p=False CR=2.4000 LB=2.0001 plan=('r'; 0.8; inf)  [A: mu=4, long notice (known window)]
+  gap +0.0972: alpha=0.3 ap=1.0 mu=4.0 lam=0.0 H=3.0 tau=0.0 allow_p=False CR=1.7972 LB=1.7000 plan=('r'; 1.3; inf)  [A: mu=4, long notice (known window)]
+  gap +0.0534: alpha=0.2 ap=0.8 mu=4.0 lam=0.5 H=3.0 tau=0.0 allow_p= CR=2.0976 LB=2.0441 plan=('r'; 1.0; inf)  [A: mu=4, long notice (known window)]
+  gap +0.0534: alpha=0.2 ap=0.8 mu=4.0 lam=0.5 H=3.0 tau=1.0 allow_p= CR=2.0976 LB=2.0441 plan=('r'; 1.0; inf)  [A: mu=4, long notice (known window)]
+  gap +0.0486: alpha=0.0 ap=0.5 mu=4.0 lam=0.5 H=0.5 tau=1.0 allow_p= CR=2.6667 LB=2.6181 plan=('r'; 0.6; inf)  [B: alpha=0, lam>0, mu=4]
+  gap +0.0486: alpha=0.0 ap=0.5 mu=4.0 lam=0.5 H=1.0 tau=0.0 allow_p= CR=2.6667 LB=2.6181 plan=('r'; 0.6; inf)  [B: alpha=0, lam>0, mu=4]
+  gap +0.0486: alpha=0.0 ap=0.5 mu=4.0 lam=0.5 H=1.0 tau=1.0 allow_p= CR=2.6667 LB=2.6181 plan=('r'; 0.6; inf)  [B: alpha=0, lam>0, mu=4]
+  gap +0.0486: alpha=0.0 ap=0.5 mu=4.0 lam=0.5 H=2.0 tau=0.0 allow_p= CR=2.6667 LB=2.6181 plan=('r'; 0.6; inf)  [B: alpha=0, lam>0, mu=4]
+  gap +0.0486: alpha=0.0 ap=0.5 mu=4.0 lam=0.5 H=2.0 tau=1.0 allow_p= CR=2.6667 LB=2.6181 plan=('r'; 0.6; inf)  [B: alpha=0, lam>0, mu=4]
+  gap +0.0486: alpha=0.0 ap=0.5 mu=4.0 lam=0.5 H=3.0 tau=0.0 allow_p= CR=2.6667 LB=2.6181 plan=('r'; 0.6; inf)  [B: alpha=0, lam>0, mu=4]
+  gap +0.0486: alpha=0.0 ap=0.5 mu=4.0 lam=0.5 H=3.0 tau=1.0 allow_p= CR=2.6667 LB=2.6181 plan=('r'; 0.6; inf)  [B: alpha=0, lam>0, mu=4]
+  gap +0.0486: alpha=0.0 ap=0.5 mu=4.0 lam=1 H=2.0 tau=0.0 allow_p= CR=2.6667 LB=2.6181 plan=('r'; 0.6; inf)  [B: alpha=0, lam>0, mu=4]
+  gap +0.0486: alpha=0.0 ap=0.5 mu=4.0 lam=1 H=2.0 tau=1.0 allow_p= CR=2.6667 LB=2.6181 plan=('r'; 0.6; inf)  [B: alpha=0, lam>0, mu=4]
+  gap +0.0486: alpha=0.0 ap=0.5 mu=4.0 lam=1 H=3.0 tau=0.0 allow_p= CR=2.6667 LB=2.6181 plan=('r'; 0.6; inf)  [B: alpha=0, lam>0, mu=4]
+  gap +0.0486: alpha=0.0 ap=0.5 mu=4.0 lam=1 H=3.0 tau=1.0 allow_p= CR=2.6667 LB=2.6181 plan=('r'; 0.6; inf)  [B: alpha=0, lam>0, mu=4]
+  gap +0.0426: alpha=0.2 ap=0.4 mu=1.0 lam=0.5 H=3.0 tau=0.0 allow_p= CR=1.8427 LB=1.8001 plan=('r'; 1.2; inf)  [C: middle price band]
+  gap +0.0426: alpha=0.2 ap=0.4 mu=1.0 lam=0.5 H=3.0 tau=1.0 allow_p= CR=1.8427 LB=1.8001 plan=('r'; 1.2; inf)  [C: middle price band]
+  gap +0.0426: alpha=0.2 ap=0.4 mu=1.0 lam=1 H=3.0 tau=0.0 allow_p= CR=1.8427 LB=1.8001 plan=('r'; 1.2; inf)  [C: middle price band]
+  gap +0.0426: alpha=0.2 ap=0.4 mu=1.0 lam=1 H=3.0 tau=1.0 allow_p= CR=1.8427 LB=1.8001 plan=('r'; 1.2; inf)  [C: middle price band]
+  gap +0.0402: alpha=0.2 ap=0.6 mu=4.0 lam=0.5 H=3.0 tau=0.0 allow_p= CR=2.0843 LB=2.0441 plan=('r'; 1.0; inf)  [A: mu=4, long notice (known window)]
+  gap +0.0402: alpha=0.2 ap=0.6 mu=4.0 lam=0.5 H=3.0 tau=1.0 allow_p= CR=2.0843 LB=2.0441 plan=('r'; 1.0; inf)  [A: mu=4, long notice (known window)]
+  gap +0.0384: alpha=0.0 ap=1.0 mu=4.0 lam=0.0 H=1.0 tau=0.0 allow_p=False CR=2.6000 LB=2.5616 plan=('r'; 1.5; inf)  [D: other (alpha=0, H<=1; grid error, audit/out/model_grid_check.txt)]
+  gap +0.0381: alpha=0.0 ap=0.5 mu=2.0 lam=0.5 H=0.5 tau=0.0 allow_p= CR=2.3889 LB=2.3508 plan=('r'; 1.3; inf)  [D: other (alpha=0, H<=1; grid error, audit/out/model_grid_check.txt)]
+  gap +0.0381: alpha=0.0 ap=0.5 mu=2.0 lam=1 H=0.5 tau=0.0 allow_p= CR=2.3889 LB=2.3508 plan=('r'; 1.3; inf)  [D: other (alpha=0, H<=1; grid error, audit/out/model_grid_check.txt)]
+  gap +0.0381: alpha=0.0 ap=1.0 mu=2.0 lam=0.0 H=0.5 tau=0.0 allow_p=False CR=2.3889 LB=2.3508 plan=('r'; 1.3; inf)  [D: other (alpha=0, H<=1; grid error, audit/out/model_grid_check.txt)]
+  gap +0.0366: alpha=0.0 ap=1.0 mu=4.0 lam=0.0 H=0.0 tau=0.0 allow_p=False CR=3.2727 LB=3.2361 plan=('r'; 2.2; inf)  [D: other (alpha=0, H<=1; grid error, audit/out/model_grid_check.txt)]
+  kind A: mu=4, long notice (known window): 6 rows
+  kind B: alpha=0, lam>0, mu=4: 11 rows
+  kind C: middle price band: 4 rows
+  kind D: other (alpha=0, H<=1; grid error, audit/out/model_grid_check.txt): 5 rows
+tau = 0 rows only: 580; exact - LB: min -0.0001, median +0.0138; rows with exact - LB > 0.035: 16; of these not of kind D: 11
+guaranteed period vs notice: CR(H=0,tau=1) vs CR(H=1,tau=0) and CR(H=0,tau=0)
+  a=0.0 ap=0.5 mu=0.5 lam=0: tau=1,H=0 -> 2.0000;  tau=0,H=1 -> 2.0000;  tau=0,H=0 -> 2.2500
+  a=0.0 ap=0.5 mu=0.5 lam=0.5: tau=1,H=0 -> 2.0000;  tau=0,H=1 -> 2.0000;  tau=0,H=0 -> 2.2500
+  a=0.0 ap=0.5 mu=0.5 lam=1: tau=1,H=0 -> 2.0000;  tau=0,H=1 -> 2.0000;  tau=0,H=0 -> 2.2500
+  a=0.0 ap=0.5 mu=1.0 lam=0: tau=1,H=0 -> 2.0000;  tau=0,H=1 -> 2.0000;  tau=0,H=0 -> 2.4286
+  a=0.0 ap=0.5 mu=1.0 lam=0.5: tau=1,H=0 -> 2.0000;  tau=0,H=1 -> 2.0000;  tau=0,H=0 -> 2.4286
+  a=0.0 ap=0.5 mu=1.0 lam=1: tau=1,H=0 -> 2.0000;  tau=0,H=1 -> 2.0000;  tau=0,H=0 -> 2.4286
+  a=0.0 ap=0.5 mu=2.0 lam=0: tau=1,H=0 -> 2.0000;  tau=0,H=1 -> 2.0000;  tau=0,H=0 -> 2.4286
+  a=0.0 ap=0.5 mu=2.0 lam=0.5: tau=1,H=0 -> 2.0000;  tau=0,H=1 -> 2.0000;  tau=0,H=0 -> 2.7647
+  a=0.0 ap=0.5 mu=2.0 lam=1: tau=1,H=0 -> 2.0000;  tau=0,H=1 -> 2.0000;  tau=0,H=0 -> 2.7647
+  a=0.0 ap=0.5 mu=4.0 lam=0: tau=1,H=0 -> 2.0000;  tau=0,H=1 -> 2.0000;  tau=0,H=0 -> 2.4286
+  a=0.0 ap=0.5 mu=4.0 lam=0.5: tau=1,H=0 -> 3.0000;  tau=0,H=1 -> 2.6667;  tau=0,H=0 -> 3.5000
+  a=0.0 ap=0.5 mu=4.0 lam=1: tau=1,H=0 -> 3.0000;  tau=0,H=1 -> 3.0000;  tau=0,H=0 -> 3.5000
+  a=0.2 ap=0.4 mu=0.5 lam=0: tau=1,H=0 -> 1.8254;  tau=0,H=1 -> 1.8254;  tau=0,H=0 -> 2.0000
+  a=0.2 ap=0.4 mu=0.5 lam=0.5: tau=1,H=0 -> 2.0000;  tau=0,H=1 -> 2.0000;  tau=0,H=0 -> 2.0000
+  a=0.2 ap=0.4 mu=0.5 lam=1: tau=1,H=0 -> 2.0000;  tau=0,H=1 -> 2.0000;  tau=0,H=0 -> 2.0000
+  a=0.2 ap=0.4 mu=1.0 lam=0: tau=1,H=0 -> 1.8254;  tau=0,H=1 -> 1.8254;  tau=0,H=0 -> 2.0000
+  a=0.2 ap=0.4 mu=1.0 lam=0.5: tau=1,H=0 -> 2.0000;  tau=0,H=1 -> 2.0000;  tau=0,H=0 -> 2.0000
+  a=0.2 ap=0.4 mu=1.0 lam=1: tau=1,H=0 -> 2.0000;  tau=0,H=1 -> 2.0000;  tau=0,H=0 -> 2.0000
+  a=0.2 ap=0.4 mu=2.0 lam=0: tau=1,H=0 -> 1.8254;  tau=0,H=1 -> 1.8254;  tau=0,H=0 -> 2.0000
+  a=0.2 ap=0.4 mu=2.0 lam=0.5: tau=1,H=0 -> 2.0000;  tau=0,H=1 -> 2.0000;  tau=0,H=0 -> 2.0000
+  a=0.2 ap=0.4 mu=2.0 lam=1: tau=1,H=0 -> 2.0000;  tau=0,H=1 -> 2.0000;  tau=0,H=0 -> 2.0000
+  a=0.2 ap=0.4 mu=4.0 lam=0: tau=1,H=0 -> 1.8254;  tau=0,H=1 -> 1.8254;  tau=0,H=0 -> 2.0000
+  a=0.2 ap=0.4 mu=4.0 lam=0.5: tau=1,H=0 -> 2.0000;  tau=0,H=1 -> 2.0000;  tau=0,H=0 -> 2.0000
+  a=0.2 ap=0.4 mu=4.0 lam=1: tau=1,H=0 -> 2.0000;  tau=0,H=1 -> 2.0000;  tau=0,H=0 -> 2.0000
+  a=0.2 ap=0.6 mu=0.5 lam=0: tau=1,H=0 -> 1.8254;  tau=0,H=1 -> 1.8254;  tau=0,H=0 -> 1.9697
+  a=0.2 ap=0.6 mu=0.5 lam=0.5: tau=1,H=0 -> 1.8254;  tau=0,H=1 -> 1.8254;  tau=0,H=0 -> 1.9697
+  a=0.2 ap=0.6 mu=0.5 lam=1: tau=1,H=0 -> 1.8254;  tau=0,H=1 -> 1.8254;  tau=0,H=0 -> 1.9697
+  a=0.2 ap=0.6 mu=1.0 lam=0: tau=1,H=0 -> 1.8254;  tau=0,H=1 -> 1.8254;  tau=0,H=0 -> 2.1014
+  a=0.2 ap=0.6 mu=1.0 lam=0.5: tau=1,H=0 -> 1.8254;  tau=0,H=1 -> 1.8254;  tau=0,H=0 -> 2.1014
+  a=0.2 ap=0.6 mu=1.0 lam=1: tau=1,H=0 -> 1.8254;  tau=0,H=1 -> 1.8254;  tau=0,H=0 -> 2.1014
+  a=0.2 ap=0.6 mu=2.0 lam=0: tau=1,H=0 -> 1.8254;  tau=0,H=1 -> 1.8254;  tau=0,H=0 -> 2.1014
+  a=0.2 ap=0.6 mu=2.0 lam=0.5: tau=1,H=0 -> 1.9167;  tau=0,H=1 -> 1.9167;  tau=0,H=0 -> 2.2973
+  a=0.2 ap=0.6 mu=2.0 lam=1: tau=1,H=0 -> 1.9167;  tau=0,H=1 -> 1.9167;  tau=0,H=0 -> 2.2973
+  a=0.2 ap=0.6 mu=4.0 lam=0: tau=1,H=0 -> 1.8254;  tau=0,H=1 -> 1.8254;  tau=0,H=0 -> 2.1014
+  a=0.2 ap=0.6 mu=4.0 lam=0.5: tau=1,H=0 -> 2.6800;  tau=0,H=1 -> 2.3016;  tau=0,H=0 -> 2.9999
+  a=0.2 ap=0.6 mu=4.0 lam=1: tau=1,H=0 -> 2.6800;  tau=0,H=1 -> 2.6190;  tau=0,H=0 -> 2.9999
+  a=0.2 ap=0.8 mu=0.5 lam=0: tau=1,H=0 -> 1.8254;  tau=0,H=1 -> 1.8254;  tau=0,H=0 -> 1.9697
+  a=0.2 ap=0.8 mu=0.5 lam=0.5: tau=1,H=0 -> 1.8254;  tau=0,H=1 -> 1.8254;  tau=0,H=0 -> 1.9697
+  a=0.2 ap=0.8 mu=0.5 lam=1: tau=1,H=0 -> 1.8254;  tau=0,H=1 -> 1.8254;  tau=0,H=0 -> 1.9697
+  a=0.2 ap=0.8 mu=1.0 lam=0: tau=1,H=0 -> 1.8254;  tau=0,H=1 -> 1.8254;  tau=0,H=0 -> 2.1014
+  a=0.2 ap=0.8 mu=1.0 lam=0.5: tau=1,H=0 -> 1.8254;  tau=0,H=1 -> 1.8254;  tau=0,H=0 -> 2.1014
+  a=0.2 ap=0.8 mu=1.0 lam=1: tau=1,H=0 -> 1.8254;  tau=0,H=1 -> 1.8254;  tau=0,H=0 -> 2.1014
+  a=0.2 ap=0.8 mu=2.0 lam=0: tau=1,H=0 -> 1.8254;  tau=0,H=1 -> 1.8254;  tau=0,H=0 -> 2.1014
+  a=0.2 ap=0.8 mu=2.0 lam=0.5: tau=1,H=0 -> 1.9167;  tau=0,H=1 -> 1.9167;  tau=0,H=0 -> 2.2973
+  a=0.2 ap=0.8 mu=2.0 lam=1: tau=1,H=0 -> 1.9167;  tau=0,H=1 -> 1.9167;  tau=0,H=0 -> 2.2973
+  a=0.2 ap=0.8 mu=4.0 lam=0: tau=1,H=0 -> 1.8254;  tau=0,H=1 -> 1.8254;  tau=0,H=0 -> 2.1014
+  a=0.2 ap=0.8 mu=4.0 lam=0.5: tau=1,H=0 -> 2.6800;  tau=0,H=1 -> 2.3016;  tau=0,H=0 -> 3.0000
+  a=0.2 ap=0.8 mu=4.0 lam=1: tau=1,H=0 -> 2.6800;  tau=0,H=1 -> 2.6190;  tau=0,H=0 -> 3.0000
+  a=0.3 ap=0.4 mu=0.5 lam=0: tau=1,H=0 -> 1.7143;  tau=0,H=1 -> 1.7143;  tau=0,H=0 -> 1.7143
+  a=0.3 ap=0.4 mu=0.5 lam=0.5: tau=1,H=0 -> 1.7143;  tau=0,H=1 -> 1.7143;  tau=0,H=0 -> 1.7143
+  a=0.3 ap=0.4 mu=0.5 lam=1: tau=1,H=0 -> 1.7143;  tau=0,H=1 -> 1.7143;  tau=0,H=0 -> 1.7143
+  a=0.3 ap=0.4 mu=1.0 lam=0: tau=1,H=0 -> 1.7143;  tau=0,H=1 -> 1.7143;  tau=0,H=0 -> 1.7143
+  a=0.3 ap=0.4 mu=1.0 lam=0.5: tau=1,H=0 -> 1.7143;  tau=0,H=1 -> 1.7143;  tau=0,H=0 -> 1.7143
+  a=0.3 ap=0.4 mu=1.0 lam=1: tau=1,H=0 -> 1.7143;  tau=0,H=1 -> 1.7143;  tau=0,H=0 -> 1.7143
+  a=0.3 ap=0.4 mu=2.0 lam=0: tau=1,H=0 -> 1.7143;  tau=0,H=1 -> 1.7143;  tau=0,H=0 -> 1.7143
+  a=0.3 ap=0.4 mu=2.0 lam=0.5: tau=1,H=0 -> 1.7143;  tau=0,H=1 -> 1.7143;  tau=0,H=0 -> 1.7143
+  a=0.3 ap=0.4 mu=2.0 lam=1: tau=1,H=0 -> 1.7143;  tau=0,H=1 -> 1.7143;  tau=0,H=0 -> 1.7143
+  a=0.3 ap=0.4 mu=4.0 lam=0: tau=1,H=0 -> 1.7143;  tau=0,H=1 -> 1.7143;  tau=0,H=0 -> 1.7143
+  a=0.3 ap=0.4 mu=4.0 lam=0.5: tau=1,H=0 -> 1.7143;  tau=0,H=1 -> 1.7143;  tau=0,H=0 -> 1.7143
+  a=0.3 ap=0.4 mu=4.0 lam=1: tau=1,H=0 -> 1.7143;  tau=0,H=1 -> 1.7143;  tau=0,H=0 -> 1.7143
+  a=0.3 ap=0.6 mu=0.5 lam=0: tau=1,H=0 -> 1.7143;  tau=0,H=1 -> 1.7143;  tau=0,H=0 -> 1.8333
+  a=0.3 ap=0.6 mu=0.5 lam=0.5: tau=1,H=0 -> 1.7143;  tau=0,H=1 -> 1.7143;  tau=0,H=0 -> 1.8333
+  a=0.3 ap=0.6 mu=0.5 lam=1: tau=1,H=0 -> 1.7143;  tau=0,H=1 -> 1.7143;  tau=0,H=0 -> 1.8333
+  a=0.3 ap=0.6 mu=1.0 lam=0: tau=1,H=0 -> 1.7143;  tau=0,H=1 -> 1.7143;  tau=0,H=0 -> 1.9277
+  a=0.3 ap=0.6 mu=1.0 lam=0.5: tau=1,H=0 -> 1.7143;  tau=0,H=1 -> 1.7143;  tau=0,H=0 -> 1.9277
+  a=0.3 ap=0.6 mu=1.0 lam=1: tau=1,H=0 -> 1.7143;  tau=0,H=1 -> 1.7143;  tau=0,H=0 -> 1.9277
+  a=0.3 ap=0.6 mu=2.0 lam=0: tau=1,H=0 -> 1.7143;  tau=0,H=1 -> 1.7143;  tau=0,H=0 -> 1.9277
+  a=0.3 ap=0.6 mu=2.0 lam=0.5: tau=1,H=0 -> 1.8929;  tau=0,H=1 -> 1.8929;  tau=0,H=0 -> 2.0000
+  a=0.3 ap=0.6 mu=2.0 lam=1: tau=1,H=0 -> 1.8929;  tau=0,H=1 -> 1.8929;  tau=0,H=0 -> 2.0000
+  a=0.3 ap=0.6 mu=4.0 lam=0: tau=1,H=0 -> 1.7143;  tau=0,H=1 -> 1.7143;  tau=0,H=0 -> 1.9277
+  a=0.3 ap=0.6 mu=4.0 lam=0.5: tau=1,H=0 -> 2.0000;  tau=0,H=1 -> 2.0000;  tau=0,H=0 -> 2.0000
+  a=0.3 ap=0.6 mu=4.0 lam=1: tau=1,H=0 -> 2.0000;  tau=0,H=1 -> 2.0000;  tau=0,H=0 -> 2.0000
+  a=0.3 ap=0.8 mu=0.5 lam=0: tau=1,H=0 -> 1.7143;  tau=0,H=1 -> 1.7143;  tau=0,H=0 -> 1.8333
+  a=0.3 ap=0.8 mu=0.5 lam=0.5: tau=1,H=0 -> 1.7143;  tau=0,H=1 -> 1.7143;  tau=0,H=0 -> 1.8333
+  a=0.3 ap=0.8 mu=0.5 lam=1: tau=1,H=0 -> 1.7143;  tau=0,H=1 -> 1.7143;  tau=0,H=0 -> 1.8333
+  a=0.3 ap=0.8 mu=1.0 lam=0: tau=1,H=0 -> 1.7143;  tau=0,H=1 -> 1.7143;  tau=0,H=0 -> 1.9277
+  a=0.3 ap=0.8 mu=1.0 lam=0.5: tau=1,H=0 -> 1.7143;  tau=0,H=1 -> 1.7143;  tau=0,H=0 -> 1.9277
+  a=0.3 ap=0.8 mu=1.0 lam=1: tau=1,H=0 -> 1.7143;  tau=0,H=1 -> 1.7143;  tau=0,H=0 -> 1.9277
+  a=0.3 ap=0.8 mu=2.0 lam=0: tau=1,H=0 -> 1.7143;  tau=0,H=1 -> 1.7143;  tau=0,H=0 -> 1.9277
+  a=0.3 ap=0.8 mu=2.0 lam=0.5: tau=1,H=0 -> 1.8214;  tau=0,H=1 -> 1.8214;  tau=0,H=0 -> 2.0714
+  a=0.3 ap=0.8 mu=2.0 lam=1: tau=1,H=0 -> 1.8214;  tau=0,H=1 -> 1.8214;  tau=0,H=0 -> 2.0714
+  a=0.3 ap=0.8 mu=4.0 lam=0: tau=1,H=0 -> 1.7143;  tau=0,H=1 -> 1.7143;  tau=0,H=0 -> 1.9277
+  a=0.3 ap=0.8 mu=4.0 lam=0.5: tau=1,H=0 -> 2.5087;  tau=0,H=1 -> 2.1724;  tau=0,H=0 -> 2.6666
+  a=0.3 ap=0.8 mu=4.0 lam=1: tau=1,H=0 -> 2.5087;  tau=0,H=1 -> 2.4138;  tau=0,H=0 -> 2.6666
+  a=0.5 ap=0.6 mu=0.5 lam=0: tau=1,H=0 -> 1.5000;  tau=0,H=1 -> 1.5000;  tau=0,H=0 -> 1.5000
+  a=0.5 ap=0.6 mu=0.5 lam=0.5: tau=1,H=0 -> 1.5000;  tau=0,H=1 -> 1.5000;  tau=0,H=0 -> 1.5000
+  a=0.5 ap=0.6 mu=0.5 lam=1: tau=1,H=0 -> 1.5000;  tau=0,H=1 -> 1.5000;  tau=0,H=0 -> 1.5000
+  a=0.5 ap=0.6 mu=1.0 lam=0: tau=1,H=0 -> 1.5000;  tau=0,H=1 -> 1.5000;  tau=0,H=0 -> 1.5000
+  a=0.5 ap=0.6 mu=1.0 lam=0.5: tau=1,H=0 -> 1.5000;  tau=0,H=1 -> 1.5000;  tau=0,H=0 -> 1.5000
+  a=0.5 ap=0.6 mu=1.0 lam=1: tau=1,H=0 -> 1.5000;  tau=0,H=1 -> 1.5000;  tau=0,H=0 -> 1.5000
+  a=0.5 ap=0.6 mu=2.0 lam=0: tau=1,H=0 -> 1.5000;  tau=0,H=1 -> 1.5000;  tau=0,H=0 -> 1.5000
+  a=0.5 ap=0.6 mu=2.0 lam=0.5: tau=1,H=0 -> 1.5000;  tau=0,H=1 -> 1.5000;  tau=0,H=0 -> 1.5000
+  a=0.5 ap=0.6 mu=2.0 lam=1: tau=1,H=0 -> 1.5000;  tau=0,H=1 -> 1.5000;  tau=0,H=0 -> 1.5000
+  a=0.5 ap=0.6 mu=4.0 lam=0: tau=1,H=0 -> 1.5000;  tau=0,H=1 -> 1.5000;  tau=0,H=0 -> 1.5000
+  a=0.5 ap=0.6 mu=4.0 lam=0.5: tau=1,H=0 -> 1.5000;  tau=0,H=1 -> 1.5000;  tau=0,H=0 -> 1.5000
+  a=0.5 ap=0.6 mu=4.0 lam=1: tau=1,H=0 -> 1.5000;  tau=0,H=1 -> 1.5000;  tau=0,H=0 -> 1.5000
+  a=0.5 ap=0.8 mu=0.5 lam=0: tau=1,H=0 -> 1.5000;  tau=0,H=1 -> 1.5000;  tau=0,H=0 -> 1.5745
+  a=0.5 ap=0.8 mu=0.5 lam=0.5: tau=1,H=0 -> 1.5000;  tau=0,H=1 -> 1.5000;  tau=0,H=0 -> 1.5745
+  a=0.5 ap=0.8 mu=0.5 lam=1: tau=1,H=0 -> 1.5000;  tau=0,H=1 -> 1.5000;  tau=0,H=0 -> 1.5745
+  a=0.5 ap=0.8 mu=1.0 lam=0: tau=1,H=0 -> 1.5000;  tau=0,H=1 -> 1.5000;  tau=0,H=0 -> 1.6000
+  a=0.5 ap=0.8 mu=1.0 lam=0.5: tau=1,H=0 -> 1.5000;  tau=0,H=1 -> 1.5000;  tau=0,H=0 -> 1.6000
+  a=0.5 ap=0.8 mu=1.0 lam=1: tau=1,H=0 -> 1.5000;  tau=0,H=1 -> 1.5000;  tau=0,H=0 -> 1.6000
+  a=0.5 ap=0.8 mu=2.0 lam=0: tau=1,H=0 -> 1.5000;  tau=0,H=1 -> 1.5000;  tau=0,H=0 -> 1.6000
+  a=0.5 ap=0.8 mu=2.0 lam=0.5: tau=1,H=0 -> 1.6000;  tau=0,H=1 -> 1.6000;  tau=0,H=0 -> 1.6000
+  a=0.5 ap=0.8 mu=2.0 lam=1: tau=1,H=0 -> 1.6000;  tau=0,H=1 -> 1.6000;  tau=0,H=0 -> 1.6000
+  a=0.5 ap=0.8 mu=4.0 lam=0: tau=1,H=0 -> 1.5000;  tau=0,H=1 -> 1.5000;  tau=0,H=0 -> 1.6000
+  a=0.5 ap=0.8 mu=4.0 lam=0.5: tau=1,H=0 -> 1.6000;  tau=0,H=1 -> 1.6000;  tau=0,H=0 -> 1.6000
+  a=0.5 ap=0.8 mu=4.0 lam=1: tau=1,H=0 -> 1.6000;  tau=0,H=1 -> 1.6000;  tau=0,H=0 -> 1.6000
+  combinations: 108; equal (|diff|<1e-6) CR(H=0,tau=1) and CR(H=1,tau=0): 101

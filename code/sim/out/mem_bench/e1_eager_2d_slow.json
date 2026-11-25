@@ -1,0 +1,114 @@
+{
+ "id": "e1_eager_2d_slow",
+ "family": "e1",
+ "method": "eager",
+ "days": 2,
+ "grid": "slow",
+ "config_file": "bench_e1.json",
+ "started_unix": 1792157102.9548645,
+ "env": {
+  "python": "3.12.3",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "host": "host",
+  "platform": "Linux-6.8.0-146-generic-x86_64-with-glibc2.39",
+  "cpu_affinity": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "omp_num_threads": "1",
+  "cgroup": {
+   "path": "/user.slice/user-1001.slice/user@1001.service/app.slice/run-r9e1d95782924464e9da11fa8db327989.scope",
+   "memory_max": "3221225472",
+   "memory_peak": "18571264"
+  },
+  "git": {
+   "head": "61d98b843024a74f50008d4a12a0b6093345e613",
+   "dirty": true
+  },
+  "cgroup_end": {
+   "path": "/user.slice/user-1001.slice/user@1001.service/app.slice/run-r9e1d95782924464e9da11fa8db327989.scope",
+   "memory_max": "3221225472",
+   "memory_peak": "99151872"
+  }
+ },
+ "config": "bench_e1",
+ "config_hash": "4e34ee5f229cf80c5272a33838edf0dd044b01e9457f1c40f29b4b7f1fe86d01",
+ "horizon_min": 2880,
+ "instance_build_s": 0.16656231880187988,
+ "rss_after_instance_mb": 127.34375,
+ "notes": [
+  "lender a2:c05: D_max 65 min, buffer 315.000 GPUs (b = 0.102651), v_top 283, v0 281, 2 offered layers in 2 site(s)",
+  "lender a2:c09: D_max 65 min, buffer 135.000 GPUs (b = 0.036406), v_top 436, v0 434, 2 offered layers in 2 site(s)",
+  "lender a2:c00: D_max 65 min, buffer 184.900 GPUs (b = 0.016170), v_top 1399, v0 1397, 2 offered layers in 2 site(s)",
+  "lender a1:A100-SXM4-80GB: D_max 65 min, buffer 494.210 GPUs (b = 0.511113), v_top 7, v0 5, 2 offered layers in 2 site(s)",
+  "4 of 4 trace lenders have at least one site",
+  "10 sites: a2:c05/L282-282, a2:c05/L283-283, a2:c09/L435-435, a2:c09/L436-436, a2:c00/L1398-1398, a2:c00/L1399-1399, a1:A100-SXM4-80GB/L6-6, a1:A100-SXM4-80GB/L7-7, prot:north_america, prot:europe",
+  "regional demand: Gamma = 4.02307e+06 (tightness 0.5, supply 64 GPUs)",
+  "4 clients; beta_tilde_ref = [0.216667, 3.726667] USD"
+ ],
+ "merged": false,
+ "instance": {
+  "n_sites": 10,
+  "n_sites_by_kind": {
+   "layer": 8,
+   "protected": 2,
+   "synthetic": 0
+  },
+  "n_clients": 4,
+  "n_llms": 2,
+  "n_contracts": 4,
+  "n_usable_triples": 52,
+  "n_starts": 20700,
+  "n_cohorts": 18068,
+  "T_slow": 576,
+  "T_bench": 576
+ },
+ "estimate": {
+  "n_vars": 237890,
+  "n_int": 230728,
+  "n_rows": 221896,
+  "nnz": 781926,
+  "est_mb": 2198.4298,
+  "parts": {
+   "N_n": 20700,
+   "N_hp": 207728,
+   "N_rho": 0,
+   "N_e": 2300,
+   "N_z": 6580,
+   "N_y": 0,
+   "N_w": 582,
+   "N_f": 0,
+   "rows_C0p": 207728,
+   "rows_C0r": 0,
+   "rows_C1": 2300,
+   "rows_C2": 658,
+   "rows_C3": 6020,
+   "rows_C4": 4608,
+   "rows_C5": 0,
+   "rows_C6": 582,
+   "nnz_C0p": 415792,
+   "nnz_C0r": 0,
+   "nnz_C1": 6896,
+   "nnz_C2": 6580,
+   "nnz_C3": 114308,
+   "nnz_C4": 226128,
+   "nnz_C5": 0,
+   "nnz_C6": 12222,
+   "n_triples": 52,
+   "n_pooled_triples": 32,
+   "n_cohorts": 18068,
+   "n_pairs": 40,
+   "T_b": 576,
+   "est_mb_lp": 513.14374,
+   "est_mb_milp": 2198.4298
+  }
+ },
+ "predicted_peak_mb": 2732.492750477217,
+ "prediction_basis": "scaled from e1_eager_1d_slow by nnz ratio",
+ "status": "skipped_predicted_over_cap",
+ "peak_rss_mb": 128.71875,
+ "wall_s": 0.6767113208770752
+}

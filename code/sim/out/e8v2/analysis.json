@@ -1,0 +1,2957 @@
+{
+ "meta": {
+  "exp": "e8v2",
+  "spec": "design/ms7/feasibility/sens.md \u00a72 A-D (C56)",
+  "change": "C56",
+  "git_revision": "44d1b4e42b5be44503039b1b5d6bfba8e32930ff",
+  "analysis_sha256": "6d9772304fe30b20d0d500c2c56b867ccecc97dc99e672c63bdfcd66912e4a2d",
+  "registration": {
+   "path": "design/ms7/registration.md",
+   "exists": true,
+   "registered_sha256": "6d9772304fe30b20d0d500c2c56b867ccecc97dc99e672c63bdfcd66912e4a2d",
+   "analysis_sha256": "6d9772304fe30b20d0d500c2c56b867ccecc97dc99e672c63bdfcd66912e4a2d",
+   "matches": true
+  },
+  "inputs": {
+   "out/e8v2/a/summary.json": "a380aeb305c6f28ad356e9d6f8e7dbe49045a1f724dbf36f1cd4d5e7a9ee5371"
+  },
+  "input_records": [
+   {
+    "file": "out/e8v2/a/summary.json",
+    "exists": true,
+    "sha256": "a380aeb305c6f28ad356e9d6f8e7dbe49045a1f724dbf36f1cd4d5e7a9ee5371",
+    "git_revision": "44d1b4e42b5be44503039b1b5d6bfba8e32930ff",
+    "reduced": false,
+    "gate_kind": "ms7_registration",
+    "gate_ok": true,
+    "gate_enforced": true
+   }
+  ],
+  "confirmation_inputs": {},
+  "reduced": false,
+  "registered_full_inputs": true,
+  "label": "exploratory: post-freeze runs on the confirmation weeks (design/ms7/plan.md D6)"
+ },
+ "cells": {
+  "S": {
+   "60": {
+    "1": {
+     "fluid": {
+      "Sublet": 1445.8361425236399,
+      "A9": 1443.8734256701418,
+      "BL1-BO": 1723.1167510294385,
+      "BL5-cur": 1527.2123271602277,
+      "A6": 2654.941728337647
+     },
+     "replay": {
+      "Sublet": 3166.703306263621,
+      "A9": 3167.4972878605236,
+      "BL1-BO": 3377.553959092233,
+      "BL5-cur": 3210.7455228615063,
+      "A6": 3828.5977366177885
+     },
+     "rank_fluid": [
+      "A9",
+      "Sublet",
+      "BL5-cur",
+      "BL1-BO"
+     ],
+     "rank_replay": [
+      "Sublet",
+      "A9",
+      "BL5-cur",
+      "BL1-BO"
+     ],
+     "same_order": false,
+     "rank_fluid_with_a6": [
+      "A9",
+      "Sublet",
+      "BL5-cur",
+      "BL1-BO",
+      "A6"
+     ],
+     "rank_replay_with_a6": [
+      "Sublet",
+      "A9",
+      "BL5-cur",
+      "BL1-BO",
+      "A6"
+     ],
+     "same_order_with_a6": false,
+     "sublet_rank_fluid": 2,
+     "sublet_rank_replay": 1,
+     "margin_fluid": {
+      "usd": 81.37618463658782,
+      "relative": 0.053284132919423605,
+      "best": "BL5-cur"
+     },
+     "margin_replay": {
+      "usd": 44.04221659788527,
+      "relative": 0.013717130891966056,
+      "best": "BL5-cur"
+     },
+     "E": {
+      "Sublet": 0.5434254482686048,
+      "A9": 0.5441595384457608,
+      "BL1-BO": 0.489832946594123,
+      "BL5-cur": 0.5243433911887438,
+      "A6": 0.3065498360026086
+     }
+    },
+    "2": {
+     "fluid": {
+      "Sublet": 1385.9049159618376,
+      "A9": 1380.4029907344293,
+      "BL1-BO": 1438.3422883922235,
+      "BL5-cur": 1395.6473500632922,
+      "A6": 2493.513302121246
+     },
+     "replay": {
+      "Sublet": 3117.205975299281,
+      "A9": 3115.831592101156,
+      "BL1-BO": 3117.526347405868,
+      "BL5-cur": 3126.968982456905,
+      "A6": 3666.107697360973
+     },
+     "rank_fluid": [
+      "A9",
+      "Sublet",
+      "BL5-cur",
+      "BL1-BO"
+     ],
+     "rank_replay": [
+      "A9",
+      "Sublet",
+      "BL1-BO",
+      "BL5-cur"
+     ],
+     "same_order": false,
+     "rank_fluid_with_a6": [
+      "A9",
+      "Sublet",
+      "BL5-cur",
+      "BL1-BO",
+      "A6"
+     ],
+     "rank_replay_with_a6": [
+      "A9",
+      "Sublet",
+      "BL1-BO",
+      "BL5-cur",
+      "A6"
+     ],
+     "same_order_with_a6": false,
+     "sublet_rank_fluid": 2,
+     "sublet_rank_replay": 2,
+     "margin_fluid": {
+      "usd": 9.742434101454592,
+      "relative": 0.006980584386888834,
+      "best": "BL5-cur"
+     },
+     "margin_replay": {
+      "usd": 0.3203721065870013,
+      "relative": 0.00010276484330391847,
+      "best": "BL1-BO"
+     },
+     "E": {
+      "Sublet": 0.5554015592990201,
+      "A9": 0.5569712450975064,
+      "BL1-BO": 0.5386270625782887,
+      "BL5-cur": 0.5536740665183344,
+      "A6": 0.31984723091572365
+     }
+    },
+    "3": {
+     "fluid": {
+      "Sublet": 1407.8996309926763,
+      "A9": 1405.770561764641,
+      "BL1-BO": 1440.5338994208207,
+      "BL5-cur": 1433.6846668356638,
+      "A6": 2629.5212748082868
+     },
+     "replay": {
+      "Sublet": 3147.7692931991146,
+      "A9": 3149.2157514319288,
+      "BL1-BO": 3140.874937461632,
+      "BL5-cur": 3161.192273206111,
+      "A6": 3785.6216169226454
+     },
+     "rank_fluid": [
+      "A9",
+      "Sublet",
+      "BL5-cur",
+      "BL1-BO"
+     ],
+     "rank_replay": [
+      "BL1-BO",
+      "Sublet",
+      "A9",
+      "BL5-cur"
+     ],
+     "same_order": false,
+     "rank_fluid_with_a6": [
+      "A9",
+      "Sublet",
+      "BL5-cur",
+      "BL1-BO",
+      "A6"
+     ],
+     "rank_replay_with_a6": [
+      "BL1-BO",
+      "Sublet",
+      "A9",
+      "BL5-cur",
+      "A6"
+     ],
+     "same_order_with_a6": false,
+     "sublet_rank_fluid": 2,
+     "sublet_rank_replay": 2,
+     "margin_fluid": {
+      "usd": 25.785035842987554,
+      "relative": 0.017985151434937657,
+      "best": "BL5-cur"
+     },
+     "margin_replay": {
+      "usd": -6.894355737482783,
+      "relative": -0.0021950430611715507,
+      "best": "BL1-BO"
+     },
+     "E": {
+      "Sublet": 0.5527309977784898,
+      "A9": 0.5536124950710519,
+      "BL1-BO": 0.5413590390883184,
+      "BL5-cur": 0.5464734369410541,
+      "A6": 0.3053924715947072
+     }
+    },
+    "4": {
+     "fluid": {
+      "Sublet": 1402.0746081301568,
+      "A9": 1396.5726829027483,
+      "BL1-BO": 1466.1200569955429,
+      "BL5-cur": 1428.2889298526452,
+      "A6": 2618.395855456598
+     },
+     "replay": {
+      "Sublet": 3126.2146860849675,
+      "A9": 3124.906864318287,
+      "BL1-BO": 3139.9331008207355,
+      "BL5-cur": 3137.9763680481046,
+      "A6": 3823.7230057855286
+     },
+     "rank_fluid": [
+      "A9",
+      "Sublet",
+      "BL5-cur",
+      "BL1-BO"
+     ],
+     "rank_replay": [
+      "A9",
+      "Sublet",
+      "BL5-cur",
+      "BL1-BO"
+     ],
+     "same_order": true,
+     "rank_fluid_with_a6": [
+      "A9",
+      "Sublet",
+      "BL5-cur",
+      "BL1-BO",
+      "A6"
+     ],
+     "rank_replay_with_a6": [
+      "A9",
+      "Sublet",
+      "BL5-cur",
+      "BL1-BO",
+      "A6"
+     ],
+     "same_order_with_a6": true,
+     "sublet_rank_fluid": 2,
+     "sublet_rank_replay": 2,
+     "margin_fluid": {
+      "usd": 26.21432172248842,
+      "relative": 0.018353654624483382,
+      "best": "BL5-cur"
+     },
+     "margin_replay": {
+      "usd": 11.761681963137107,
+      "relative": 0.0037481741681990905,
+      "best": "BL5-cur"
+     },
+     "E": {
+      "Sublet": 0.5515104530821561,
+      "A9": 0.5530834218294639,
+      "BL1-BO": 0.5330728362931302,
+      "BL5-cur": 0.5448375760901365,
+      "A6": 0.31522344806493474
+     }
+    }
+   },
+   "15": {
+    "1": {
+     "fluid": {
+      "Sublet": 1494.3130444202643,
+      "A9": 1486.884883009774,
+      "BL1-BO": 1700.8327338996132,
+      "BL5-cur": 1587.348196421506,
+      "A6": 2308.6622423406566
+     },
+     "replay": {
+      "Sublet": 2586.5427544055865,
+      "A9": 2584.9533501335736,
+      "BL1-BO": 2715.0062345303995,
+      "BL5-cur": 2610.3039471381207,
+      "A6": 3082.277108885011
+     },
+     "rank_fluid": [
+      "A9",
+      "Sublet",
+      "BL5-cur",
+      "BL1-BO"
+     ],
+     "rank_replay": [
+      "A9",
+      "Sublet",
+      "BL5-cur",
+      "BL1-BO"
+     ],
+     "same_order": true,
+     "rank_fluid_with_a6": [
+      "A9",
+      "Sublet",
+      "BL5-cur",
+      "BL1-BO",
+      "A6"
+     ],
+     "rank_replay_with_a6": [
+      "A9",
+      "Sublet",
+      "BL5-cur",
+      "BL1-BO",
+      "A6"
+     ],
+     "same_order_with_a6": true,
+     "sublet_rank_fluid": 2,
+     "sublet_rank_replay": 2,
+     "margin_fluid": {
+      "usd": 93.03515200124161,
+      "relative": 0.058610424739183674,
+      "best": "BL5-cur"
+     },
+     "margin_replay": {
+      "usd": 23.761192732534255,
+      "relative": 0.00910284519110715,
+      "best": "BL5-cur"
+     },
+     "E": {
+      "Sublet": 0.4222739825680274,
+      "A9": 0.4247923727780459,
+      "BL1-BO": 0.3735437096726235,
+      "BL5-cur": 0.3918914315852607,
+      "A6": 0.2509880971812438
+     }
+    },
+    "2": {
+     "fluid": {
+      "Sublet": 1443.2981691171353,
+      "A9": 1444.3244875235412,
+      "BL1-BO": 1550.3440747786099,
+      "BL5-cur": 1450.6904338271256,
+      "A6": 2223.565102894024
+     },
+     "replay": {
+      "Sublet": 2515.299443697301,
+      "A9": 2517.799089358718,
+      "BL1-BO": 2544.985600695133,
+      "BL5-cur": 2528.275482648013,
+      "A6": 2997.4126217174226
+     },
+     "rank_fluid": [
+      "Sublet",
+      "A9",
+      "BL5-cur",
+      "BL1-BO"
+     ],
+     "rank_replay": [
+      "Sublet",
+      "A9",
+      "BL5-cur",
+      "BL1-BO"
+     ],
+     "same_order": true,
+     "rank_fluid_with_a6": [
+      "Sublet",
+      "A9",
+      "BL5-cur",
+      "BL1-BO",
+      "A6"
+     ],
+     "rank_replay_with_a6": [
+      "Sublet",
+      "A9",
+      "BL5-cur",
+      "BL1-BO",
+      "A6"
+     ],
+     "same_order_with_a6": true,
+     "sublet_rank_fluid": 1,
+     "sublet_rank_replay": 1,
+     "margin_fluid": {
+      "usd": 7.392264709990286,
+      "relative": 0.005095687224247044,
+      "best": "BL5-cur"
+     },
+     "margin_replay": {
+      "usd": 12.976038950712336,
+      "relative": 0.005132367512863653,
+      "best": "BL5-cur"
+     },
+     "E": {
+      "Sublet": 0.4261923077454366,
+      "A9": 0.42635435304275615,
+      "BL1-BO": 0.39082402888442613,
+      "BL5-cur": 0.4262134629776454,
+      "A6": 0.2581718356747321
+     }
+    },
+    "3": {
+     "fluid": {
+      "Sublet": 1473.2825340337672,
+      "A9": 1474.6537219762488,
+      "BL1-BO": 1565.1610337416837,
+      "BL5-cur": 1525.9727209436514,
+      "A6": 2328.390635598522
+     },
+     "replay": {
+      "Sublet": 2555.225861326345,
+      "A9": 2560.0217303103655,
+      "BL1-BO": 2570.5842703058524,
+      "BL5-cur": 2579.335762501628,
+      "A6": 3077.3173935357054
+     },
+     "rank_fluid": [
+      "Sublet",
+      "A9",
+      "BL5-cur",
+      "BL1-BO"
+     ],
+     "rank_replay": [
+      "Sublet",
+      "A9",
+      "BL1-BO",
+      "BL5-cur"
+     ],
+     "same_order": false,
+     "rank_fluid_with_a6": [
+      "Sublet",
+      "A9",
+      "BL5-cur",
+      "BL1-BO",
+      "A6"
+     ],
+     "rank_replay_with_a6": [
+      "Sublet",
+      "A9",
+      "BL1-BO",
+      "BL5-cur",
+      "A6"
+     ],
+     "same_order_with_a6": false,
+     "sublet_rank_fluid": 1,
+     "sublet_rank_replay": 1,
+     "margin_fluid": {
+      "usd": 52.69018690988423,
+      "relative": 0.034528917972597155,
+      "best": "BL5-cur"
+     },
+     "margin_replay": {
+      "usd": 15.358408979507658,
+      "relative": 0.005974676324336291,
+      "best": "BL1-BO"
+     },
+     "E": {
+      "Sublet": 0.4234237543020842,
+      "A9": 0.4239682794421169,
+      "BL1-BO": 0.39112634749163144,
+      "BL5-cur": 0.40838539009607194,
+      "A6": 0.2433700077575355
+     }
+    },
+    "4": {
+     "fluid": {
+      "Sublet": 1458.9629206284383,
+      "A9": 1459.989239034844,
+      "BL1-BO": 1548.9367488203961,
+      "BL5-cur": 1484.2511260966157,
+      "A6": 2380.6714399563175
+     },
+     "replay": {
+      "Sublet": 2521.3786099202202,
+      "A9": 2523.811730557222,
+      "BL1-BO": 2539.4790768395433,
+      "BL5-cur": 2537.054652417207,
+      "A6": 3162.5932669860067
+     },
+     "rank_fluid": [
+      "Sublet",
+      "A9",
+      "BL5-cur",
+      "BL1-BO"
+     ],
+     "rank_replay": [
+      "Sublet",
+      "A9",
+      "BL5-cur",
+      "BL1-BO"
+     ],
+     "same_order": true,
+     "rank_fluid_with_a6": [
+      "Sublet",
+      "A9",
+      "BL5-cur",
+      "BL1-BO",
+      "A6"
+     ],
+     "rank_replay_with_a6": [
+      "Sublet",
+      "A9",
+      "BL5-cur",
+      "BL1-BO",
+      "A6"
+     ],
+     "same_order_with_a6": true,
+     "sublet_rank_fluid": 1,
+     "sublet_rank_replay": 1,
+     "margin_fluid": {
+      "usd": 25.288205468177466,
+      "relative": 0.017037686563649176,
+      "best": "BL5-cur"
+     },
+     "margin_replay": {
+      "usd": 15.67604249698661,
+      "relative": 0.0061788351630703295,
+      "best": "BL5-cur"
+     },
+     "E": {
+      "Sublet": 0.42136301351640254,
+      "A9": 0.4215142035525371,
+      "BL1-BO": 0.3900572905101098,
+      "BL5-cur": 0.4149707714485066,
+      "A6": 0.24724071703816378
+     }
+    }
+   },
+   "5": {
+    "1": {
+     "fluid": {
+      "Sublet": 1569.7476231594728,
+      "A9": 1575.7376379916486,
+      "BL1-BO": 1841.1765679712032,
+      "BL5-cur": 1604.5549913478098,
+      "A6": 2223.06365772876
+     },
+     "replay": {
+      "Sublet": 2302.8512945107636,
+      "A9": 2301.3998707544374,
+      "BL1-BO": 2453.758029286792,
+      "BL5-cur": 2294.592266604671,
+      "A6": 2772.5768721751424
+     },
+     "rank_fluid": [
+      "Sublet",
+      "A9",
+      "BL5-cur",
+      "BL1-BO"
+     ],
+     "rank_replay": [
+      "BL5-cur",
+      "A9",
+      "Sublet",
+      "BL1-BO"
+     ],
+     "same_order": false,
+     "rank_fluid_with_a6": [
+      "Sublet",
+      "A9",
+      "BL5-cur",
+      "BL1-BO",
+      "A6"
+     ],
+     "rank_replay_with_a6": [
+      "BL5-cur",
+      "A9",
+      "Sublet",
+      "BL1-BO",
+      "A6"
+     ],
+     "same_order_with_a6": false,
+     "sublet_rank_fluid": 1,
+     "sublet_rank_replay": 3,
+     "margin_fluid": {
+      "usd": 34.80736818833702,
+      "relative": 0.021692848407208025,
+      "best": "BL5-cur"
+     },
+     "margin_replay": {
+      "usd": -8.259027906092797,
+      "relative": -0.00359934443530299,
+      "best": "BL5-cur"
+     },
+     "E": {
+      "Sublet": 0.3183460751889484,
+      "A9": 0.31531340641159616,
+      "BL1-BO": 0.249650313520784,
+      "BL5-cur": 0.30072326369247093,
+      "A6": 0.19819584443668758
+     }
+    },
+    "2": {
+     "fluid": {
+      "Sublet": 1504.721203019898,
+      "A9": 1505.2683115748257,
+      "BL1-BO": 1719.9771565193967,
+      "BL5-cur": 1516.1892328862725,
+      "A6": 2046.7287302792608
+     },
+     "replay": {
+      "Sublet": 2218.4494268162935,
+      "A9": 2218.084028580516,
+      "BL1-BO": 2309.894374421757,
+      "BL5-cur": 2229.6371351440926,
+      "A6": 2615.90982554821
+     },
+     "rank_fluid": [
+      "Sublet",
+      "A9",
+      "BL5-cur",
+      "BL1-BO"
+     ],
+     "rank_replay": [
+      "A9",
+      "Sublet",
+      "BL5-cur",
+      "BL1-BO"
+     ],
+     "same_order": false,
+     "rank_fluid_with_a6": [
+      "Sublet",
+      "A9",
+      "BL5-cur",
+      "BL1-BO",
+      "A6"
+     ],
+     "rank_replay_with_a6": [
+      "A9",
+      "Sublet",
+      "BL5-cur",
+      "BL1-BO",
+      "A6"
+     ],
+     "same_order_with_a6": false,
+     "sublet_rank_fluid": 1,
+     "sublet_rank_replay": 2,
+     "margin_fluid": {
+      "usd": 11.468029866374536,
+      "relative": 0.007563719368026101,
+      "best": "BL5-cur"
+     },
+     "margin_replay": {
+      "usd": 11.1877083277991,
+      "relative": 0.005017726046743514,
+      "best": "BL5-cur"
+     },
+     "E": {
+      "Sublet": 0.3217239100287582,
+      "A9": 0.3213655153821488,
+      "BL1-BO": 0.2553870966719144,
+      "BL5-cur": 0.31998386240176824,
+      "A6": 0.21758437149096574
+     }
+    },
+    "3": {
+     "fluid": {
+      "Sublet": 1558.805089206512,
+      "A9": 1559.964783952902,
+      "BL1-BO": 1762.248834344825,
+      "BL5-cur": 1572.6993058023436,
+      "A6": 2111.6658385056735
+     },
+     "replay": {
+      "Sublet": 2275.9680326426965,
+      "A9": 2277.808201767045,
+      "BL1-BO": 2354.047277483088,
+      "BL5-cur": 2273.091411710941,
+      "A6": 2668.9098924359555
+     },
+     "rank_fluid": [
+      "Sublet",
+      "A9",
+      "BL5-cur",
+      "BL1-BO"
+     ],
+     "rank_replay": [
+      "BL5-cur",
+      "Sublet",
+      "A9",
+      "BL1-BO"
+     ],
+     "same_order": false,
+     "rank_fluid_with_a6": [
+      "Sublet",
+      "A9",
+      "BL5-cur",
+      "BL1-BO",
+      "A6"
+     ],
+     "rank_replay_with_a6": [
+      "BL5-cur",
+      "Sublet",
+      "A9",
+      "BL1-BO",
+      "A6"
+     ],
+     "same_order_with_a6": false,
+     "sublet_rank_fluid": 1,
+     "sublet_rank_replay": 2,
+     "margin_fluid": {
+      "usd": 13.894216595831494,
+      "relative": 0.008834630081268514,
+      "best": "BL5-cur"
+     },
+     "margin_replay": {
+      "usd": -2.8766209317554967,
+      "relative": -0.0012655104484294729,
+      "best": "BL5-cur"
+     },
+     "E": {
+      "Sublet": 0.31510237980076744,
+      "A9": 0.31514655942377623,
+      "BL1-BO": 0.2513961587768131,
+      "BL5-cur": 0.3081231587520789,
+      "A6": 0.20879088331516382
+     }
+    },
+    "4": {
+     "fluid": {
+      "Sublet": 1506.4174337303994,
+      "A9": 1506.9645422853268,
+      "BL1-BO": 1712.3892625976134,
+      "BL5-cur": 1519.9288366549667,
+      "A6": 2233.516269586636
+     },
+     "replay": {
+      "Sublet": 2220.1198680973157,
+      "A9": 2219.7434619340415,
+      "BL1-BO": 2302.610412814219,
+      "BL5-cur": 2230.6857320204776,
+      "A6": 2817.555129867597
+     },
+     "rank_fluid": [
+      "Sublet",
+      "A9",
+      "BL5-cur",
+      "BL1-BO"
+     ],
+     "rank_replay": [
+      "A9",
+      "Sublet",
+      "BL5-cur",
+      "BL1-BO"
+     ],
+     "same_order": false,
+     "rank_fluid_with_a6": [
+      "Sublet",
+      "A9",
+      "BL5-cur",
+      "BL1-BO",
+      "A6"
+     ],
+     "rank_replay_with_a6": [
+      "A9",
+      "Sublet",
+      "BL5-cur",
+      "BL1-BO",
+      "A6"
+     ],
+     "same_order_with_a6": false,
+     "sublet_rank_fluid": 1,
+     "sublet_rank_replay": 2,
+     "margin_fluid": {
+      "usd": 13.511402924567392,
+      "relative": 0.008889497059811732,
+      "best": "BL5-cur"
+     },
+     "margin_replay": {
+      "usd": 10.565863923161942,
+      "relative": 0.0047365990518044646,
+      "best": "BL5-cur"
+     },
+     "E": {
+      "Sublet": 0.321470225379575,
+      "A9": 0.32110869200519104,
+      "BL1-BO": 0.25632697000412047,
+      "BL5-cur": 0.31862708635417325,
+      "A6": 0.2072856903809389
+     }
+    }
+   }
+  },
+  "M": {
+   "60": {
+    "1": {
+     "fluid": {
+      "Sublet": 1438.4657854455163,
+      "A9": 1425.2243786266022,
+      "BL1-BO": 1720.5411161703528,
+      "BL5-cur": 1520.0071294726395,
+      "A6": 2658.024544421096
+     },
+     "replay": {
+      "Sublet": 2925.190829831016,
+      "A9": 2918.827706060923,
+      "BL1-BO": 3136.8141571222286,
+      "BL5-cur": 2972.046757046848,
+      "A6": 3632.3943123463205
+     },
+     "rank_fluid": [
+      "A9",
+      "Sublet",
+      "BL5-cur",
+      "BL1-BO"
+     ],
+     "rank_replay": [
+      "A9",
+      "Sublet",
+      "BL5-cur",
+      "BL1-BO"
+     ],
+     "same_order": true,
+     "rank_fluid_with_a6": [
+      "A9",
+      "Sublet",
+      "BL5-cur",
+      "BL1-BO",
+      "A6"
+     ],
+     "rank_replay_with_a6": [
+      "A9",
+      "Sublet",
+      "BL5-cur",
+      "BL1-BO",
+      "A6"
+     ],
+     "same_order_with_a6": true,
+     "sublet_rank_fluid": 2,
+     "sublet_rank_replay": 2,
+     "margin_fluid": {
+      "usd": 81.54134402712316,
+      "relative": 0.05364536944995357,
+      "best": "BL5-cur"
+     },
+     "margin_replay": {
+      "usd": 46.85592721583225,
+      "relative": 0.01576554174483792,
+      "best": "BL5-cur"
+     },
+     "E": {
+      "Sublet": 0.5082489078059176,
+      "A9": 0.5117134267065045,
+      "BL1-BO": 0.45150046193721305,
+      "BL5-cur": 0.4885655396003988,
+      "A6": 0.26824449223846436
+     }
+    },
+    "2": {
+     "fluid": {
+      "Sublet": 1369.7329268424471,
+      "A9": 1364.2858263248495,
+      "BL1-BO": 1477.8968188535368,
+      "BL5-cur": 1386.2135171520727,
+      "A6": 2540.8307204294715
+     },
+     "replay": {
+      "Sublet": 2857.5608747329175,
+      "A9": 2855.675144835309,
+      "BL1-BO": 2901.3002297918874,
+      "BL5-cur": 2870.7246421497853,
+      "A6": 3513.1489777277493
+     },
+     "rank_fluid": [
+      "A9",
+      "Sublet",
+      "BL5-cur",
+      "BL1-BO"
+     ],
+     "rank_replay": [
+      "A9",
+      "Sublet",
+      "BL5-cur",
+      "BL1-BO"
+     ],
+     "same_order": true,
+     "rank_fluid_with_a6": [
+      "A9",
+      "Sublet",
+      "BL5-cur",
+      "BL1-BO",
+      "A6"
+     ],
+     "rank_replay_with_a6": [
+      "A9",
+      "Sublet",
+      "BL5-cur",
+      "BL1-BO",
+      "A6"
+     ],
+     "same_order_with_a6": true,
+     "sublet_rank_fluid": 2,
+     "sublet_rank_replay": 2,
+     "margin_fluid": {
+      "usd": 16.48059030962554,
+      "relative": 0.011888926277017079,
+      "best": "BL5-cur"
+     },
+     "margin_replay": {
+      "usd": 13.163767416867813,
+      "relative": 0.004585520750959217,
+      "best": "BL5-cur"
+     },
+     "E": {
+      "Sublet": 0.5206636054707078,
+      "A9": 0.5222545432759544,
+      "BL1-BO": 0.4906087954366765,
+      "BL5-cur": 0.5171206960086615,
+      "A6": 0.276765449874875
+     }
+    },
+    "3": {
+     "fluid": {
+      "Sublet": 1409.3723606299595,
+      "A9": 1389.1301900849476,
+      "BL1-BO": 1435.9790448810381,
+      "BL5-cur": 1448.0274364108086,
+      "A6": 2581.872631364632
+     },
+     "replay": {
+      "Sublet": 2906.1504474255994,
+      "A9": 2898.680492647367,
+      "BL1-BO": 2888.767322722398,
+      "BL5-cur": 2928.591619801737,
+      "A6": 3579.1009763934157
+     },
+     "rank_fluid": [
+      "A9",
+      "Sublet",
+      "BL1-BO",
+      "BL5-cur"
+     ],
+     "rank_replay": [
+      "BL1-BO",
+      "A9",
+      "Sublet",
+      "BL5-cur"
+     ],
+     "same_order": false,
+     "rank_fluid_with_a6": [
+      "A9",
+      "Sublet",
+      "BL1-BO",
+      "BL5-cur",
+      "A6"
+     ],
+     "rank_replay_with_a6": [
+      "BL1-BO",
+      "A9",
+      "Sublet",
+      "BL5-cur",
+      "A6"
+     ],
+     "same_order_with_a6": false,
+     "sublet_rank_fluid": 2,
+     "sublet_rank_replay": 3,
+     "margin_fluid": {
+      "usd": 26.606684251078605,
+      "relative": 0.018528602033522572,
+      "best": "BL1-BO"
+     },
+     "margin_replay": {
+      "usd": -17.383124703201247,
+      "relative": -0.006017488693696261,
+      "best": "BL1-BO"
+     },
+     "E": {
+      "Sublet": 0.5150380594100192,
+      "A9": 0.5207715394613036,
+      "BL1-BO": 0.5029094127498785,
+      "BL5-cur": 0.5055550160630321,
+      "A6": 0.2786253731331351
+     }
+    },
+    "4": {
+     "fluid": {
+      "Sublet": 1389.8538737561005,
+      "A9": 1384.4067732385029,
+      "BL1-BO": 1460.4125778424877,
+      "BL5-cur": 1421.9117423031976,
+      "A6": 2640.72434023362
+     },
+     "replay": {
+      "Sublet": 2876.5198191517215,
+      "A9": 2874.7164655500897,
+      "BL1-BO": 2888.36021903136,
+      "BL5-cur": 2893.0640510080475,
+      "A6": 3629.064470012153
+     },
+     "rank_fluid": [
+      "A9",
+      "Sublet",
+      "BL5-cur",
+      "BL1-BO"
+     ],
+     "rank_replay": [
+      "A9",
+      "Sublet",
+      "BL1-BO",
+      "BL5-cur"
+     ],
+     "same_order": false,
+     "rank_fluid_with_a6": [
+      "A9",
+      "Sublet",
+      "BL5-cur",
+      "BL1-BO",
+      "A6"
+     ],
+     "rank_replay_with_a6": [
+      "A9",
+      "Sublet",
+      "BL1-BO",
+      "BL5-cur",
+      "A6"
+     ],
+     "same_order_with_a6": false,
+     "sublet_rank_fluid": 2,
+     "sublet_rank_replay": 2,
+     "margin_fluid": {
+      "usd": 32.05786854709709,
+      "relative": 0.022545610668613013,
+      "best": "BL5-cur"
+     },
+     "margin_replay": {
+      "usd": 11.840399879638426,
+      "relative": 0.004099350143940571,
+      "best": "BL1-BO"
+     },
+     "E": {
+      "Sublet": 0.5168279861996693,
+      "A9": 0.5184197155340707,
+      "BL1-BO": 0.4943800401972537,
+      "BL5-cur": 0.5085101065053321,
+      "A6": 0.27234019619806404
+     }
+    }
+   },
+   "15": {
+    "1": {
+     "fluid": {
+      "Sublet": 1496.9294397565477,
+      "A9": 1493.5904197954242,
+      "BL1-BO": 1689.1270887037404,
+      "BL5-cur": 1571.7382693207721,
+      "A6": 2336.8976474201013
+     },
+     "replay": {
+      "Sublet": 2368.4291569990555,
+      "A9": 2371.5356577388607,
+      "BL1-BO": 2487.365163331786,
+      "BL5-cur": 2384.539112444523,
+      "A6": 2938.1125817108405
+     },
+     "rank_fluid": [
+      "A9",
+      "Sublet",
+      "BL5-cur",
+      "BL1-BO"
+     ],
+     "rank_replay": [
+      "Sublet",
+      "A9",
+      "BL5-cur",
+      "BL1-BO"
+     ],
+     "same_order": false,
+     "rank_fluid_with_a6": [
+      "A9",
+      "Sublet",
+      "BL5-cur",
+      "BL1-BO",
+      "A6"
+     ],
+     "rank_replay_with_a6": [
+      "Sublet",
+      "A9",
+      "BL5-cur",
+      "BL1-BO",
+      "A6"
+     ],
+     "same_order_with_a6": false,
+     "sublet_rank_fluid": 2,
+     "sublet_rank_replay": 1,
+     "margin_fluid": {
+      "usd": 74.80882956422442,
+      "relative": 0.047596238524212506,
+      "best": "BL5-cur"
+     },
+     "margin_replay": {
+      "usd": 16.109955445467676,
+      "relative": 0.006756003858939629,
+      "best": "BL5-cur"
+     },
+     "E": {
+      "Sublet": 0.3679652881603397,
+      "A9": 0.37020115429363304,
+      "BL1-BO": 0.3209171240296774,
+      "BL5-cur": 0.34086286900553453,
+      "A6": 0.20462624136092714
+     }
+    },
+    "2": {
+     "fluid": {
+      "Sublet": 1426.1988238231925,
+      "A9": 1427.1242318519103,
+      "BL1-BO": 1530.9142240888941,
+      "BL5-cur": 1441.1231807203412,
+      "A6": 2221.5429970741307
+     },
+     "replay": {
+      "Sublet": 2280.0454510124396,
+      "A9": 2282.6979555205776,
+      "BL1-BO": 2305.321071106112,
+      "BL5-cur": 2293.4096900796353,
+      "A6": 2822.715084645769
+     },
+     "rank_fluid": [
+      "Sublet",
+      "A9",
+      "BL5-cur",
+      "BL1-BO"
+     ],
+     "rank_replay": [
+      "Sublet",
+      "A9",
+      "BL5-cur",
+      "BL1-BO"
+     ],
+     "same_order": true,
+     "rank_fluid_with_a6": [
+      "Sublet",
+      "A9",
+      "BL5-cur",
+      "BL1-BO",
+      "A6"
+     ],
+     "rank_replay_with_a6": [
+      "Sublet",
+      "A9",
+      "BL5-cur",
+      "BL1-BO",
+      "A6"
+     ],
+     "same_order_with_a6": true,
+     "sublet_rank_fluid": 1,
+     "sublet_rank_replay": 1,
+     "margin_fluid": {
+      "usd": 14.924356897148755,
+      "relative": 0.010356059146650365,
+      "best": "BL5-cur"
+     },
+     "margin_replay": {
+      "usd": 13.36423906719574,
+      "relative": 0.005827235807454745,
+      "best": "BL5-cur"
+     },
+     "E": {
+      "Sublet": 0.3744866694697257,
+      "A9": 0.3748081175608494,
+      "BL1-BO": 0.3359214717304653,
+      "BL5-cur": 0.3716241860518605,
+      "A6": 0.21297653838381678
+     }
+    },
+    "3": {
+     "fluid": {
+      "Sublet": 1463.4410561286027,
+      "A9": 1470.7091992944174,
+      "BL1-BO": 1544.622766568586,
+      "BL5-cur": 1525.6867244363311,
+      "A6": 2309.799139195989
+     },
+     "replay": {
+      "Sublet": 2324.066266923343,
+      "A9": 2330.5086742583712,
+      "BL1-BO": 2330.654825867744,
+      "BL5-cur": 2352.0275192988265,
+      "A6": 2906.2053657616666
+     },
+     "rank_fluid": [
+      "Sublet",
+      "A9",
+      "BL5-cur",
+      "BL1-BO"
+     ],
+     "rank_replay": [
+      "Sublet",
+      "A9",
+      "BL1-BO",
+      "BL5-cur"
+     ],
+     "same_order": false,
+     "rank_fluid_with_a6": [
+      "Sublet",
+      "A9",
+      "BL5-cur",
+      "BL1-BO",
+      "A6"
+     ],
+     "rank_replay_with_a6": [
+      "Sublet",
+      "A9",
+      "BL1-BO",
+      "BL5-cur",
+      "A6"
+     ],
+     "same_order_with_a6": false,
+     "sublet_rank_fluid": 1,
+     "sublet_rank_replay": 1,
+     "margin_fluid": {
+      "usd": 62.245668307728465,
+      "relative": 0.04079845967770696,
+      "best": "BL5-cur"
+     },
+     "margin_replay": {
+      "usd": 6.588558944401029,
+      "relative": 0.002826913222530922,
+      "best": "BL1-BO"
+     },
+     "E": {
+      "Sublet": 0.37031009960574723,
+      "A9": 0.36893210673741195,
+      "BL1-BO": 0.33725803176646046,
+      "BL5-cur": 0.3513312612553273,
+      "A6": 0.20521819744468392
+     }
+    },
+    "4": {
+     "fluid": {
+      "Sublet": 1447.9285899369002,
+      "A9": 1448.853997965618,
+      "BL1-BO": 1532.261072399846,
+      "BL5-cur": 1464.2609527561954,
+      "A6": 2368.0358868347867
+     },
+     "replay": {
+      "Sublet": 2294.8967755871377,
+      "A9": 2297.6304986999285,
+      "BL1-BO": 2303.855903930597,
+      "BL5-cur": 2299.0467525701642,
+      "A6": 2980.7294982527633
+     },
+     "rank_fluid": [
+      "Sublet",
+      "A9",
+      "BL5-cur",
+      "BL1-BO"
+     ],
+     "rank_replay": [
+      "Sublet",
+      "A9",
+      "BL5-cur",
+      "BL1-BO"
+     ],
+     "same_order": true,
+     "rank_fluid_with_a6": [
+      "Sublet",
+      "A9",
+      "BL5-cur",
+      "BL1-BO",
+      "A6"
+     ],
+     "rank_replay_with_a6": [
+      "Sublet",
+      "A9",
+      "BL5-cur",
+      "BL1-BO",
+      "A6"
+     ],
+     "same_order_with_a6": true,
+     "sublet_rank_fluid": 1,
+     "sublet_rank_replay": 1,
+     "margin_fluid": {
+      "usd": 16.332362819295213,
+      "relative": 0.011153997372225638,
+      "best": "BL5-cur"
+     },
+     "margin_replay": {
+      "usd": 4.1499769830265905,
+      "relative": 0.0018050859463328542,
+      "best": "BL5-cur"
+     },
+     "E": {
+      "Sublet": 0.36906591819736423,
+      "A9": 0.3694138379580942,
+      "BL1-BO": 0.33491453619748396,
+      "BL5-cur": 0.36310083684933336,
+      "A6": 0.20555156439962896
+     }
+    }
+   },
+   "5": {
+    "1": {
+     "fluid": {
+      "Sublet": 1557.2805486336615,
+      "A9": 1563.0880749909686,
+      "BL1-BO": 1837.218067641833,
+      "BL5-cur": 1597.0618285558728,
+      "A6": 2169.0490997345332
+     },
+     "replay": {
+      "Sublet": 2106.644498865582,
+      "A9": 2106.955319649911,
+      "BL1-BO": 2260.777988938468,
+      "BL5-cur": 2105.76009029074,
+      "A6": 2580.0358595669945
+     },
+     "rank_fluid": [
+      "Sublet",
+      "A9",
+      "BL5-cur",
+      "BL1-BO"
+     ],
+     "rank_replay": [
+      "BL5-cur",
+      "Sublet",
+      "A9",
+      "BL1-BO"
+     ],
+     "same_order": false,
+     "rank_fluid_with_a6": [
+      "Sublet",
+      "A9",
+      "BL5-cur",
+      "BL1-BO",
+      "A6"
+     ],
+     "rank_replay_with_a6": [
+      "BL5-cur",
+      "Sublet",
+      "A9",
+      "BL1-BO",
+      "A6"
+     ],
+     "same_order_with_a6": false,
+     "sublet_rank_fluid": 1,
+     "sublet_rank_replay": 2,
+     "margin_fluid": {
+      "usd": 39.7812799222113,
+      "relative": 0.024909041848544537,
+      "best": "BL5-cur"
+     },
+     "margin_replay": {
+      "usd": -0.8844085748419275,
+      "relative": -0.00041999493623217927,
+      "best": "BL5-cur"
+     },
+     "E": {
+      "Sublet": 0.2607767710820456,
+      "A9": 0.2581294627307572,
+      "BL1-BO": 0.1873513999910776,
+      "BL5-cur": 0.24157465234543027,
+      "A6": 0.15929497968351375
+     }
+    },
+    "2": {
+     "fluid": {
+      "Sublet": 1495.6078809059172,
+      "A9": 1496.4526664302398,
+      "BL1-BO": 1703.1787278937745,
+      "BL5-cur": 1509.7668685573499,
+      "A6": 1996.225631924654
+     },
+     "replay": {
+      "Sublet": 2017.3421731518417,
+      "A9": 2016.8636340123533,
+      "BL1-BO": 2112.6644997691783,
+      "BL5-cur": 2034.4601897394157,
+      "A6": 2414.158177603244
+     },
+     "rank_fluid": [
+      "Sublet",
+      "A9",
+      "BL5-cur",
+      "BL1-BO"
+     ],
+     "rank_replay": [
+      "A9",
+      "Sublet",
+      "BL5-cur",
+      "BL1-BO"
+     ],
+     "same_order": false,
+     "rank_fluid_with_a6": [
+      "Sublet",
+      "A9",
+      "BL5-cur",
+      "BL1-BO",
+      "A6"
+     ],
+     "rank_replay_with_a6": [
+      "A9",
+      "Sublet",
+      "BL5-cur",
+      "BL1-BO",
+      "A6"
+     ],
+     "same_order_with_a6": false,
+     "sublet_rank_fluid": 1,
+     "sublet_rank_replay": 2,
+     "margin_fluid": {
+      "usd": 14.158987651432653,
+      "relative": 0.009378260939692101,
+      "best": "BL5-cur"
+     },
+     "margin_replay": {
+      "usd": 17.118016587573948,
+      "relative": 0.008414033694985456,
+      "best": "BL5-cur"
+     },
+     "E": {
+      "Sublet": 0.25862458991316317,
+      "A9": 0.2580298235368579,
+      "BL1-BO": 0.19382432559459517,
+      "BL5-cur": 0.25790296798546414,
+      "A6": 0.1731173000824287
+     }
+    },
+    "3": {
+     "fluid": {
+      "Sublet": 1548.3633378762872,
+      "A9": 1555.2981380202646,
+      "BL1-BO": 1750.9231131571896,
+      "BL5-cur": 1570.1722019166482,
+      "A6": 2110.4544881620645
+     },
+     "replay": {
+      "Sublet": 2075.243344678459,
+      "A9": 2074.7502687565534,
+      "BL1-BO": 2155.1617270186057,
+      "BL5-cur": 2082.5073982266845,
+      "A6": 2537.3482353209642
+     },
+     "rank_fluid": [
+      "Sublet",
+      "A9",
+      "BL5-cur",
+      "BL1-BO"
+     ],
+     "rank_replay": [
+      "A9",
+      "Sublet",
+      "BL5-cur",
+      "BL1-BO"
+     ],
+     "same_order": false,
+     "rank_fluid_with_a6": [
+      "Sublet",
+      "A9",
+      "BL5-cur",
+      "BL1-BO",
+      "A6"
+     ],
+     "rank_replay_with_a6": [
+      "A9",
+      "Sublet",
+      "BL5-cur",
+      "BL1-BO",
+      "A6"
+     ],
+     "same_order_with_a6": false,
+     "sublet_rank_fluid": 1,
+     "sublet_rank_replay": 2,
+     "margin_fluid": {
+      "usd": 21.80886404036096,
+      "relative": 0.013889472768489803,
+      "best": "BL5-cur"
+     },
+     "margin_replay": {
+      "usd": 7.264053548225547,
+      "relative": 0.00348812856771174,
+      "best": "BL5-cur"
+     },
+     "E": {
+      "Sublet": 0.2538883009326346,
+      "A9": 0.2503685087109827,
+      "BL1-BO": 0.18756764691651664,
+      "BL5-cur": 0.2460184279519509,
+      "A6": 0.16824405149295535
+     }
+    },
+    "4": {
+     "fluid": {
+      "Sublet": 1501.1047797928043,
+      "A9": 1501.9495653171268,
+      "BL1-BO": 1706.7630777325862,
+      "BL5-cur": 1510.2645188392028,
+      "A6": 2166.5106331307425
+     },
+     "replay": {
+      "Sublet": 2022.694279144346,
+      "A9": 2022.3682561093376,
+      "BL1-BO": 2110.8529801893733,
+      "BL5-cur": 2033.5575336706972,
+      "A6": 2597.8444571782175
+     },
+     "rank_fluid": [
+      "Sublet",
+      "A9",
+      "BL5-cur",
+      "BL1-BO"
+     ],
+     "rank_replay": [
+      "A9",
+      "Sublet",
+      "BL5-cur",
+      "BL1-BO"
+     ],
+     "same_order": false,
+     "rank_fluid_with_a6": [
+      "Sublet",
+      "A9",
+      "BL5-cur",
+      "BL1-BO",
+      "A6"
+     ],
+     "rank_replay_with_a6": [
+      "A9",
+      "Sublet",
+      "BL5-cur",
+      "BL1-BO",
+      "A6"
+     ],
+     "same_order_with_a6": false,
+     "sublet_rank_fluid": 1,
+     "sublet_rank_replay": 2,
+     "margin_fluid": {
+      "usd": 9.1597390463985,
+      "relative": 0.00606498989557056,
+      "best": "BL5-cur"
+     },
+     "margin_replay": {
+      "usd": 10.863254526351284,
+      "relative": 0.005341995171753236,
+      "best": "BL5-cur"
+     },
+     "E": {
+      "Sublet": 0.25786867779751077,
+      "A9": 0.257331318972243,
+      "BL1-BO": 0.19143441359925242,
+      "BL5-cur": 0.25732884669700895,
+      "A6": 0.16603527699883558
+     }
+    }
+   }
+  },
+  "L": {
+   "60": {
+    "1": {
+     "fluid": {
+      "Sublet": 1699.882086465177,
+      "A9": 1702.1888514292336,
+      "BL1-BO": 2046.6325997098334,
+      "BL5-cur": 1775.004943020531,
+      "A6": 3174.865187667633
+     },
+     "replay": {
+      "Sublet": 2923.5494092819326,
+      "A9": 2929.186216521974,
+      "BL1-BO": 3012.3207456945206,
+      "BL5-cur": 2973.772061166899,
+      "A6": 4064.608375685882
+     },
+     "rank_fluid": [
+      "Sublet",
+      "A9",
+      "BL5-cur",
+      "BL1-BO"
+     ],
+     "rank_replay": [
+      "Sublet",
+      "A9",
+      "BL5-cur",
+      "BL1-BO"
+     ],
+     "same_order": true,
+     "rank_fluid_with_a6": [
+      "Sublet",
+      "A9",
+      "BL5-cur",
+      "BL1-BO",
+      "A6"
+     ],
+     "rank_replay_with_a6": [
+      "Sublet",
+      "A9",
+      "BL5-cur",
+      "BL1-BO",
+      "A6"
+     ],
+     "same_order_with_a6": true,
+     "sublet_rank_fluid": 1,
+     "sublet_rank_replay": 1,
+     "margin_fluid": {
+      "usd": 75.12285655535402,
+      "relative": 0.04232261822748349,
+      "best": "BL5-cur"
+     },
+     "margin_replay": {
+      "usd": 50.22265188496658,
+      "relative": 0.016888534444452128,
+      "best": "BL5-cur"
+     },
+     "E": {
+      "Sublet": 0.418555376191609,
+      "A9": 0.4188867741394876,
+      "BL1-BO": 0.32057945601076365,
+      "BL5-cur": 0.4031133165182726,
+      "A6": 0.2189001019976763
+     }
+    },
+    "2": {
+     "fluid": {
+      "Sublet": 1608.923217680564,
+      "A9": 1602.168482356426,
+      "BL1-BO": 1932.0687121514904,
+      "BL5-cur": 1626.002954982107,
+      "A6": 3072.9659022609985
+     },
+     "replay": {
+      "Sublet": 2807.24707522147,
+      "A9": 2801.480431340518,
+      "BL1-BO": 2876.9827207248804,
+      "BL5-cur": 2845.530658301229,
+      "A6": 3939.3461409060824
+     },
+     "rank_fluid": [
+      "A9",
+      "Sublet",
+      "BL5-cur",
+      "BL1-BO"
+     ],
+     "rank_replay": [
+      "A9",
+      "Sublet",
+      "BL5-cur",
+      "BL1-BO"
+     ],
+     "same_order": true,
+     "rank_fluid_with_a6": [
+      "A9",
+      "Sublet",
+      "BL5-cur",
+      "BL1-BO",
+      "A6"
+     ],
+     "rank_replay_with_a6": [
+      "A9",
+      "Sublet",
+      "BL5-cur",
+      "BL1-BO",
+      "A6"
+     ],
+     "same_order_with_a6": true,
+     "sublet_rank_fluid": 2,
+     "sublet_rank_replay": 2,
+     "margin_fluid": {
+      "usd": 17.07973730154299,
+      "relative": 0.010504124392400591,
+      "best": "BL5-cur"
+     },
+     "margin_replay": {
+      "usd": 38.283583079758955,
+      "relative": 0.013453934494810227,
+      "best": "BL5-cur"
+     },
+     "E": {
+      "Sublet": 0.4268679690213472,
+      "A9": 0.4280993490324746,
+      "BL1-BO": 0.32843923662332974,
+      "BL5-cur": 0.42857654678975604,
+      "A6": 0.21992995986024452
+     }
+    },
+    "3": {
+     "fluid": {
+      "Sublet": 1652.8440855987747,
+      "A9": 1651.439835868217,
+      "BL1-BO": 1994.2770537794631,
+      "BL5-cur": 1821.1482840318731,
+      "A6": 3078.672177378924
+     },
+     "replay": {
+      "Sublet": 2898.856374184377,
+      "A9": 2898.7580921739527,
+      "BL1-BO": 3010.1100583138427,
+      "BL5-cur": 3027.741927304912,
+      "A6": 3976.8602379819076
+     },
+     "rank_fluid": [
+      "A9",
+      "Sublet",
+      "BL5-cur",
+      "BL1-BO"
+     ],
+     "rank_replay": [
+      "A9",
+      "Sublet",
+      "BL1-BO",
+      "BL5-cur"
+     ],
+     "same_order": false,
+     "rank_fluid_with_a6": [
+      "A9",
+      "Sublet",
+      "BL5-cur",
+      "BL1-BO",
+      "A6"
+     ],
+     "rank_replay_with_a6": [
+      "A9",
+      "Sublet",
+      "BL1-BO",
+      "BL5-cur",
+      "A6"
+     ],
+     "same_order_with_a6": false,
+     "sublet_rank_fluid": 2,
+     "sublet_rank_replay": 2,
+     "margin_fluid": {
+      "usd": 168.30419843309846,
+      "relative": 0.09241652637998635,
+      "best": "BL5-cur"
+     },
+     "margin_replay": {
+      "usd": 111.25368412946591,
+      "relative": 0.0369600054397301,
+      "best": "BL1-BO"
+     },
+     "E": {
+      "Sublet": 0.42982891449259214,
+      "A9": 0.4302940144171523,
+      "BL1-BO": 0.3374737085538372,
+      "BL5-cur": 0.39851271087264223,
+      "A6": 0.2258535645846023
+     }
+    },
+    "4": {
+     "fluid": {
+      "Sublet": 1623.9151138815296,
+      "A9": 1617.1603785573914,
+      "BL1-BO": 1981.21039294303,
+      "BL5-cur": 1663.8339705247254,
+      "A6": 3113.9611744271406
+     },
+     "replay": {
+      "Sublet": 2857.408788721856,
+      "A9": 2852.0779964277103,
+      "BL1-BO": 2951.0558665974954,
+      "BL5-cur": 2905.611980003503,
+      "A6": 4073.9306713378837
+     },
+     "rank_fluid": [
+      "A9",
+      "Sublet",
+      "BL5-cur",
+      "BL1-BO"
+     ],
+     "rank_replay": [
+      "A9",
+      "Sublet",
+      "BL5-cur",
+      "BL1-BO"
+     ],
+     "same_order": true,
+     "rank_fluid_with_a6": [
+      "A9",
+      "Sublet",
+      "BL5-cur",
+      "BL1-BO",
+      "A6"
+     ],
+     "rank_replay_with_a6": [
+      "A9",
+      "Sublet",
+      "BL5-cur",
+      "BL1-BO",
+      "A6"
+     ],
+     "same_order_with_a6": true,
+     "sublet_rank_fluid": 2,
+     "sublet_rank_replay": 2,
+     "margin_fluid": {
+      "usd": 39.918856643195795,
+      "relative": 0.02399209136871183,
+      "best": "BL5-cur"
+     },
+     "margin_replay": {
+      "usd": 48.20319128164692,
+      "relative": 0.016589686308214082,
+      "best": "BL5-cur"
+     },
+     "E": {
+      "Sublet": 0.4316826068810683,
+      "A9": 0.4329887259103994,
+      "BL1-BO": 0.3286435491215138,
+      "BL5-cur": 0.4273722775183769,
+      "A6": 0.23563717067268797
+     }
+    }
+   },
+   "15": {
+    "1": {
+     "fluid": {
+      "Sublet": 1713.3013474767915,
+      "A9": 1714.796750765855,
+      "BL1-BO": 2169.926951729366,
+      "BL5-cur": 1741.6790274812197,
+      "A6": 2998.2075436856376
+     },
+     "replay": {
+      "Sublet": 2425.282728711952,
+      "A9": 2423.8001962808144,
+      "BL1-BO": 2642.4361731315544,
+      "BL5-cur": 2420.187977093036,
+      "A6": 3494.0540518408743
+     },
+     "rank_fluid": [
+      "Sublet",
+      "A9",
+      "BL5-cur",
+      "BL1-BO"
+     ],
+     "rank_replay": [
+      "BL5-cur",
+      "A9",
+      "Sublet",
+      "BL1-BO"
+     ],
+     "same_order": false,
+     "rank_fluid_with_a6": [
+      "Sublet",
+      "A9",
+      "BL5-cur",
+      "BL1-BO",
+      "A6"
+     ],
+     "rank_replay_with_a6": [
+      "BL5-cur",
+      "A9",
+      "Sublet",
+      "BL1-BO",
+      "A6"
+     ],
+     "same_order_with_a6": false,
+     "sublet_rank_fluid": 1,
+     "sublet_rank_replay": 3,
+     "margin_fluid": {
+      "usd": 28.377680004428157,
+      "relative": 0.016293289151829184,
+      "best": "BL5-cur"
+     },
+     "margin_replay": {
+      "usd": -5.094751618916234,
+      "relative": -0.0021051057468005857,
+      "best": "BL5-cur"
+     },
+     "E": {
+      "Sublet": 0.2935663429283101,
+      "A9": 0.29251728199497856,
+      "BL1-BO": 0.17881575578123315,
+      "BL5-cur": 0.280353822113766,
+      "A6": 0.14191151619248576
+     }
+    },
+    "2": {
+     "fluid": {
+      "Sublet": 1601.7465396852826,
+      "A9": 1598.1391243032049,
+      "BL1-BO": 2111.397502021554,
+      "BL5-cur": 1573.8843370349164,
+      "A6": 2811.279775425023
+     },
+     "replay": {
+      "Sublet": 2299.3596581527563,
+      "A9": 2295.395975802116,
+      "BL1-BO": 2555.9716067813697,
+      "BL5-cur": 2294.7956730694195,
+      "A6": 3291.803871656496
+     },
+     "rank_fluid": [
+      "BL5-cur",
+      "A9",
+      "Sublet",
+      "BL1-BO"
+     ],
+     "rank_replay": [
+      "BL5-cur",
+      "A9",
+      "Sublet",
+      "BL1-BO"
+     ],
+     "same_order": true,
+     "rank_fluid_with_a6": [
+      "BL5-cur",
+      "A9",
+      "Sublet",
+      "BL1-BO",
+      "A6"
+     ],
+     "rank_replay_with_a6": [
+      "BL5-cur",
+      "A9",
+      "Sublet",
+      "BL1-BO",
+      "A6"
+     ],
+     "same_order_with_a6": true,
+     "sublet_rank_fluid": 3,
+     "sublet_rank_replay": 3,
+     "margin_fluid": {
+      "usd": -27.86220265036627,
+      "relative": -0.01770282732647091,
+      "best": "BL5-cur"
+     },
+     "margin_replay": {
+      "usd": -4.5639850833367746,
+      "relative": -0.0019888415935664485,
+      "best": "BL5-cur"
+     },
+     "E": {
+      "Sublet": 0.30339451942368917,
+      "A9": 0.30376321072674956,
+      "BL1-BO": 0.17393546296848333,
+      "BL5-cur": 0.31415055575307205,
+      "A6": 0.14597591927299858
+     }
+    },
+    "3": {
+     "fluid": {
+      "Sublet": 1693.8362387517254,
+      "A9": 1705.9070100127806,
+      "BL1-BO": 2159.1833781808155,
+      "BL5-cur": 1682.6778464542735,
+      "A6": 3081.9838527212846
+     },
+     "replay": {
+      "Sublet": 2423.3208532484823,
+      "A9": 2428.160365383606,
+      "BL1-BO": 2638.666399155505,
+      "BL5-cur": 2391.373178677078,
+      "A6": 3562.881900620076
+     },
+     "rank_fluid": [
+      "BL5-cur",
+      "Sublet",
+      "A9",
+      "BL1-BO"
+     ],
+     "rank_replay": [
+      "BL5-cur",
+      "Sublet",
+      "A9",
+      "BL1-BO"
+     ],
+     "same_order": true,
+     "rank_fluid_with_a6": [
+      "BL5-cur",
+      "Sublet",
+      "A9",
+      "BL1-BO",
+      "A6"
+     ],
+     "rank_replay_with_a6": [
+      "BL5-cur",
+      "Sublet",
+      "A9",
+      "BL1-BO",
+      "A6"
+     ],
+     "same_order_with_a6": true,
+     "sublet_rank_fluid": 2,
+     "sublet_rank_replay": 2,
+     "margin_fluid": {
+      "usd": -11.158392297451883,
+      "relative": -0.006631330127133227,
+      "best": "BL5-cur"
+     },
+     "margin_replay": {
+      "usd": -31.94767457140415,
+      "relative": -0.013359552100135954,
+      "best": "BL5-cur"
+     },
+     "E": {
+      "Sublet": 0.3010268382409521,
+      "A9": 0.29744878701894234,
+      "BL1-BO": 0.18171414966596244,
+      "BL5-cur": 0.29635497234056085,
+      "A6": 0.13497445644075293
+     }
+    },
+    "4": {
+     "fluid": {
+      "Sublet": 1656.8037124540863,
+      "A9": 1653.1962970720087,
+      "BL1-BO": 2083.173569085516,
+      "BL5-cur": 1583.0934796291558,
+      "A6": 2957.304736791988
+     },
+     "replay": {
+      "Sublet": 2347.172986466877,
+      "A9": 2342.3781235676256,
+      "BL1-BO": 2528.099089541065,
+      "BL5-cur": 2315.6199879910264,
+      "A6": 3488.878602628671
+     },
+     "rank_fluid": [
+      "BL5-cur",
+      "A9",
+      "Sublet",
+      "BL1-BO"
+     ],
+     "rank_replay": [
+      "BL5-cur",
+      "A9",
+      "Sublet",
+      "BL1-BO"
+     ],
+     "same_order": true,
+     "rank_fluid_with_a6": [
+      "BL5-cur",
+      "A9",
+      "Sublet",
+      "BL1-BO",
+      "A6"
+     ],
+     "rank_replay_with_a6": [
+      "BL5-cur",
+      "A9",
+      "Sublet",
+      "BL1-BO",
+      "A6"
+     ],
+     "same_order_with_a6": true,
+     "sublet_rank_fluid": 3,
+     "sublet_rank_replay": 3,
+     "margin_fluid": {
+      "usd": -73.71023282493047,
+      "relative": -0.046560884605625,
+      "best": "BL5-cur"
+     },
+     "margin_replay": {
+      "usd": -31.552998475850472,
+      "relative": -0.013626155690262917,
+      "best": "BL5-cur"
+     },
+     "E": {
+      "Sublet": 0.2941279905628008,
+      "A9": 0.2942231314242036,
+      "BL1-BO": 0.1759921208374462,
+      "BL5-cur": 0.31634141705495994,
+      "A6": 0.1523623852765105
+     }
+    }
+   },
+   "5": {
+    "1": {
+     "fluid": {
+      "Sublet": 1742.9359389317005,
+      "A9": 1735.3654845757128,
+      "BL1-BO": 2415.339891770348,
+      "BL5-cur": 1649.0172502396472,
+      "A6": 2844.0654928168533
+     },
+     "replay": {
+      "Sublet": 2207.366232656005,
+      "A9": 2194.845667796303,
+      "BL1-BO": 2663.1552094734575,
+      "BL5-cur": 2152.2839981007355,
+      "A6": 3119.381459819047
+     },
+     "rank_fluid": [
+      "BL5-cur",
+      "A9",
+      "Sublet",
+      "BL1-BO"
+     ],
+     "rank_replay": [
+      "BL5-cur",
+      "A9",
+      "Sublet",
+      "BL1-BO"
+     ],
+     "same_order": true,
+     "rank_fluid_with_a6": [
+      "BL5-cur",
+      "A9",
+      "Sublet",
+      "BL1-BO",
+      "A6"
+     ],
+     "rank_replay_with_a6": [
+      "BL5-cur",
+      "A9",
+      "Sublet",
+      "BL1-BO",
+      "A6"
+     ],
+     "same_order_with_a6": true,
+     "sublet_rank_fluid": 3,
+     "sublet_rank_replay": 3,
+     "margin_fluid": {
+      "usd": -93.91868869205337,
+      "relative": -0.05695433973077263,
+      "best": "BL5-cur"
+     },
+     "margin_replay": {
+      "usd": -55.08223455526968,
+      "relative": -0.025592456480592954,
+      "best": "BL5-cur"
+     },
+     "E": {
+      "Sublet": 0.21040019859571768,
+      "A9": 0.20934509882051228,
+      "BL1-BO": 0.09305327636240397,
+      "BL5-cur": 0.23382915465858212,
+      "A6": 0.08825979462549109
+     }
+    },
+    "2": {
+     "fluid": {
+      "Sublet": 1649.7256323600027,
+      "A9": 1646.0073133292717,
+      "BL1-BO": 2317.6218761418622,
+      "BL5-cur": 1522.7969963658386,
+      "A6": 2797.877868105424
+     },
+     "replay": {
+      "Sublet": 2096.0626582461887,
+      "A9": 2091.42474628791,
+      "BL1-BO": 2526.2520261475192,
+      "BL5-cur": 2033.868780096136,
+      "A6": 3120.06214484479
+     },
+     "rank_fluid": [
+      "BL5-cur",
+      "A9",
+      "Sublet",
+      "BL1-BO"
+     ],
+     "rank_replay": [
+      "BL5-cur",
+      "A9",
+      "Sublet",
+      "BL1-BO"
+     ],
+     "same_order": true,
+     "rank_fluid_with_a6": [
+      "BL5-cur",
+      "A9",
+      "Sublet",
+      "BL1-BO",
+      "A6"
+     ],
+     "rank_replay_with_a6": [
+      "BL5-cur",
+      "A9",
+      "Sublet",
+      "BL1-BO",
+      "A6"
+     ],
+     "same_order_with_a6": true,
+     "sublet_rank_fluid": 3,
+     "sublet_rank_replay": 3,
+     "margin_fluid": {
+      "usd": -126.9286359941641,
+      "relative": -0.08335230257025711,
+      "best": "BL5-cur"
+     },
+     "margin_replay": {
+      "usd": -62.19387815005257,
+      "relative": -0.03057910065717849,
+      "best": "BL5-cur"
+     },
+     "E": {
+      "Sublet": 0.21294068864317434,
+      "A9": 0.2129732058249831,
+      "BL1-BO": 0.08258485212333053,
+      "BL5-cur": 0.25128060803713226,
+      "A6": 0.10326213446475864
+     }
+    },
+    "3": {
+     "fluid": {
+      "Sublet": 1744.1675934558177,
+      "A9": 1737.5170180672903,
+      "BL1-BO": 2439.603890509263,
+      "BL5-cur": 1652.1978142725395,
+      "A6": 3130.3260503906486
+     },
+     "replay": {
+      "Sublet": 2220.0255704752267,
+      "A9": 2197.9997740787708,
+      "BL1-BO": 2700.7142096881494,
+      "BL5-cur": 2133.2051652327664,
+      "A6": 3390.226483477018
+     },
+     "rank_fluid": [
+      "BL5-cur",
+      "A9",
+      "Sublet",
+      "BL1-BO"
+     ],
+     "rank_replay": [
+      "BL5-cur",
+      "A9",
+      "Sublet",
+      "BL1-BO"
+     ],
+     "same_order": true,
+     "rank_fluid_with_a6": [
+      "BL5-cur",
+      "A9",
+      "Sublet",
+      "BL1-BO",
+      "A6"
+     ],
+     "rank_replay_with_a6": [
+      "BL5-cur",
+      "A9",
+      "Sublet",
+      "BL1-BO",
+      "A6"
+     ],
+     "same_order_with_a6": true,
+     "sublet_rank_fluid": 3,
+     "sublet_rank_replay": 3,
+     "margin_fluid": {
+      "usd": -91.9697791832782,
+      "relative": -0.05566511369812723,
+      "best": "BL5-cur"
+     },
+     "margin_replay": {
+      "usd": -86.82040524246031,
+      "relative": -0.0406995101350164,
+      "best": "BL5-cur"
+     },
+     "E": {
+      "Sublet": 0.21434797118915397,
+      "A9": 0.2095008204468441,
+      "BL1-BO": 0.09668195110842065,
+      "BL5-cur": 0.22548574267479862,
+      "A6": 0.07666167270919773
+     }
+    },
+    "4": {
+     "fluid": {
+      "Sublet": 1658.3423670985762,
+      "A9": 1654.6240480678453,
+      "BL1-BO": 2334.0677031444984,
+      "BL5-cur": 1530.0721626156696,
+      "A6": 3123.0155798989244
+     },
+     "replay": {
+      "Sublet": 2134.073900761393,
+      "A9": 2127.8643855357523,
+      "BL1-BO": 2539.6495682716195,
+      "BL5-cur": 2055.329538422658,
+      "A6": 3431.5102657350662
+     },
+     "rank_fluid": [
+      "BL5-cur",
+      "A9",
+      "Sublet",
+      "BL1-BO"
+     ],
+     "rank_replay": [
+      "BL5-cur",
+      "A9",
+      "Sublet",
+      "BL1-BO"
+     ],
+     "same_order": true,
+     "rank_fluid_with_a6": [
+      "BL5-cur",
+      "A9",
+      "Sublet",
+      "BL1-BO",
+      "A6"
+     ],
+     "rank_replay_with_a6": [
+      "BL5-cur",
+      "A9",
+      "Sublet",
+      "BL1-BO",
+      "A6"
+     ],
+     "same_order_with_a6": true,
+     "sublet_rank_fluid": 3,
+     "sublet_rank_replay": 3,
+     "margin_fluid": {
+      "usd": -128.2702044829066,
+      "relative": -0.08383278097395598,
+      "best": "BL5-cur"
+     },
+     "margin_replay": {
+      "usd": -78.74436233873485,
+      "relative": -0.03831228076406979,
+      "best": "BL5-cur"
+     },
+     "E": {
+      "Sublet": 0.2229217711219305,
+      "A9": 0.22240154996943326,
+      "BL1-BO": 0.08094891031246945,
+      "BL5-cur": 0.255558715032185,
+      "A6": 0.08990055746490938
+     }
+    }
+   }
+  }
+ },
+ "by_tier_window": {
+  "S": {
+   "60": {
+    "n_alignments": 4,
+    "n": 4,
+    "same_order": 1,
+    "sublet_first_fluid": 0,
+    "sublet_first_replay": 1,
+    "sublet_beats_pair_fluid": 4,
+    "sublet_beats_pair_replay": 3,
+    "E_median": {
+     "Sublet": 0.5521207254303229,
+     "A9": 0.5533479584502579,
+     "BL1-BO": 0.5358499494357094,
+     "BL5-cur": 0.5456555065155952,
+     "A6": 0.3108866420337717
+    }
+   },
+   "15": {
+    "n_alignments": 4,
+    "n": 4,
+    "same_order": 3,
+    "sublet_first_fluid": 3,
+    "sublet_first_replay": 3,
+    "sublet_beats_pair_fluid": 4,
+    "sublet_beats_pair_replay": 4,
+    "E_median": {
+     "Sublet": 0.42284886843505576,
+     "A9": 0.42438032611008136,
+     "BL1-BO": 0.39044065969726793,
+     "BL5-cur": 0.4116780807722893,
+     "A6": 0.24911440710970378
+    }
+   },
+   "5": {
+    "n_alignments": 4,
+    "n": 4,
+    "same_order": 0,
+    "sublet_first_fluid": 4,
+    "sublet_first_replay": 0,
+    "sublet_beats_pair_fluid": 4,
+    "sublet_beats_pair_replay": 2,
+    "E_median": {
+     "Sublet": 0.31990815028426167,
+     "A9": 0.3182110492083936,
+     "BL1-BO": 0.25339162772436374,
+     "BL5-cur": 0.31337512255312605,
+     "A6": 0.20803828684805137
+    }
+   }
+  },
+  "M": {
+   "60": {
+    "n_alignments": 4,
+    "n": 4,
+    "same_order": 2,
+    "sublet_first_fluid": 0,
+    "sublet_first_replay": 0,
+    "sublet_beats_pair_fluid": 4,
+    "sublet_beats_pair_replay": 3,
+    "E_median": {
+     "Sublet": 0.5159330228048442,
+     "A9": 0.5195956274976872,
+     "BL1-BO": 0.4924944178169651,
+     "BL5-cur": 0.5070325612841822,
+     "A6": 0.27455282303646955
+    }
+   },
+   "15": {
+    "n_alignments": 4,
+    "n": 4,
+    "same_order": 2,
+    "sublet_first_fluid": 3,
+    "sublet_first_replay": 4,
+    "sublet_beats_pair_fluid": 4,
+    "sublet_beats_pair_replay": 4,
+    "E_median": {
+     "Sublet": 0.36968800890155573,
+     "A9": 0.3698074961258636,
+     "BL1-BO": 0.33541800396397464,
+     "BL5-cur": 0.35721604905233034,
+     "A6": 0.20538488092215645
+    }
+   },
+   "5": {
+    "n_alignments": 4,
+    "n": 4,
+    "same_order": 0,
+    "sublet_first_fluid": 4,
+    "sublet_first_replay": 0,
+    "sublet_beats_pair_fluid": 4,
+    "sublet_beats_pair_replay": 3,
+    "E_median": {
+     "Sublet": 0.25824663385533697,
+     "A9": 0.25768057125455046,
+     "BL1-BO": 0.18950103025788453,
+     "BL5-cur": 0.2516736373244799,
+     "A6": 0.16713966424589546
+    }
+   }
+  },
+  "L": {
+   "60": {
+    "n_alignments": 4,
+    "n": 4,
+    "same_order": 3,
+    "sublet_first_fluid": 1,
+    "sublet_first_replay": 1,
+    "sublet_beats_pair_fluid": 4,
+    "sublet_beats_pair_replay": 4,
+    "E_median": {
+     "Sublet": 0.4283484417569697,
+     "A9": 0.42919668172481346,
+     "BL1-BO": 0.3285413928724218,
+     "BL5-cur": 0.4152427970183248,
+     "A6": 0.2228917622224234
+    }
+   },
+   "15": {
+    "n_alignments": 4,
+    "n": 4,
+    "same_order": 3,
+    "sublet_first_fluid": 1,
+    "sublet_first_replay": 0,
+    "sublet_beats_pair_fluid": 1,
+    "sublet_beats_pair_replay": 0,
+    "E_median": {
+     "Sublet": 0.29757741440187646,
+     "A9": 0.29583595922157296,
+     "BL1-BO": 0.17740393830933968,
+     "BL5-cur": 0.30525276404681645,
+     "A6": 0.14394371773274217
+    }
+   },
+   "5": {
+    "n_alignments": 4,
+    "n": 4,
+    "same_order": 4,
+    "sublet_first_fluid": 0,
+    "sublet_first_replay": 0,
+    "sublet_beats_pair_fluid": 0,
+    "sublet_beats_pair_replay": 0,
+    "E_median": {
+     "Sublet": 0.21364432991616417,
+     "A9": 0.2112370131359136,
+     "BL1-BO": 0.08781906424286726,
+     "BL5-cur": 0.2425548813478572,
+     "A6": 0.08908017604520024
+    }
+   }
+  }
+ },
+ "mooncake": {
+  "5": {
+   "off": {
+    "fluid": {
+     "Sublet": 53.36758356440818,
+     "A9": 53.36758356440818,
+     "BL1-BO": 91.57843450940094,
+     "BL5-cur": 63.814969985708586,
+     "A6": 168.01066162905155
+    },
+    "replay": {
+     "Sublet": 78.44255877817501,
+     "A9": 78.11699836830682,
+     "BL1-BO": 110.83352882809385,
+     "BL5-cur": 83.28402671316296,
+     "A6": 173.66039969007795
+    },
+    "rank_fluid": [
+     "A9",
+     "Sublet",
+     "BL5-cur",
+     "BL1-BO"
+    ],
+    "rank_replay": [
+     "A9",
+     "Sublet",
+     "BL5-cur",
+     "BL1-BO"
+    ],
+    "same_order": true,
+    "rank_fluid_with_a6": [
+     "A9",
+     "Sublet",
+     "BL5-cur",
+     "BL1-BO",
+     "A6"
+    ],
+    "rank_replay_with_a6": [
+     "A9",
+     "Sublet",
+     "BL5-cur",
+     "BL1-BO",
+     "A6"
+    ],
+    "same_order_with_a6": true,
+    "sublet_rank_fluid": 2,
+    "sublet_rank_replay": 2,
+    "margin_fluid": {
+     "usd": 10.447386421300408,
+     "relative": 0.1637137245953435,
+     "best": "BL5-cur"
+    },
+    "margin_replay": {
+     "usd": 4.841467934987946,
+     "relative": 0.05813201073553228,
+     "best": "BL5-cur"
+    },
+    "E": {
+     "Sublet": 0.31966034260401277,
+     "A9": 0.3168249589828049,
+     "BL1-BO": 0.17372986786839698,
+     "BL5-cur": 0.23376699585512845,
+     "A6": 0.032533254968370284
+    }
+   },
+   "on": {
+    "fluid": {
+     "Sublet": 53.36758356440818,
+     "A9": 53.36758356440818,
+     "BL1-BO": 91.57843450940094,
+     "BL5-cur": 63.814969985708586,
+     "A6": 168.01066162905155
+    },
+    "replay": {
+     "Sublet": 48.689904877089134,
+     "A9": 48.689904877089134,
+     "BL1-BO": 86.46426817951617,
+     "BL5-cur": 60.467357584904384,
+     "A6": 29.595882715444343
+    },
+    "rank_fluid": [
+     "A9",
+     "Sublet",
+     "BL5-cur",
+     "BL1-BO"
+    ],
+    "rank_replay": [
+     "A9",
+     "Sublet",
+     "BL5-cur",
+     "BL1-BO"
+    ],
+    "same_order": true,
+    "rank_fluid_with_a6": [
+     "A9",
+     "Sublet",
+     "BL5-cur",
+     "BL1-BO",
+     "A6"
+    ],
+    "rank_replay_with_a6": [
+     "A6",
+     "A9",
+     "Sublet",
+     "BL5-cur",
+     "BL1-BO"
+    ],
+    "same_order_with_a6": false,
+    "sublet_rank_fluid": 2,
+    "sublet_rank_replay": 2,
+    "margin_fluid": {
+     "usd": 10.447386421300408,
+     "relative": 0.1637137245953435,
+     "best": "BL5-cur"
+    },
+    "margin_replay": {
+     "usd": 11.77745270781525,
+     "relative": 0.19477372880529972,
+     "best": "BL5-cur"
+    },
+    "E": {
+     "Sublet": -0.09607081178587618,
+     "A9": -0.09607081178587618,
+     "BL1-BO": -0.05914774319568392,
+     "BL5-cur": -0.05536230678021112,
+     "A6": -4.676825497804015
+    }
+   }
+  },
+  "15": {
+   "off": {
+    "fluid": {
+     "Sublet": 97.52947312696686,
+     "A9": 97.52947312696686,
+     "BL1-BO": 108.67982999094745,
+     "BL5-cur": 75.94164766755452,
+     "A6": 171.32384712232255
+    },
+    "replay": {
+     "Sublet": 131.71550399874593,
+     "A9": 131.53734487383966,
+     "BL1-BO": 140.11973075527126,
+     "BL5-cur": 105.86908686443175,
+     "A6": 181.44988253488677
+    },
+    "rank_fluid": [
+     "BL5-cur",
+     "A9",
+     "Sublet",
+     "BL1-BO"
+    ],
+    "rank_replay": [
+     "BL5-cur",
+     "A9",
+     "Sublet",
+     "BL1-BO"
+    ],
+    "same_order": true,
+    "rank_fluid_with_a6": [
+     "BL5-cur",
+     "A9",
+     "Sublet",
+     "BL1-BO",
+     "A6"
+    ],
+    "rank_replay_with_a6": [
+     "BL5-cur",
+     "A9",
+     "Sublet",
+     "BL1-BO",
+     "A6"
+    ],
+    "same_order_with_a6": true,
+    "sublet_rank_fluid": 3,
+    "sublet_rank_replay": 3,
+    "margin_fluid": {
+     "usd": -21.587825459412343,
+     "relative": -0.2842685946704258,
+     "best": "BL5-cur"
+    },
+    "margin_replay": {
+     "usd": -25.84641713431418,
+     "relative": -0.24413563864408522,
+     "best": "BL5-cur"
+    },
+    "E": {
+     "Sublet": 0.2595444714853352,
+     "A9": 0.2585415706808624,
+     "BL1-BO": 0.22437882655680916,
+     "BL5-cur": 0.2826834544742993,
+     "A6": 0.05580623845605037
+    }
+   },
+   "on": {
+    "fluid": {
+     "Sublet": 97.52947312696686,
+     "A9": 97.52947312696686,
+     "BL1-BO": 108.67982999094745,
+     "BL5-cur": 75.94164766755452,
+     "A6": 171.32384712232255
+    },
+    "replay": {
+     "Sublet": 89.6807869696302,
+     "A9": 89.6807869696302,
+     "BL1-BO": 98.09987550857785,
+     "BL5-cur": 66.48559690784167,
+     "A6": 18.26248383006774
+    },
+    "rank_fluid": [
+     "BL5-cur",
+     "A9",
+     "Sublet",
+     "BL1-BO"
+    ],
+    "rank_replay": [
+     "BL5-cur",
+     "A9",
+     "Sublet",
+     "BL1-BO"
+    ],
+    "same_order": true,
+    "rank_fluid_with_a6": [
+     "BL5-cur",
+     "A9",
+     "Sublet",
+     "BL1-BO",
+     "A6"
+    ],
+    "rank_replay_with_a6": [
+     "A6",
+     "BL5-cur",
+     "A9",
+     "Sublet",
+     "BL1-BO"
+    ],
+    "same_order_with_a6": false,
+    "sublet_rank_fluid": 3,
+    "sublet_rank_replay": 3,
+    "margin_fluid": {
+     "usd": -21.587825459412343,
+     "relative": -0.2842685946704258,
+     "best": "BL5-cur"
+    },
+    "margin_replay": {
+     "usd": -23.195190061788537,
+     "relative": -0.34887541272947153,
+     "best": "BL5-cur"
+    },
+    "E": {
+     "Sublet": -0.08751803393512328,
+     "A9": -0.08751803393512328,
+     "BL1-BO": -0.10784880640796012,
+     "BL5-cur": -0.14222705667846017,
+     "A6": -8.381190900235122
+    }
+   }
+  },
+  "60": {
+   "off": {
+    "fluid": {
+     "Sublet": 62.38288627961301,
+     "A9": 64.66151799383667,
+     "BL1-BO": 132.35790935611115,
+     "BL5-cur": 58.85327355597297,
+     "A6": 195.41613862519412
+    },
+    "replay": {
+     "Sublet": 79.37677162851965,
+     "A9": 84.04073901563244,
+     "BL1-BO": 131.22525584350976,
+     "BL5-cur": 75.31015289504298,
+     "A6": 159.9454478265473
+    },
+    "rank_fluid": [
+     "BL5-cur",
+     "Sublet",
+     "A9",
+     "BL1-BO"
+    ],
+    "rank_replay": [
+     "BL5-cur",
+     "Sublet",
+     "A9",
+     "BL1-BO"
+    ],
+    "same_order": true,
+    "rank_fluid_with_a6": [
+     "BL5-cur",
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "A6"
+    ],
+    "rank_replay_with_a6": [
+     "BL5-cur",
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "A6"
+    ],
+    "same_order_with_a6": true,
+    "sublet_rank_fluid": 2,
+    "sublet_rank_replay": 2,
+    "margin_fluid": {
+     "usd": -3.5296127236400423,
+     "relative": -0.05997309088139626,
+     "best": "BL5-cur"
+    },
+    "margin_replay": {
+     "usd": -4.066618733476673,
+     "relative": -0.053998280140848634,
+     "best": "BL5-cur"
+    },
+    "E": {
+     "Sublet": 0.21409141490960845,
+     "A9": 0.2305931771755486,
+     "BL1-BO": -0.008631368293555614,
+     "BL5-cur": 0.21852139062850345,
+     "A6": -0.2217674293369885
+    }
+   },
+   "on": {
+    "fluid": {
+     "Sublet": 62.38288627961301,
+     "A9": 64.66151799383667,
+     "BL1-BO": 132.35790935611115,
+     "BL5-cur": 58.85327355597297,
+     "A6": 195.41613862519412
+    },
+    "replay": {
+     "Sublet": 59.90606339686907,
+     "A9": 61.92530066095126,
+     "BL1-BO": 96.68372668595734,
+     "BL5-cur": 58.26146071954146,
+     "A6": 20.939505322480095
+    },
+    "rank_fluid": [
+     "BL5-cur",
+     "Sublet",
+     "A9",
+     "BL1-BO"
+    ],
+    "rank_replay": [
+     "BL5-cur",
+     "Sublet",
+     "A9",
+     "BL1-BO"
+    ],
+    "same_order": true,
+    "rank_fluid_with_a6": [
+     "BL5-cur",
+     "Sublet",
+     "A9",
+     "BL1-BO",
+     "A6"
+    ],
+    "rank_replay_with_a6": [
+     "A6",
+     "BL5-cur",
+     "Sublet",
+     "A9",
+     "BL1-BO"
+    ],
+    "same_order_with_a6": false,
+    "sublet_rank_fluid": 2,
+    "sublet_rank_replay": 2,
+    "margin_fluid": {
+     "usd": -3.5296127236400423,
+     "relative": -0.05997309088139626,
+     "best": "BL5-cur"
+    },
+    "margin_replay": {
+     "usd": -1.6446026773276117,
+     "relative": -0.028227968489228008,
+     "best": "BL5-cur"
+    },
+    "E": {
+     "Sublet": -0.041345111701554194,
+     "A9": -0.04418577388693744,
+     "BL1-BO": -0.3689781506460616,
+     "BL5-cur": -0.010157878452110424,
+     "A6": -8.332414286568678
+    }
+   }
+  }
+ },
+ "headline": {
+  "E_median_range": {
+   "Sublet": {
+    "lo": 0.21364432991616417,
+    "lo_cell": "L:5",
+    "hi": 0.5521207254303229,
+    "hi_cell": "S:60",
+    "n_cells": 9
+   },
+   "A9": {
+    "lo": 0.2112370131359136,
+    "lo_cell": "L:5",
+    "hi": 0.5533479584502579,
+    "hi_cell": "S:60",
+    "n_cells": 9
+   },
+   "BL1-BO": {
+    "lo": 0.08781906424286726,
+    "lo_cell": "L:5",
+    "hi": 0.5358499494357094,
+    "hi_cell": "S:60",
+    "n_cells": 9
+   },
+   "BL5-cur": {
+    "lo": 0.2425548813478572,
+    "lo_cell": "L:5",
+    "hi": 0.5456555065155952,
+    "hi_cell": "S:60",
+    "n_cells": 9
+   },
+   "A6": {
+    "lo": 0.08908017604520024,
+    "lo_cell": "L:5",
+    "hi": 0.3108866420337717,
+    "hi_cell": "S:60",
+    "n_cells": 9
+   }
+  },
+  "cells": {
+   "n_alignments": 36,
+   "n": 36,
+   "same_order": 18,
+   "sublet_first_fluid": 16,
+   "sublet_first_replay": 9,
+   "sublet_beats_pair_fluid": 29,
+   "sublet_beats_pair_replay": 23
+  },
+  "cells_reordered": [
+   "L:15:1",
+   "L:60:3",
+   "M:15:1",
+   "M:15:3",
+   "M:5:1",
+   "M:5:2",
+   "M:5:3",
+   "M:5:4",
+   "M:60:3",
+   "M:60:4",
+   "S:15:3",
+   "S:5:1",
+   "S:5:2",
+   "S:5:3",
+   "S:5:4",
+   "S:60:1",
+   "S:60:2",
+   "S:60:3"
+  ],
+  "mooncake": {
+   "off": {
+    "n": 3,
+    "same_order": 3,
+    "sublet_first_replay": 0,
+    "E_sublet": {
+     "5": 0.31966034260401277,
+     "15": 0.2595444714853352,
+     "60": 0.21409141490960845
+    }
+   },
+   "on": {
+    "n": 3,
+    "same_order": 3,
+    "sublet_first_replay": 0,
+    "E_sublet": {
+     "5": -0.09607081178587618,
+     "15": -0.08751803393512328,
+     "60": -0.041345111701554194
+    }
+   }
+  }
+ }
+}

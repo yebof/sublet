@@ -1,0 +1,58 @@
+X13: Theorem G2 for A8 and A8P on core exports, with S following R after the abort (design/theory/c3_c4_c5_general.md §9, Theorem G2 and "A8's mode S on core exports"; audit addendum of step P6 in design/theory/audit_guard.md, finding REMARK_R-F1)
+checked from the ledger and the guard's report: G2(a), G2(b), the mode-S step and soundness; script code/sim/audit/x13_core_mode_s.py
+runs: (a) 3528, (b) 792, (c) 594 (default); run errors: 0; wall time 292 s on one worker
+tolerances: GUARD_TOL 1e-12 max(1, |rhs|) at the last executed slot; TIE = WD_TIE 1e-12 sum over the adaptive slots of max(1, |Q(u)|); FLT 1e-12 max(1, ALG(T)); soundness CERT_TOL 1e-09 max(1, ALG(u))
+
+(a) Renter, A8 and A8P, gamma 1, B0 'auto', kappa 10:
+  runs: 3528
+  runs Guarded: 1764
+  runs ProjectedGuarded: 1764
+  runs without an abort: 372
+  aborts: 3156
+  aborts forced: 2355
+  aborts with S following R at a slot >= t_a: 2052
+  aborts with inherited leases: 2139
+  aborts with both: 1296
+  aborts with an adaptive slot keeping leases: 274
+  aborts with an adaptive slot choosing K2: 274
+  adaptive slots: 2304
+  projected slots: 207
+  W_S(t_a) of at_abort differs from the W_S curve: 0
+  worst relative excesses (excess / max(1, ALG(T))): G2(a) -4.969448e-01, G2(b) 0.000000e+00, mode S 9.912445e-16
+  largest TIE / max(1, ALG(T)): 1.203638e-12; largest m(u) / max(1, ALG(u)): 4.518221e-16
+(b) _CoreRandom, _Greedy, BL5 and A9, A8P and A8, gamma, safe, allowance and abort_at cycling:
+  runs: 792
+  runs Guarded: 396
+  runs ProjectedGuarded: 396
+  runs without an abort: 161
+  aborts: 631
+  aborts forced: 237
+  aborts with S following R at a slot >= t_a: 445
+  aborts with inherited leases: 227
+  aborts with both: 137
+  aborts with an adaptive slot keeping leases: 20
+  aborts with an adaptive slot choosing K2: 20
+  adaptive slots: 59
+  projected slots: 721
+  W_S(t_a) of at_abort differs from the W_S curve: 0
+  worst relative excesses (excess / max(1, ALG(T))): G2(a) -5.508701e-04, G2(b) 0.000000e+00, mode S 3.173534e-16
+  largest TIE / max(1, ALG(T)): 5.015674e-13; largest m(u) / max(1, ALG(u)): 2.275995e-15
+(c) A8P at the allowance 'lb' around _CoreRandom, _Greedy and A9:
+  runs: 594
+  runs Guarded: 0
+  runs ProjectedGuarded: 594
+  runs without an abort: 182
+  aborts: 412
+  aborts forced: 237
+  aborts with S following R at a slot >= t_a: 317
+  aborts with inherited leases: 188
+  aborts with both: 127
+  aborts with an adaptive slot keeping leases: 21
+  aborts with an adaptive slot choosing K2: 18
+  adaptive slots: 50
+  projected slots: 1440
+  W_S(t_a) of at_abort differs from the W_S curve: 0
+  worst relative excesses (excess / max(1, ALG(T))): G2(a) 0.000000e+00, G2(b) 1.289551e-16, mode S 1.347514e-16
+  largest TIE / max(1, ALG(T)): 2.196621e-13; largest m(u) / max(1, ALG(u)): 2.266235e-15
+failures by kind: none
+violations: 0, errors: 0

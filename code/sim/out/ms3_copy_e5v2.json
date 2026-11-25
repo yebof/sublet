@@ -1,0 +1,89 @@
+{
+ "check": "copy",
+ "exp": "e5v2",
+ "pass": true,
+ "checks": {
+  "same_file_list": true,
+  "same_sha256": true,
+  "no_symlinks": true,
+  "json_readable": true,
+  "revisions": true,
+  "revisions_recorded": true,
+  "manifest_revision": true,
+  "summary_ok": true,
+  "no_running_records": true,
+  "record_statuses_known": true,
+  "run_log_done": true
+ },
+ "copy": "/work/wt_x3copy/code/sim/out/e5v2",
+ "clone": "/work/ms7_runs",
+ "clone_out": "/work/ms7_runs/code/sim/out/e5v2",
+ "clone_commit": "44d1b4e42b5be44503039b1b5d6bfba8e32930ff",
+ "parts": [],
+ "tree_sha256": "306183a76244c0994df01781635335af96dcf62a7ca9f6ca625fb063a3da3120",
+ "tree_sha256_versioned": "dc692d42836820fe940d1f52a6513a4808f96f6498a5cff9b37e2936ba47c337",
+ "n_files_copy": 397,
+ "n_files_clone": 397,
+ "n_files_compared": 397,
+ "n_only_in_copy": 0,
+ "only_in_copy": [],
+ "n_only_in_clone": 0,
+ "only_in_clone": [],
+ "n_sha256_mismatch": 0,
+ "sha256_mismatch": [],
+ "n_symlinks": 0,
+ "symlinks": [],
+ "n_partial": 0,
+ "n_json": 197,
+ "revisions_found": {
+  "44d1b4e42b5be44503039b1b5d6bfba8e32930ff": 197
+ },
+ "n_revision_differs": 0,
+ "revision_differs": [],
+ "n_no_revision": 0,
+ "no_revision_by_kind": {},
+ "n_no_revision_unexpected": 0,
+ "no_revision_unexpected": [],
+ "no_revision_allowed_under": [],
+ "n_json_unreadable": 0,
+ "json_unreadable": [],
+ "manifest_git_revision": {
+  "e5v2": "44d1b4e42b5be44503039b1b5d6bfba8e32930ff"
+ },
+ "summaries": {
+  "e5v2": {
+   "file": "summary.json",
+   "exists": true,
+   "object": true,
+   "summary_record": "ok",
+   "manifest_record": "ok",
+   "ok": true
+  }
+ },
+ "records_by_status": {
+  "ok": 98
+ },
+ "records_by_part": {
+  "e5v2": {
+   "ok": 98
+  }
+ },
+ "n_running": 0,
+ "running_records": [],
+ "n_unknown_status": 0,
+ "unknown_status_records": [],
+ "run_logs": {
+  "e5v2": {
+   "file": "run_e5v2.log",
+   "exists": true,
+   "last_line": "[run_e5v2] done 2026-11-09T20:52:57+08:00",
+   "done": true
+  }
+ },
+ "lists_truncated_at": 200,
+ "checked_by": {
+  "module": "sublet.experiments.ms3_common",
+  "git_revision": "151d315e1bc588df2f17432838408e0d621fa2d2"
+ },
+ "time": "2026-11-09T21:36:05"
+}

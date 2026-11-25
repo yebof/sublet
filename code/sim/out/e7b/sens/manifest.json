@@ -1,0 +1,5661 @@
+{
+ "meta": {
+  "exp": "e7b",
+  "git_revision": "467b21817c8f506f152248c731f072a406c33d3a",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "scipy": "1.17.1",
+   "sublet": "0.1.0"
+  },
+  "written": "2026-11-25T05:42:11",
+  "script": "code/sim/sublet/experiments/e7b.py",
+  "script_sha256": "d91b9cf973690c5e4d779d3fb275d518b81a8cb12742db23f843fbd5048dbf2a"
+ },
+ "jobs": [
+  {
+   "id": "e7b:sens:k=sens:pt=slow1:tag=BL1-GP:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "slow1",
+    "tag": "BL1-GP",
+    "policy_id": "A8P",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 4110.220000000001,
+   "status": "ok",
+   "wall_s": 8449.584948644973,
+   "peak_rss_mb": 779.2890625,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=slow1:tag=BL1-GP:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "slow1",
+    "tag": "BL1-GP",
+    "policy_id": "A8P",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 4110.220000000001,
+   "status": "ok",
+   "wall_s": 6806.086865564808,
+   "peak_rss_mb": 778.80078125,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=slow1:tag=Sublet:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "slow1",
+    "tag": "Sublet",
+    "policy_id": "A8P",
+    "c": 301,
+    "modes": [
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 3475.85,
+   "status": "ok",
+   "wall_s": 6996.41769639682,
+   "peak_rss_mb": 819.046875,
+   "runs": 5
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=slow1:tag=Sublet:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "slow1",
+    "tag": "Sublet",
+    "policy_id": "A8P",
+    "c": 302,
+    "modes": [
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 3475.85,
+   "status": "ok",
+   "wall_s": 10317.090021871962,
+   "peak_rss_mb": 917.578125,
+   "runs": 5
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=slow1:tag=A9:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "slow1",
+    "tag": "A9",
+    "policy_id": "A9",
+    "c": 301,
+    "modes": [
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 1009.05,
+   "status": "ok",
+   "wall_s": 781.1241117734462,
+   "peak_rss_mb": 308.12890625,
+   "runs": 5
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=slow1:tag=A9:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "slow1",
+    "tag": "A9",
+    "policy_id": "A9",
+    "c": 302,
+    "modes": [
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 1009.05,
+   "status": "ok",
+   "wall_s": 522.7073232447729,
+   "peak_rss_mb": 287.0546875,
+   "runs": 5
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=BL1-GP:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "scen_cold_wan_1gbps",
+    "tag": "BL1-GP",
+    "policy_id": "A8P",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 992.38,
+   "status": "ok",
+   "wall_s": 2481.8093709303066,
+   "peak_rss_mb": 425.9921875,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=BL1-GP:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "scen_cold_wan_1gbps",
+    "tag": "BL1-GP",
+    "policy_id": "A8P",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 992.38,
+   "status": "ok",
+   "wall_s": 2156.8321694703773,
+   "peak_rss_mb": 428.1328125,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee4:tag=BL1-GP:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee4",
+    "tag": "BL1-GP",
+    "policy_id": "A8P",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 975.2199999999999,
+   "status": "ok",
+   "wall_s": 1662.70820512902,
+   "peak_rss_mb": 423.25,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee4:tag=BL1-GP:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee4",
+    "tag": "BL1-GP",
+    "policy_id": "A8P",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 975.2199999999999,
+   "status": "ok",
+   "wall_s": 1350.0507512222975,
+   "peak_rss_mb": 427.16015625,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee8:tag=BL1-GP:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee8",
+    "tag": "BL1-GP",
+    "policy_id": "A8P",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 975.2199999999999,
+   "status": "ok",
+   "wall_s": 1734.2466301638633,
+   "peak_rss_mb": 416.03515625,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee8:tag=BL1-GP:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee8",
+    "tag": "BL1-GP",
+    "policy_id": "A8P",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 975.2199999999999,
+   "status": "ok",
+   "wall_s": 1397.543136747554,
+   "peak_rss_mb": 416.4765625,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee16:tag=BL1-GP:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee16",
+    "tag": "BL1-GP",
+    "policy_id": "A8P",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 975.2199999999999,
+   "status": "ok",
+   "wall_s": 1763.6945222448558,
+   "peak_rss_mb": 409.25390625,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee16:tag=BL1-GP:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee16",
+    "tag": "BL1-GP",
+    "policy_id": "A8P",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 975.2199999999999,
+   "status": "ok",
+   "wall_s": 1425.2619824297726,
+   "peak_rss_mb": 409.375,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=slow1:tag=BL1-GP:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "slow1",
+    "tag": "BL1-GP",
+    "policy_id": "A8P",
+    "c": 303,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 718.3700000000001,
+   "status": "ok",
+   "wall_s": 699.6608956595883,
+   "peak_rss_mb": 718.2109375,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=slow1:tag=BL1-GP:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "slow1",
+    "tag": "BL1-GP",
+    "policy_id": "A8P",
+    "c": 304,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 718.3700000000001,
+   "status": "ok",
+   "wall_s": 721.2574725234881,
+   "peak_rss_mb": 707.32421875,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=slow1:tag=CR-cap-B:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "slow1",
+    "tag": "CR-cap-B",
+    "policy_id": "CAP",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 639.03,
+   "status": "ok",
+   "wall_s": 588.5137831242755,
+   "peak_rss_mb": 251.39453125,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=slow1:tag=CR-cap-0:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "slow1",
+    "tag": "CR-cap-0",
+    "policy_id": "CAP",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 639.03,
+   "status": "ok",
+   "wall_s": 942.1573448535055,
+   "peak_rss_mb": 206.890625,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=slow1:tag=CR-cap-5:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "slow1",
+    "tag": "CR-cap-5",
+    "policy_id": "CAP",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 639.03,
+   "status": "ok",
+   "wall_s": 1289.7235253658146,
+   "peak_rss_mb": 303.1171875,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=slow1:tag=CR-cap-B-latch:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "slow1",
+    "tag": "CR-cap-B-latch",
+    "policy_id": "CAP",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 639.03,
+   "status": "ok",
+   "wall_s": 77.82948827091604,
+   "peak_rss_mb": 210.19921875,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=slow1:tag=CR-cap-B-slot:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "slow1",
+    "tag": "CR-cap-B-slot",
+    "policy_id": "CAP",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 639.03,
+   "status": "ok",
+   "wall_s": 663.5204098615795,
+   "peak_rss_mb": 258.45703125,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=slow1:tag=CR-cap-B:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "slow1",
+    "tag": "CR-cap-B",
+    "policy_id": "CAP",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 639.03,
+   "status": "ok",
+   "wall_s": 917.168125080876,
+   "peak_rss_mb": 279.99609375,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=slow1:tag=CR-cap-0:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "slow1",
+    "tag": "CR-cap-0",
+    "policy_id": "CAP",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 639.03,
+   "status": "ok",
+   "wall_s": 969.1700275074691,
+   "peak_rss_mb": 250.83984375,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=slow1:tag=CR-cap-5:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "slow1",
+    "tag": "CR-cap-5",
+    "policy_id": "CAP",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 639.03,
+   "status": "ok",
+   "wall_s": 979.5612184181809,
+   "peak_rss_mb": 283.48046875,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=slow1:tag=CR-cap-B-latch:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "slow1",
+    "tag": "CR-cap-B-latch",
+    "policy_id": "CAP",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 639.03,
+   "status": "ok",
+   "wall_s": 305.5111569063738,
+   "peak_rss_mb": 251.30859375,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=slow1:tag=CR-cap-B-slot:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "slow1",
+    "tag": "CR-cap-B-slot",
+    "policy_id": "CAP",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 639.03,
+   "status": "ok",
+   "wall_s": 982.5727060064673,
+   "peak_rss_mb": 270.34765625,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=slow1:tag=BL1:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "slow1",
+    "tag": "BL1",
+    "policy_id": "BL1",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 484.024,
+   "status": "ok",
+   "wall_s": 4220.418775103986,
+   "peak_rss_mb": 548.85546875,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=slow1:tag=BL1:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "slow1",
+    "tag": "BL1",
+    "policy_id": "BL1",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 484.024,
+   "status": "ok",
+   "wall_s": 5748.978623735718,
+   "peak_rss_mb": 487.5078125,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=slow1:tag=GR-cap-B:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "slow1",
+    "tag": "GR-cap-B",
+    "policy_id": "CAP",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 410.02000000000004,
+   "status": "ok",
+   "wall_s": 840.3373756334186,
+   "peak_rss_mb": 241.359375,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=slow1:tag=GR-cap-0:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "slow1",
+    "tag": "GR-cap-0",
+    "policy_id": "CAP",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 410.02000000000004,
+   "status": "ok",
+   "wall_s": 1104.2093018274754,
+   "peak_rss_mb": 205.984375,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=slow1:tag=GR-cap-B:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "slow1",
+    "tag": "GR-cap-B",
+    "policy_id": "CAP",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 410.02000000000004,
+   "status": "ok",
+   "wall_s": 956.8776444932446,
+   "peak_rss_mb": 270.421875,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=slow1:tag=GR-cap-0:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "slow1",
+    "tag": "GR-cap-0",
+    "policy_id": "CAP",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 410.02000000000004,
+   "status": "ok",
+   "wall_s": 997.7293541962281,
+   "peak_rss_mb": 235.5625,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee16:tag=Sublet:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee16",
+    "tag": "Sublet",
+    "policy_id": "A8P",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 395.74,
+   "status": "ok",
+   "wall_s": 1221.2897148681805,
+   "peak_rss_mb": 409.328125,
+   "runs": 2
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee16:tag=Sublet:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee16",
+    "tag": "Sublet",
+    "policy_id": "A8P",
+    "c": 302,
+    "modes": [
+     "L-eg"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 239.87,
+   "status": "ok",
+   "wall_s": 503.74238652642816,
+   "peak_rss_mb": 389.48046875,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=CR-cap-B:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "scen_cold_wan_1gbps",
+    "tag": "CR-cap-B",
+    "policy_id": "CAP",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 213.87,
+   "status": "ok",
+   "wall_s": 322.5768294464797,
+   "peak_rss_mb": 160.66015625,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=CR-cap-0:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "scen_cold_wan_1gbps",
+    "tag": "CR-cap-0",
+    "policy_id": "CAP",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 213.87,
+   "status": "ok",
+   "wall_s": 341.9709573118016,
+   "peak_rss_mb": 154.8359375,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=CR-cap-5:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "scen_cold_wan_1gbps",
+    "tag": "CR-cap-5",
+    "policy_id": "CAP",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 213.87,
+   "status": "ok",
+   "wall_s": 334.23954884056,
+   "peak_rss_mb": 157.87890625,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=CR-cap-B-latch:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "scen_cold_wan_1gbps",
+    "tag": "CR-cap-B-latch",
+    "policy_id": "CAP",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 213.87,
+   "status": "ok",
+   "wall_s": 127.94659586716443,
+   "peak_rss_mb": 161.21875,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=CR-cap-B-slot:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "scen_cold_wan_1gbps",
+    "tag": "CR-cap-B-slot",
+    "policy_id": "CAP",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 213.87,
+   "status": "ok",
+   "wall_s": 318.5377423102036,
+   "peak_rss_mb": 159.7734375,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=CR-cap-B:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "scen_cold_wan_1gbps",
+    "tag": "CR-cap-B",
+    "policy_id": "CAP",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 213.87,
+   "status": "ok",
+   "wall_s": 294.50523265171796,
+   "peak_rss_mb": 160.84375,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=CR-cap-0:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "scen_cold_wan_1gbps",
+    "tag": "CR-cap-0",
+    "policy_id": "CAP",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 213.87,
+   "status": "ok",
+   "wall_s": 395.4085701480508,
+   "peak_rss_mb": 159.12890625,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=CR-cap-5:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "scen_cold_wan_1gbps",
+    "tag": "CR-cap-5",
+    "policy_id": "CAP",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 213.87,
+   "status": "ok",
+   "wall_s": 374.45828099828213,
+   "peak_rss_mb": 159.09765625,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=CR-cap-B-latch:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "scen_cold_wan_1gbps",
+    "tag": "CR-cap-B-latch",
+    "policy_id": "CAP",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 213.87,
+   "status": "ok",
+   "wall_s": 199.2116438606754,
+   "peak_rss_mb": 159.91796875,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=CR-cap-B-slot:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "scen_cold_wan_1gbps",
+    "tag": "CR-cap-B-slot",
+    "policy_id": "CAP",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 213.87,
+   "status": "ok",
+   "wall_s": 378.6010647797957,
+   "peak_rss_mb": 159.26953125,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee4:tag=CR-cap-B:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee4",
+    "tag": "CR-cap-B",
+    "policy_id": "CAP",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 211.52999999999997,
+   "status": "ok",
+   "wall_s": 617.2211718065664,
+   "peak_rss_mb": 187.3828125,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee4:tag=CR-cap-0:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee4",
+    "tag": "CR-cap-0",
+    "policy_id": "CAP",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 211.52999999999997,
+   "status": "ok",
+   "wall_s": 460.17017742432654,
+   "peak_rss_mb": 163.8359375,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee4:tag=CR-cap-5:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee4",
+    "tag": "CR-cap-5",
+    "policy_id": "CAP",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 211.52999999999997,
+   "status": "ok",
+   "wall_s": 436.7632591817528,
+   "peak_rss_mb": 186.15625,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee4:tag=CR-cap-B-latch:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee4",
+    "tag": "CR-cap-B-latch",
+    "policy_id": "CAP",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 211.52999999999997,
+   "status": "ok",
+   "wall_s": 429.610978923738,
+   "peak_rss_mb": 187.66015625,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee4:tag=CR-cap-B-slot:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee4",
+    "tag": "CR-cap-B-slot",
+    "policy_id": "CAP",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 211.52999999999997,
+   "status": "ok",
+   "wall_s": 358.90497871953994,
+   "peak_rss_mb": 187.5078125,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee4:tag=CR-cap-B:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee4",
+    "tag": "CR-cap-B",
+    "policy_id": "CAP",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 211.52999999999997,
+   "status": "ok",
+   "wall_s": 482.20677598007023,
+   "peak_rss_mb": 185.04296875,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee4:tag=CR-cap-0:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee4",
+    "tag": "CR-cap-0",
+    "policy_id": "CAP",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 211.52999999999997,
+   "status": "ok",
+   "wall_s": 259.0479185236618,
+   "peak_rss_mb": 166.86328125,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee4:tag=CR-cap-5:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee4",
+    "tag": "CR-cap-5",
+    "policy_id": "CAP",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 211.52999999999997,
+   "status": "ok",
+   "wall_s": 308.2716408353299,
+   "peak_rss_mb": 183.64453125,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee4:tag=CR-cap-B-latch:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee4",
+    "tag": "CR-cap-B-latch",
+    "policy_id": "CAP",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 211.52999999999997,
+   "status": "ok",
+   "wall_s": 302.47468350827694,
+   "peak_rss_mb": 184.07421875,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee4:tag=CR-cap-B-slot:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee4",
+    "tag": "CR-cap-B-slot",
+    "policy_id": "CAP",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 211.52999999999997,
+   "status": "ok",
+   "wall_s": 395.93714395724237,
+   "peak_rss_mb": 184.6328125,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee8:tag=CR-cap-B:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee8",
+    "tag": "CR-cap-B",
+    "policy_id": "CAP",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 211.52999999999997,
+   "status": "ok",
+   "wall_s": 293.70054686348885,
+   "peak_rss_mb": 163.94140625,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee8:tag=CR-cap-0:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee8",
+    "tag": "CR-cap-0",
+    "policy_id": "CAP",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 211.52999999999997,
+   "status": "ok",
+   "wall_s": 296.9799259174615,
+   "peak_rss_mb": 154.3046875,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee8:tag=CR-cap-5:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee8",
+    "tag": "CR-cap-5",
+    "policy_id": "CAP",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 211.52999999999997,
+   "status": "ok",
+   "wall_s": 286.9978019967675,
+   "peak_rss_mb": 162.453125,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee8:tag=CR-cap-B-latch:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee8",
+    "tag": "CR-cap-B-latch",
+    "policy_id": "CAP",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 211.52999999999997,
+   "status": "ok",
+   "wall_s": 97.28897208813578,
+   "peak_rss_mb": 153.93359375,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee8:tag=CR-cap-B-slot:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee8",
+    "tag": "CR-cap-B-slot",
+    "policy_id": "CAP",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 211.52999999999997,
+   "status": "ok",
+   "wall_s": 288.4980455460027,
+   "peak_rss_mb": 164.36328125,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee8:tag=CR-cap-B:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee8",
+    "tag": "CR-cap-B",
+    "policy_id": "CAP",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 211.52999999999997,
+   "status": "ok",
+   "wall_s": 286.70650967303663,
+   "peak_rss_mb": 161.44140625,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee8:tag=CR-cap-0:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee8",
+    "tag": "CR-cap-0",
+    "policy_id": "CAP",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 211.52999999999997,
+   "status": "ok",
+   "wall_s": 354.0314485449344,
+   "peak_rss_mb": 162.03125,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee8:tag=CR-cap-5:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee8",
+    "tag": "CR-cap-5",
+    "policy_id": "CAP",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 211.52999999999997,
+   "status": "ok",
+   "wall_s": 334.6951871654019,
+   "peak_rss_mb": 165.24609375,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee8:tag=CR-cap-B-latch:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee8",
+    "tag": "CR-cap-B-latch",
+    "policy_id": "CAP",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 211.52999999999997,
+   "status": "ok",
+   "wall_s": 83.23156166542321,
+   "peak_rss_mb": 154.89453125,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee8:tag=CR-cap-B-slot:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee8",
+    "tag": "CR-cap-B-slot",
+    "policy_id": "CAP",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 211.52999999999997,
+   "status": "ok",
+   "wall_s": 322.3043376840651,
+   "peak_rss_mb": 162.00390625,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee16:tag=CR-cap-B:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee16",
+    "tag": "CR-cap-B",
+    "policy_id": "CAP",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 211.52999999999997,
+   "status": "ok",
+   "wall_s": 352.638568717055,
+   "peak_rss_mb": 157.4296875,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee16:tag=CR-cap-0:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee16",
+    "tag": "CR-cap-0",
+    "policy_id": "CAP",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 211.52999999999997,
+   "status": "ok",
+   "wall_s": 365.3513830639422,
+   "peak_rss_mb": 155.0,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee16:tag=CR-cap-5:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee16",
+    "tag": "CR-cap-5",
+    "policy_id": "CAP",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 211.52999999999997,
+   "status": "ok",
+   "wall_s": 367.4562100553885,
+   "peak_rss_mb": 156.8203125,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee16:tag=CR-cap-B-latch:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee16",
+    "tag": "CR-cap-B-latch",
+    "policy_id": "CAP",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 211.52999999999997,
+   "status": "ok",
+   "wall_s": 123.37923111580312,
+   "peak_rss_mb": 154.58203125,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee16:tag=CR-cap-B-slot:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee16",
+    "tag": "CR-cap-B-slot",
+    "policy_id": "CAP",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 211.52999999999997,
+   "status": "ok",
+   "wall_s": 373.06730508897454,
+   "peak_rss_mb": 156.90625,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee16:tag=CR-cap-B:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee16",
+    "tag": "CR-cap-B",
+    "policy_id": "CAP",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 211.52999999999997,
+   "status": "ok",
+   "wall_s": 314.41453468892723,
+   "peak_rss_mb": 157.5546875,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee16:tag=CR-cap-0:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee16",
+    "tag": "CR-cap-0",
+    "policy_id": "CAP",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 211.52999999999997,
+   "status": "ok",
+   "wall_s": 348.8590767942369,
+   "peak_rss_mb": 156.6875,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee16:tag=CR-cap-5:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee16",
+    "tag": "CR-cap-5",
+    "policy_id": "CAP",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 211.52999999999997,
+   "status": "ok",
+   "wall_s": 232.44269133079797,
+   "peak_rss_mb": 158.8828125,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee16:tag=CR-cap-B-latch:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee16",
+    "tag": "CR-cap-B-latch",
+    "policy_id": "CAP",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 211.52999999999997,
+   "status": "ok",
+   "wall_s": 120.12365610245615,
+   "peak_rss_mb": 155.21875,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee16:tag=CR-cap-B-slot:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee16",
+    "tag": "CR-cap-B-slot",
+    "policy_id": "CAP",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 211.52999999999997,
+   "status": "ok",
+   "wall_s": 223.29577295295894,
+   "peak_rss_mb": 159.2890625,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=BL1-GP:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "scen_cold_wan_1gbps",
+    "tag": "BL1-GP",
+    "policy_id": "A8P",
+    "c": 303,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 198.73000000000002,
+   "status": "ok",
+   "wall_s": 338.2125588953495,
+   "peak_rss_mb": 387.41796875,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=BL1-GP:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "scen_cold_wan_1gbps",
+    "tag": "BL1-GP",
+    "policy_id": "A8P",
+    "c": 304,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 198.73000000000002,
+   "status": "ok",
+   "wall_s": 341.45245170686394,
+   "peak_rss_mb": 389.34375,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee4:tag=BL1-GP:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee4",
+    "tag": "BL1-GP",
+    "policy_id": "A8P",
+    "c": 303,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 195.87,
+   "status": "ok",
+   "wall_s": 278.47371742874384,
+   "peak_rss_mb": 388.23828125,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee4:tag=BL1-GP:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee4",
+    "tag": "BL1-GP",
+    "policy_id": "A8P",
+    "c": 304,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 195.87,
+   "status": "ok",
+   "wall_s": 288.98208395019174,
+   "peak_rss_mb": 389.7421875,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee8:tag=BL1-GP:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee8",
+    "tag": "BL1-GP",
+    "policy_id": "A8P",
+    "c": 303,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 195.87,
+   "status": "ok",
+   "wall_s": 271.34335500374436,
+   "peak_rss_mb": 387.65234375,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee8:tag=BL1-GP:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee8",
+    "tag": "BL1-GP",
+    "policy_id": "A8P",
+    "c": 304,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 195.87,
+   "status": "ok",
+   "wall_s": 354.4572703158483,
+   "peak_rss_mb": 389.17578125,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee16:tag=BL1-GP:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee16",
+    "tag": "BL1-GP",
+    "policy_id": "A8P",
+    "c": 303,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 195.87,
+   "status": "ok",
+   "wall_s": 351.95474593900144,
+   "peak_rss_mb": 388.24609375,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee16:tag=BL1-GP:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee16",
+    "tag": "BL1-GP",
+    "policy_id": "A8P",
+    "c": 304,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 195.87,
+   "status": "ok",
+   "wall_s": 331.36239358689636,
+   "peak_rss_mb": 392.8671875,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=slow1:tag=CR-cap-B:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "slow1",
+    "tag": "CR-cap-B",
+    "policy_id": "CAP",
+    "c": 303,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 176.505,
+   "status": "ok",
+   "wall_s": 74.33016950637102,
+   "peak_rss_mb": 197.703125,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=slow1:tag=CR-cap-0:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "slow1",
+    "tag": "CR-cap-0",
+    "policy_id": "CAP",
+    "c": 303,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 176.505,
+   "status": "ok",
+   "wall_s": 70.97092531900853,
+   "peak_rss_mb": 197.50390625,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=slow1:tag=CR-cap-5:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "slow1",
+    "tag": "CR-cap-5",
+    "policy_id": "CAP",
+    "c": 303,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 176.505,
+   "status": "ok",
+   "wall_s": 71.42843743693084,
+   "peak_rss_mb": 198.52734375,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=slow1:tag=CR-cap-B-latch:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "slow1",
+    "tag": "CR-cap-B-latch",
+    "policy_id": "CAP",
+    "c": 303,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 176.505,
+   "status": "ok",
+   "wall_s": 74.72142434027046,
+   "peak_rss_mb": 197.6015625,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=slow1:tag=CR-cap-B-slot:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "slow1",
+    "tag": "CR-cap-B-slot",
+    "policy_id": "CAP",
+    "c": 303,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 176.505,
+   "status": "ok",
+   "wall_s": 73.74020346719772,
+   "peak_rss_mb": 198.19140625,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=slow1:tag=CR-cap-B:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "slow1",
+    "tag": "CR-cap-B",
+    "policy_id": "CAP",
+    "c": 304,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 176.505,
+   "status": "ok",
+   "wall_s": 76.73181210178882,
+   "peak_rss_mb": 201.171875,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=slow1:tag=CR-cap-0:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "slow1",
+    "tag": "CR-cap-0",
+    "policy_id": "CAP",
+    "c": 304,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 176.505,
+   "status": "ok",
+   "wall_s": 83.38902111910284,
+   "peak_rss_mb": 201.30859375,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=slow1:tag=CR-cap-5:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "slow1",
+    "tag": "CR-cap-5",
+    "policy_id": "CAP",
+    "c": 304,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 176.505,
+   "status": "ok",
+   "wall_s": 89.5098630702123,
+   "peak_rss_mb": 202.3125,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=slow1:tag=CR-cap-B-latch:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "slow1",
+    "tag": "CR-cap-B-latch",
+    "policy_id": "CAP",
+    "c": 304,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 176.505,
+   "status": "ok",
+   "wall_s": 86.4298027548939,
+   "peak_rss_mb": 200.6953125,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=slow1:tag=CR-cap-B-slot:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "slow1",
+    "tag": "CR-cap-B-slot",
+    "policy_id": "CAP",
+    "c": 304,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 176.505,
+   "status": "ok",
+   "wall_s": 82.11673690006137,
+   "peak_rss_mb": 201.171875,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee16:tag=A9:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee16",
+    "tag": "A9",
+    "policy_id": "A9",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 169.01999999999998,
+   "status": "ok",
+   "wall_s": 120.14734123833477,
+   "peak_rss_mb": 178.2109375,
+   "runs": 2
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=BL1:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "scen_cold_wan_1gbps",
+    "tag": "BL1",
+    "policy_id": "BL1",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 143.89600000000002,
+   "status": "ok",
+   "wall_s": 470.30447346623987,
+   "peak_rss_mb": 231.921875,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=BL1:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "scen_cold_wan_1gbps",
+    "tag": "BL1",
+    "policy_id": "BL1",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 143.89600000000002,
+   "status": "ok",
+   "wall_s": 403.01066404767334,
+   "peak_rss_mb": 217.3046875,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee4:tag=BL1:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee4",
+    "tag": "BL1",
+    "policy_id": "BL1",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 142.024,
+   "status": "ok",
+   "wall_s": 508.9026557477191,
+   "peak_rss_mb": 240.33984375,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee4:tag=BL1:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee4",
+    "tag": "BL1",
+    "policy_id": "BL1",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 142.024,
+   "status": "ok",
+   "wall_s": 439.58334883954376,
+   "peak_rss_mb": 222.3125,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee8:tag=BL1:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee8",
+    "tag": "BL1",
+    "policy_id": "BL1",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 142.024,
+   "status": "ok",
+   "wall_s": 546.3017286732793,
+   "peak_rss_mb": 240.23046875,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee8:tag=BL1:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee8",
+    "tag": "BL1",
+    "policy_id": "BL1",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 142.024,
+   "status": "ok",
+   "wall_s": 463.94381140265614,
+   "peak_rss_mb": 223.1171875,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee16:tag=BL1:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee16",
+    "tag": "BL1",
+    "policy_id": "BL1",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 142.024,
+   "status": "ok",
+   "wall_s": 538.2059131031856,
+   "peak_rss_mb": 240.4140625,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee16:tag=BL1:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee16",
+    "tag": "BL1",
+    "policy_id": "BL1",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 142.024,
+   "status": "ok",
+   "wall_s": 456.3689306359738,
+   "peak_rss_mb": 223.1875,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=GR-cap-B:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "scen_cold_wan_1gbps",
+    "tag": "GR-cap-B",
+    "policy_id": "CAP",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 126.58000000000001,
+   "status": "ok",
+   "wall_s": 224.7350395405665,
+   "peak_rss_mb": 169.12890625,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=GR-cap-0:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "scen_cold_wan_1gbps",
+    "tag": "GR-cap-0",
+    "policy_id": "CAP",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 126.58000000000001,
+   "status": "ok",
+   "wall_s": 223.83172722626477,
+   "peak_rss_mb": 151.046875,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=GR-cap-B:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "scen_cold_wan_1gbps",
+    "tag": "GR-cap-B",
+    "policy_id": "CAP",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 126.58000000000001,
+   "status": "ok",
+   "wall_s": 225.62585507053882,
+   "peak_rss_mb": 169.54296875,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=GR-cap-0:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "scen_cold_wan_1gbps",
+    "tag": "GR-cap-0",
+    "policy_id": "CAP",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 126.58000000000001,
+   "status": "ok",
+   "wall_s": 208.28768570441753,
+   "peak_rss_mb": 159.13671875,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee16:tag=A9:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee16",
+    "tag": "A9",
+    "policy_id": "A9",
+    "c": 302,
+    "modes": [
+     "L-eg"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 126.50999999999999,
+   "status": "ok",
+   "wall_s": 82.80130542628467,
+   "peak_rss_mb": 171.484375,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee4:tag=GR-cap-B:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee4",
+    "tag": "GR-cap-B",
+    "policy_id": "CAP",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 125.02,
+   "status": "ok",
+   "wall_s": 218.93264119327068,
+   "peak_rss_mb": 176.42578125,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee4:tag=GR-cap-0:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee4",
+    "tag": "GR-cap-0",
+    "policy_id": "CAP",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 125.02,
+   "status": "ok",
+   "wall_s": 219.72248819936067,
+   "peak_rss_mb": 150.953125,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee4:tag=GR-cap-B:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee4",
+    "tag": "GR-cap-B",
+    "policy_id": "CAP",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 125.02,
+   "status": "ok",
+   "wall_s": 213.352618153207,
+   "peak_rss_mb": 169.45703125,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee4:tag=GR-cap-0:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee4",
+    "tag": "GR-cap-0",
+    "policy_id": "CAP",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 125.02,
+   "status": "ok",
+   "wall_s": 216.13404364138842,
+   "peak_rss_mb": 173.296875,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee8:tag=GR-cap-B:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee8",
+    "tag": "GR-cap-B",
+    "policy_id": "CAP",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 125.02,
+   "status": "ok",
+   "wall_s": 220.51233347225934,
+   "peak_rss_mb": 165.578125,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee8:tag=GR-cap-0:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee8",
+    "tag": "GR-cap-0",
+    "policy_id": "CAP",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 125.02,
+   "status": "ok",
+   "wall_s": 214.18949201330543,
+   "peak_rss_mb": 149.8984375,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee8:tag=GR-cap-B:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee8",
+    "tag": "GR-cap-B",
+    "policy_id": "CAP",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 125.02,
+   "status": "ok",
+   "wall_s": 193.98875036556274,
+   "peak_rss_mb": 163.30859375,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee8:tag=GR-cap-0:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee8",
+    "tag": "GR-cap-0",
+    "policy_id": "CAP",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 125.02,
+   "status": "ok",
+   "wall_s": 168.5363656077534,
+   "peak_rss_mb": 162.7265625,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee16:tag=GR-cap-B:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee16",
+    "tag": "GR-cap-B",
+    "policy_id": "CAP",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 125.02,
+   "status": "ok",
+   "wall_s": 161.21604814752936,
+   "peak_rss_mb": 156.765625,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee16:tag=GR-cap-0:c=301",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee16",
+    "tag": "GR-cap-0",
+    "policy_id": "CAP",
+    "c": 301,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 125.02,
+   "status": "ok",
+   "wall_s": 149.67088493239135,
+   "peak_rss_mb": 151.25,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee16:tag=GR-cap-B:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee16",
+    "tag": "GR-cap-B",
+    "policy_id": "CAP",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 125.02,
+   "status": "ok",
+   "wall_s": 139.56173927802593,
+   "peak_rss_mb": 158.76171875,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee16:tag=GR-cap-0:c=302",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee16",
+    "tag": "GR-cap-0",
+    "policy_id": "CAP",
+    "c": 302,
+    "modes": [
+     "L-tr",
+     "L-eg",
+     "L-ss",
+     "L-iid-0.05",
+     "L-iid-0.2",
+     "L-co"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 125.02,
+   "status": "ok",
+   "wall_s": 149.39965067617595,
+   "peak_rss_mb": 156.765625,
+   "runs": 6
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=slow1:tag=BL1:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "slow1",
+    "tag": "BL1",
+    "policy_id": "BL1",
+    "c": 303,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 114.004,
+   "status": "ok",
+   "wall_s": 17.761652188375592,
+   "peak_rss_mb": 204.52734375,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=slow1:tag=BL1:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "slow1",
+    "tag": "BL1",
+    "policy_id": "BL1",
+    "c": 304,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 114.004,
+   "status": "ok",
+   "wall_s": 19.41136727668345,
+   "peak_rss_mb": 206.21875,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=CR-cap-B:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "scen_cold_wan_1gbps",
+    "tag": "CR-cap-B",
+    "policy_id": "CAP",
+    "c": 303,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 105.645,
+   "status": "ok",
+   "wall_s": 51.95324179250747,
+   "peak_rss_mb": 156.66015625,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=CR-cap-0:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "scen_cold_wan_1gbps",
+    "tag": "CR-cap-0",
+    "policy_id": "CAP",
+    "c": 303,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 105.645,
+   "status": "ok",
+   "wall_s": 56.35960059706122,
+   "peak_rss_mb": 149.57421875,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=CR-cap-5:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "scen_cold_wan_1gbps",
+    "tag": "CR-cap-5",
+    "policy_id": "CAP",
+    "c": 303,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 105.645,
+   "status": "ok",
+   "wall_s": 60.56995831709355,
+   "peak_rss_mb": 153.31640625,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=CR-cap-B-latch:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "scen_cold_wan_1gbps",
+    "tag": "CR-cap-B-latch",
+    "policy_id": "CAP",
+    "c": 303,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 105.645,
+   "status": "ok",
+   "wall_s": 63.295641949400306,
+   "peak_rss_mb": 156.234375,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=CR-cap-B-slot:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "scen_cold_wan_1gbps",
+    "tag": "CR-cap-B-slot",
+    "policy_id": "CAP",
+    "c": 303,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 105.645,
+   "status": "ok",
+   "wall_s": 68.95194596331567,
+   "peak_rss_mb": 155.94921875,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=CR-cap-B:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "scen_cold_wan_1gbps",
+    "tag": "CR-cap-B",
+    "policy_id": "CAP",
+    "c": 304,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 105.645,
+   "status": "ok",
+   "wall_s": 64.91800829116255,
+   "peak_rss_mb": 157.296875,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=CR-cap-0:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "scen_cold_wan_1gbps",
+    "tag": "CR-cap-0",
+    "policy_id": "CAP",
+    "c": 304,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 105.645,
+   "status": "ok",
+   "wall_s": 65.38484081905335,
+   "peak_rss_mb": 150.7109375,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=CR-cap-5:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "scen_cold_wan_1gbps",
+    "tag": "CR-cap-5",
+    "policy_id": "CAP",
+    "c": 304,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 105.645,
+   "status": "ok",
+   "wall_s": 64.53131487872452,
+   "peak_rss_mb": 154.25390625,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=CR-cap-B-latch:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "scen_cold_wan_1gbps",
+    "tag": "CR-cap-B-latch",
+    "policy_id": "CAP",
+    "c": 304,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 105.645,
+   "status": "ok",
+   "wall_s": 55.266700606793165,
+   "peak_rss_mb": 150.37890625,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=CR-cap-B-slot:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "scen_cold_wan_1gbps",
+    "tag": "CR-cap-B-slot",
+    "policy_id": "CAP",
+    "c": 304,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 105.645,
+   "status": "ok",
+   "wall_s": 62.721343947574496,
+   "peak_rss_mb": 156.76171875,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee4:tag=CR-cap-B:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee4",
+    "tag": "CR-cap-B",
+    "policy_id": "CAP",
+    "c": 303,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 105.255,
+   "status": "ok",
+   "wall_s": 68.84132914338261,
+   "peak_rss_mb": 156.390625,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee4:tag=CR-cap-0:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee4",
+    "tag": "CR-cap-0",
+    "policy_id": "CAP",
+    "c": 303,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 105.255,
+   "status": "ok",
+   "wall_s": 68.16010655649006,
+   "peak_rss_mb": 156.234375,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee4:tag=CR-cap-5:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee4",
+    "tag": "CR-cap-5",
+    "policy_id": "CAP",
+    "c": 303,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 105.255,
+   "status": "ok",
+   "wall_s": 64.41151981428266,
+   "peak_rss_mb": 156.484375,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee4:tag=CR-cap-B-latch:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee4",
+    "tag": "CR-cap-B-latch",
+    "policy_id": "CAP",
+    "c": 303,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 105.255,
+   "status": "ok",
+   "wall_s": 67.38626587670296,
+   "peak_rss_mb": 157.58984375,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee4:tag=CR-cap-B-slot:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee4",
+    "tag": "CR-cap-B-slot",
+    "policy_id": "CAP",
+    "c": 303,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 105.255,
+   "status": "ok",
+   "wall_s": 64.63633478432894,
+   "peak_rss_mb": 156.109375,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee4:tag=CR-cap-B:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee4",
+    "tag": "CR-cap-B",
+    "policy_id": "CAP",
+    "c": 304,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 105.255,
+   "status": "ok",
+   "wall_s": 72.88875723257661,
+   "peak_rss_mb": 156.9140625,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee4:tag=CR-cap-0:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee4",
+    "tag": "CR-cap-0",
+    "policy_id": "CAP",
+    "c": 304,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 105.255,
+   "status": "ok",
+   "wall_s": 69.69147438090295,
+   "peak_rss_mb": 158.6875,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee4:tag=CR-cap-5:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee4",
+    "tag": "CR-cap-5",
+    "policy_id": "CAP",
+    "c": 304,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 105.255,
+   "status": "ok",
+   "wall_s": 72.66002100147307,
+   "peak_rss_mb": 157.5390625,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee4:tag=CR-cap-B-latch:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee4",
+    "tag": "CR-cap-B-latch",
+    "policy_id": "CAP",
+    "c": 304,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 105.255,
+   "status": "ok",
+   "wall_s": 73.72757201269269,
+   "peak_rss_mb": 157.41015625,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee4:tag=CR-cap-B-slot:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee4",
+    "tag": "CR-cap-B-slot",
+    "policy_id": "CAP",
+    "c": 304,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 105.255,
+   "status": "ok",
+   "wall_s": 65.03051135409623,
+   "peak_rss_mb": 156.71875,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee8:tag=CR-cap-B:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee8",
+    "tag": "CR-cap-B",
+    "policy_id": "CAP",
+    "c": 303,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 105.255,
+   "status": "ok",
+   "wall_s": 59.62757696863264,
+   "peak_rss_mb": 156.73046875,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee8:tag=CR-cap-0:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee8",
+    "tag": "CR-cap-0",
+    "policy_id": "CAP",
+    "c": 303,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 105.255,
+   "status": "ok",
+   "wall_s": 58.3134735012427,
+   "peak_rss_mb": 153.5546875,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee8:tag=CR-cap-5:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee8",
+    "tag": "CR-cap-5",
+    "policy_id": "CAP",
+    "c": 303,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 105.255,
+   "status": "ok",
+   "wall_s": 63.80190364737064,
+   "peak_rss_mb": 156.73046875,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee8:tag=CR-cap-B-latch:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee8",
+    "tag": "CR-cap-B-latch",
+    "policy_id": "CAP",
+    "c": 303,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 105.255,
+   "status": "ok",
+   "wall_s": 50.84462975803763,
+   "peak_rss_mb": 152.90625,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee8:tag=CR-cap-B-slot:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee8",
+    "tag": "CR-cap-B-slot",
+    "policy_id": "CAP",
+    "c": 303,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 105.255,
+   "status": "ok",
+   "wall_s": 60.57986036874354,
+   "peak_rss_mb": 156.53125,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee8:tag=CR-cap-B:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee8",
+    "tag": "CR-cap-B",
+    "policy_id": "CAP",
+    "c": 304,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 105.255,
+   "status": "ok",
+   "wall_s": 68.22120095603168,
+   "peak_rss_mb": 157.10546875,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee8:tag=CR-cap-0:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee8",
+    "tag": "CR-cap-0",
+    "policy_id": "CAP",
+    "c": 304,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 105.255,
+   "status": "ok",
+   "wall_s": 62.49505748413503,
+   "peak_rss_mb": 151.73046875,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee8:tag=CR-cap-5:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee8",
+    "tag": "CR-cap-5",
+    "policy_id": "CAP",
+    "c": 304,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 105.255,
+   "status": "ok",
+   "wall_s": 67.55260365176946,
+   "peak_rss_mb": 157.3359375,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee8:tag=CR-cap-B-latch:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee8",
+    "tag": "CR-cap-B-latch",
+    "policy_id": "CAP",
+    "c": 304,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 105.255,
+   "status": "ok",
+   "wall_s": 51.01811817381531,
+   "peak_rss_mb": 150.58203125,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee8:tag=CR-cap-B-slot:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee8",
+    "tag": "CR-cap-B-slot",
+    "policy_id": "CAP",
+    "c": 304,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 105.255,
+   "status": "ok",
+   "wall_s": 69.88316545356065,
+   "peak_rss_mb": 157.703125,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee16:tag=CR-cap-B:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee16",
+    "tag": "CR-cap-B",
+    "policy_id": "CAP",
+    "c": 303,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 105.255,
+   "status": "ok",
+   "wall_s": 65.48943941760808,
+   "peak_rss_mb": 154.28515625,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee16:tag=CR-cap-0:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee16",
+    "tag": "CR-cap-0",
+    "policy_id": "CAP",
+    "c": 303,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 105.255,
+   "status": "ok",
+   "wall_s": 66.2211950942874,
+   "peak_rss_mb": 153.05859375,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee16:tag=CR-cap-5:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee16",
+    "tag": "CR-cap-5",
+    "policy_id": "CAP",
+    "c": 303,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 105.255,
+   "status": "ok",
+   "wall_s": 64.2473546396941,
+   "peak_rss_mb": 154.2265625,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee16:tag=CR-cap-B-latch:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee16",
+    "tag": "CR-cap-B-latch",
+    "policy_id": "CAP",
+    "c": 303,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 105.255,
+   "status": "ok",
+   "wall_s": 53.100095454603434,
+   "peak_rss_mb": 153.58203125,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee16:tag=CR-cap-B-slot:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee16",
+    "tag": "CR-cap-B-slot",
+    "policy_id": "CAP",
+    "c": 303,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 105.255,
+   "status": "ok",
+   "wall_s": 66.50957764592022,
+   "peak_rss_mb": 155.03515625,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee16:tag=CR-cap-B:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee16",
+    "tag": "CR-cap-B",
+    "policy_id": "CAP",
+    "c": 304,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 105.255,
+   "status": "ok",
+   "wall_s": 78.97929184697568,
+   "peak_rss_mb": 153.9609375,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee16:tag=CR-cap-0:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee16",
+    "tag": "CR-cap-0",
+    "policy_id": "CAP",
+    "c": 304,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 105.255,
+   "status": "ok",
+   "wall_s": 77.73711337614805,
+   "peak_rss_mb": 153.3828125,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee16:tag=CR-cap-5:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee16",
+    "tag": "CR-cap-5",
+    "policy_id": "CAP",
+    "c": 304,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 105.255,
+   "status": "ok",
+   "wall_s": 78.72200600337237,
+   "peak_rss_mb": 153.1953125,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee16:tag=CR-cap-B-latch:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee16",
+    "tag": "CR-cap-B-latch",
+    "policy_id": "CAP",
+    "c": 304,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 105.255,
+   "status": "ok",
+   "wall_s": 69.24975065886974,
+   "peak_rss_mb": 149.79296875,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee16:tag=CR-cap-B-slot:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee16",
+    "tag": "CR-cap-B-slot",
+    "policy_id": "CAP",
+    "c": 304,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 105.255,
+   "status": "ok",
+   "wall_s": 57.481147699058056,
+   "peak_rss_mb": 153.7109375,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=slow1:tag=GR-cap-B:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "slow1",
+    "tag": "GR-cap-B",
+    "policy_id": "CAP",
+    "c": 303,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 101.67000000000002,
+   "status": "ok",
+   "wall_s": 25.267616922967136,
+   "peak_rss_mb": 205.9453125,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=slow1:tag=GR-cap-0:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "slow1",
+    "tag": "GR-cap-0",
+    "policy_id": "CAP",
+    "c": 303,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 101.67000000000002,
+   "status": "ok",
+   "wall_s": 24.932778651826084,
+   "peak_rss_mb": 205.3828125,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=slow1:tag=GR-cap-B:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "slow1",
+    "tag": "GR-cap-B",
+    "policy_id": "CAP",
+    "c": 304,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 101.67000000000002,
+   "status": "ok",
+   "wall_s": 24.84643873013556,
+   "peak_rss_mb": 207.5703125,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=slow1:tag=GR-cap-0:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "slow1",
+    "tag": "GR-cap-0",
+    "policy_id": "CAP",
+    "c": 304,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 101.67000000000002,
+   "status": "ok",
+   "wall_s": 25.197012023068964,
+   "peak_rss_mb": 208.00390625,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=BL1:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "scen_cold_wan_1gbps",
+    "tag": "BL1",
+    "policy_id": "BL1",
+    "c": 303,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 57.316,
+   "status": "ok",
+   "wall_s": 14.867396822199225,
+   "peak_rss_mb": 157.3359375,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=BL1:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "scen_cold_wan_1gbps",
+    "tag": "BL1",
+    "policy_id": "BL1",
+    "c": 304,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 57.316,
+   "status": "ok",
+   "wall_s": 15.289716170169413,
+   "peak_rss_mb": 158.11328125,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee4:tag=BL1:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee4",
+    "tag": "BL1",
+    "policy_id": "BL1",
+    "c": 303,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 57.004,
+   "status": "ok",
+   "wall_s": 15.778385150246322,
+   "peak_rss_mb": 158.34765625,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee4:tag=BL1:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee4",
+    "tag": "BL1",
+    "policy_id": "BL1",
+    "c": 304,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 57.004,
+   "status": "ok",
+   "wall_s": 16.693446255289018,
+   "peak_rss_mb": 159.0859375,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee8:tag=BL1:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee8",
+    "tag": "BL1",
+    "policy_id": "BL1",
+    "c": 303,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 57.004,
+   "status": "ok",
+   "wall_s": 16.225089772604406,
+   "peak_rss_mb": 158.3359375,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee8:tag=BL1:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee8",
+    "tag": "BL1",
+    "policy_id": "BL1",
+    "c": 304,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 57.004,
+   "status": "ok",
+   "wall_s": 17.301750227808952,
+   "peak_rss_mb": 159.5078125,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee16:tag=BL1:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee16",
+    "tag": "BL1",
+    "policy_id": "BL1",
+    "c": 303,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 57.004,
+   "status": "ok",
+   "wall_s": 16.42450002860278,
+   "peak_rss_mb": 158.84765625,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee16:tag=BL1:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee16",
+    "tag": "BL1",
+    "policy_id": "BL1",
+    "c": 304,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 57.004,
+   "status": "ok",
+   "wall_s": 18.3096646592021,
+   "peak_rss_mb": 159.0,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=GR-cap-B:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "scen_cold_wan_1gbps",
+    "tag": "GR-cap-B",
+    "policy_id": "CAP",
+    "c": 303,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 54.43,
+   "status": "ok",
+   "wall_s": 15.82321353442967,
+   "peak_rss_mb": 156.34765625,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=GR-cap-0:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "scen_cold_wan_1gbps",
+    "tag": "GR-cap-0",
+    "policy_id": "CAP",
+    "c": 303,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 54.43,
+   "status": "ok",
+   "wall_s": 21.080970510840416,
+   "peak_rss_mb": 149.75,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=GR-cap-B:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "scen_cold_wan_1gbps",
+    "tag": "GR-cap-B",
+    "policy_id": "CAP",
+    "c": 304,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 54.43,
+   "status": "ok",
+   "wall_s": 17.49262257758528,
+   "peak_rss_mb": 157.97265625,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=GR-cap-0:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "scen_cold_wan_1gbps",
+    "tag": "GR-cap-0",
+    "policy_id": "CAP",
+    "c": 304,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 54.43,
+   "status": "ok",
+   "wall_s": 17.427618520334363,
+   "peak_rss_mb": 149.09765625,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee4:tag=GR-cap-B:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee4",
+    "tag": "GR-cap-B",
+    "policy_id": "CAP",
+    "c": 303,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 54.17,
+   "status": "ok",
+   "wall_s": 18.339648626744747,
+   "peak_rss_mb": 159.01171875,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee4:tag=GR-cap-0:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee4",
+    "tag": "GR-cap-0",
+    "policy_id": "CAP",
+    "c": 303,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 54.17,
+   "status": "ok",
+   "wall_s": 19.04370282124728,
+   "peak_rss_mb": 152.54296875,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee4:tag=GR-cap-B:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee4",
+    "tag": "GR-cap-B",
+    "policy_id": "CAP",
+    "c": 304,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 54.17,
+   "status": "ok",
+   "wall_s": 17.21327641233802,
+   "peak_rss_mb": 159.70703125,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee4:tag=GR-cap-0:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee4",
+    "tag": "GR-cap-0",
+    "policy_id": "CAP",
+    "c": 304,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 54.17,
+   "status": "ok",
+   "wall_s": 18.63033968769014,
+   "peak_rss_mb": 159.390625,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee8:tag=GR-cap-B:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee8",
+    "tag": "GR-cap-B",
+    "policy_id": "CAP",
+    "c": 303,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 54.17,
+   "status": "ok",
+   "wall_s": 13.962481301277876,
+   "peak_rss_mb": 157.234375,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee8:tag=GR-cap-0:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee8",
+    "tag": "GR-cap-0",
+    "policy_id": "CAP",
+    "c": 303,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 54.17,
+   "status": "ok",
+   "wall_s": 17.88102152943611,
+   "peak_rss_mb": 152.21875,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee8:tag=GR-cap-B:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee8",
+    "tag": "GR-cap-B",
+    "policy_id": "CAP",
+    "c": 304,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 54.17,
+   "status": "ok",
+   "wall_s": 15.079513159580529,
+   "peak_rss_mb": 155.88671875,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee8:tag=GR-cap-0:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee8",
+    "tag": "GR-cap-0",
+    "policy_id": "CAP",
+    "c": 304,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 54.17,
+   "status": "ok",
+   "wall_s": 14.778400688432157,
+   "peak_rss_mb": 153.359375,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee16:tag=GR-cap-B:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee16",
+    "tag": "GR-cap-B",
+    "policy_id": "CAP",
+    "c": 303,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 54.17,
+   "status": "ok",
+   "wall_s": 13.69019587058574,
+   "peak_rss_mb": 154.234375,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee16:tag=GR-cap-0:c=303",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee16",
+    "tag": "GR-cap-0",
+    "policy_id": "CAP",
+    "c": 303,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 54.17,
+   "status": "ok",
+   "wall_s": 17.00062194466591,
+   "peak_rss_mb": 152.76171875,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee16:tag=GR-cap-B:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee16",
+    "tag": "GR-cap-B",
+    "policy_id": "CAP",
+    "c": 304,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 54.17,
+   "status": "ok",
+   "wall_s": 11.9336668998003,
+   "peak_rss_mb": 153.43359375,
+   "runs": 1
+  },
+  {
+   "id": "e7b:sens:k=sens:pt=fee16:tag=GR-cap-0:c=304",
+   "kind": "pool",
+   "params": {
+    "part": "sens",
+    "kind": "sens",
+    "point": "fee16",
+    "tag": "GR-cap-0",
+    "policy_id": "CAP",
+    "c": 304,
+    "modes": [
+     "L-tr"
+    ],
+    "policy_seeds": [
+     0
+    ],
+    "horizon_min": 10080
+   },
+   "est_s": 54.17,
+   "status": "ok",
+   "wall_s": 13.363089978694916,
+   "peak_rss_mb": 153.05078125,
+   "runs": 1
+  }
+ ],
+ "instance_hashes": {},
+ "part": "sens",
+ "design": {
+  "reduced": false,
+  "horizon_min": 10080,
+  "weeks": [
+   301,
+   302,
+   303,
+   304,
+   305,
+   306,
+   307,
+   308,
+   309,
+   310,
+   311,
+   312,
+   313,
+   314,
+   315,
+   316
+  ],
+  "week_modes": [
+   "L-tr",
+   "L-eg",
+   "L-ss",
+   "L-iid-0.05",
+   "L-iid-0.2",
+   "L-co",
+   "L-hon",
+   "L-iid-0.0005",
+   "L-iid-0.002",
+   "L-iid-0.0124",
+   "L-co-reg-0.5",
+   "L-co-reg-1",
+   "L-pk"
+  ],
+  "sens_points": [
+   "fee4",
+   "fee8",
+   "fee16",
+   "slow1",
+   "scen_cold_wan_1gbps"
+  ],
+  "sens_weeks": [
+   301,
+   302,
+   303,
+   304
+  ],
+  "sens_stress_weeks": [
+   301,
+   302
+  ],
+  "policy_seeds": [
+   0
+  ]
+ },
+ "instance_hashes_from_outputs": {
+  "e7b:sens:k=sens:pt=slow1:tag=BL1-GP:c=301": {
+   "point": "1fd2e6ec9ed226a07e8921360f5ba6070bb68709d74e4831f497c1d6475b0e39"
+  },
+  "e7b:sens:k=sens:pt=slow1:tag=BL1-GP:c=302": {
+   "point": "40c9cca8c0026aa465bf02f21fce4aed384a7ea0b98f40da4a4a8b40e8854b72"
+  },
+  "e7b:sens:k=sens:pt=slow1:tag=Sublet:c=301": {
+   "point": "1fd2e6ec9ed226a07e8921360f5ba6070bb68709d74e4831f497c1d6475b0e39"
+  },
+  "e7b:sens:k=sens:pt=slow1:tag=Sublet:c=302": {
+   "point": "40c9cca8c0026aa465bf02f21fce4aed384a7ea0b98f40da4a4a8b40e8854b72"
+  },
+  "e7b:sens:k=sens:pt=slow1:tag=A9:c=301": {
+   "point": "1fd2e6ec9ed226a07e8921360f5ba6070bb68709d74e4831f497c1d6475b0e39"
+  },
+  "e7b:sens:k=sens:pt=slow1:tag=A9:c=302": {
+   "point": "40c9cca8c0026aa465bf02f21fce4aed384a7ea0b98f40da4a4a8b40e8854b72"
+  },
+  "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=BL1-GP:c=301": {
+   "point": "c04c4e551529d4cad5ba44f18ec07df6a453296aee7a6c6b2b6e26785f6196fa"
+  },
+  "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=BL1-GP:c=302": {
+   "point": "e6ee0825bcc1a8e34ff7464afff1f2a5cfdda01b58710ceeb1633cf39b90334e"
+  },
+  "e7b:sens:k=sens:pt=fee4:tag=BL1-GP:c=301": {
+   "point": "5625e52900235ac307ecab8ba2fe78696cde67a7febcf7cff43380b77f96ebc6"
+  },
+  "e7b:sens:k=sens:pt=fee4:tag=BL1-GP:c=302": {
+   "point": "785addd66ac0c3730275e1381473c270de4d64d656e72c652c2602e5d20172a6"
+  },
+  "e7b:sens:k=sens:pt=fee8:tag=BL1-GP:c=301": {
+   "point": "2768586347c4d6513c37fbd0856d7bd3140b51231f1dae22882a0ce2c1c664fa"
+  },
+  "e7b:sens:k=sens:pt=fee8:tag=BL1-GP:c=302": {
+   "point": "40f4a019825e904a9caf1cb962b130ceaaeb9f31199327d65d347de6a8e43dbb"
+  },
+  "e7b:sens:k=sens:pt=fee16:tag=BL1-GP:c=301": {
+   "point": "dd6cfef53b7c2b774ba9c8a44d2fae12eda0363283896a931bbb361fe2601117"
+  },
+  "e7b:sens:k=sens:pt=fee16:tag=BL1-GP:c=302": {
+   "point": "fa789236c674cd1c25db694916f8a594a9c83e9021bdaa7f6bf3009a3c28b3d0"
+  },
+  "e7b:sens:k=sens:pt=slow1:tag=BL1-GP:c=303": {
+   "point": "80ec869b8cffbad71014c62c67f14d4f9ea080591a5e32cd10377bde461c2e84"
+  },
+  "e7b:sens:k=sens:pt=slow1:tag=BL1-GP:c=304": {
+   "point": "459ad911c8946468afb885c3562a81733b32ebea7e4b99b527a83729e7f21f42"
+  },
+  "e7b:sens:k=sens:pt=slow1:tag=CR-cap-B:c=301": {
+   "point": "1fd2e6ec9ed226a07e8921360f5ba6070bb68709d74e4831f497c1d6475b0e39"
+  },
+  "e7b:sens:k=sens:pt=slow1:tag=CR-cap-0:c=301": {
+   "point": "1fd2e6ec9ed226a07e8921360f5ba6070bb68709d74e4831f497c1d6475b0e39"
+  },
+  "e7b:sens:k=sens:pt=slow1:tag=CR-cap-5:c=301": {
+   "point": "1fd2e6ec9ed226a07e8921360f5ba6070bb68709d74e4831f497c1d6475b0e39"
+  },
+  "e7b:sens:k=sens:pt=slow1:tag=CR-cap-B-latch:c=301": {
+   "point": "1fd2e6ec9ed226a07e8921360f5ba6070bb68709d74e4831f497c1d6475b0e39"
+  },
+  "e7b:sens:k=sens:pt=slow1:tag=CR-cap-B-slot:c=301": {
+   "point": "1fd2e6ec9ed226a07e8921360f5ba6070bb68709d74e4831f497c1d6475b0e39"
+  },
+  "e7b:sens:k=sens:pt=slow1:tag=CR-cap-B:c=302": {
+   "point": "40c9cca8c0026aa465bf02f21fce4aed384a7ea0b98f40da4a4a8b40e8854b72"
+  },
+  "e7b:sens:k=sens:pt=slow1:tag=CR-cap-0:c=302": {
+   "point": "40c9cca8c0026aa465bf02f21fce4aed384a7ea0b98f40da4a4a8b40e8854b72"
+  },
+  "e7b:sens:k=sens:pt=slow1:tag=CR-cap-5:c=302": {
+   "point": "40c9cca8c0026aa465bf02f21fce4aed384a7ea0b98f40da4a4a8b40e8854b72"
+  },
+  "e7b:sens:k=sens:pt=slow1:tag=CR-cap-B-latch:c=302": {
+   "point": "40c9cca8c0026aa465bf02f21fce4aed384a7ea0b98f40da4a4a8b40e8854b72"
+  },
+  "e7b:sens:k=sens:pt=slow1:tag=CR-cap-B-slot:c=302": {
+   "point": "40c9cca8c0026aa465bf02f21fce4aed384a7ea0b98f40da4a4a8b40e8854b72"
+  },
+  "e7b:sens:k=sens:pt=slow1:tag=BL1:c=301": {
+   "point": "1fd2e6ec9ed226a07e8921360f5ba6070bb68709d74e4831f497c1d6475b0e39"
+  },
+  "e7b:sens:k=sens:pt=slow1:tag=BL1:c=302": {
+   "point": "40c9cca8c0026aa465bf02f21fce4aed384a7ea0b98f40da4a4a8b40e8854b72"
+  },
+  "e7b:sens:k=sens:pt=slow1:tag=GR-cap-B:c=301": {
+   "point": "1fd2e6ec9ed226a07e8921360f5ba6070bb68709d74e4831f497c1d6475b0e39"
+  },
+  "e7b:sens:k=sens:pt=slow1:tag=GR-cap-0:c=301": {
+   "point": "1fd2e6ec9ed226a07e8921360f5ba6070bb68709d74e4831f497c1d6475b0e39"
+  },
+  "e7b:sens:k=sens:pt=slow1:tag=GR-cap-B:c=302": {
+   "point": "40c9cca8c0026aa465bf02f21fce4aed384a7ea0b98f40da4a4a8b40e8854b72"
+  },
+  "e7b:sens:k=sens:pt=slow1:tag=GR-cap-0:c=302": {
+   "point": "40c9cca8c0026aa465bf02f21fce4aed384a7ea0b98f40da4a4a8b40e8854b72"
+  },
+  "e7b:sens:k=sens:pt=fee16:tag=Sublet:c=301": {
+   "point": "dd6cfef53b7c2b774ba9c8a44d2fae12eda0363283896a931bbb361fe2601117"
+  },
+  "e7b:sens:k=sens:pt=fee16:tag=Sublet:c=302": {
+   "point": "fa789236c674cd1c25db694916f8a594a9c83e9021bdaa7f6bf3009a3c28b3d0"
+  },
+  "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=CR-cap-B:c=301": {
+   "point": "c04c4e551529d4cad5ba44f18ec07df6a453296aee7a6c6b2b6e26785f6196fa"
+  },
+  "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=CR-cap-0:c=301": {
+   "point": "c04c4e551529d4cad5ba44f18ec07df6a453296aee7a6c6b2b6e26785f6196fa"
+  },
+  "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=CR-cap-5:c=301": {
+   "point": "c04c4e551529d4cad5ba44f18ec07df6a453296aee7a6c6b2b6e26785f6196fa"
+  },
+  "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=CR-cap-B-latch:c=301": {
+   "point": "c04c4e551529d4cad5ba44f18ec07df6a453296aee7a6c6b2b6e26785f6196fa"
+  },
+  "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=CR-cap-B-slot:c=301": {
+   "point": "c04c4e551529d4cad5ba44f18ec07df6a453296aee7a6c6b2b6e26785f6196fa"
+  },
+  "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=CR-cap-B:c=302": {
+   "point": "e6ee0825bcc1a8e34ff7464afff1f2a5cfdda01b58710ceeb1633cf39b90334e"
+  },
+  "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=CR-cap-0:c=302": {
+   "point": "e6ee0825bcc1a8e34ff7464afff1f2a5cfdda01b58710ceeb1633cf39b90334e"
+  },
+  "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=CR-cap-5:c=302": {
+   "point": "e6ee0825bcc1a8e34ff7464afff1f2a5cfdda01b58710ceeb1633cf39b90334e"
+  },
+  "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=CR-cap-B-latch:c=302": {
+   "point": "e6ee0825bcc1a8e34ff7464afff1f2a5cfdda01b58710ceeb1633cf39b90334e"
+  },
+  "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=CR-cap-B-slot:c=302": {
+   "point": "e6ee0825bcc1a8e34ff7464afff1f2a5cfdda01b58710ceeb1633cf39b90334e"
+  },
+  "e7b:sens:k=sens:pt=fee4:tag=CR-cap-B:c=301": {
+   "point": "5625e52900235ac307ecab8ba2fe78696cde67a7febcf7cff43380b77f96ebc6"
+  },
+  "e7b:sens:k=sens:pt=fee4:tag=CR-cap-0:c=301": {
+   "point": "5625e52900235ac307ecab8ba2fe78696cde67a7febcf7cff43380b77f96ebc6"
+  },
+  "e7b:sens:k=sens:pt=fee4:tag=CR-cap-5:c=301": {
+   "point": "5625e52900235ac307ecab8ba2fe78696cde67a7febcf7cff43380b77f96ebc6"
+  },
+  "e7b:sens:k=sens:pt=fee4:tag=CR-cap-B-latch:c=301": {
+   "point": "5625e52900235ac307ecab8ba2fe78696cde67a7febcf7cff43380b77f96ebc6"
+  },
+  "e7b:sens:k=sens:pt=fee4:tag=CR-cap-B-slot:c=301": {
+   "point": "5625e52900235ac307ecab8ba2fe78696cde67a7febcf7cff43380b77f96ebc6"
+  },
+  "e7b:sens:k=sens:pt=fee4:tag=CR-cap-B:c=302": {
+   "point": "785addd66ac0c3730275e1381473c270de4d64d656e72c652c2602e5d20172a6"
+  },
+  "e7b:sens:k=sens:pt=fee4:tag=CR-cap-0:c=302": {
+   "point": "785addd66ac0c3730275e1381473c270de4d64d656e72c652c2602e5d20172a6"
+  },
+  "e7b:sens:k=sens:pt=fee4:tag=CR-cap-5:c=302": {
+   "point": "785addd66ac0c3730275e1381473c270de4d64d656e72c652c2602e5d20172a6"
+  },
+  "e7b:sens:k=sens:pt=fee4:tag=CR-cap-B-latch:c=302": {
+   "point": "785addd66ac0c3730275e1381473c270de4d64d656e72c652c2602e5d20172a6"
+  },
+  "e7b:sens:k=sens:pt=fee4:tag=CR-cap-B-slot:c=302": {
+   "point": "785addd66ac0c3730275e1381473c270de4d64d656e72c652c2602e5d20172a6"
+  },
+  "e7b:sens:k=sens:pt=fee8:tag=CR-cap-B:c=301": {
+   "point": "2768586347c4d6513c37fbd0856d7bd3140b51231f1dae22882a0ce2c1c664fa"
+  },
+  "e7b:sens:k=sens:pt=fee8:tag=CR-cap-0:c=301": {
+   "point": "2768586347c4d6513c37fbd0856d7bd3140b51231f1dae22882a0ce2c1c664fa"
+  },
+  "e7b:sens:k=sens:pt=fee8:tag=CR-cap-5:c=301": {
+   "point": "2768586347c4d6513c37fbd0856d7bd3140b51231f1dae22882a0ce2c1c664fa"
+  },
+  "e7b:sens:k=sens:pt=fee8:tag=CR-cap-B-latch:c=301": {
+   "point": "2768586347c4d6513c37fbd0856d7bd3140b51231f1dae22882a0ce2c1c664fa"
+  },
+  "e7b:sens:k=sens:pt=fee8:tag=CR-cap-B-slot:c=301": {
+   "point": "2768586347c4d6513c37fbd0856d7bd3140b51231f1dae22882a0ce2c1c664fa"
+  },
+  "e7b:sens:k=sens:pt=fee8:tag=CR-cap-B:c=302": {
+   "point": "40f4a019825e904a9caf1cb962b130ceaaeb9f31199327d65d347de6a8e43dbb"
+  },
+  "e7b:sens:k=sens:pt=fee8:tag=CR-cap-0:c=302": {
+   "point": "40f4a019825e904a9caf1cb962b130ceaaeb9f31199327d65d347de6a8e43dbb"
+  },
+  "e7b:sens:k=sens:pt=fee8:tag=CR-cap-5:c=302": {
+   "point": "40f4a019825e904a9caf1cb962b130ceaaeb9f31199327d65d347de6a8e43dbb"
+  },
+  "e7b:sens:k=sens:pt=fee8:tag=CR-cap-B-latch:c=302": {
+   "point": "40f4a019825e904a9caf1cb962b130ceaaeb9f31199327d65d347de6a8e43dbb"
+  },
+  "e7b:sens:k=sens:pt=fee8:tag=CR-cap-B-slot:c=302": {
+   "point": "40f4a019825e904a9caf1cb962b130ceaaeb9f31199327d65d347de6a8e43dbb"
+  },
+  "e7b:sens:k=sens:pt=fee16:tag=CR-cap-B:c=301": {
+   "point": "dd6cfef53b7c2b774ba9c8a44d2fae12eda0363283896a931bbb361fe2601117"
+  },
+  "e7b:sens:k=sens:pt=fee16:tag=CR-cap-0:c=301": {
+   "point": "dd6cfef53b7c2b774ba9c8a44d2fae12eda0363283896a931bbb361fe2601117"
+  },
+  "e7b:sens:k=sens:pt=fee16:tag=CR-cap-5:c=301": {
+   "point": "dd6cfef53b7c2b774ba9c8a44d2fae12eda0363283896a931bbb361fe2601117"
+  },
+  "e7b:sens:k=sens:pt=fee16:tag=CR-cap-B-latch:c=301": {
+   "point": "dd6cfef53b7c2b774ba9c8a44d2fae12eda0363283896a931bbb361fe2601117"
+  },
+  "e7b:sens:k=sens:pt=fee16:tag=CR-cap-B-slot:c=301": {
+   "point": "dd6cfef53b7c2b774ba9c8a44d2fae12eda0363283896a931bbb361fe2601117"
+  },
+  "e7b:sens:k=sens:pt=fee16:tag=CR-cap-B:c=302": {
+   "point": "fa789236c674cd1c25db694916f8a594a9c83e9021bdaa7f6bf3009a3c28b3d0"
+  },
+  "e7b:sens:k=sens:pt=fee16:tag=CR-cap-0:c=302": {
+   "point": "fa789236c674cd1c25db694916f8a594a9c83e9021bdaa7f6bf3009a3c28b3d0"
+  },
+  "e7b:sens:k=sens:pt=fee16:tag=CR-cap-5:c=302": {
+   "point": "fa789236c674cd1c25db694916f8a594a9c83e9021bdaa7f6bf3009a3c28b3d0"
+  },
+  "e7b:sens:k=sens:pt=fee16:tag=CR-cap-B-latch:c=302": {
+   "point": "fa789236c674cd1c25db694916f8a594a9c83e9021bdaa7f6bf3009a3c28b3d0"
+  },
+  "e7b:sens:k=sens:pt=fee16:tag=CR-cap-B-slot:c=302": {
+   "point": "fa789236c674cd1c25db694916f8a594a9c83e9021bdaa7f6bf3009a3c28b3d0"
+  },
+  "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=BL1-GP:c=303": {
+   "point": "af7ca58d374acbc1276145c9c48cae1ad631d9b5f9813a13ab719071bd2c0cfe"
+  },
+  "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=BL1-GP:c=304": {
+   "point": "e529aca63fe63af7caf41b05cba36176ea360cc80d358f11fe7fd9bfe2e22acf"
+  },
+  "e7b:sens:k=sens:pt=fee4:tag=BL1-GP:c=303": {
+   "point": "c9499a281d979bf0f3b102a0c74f985962c354241a98c222eb0916f46b0d3870"
+  },
+  "e7b:sens:k=sens:pt=fee4:tag=BL1-GP:c=304": {
+   "point": "4aa89b1b6ca9e05ccebf87752a0fdf4bfde73103d140894cf05587a0b69f289b"
+  },
+  "e7b:sens:k=sens:pt=fee8:tag=BL1-GP:c=303": {
+   "point": "50093a01bbdf0dca97c5ed3b41631a4e952e8ba77ba5e9c9af11e594f7b20bbc"
+  },
+  "e7b:sens:k=sens:pt=fee8:tag=BL1-GP:c=304": {
+   "point": "2cd59bce9b74baeb1fd04e9d2dac26f81fb5a886056607cc8d3deedbb09e4ecf"
+  },
+  "e7b:sens:k=sens:pt=fee16:tag=BL1-GP:c=303": {
+   "point": "c3402005595bfadc7ecacdcb1f42488e59d02563f39c3444697db0df45557126"
+  },
+  "e7b:sens:k=sens:pt=fee16:tag=BL1-GP:c=304": {
+   "point": "aba5ce5cf7c49731ceca9ce6d049699823211f06b7eea499fee0792ae44c7683"
+  },
+  "e7b:sens:k=sens:pt=slow1:tag=CR-cap-B:c=303": {
+   "point": "80ec869b8cffbad71014c62c67f14d4f9ea080591a5e32cd10377bde461c2e84"
+  },
+  "e7b:sens:k=sens:pt=slow1:tag=CR-cap-0:c=303": {
+   "point": "80ec869b8cffbad71014c62c67f14d4f9ea080591a5e32cd10377bde461c2e84"
+  },
+  "e7b:sens:k=sens:pt=slow1:tag=CR-cap-5:c=303": {
+   "point": "80ec869b8cffbad71014c62c67f14d4f9ea080591a5e32cd10377bde461c2e84"
+  },
+  "e7b:sens:k=sens:pt=slow1:tag=CR-cap-B-latch:c=303": {
+   "point": "80ec869b8cffbad71014c62c67f14d4f9ea080591a5e32cd10377bde461c2e84"
+  },
+  "e7b:sens:k=sens:pt=slow1:tag=CR-cap-B-slot:c=303": {
+   "point": "80ec869b8cffbad71014c62c67f14d4f9ea080591a5e32cd10377bde461c2e84"
+  },
+  "e7b:sens:k=sens:pt=slow1:tag=CR-cap-B:c=304": {
+   "point": "459ad911c8946468afb885c3562a81733b32ebea7e4b99b527a83729e7f21f42"
+  },
+  "e7b:sens:k=sens:pt=slow1:tag=CR-cap-0:c=304": {
+   "point": "459ad911c8946468afb885c3562a81733b32ebea7e4b99b527a83729e7f21f42"
+  },
+  "e7b:sens:k=sens:pt=slow1:tag=CR-cap-5:c=304": {
+   "point": "459ad911c8946468afb885c3562a81733b32ebea7e4b99b527a83729e7f21f42"
+  },
+  "e7b:sens:k=sens:pt=slow1:tag=CR-cap-B-latch:c=304": {
+   "point": "459ad911c8946468afb885c3562a81733b32ebea7e4b99b527a83729e7f21f42"
+  },
+  "e7b:sens:k=sens:pt=slow1:tag=CR-cap-B-slot:c=304": {
+   "point": "459ad911c8946468afb885c3562a81733b32ebea7e4b99b527a83729e7f21f42"
+  },
+  "e7b:sens:k=sens:pt=fee16:tag=A9:c=301": {
+   "point": "dd6cfef53b7c2b774ba9c8a44d2fae12eda0363283896a931bbb361fe2601117"
+  },
+  "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=BL1:c=301": {
+   "point": "c04c4e551529d4cad5ba44f18ec07df6a453296aee7a6c6b2b6e26785f6196fa"
+  },
+  "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=BL1:c=302": {
+   "point": "e6ee0825bcc1a8e34ff7464afff1f2a5cfdda01b58710ceeb1633cf39b90334e"
+  },
+  "e7b:sens:k=sens:pt=fee4:tag=BL1:c=301": {
+   "point": "5625e52900235ac307ecab8ba2fe78696cde67a7febcf7cff43380b77f96ebc6"
+  },
+  "e7b:sens:k=sens:pt=fee4:tag=BL1:c=302": {
+   "point": "785addd66ac0c3730275e1381473c270de4d64d656e72c652c2602e5d20172a6"
+  },
+  "e7b:sens:k=sens:pt=fee8:tag=BL1:c=301": {
+   "point": "2768586347c4d6513c37fbd0856d7bd3140b51231f1dae22882a0ce2c1c664fa"
+  },
+  "e7b:sens:k=sens:pt=fee8:tag=BL1:c=302": {
+   "point": "40f4a019825e904a9caf1cb962b130ceaaeb9f31199327d65d347de6a8e43dbb"
+  },
+  "e7b:sens:k=sens:pt=fee16:tag=BL1:c=301": {
+   "point": "dd6cfef53b7c2b774ba9c8a44d2fae12eda0363283896a931bbb361fe2601117"
+  },
+  "e7b:sens:k=sens:pt=fee16:tag=BL1:c=302": {
+   "point": "fa789236c674cd1c25db694916f8a594a9c83e9021bdaa7f6bf3009a3c28b3d0"
+  },
+  "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=GR-cap-B:c=301": {
+   "point": "c04c4e551529d4cad5ba44f18ec07df6a453296aee7a6c6b2b6e26785f6196fa"
+  },
+  "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=GR-cap-0:c=301": {
+   "point": "c04c4e551529d4cad5ba44f18ec07df6a453296aee7a6c6b2b6e26785f6196fa"
+  },
+  "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=GR-cap-B:c=302": {
+   "point": "e6ee0825bcc1a8e34ff7464afff1f2a5cfdda01b58710ceeb1633cf39b90334e"
+  },
+  "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=GR-cap-0:c=302": {
+   "point": "e6ee0825bcc1a8e34ff7464afff1f2a5cfdda01b58710ceeb1633cf39b90334e"
+  },
+  "e7b:sens:k=sens:pt=fee16:tag=A9:c=302": {
+   "point": "fa789236c674cd1c25db694916f8a594a9c83e9021bdaa7f6bf3009a3c28b3d0"
+  },
+  "e7b:sens:k=sens:pt=fee4:tag=GR-cap-B:c=301": {
+   "point": "5625e52900235ac307ecab8ba2fe78696cde67a7febcf7cff43380b77f96ebc6"
+  },
+  "e7b:sens:k=sens:pt=fee4:tag=GR-cap-0:c=301": {
+   "point": "5625e52900235ac307ecab8ba2fe78696cde67a7febcf7cff43380b77f96ebc6"
+  },
+  "e7b:sens:k=sens:pt=fee4:tag=GR-cap-B:c=302": {
+   "point": "785addd66ac0c3730275e1381473c270de4d64d656e72c652c2602e5d20172a6"
+  },
+  "e7b:sens:k=sens:pt=fee4:tag=GR-cap-0:c=302": {
+   "point": "785addd66ac0c3730275e1381473c270de4d64d656e72c652c2602e5d20172a6"
+  },
+  "e7b:sens:k=sens:pt=fee8:tag=GR-cap-B:c=301": {
+   "point": "2768586347c4d6513c37fbd0856d7bd3140b51231f1dae22882a0ce2c1c664fa"
+  },
+  "e7b:sens:k=sens:pt=fee8:tag=GR-cap-0:c=301": {
+   "point": "2768586347c4d6513c37fbd0856d7bd3140b51231f1dae22882a0ce2c1c664fa"
+  },
+  "e7b:sens:k=sens:pt=fee8:tag=GR-cap-B:c=302": {
+   "point": "40f4a019825e904a9caf1cb962b130ceaaeb9f31199327d65d347de6a8e43dbb"
+  },
+  "e7b:sens:k=sens:pt=fee8:tag=GR-cap-0:c=302": {
+   "point": "40f4a019825e904a9caf1cb962b130ceaaeb9f31199327d65d347de6a8e43dbb"
+  },
+  "e7b:sens:k=sens:pt=fee16:tag=GR-cap-B:c=301": {
+   "point": "dd6cfef53b7c2b774ba9c8a44d2fae12eda0363283896a931bbb361fe2601117"
+  },
+  "e7b:sens:k=sens:pt=fee16:tag=GR-cap-0:c=301": {
+   "point": "dd6cfef53b7c2b774ba9c8a44d2fae12eda0363283896a931bbb361fe2601117"
+  },
+  "e7b:sens:k=sens:pt=fee16:tag=GR-cap-B:c=302": {
+   "point": "fa789236c674cd1c25db694916f8a594a9c83e9021bdaa7f6bf3009a3c28b3d0"
+  },
+  "e7b:sens:k=sens:pt=fee16:tag=GR-cap-0:c=302": {
+   "point": "fa789236c674cd1c25db694916f8a594a9c83e9021bdaa7f6bf3009a3c28b3d0"
+  },
+  "e7b:sens:k=sens:pt=slow1:tag=BL1:c=303": {
+   "point": "80ec869b8cffbad71014c62c67f14d4f9ea080591a5e32cd10377bde461c2e84"
+  },
+  "e7b:sens:k=sens:pt=slow1:tag=BL1:c=304": {
+   "point": "459ad911c8946468afb885c3562a81733b32ebea7e4b99b527a83729e7f21f42"
+  },
+  "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=CR-cap-B:c=303": {
+   "point": "af7ca58d374acbc1276145c9c48cae1ad631d9b5f9813a13ab719071bd2c0cfe"
+  },
+  "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=CR-cap-0:c=303": {
+   "point": "af7ca58d374acbc1276145c9c48cae1ad631d9b5f9813a13ab719071bd2c0cfe"
+  },
+  "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=CR-cap-5:c=303": {
+   "point": "af7ca58d374acbc1276145c9c48cae1ad631d9b5f9813a13ab719071bd2c0cfe"
+  },
+  "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=CR-cap-B-latch:c=303": {
+   "point": "af7ca58d374acbc1276145c9c48cae1ad631d9b5f9813a13ab719071bd2c0cfe"
+  },
+  "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=CR-cap-B-slot:c=303": {
+   "point": "af7ca58d374acbc1276145c9c48cae1ad631d9b5f9813a13ab719071bd2c0cfe"
+  },
+  "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=CR-cap-B:c=304": {
+   "point": "e529aca63fe63af7caf41b05cba36176ea360cc80d358f11fe7fd9bfe2e22acf"
+  },
+  "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=CR-cap-0:c=304": {
+   "point": "e529aca63fe63af7caf41b05cba36176ea360cc80d358f11fe7fd9bfe2e22acf"
+  },
+  "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=CR-cap-5:c=304": {
+   "point": "e529aca63fe63af7caf41b05cba36176ea360cc80d358f11fe7fd9bfe2e22acf"
+  },
+  "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=CR-cap-B-latch:c=304": {
+   "point": "e529aca63fe63af7caf41b05cba36176ea360cc80d358f11fe7fd9bfe2e22acf"
+  },
+  "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=CR-cap-B-slot:c=304": {
+   "point": "e529aca63fe63af7caf41b05cba36176ea360cc80d358f11fe7fd9bfe2e22acf"
+  },
+  "e7b:sens:k=sens:pt=fee4:tag=CR-cap-B:c=303": {
+   "point": "c9499a281d979bf0f3b102a0c74f985962c354241a98c222eb0916f46b0d3870"
+  },
+  "e7b:sens:k=sens:pt=fee4:tag=CR-cap-0:c=303": {
+   "point": "c9499a281d979bf0f3b102a0c74f985962c354241a98c222eb0916f46b0d3870"
+  },
+  "e7b:sens:k=sens:pt=fee4:tag=CR-cap-5:c=303": {
+   "point": "c9499a281d979bf0f3b102a0c74f985962c354241a98c222eb0916f46b0d3870"
+  },
+  "e7b:sens:k=sens:pt=fee4:tag=CR-cap-B-latch:c=303": {
+   "point": "c9499a281d979bf0f3b102a0c74f985962c354241a98c222eb0916f46b0d3870"
+  },
+  "e7b:sens:k=sens:pt=fee4:tag=CR-cap-B-slot:c=303": {
+   "point": "c9499a281d979bf0f3b102a0c74f985962c354241a98c222eb0916f46b0d3870"
+  },
+  "e7b:sens:k=sens:pt=fee4:tag=CR-cap-B:c=304": {
+   "point": "4aa89b1b6ca9e05ccebf87752a0fdf4bfde73103d140894cf05587a0b69f289b"
+  },
+  "e7b:sens:k=sens:pt=fee4:tag=CR-cap-0:c=304": {
+   "point": "4aa89b1b6ca9e05ccebf87752a0fdf4bfde73103d140894cf05587a0b69f289b"
+  },
+  "e7b:sens:k=sens:pt=fee4:tag=CR-cap-5:c=304": {
+   "point": "4aa89b1b6ca9e05ccebf87752a0fdf4bfde73103d140894cf05587a0b69f289b"
+  },
+  "e7b:sens:k=sens:pt=fee4:tag=CR-cap-B-latch:c=304": {
+   "point": "4aa89b1b6ca9e05ccebf87752a0fdf4bfde73103d140894cf05587a0b69f289b"
+  },
+  "e7b:sens:k=sens:pt=fee4:tag=CR-cap-B-slot:c=304": {
+   "point": "4aa89b1b6ca9e05ccebf87752a0fdf4bfde73103d140894cf05587a0b69f289b"
+  },
+  "e7b:sens:k=sens:pt=fee8:tag=CR-cap-B:c=303": {
+   "point": "50093a01bbdf0dca97c5ed3b41631a4e952e8ba77ba5e9c9af11e594f7b20bbc"
+  },
+  "e7b:sens:k=sens:pt=fee8:tag=CR-cap-0:c=303": {
+   "point": "50093a01bbdf0dca97c5ed3b41631a4e952e8ba77ba5e9c9af11e594f7b20bbc"
+  },
+  "e7b:sens:k=sens:pt=fee8:tag=CR-cap-5:c=303": {
+   "point": "50093a01bbdf0dca97c5ed3b41631a4e952e8ba77ba5e9c9af11e594f7b20bbc"
+  },
+  "e7b:sens:k=sens:pt=fee8:tag=CR-cap-B-latch:c=303": {
+   "point": "50093a01bbdf0dca97c5ed3b41631a4e952e8ba77ba5e9c9af11e594f7b20bbc"
+  },
+  "e7b:sens:k=sens:pt=fee8:tag=CR-cap-B-slot:c=303": {
+   "point": "50093a01bbdf0dca97c5ed3b41631a4e952e8ba77ba5e9c9af11e594f7b20bbc"
+  },
+  "e7b:sens:k=sens:pt=fee8:tag=CR-cap-B:c=304": {
+   "point": "2cd59bce9b74baeb1fd04e9d2dac26f81fb5a886056607cc8d3deedbb09e4ecf"
+  },
+  "e7b:sens:k=sens:pt=fee8:tag=CR-cap-0:c=304": {
+   "point": "2cd59bce9b74baeb1fd04e9d2dac26f81fb5a886056607cc8d3deedbb09e4ecf"
+  },
+  "e7b:sens:k=sens:pt=fee8:tag=CR-cap-5:c=304": {
+   "point": "2cd59bce9b74baeb1fd04e9d2dac26f81fb5a886056607cc8d3deedbb09e4ecf"
+  },
+  "e7b:sens:k=sens:pt=fee8:tag=CR-cap-B-latch:c=304": {
+   "point": "2cd59bce9b74baeb1fd04e9d2dac26f81fb5a886056607cc8d3deedbb09e4ecf"
+  },
+  "e7b:sens:k=sens:pt=fee8:tag=CR-cap-B-slot:c=304": {
+   "point": "2cd59bce9b74baeb1fd04e9d2dac26f81fb5a886056607cc8d3deedbb09e4ecf"
+  },
+  "e7b:sens:k=sens:pt=fee16:tag=CR-cap-B:c=303": {
+   "point": "c3402005595bfadc7ecacdcb1f42488e59d02563f39c3444697db0df45557126"
+  },
+  "e7b:sens:k=sens:pt=fee16:tag=CR-cap-0:c=303": {
+   "point": "c3402005595bfadc7ecacdcb1f42488e59d02563f39c3444697db0df45557126"
+  },
+  "e7b:sens:k=sens:pt=fee16:tag=CR-cap-5:c=303": {
+   "point": "c3402005595bfadc7ecacdcb1f42488e59d02563f39c3444697db0df45557126"
+  },
+  "e7b:sens:k=sens:pt=fee16:tag=CR-cap-B-latch:c=303": {
+   "point": "c3402005595bfadc7ecacdcb1f42488e59d02563f39c3444697db0df45557126"
+  },
+  "e7b:sens:k=sens:pt=fee16:tag=CR-cap-B-slot:c=303": {
+   "point": "c3402005595bfadc7ecacdcb1f42488e59d02563f39c3444697db0df45557126"
+  },
+  "e7b:sens:k=sens:pt=fee16:tag=CR-cap-B:c=304": {
+   "point": "aba5ce5cf7c49731ceca9ce6d049699823211f06b7eea499fee0792ae44c7683"
+  },
+  "e7b:sens:k=sens:pt=fee16:tag=CR-cap-0:c=304": {
+   "point": "aba5ce5cf7c49731ceca9ce6d049699823211f06b7eea499fee0792ae44c7683"
+  },
+  "e7b:sens:k=sens:pt=fee16:tag=CR-cap-5:c=304": {
+   "point": "aba5ce5cf7c49731ceca9ce6d049699823211f06b7eea499fee0792ae44c7683"
+  },
+  "e7b:sens:k=sens:pt=fee16:tag=CR-cap-B-latch:c=304": {
+   "point": "aba5ce5cf7c49731ceca9ce6d049699823211f06b7eea499fee0792ae44c7683"
+  },
+  "e7b:sens:k=sens:pt=fee16:tag=CR-cap-B-slot:c=304": {
+   "point": "aba5ce5cf7c49731ceca9ce6d049699823211f06b7eea499fee0792ae44c7683"
+  },
+  "e7b:sens:k=sens:pt=slow1:tag=GR-cap-B:c=303": {
+   "point": "80ec869b8cffbad71014c62c67f14d4f9ea080591a5e32cd10377bde461c2e84"
+  },
+  "e7b:sens:k=sens:pt=slow1:tag=GR-cap-0:c=303": {
+   "point": "80ec869b8cffbad71014c62c67f14d4f9ea080591a5e32cd10377bde461c2e84"
+  },
+  "e7b:sens:k=sens:pt=slow1:tag=GR-cap-B:c=304": {
+   "point": "459ad911c8946468afb885c3562a81733b32ebea7e4b99b527a83729e7f21f42"
+  },
+  "e7b:sens:k=sens:pt=slow1:tag=GR-cap-0:c=304": {
+   "point": "459ad911c8946468afb885c3562a81733b32ebea7e4b99b527a83729e7f21f42"
+  },
+  "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=BL1:c=303": {
+   "point": "af7ca58d374acbc1276145c9c48cae1ad631d9b5f9813a13ab719071bd2c0cfe"
+  },
+  "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=BL1:c=304": {
+   "point": "e529aca63fe63af7caf41b05cba36176ea360cc80d358f11fe7fd9bfe2e22acf"
+  },
+  "e7b:sens:k=sens:pt=fee4:tag=BL1:c=303": {
+   "point": "c9499a281d979bf0f3b102a0c74f985962c354241a98c222eb0916f46b0d3870"
+  },
+  "e7b:sens:k=sens:pt=fee4:tag=BL1:c=304": {
+   "point": "4aa89b1b6ca9e05ccebf87752a0fdf4bfde73103d140894cf05587a0b69f289b"
+  },
+  "e7b:sens:k=sens:pt=fee8:tag=BL1:c=303": {
+   "point": "50093a01bbdf0dca97c5ed3b41631a4e952e8ba77ba5e9c9af11e594f7b20bbc"
+  },
+  "e7b:sens:k=sens:pt=fee8:tag=BL1:c=304": {
+   "point": "2cd59bce9b74baeb1fd04e9d2dac26f81fb5a886056607cc8d3deedbb09e4ecf"
+  },
+  "e7b:sens:k=sens:pt=fee16:tag=BL1:c=303": {
+   "point": "c3402005595bfadc7ecacdcb1f42488e59d02563f39c3444697db0df45557126"
+  },
+  "e7b:sens:k=sens:pt=fee16:tag=BL1:c=304": {
+   "point": "aba5ce5cf7c49731ceca9ce6d049699823211f06b7eea499fee0792ae44c7683"
+  },
+  "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=GR-cap-B:c=303": {
+   "point": "af7ca58d374acbc1276145c9c48cae1ad631d9b5f9813a13ab719071bd2c0cfe"
+  },
+  "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=GR-cap-0:c=303": {
+   "point": "af7ca58d374acbc1276145c9c48cae1ad631d9b5f9813a13ab719071bd2c0cfe"
+  },
+  "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=GR-cap-B:c=304": {
+   "point": "e529aca63fe63af7caf41b05cba36176ea360cc80d358f11fe7fd9bfe2e22acf"
+  },
+  "e7b:sens:k=sens:pt=scen_cold_wan_1gbps:tag=GR-cap-0:c=304": {
+   "point": "e529aca63fe63af7caf41b05cba36176ea360cc80d358f11fe7fd9bfe2e22acf"
+  },
+  "e7b:sens:k=sens:pt=fee4:tag=GR-cap-B:c=303": {
+   "point": "c9499a281d979bf0f3b102a0c74f985962c354241a98c222eb0916f46b0d3870"
+  },
+  "e7b:sens:k=sens:pt=fee4:tag=GR-cap-0:c=303": {
+   "point": "c9499a281d979bf0f3b102a0c74f985962c354241a98c222eb0916f46b0d3870"
+  },
+  "e7b:sens:k=sens:pt=fee4:tag=GR-cap-B:c=304": {
+   "point": "4aa89b1b6ca9e05ccebf87752a0fdf4bfde73103d140894cf05587a0b69f289b"
+  },
+  "e7b:sens:k=sens:pt=fee4:tag=GR-cap-0:c=304": {
+   "point": "4aa89b1b6ca9e05ccebf87752a0fdf4bfde73103d140894cf05587a0b69f289b"
+  },
+  "e7b:sens:k=sens:pt=fee8:tag=GR-cap-B:c=303": {
+   "point": "50093a01bbdf0dca97c5ed3b41631a4e952e8ba77ba5e9c9af11e594f7b20bbc"
+  },
+  "e7b:sens:k=sens:pt=fee8:tag=GR-cap-0:c=303": {
+   "point": "50093a01bbdf0dca97c5ed3b41631a4e952e8ba77ba5e9c9af11e594f7b20bbc"
+  },
+  "e7b:sens:k=sens:pt=fee8:tag=GR-cap-B:c=304": {
+   "point": "2cd59bce9b74baeb1fd04e9d2dac26f81fb5a886056607cc8d3deedbb09e4ecf"
+  },
+  "e7b:sens:k=sens:pt=fee8:tag=GR-cap-0:c=304": {
+   "point": "2cd59bce9b74baeb1fd04e9d2dac26f81fb5a886056607cc8d3deedbb09e4ecf"
+  },
+  "e7b:sens:k=sens:pt=fee16:tag=GR-cap-B:c=303": {
+   "point": "c3402005595bfadc7ecacdcb1f42488e59d02563f39c3444697db0df45557126"
+  },
+  "e7b:sens:k=sens:pt=fee16:tag=GR-cap-0:c=303": {
+   "point": "c3402005595bfadc7ecacdcb1f42488e59d02563f39c3444697db0df45557126"
+  },
+  "e7b:sens:k=sens:pt=fee16:tag=GR-cap-B:c=304": {
+   "point": "aba5ce5cf7c49731ceca9ce6d049699823211f06b7eea499fee0792ae44c7683"
+  },
+  "e7b:sens:k=sens:pt=fee16:tag=GR-cap-0:c=304": {
+   "point": "aba5ce5cf7c49731ceca9ce6d049699823211f06b7eea499fee0792ae44c7683"
+  }
+ },
+ "sources_sha256": {
+  "code/sim/sublet/experiments/e7b.py": "d91b9cf973690c5e4d779d3fb275d518b81a8cb12742db23f843fbd5048dbf2a",
+  "code/sim/sublet/experiments/e7b_tags.py": "42d5fb193dd818f2b99469b9f3967445aed6961d367639b89ce9f53ac97a4309",
+  "code/sim/sublet/experiments/e7b_analysis.py": "530151bfa0c506ceab5c5b9ec367424bab275edcc150fb78a2242f36aabe8704",
+  "code/sim/sublet/experiments/e7h.py": "e6ea63450ad36e45a32b35442c278bf72cb3bf879ae1033031fc76b52403a078",
+  "code/sim/sublet/experiments/e7r.py": "b04b446efc3cddc478b3343c039d22b517a456b9247f68b00a60b53d538e4f57",
+  "code/sim/sublet/experiments/s1v2.py": "37a88cd96d534f74e2f68e747dc30c21036614a7d787aa7e22a271ee7bdedc23",
+  "code/sim/sublet/experiments/s1.py": "8afb76a9aa6dd1fe57477c829fccfaad72079268ea825b1649c0a4389d7cd802",
+  "code/sim/sublet/experiments/ms5b_common.py": "6ae2f94e94f322f271addcdb3dfc16fffca696a376ad37fca499ba7c0d3ebe84",
+  "code/sim/sublet/experiments/ms7_baselines.py": "f74d8fd39b5984daf80d0a8f9148e8e4ab26de145cf9d2097584f3bfad1353c2",
+  "code/sim/sublet/algos/budget_cap.py": "5f408b5170eca7b2d15f31487c52e5569cbffdc828b56f97e437d291c75fc4e9",
+  "code/sim/sublet/algos/registry.py": "952a4e1b22d5a84b2491bcb5d37f17f06488a4ffcbbddc701a248df24e1c982a",
+  "code/sim/sublet/algos/a9.py": "60843cc690083e8a553af4c8e5c8570210fca9b24f1be00f62f0ea4dc3842582",
+  "code/sim/sublet/algos/guard.py": "72c92b01fe0f46ecca11c3ba1bd51bc66ee3605454f3666ea7ad4d612b6abe0f",
+  "code/sim/sublet/algos/online_lb.py": "a52b5800bc2a617783c127e8237a6d52d3950bb154735db19c4be8822f174e8b",
+  "code/sim/sublet/baselines/greedy.py": "e4383ddd6d8430b6bdddf6a621941090b4ebd0f17ae44dea2dd2f6b337ea67eb",
+  "code/sim/sublet/baselines/common.py": "87e198c0c104d1dac69af2798a4417aeafb3a79401371630c2e5cd92cab5d7da",
+  "code/sim/sublet/lender.py": "d5fec8f5530b000af525f80f3768587905be29d164e3704e5c2285f62a43bbf6",
+  "code/sim/sublet/engine.py": "2cd5b4bf9ceedbbbe31fffa77199bb3361082d3f236b2f16004a1ed0ca5e8286",
+  "code/sim/sublet/drivers/run.py": "efbd089a698c51d329d760ad0a436c8fbd397781e8e2a8e2eff2147f6da3cf3a",
+  "code/sim/sublet/experiments/ms3_common.py": "6bf1544cbbc5f6bf0c6fc2d90243156616f8e24a84992b261cf8d598f1315f79",
+  "code/sim/sublet/experiments/q44_study.py": "433913c083473b8c0355f1d67bec9ef0ee8ff5c33af3ce78276128043515add0"
+ },
+ "gate": {
+  "kind": "ms8_registration",
+  "ok": true,
+  "reason": "registration at HEAD, clean tree, analysis sha256 as registered",
+  "record": {
+   "head": "467b21817c8f506f152248c731f072a406c33d3a",
+   "registration": "design/ms8/registration.md",
+   "registration_at_head": true,
+   "registration_sha256": "4efe023be0d2f586ae1efd0a7977ca44e494cce30feb2aa890bbb23128172c72",
+   "analysis": "code/sim/sublet/experiments/e7b_analysis.py",
+   "analysis_sha256_registered": "530151bfa0c506ceab5c5b9ec367424bab275edcc150fb78a2242f36aabe8704",
+   "analysis_sha256_head": "530151bfa0c506ceab5c5b9ec367424bab275edcc150fb78a2242f36aabe8704",
+   "analysis_sha256_disk": "530151bfa0c506ceab5c5b9ec367424bab275edcc150fb78a2242f36aabe8704",
+   "dirty_paths": []
+  }
+ }
+}

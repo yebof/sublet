@@ -1,0 +1,150 @@
+{
+ "assumptions": {
+  "kv_bytes_per_token": {
+   "llama3-8b": 131072,
+   "llama3-70b": 327680,
+   "llama3.1-405b": 516096
+  },
+  "weights_gb": {
+   "llama3-8b": 16,
+   "llama3-70b": 140,
+   "llama3.1-405b": 810
+  },
+  "tpot_s": {
+   "llama3-8b": 0.015,
+   "llama3-70b": 0.035,
+   "llama3.1-405b": 0.06
+  },
+  "prefill_tok_per_s_per_replica": {
+   "llama3-8b": 40000,
+   "llama3-70b": 12000,
+   "llama3.1-405b": 4000
+  },
+  "concurrent_seqs_per_replica": 128,
+  "replica_hbm_GB": {
+   "llama3-8b": 80,
+   "llama3-70b": 640,
+   "llama3.1-405b": 1280
+  },
+  "wan_gbps": [
+   1,
+   10,
+   25
+  ],
+  "weight_load_gbps_GBps": [
+   2,
+   10
+  ],
+  "engine_init_s": 60
+ },
+ "mooncake": {
+  "conversation": {
+   "n": 12031,
+   "input_p50_90_99": [
+    6909.0,
+    27367.0,
+    85400.4
+   ],
+   "output_p50_90_99": [
+    350.0,
+    597.0,
+    1118.5000000000036
+   ],
+   "prefix_block_hit_ratio_infinite_cache": 0.3664124783362218,
+   "unique_prefix_tokens_GB_llama70b": 30667.0731264
+  },
+  "toolagent": {
+   "n": 23608,
+   "input_p50_90_99": [
+    6346.0,
+    16805.799999999996,
+    61660.78000000004
+   ],
+   "output_p50_90_99": [
+    30.0,
+    507.0,
+    897.9300000000003
+   ],
+   "prefix_block_hit_ratio_infinite_cache": 0.5525077145424007,
+   "unique_prefix_tokens_GB_llama70b": 30752.636928
+  },
+  "synthetic": {
+   "n": 3993,
+   "input_p50_90_99": [
+    11587.0,
+    38611.200000000004,
+    66456.16
+   ],
+   "output_p50_90_99": [
+    69.0,
+    389.0,
+    768.0799999999999
+   ],
+   "prefix_block_hit_ratio_infinite_cache": 0.6396038629109676,
+   "unique_prefix_tokens_GB_llama70b": 7369.22435584
+  }
+ },
+ "inflight_source": "AzureLLMInferenceTrace_conv_1week.csv",
+ "calibration": {
+  "llama3-8b": {
+   "drain_time_s_p50_90_99": [
+    2.235,
+    6.8549999999999995,
+    12.209999999999999
+   ],
+   "T_dr_s (p99 drain)": 12.209999999999999,
+   "kv_GB_inflight_per_replica": 47.7352907767808,
+   "kv_migration_s_by_wan_gbps": {
+    "1": 381.8823262142464,
+    "10": 38.18823262142464,
+    "25": 15.275293048569857
+   },
+   "recompute_s_per_replica": 9.10478416,
+   "setup_s_by_load_GBps": {
+    "2": 68.0,
+    "10": 61.6
+   },
+   "mu_noNotice_over_Bsetup": 0.13389388470588234
+  },
+  "llama3-70b": {
+   "drain_time_s_p50_90_99": [
+    5.215000000000001,
+    15.995000000000001,
+    28.490000000000002
+   ],
+   "T_dr_s (p99 drain)": 28.490000000000002,
+   "kv_GB_inflight_per_replica": 119.338226941952,
+   "kv_migration_s_by_wan_gbps": {
+    "1": 954.705815535616,
+    "10": 95.4705815535616,
+    "25": 38.18823262142464
+   },
+   "recompute_s_per_replica": 30.34928053333333,
+   "setup_s_by_load_GBps": {
+    "2": 130.0,
+    "10": 74.0
+   },
+   "mu_noNotice_over_Bsetup": 0.2334560041025641
+  },
+  "llama3.1-405b": {
+   "drain_time_s_p50_90_99": [
+    8.94,
+    27.419999999999998,
+    48.839999999999996
+   ],
+   "T_dr_s (p99 drain)": 48.839999999999996,
+   "kv_GB_inflight_per_replica": 187.9577074335744,
+   "kv_migration_s_by_wan_gbps": {
+    "1": 1503.6616594685952,
+    "10": 150.36616594685952,
+    "25": 60.14646637874381
+   },
+   "recompute_s_per_replica": 91.0478416,
+   "setup_s_by_load_GBps": {
+    "2": 465.0,
+    "10": 141.0
+   },
+   "mu_noNotice_over_Bsetup": 0.19580180989247312
+  }
+ }
+}

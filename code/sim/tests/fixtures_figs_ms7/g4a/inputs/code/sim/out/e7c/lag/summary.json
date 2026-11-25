@@ -1,0 +1,998 @@
+{
+ "meta": {
+  "exp": "e7c",
+  "part": "lag",
+  "git_revision": "6a96bce82ce4e4c692d1962cdbf979a9ee8c7fac",
+  "written": "2026-11-09T02:01:19",
+  "reduced": true,
+  "design": {
+   "reduced": true,
+   "horizon_min": 120
+  }
+ },
+ "table": {
+  "Sublet-lag": {
+   "L-tr": {
+    "101": {
+     "0": 1.100909506809022
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.0946143060009856
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.0946143060009856
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 1.0129101580799842
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 1.0607926996854409
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.0946143060009856
+    }
+   },
+   "L-hon": {
+    "101": {
+     "0": 1.001786187963386
+    }
+   }
+  },
+  "A9-lag": {
+   "L-tr": {
+    "101": {
+     "0": 0.8696781823091136
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.161408066065808
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.1553452780567073
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.8562935202430204
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 0.9355239976512153
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.161408066065808
+    }
+   },
+   "L-hon": {
+    "101": {
+     "0": 0.839934971957229
+    }
+   }
+  },
+  "BL1-lag": {
+   "L-tr": {
+    "101": {
+     "0": 0.858386293256374
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.7398912881549795
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.7291963104372932
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.8455477628673088
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 0.9199573825707669
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.7398912881549795
+    }
+   },
+   "L-hon": {
+    "101": {
+     "0": 0.8380785016603537
+    }
+   }
+  },
+  "BL1-BO-lag": {
+   "L-tr": {
+    "101": {
+     "0": 0.8550181356869478
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.5069127703042402
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.498257902391387
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.8463050854257708
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 0.9203221926108106
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.5069127703042402
+    }
+   },
+   "L-hon": {
+    "101": {
+     "0": 0.8380785016603537
+    }
+   }
+  },
+  "BL2-lag": {
+   "L-tr": {
+    "101": {
+     "0": 0.9204488737793691
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.540776043563183
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.540776043563183
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.9181991717213633
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 0.9705075963176867
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.540776043563183
+    }
+   },
+   "L-hon": {
+    "101": {
+     "0": 0.9096960974254608
+    }
+   }
+  },
+  "BL3-0-lag": {
+   "L-tr": {
+    "101": {
+     "0": 0.9440354407550766
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.5829725345015162
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.5720730085979395
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.9106339244021429
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 1.0126428696699386
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.5829725345015162
+    }
+   },
+   "L-hon": {
+    "101": {
+     "0": 0.9085222959637629
+    }
+   }
+  },
+  "BL4-lag": {
+   "L-tr": {
+    "101": {
+     "0": 1.0017866401000728
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.0036099274574075
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.0036099274574075
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 1.0149250929200309
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 1.0089542921320638
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.0036099274574075
+    }
+   },
+   "L-hon": {
+    "101": {
+     "0": 1.006756903771228
+    }
+   }
+  },
+  "BL5-tau60-lag": {
+   "L-tr": {
+    "101": {
+     "0": 1.8765967178726275
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.8749120236088568
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.8749120236088568
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 1.8765967178726275
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 1.875969311354268
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.8749120236088568
+    }
+   },
+   "L-hon": {
+    "101": {
+     "0": 1.8765967178726275
+    }
+   }
+  },
+  "BL5N-lag": {
+   "L-tr": {
+    "101": {
+     "0": 1.0394651759986113
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.1721012504368888
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.168840620380091
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 1.0424712367455982
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 1.0649119300977163
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.1721012504368888
+    }
+   },
+   "L-hon": {
+    "101": {
+     "0": 1.0282590713746314
+    }
+   }
+  },
+  "BL1N-lag": {
+   "L-tr": {
+    "101": {
+     "0": 0.8729217672284462
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.218618689247927
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.2125559012388263
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.8648492599049967
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 0.9529476639731655
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.218618689247927
+    }
+   },
+   "L-hon": {
+    "101": {
+     "0": 0.8419048820098506
+    }
+   }
+  },
+  "BL1-GP-lag": {
+   "L-tr": {
+    "101": {
+     "0": 0.9970045747344712
+    }
+   },
+   "L-eg": {
+    "101": {
+     "0": 1.1637755785512849
+    }
+   },
+   "L-ss": {
+    "101": {
+     "0": 1.1637755785512849
+    }
+   },
+   "L-iid-0.05": {
+    "101": {
+     "0": 0.9965851137364176
+    }
+   },
+   "L-iid-0.2": {
+    "101": {
+     "0": 1.0274068494507125
+    }
+   },
+   "L-co": {
+    "101": {
+     "0": 1.1637755785512849
+    }
+   },
+   "L-hon": {
+    "101": {
+     "0": 0.988913115090961
+    }
+   }
+  }
+ },
+ "runs": [
+  {
+   "tag": "Sublet-lag",
+   "mode": "L-tr",
+   "cell": "101",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.100909506809022,
+   "guard": {
+    "held": true,
+    "case": "W(a)",
+    "env_ok": true,
+    "env_max_excess_usd": -0.8011517014504079,
+    "aborted": false,
+    "t_a": null,
+    "s_fb_all": true,
+    "t0g_bound_all": true,
+    "project": true,
+    "robust_slots": 0,
+    "switches": 0,
+    "projected_slots": 5,
+    "projection": {
+     "slots": 5,
+     "P1": 5,
+     "P0": 0,
+     "K0": 0,
+     "dropped_buys": 238,
+     "dropped_other": 0,
+     "guard_releases": 0
+    },
+    "B_T": 318.6012723489015,
+    "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+    "B0_usd": null,
+    "info_class_reported": "online-I1 + a-priori N",
+    "online_lb": {
+     "LB_T": 771.0417666278704,
+     "Wk_T": 318.6012723489015,
+     "B_T": 318.6012723489015,
+     "n_groups": 3
+    }
+   }
+  },
+  {
+   "tag": "Sublet-lag",
+   "mode": "L-eg",
+   "cell": "101",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.0946143060009856,
+   "guard": {
+    "held": true,
+    "case": "W(a)",
+    "env_ok": true,
+    "env_max_excess_usd": -0.6206960964378396,
+    "aborted": false,
+    "t_a": null,
+    "s_fb_all": true,
+    "t0g_bound_all": true,
+    "project": true,
+    "robust_slots": 0,
+    "switches": 0,
+    "projected_slots": 8,
+    "projection": {
+     "slots": 8,
+     "P1": 7,
+     "P0": 0,
+     "K0": 1,
+     "dropped_buys": 551,
+     "dropped_other": 0,
+     "guard_releases": 14
+    },
+    "B_T": 318.6012723489015,
+    "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+    "B0_usd": null,
+    "info_class_reported": "online-I1 + a-priori N",
+    "online_lb": {
+     "LB_T": 771.0417666278704,
+     "Wk_T": 318.6012723489015,
+     "B_T": 318.6012723489015,
+     "n_groups": 3
+    }
+   }
+  },
+  {
+   "tag": "Sublet-lag",
+   "mode": "L-ss",
+   "cell": "101",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.0946143060009856,
+   "guard": {
+    "held": true,
+    "case": "W(a)",
+    "env_ok": true,
+    "env_max_excess_usd": -0.6206960964378396,
+    "aborted": false,
+    "t_a": null,
+    "s_fb_all": true,
+    "t0g_bound_all": true,
+    "project": true,
+    "robust_slots": 0,
+    "switches": 0,
+    "projected_slots": 8,
+    "projection": {
+     "slots": 8,
+     "P1": 7,
+     "P0": 0,
+     "K0": 1,
+     "dropped_buys": 551,
+     "dropped_other": 0,
+     "guard_releases": 14
+    },
+    "B_T": 318.6012723489015,
+    "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+    "B0_usd": null,
+    "info_class_reported": "online-I1 + a-priori N",
+    "online_lb": {
+     "LB_T": 771.0417666278704,
+     "Wk_T": 318.6012723489015,
+     "B_T": 318.6012723489015,
+     "n_groups": 3
+    }
+   }
+  },
+  {
+   "tag": "Sublet-lag",
+   "mode": "L-iid-0.05",
+   "cell": "101",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.0129101580799842,
+   "guard": {
+    "held": true,
+    "case": "W(a)",
+    "env_ok": true,
+    "env_max_excess_usd": -0.8011517014504079,
+    "aborted": false,
+    "t_a": null,
+    "s_fb_all": true,
+    "t0g_bound_all": true,
+    "project": true,
+    "robust_slots": 0,
+    "switches": 0,
+    "projected_slots": 4,
+    "projection": {
+     "slots": 4,
+     "P1": 4,
+     "P0": 0,
+     "K0": 0,
+     "dropped_buys": 202,
+     "dropped_other": 0,
+     "guard_releases": 0
+    },
+    "B_T": 318.6012723489015,
+    "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+    "B0_usd": null,
+    "info_class_reported": "online-I1 + a-priori N",
+    "online_lb": {
+     "LB_T": 771.0417666278704,
+     "Wk_T": 318.6012723489015,
+     "B_T": 318.6012723489015,
+     "n_groups": 3
+    }
+   }
+  },
+  {
+   "tag": "Sublet-lag",
+   "mode": "L-iid-0.2",
+   "cell": "101",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.0607926996854409,
+   "guard": {
+    "held": true,
+    "case": "W(a)",
+    "env_ok": true,
+    "env_max_excess_usd": -3.531555275549934,
+    "aborted": false,
+    "t_a": null,
+    "s_fb_all": true,
+    "t0g_bound_all": true,
+    "project": true,
+    "robust_slots": 0,
+    "switches": 0,
+    "projected_slots": 6,
+    "projection": {
+     "slots": 6,
+     "P1": 6,
+     "P0": 0,
+     "K0": 0,
+     "dropped_buys": 226,
+     "dropped_other": 0,
+     "guard_releases": 0
+    },
+    "B_T": 318.6012723489015,
+    "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+    "B0_usd": null,
+    "info_class_reported": "online-I1 + a-priori N",
+    "online_lb": {
+     "LB_T": 771.0417666278704,
+     "Wk_T": 318.6012723489015,
+     "B_T": 318.6012723489015,
+     "n_groups": 3
+    }
+   }
+  },
+  {
+   "tag": "Sublet-lag",
+   "mode": "L-co",
+   "cell": "101",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.0946143060009856,
+   "guard": {
+    "held": true,
+    "case": "W(a)",
+    "env_ok": true,
+    "env_max_excess_usd": -0.6206960964378396,
+    "aborted": false,
+    "t_a": null,
+    "s_fb_all": true,
+    "t0g_bound_all": true,
+    "project": true,
+    "robust_slots": 0,
+    "switches": 0,
+    "projected_slots": 8,
+    "projection": {
+     "slots": 8,
+     "P1": 7,
+     "P0": 0,
+     "K0": 1,
+     "dropped_buys": 551,
+     "dropped_other": 0,
+     "guard_releases": 14
+    },
+    "B_T": 318.6012723489015,
+    "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+    "B0_usd": null,
+    "info_class_reported": "online-I1 + a-priori N",
+    "online_lb": {
+     "LB_T": 771.0417666278704,
+     "Wk_T": 318.6012723489015,
+     "B_T": 318.6012723489015,
+     "n_groups": 3
+    }
+   }
+  },
+  {
+   "tag": "Sublet-lag",
+   "mode": "L-hon",
+   "cell": "101",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.001786187963386,
+   "guard": {
+    "held": true,
+    "case": "W(a)",
+    "env_ok": true,
+    "env_max_excess_usd": -0.8011517014504079,
+    "aborted": false,
+    "t_a": null,
+    "s_fb_all": true,
+    "t0g_bound_all": true,
+    "project": true,
+    "robust_slots": 0,
+    "switches": 0,
+    "projected_slots": 4,
+    "projection": {
+     "slots": 4,
+     "P1": 4,
+     "P0": 0,
+     "K0": 0,
+     "dropped_buys": 199,
+     "dropped_other": 0,
+     "guard_releases": 0
+    },
+    "B_T": 318.6012723489015,
+    "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+    "B0_usd": null,
+    "info_class_reported": "online-I1 + a-priori N",
+    "online_lb": {
+     "LB_T": 771.0417666278704,
+     "Wk_T": 318.6012723489015,
+     "B_T": 318.6012723489015,
+     "n_groups": 3
+    }
+   }
+  },
+  {
+   "tag": "BL1-GP-lag",
+   "mode": "L-tr",
+   "cell": "101",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.9970045747344712,
+   "guard": {
+    "held": true,
+    "case": "W(a)",
+    "env_ok": true,
+    "env_max_excess_usd": -0.07446287378155603,
+    "aborted": false,
+    "t_a": null,
+    "s_fb_all": true,
+    "t0g_bound_all": true,
+    "project": true,
+    "robust_slots": 0,
+    "switches": 0,
+    "projected_slots": 11,
+    "projection": {
+     "slots": 11,
+     "P1": 7,
+     "P0": 2,
+     "K0": 2,
+     "dropped_buys": 327,
+     "dropped_other": 0,
+     "guard_releases": 26
+    },
+    "B_T": 318.6012723489015,
+    "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+    "B0_usd": null,
+    "info_class_reported": "online-I1 + a-priori N",
+    "online_lb": {
+     "LB_T": 771.0417666278704,
+     "Wk_T": 318.6012723489015,
+     "B_T": 318.6012723489015,
+     "n_groups": 3
+    }
+   }
+  },
+  {
+   "tag": "BL1-GP-lag",
+   "mode": "L-eg",
+   "cell": "101",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.1637755785512849,
+   "guard": {
+    "held": true,
+    "case": "W(a)",
+    "env_ok": true,
+    "env_max_excess_usd": -0.7318391192569038,
+    "aborted": false,
+    "t_a": null,
+    "s_fb_all": true,
+    "t0g_bound_all": true,
+    "project": true,
+    "robust_slots": 0,
+    "switches": 0,
+    "projected_slots": 10,
+    "projection": {
+     "slots": 10,
+     "P1": 10,
+     "P0": 0,
+     "K0": 0,
+     "dropped_buys": 703,
+     "dropped_other": 0,
+     "guard_releases": 0
+    },
+    "B_T": 318.6012723489015,
+    "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+    "B0_usd": null,
+    "info_class_reported": "online-I1 + a-priori N",
+    "online_lb": {
+     "LB_T": 771.0417666278704,
+     "Wk_T": 318.6012723489015,
+     "B_T": 318.6012723489015,
+     "n_groups": 3
+    }
+   }
+  },
+  {
+   "tag": "BL1-GP-lag",
+   "mode": "L-ss",
+   "cell": "101",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.1637755785512849,
+   "guard": {
+    "held": true,
+    "case": "W(a)",
+    "env_ok": true,
+    "env_max_excess_usd": -0.7318391192569038,
+    "aborted": false,
+    "t_a": null,
+    "s_fb_all": true,
+    "t0g_bound_all": true,
+    "project": true,
+    "robust_slots": 0,
+    "switches": 0,
+    "projected_slots": 10,
+    "projection": {
+     "slots": 10,
+     "P1": 10,
+     "P0": 0,
+     "K0": 0,
+     "dropped_buys": 703,
+     "dropped_other": 0,
+     "guard_releases": 0
+    },
+    "B_T": 318.6012723489015,
+    "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+    "B0_usd": null,
+    "info_class_reported": "online-I1 + a-priori N",
+    "online_lb": {
+     "LB_T": 771.0417666278704,
+     "Wk_T": 318.6012723489015,
+     "B_T": 318.6012723489015,
+     "n_groups": 3
+    }
+   }
+  },
+  {
+   "tag": "BL1-GP-lag",
+   "mode": "L-iid-0.05",
+   "cell": "101",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.9965851137364176,
+   "guard": {
+    "held": true,
+    "case": "W(a)",
+    "env_ok": true,
+    "env_max_excess_usd": -0.07446287378155603,
+    "aborted": false,
+    "t_a": null,
+    "s_fb_all": true,
+    "t0g_bound_all": true,
+    "project": true,
+    "robust_slots": 0,
+    "switches": 0,
+    "projected_slots": 11,
+    "projection": {
+     "slots": 11,
+     "P1": 7,
+     "P0": 2,
+     "K0": 2,
+     "dropped_buys": 319,
+     "dropped_other": 0,
+     "guard_releases": 26
+    },
+    "B_T": 318.6012723489015,
+    "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+    "B0_usd": null,
+    "info_class_reported": "online-I1 + a-priori N",
+    "online_lb": {
+     "LB_T": 771.0417666278704,
+     "Wk_T": 318.6012723489015,
+     "B_T": 318.6012723489015,
+     "n_groups": 3
+    }
+   }
+  },
+  {
+   "tag": "BL1-GP-lag",
+   "mode": "L-iid-0.2",
+   "cell": "101",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.0274068494507125,
+   "guard": {
+    "held": true,
+    "case": "W(a)",
+    "env_ok": true,
+    "env_max_excess_usd": -3.9024872666422823,
+    "aborted": false,
+    "t_a": null,
+    "s_fb_all": true,
+    "t0g_bound_all": true,
+    "project": true,
+    "robust_slots": 0,
+    "switches": 0,
+    "projected_slots": 5,
+    "projection": {
+     "slots": 5,
+     "P1": 5,
+     "P0": 0,
+     "K0": 0,
+     "dropped_buys": 291,
+     "dropped_other": 0,
+     "guard_releases": 0
+    },
+    "B_T": 318.6012723489015,
+    "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+    "B0_usd": null,
+    "info_class_reported": "online-I1 + a-priori N",
+    "online_lb": {
+     "LB_T": 771.0417666278704,
+     "Wk_T": 318.6012723489015,
+     "B_T": 318.6012723489015,
+     "n_groups": 3
+    }
+   }
+  },
+  {
+   "tag": "BL1-GP-lag",
+   "mode": "L-co",
+   "cell": "101",
+   "seed": 0,
+   "status": "ok",
+   "r0": 1.1637755785512849,
+   "guard": {
+    "held": true,
+    "case": "W(a)",
+    "env_ok": true,
+    "env_max_excess_usd": -0.7318391192569038,
+    "aborted": false,
+    "t_a": null,
+    "s_fb_all": true,
+    "t0g_bound_all": true,
+    "project": true,
+    "robust_slots": 0,
+    "switches": 0,
+    "projected_slots": 10,
+    "projection": {
+     "slots": 10,
+     "P1": 10,
+     "P0": 0,
+     "K0": 0,
+     "dropped_buys": 703,
+     "dropped_other": 0,
+     "guard_releases": 0
+    },
+    "B_T": 318.6012723489015,
+    "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+    "B0_usd": null,
+    "info_class_reported": "online-I1 + a-priori N",
+    "online_lb": {
+     "LB_T": 771.0417666278704,
+     "Wk_T": 318.6012723489015,
+     "B_T": 318.6012723489015,
+     "n_groups": 3
+    }
+   }
+  },
+  {
+   "tag": "BL1-GP-lag",
+   "mode": "L-hon",
+   "cell": "101",
+   "seed": 0,
+   "status": "ok",
+   "r0": 0.988913115090961,
+   "guard": {
+    "held": true,
+    "case": "W(a)",
+    "env_ok": true,
+    "env_max_excess_usd": -0.07446287378155603,
+    "aborted": false,
+    "t_a": null,
+    "s_fb_all": true,
+    "t0g_bound_all": true,
+    "project": true,
+    "robust_slots": 0,
+    "switches": 0,
+    "projected_slots": 11,
+    "projection": {
+     "slots": 11,
+     "P1": 7,
+     "P0": 2,
+     "K0": 2,
+     "dropped_buys": 315,
+     "dropped_other": 0,
+     "guard_releases": 26
+    },
+    "B_T": 318.6012723489015,
+    "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+    "B0_usd": null,
+    "info_class_reported": "online-I1 + a-priori N",
+    "online_lb": {
+     "LB_T": 771.0417666278704,
+     "Wk_T": 318.6012723489015,
+     "B_T": 318.6012723489015,
+     "n_groups": 3
+    }
+   }
+  }
+ ]
+}

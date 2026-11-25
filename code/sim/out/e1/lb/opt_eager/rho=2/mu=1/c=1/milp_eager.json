@@ -1,0 +1,37 @@
+{
+ "job": "e1:milp:bench=eager:rho=2:mu=1:c=1",
+ "kind": "milp",
+ "bench": "eager",
+ "sched": null,
+ "rho_star": 2.0,
+ "mu": 1.0,
+ "c": 1,
+ "instance_hash": "5cd15bff6f41371f9a9d0f9a388058d3ae598029223ca1981e75ba20cf5c6019",
+ "schedule_hash": null,
+ "time_limit_s": 300,
+ "mip_rel_gap": 0.0001,
+ "wall_s": 68.3068580639083,
+ "cells_checked": [
+  "adaptive",
+  "trace",
+  "eager"
+ ],
+ "method": "milp",
+ "benchmark": "eager",
+ "grid": "slow",
+ "status": 0,
+ "status_msg": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+ "objective": 564.3799417292262,
+ "dual_bound": 564.3799417292262,
+ "gap": 0.0,
+ "size": {
+  "n_vars": 116897,
+  "n_int": 113224,
+  "n_rows": 108927,
+  "nnz": 384521
+ },
+ "build_s": 0.05462795007042587,
+ "solve_s": 67.9832090609707,
+ "peak_rss_mb": 1033.53515625,
+ "git_revision": "f10237bb39ab101b9831afcee79121d0fa4e1979"
+}

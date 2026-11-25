@@ -1,0 +1,222 @@
+{
+ "figure": "sf_e7_links",
+ "size_in": [
+  3.4869,
+  2.2
+ ],
+ "sources": [
+  "code/sim/out/e7/main/summary.json"
+ ],
+ "data": {
+  "series": {
+   "sublet_ms4": {
+    "tag": "Sublet",
+    "links": [
+     0.0,
+     2.0,
+     3.0,
+     5.0
+    ],
+    "median": [
+     25.080391173179894,
+     26.671728080520495,
+     26.994532456856813,
+     28.4149301310922
+    ],
+    "ci_lo": [
+     17.71739714743552,
+     19.784923537736343,
+     20.098112917312033,
+     21.369461930892122
+    ],
+    "ci_hi": [
+     27.789379860740894,
+     29.26852252885938,
+     29.650191751616646,
+     30.967958432427523
+    ],
+    "n": [
+     12,
+     12,
+     12,
+     12
+    ],
+    "note": [
+     null,
+     null,
+     null,
+     null
+    ],
+    "source": [
+     "links.0.Sublet",
+     "links.2.Sublet",
+     "links.3.Sublet",
+     "runs.1.Sublet"
+    ]
+   },
+   "bl5_lag": {
+    "tag": "BL5",
+    "links": [
+     0.0,
+     2.0,
+     3.0,
+     5.0
+    ],
+    "median": [
+     25.080391173179894,
+     26.671728080520495,
+     26.994532456856813,
+     28.4149301310922
+    ],
+    "ci_lo": [
+     17.71739714743552,
+     19.784923537736343,
+     20.098112917312033,
+     21.369461930892122
+    ],
+    "ci_hi": [
+     27.789379860740894,
+     29.26852252885938,
+     29.650191751616646,
+     30.967958432427523
+    ],
+    "n": [
+     12,
+     12,
+     12,
+     12
+    ],
+    "note": [
+     null,
+     null,
+     null,
+     null
+    ],
+    "source": [
+     "links.0.BL5",
+     "links.2.BL5",
+     "links.3.BL5",
+     "runs.1.BL5"
+    ]
+   },
+   "bl1": {
+    "tag": "BL1",
+    "links": [
+     0.0,
+     2.0,
+     3.0,
+     5.0
+    ],
+    "median": [
+     31.794896132355827,
+     33.07382699217929,
+     33.230755281743214,
+     33.80782443382888
+    ],
+    "ci_lo": [
+     18.280534684113576,
+     23.72383824511048,
+     23.92058885986141,
+     25.867504600006015
+    ],
+    "ci_hi": [
+     37.299354567522414,
+     39.29496714646976,
+     39.334544888447084,
+     40.07037992139564
+    ],
+    "n": [
+     12,
+     12,
+     12,
+     12
+    ],
+    "note": [
+     null,
+     null,
+     null,
+     null
+    ],
+    "source": [
+     "links.0.BL1",
+     "links.2.BL1",
+     "links.3.BL1",
+     "runs.1.BL1"
+    ]
+   }
+  },
+  "agree": {
+   "pair": [
+    "sublet_ms4",
+    "bl5_lag"
+   ],
+   "max_rel_diff": 0.0,
+   "within_pct": 0,
+   "key": "Lagged RetroRenting + one-way guard ($B_0=10\\%$ of the all-fallback bill) = RetroRenting-style, lagged"
+  },
+  "cross_region_links": {
+   "0": [],
+   "2": [
+    [
+     "north_america",
+     "south_america"
+    ],
+    [
+     "east_asia",
+     "south_southeast_asia"
+    ]
+   ],
+   "3": [
+    [
+     "north_america",
+     "south_america"
+    ],
+    [
+     "east_asia",
+     "south_southeast_asia"
+    ],
+    [
+     "north_america",
+     "europe"
+    ]
+   ],
+   "5": "S7, config.DEFAULT_ADJACENCY: the main grid (runs.1)"
+  },
+  "grid": {
+   "alignments": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "policy_seeds": [
+    0,
+    1,
+    2
+   ]
+  },
+  "labels": {
+   "x": "Cross-region links",
+   "y": "Saving (%)",
+   "key_title": "MS4, development-exposed",
+   "pair": "Lagged RetroRenting, with and\nwithout one-way guard ({rel})",
+   "caption": "MS4's E7 result on the development-exposed alignments 1, 2, 3, 4 (policy seeds 0, 1, 2; not a confirmation result): saving over all-fallback (overflow accounting) against the cross-region links of the routing graph, medians with MS4's 95% bootstrap intervals. Lagged RetroRenting + one-way guard (filled markers) is the lagged RetroRenting-style rule (open markers) in the one-way guard at B0 = 10% of all-fallback. Their medians are equal at every number of cross-region links."
+  },
+  "meta": {
+   "git_revision": {
+    "e7_main": "939847ca5925ce069d6df9089fe3a3d1d3207bb7"
+   },
+   "reduced": false,
+   "B0_rule": "0.1*BL0a",
+   "ms4_tags": {
+    "sublet_ms4": "Sublet",
+    "bl5_lag": "BL5",
+    "bl1": "BL1"
+   },
+   "sources": [
+    "code/sim/out/e7/main/summary.json"
+   ],
+   "runs_files": []
+  }
+ }
+}

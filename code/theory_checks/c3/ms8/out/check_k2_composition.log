@@ -1,0 +1,46 @@
+rho= 2 rho2= 2 X=    4 det=2.0000 (sw 2.0000, lb 2.0000, formula 2.0000) rnd=[2.0000,2.0000] (L-game None) rnd_sw=1.8286 0.0s
+rho= 2 rho2= 2 X=   16 det=2.7500 (sw 2.7500, lb 2.7500, formula 2.7500) rnd=[2.0163,2.0164] (L-game 2.0163) rnd_sw=2.0272 0.0s
+rho= 2 rho2= 2 X=   64 det=2.9375 (sw 2.9375, lb 2.9375, formula 2.9375) rnd=[2.1696,2.1696] (L-game 2.1696) rnd_sw=2.1789 0.4s
+rho= 4 rho2= 2 X=   16 det=4.0000 (sw 4.0000, lb 4.0000, formula 4.0000) rnd=[2.3366,2.3366] (L-game 2.3366) rnd_sw=2.3532 0.0s
+rho= 4 rho2= 4 X=   16 det=4.0000 (sw 4.0000, lb 4.0000, formula 4.0000) rnd=[4.0000,4.0000] (L-game None) rnd_sw=2.6879 0.0s
+rho= 4 rho2= 2 X=   64 det=4.7500 (sw 4.7500, lb 4.7500, formula 4.7500) rnd=[3.4134,3.4134] (L-game 3.4134) rnd_sw=3.4205 0.3s
+rho= 4 rho2= 4 X=   64 det=4.7500 (sw 4.7500, lb 4.7500, formula 4.7500) rnd=[4.0000,4.0000] (L-game None) rnd_sw=3.4694 0.1s
+rho= 4 rho2= 2 X=  256 det=4.9375 (sw 4.9375, lb 4.9375, formula 4.9375) rnd=[3.8630,3.8630] (L-game 3.863) rnd_sw=3.8639 5.4s
+rho= 4 rho2= 4 X=  256 det=4.9375 (sw 4.9375, lb 4.9375, formula 4.9375) rnd=[4.0000,4.0000] (L-game None) rnd_sw=3.8922 1.6s
+rho= 8 rho2= 2 X=   64 det=8.0000 (sw 8.0000, lb 8.0000, formula 8.0000) rnd=[4.2684,4.2684] (L-game 4.2684) rnd_sw=4.2694 0.3s
+rho= 8 rho2= 8 X=   64 det=8.0000 (sw 8.0000, lb 8.0000, formula 8.0000) rnd=[8.0000,8.0000] (L-game None) rnd_sw=4.2952 0.1s
+rho= 8 rho2= 2 X=  256 det=8.7500 (sw 8.7500, lb 8.7500, formula 8.7500) rnd=[6.5657,6.5657] (L-game 6.5657) rnd_sw=6.5660 4.2s
+rho= 8 rho2= 8 X=  256 det=8.7500 (sw 8.7500, lb 8.7500, formula 8.7500) rnd=[8.0000,8.0000] (L-game None) rnd_sw=6.5682 1.5s
+rho= 8 rho2= 2 X= 1024 det=8.9375 (sw 8.9375, lb 8.9375, formula 8.9375) rnd=[7.5866,7.5866] (L-game 7.5866) rnd_sw=7.5868 43.0s
+rho= 8 rho2= 8 X= 1024 det=8.9375 (sw 8.9375, lb 8.9375, formula 8.9375) rnd=[8.0000,8.0000] (L-game None) rnd_sw=7.5883 4.2s
+rho=16 rho2= 2 X=  256 det=16.0000 (sw 16.0000, lb 16.0000, formula 16.0000) rnd=[8.2581,8.2581] (L-game 8.2581) rnd_sw=8.2581 3.0s
+rho=16 rho2=16 X=  256 det=16.0000 (sw 16.0000, lb 16.0000, formula 16.0000) rnd=[16.0000,16.0000] (L-game None) rnd_sw=8.2581 1.4s
+rho=16 rho2= 2 X= 1024 det=16.7500 (sw 16.7500, lb 16.7500, formula 16.7500) rnd=[12.9620,12.9620] (L-game 12.962) rnd_sw=12.9620 25.6s
+rho=16 rho2=16 X= 1024 det=16.7500 (sw 16.7500, lb 16.7500, formula 16.7500) rnd=[16.0000,16.0000] (L-game None) rnd_sw=12.9620 4.1s
+rho=16 rho2= 2 X= 4096 det=16.9375 (sw 16.9375, lb 16.9375, formula 16.9375) rnd=[15.1141,15.1144] (L-game 15.1144) rnd_sw=15.1144 497.0s
+rho=16 rho2=16 X= 4096 det=16.9375 (sw 16.9375, lb 16.9375, formula 16.9375) rnd=[16.0000,16.0000] (L-game None) rnd_sw=15.1144 15.6s
+Two-contract composition game G(rho, rho2, X) under Theorem 2(a)'s lender (more sites than slots)
+checks: OPT closed form vs DP (rho<=4, X<=32), det >= lb, det = switch-time det, rnd_lb <= rnd_ub <= det with rnd_ub/rnd_lb - 1 <= 0.002, the LP value = its Yao certificate (rel. 1e-4); violations 0
+ rnd = bracket on the randomized value of the infinite game: [max(value with l <= 10X, rho2), ratio of an explicit strategy at every l]
+ rho rho2     X  det value  rho+1-rho^2/X  det(switch)  rnd [lb, ub]        rnd(switch mix)  rho+1  2rho  rho e/(e-1)  switch grid
+   2    2     4     2.0000         2.0000       2.0000  [2.0000, 2.0000]          2.0000      3     4        3.164  full
+   2    2    16     2.7500         2.7500       2.7500  [2.0163, 2.0164]          2.0272      3     4        3.164  full
+   2    2    64     2.9375         2.9375       2.9375  [2.1696, 2.1696]          2.1789      3     4        3.164  full
+   4    2    16     4.0000         4.0000       4.0000  [2.3366, 2.3366]          2.3532      5     8        6.328  full
+   4    4    16     4.0000         4.0000       4.0000  [4.0000, 4.0000]          4.0000      5     8        6.328  full
+   4    2    64     4.7500         4.7500       4.7500  [3.4134, 3.4134]          3.4205      5     8        6.328  full
+   4    4    64     4.7500         4.7500       4.7500  [4.0000, 4.0000]          4.0000      5     8        6.328  full
+   4    2   256     4.9375         4.9375       4.9375  [3.8630, 3.8630]          3.8639      5     8        6.328  full
+   4    4   256     4.9375         4.9375       4.9375  [4.0000, 4.0000]          4.0000      5     8        6.328  full
+   8    2    64     8.0000         8.0000       8.0000  [4.2684, 4.2684]          4.2694      9    16       12.656  full
+   8    8    64     8.0000         8.0000       8.0000  [8.0000, 8.0000]          8.0000      9    16       12.656  full
+   8    2   256     8.7500         8.7500       8.7500  [6.5657, 6.5657]          6.5660      9    16       12.656  full
+   8    8   256     8.7500         8.7500       8.7500  [8.0000, 8.0000]          8.0000      9    16       12.656  full
+   8    2  1024     8.9375         8.9375       8.9375  [7.5866, 7.5866]          7.5868      9    16       12.656  grid
+   8    8  1024     8.9375         8.9375       8.9375  [8.0000, 8.0000]          8.0000      9    16       12.656  grid
+  16    2   256    16.0000        16.0000      16.0000  [8.2581, 8.2581]          8.2581     17    32       25.312  full
+  16   16   256    16.0000        16.0000      16.0000  [16.0000, 16.0000]         16.0000     17    32       25.312  full
+  16    2  1024    16.7500        16.7500      16.7500  [12.9620, 12.9620]         12.9620     17    32       25.312  grid
+  16   16  1024    16.7500        16.7500      16.7500  [16.0000, 16.0000]         16.0000     17    32       25.312  grid
+  16    2  4096    16.9375        16.9375      16.9375  [15.1141, 15.1144]         15.1144     17    32       25.312  grid
+  16   16  4096    16.9375        16.9375      16.9375  [16.0000, 16.0000]         16.0000     17    32       25.312  grid

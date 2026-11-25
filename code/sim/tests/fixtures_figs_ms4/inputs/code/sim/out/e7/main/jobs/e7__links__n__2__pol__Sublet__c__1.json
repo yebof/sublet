@@ -1,0 +1,62 @@
+{
+ "job": "e7:links:n=2:pol=Sublet:c=1",
+ "exp": "e7",
+ "kind": "pool",
+ "params": {
+  "part": "main",
+  "kind": "links",
+  "tag": "Sublet",
+  "n": 2,
+  "mu": 1.0,
+  "c": 1,
+  "mode": "L-tr",
+  "policy_seeds": [
+   0
+  ],
+  "horizon_min": 120
+ },
+ "status": "ok",
+ "started": "2026-10-26T14:39:56",
+ "pid": 969741,
+ "argv": [
+  "/work/ms4wt/u25/code/sim/sublet/experiments/e7.py",
+  "--job",
+  "e7:links:n=2:pol=Sublet:c=1",
+  "--out",
+  "/work/ms4u/u25scratch/fixture_roots/e7/out/e7/main"
+ ],
+ "slots": [
+  "slot0"
+ ],
+ "milp_limit_s": null,
+ "git_revision": "939847ca5925ce069d6df9089fe3a3d1d3207bb7",
+ "versions": {
+  "python": "3.12.3",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "sublet": "0.1.0"
+ },
+ "runs": 1,
+ "errors": [],
+ "n_errors": 0,
+ "outputs": [
+  "runs/e7__links__n__2__pol__Sublet__c__1.json"
+ ],
+ "result": {
+  "instance_hash": "0c51c0e71899d3e2d7d82e2df3829a907b40aae6ec951f611a88f28318c37931",
+  "bl0a_usd": 1527.7154508483445,
+  "totals": [
+   1609.8497307986415
+  ],
+  "t_a": [
+   12
+  ],
+  "wall_s_runs": [
+   4.141608346020803
+  ]
+ },
+ "wall_s": 5.314325605984777,
+ "peak_rss_kb": 145752,
+ "peak_rss_mb": 142.3359375,
+ "finished": "2026-10-26T14:40:01"
+}

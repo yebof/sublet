@@ -1,0 +1,1861 @@
+{
+ "meta": {
+  "exp": "e8v2",
+  "part": "a",
+  "spec": "design/ms7/feasibility/sens.md \u00a72 C(a), \u00a73 item 3 (C56)",
+  "change": "C56",
+  "label": "exploratory: post-freeze runs on the confirmation weeks (design/ms7/plan.md D6), not a confirmation result",
+  "git_revision": "56b847bec39b437ed5074dff124ffb69416e7f2b",
+  "written": "2026-11-08T19:54:30",
+  "reduced": true,
+  "gate": {
+   "kind": "ms7_registration",
+   "ok": false,
+   "reason": "the run does not start (design/ms7/plan.md D6): design/ms7/registration.md does not exist at HEAD; the working tree is dirty (14 paths, e.g. [' M code/sim/sublet/experiments/ms3_common.py', '?? code/sim/sublet/experiments/e5v2.py', '?? code/sim/sublet/experiments/e8v2.py'])",
+   "enforced": false,
+   "registration": {
+    "head": "56b847bec39b437ed5074dff124ffb69416e7f2b",
+    "registration": "design/ms7/registration.md",
+    "registration_at_head": false,
+    "registration_sha256": null,
+    "analysis": "code/sim/sublet/experiments/ms7_sens_analysis.py",
+    "analysis_sha256_registered": null,
+    "analysis_sha256_head": null,
+    "analysis_sha256_disk": "6d9772304fe30b20d0d500c2c56b867ccecc97dc99e672c63bdfcd66912e4a2d",
+    "dirty_paths": [
+     " M code/sim/sublet/experiments/ms3_common.py",
+     "?? code/sim/sublet/experiments/e5v2.py",
+     "?? code/sim/sublet/experiments/e8v2.py",
+     "?? code/sim/sublet/experiments/e9v2.py",
+     "?? code/sim/sublet/experiments/ms7_sens_analysis.py",
+     "?? code/sim/sublet/experiments/run_e5v2.sh",
+     "?? code/sim/sublet/experiments/run_e8v2.sh",
+     "?? code/sim/sublet/experiments/run_e9v2.sh",
+     "?? code/sim/sublet/experiments/run_s1v2.sh",
+     "?? code/sim/sublet/experiments/s1v2.py",
+     "?? code/sim/tests/test_e5v2.py",
+     "?? code/sim/tests/test_e8v2.py",
+     "?? code/sim/tests/test_e9v2.py",
+     "?? code/sim/tests/test_s1v2.py"
+    ]
+   },
+   "note": "reduced run on a development week: the gate is recorded, not enforced"
+  },
+  "grid": {
+   "tiers": [
+    "S",
+    "M",
+    "L"
+   ],
+   "windows": [
+    5,
+    60
+   ],
+   "mu": 1.0,
+   "alignments": [
+    1
+   ],
+   "policy_seed": 0,
+   "horizon_min": 360,
+   "market_tightness": 0.05,
+   "mooncake_point": {
+    "tier": "M",
+    "mu": 1.0,
+    "c": 1
+   },
+   "identity_cell": [
+    "M",
+    60,
+    1
+   ]
+  },
+  "tags": {
+   "Sublet": {
+    "policy_id": "A8P",
+    "params": "ms5b_common.sublet_v2_params(inst)",
+    "kind": "headline",
+    "a9_family": true,
+    "role": "headline (D1, D2, D3): A8P around A9 at P2's allowance min{W_k, LB'} (kappa None)",
+    "information": "I1"
+   },
+   "A9": {
+    "policy_id": "A9",
+    "params": {},
+    "kind": "inner",
+    "a9_family": true,
+    "role": "the inner policy alone; with Sublet, the price of the guard",
+    "information": "I1"
+   },
+   "BL1-BO": {
+    "policy_id": "BL1",
+    "params": {
+     "backoff_cap": 288
+    },
+    "kind": "baseline",
+    "a9_family": false,
+    "role": "generic site back-off",
+    "information": "I1"
+   },
+   "BL5-cur": {
+    "policy_id": "BL5",
+    "params": {
+     "use_current_slot": true
+    },
+    "kind": "baseline",
+    "a9_family": false,
+    "role": "main RetroRenting-style row (D7)",
+    "information": "I1"
+   },
+   "A6": {
+    "policy_id": "A6",
+    "params": {},
+    "kind": "identity",
+    "a9_family": false,
+    "role": "E8's policy, rerun once against E8's stored pair",
+    "information": "I1"
+   }
+  },
+  "h1_pair": [
+   "BL1-BO",
+   "BL5-cur"
+  ],
+  "service": {
+   "S": {
+    "tier": "S",
+    "a5_tier": "llama3-8b",
+    "n_seq": 128,
+    "tpot_s": 0.015,
+    "w_in": 0.21333333333333335,
+    "kappa_wtok_per_min": 512000.0
+   },
+   "M": {
+    "tier": "M",
+    "a5_tier": "llama3-70b",
+    "n_seq": 128,
+    "tpot_s": 0.035,
+    "w_in": 0.30476190476190473,
+    "kappa_wtok_per_min": 219428.57142857142
+   },
+   "L": {
+    "tier": "L",
+    "a5_tier": "llama3.1-405b",
+    "n_seq": 128,
+    "tpot_s": 0.06,
+    "w_in": 0.5333333333333333,
+    "kappa_wtok_per_min": 128000.0
+   }
+  },
+  "jobs": 11,
+  "jobs_ok": 10,
+  "n_missing": 0,
+  "reduced_note": "MS3_E8V2_REDUCED=1: 360 min at market tightness 0.05, a smoke run, never a result"
+ },
+ "cells": {
+  "S": {
+   "60": {
+    "1": {
+     "Sublet": {
+      "C_fluid": 16.20377958436442,
+      "C_replay": 67.0237105033701,
+      "error": 0.758238100178747,
+      "r0_fluid": 0.8121533025320237,
+      "r0_replay": 3.3593105577532714,
+      "fluid": {
+       "lease": 8.87273673828848,
+       "loading": 0.0,
+       "routing": 0.0,
+       "fallback": 7.331042846075938,
+       "stranding": 0.0,
+       "total": 16.20377958436442
+      },
+      "fluid_s": 2.860365258064121,
+      "replay_s": 3.427897924091667,
+      "n_leases": 3,
+      "copies": null,
+      "replay": {
+       "routing": 0.0,
+       "fallback": 58.149619598414944,
+       "stranding": 0.0013541666666666667,
+       "total": 58.15097376508161
+      },
+      "e8_1_pass": true,
+      "e8_2_pass": true,
+      "e8_3_pass": true,
+      "status": "ok",
+      "hit_ratio": null,
+      "guard": {
+       "held": true,
+       "case": "W(a)",
+       "env_ok": true,
+       "env_max_excess_usd": 0.0,
+       "aborted": false,
+       "t_a": null,
+       "s_fb_all": true,
+       "t0g_bound_all": true,
+       "project": true,
+       "robust_slots": 0,
+       "switches": 0,
+       "projected_slots": 7,
+       "projection": {
+        "slots": 7,
+        "P1": 1,
+        "P0": 6,
+        "K0": 0,
+        "dropped_buys": 10,
+        "dropped_other": 0,
+        "guard_releases": 0
+       },
+       "B_T": 9.377594366468218,
+       "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+       "B0_usd": null,
+       "info_class_reported": "online-I1 + a-priori N",
+       "online_lb": {
+        "LB_T": 9.377594366468218,
+        "Wk_T": 12.289191802648359,
+        "B_T": 9.377594366468218,
+        "n_groups": 1
+       }
+      }
+     },
+     "A9": {
+      "C_fluid": 11.887628594478414,
+      "C_replay": 64.92714687262132,
+      "error": 0.8169081937667705,
+      "r0_fluid": 0.5958225222710258,
+      "r0_replay": 3.254228217684651,
+      "fluid": {
+       "lease": 10.351526194669894,
+       "loading": 0.0,
+       "routing": 0.0,
+       "fallback": 1.5361023998085206,
+       "stranding": 0.0,
+       "total": 11.887628594478414
+      },
+      "fluid_s": 0.06546476576477289,
+      "replay_s": 3.500412840861827,
+      "n_leases": 3,
+      "copies": null,
+      "replay": {
+       "routing": 0.0,
+       "fallback": 54.57562067795143,
+       "stranding": 0.0,
+       "total": 54.57562067795143
+      },
+      "e8_1_pass": true,
+      "e8_2_pass": true,
+      "e8_3_pass": true,
+      "status": "ok",
+      "hit_ratio": null
+     },
+     "BL1-BO": {
+      "C_fluid": 14.793292586484254,
+      "C_replay": 64.81962399254678,
+      "error": 0.7717775624834657,
+      "r0_fluid": 0.7414579645991245,
+      "r0_replay": 3.2488390390861865,
+      "fluid": {
+       "lease": 14.787894563814135,
+       "loading": 0.0,
+       "routing": 0.0,
+       "fallback": 0.005398022670120071,
+       "stranding": 0.0,
+       "total": 14.793292586484254
+      },
+      "fluid_s": 0.05998053401708603,
+      "replay_s": 3.5837395386770368,
+      "n_leases": 4,
+      "copies": null,
+      "replay": {
+       "routing": 0.0,
+       "fallback": 50.03172942873264,
+       "stranding": 0.0,
+       "total": 50.03172942873264
+      },
+      "e8_1_pass": true,
+      "e8_2_pass": true,
+      "e8_3_pass": true,
+      "status": "ok",
+      "hit_ratio": null
+     },
+     "BL5-cur": {
+      "C_fluid": 12.24605013005185,
+      "C_replay": 65.33034868887566,
+      "error": 0.8125518939387341,
+      "r0_fluid": 0.6137870491456972,
+      "r0_replay": 3.274437187138534,
+      "fluid": {
+       "lease": 10.351526194669894,
+       "loading": 0.0,
+       "routing": 0.0,
+       "fallback": 1.894523935381956,
+       "stranding": 0.0,
+       "total": 12.24605013005185
+      },
+      "fluid_s": 0.06129594100639224,
+      "replay_s": 3.4981952467933297,
+      "n_leases": 3,
+      "copies": null,
+      "replay": {
+       "routing": 0.0,
+       "fallback": 54.97882249420576,
+       "stranding": 0.0,
+       "total": 54.97882249420576
+      },
+      "e8_1_pass": true,
+      "e8_2_pass": true,
+      "e8_3_pass": true,
+      "status": "ok",
+      "hit_ratio": null
+     }
+    }
+   },
+   "5": {
+    "1": {
+     "Sublet": {
+      "C_fluid": 13.74047653256585,
+      "C_replay": 28.36240452218778,
+      "error": 0.5155390819626475,
+      "r0_fluid": 1.0056324166940702,
+      "r0_replay": 2.075776144684874,
+      "fluid": {
+       "lease": 5.915157825525654,
+       "loading": 0.0,
+       "routing": 0.0,
+       "fallback": 7.825318707040196,
+       "stranding": 0.0,
+       "total": 13.74047653256585
+      },
+      "fluid_s": 3.093310966156423,
+      "replay_s": 2.4845654349774122,
+      "n_leases": 2,
+      "copies": null,
+      "replay": {
+       "routing": 0.0,
+       "fallback": 22.361934196662126,
+       "stranding": 0.0853125,
+       "total": 22.447246696662127
+      },
+      "e8_1_pass": true,
+      "e8_2_pass": true,
+      "e8_3_pass": true,
+      "status": "ok",
+      "hit_ratio": null,
+      "guard": {
+       "held": true,
+       "case": "W(a)",
+       "env_ok": true,
+       "env_max_excess_usd": 0.0,
+       "aborted": false,
+       "t_a": null,
+       "s_fb_all": true,
+       "t0g_bound_all": true,
+       "project": true,
+       "robust_slots": 0,
+       "switches": 0,
+       "projected_slots": 11,
+       "projection": {
+        "slots": 11,
+        "P1": 2,
+        "P0": 9,
+        "K0": 0,
+        "dropped_buys": 13,
+        "dropped_other": 0,
+        "guard_releases": 0
+       },
+       "B_T": 6.873460674898148,
+       "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+       "B0_usd": null,
+       "info_class_reported": "online-I1 + a-priori N",
+       "online_lb": {
+        "LB_T": 6.873460674898148,
+        "Wk_T": 12.289191802648359,
+        "B_T": 6.873460674898148,
+        "n_groups": 1
+       }
+      }
+     },
+     "A9": {
+      "C_fluid": 11.35471311362846,
+      "C_replay": 26.924259554969918,
+      "error": 0.578272037882932,
+      "r0_fluid": 0.8310241324064004,
+      "r0_replay": 1.9705217748300865,
+      "fluid": {
+       "lease": 9.85859637587609,
+       "loading": 0.0,
+       "routing": 0.0,
+       "fallback": 1.4961167377523705,
+       "stranding": 0.0,
+       "total": 11.35471311362846
+      },
+      "fluid_s": 0.06404520897194743,
+      "replay_s": 2.404489960987121,
+      "n_leases": 3,
+      "copies": null,
+      "replay": {
+       "routing": 0.0,
+       "fallback": 17.056184012427163,
+       "stranding": 0.009479166666666667,
+       "total": 17.06566317909383
+      },
+      "e8_1_pass": true,
+      "e8_2_pass": true,
+      "e8_3_pass": true,
+      "status": "ok",
+      "hit_ratio": null
+     },
+     "BL1-BO": {
+      "C_fluid": 21.494581816457377,
+      "C_replay": 31.532048886801313,
+      "error": 0.31832587556799774,
+      "r0_fluid": 1.5731367254026392,
+      "r0_replay": 2.30775478930411,
+      "fluid": {
+       "lease": 21.442447117530495,
+       "loading": 0.0,
+       "routing": 0.0,
+       "fallback": 0.05213469892688311,
+       "stranding": 5.773159728050814e-17,
+       "total": 21.494581816457377
+      },
+      "fluid_s": 0.06484282622113824,
+      "replay_s": 2.4479998690076172,
+      "n_leases": 6,
+      "copies": null,
+      "replay": {
+       "routing": 0.0,
+       "fallback": 10.08960176927082,
+       "stranding": 0.0,
+       "total": 10.08960176927082
+      },
+      "e8_1_pass": true,
+      "e8_2_pass": true,
+      "e8_3_pass": true,
+      "status": "ok",
+      "hit_ratio": null
+     },
+     "BL5-cur": {
+      "C_fluid": 14.209358191645578,
+      "C_replay": 27.984426073968578,
+      "error": 0.4922404999806918,
+      "r0_fluid": 1.0399487371540144,
+      "r0_replay": 2.0481128115071585,
+      "fluid": {
+       "lease": 12.569710379242014,
+       "loading": 0.0,
+       "routing": 0.0,
+       "fallback": 1.6396478124035623,
+       "stranding": 3.848773152033876e-17,
+       "total": 14.209358191645578
+      },
+      "fluid_s": 0.06694672489538789,
+      "replay_s": 2.535558915697038,
+      "n_leases": 4,
+      "copies": null,
+      "replay": {
+       "routing": 0.0,
+       "fallback": 15.414715694726564,
+       "stranding": 0.0,
+       "total": 15.414715694726564
+      },
+      "e8_1_pass": true,
+      "e8_2_pass": true,
+      "e8_3_pass": true,
+      "status": "ok",
+      "hit_ratio": null
+     }
+    }
+   }
+  },
+  "M": {
+   "60": {
+    "1": {
+     "Sublet": {
+      "C_fluid": 16.20650274558174,
+      "C_replay": 55.766329430902886,
+      "error": 0.7093855214971183,
+      "r0_fluid": 0.8112552989363194,
+      "r0_replay": 2.791517143659019,
+      "fluid": {
+       "lease": 8.87273673828848,
+       "loading": 0.0,
+       "routing": 0.0,
+       "fallback": 7.33376600729326,
+       "stranding": 6.0137080500529315e-18,
+       "total": 16.20650274558174
+      },
+      "fluid_s": 2.8480444508604705,
+      "replay_s": 2.0817817240022123,
+      "n_leases": 3,
+      "copies": null,
+      "replay": {
+       "routing": 0.0,
+       "fallback": 46.891899984281075,
+       "stranding": 0.0016927083333333334,
+       "total": 46.893592692614405
+      },
+      "e8_1_pass": true,
+      "e8_2_pass": true,
+      "e8_3_pass": true,
+      "status": "ok",
+      "hit_ratio": null,
+      "guard": {
+       "held": true,
+       "case": "W(a)",
+       "env_ok": true,
+       "env_max_excess_usd": 0.0,
+       "aborted": false,
+       "t_a": null,
+       "s_fb_all": true,
+       "t0g_bound_all": true,
+       "project": true,
+       "robust_slots": 0,
+       "switches": 0,
+       "projected_slots": 7,
+       "projection": {
+        "slots": 7,
+        "P1": 1,
+        "P0": 6,
+        "K0": 0,
+        "dropped_buys": 10,
+        "dropped_other": 0,
+        "guard_releases": 0
+       },
+       "B_T": 9.40368005713182,
+       "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+       "B0_usd": null,
+       "info_class_reported": "online-I1 + a-priori N",
+       "online_lb": {
+        "LB_T": 9.40368005713182,
+        "Wk_T": 12.571538104653914,
+        "B_T": 9.40368005713182,
+        "n_groups": 1
+       }
+      }
+     },
+     "A9": {
+      "C_fluid": 11.89565791184343,
+      "C_replay": 53.37698001501862,
+      "error": 0.777138798251674,
+      "r0_fluid": 0.5954656391211642,
+      "r0_replay": 2.671912537713115,
+      "fluid": {
+       "lease": 10.351526194669894,
+       "loading": 0.0,
+       "routing": 0.0,
+       "fallback": 1.5441317171735356,
+       "stranding": 6.0137080500529315e-18,
+       "total": 11.89565791184343
+      },
+      "fluid_s": 0.06080573005601764,
+      "replay_s": 2.026446651201695,
+      "n_leases": 3,
+      "copies": null,
+      "replay": {
+       "routing": 0.0,
+       "fallback": 43.02545382034872,
+       "stranding": 0.0,
+       "total": 43.02545382034872
+      },
+      "e8_1_pass": true,
+      "e8_2_pass": true,
+      "e8_3_pass": true,
+      "status": "ok",
+      "hit_ratio": null
+     },
+     "BL1-BO": {
+      "C_fluid": 14.79198287340055,
+      "C_replay": 53.36293424469524,
+      "error": 0.7228041695463737,
+      "r0_fluid": 0.7404481198815687,
+      "r0_replay": 2.6712094430491176,
+      "fluid": {
+       "lease": 14.787894563814135,
+       "loading": 0.0,
+       "routing": 0.0,
+       "fallback": 0.004088309586413695,
+       "stranding": 6.0137080500529315e-18,
+       "total": 14.79198287340055
+      },
+      "fluid_s": 0.058465542271733284,
+      "replay_s": 2.033061632886529,
+      "n_leases": 4,
+      "copies": null,
+      "replay": {
+       "routing": 0.0,
+       "fallback": 38.575039680881105,
+       "stranding": 0.0,
+       "total": 38.575039680881105
+      },
+      "e8_1_pass": true,
+      "e8_2_pass": true,
+      "e8_3_pass": true,
+      "status": "ok",
+      "hit_ratio": null
+     },
+     "BL5-cur": {
+      "C_fluid": 12.256151998257783,
+      "C_replay": 53.84851584292655,
+      "error": 0.7723957326139058,
+      "r0_fluid": 0.6135110337649027,
+      "r0_replay": 2.6955163925998784,
+      "fluid": {
+       "lease": 10.351526194669894,
+       "loading": 0.0,
+       "routing": 0.0,
+       "fallback": 1.904625803587889,
+       "stranding": 6.0137080500529315e-18,
+       "total": 12.256151998257783
+      },
+      "fluid_s": 0.061331048142164946,
+      "replay_s": 2.0625983350910246,
+      "n_leases": 3,
+      "copies": null,
+      "replay": {
+       "routing": 0.0,
+       "fallback": 43.49698964825666,
+       "stranding": 0.0,
+       "total": 43.49698964825666
+      },
+      "e8_1_pass": true,
+      "e8_2_pass": true,
+      "e8_3_pass": true,
+      "status": "ok",
+      "hit_ratio": null
+     },
+     "A6_identity": {
+      "C_fluid": 20.762968900977853,
+      "C_replay": 58.77850346411623,
+      "error": 0.6467591436101556,
+      "r0_fluid": 1.0393401221099579,
+      "r0_replay": 2.94229872708416,
+      "fluid": {
+       "lease": 19.468441494811003,
+       "loading": 0.0,
+       "routing": 0.2408625555892417,
+       "fallback": 1.0536648505776045,
+       "stranding": 6.0137080500529315e-18,
+       "total": 20.762968900977853
+      },
+      "fluid_s": 0.13377851014956832,
+      "replay_s": 2.128041487187147,
+      "n_leases": 5,
+      "copies": null,
+      "replay": {
+       "routing": 0.30802218852539054,
+       "fallback": 39.00203978077983,
+       "stranding": 0.0,
+       "total": 39.310061969305224
+      },
+      "e8_1_pass": true,
+      "e8_2_pass": true,
+      "e8_3_pass": true,
+      "status": "ok",
+      "hit_ratio": null
+     }
+    }
+   },
+   "5": {
+    "1": {
+     "Sublet": {
+      "C_fluid": 13.485509004595432,
+      "C_replay": 22.66201320913386,
+      "error": 0.40492890547075777,
+      "r0_fluid": 1.0104159746050394,
+      "r0_replay": 1.6979752232871845,
+      "fluid": {
+       "lease": 5.915157825525654,
+       "loading": 0.0,
+       "routing": 0.0,
+       "fallback": 7.57035117906978,
+       "stranding": 0.0,
+       "total": 13.485509004595432
+      },
+      "fluid_s": 3.0775748109444976,
+      "replay_s": 1.7169840829446912,
+      "n_leases": 2,
+      "copies": null,
+      "replay": {
+       "routing": 0.0,
+       "fallback": 16.74685538360821,
+       "stranding": 0.0,
+       "total": 16.74685538360821
+      },
+      "e8_1_pass": true,
+      "e8_2_pass": true,
+      "e8_3_pass": true,
+      "status": "ok",
+      "hit_ratio": null,
+      "guard": {
+       "held": true,
+       "case": "W(a)",
+       "env_ok": true,
+       "env_max_excess_usd": 0.0,
+       "aborted": false,
+       "t_a": null,
+       "s_fb_all": true,
+       "t0g_bound_all": true,
+       "project": true,
+       "robust_slots": 0,
+       "switches": 0,
+       "projected_slots": 11,
+       "projection": {
+        "slots": 11,
+        "P1": 2,
+        "P0": 9,
+        "K0": 0,
+        "dropped_buys": 13,
+        "dropped_other": 0,
+        "guard_releases": 0
+       },
+       "B_T": 6.721580544471917,
+       "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+       "B0_usd": null,
+       "info_class_reported": "online-I1 + a-priori N",
+       "online_lb": {
+        "LB_T": 6.721580544471917,
+        "Wk_T": 12.571538104653914,
+        "B_T": 6.721580544471917,
+        "n_groups": 1
+       }
+      }
+     },
+     "A9": {
+      "C_fluid": 11.247547292937213,
+      "C_replay": 21.074233389475626,
+      "error": 0.466289136830278,
+      "r0_fluid": 0.8427343347616096,
+      "r0_replay": 1.5790091469313356,
+      "fluid": {
+       "lease": 9.85859637587609,
+       "loading": 0.0,
+       "routing": 0.0,
+       "fallback": 1.3889509170611225,
+       "stranding": 0.0,
+       "total": 11.247547292937213
+      },
+      "fluid_s": 0.06272489065304399,
+      "replay_s": 1.7826027912087739,
+      "n_leases": 3,
+      "copies": null,
+      "replay": {
+       "routing": 0.0,
+       "fallback": 11.215637013599537,
+       "stranding": 0.0,
+       "total": 11.215637013599537
+      },
+      "e8_1_pass": true,
+      "e8_2_pass": true,
+      "e8_3_pass": true,
+      "status": "ok",
+      "hit_ratio": null
+     },
+     "BL1-BO": {
+      "C_fluid": 18.53742685192738,
+      "C_replay": 23.979588022946196,
+      "error": 0.22694973599259438,
+      "r0_fluid": 1.3889362435542527,
+      "r0_replay": 1.7966959048098161,
+      "fluid": {
+       "lease": 18.48486820476767,
+       "loading": 0.0,
+       "routing": 0.0,
+       "fallback": 0.0525586471597123,
+       "stranding": 0.0,
+       "total": 18.53742685192738
+      },
+      "fluid_s": 0.06125527108088136,
+      "replay_s": 1.7491263751871884,
+      "n_leases": 5,
+      "copies": null,
+      "replay": {
+       "routing": 0.0,
+       "fallback": 5.494719818178532,
+       "stranding": 0.0,
+       "total": 5.494719818178532
+      },
+      "e8_1_pass": true,
+      "e8_2_pass": true,
+      "e8_3_pass": true,
+      "status": "ok",
+      "hit_ratio": null
+     },
+     "BL5-cur": {
+      "C_fluid": 14.114905562898153,
+      "C_replay": 22.54474694130799,
+      "error": 0.37391599029058603,
+      "r0_fluid": 1.0575741750596006,
+      "r0_replay": 1.6891889245829093,
+      "fluid": {
+       "lease": 12.569710379242014,
+       "loading": 0.0,
+       "routing": 0.0,
+       "fallback": 1.54519518365614,
+       "stranding": 0.0,
+       "total": 14.114905562898153
+      },
+      "fluid_s": 0.062118946108967066,
+      "replay_s": 1.7724628932774067,
+      "n_leases": 4,
+      "copies": null,
+      "replay": {
+       "routing": 0.0,
+       "fallback": 9.97503656206598,
+       "stranding": 0.0,
+       "total": 9.97503656206598
+      },
+      "e8_1_pass": true,
+      "e8_2_pass": true,
+      "e8_3_pass": true,
+      "status": "ok",
+      "hit_ratio": null
+     }
+    }
+   }
+  },
+  "L": {
+   "60": {
+    "1": {
+     "Sublet": {
+      "C_fluid": 20.005684644812266,
+      "C_replay": 55.501983739583345,
+      "error": 0.6395500971878875,
+      "r0_fluid": 0.9999999999999998,
+      "r0_replay": 2.7743106384502427,
+      "fluid": {
+       "lease": 0.0,
+       "loading": 0.0,
+       "routing": 0.0,
+       "fallback": 20.005684644812266,
+       "stranding": 0.0,
+       "total": 20.005684644812266
+      },
+      "fluid_s": 2.644524805713445,
+      "replay_s": 0.9136526430957019,
+      "n_leases": 0,
+      "copies": null,
+      "replay": {
+       "routing": 0.0,
+       "fallback": 55.501983739583345,
+       "stranding": 0.0,
+       "total": 55.501983739583345
+      },
+      "e8_1_pass": true,
+      "e8_2_pass": true,
+      "e8_3_pass": true,
+      "status": "ok",
+      "hit_ratio": null,
+      "guard": {
+       "held": true,
+       "case": "W(a)",
+       "env_ok": true,
+       "env_max_excess_usd": 0.0,
+       "aborted": false,
+       "t_a": null,
+       "s_fb_all": true,
+       "t0g_bound_all": true,
+       "project": true,
+       "robust_slots": 0,
+       "switches": 0,
+       "projected_slots": 0,
+       "projection": {
+        "slots": 0,
+        "P1": 0,
+        "P0": 0,
+        "K0": 0,
+        "dropped_buys": 0,
+        "dropped_other": 0,
+        "guard_releases": 0
+       },
+       "B_T": 20.005684644812273,
+       "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+       "B0_usd": null,
+       "info_class_reported": "online-I1 + a-priori N",
+       "online_lb": {
+        "LB_T": 20.005684644812273,
+        "Wk_T": 25.81466867484474,
+        "B_T": 20.005684644812273,
+        "n_groups": 1
+       }
+      }
+     },
+     "A9": {
+      "C_fluid": 20.005684644812266,
+      "C_replay": 55.501983739583345,
+      "error": 0.6395500971878875,
+      "r0_fluid": 0.9999999999999998,
+      "r0_replay": 2.7743106384502427,
+      "fluid": {
+       "lease": 0.0,
+       "loading": 0.0,
+       "routing": 0.0,
+       "fallback": 20.005684644812266,
+       "stranding": 0.0,
+       "total": 20.005684644812266
+      },
+      "fluid_s": 0.05309921223670244,
+      "replay_s": 0.9106030939146876,
+      "n_leases": 0,
+      "copies": null,
+      "replay": {
+       "routing": 0.0,
+       "fallback": 55.501983739583345,
+       "stranding": 0.0,
+       "total": 55.501983739583345
+      },
+      "e8_1_pass": true,
+      "e8_2_pass": true,
+      "e8_3_pass": true,
+      "status": "ok",
+      "hit_ratio": null
+     },
+     "BL1-BO": {
+      "C_fluid": 39.43438550350436,
+      "C_replay": 61.269026154179045,
+      "error": 0.3563732283867121,
+      "r0_fluid": 1.9711590082337023,
+      "r0_replay": 3.062580823499429,
+      "fluid": {
+       "lease": 39.43438550350436,
+       "loading": 0.0,
+       "routing": 0.0,
+       "fallback": 0.0,
+       "stranding": 0.0,
+       "total": 39.43438550350436
+      },
+      "fluid_s": 0.057777319103479385,
+      "replay_s": 0.9463667091913521,
+      "n_leases": 1,
+      "copies": null,
+      "replay": {
+       "routing": 0.0,
+       "fallback": 21.33969273400802,
+       "stranding": 0.49494791666666665,
+       "total": 21.834640650674686
+      },
+      "e8_1_pass": true,
+      "e8_2_pass": true,
+      "e8_3_pass": true,
+      "status": "ok",
+      "hit_ratio": null
+     },
+     "BL5-cur": {
+      "C_fluid": 20.005684644812266,
+      "C_replay": 55.501983739583345,
+      "error": 0.6395500971878875,
+      "r0_fluid": 0.9999999999999998,
+      "r0_replay": 2.7743106384502427,
+      "fluid": {
+       "lease": 0.0,
+       "loading": 0.0,
+       "routing": 0.0,
+       "fallback": 20.005684644812266,
+       "stranding": 0.0,
+       "total": 20.005684644812266
+      },
+      "fluid_s": 0.05318236816674471,
+      "replay_s": 0.9202442751266062,
+      "n_leases": 0,
+      "copies": null,
+      "replay": {
+       "routing": 0.0,
+       "fallback": 55.501983739583345,
+       "stranding": 0.0,
+       "total": 55.501983739583345
+      },
+      "e8_1_pass": true,
+      "e8_2_pass": true,
+      "e8_3_pass": true,
+      "status": "ok",
+      "hit_ratio": null
+     }
+    }
+   },
+   "5": {
+    "1": {
+     "Sublet": {
+      "C_fluid": 13.049172604687932,
+      "C_replay": 31.28124056597224,
+      "error": 0.5828435072078685,
+      "r0_fluid": 1.0,
+      "r0_replay": 2.397181914409992,
+      "fluid": {
+       "lease": 0.0,
+       "loading": 0.0,
+       "routing": 0.0,
+       "fallback": 13.049172604687932,
+       "stranding": 0.0,
+       "total": 13.049172604687932
+      },
+      "fluid_s": 2.9212845941074193,
+      "replay_s": 0.9850110542029142,
+      "n_leases": 0,
+      "copies": null,
+      "replay": {
+       "routing": 0.0,
+       "fallback": 31.28124056597224,
+       "stranding": 0.0,
+       "total": 31.28124056597224
+      },
+      "e8_1_pass": true,
+      "e8_2_pass": true,
+      "e8_3_pass": true,
+      "status": "ok",
+      "hit_ratio": null,
+      "guard": {
+       "held": true,
+       "case": "W(a)",
+       "env_ok": true,
+       "env_max_excess_usd": 0.0,
+       "aborted": false,
+       "t_a": null,
+       "s_fb_all": true,
+       "t0g_bound_all": true,
+       "project": true,
+       "robust_slots": 0,
+       "switches": 0,
+       "projected_slots": 0,
+       "projection": {
+        "slots": 0,
+        "P1": 0,
+        "P0": 0,
+        "K0": 0,
+        "dropped_buys": 0,
+        "dropped_other": 0,
+        "guard_releases": 0
+       },
+       "B_T": 13.049172604687932,
+       "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+       "B0_usd": null,
+       "info_class_reported": "online-I1 + a-priori N",
+       "online_lb": {
+        "LB_T": 13.049172604687932,
+        "Wk_T": 25.81466867484474,
+        "B_T": 13.049172604687932,
+        "n_groups": 1
+       }
+      }
+     },
+     "A9": {
+      "C_fluid": 13.049172604687932,
+      "C_replay": 31.28124056597224,
+      "error": 0.5828435072078685,
+      "r0_fluid": 1.0,
+      "r0_replay": 2.397181914409992,
+      "fluid": {
+       "lease": 0.0,
+       "loading": 0.0,
+       "routing": 0.0,
+       "fallback": 13.049172604687932,
+       "stranding": 0.0,
+       "total": 13.049172604687932
+      },
+      "fluid_s": 0.05936524923890829,
+      "replay_s": 0.9652744387276471,
+      "n_leases": 0,
+      "copies": null,
+      "replay": {
+       "routing": 0.0,
+       "fallback": 31.28124056597224,
+       "stranding": 0.0,
+       "total": 31.28124056597224
+      },
+      "e8_1_pass": true,
+      "e8_2_pass": true,
+      "e8_3_pass": true,
+      "status": "ok",
+      "hit_ratio": null
+     },
+     "BL1-BO": {
+      "C_fluid": 80.87452215952106,
+      "C_replay": 85.78513763142215,
+      "error": 0.057243196286513594,
+      "r0_fluid": 6.1976743361082365,
+      "r0_replay": 6.573990568613041,
+      "fluid": {
+       "lease": 80.84049028218394,
+       "loading": 0.0,
+       "routing": 0.0,
+       "fallback": 0.03403187733713399,
+       "stranding": 0.0,
+       "total": 80.87452215952106
+      },
+      "fluid_s": 0.061593452002853155,
+      "replay_s": 0.9836444118991494,
+      "n_leases": 3,
+      "copies": null,
+      "replay": {
+       "routing": 0.0,
+       "fallback": 4.420584849238205,
+       "stranding": 0.5240625,
+       "total": 4.944647349238205
+      },
+      "e8_1_pass": true,
+      "e8_2_pass": true,
+      "e8_3_pass": true,
+      "status": "ok",
+      "hit_ratio": null
+     },
+     "BL5-cur": {
+      "C_fluid": 13.049172604687932,
+      "C_replay": 31.28124056597224,
+      "error": 0.5828435072078685,
+      "r0_fluid": 1.0,
+      "r0_replay": 2.397181914409992,
+      "fluid": {
+       "lease": 0.0,
+       "loading": 0.0,
+       "routing": 0.0,
+       "fallback": 13.049172604687932,
+       "stranding": 0.0,
+       "total": 13.049172604687932
+      },
+      "fluid_s": 0.054352080915123224,
+      "replay_s": 0.945196355227381,
+      "n_leases": 0,
+      "copies": null,
+      "replay": {
+       "routing": 0.0,
+       "fallback": 31.28124056597224,
+       "stranding": 0.0,
+       "total": 31.28124056597224
+      },
+      "e8_1_pass": true,
+      "e8_2_pass": true,
+      "e8_3_pass": true,
+      "status": "ok",
+      "hit_ratio": null
+     }
+    }
+   }
+  }
+ },
+ "reused_a6": {
+  "S": {
+   "5": {
+    "1": {
+     "C_fluid": null,
+     "C_replay": null,
+     "error": null
+    }
+   },
+   "60": {
+    "1": {
+     "C_fluid": null,
+     "C_replay": null,
+     "error": null
+    }
+   }
+  },
+  "M": {
+   "5": {
+    "1": {
+     "C_fluid": null,
+     "C_replay": null,
+     "error": null
+    }
+   },
+   "60": {
+    "1": {
+     "C_fluid": null,
+     "C_replay": null,
+     "error": null
+    }
+   }
+  },
+  "L": {
+   "5": {
+    "1": {
+     "C_fluid": null,
+     "C_replay": null,
+     "error": null
+    }
+   },
+   "60": {
+    "1": {
+     "C_fluid": null,
+     "C_replay": null,
+     "error": null
+    }
+   }
+  }
+ },
+ "mooncake": {
+  "5": {
+   "off": {
+    "Sublet": {
+     "C_fluid": 11.473720517945411,
+     "C_replay": 16.725057051726477,
+     "error": 0.31398018658710564,
+     "r0_fluid": null,
+     "r0_replay": null,
+     "fluid": {
+      "lease": 5.915157825525654,
+      "loading": 0.0,
+      "routing": 0.0,
+      "fallback": 5.558562692419756,
+      "stranding": 0.0,
+      "total": 11.473720517945411
+     },
+     "fluid_s": 1.6038218257017434,
+     "replay_s": 0.5316312732174993,
+     "n_leases": null,
+     "copies": 86684,
+     "replay": {
+      "routing": 0.0,
+      "fallback": 10.809899226200821,
+      "stranding": 0.0,
+      "total": 10.809899226200821
+     },
+     "e8_1_pass": true,
+     "e8_2_pass": null,
+     "e8_3_pass": true,
+     "status": "ok",
+     "hit_ratio": null,
+     "guard": {
+      "held": true,
+      "case": "W(a)",
+      "env_ok": true,
+      "env_max_excess_usd": 0.0,
+      "aborted": false,
+      "t_a": null,
+      "s_fb_all": true,
+      "t0g_bound_all": true,
+      "project": true,
+      "robust_slots": 0,
+      "switches": 0,
+      "projected_slots": 11,
+      "projection": {
+       "slots": 11,
+       "P1": 2,
+       "P0": 9,
+       "K0": 0,
+       "dropped_buys": 13,
+       "dropped_other": 0,
+       "guard_releases": 0
+      },
+      "B_T": 6.721580544471917,
+      "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+      "B0_usd": null,
+      "info_class_reported": "online-I1 + a-priori N",
+      "online_lb": {
+       "LB_T": 6.721580544471917,
+       "Wk_T": 12.571538104653914,
+       "B_T": 6.721580544471917,
+       "n_groups": 1
+      }
+     }
+    },
+    "A9": {
+     "C_fluid": 7.373917605136627,
+     "C_replay": 12.047804412006268,
+     "error": 0.38794510991661424,
+     "r0_fluid": null,
+     "r0_replay": null,
+     "fluid": {
+      "lease": 6.654552553716361,
+      "loading": 0.0,
+      "routing": 0.0,
+      "fallback": 0.7193650514202663,
+      "stranding": 0.0,
+      "total": 7.373917605136627
+     },
+     "fluid_s": 0.0611781389452517,
+     "replay_s": 0.5357996742241085,
+     "n_leases": null,
+     "copies": 86684,
+     "replay": {
+      "routing": 0.0,
+      "fallback": 5.393251858289907,
+      "stranding": 0.0,
+      "total": 5.393251858289907
+     },
+     "e8_1_pass": true,
+     "e8_2_pass": null,
+     "e8_3_pass": true,
+     "status": "ok",
+     "hit_ratio": null
+    },
+    "BL1-BO": {
+     "C_fluid": 9.137801365939824,
+     "C_replay": 11.695528532016981,
+     "error": 0.21869273877407727,
+     "r0_fluid": null,
+     "r0_replay": null,
+     "fluid": {
+      "lease": 9.119201647685383,
+      "loading": 0.0,
+      "routing": 0.0,
+      "fallback": 0.01859971825444149,
+      "stranding": 0.0,
+      "total": 9.137801365939824
+     },
+     "fluid_s": 0.05980659695342183,
+     "replay_s": 0.5444927518256009,
+     "n_leases": null,
+     "copies": 86684,
+     "replay": {
+      "routing": 0.0,
+      "fallback": 2.576326884331598,
+      "stranding": 0.0,
+      "total": 2.576326884331598
+     },
+     "e8_1_pass": true,
+     "e8_2_pass": null,
+     "e8_3_pass": true,
+     "status": "ok",
+     "hit_ratio": null
+    },
+    "BL5-cur": {
+     "C_fluid": 7.822184623498348,
+     "C_replay": 12.448417427595093,
+     "error": 0.3716322039331296,
+     "r0_fluid": null,
+     "r0_replay": null,
+     "fluid": {
+      "lease": 6.654552553716361,
+      "loading": 0.0,
+      "routing": 0.0,
+      "fallback": 1.167632069781989,
+      "stranding": 0.0,
+      "total": 7.822184623498348
+     },
+     "fluid_s": 0.06286470871418715,
+     "replay_s": 0.5438511930406094,
+     "n_leases": null,
+     "copies": 86684,
+     "replay": {
+      "routing": 0.0,
+      "fallback": 5.793864873878735,
+      "stranding": 0.0,
+      "total": 5.793864873878735
+     },
+     "e8_1_pass": true,
+     "e8_2_pass": null,
+     "e8_3_pass": true,
+     "status": "ok",
+     "hit_ratio": null
+    }
+   },
+   "on": {
+    "Sublet": {
+     "C_fluid": 11.473720517945411,
+     "C_replay": 5.915157825525655,
+     "error": -0.9397150264415457,
+     "r0_fluid": null,
+     "r0_replay": null,
+     "fluid": {
+      "lease": 5.915157825525654,
+      "loading": 0.0,
+      "routing": 0.0,
+      "fallback": 5.558562692419756,
+      "stranding": 0.0,
+      "total": 11.473720517945411
+     },
+     "fluid_s": 1.9017476169392467,
+     "replay_s": 3.1664557848125696,
+     "n_leases": null,
+     "copies": 86684,
+     "replay": {
+      "routing": 0.0,
+      "fallback": 0.0,
+      "stranding": 0.0,
+      "total": 0.0
+     },
+     "e8_1_pass": true,
+     "e8_2_pass": null,
+     "e8_3_pass": true,
+     "status": "ok",
+     "hit_ratio": 0.3607854567177409,
+     "guard": {
+      "held": true,
+      "case": "W(a)",
+      "env_ok": true,
+      "env_max_excess_usd": 0.0,
+      "aborted": false,
+      "t_a": null,
+      "s_fb_all": true,
+      "t0g_bound_all": true,
+      "project": true,
+      "robust_slots": 0,
+      "switches": 0,
+      "projected_slots": 11,
+      "projection": {
+       "slots": 11,
+       "P1": 2,
+       "P0": 9,
+       "K0": 0,
+       "dropped_buys": 13,
+       "dropped_other": 0,
+       "guard_releases": 0
+      },
+      "B_T": 6.721580544471917,
+      "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+      "B0_usd": null,
+      "info_class_reported": "online-I1 + a-priori N",
+      "online_lb": {
+       "LB_T": 6.721580544471917,
+       "Wk_T": 12.571538104653914,
+       "B_T": 6.721580544471917,
+       "n_groups": 1
+      }
+     }
+    },
+    "A9": {
+     "C_fluid": 7.373917605136627,
+     "C_replay": 6.654552553716361,
+     "error": -0.10810119021729313,
+     "r0_fluid": null,
+     "r0_replay": null,
+     "fluid": {
+      "lease": 6.654552553716361,
+      "loading": 0.0,
+      "routing": 0.0,
+      "fallback": 0.7193650514202663,
+      "stranding": 0.0,
+      "total": 7.373917605136627
+     },
+     "fluid_s": 0.05983638111501932,
+     "replay_s": 3.0918693696148694,
+     "n_leases": null,
+     "copies": 86684,
+     "replay": {
+      "routing": 0.0,
+      "fallback": 0.0,
+      "stranding": 0.0,
+      "total": 0.0
+     },
+     "e8_1_pass": true,
+     "e8_2_pass": null,
+     "e8_3_pass": true,
+     "status": "ok",
+     "hit_ratio": 0.3607854567177409
+    },
+    "BL1-BO": {
+     "C_fluid": 9.137801365939824,
+     "C_replay": 9.119201647685383,
+     "error": -0.0020396213367166616,
+     "r0_fluid": null,
+     "r0_replay": null,
+     "fluid": {
+      "lease": 9.119201647685383,
+      "loading": 0.0,
+      "routing": 0.0,
+      "fallback": 0.01859971825444149,
+      "stranding": 0.0,
+      "total": 9.137801365939824
+     },
+     "fluid_s": 0.061751922126859426,
+     "replay_s": 3.1287612239830196,
+     "n_leases": null,
+     "copies": 86684,
+     "replay": {
+      "routing": 0.0,
+      "fallback": 0.0,
+      "stranding": 0.0,
+      "total": 0.0
+     },
+     "e8_1_pass": true,
+     "e8_2_pass": null,
+     "e8_3_pass": true,
+     "status": "ok",
+     "hit_ratio": 0.3607854567177409
+    },
+    "BL5-cur": {
+     "C_fluid": 7.822184623498348,
+     "C_replay": 6.654552553716359,
+     "error": -0.17546364843567183,
+     "r0_fluid": null,
+     "r0_replay": null,
+     "fluid": {
+      "lease": 6.654552553716361,
+      "loading": 0.0,
+      "routing": 0.0,
+      "fallback": 1.167632069781989,
+      "stranding": 0.0,
+      "total": 7.822184623498348
+     },
+     "fluid_s": 0.059313977137207985,
+     "replay_s": 3.0875356551259756,
+     "n_leases": null,
+     "copies": 86684,
+     "replay": {
+      "routing": 0.0,
+      "fallback": 0.0,
+      "stranding": 0.0,
+      "total": 0.0
+     },
+     "e8_1_pass": true,
+     "e8_2_pass": null,
+     "e8_3_pass": true,
+     "status": "ok",
+     "hit_ratio": 0.3607854567177409
+    }
+   }
+  },
+  "60": {
+   "off": {
+    "Sublet": {
+     "C_fluid": 7.789549612553359,
+     "C_replay": 14.194275313870364,
+     "error": 0.4512189287366037,
+     "r0_fluid": null,
+     "r0_replay": null,
+     "fluid": {
+      "lease": 5.915157825525654,
+      "loading": 0.0,
+      "routing": 0.0,
+      "fallback": 1.874391787027705,
+      "stranding": 6.0137080500529315e-18,
+      "total": 7.789549612553359
+     },
+     "fluid_s": 1.887269597966224,
+     "replay_s": 1.249977130908519,
+     "n_leases": null,
+     "copies": 185029,
+     "replay": {
+      "routing": 0.0,
+      "fallback": 8.17755498834471,
+      "stranding": 0.1015625,
+      "total": 8.27911748834471
+     },
+     "e8_1_pass": true,
+     "e8_2_pass": null,
+     "e8_3_pass": true,
+     "status": "ok",
+     "hit_ratio": null,
+     "guard": {
+      "held": true,
+      "case": "W(a)",
+      "env_ok": true,
+      "env_max_excess_usd": 0.0,
+      "aborted": false,
+      "t_a": null,
+      "s_fb_all": true,
+      "t0g_bound_all": true,
+      "project": true,
+      "robust_slots": 0,
+      "switches": 0,
+      "projected_slots": 7,
+      "projection": {
+       "slots": 7,
+       "P1": 1,
+       "P0": 6,
+       "K0": 0,
+       "dropped_buys": 10,
+       "dropped_other": 0,
+       "guard_releases": 0
+      },
+      "B_T": 9.40368005713182,
+      "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+      "B0_usd": null,
+      "info_class_reported": "online-I1 + a-priori N",
+      "online_lb": {
+       "LB_T": 9.40368005713182,
+       "Wk_T": 12.571538104653914,
+       "B_T": 9.40368005713182,
+       "n_groups": 1
+      }
+     }
+    },
+    "A9": {
+     "C_fluid": 4.880760156171945,
+     "C_replay": 13.87864515226523,
+     "error": 0.6483258918558543,
+     "r0_fluid": null,
+     "r0_replay": null,
+     "fluid": {
+      "lease": 4.43636836914424,
+      "loading": 0.0,
+      "routing": 0.0,
+      "fallback": 0.44439178702770477,
+      "stranding": 6.0137080500529315e-18,
+      "total": 4.880760156171945
+     },
+     "fluid_s": 0.058948189951479435,
+     "replay_s": 1.1464234623126686,
+     "n_leases": null,
+     "copies": 185029,
+     "replay": {
+      "routing": 0.0,
+      "fallback": 9.16805803312099,
+      "stranding": 0.27421875,
+      "total": 9.44227678312099
+     },
+     "e8_1_pass": true,
+     "e8_2_pass": null,
+     "e8_3_pass": true,
+     "status": "ok",
+     "hit_ratio": null
+    },
+    "BL1-BO": {
+     "C_fluid": 5.668692916128752,
+     "C_replay": 12.619551899604533,
+     "error": 0.5508007763487708,
+     "r0_fluid": null,
+     "r0_replay": null,
+     "fluid": {
+      "lease": 5.668692916128752,
+      "loading": 0.0,
+      "routing": 0.0,
+      "fallback": 0.0,
+      "stranding": 6.0137080500529315e-18,
+      "total": 5.668692916128752
+     },
+     "fluid_s": 0.05733572179451585,
+     "replay_s": 1.1440907842479646,
+     "n_leases": null,
+     "copies": 185029,
+     "replay": {
+      "routing": 0.0,
+      "fallback": 6.78328085847578,
+      "stranding": 0.167578125,
+      "total": 6.95085898347578
+     },
+     "e8_1_pass": true,
+     "e8_2_pass": null,
+     "e8_3_pass": true,
+     "status": "ok",
+     "hit_ratio": null
+    },
+    "BL5-cur": {
+     "C_fluid": 5.241254242586298,
+     "C_replay": 14.478427675475613,
+     "error": 0.6379956194094035,
+     "r0_fluid": null,
+     "r0_replay": null,
+     "fluid": {
+      "lease": 4.43636836914424,
+      "loading": 0.0,
+      "routing": 0.0,
+      "fallback": 0.8048858734420581,
+      "stranding": 6.0137080500529315e-18,
+      "total": 5.241254242586298
+     },
+     "fluid_s": 0.05824289005249739,
+     "replay_s": 1.1340678250417113,
+     "n_leases": null,
+     "copies": 185029,
+     "replay": {
+      "routing": 0.0,
+      "fallback": 9.772918681331372,
+      "stranding": 0.269140625,
+      "total": 10.042059306331373
+     },
+     "e8_1_pass": true,
+     "e8_2_pass": null,
+     "e8_3_pass": true,
+     "status": "ok",
+     "hit_ratio": null
+    }
+   },
+   "on": {
+    "Sublet": {
+     "C_fluid": 7.789549612553359,
+     "C_replay": 5.915157825525654,
+     "error": -0.31687942102561506,
+     "r0_fluid": null,
+     "r0_replay": null,
+     "fluid": {
+      "lease": 5.915157825525654,
+      "loading": 0.0,
+      "routing": 0.0,
+      "fallback": 1.874391787027705,
+      "stranding": 6.0137080500529315e-18,
+      "total": 7.789549612553359
+     },
+     "fluid_s": 1.4616656131111085,
+     "replay_s": 7.454022888559848,
+     "n_leases": null,
+     "copies": 185029,
+     "replay": {
+      "routing": 0.0,
+      "fallback": 0.0,
+      "stranding": 0.0,
+      "total": 0.0
+     },
+     "e8_1_pass": true,
+     "e8_2_pass": null,
+     "e8_3_pass": true,
+     "status": "ok",
+     "hit_ratio": 0.36309830960452794,
+     "guard": {
+      "held": true,
+      "case": "W(a)",
+      "env_ok": true,
+      "env_max_excess_usd": 0.0,
+      "aborted": false,
+      "t_a": null,
+      "s_fb_all": true,
+      "t0g_bound_all": true,
+      "project": true,
+      "robust_slots": 0,
+      "switches": 0,
+      "projected_slots": 7,
+      "projection": {
+       "slots": 7,
+       "P1": 1,
+       "P0": 6,
+       "K0": 0,
+       "dropped_buys": 10,
+       "dropped_other": 0,
+       "guard_releases": 0
+      },
+      "B_T": 9.40368005713182,
+      "B0_rule": "lb: min{W_k(t), LB'(t)}, kappa None",
+      "B0_usd": null,
+      "info_class_reported": "online-I1 + a-priori N",
+      "online_lb": {
+       "LB_T": 9.40368005713182,
+       "Wk_T": 12.571538104653914,
+       "B_T": 9.40368005713182,
+       "n_groups": 1
+      }
+     }
+    },
+    "A9": {
+     "C_fluid": 4.880760156171945,
+     "C_replay": 4.43636836914424,
+     "error": -0.10017017299972913,
+     "r0_fluid": null,
+     "r0_replay": null,
+     "fluid": {
+      "lease": 4.43636836914424,
+      "loading": 0.0,
+      "routing": 0.0,
+      "fallback": 0.44439178702770477,
+      "stranding": 6.0137080500529315e-18,
+      "total": 4.880760156171945
+     },
+     "fluid_s": 0.061004902236163616,
+     "replay_s": 7.667844008188695,
+     "n_leases": null,
+     "copies": 185029,
+     "replay": {
+      "routing": 0.0,
+      "fallback": 0.0,
+      "stranding": 0.0,
+      "total": 0.0
+     },
+     "e8_1_pass": true,
+     "e8_2_pass": null,
+     "e8_3_pass": true,
+     "status": "ok",
+     "hit_ratio": 0.36309830960452794
+    },
+    "BL1-BO": {
+     "C_fluid": 5.668692916128752,
+     "C_replay": 5.668692916128752,
+     "error": 0.0,
+     "r0_fluid": null,
+     "r0_replay": null,
+     "fluid": {
+      "lease": 5.668692916128752,
+      "loading": 0.0,
+      "routing": 0.0,
+      "fallback": 0.0,
+      "stranding": 6.0137080500529315e-18,
+      "total": 5.668692916128752
+     },
+     "fluid_s": 0.05925823701545596,
+     "replay_s": 7.413842304144055,
+     "n_leases": null,
+     "copies": 185029,
+     "replay": {
+      "routing": 0.0,
+      "fallback": 0.0,
+      "stranding": 0.0,
+      "total": 0.0
+     },
+     "e8_1_pass": true,
+     "e8_2_pass": null,
+     "e8_3_pass": true,
+     "status": "ok",
+     "hit_ratio": 0.36309830960452794
+    },
+    "BL5-cur": {
+     "C_fluid": 5.241254242586298,
+     "C_replay": 4.43636836914424,
+     "error": -0.18142899923283817,
+     "r0_fluid": null,
+     "r0_replay": null,
+     "fluid": {
+      "lease": 4.43636836914424,
+      "loading": 0.0,
+      "routing": 0.0,
+      "fallback": 0.8048858734420581,
+      "stranding": 6.0137080500529315e-18,
+      "total": 5.241254242586298
+     },
+     "fluid_s": 0.06178711913526058,
+     "replay_s": 7.469406722579151,
+     "n_leases": null,
+     "copies": 185029,
+     "replay": {
+      "routing": 0.0,
+      "fallback": 0.0,
+      "stranding": 0.0,
+      "total": 0.0
+     },
+     "e8_1_pass": true,
+     "e8_2_pass": null,
+     "e8_3_pass": true,
+     "status": "ok",
+     "hit_ratio": 0.36309830960452794
+    }
+   }
+  }
+ },
+ "reused_a6_mooncake": {
+  "5": {
+   "off": {
+    "error": null,
+    "C_fluid": null,
+    "C_replay": null
+   },
+   "on": {
+    "error": null,
+    "C_fluid": null,
+    "C_replay": null
+   }
+  },
+  "60": {
+   "off": {
+    "error": null,
+    "C_fluid": null,
+    "C_replay": null
+   },
+   "on": {
+    "error": null,
+    "C_fluid": null,
+    "C_replay": null
+   }
+  }
+ },
+ "checks": {
+  "E8v2-0": {
+   "status": "missing",
+   "claim": "A6's identity run at (M, 15, c 1) reproduces E8's stored pair (C_fluid and C_replay within 1e-9 relative, out/e8/summary.json components.M.15.1.by_c.1), so E8's A6 runs stand beside this part's"
+  },
+  "E8v2-1": {
+   "status": "pass",
+   "claim": "conservation in every replay (e8's E8-1: every copy served once, tokens to 1e-9 relative)"
+  },
+  "E8v2-2": {
+   "status": "pass",
+   "claim": "fluid mode in every pair (e8's E8-2: the replay's accounting fed the demand rates reproduces the engine's routing and fallback, 1e-6 relative)"
+  },
+  "E8v2-3": {
+   "status": "pass",
+   "claim": "every fluid run: invariant_failures empty, gpu_only_lease_slots 0 (e8's E8-3)"
+  },
+  "E8v2-4": {
+   "status": "pass",
+   "claim": "every Sublet run: certificate available and held in Theorem W's proven cases, the envelope holds, no projecting run aborts while S follows FB and T0g stays in bound form (Proposition P)"
+  },
+  "E8v2-5": {
+   "status": "informative",
+   "claim": "E = (C_replay - C_fluid) / C_replay per (tier, window, tag), median over the alignments with its range, and the Mooncake hour's E per tag with and without prefix hits (informative)"
+  }
+ }
+}

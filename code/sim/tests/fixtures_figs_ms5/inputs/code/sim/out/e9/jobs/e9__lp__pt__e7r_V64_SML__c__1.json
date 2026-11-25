@@ -1,0 +1,63 @@
+{
+ "job": "e9:lp:pt=e7r_V64_SML:c=1",
+ "exp": "e9",
+ "kind": "alone",
+ "params": {
+  "kind": "lp",
+  "point": "e7r_V64_SML",
+  "base": "e7r",
+  "V": 64,
+  "llm_set": "SML",
+  "c": 1,
+  "horizon_min": 120,
+  "limit_s": 1800,
+  "time_limit_s": 1500.0,
+  "gate_mb": 2800.0
+ },
+ "status": "ok",
+ "started": "2026-10-29T17:25:13",
+ "pid": 3056332,
+ "argv": [
+  "/work/sublet/code/sim/sublet/experiments/e9.py",
+  "--job",
+  "e9:lp:pt=e7r_V64_SML:c=1",
+  "--out",
+  "/work/ms5build/u28/reduced/out/e9"
+ ],
+ "slots": [
+  "slot0",
+  "slot1",
+  "slot2",
+  "slot3"
+ ],
+ "milp_limit_s": null,
+ "git_revision": "c82fa05f835c1b4896ddf639d6edb81495a1abee",
+ "versions": {
+  "python": "3.12.3",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "sublet": "0.1.0"
+ },
+ "runs": 1,
+ "errors": [],
+ "n_errors": 0,
+ "outputs": [
+  "runs/e9__lp__pt__e7r_V64_SML__c__1.json"
+ ],
+ "result": {
+  "point": "e7r_V64_SML",
+  "c": 1,
+  "instance_hash": "8f9730bc0432ddce3453455daae89cf7db2f088a8d8e49ceef5ce2d6a3c0c0c5",
+  "schedule_hash": "9333889ac8e4c9f16143312fef6bcc7e27842ee712f273081bb09f5502b9cc16",
+  "skipped": false,
+  "status": 0,
+  "highs_model_status": 7,
+  "objective": 5401.722378095778,
+  "solve_s": 0.5254967680666596,
+  "est_mb_lp": 171.17824000000002
+ },
+ "wall_s": 1.3550947410985827,
+ "peak_rss_kb": 173716,
+ "peak_rss_mb": 169.64453125,
+ "finished": "2026-10-29T17:25:15"
+}

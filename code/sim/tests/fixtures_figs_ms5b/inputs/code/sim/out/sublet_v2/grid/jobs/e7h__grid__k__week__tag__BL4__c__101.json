@@ -1,0 +1,89 @@
+{
+ "job": "e7h:grid:k=week:tag=BL4:c=101",
+ "exp": "e7h",
+ "kind": "pool",
+ "params": {
+  "part": "grid",
+  "kind": "week",
+  "tag": "BL4",
+  "c": 101,
+  "modes": [
+   "L-tr",
+   "L-eg",
+   "L-ss",
+   "L-iid-0.05",
+   "L-iid-0.2",
+   "L-co"
+  ],
+  "policy_seeds": [
+   0
+  ],
+  "horizon_min": 120
+ },
+ "status": "ok",
+ "started": "2026-11-03T14:14:21",
+ "pid": 1717299,
+ "argv": [
+  "/work/sublet/code/sim/sublet/experiments/e7h.py",
+  "--job",
+  "e7h:grid:k=week:tag=BL4:c=101",
+  "--out",
+  "/work/u36_fix/grid/out/sublet_v2/grid"
+ ],
+ "slots": [
+  "slot1"
+ ],
+ "milp_limit_s": null,
+ "git_revision": "5c7d33285b9a4f4e4df2b76e80b3e5f56d58bd37",
+ "versions": {
+  "python": "3.12.3",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "sublet": "0.1.0"
+ },
+ "runs": 6,
+ "errors": [],
+ "n_errors": 0,
+ "outputs": [
+  "runs/e7h__grid__k__week__tag__BL4__c__101.json"
+ ],
+ "result": {
+  "instance_hash": "037bc069dae13e922b562fb59844552be4254d8e0a1ab54443b3816fb975a848",
+  "r0": [
+   [
+    "L-tr",
+    0,
+    0.9941277774503176
+   ],
+   [
+    "L-eg",
+    0,
+    1.003622490659715
+   ],
+   [
+    "L-ss",
+    0,
+    1.003622490659715
+   ],
+   [
+    "L-iid-0.05",
+    0,
+    1.0025660823783855
+   ],
+   [
+    "L-iid-0.2",
+    0,
+    1.0168935261350465
+   ],
+   [
+    "L-co",
+    0,
+    1.003622490659715
+   ]
+  ]
+ },
+ "wall_s": 3.549884589854628,
+ "peak_rss_kb": 167000,
+ "peak_rss_mb": 163.0859375,
+ "finished": "2026-11-03T14:14:25"
+}

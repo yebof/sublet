@@ -1,0 +1,48 @@
+{
+ "block": "Q2",
+ "tier": 1,
+ "grid": "1min",
+ "lb": null,
+ "description": "I3 (4 cells) x L-tr, L-eg, L-ss, L-iid 0.05; 16 cell-modes",
+ "policies": [
+  "BL0a",
+  "BL1",
+  "BL2",
+  "BL5",
+  "A6",
+  "A2",
+  "PS",
+  "PS-G",
+  "PS-G1",
+  "BL1-G",
+  "BL5-G"
+ ],
+ "policy_seeds": [
+  0,
+  1,
+  2
+ ],
+ "modes": [
+  "L-tr",
+  "L-eg",
+  "L-ss",
+  "L-iid-0.05"
+ ],
+ "instances": [
+  {
+   "id": "I3",
+   "family": "I3",
+   "config": "bench_e7s.json",
+   "overrides": {},
+   "config_seeds": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "tuning_seeds": [
+    1
+   ]
+  }
+ ]
+}

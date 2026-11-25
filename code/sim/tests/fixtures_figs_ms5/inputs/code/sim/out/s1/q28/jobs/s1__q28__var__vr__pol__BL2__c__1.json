@@ -1,0 +1,65 @@
+{
+ "job": "s1:q28:var=vr:pol=BL2:c=1",
+ "exp": "s1",
+ "kind": "pool",
+ "params": {
+  "part": "q28",
+  "kind": "q28",
+  "variant": "vr",
+  "mode": "L-vr",
+  "tag": "BL2",
+  "c": 1,
+  "policy_seeds": [
+   0
+  ],
+  "horizon_min": 120,
+  "limit_s": 1800
+ },
+ "status": "ok",
+ "started": "2026-10-29T21:09:49",
+ "pid": 3190009,
+ "argv": [
+  "/work/sublet/code/sim/sublet/experiments/s1.py",
+  "--job",
+  "s1:q28:var=vr:pol=BL2:c=1",
+  "--out",
+  "/work/fix/refresh_s1/s1/out/s1/q28"
+ ],
+ "slots": [
+  "slot0"
+ ],
+ "milp_limit_s": null,
+ "git_revision": "c82fa05f835c1b4896ddf639d6edb81495a1abee",
+ "versions": {
+  "python": "3.12.3",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "sublet": "0.1.0"
+ },
+ "runs": 1,
+ "errors": [],
+ "n_errors": 0,
+ "outputs": [
+  "runs/s1__q28__var__vr__pol__BL2__c__1.json"
+ ],
+ "result": {
+  "instance_hash": "fddc5752788e170ecd364592b0f94ae2631bc2acfb1e71aa32462e0be77b1273",
+  "bl0a_usd": 1527.7154508483445,
+  "totals": [
+   1081.0047454862745
+  ],
+  "refused_unavailable": [
+   0
+  ],
+  "violation_victims": [
+   0
+  ],
+  "wall_s_runs": [
+   0.6013541189022362
+  ]
+ },
+ "wall_s": 1.5878555290400982,
+ "peak_rss_kb": 141236,
+ "peak_rss_mb": 137.92578125,
+ "finished": "2026-10-29T21:09:51"
+}

@@ -1,0 +1,64 @@
+{
+ "block": "T2_bl8",
+ "tier": 2,
+ "grid": "slow",
+ "lb": "milp",
+ "lb_only": true,
+ "milp": {
+  "time_limit_s": 300,
+  "mip_rel_gap": 0.0001
+ },
+ "description": "BL8's MILP (omega, 300 s) on the slow grid: I1 seeds 3, 4, 7, I2 seeds 1-4, I4 seeds 1-4 x L-tr, L-eg; LB = max(LP, dual bound) for Q5's runs (Q39); every MILP alone",
+ "policies": [],
+ "modes": [
+  "L-tr",
+  "L-eg"
+ ],
+ "instances": [
+  {
+   "id": "I1",
+   "family": "I1",
+   "config": "ms2_multi_small.json",
+   "overrides": {},
+   "config_seeds": [
+    3,
+    4,
+    7
+   ],
+   "tuning_seeds": [
+    3
+   ]
+  },
+  {
+   "id": "I2",
+   "family": "I2",
+   "config": "example_1day.json",
+   "overrides": {},
+   "config_seeds": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "tuning_seeds": [
+    1
+   ],
+   "extra_policies": [
+    "PS-GR"
+   ]
+  },
+  {
+   "id": "I4",
+   "family": "I4",
+   "config": "q44_spot_1day.json",
+   "overrides": {},
+   "config_seeds": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "tuning_seeds": []
+  }
+ ]
+}
